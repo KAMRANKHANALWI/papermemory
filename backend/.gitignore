@@ -1,0 +1,96 @@
+# -----------------------------
+# Python cache / build files
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# -----------------------------
+# Virtual environments
+# -----------------------------
+venv/
+.env/
+.venv/
+env/
+ENV/
+
+# -----------------------------
+# Environment & secrets
+# -----------------------------
+*.env
+.env.*
+!.env.example
+
+# -----------------------------
+# IDE / Editor settings
+# -----------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# misc
+.DS_Store
+*.pem
+
+# -----------------------------
+# Logs & runtime files
+# -----------------------------
+*.log
+logs/
+*.pid
+*.seed
+*.out
+
+# -----------------------------
+# FastAPI / Uvicorn reload cache
+# -----------------------------
+.restart*
+
+# -----------------------------
+# Database & migrations
+# -----------------------------
+instance/
+db.sqlite3
+db.sqlite
+*.db
+data/
+!data/.gitkeep
+
+
+# Alembic
+alembic/*cache*
+alembic/versions/*.pyc
+alembic/versions/__pycache__/
+
+# -----------------------------
+# Coverage / test artifacts
+# -----------------------------
+htmlcov/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+
+# -----------------------------
+# MyPy / Ruff / Pyright / Type checkers
+# -----------------------------
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# -----------------------------
+# Docker
+# -----------------------------
+docker-data/
