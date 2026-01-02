@@ -19,7 +19,7 @@ class ChatService:
         # Initialize the correct model based on default provider
         if self.default_provider == "gemini" and os.getenv("GOOGLE_API_KEY"):
             self.llm = ChatGoogleGenerativeAI(
-                model=os.getenv("GEMINI_MODEL", "gemini-2.0-flash-exp"),
+                model=os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
                 temperature=0.1,
                 google_api_key=os.getenv("GOOGLE_API_KEY"),
             )
@@ -53,8 +53,8 @@ class ChatService:
             return self._format_search_results(results, collection_name)
         except Exception as e:
             return {"error": str(e)}, []
-
-    def search_all_collections(self, query: str, k_per_collection: int = 5):
+# Have to return here k_per_collection = 5
+    def search_all_collections(self, query: str, k_per_collection: int = 1):
         """Search across all collections"""
         all_collections = self._get_available_collections()
         all_results = []
@@ -83,7 +83,8 @@ class ChatService:
         all_results.sort(key=lambda x: x["similarity"], reverse=True)
 
         # Build context
-        context = self._build_context_from_results(all_results[:15])
+        # context = self._build_context_from_results(all_results[:15])
+        context = self._build_context_from_results(all_results[:1])
         return context, all_results[:15]
 
     def _format_search_results(self, results, collection_name):
@@ -137,12 +138,12 @@ class ChatService:
         Context from documents:
         {context}
         """
-        
+
         messages = [
             {"role": "system", "content": system_prompt},
-            {"role": "user", "content": query}
+            {"role": "user", "content": query},
         ]
-        
+
         # Use astream instead of stream for async
         response_stream = self.llm.astream(messages)
         async for chunk in response_stream:

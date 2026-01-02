@@ -9,7 +9,11 @@ import type {
   ValidateNameResponse,
   PDFDetail,
 } from "../types/collection";
-import type { ApiResponse, UploadResult, OperationResponse } from "../types/api";
+import type {
+  ApiResponse,
+  UploadResult,
+  OperationResponse,
+} from "../types/api";
 
 export const collectionsApi = {
   // Get all collections
@@ -18,7 +22,10 @@ export const collectionsApi = {
   },
 
   // Upload files to create/add to collection
-  async upload(collectionName: string, files: File[]): Promise<ApiResponse<UploadResult>> {
+  async upload(
+    collectionName: string,
+    files: File[]
+  ): Promise<ApiResponse<UploadResult>> {
     return apiClient.uploadFiles<ApiResponse<UploadResult>>(
       `/api/collections/${collectionName}/upload`,
       files
@@ -26,7 +33,10 @@ export const collectionsApi = {
   },
 
   // Add files to existing collection
-  async addPDFs(collectionName: string, files: File[]): Promise<ApiResponse<UploadResult>> {
+  async addPDFs(
+    collectionName: string,
+    files: File[]
+  ): Promise<ApiResponse<UploadResult>> {
     return apiClient.uploadFiles<ApiResponse<UploadResult>>(
       `/api/collections/${collectionName}/pdfs/add`,
       files
@@ -35,7 +45,9 @@ export const collectionsApi = {
 
   // Delete collection
   async delete(collectionName: string): Promise<OperationResponse> {
-    return apiClient.delete<OperationResponse>(`/api/collections/${collectionName}`);
+    return apiClient.delete<OperationResponse>(
+      `/api/collections/${collectionName}`
+    );
   },
 
   // Rename collection
@@ -60,10 +72,14 @@ export const collectionsApi = {
     );
   },
 
-  // Delete PDF from collection
-  async deletePDF(collectionName: string, filename: string): Promise<OperationResponse> {
+  async deletePDF(
+    collectionName: string,
+    filename: string
+  ): Promise<OperationResponse> {
+    const encoded = encodeURIComponent(filename);
+
     return apiClient.delete<OperationResponse>(
-      `/api/collections/${collectionName}/pdfs/${filename}`
+      `/api/collections/${collectionName}/pdfs/${encoded}`
     );
   },
 
@@ -82,16 +98,22 @@ export const collectionsApi = {
 
   // Generate collection name
   async generateName(filenames: string[]): Promise<GenerateNameResponse> {
-    return apiClient.post<GenerateNameResponse>("/api/collections/generate-name", {
-      filenames,
-      upload_type: "files",
-    });
+    return apiClient.post<GenerateNameResponse>(
+      "/api/collections/generate-name",
+      {
+        filenames,
+        upload_type: "files",
+      }
+    );
   },
 
   // Validate collection name
   async validateName(name: string): Promise<ValidateNameResponse> {
-    return apiClient.post<ValidateNameResponse>("/api/collections/validate-name", {
-      name,
-    });
+    return apiClient.post<ValidateNameResponse>(
+      "/api/collections/validate-name",
+      {
+        name,
+      }
+    );
   },
 };

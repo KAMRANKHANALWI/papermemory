@@ -11,6 +11,43 @@ class CollectionManager:
     def __init__(self):
         self.chroma_client = chromadb.PersistentClient(path="data/chroma_db")
         self.embedding_model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+        
+    def get_collection(self, collection_name: str, embedding_function):
+        """
+        Get a specific collection's vectorstore by name.
+        
+        Args:
+            collection_name: Name of the collection
+            embedding_function: Embedding function to use (from chat_service)
+            
+        Returns:
+            Chroma vectorstore instance or None if not found
+        """
+        try:
+            from langchain_chroma import Chroma
+            
+            # Check if collection exists
+            collections = self.chroma_client.list_collections()
+            collection_names = [col.name for col in collections]
+            
+            if collection_name not in collection_names:
+                print(f"Collection '{collection_name}' not found")
+                return None
+            
+            # Load the collection
+            vectorstore = Chroma(
+                client=self.chroma_client,
+                collection_name=collection_name,
+                embedding_function=embedding_function,
+            )
+            
+            return vectorstore
+            
+        except Exception as e:
+            import traceback
+            print(f"❌ Error getting collection {collection_name}: {e}")
+            print(f"❌ Traceback: {traceback.format_exc()}")
+            return None
     
     def get_all_collections(self) -> List[Dict]:
         """Get all collections with metadata"""
@@ -46,6 +83,40 @@ class CollectionManager:
             return collection_info
         except:
             return []
+        
+    def get_all_collections_vectorstores(self, embedding_function) -> Dict:
+        """
+        Get all collections with their vectorstores.
+        
+        Args:
+            embedding_function: Embedding function to use (from chat_service)
+        
+        Returns:
+            Dict mapping collection_name -> vectorstore
+        """
+        try:
+            from langchain_chroma import Chroma
+            
+            all_collections = {}
+            collections = self.chroma_client.list_collections()
+            
+            for collection in collections:
+                try:
+                    vectorstore = Chroma(
+                        client=self.chroma_client,
+                        collection_name=collection.name,
+                        embedding_function=embedding_function,
+                    )
+                    all_collections[collection.name] = vectorstore
+                except Exception as e:
+                    print(f"Error loading collection {collection.name}: {e}")
+                    continue
+            
+            return all_collections
+            
+        except Exception as e:
+            print(f"Error getting all collections: {e}")
+            return {}
     
     def delete_collection(self, collection_name: str):
         """Delete a collection"""

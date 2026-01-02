@@ -3,7 +3,6 @@
 
 import { useRef } from "react";
 import { CloudArrowUpIcon } from "@heroicons/react/24/outline";
-import Button from "../UI/Button";
 
 interface UploadButtonProps {
   onFilesSelected: (files: File[]) => void;
@@ -17,7 +16,9 @@ export default function UploadButton({
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleClick = () => {
-    fileInputRef.current?.click();
+    if (!disabled) {
+      fileInputRef.current?.click();
+    }
   };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -38,16 +39,24 @@ export default function UploadButton({
         accept=".pdf"
         onChange={handleFileChange}
         className="hidden"
+        disabled={disabled}
       />
-      <Button
+      <button
         onClick={handleClick}
         disabled={disabled}
-        variant="primary"
-        className="w-full"
+        className={`
+          w-full flex items-center gap-2.5 px-2.5 py-2 rounded-lg text-[15px]
+          transition-all duration-150 cursor-pointer active:bg-stone-300
+          ${
+            disabled
+              ? "text-gray-400 cursor-not-allowed"
+              : "text-black hover:bg-stone-100"
+          }
+        `}
       >
-        <CloudArrowUpIcon className="h-5 w-5 mr-2" />
-        Upload PDFs
-      </Button>
+        <CloudArrowUpIcon className="w-6 h-6 flex-shrink-0" strokeWidth={1.5} />
+        <span>Upload PDFs</span>
+      </button>
     </>
   );
 }

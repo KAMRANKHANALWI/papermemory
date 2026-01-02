@@ -1,28 +1,35 @@
 // src/components/DocumentChat.tsx
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ToastProvider } from "@/contexts/ToastContext";
 import ToastContainer from "./UI/ToastContainer";
 import Sidebar from "./Sidebar/Sidebar";
 import ChatArea from "./Chat/ChatArea";
-import SmartUploadModal from "./Modals/SmartUploadModal";
-import CollectionManageModal from "./Modals/CollectionManageModal";
+import SmartUploadModal from "./Modals/SimpleUploadModal";
+import RenameCollectionModal from "./Modals/RenameCollectionModal";
 import PDFListModal from "./Modals/PDFListModal";
 import { useCollections } from "@/hooks/useCollections";
-import { useChat } from "@/hooks/useChat";
+import { useChat, ChatMode } from "@/hooks/useChat";
 import { useToast } from "@/hooks/useToast";
+import { usePDFSelection } from "@/hooks/usePDFSelection";
 
 function DocumentChatContent() {
   const [selectedCollection, setSelectedCollection] = useState<string | null>(null);
-  const [chatMode, setChatMode] = useState<"single" | "chatall">("single");
+  const [chatMode, setChatMode] = useState<ChatMode>("single");
+  
+  // PDF Selection Mode State
+  const [pdfSelectionMode, setPdfSelectionMode] = useState(false);
+  const sessionId = "user_session_123";
+  const { selectedPDFs } = usePDFSelection(sessionId);
   
   // Modal states
   const [uploadModalOpen, setUploadModalOpen] = useState(false);
-  const [manageModalOpen, setManageModalOpen] = useState(false);
+  const [renameModalOpen, setRenameModalOpen] = useState(false);
   const [pdfListModalOpen, setPdfListModalOpen] = useState(false);
+  const [addPDFsModalOpen, setAddPDFsModalOpen] = useState(false);
   const [pendingFiles, setPendingFiles] = useState<File[]>([]);
-  const [managingCollection, setManagingCollection] = useState<string | null>(null);
+  const [selectedCollectionForAction, setSelectedCollectionForAction] = useState<string | null>(null);
 
   const {
     collections,
@@ -34,23 +41,79 @@ function DocumentChatContent() {
   const { messages, isLoading: chatLoading, sendMessage, clearMessages } = useChat();
   const toast = useToast();
 
+  // 🐛 DEBUG: Monitor all state changes
+  useEffect(() => {
+    console.log('═══════════════════════════════════════════════');
+    console.log('📊 STATE UPDATE:');
+    console.log('   pdfSelectionMode:', pdfSelectionMode);
+    console.log('   chatMode:', chatMode);
+    console.log('   selectedPDFs.length:', selectedPDFs.length);
+    console.log('   selectedCollection:', selectedCollection);
+    console.log('═══════════════════════════════════════════════');
+  }, [pdfSelectionMode, chatMode, selectedPDFs.length, selectedCollection]);
+
+  // Handle PDF selection mode toggle
+  const handleTogglePDFMode = () => {
+    console.log('🔘 TOGGLE PDF MODE BUTTON CLICKED');
+    console.log('   Current pdfSelectionMode:', pdfSelectionMode);
+    
+    const newMode = !pdfSelectionMode;
+    
+    if (newMode) {
+      console.log('   ✅ Entering PDF selection mode');
+      // Entering PDF selection mode
+      setPdfSelectionMode(true);
+      setSelectedCollection(null); // Clear any selected collection
+      // Don't change chatMode - we'll override it in getDisplayMode
+      toast.info("Select PDFs from collections");
+    } else {
+      console.log('   ❌ Exiting PDF selection mode');
+      // Exiting PDF selection mode - switch back to single mode
+      setPdfSelectionMode(false);
+      setChatMode("single");
+      toast.info("Switched to single collection mode");
+    }
+  };
+
   // Handle collection selection
   const handleSelectCollection = (name: string) => {
+    console.log('📁 COLLECTION SELECTED:', name);
+    console.log('   Exiting PDF selection mode (if active)');
+    
+    // Selecting a collection exits PDF selection mode
+    setPdfSelectionMode(false);
     setSelectedCollection(name);
-    if (chatMode === "chatall") {
-      setChatMode("single");
-    }
+    setChatMode("single");
   };
 
-  // Handle chat mode change
-  const handleChatModeChange = (mode: "single" | "chatall") => {
+  // Handle chat mode change (Single Collection or All Collections buttons)
+  const handleChatModeChange = (mode: ChatMode) => {
+    console.log('🔄 CHAT MODE CHANGE:', mode);
+    console.log('   Previous mode:', chatMode);
+    console.log('   PDF selection mode active:', pdfSelectionMode);
+    
+    if (mode === "selected") {
+      console.log('   ⚠️ Ignoring "selected" mode - use handleTogglePDFMode instead');
+      return; // Don't allow direct setting of "selected" mode
+    }
+    
+    // Exit PDF selection mode when switching to single or chatall
+    if (pdfSelectionMode) {
+      console.log('   ❌ Exiting PDF selection mode');
+      setPdfSelectionMode(false);
+    }
+    
     setChatMode(mode);
+    
     if (mode === "chatall") {
       setSelectedCollection(null);
+      toast.info("Searching all collections");
+    } else if (mode === "single") {
+      toast.info("Single collection mode");
     }
   };
 
-  // Handle file upload
+  // Handle file upload for new collection
   const handleFilesSelected = (files: File[]) => {
     setPendingFiles(files);
     setUploadModalOpen(true);
@@ -61,49 +124,40 @@ function DocumentChatContent() {
     fetchCollections();
   };
 
-  // Handle collection deletion
-  const handleDeleteCollection = async (name: string) => {
-    if (confirm(`Delete collection "${name}"? This cannot be undone.`)) {
-      try {
-        await deleteCollection(name);
-        if (selectedCollection === name) {
-          setSelectedCollection(null);
-        }
-      } catch (error) {
-        console.error("Delete failed:", error);
-      }
-    }
-  };
-
   // Handle collection management
   const handleManageCollection = (name: string) => {
-    setManagingCollection(name);
-    setManageModalOpen(true);
+    setSelectedCollectionForAction(name);
   };
 
-  const handleViewPDFs = () => {
-    if (managingCollection) {
-      setManageModalOpen(false);
-      setPdfListModalOpen(true);
-    }
+  // Handle rename collection
+  const handleRenameCollection = (name: string) => {
+    setSelectedCollectionForAction(name);
+    setRenameModalOpen(true);
   };
 
-  const handleAddPDFsToCollection = () => {
+  // Handle view PDFs
+  const handleListPDFs = (name: string) => {
+    setSelectedCollectionForAction(name);
+    setPdfListModalOpen(true);
+  };
+
+  // Handle add PDFs to existing collection
+  const handleAddPDFs = (name: string) => {
+    setSelectedCollectionForAction(name);
+    
     const input = document.createElement("input");
     input.type = "file";
     input.multiple = true;
     input.accept = ".pdf";
     input.onchange = (e: any) => {
       const files = Array.from(e.target.files || []) as File[];
-      if (files.length > 0 && managingCollection) {
-        // Upload directly to the collection
+      if (files.length > 0) {
         import("@/lib/api/collections").then(({ collectionsApi }) => {
           collectionsApi
-            .addPDFs(managingCollection, files)
+            .addPDFs(name, files)
             .then(() => {
-              toast.success(`Added ${files.length} files to ${managingCollection}`);
+              toast.success(`Added ${files.length} file(s) to "${name}"`);
               fetchCollections();
-              setManageModalOpen(false);
             })
             .catch((error) => {
               toast.error(error.message || "Failed to add files");
@@ -114,38 +168,134 @@ function DocumentChatContent() {
     input.click();
   };
 
-  // Handle message send
+  // Handle delete collection
+  const handleDeleteCollection = async (name: string) => {
+    const confirmed = window.confirm(
+      `Are you sure you want to delete "${name}"?\n\nThis will permanently delete:\n• All PDFs in this collection\n• All associated chunks and embeddings\n\nThis action cannot be undone!`
+    );
+
+    if (!confirmed) return;
+
+    try {
+      await deleteCollection(name);
+      toast.success(`Collection "${name}" deleted`);
+      
+      if (selectedCollection === name) {
+        setSelectedCollection(null);
+      }
+      
+      fetchCollections();
+    } catch (error: any) {
+      console.error("Delete failed:", error);
+      toast.error(error.message || "Failed to delete collection");
+    }
+  };
+
+  // Enhanced message send handler with PDF selection mode support
   const handleSendMessage = (message: string) => {
-    sendMessage(message, selectedCollection, chatMode);
+    console.log('💬 SEND MESSAGE ATTEMPT');
+    console.log('   Message:', message);
+    console.log('   pdfSelectionMode:', pdfSelectionMode);
+    console.log('   selectedPDFs.length:', selectedPDFs.length);
+    console.log('   chatMode:', chatMode);
+    console.log('   selectedCollection:', selectedCollection);
+    
+    // Determine the actual chat mode based on PDF selection state
+    if (pdfSelectionMode && selectedPDFs.length > 0) {
+      console.log('   ✅ Using SELECTED PDFs mode');
+      sendMessage(message, null, "selected", sessionId);
+    } else if (pdfSelectionMode && selectedPDFs.length === 0) {
+      console.log('   ⚠️ PDF mode active but no PDFs selected');
+      toast.warning("Please select PDFs first");
+      return;
+    } else if (chatMode === "single" && selectedCollection) {
+      console.log('   ✅ Using SINGLE collection mode:', selectedCollection);
+      sendMessage(message, selectedCollection, "single");
+    } else if (chatMode === "chatall") {
+      console.log('   ✅ Using CHAT ALL mode');
+      sendMessage(message, null, "chatall");
+    } else {
+      console.log('   ❌ Invalid state - no valid mode');
+      toast.warning("Please select a collection or PDFs first");
+      return;
+    }
+  };
+
+  // Determine the display mode for ChatArea
+  const getDisplayMode = (): "single" | "chatall" | "selected" => {
+    console.log('🎯 getDisplayMode called:');
+    console.log('   pdfSelectionMode:', pdfSelectionMode);
+    console.log('   selectedPDFs.length:', selectedPDFs.length);
+    console.log('   chatMode:', chatMode);
+    
+    // Priority 1: If PDF selection mode is active AND PDFs are selected
+    if (pdfSelectionMode && selectedPDFs.length > 0) {
+      console.log('   ✅ Returning "selected"');
+      return "selected";
+    }
+    
+    // Priority 2: Return the current chat mode
+    console.log('   ➡️ Returning chatMode:', chatMode);
+    return chatMode as "single" | "chatall";
+  };
+
+  // Determine if input should be disabled
+  const isInputDisabled = () => {
+    if (pdfSelectionMode) {
+      // In PDF selection mode, only disabled if no PDFs selected
+      const disabled = selectedPDFs.length === 0;
+      console.log('🔒 Input disabled check (PDF mode):', disabled);
+      return disabled;
+    }
+    
+    if (chatMode === "single") {
+      // In single mode, disabled if no collection selected
+      const disabled = !selectedCollection;
+      console.log('🔒 Input disabled check (single mode):', disabled);
+      return disabled;
+    }
+    
+    // In chatall mode, never disabled
+    console.log('🔒 Input disabled check (chatall mode): false');
+    return false;
   };
 
   return (
     <div className="h-screen flex bg-gray-50 overflow-hidden">
-      {/* Sidebar with Toggle */}
+      {/* Sidebar with all callbacks */}
       <Sidebar
         collections={collections}
         selectedCollection={selectedCollection}
         chatMode={chatMode}
         onSelectCollection={handleSelectCollection}
-        onDeleteCollection={handleDeleteCollection}
         onManageCollection={handleManageCollection}
+        onRenameCollection={handleRenameCollection}
+        onListPDFs={handleListPDFs}
+        onAddPDFs={handleAddPDFs}
+        onDeleteCollection={handleDeleteCollection}
         onUploadClick={handleFilesSelected}
         onChatModeChange={handleChatModeChange}
         onClearChat={clearMessages}
+        pdfSelectionMode={pdfSelectionMode}
+        onTogglePDFMode={handleTogglePDFMode}
       />
 
       {/* Chat Area - Takes remaining space */}
       <div className="flex-1 flex flex-col min-w-0">
         <ChatArea
           messages={messages}
-          isLoading={chatLoading}
+          isLoading={chatLoading || isInputDisabled()}
           selectedCollection={selectedCollection}
-          chatMode={chatMode}
+          chatMode={getDisplayMode()}
           onSendMessage={handleSendMessage}
+          pdfSelectionMode={pdfSelectionMode}
+          selectedPDFsCount={selectedPDFs.length}
         />
       </div>
 
       {/* Modals */}
+      
+      {/* Upload Modal - For new collections */}
       <SmartUploadModal
         isOpen={uploadModalOpen}
         onClose={() => setUploadModalOpen(false)}
@@ -153,22 +303,28 @@ function DocumentChatContent() {
         onUploadComplete={handleUploadComplete}
       />
 
-      {managingCollection && (
-        <>
-          <CollectionManageModal
-            isOpen={manageModalOpen}
-            onClose={() => setManageModalOpen(false)}
-            collectionName={managingCollection}
-            onViewPDFs={handleViewPDFs}
-            onAddPDFs={handleAddPDFsToCollection}
-          />
+      {/* Rename Modal */}
+      {selectedCollectionForAction && renameModalOpen && (
+        <RenameCollectionModal
+          isOpen={renameModalOpen}
+          onClose={() => {
+            setRenameModalOpen(false);
+            setSelectedCollectionForAction(null);
+          }}
+          collectionName={selectedCollectionForAction}
+        />
+      )}
 
-          <PDFListModal
-            isOpen={pdfListModalOpen}
-            onClose={() => setPdfListModalOpen(false)}
-            collectionName={managingCollection}
-          />
-        </>
+      {/* PDF List Modal */}
+      {selectedCollectionForAction && pdfListModalOpen && (
+        <PDFListModal
+          isOpen={pdfListModalOpen}
+          onClose={() => {
+            setPdfListModalOpen(false);
+            setSelectedCollectionForAction(null);
+          }}
+          collectionName={selectedCollectionForAction}
+        />
       )}
 
       {/* Toast Container */}
