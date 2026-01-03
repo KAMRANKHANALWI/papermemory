@@ -284,7 +284,7 @@ function DocumentChatContent() {
       <div className="flex-1 flex flex-col min-w-0">
         <ChatArea
           messages={messages}
-          isLoading={chatLoading || isInputDisabled()}
+          isLoading={chatLoading}
           selectedCollection={selectedCollection}
           chatMode={getDisplayMode()}
           onSendMessage={handleSendMessage}

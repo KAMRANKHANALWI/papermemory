@@ -14,15 +14,17 @@
 //   ChevronRightIcon,
 // } from "@heroicons/react/24/outline";
 // import { useToast } from "@/hooks/useToast";
-// // New Import
+// import Badge from "../UI/Badge";
+
+// // NEW: PDF Selection imports
 // import { usePDFSelection } from "@/hooks/usePDFSelection";
 // import SelectedPDFsDisplay from "./SelectedPDFsDisplay";
-// import PDFCheckboxList from "./PDFCheckboxList";
+// import { ChatMode } from "@/hooks/useChat";
 
 // interface SidebarProps {
 //   collections: Collection[];
 //   selectedCollection: string | null;
-//   chatMode: "single" | "chatall";
+//   chatMode: ChatMode;
 //   onSelectCollection: (name: string) => void;
 //   onManageCollection: (name: string) => void;
 //   onRenameCollection: (name: string) => void;
@@ -30,8 +32,11 @@
 //   onAddPDFs: (name: string) => void;
 //   onDeleteCollection: (name: string) => void;
 //   onUploadClick: (files: File[]) => void;
-//   onChatModeChange: (mode: "single" | "chatall") => void;
+//   onChatModeChange: (mode: ChatMode) => void;
 //   onClearChat: () => void;
+//   // NEW: PDF Selection Mode props
+//   pdfSelectionMode?: boolean;
+//   onTogglePDFMode?: () => void;
 // }
 
 // export default function Sidebar({
@@ -47,10 +52,27 @@
 //   onUploadClick,
 //   onChatModeChange,
 //   onClearChat,
+//   pdfSelectionMode = false,
+//   onTogglePDFMode = () => {},
 // }: SidebarProps) {
 //   const [isMobileOpen, setIsMobileOpen] = useState(false);
 //   const [isCollapsed, setIsCollapsed] = useState(false);
 //   const toast = useToast();
+
+//   // NEW: Initialize PDF Selection Hook
+//   const sessionId = "user_session_123"; // You can make this dynamic based on user ID
+//   const {
+//     selectedPDFs,
+//     stats,
+//     togglePDF,
+//     clearSelection,
+//     deselectPDF,
+//   } = usePDFSelection(sessionId);
+
+//   // NEW: Create Set for quick lookup
+//   const selectedPDFsSet = new Set(
+//     selectedPDFs.map((pdf) => `${pdf.collection_name}:${pdf.filename}`)
+//   );
 
 //   return (
 //     <>
@@ -173,6 +195,31 @@
 //               <ChatBubbleLeftRightIcon className="w-6 h-6" strokeWidth={2} />
 //             </button>
 
+//             {/* NEW: PDF Selection Mode Icon */}
+//             <button
+//               onClick={onTogglePDFMode}
+//               className={`w-12 h-12 flex items-center justify-center rounded-xl transition-colors cursor-pointer ${
+//                 pdfSelectionMode
+//                   ? "bg-amber-100 text-amber-600"
+//                   : "bg-gray-100 text-gray-500 hover:bg-gray-200"
+//               }`}
+//               title="Select PDFs"
+//             >
+//               <svg
+//                 className="w-6 h-6"
+//                 fill="none"
+//                 stroke="currentColor"
+//                 viewBox="0 0 24 24"
+//                 strokeWidth={2}
+//               >
+//                 <path
+//                   strokeLinecap="round"
+//                   strokeLinejoin="round"
+//                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+//                 />
+//               </svg>
+//             </button>
+
 //             {/* Clear Chat Icon */}
 //             <button
 //               onClick={() => {
@@ -268,7 +315,7 @@
 //                   w-full flex items-center gap-2.5 px-2.5 py-2 rounded-lg text-[15px]
 //                   transition-all duration-150 cursor-pointer active:bg-stone-300
 //                   ${
-//                     chatMode === "single"
+//                     chatMode === "single" && !pdfSelectionMode
 //                       ? "bg-stone-200 text-black"
 //                       : "text-gray-900 hover:bg-stone-100"
 //                   }
@@ -296,7 +343,7 @@
 //                   w-full flex items-center gap-2.5 px-2.5 py-2 rounded-lg text-[15px]
 //                   transition-all duration-150 cursor-pointer active:bg-stone-300
 //                   ${
-//                     chatMode === "chatall"
+//                     chatMode === "chatall" && !pdfSelectionMode
 //                       ? "bg-stone-200 text-black"
 //                       : "text-gray-900 hover:bg-stone-100"
 //                   }
@@ -308,6 +355,41 @@
 //                 />
 //                 <span>All Collections</span>
 //               </button>
+
+//               {/* NEW: PDF Selection Mode Button */}
+//               <button
+//                 onClick={onTogglePDFMode}
+//                 className={`
+//                   w-full flex items-center gap-2.5 px-2.5 py-2 rounded-lg text-[15px]
+//                   transition-all duration-150 cursor-pointer active:bg-stone-300
+//                   ${
+//                     pdfSelectionMode
+//                       ? "bg-amber-100 text-amber-900"
+//                       : "text-gray-900 hover:bg-stone-100"
+//                   }
+//                 `}
+//               >
+//                 <svg
+//                   className="w-6 h-6 flex-shrink-0"
+//                   fill="none"
+//                   stroke="currentColor"
+//                   strokeWidth={1.5}
+//                   viewBox="0 0 24 24"
+//                 >
+//                   <path
+//                     strokeLinecap="round"
+//                     strokeLinejoin="round"
+//                     d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+//                   />
+//                 </svg>
+//                 <span>Select PDFs</span>
+//                 {selectedPDFs.length > 0 && (
+//                   <Badge variant="info" size="sm">
+//                     {selectedPDFs.length}
+//                   </Badge>
+//                 )}
+//               </button>
+
 //               <button
 //                 onClick={() => {
 //                   onClearChat();
@@ -335,19 +417,52 @@
 //               </button>
 //             </nav>
 
-//             {/* Collections List */}
-//             <div className="flex-1 min-h-0 overflow-hidden">
-//               <CollectionList
-//                 collections={collections}
-//                 selectedCollection={selectedCollection}
-//                 onSelectCollection={onSelectCollection}
-//                 onManageCollection={onManageCollection}
-//                 onRenameCollection={onRenameCollection}
-//                 onListPDFs={onListPDFs}
-//                 onAddPDFs={onAddPDFs}
-//                 onDeleteCollection={onDeleteCollection}
-//               />
-//             </div>
+//             {/* Main Content Area - Changes based on PDF Selection Mode */}
+//             {pdfSelectionMode ? (
+//               <>
+//                 {/* NEW: Selected PDFs Display - Top Section */}
+//                 <div className="flex-shrink-0 max-h-[45%] min-h-[200px] border-b border-gray-100 overflow-hidden flex flex-col">
+//                   <SelectedPDFsDisplay
+//                     selectedPDFs={selectedPDFs}
+//                     stats={stats}
+//                     onRemovePDF={deselectPDF}
+//                     onClearAll={clearSelection}
+//                   />
+//                 </div>
+
+//                 {/* NEW: Collections with PDF Checkboxes - Bottom Section */}
+//                 <div className="flex-1 min-h-0 overflow-hidden">
+//                   <CollectionList
+//                     collections={collections}
+//                     selectedCollection={selectedCollection}
+//                     onSelectCollection={onSelectCollection}
+//                     onManageCollection={onManageCollection}
+//                     onRenameCollection={onRenameCollection}
+//                     onListPDFs={onListPDFs}
+//                     onAddPDFs={onAddPDFs}
+//                     onDeleteCollection={onDeleteCollection}
+//                     pdfSelectionMode={true}
+//                     selectedPDFs={selectedPDFsSet}
+//                     onTogglePDF={togglePDF}
+//                   />
+//                 </div>
+//               </>
+//             ) : (
+//               /* Normal Mode - Regular Collections List */
+//               <div className="flex-1 min-h-0 overflow-hidden">
+//                 <CollectionList
+//                   collections={collections}
+//                   selectedCollection={selectedCollection}
+//                   onSelectCollection={onSelectCollection}
+//                   onManageCollection={onManageCollection}
+//                   onRenameCollection={onRenameCollection}
+//                   onListPDFs={onListPDFs}
+//                   onAddPDFs={onAddPDFs}
+//                   onDeleteCollection={onDeleteCollection}
+//                   pdfSelectionMode={false}
+//                 />
+//               </div>
+//             )}
 
 //             {/* Footer */}
 //             <div className="flex-shrink-0 px-3 py-2.5 border-t border-gray-100">
@@ -361,7 +476,6 @@
 //     </>
 //   );
 // }
-
 
 // src/components/Sidebar/Sidebar.tsx
 "use client";
@@ -680,7 +794,7 @@ export default function Sidebar({
                   w-full flex items-center gap-2.5 px-2.5 py-2 rounded-lg text-[15px]
                   transition-all duration-150 cursor-pointer active:bg-stone-300
                   ${
-                    chatMode === "single"
+                    chatMode === "single" && !pdfSelectionMode
                       ? "bg-stone-200 text-black"
                       : "text-gray-900 hover:bg-stone-100"
                   }
@@ -708,7 +822,7 @@ export default function Sidebar({
                   w-full flex items-center gap-2.5 px-2.5 py-2 rounded-lg text-[15px]
                   transition-all duration-150 cursor-pointer active:bg-stone-300
                   ${
-                    chatMode === "chatall"
+                    chatMode === "chatall" && !pdfSelectionMode
                       ? "bg-stone-200 text-black"
                       : "text-gray-900 hover:bg-stone-100"
                   }
@@ -785,8 +899,8 @@ export default function Sidebar({
             {/* Main Content Area - Changes based on PDF Selection Mode */}
             {pdfSelectionMode ? (
               <>
-                {/* NEW: Selected PDFs Display - Top Section */}
-                <div className="flex-shrink-0 max-h-[45%] min-h-[200px] border-b border-gray-100 overflow-hidden flex flex-col">
+                {/* NEW: Selected PDFs Display - Collapsible Header */}
+                <div className="flex-shrink-0 border-b border-gray-100">
                   <SelectedPDFsDisplay
                     selectedPDFs={selectedPDFs}
                     stats={stats}
@@ -795,7 +909,7 @@ export default function Sidebar({
                   />
                 </div>
 
-                {/* NEW: Collections with PDF Checkboxes - Bottom Section */}
+                {/* NEW: Collections with PDF Checkboxes - Takes Remaining Space */}
                 <div className="flex-1 min-h-0 overflow-hidden">
                   <CollectionList
                     collections={collections}

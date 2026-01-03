@@ -380,3 +380,6 @@ export function useChat() {
 
 // NEW: Export the ChatMode type for use in other components
 export type { ChatMode };
+
+
+

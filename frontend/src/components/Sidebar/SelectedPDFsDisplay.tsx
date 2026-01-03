@@ -1,19 +1,24 @@
 // src/components/Sidebar/SelectedPDFsDisplay.tsx
 "use client";
 
-import { SelectedPDF } from "@/lib/types/selection";
-import { XMarkIcon, DocumentTextIcon } from "@heroicons/react/24/outline";
-import Badge from "../UI/Badge";
+import { useState } from "react";
+import { ChevronDownIcon, ChevronUpIcon, XMarkIcon } from "@heroicons/react/24/outline";
+
+interface SelectedPDF {
+  filename: string;
+  collection_name: string;
+  title?: string;
+  page_count?: number;
+}
 
 interface SelectedPDFsDisplayProps {
   selectedPDFs: SelectedPDF[];
   stats: {
-    total_selected: number;
-    collections_involved: string[];
-    pdfs_by_collection: Record<string, number>;
-    total_chunks: number;
-    total_pages: number;
-  } | null;
+    total_selected?: number;
+    total_pages?: number;
+    total_chunks?: number;
+    collections?: Record<string, { count: number; pages: number; chunks?: number }>;
+  } | null | undefined;
   onRemovePDF: (filename: string, collectionName: string) => void;
   onClearAll: () => void;
 }
@@ -24,90 +29,167 @@ export default function SelectedPDFsDisplay({
   onRemovePDF,
   onClearAll,
 }: SelectedPDFsDisplayProps) {
-  if (selectedPDFs.length === 0) {
-    return (
-      <div className="px-3 py-4 text-center">
-        <DocumentTextIcon className="h-8 w-8 text-gray-300 mx-auto mb-2" />
-        <p className="text-[13px] text-gray-500 font-medium">No PDFs selected</p>
-        <p className="text-[12px] text-gray-400 mt-1">
-          Select PDFs from collections to search
-        </p>
-      </div>
-    );
-  }
+  // State to control collapse/expand
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const totalSelected = stats?.total_selected || selectedPDFs.length;
+  const totalPages = stats?.total_pages || 0;
+
+  // Group PDFs by collection for summary
+  const collectionSummary = selectedPDFs.reduce((acc, pdf) => {
+    const col = pdf.collection_name;
+    acc[col] = (acc[col] || 0) + 1;
+    return acc;
+  }, {} as Record<string, number>);
 
   return (
-    <div className="flex flex-col h-full">
-      {/* Header with Stats */}
-      <div className="flex-shrink-0 px-3 py-2 border-b border-gray-100">
-        <div className="flex items-center justify-between mb-2">
-          <div className="flex items-center gap-2">
-            <Badge variant="info" size="md">
-              {stats?.total_selected || 0} PDFs
-            </Badge>
-            <Badge variant="default" size="sm">
-              {stats?.total_pages || 0} pages
-            </Badge>
+    <div className="flex flex-col h-full bg-white">
+      {/* Header - Always Visible (Collapsible) */}
+      <button
+        onClick={() => setIsExpanded(!isExpanded)}
+        className="flex items-center justify-between px-4 py-3 hover:bg-gray-50 transition-colors cursor-pointer border-b border-gray-100"
+      >
+        <div className="flex items-center gap-3 flex-1 min-w-0">
+          {/* Icon */}
+          <div className="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
+            <svg
+              className="w-4 h-4 text-blue-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              />
+            </svg>
           </div>
-          <button
-            onClick={onClearAll}
-            className="text-[12px] text-red-600 hover:text-red-700 font-medium transition-colors"
-          >
-            Clear All
-          </button>
-        </div>
 
-        {/* Collections Involved */}
-        {stats && stats.collections_involved.length > 0 && (
-          <div className="flex flex-wrap gap-1">
-            {stats.collections_involved.map((collection) => (
-              <Badge key={collection} variant="default" size="sm">
-                {collection}: {stats.pdfs_by_collection[collection]}
-              </Badge>
-            ))}
-          </div>
-        )}
-      </div>
-
-      {/* Selected PDFs List */}
-      <div className="flex-1 overflow-y-auto px-2 py-2 space-y-1.5">
-        {selectedPDFs.map((pdf) => (
-          <div
-            key={`${pdf.collection_name}:${pdf.filename}`}
-            className="group bg-white border border-gray-200 rounded-lg p-2.5 hover:border-gray-300 transition-all"
-          >
-            <div className="flex items-start justify-between gap-2">
-              <div className="flex-1 min-w-0">
-                <p className="text-[13px] font-medium text-gray-900 truncate">
-                  {pdf.filename}
-                </p>
-                <p className="text-[12px] text-gray-600 line-clamp-1 mt-0.5">
-                  {pdf.title}
-                </p>
-                <div className="flex items-center gap-1.5 mt-1.5">
-                  <Badge variant="info" size="sm">
-                    {pdf.collection_name}
-                  </Badge>
-                  <span className="text-[11px] text-gray-400">
-                    {pdf.pages}p • {pdf.chunks}c
-                  </span>
-                </div>
+          {/* Summary Text */}
+          <div className="flex-1 min-w-0 text-left">
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-semibold text-gray-900">
+                {totalSelected} PDF{totalSelected !== 1 ? "s" : ""}
+              </span>
+              <span className="text-xs text-gray-400">•</span>
+              <span className="text-xs text-gray-500">
+                {totalPages} page{totalPages !== 1 ? "s" : ""}
+              </span>
+            </div>
+            
+            {/* Collections Summary (only when collapsed) */}
+            {!isExpanded && (
+              <div className="text-xs text-gray-400 truncate mt-0.5">
+                {Object.entries(collectionSummary)
+                  .map(([col, count]) => `${col}: ${count}`)
+                  .join(", ")}
               </div>
+            )}
+          </div>
 
-              {/* Remove Button */}
+          {/* Expand/Collapse Icon */}
+          <div className="flex-shrink-0">
+            {isExpanded ? (
+              <ChevronUpIcon className="w-5 h-5 text-gray-400" />
+            ) : (
+              <ChevronDownIcon className="w-5 h-5 text-gray-400" />
+            )}
+          </div>
+        </div>
+      </button>
+
+      {/* Expanded Content - Scrollable List */}
+      {isExpanded && (
+        <div className="flex-1 overflow-y-auto min-h-0">
+          {/* Clear All Button */}
+          {selectedPDFs.length > 0 && (
+            <div className="px-4 py-2 border-b border-gray-100">
               <button
-                onClick={() => onRemovePDF(pdf.filename, pdf.collection_name)}
-                className="flex-shrink-0 p-1 opacity-0 group-hover:opacity-100 
-                         text-gray-400 hover:text-red-600 hover:bg-red-50 
-                         rounded transition-all"
-                title="Remove PDF"
+                onClick={onClearAll}
+                className="text-xs text-red-500 hover:text-red-700 font-medium transition-colors"
               >
-                <XMarkIcon className="h-4 w-4" />
+                Clear All
               </button>
             </div>
+          )}
+
+          {/* PDF List */}
+          <div className="px-2 py-2 space-y-1">
+            {selectedPDFs.length === 0 ? (
+              <div className="text-center py-8 text-gray-400 text-sm">
+                No PDFs selected
+              </div>
+            ) : (
+              selectedPDFs.map((pdf, index) => (
+                <div
+                  key={`${pdf.collection_name}-${pdf.filename}-${index}`}
+                  className="group flex items-start gap-2 p-2 rounded-lg hover:bg-gray-50 transition-colors"
+                >
+                  {/* PDF Icon */}
+                  <div className="flex-shrink-0 mt-0.5">
+                    <svg
+                      className="w-4 h-4 text-red-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+
+                  {/* PDF Info */}
+                  <div className="flex-1 min-w-0">
+                    <div className="text-xs font-medium text-gray-900 truncate">
+                      {pdf.title || pdf.filename}
+                    </div>
+                    <div className="flex items-center gap-2 mt-0.5">
+                      <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-medium bg-blue-50 text-blue-700">
+                        {pdf.collection_name}
+                      </span>
+                      {pdf.page_count && pdf.page_count > 0 && (
+                        <span className="text-[10px] text-gray-400">
+                          {pdf.page_count}p
+                        </span>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Remove Button */}
+                  <button
+                    onClick={() =>
+                      onRemovePDF(pdf.filename, pdf.collection_name)
+                    }
+                    className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity"
+                    title="Remove PDF"
+                  >
+                    <XMarkIcon className="w-4 h-4 text-gray-400 hover:text-red-500 transition-colors" />
+                  </button>
+                </div>
+              ))
+            )}
           </div>
-        ))}
-      </div>
+        </div>
+      )}
+
+      {/* Stats Footer (when expanded) */}
+      {isExpanded && selectedPDFs.length > 0 && (
+        <div className="flex-shrink-0 px-4 py-2 border-t border-gray-100 bg-gray-50">
+          <div className="flex items-center justify-between text-xs">
+            <span className="text-gray-500">
+              {Object.keys(collectionSummary).length} collection
+              {Object.keys(collectionSummary).length !== 1 ? "s" : ""}
+            </span>
+            <span className="text-gray-500">
+              {totalPages} total pages
+            </span>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
