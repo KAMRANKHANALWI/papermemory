@@ -13,9 +13,10 @@ from src.utils.pdf_processor import process_pdf_with_pymupdf, chunk_text_content
 
 
 class DocumentProcessor:
-    def __init__(self):
+    def __init__(self, pdf_storage=None):  # ✅ NEW: Accept pdf_storage
         self.embedding_model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
         self.chroma_client = chromadb.PersistentClient(path="data/chroma_db")
+        self.pdf_storage = pdf_storage  # ✅ NEW: Store reference to pdf_storage
         
     async def process_files(self, files: List[UploadFile], collection_name: str):
         """Process uploaded PDF files with rich metadata"""
@@ -25,11 +26,21 @@ class DocumentProcessor:
         for file in files:
             if not file.filename.lower().endswith('.pdf'):
                 continue
-                
-            # Save temporarily
+            
+            # ✅ NEW: Read file content once
+            content = await file.read()
+            
+            # ✅ NEW: Save original PDF to disk (if pdf_storage is available)
+            if self.pdf_storage:
+                try:
+                    self.pdf_storage.save_pdf(content, collection_name, file.filename)
+                    print(f"✅ Saved PDF to storage: {file.filename}")
+                except Exception as e:
+                    print(f"⚠️ Failed to save PDF {file.filename}: {e}")
+            
+            # Save temporarily for processing
             with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp_file:
-                content = await file.read()
-                tmp_file.write(content)
+                tmp_file.write(content)  # ✅ CHANGED: Use content we already read
                 tmp_path = tmp_file.name
             
             # Process PDF

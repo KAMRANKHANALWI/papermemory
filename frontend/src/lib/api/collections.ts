@@ -15,6 +15,8 @@ import type {
   OperationResponse,
 } from "../types/api";
 
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+
 export const collectionsApi = {
   // Get all collections
   async getAll(): Promise<Collection[]> {
@@ -94,6 +96,21 @@ export const collectionsApi = {
       old_filename: oldFilename,
       new_filename: newFilename,
     });
+  },
+
+  // ✅ NEW: View/Open PDF in new tab
+  viewPDF(collectionName: string, filename: string): void {
+    const encoded = encodeURIComponent(filename);
+    const url = `${API_BASE_URL}/api/collections/${collectionName}/pdfs/${encoded}/view`;
+    
+    // Open PDF in new tab
+    window.open(url, '_blank', 'noopener,noreferrer');
+  },
+
+  // ✅ NEW: Get PDF URL (useful for iframe or custom rendering)
+  getPDFUrl(collectionName: string, filename: string): string {
+    const encoded = encodeURIComponent(filename);
+    return `${API_BASE_URL}/api/collections/${collectionName}/pdfs/${encoded}/view`;
   },
 
   // Generate collection name

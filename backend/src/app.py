@@ -3,7 +3,7 @@ FastAPI Application with Complete RAG Features
 """
 
 # from fastapi import FastAPI, UploadFile, File, Query, HTTPException
-from fastapi import FastAPI, UploadFile, File, Query, HTTPException, Body
+from fastapi import FastAPI, UploadFile, File, Query, HTTPException, Body, APIRouter
 from fastapi.responses import StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Optional
@@ -11,6 +11,9 @@ import uuid
 import logging
 import time
 import json
+from fastapi.responses import Response, FileResponse
+import mimetypes
+
 
 
 
@@ -24,6 +27,9 @@ from src.services.file_search_service import FileSearchService
 from src.services.naming_service import NamingService
 from src.services.memory_service import MemoryService
 from src.utils.response_generator import generate_chat_response
+from src.services.pdf_storage_service import PDFStorageService
+
+# from src.utils.pdf_storage import PDFStorageManager
 
 # New Custom Select
 from src.services.pdf_selection_service import PDFSelectionService, SelectedPDF
@@ -79,7 +85,7 @@ app.add_middleware(
 )
 
 # Initialize services
-document_processor = DocumentProcessor()
+# document_processor = DocumentProcessor()
 chat_service = ChatService()
 collection_manager = CollectionManager()
 metadata_service = MetadataService()
@@ -89,6 +95,35 @@ memory_service = MemoryService()
 query_classifier = QueryClassifier(chat_service.llm)
 # Initialize PDF Selection Service
 pdf_selection_service = PDFSelectionService()
+# New Local
+router = APIRouter()
+chat_service = ChatService()
+# PDF Storage Manager - for storing/serving original PDFs
+pdf_storage = PDFStorageService(base_path="data/pdfs")
+document_processor = DocumentProcessor(pdf_storage=pdf_storage)
+
+
+
+# Local api stuff check:
+@router.get("/api/model-info")
+async def get_model_info():
+    """
+    Get information about the currently configured LLM.
+    
+    Returns:
+        Dict with model provider, model name, and whether it's local
+    """
+    try:
+        model_info = chat_service.get_model_info()
+        return {
+            "status": "success",
+            "model_info": model_info
+        }
+    except Exception as e:
+        return {
+            "status": "error",
+            "message": str(e)
+        }
 
 
 # ============================================================================
@@ -123,10 +158,22 @@ async def upload_documents(collection_name: str, files: List[UploadFile] = File(
         raise HTTPException(status_code=500, detail=str(e))
 
 
+# @app.delete("/api/collections/{collection_name}")
+# async def delete_collection(collection_name: str):
+#     """Delete a collection"""
+#     return collection_manager.delete_collection(collection_name)
+
 @app.delete("/api/collections/{collection_name}")
 async def delete_collection(collection_name: str):
-    """Delete a collection"""
-    return collection_manager.delete_collection(collection_name)
+    """Delete an entire collection"""
+    
+    # Delete from vector database
+    result = collection_manager.delete_collection(collection_name)
+    
+    # ✅ NEW: Also delete all PDF files
+    pdf_storage.delete_collection_pdfs(collection_name)
+    
+    return result
 
 
 @app.put("/api/collections/rename", response_model=OperationResponse)
@@ -148,22 +195,87 @@ async def add_pdfs_to_collection(
         raise HTTPException(status_code=500, detail=str(e))
 
 
+# @app.delete("/api/collections/{collection_name}/pdfs/{filename}")
+# async def delete_pdf_from_collection(collection_name: str, filename: str):
+#     """Delete a specific PDF from a collection"""
+#     result = collection_manager.delete_pdf_from_collection(collection_name, filename)
+#     if result["status"] == "error":
+#         raise HTTPException(status_code=404, detail=result["message"])
+#     return result
+
 @app.delete("/api/collections/{collection_name}/pdfs/{filename}")
 async def delete_pdf_from_collection(collection_name: str, filename: str):
     """Delete a specific PDF from a collection"""
+    
+    # Delete from vector database
     result = collection_manager.delete_pdf_from_collection(collection_name, filename)
+    
+    # ✅ NEW: Also delete the stored PDF file
+    pdf_deleted = pdf_storage.delete_pdf(collection_name, filename)
+    
     if result["status"] == "error":
         raise HTTPException(status_code=404, detail=result["message"])
-    return result
+    
+    return {
+        **result,
+        "pdf_file_deleted": pdf_deleted
+    }
+
+
+# @app.put("/api/collections/pdfs/rename", response_model=OperationResponse)
+# async def rename_pdf_in_collection(request: RenamePDFRequest):
+#     """Rename a PDF within a collection"""
+#     result = collection_manager.rename_pdf_in_collection(
+#         request.collection_name, request.old_filename, request.new_filename
+#     )
+#     return OperationResponse(**result)
 
 
 @app.put("/api/collections/pdfs/rename", response_model=OperationResponse)
 async def rename_pdf_in_collection(request: RenamePDFRequest):
     """Rename a PDF within a collection"""
+    
+    # Rename in vector database
     result = collection_manager.rename_pdf_in_collection(
         request.collection_name, request.old_filename, request.new_filename
     )
+    
+    # ✅ NEW: Also rename the stored PDF file
+    pdf_renamed = pdf_storage.rename_pdf(
+        request.collection_name, 
+        request.old_filename, 
+        request.new_filename
+    )
+    
     return OperationResponse(**result)
+
+
+# "VIEW PDF" ENDPOINT:
+
+@app.get("/api/collections/{collection_name}/pdfs/{filename}/view")
+async def view_pdf(collection_name: str, filename: str):
+    """
+    Serve PDF file for viewing in browser.
+    Opens PDF in a new tab.
+    """
+    # Get PDF path
+    pdf_path = pdf_storage.get_pdf_path(collection_name, filename)
+    
+    if not pdf_path:
+        raise HTTPException(
+            status_code=404, 
+            detail=f"PDF '{filename}' not found in collection '{collection_name}'"
+        )
+    
+    # Return PDF file
+    return FileResponse(
+        path=pdf_path,
+        media_type="application/pdf",
+        filename=filename,
+        headers={
+            "Content-Disposition": f"inline; filename={filename}"
+        }
+    )
 
 
 # ============================================================================
@@ -275,6 +387,7 @@ async def get_all_pdfs():
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+    
 
 
 # ============================================================================
@@ -462,24 +575,24 @@ async def search_file_all_collections(request: FileSearchRequest):
 # ============================================================================
 
 
-@app.post("/api/collections/generate-name", response_model=GenerateNameResponse)
-async def generate_collection_name(request: GenerateNameRequest):
-    """Generate a smart collection name from filenames"""
-    try:
-        suggested_name = naming_service.generate_smart_collection_name(
-            request.filenames, request.upload_type
-        )
+# @app.post("/api/collections/generate-name", response_model=GenerateNameResponse)
+# async def generate_collection_name(request: GenerateNameRequest):
+#     """Generate a smart collection name from filenames"""
+#     try:
+#         suggested_name = naming_service.generate_smart_collection_name(
+#             request.filenames, request.upload_type
+#         )
 
-        # Validate the generated name
-        is_valid, validated_name, message = naming_service.validate_name(suggested_name)
+#         # Validate the generated name
+#         is_valid, validated_name, message = naming_service.validate_name(suggested_name)
 
-        return GenerateNameResponse(
-            suggested_name=validated_name if is_valid else suggested_name,
-            is_valid=is_valid,
-            validation_message=message if not is_valid else None,
-        )
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+#         return GenerateNameResponse(
+#             suggested_name=validated_name if is_valid else suggested_name,
+#             is_valid=is_valid,
+#             validation_message=message if not is_valid else None,
+#         )
+#     except Exception as e:
+#         raise HTTPException(status_code=500, detail=str(e))
 
 
 @app.post("/api/collections/validate-name", response_model=ValidateNameResponse)
