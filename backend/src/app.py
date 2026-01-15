@@ -556,26 +556,6 @@ async def search_file_all_collections(request: FileSearchRequest):
 # ============================================================================
 
 
-# @app.post("/api/collections/generate-name", response_model=GenerateNameResponse)
-# async def generate_collection_name(request: GenerateNameRequest):
-#     """Generate a smart collection name from filenames"""
-#     try:
-#         suggested_name = naming_service.generate_smart_collection_name(
-#             request.filenames, request.upload_type
-#         )
-
-#         # Validate the generated name
-#         is_valid, validated_name, message = naming_service.validate_name(suggested_name)
-
-#         return GenerateNameResponse(
-#             suggested_name=validated_name if is_valid else suggested_name,
-#             is_valid=is_valid,
-#             validation_message=message if not is_valid else None,
-#         )
-#     except Exception as e:
-#         raise HTTPException(status_code=500, detail=str(e))
-
-
 @app.post("/api/collections/validate-name", response_model=ValidateNameResponse)
 async def validate_collection_name(request: ValidateNameRequest):
     """Validate a collection name"""
