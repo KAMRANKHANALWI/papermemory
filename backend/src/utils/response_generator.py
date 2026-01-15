@@ -310,7 +310,7 @@ async def handle_file_specific_search(
             )
 
             context, search_results, found = file_search_service.search_specific_file(
-                vectorstore, filename, message, num_results=25
+                vectorstore, filename, message, num_results=25, collection_name=collection_name
             )
 
             if not found:
@@ -328,6 +328,7 @@ async def handle_file_specific_search(
             {
                 "content": result["content"],
                 "filename": result["filename"],
+                "collection": result.get("collection"),
                 "collection": result.get("collection"),
                 "similarity": result["similarity"],
                 "page_numbers": result.get("pages"),
@@ -423,6 +424,8 @@ async def handle_content_search(
                         "title": doc.metadata.get("title", "No Title"),
                         "pages": doc.metadata.get("page_numbers", "[]"),
                         "similarity": round(1 - score, 4),
+                        # "collection": col.name,
+                        "collection": collection_name,
                     }
                 )
 

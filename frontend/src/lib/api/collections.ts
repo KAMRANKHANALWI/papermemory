@@ -98,7 +98,7 @@ export const collectionsApi = {
     });
   },
 
-  // ✅ NEW: View/Open PDF in new tab
+  // View/Open PDF in new tab
   viewPDF(collectionName: string, filename: string): void {
     const encoded = encodeURIComponent(filename);
     const url = `${API_BASE_URL}/api/collections/${collectionName}/pdfs/${encoded}/view`;
@@ -107,7 +107,7 @@ export const collectionsApi = {
     window.open(url, '_blank', 'noopener,noreferrer');
   },
 
-  // ✅ NEW: Get PDF URL (useful for iframe or custom rendering)
+  // Get PDF URL (useful for iframe or custom rendering)
   getPDFUrl(collectionName: string, filename: string): string {
     const encoded = encodeURIComponent(filename);
     return `${API_BASE_URL}/api/collections/${collectionName}/pdfs/${encoded}/view`;

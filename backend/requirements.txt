@@ -13,3 +13,4 @@ python-dotenv
 sentence-transformers
 httpx
 langchain-ollama
+ragas

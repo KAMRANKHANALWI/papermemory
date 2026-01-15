@@ -13,7 +13,8 @@ class FileSearchService:
         vectorstore: Chroma,
         filename: str,
         query: str,
-        num_results: int = 25
+        num_results: int = 25,
+        collection_name: Optional[str] = None  
     ) -> Tuple[str, List[Dict], bool]:
         """
         Search for content within a specific PDF file.
@@ -23,6 +24,7 @@ class FileSearchService:
             filename: Name of the specific PDF file
             query: User's query
             num_results: Number of chunks to retrieve
+            collection_name: Optional collection name to include in results
         
         Returns:
             Tuple of (context, search_results, file_found)
@@ -59,13 +61,19 @@ class FileSearchService:
                     source += f"\nTitle: {title}"
                 
                 context_parts.append(f"{doc.page_content}\n{source}")
-                search_results.append({
+                
+                result_dict = {
                     "content": doc.page_content,
                     "filename": doc_filename,
                     "title": title,
                     "pages": page_numbers,
                     "similarity": round(1 - score, 4),
-                })
+                }
+                
+                if collection_name:
+                    result_dict["collection"] = collection_name
+                
+                search_results.append(result_dict)
             
             context = "\n\n".join(context_parts)
             return context, search_results, True
@@ -95,15 +103,12 @@ class FileSearchService:
         """
         try:
             for collection_name, vectorstore in all_collections.items():
-                # Try to find the file in this collection
+
                 context, search_results, found = FileSearchService.search_specific_file(
-                    vectorstore, filename, query, num_results
+                    vectorstore, filename, query, num_results, collection_name=collection_name
                 )
                 
                 if found:
-                    # Add collection info to results
-                    for result in search_results:
-                        result["collection"] = collection_name
                     return context, search_results, True, collection_name
             
             # File not found in any collection

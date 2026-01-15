@@ -15,8 +15,6 @@ from fastapi.responses import Response, FileResponse
 import mimetypes
 
 
-
-
 # Services
 from src.services.document_processor import DocumentProcessor
 from src.services.chat_service import ChatService
@@ -195,14 +193,6 @@ async def add_pdfs_to_collection(
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# @app.delete("/api/collections/{collection_name}/pdfs/{filename}")
-# async def delete_pdf_from_collection(collection_name: str, filename: str):
-#     """Delete a specific PDF from a collection"""
-#     result = collection_manager.delete_pdf_from_collection(collection_name, filename)
-#     if result["status"] == "error":
-#         raise HTTPException(status_code=404, detail=result["message"])
-#     return result
-
 @app.delete("/api/collections/{collection_name}/pdfs/{filename}")
 async def delete_pdf_from_collection(collection_name: str, filename: str):
     """Delete a specific PDF from a collection"""
@@ -210,7 +200,7 @@ async def delete_pdf_from_collection(collection_name: str, filename: str):
     # Delete from vector database
     result = collection_manager.delete_pdf_from_collection(collection_name, filename)
     
-    # ✅ NEW: Also delete the stored PDF file
+    # Also delete the stored PDF file
     pdf_deleted = pdf_storage.delete_pdf(collection_name, filename)
     
     if result["status"] == "error":
@@ -222,15 +212,6 @@ async def delete_pdf_from_collection(collection_name: str, filename: str):
     }
 
 
-# @app.put("/api/collections/pdfs/rename", response_model=OperationResponse)
-# async def rename_pdf_in_collection(request: RenamePDFRequest):
-#     """Rename a PDF within a collection"""
-#     result = collection_manager.rename_pdf_in_collection(
-#         request.collection_name, request.old_filename, request.new_filename
-#     )
-#     return OperationResponse(**result)
-
-
 @app.put("/api/collections/pdfs/rename", response_model=OperationResponse)
 async def rename_pdf_in_collection(request: RenamePDFRequest):
     """Rename a PDF within a collection"""
@@ -240,7 +221,7 @@ async def rename_pdf_in_collection(request: RenamePDFRequest):
         request.collection_name, request.old_filename, request.new_filename
     )
     
-    # ✅ NEW: Also rename the stored PDF file
+    # Also rename the stored PDF file
     pdf_renamed = pdf_storage.rename_pdf(
         request.collection_name, 
         request.old_filename, 
