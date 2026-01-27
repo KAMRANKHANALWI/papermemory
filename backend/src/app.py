@@ -27,8 +27,6 @@ from src.services.memory_service import MemoryService
 from src.utils.response_generator import generate_chat_response
 from src.services.pdf_storage_service import PDFStorageService
 
-# from src.utils.pdf_storage import PDFStorageManager
-
 # New Custom Select
 from src.services.pdf_selection_service import PDFSelectionService, SelectedPDF
 from src.models.selection_models import (
@@ -101,27 +99,20 @@ pdf_storage = PDFStorageService(base_path="data/pdfs")
 document_processor = DocumentProcessor(pdf_storage=pdf_storage)
 
 
-
 # Local api stuff check:
 @router.get("/api/model-info")
 async def get_model_info():
     """
     Get information about the currently configured LLM.
-    
+
     Returns:
         Dict with model provider, model name, and whether it's local
     """
     try:
         model_info = chat_service.get_model_info()
-        return {
-            "status": "success",
-            "model_info": model_info
-        }
+        return {"status": "success", "model_info": model_info}
     except Exception as e:
-        return {
-            "status": "error",
-            "message": str(e)
-        }
+        return {"status": "error", "message": str(e)}
 
 
 # ============================================================================
@@ -161,16 +152,17 @@ async def upload_documents(collection_name: str, files: List[UploadFile] = File(
 #     """Delete a collection"""
 #     return collection_manager.delete_collection(collection_name)
 
+
 @app.delete("/api/collections/{collection_name}")
 async def delete_collection(collection_name: str):
     """Delete an entire collection"""
-    
+
     # Delete from vector database
     result = collection_manager.delete_collection(collection_name)
-    
+
     # ✅ NEW: Also delete all PDF files
     pdf_storage.delete_collection_pdfs(collection_name)
-    
+
     return result
 
 
@@ -196,42 +188,38 @@ async def add_pdfs_to_collection(
 @app.delete("/api/collections/{collection_name}/pdfs/{filename}")
 async def delete_pdf_from_collection(collection_name: str, filename: str):
     """Delete a specific PDF from a collection"""
-    
+
     # Delete from vector database
     result = collection_manager.delete_pdf_from_collection(collection_name, filename)
-    
+
     # Also delete the stored PDF file
     pdf_deleted = pdf_storage.delete_pdf(collection_name, filename)
-    
+
     if result["status"] == "error":
         raise HTTPException(status_code=404, detail=result["message"])
-    
-    return {
-        **result,
-        "pdf_file_deleted": pdf_deleted
-    }
+
+    return {**result, "pdf_file_deleted": pdf_deleted}
 
 
 @app.put("/api/collections/pdfs/rename", response_model=OperationResponse)
 async def rename_pdf_in_collection(request: RenamePDFRequest):
     """Rename a PDF within a collection"""
-    
+
     # Rename in vector database
     result = collection_manager.rename_pdf_in_collection(
         request.collection_name, request.old_filename, request.new_filename
     )
-    
+
     # Also rename the stored PDF file
     pdf_renamed = pdf_storage.rename_pdf(
-        request.collection_name, 
-        request.old_filename, 
-        request.new_filename
+        request.collection_name, request.old_filename, request.new_filename
     )
-    
+
     return OperationResponse(**result)
 
 
 # "VIEW PDF" ENDPOINT:
+
 
 @app.get("/api/collections/{collection_name}/pdfs/{filename}/view")
 async def view_pdf(collection_name: str, filename: str):
@@ -241,21 +229,19 @@ async def view_pdf(collection_name: str, filename: str):
     """
     # Get PDF path
     pdf_path = pdf_storage.get_pdf_path(collection_name, filename)
-    
+
     if not pdf_path:
         raise HTTPException(
-            status_code=404, 
-            detail=f"PDF '{filename}' not found in collection '{collection_name}'"
+            status_code=404,
+            detail=f"PDF '{filename}' not found in collection '{collection_name}'",
         )
-    
+
     # Return PDF file
     return FileResponse(
         path=pdf_path,
         media_type="application/pdf",
         filename=filename,
-        headers={
-            "Content-Disposition": f"inline; filename={filename}"
-        }
+        headers={"Content-Disposition": f"inline; filename={filename}"},
     )
 
 
@@ -368,7 +354,6 @@ async def get_all_pdfs():
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-    
 
 
 # ============================================================================
@@ -443,38 +428,6 @@ async def classify_query(request: QueryClassificationRequest):
             f"❌ Classification failed after {elapsed:.2f}ms: {e}", exc_info=True
         )
         raise HTTPException(status_code=500, detail=f"Classification error: {str(e)}")
-
-
-@app.get("/api/chat/single/{collection_name}/{message}")
-async def chat_single_collection(
-    collection_name: str, message: str, chat_id: Optional[str] = Query(None)
-):
-    """
-    Chat with a single collection.
-    Now properly handles all query types: list_pdfs, count_pdfs, file_specific_search, content_search
-    """
-    logger.info(
-        f"📥 Single collection chat: {collection_name} | Query: '{message[:50]}...'"
-    )
-
-    return StreamingResponse(
-        generate_chat_response(message, collection_name, "single", chat_id),
-        media_type="text/event-stream",
-    )
-
-
-@app.get("/api/chat/all/{message}")
-async def chat_all_collections(message: str, chat_id: Optional[str] = Query(None)):
-    """
-    Chat with all collections (ChatALL mode).
-    Now properly handles all query types including list_collections
-    """
-    logger.info(f"📥 ChatALL query: '{message[:50]}...'")
-
-    return StreamingResponse(
-        generate_chat_response(message, None, "chatall", chat_id),
-        media_type="text/event-stream",
-    )
 
 
 # ============================================================================
@@ -552,7 +505,7 @@ async def search_file_all_collections(request: FileSearchRequest):
 
 
 # ============================================================================
-# SMART NAMING ENDPOINTS
+# NAMING ENDPOINTS
 # ============================================================================
 
 
@@ -643,7 +596,7 @@ async def get_conversation_summary(chat_id: str):
 
 
 # ============================================================================
-# CHAT ENDPOINTS (Original + Enhanced)
+# CHAT ENDPOINTS
 # ============================================================================
 
 
@@ -732,7 +685,6 @@ async def select_pdf(session_id: str, request: SelectPDFRequest):
         raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-
 
 
 @app.post(
@@ -996,24 +948,26 @@ async def chat_with_selected_pdfs(
     session_id: str,
     query: str = Query(..., description="User's question"),
     chat_id: Optional[str] = Query(None, description="Chat session ID"),
-    num_results: int = Query(25, description="Number of search results to use")
+    num_results: int = Query(25, description="Number of search results to use"),
 ):
     """
     Chat with selected PDFs using streaming response.
     Uses your existing ChatService.generate_response method.
     """
+
     async def generate():
         try:
             print(f"📝 Starting chat with selected PDFs for session: {session_id}")
             print(f"   Query: {query}")
-            
+
             # 1. Generate chat_id
             current_chat_id = chat_id or f"chat_{session_id}_{int(time.time())}"
             yield f"data: {json.dumps({'type': 'chat_id', 'chat_id': current_chat_id})}\n\n"
-            
+
             # 2. Check if PDFs are selected
             try:
                 import httpx
+
                 async with httpx.AsyncClient() as client:
                     stats_response = await client.get(
                         f"http://localhost:8000/api/selection/{session_id}/stats"
@@ -1021,124 +975,125 @@ async def chat_with_selected_pdfs(
                     if stats_response.status_code != 200:
                         yield f"data: {json.dumps({'type': 'error', 'message': 'No PDFs selected'})}\n\n"
                         return
-                    
+
                     stats = stats_response.json()
-                    if stats.get('total_selected', 0) == 0:
+                    if stats.get("total_selected", 0) == 0:
                         yield f"data: {json.dumps({'type': 'error', 'message': 'Please select PDFs first'})}\n\n"
                         return
-                    
+
                     print(f"✅ Found {stats.get('total_selected')} selected PDFs")
             except Exception as e:
                 yield f"data: {json.dumps({'type': 'error', 'message': f'Failed to verify selection: {str(e)}'})}\n\n"
                 return
-            
+
             # 3. Search within selected PDFs
             try:
                 import httpx
+
                 async with httpx.AsyncClient() as client:
                     search_response = await client.post(
                         f"http://localhost:8000/api/selection/{session_id}/search",
-                        json={"query": query, "num_results": num_results}
+                        json={"query": query, "num_results": num_results},
                     )
-                    
+
                     if search_response.status_code != 200:
                         yield f"data: {json.dumps({'type': 'error', 'message': 'Search failed'})}\n\n"
                         return
-                    
+
                     search_result = search_response.json()
-                    results = search_result.get('results', [])
+                    results = search_result.get("results", [])
                     print(f"🔍 Found {len(results)} results")
-                    
+
                     if not results:
                         yield f"data: {json.dumps({'type': 'content', 'content': 'No relevant information found in the selected PDFs.'})}\n\n"
                         yield f"data: {json.dumps({'type': 'end'})}\n\n"
                         return
-                    
+
                     yield f"data: {json.dumps({'type': 'search_results', 'count': len(results)})}\n\n"
-                    
+
             except Exception as e:
                 yield f"data: {json.dumps({'type': 'error', 'message': f'Search failed: {str(e)}'})}\n\n"
                 return
-            
+
             # 4. Format context from search results
             context_parts = []
             for i, result in enumerate(results[:10], 1):  # Use top 10 results
-                filename = result.get('filename', 'Unknown')
-                content = result.get('content', '')
-                page = result.get('page_numbers', 'N/A')
-                collection = result.get('collection', '')
-                
+                filename = result.get("filename", "Unknown")
+                content = result.get("content", "")
+                page = result.get("page_numbers", "N/A")
+                collection = result.get("collection", "")
+
                 context_parts.append(
                     f"[Source {i}] From '{filename}' ({collection} collection, Page {page}):\n{content}"
                 )
-            
+
             context = "\n\n".join(context_parts)
             print(f"📄 Built context ({len(context)} chars)")
-            
+
             # 5. Stream LLM response using your ChatService.generate_response
             try:
                 print("🤖 Streaming LLM response...")
                 full_response = ""
-                
+
                 # THIS IS THE KEY CHANGE - use generate_response instead of stream_chat_response
                 async for chunk in chat_service.generate_response(query, context):
                     full_response += chunk
                     yield f"data: {json.dumps({'type': 'content', 'content': chunk})}\n\n"
-                
+
                 print(f"✅ Response complete ({len(full_response)} chars)")
-                
+
             except Exception as e:
                 error_msg = f"LLM error: {str(e)}"
                 print(f"❌ {error_msg}")
                 import traceback
+
                 traceback.print_exc()
                 yield f"data: {json.dumps({'type': 'error', 'message': error_msg})}\n\n"
                 return
-            
+
             # 6. Send sources
             sources_data = []
             for result in results[:20]:  # Send top 20 sources
-                sources_data.append({
-                    'content': result.get('content', ''),
-                    'filename': result.get('filename', ''),
-                    'collection': result.get('collection', ''),
-                    'similarity': result.get('similarity', 0),
-                    'page_numbers': result.get('page_numbers', ''),
-                    'title': result.get('title', '')
-                })
-            
+                sources_data.append(
+                    {
+                        "content": result.get("content", ""),
+                        "filename": result.get("filename", ""),
+                        "collection": result.get("collection", ""),
+                        "similarity": result.get("similarity", 0),
+                        "page_numbers": result.get("page_numbers", ""),
+                        "title": result.get("title", ""),
+                    }
+                )
+
             yield f"data: {json.dumps({'type': 'sources', 'sources': sources_data})}\n\n"
             print(f"📎 Sent {len(sources_data)} sources")
-            
+
             # 7. Save to memory (if memory_service is available)
             try:
                 await memory_service.add_message(current_chat_id, "user", query)
-                await memory_service.add_message(current_chat_id, "assistant", full_response)
+                await memory_service.add_message(
+                    current_chat_id, "assistant", full_response
+                )
                 print("💾 Saved to memory")
             except Exception as e:
                 print(f"⚠️ Memory save failed: {e}")
-            
+
             # 8. End
             yield f"data: {json.dumps({'type': 'end'})}\n\n"
             print(f"✅ Chat complete")
-            
+
         except Exception as e:
             print(f"❌ Unexpected error: {e}")
             import traceback
+
             traceback.print_exc()
             yield f"data: {json.dumps({'type': 'error', 'message': str(e)})}\n\n"
-    
+
     return StreamingResponse(
         generate(),
         media_type="text/event-stream",
         headers={
             "Cache-Control": "no-cache",
             "X-Accel-Buffering": "no",
-        }
+        },
     )
-
-
-if __name__ == "__main__":
-    import uvicorn
-
-    uvicorn.run(app, host="0.0.0.0", port=8000)

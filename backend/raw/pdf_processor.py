@@ -52,7 +52,7 @@ Examples:
         "-i",
         "--input",
         nargs="+",
-        default=[DEFAULT_PDF_DIR],  # Fixed: Now a list
+        default=[DEFAULT_PDF_DIR],  
         help=f"Input PDF folder(s) (default: {DEFAULT_PDF_DIR})",
     )
 
@@ -468,7 +468,7 @@ def main():
     print(f"🔗 Chunk overlap: {args.chunk_overlap} tokens")
 
     print(f"\n🎯 Ready! Use the rag_query.py to interact with your documents.")
-    print(f"💡 Or run: python rag_query.py -q 'What is Gut Microbiome?' -c gut_microbiome_reviews -c {collection_name}")
+    print(f"💡 Or run: python rag_query.py -q 'What is Gut Microbiome?' -c {collection_name}")
 
 
 if __name__ == "__main__":

@@ -34,7 +34,7 @@ class RAGConfig:
         # LLM Configuration
         self.use_local_llm = args.use_local or os.getenv("USE_LOCAL_LLM", "false").lower() == "true"
         self.llm_provider = args.llm_provider or os.getenv("DEFAULT_MODEL_PROVIDER", "gemini")
-        self.ollama_model = args.ollama_model or os.getenv("OLLAMA_MODEL", "llama3.2:latest")
+        self.ollama_model = args.ollama_model or os.getenv("OLLAMA_MODEL", "llama3.1:latest")
         self.gemini_model = args.gemini_model or os.getenv("GEMINI_MODEL", "gemini-2.0-flash-exp")
         self.groq_model = args.groq_model or os.getenv("GROQ_MODEL", "llama-3.1-8b-instant")
         
@@ -43,6 +43,7 @@ class RAGConfig:
         
         # Retrieval Configuration
         self.top_k = args.top_k or 10
+        # self.top_k = args.top_k or 25
         self.top_k_chatall = args.top_k_chatall or 1
         
         # Database Configuration
@@ -152,7 +153,7 @@ class RAGPipeline:
         self.chroma_client = chromadb.PersistentClient(path=config.db_path)
         self.classifier = QueryClassifier(self.llm)
         
-        print(f"✅ RAG Pipeline initialized")
+        print(f"   RAG Pipeline initialized")
         print(f"   LLM: {self._get_llm_name()}")
         print(f"   Embeddings: {config.embedding_model}")
         print(f"   Database: {config.db_path}")

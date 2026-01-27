@@ -1,7 +1,7 @@
 // src/hooks/usePDFSelection.ts
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import { selectionApi } from "@/lib/api/selection";
 import type {
   SelectedPDF,
@@ -14,16 +14,21 @@ export function usePDFSelection(sessionId: string) {
   const [stats, setStats] = useState<SelectionStatsResponse | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const toast = useToast();
+  const toastRef = useRef(toast);
+
+  useEffect(() => {
+    toastRef.current = toast;
+  }, [toast]);
 
   // Fetch current selection
   const fetchSelection = useCallback(async () => {
     if (!sessionId) return;
-    
+
     setIsLoading(true);
     try {
       const data = await selectionApi.getSelection(sessionId);
       setSelectedPDFs(data.selected_pdfs);
-      
+
       // Also fetch stats
       const statsData = await selectionApi.getStats(sessionId);
       setStats(statsData);
@@ -39,7 +44,6 @@ export function usePDFSelection(sessionId: string) {
     }
   }, [sessionId]);
 
-  // Select a PDF
   const selectPDF = useCallback(
     async (filename: string, collectionName: string) => {
       try {
@@ -49,18 +53,17 @@ export function usePDFSelection(sessionId: string) {
           collectionName
         );
         setSelectedPDFs(result.selected_pdfs);
-        toast.success(`Selected "${filename}"`);
-        await fetchSelection(); // Refresh stats
+        toastRef.current.success(`Selected "${filename}"`);
+        await fetchSelection();
         return true;
       } catch (error: any) {
-        toast.error(error.message || "Failed to select PDF");
+        toastRef.current.error(error.message || "Failed to select PDF");
         return false;
       }
     },
-    [sessionId, toast, fetchSelection]
+    [sessionId, fetchSelection]
   );
 
-  // Deselect a PDF
   const deselectPDF = useCallback(
     async (filename: string, collectionName: string) => {
       try {
@@ -70,15 +73,15 @@ export function usePDFSelection(sessionId: string) {
           collectionName
         );
         setSelectedPDFs(result.selected_pdfs);
-        toast.success(`Removed "${filename}"`);
-        await fetchSelection(); // Refresh stats
+        toastRef.current.success(`Removed "${filename}"`);
+        await fetchSelection();
         return true;
       } catch (error: any) {
-        toast.error(error.message || "Failed to deselect PDF");
+        toastRef.current.error(error.message || "Failed to deselect PDF");
         return false;
       }
     },
-    [sessionId, toast, fetchSelection]
+    [sessionId, fetchSelection]
   );
 
   // Toggle PDF selection
@@ -115,15 +118,15 @@ export function usePDFSelection(sessionId: string) {
       try {
         const result = await selectionApi.batchSelectPDFs(sessionId, pdfs);
         setSelectedPDFs(result.selected_pdfs);
-        toast.success(`Selected ${pdfs.length} PDFs`);
-        await fetchSelection(); // Refresh stats
+        toastRef.current.success(`Selected ${pdfs.length} PDFs`);
+        await fetchSelection();
         return true;
       } catch (error: any) {
-        toast.error(error.message || "Failed to batch select PDFs");
+        toastRef.current.error(error.message || "Failed to batch select PDFs");
         return false;
       }
     },
-    [sessionId, toast, fetchSelection]
+    [sessionId, fetchSelection]
   );
 
   // Clear all selections
@@ -132,13 +135,13 @@ export function usePDFSelection(sessionId: string) {
       await selectionApi.clearSelection(sessionId);
       setSelectedPDFs([]);
       setStats(null);
-      toast.success("Cleared all selections");
+      toastRef.current.success("Cleared all selections");
       return true;
     } catch (error: any) {
-      toast.error(error.message || "Failed to clear selection");
+      toastRef.current.error(error.message || "Failed to clear selection");
       return false;
     }
-  }, [sessionId, toast]);
+  }, [sessionId]);
 
   // Search within selected PDFs
   const searchSelected = useCallback(
@@ -151,11 +154,11 @@ export function usePDFSelection(sessionId: string) {
         );
         return result;
       } catch (error: any) {
-        toast.error(error.message || "Failed to search");
+        toastRef.current.error(error.message || "Failed to search");
         throw error;
       }
     },
-    [sessionId, toast]
+    [sessionId]
   );
 
   // Load selection on mount
