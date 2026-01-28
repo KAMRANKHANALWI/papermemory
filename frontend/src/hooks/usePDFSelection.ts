@@ -9,7 +9,7 @@ import type {
 } from "@/lib/types/selection";
 import { useToast } from "./useToast";
 
-export function usePDFSelection(sessionId: string) {
+export function usePDFSelection(sessionId: string, autoFetch: boolean = false) {
   const [selectedPDFs, setSelectedPDFs] = useState<SelectedPDF[]>([]);
   const [stats, setStats] = useState<SelectionStatsResponse | null>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -29,11 +29,9 @@ export function usePDFSelection(sessionId: string) {
       const data = await selectionApi.getSelection(sessionId);
       setSelectedPDFs(data.selected_pdfs);
 
-      // Also fetch stats
       const statsData = await selectionApi.getStats(sessionId);
       setStats(statsData);
     } catch (error: any) {
-      // Silent fail if no selection exists yet
       if (!error.message?.includes("404")) {
         console.error("Failed to fetch selection:", error);
       }
@@ -161,10 +159,11 @@ export function usePDFSelection(sessionId: string) {
     [sessionId]
   );
 
-  // Load selection on mount
   useEffect(() => {
-    fetchSelection();
-  }, [fetchSelection]);
+    if (autoFetch) {
+      fetchSelection();
+    }
+  }, [fetchSelection, autoFetch]);
 
   return {
     selectedPDFs,

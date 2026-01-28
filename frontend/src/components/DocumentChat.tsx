@@ -19,13 +19,19 @@ function DocumentChatContent() {
     null
   );
   const [chatMode, setChatMode] = useState<ChatMode>("single");
-
-  // PDF Selection Mode State
   const [pdfSelectionMode, setPdfSelectionMode] = useState(false);
-  const sessionId = "user_session_123";
-  const { selectedPDFs } = usePDFSelection(sessionId);
 
-  // Modal states
+  const sessionId = "user_session_123";
+
+  const {
+    selectedPDFs,
+    stats,
+    fetchSelection,
+    togglePDF,
+    clearSelection,
+    deselectPDF,
+  } = usePDFSelection(sessionId, false);
+
   const [uploadModalOpen, setUploadModalOpen] = useState(false);
   const [renameModalOpen, setRenameModalOpen] = useState(false);
   const [pdfListModalOpen, setPdfListModalOpen] = useState(false);
@@ -34,7 +40,6 @@ function DocumentChatContent() {
   const [selectedCollectionForAction, setSelectedCollectionForAction] =
     useState<string | null>(null);
 
-  // To Abort Response
   const [abortController, setAbortController] =
     useState<AbortController | null>(null);
 
@@ -49,72 +54,59 @@ function DocumentChatContent() {
     messages,
     isLoading: chatLoading,
     sendMessage,
-    stopGeneration, // Get the manual stop function
+    stopGeneration,
     clearMessages,
   } = useChat();
   const toast = useToast();
 
-  // 🐛 DEBUG: Monitor all state changes
-  useEffect(() => {
-    console.log("═══════════════════════════════════════════════");
-    console.log("📊 STATE UPDATE:");
-    console.log("   pdfSelectionMode:", pdfSelectionMode);
-    console.log("   chatMode:", chatMode);
-    console.log("   selectedPDFs.length:", selectedPDFs.length);
-    console.log("   selectedCollection:", selectedCollection);
-    console.log("═══════════════════════════════════════════════");
-  }, [pdfSelectionMode, chatMode, selectedPDFs.length, selectedCollection]);
+  useEffect(() => {}, [
+    pdfSelectionMode,
+    chatMode,
+    selectedPDFs.length,
+    selectedCollection,
+  ]);
 
   // Handle PDF selection mode toggle
   const handleTogglePDFMode = () => {
-    console.log("🔘 TOGGLE PDF MODE BUTTON CLICKED");
-    console.log("   Current pdfSelectionMode:", pdfSelectionMode);
-
     const newMode = !pdfSelectionMode;
 
     if (newMode) {
-      console.log("   ✅ Entering PDF selection mode");
-      // Entering PDF selection mode
       setPdfSelectionMode(true);
-      setSelectedCollection(null); // Clear any selected collection
-      // Don't change chatMode - we'll override it in getDisplayMode
-      toast.info("Select PDFs from collections");
+      setSelectedCollection(null);
+      // Fetch selection ONLY when entering PDF mode
+      fetchSelection();
+      toast.info("Select PDFs Mode");
     } else {
-      console.log("   ❌ Exiting PDF selection mode");
-      // Exiting PDF selection mode - switch back to single mode
+      console.log("   Exiting PDF selection mode");
       setPdfSelectionMode(false);
       setChatMode("single");
       toast.info("Switched to single collection mode");
     }
   };
 
+  // Determine the display mode for ChatArea
+  const getDisplayMode = (): "single" | "chatall" | "selected" => {
+    if (pdfSelectionMode && selectedPDFs.length > 0) {
+      return "selected";
+    }
+    return chatMode as "single" | "chatall";
+  };
+
   // Handle collection selection
   const handleSelectCollection = (name: string) => {
-    console.log("📁 COLLECTION SELECTED:", name);
-    console.log("   Exiting PDF selection mode (if active)");
-
     // Selecting a collection exits PDF selection mode
     setPdfSelectionMode(false);
     setSelectedCollection(name);
     setChatMode("single");
   };
 
-  // Handle chat mode change (Single Collection or All Collections buttons)
   const handleChatModeChange = (mode: ChatMode) => {
-    console.log("🔄 CHAT MODE CHANGE:", mode);
-    console.log("   Previous mode:", chatMode);
-    console.log("   PDF selection mode active:", pdfSelectionMode);
-
     if (mode === "selected") {
-      console.log(
-        '   ⚠️ Ignoring "selected" mode - use handleTogglePDFMode instead'
-      );
-      return; // Don't allow direct setting of "selected" mode
+      return;
     }
 
     // Exit PDF selection mode when switching to single or chatall
     if (pdfSelectionMode) {
-      console.log("   ❌ Exiting PDF selection mode");
       setPdfSelectionMode(false);
     }
 
@@ -122,9 +114,9 @@ function DocumentChatContent() {
 
     if (mode === "chatall") {
       setSelectedCollection(null);
-      toast.info("Searching all collections");
+      toast.info("All Collections Mode");
     } else if (mode === "single") {
-      toast.info("Single collection mode");
+      toast.info("Single Collection Mode");
     }
   };
 
@@ -206,30 +198,19 @@ function DocumentChatContent() {
     }
   };
 
-  // Enhanced message send handler with PDF selection mode support
   const handleSendMessage = (message: string) => {
-    console.log("💬 SEND MESSAGE ATTEMPT");
-    console.log("   Message:", message);
-    console.log("   pdfSelectionMode:", pdfSelectionMode);
-    console.log("   selectedPDFs.length:", selectedPDFs.length);
-    console.log("   chatMode:", chatMode);
-    console.log("   selectedCollection:", selectedCollection);
-
     // Create abort controller for this request
     const controller = new AbortController();
     setAbortController(controller);
 
     // Determine the actual chat mode based on PDF selection state
     if (pdfSelectionMode && selectedPDFs.length > 0) {
-      console.log("   ✅ Using SELECTED PDFs mode");
       sendMessage(message, null, "selected", sessionId, controller.signal);
     } else if (pdfSelectionMode && selectedPDFs.length === 0) {
-      console.log("   ⚠️ PDF mode active but no PDFs selected");
       toast.warning("Please select PDFs first");
       setAbortController(null);
       return;
     } else if (chatMode === "single" && selectedCollection) {
-      console.log("   ✅ Using SINGLE collection mode:", selectedCollection);
       sendMessage(
         message,
         selectedCollection,
@@ -238,10 +219,8 @@ function DocumentChatContent() {
         controller.signal
       );
     } else if (chatMode === "chatall") {
-      console.log("   ✅ Using CHAT ALL mode");
       sendMessage(message, null, "chatall", undefined, controller.signal);
     } else {
-      console.log("   ❌ Invalid state - no valid mode");
       toast.warning("Please select a collection or PDFs first");
       setAbortController(null);
       return;
@@ -250,7 +229,6 @@ function DocumentChatContent() {
 
   // Add the stop handler
   const handleStopGeneration = () => {
-    console.log("🛑 STOP GENERATION CLICKED");
     if (abortController) {
       abortController.abort();
       setAbortController(null);
@@ -260,42 +238,18 @@ function DocumentChatContent() {
     }
   };
 
-  // Determine the display mode for ChatArea
-  const getDisplayMode = (): "single" | "chatall" | "selected" => {
-    console.log("🎯 getDisplayMode called:");
-    console.log("   pdfSelectionMode:", pdfSelectionMode);
-    console.log("   selectedPDFs.length:", selectedPDFs.length);
-    console.log("   chatMode:", chatMode);
-
-    // Priority 1: If PDF selection mode is active AND PDFs are selected
-    if (pdfSelectionMode && selectedPDFs.length > 0) {
-      console.log('   ✅ Returning "selected"');
-      return "selected";
-    }
-
-    // Priority 2: Return the current chat mode
-    console.log("   ➡️ Returning chatMode:", chatMode);
-    return chatMode as "single" | "chatall";
-  };
-
   // Determine if input should be disabled
   const isInputDisabled = () => {
     if (pdfSelectionMode) {
-      // In PDF selection mode, only disabled if no PDFs selected
       const disabled = selectedPDFs.length === 0;
-      console.log("🔒 Input disabled check (PDF mode):", disabled);
       return disabled;
     }
 
     if (chatMode === "single") {
-      // In single mode, disabled if no collection selected
       const disabled = !selectedCollection;
-      console.log("🔒 Input disabled check (single mode):", disabled);
       return disabled;
     }
 
-    // In chatall mode, never disabled
-    console.log("🔒 Input disabled check (chatall mode): false");
     return false;
   };
 
@@ -317,6 +271,11 @@ function DocumentChatContent() {
         onClearChat={clearMessages}
         pdfSelectionMode={pdfSelectionMode}
         onTogglePDFMode={handleTogglePDFMode}
+        selectedPDFs={selectedPDFs}
+        pdfStats={stats}
+        onTogglePDF={togglePDF}
+        onClearPDFSelection={clearSelection}
+        onDeselectPDF={deselectPDF}
       />
 
       {/* Chat Area - Takes remaining space */}
@@ -332,8 +291,6 @@ function DocumentChatContent() {
           selectedPDFsCount={selectedPDFs.length}
         />
       </div>
-
-      {/* Modals */}
 
       {/* Upload Modal - For new collections */}
       <SmartUploadModal

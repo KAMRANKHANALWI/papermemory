@@ -15,9 +15,6 @@ import {
 } from "@heroicons/react/24/outline";
 import { useToast } from "@/hooks/useToast";
 import Badge from "../UI/Badge";
-
-// NEW: PDF Selection imports
-import { usePDFSelection } from "@/hooks/usePDFSelection";
 import SelectedPDFsDisplay from "./SelectedPDFsDisplay";
 import { ChatMode } from "@/hooks/useChat";
 
@@ -34,9 +31,14 @@ interface SidebarProps {
   onUploadClick: (files: File[]) => void;
   onChatModeChange: (mode: ChatMode) => void;
   onClearChat: () => void;
-  // NEW: PDF Selection Mode props
   pdfSelectionMode?: boolean;
   onTogglePDFMode?: () => void;
+
+  selectedPDFs?: any[];
+  pdfStats?: any;
+  onTogglePDF?: (filename: string, collectionName: string) => void;
+  onClearPDFSelection?: () => void;
+  onDeselectPDF?: (filename: string, collectionName: string) => void;
 }
 
 export default function Sidebar({
@@ -54,22 +56,17 @@ export default function Sidebar({
   onClearChat,
   pdfSelectionMode = false,
   onTogglePDFMode = () => {},
+
+  selectedPDFs = [],
+  pdfStats = null,
+  onTogglePDF = () => {},
+  onClearPDFSelection = () => {},
+  onDeselectPDF = () => {},
 }: SidebarProps) {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [isCollapsed, setIsCollapsed] = useState(false);
   const toast = useToast();
 
-  // NEW: Initialize PDF Selection Hook
-  const sessionId = "user_session_123"; // You can make this dynamic based on user ID
-  const {
-    selectedPDFs,
-    stats,
-    togglePDF,
-    clearSelection,
-    deselectPDF,
-  } = usePDFSelection(sessionId);
-
-  // NEW: Create Set for quick lookup
   const selectedPDFsSet = new Set(
     selectedPDFs.map((pdf) => `${pdf.collection_name}:${pdf.filename}`)
   );
@@ -111,10 +108,8 @@ export default function Sidebar({
           }
         `}
       >
-        {/* Collapsed State - Icon Only */}
         {isCollapsed ? (
           <div className="hidden lg:flex flex-col items-center py-4 space-y-2 h-full">
-            {/* Expand Button at Top */}
             <button
               onClick={() => setIsCollapsed(false)}
               className="w-12 h-12 flex items-center justify-center hover:bg-gray-100 rounded-xl transition-colors mb-2"
@@ -124,7 +119,6 @@ export default function Sidebar({
               <ChevronRightIcon className="h-5 w-5 text-gray-600" />
             </button>
 
-            {/* Upload Icon */}
             <button
               onClick={() => {
                 const input = document.createElement("input");
@@ -182,7 +176,6 @@ export default function Sidebar({
               </svg>
             </button>
 
-            {/* All Collections Icon */}
             <button
               onClick={() => onChatModeChange("chatall")}
               className={`w-12 h-12 flex items-center justify-center rounded-xl transition-colors cursor-pointer ${
@@ -195,7 +188,6 @@ export default function Sidebar({
               <ChatBubbleLeftRightIcon className="w-6 h-6" strokeWidth={2} />
             </button>
 
-            {/* NEW: PDF Selection Mode Icon */}
             <button
               onClick={onTogglePDFMode}
               className={`w-12 h-12 flex items-center justify-center rounded-xl transition-colors cursor-pointer ${
@@ -220,7 +212,6 @@ export default function Sidebar({
               </svg>
             </button>
 
-            {/* Clear Chat Icon */}
             <button
               onClick={() => {
                 onClearChat();
@@ -286,7 +277,7 @@ export default function Sidebar({
                 </button>
               </div>
 
-              {/* New Chat Button */}
+              {/* Chat Button */}
               <button
                 onClick={onClearChat}
                 className="w-full flex items-center gap-2.5 px-3 py-2.5 rounded-lg
@@ -356,7 +347,7 @@ export default function Sidebar({
                 <span>All Collections</span>
               </button>
 
-              {/* NEW: PDF Selection Mode Button */}
+              {/* PDF Selection Mode Button */}
               <button
                 onClick={onTogglePDFMode}
                 className={`
@@ -417,20 +408,18 @@ export default function Sidebar({
               </button>
             </nav>
 
-            {/* Main Content Area - Changes based on PDF Selection Mode */}
             {pdfSelectionMode ? (
               <>
-                {/* NEW: Selected PDFs Display - Collapsible Header */}
                 <div className="flex-shrink-0 border-b border-gray-100">
                   <SelectedPDFsDisplay
                     selectedPDFs={selectedPDFs}
-                    stats={stats}
-                    onRemovePDF={deselectPDF}
-                    onClearAll={clearSelection}
+                    stats={pdfStats}
+                    onRemovePDF={onDeselectPDF}
+                    onClearAll={onClearPDFSelection}
                   />
                 </div>
 
-                {/* NEW: Collections with PDF Checkboxes - Takes Remaining Space */}
+                {/* Collections with PDF Checkboxes */}
                 <div className="flex-1 min-h-0 overflow-hidden">
                   <CollectionList
                     collections={collections}
@@ -443,7 +432,7 @@ export default function Sidebar({
                     onDeleteCollection={onDeleteCollection}
                     pdfSelectionMode={true}
                     selectedPDFs={selectedPDFsSet}
-                    onTogglePDF={togglePDF}
+                    onTogglePDF={onTogglePDF}
                   />
                 </div>
               </>
