@@ -1,0 +1,6 @@
+id,question,predicted_option,correct_option,is_correct,difficulty,category
+gut_intro_mcq_001,How many bacterial species have been isolated from human beings according to the MetaHit and Human Microbiome Project?,B,B,True,easy,factual
+gut_intro_mcq_002,"What percentage of the 2,172 human-associated bacterial species belong to Proteobacteria, Firmicutes, Actinobacteria and Bacteroidetes?",A,C,False,medium,factual
+gut_intro_mcq_003,Which bacterial species is the only known representative of the Verrucomicrobia phyla in the human gut?,C,C,True,medium,factual
+gut_intro_mcq_004,What is the typical ratio of propionate:butyrate:acetate in the GI tract?,A,B,False,medium,factual
+gut_intro_mcq_005,Which bacterial group is primarily responsible for butyrate production in the human gut?,C,C,True,medium,factual

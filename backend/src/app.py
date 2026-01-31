@@ -19,7 +19,10 @@ from src.services.metadata_service import MetadataService
 from src.services.file_search_service import FileSearchService
 from src.services.naming_service import NamingService
 from src.services.memory_service import MemoryService
-from src.utils.response_generator import generate_chat_response
+from src.utils.response_generator import (
+    generate_chat_response,
+    generate_chat_response_eval,
+)
 from src.services.pdf_storage_service import PDFStorageService
 from src.services.pdf_selection_service import PDFSelectionService
 from src.models.selection_models import (
@@ -455,19 +458,19 @@ async def search_file_all_collections(request: FileSearchRequest):
 # ============================================================================
 
 
-@app.post("/api/collections/validate-name", response_model=ValidateNameResponse)
-async def validate_collection_name(request: ValidateNameRequest):
-    """Validate a collection name"""
-    try:
-        is_valid, validated_name, message = naming_service.validate_name(request.name)
+# @app.post("/api/collections/validate-name", response_model=ValidateNameResponse)
+# async def validate_collection_name(request: ValidateNameRequest):
+#     """Validate a collection name"""
+#     try:
+#         is_valid, validated_name, message = naming_service.validate_name(request.name)
 
-        return ValidateNameResponse(
-            is_valid=is_valid,
-            validated_name=validated_name if is_valid else None,
-            message=message,
-        )
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+#         return ValidateNameResponse(
+#             is_valid=is_valid,
+#             validated_name=validated_name if is_valid else None,
+#             message=message,
+#         )
+#     except Exception as e:
+#         raise HTTPException(status_code=500, detail=str(e))
 
 
 # ============================================================================
@@ -546,22 +549,73 @@ async def get_conversation_summary(chat_id: str):
 # ============================================================================
 
 
+# @app.get("/api/chat/single/{collection_name}/{message}")
+# async def chat_single_collection(
+#     collection_name: str, message: str, chat_id: Optional[str] = Query(None)
+# ):
+#     """Chat with a single collection"""
+#     return StreamingResponse(
+#         generate_chat_response(message, collection_name, "single", chat_id),
+#         media_type="text/event-stream",
+#     )
+
+
+# @app.get("/api/chat/all/{message}")
+# async def chat_all_collections(message: str, chat_id: Optional[str] = Query(None)):
+#     """Chat with all collections (ChatALL mode)"""
+#     return StreamingResponse(
+#         generate_chat_response(message, None, "chatall", chat_id),
+#         media_type="text/event-stream",
+#     )
+
 @app.get("/api/chat/single/{collection_name}/{message}")
 async def chat_single_collection(
-    collection_name: str, message: str, chat_id: Optional[str] = Query(None)
+    collection_name: str,
+    message: str,
+    chat_id: Optional[str] = Query(None),
+    eval: Optional[bool] = Query(False),
 ):
-    """Chat with a single collection"""
+    if eval:
+        return await generate_chat_response_eval(
+            message=message,
+            collection_name=collection_name,
+            chat_mode="single",
+            chat_id=chat_id,
+        )
+
     return StreamingResponse(
-        generate_chat_response(message, collection_name, "single", chat_id),
+        generate_chat_response(
+            message=message,
+            collection_name=collection_name,
+            chat_mode="single",
+            chat_id=chat_id,
+            eval_mode=False,
+        ),
         media_type="text/event-stream",
     )
 
-
 @app.get("/api/chat/all/{message}")
-async def chat_all_collections(message: str, chat_id: Optional[str] = Query(None)):
-    """Chat with all collections (ChatALL mode)"""
+async def chat_all_collections(
+    message: str,
+    chat_id: Optional[str] = Query(None),
+    eval: Optional[bool] = Query(False),
+):
+    if eval:
+        return await generate_chat_response_eval(
+            message=message,
+            collection_name=None,
+            chat_mode="chatall",
+            chat_id=chat_id,
+        )
+
     return StreamingResponse(
-        generate_chat_response(message, None, "chatall", chat_id),
+        generate_chat_response(
+            message=message,
+            collection_name=None,
+            chat_mode="chatall",
+            chat_id=chat_id,
+            eval_mode=False,
+        ),
         media_type="text/event-stream",
     )
 

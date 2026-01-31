@@ -1,0 +1,2 @@
+id,question,faithfulness,answer_relevancy,answer_correctness,context_precision,context_recall,difficulty,category
+gut_intro_001,What are the two dominant bacterial phyla in the human gut microbiota?,0.6666666666666666,0.9999999999998529,0.6489800383314182,0.9952380952309864,1.0,easy,factual

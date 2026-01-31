@@ -24,8 +24,6 @@ class CollectionManager:
             Chroma vectorstore instance or None if not found
         """
         try:
-            from langchain_chroma import Chroma
-            
             # Check if collection exists
             collections = self.chroma_client.list_collections()
             collection_names = [col.name for col in collections]
@@ -95,8 +93,6 @@ class CollectionManager:
             Dict mapping collection_name -> vectorstore
         """
         try:
-            from langchain_chroma import Chroma
-            
             all_collections = {}
             collections = self.chroma_client.list_collections()
             

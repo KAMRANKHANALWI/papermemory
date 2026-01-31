@@ -27,6 +27,7 @@ async def generate_chat_response(
     collection_name: Optional[str],
     chat_mode: str,
     chat_id: Optional[str] = None,
+    eval_mode: bool = False,
 ) -> AsyncGenerator[str, None]:
     """Generate streaming chat response with query classification and memory."""
     try:
@@ -39,8 +40,10 @@ async def generate_chat_response(
 
         # Add user message to memory
         try:
-            memory_service.add_message(chat_id, "user", message, collection_name)
-            logger.info(f"📝 Added user message to memory: {chat_id}")
+            #
+            if not eval_mode:
+                memory_service.add_message(chat_id, "user", message, collection_name)
+                logger.info(f"📝 Added user message to memory: {chat_id}")
         except Exception as e:
             logger.warning(f"Memory add failed: {e}")
 
@@ -310,7 +313,11 @@ async def handle_file_specific_search(
             )
 
             context, search_results, found = file_search_service.search_specific_file(
-                vectorstore, filename, message, num_results=25, collection_name=collection_name
+                vectorstore,
+                filename,
+                message,
+                num_results=25,
+                collection_name=collection_name,
             )
 
             if not found:
@@ -413,7 +420,8 @@ async def handle_content_search(
                 persist_directory="data/chroma_db",
             )
 
-            results = vectorstore.similarity_search_with_score(message, k=25)
+            # results = vectorstore.similarity_search_with_score(message, k=25)
+            results = vectorstore.similarity_search_with_score(message, k=10)
 
             for doc, score in results:
                 # doc is a Document object
@@ -481,3 +489,51 @@ async def handle_content_search(
     except Exception as e:
         logger.error(f"Error in handle_content_search: {e}", exc_info=True)
         raise
+
+
+async def generate_chat_response_eval(
+    message: str,
+    collection_name: Optional[str],
+    chat_mode: str,
+    chat_id: Optional[str] = None,
+) -> Dict[str, Any]:
+    """
+    Non-streaming RAG evaluation version.
+    Reuses generate_chat_response but buffers output
+    and disables memory writes.
+    """
+
+    import json
+
+    collected_sources = []
+    full_response = ""
+
+    # We reuse the streaming generator internally
+    async for event in generate_chat_response(
+        message=message,
+        collection_name=collection_name,
+        chat_mode=chat_mode,
+        chat_id=chat_id,
+        eval_mode=True,
+    ):
+        if not event.startswith("data: "):
+            continue
+
+        payload = json.loads(event[6:].strip())
+
+        if payload.get("type") == "sources":
+            collected_sources.extend(payload.get("sources", []))
+
+        elif payload.get("type") == "content":
+            full_response += payload.get("content", "")
+
+        elif payload.get("type") == "end":
+            break
+
+    return {
+        "question": message,
+        "answer": full_response.strip(),
+        "contexts": [s["content"] for s in collected_sources],
+        "sources": collected_sources,
+        "collection": collection_name,
+    }

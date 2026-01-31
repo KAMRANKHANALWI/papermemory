@@ -1,0 +1,4 @@
+id,question,faithfulness,context_precision,context_recall,difficulty,category
+gut_intro_mcq_001,How many bacterial species have been isolated from human beings according to the MetaHit and Human Microbiome Project?,0.3333333333333333,0.8345306208866706,1.0,easy,factual
+gut_intro_mcq_002,"What percentage of the 2,172 human-associated bacterial species belong to Proteobacteria, Firmicutes, Actinobacteria and Bacteroidetes?",0.75,0.0,0.0,medium,factual
+gut_intro_mcq_003,Which bacterial species is the only known representative of the Verrucomicrobia phyla in the human gut?,1.0,0.7504748337998284,1.0,medium,factual

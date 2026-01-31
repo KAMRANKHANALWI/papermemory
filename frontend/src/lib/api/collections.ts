@@ -6,8 +6,6 @@ import type {
   CollectionPDFsResponse,
   CollectionStats,
   GenerateNameResponse,
-  ValidateNameResponse,
-  PDFDetail,
 } from "../types/collection";
 import type {
   ApiResponse,
@@ -120,16 +118,6 @@ export const collectionsApi = {
       {
         filenames,
         upload_type: "files",
-      }
-    );
-  },
-
-  // Validate collection name
-  async validateName(name: string): Promise<ValidateNameResponse> {
-    return apiClient.post<ValidateNameResponse>(
-      "/api/collections/validate-name",
-      {
-        name,
       }
     );
   },
