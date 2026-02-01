@@ -13,7 +13,7 @@ class FileSearchService:
         vectorstore: Chroma,
         filename: str,
         query: str,
-        num_results: int = 25,
+        num_results: int = 10,
         collection_name: Optional[str] = None  
     ) -> Tuple[str, List[Dict], bool]:
         """
@@ -87,7 +87,7 @@ class FileSearchService:
         all_collections: Dict[str, Any],
         filename: str,
         query: str,
-        num_results: int = 25
+        num_results: int = 10
     ) -> Tuple[str, List[Dict], bool, Optional[str]]:
         """
         Search for content within a specific PDF file across all collections.

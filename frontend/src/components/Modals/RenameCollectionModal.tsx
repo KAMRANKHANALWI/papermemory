@@ -12,12 +12,14 @@ interface RenameCollectionModalProps {
   isOpen: boolean;
   onClose: () => void;
   collectionName: string;
+  onSuccess?: () => void;
 }
 
 export default function RenameCollectionModal({
   isOpen,
   onClose,
   collectionName,
+  onSuccess,
 }: RenameCollectionModalProps) {
   const [newName, setNewName] = useState(collectionName);
   const [error, setError] = useState("");
@@ -29,23 +31,23 @@ export default function RenameCollectionModal({
     if (!name.trim()) {
       return "Collection name is required";
     }
-    
+
     if (name.length < 3) {
       return "Name must be at least 3 characters";
     }
-    
+
     if (name.length > 63) {
       return "Name must be less than 63 characters";
     }
-    
+
     if (!/^[a-zA-Z0-9][a-zA-Z0-9._-]*$/.test(name)) {
       return "Name must start with a letter/number and contain only letters, numbers, dots, and dashes";
     }
-    
+
     if (name === collectionName) {
       return "New name must be different from current name";
     }
-    
+
     return null;
   };
 
@@ -67,7 +69,11 @@ export default function RenameCollectionModal({
     try {
       await renameCollection(collectionName, newName);
       toast.success(`Renamed to "${newName}"`);
-      onClose();
+      if (onSuccess) {
+        onSuccess();
+      } else {
+        onClose();
+      }
     } catch (error: any) {
       console.error("Rename failed:", error);
       toast.error(error.message || "Failed to rename collection");
@@ -87,7 +93,12 @@ export default function RenameCollectionModal({
   };
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose} title="Rename Collection" size="md">
+    <Modal
+      isOpen={isOpen}
+      onClose={onClose}
+      title="Rename Collection"
+      size="md"
+    >
       <div className="space-y-4">
         <Input
           label="Collection Name"

@@ -42,10 +42,10 @@ def process_pdf_with_pymupdf(pdf_path: str) -> List[Dict]:
     except Exception as e:
         return []
 
-def chunk_text_content(text: str, max_tokens: int = 1000, overlap: int = 200) -> List[str]:
+def chunk_text_content(text: str, max_chars: int = 1000, overlap: int = 200) -> List[str]:
     """Split text into chunks using RecursiveCharacterTextSplitter."""
     splitter = RecursiveCharacterTextSplitter(
-        chunk_size=max_tokens,
+        chunk_size=max_chars,
         chunk_overlap=overlap,
         length_function=len,
         separators=["\n\n", "\n", ". ", ", ", " ", ""]

@@ -17,7 +17,6 @@ from src.services.collection_manager import CollectionManager
 from src.services.query_classifier import QueryClassifier
 from src.services.metadata_service import MetadataService
 from src.services.file_search_service import FileSearchService
-from src.services.naming_service import NamingService
 from src.services.memory_service import MemoryService
 from src.utils.response_generator import (
     generate_chat_response,
@@ -83,7 +82,6 @@ chat_service = ChatService()
 collection_manager = CollectionManager()
 metadata_service = MetadataService()
 file_search_service = FileSearchService()
-naming_service = NamingService(chat_service.llm, chat_service.chroma_client)
 memory_service = MemoryService()
 query_classifier = QueryClassifier(chat_service.llm)
 chat_service = ChatService()
@@ -282,8 +280,6 @@ async def get_collection_pdfs(collection_name: str):
 async def get_collection_stats(collection_name: str):
     """Get detailed statistics for a collection"""
     try:
-        from langchain_chroma import Chroma
-
         vectorstore = Chroma(
             client=chat_service.chroma_client,
             collection_name=collection_name,
@@ -309,8 +305,6 @@ async def get_collection_stats(collection_name: str):
 async def get_all_pdfs():
     """Get list of all PDFs across all collections"""
     try:
-        from langchain_chroma import Chroma
-
         # Load all collections
         collections = chat_service.chroma_client.list_collections()
         all_vectorstores = {}
@@ -454,26 +448,6 @@ async def search_file_all_collections(request: FileSearchRequest):
 
 
 # ============================================================================
-# NAMING ENDPOINTS
-# ============================================================================
-
-
-# @app.post("/api/collections/validate-name", response_model=ValidateNameResponse)
-# async def validate_collection_name(request: ValidateNameRequest):
-#     """Validate a collection name"""
-#     try:
-#         is_valid, validated_name, message = naming_service.validate_name(request.name)
-
-#         return ValidateNameResponse(
-#             is_valid=is_valid,
-#             validated_name=validated_name if is_valid else None,
-#             message=message,
-#         )
-#     except Exception as e:
-#         raise HTTPException(status_code=500, detail=str(e))
-
-
-# ============================================================================
 # CONVERSATION MEMORY ENDPOINTS
 # ============================================================================
 
@@ -547,26 +521,6 @@ async def get_conversation_summary(chat_id: str):
 # ============================================================================
 # CHAT ENDPOINTS
 # ============================================================================
-
-
-# @app.get("/api/chat/single/{collection_name}/{message}")
-# async def chat_single_collection(
-#     collection_name: str, message: str, chat_id: Optional[str] = Query(None)
-# ):
-#     """Chat with a single collection"""
-#     return StreamingResponse(
-#         generate_chat_response(message, collection_name, "single", chat_id),
-#         media_type="text/event-stream",
-#     )
-
-
-# @app.get("/api/chat/all/{message}")
-# async def chat_all_collections(message: str, chat_id: Optional[str] = Query(None)):
-#     """Chat with all collections (ChatALL mode)"""
-#     return StreamingResponse(
-#         generate_chat_response(message, None, "chatall", chat_id),
-#         media_type="text/event-stream",
-#     )
 
 @app.get("/api/chat/single/{collection_name}/{message}")
 async def chat_single_collection(

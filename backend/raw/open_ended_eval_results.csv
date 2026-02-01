@@ -1,6 +1,0 @@
-question,faithfulness,answer_relevancy,answer_correctness,context_precision,context_recall
-What are the two dominant bacterial phyla in the human gut microbiota?,1.0,0.9999999999998529,0.8283626143003977,0.99999999998,1.0
-What is the ratio of human to bacterial cells in the body according to recent estimates?,1.0,0.9303786501985177,0.8405040238403447,0.9166666666361111,1.0
-How does mode of delivery affect infant gut microbiota composition?,1.0,0.9988172750569349,0.47931785300157753,0.99999999998,1.0
-What are short-chain fatty acids and which are the three predominant types found in the GI tract?,0.5,0.7775209891400309,0.6401277393866855,0.999999999975,0.5
-Describe the role of butyrate in intestinal health,1.0,0.9420774304257403,0.5089850511973362,0.99999999998,1.0

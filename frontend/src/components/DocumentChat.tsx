@@ -16,7 +16,7 @@ import { usePDFSelection } from "@/hooks/usePDFSelection";
 
 function DocumentChatContent() {
   const [selectedCollection, setSelectedCollection] = useState<string | null>(
-    null
+    null,
   );
   const [chatMode, setChatMode] = useState<ChatMode>("single");
   const [pdfSelectionMode, setPdfSelectionMode] = useState(false);
@@ -131,6 +131,13 @@ function DocumentChatContent() {
     fetchCollections();
   };
 
+  // Callback after successful rename
+  const handleRenameComplete = () => {
+    fetchCollections(); // Refresh the collections list
+    setRenameModalOpen(false);
+    setSelectedCollectionForAction(null);
+  };
+
   // Handle collection management
   const handleManageCollection = (name: string) => {
     setSelectedCollectionForAction(name);
@@ -178,7 +185,7 @@ function DocumentChatContent() {
   // Handle delete collection
   const handleDeleteCollection = async (name: string) => {
     const confirmed = window.confirm(
-      `Are you sure you want to delete "${name}"?\n\nThis will permanently delete:\n• All PDFs in this collection\n• All associated chunks and embeddings\n\nThis action cannot be undone!`
+      `Are you sure you want to delete "${name}"?\n\nThis will permanently delete:\n• All PDFs in this collection\n• All associated chunks and embeddings\n\nThis action cannot be undone!`,
     );
 
     if (!confirmed) return;
@@ -216,7 +223,7 @@ function DocumentChatContent() {
         selectedCollection,
         "single",
         undefined,
-        controller.signal
+        controller.signal,
       );
     } else if (chatMode === "chatall") {
       sendMessage(message, null, "chatall", undefined, controller.signal);
@@ -309,6 +316,7 @@ function DocumentChatContent() {
             setSelectedCollectionForAction(null);
           }}
           collectionName={selectedCollectionForAction}
+          onSuccess={handleRenameComplete}
         />
       )}
 

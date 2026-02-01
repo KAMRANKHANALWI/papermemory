@@ -1,4 +1,4 @@
-# config.py
+# config.py - Eval Config File
 import os
 from pathlib import Path
 from dotenv import load_dotenv

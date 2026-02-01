@@ -39,7 +39,7 @@ class LLMFactory:
     @staticmethod
     def _ollama():
         ollama_base_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
-        ollama_model = os.getenv("OLLAMA_MODEL", "llama3.2:latest")
+        ollama_model = os.getenv("OLLAMA_MODEL", "llama3.1:latest")
 
         llm = ChatOllama(
             model=ollama_model,
@@ -49,13 +49,13 @@ class LLMFactory:
 
         # keep your connection test
         llm.invoke("Hello")
-        print(f"✅ Using Ollama local model: {ollama_model}")
+        print(f" Using Ollama local model: {ollama_model}")
         return llm
 
     @staticmethod
     def _gemini():
         model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
-        print("✅ Using Gemini model")
+        print(" Using Gemini model")
         return ChatGoogleGenerativeAI(
             model=model,
             temperature=0.1,
@@ -65,7 +65,7 @@ class LLMFactory:
     @staticmethod
     def _groq():
         model = os.getenv("GROQ_MODEL", "llama-3.1-8b-instant")
-        print("✅ Using Groq model")
+        print(" Using Groq model")
         return ChatGroq(
             model=model,
             temperature=0.1,
