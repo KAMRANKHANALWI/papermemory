@@ -21,7 +21,7 @@ _Chat with your PDFs using state-of-the-art AI models with multi-collection supp
 
 ## 🌟 Overview
 
-Paper Memory is a production-ready RAG application that transforms static PDF documents into an intelligent, conversational knowledge base. Built with FastAPI and Next.js, it combines vector search capabilities with LLM reasoning to provide accurate, context-aware responses from your document collections.
+Paper Memory is a RAG application that transforms static PDF documents into an intelligent, conversational knowledge base. Built with FastAPI and Next.js, it combines vector search capabilities with LLM reasoning to provide accurate, context-aware responses from your document collections.
 
 ### Why Paper Memory?
 
