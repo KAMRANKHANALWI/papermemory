@@ -16,8 +16,8 @@ class EvalConfig:
     DATASETS_DIR = EVAL_DIR / "datasets"
     OUTPUT_DIR = EVAL_DIR / "results"
 
-    OPEN_ENDED_CSV = DATASETS_DIR / "sample_open_ended.csv"
-    MCQ_CSV = DATASETS_DIR / "sample_mcq.csv"
+    OPEN_ENDED_CSV = DATASETS_DIR / "full_open_ended.csv"
+    MCQ_CSV = DATASETS_DIR / "full_mcq.csv"
 
     # --------------------
     # Vector DB
@@ -25,15 +25,7 @@ class EvalConfig:
     DB_PATH = BASE_DIR.parent / "data" / "chroma_db"
     COLLECTION_NAME = "gut_microbiome"
     EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-    TOP_K = 5
-
-    # --------------------
-    # RAG Generation LLM
-    # --------------------
-    USE_LOCAL_LLM = os.getenv("USE_LOCAL_LLM", "false").lower() == "true"
-    OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.1:latest")
-    GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3-flash-preview")
-    TEMPERATURE = 0.1
+    TOP_K = 10
 
     # --------------------
     # RAGAS Eval LLM

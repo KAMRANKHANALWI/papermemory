@@ -1,6 +1,7 @@
 import os
 import json
 import pandas as pd
+import numpy as np
 import ast
 import re
 from pathlib import Path
@@ -87,31 +88,40 @@ print(f"▶️ Resuming from index {start_idx + 1}")
 # Ollama Local LLM
 # ---------------------------------------
 
-# local_client = AsyncOpenAI(
-#     api_key="ollama",
-#     base_url="http://localhost:11434/v1",
-# )
+local_client = AsyncOpenAI(
+    api_key="ollama",
+    base_url="http://localhost:11434/v1",
+    timeout=300.0,
+    max_retries=5,
+)
 
-# ollama_model = os.getenv("OLLAMA_MODEL", "llama3.1:latest")
-# eval_llm = llm_factory(model=ollama_model, provider="openai", client=local_client)
+# ollama_model = os.getenv("OLLAMA_MODEL", "llama3.1-70b-16k:latest")
+ollama_model = os.getenv("OLLAMA_MODEL", "llama3.1:latest")
+eval_llm = llm_factory(
+    model=ollama_model,
+    provider="openai",
+    client=local_client,
+    max_tokens=8192,  # Override RAGAS default of 1024
+    temperature=0,
+)
 
-# print(f"🖥️ Using Local Ollama {ollama_model} Model for Eval")
+print(f"🖥️ Using Local Ollama {ollama_model} Model for Eval")
 
 # ---------------------------------------
 # Groq Eval LLM
 # ---------------------------------------
-groq_client = AsyncOpenAI(
-    api_key=config.GROQ_API_KEY,
-    base_url="https://api.groq.com/openai/v1",
-)
+# groq_client = AsyncOpenAI(
+#     api_key=config.GROQ_API_KEY,
+#     base_url="https://api.groq.com/openai/v1",
+# )
 
-eval_llm = llm_factory(
-    model=config.GROQ_MODEL,
-    provider="openai",
-    client=groq_client,
-)
+# eval_llm = llm_factory(
+#     model=config.GROQ_MODEL,
+#     provider="openai",
+#     client=groq_client,
+# )
 
-print(f"☁️ Using {config.GROQ_MODEL} via GROQ API for Eval")
+# print(f"☁️ Using {config.GROQ_MODEL} via GROQ API for Eval")
 
 # ---------------------------------------
 # Embedding Model
@@ -139,11 +149,55 @@ for idx, row in df.iterrows():
 
     print(f"Evaluating MCQ explanation {idx + 1}/{len(df)}")
 
+    errors = []
+    contexts = None
+
+    # -------- Safe context parsing --------
     try:
-        contexts = ast.literal_eval(row["contexts"])
+        raw_ctx = row.get("contexts")
 
-        explanation = extract_explanation(row["model_answer"])
+        if pd.isna(raw_ctx):
+            contexts = None
+        else:
+            raw_ctx = str(raw_ctx).strip()
+            if raw_ctx == "" or raw_ctx == "[]":
+                contexts = None
+            else:
+                parsed = ast.literal_eval(raw_ctx)
+                if isinstance(parsed, list) and len(parsed) > 0:
+                    contexts = parsed
+                else:
+                    contexts = None
+    except Exception:
+        contexts = None
 
+    if contexts is None:
+        errors.append("retrieved_contexts is missing")
+
+    # -------- Explanation extraction --------
+    explanation = extract_explanation(row.get("model_answer"))
+
+    if not explanation.strip():
+        errors.append("mcq_explanation is missing")
+
+    # -------- Invalid sample → log & continue --------
+    if errors:
+        append_row({
+            "id": row.get("id", idx + 1),
+            "question": row.get("question"),
+            "faithfulness": np.nan,
+            "context_precision": np.nan,
+            "context_recall": np.nan,
+            "difficulty": row.get("difficulty"),
+            "category": row.get("category"),
+            "error": "; ".join(errors),
+        })
+        save_checkpoint(idx)
+        print(f"⚠️ Row {idx}: {'; '.join(errors)}")
+        continue
+
+    # -------- Normal RAGAS evaluation --------
+    try:
         result_row = {
             "id": row.get("id", idx + 1),
             "question": row["question"],
@@ -164,22 +218,70 @@ for idx, row in df.iterrows():
             ).value,
             "difficulty": row.get("difficulty"),
             "category": row.get("category"),
+            "error": None,
         }
 
         append_row(result_row)
         save_checkpoint(idx)
 
     except Exception as e:
-        print(f"⚠️ Stopped safely at row {idx}: {e}")
-        break
+        append_row({
+            "id": row.get("id", idx + 1),
+            "question": row.get("question"),
+            "faithfulness": np.nan,
+            "context_precision": np.nan,
+            "context_recall": np.nan,
+            "difficulty": row.get("difficulty"),
+            "category": row.get("category"),
+            "error": str(e),
+        })
+        save_checkpoint(idx)
+        print(f"⚠️ Row {idx}: {e}")
+        continue
 
 # ---------------------------------------
 # Summary 
 # ---------------------------------------
 if OUTPUT_CSV.exists():
     out_df = pd.read_csv(OUTPUT_CSV)
-    print("✅ MCQ RAGAS evaluation complete")
-    print("\nAverage scores:")
-    print(out_df.mean(numeric_only=True))
+
+    total = len(out_df)
+    failed = out_df["error"].notna().sum()
+    success = total - failed
+
+    print("✅ MCQ RAGAS evaluation complete\n")
+
+    print("📊 Evaluation Summary")
+    print("---------------------")
+    print(f"Total samples        : {total}")
+    print(f"Successfully scored  : {success}")
+    print(f"Failed samples       : {failed}")
+    print(f"Success rate         : {(success / total) * 100:.2f}%")
+
+    # Retrieval coverage
+    retrieval_failures = out_df["error"].str.contains(
+        "retrieved_contexts", na=False
+    ).sum()
+
+    print(f"Retrieval failures   : {retrieval_failures}")
+    print(f"Retrieval coverage   : {((total - retrieval_failures) / total) * 100:.2f}%")
+
+    # Average scores on valid rows only
+    valid_df = out_df[out_df["error"].isna()]
+
+    if not valid_df.empty:
+        print("\n📈 Average Scores (valid samples only):")
+        print(
+            valid_df[
+                ["faithfulness", "context_precision", "context_recall"]
+            ].mean()
+        )
+    else:
+        print("\n⚠️ No valid samples available for averaging")
+
+    # Optional: error breakdown
+    print("\n🧯 Failure breakdown:")
+    print(out_df["error"].value_counts(dropna=True))
+
 else:
-    print("⚠️ No successful rows were evaluated (CSV not created)")
+    print("⚠️ No evaluation output found (CSV not created)")
