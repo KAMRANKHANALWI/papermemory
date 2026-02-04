@@ -136,55 +136,55 @@ Paper Memory is a RAG application that transforms static PDF documents into an i
 ### System Design
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
+┌──────────────────────────────────────────────────────────────────┐
 │                         Frontend (Next.js)                       │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────┐  │
-│  │  Sidebar     │  │  Chat Area   │  │  Collection Manager  │  │
-│  │  - Collections│  │  - Messages  │  │  - Upload/Delete     │  │
-│  │  - PDF Select│  │  - Streaming │  │  - Rename/View       │  │
-│  └──────────────┘  └──────────────┘  └──────────────────────┘  │
-└────────────────────────────┬────────────────────────────────────┘
+│  ┌────────────────┐  ┌──────────────┐  ┌──────────────────────┐  │
+│  │  Sidebar       │  │  Chat Area   │  │  Collection Manager  │  │
+│  │  - Collections │  │  - Messages  │  │  - Upload/Delete     │  │
+│  │  - PDF Select  │  │  - Streaming │  │  - Rename/View       │  │
+│  └────────────────┘  └──────────────┘  └──────────────────────┘  │
+└────────────────────────────┬─────────────────────────────────────┘
                              │ HTTP/SSE
-┌────────────────────────────┴────────────────────────────────────┐
+┌────────────────────────────┴─────────────────────────────────────┐
 │                      Backend (FastAPI)                           │
-│  ┌──────────────────────────────────────────────────────────┐  │
-│  │                    API Layer (app.py)                     │  │
-│  │  - 30+ RESTful Endpoints                                  │  │
-│  │  - CORS Middleware                                        │  │
-│  │  - Request/Response Validation (Pydantic)                │  │
-│  └───────────────────────┬──────────────────────────────────┘  │
+│  ┌───────────────────────────────────────────────────────────┐   │
+│  │                    API Layer (app.py)                     │   │
+│  │  - 30+ RESTful Endpoints                                  │   │
+│  │  - CORS Middleware                                        │   │
+│  │  - Request/Response Validation (Pydantic)                 │   │
+│  └───────────────────────┬───────────────────────────────────┘   │
 │                          │                                       │
-│  ┌──────────────────────┴───────────────────────────────────┐  │
-│  │              Service Layer (Orchestration)                │  │
-│  ├───────────────────────────────────────────────────────────┤  │
-│  │ ChatService          │ Generate responses, manage LLM    │  │
-│  │ DocumentProcessor    │ PDF extraction, chunking, embed   │  │
-│  │ CollectionManager    │ Vector DB operations, CRUD        │  │
-│  │ QueryClassifier      │ LLM-based intent classification   │  │
-│  │ MemoryService        │ Conversation persistence          │  │
-│  │ PDFSelectionService  │ Multi-PDF selection tracking      │  │
-│  │ MetadataService      │ Document metadata operations      │  │
-│  │ FileSearchService    │ Content search within files       │  │
-│  └───────────────────────────────────────────────────────────┘  │
-│                          │                                       │
-│  ┌──────────────────────┴───────────────────────────────────┐  │
-│  │                  Data Layer                               │  │
-│  ├───────────────────────────────────────────────────────────┤  │
-│  │ ChromaDB             │ Vector storage & similarity search│  │
-│  │ HuggingFace Embed    │ all-MiniLM-L6-v2 embeddings      │  │
-│  │ JSON Storage         │ Conversation memory               │  │
-│  │ File System          │ Original PDF storage              │  │
-│  └───────────────────────────────────────────────────────────┘  │
-│                          │                                       │
-│  ┌──────────────────────┴───────────────────────────────────┐  │
-│  │                  LLM Factory                              │  │
-│  ├───────────────────────────────────────────────────────────┤  │
-│  │  Priority Order:                                          │  │
-│  │  1. Ollama (if USE_LOCAL_LLM=true)                       │  │
-│  │  2. Gemini (if GOOGLE_API_KEY set)                       │  │
-│  │  3. Groq (if GROQ_API_KEY set)                           │  │
-│  └───────────────────────────────────────────────────────────┘  │
-└─────────────────────────────────────────────────────────────────┘
+│  ┌───────────────────────┴───────────────────────────────────┐   │
+│  │              Service Layer (Orchestration)                │   │
+│  ├───────────────────────────────────────────────────────────┤   │
+│  │ ChatService          │ Generate responses, manage LLM     │   │
+│  │ DocumentProcessor    │ PDF extraction, chunking, embed    │   │
+│  │ CollectionManager    │ Vector DB operations, CRUD         │   │
+│  │ QueryClassifier      │ LLM-based intent classification    │   │
+│  │ MemoryService        │ Conversation persistence           │   │
+│  │ PDFSelectionService  │ Multi-PDF selection tracking       │   │
+│  │ MetadataService      │ Document metadata operations       │   │
+│  │ FileSearchService    │ Content search within files        │   │
+│  └───────────────────────────────────────────────────────────┘   │
+│                         │                                        │
+│  ┌──────────────────────┴────────────────────────────────────┐   │
+│  │                  Data Layer                               │   │
+│  ├───────────────────────────────────────────────────────────┤   │
+│  │ ChromaDB             │ Vector storage & similarity search │   │
+│  │ HuggingFace Embed    │ all-MiniLM-L6-v2 embeddings        │   │
+│  │ JSON Storage         │ Conversation memory                │   │
+│  │ File System          │ Original PDF storage               │   │
+│  └───────────────────────────────────────────────────────────┘   │
+│                         │                                        │
+│  ┌──────────────────────┴────────────────────────────────────┐   │
+│  │                  LLM Factory                              │   │
+│  ├───────────────────────────────────────────────────────────┤   │
+│  │  Priority Order:                                          │   │
+│  │  1. Ollama (if USE_LOCAL_LLM=true)                        │   │
+│  │  2. Gemini (if GOOGLE_API_KEY set)                        │   │
+│  │  3. Groq (if GROQ_API_KEY set)                            │   │
+│  └───────────────────────────────────────────────────────────┘   │
+└──────────────────────────────────────────────────────────────────┘
 ```
 
 ### Data Flow
