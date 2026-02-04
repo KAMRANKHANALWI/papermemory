@@ -51,6 +51,8 @@ def append_row(row: dict):
         mode="a",
         header=not OUTPUT_CSV.exists(),
         index=False,
+        quoting=1,  # csv.QUOTE_ALL
+        escapechar="\\",
     )
 
 
@@ -157,16 +159,18 @@ for idx, row in df.iterrows():
 
     # -------- If invalid → append & continue --------
     if error_msg:
-        append_row({
-            "id": row.get("id"),
-            "question": row.get("question"),
-            "faithfulness": np.nan,
-            "answer_relevancy": np.nan,
-            "answer_correctness": np.nan,
-            "context_precision": np.nan,
-            "context_recall": np.nan,
-            "error": error_msg,
-        })
+        append_row(
+            {
+                "id": row.get("id"),
+                "question": row.get("question"),
+                "faithfulness": np.nan,
+                "answer_relevancy": np.nan,
+                "answer_correctness": np.nan,
+                "context_precision": np.nan,
+                "context_recall": np.nan,
+                "error": error_msg,
+            }
+        )
         save_checkpoint(idx)
         print(f"⚠️ Row {idx}: {error_msg}")
         continue
@@ -207,25 +211,31 @@ for idx, row in df.iterrows():
         save_checkpoint(idx)
 
     except Exception as e:
-        append_row({
-            "id": row.get("id"),
-            "question": row.get("question"),
-            "faithfulness": np.nan,
-            "answer_relevancy": np.nan,
-            "answer_correctness": np.nan,
-            "context_precision": np.nan,
-            "context_recall": np.nan,
-            "error": str(e),
-        })
+        append_row(
+            {
+                "id": row.get("id"),
+                "question": row.get("question"),
+                "faithfulness": np.nan,
+                "answer_relevancy": np.nan,
+                "answer_correctness": np.nan,
+                "context_precision": np.nan,
+                "context_recall": np.nan,
+                "error": str(e),
+            }
+        )
         save_checkpoint(idx)
         print(f"⚠️ Row {idx}: {e}")
         continue
 
 # -------------------------------------------------
-# Summary 
+# Summary
 # -------------------------------------------------
 if OUTPUT_CSV.exists():
-    out_df = pd.read_csv(OUTPUT_CSV)
+    out_df = pd.read_csv(
+        OUTPUT_CSV,
+        engine="python",
+        on_bad_lines="skip",
+    )
 
     total = len(out_df)
     failed = out_df["error"].notna().sum()
@@ -241,9 +251,9 @@ if OUTPUT_CSV.exists():
     print(f"Success rate         : {(success / total) * 100:.2f}%")
 
     # Retrieval failures
-    retrieval_failures = out_df["error"].str.contains(
-        "retrieved_contexts", na=False
-    ).sum()
+    retrieval_failures = (
+        out_df["error"].str.contains("retrieved_contexts", na=False).sum()
+    )
 
     print(f"Retrieval failures   : {retrieval_failures}")
     print(f"Retrieval coverage   : {((total - retrieval_failures) / total) * 100:.2f}%")

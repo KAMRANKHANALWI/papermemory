@@ -29,6 +29,7 @@ CHECKPOINT = Path("src/eval/checkpoints/eval_mcq_ragas_checkpoint.json")
 OUTPUT_CSV.parent.mkdir(parents=True, exist_ok=True)
 CHECKPOINT.parent.mkdir(parents=True, exist_ok=True)
 
+
 # ---------------------------------------
 # Checkpoint helpers
 # ---------------------------------------
@@ -49,7 +50,10 @@ def append_row(row: dict):
         mode="a",
         header=not OUTPUT_CSV.exists(),
         index=False,
+        quoting=1,  # csv.QUOTE_ALL
+        escapechar="\\",
     )
+
 
 # ---------------------------------------
 # Helpers
@@ -140,7 +144,7 @@ ctx_precision = ContextPrecision(llm=eval_llm)
 ctx_recall = ContextRecall(llm=eval_llm)
 
 # ---------------------------------------
-# Evaluate 
+# Evaluate
 # ---------------------------------------
 for idx, row in df.iterrows():
 
@@ -182,16 +186,18 @@ for idx, row in df.iterrows():
 
     # -------- Invalid sample → log & continue --------
     if errors:
-        append_row({
-            "id": row.get("id", idx + 1),
-            "question": row.get("question"),
-            "faithfulness": np.nan,
-            "context_precision": np.nan,
-            "context_recall": np.nan,
-            "difficulty": row.get("difficulty"),
-            "category": row.get("category"),
-            "error": "; ".join(errors),
-        })
+        append_row(
+            {
+                "id": row.get("id", idx + 1),
+                "question": row.get("question"),
+                "faithfulness": np.nan,
+                "context_precision": np.nan,
+                "context_recall": np.nan,
+                "difficulty": row.get("difficulty"),
+                "category": row.get("category"),
+                "error": "; ".join(errors),
+            }
+        )
         save_checkpoint(idx)
         print(f"⚠️ Row {idx}: {'; '.join(errors)}")
         continue
@@ -225,25 +231,31 @@ for idx, row in df.iterrows():
         save_checkpoint(idx)
 
     except Exception as e:
-        append_row({
-            "id": row.get("id", idx + 1),
-            "question": row.get("question"),
-            "faithfulness": np.nan,
-            "context_precision": np.nan,
-            "context_recall": np.nan,
-            "difficulty": row.get("difficulty"),
-            "category": row.get("category"),
-            "error": str(e),
-        })
+        append_row(
+            {
+                "id": row.get("id", idx + 1),
+                "question": row.get("question"),
+                "faithfulness": np.nan,
+                "context_precision": np.nan,
+                "context_recall": np.nan,
+                "difficulty": row.get("difficulty"),
+                "category": row.get("category"),
+                "error": str(e),
+            }
+        )
         save_checkpoint(idx)
         print(f"⚠️ Row {idx}: {e}")
         continue
 
 # ---------------------------------------
-# Summary 
+# Summary
 # ---------------------------------------
 if OUTPUT_CSV.exists():
-    out_df = pd.read_csv(OUTPUT_CSV)
+    out_df = pd.read_csv(
+        OUTPUT_CSV,
+        engine="python",
+        on_bad_lines="skip",
+    )
 
     total = len(out_df)
     failed = out_df["error"].notna().sum()
@@ -259,9 +271,9 @@ if OUTPUT_CSV.exists():
     print(f"Success rate         : {(success / total) * 100:.2f}%")
 
     # Retrieval coverage
-    retrieval_failures = out_df["error"].str.contains(
-        "retrieved_contexts", na=False
-    ).sum()
+    retrieval_failures = (
+        out_df["error"].str.contains("retrieved_contexts", na=False).sum()
+    )
 
     print(f"Retrieval failures   : {retrieval_failures}")
     print(f"Retrieval coverage   : {((total - retrieval_failures) / total) * 100:.2f}%")
@@ -271,11 +283,7 @@ if OUTPUT_CSV.exists():
 
     if not valid_df.empty:
         print("\n📈 Average Scores (valid samples only):")
-        print(
-            valid_df[
-                ["faithfulness", "context_precision", "context_recall"]
-            ].mean()
-        )
+        print(valid_df[["faithfulness", "context_precision", "context_recall"]].mean())
     else:
         print("\n⚠️ No valid samples available for averaging")
 
