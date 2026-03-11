@@ -1,0 +1,27 @@
+# -----------------------------
+# Virtual environments
+# -----------------------------
+venv/
+.env/
+.venv/
+env/
+ENV/
+
+# -----------------------------
+# Environment & secrets
+# -----------------------------
+*.env
+.env.*
+!.env.example
+
+# -----------------------------
+# IDE / Editor settings
+# -----------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# misc
+.DS_Store
+*.pem

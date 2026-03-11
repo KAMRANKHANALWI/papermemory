@@ -1,0 +1,450 @@
+id,question,faithfulness,answer_relevancy,answer_correctness,context_precision,context_recall
+gut_intro_001,What are the two dominant bacterial phyla in the human gut microbiota?,0.7692307692307693,0.9999999999999304,0.4266135429654009,0.9478458049751214,1.0
+gut_intro_002,What is the ratio of human to bacterial cells in the body according to recent estimates?,0.2222222222222222,0.96222878142301,0.3311191531103601,0.6071428571276787,1.0
+gut_intro_003,How does mode of delivery affect infant gut microbiota composition?,0.5,0.9261826589205324,0.3686968735196629,0.9571428571291836,1.0
+gut_intro_004,What are short-chain fatty acids and which are the three predominant types found in the GI tract?,0.5333333333333333,0.6632100734426968,0.3138897706180592,0.5791666666521874,0.5
+gut_intro_005,Describe the role of butyrate in intestinal health,0.4375,0.9560453349620172,0.3544423274814324,0.9467813051041186,0.75
+gut_intro_006,What is dysbiosis and how is it related to disease?,0.8636363636363636,0.9202552616137388,0.2610473047952428,0.928262786585806,1.0
+gut_intro_007,How does dietary fiber deficiency affect the gut microbiota and mucosal barrier?,0.4615384615384615,0.980523192596918,0.3538448736339924,0.9749999999878124,1.0
+gut_intro_008,What role does Akkermansia muciniphila play in metabolic health?,1.0,0.9675060126045426,0.1897247106051624,0.99999999999,1.0
+gut_intro_009,Compare the microbiota composition between the small intestine and the colon,0.5217391304347826,0.9189552306760652,0.327220102350601,0.99999999999,1.0
+gut_intro_010,At what age does the infant gut microbiota resemble adult microbiota?,0.6923076923076923,0.8469536447299683,0.3700838876606419,0.99999999995,1.0
+gut_intro_011,How do antibiotics affect the gut microbiota in terms of pathogen colonization?,0.9,0.8602415548978374,0.352008428243906,0.9999999999888888,0.5
+gut_intro_012,What is the role of secretory IgA in the gut?,0.5555555555555556,0.7189321450865572,0.3717808371671438,0.4761904761746032,1.0
+gut_intro_013,Explain the concept of microbial cross-feeding in the gut,0.8571428571428571,0.844131202322223,0.41555513074381,0.7801587301457276,1.0
+gut_intro_014,What are the main benefits the gut microbiota provides to the host?,1.0,0.9227332502558724,0.5766573885726565,0.947222222210382,0.5714285714285714
+gut_intro_015,How does FUT2 genotype affect gut microbiota composition?,0.0,0.8768146687832531,0.3469678074647556,0.8528571428400857,1.0
+multiomics_ibd_001,How many metagenomic and metabolomic cohorts were analyzed in this multi-omics IBD study?,0.0,0.0,0.1987496588233833,0.8333333333166666,1.0
+multiomics_ibd_002,What are the three rarely reported bacteria identified in IBD through cross-cohort analysis?,1.0,0.0,0.170079668353144,0.5178571428441964,0.0
+multiomics_ibd_003,What bioinformatics tools were used for taxonomic and functional profiling of metagenomic data?,0.0,0.9779738385532936,0.1729359043848932,0.8134920634785052,1.0
+multiomics_ibd_004,How many differential metabolites were identified with significant differences in IBD?,0.25,0.0,0.1862927529966294,0.4799999999904,0.5
+multiomics_ibd_005,What were the AUROC values achieved for IBD diagnosis using multi-omics biomarkers?,0.5,0.0,0.2074603979121446,0.5190476190372381,1.0
+multiomics_ibd_006,Explain the multi-omics biological correlation (MOBC) maps framework and its significance in IBD research,0.1578947368421052,0.8802713083859635,0.264800110811926,0.9467813051041186,1.0
+multiomics_ibd_007,How did alpha and beta diversity differ between IBD patients and healthy controls?,0.625,0.0,0.2071309993235525,0.9085317460203892,1.0
+multiomics_ibd_008,Describe the role of butyric acid-producing bacteria in IBD according to the study findings,0.4166666666666667,0.0,0.4567970546660981,0.624999999984375,1.0
+multiomics_ibd_009,What is the significance of the Two-component system pathway in IBD pathogenesis?,0.0833333333333333,0.8585900907150363,0.3080670899822923,0.8857142857016327,0.4
+multiomics_ibd_010,How does Asaccharobacter celatus potentially relate to autoimmune disease regulation?,0.75,0.0,0.4106393495108947,0.9999999999,1.0
+multiomics_ibd_011,What metabolic alterations related to the tricarboxylic acid cycle were observed in IBD patients?,0.2857142857142857,0.8325066086805579,0.1469941765234558,0.7916666666402777,1.0
+multiomics_ibd_012,Compare the diagnostic performance of bacterial species models versus KO gene models for IBD detection,0.44,0.6231077017292249,0.2793107584299199,0.9765432098656928,1.0
+multiomics_ibd_013,Explain how the K22477 gene deficiency contributes to IBD symptoms through glutamate metabolism,0.5,0.7740774043485713,0.5077602995262085,0.84999999997875,0.75
+multiomics_ibd_014,Describe the role of aminoacyl-tRNA synthetases in IBD and their potential as therapeutic targets,0.15,0.7158409193425138,0.2370793611291413,0.961734693863812,1.0
+multiomics_ibd_015,How does integration of multi-omics data improve IBD diagnostic performance compared to single-omics approaches?,0.5625,0.7645976719935123,0.2962961031741377,0.99999999999,0.6
+ibd_microbiota_001,What percentage of the global population is affected by inflammatory bowel disease (IBD)?,0.1818181818181818,0.9880298752102484,0.296789766348428,0.766666666641111,0.5
+ibd_microbiota_002,What are the two main bacterial phyla that constitute the majority of gut microbiota?,0.9090909090909092,0.998873346048584,0.4806454157591354,0.8520408163143586,0.5
+ibd_microbiota_003,Name three beneficial bacterial species that are reduced in patients with IBD,0.5384615384615384,0.9042033260679172,0.3778174632180501,0.5916666666469445,1.0
+ibd_microbiota_004,Which fungal species has been found to produce the toxin candidalysin in IBD patients?,1.0,0.720391560361373,0.5157824429882532,0.8968253968104498,1.0
+ibd_microbiota_005,What is the role of TRPV1 nociceptors in intestinal health according to the paper?,0.8333333333333334,0.9835934538512044,0.3130164002567573,0.9444444444287038,1.0
+ibd_microbiota_006,Explain how short-chain fatty acids (SCFAs) contribute to intestinal homeostasis and Treg cell differentiation,0.5454545454545454,0.8843838470197974,0.4154151505298516,0.9888888888779012,0.75
+ibd_microbiota_007,Describe the mechanism by which 3-oxolithocholic acid (3-oxoLCA) and isoalloLCA modulate intestinal inflammation,0.6,0.8287779221806955,0.1732098501601465,0.733333333315,1.0
+ibd_microbiota_008,How does adherent-invasive Escherichia coli contribute to intestinal inflammation in Crohn's disease?,0.1333333333333333,0.9396529165858056,0.1903951303305423,0.1825396825305555,1.0
+ibd_microbiota_009,What role does the CARD9 gene variant play in fungal immunity and IBD susceptibility?,0.1333333333333333,0.9403018509121416,0.1758542289927905,0.6333333333122222,0.75
+ibd_microbiota_010,Explain the dual role of microbiota-reactive B cells in IBD pathogenesis,0.5,0.9126609614485952,0.5160370644222694,0.8782627865863614,1.0
+ibd_microbiota_011,Describe how autophagy proteins and ATG16L1 variants affect Paneth cell function and intestinal inflammation,0.4615384615384615,0.7143123048642585,0.3041635324990683,0.870138888878012,1.0
+ibd_microbiota_012,Compare the efficacy and mechanisms of faecal microbiota transplantation (FMT) between ulcerative colitis and Crohn's disease,0.1428571428571428,0.8628876096799205,0.2722519587334406,0.9206845237980152,1.0
+ibd_microbiota_013,Explain the concept of indolimines as genotoxic metabolites and their potential role in IBD pathogenesis,0.0,0.4635502662580504,0.1753225122823891,0.9478458049751214,1.0
+ibd_microbiota_014,Describe the neuroimmune mechanisms linking gut microbiota to pain perception and inflammation in IBD,0.7647058823529411,0.9597790323079488,0.7514678713465631,0.9060405643638304,0.4285714285714285
+ibd_microbiota_015,"How do amino acid-conjugated bile acids differ from traditional bile acids, and what is their significance in Crohn's disease?",0.1818181818181818,0.8717708706501909,0.2875625589824179,0.9467813051041186,0.5
+saudi_ibd_001,How many IBD patients and healthy controls were included in the Saudi Arabian gut microbiota study?,0.0,0.0,0.0871941092841031,0.5833333333041666,0.0
+saudi_ibd_002,What sequencing technology and panel were used in this study?,0.3333333333333333,0.0,0.0167376091864126,0.1249999999875,1.0
+saudi_ibd_003,Which two genera showed significant association with Crohn's disease versus controls in the Saudi population?,0.0,0.0,0.1029231005256437,0.7642857142704286,0.5
+saudi_ibd_004,What were the top differential genera between CD and UC patients?,1.0,0.9813411366492548,0.7730243741096189,0.8928571428348213,1.0
+saudi_ibd_005,What were the mean ages of IBD cases and controls in the study?,0.0,0.0,0.1257655879354235,0.49999999995,0.6666666666666666
+saudi_ibd_006,Describe the data quality control process and filtering thresholds used in this study,0.875,0.7546620657370875,0.1464394894336984,0.8528571428400857,0.4
+saudi_ibd_007,What statistical methods were used to assess beta diversity and differential abundance?,0.6,0.9386169127200402,0.2971979429767372,0.9666666666473333,1.0
+saudi_ibd_008,What were the key findings regarding age as a factor in microbiome diversity?,0.5555555555555556,0.964633573287248,0.1755869202817543,0.7092592592474383,0.25
+saudi_ibd_009,How did the study's findings regarding Lachnoclostridium differ from previous IBD research?,0.3333333333333333,0.0,0.1613825895383364,0.8349999999833,0.75
+saudi_ibd_010,What species-level findings were consistent between both UC and CD groups compared to controls?,0.6666666666666666,0.0,0.142443200902408,0.7656746031650322,0.0
+saudi_ibd_011,What was the prevalence and characteristics of Type-2 Diabetes in the IBD cohort?,0.1666666666666666,0.0,0.1775619926512098,0.7222222221981481,0.5
+saudi_ibd_012,Compare the findings of this Saudi Arabian study to typical Western IBD microbiome studies and explain why differences might exist,0.3571428571428571,0.0,0.2991338178385496,0.99999999999,0.75
+saudi_ibd_013,Explain the epidemiological trends of IBD in Saudi Arabia from the 1980s to the study period and the factors contributing to these changes,0.3333333333333333,0.8354283961353182,0.309327380995074,0.8178571428435119,1.0
+saudi_ibd_014,Describe the unsupervised discovery methods used and their findings regarding disease classification,0.2142857142857142,0.909573708377521,0.0960300647652785,0.699999999965,0.3333333333333333
+saudi_ibd_015,What were the complete workflow and bioinformatics pipeline used from raw sequencing to final taxonomic classification?,0.5,0.7659356097107031,0.383572328323164,0.5166666666494445,0.2
+obesity_microbiota_001,What percentage increase was observed in obese adolescents in the United States between 1988-1994 and 2013-2014?,0.3333333333333333,0.9368004501324082,0.3374378300361194,0.49999999995,1.0
+obesity_microbiota_002,Which bacterial markers were identified as specific to obese adolescents in the study?,0.0,0.0,0.155230509570777,0.8917233559963313,1.0
+obesity_microbiota_003,What was the highest ChaoI index value among the four study groups?,0.3333333333333333,0.0,0.1404276058527475,0.3333333333,0.0
+obesity_microbiota_004,How many total sequencing reads were obtained from the 69 fecal samples in this study?,1.0,0.0,0.1306187923676366,0.2574074073988271,0.0
+obesity_microbiota_005,Which bacterial markers were associated with normal weight adolescents?,0.4,0.0,0.2038118333953057,0.9571428571291836,1.0
+obesity_microbiota_006,Explain the role of Faecalibacterium prausnitzii in the gut microbiota of obese adolescents,0.0625,0.7323146922957336,0.4609392798497191,0.899999999982,1.0
+obesity_microbiota_007,How does the gut microbiota influence host energy metabolism according to the study?,0.0555555555555555,0.9588473137046026,0.3130086605581194,0.9888888888779012,1.0
+obesity_microbiota_008,What were the key differences in metabolic pathways between obese and normal weight adolescents?,0.1428571428571428,0.984135952573914,0.1668340481009438,0.6844246031660479,1.0
+obesity_microbiota_009,Describe the correlation patterns between bacterial species and clinical characteristics in obese adolescents,0.3571428571428571,0.9628098313498392,0.1415117332074981,0.8083900226641885,0.7777777777777778
+obesity_microbiota_010,What role does Actinomyces play in obesity and how is it related to dietary factors?,0.1666666666666666,0.9000115317146201,0.2859394131126835,0.9093537414836076,1.0
+obesity_microbiota_011,What is the significance of Parabacteroides distasonis in the gut microbiota and its relationship with body weight?,0.2,0.8393648930371427,0.2660074943387004,0.6392857142729286,0.6666666666666666
+obesity_microbiota_012,Compare the gut microbiota composition differences between obese adolescents and obese adults in terms of phylum-level distribution,0.125,0.9131631602355134,0.2028840035205483,0.9415178571310882,1.0
+obesity_microbiota_013,Explain the differential metabolic pathway enrichment between adolescent and adult obese patients and its implications,0.3571428571428571,0.5680624215270333,0.2683866601370842,0.99999999999,0.5
+obesity_microbiota_014,"How does the discriminant analysis model perform in classifying the four study groups, and what does this reveal about microbiota-based classification?",0.8571428571428571,0.0,0.1077228730864875,0.6433333333204667,0.75
+obesity_microbiota_015,What is the relationship between secondary bile acid biosynthesis pathways and obesity status in adolescents?,0.5,0.0,0.2045072041945138,0.9888888888779012,0.75
+microbiome_richness_001,What percentage of the study population had low bacterial richness (LGC)?,0.0,0.0,0.1891206373736526,0.2944444444346296,0.5
+microbiome_richness_002,How many bacterial genes were detected in the total study sample and what distribution pattern was observed?,0.6666666666666666,0.0,0.1550524202940316,0.7590136054313339,0.3333333333333333
+microbiome_richness_003,Which bacterial genera were significantly more abundant in LGC versus HGC individuals?,0.5,0.0,0.1572062447436014,0.7972789115532362,1.0
+microbiome_richness_004,What was the AUC value achieved in distinguishing LGC from HGC individuals using bacterial species?,0.0,0.0,0.1648431543907892,0.6937499999826562,1.0
+microbiome_richness_005,What was the total number of genes that differed significantly between LGC and HGC individuals?,0.0,0.0,0.1610506254893157,0.5535714285529761,1.0
+microbiome_richness_006,Explain the gene clustering methodology used to identify bacterial species in the study,0.0,0.7100243568344812,0.1749732398255153,0.9444444444287038,0.8
+microbiome_richness_007,How did the metabolic pathways differ between LGC and HGC individuals?,0.5,0.0,0.1226798933125432,0.6072751322650111,1.0
+microbiome_richness_008,What inflammatory and metabolic phenotypes characterized LGC individuals?,0.5,0.0,0.1599736368643305,0.9028571428390856,1.0
+microbiome_richness_009,Describe the relationship between gut microbiota richness and weight gain over time in obese individuals,0.6363636363636364,0.9690440420146266,0.2690897706468965,0.99999999999,0.5
+microbiome_richness_010,What is the proposed mechanism linking gut microbiota imbalance to metabolic dysfunction?,0.5,0.9398511865357446,0.1744638858834536,0.99999999999,0.3333333333333333
+microbiome_richness_011,How does Faecalibacterium prausnitzii relate to gut microbiota richness and inflammation?,0.4545454545454545,0.8632487081920549,0.3542056204168343,0.99999999999,0.3333333333333333
+microbiome_richness_012,Compare the discrimination power of gut microbiome versus human genome in distinguishing lean from obese individuals,0.6666666666666666,0.9519560757472716,0.3145308742410324,0.99999999999,1.0
+microbiome_richness_013,Describe the validation methods used to confirm that clustered genes originated from the same bacterial species,0.0,0.914795186603527,0.1389909930384684,0.3812698412622158,0.6666666666666666
+microbiome_richness_014,What evidence suggests that low gut bacterial richness is associated with multiple chronic diseases beyond obesity?,0.2,0.7335520804843961,0.5125386572913255,0.9206845237980152,1.0
+microbiome_richness_015,Explain the HITChip analysis results and their concordance with metagenomic sequencing for bacterial richness assessment,1.0,0.0,0.1103681285848782,0.6496031745923478,0.2
+tb_microbiome_001,What was the total number of tuberculosis patients enrolled in the study who provided fecal samples at all three time points?,0.0,0.0,0.1857725628053708,0.6666666666444444,1.0
+tb_microbiome_002,What percentage of tuberculosis patients reported being free of gastrointestinal symptoms during anti-tuberculosis treatment?,0.25,0.0,0.2175100319709043,0.6537037036928086,1.0
+tb_microbiome_003,What are the four first-line drugs used in the standard 6-month anti-tuberculosis treatment regimen?,0.2857142857142857,0.941293985213293,0.8753510364842709,0.8142857142694285,1.0
+tb_microbiome_004,Which four cities in Jiangsu Province were selected as research sites for this multi-center study?,0.0,0.0,0.0321574344932215,0.0,0.0
+tb_microbiome_005,What were the top four predominant bacterial phyla in the gut microbiome of tuberculosis patients?,0.3333333333333333,0.0,0.1420242904369858,0.629523809511219,1.0
+tb_microbiome_006,How does anti-tuberculosis treatment affect gut microbiota diversity over the course of treatment?,0.4285714285714285,0.8559641082803443,0.3185013174165166,0.7856701939947976,1.0
+tb_microbiome_007,Explain how the gut microbiota influences the immune response to tuberculosis through short-chain fatty acids (SCFAs),1.0,0.6547020130891781,0.540295666895647,0.928262786585806,1.0
+tb_microbiome_008,What changes occur to Proteobacteria abundance during and after the intensive phase of anti-tuberculosis treatment?,0.3333333333333333,0.0,0.2165723813557913,0.748115079355728,1.0
+tb_microbiome_009,Describe the role of Firmicutes in systemic immune responses and how anti-tuberculosis treatment affects this phylum,0.1428571428571428,0.7158349266423506,0.3120606721974989,0.9428571428382856,0.6666666666666666
+tb_microbiome_010,How does the Gastrointestinal Symptom Rating Scale (GSRS) assess gastrointestinal symptoms in tuberculosis patients?,0.25,0.9635215106146916,0.5136809346047666,0.8124999999796875,1.0
+tb_microbiome_011,What is the gut-lung axis and how does it relate to tuberculosis pathogenesis?,0.5,0.9846584336431432,0.3284486363316229,0.9060405643638304,0.8
+tb_microbiome_012,Compare the changes in Bacteroidota abundance throughout the anti-tuberculosis treatment course and explain their significance,0.0625,0.8617084294023242,0.3772012825328701,0.8274376417115354,0.75
+tb_microbiome_013,Describe the dynamic changes in Escherichia-Shigella and Akkermansia genera during anti-tuberculosis treatment and their potential clinical implications,0.5625,0.516509683108007,0.3161334265647809,0.9765432098656928,1.0
+tb_microbiome_014,What were the specific changes observed in the genus Enterococcus during anti-tuberculosis treatment and what are the potential clinical concerns?,0.25,0.0,0.1823474149552252,0.99999999999,1.0
+tb_microbiome_015,What were the key methodological approaches used for gut microbiome analysis in this study?,0.0,0.0,0.0989731409851804,0.2574074073988271,0.1666666666666666
+ptb_microbiota_001,What percentage of the global population is infected with tuberculosis?,0.3333333333333333,0.8344617365289921,0.2052205862436013,0.0,0.0
+ptb_microbiota_002,How many participants were included in the study comparing PTB patients to healthy controls?,0.0,0.0,0.0851651572818746,0.26785714284375,0.0
+ptb_microbiota_003,What cholesterol-related parameters were significantly lower in PTB patients?,0.0,0.0,0.1756935859542369,0.9055555555404629,1.0
+ptb_microbiota_004,How many operational taxonomic units (OTUs) were identified in the study?,0.0,0.0,0.0332585785797919,0.3833333333205555,0.0
+ptb_microbiota_005,Which bacterial phylum showed considerable reduction in PTB patients?,0.6666666666666666,0.0,0.15430549329985,0.9999999999,1.0
+ptb_microbiota_006,Explain how Mycobacterium tuberculosis infection affects the production of short-chain fatty acids in the gut,0.1428571428571428,0.7718707988729084,0.3162600439851933,0.8782627865863614,1.0
+ptb_microbiota_007,What is the gut-lung axis and how does it relate to tuberculosis?,0.7222222222222222,0.9330731075393304,0.3766365750814283,0.99999999999,0.6666666666666666
+ptb_microbiota_008,How does the alpha diversity of gut microbiota differ between PTB patients and healthy controls?,0.4166666666666667,0.707980711899661,0.2820875429206673,0.9467813051041186,1.0
+ptb_microbiota_009,Describe the changes in bacterial families observed at the family level in PTB patients,0.1818181818181818,0.6419718908862153,0.1408385293412796,0.6635912698329749,1.0
+ptb_microbiota_010,How do short-chain fatty acids benefit human health and what role might their reduction play in PTB?,0.7058823529411765,0.798826821074948,0.4050979055305884,0.99999999999,1.0
+ptb_microbiota_011,What role does indole propionic acid play in tuberculosis infection?,0.0909090909090909,0.9090021032012215,0.1682947285858793,0.699999999965,1.0
+ptb_microbiota_012,"Compare the relative abundances of Firmicutes and Bacteroidetes between PTB patients and healthy controls, and explain the significance",0.4375,0.4802023702883352,0.4265610589835806,0.9467813051041186,1.0
+ptb_microbiota_013,Describe the performance of the random forest classification models for distinguishing PTB patients from healthy controls,0.1,0.7519504917498293,0.1292013682818386,0.9999999999875,0.6666666666666666
+ptb_microbiota_014,"How do the metabolomic profiles differ between PTB patients and healthy controls, and what pathways are affected?",0.3529411764705882,0.7456296062850164,0.2254682840153202,0.99999999999,0.75
+ptb_microbiota_015,"Explain the correlations found between gut microbiota, faecal metabolites, and biochemical parameters in PTB patients",0.3125,0.7908660747108477,0.2375705226806159,0.99999999999,1.0
+tb_fermentation_001,How many treatment-naive TB patients and healthy donors were included in this gut microbiome study?,0.0,0.0,0.141992833987588,0.474999999988125,0.0
+tb_fermentation_002,What proportion of the total gut microbiota was comprised by disease-associated pathobionts in TB patients?,0.4285714285714285,0.0,0.1971150354512016,0.99999999999,0.0
+tb_fermentation_003,What were the main phylum-level taxonomic changes observed in TB patients compared to healthy controls?,1.0,0.6849619153138224,0.2111682558698794,0.5583333333193751,0.0
+tb_fermentation_004,Which bacterial species were strongly enriched in TB patients according to LEfSe analysis with LDA scores ≥ 4.5?,0.0,0.0,0.1743825166299397,0.8857142856995238,1.0
+tb_fermentation_005,What was the effect size (Cohen's d) of tuberculosis status on the gut microbiome compared to other common factors?,0.4,0.0,0.185071127902213,0.9467813051041186,1.0
+tb_fermentation_006,Describe how the metabolic capacity of the gut microbiome differs between TB patients and healthy controls,0.5454545454545454,0.941801667390852,0.3047495567533373,0.99999999999,0.75
+tb_fermentation_007,What are the key metabolic pathways that were most elevated in TB patients' gut microbiomes?,0.3333333333333333,0.0,0.187570875679565,0.9626543209769582,0.6666666666666666
+tb_fermentation_008,How does lactic acidosis affect the gut microbiome composition and why is this significant?,0.375,0.9849981670983562,0.3475330832115367,0.9888888888779012,1.0
+tb_fermentation_009,Explain the relationship between increased glycolysis and bacterial growth in TB patients' gut microbiomes,0.625,0.9813527904450215,0.3796515643607035,0.99999999999,0.8
+tb_fermentation_010,What bacterial families contributed most to the increased homolactic fermentation pathway in TB patients?,1.0,0.0,0.1307212608681412,0.9293650793534622,0.6666666666666666
+tb_fermentation_011,How does lactate directly interfere with the host's immune response to tuberculosis?,1.0,0.0,0.1613031320849903,0.9999999999857144,0.8
+tb_fermentation_012,Compare the diversity of Prevotella copri clades between TB patients and healthy controls and explain the significance,0.2941176470588235,0.92861351983879,0.3355972388351792,0.9999999999888888,1.0
+tb_fermentation_013,"What is the relationship between serum lactate levels and tuberculosis outcomes, and how might gut microbiota contribute?",0.5625,0.8627293316966905,0.423367575682924,0.99999999999,1.0
+tb_fermentation_014,Describe the observed changes in cell wall biosynthesis pathways and identify the major bacterial contributors,0.3076923076923077,0.8060595133807053,0.2968860939175237,0.99999999999,0.75
+tb_fermentation_015,What novel research focus and potential treatment target does this study propose for tuberculosis?,0.0,0.0,0.1015839545549281,0.9861111110987848,0.25
+gi_microbiota_tb_001,How many cohorts were analyzed in this study and what were their sizes?,0.5,0.0,0.0774854480174207,0.0,0.0
+gi_microbiota_tb_002,What is the clinical trial registration number for the HRZE/NTZ study?,0.0,0.0,0.138482086435644,0.9999999999,1.0
+gi_microbiota_tb_003,What bacterial classes were primarily depleted by HRZE treatment?,0.3333333333333333,0.6008491882177016,0.122549525794509,0.57718253967292,0.5
+gi_microbiota_tb_004,What was the key difference in treatment outcomes between HRZE and NTZ?,0.3333333333333333,0.0,0.1310239637609808,0.7579365079238757,0.6666666666666666
+gi_microbiota_tb_005,Which oxygen-tolerant pathobionts were expanded by NTZ treatment?,0.5,0.0,0.1583819419370416,0.474999999988125,1.0
+gi_microbiota_tb_006,Explain how HRZE and NTZ differently affected peripheral inflammatory gene expression pathways,0.4285714285714285,0.976659236167408,0.2823954086237181,0.99999999999,1.0
+gi_microbiota_tb_007,How did the microbiome diversity change during the 6-month longitudinal HRZE treatment?,0.2,0.0,0.19770855253916,0.9249999999815,1.0
+gi_microbiota_tb_008,Describe the analytical approach used to decouple microbiome effects from pathogen sterilization,0.7142857142857143,0.4579879088494497,0.1264347906103423,0.766666666641111,0.0
+gi_microbiota_tb_009,What were the findings regarding TB-associated inflammatory genes after HRZE versus NTZ treatment?,0.0,0.0,0.1870044975096667,0.99999999999,1.0
+gi_microbiota_tb_010,How did the study validate microbiome-inflammatory relationships using the healthy control cohort?,0.0,0.0,0.1464117448034471,0.4799999999904,1.0
+gi_microbiota_tb_011,Explain the concept of the gut-lung axis as it relates to tuberculosis treatment,0.4285714285714285,0.9464338010470902,0.4510761799976143,0.8782627865863614,0.75
+gi_microbiota_tb_012,Compare the microbiome perturbation effects of HRZE versus NTZ treatment in detail,0.0909090909090909,0.7565860361101474,0.1179619017080282,0.99999999999,0.25
+gi_microbiota_tb_013,What were the key findings from the Random Forest Regression modeling regarding predictors of inflammatory pathway changes?,0.5,0.0,0.1386145327177236,0.9999999999888888,1.0
+gi_microbiota_tb_014,How did the study address the challenge of isolating microbiome effects from pathogen-killing effects?,0.5,0.0,0.1608947315558714,0.499999999975,1.0
+gi_microbiota_tb_015,What were the findings regarding IBD-associated genes during TB treatment?,1.0,0.8315417441407705,0.5925112858671423,0.6666666666333333,1.0
+tb_microbiome_001,What percentage of TB patients in the study had positive sputum culture results?,0.0,0.0,0.1409670463623565,0.7928571428373214,1.0
+tb_microbiome_002,How many participants were enrolled in the study and what were the two groups?,0.0,0.0,0.0618517707203207,0.16666666665,0.0
+tb_microbiome_003,What sequencing methods were used to analyze gut bacteria and fungi?,0.25,0.9359287940144344,0.2793775529909239,0.0,0.3333333333333333
+tb_microbiome_004,Which bacterial genera showed increased abundance in TB patients?,0.6666666666666666,0.0,0.1918714696284653,0.8555555555412963,0.5
+tb_microbiome_005,Which bacterial genera showed decreased abundance in TB patients?,0.75,0.0,0.1896033961920595,0.2499999999875,1.0
+tb_microbiome_006,How did the fungal-to-bacterial species ratio change in TB patients?,0.25,0.0,0.1960784852031187,0.6271825396720866,1.0
+tb_microbiome_007,Describe the changes in alpha diversity for both bacteria and fungi in TB patients,0.2,0.899288953705072,0.332516306279999,0.9765432098656928,1.0
+tb_microbiome_008,How did the trans-kingdom network differ between TB patients and healthy controls?,1.0,0.5728882196206153,0.4298499416721746,0.5277777777645832,0.25
+tb_microbiome_009,What changes occurred at the phylum level for gut bacteria in TB patients?,0.0,0.0,0.1540405429863059,0.6925925925810493,0.5
+tb_microbiome_010,Describe the alterations in gut mycobiota composition in TB patients,0.3333333333333333,0.7450375935858973,0.1676004699597477,0.928262786585806,0.6666666666666666
+tb_microbiome_011,How do serum levels of IFN-γ and IL-17 differ between TB patients and healthy controls?,0.2,0.9082588409185158,0.2163893495630036,0.99999999999,1.0
+tb_microbiome_012,Explain the correlation between Bacteroides and serum cytokines in TB patients,0.5333333333333333,0.949624095545008,0.3079745588449133,0.9888888888779012,1.0
+tb_microbiome_013,What was the diagnostic performance of the combined bacterial and fungal biomarker set?,0.0,0.0,0.1580091532664348,0.9999999999875,1.0
+tb_microbiome_014,Compare the role of Blautia in healthy controls versus its impact in TB patients,0.75,0.9713305876196844,0.6714751698952711,0.7994047618914384,1.0
+tb_microbiome_015,Describe how the gut-lung axis theory relates to the findings in this TB study,1.0,0.0,0.3685465360606337,0.99999999999,1.0
+gut_mech_001,What are the major bacterial phyla that dominate the colonic microbiome?,0.2105263157894736,0.984018792789752,0.4277369733547758,0.9085317460203892,1.0
+gut_mech_002,How does the microbial abundance differ between the duodenum and the colon?,0.9166666666666666,0.9846681590709152,0.4501956174238849,0.928262786585806,1.0
+gut_mech_003,"What metabolites are produced when gut bacteria ferment dietary fibers, and what are their typical proportions?",0.2941176470588235,0.7975733248232298,0.4674784259740299,0.9999999999888888,0.5
+gut_mech_004,Explain how butyrate helps maintain anaerobic conditions in the colon and why this is important,0.5454545454545454,0.7795762023607026,0.184097504249805,0.9593749999880078,1.0
+gut_mech_005,"What are the two main G-protein-coupled receptors activated by short chain fatty acids, and what gut peptides do they stimulate?",0.5263157894736842,0.9102251372679314,0.321299540570569,0.8956845237983276,1.0
+gut_mech_006,What is metabolic endotoxemia and how does it relate to obesity?,0.3571428571428571,0.8914291071234132,0.4514413417765344,0.999999999975,1.0
+gut_mech_007,Describe the role of the endocannabinoid system in gut barrier function and obesity,0.4782608695652174,0.8243826015245737,0.2869385043136059,0.9888888888779012,1.0
+gut_mech_008,"What are the primary and secondary bile acids, and how are they related?",0.7,0.5860180438574963,0.5616289731499078,0.947222222210382,1.0
+gut_mech_009,What percentage of intestinal bile acids are reabsorbed in the ileum and what regulates their synthesis?,1.0,0.851251898805232,0.3910645497679397,0.699999999986,0.5
+gut_mech_010,What is the aryl hydrocarbon receptor (AhR) and what role does it play in metabolic health?,0.4090909090909091,0.9171023834334684,0.2194142659273998,0.9593749999880078,1.0
+gut_mech_011,Compare the microbiota and conditions of the small intestine versus the colon,0.6,0.8729291336716646,0.1684734827762435,0.928262786585806,1.0
+gut_mech_012,What is the role of Akkermansia muciniphila's Amuc_1100 protein?,0.4285714285714285,0.9626195374595368,0.1488959624812587,0.6253968253843174,1.0
+gut_mech_013,What are enterosynes and how do they relate to diabetes?,0.8,0.5163116771670021,0.1833058084990624,0.9266666666481332,0.75
+gut_mech_014,How does NAPE-PLD deletion in different tissues affect metabolism and the gut microbiota?,0.5263157894736842,0.4960057941760025,0.3753910147499679,0.7287037036915586,1.0
+gut_mech_015,What are advanced glycation end products (AGEs) and how does the gut microbiota process them?,1.0,0.0,0.1643116145649569,0.285185185175679,0.0
+tb_microbiome_001,How many identifiable differential microbiomes were found in the gut between healthy controls and TB patients?,1.0,0.0,0.2166032687944971,0.5079365079263491,1.0
+tb_microbiome_002,What is China's ranking globally in terms of new TB cases?,0.1666666666666666,0.8746865905031477,0.3922807475815846,0.9999999999666668,1.0
+tb_microbiome_003,How many participants were enrolled in this tuberculosis microbiome study and how were they grouped?,1.0,0.5806343953913043,0.2729789149938988,0.5535714285529761,0.0
+tb_microbiome_004,Which bacterial genera were most closely associated with the CD4/CD8 ratio?,0.8,0.0,0.1701728346454656,0.599999999985,1.0
+tb_microbiome_005,What percentage of Mycobacterium tuberculosis infections occur through the respiratory tract?,0.4,0.7089611198006955,0.3748234999432775,0.9166666666361112,1.0
+tb_microbiome_006,Explain the mechanism by which Prevotella influences Th17 cell differentiation and immune responses,0.3333333333333333,0.9150005814545196,0.3392105152652404,0.9999999999888888,1.0
+tb_microbiome_007,How does the gut-lung axis contribute to susceptibility to tuberculosis infection?,0.5384615384615384,0.9095944635342686,0.3320880628736169,0.99999999999,1.0
+tb_microbiome_008,What role do short-chain fatty acids play in the lung-gut microbiome axis according to the paper?,1.0,0.0,0.293486770516752,0.3222222222114814,0.5
+tb_microbiome_009,How do gut microbes influence the differentiation of specific T-cell subpopulations?,0.8421052631578947,0.8833427405835144,0.2970292934332451,0.9317956349089874,1.0
+tb_microbiome_010,Describe the changes in alpha diversity indices between healthy controls and TB patients,0.4615384615384615,0.7194758000643277,0.3438419886926235,0.756802721077624,1.0
+tb_microbiome_011,What was the performance of the biomarker model in distinguishing TB patients from healthy controls?,0.5,0.0,0.1940834887423183,0.678703703692392,0.0
+tb_microbiome_012,"Compare the CD4+ T cell levels, CD8+ T cell levels, and CD4/CD8 ratios between the three groups studied",0.25,0.0,0.1265235655827583,0.8968253968104498,1.0
+tb_microbiome_013,Explain the dual and controversial role of IL-4 in pulmonary tuberculosis pathogenesis,0.4615384615384615,0.9114726639491828,0.4323875465143479,0.6666666666444444,1.0
+tb_microbiome_014,"Compare the cytokine profiles (IL-4, IL-6, IL-10, and IL-2) across the three study groups and explain their clinical significance",0.3684210526315789,0.7319929810031041,0.2110822611639562,0.961734693863812,0.8
+tb_microbiome_015,Describe the unique microbial signatures found in initial TB patients versus retreated TB patients,1.0,0.0,0.2357325235525232,0.8522817460210924,1.0
+mdr_tb_microbiome_001,How many participants were recruited in the study and what were the four groups?,0.0,0.0,0.0571088006775006,0.0,0.0
+mdr_tb_microbiome_002,How long had the MDR-TB recovered group been off treatment?,0.6666666666666666,0.0,0.2034881730102602,0.5873015872820105,1.0
+mdr_tb_microbiome_003,What is the typical duration of MDR-TB treatment and which drugs are commonly used?,0.3125,0.8766747538052821,0.307766818150601,0.6845238095066964,1.0
+mdr_tb_microbiome_004,What percentage decrease in gut microbiota richness was observed in the recovered group?,0.0,0.0,0.1623073737225424,0.99999999995,1.0
+mdr_tb_microbiome_005,What gastrointestinal symptoms were observed in the recovered group?,0.0,0.0,0.1440709521485454,0.3333333333166666,1.0
+mdr_tb_microbiome_006,"Describe the changes in alpha diversity metrics (ACE, Shannon index, and Shannon evenness) in the recovered group",0.5,0.8230429331178389,0.1761286505829385,0.8951388888776995,0.6666666666666666
+mdr_tb_microbiome_007,How did the gut microbiota composition change at the phylum level during and after MDR-TB treatment?,0.1428571428571428,0.0,0.1367886684042626,0.9206845237980152,0.0
+mdr_tb_microbiome_008,What metabolic changes were observed in the recovered group and were they statistically significant?,0.3333333333333333,0.0,0.0970417498157989,0.1249999999875,1.0
+mdr_tb_microbiome_009,How many bacterial genera biomarkers were identified in the treated group versus the recovered group?,0.0,0.0,0.167304503527377,0.7499999999625,1.0
+mdr_tb_microbiome_010,What were the PERMANOVA p-values for comparing gut microbiota communities between groups?,0.3333333333333333,0.0,0.0921242357776164,0.5277777777601852,0.5
+mdr_tb_microbiome_011,Explain the correlation between Verrucomicrobia/Akkermansia and LDLC levels,0.2857142857142857,0.3542976615822975,0.3206844967452756,0.7634920634793386,0.3333333333333333
+mdr_tb_microbiome_012,Describe the mechanisms by which altered gut microbiota may lead to elevated LDLC and TC levels,0.5882352941176471,0.770420438566855,0.3089270721438696,0.9526289682420604,0.7142857142857143
+mdr_tb_microbiome_013,Compare the recovery of gut microbiota after short-course versus long-course antibiotic treatment based on the literature discussed,0.4285714285714285,0.8082536933395428,0.4340145280973405,0.9571428571291836,0.25
+mdr_tb_microbiome_014,"According to resilience theory, why did the gut microbiota not return to its original state after MDR-TB treatment?",0.3846153846153846,0.0,0.3124272026230561,0.8240079364976364,1.0
+mdr_tb_microbiome_015,What bacterial taxa showed correlations with total cholesterol (TC) levels in the study?,0.0,0.0,0.1235190533081821,0.8583333333161666,1.0
+mali_tb_001,How many TB participants were included in the final analysis and how many completed the study at Month-15?,0.5,0.0,0.1447339273412468,0.7916666666402777,0.3333333333333333
+mali_tb_002,What was the first-line anti-tuberculosis treatment regimen used in this study?,0.0,0.0,0.0132529983950716,0.5777777777585185,1.0
+mali_tb_003,How many times higher are treated TB patients at risk of experiencing a new TB episode compared to the general population?,0.1428571428571428,0.856883696347027,0.3563904213373903,0.1249999999875,0.0
+mali_tb_004,What were the four time points at which TB patients were sampled in this longitudinal study?,0.0,0.0,0.1607815896421182,0.9999999999666668,1.0
+mali_tb_005,How many metabolites were found to be statistically significant across the three TB time points studied?,0.0,0.0,0.1537824929942395,0.99999999995,1.0
+mali_tb_006,Explain how the Shannon diversity of gut microbiota changed over the course of TB treatment,0.5,0.9347223313200046,0.4070672895024531,0.9093537414836076,0.6666666666666666
+mali_tb_007,Describe the changes observed in the phyla Firmicutes and Proteobacteria during TB treatment,0.3076923076923077,0.5993740808992151,0.1532417862472815,0.5972789115560933,0.6666666666666666
+mali_tb_008,What role does quinolinate play in TB treatment and how is it related to gut microbiota?,0.0714285714285714,0.8650910568137699,0.1978095327412963,0.8441043083779639,1.0
+mali_tb_009,How does arachidonic acid relate to TB pathogenesis and gut microbiota dysbiosis?,0.3846153846153846,0.8125558840740711,0.258204608632789,0.22499999998875,0.6666666666666666
+mali_tb_010,What changes were observed in the Euryarchaeota phylum during TB treatment?,0.75,0.8400090642316206,0.8178353560255929,0.7869614512359232,1.0
+mali_tb_011,Describe the functional pathway changes observed in TB patients compared to healthy controls,0.3125,0.8787738102242494,0.1459527515094076,0.9467813051041186,0.75
+mali_tb_012,"Compare the cytokine profiles observed during TB treatment, specifically IL-6, IFN-γ, and IL-17A",0.625,0.7873627016106566,0.5612099850669539,0.99999999999,1.0
+mali_tb_013,Explain the relationship between the modern Euro-American lineage 4 Mtb strains and treatment response compared to other lineages,0.0,0.4902091122505581,0.2817064668095396,0.0,0.0
+mali_tb_014,Compare the metabolomic profiles at different time points using PCA and HCA analyses,0.0,0.8711575997567409,0.1218761873207411,0.7798185940931681,1.0
+mali_tb_015,Describe the comprehensive metabolic pathway correlations found with both taxa abundance and metabolites in TB patients,0.3333333333333333,0.970955136727448,0.1988357084347911,0.99999999999,0.6
+ptb_microbiome_001,What were the alpha diversity indexes showing in PTB patients compared to healthy controls?,0.2,0.0,0.1464732499863939,0.691666666649375,1.0
+ptb_microbiome_002,Which bacterial genera showed increased abundance in PTB patients at the genus level?,0.0,0.0,0.1543582726003458,0.5953703703604476,1.0
+ptb_microbiome_003,How many participants were enrolled in the study and what were their demographics?,0.0,0.0,0.0314183309566116,0.19999999998,0.0
+ptb_microbiome_004,What sequencing method was used and which region of the bacterial genome was analyzed?,0.0,0.0,0.1468632819946656,0.3095238095083333,1.0
+ptb_microbiome_005,Which SCFA-producing bacteria were depleted in PTB patients?,0.5,0.0,0.1801584772584209,0.9087301587171768,1.0
+ptb_microbiome_006,How does the gut microbiota imbalance affect biochemical indexes in PTB patients through lipopolysaccharide production?,0.1333333333333333,0.7613293160884234,0.3668348813761898,0.99999999999,1.0
+ptb_microbiome_007,Explain the relationship between SCFA-producing bacteria and clinical biochemical markers in the study,0.631578947368421,0.0,0.1809632402363656,0.9999999999888888,1.0
+ptb_microbiome_008,How do SCFAs benefit human health according to the study's discussion?,0.4615384615384615,0.678686217925804,0.4916582739091164,0.841225749549736,1.0
+ptb_microbiome_009,What metabolic pathways were significantly altered in PTB patients according to PICRUSt2 analysis?,0.0,0.0,0.0931734931105877,0.9626543209769582,1.0
+ptb_microbiome_010,What role does Lactobacillus enrichment play in PTB pathogenesis?,0.5,0.751667940394058,0.2720034583129688,0.7095238095060713,0.6666666666666666
+ptb_microbiome_011,Describe the folic acid biosynthesis pathway alteration and its relationship to Lactobacillus in PTB patients,0.1333333333333333,0.8420479579938768,0.3078965522407692,0.99999999999,0.5
+ptb_microbiome_012,Compare the phylum-level microbiota composition changes between PTB patients and healthy controls,0.3333333333333333,0.8126035429635388,0.3784773728687766,0.99999999999,1.0
+ptb_microbiome_013,What diagnostic biomarker combination was identified for PTB and what was its performance?,0.25,0.0,0.0936282855489184,0.5694444444254629,1.0
+ptb_microbiome_014,"How does the microbial interaction network differ between PTB patients and healthy controls, and what does this suggest?",0.8461538461538461,0.7061284773178307,0.3454920317544684,0.99999999999,1.0
+ptb_microbiome_015,Explain the proposed mechanism by which gut microbiota dysbiosis affects PTB pathology through the gut-lung axis and nutrient metabolism,0.1764705882352941,0.792507718139028,0.3319348148124873,0.99999999999,1.0
+tb_microbiome_001,How many samples were used in the initial training dataset and testing dataset?,0.0,0.0,0.0841639847611962,0.7027777777660649,0.3333333333333333
+tb_microbiome_002,"What taxonomic profiling tool was used and how many phyla, genera, and species were identified?",0.0,0.0,0.1616716673507505,0.0,0.0
+tb_microbiome_003,Which two species were enriched in TB patients compared to healthy controls?,0.5,0.7950027402740057,0.1508940616434881,0.7916666666402777,0.0
+tb_microbiome_004,What sequencing platform and insert size were used for library construction?,1.0,0.0,0.1561473243248621,0.3174603174497354,1.0
+tb_microbiome_005,How many SCFA-producing bacteria were enriched in healthy controls and what types were they?,0.0,0.0,0.1501028887234978,0.99999999999,1.0
+tb_microbiome_006,Explain the gut-lung axis hypothesis and its bidirectional mechanisms,0.7222222222222222,0.7580694235420312,0.4731774832627891,0.8782627865863614,1.0
+tb_microbiome_007,What were the findings regarding metabolic pathway alterations in TB patients?,0.125,0.9321643281886208,0.1973541994050812,0.99999999999,0.6666666666666666
+tb_microbiome_008,Describe the vitamin biosynthesis pathway differences between TB patients and healthy controls,0.1764705882352941,0.8384560044536314,0.2712583595240043,0.99999999999,1.0
+tb_microbiome_009,How do SCFAs affect host inflammatory and immune responses according to the study?,0.3076923076923077,0.8032482068864367,0.2498225134709865,0.9060405643638304,1.0
+tb_microbiome_010,What is the significance of Clostridium bolteae enrichment in TB patients in relation to other diseases?,0.5,0.0,0.1731145157530201,0.6726190476055952,0.25
+tb_microbiome_011,Explain the conflicting evidence regarding SCFAs and tuberculosis risk,0.2727272727272727,0.6143997106859747,0.1597519328257012,0.9367346938641692,1.0
+tb_microbiome_012,Compare the species number and alpha diversity between TB patients and healthy controls with statistical significance,0.4,0.91947562750337,0.1789363311584733,0.9626543209769582,1.0
+tb_microbiome_013,What was the performance of the random forest classification model in both training and testing datasets?,0.0,0.7935650413110101,0.1179043734217645,0.7947278911451093,1.0
+tb_microbiome_014,Describe the SNP analysis findings in Bacteroides vulgatus and their implications,0.0833333333333333,0.954709735200022,0.3740026169511661,0.8956845237983276,0.6
+tb_microbiome_015,What are the limitations and future directions mentioned in the study regarding causality and diagnostic potential?,0.5,0.0,0.0403649991178605,0.9571428571291836,0.8
+crc_microbiome_001,How many stool metagenomes were analyzed in total across all cohorts in this study?,0.0,0.0,0.1892744192808954,0.6666666666333333,1.0
+crc_microbiome_002,What was the average AUC achieved for CRC prediction using the LODO approach?,0.5,0.0,0.1380277468854491,0.9999999999,1.0
+crc_microbiome_003,How many new cohorts were sequenced specifically for this study?,1.0,0.0,0.1303026226062306,0.1428571428428571,0.5
+crc_microbiome_004,What profiling tools were used to analyze the metagenomic samples?,0.4285714285714285,0.0,0.1511470732093468,0.9999999999,0.0
+crc_microbiome_005,How many bacterial species-level genome bins (SGBs) were detected in total?,0.0,0.0,0.1485139144285791,0.7499999999625,1.0
+crc_microbiome_006,"How does the oral-to-gut microbiome score differ between CRC patients and controls, and what does this indicate?",0.125,0.6814494143736312,0.1651273429559107,0.8388888888784027,1.0
+crc_microbiome_007,"What role does the gut microbiome play in ammonia production in CRC, and which enzymes are involved?",0.4666666666666667,0.7963775830577307,0.2522161926576364,0.9999999999666668,1.0
+crc_microbiome_008,Describe the relationship between the primary tumor presence and the stool microbiome signature in stage IV CRC patients,0.3846153846153846,0.881753117192993,0.3756754474928492,0.9888888888779012,1.0
+crc_microbiome_009,How did the study identify and characterize strain-level associations with CRC?,0.0,0.0,0.0996578406655567,0.7994047618914384,1.0
+crc_microbiome_010,What patterns of microbial succession were observed along the adenoma-carcinoma sequence?,0.8181818181818182,0.0,0.3961905853737879,0.9888888888779012,1.0
+crc_microbiome_011,How do sulfur-producing enzymes and oleate production pathways relate to CRC?,0.2666666666666666,0.6989940096965163,0.3449354125069115,0.9765432098656928,1.0
+crc_microbiome_012,"Compare the microbial signatures and their overlap between different CRC stages, cardiometabolic risk markers, and inflammatory diseases",0.0625,0.6022319082101358,0.269965239580294,0.99999999999,1.0
+crc_microbiome_013,Explain the subspecies-level differentiation observed in Fusobacterium nucleatum and how different clades associate with CRC,0.15,0.7483379158977671,0.2565669946019033,0.9467813051041186,1.0
+crc_microbiome_014,Describe the strain-specific gene carriage differences identified in Ruminococcus bicirculans and their functional implications for CRC progression,0.0,-0.0,-0.0090132742572775,0.99999999999,1.0
+crc_microbiome_015,Compare the predictive performance and biological insights between using oral versus non-oral SGBs for CRC classification across different tumor characteristics,0.0,0.5292977459484413,0.3100590206118865,0.99999999999,1.0
+crc_microbiota_001,What are the main oral pathogens enriched in patients with colorectal cancer according to meta-analyses?,0.1428571428571428,0.8905110435428479,0.1679215173074466,0.99999999999,1.0
+crc_microbiota_002,What percentage of gut microbial sequences are comprised of bacteria?,0.8333333333333334,0.8887973213850094,0.5796367784564845,0.9999999999,1.0
+crc_microbiota_003,Which probiotic strains have been recognized for inhibiting carcinogen-induced colorectal tumorigenesis in rodents since the 1980s?,0.4285714285714285,0.9830045870488858,0.3470458358931288,0.8111111110948889,1.0
+crc_microbiota_004,What are the two main types of secondary bile acids generated from primary bile acids by gut bacteria?,0.0,0.9999999999999654,0.6282970895114278,0.8644345237987182,1.0
+crc_microbiota_005,What percentage of patients with CRC have MSI-high or MMR-deficient disease that responds to immune checkpoint inhibitors?,0.4285714285714285,0.6064505413004831,0.559041019480967,0.7777777777518519,1.0
+crc_microbiota_006,How does Fusobacterium nucleatum promote colorectal tumorigenesis through its FadA adhesin?,0.4285714285714285,0.9680342664223032,0.170882647586707,0.9626543209769582,0.5
+crc_microbiota_007,Explain how Peptostreptococcus anaerobius promotes colorectal carcinogenesis at the molecular level,0.3636363636363636,0.8904224239783028,0.1302554090915102,0.99999999998,0.0
+crc_microbiota_008,How does colibactin produced by pks+ E. coli cause DNA damage that contributes to colorectal tumorigenesis?,0.2,0.8414762393716965,0.3993398628330326,0.9761904761742064,1.0
+crc_microbiota_009,What is the mechanism by which enterotoxigenic Bacteroides fragilis induces inflammation and promotes CRC?,0.0,0.7023978263082608,0.2625517619321214,0.6226190476065953,0.6666666666666666
+crc_microbiota_010,How do short-chain fatty acids like butyrate exert their anticancer effects in colorectal cancer?,0.5,0.8628459668582681,0.3033382329151031,0.7602678571333538,0.6
+crc_microbiota_011,What is the role of myeloid-derived suppressor cells (MDSCs) in gut dysbiosis-mediated CRC progression?,0.25,0.9425732676561044,0.3084858051836755,0.9999999999888888,1.0
+crc_microbiota_012,"Compare the roles of bacterial dysbiosis versus non-bacterial dysbiosis (fungi, viruses, Archaea) in colorectal cancer pathogenesis",0.75,0.7274591527531516,0.2032960820237572,0.99999999999,0.4
+crc_microbiota_013,How does Fusobacterium nucleatum have contrasting effects on chemotherapy resistance versus immune checkpoint inhibitor therapy?,0.4285714285714285,0.975397757613772,0.4306530084722149,0.99999999999,1.0
+crc_microbiota_014,Describe the interplay between gut microbiota-derived gallic acid and mutant p53 in colorectal tumorigenesis,0.8125,0.9298123541850648,0.2950085114182377,0.7590136054313339,1.0
+crc_microbiota_015,How does Streptococcus thermophilus-derived β-galactosidase suppress CRC development through metabolic reprogramming?,0.4444444444444444,0.9999999999999046,0.3190950442360309,0.8055555555287036,1.0
+crc_biomarkers_001,What percentage of stage I-III CRC patients relapse within 5 years after tumor removal?,0.1111111111111111,0.6899793007924262,0.1838213171772153,0.9999999999,0.5
+crc_biomarkers_002,How many CRC patients were included in the study and what was the median follow-up period for progression?,0.5,0.0,0.1773276882212368,0.2083333333229166,0.0
+crc_biomarkers_003,What are the two main enterotypes observed in CRC patients and which bacterial genera represent them?,0.3333333333333333,0.7083959314652443,0.4832885157404668,0.74999999998125,1.0
+crc_biomarkers_004,What are the four novel prognostic bacteria identified in addition to Fusobacterium nucleatum?,0.6666666666666666,0.0,0.157816108413772,0.6666666666444444,1.0
+crc_biomarkers_005,"In the M5-low group, how many patients progressed out of the total?",0.0,0.0,0.1432053013675028,0.9999999999,1.0
+crc_biomarkers_006,How does the prevalence of Prevotella differ between Western and non-Western populations according to the meta-analysis?,0.8571428571428571,0.0,0.2891207065161004,0.5953703703604476,1.0
+crc_biomarkers_007,Explain how the microbial hazard score M5 was constructed and what scores were assigned to different risk categories,0.0,0.768589469943891,0.2134951237055884,0.6453968253839175,1.0
+crc_biomarkers_008,What screening method was used to identify prognostic bacterial species and what were the selection criteria?,0.4,0.0,0.1606040121671517,0.7944444444285556,1.0
+crc_biomarkers_009,What were the adjusted hazard ratios for the four novel prognostic pathobionts after controlling for confounding factors?,0.5,0.0,0.1389620563231347,0.9240362811659376,1.0
+crc_biomarkers_010,Describe the association between gut microbiota and clinical parameters using PERMANOVA,0.1666666666666666,0.456161885448404,0.1749959142714003,0.6661564625755175,0.6666666666666666
+crc_biomarkers_011,"How did the bacterial families Akkermansiaceae, Fusobacteriaceae, and Prevotellaceae differ between patients with and without progression?",0.5714285714285714,0.0,0.1755310278652521,0.6666666666444444,1.0
+crc_biomarkers_012,Compare the performance of the M5 microbial hazard score with traditional clinical biomarkers in predicting CRC progression,0.1818181818181818,0.8313747521610878,0.1630330604058467,0.9325396825263604,0.4
+crc_biomarkers_013,"What microbial pathways were identified through PICRUSt2 analysis as differentially abundant between M5-low and M5-high groups, and what is their functional significance?",0.3333333333333333,0.0,0.1609603416140625,0.6656084655973721,1.0
+crc_biomarkers_014,Explain the clinical characteristics that differed between M5-low and M5-high groups and discuss the implications,0.0833333333333333,0.7378695156308078,0.1037886260988447,0.7847222222091434,0.6666666666666666
+crc_biomarkers_015,"What is the relationship between the oral microbiota and the identified prognostic biomarkers, and why might this be clinically significant?",0.625,0.9792563984031242,0.1813651159828348,0.99999999999,0.6666666666666666
+t2d_microbiome_001,How many metagenomes were analyzed in this cross-cohort study of type 2 diabetes and the gut microbiome?,0.0,0.0,0.1147660658210196,0.629523809511219,1.0
+t2d_microbiome_002,How many phylogenetically diverse bacterial species were significantly associated with type 2 diabetes at FDR < 0.10?,0.5,0.0,0.1741630523529452,0.8163265306005831,0.5
+t2d_microbiome_003,What bioinformatic workflow was used for uniform taxonomic and functional profiling across all cohorts?,0.1333333333333333,0.0,0.1675982226440369,0.729523809509219,1.0
+t2d_microbiome_004,Which bacterial species enriched in T2D patients were identified as common oral cavity residents?,0.0,0.507739726659514,0.4808969610378294,0.8178571428435119,1.0
+t2d_microbiome_005,Name three butyrate-producing bacteria that were depleted in T2D patients.,0.5714285714285714,0.691735638647283,0.1431155067049562,0.5833333333041666,1.0
+t2d_microbiome_006,Describe the community-level microbial functional shift towards glucose dysregulation observed in T2D patients.,0.2941176470588235,0.6569817895429669,0.2428857000595347,0.9999999999888888,0.6
+t2d_microbiome_007,How does the study address the confounding effect of metformin use on gut microbiome composition?,0.0,0.0,0.1883475715431403,0.99999999999,1.0
+t2d_microbiome_008,Explain how the biosynthesis of immunomodulatory bacterial structural components was altered in T2D patients.,0.0,0.0,0.006714167905026,0.947222222210382,1.0
+t2d_microbiome_009,What method did the study use to identify pathways in Prevotella copri that differ between T2D patients and controls while controlling for species-level abundance?,0.0,0.0,0.1069070453104322,0.7291666666484374,1.0
+t2d_microbiome_010,Describe the batch effect correction method used in this study and its effectiveness.,0.2307692307692307,0.8396604486890178,0.1317903269083177,0.3333333333,1.0
+t2d_microbiome_011,How did the inclusion of microbial species improve the classification performance of random forest models distinguishing T2D from controls?,0.6363636363636364,0.8165351609943555,0.1639188992302395,0.9999999999875,1.0
+t2d_microbiome_012,Compare the functional capacity for branched-chain amino acid biosynthesis in different Prevotella copri subclades and explain how this relates to T2D risk.,0.5294117647058824,0.5837125291741704,0.3300124289280183,0.9749999999878124,1.0
+t2d_microbiome_013,Describe the within-species phylogenetic analysis approach used to identify strain-level associations with T2D and provide an example of findings from Eubacterium rectale.,0.5333333333333333,0.5126023591731426,0.3151820639530405,0.99999999999,0.8
+t2d_microbiome_014,Explain the strain-specific functional variations identified in Escherichia coli and their potential mechanisms for contributing to T2D pathogenesis.,0.3333333333333333,0.7579528048431786,0.1320844480706827,0.99999999999,1.0
+t2d_microbiome_015,"What novel biological processes underlying metabolic risk were identified through gene ontology enrichment analysis of strain-specific genes, and which species demonstrated these findings?",0.0,0.0,0.1191767498685425,0.91666666664375,0.6
+gut_diabetes_001,What are the consistent features of altered gut microbiota composition found in type 2 diabetes across epidemiological studies worldwide?,0.7272727272727273,0.9496691548898064,0.356739036372398,0.8073412698311779,0.0
+gut_diabetes_002,Which bacterial species showed altered abundance in metformin users across multiple cohorts?,0.6666666666666666,0.0,0.1747719038791245,0.9293650793534622,1.0
+gut_diabetes_003,"What sample size did the large metagenomic study from Israel and the United States use, and what was its key finding?",0.0,0.0,0.1425504352456243,0.6388888888675925,0.0
+gut_diabetes_004,What percentage of colonic acetate and butyrate reach the circulation after hepatic metabolism?,0.5,0.0,0.2310762308167438,0.5305555555449444,1.0
+gut_diabetes_005,What is the mucus-degrading bacterium that has been linked to features of metabolic syndrome?,0.3333333333333333,0.9087045627765322,0.1384952828416802,0.7499999999625,1.0
+gut_diabetes_006,Explain how metformin alters the gut microbiota to mediate its glucose-lowering effects according to intervention studies.,0.4615384615384615,0.8572073998581552,0.3361937824698185,0.9467813051041186,1.0
+gut_diabetes_007,Describe the mechanism by which SCFAs regulate glucose metabolism through enteroendocrine cells.,0.6666666666666666,0.7348555682715502,0.5503587089434543,0.8782627865863614,1.0
+gut_diabetes_008,How do bile acids contribute to glucose metabolism and what role does the gut microbiota play in bile acid metabolism?,0.3333333333333333,0.896737549854112,0.2957943814821919,0.99999999999,1.0
+gut_diabetes_009,Explain the role of the gut microbiota in gut barrier functioning and how its impairment contributes to diabetes pathophysiology.,0.2941176470588235,0.7651443754745912,0.2582691314905361,0.99999999999,0.4
+gut_diabetes_010,What is the mechanism by which imidazole propionate and BCAAs affect insulin signaling?,0.2727272727272727,0.8756448059180149,0.3001173453814036,0.9999999999888888,1.0
+gut_diabetes_011,Describe how dietary fiber improves glucose tolerance in type 2 diabetes through the gut microbiota according to intervention studies.,1.0,0.8641073442294136,0.3312371603558514,0.9749999999878124,1.0
+gut_diabetes_012,Compare the prevalence of Prevotella copri between Western and non-Western lifestyle populations and explain the significance.,0.3333333333333333,0.8773231443667467,0.3727044557811783,0.5703703703608641,1.0
+gut_diabetes_013,"What are the key differences between conventional probiotics and next-generation probiotics for diabetes treatment, and what evidence exists for their efficacy?",0.5357142857142857,0.9500777663048529,0.187337301233802,0.97048611109898,0.75
+gut_diabetes_014,"How does Mendelian randomization provide evidence for causal effects of the gut microbiota on type 2 diabetes, and what are its limitations?",0.2,0.5304149630555172,0.4121006766151301,0.5882936507838459,0.4
+gut_diabetes_015,Explain the importance of studying small intestine microbiota in diabetes research and describe the technological challenges and solutions.,0.2666666666666666,0.8445057619951388,0.3698735442985724,0.928262786585806,0.75
+gut_health_001,What are the five major bacterial phyla that contribute to the gut microbiome?,0.4705882352941176,0.9690461686839869,0.5350451043857765,0.9999999999833332,1.0
+gut_health_002,How many genes does the human gut microbiota carry compared to the human genome?,0.9375,0.7750910975062432,0.2840414655251289,0.9444444444287038,1.0
+gut_health_003,"What is the typical molar ratio of acetate, propionate, and butyrate found in human feces?",0.1428571428571428,0.7508120635842617,0.6247342267983143,0.5821428571283036,1.0
+gut_health_004,Explain how butyrate functions as an anti-carcinogen in colon cancer,0.6111111111111112,0.931976727730354,0.4049955417981571,0.841225749549736,1.0
+gut_health_005,What is the role of Methanobrevibacter smithii in the gut microbiota?,0.0526315789473684,0.9864080565877495,0.3978594145141587,0.9444444444287038,1.0
+gut_health_006,Describe how gut microbiota contributes to the development of obesity through energy regulation,0.375,0.9286632765381412,0.4129872660910759,0.9626543209769582,0.8
+gut_health_007,What is TMAO and how is it related to cardiovascular disease?,0.2666666666666666,0.7121930613844191,0.2747894644489446,0.99999999999,1.0
+gut_health_008,How does gut microbiota composition differ between type 1 diabetes patients and healthy controls?,0.0714285714285714,0.9198859381899042,0.330799119981211,0.7847222222091434,0.75
+gut_health_009,What changes in gut microbiota are observed in inflammatory bowel disease patients?,0.5,0.8447206445851191,0.395832107136201,0.8782627865863614,0.25
+gut_health_010,What is the difference between eubiosis and dysbiosis?,0.7575757575757576,0.8582739970848028,0.3006747978848554,0.9415178571310882,1.0
+gut_health_011,How does the gut microbiota respond to dietary changes?,0.7083333333333334,0.9999999999999382,0.3752787342699851,0.99999999999,1.0
+gut_health_012,What role do SCFAs play in hypertension regulation?,0.2142857142857142,0.7990254953053143,0.2540103653057729,0.961734693863812,1.0
+gut_health_013,Which bacterial species are associated with colorectal cancer development?,0.2,0.9782260707456958,0.3451661665742754,0.8385912698307874,0.3333333333333333
+gut_health_014,How does Faecalibacterium prausnitzii require acetate for growth and what is its significance?,0.1666666666666666,0.6911982251638874,0.3525051984563304,0.9761904761742064,1.0
+gut_health_015,What are microbiota-accessible carbohydrates (MAC) and their effects on health?,0.3529411764705882,0.9479469125297518,0.3198835382524738,0.99999999999,1.0
+diabetes_ml_001,"What were the sample sizes used in this study for type 1 diabetes, type 2 diabetes, and healthy control subjects?",0.0,0.0,0.1726582118436758,0.0,0.0
+diabetes_ml_002,What machine learning algorithms were trained and tested in this study?,0.8,0.8920609128408739,0.2565643798100293,0.3194444444337962,0.1666666666666666
+diabetes_ml_003,What is the projected global prevalence of diabetes by 2045 according to the IDF Diabetes Atlas?,0.0,0.8652986388699849,0.2271514179865721,0.6666666666444444,1.0
+diabetes_ml_004,What bacterial genus was enriched in both the diabetes positive group and found to be important in machine learning models?,0.0,0.0,0.0997158714073309,0.1249999999875,1.0
+diabetes_ml_005,What sequencing context was used to obtain the metagenomic data from the American Gut Project?,0.1428571428571428,0.9283719283302072,0.1788589604586717,0.0,0.0
+diabetes_ml_006,How did reducing the feature set from 1000 to 500 sOTUs affect the sensitivity of the random forest model for diabetes status screening?,0.0,0.0,0.1099789416616053,0.8388888888784027,1.0
+diabetes_ml_007,What cross-validation strategy was employed during the training stage and why?,0.7,0.0,0.4253876232360168,0.3928571428375,1.0
+diabetes_ml_008,Explain the relationship between Faecalibacterium prausnitzii and diabetes status as found in this study,0.7,0.956952994491992,0.4010997158299797,0.8106150793549466,1.0
+diabetes_ml_009,What specific alterations were made to model hyperparameters to accommodate the complexity of metagenomic data?,1.0,0.7466259431486747,0.1161239835891275,0.0,1.0
+diabetes_ml_010,How did the study address the issue of low sensitivity and high specificity in the initial models?,0.25,0.0,0.0708099751725993,0.9999999999833332,0.8
+diabetes_ml_011,Describe the diversity differences observed between subjects with and without diabetes,0.1538461538461538,0.7906747005756078,0.1318205934622466,0.7972222222122569,1.0
+diabetes_ml_012,Compare the performance of models when classifying negative-status versus T2DM only versus negative-status versus all positive diabetes cases,0.2222222222222222,0.3410285969113211,0.3917567995611489,0.99999999999,1.0
+diabetes_ml_013,"What were the differential microbial signatures between T1DM and T2DM, and what do these differences suggest about the pathophysiology?",0.5,0.0,0.1363423257837591,0.8954648525949173,0.75
+diabetes_ml_014,"Why did the diabetes typing models perform poorly compared to screening models, and what are the implications for future research?",0.4,0.0,0.1652345072420436,0.9467813051041186,1.0
+diabetes_ml_015,How do the findings regarding Roseburia species relate to the progression from normoglycemia to prediabetes and T2DM?,0.3846153846153846,0.7205302529745047,0.482760767094854,0.961734693863812,0.75
+diet_microbiome_001,What bacterial species are increased by the Mediterranean diet according to intervention studies?,0.5714285714285714,0.8150802018341142,0.4366342106532132,0.5845238095091964,1.0
+diet_microbiome_002,How many functional pathways was the Mediterranean diet associated with in a metagenomic study?,0.75,0.0,0.1873521594271947,0.6984126983894179,1.0
+diet_microbiome_003,What is the green Mediterranean diet and how does it differ from the traditional Mediterranean diet?,0.3125,0.8749175740275313,0.3059725038461264,0.6666666666333333,1.0
+diet_microbiome_004,How quickly can the gut microbiota respond to major dietary changes?,0.7222222222222222,0.8619913271411074,0.2690595120298851,0.8722222222076851,1.0
+diet_microbiome_005,What happens to Bifidobacterium species during weaning from breastfeeding?,0.6,0.6939703666381999,0.5592519608012096,0.8976190476062245,1.0
+diet_microbiome_006,Explain how SCFAs benefit human health through GPCR signaling,0.6875,0.6413418025655208,0.3385989653077961,0.9765432098656928,1.0
+diet_microbiome_007,How do polyphenols exert antimicrobial effects?,0.4285714285714285,0.855552377513308,0.3313134026012508,0.6893424036182701,1.0
+diet_microbiome_008,What percentage of polyphenols are absorbed in the small intestine versus those that interact with gut microorganisms?,1.0,0.0,0.2109906226023605,0.863151927425311,1.0
+diet_microbiome_009,What bacterial species are enriched in consumers of high-protein diets?,0.2,0.9250020746525234,0.1559549967761804,0.9999999999666668,1.0
+diet_microbiome_010,Describe the effects of a ketogenic diet on gut microbiota composition,0.4705882352941176,0.9582467357327142,0.3712437655952521,0.9293650793534622,0.75
+diet_microbiome_011,How does the ketogenic diet affect intestinal TH17 cells?,0.5,0.9426067062812984,0.3803594502736405,0.9999999999875,1.0
+diet_microbiome_012,What are the characteristics of the Western diet and its effects on gut microbiome diversity?,0.375,0.7410675267172936,0.404972216763329,0.9999999999875,1.0
+diet_microbiome_013,Compare the prevalence of Prevotella enterotype between African and US populations in the METS-Microbiome study,0.2,0.0,0.1832329264155187,0.91666666664375,1.0
+diet_microbiome_014,How does immigration to the USA affect gut microbiome composition?,1.0,0.9687227162049094,0.3768318436815375,0.6666666666333333,0.5
+diet_microbiome_015,What role do human milk oligosaccharides (HMOs) play in infant health?,0.6190476190476191,0.8801934537189032,0.3819555336731941,0.97048611109898,1.0
+microbiota_health_001,What are the six major phyla that compose the gut microbiota?,0.5384615384615384,0.9233779189183196,0.6404075458797207,0.9166666666513889,1.0
+microbiota_health_002,What percentage of genetic information does the human microbiota contribute compared to the entire human genome?,0.2,0.8159249327756264,0.2114925981084376,0.6544444444313555,1.0
+microbiota_health_003,At what age does children's gut microbiota become comparable to that of adults?,0.25,0.9891657634989538,0.1960565117779787,0.999999999975,1.0
+microbiota_health_004,What are the three major mechanisms through which gut microbiota provides colonization resistance?,0.5,0.9999999999999526,0.5527268802508589,0.699999999965,1.0
+microbiota_health_005,Which bacterial species are increased in Type 2 diabetes mellitus patients?,0.3333333333333333,0.7186215680850244,0.1683426163691959,0.6488095237933035,0.5
+microbiota_health_006,How does the gut microbiota influence the gut-brain axis through GABA regulation?,0.2307692307692307,0.8545388715318961,0.4153293268332104,0.8374999999860416,1.0
+microbiota_health_007,What is the role of secretory IgA (sIgA) in maintaining microbiota homeostasis?,0.3846153846153846,0.8981583162790319,0.3285603227244742,0.8218253968116997,1.0
+microbiota_health_008,Explain how Porphyromonas gingivalis contributes to oral cancer development,0.0869565217391304,0.978857488815224,0.3416975617074373,0.9478458049751214,1.0
+microbiota_health_009,What is the difference between the lytic cycle and lysogenic cycle in bacteriophage infection?,0.5625,0.9836775535830462,0.5362923497294168,0.99999999995,1.0
+microbiota_health_010,How does TMAO contribute to cardiovascular disease development?,0.1538461538461538,0.9639765397032218,0.2043101402876459,0.9999999999833332,1.0
+microbiota_health_011,What are the five community state types (CSTs) of vaginal microbiota?,0.1111111111111111,0.9999999999999472,0.1888834012192102,0.6984126983894179,0.0
+microbiota_health_012,Compare the gut microbiota composition between COPD patients during exacerbations versus healthy individuals,0.3333333333333333,0.9673152566763956,0.1925191535732492,0.9428571428382856,0.0
+microbiota_health_013,How do short-chain fatty acids (SCFAs) regulate blood pressure?,0.1111111111111111,0.9618500382588576,0.1714223458476998,0.4972222222122777,0.6
+microbiota_health_014,What happens to gut microbiota diversity during pregnancy from first to third trimester?,0.8947368421052632,0.9102594833484302,0.2051248944724097,0.7499999999625,0.0
+microbiota_health_015,Describe the three strategies for using engineered bacteria in cancer therapy,0.6842105263157895,0.9263330903743509,0.4374380617521355,0.999999999975,1.0
+microbiome_health_001,What are the main bacterial phyla that make up 90% of the gut microbiota?,0.2222222222222222,0.9972749562856312,0.3301111684801933,0.9888888888779012,1.0
+microbiome_health_002,What are the three stages in life when gut microbiota composition changes?,1.0,0.9999999999999426,0.8365039062140791,0.84126984125582,1.0
+microbiome_health_003,What is the bacterial-to-host cell ratio in the human body?,0.3333333333333333,0.8559406863200004,0.1960912836218555,0.4111111110974074,1.0
+microbiome_health_004,What are the dominant bacterial genera in the human oral cavity?,0.4166666666666667,0.9516314277056508,0.4619759674312345,0.8055555555287036,1.0
+microbiome_health_005,What percentage of published human microbiome data comes from Europe or North America despite these regions having less than 15% of the world's population?,0.4444444444444444,0.6177702618855042,0.4197966717400958,0.6666666666333333,1.0
+microbiome_health_006,How does the mode of delivery during birth affect the initial gut microbiome colonization of infants?,0.3333333333333333,0.9719822980941916,0.4815194530319688,0.99999999999,1.0
+microbiome_health_007,What is the mechanism by which Propionibacterium acnes survives on human skin?,0.2941176470588235,0.9738916999553324,0.1781908994330855,0.7892857142699286,1.0
+microbiome_health_008,How does Helicobacter pylori affect the gastric microbiome composition?,0.0769230769230769,0.7687583763812847,0.3755666006153968,0.8522817460210924,1.0
+microbiome_health_009,Explain how gut bacteria contribute to host energy harvesting and metabolic efficiency,0.4375,0.8914495564345256,0.33790034329893,0.99999999999,0.6666666666666666
+microbiome_health_010,How does dysbiosis lead to inflammatory bowel disease according to the paper?,0.6666666666666666,0.9279868325311972,0.2014273439013423,0.99999999999,1.0
+microbiome_health_011,What is the relationship between the vaginal microbiome and urinary tract infections?,0.3333333333333333,0.8978287404812265,0.3239516004424461,0.99999999999,1.0
+microbiome_health_012,"Compare the microbiome composition and diversity between different anatomical locations in the small and large intestines, and explain the environmental factors that create these differences",1.0,0.6589200751000582,0.4394033543497929,0.99999999999,0.75
+microbiome_health_013,"Describe the complex cascade of events that leads from respiratory dysbiosis to respiratory exacerbations, including the role of environmental changes, inflammatory responses, and bacterial growth",0.7777777777777778,0.8251928703897934,0.3323423760245164,0.9765432098656928,1.0
+microbiome_health_014,"Explain how the holobiont theory differs from the traditional pathogen-focused approach to understanding disease development, and what implications this has for therapeutic strategies",0.9230769230769232,0.8838239232501129,0.4409584637568573,0.99999999999,0.6666666666666666
+microbiome_health_015,"Analyze the multi-factorial relationship between age, microbiome composition, and disease susceptibility across the human lifespan from infancy to old age",0.6,0.8683370053214409,0.598638606998412,0.99999999999,0.7
+fiber_microbiota_001,What are the three main categories of dietary fiber according to the Codex Alimentarius commission definition?,0.125,0.9859199595338186,0.2649446095404089,0.9999999999,1.0
+fiber_microbiota_002,What percentage of the fecal microbiota can specific fiber-responding species constitute during dietary fiber intervention?,0.0769230769230769,0.0,0.4878205641679528,0.6763888888776158,1.0
+fiber_microbiota_003,Which bacterial species is considered a keystone species for the degradation of resistant starch?,0.6666666666666666,0.0,0.1276391304415308,0.968253968240136,1.0
+fiber_microbiota_004,"How many glycoside hydrolase, polysaccharide lyase, and carbohydrate esterase families does the gut microbiome harbor?",0.0,0.7415649077822156,0.5924681373723623,0.6666666666444444,1.0
+fiber_microbiota_005,What bacterial phyla were found to be most abundant in Hadza hunter-gatherers compared to Italian controls?,0.6666666666666666,0.0,0.1695935062713841,0.7928571428373214,1.0
+fiber_microbiota_006,Explain the mechanism by which butyrate consumption by colonocytes creates an anaerobic environment in the gut,0.375,0.8737847115645648,0.1805059668623981,0.9159722222107726,1.0
+fiber_microbiota_007,How do Bacteroides thetaiotaomicron and Faecalibacterium prausnitzii work together to regulate mucus production?,0.3333333333333333,0.9409271687580416,0.4995882461853659,0.9206845237980152,1.0
+fiber_microbiota_008,What happens to the gut microbiota when the diet is devoid of dietary fibers?,0.5625,0.8259916263244774,0.1447143363228708,0.968253968240136,0.5
+fiber_microbiota_009,How do SCFAs promote the generation of colonic regulatory T cells?,0.7142857142857143,0.7447796393033276,0.1771103657544938,0.9765432098656928,1.0
+fiber_microbiota_010,Describe the differences in SCFA production profiles between Hadza hunter-gatherers and Italian cohorts,0.4375,0.7776730317885114,0.3375364651840593,0.7972789115532362,1.0
+fiber_microbiota_011,What are the detrimental metabolites produced from protein fermentation when dietary fiber intake is low?,0.5882352941176471,0.7339629929763488,0.3910587159658597,0.7758503401249709,1.0
+fiber_microbiota_012,Explain the concept of fiber binding as a platform for bile acid transformation and its health implications,0.1111111111111111,0.5662547189086441,0.1669318530937516,0.99999999999,1.0
+fiber_microbiota_013,Compare the gut microbiota composition of children from rural Burkina Faso versus Italy and explain the impact of urbanization,0.5789473684210527,0.8901876272012136,0.3001616079520951,0.968253968240136,1.0
+fiber_microbiota_014,Describe the generational effects of a low-MAC diet in mice and its implications for human populations,0.0,0.6717236018654665,0.2136392209956127,0.9305555555400462,1.0
+fiber_microbiota_015,"How does personalized microbiota profiling predict metabolic response to dietary fiber, as demonstrated in the barley kernel-based bread study?",0.2727272727272727,0.5203510973351174,0.3563593965297399,0.9861111110987848,0.3333333333333333
+antibiotic_microbiome_001,What are the three main phyla affected by antibiotic treatment according to foundational studies?,0.8,0.0,0.1133118373144702,0.9367346938641692,1.0
+antibiotic_microbiome_002,What is the resistome and how is it defined in the context of the gut microbiome?,0.8947368421052632,0.9786359645492744,0.2253487349670426,0.8782627865863614,1.0
+antibiotic_microbiome_003,How many deaths were associated with bacterial antimicrobial resistance worldwide in 2019?,0.125,0.9213688143209424,0.2192010404131365,0.9166666666361112,1.0
+antibiotic_microbiome_004,Which bacterial species is considered a keystone species for resistant starch degradation?,0.4,0.9171297320607996,0.5416464203367156,0.968253968240136,1.0
+antibiotic_microbiome_005,What are the three mechanisms of horizontal gene transfer discussed in the paper?,0.6666666666666666,0.920852039966415,0.5979856452164924,0.59999999997,1.0
+antibiotic_microbiome_006,How quickly can gut microbial communities respond to dramatic changes in macronutrient composition?,0.7333333333333333,0.941047596713134,0.4359065111650955,0.8857142857016327,1.0
+antibiotic_microbiome_007,Explain how spore-forming bacteria like Clostridioides difficile persist during antibiotic treatment,0.4375,0.812043966264146,0.3385491232429838,0.9888888888779012,1.0
+antibiotic_microbiome_008,Describe the mechanism by which butyrate consumption creates an anaerobic environment in the gut,0.5555555555555556,0.9167901486396004,0.4292523478662723,0.9107142856991072,1.0
+antibiotic_microbiome_009,How does a Western-style diet combined with antibiotics affect the gut and what are the consequences?,0.4444444444444444,0.8975109047200932,0.2767469719242763,0.7856701939947976,1.0
+antibiotic_microbiome_010,What is the difference in how antibiotics affect chromosomally-encoded versus MGE-encoded ARGs over time?,0.5454545454545454,0.8435753283911072,0.4467249762057642,0.99999999999,1.0
+antibiotic_microbiome_011,Compare the effects of vancomycin versus amoxicillin on the gut microbiome,0.0625,0.8871002527380357,0.3315911695989257,0.99999999999,0.5
+antibiotic_microbiome_012,Explain how DAV132 works to protect the gut microbiome during antibiotic treatment,0.5,0.6062800659653081,0.2006786287743089,0.9166666666361112,1.0
+antibiotic_microbiome_013,"Describe how engineered probiotics can be designed to protect the microbiome from antibiotics, using specific examples",0.0833333333333333,0.8951728216247231,0.4798413836863893,0.9999999999888888,1.0
+antibiotic_microbiome_014,What are the key limitations of short-read metagenomic sequencing for studying HGT and the resistome?,0.6470588235294118,0.9104588202325932,0.3945534952325822,0.9317956349089874,1.0
+antibiotic_microbiome_015,How does dietary fiber modulation affect microbiome recovery post-antibiotic treatment?,0.9166666666666666,0.9365669638629944,0.3290670829122109,0.9626543209769582,1.0
+ibd_metabolomics_001,What age ranges were used for pediatric and adult patient groups in this IBD study?,1.0,0.9729585361864146,0.7562310897671845,0.16666666665,1.0
+ibd_metabolomics_002,What sequencing platform was used for 16S rRNA gene sequencing in this study?,0.3333333333333333,0.0,0.0066627663286935,0.0,0.0
+ibd_metabolomics_003,What analytical instrument was used for metabolomic profiling of stool samples?,1.0,0.959053279139326,0.1269562988326783,0.0,0.0
+ibd_metabolomics_004,How many bacterial species were identified in pediatric versus adult IBD patient samples?,1.0,0.7307305986139978,0.6300797541357015,0.9444444444287038,1.0
+ibd_metabolomics_005,What percentage of volatile compounds detected were used for metabolomic profile comparison?,0.4,0.0,0.1511114955440047,0.6458333333171874,1.0
+ibd_metabolomics_006,"How did Shannon diversity index differ between pediatric and adult IBD patients, and what does this indicate?",1.0,0.7133970650209913,0.4835010439998968,0.8857142857016327,1.0
+ibd_metabolomics_007,Explain the role of indole metabolites in IBD according to the study findings,0.6,0.0,0.542501907844793,0.9067956349092998,1.0
+ibd_metabolomics_008,What metabolic differences distinguish UC from CD in pediatric patients?,1.0,0.0,0.1113315155792303,0.8736394557698323,1.0
+ibd_metabolomics_009,How do SCFAs relate to IBD pathology according to the correlation analysis?,0.6363636363636364,0.5067768952450887,0.3136219694454213,0.6238095237939285,0.6
+ibd_metabolomics_010,What is the significance of Streptococcus salivarius as a biomarker in pediatric IBD?,0.6666666666666666,0.0,0.1914733977002566,0.9293650793534622,1.0
+ibd_metabolomics_011,Describe the functional metabolomics approach used in this study and its advantages,0.5,0.9252913664910836,0.1435445529277688,0.7944444444285556,1.0
+ibd_metabolomics_012,"Compare the metagenomic signatures of CD between pediatric and adult patients, and explain what this reveals about disease pathogenesis",0.0,0.0,0.1431893184287653,0.9626543209769582,1.0
+ibd_metabolomics_013,"Explain the diagnostic algorithm developed for pediatric IBD risk assessment, including the mathematical basis and clinical interpretation thresholds",1.0,0.8562392969077655,0.549391822830791,0.9888888888779012,0.8
+ibd_metabolomics_014,"Analyze the paradoxical finding that pediatric IBD patients showed greater metabolite diversity than controls, contrary to expectations. What mechanisms might explain this?",0.0833333333333333,0.7212877937650567,0.2876311920490907,0.7469246031652665,0.875

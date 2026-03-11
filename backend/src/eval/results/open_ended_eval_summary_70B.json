@@ -1,0 +1,21 @@
+{
+  "dataset": "open_ended_eval_results_70B.csv",
+  "total_samples": 449,
+  "samples_with_metrics": 449,
+  "samples_without_metrics": 0,
+  "coverage": 1.0,
+  "metrics_mean": {
+    "faithfulness": 0.8426786045301047,
+    "answer_relevancy": 0.7910356027512009,
+    "answer_correctness": 0.51037463930841,
+    "context_precision": 0.7947856178937633,
+    "context_recall": 0.8014114257432744
+  },
+  "metrics_std": {
+    "faithfulness": 0.2258050914942407,
+    "answer_relevancy": 0.25252455795467044,
+    "answer_correctness": 0.22191150138423738,
+    "context_precision": 0.24438810291147858,
+    "context_recall": 0.3177612576764243
+  }
+}
