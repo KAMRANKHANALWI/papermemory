@@ -3,7 +3,6 @@ from fastapi.responses import StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Optional
 import uuid
-import logging
 import time
 import json
 from fastapi.responses import FileResponse
@@ -55,6 +54,9 @@ from src.models import (
     OperationResponse,
     PDFDetail,
 )
+
+import logging
+logging.basicConfig(level=logging.INFO)
 
 BASE_DIR = Path(__file__).resolve().parent
 STATIC_DIR = BASE_DIR / "static"

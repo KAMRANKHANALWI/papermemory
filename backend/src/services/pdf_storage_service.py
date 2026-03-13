@@ -17,7 +17,7 @@ class PDFStorageService:
     def __init__(self, base_path: str = "data/pdfs"):
         self.base_path = Path(base_path)
         self.base_path.mkdir(parents=True, exist_ok=True)
-        print(f"✅ PDF Storage initialized at: {self.base_path}")
+        print(f"PDF Storage initialized at: {self.base_path}")
     
     def save_pdf(
         self, 
@@ -51,7 +51,7 @@ class PDFStorageService:
         with open(file_path, "wb") as f:
             f.write(pdf_content)
         
-        print(f"💾 Saved PDF: {file_path}")
+        print(f"Saved PDF: {file_path}")
         return str(file_path)
     
     def get_pdf_path(self, collection_name: str, filename: str) -> Optional[Path]:
@@ -79,7 +79,7 @@ class PDFStorageService:
         
         if file_path.exists():
             file_path.unlink()
-            print(f"🗑️ Deleted PDF: {file_path}")
+            print(f"Deleted PDF: {file_path}")
             return True
         
         return False
@@ -101,7 +101,7 @@ class PDFStorageService:
         
         if old_path.exists():
             old_path.rename(new_path)
-            print(f"✏️ Renamed PDF: {old_filename} → {new_filename}")
+            print(f"Renamed PDF: {old_filename} → {new_filename}")
             return True
         
         return False
@@ -117,7 +117,7 @@ class PDFStorageService:
         
         if collection_dir.exists():
             shutil.rmtree(collection_dir)
-            print(f"🗑️ Deleted all PDFs in collection: {collection_name}")
+            print(f"Deleted all PDFs in collection: {collection_name}")
             return True
         
         return False

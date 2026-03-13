@@ -3,6 +3,8 @@ import fitz
 import re
 from typing import List, Dict
 from langchain_text_splitters import RecursiveCharacterTextSplitter
+from src.config import AppConfig
+
 
 def extract_headings_from_blocks(blocks: List[Dict]) -> List[str]:
     """Extract potential headings from text blocks based on font size and formatting."""
@@ -14,13 +16,19 @@ def extract_headings_from_blocks(blocks: List[Dict]) -> List[str]:
                     text = span.get("text", "").strip()
                     font_size = span.get("size", 0)
                     font_flags = span.get("flags", 0)
-                    if (font_size > 14 or (font_flags & 16) or (len(text) < 100 and text.isupper())):
+                    if font_size > 14 or (font_flags & 16) or (
+                        len(text) < 100 and text.isupper()
+                    ):
                         if text and len(text.strip()) > 3:
                             headings.append(text)
     return headings[:3]
 
+
 def process_pdf_with_pymupdf(pdf_path: str) -> List[Dict]:
-    """Extract text and metadata from PDF using PyMuPDF."""
+    """
+    Extract text and metadata from PDF using PyMuPDF.
+    Returns list of page dicts with keys: text, page_num, headings, char_count.
+    """
     try:
         doc = fitz.open(pdf_path)
         pages_data = []
@@ -31,23 +39,31 @@ def process_pdf_with_pymupdf(pdf_path: str) -> List[Dict]:
             headings = extract_headings_from_blocks(blocks)
             text = re.sub(r"\n+", "\n", text)
             text = re.sub(r"\s+", " ", text)
-            pages_data.append({
-                "text": text.strip(),
-                "page_num": page_num + 1,
-                "headings": headings,
-                "char_count": len(text)
-            })
+            pages_data.append(
+                {
+                    "text": text.strip(),
+                    "page_num": page_num + 1,  # 1-indexed
+                    "headings": headings,
+                    "char_count": len(text),
+                }
+            )
         doc.close()
         return pages_data
     except Exception as e:
+        print(f"Error processing PDF {pdf_path}: {e}")
         return []
 
-def chunk_text_content(text: str, max_chars: int = 1000, overlap: int = 200) -> List[str]:
+
+def chunk_text_content(
+    text: str,
+    max_chars: int = AppConfig.CHUNK_SIZE,
+    overlap: int = AppConfig.CHUNK_OVERLAP,
+) -> List[str]:
     """Split text into chunks using RecursiveCharacterTextSplitter."""
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=max_chars,
         chunk_overlap=overlap,
         length_function=len,
-        separators=["\n\n", "\n", ". ", ", ", " ", ""]
+        separators=["\n\n", "\n", ". ", ", ", " ", ""],
     )
     return splitter.split_text(text)

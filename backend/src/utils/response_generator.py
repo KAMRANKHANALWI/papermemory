@@ -1,5 +1,6 @@
 """
-Response generator for chat endpoints with query classification and memory support
+Response generator for chat endpoints with query classification, memory,
+and parent-page retrieval support.
 """
 
 import json
@@ -12,6 +13,8 @@ from src.services.metadata_service import MetadataService
 from src.services.file_search_service import FileSearchService
 from src.services.chat_service import ChatService
 from src.services.memory_service import MemoryService
+from src.services.parent_page_retriever import ParentPageRetriever
+from src.config import AppConfig
 
 logger = logging.getLogger(__name__)
 
@@ -24,16 +27,19 @@ metadata_service = MetadataService()
 file_search_service = FileSearchService()
 memory_service = MemoryService()
 
+# Single shared retriever instance (reranker model loaded once)
+parent_retriever = ParentPageRetriever()
+
 
 # -------------------------
-# HELPERS FUNCTIONS
+# HELPERS
 # -------------------------
 def get_vectorstore(collection_name: str) -> Chroma:
     return Chroma(
         client=chat_service.chroma_client,
         collection_name=collection_name,
         embedding_function=chat_service.embedding_model,
-        persist_directory="data/chroma_db",
+        persist_directory=AppConfig.CHROMA_DB_PATH,
     )
 
 
@@ -80,7 +86,7 @@ def build_system_prompt_with_history(
 
 
 # -------------------------
-# MAIN FUNCTIONS
+# MAIN ENTRY POINT
 # -------------------------
 async def generate_chat_response(
     message: str,
@@ -93,6 +99,7 @@ async def generate_chat_response(
     try:
         if not chat_id:
             import uuid
+
             chat_id = str(uuid.uuid4())
 
         yield f"data: {json.dumps({'type': 'chat_id', 'chat_id': chat_id})}\n\n"
@@ -111,7 +118,7 @@ async def generate_chat_response(
 
         try:
             conversation_history = memory_service.get_formatted_history(
-                chat_id, max_messages=10
+                chat_id, max_messages=AppConfig.MAX_HISTORY
             )
         except Exception:
             conversation_history = []
@@ -120,17 +127,18 @@ async def generate_chat_response(
 
         if classification in ["list_pdfs", "count_pdfs"]:
             handler = handle_metadata_query(
-                message, classification, collection_name, is_chatall, conversation_history
+                message,
+                classification,
+                collection_name,
+                is_chatall,
+                conversation_history,
             )
-
         elif classification == "list_collections" and is_chatall:
             handler = handle_list_collections(message, conversation_history)
-
         elif classification == "file_specific_search" and filename:
             handler = handle_file_specific_search(
                 message, filename, collection_name, is_chatall, conversation_history
             )
-
         else:
             handler = handle_content_search(
                 message, collection_name, is_chatall, conversation_history
@@ -158,6 +166,8 @@ async def generate_chat_response(
 # -------------------------
 # HANDLERS
 # -------------------------
+
+
 async def handle_metadata_query(
     message: str,
     classification: str,
@@ -194,19 +204,19 @@ async def handle_metadata_query(
         yield chunk
 
 
-
 async def handle_list_collections(
     message: str, conversation_history: List[Dict]
 ) -> AsyncGenerator[str, None]:
 
     collections = chat_service.chroma_client.list_collections()
     lines = []
-
     for col in collections:
         count = chat_service.chroma_client.get_collection(col.name).count()
         lines.append(f"• {col.name} ({count} chunks)")
 
-    context = f"AVAILABLE COLLECTIONS:\nTotal: {len(collections)}\n\n" + "\n".join(lines)
+    context = f"AVAILABLE COLLECTIONS:\nTotal: {len(collections)}\n\n" + "\n".join(
+        lines
+    )
 
     base_prompt = "You are a document assistant. Provide clear responses about available collections."
     system_prompt = build_system_prompt_with_history(
@@ -222,7 +232,6 @@ async def handle_list_collections(
         yield chunk
 
 
-
 async def handle_file_specific_search(
     message: str,
     filename: str,
@@ -230,44 +239,54 @@ async def handle_file_specific_search(
     is_chatall: bool,
     conversation_history: List[Dict],
 ) -> AsyncGenerator[str, None]:
-
+    """
+    File-specific search using parent-page retrieval.
+    Restricts vector search to the target filename, then fetches full parent pages.
+    """
     if is_chatall:
-        vectorstores = {
-            col.name: get_vectorstore(col.name)
-            for col in chat_service.chroma_client.list_collections()
-        }
-        context, results, found, _ = file_search_service.search_specific_file_chatall(
-            vectorstores, filename, message, num_results=10
-        )
+        # Search across all collections for this specific file
+        all_collections = chat_service.chroma_client.list_collections()
+        context = ""
+        sources = []
+        found = False
+
+        for col in all_collections:
+            try:
+                vectorstore = get_vectorstore(col.name)
+                ctx, srcs = parent_retriever.retrieve(
+                    query=message,
+                    vectorstore=vectorstore,
+                    collection_name=col.name,
+                    filename_filter=filename,
+                )
+                if ctx:
+                    context = ctx
+                    sources = srcs
+                    found = True
+                    break
+            except Exception as e:
+                logger.warning(f"File search failed in {col.name}: {e}")
+                continue
     else:
         if not collection_name:
             raise ValueError("Collection name required")
         vectorstore = get_vectorstore(collection_name)
-        context, results, found = file_search_service.search_specific_file(
-            vectorstore, filename, message, num_results=10, collection_name=collection_name
+        context, sources = parent_retriever.retrieve(
+            query=message,
+            vectorstore=vectorstore,
+            collection_name=collection_name,
+            filename_filter=filename,
         )
+        found = bool(context)
 
     if not found:
         not_found_msg = f'File "{filename}" not found. Searching all documents...'
         yield f"data: {json.dumps({'type': 'content', 'content': not_found_msg})}\n\n"
-
         async for event in handle_content_search(
             message, collection_name, is_chatall, conversation_history
         ):
             yield event
         return
-
-    sources = [
-        {
-            "content": r["content"],
-            "filename": r["filename"],
-            "collection": r.get("collection"),
-            "similarity": r["similarity"],
-            "page_numbers": r.get("pages"),
-            "title": r.get("title"),
-        }
-        for r in results
-    ]
 
     yield f"data: {json.dumps({'type': 'sources', 'sources': sources})}\n\n"
 
@@ -285,72 +304,69 @@ async def handle_file_specific_search(
         yield chunk
 
 
-
 async def handle_content_search(
     message: str,
     collection_name: Optional[str],
     is_chatall: bool,
     conversation_history: List[Dict],
 ) -> AsyncGenerator[str, None]:
-
-    all_results = []
+    """
+    General content search using parent-page retrieval.
+    Single collection or across all collections (chatall mode).
+    """
+    all_sources = []
 
     if is_chatall:
+        # Retrieve from each collection, then merge and re-sort by similarity
+        all_pages = []
+
         for col in chat_service.chroma_client.list_collections():
             try:
                 vectorstore = get_vectorstore(col.name)
-                results = vectorstore.similarity_search_with_score(message, k=4)
-                for doc, score in results:
-                    all_results.append(
-                        {
-                            "content": doc.page_content,
-                            "filename": doc.metadata.get("filename", "unknown"),
-                            "title": doc.metadata.get("title", "No Title"),
-                            "pages": doc.metadata.get("page_numbers", "[]"),
-                            "similarity": round(1 - score, 4),
-                            "collection": col.name,
-                        }
-                    )
-            except Exception as e:
-                logger.warning(f"Search failed for {col.name}: {e}")
 
-        all_results.sort(key=lambda x: x["similarity"], reverse=True)
-        all_results = all_results[:25]
+                # Use smaller sample_size per collection in chatall to keep latency reasonable
+                ctx, srcs = parent_retriever.retrieve(
+                    query=message,
+                    vectorstore=vectorstore,
+                    collection_name=col.name,
+                    top_k=AppConfig.TOP_K_CHATALL,
+                    sample_size=AppConfig.TOP_K_CHATALL * 3,
+                )
+                all_pages.extend(srcs)
+            except Exception as e:
+                logger.warning(f"Retrieval failed for {col.name}: {e}")
+                continue
+
+        # Sort merged results and keep top TOP_K
+        all_sources = sorted(all_pages, key=lambda x: x["similarity"], reverse=True)[
+            : AppConfig.TOP_K
+        ]
+
+        # Rebuild context from the final merged+sorted pages
+        context_parts = []
+        for src in all_sources:
+            header = f"[Source: {src['filename']} | Collection: {src['collection']} | Pages {src['page_numbers']}]"
+            context_parts.append(f"{header}\n{src['content']}")
+        context = "\n\n---\n\n".join(context_parts)
 
     else:
         if not collection_name:
             raise ValueError("Collection name required")
+
         vectorstore = get_vectorstore(collection_name)
-        results = vectorstore.similarity_search_with_score(message, k=10)
+        context, all_sources = parent_retriever.retrieve(
+            query=message,
+            vectorstore=vectorstore,
+            collection_name=collection_name,
+        )
 
-        for doc, score in results:
-            all_results.append(
-                {
-                    "content": doc.page_content,
-                    "filename": doc.metadata.get("filename", "unknown"),
-                    "title": doc.metadata.get("title", "No Title"),
-                    "pages": doc.metadata.get("page_numbers", "[]"),
-                    "similarity": round(1 - score, 4),
-                    "collection": collection_name,
-                }
-            )
-
-    context_parts = []
-    for r in all_results:
-        src = f"Source: {r['filename']} (Collection: {r['collection']})"
-        if r["pages"] != "[]":
-            pages = r["pages"].strip("[]").replace("'", "").split(",")
-            if pages and pages[0]:
-                src += f" - p. {', '.join(pages)}"
-        context_parts.append(f"{r['content']}\n\n{src}")
-
-    context = "\n\n".join(context_parts)
-
-    yield f"data: {json.dumps({'type': 'sources', 'sources': all_results})}\n\n"
+    yield f"data: {json.dumps({'type': 'sources', 'sources': all_sources})}\n\n"
 
     scope = "across all collections" if is_chatall else f"from {collection_name}"
-    base_prompt = f"You are a document assistant answering from documents {scope}. Use ONLY context information."
-
+    base_prompt = (
+        f"You are a document assistant answering from documents {scope}. "
+        f"Use ONLY the provided context information."
+    )
     system_prompt = build_system_prompt_with_history(
         base_prompt, conversation_history, context
     )
@@ -364,9 +380,8 @@ async def handle_content_search(
         yield chunk
 
 
-
 # -------------------------
-# EVAL MODE 
+# EVAL MODE
 # -------------------------
 async def generate_chat_response_eval(
     message: str,
