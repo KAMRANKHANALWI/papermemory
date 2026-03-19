@@ -30,6 +30,14 @@ class EvalConfig:
     COLLECTION_NAME = "gut_microbiome"
     EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
     TOP_K = 10
+    
+    # --------------------
+    # RAG Generation LLM
+    # --------------------
+    USE_LOCAL_LLM = os.getenv("USE_LOCAL_LLM", "false").lower() == "true"
+    OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.1:latest")
+    GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3-flash-preview")
+    TEMPERATURE = 0.1
 
     # --------------------
     # RAGAS Eval LLM

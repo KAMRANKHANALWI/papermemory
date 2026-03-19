@@ -76,8 +76,8 @@ local_client = AsyncOpenAI(
     max_retries=5,
 )
 
-# ollama_model = os.getenv("OLLAMA_MODEL", "llama3.1-70b-16k:latest")
-ollama_model = os.getenv("OLLAMA_MODEL", "llama3.1:latest")
+ollama_model = os.getenv("OLLAMA_MODEL", "llama3.1-70b-16k:latest")
+# ollama_model = os.getenv("OLLAMA_MODEL", "llama3.1:latest")
 eval_llm = llm_factory(
     model=ollama_model,
     provider="openai",
