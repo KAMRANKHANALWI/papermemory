@@ -1,0 +1,341 @@
+{
+  "source_document": "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf",
+  "journal": "Cell Host & Microbe",
+  "year": 2023,
+  "doi": "https://doi.org/10.1016/j.chom.2023.10.011",
+  "test_cases": [
+    {
+      "id": "arabinan_fc_001",
+      "query": "What is the worldwide prevalence of functional constipation (FC) in humans?",
+      "ground_truth_answer": "Functional constipation is a globally prevalent bowel disorder with a worldwide prevalence of 10.1% to 15.3%. It is characterized by recurrent infrequent stools, difficult stool passage, or incomplete defecation.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "arabinan_fc_002",
+      "query": "How many B. longum strains were isolated and used in this study, and from how many Chinese subjects?",
+      "ground_truth_answer": "A total of 185 B. longum strains were isolated from 354 Chinese subjects residing in 17 provinces or municipalities in China. The subjects ranged in age from 0 to 108 years.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "arabinan_fc_003",
+      "query": "What are the two gene clusters identified in effective B. longum strains, and what are their functions?",
+      "ground_truth_answer": "Two effective-strain-specific gene clusters were identified: (1) the abfA cluster at locus 1, containing four linked genes all annotated as alpha-L-arabinofuranosidase (abfA), and (2) the hypBA cluster at locus 4, containing six genes encoding beta-galactosidase, beta-L-arabinobiosidase, beta-L-arabinofuranosidase, and three ATP-binding cassette (ABC) transporter permeases. Both clusters are functionally related to degrading dietary arabinan.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "arabinan_fc_004",
+      "query": "What percentage of the 185 B. longum strains possessed a complete abfA cluster versus a complete hypBA cluster?",
+      "ground_truth_answer": "Of the 185 B. longum strains, 105 strains (56.8%) possessed a complete abfA cluster, while 129 strains (69.7%) carried a complete hypBA cluster. Notably, 79 of the 185 strains (42.7%) possessed both gene clusters simultaneously.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "arabinan_fc_005",
+      "query": "What was the design of the clinical trial in this study, and how many participants were enrolled?",
+      "ground_truth_answer": "The study conducted a double-blind, randomized, placebo-controlled clinical trial. A total of 87 elderly individuals diagnosed with FC were enrolled and randomly assigned to four groups: a placebo group (n=21, receiving 2g maltodextrin per day), B. lon_6 group (n=22, 1×10^9 CFU per day), B. lon_8 group (n=22, 1×10^9 CFU per day), or B. lon_1 group (n=22, 1×10^9 CFU per day). Supplementation lasted 28 days.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "arabinan_fc_006",
+      "query": "What was the predictive accuracy (AUC) of the abfA cluster abundance model for distinguishing FC patients from healthy subjects?",
+      "ground_truth_answer": "The abfA-cluster abundance-based classification model achieved an AUC of 83.52% (95% CI: 78.80%–88.24%, n=240) in the discovery cohort, and was well validated in an external cohort (Mars et al.) achieving an even higher AUC of 89.84% (95% CI: 85.95%–93.70%, n=330). This suggests abfA-cluster abundance is a powerful biomarker for diagnosing FC.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "arabinan_fc_007",
+      "query": "How does the abfA cluster confer a competitive advantage to B. longum in the gut ecosystem?",
+      "ground_truth_answer": "The abfA cluster encodes multiple linked alpha-L-arabinofuranosidases, which are glycoside hydrolases responsible for breaking down arabinan — an indigestible fiber for humans that is poorly accessible to most gut microbiota. This unique arabinan-utilization ability creates a distinct metabolic niche for B. longum, facilitating stable adaptation and colonization in the gut. The 'priority effect' means engrafted microbes generally face strong competition; the abfA cluster gives abfA+ strains a fitness advantage over other residents by exploiting an otherwise underutilized substrate in the distal colon.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "arabinan_fc_008",
+      "query": "Describe how SCFAs produced through abfA-mediated arabinan metabolism alleviate functional constipation.",
+      "ground_truth_answer": "Following arabinan degradation by abfA-carrying bacteria, acetate and butyrate are produced as major SCFA end products. These SCFAs alleviate FC through two main mechanisms: (1) signaling through G-protein-coupled receptors GPR41 and GPR43 on enteroendocrine cells, and (2) directly acting on colonic smooth muscle to enhance intestinal motility. In the clinical trial, both fecal acetate and butyrate drastically increased after 28-day treatment with abfA-cluster-carrying B. longum strains (B. lon_1 and B. lon_8), and these SCFA increases positively correlated with increased defecation frequency and decreased Cleveland Clinical Constipation Score (CCCS).",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "arabinan_fc_009",
+      "query": "What happened to gut microbiota composition at the genus/species level versus the strain level after administration of effective B. longum strains?",
+      "ground_truth_answer": "At the genus and species level, no significant within-host difference in gut microbiota composition based on Bray-Curtis dissimilarity was observed for any treatment group (PERMANOVA, p > 0.05). However, marked compositional alterations were observed at the strain (metagenome-assembled genome, MAG) level by 28-day administration of both B. lon_8 (R2=0.0608, p<0.05) and B. lon_1 (R2=0.0563, p<0.05). Furthermore, changes in abfA-cluster abundance correlated significantly with strain-level Bray-Curtis dissimilarity (Spearman r=0.55, FDR-adjusted p=0.00093) but not at the genus or species level.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "arabinan_fc_010",
+      "query": "How was the causal role of the abfA cluster in arabinan utilization and FC alleviation confirmed using a gene-knockout approach?",
+      "ground_truth_answer": "Two key genes in the abfA cluster (BLLJ_1852 and BLLJ_1853), which are predominantly upregulated during arabinan utilization, were knocked out in B. lon_8 via double crossover homologous recombination to create the mutant B. lon_8ΔabfA. In vitro, B. lon_8ΔabfA showed greatly suppressed growth in arabinan-containing medium and substantially reduced acetate production compared with the wild-type, while no differences were observed in glucose-containing medium. In the FC mouse model, B. lon_8ΔabfA-treated mice showed far less protection against FC symptoms and lower fecal acetate concentration compared to mice receiving the wild-type B. lon_8, directly establishing the causal role of the abfA cluster.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "arabinan_fc_011",
+      "query": "What role does chenodeoxycholic acid play in alleviating functional constipation, and how is it elevated by abfA-carrying B. longum?",
+      "ground_truth_answer": "Chenodeoxycholic acid (CDCA) can increase stool frequency, decrease stool consistency, and improve ease of stool passage by acting on the membrane-bound G protein-coupled bile-acid receptor TGR5 on enterocytes. In the clinical trial, fecal chenodeoxycholic acid was significantly enriched after 28-day supplementation of abfA-cluster-carrying B. longum strains (B. lon_1 and B. lon_8), and its increase positively correlated with abfA-cluster abundance changes and improved FC clinical indices. Mechanistically, increased abundance of Bifidobacteria and Bacteroides following abfA+ strain engraftment slightly correlated with elevated choloylglycine hydrolase (K01442), contributing to enrichment of the bile-acid metabolic pathway.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "arabinan_fc_012",
+      "query": "How did the FMT experiment from human donors to germ-free mice validate the role of the abfA cluster in FC?",
+      "ground_truth_answer": "Fecal samples from healthy human donors with either high abfA-cluster abundance (mean 0.926%, n=3) or low abfA-cluster abundance (mean 0.031%, n=3) — representing a 29.86-fold difference — were transplanted into two groups of germ-free (GF) mice with loperamide-induced FC (n=6/group). GF mice receiving high-abfA fecal microbiota showed clear FC alleviation: whole gut transit time decreased by ~50 minutes and fecal output increased by ~2 pellets/hour. No phenotypic changes were observed in mice receiving low-abfA microbiota. Additionally, metabolomic analysis confirmed that acetate, butyrate, chenodeoxycholic acid, D-lysopine, and uracil were significantly over-abundant in the FMT-effective group, mirroring the human clinical findings.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "arabinan_fc_013",
+      "query": "Compare the efficacy of abfA-cluster-carrying versus abfA-deficient B. longum strains in the clinical trial, and explain why inter-strain functional differences did not depend on bacterial abundance in the gut.",
+      "ground_truth_answer": "In the clinical trial, the 28-day administration of abfA-cluster-carrying strains B. lon_1 and B. lon_8 significantly increased stool frequency (by 1.04 and 1.15 bowel movements/week, respectively) and decreased CCCS (by 4.09 and 4.86 points, respectively). Both also reduced PAC-SYM and PAC-QoL scores, with improvements persisting at 28-day follow-up after stopping probiotics. By contrast, the abfA-cluster-deficient B. lon_6 and the placebo showed no significant improvements. Critically, metagenomic analysis showed that all three B. longum strains were present at equivalent fecal abundance at day 28 regardless of their FC efficacy, confirmed by qPCR in mouse experiments (feces and colonic contents). This demonstrates that the inter-strain functional differences are determined not by bacterial abundance but by the possession of the abfA cluster, enabling a unique metabolic niche.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "arabinan_fc_014",
+      "query": "Why does arabinan supplementation alone fail to alleviate functional constipation, and what is the synergistic mechanism between dietary arabinan and abfA-cluster-carrying B. longum?",
+      "ground_truth_answer": "Arabinan alone did not affect fecal output or whole gut transit time in FC mice, even when provided in sufficient amounts. The key reason is that arabinan is an indigestible fiber poorly accessible to most gut microbiota — it requires the enzymatic machinery encoded by the abfA cluster for efficient breakdown. When abfA-cluster-carrying B. lon_8 was co-supplemented with arabinan, fecal output and intestinal transit improved significantly beyond B. lon_8 alone, and gut acetate production was further elevated. Conversely, the abfA-deficient B. lon_6 showed no improvement even when arabinan was added. Critically, experiments using an arabinan-free diet confirmed that B. lon_8 alone also failed to alleviate FC without dietary arabinan as substrate, further demonstrating the strict bidirectional dependency: the abfA cluster is necessary to utilize arabinan, and arabinan must be present for the cluster to exert its beneficial effects.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "arabinan_fc_015",
+      "query": "How does the abfA cluster influence the broader gut microbial community beyond the administered B. longum strain, and what is the ecological significance of this cross-feeding mechanism?",
+      "ground_truth_answer": "Administration of abfA-cluster-carrying B. longum strains enriched resident gut microbes that also harbor the abfA cluster or arabinan-metabolism-related genes, effectively expanding the community-level arabinan-utilization capacity. In the clinical trial, 17 resident strains (MAGs) showed marked abundance changes with B. lon_1 or B. lon_8 treatment; 8 of these 17 strains carry the abfA cluster (including B. longum, B. cellulosilyticus, E. casseliflavus, P. dorei, B. caccae, and B. adolescentis). In vitro co-culture experiments confirmed that B. lon_8 significantly promoted growth of these residents (B. cac_MIC3, P. dor_K4, E. cas_M598, B. cel_BHI5, B. ado_442) in arabinan medium, likely by supplying L-arabinose degradation products as growth substrates for recipient bacteria. The non-effective B. lon_6 failed to stimulate this cross-feeding. The resulting expanded metabolic activity was reflected in significantly elevated arabinan-degradation functional gene (KO) abundances and increased production of SCFAs, chenodeoxycholic acid, and uracil — all correlated with improved FC clinical outcomes. This demonstrates that abfA+ probiotics act not merely as direct producers but as ecological 'keystone' facilitators that remodel a beneficial metabolic niche at the community level.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "arabinan_fc_016",
+      "query": "Why did the study focus on the abfA cluster rather than the hypBA cluster as the key determinant of FC treatment efficacy, despite both clusters being involved in arabinan degradation?",
+      "ground_truth_answer": "Several lines of evidence distinguished the abfA cluster as the dominant functional determinant. First, in transcriptional profiling of B. lon_8 grown on arabinan, genes in the abfA locus showed a mean relative mRNA expression of 35% relative to 16S rRNA, while the hypBA locus showed only 1.9%. Specifically, two abfA cluster genes (BLLJ_1852 and BLLJ_1853) reached over 60% relative expression. Second, in 8-strain mouse experiments, strains carrying only the abfA cluster (abfA+hypBA-) consistently alleviated FC symptoms, while strains carrying only the hypBA cluster (abfA-hypBA+) showed no significant effect. Third, in the clinical trial, the 28-day administration of B. longum strains altered abfA-cluster abundance in fecal metagenomes significantly in effective treatment groups, while hypBA-cluster abundance showed no significant change across all groups. Fourth, temporal changes in abfA-cluster abundance correlated significantly with defecation frequency and CCCS improvements, while hypBA-cluster abundance and B. longum species abundance showed no such correlation.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "arabinan_fc_mcq_001",
+      "question": "Which commensal bacterial species, in addition to B. longum, were tested for abfA-cluster-dependent FC alleviation in this study?",
+      "options": [
+        "A) Lactobacillus rhamnosus, Lactiplantibacillus plantarum, and Enterococcus faecalis",
+        "B) Bifidobacterium breve, Pediococcus pentosaceus, and Bacteroides nordii",
+        "C) Faecalibacterium prausnitzii, Akkermansia muciniphila, and Roseburia intestinalis",
+        "D) Bifidobacterium adolescentis, Bacteroides caccae, and Phocaeicola dorei"
+      ],
+      "correct_answer": "B",
+      "explanation": "Three non-B. longum gut isolates with abfA clusters were tested: Bifidobacterium breve (B. bre), Pediococcus pentosaceus (P. pen), and Bacteroides nordii (B. nor), alongside their wild abfA-deficient counterparts. All abfA-carrying strains significantly increased fecal output and reduced whole gut transit time, whereas abfA-deficient counterparts had no effect.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "arabinan_fc_mcq_002",
+      "question": "What was the primary model organism used to induce functional constipation in mouse experiments throughout this study?",
+      "options": [
+        "A) Diphenoxylate (Lomotil)",
+        "B) Codeine phosphate",
+        "C) Loperamide",
+        "D) Activated charcoal"
+      ],
+      "correct_answer": "C",
+      "explanation": "Loperamide was administered at a dose of 10 mg/kg body weight once daily for 14 continuous days to induce functional constipation in SPF BALB/c mice. Activated charcoal was used separately as a tracking agent to measure gastrointestinal transit time, not to induce constipation.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "arabinan_fc_mcq_003",
+      "question": "How many phylogenetic clades were identified when the 185 wild B. longum strains were analyzed using core gene maximum likelihood phylogenetics?",
+      "options": [
+        "A) 3 clades",
+        "B) 4 clades",
+        "C) 5 clades",
+        "D) 6 clades"
+      ],
+      "correct_answer": "C",
+      "explanation": "A phylogenetic analysis based on 821 core genes using the maximum likelihood method divided the 185 B. longum strains into 5 distinct clades (Clades A through E). One representative strain per clade was selected for the initial FC efficacy screening experiments.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "arabinan_fc_mcq_004",
+      "question": "In the clinical trial, by how much did B. lon_8 supplementation increase stool frequency on average, and how much did it reduce the Cleveland Clinical Constipation Score (CCCS)?",
+      "options": [
+        "A) 0.52 bowel movements/week increase; CCCS reduced by 2.10 points",
+        "B) 1.15 bowel movements/week increase; CCCS reduced by 4.86 points",
+        "C) 1.04 bowel movements/week increase; CCCS reduced by 4.09 points",
+        "D) 0.98 bowel movements/week increase; CCCS reduced by 3.75 points"
+      ],
+      "correct_answer": "B",
+      "explanation": "The 28-day administration of B. lon_8 increased stool frequency on average by 1.15 bowel movements/week (95% CI: [0.66, 1.64]) and reduced the Cleveland Clinical Constipation Score (CCCS) by 4.86 points (95% CI: [3.00, 6.36]) from baseline to day 28. B. lon_1 achieved 1.04 bowel movements/week increase and 4.09-point CCCS reduction.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "arabinan_fc_mcq_005",
+      "question": "Which of the following metabolites was DEPLETED (not enriched) in fecal samples of FC patients after 28-day supplementation with abfA-cluster-carrying B. longum strains?",
+      "options": [
+        "A) Acetate",
+        "B) Uracil",
+        "C) Agmatine",
+        "D) Chenodeoxycholic acid"
+      ],
+      "correct_answer": "C",
+      "explanation": "In untargeted LC-MS metabolomics, agmatine was the metabolite that was significantly depleted in stool samples from patients after 28-day supplementation of B. lon_8 and B. lon_1. In contrast, uracil, chenodeoxycholic acid, citric acid, and D-lysopine were enriched, and GC-MS confirmed acetate and butyrate were also significantly increased.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "arabinan_fc_mcq_006",
+      "question": "When the abfA cluster was identified across the NCBI database, how many bacterial genomes were found to harbor abfA homologs, spanning how many species and genera?",
+      "options": [
+        "A) 89 bacterial genomes, 20 species, 10 genera",
+        "B) 140 bacterial genomes, 35 species, 15 genera",
+        "C) 189 bacterial genomes, 50 species, 22 genera",
+        "D) 250 bacterial genomes, 60 species, 30 genera"
+      ],
+      "correct_answer": "C",
+      "explanation": "A global interrogation of NCBI databases revealed that abfA homologs were widely distributed in 189 bacterial genomes spanning 50 species and 22 genera. The main genera included Bacteroides, Bifidobacterium, Enterococcus, Pediococcus, and others, suggesting the abfA cluster is broadly prevalent across diverse gut-resident bacteria.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "arabinan_fc_mcq_007",
+      "question": "What was the Spearman correlation between the temporal change in abfA-cluster abundance and the change in defecation frequency in the clinical trial?",
+      "options": [
+        "A) r = 0.22, FDR-adjusted p = 0.12",
+        "B) r = 0.35, FDR-adjusted p = 0.03",
+        "C) r = 0.59, FDR-adjusted p < 0.001",
+        "D) r = 0.75, FDR-adjusted p < 0.001"
+      ],
+      "correct_answer": "C",
+      "explanation": "The temporal changes in abfA-cluster abundance positively correlated with changes in defecation frequency with a Spearman's rank correlation of r = 0.59 (FDR-adjusted p = 0.000118), and negatively correlated with changes in CCCS (r = -0.32, FDR-adjusted p < 0.05). This correlation was computed across all 41 FC patients in the three treatment arms.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "arabinan_fc_mcq_008",
+      "question": "In germ-free mice that received fecal microbiota transplantation from high-abfA-cluster human donors, by approximately how much did whole gut transit time decrease and fecal output increase compared to low-abfA recipients?",
+      "options": [
+        "A) Transit time decreased by ~20 minutes; fecal output increased by ~1 pellet/hour",
+        "B) Transit time decreased by ~50 minutes; fecal output increased by ~2 pellets/hour",
+        "C) Transit time decreased by ~90 minutes; fecal output increased by ~4 pellets/hour",
+        "D) Transit time decreased by ~30 minutes; fecal output increased by ~3 pellets/hour"
+      ],
+      "correct_answer": "B",
+      "explanation": "In the FMT experiment with germ-free FC mice, recipients of high-abfA-cluster-abundant fecal microbiota showed clear FC alleviation: whole gut transit time decreased by approximately 50 minutes and fecal output increased by approximately two pellets per hour. No such phenotypic changes were observed in GF mice receiving the abfA-cluster-deficient fecal microbiota.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "arabinan_fc_mcq_009",
+      "question": "The study explicitly ruled out one alternative hypothesis for how B. lon_8 relieves FC — the arabinose-sucrase inhibition pathway. Which of the following best describes why this mechanism was rejected?",
+      "options": [
+        "A) Arabinose produced from arabinan degradation is too small in quantity to inhibit sucrase at the concentrations measured in mouse feces",
+        "B) Arabinan degradation by abfA and arabinose production occurs in the colon, while sucrose digestion occurs in the jejunum, making any sucrase-blocking effect anatomically impossible in this context",
+        "C) The abfA cluster does not produce free arabinose as a degradation product; instead, arabinan is fully converted to acetate without intermediary sugars being released",
+        "D) B. lon_8 was shown to have no direct sucrase-inhibiting activity in vitro, ruling out any role for arabinose in the mechanism"
+      ],
+      "correct_answer": "B",
+      "explanation": "The study confirmed that the abfA cluster plays an essential role in degrading arabinan and producing arabinose, but this process occurs in the colon, not in the jejunum where sucrose digestion by sucrase-isomaltase occurs. Therefore, arabinose derived from colonic arabinan degradation cannot block sucrose metabolism in the small intestine, ruling out the sucrase-inhibition diarrhea mechanism as an explanation for the observed FC relief.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "arabinan_fc_mcq_010",
+      "question": "The multi-cohort meta-analysis in this study validated the predictive power of abfA-cluster abundance for FC by analyzing additional fecal metagenome samples. Which of the following best characterizes the breadth and finding of this validation?",
+      "options": [
+        "A) 200 samples from 2 cohorts were analyzed; abfA-cluster abundance was significantly higher in FC patients compared to healthy subjects",
+        "B) 511 samples from 4 independent FC cohorts were analyzed; abfA-cluster abundance was significantly lower in FC patients compared to healthy subjects in all cohorts",
+        "C) 330 samples from the Mars et al. cohort alone were analyzed; abfA-cluster abundance distinguished IBS-C from healthy subjects with 75% AUC",
+        "D) 511 samples from 4 cohorts were analyzed; both abfA-cluster and hypBA-cluster abundance were significantly lower in FC patients"
+      ],
+      "correct_answer": "B",
+      "explanation": "The meta-analysis analyzed an additional 511 fecal metagenome samples from four independent FC cohorts: Coker et al. (n=53), Mancabelli et al. (n=10), Tian et al. (n=118), and Mars et al. (n=330). Across all cohorts, abfA-cluster abundance in fecal metagenomes of FC patients was significantly lower compared to healthy subjects (Wilcoxon rank-sum test, p<0.05). Importantly, hypBA-cluster abundance showed no significant difference between health and FC in these cohorts, further confirming the specificity of abfA as a biomarker.",
+      "expected_documents": [
+        "A_key_genetic_factor_governing_arabinan_utilization_in_the_gut_microbiome_alleviates_constipation.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "factual"
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "source_document": "The_effects_of_inulin_on_gut_microbial_composition.pdf",
+  "metadata": {
+    "title": "The effects of inulin on gut microbial composition: a systematic review of evidence from human studies",
+    "authors": "Le Bastard Q, Chapelet G, Javaudin F, Lepelletier D, Batard E, Montassier E",
+    "journal": "European Journal of Clinical Microbiology & Infectious Diseases",
+    "year": 2020,
+    "doi": "10.1007/s10096-019-03721-w",
+    "total_studies_reviewed": 9
+  },
+  "test_cases": [
+    {
+      "id": "inulin_001",
+      "query": "What is inulin and what type of fiber is it?",
+      "ground_truth_answer": "Inulin is a prebiotic consisting of repetitive fructosyl units linked by β(2,1) bonds. It is a readily fermentable fiber by intestinal bacteria that generates large quantities of short-chain fatty acids (SCFAs). It is classified as a non-digestible food ingredient that beneficially affects the host by selectively stimulating the growth and/or activity of one or a limited number of bacteria in the colon.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "inulin_002",
+      "query": "How many studies were included in this systematic review, and what was the most common study design?",
+      "ground_truth_answer": "Nine original articles were included in the systematic review. The most common design was randomized, double-blind, placebo-controlled trials (n=7). Of the nine included studies, all were randomized and controlled trials. Four were crossover trials with washout periods varying from 7 days to 3 weeks after the first intervention.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "inulin_003",
+      "query": "What was the most consistent microbiome change observed across all inulin supplementation studies?",
+      "ground_truth_answer": "The most consistent change observed across all studies was an increase in the relative abundance of the genus Bifidobacterium. This finding was reported across all nine included studies. Other concordant but less universal results included increases in Anaerostipes, Faecalibacterium, and Lactobacillus, as well as a decrease in Bacteroides.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "inulin_004",
+      "query": "What was the range of daily inulin doses used across the studies in this review?",
+      "ground_truth_answer": "Daily supplementation with inulin was highly variable between studies, ranging from 5 grams per day (Holscher et al. 2015) to 20 grams per day (Baxter et al. 2019 and Valcheva et al. 2018). Several studies used a manufactured and combined prebiotic supplementation product (Orafti® Synergy1), often at 16 g/day.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "inulin_005",
+      "query": "What effect of inulin on constipation has been recognized by the European Food Safety Authority (EFSA)?",
+      "ground_truth_answer": "In 2015, the European Food Safety Authority stated that inulin contributes to the maintenance of normal defecation by increasing stool frequency, based on a daily consumption of 12 grams of native chicory inulin. Prior to this, it was reported that inulin ingestion was associated with a significant increase in stool frequency in healthy individuals with constipation.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "inulin_006",
+      "query": "What is the proposed mechanism by which inulin increases Bifidobacterium abundance?",
+      "ground_truth_answer": "Bifidobacterium has the capacity to directly degrade oligofructose, which is a component of inulin. This allows Bifidobacterium to selectively utilize inulin as a substrate, giving it a growth advantage over other bacteria in the gut environment. This selective fermentation is the basis of the prebiotic effect of inulin on Bifidobacterium.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "inulin_007",
+      "query": "How does inulin supplementation affect Bacteroides abundance, and what is the proposed mechanism?",
+      "ground_truth_answer": "Three studies in this review showed a decrease in the relative abundance of Bacteroides following inulin supplementation. The proposed mechanism is that the decrease may be linked to a reduction in luminal pH as a result of increased short-chain fatty acid (SCFA) production during fermentation of inulin by other bacteria. The lowered pH creates a less favorable environment for Bacteroides species.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "inulin_008",
+      "query": "What is the proposed role of Anaerostipes in response to inulin supplementation?",
+      "ground_truth_answer": "Two studies showed an increase in Anaerostipes genus following inulin exposure. It was previously suggested that Anaerostipes may use lactate and acetate produced by the increase in Bifidobacterium — a cross-feeding mechanism — or may be able to metabolize inulin itself directly. This positions Anaerostipes as a secondary fermenter in the inulin metabolic cascade within the gut.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "inulin_009",
+      "query": "What molecular assessment methods were used to analyze gut microbiome changes in the included studies?",
+      "ground_truth_answer": "Seven of the nine studies used 16S rRNA gene sequencing (targeting the V4 region in most cases, V3 and V4 in some) to report gut microbiota changes in diversity and taxonomy. Four of these applied the QIIME software with the Greengenes core reference database for sequence analysis. One study used phylogenetic microarray, and one used fluorescence in situ hybridization (FISH). Overall, 16S sequencing was the dominant method.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "inulin_010",
+      "query": "What did the studies find regarding the effect of inulin supplementation on alpha diversity?",
+      "ground_truth_answer": "Five studies reported the effect of inulin on alpha diversity using various metrics including Chao1, Shannon index, inverse Simpson index, and observed species count. Four of these studies found no significant changes in alpha diversity following inulin supplementation compared to baseline or control. One study (Reimer et al. 2017) reported a decrease in alpha diversity using the observed species metric, but found no significant change using the Chao1 index.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "inulin_011",
+      "query": "Why did the authors conclude that the link between inulin and increased butyrate production is more complex in vivo than in vitro experiments suggest?",
+      "ground_truth_answer": "Although inulin is described as a readily fermentable fiber expected to generate large quantities of SCFAs including butyrate, the in vivo studies did not confirm this. Specifically, taxonomic changes induced by inulin supplementation were not associated with significant increases in fecal butyrate levels in two studies. Yet these same studies found increases in members of Bifidobacteriaceae, Lachnospiraceae, and Ruminococcaceae — families that include most known butyrate producers. This discrepancy suggests the relationship between community-level taxonomic changes and measurable metabolite output is more restricted and complex in the human gut environment.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "inulin_012",
+      "query": "What are the key limitations identified by the authors regarding the methodology of the included studies?",
+      "ground_truth_answer": "The authors identified five key limitations: (1) Most studies used convenience sampling with no sample size calculations, and several had small sample sizes. (2) Multiple statistical tests for taxonomic changes were performed without correction for multiple testing, potentially overestimating differences. (3) Adverse events were inconsistently reported, which is critical for safety evaluation. (4) The search was limited to peer-reviewed English-language articles. (5) High methodological variability across studies made pooled analysis infeasible. Additionally, the predominant use of 16S sequencing limited resolution at the species and strain level and could not provide functional capacity information.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "inulin_013",
+      "query": "How did habitual dietary fiber intake influence the gut microbiome's response to inulin supplementation in the Healey et al. 2018 study?",
+      "ground_truth_answer": "In Healey et al. 2018, participants were stratified by their habitual dietary fiber intake into low dietary fiber (LDF, <18g/day for females and <22g/day for males) and high dietary fiber (HDF, ≥25g/day for females and ≥30g/day for males) groups. The study found that Lactobacillus increased in the LDF group, while Faecalibacterium increased in the HDF group, suggesting that baseline dietary fiber intake shapes the microbiome's compositional response to inulin. The study also highlighted a large inter-individual variability in whole community microbiota responses, with some participants' pre- and post-intervention samples clustering together while others showed very divergent profiles.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "inulin_014",
+      "query": "Compare the effects of inulin supplementation on the gut microbiome in healthy subjects versus patients with inflammatory bowel disease (IBD) based on the studies reviewed.",
+      "ground_truth_answer": "In healthy subjects (5 studies), inulin consistently increased Bifidobacterium, and some studies showed changes in beta diversity with altered community architecture. In IBD patients, the picture was more complex: Valcheva et al. 2018 in active ulcerative colitis patients found dose-dependent effects — 7.5g/day increased Faecalibacterium and unclassified Ruminococcaceae, while 15g/day increased Bifidobacterium but decreased Bacteroides and Parabacteroides in mucosal biopsies. Joossens et al. 2012 in Crohn's disease patients found increased Bifidobacterium longum but decreased Ruminococcus gnavus. Critically, the American College of Gastroenterology recommended against prebiotics for IBS symptom improvement, and Singh et al. showed inulin could exacerbate colitis in a mouse model by enriching butyrate-producing bacteria, suggesting that prebiotic effects may worsen inflammatory conditions.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "inulin_015",
+      "query": "What future research directions do the authors recommend to better understand the effects of inulin on the human gut microbiome?",
+      "ground_truth_answer": "The authors recommend several future directions: (1) Use of multi-omic approaches beyond 16S sequencing, specifically metatranscriptomics, metaproteomics, and metabolomics, to gain in-depth understanding of the functional effects of inulin supplementation. (2) Conducting larger trials with proper sample size calculations. (3) Strict control for potential confounders, especially diet and medications. (4) Consistent and thorough reporting of adverse events. (5) Addressing the high inter-individual variation in microbiome responses to inulin, which makes predicting individual outcomes challenging. The authors also note that species- and strain-level resolution is needed, which current 16S methods cannot adequately provide.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "inulin_016",
+      "query": "Analyze the dose-dependent effects of inulin supplementation on Bifidobacterium and Bacteroides based on the Valcheva et al. 2018 study and the Holscher et al. 2015 study.",
+      "ground_truth_answer": "In Holscher et al. 2015 (agave inulin in healthy subjects), Bifidobacterium increased 3-fold with 5.0g/day and 4-fold with 7.5g/day, and Lachnobacterium and Ruminococcus decreases were only observed at the 7.5g/day dose, indicating a dose-response relationship. In Valcheva et al. 2018 (ulcerative colitis patients), at 7.5g/day, Faecalibacterium and unclassified Ruminococcaceae increased in stool, while at 15g/day, Bifidobacterium increased significantly in stool (0.46±0.29 vs 2.44±1.27) and Bacteroides and Parabacteroides decreased in mucosal biopsies. Together, these data suggest that higher doses of inulin produce broader and more pronounced shifts in microbiome composition, with dose-dependent bifidogenic effects and potentially stronger suppression of Bacteroides at higher doses.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    }
+  ],
+  "mcq_questions": [
+    {
+      "id": "inulin_mcq_001",
+      "question": "What type of bond links the fructosyl units in inulin?",
+      "options": [
+        "A) α(1,4) glycosidic bonds",
+        "B) β(1,4) glycosidic bonds",
+        "C) β(2,1) bonds",
+        "D) α(2,6) bonds"
+      ],
+      "correct_answer": "C",
+      "explanation": "Inulin consists of repetitive fructosyl units linked by β(2,1) bonds. This specific linkage makes it resistant to human digestive enzymes, rendering it a non-digestible fermentable fiber.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "inulin_mcq_002",
+      "question": "What databases were searched in the systematic review's literature search strategy?",
+      "options": [
+        "A) PubMed, Cochrane Library, and CINAHL",
+        "B) MEDLINE, Web of Science, and Scopus",
+        "C) MEDLINE, EMBASE, Web of Science, and Scopus",
+        "D) PubMed, EMBASE, and Cochrane Library"
+      ],
+      "correct_answer": "C",
+      "explanation": "The authors searched MEDLINE, EMBASE, Web of Science, and Scopus databases for articles in English published in peer-reviewed journals indexed up until March 2019.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "inulin_mcq_003",
+      "question": "According to the Costabile et al. 2010 study, what was the source of inulin used?",
+      "options": [
+        "A) Chicory root",
+        "B) Agave plant",
+        "C) Globe artichoke (Cynara scolymus)",
+        "D) Jerusalem artichoke"
+      ],
+      "correct_answer": "C",
+      "explanation": "The Costabile et al. 2010 study used a very-long-chain inulin extracted from globe artichoke (Cynara scolymus) root at a dose of 10g/day in a double-blind, placebo-controlled, cross-over design with healthy human subjects.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "inulin_mcq_004",
+      "question": "In the Holscher et al. 2015 study, by approximately how much did Bifidobacterium increase with 7.5g/day of agave inulin?",
+      "options": [
+        "A) 2-fold",
+        "B) 3-fold",
+        "C) 4-fold",
+        "D) 5-fold"
+      ],
+      "correct_answer": "C",
+      "explanation": "In Holscher et al. 2015, Bifidobacterium increased 3-fold with 5.0g/day and 4-fold with 7.5g/day of agave inulin, demonstrating a dose-dependent bifidogenic response.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "inulin_mcq_005",
+      "question": "Which statement best describes the effect of inulin supplementation on beta diversity across the reviewed studies?",
+      "options": [
+        "A) All six studies assessing beta diversity reported significant changes in overall microbiome architecture",
+        "B) Two studies found no significant change, three found significant change, and one highlighted large inter-individual variation",
+        "C) Inulin consistently had no effect on beta diversity across all studies",
+        "D) Beta diversity was only assessed in two studies, both showing significant shifts"
+      ],
+      "correct_answer": "B",
+      "explanation": "Six studies assessed beta diversity. Two studies found no significant changes in the overall gut microbiome architecture, three reported significant changes following inulin supplementation, and one (Healey et al. 2018) specifically highlighted large inter-individual variation in community architecture responses.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "inulin_mcq_006",
+      "question": "What is the proposed reason for the decrease in Bacteroides abundance following inulin supplementation?",
+      "options": [
+        "A) Direct antimicrobial compounds produced by Bifidobacterium that inhibit Bacteroides",
+        "B) Competitive exclusion due to rapid Lactobacillus overgrowth",
+        "C) A reduction in colonic pH caused by increased SCFA production",
+        "D) Inulin directly binds to and inhibits Bacteroides cell surface receptors"
+      ],
+      "correct_answer": "C",
+      "explanation": "The authors proposed that the decrease in relative abundance of Bacteroides may be linked to a reduction in pH as a result of SCFA production during microbial fermentation of inulin. The more acidic luminal environment created by SCFA production is less favorable for Bacteroides growth.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "inulin_mcq_007",
+      "question": "In the Dewulf et al. 2013 study in obese women, what were the baseline and post-intervention mean relative abundance values for Bifidobacterium?",
+      "options": [
+        "A) 0.07 ± 0.09 vs 0.85 ± 1.15",
+        "B) 0.17 ± 0.19 vs 1.85 ± 2.15",
+        "C) 1.17 ± 1.19 vs 3.85 ± 3.15",
+        "D) 0.57 ± 0.39 vs 2.85 ± 1.15"
+      ],
+      "correct_answer": "B",
+      "explanation": "In Dewulf et al. 2013, Bifidobacterium relative abundance increased from 0.17 ± 0.19 at baseline to 1.85 ± 2.15 following inulin/oligofructose 50/50 mix (Synergy 1) supplementation at 16g/day for 3 months in obese women.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "inulin_mcq_008",
+      "question": "What was the duration and population of the Reimer et al. 2017 trial on inulin-type fructans?",
+      "options": [
+        "A) 4 weeks, 42 healthy subjects",
+        "B) 9 weeks, 25 patients with active ulcerative colitis",
+        "C) 12 weeks, 26 patients with overweight or obesity",
+        "D) 3 months, 30 obese women"
+      ],
+      "correct_answer": "C",
+      "explanation": "Reimer et al. 2017 was a 12-week randomized, placebo-controlled, double-blind study involving 26 patients with overweight or obesity, using inulin-type fructans (6g oligofructose + 2g inulin from chicory root, twice daily).",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "inulin_mcq_009",
+      "question": "Why is the use of 16S rRNA sequencing alone considered insufficient for fully characterizing the effects of inulin supplementation on the gut microbiome?",
+      "options": [
+        "A) It can only identify bacteria at the phylum level and misses genus- or species-level resolution",
+        "B) It cannot detect changes in relative abundance, only presence or absence of taxa",
+        "C) It is unable to provide resolution at the species and strain level, and cannot provide microbial functional capacity information",
+        "D) It is too sensitive and generates false-positive taxa that inflate diversity estimates"
+      ],
+      "correct_answer": "C",
+      "explanation": "The authors explicitly state that the studies applied 16S sequencing which was unable to provide information at the species and strain level, and was unable to provide microbial functional capacity. This is important because understanding functional changes (e.g., SCFA production, enzyme activity) is necessary to fully evaluate the effects of a dietary intervention like inulin supplementation.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "inulin_mcq_010",
+      "question": "Which of the following best explains the paradox that inulin supplementation increases known butyrate-producing bacteria but does not consistently increase fecal butyrate levels in human studies?",
+      "options": [
+        "A) The increased butyrate is rapidly absorbed by colonocytes before it can be detected in feces, but this is consistent across all subjects",
+        "B) The in vivo relationship between taxonomic shifts and metabolite output is more complex and restricted than in vitro models suggest, with cross-feeding networks and host absorption making the link non-linear",
+        "C) The butyrate-producing bacteria that increase (Bifidobacterium) do not actually produce butyrate; they only produce acetate",
+        "D) Fecal butyrate measurement methods are too imprecise to detect the actual increases that occur"
+      ],
+      "correct_answer": "B",
+      "explanation": "The authors specifically note that although inulin increased members of Bifidobacteriaceae, Lachnospiraceae, and Ruminococcaceae (known butyrate producers), fecal butyrate levels did not significantly increase in two studies. The authors concluded that the link between stimulating butyrate production with inulin — well-supported by in vitro experiments — seems more complex and restricted in the in vivo scenario. Factors including cross-feeding dynamics, host colonocyte absorption, and the overall community metabolic network make in vivo outcomes harder to predict from simple taxonomic shifts.",
+      "expected_documents": ["The_effects_of_inulin_on_gut_microbial_composition.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

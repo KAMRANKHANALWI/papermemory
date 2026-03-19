@@ -1,0 +1,328 @@
+{
+  "source_document": "4-The_interplay_between_diet_and_the_gut_microbiome.pdf",
+  "test_cases": [
+    {
+      "id": "diet_microbiome_001",
+      "query": "What bacterial species are increased by the Mediterranean diet according to intervention studies?",
+      "ground_truth_answer": "Intervention studies have shown that the Mediterranean diet increases the abundance of health-promoting Faecalibacterium prausnitzii and Roseburia species, while reducing the abundance of Ruminococcus gnavus, Collinsella aerofaciens and Ruminococcus torques",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "diet_microbiome_002",
+      "query": "How many functional pathways was the Mediterranean diet associated with in a metagenomic study?",
+      "ground_truth_answer": "A metagenomic shotgun sequencing study of 307 male subjects revealed that the Mediterranean diet was associated with 36 functional pathways, mostly resembling a plant-based diet, with enriched microbial functions for SCFA fermentation and dietary fibre degradation",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "diet_microbiome_003",
+      "query": "What is the green Mediterranean diet and how does it differ from the traditional Mediterranean diet?",
+      "ground_truth_answer": "The green Mediterranean diet is an enhanced version of the Mediterranean diet that incorporates a higher intake of plant-based foods and reduced red meat, as well as daily polyphenol-rich green tea and Mankai aquatic plant consumption. It yielded greater changes in microbial composition including increased Prevotella spp. abundance and BCAA degrading enzymes, with decreased Bifidobacterium spp.",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "diet_microbiome_004",
+      "query": "How quickly can the gut microbiota respond to major dietary changes?",
+      "ground_truth_answer": "The gut microbiota reacts efficiently to major dietary changes, with the structure and composition of the microbiome changing over 1-2 days when individuals switch between plant and meat-based diets, add more than 30g of specific dietary fibers daily, or adapt either a high-fiber-low-fat or low-fiber-high-fat diet for ten days",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "diet_microbiome_005",
+      "query": "What happens to Bifidobacterium species during weaning from breastfeeding?",
+      "ground_truth_answer": "Breastfeeding infants show a higher abundance of Bifidobacterium species adapted to the utilization of human milk oligosaccharides (HMOs). After weaning, there are noticeable changes in gut microbiota composition primarily due to altered diet, resulting in an expansion of Bacteroidetes and Firmicutes which can metabolize more complex polysaccharides",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "diet_microbiome_006",
+      "query": "Explain how SCFAs benefit human health through GPCR signaling",
+      "ground_truth_answer": "SCFAs exhibit several health benefits by signaling through G protein-coupled receptors (GPCRs) and stimulating the secretion of satiety hormones (glucagon-like peptide 1 and peptide YY) from enteroendocrine cells. This influences appetite regulation and modulates the function of regulatory T cells, as well as lipid and glucose metabolism, playing a pivotal role in regulating host energy metabolism and colonic homeostasis",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "diet_microbiome_007",
+      "query": "How do polyphenols exert antimicrobial effects?",
+      "ground_truth_answer": "Polyphenols can inhibit bacterial growth through several mechanisms, including binding to and altering the functional features of cell membranes. They exert antimicrobial activities against foodborne pathogens and serve as quorum-sensing inhibitors and antimicrobial agents in a dose-dependent manner",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "diet_microbiome_008",
+      "query": "What percentage of polyphenols are absorbed in the small intestine versus those that interact with gut microorganisms?",
+      "ground_truth_answer": "Small quantities of polyphenols (5% to 10%) are absorbed in the small intestine, predominantly those featuring monomeric and dimeric structures. The majority of polyphenols (90% to 95%) interact with gut microorganisms in the ileum and colon, where they promote the abundance of Bifidobacterium, Akkermansia and Lactobacillus species",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "diet_microbiome_009",
+      "query": "What bacterial species are enriched in consumers of high-protein diets?",
+      "ground_truth_answer": "Bacterial species involved in proteolysis are enriched in consumers of high-protein diets, mainly Bacteroides, Bacillus, Clostridium, Phocaeicola, Propionibacterium, Fusobacterium, Lacticaseibacillus and Streptococcus",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "diet_microbiome_010",
+      "query": "Describe the effects of a ketogenic diet on gut microbiota composition",
+      "ground_truth_answer": "A ketogenic diet shows substantial reductions in Actinobacteria and Firmicutes phyla, with 19 species of beneficial Bifidobacterium decreased. There is an increase in Bacteroidetes species. These alterations are partially induced through host production of ketone bodies. There is a substantial inverse correlation between Bifidobacterium spp. and the ketone body β-hydroxybutyrate (βHB)",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "diet_microbiome_011",
+      "query": "How does the ketogenic diet affect intestinal TH17 cells?",
+      "ground_truth_answer": "The ketogenic diet leads to variations in intestinal T helper 17 (TH17) cell accumulation through changes in gut microbiota composition. Transplanting fecal microbiota from ketogenic diet-fed human donors into germ-free mice led to lower pro-inflammatory TH17 cells in both gut and adipose tissues, highlighting the impact of ketogenic diet on immune responses",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "diet_microbiome_012",
+      "query": "What are the characteristics of the Western diet and its effects on gut microbiome diversity?",
+      "ground_truth_answer": "The Western diet is characterized by high calorie content, enriched in animal protein, saturated fats, simple sugars and ultra-processed foods, with inadequate amounts of fiber, fruits and vegetables. It is associated with a marked reduction in gut microbiome diversity compared to other diets, with a shift towards an enterosignature dominated by Bacteroides species",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "diet_microbiome_013",
+      "query": "Compare the prevalence of Prevotella enterotype between African and US populations in the METS-Microbiome study",
+      "ground_truth_answer": "In the METS-Microbiome study using amplicon sequencing and metabolomics on 1,904 individuals, the Prevotella enterotype had higher prevalence in Africans, with 81% in Ghana and 62% in South Africa. The Bacteroides enterotype was more prevalent in US (75%) and Jamaican cohorts (68%)",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "comparison"
+    },
+    {
+      "id": "diet_microbiome_014",
+      "query": "How does immigration to the USA affect gut microbiome composition?",
+      "ground_truth_answer": "A study of 514 stool samples from first and second-generation immigrants from Hmong and Karen communities revealed substantial changes in gut microbiome. Reduced gut microbial diversity and a shift from Prevotella to Bacteroides species dominance led to loss of key strains, resulting in diminished fiber degradation capability, including loss of specific glycoside hydrolases (GH17, GH64, GH87, GH5 and GH26)",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "diet_microbiome_015",
+      "query": "What role do human milk oligosaccharides (HMOs) play in infant health?",
+      "ground_truth_answer": "HMOs function as prebiotics, protecting infants from infections, promoting brain development and mucus barrier, reducing intestinal permeability and exerting immunomodulatory effects. HMOs modulate the infant gut microbiota and provide long-term protection from allergy, atopic dermatitis and obesity, as well as enhanced intestinal barrier function",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+  
+  "mcq_questions": [
+    {
+      "id": "diet_microbiome_mcq_001",
+      "question": "What is the ratio of fat to the sum of protein and carbohydrates in a traditional long-chain triglyceride ketogenic diet?",
+      "options": [
+        "A) 2:1",
+        "B) 3:1",
+        "C) 4:1",
+        "D) 5:1"
+      ],
+      "correct_answer": "C",
+      "explanation": "The traditional long-chain triglyceride ketogenic diet follows a 4:1 ratio of fat (in grams) to the sum of protein and carbohydrates",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "diet_microbiome_mcq_002",
+      "question": "How many carbohydrate-active enzymes (CAZymes) do humans produce for carbohydrate degradation?",
+      "options": [
+        "A) 7",
+        "B) 17",
+        "C) 27",
+        "D) 37"
+      ],
+      "correct_answer": "B",
+      "explanation": "Humans only produce very limited carbohydrate-active enzymes (CAZymes) for carbohydrate degradation (17) and thus rely on the gut microbiota to indirectly metabolize several dietary fibers",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "diet_microbiome_mcq_003",
+      "question": "How much dietary protein can reach the large intestine daily to be metabolized by the microbiome?",
+      "options": [
+        "A) 3-6 grams",
+        "B) 7-11 grams",
+        "C) 12-18 grams",
+        "D) 20-25 grams"
+      ],
+      "correct_answer": "C",
+      "explanation": "Dietary proteins are mostly broken down by host proteases, yet up to 12-18 g of dietary proteins can reach the large intestine daily and be metabolized by the microbiome",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "diet_microbiome_mcq_004",
+      "question": "What percentage of the world's population lives in Europe or North America according to the paper?",
+      "options": [
+        "A) Less than 5%",
+        "B) Less than 10%",
+        "C) Less than 15%",
+        "D) Less than 20%"
+      ],
+      "correct_answer": "C",
+      "explanation": "Less than 15% of the world lives in Europe or North America, yet over 70% of published human microbiome data comes from these regions, showing significant underrepresentation of low-income countries",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "diet_microbiome_mcq_005",
+      "question": "What is the prevalence of P. copri in individuals with a Western lifestyle versus non-Western lifestyle?",
+      "options": [
+        "A) 29.6% Western, 95.4% non-Western",
+        "B) 39.1% Western, 85.4% non-Western",
+        "C) 49.6% Western, 75.4% non-Western",
+        "D) 59.6% Western, 65.4% non-Western"
+      ],
+      "correct_answer": "A",
+      "explanation": "A meta-analysis of over 6,500 metagenomes found that P. copri prevalence is 95.4% among individuals living a non-Western lifestyle and 29.6% among individuals with a Western lifestyle",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "diet_microbiome_mcq_006",
+      "question": "What percentage of patients with irritable bowel syndrome have a positive clinical response to a low-FODMAP diet?",
+      "options": [
+        "A) 30-40%",
+        "B) 40-60%",
+        "C) 50-80%",
+        "D) 60-90%"
+      ],
+      "correct_answer": "C",
+      "explanation": "For the treatment of irritable bowel syndrome, a low-FODMAP diet is routinely used, with 50% to 80% of patients having a positive clinical response",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "diet_microbiome_mcq_007",
+      "question": "How many bacterial species were found in gut microbiomes of Hadza individuals using ultra-deep metagenomic sequencing?",
+      "options": [
+        "A) 430 species",
+        "B) 530 species",
+        "C) 630 species",
+        "D) 730 species"
+      ],
+      "correct_answer": "D",
+      "explanation": "Ultra-deep metagenomic sequencing revealed that gut microbiomes from Hadza individuals comprised 730 bacterial species, surpassing the 436, 317 and 277 species found in Nepali agrarian, Nepali forager and Californian populations, respectively",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "factual"
+    },
+    {
+      "id": "diet_microbiome_mcq_008",
+      "question": "Which of the following is NOT a component of the Mediterranean diet emphasized in the paper?",
+      "options": [
+        "A) High intake of unprocessed, whole-plant foods",
+        "B) Olive oil and dairy products",
+        "C) High amounts of red meat",
+        "D) Moderate consumption of poultry and fish"
+      ],
+      "correct_answer": "C",
+      "explanation": "The Mediterranean diet emphasizes high intake of unprocessed, whole-plant foods, olive oil, dairy products, moderate consumption of poultry and fish, and LOW amounts of red meat, not high amounts",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "diet_microbiome_mcq_009",
+      "question": "What is TMAO and how is it related to cardiovascular disease?",
+      "options": [
+        "A) A beneficial metabolite that protects the heart",
+        "B) A metabolite from gut bacteria linked to arteriosclerosis and thrombosis",
+        "C) A vitamin produced by gut bacteria",
+        "D) An enzyme that breaks down cholesterol"
+      ],
+      "correct_answer": "B",
+      "explanation": "TMAO (trimethylamine N-oxide) is a metabolite produced from dietary compounds by gut bacteria and is linked to arteriosclerosis, platelet aggregation and thrombosis. Elevated TMAO levels are associated with higher mortality in patients with heart failure",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "diet_microbiome_mcq_010",
+      "question": "According to the paper, which bacterial species is associated with colorectal cancer development?",
+      "options": [
+        "A) Lactobacillus acidophilus",
+        "B) Bifidobacterium longum",
+        "C) Fusobacterium nucleatum",
+        "D) Faecalibacterium prausnitzii"
+      ],
+      "correct_answer": "C",
+      "explanation": "Fusobacterium nucleatum has been associated with colorectal cancer development through mechanisms including activation of E-cadherin-β-catenin signaling, epigenetic changes and alteration of the tumor microenvironment. A diet rich in whole grains and dietary fiber shows lower risk of F. nucleatum positive cancer",
+      "expected_documents": [
+        "4-The_interplay_between_diet_and_the_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "factual"
+    }
+  ]
+}

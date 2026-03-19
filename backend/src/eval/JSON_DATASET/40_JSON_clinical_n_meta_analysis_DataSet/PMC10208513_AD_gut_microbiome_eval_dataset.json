@@ -1,0 +1,341 @@
+{
+  "source_document": "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf",
+  "paper_title": "Gut microbiome dysbiosis in Alzheimer's disease and mild cognitive impairment: A systematic review and meta-analysis",
+  "authors": "Jemimah S, Chabib CMM, Hadjileontiadis L, AlShehhi A",
+  "published": "PLoS ONE 18(5): e0285346, May 24, 2023",
+  "test_cases": [
+    {
+      "id": "ad_microbiome_001",
+      "query": "How many studies, patients, and controls were included in this meta-analysis?",
+      "ground_truth_answer": "Seventeen studies were identified and included, comprising 679 patients (241 with MCI and 438 with AD) and 632 controls. The cohort was 61.9% female with a mean age of 71.3 ± 6.9 years.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ad_microbiome_002",
+      "query": "Which country contributed the most studies in this meta-analysis?",
+      "ground_truth_answer": "Most studies were undertaken in China, accounting for 11 out of 17 studies (65% of the total).",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ad_microbiome_003",
+      "query": "What sequencing platform and gene region were most commonly used across the included studies?",
+      "ground_truth_answer": "Most included studies used the Illumina MiSeq platform to sequence the V3-V4 regions of bacterial 16S rRNA. Exceptions include one study that sequenced the V1-V9 region, two that sequenced the V4 region only, and one that performed shotgun sequencing using Illumina NextSeq 500.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ad_microbiome_004",
+      "query": "What databases were searched and what was the publication date range for study inclusion?",
+      "ground_truth_answer": "The authors searched MEDLINE, Scopus, EMBASE, EBSCO, and Cochrane for AD gut microbiome studies. The search was limited to papers published in English between January 1, 2010 and March 31, 2022.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ad_microbiome_005",
+      "query": "What are Bacteroides and what metabolic function do they serve in the gut?",
+      "ground_truth_answer": "Bacteroides are obligate anaerobic Gram-negative bacteria that are a major constituent of the gut microbiome. They utilize polysaccharides to produce acetate and propionate, which are short-chain fatty acids (SCFAs) with roles in gut health and inflammation.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ad_microbiome_006",
+      "query": "What was the overall finding regarding alpha-diversity (Shannon index) in AD patients, and how did Chinese cohorts compare?",
+      "ground_truth_answer": "Overall, a small but significant decrease was observed in Shannon diversity in AD patients (SMD -0.23, 95% CI -0.5 to 0.05; p = 0.05), with substantial heterogeneity (I² = 60%). A subgroup analysis by geographic location showed a small, significant reduction specifically in Chinese cohorts (SMD -0.28, 95% CI -0.51 to -0.06; p = 0.01) with lower heterogeneity (I² = 40%). No such reduction was seen in non-Chinese cohorts.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ad_microbiome_007",
+      "query": "How did alpha-diversity indices (Sobs, ACE, Chao) change in Alzheimer's disease patients?",
+      "ground_truth_answer": "In AD patients, all three species richness indices showed significant decreases. There was a significant moderate reduction in the number of observed species (Sobs; SMD -0.55, 95% CI -0.78 to -0.32; p < 0.01) with no heterogeneity. A significant moderate reduction was also found in ACE (SMD -0.38, 95% CI -0.7 to -0.06; p = 0.02), although heterogeneity was high. A moderate, significant decrease was also observed in the Chao index (SMD -0.36, 95% CI -0.63 to -0.10; p < 0.01) with low heterogeneity. Together, these suggest that Alzheimer's progression affects species richness more than evenness.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ad_microbiome_008",
+      "query": "What was the significance of Phascolarctobacterium's changes in the MCI stage compared to the AD stage?",
+      "ground_truth_answer": "Phascolarctobacterium showed a significant, moderate increase specifically during the MCI (mild cognitive impairment) stage (SMD 0.43, 95% CI 0.05 to 0.80; p = 0.02) with low heterogeneity (I² = 4%). In contrast, while Phascolarctobacterium was also moderately increased in AD (SMD 0.50, 95% CI -0.27 to 1.28), this increase was not statistically significant and showed substantial heterogeneity. This makes Phascolarctobacterium notable as a potential early marker detectable in the prodromal stage.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ad_microbiome_009",
+      "query": "What is the gut-brain axis and how does gut dysbiosis contribute to neurodegeneration in Alzheimer's disease?",
+      "ground_truth_answer": "The gut-brain axis is a bidirectional channel of communication between the brain and abdominal organs, mediated through the nervous system and neuromodulator production. In AD, the pathway between gut dysbiosis and neurodegeneration involves several steps: a defective gut barrier leads to immune activation, which triggers a systemic inflammatory response. This in turn impairs the blood-brain barrier and promotes neuroinflammation, ultimately contributing to neurodegeneration and Alzheimer's pathophysiology.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ad_microbiome_010",
+      "query": "What was the role of butyrate in relation to the blood-brain barrier and Alzheimer's disease?",
+      "ground_truth_answer": "Butyrate, a short-chain fatty acid (SCFA) produced by gut microbiota, has been shown to reduce inflammation and regulate the host immune system. Treatment with sodium butyrate in germ-free mice resulted in decreased blood-brain barrier (BBB) permeability, which is generally considered protective. However, a recent study also linked SCFA supplementation to increased amyloid-β burden, highlighting the complex and potentially paradoxical role of SCFAs in Alzheimer's disease.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ad_microbiome_011",
+      "query": "Which genera were consistently elevated (LEfSe) across multiple AD studies and what is their metabolic significance?",
+      "ground_truth_answer": "According to LEfSe analyses across multiple studies, Lactobacillus (reported higher in four studies), Bifidobacterium (reported higher in three studies), and Clostridium (reported higher in two studies) were consistently elevated in AD patients compared to controls. These genera are acetate, lactate, and propionate producers. Interestingly, Akkermansia, Lactobacillus, and Bifidobacterium have been shown to correlate negatively with clinical indicators of cognitive function, and may also have pathogenic relevance, adding nuance to their roles in AD.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ad_microbiome_012",
+      "query": "What was the confounding issue of polypharmacy in this meta-analysis and why is it clinically relevant to gut microbiome research?",
+      "ground_truth_answer": "Polypharmacy — defined as the use of five or more daily medications — is known to be detrimental to gut microbiome composition. While most included studies documented medications taken by participants, only one study explicitly addressed polypharmacy. This represents a significant limitation of the meta-analysis, as elderly AD patients are likely on multiple medications, and polypharmacy could confound observations about gut microbiome changes. The authors noted that future studies should compare microbiome composition between participants who practice polypharmacy and those who do not.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ad_microbiome_013",
+      "query": "Compare the changes in Bacteroides abundance in AD patients between Chinese and US cohorts and explain what this regional difference implies.",
+      "ground_truth_answer": "The meta-analysis revealed a striking regional divergence in Bacteroides abundance in AD patients. Chinese cohorts showed a significant decrease in Bacteroides (SMD -0.79, 95% CI -1.32 to -0.25; p < 0.01), whereas US-based cohorts showed a significant increase (SMD 0.75, 95% CI 0.37 to 1.13; p < 0.01). This bidirectional result means that the overall pooled effect appeared insignificant due to the opposing trends canceling each other out. This regional difference implies that diet, lifestyle, and environmental factors heavily influence gut microbiome composition, which in turn may shape how AD pathophysiology manifests in different populations. It also highlights the necessity of region-stratified cohort studies rather than relying on globally pooled analyses.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "ad_microbiome_014",
+      "query": "Compare the alpha-diversity changes between MCI and AD patients across multiple indices and explain what this progression pattern suggests clinically.",
+      "ground_truth_answer": "In MCI patients, alpha-diversity changes were largely non-significant: Shannon index showed a small, insignificant increase (SMD 0.13, p = 0.17), and the Chao index showed a small, insignificant decrease (SMD -0.14, p = 0.38). In contrast, AD patients showed consistent, significant decreases across multiple richness indices: Shannon (SMD -0.23, p = 0.05), Sobs (SMD -0.55, p < 0.01), ACE (SMD -0.38, p = 0.02), and Chao (SMD -0.36, p < 0.01). This gradient — from near-normal diversity in MCI to substantially reduced richness in AD — suggests that species richness depletion intensifies as the disease progresses. Clinically, this indicates that microbial diversity loss is more a feature of advanced rather than prodromal disease, making diversity alone insufficient for early diagnosis. However, the significant increase in Phascolarctobacterium specifically in MCI (but not significantly in AD) suggests genus-level shifts may offer more sensitive early biomarkers.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "ad_microbiome_015",
+      "query": "How do the LEfSe results for Bacteroidaceae, Lachnospiraceae, Enterobacteriaceae, and Lactobacillaceae collectively reflect the inflammatory state of the AD gut microbiome?",
+      "ground_truth_answer": "The LEfSe findings paint a coherent picture of a pro-inflammatory microbial environment in AD. Bacteroidaceae and Lachnospiraceae — families associated with anti-inflammatory SCFA production and gut homeostasis — were consistently reduced across multiple studies. Lachnospiraceae, along with Ruminococcaceae, is specifically associated with SCFA production, particularly butyrate, which helps maintain gut barrier integrity and suppress inflammation. Their reduction implies impaired SCFA output and a weakened anti-inflammatory capacity. In contrast, Enterobacteriaceae and Lactobacillaceae were consistently elevated in AD. Enterobacteriaceae includes pro-inflammatory species and pathobionts capable of triggering immune activation through lipopolysaccharide (LPS). Elevated Lactobacillaceae and Bifidobacteriaceae, while often considered probiotic, also correlate negatively with cognitive markers in AD, and some species carry pathogenic potential. Together, this shift — from SCFA-producing, anti-inflammatory commensals toward pathobiont-associated taxa — aligns with the gut-brain axis model of neuroinflammation driving AD progression.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "ad_microbiome_016",
+      "query": "What distinguishes the beta-diversity findings across AD, MCI, and CN cohorts, and what statistical methods were used to establish these differences?",
+      "ground_truth_answer": "Beta-diversity analyses across the included studies showed strong consensus: most studies reported significant differences in microbiome composition among AD, MCI, and cognitively normal (CN) cohorts. Common ordination methods included Principal Coordinates Analysis (PCoA), Principal Component Analysis (PCA), and Non-metric Multidimensional Scaling (NMDS). Statistical testing was primarily done using PERMANOVA and ANOSIM. For example, Vogt et al. (2017) demonstrated compositional differences between AD and CN using Bray-Curtis (F = 2.87, p < 0.001), weighted UniFrac (F = 3.84, p < 0.001), and unweighted UniFrac (F = 2.60, p < 0.005). Li et al. (2019) found significant differences among all three groups using ANOSIM (R = 0.345, p = 0.001) but noted that AD vs MCI differences were not significant. This overall pattern indicates that compositional differences are already detectable at the MCI stage, though the distinction between MCI and AD is less clear-cut than between either patient group and healthy controls.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "ad_microbiome_mcq_001",
+      "question": "What is the approximate expected number of people diagnosed with Alzheimer's disease by 2030?",
+      "options": [
+        "A) 48 million",
+        "B) 78 million",
+        "C) 98 million",
+        "D) 120 million"
+      ],
+      "correct_answer": "B",
+      "explanation": "According to the introduction, it is expected that 78 million older adults will be diagnosed with AD by 2030.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ad_microbiome_mcq_002",
+      "question": "What was the primary statistical model used to pool alpha-diversity and relative abundance data in this meta-analysis?",
+      "options": [
+        "A) Fixed-effects model weighted by sample size",
+        "B) Bayesian hierarchical model",
+        "C) Inverse-variance weighted random-effects model",
+        "D) Mantel-Haenszel fixed-effects model"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper states that three or more studies measuring the same outcome were combined using an inverse-variance weighted random-effects model. This approach appropriately accounts for between-study variability (heterogeneity).",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ad_microbiome_mcq_003",
+      "question": "Which of the following best describes how controls were selected in the included studies?",
+      "options": [
+        "A) Random population samples regardless of age or gender",
+        "B) Cognitively normal subjects matched to patients in age, gender, years of education, and lifestyle",
+        "C) Hospital inpatients without neurological diagnoses",
+        "D) Healthy volunteers from university settings"
+      ],
+      "correct_answer": "B",
+      "explanation": "The inclusion criteria specified that controls were cognitively normal (CN) subjects, reasonably matched to the AD and MCI cohorts in age, gender, years of education, and lifestyle.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ad_microbiome_mcq_004",
+      "question": "What is the standardized mean difference (SMD) for Bacteroides abundance in Chinese AD cohorts, and what direction does it indicate?",
+      "options": [
+        "A) SMD +0.75, indicating increased abundance in Chinese AD patients",
+        "B) SMD -0.79, indicating decreased abundance in Chinese AD patients",
+        "C) SMD -0.17, indicating a small non-significant decrease across all cohorts",
+        "D) SMD +0.43, indicating a significant increase in Chinese MCI patients"
+      ],
+      "correct_answer": "B",
+      "explanation": "The subgroup meta-analysis by location revealed a significant decrease in Bacteroides in Chinese cohorts (SMD -0.79, 95% CI -1.32 to -0.25; p < 0.01). In contrast, US cohorts showed an increase (SMD +0.75). The SMD of -0.17 refers to the overall pooled result across all cohorts, which was non-significant due to opposing regional trends.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ad_microbiome_mcq_005",
+      "question": "What proportion of the gut microbiome is comprised by Bacteroidetes and Firmicutes together?",
+      "options": [
+        "A) 50%",
+        "B) 70%",
+        "C) 80%",
+        "D) 90%"
+      ],
+      "correct_answer": "D",
+      "explanation": "The paper states that Bacteroidetes and Firmicutes are the dominant phyla and together comprise approximately 90% of the gut microbiome.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ad_microbiome_mcq_006",
+      "question": "What was the result of meta-analysis for Phascolarctobacterium abundance in MCI patients?",
+      "options": [
+        "A) A significant decrease (SMD -0.43, p = 0.02) with high heterogeneity",
+        "B) A non-significant moderate increase (SMD 0.50, p = 0.20) with substantial heterogeneity",
+        "C) A significant moderate increase (SMD 0.43, 95% CI 0.05 to 0.80; p = 0.02) with low heterogeneity",
+        "D) No change (SMD 0.07, p = 0.67) consistent across studies"
+      ],
+      "correct_answer": "C",
+      "explanation": "Phascolarctobacterium showed a significant, moderate increase in MCI patients (SMD 0.43, 95% CI 0.05 to 0.80; p = 0.02) with low heterogeneity (I² = 4%). Option B describes the result in AD patients (not MCI), where the increase was not statistically significant.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ad_microbiome_mcq_007",
+      "question": "Which exclusion criterion was applied to participants in the included studies regarding antibiotic use?",
+      "options": [
+        "A) No antibiotic use within one month of sample collection",
+        "B) No antibiotic use within two weeks of sample collection",
+        "C) No antibiotic use within six months of sample collection",
+        "D) No antibiotic use within one week of sample collection"
+      ],
+      "correct_answer": "B",
+      "explanation": "The exclusion criteria specified antibiotic use within two weeks of sample collection as a reason for exclusion, along with the presence of confounding conditions such as depression, cancer, or any other genetic or neurological disorders.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ad_microbiome_mcq_008",
+      "question": "Which of the following correctly describes the change in Actinobacteria in Alzheimer's disease patients according to the meta-analysis?",
+      "options": [
+        "A) A significant, large decrease (SMD -1.03) in all cohorts",
+        "B) A moderate but insignificant increase (SMD 0.63, p = 0.32) with very high heterogeneity (I² = 97%)",
+        "C) A consistent significant increase across all cohorts (SMD 0.75, p < 0.01)",
+        "D) No change whatsoever, as only one study reported it"
+      ],
+      "correct_answer": "B",
+      "explanation": "The meta-analysis showed a moderate but insignificant increase in Actinobacteria in AD patients (SMD 0.63, 95% CI -0.62 to 1.89; p = 0.32) with substantial, significant heterogeneity (I² = 97%). Notably, Actinobacteria are mainly represented by Bifidobacteriaceae and may have antidepressant effects through tryptophan production.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ad_microbiome_mcq_009",
+      "question": "Which of the following best explains why the Bacteroidaceae reduction in AD is described as a feature of Chinese cohorts and is notable compared to Parkinson's disease research?",
+      "options": [
+        "A) Chinese cohorts consume higher fiber diets, which elevates Bacteroidaceae in controls but not in AD patients",
+        "B) The reduction in Bacteroidaceae in AD is specific to Chinese cohorts and contrasts with metagenomic studies in Parkinson's disease, which revealed no significant differences in Bacteroidaceae",
+        "C) Bacteroidaceae reduction was only seen when using shotgun sequencing, not 16S, explaining why it is specific to Chinese cohorts who used different methods",
+        "D) Bacteroidaceae is only present in elderly Chinese individuals, making it an ethnicity-specific biomarker"
+      ],
+      "correct_answer": "B",
+      "explanation": "The paper notes that the reduction in Bacteroidaceae abundance in AD is a feature of Chinese cohorts, and explicitly contrasts this with the meta-analysis of metagenomic studies in Parkinson's disease, which revealed no significant differences in Bacteroidaceae. This highlights both disease-specificity and regional variability in microbiome-disease associations.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "ad_microbiome_mcq_010",
+      "question": "The LEfSe analysis identified Lactobacillus as consistently elevated in AD patients across four studies. However, the authors also highlight a concern about elevated Lactobacillus. Which of the following best captures this nuance?",
+      "options": [
+        "A) Elevated Lactobacillus is entirely beneficial because all Lactobacillus species are certified probiotics",
+        "B) Lactobacillus produces TMAO, which is directly linked to amyloid-β deposition in the brain",
+        "C) Elevated Lactobacillus correlates negatively with cognitive function markers in AD patients and some Lactobacillus species carry pathogenic potential, challenging their assumed probiotic role in this context",
+        "D) Elevated Lactobacillus reflects successful dietary intervention in AD patients and thus is a confounding variable in the LEfSe results"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper discusses that while Lactobacillus (and Bifidobacterium and Akkermansia) are often considered probiotic, their elevated abundance in AD patients has been shown to correlate negatively with clinical indicators of cognitive function. Furthermore, the authors cite literature on the pathogenic potential of lactobacilli, underscoring that the functional interpretation of microbial abundance is highly context-dependent.",
+      "expected_documents": [
+        "PMC10208513_Gut_microbiome_dysbiosis_in_Alzheimers_disease_an.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

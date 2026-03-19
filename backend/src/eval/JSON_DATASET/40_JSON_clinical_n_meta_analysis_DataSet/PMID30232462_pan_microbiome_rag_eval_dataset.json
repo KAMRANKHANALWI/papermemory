@@ -1,0 +1,343 @@
+{
+  "source_document": "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf",
+  "paper_title": "The human gut pan-microbiome presents a compositional core formed by discrete phylogenetic units",
+  "authors": "Daniel Aguirre de Cárcer",
+  "journal": "Scientific Reports",
+  "year": 2018,
+  "doi": "10.1038/s41598-018-32221-8",
+  "test_cases": [
+    {
+      "id": "pan_microbiome_001",
+      "query": "What are the three datasets used in this study, and where were the subjects from?",
+      "ground_truth_answer": "Three datasets were used: the Global Gut dataset, which included 382 subjects from rural Malawi, metropolitan U.S., and Venezuela Amerindians; the TwinsUK dataset, which comprised 977 individuals from the United Kingdom, including monozygotic and dizygotic twin pairs; and the LifeLines dataset, consisting of 884 individuals from a Dutch population-based cohort.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "pan_microbiome_002",
+      "query": "What is the 16S rRNA gene region targeted by the primer pair used across all datasets?",
+      "ground_truth_answer": "All three datasets used 16S rRNA gene sequences obtained using primer pair F515-R806, which targets the V4 hypervariable region of the 16S rRNA gene.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "pan_microbiome_003",
+      "query": "What similarity clustering threshold range was used to detect core OTUs, and why were these specific bounds chosen?",
+      "ground_truth_answer": "The study evaluated core OTUs across a similarity range from 0.97 down to 0.75. The upper bound of 0.97 was chosen because it is often employed as a species-level proxy. The lower bound of 0.75 was chosen because nucleotide alignments are generally considered to degrade below this similarity threshold.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "pan_microbiome_004",
+      "query": "What inclusion criteria were applied to select individual samples across all datasets?",
+      "ground_truth_answer": "For each dataset, only one sample per subject was used; subjects had to be healthy according to each study's own procedures; subjects had to be older than 3 years; and subjects could not have received antibiotic treatment in the 6-month period prior to sampling. A small number of samples meeting all these criteria were additionally removed due to relatively low sequencing depth.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "pan_microbiome_005",
+      "query": "What was the average percentage of total sequences accounted for by core OTUs in the Global dataset?",
+      "ground_truth_answer": "In the Global dataset, core OTUs accounted for a per-subject average of 65.6% (±10.9%) of the total sequences, with a range spanning from 33.2% to 91.2% across individual subjects.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "pan_microbiome_006",
+      "query": "How does the dynamic phylogenetic core identification approach differ from fixed-threshold OTU picking methods?",
+      "ground_truth_answer": "Traditional methods cluster sequences using a single arbitrary fixed similarity threshold or pooled taxonomic rank assignments. The dynamic approach used here iterates across a range of similarity thresholds (0.97–0.75 in 0.01 steps). At each threshold, only OTUs present in 100% of samples are designated as core OTUs, but crucially, all sequence data already assigned to core OTUs at higher similarity thresholds are removed before clustering at the next step. This produces a set of discrete, non-overlapping minimal portions of the similarity space, each representing phylogenetic groups of varying depth, rather than merging all diversity into a single resolution level.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "pan_microbiome_007",
+      "query": "How did sequencing depth affect the number of core OTUs detected in the Global dataset?",
+      "ground_truth_answer": "Sequencing depth had a substantial impact on core detection. When the sequencing depth of the Global dataset was reduced to match that of the LifeLines dataset, only one core OTU was detected at the 0.97 similarity threshold, compared to 17 OTUs detected at the original depth. This demonstrates that deeper sequencing allows more granular phylogenetically shallow core groups to be identified.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "pan_microbiome_008",
+      "query": "What is PICRUSt and how was it applied in this study to characterize core OTUs?",
+      "ground_truth_answer": "PICRUSt (Phylogenetic Investigation of Communities by Reconstruction of Unobserved States) is a computational tool that predicts the abundance of gene families in microbial communities from 16S marker gene data. In this study, PICRUSt was applied to the Global dataset's sequences by first clustering them against Greengenes representative sequences at 0.97 similarity, then converting OTU abundances into KEGG Orthology (KO) abundances, and finally organizing these into KEGG pathway hierarchy levels. Predicted metagenomes were generated for both the complete Global dataset and for each individual core OTU group, allowing fold-change comparisons of metabolic pathways between core groups and the whole community.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "pan_microbiome_009",
+      "query": "What statistical approach was used to confirm that core OTUs were not detected by chance, and what was the conclusion?",
+      "ground_truth_answer": "A permutation test was employed. One hundred randomized matrices were generated by shuffling all intra-subject OTU abundance values using the randomizeMatrix function, thereby maintaining each sample's richness (number of OTUs) while disrupting compositional structure. For each randomized matrix, the number of OTUs present in 100% of subjects was recorded to build a sampling distribution. The rank of the actual observed number of core OTUs within this distribution provided the p-value. The result was that the probability of obtaining that many core OTUs by chance was low (p < 0.01) for all datasets and across all clustering thresholds, attributed to the large number of OTU observations and the sparsity of the community tables.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "pan_microbiome_010",
+      "query": "How were core OTUs compared to sequenced bacterial genomes, and what was found for deeper-lineage core OTUs?",
+      "ground_truth_answer": "All within-core OTU representative sequences (defined at 0.97 similarity) were mapped against 16S rRNA gene sequences derived from NCBI's RefSeq bacterial genomes collection (over 60,000 genomes) using the bowtie2 short read aligner. For shallow core OTUs, most had closely related sequenced genomes (>0.97 similarity). However, for deeper-lineage core OTUs, the average within-core OTU similarity to the closest sequenced genome was surprisingly low, ranging from 0.874 to 0.945, with an overall trend of decreasing similarity at lower clustering thresholds. The most extreme case was a core OTU defined at 0.95 similarity whose average within-OTU similarity to a sequenced genome was only 90.8 ± 3.4%, indicating that substantial microbial diversity in the core remains poorly captured by current reference genome collections.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "pan_microbiome_011",
+      "query": "Which KEGG metabolic sub-categories showed the most differences between individual core OTU groups and the complete Global dataset metagenome?",
+      "ground_truth_answer": "A total of 442 differences (fold change > 3) were found between individual core group predicted metagenomes and the complete Global predicted metagenome. These differences were concentrated in Xenobiotics Biodegradation and Metabolism (93 differences), Lipid Metabolism (77), Glycan Biosynthesis and Metabolism (74), Biosynthesis of Other Secondary Metabolites (62), Metabolism of Terpenoids and Polyketides (53), and Metabolism of Cofactors and Vitamins (30). These differences occurred across only 61 of the 146 total pathways detected in the Global predicted metagenome.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "pan_microbiome_012",
+      "query": "Why did the study analyze each dataset independently rather than combining them, and which dataset was considered most informative for the pan-microbiome?",
+      "ground_truth_answer": "The three datasets were analyzed independently because they were produced by different research groups using differing protocols, and microbial composition estimates may not be comparable across datasets generated under different conditions. The Global dataset was considered most informative for studying the human gut pan-microbiome core, despite having the smallest cohort size (382 subjects), because it offered much greater geographical, lifestyle, and ethnic diversity — spanning rural Malawi, metropolitan U.S., and Venezuelan Amerindians — and had significantly higher sequencing depth (>300,988 sequences per subject) compared to the other two datasets.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "pan_microbiome_013",
+      "query": "Compare the predicted metabolic differences between Firmicutes-affiliated and Bacteroidetes-affiliated core groups in the Global dataset.",
+      "ground_truth_answer": "The Firmicutes-affiliated core groups (10 groups) showed very few metabolic differences compared to the overall Global predicted metagenome, averaging only 1.3 ± 0.99 differences per group. These minor differences were confined to Biosynthesis of Other Secondary Metabolites, Metabolism of Terpenoids and Polyketides, Lipid Metabolism, and Xenobiotics Biodegradation and Metabolism. In contrast, Bacteroidetes-affiliated core groups (4 groups) showed substantially more differences, averaging 10.2 ± 0.95 per group, spanning most of the same categories but excluding Xenobiotics Biodegradation and Metabolism, while additionally showing differences in Metabolism of Cofactors and Vitamins and Glycan Biosynthesis and Metabolism. The authors suggest this difference may reflect fundamentally different niche characteristics occupied by these two phyla, potentially linked to hierarchical trait conservation and biochemical complexity.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "pan_microbiome_014",
+      "query": "How does the study reconcile the existence of a phylogenetic core with community assembly theories — specifically Neutral theory versus Niche theory?",
+      "ground_truth_answer": "The study presents evidence relevant to both theories. Under Neutral theory, where stochastic forces dominate assembly, core groups would be expected to show enhanced immigration-related characteristics such as improved dispersal or colonization abilities and high metacommunity abundance. The observation that Ruminococcaceae and Lachnospiraceae family members — which dominate the detected core — produce resilient spores specialized for host-to-host transmission supports this hypothesis, as does the general correlation between cosmopolitanism and high abundance in bacterial biogeography. Under Niche theory, where deterministic interactions govern assembly, the core groups' phylogenetically conserved traits would relate to specific gut environmental niches. The finding that individual core groups are enriched in distinct predicted metabolic functions, and that all core groups together represent only a subset of the total pan-microbiome metabolic functionalities, aligns with the niche hypothesis. The authors ultimately favor a framework incorporating both, arguing that community assembly in the gut is at least partly deterministic, while acknowledging that microbiota members not in the core may reflect neutral processes or niches defined by non-phylogenetically conserved traits.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "pan_microbiome_015",
+      "query": "What are the key limitations of the Sekelja et al. PCA-based core microbiome approach, and how does the dynamic clustering approach in this study address them?",
+      "ground_truth_answer": "Sekelja et al. used principal components analysis (PCA) to describe sequence similarities and defined the core microbiome as the minimal portions of reduced similarity space containing sequences from all individuals. Two key limitations were identified: first, the analysis was based solely on the first two PCA axes, which captured only 24.2% of the total variation in the original sequence space, meaning the approach could group sequences that are actually more dissimilar when considering the full similarity space. Second, core groups that are not well-modeled by the first two PCA components would necessarily be lost, as the authors themselves acknowledged. The dynamic clustering approach used in this study addresses both problems: it operates in the full N-dimensional sequence similarity space without dimensionality reduction, avoiding the information loss from ordination. By iteratively clustering at multiple similarity thresholds and removing already-identified core sequences before each subsequent step, it produces discrete, non-overlapping phylogenetic units without being biased or limited by reduced-space ordination.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "pan_microbiome_016",
+      "query": "What conceptual and practical implications do the authors propose for microbiome-based therapies based on the phylogenetic core findings?",
+      "ground_truth_answer": "The authors argue that the existence of a phylogenetic core has several important practical implications. For microbiome-based therapies, the core provides a revised and biologically meaningful list of key bacterial species that should be considered in therapeutic design. It also informs the selection of more meaningful combinations of bacterial species or genomes for in vivo, in vitro, or in silico experimental scenarios. For genome sequencing, the core serves as a guide for prioritizing 'most wanted' bacteria, as it includes information on the biologically meaningful breadth of each targeted group's pan-genome — particularly relevant for groups like Subdoligranulum and Fusicatenibacter genera that still lack representative sequenced genomes. Future research directions proposed include establishing whether intra-core group populations share ecological functionality via genome content analysis, assessing competitive interactions between intra-core populations due to potential ecological redundancy, and exploring the existence of 'social and rival clubs' formed by different combinations of core and non-core populations.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "pan_microbiome_mcq_001",
+      "question": "How many total subjects were included in the TwinsUK dataset?",
+      "options": [
+        "A) 382",
+        "B) 884",
+        "C) 977",
+        "D) 1243"
+      ],
+      "correct_answer": "C",
+      "explanation": "The TwinsUK dataset comprised 977 individuals from the UK, including 171 monozygotic and 245 dizygotic twin pairs, as well as 183 subjects with BMI > 30, sequenced on Illumina MiSeq with 250 bp reads.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "pan_microbiome_mcq_002",
+      "question": "What is the minimum sequence similarity threshold below which nucleotide alignments are generally considered to degrade, as used to set the lower bound in this study?",
+      "options": [
+        "A) 0.80",
+        "B) 0.75",
+        "C) 0.70",
+        "D) 0.85"
+      ],
+      "correct_answer": "B",
+      "explanation": "The lower bound of the clustering range was set at 0.75 similarity because it is generally considered that nucleotide alignments degrade below this point, making biological interpretation of OTUs unreliable.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "pan_microbiome_mcq_003",
+      "question": "How many core OTUs were detected at the 0.97 species-level similarity threshold in the Global dataset?",
+      "options": [
+        "A) 3",
+        "B) 10",
+        "C) 17",
+        "D) 24"
+      ],
+      "correct_answer": "C",
+      "explanation": "The Global dataset included 17 phylogenetically shallow core OTUs detected at the highest similarity threshold of 0.97, which is commonly used as a species-level proxy in 16S rRNA studies.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "pan_microbiome_mcq_004",
+      "question": "What tool was used to map core OTU representative sequences against reference bacterial genomes to assess genome collection coverage?",
+      "options": [
+        "A) BLAST",
+        "B) usearch61",
+        "C) bowtie2",
+        "D) mothur"
+      ],
+      "correct_answer": "C",
+      "explanation": "The bowtie2 short read aligner was used to map representative sequences of OTUs defined at 0.97 similarity for each core OTU against 16S rRNA gene sequences derived from bacterial genomes in NCBI's RefSeq collection.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "pan_microbiome_mcq_005",
+      "question": "What was the total number of core OTUs (sequence clusters) found across all clustering thresholds in the Global dataset?",
+      "options": [
+        "A) 17",
+        "B) 61",
+        "C) 162",
+        "D) 442"
+      ],
+      "correct_answer": "C",
+      "explanation": "The Global core was characterized by 162 sequence clusters (core OTUs) present in all subjects, detected across the entire clustering range from 0.97 to 0.75 similarity.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "pan_microbiome_mcq_006",
+      "question": "Which two genera were identified as priority targets for future genome sequencing projects because their representative core OTUs lacked closely related sequenced genomes?",
+      "options": [
+        "A) Bifidobacterium and Prevotella",
+        "B) Subdoligranulum and Fusicatenibacter",
+        "C) Bacteroides and Lachnospira",
+        "D) Faecalibacterium and Ruminococcus"
+      ],
+      "correct_answer": "B",
+      "explanation": "Among the 17 phylogenetically shallow core OTUs, two were exceptions to the general pattern of having closely related sequenced genomes: core OTUs affiliated to the Subdoligranulum genus (Ruminococcaceae) and the Fusicatenibacter genus (Lachnospiraceae), which were identified as targets for genome sequencing projects.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "pan_microbiome_mcq_007",
+      "question": "In the Global dataset, how many randomized matrices were generated for the permutation test used to assess statistical significance of core OTU detection?",
+      "options": [
+        "A) 10",
+        "B) 50",
+        "C) 100",
+        "D) 1000"
+      ],
+      "correct_answer": "C",
+      "explanation": "One hundred randomized matrices were produced by shuffling all intra-subject OTU abundance values using the randomizeMatrix function from the picante R package, maintaining sample richness. The number of OTUs present in all subjects in each shuffled matrix was used to build the null sampling distribution.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "pan_microbiome_mcq_008",
+      "question": "What happens to the shallowest detected core OTU in the LifeLines dataset when its cohort size is reduced to match that of the Global dataset?",
+      "options": [
+        "A) It disappears entirely — no core OTU is detected",
+        "B) The shallowest core OTU shifts from 0.89 to 0.93 similarity",
+        "C) The shallowest core OTU shifts from 0.93 to 0.89 similarity",
+        "D) The number of core OTUs doubles"
+      ],
+      "correct_answer": "B",
+      "explanation": "When the LifeLines dataset was reduced to the same number of subjects as the Global dataset, the shallowest detected core OTU was found at 0.93 similarity instead of 0.89, demonstrating that a larger cohort size enables detection of phylogenetically shallower (higher similarity threshold) core OTUs.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "pan_microbiome_mcq_009",
+      "question": "Which of the following best explains why Firmicutes-affiliated core groups showed far fewer predicted metabolic differences from the Global metagenome compared to Bacteroidetes-affiliated core groups?",
+      "options": [
+        "A) Firmicutes core OTUs were defined at deeper lineage thresholds, encompassing more functional diversity",
+        "B) Firmicutes are more abundant overall, so their functions dominate the Global predicted metagenome baseline",
+        "C) Bacteroidetes core OTUs were defined at mid-range thresholds, potentially reflecting deeper ecological and functional specialization linked to fundamentally different niches",
+        "D) The PICRUSt tool is less accurate for predicting Firmicutes gene content"
+      ],
+      "correct_answer": "C",
+      "explanation": "Firmicutes core groups were defined at the highest similarity thresholds (shallow lineages), whereas Bacteroidetes groups were core at mid-range thresholds. The authors propose this reflects a fundamental difference in the niches occupied by these phyla, potentially related to differential rates of phylogenetic trait conservation and biochemical complexity, leading Bacteroidetes groups to diverge more from the overall community's metabolic profile.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "pan_microbiome_mcq_010",
+      "question": "What does the concept of 'social and rival clubs' proposed for future research in this paper most directly refer to?",
+      "options": [
+        "A) Competitive exclusion between host immune cells and gut bacteria",
+        "B) Different combinations of intra-core group populations and higher-similarity clusters that co-occur or exclude each other, revealing the ecological interaction rules of the gut ecosystem",
+        "C) Taxonomic families that preferentially colonize social animals versus solitary species",
+        "D) Microbial quorum-sensing networks that regulate biofilm formation in the colon"
+      ],
+      "correct_answer": "B",
+      "explanation": "The authors propose assessing the existence of social and rival clubs in the human gut pan-microbiome — formed by different combinations of intra-core group populations and higher-similarity clusters — as a means to better understand the ecological interaction rules that govern the gut ecosystem. These clubs would reveal which microbial combinations tend to coexist versus exclude each other across individuals.",
+      "expected_documents": [
+        "PMID30232462_The_human_gut_pan-microbiome_presents_a_compositional_core_formed_by_discrete_phylogenetic_units.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

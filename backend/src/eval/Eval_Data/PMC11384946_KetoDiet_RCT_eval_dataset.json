@@ -1,0 +1,330 @@
+{
+  "source_document": "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf",
+  "paper_reference": "Hengist et al., 2024, Cell Reports Medicine 5, 101667",
+  "doi": "https://doi.org/10.1016/j.xcrm.2024.101667",
+  "test_cases": [
+    {
+      "id": "keto_rct_001",
+      "query": "What were the three dietary intervention arms in this RCT and what were their carbohydrate targets?",
+      "ground_truth_answer": "The three dietary intervention arms were: MODSUG (moderate sugar control diet, ~20% energy from free sugars, ~30% from non-sugar carbohydrates), LOWSUG (free-sugar restriction to below 5% of total energy intake), and LOWCHO (ketogenic low-carbohydrate diet restricting total carbohydrates to below 8% of total energy intake or below 50g per day).",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "keto_rct_002",
+      "query": "How many participants were randomized in this study, and how many completed at least 4 weeks of intervention?",
+      "ground_truth_answer": "Sixty healthy adult participants were randomized. Of these, 53 participants completed at least 4 weeks of their allocated intervention (MODSUG n=18, LOWSUG n=17, LOWCHO n=18). At week 12, 45 participants were analyzed.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "keto_rct_003",
+      "query": "What was the primary outcome of this RCT and what were the main findings regarding physical activity energy expenditure?",
+      "ground_truth_answer": "The primary outcome was free-living physical activity energy expenditure (PAEE), measured using Actiheart monitors with individual-level calibration. The main finding was that neither free-sugar restriction nor ketogenic carbohydrate restriction meaningfully altered PAEE compared to the control diet at either week 4 or week 12. This suggests that reduced energy intake from dietary restriction was not compensated by reduced physical activity.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "keto_rct_004",
+      "query": "What changes in body composition were observed in the LOWCHO group compared to MODSUG at weeks 4 and 12?",
+      "ground_truth_answer": "In the LOWCHO group, body mass was reduced at both week 4 (p < 0.001) and week 12 (p < 0.001) compared to MODSUG. At week 4, this reduction was explained by decreases in both fat-free mass (FFM; p = 0.013) and fat mass (FM; p < 0.001). By week 12, however, fat mass loss accounted for most of the body mass reduction (FFM: p = 0.281; FM: p < 0.001), suggesting initial early fluid/glycogen losses normalised over time.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "keto_rct_005",
+      "query": "What biomarker was used to confirm adherence to the ketogenic diet, and what values were observed?",
+      "ground_truth_answer": "Urinary acetoacetate (AcAc) concentrations measured weekly in fasted morning urine were the primary adherence biomarker for the ketogenic diet. Urinary AcAc was significantly elevated throughout the 12-week intervention in LOWCHO compared to MODSUG (p < 0.01). Fasting serum beta-hydroxybutyrate (βOHB) was also elevated in LOWCHO at week 4 (p < 0.001) and week 12 (p < 0.001), confirming sustained ketosis throughout the intervention period.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "keto_rct_006",
+      "query": "How did the ketogenic diet affect postprandial glucose tolerance and what molecular mechanisms in skeletal muscle explain this impairment?",
+      "ground_truth_answer": "The ketogenic diet increased postprandial glucose response (iAUC) to a mixed meal test at both week 4 and week 12, indicating reduced glucose tolerance. In skeletal muscle, several molecular changes explain this impairment: (1) PDK4 protein levels were increased at week 4, downregulating pyruvate dehydrogenase complex activity and shifting metabolism away from glycolysis; (2) GLUT4 (the insulin-sensitive glucose transporter) levels were reduced at week 12, directly impairing insulin-stimulated glucose uptake; (3) AMPK and insulin receptor (INSR) protein levels were also reduced at week 12. Together, these changes reflect a metabolic adaptation that reduces glucose uptake and oxidation capacity in skeletal muscle.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "keto_rct_007",
+      "query": "What changes in the lipoprotein profile were observed with the ketogenic diet at week 4 and how did these change by week 12?",
+      "ground_truth_answer": "At week 4, the ketogenic diet significantly increased total cholesterol (p = 0.02) and apolipoprotein B (apoB) concentrations by approximately 16 mg/dL (p = 0.006) versus MODSUG. NMR spectroscopy revealed increases in particle concentration of all sizes of LDLs and lipid content in medium and small LDL particles, along with increases in small and very small VLDLs, indicating an increase in atherogenic lipoprotein particles. Fasting triacylglycerol (TAG) was also elevated at week 4 (p = 0.04). By week 12, however, the meaningful differences in total cholesterol, LDL-C, HDL-C, and apoB were no longer apparent (all p > 0.16), suggesting these atherogenic effects were transient and associated with the initial energy-deficit phase rather than sustained ketosis per se.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "keto_rct_008",
+      "query": "What effect did free-sugar restriction have on LDL cholesterol and apolipoprotein B, and what does this distinction imply about cardiovascular risk?",
+      "ground_truth_answer": "Free-sugar restriction reduced total cholesterol at week 12 (p = 0.01), almost entirely accounted for by reductions in LDL-C at both week 4 (p = 0.02) and week 12 (p = 0.01), by approximately 0.5 mmol/L. However, apolipoprotein B (apoB) concentrations were not meaningfully altered at either time point (both p > 0.47). This distinction has important cardiovascular implications: because apoB reflects the total number of atherogenic lipoprotein particles (the causal factor in atherosclerotic CVD), the reduction in LDL-C without a change in apoB suggests the sugar restriction reduced cholesterol enrichment per LDL particle, likely due to an energy deficit, rather than reducing the number of atherogenic particles. This means the cardiovascular risk reduction may be less pronounced than the LDL-C reduction alone implies.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "keto_rct_009",
+      "query": "How did the ketogenic diet affect gut microbial beta diversity and which specific genus showed the most significant change?",
+      "ground_truth_answer": "The ketogenic diet altered beta diversity (assessed by nonmetric multidimensional scaling of robust Aitchison distances) of fecal species at week 12 (p = 0.04 vs. MODSUG). At the functional level, LOWCHO also altered the beta diversity of metabolic pathway abundances at both week 4 (q = 0.02) and week 12 (q = 0.04). Free-sugar restriction showed little evidence of broad changes in the fecal microbiome. The most significant genus-level change was a reduction in Bifidobacterium abundance with ketogenic carbohydrate restriction, significant by week 4 (q = 0.04) and sustained at week 12 (q = 0.01). At week 12, ketogenic restriction had also lowered Planococcus abundance (q = 0.03). Alpha diversity (Shannon index) was not substantially altered by either intervention.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "keto_rct_010",
+      "query": "What objective method was used to calculate energy intake in this study, and how did its findings differ from self-reported energy intake?",
+      "ground_truth_answer": "The study used the intake-balance method, which rearranges the energy balance equation using DXA-measured changes in fat mass and fat-free mass along with measured energy expenditure to objectively calculate energy intake. The objective method showed greater magnitude of energy reduction and improved sensitivity compared to self-report. For example, free-sugar restriction reduced objectively calculated energy intake in weeks 0-4 (p = 0.02), while sugar restriction lowered self-reported energy intake also in weeks 0-4 (p = 0.05). Across the full 12 weeks, the objectively calculated reduction in LOWSUG was 352 kcal/day versus 236 kcal/day by self-report, suggesting that self-report underestimates the true relationship between free-sugar restriction and energy intake, possibly due to reporting fatigue.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "keto_rct_011",
+      "query": "What changes in adipose tissue gene expression were observed with the ketogenic diet and what metabolic role do these genes play?",
+      "ground_truth_answer": "At week 4, ketogenic carbohydrate restriction increased adipose tissue lipoprotein lipase (LPL) mRNA content (p = 0.04) and decreased Adiponectin mRNA content (p = 0.03) versus MODSUG. LPL is an enzyme that hydrolyzes circulating triglycerides, and its upregulation is likely an adaptive response to clear excess circulating triglycerides observed early in the ketogenic intervention. The decrease in Adiponectin mRNA is notable because Adiponectin is an anti-inflammatory adipokine that enhances insulin sensitivity; its reduction is consistent with the impaired glucose tolerance observed. Other insulin signaling, glucose, and lipid metabolism genes (including GLUT4, AKT1/2, INSR, PDK4, PPARγ at the mRNA level) were not significantly altered in adipose tissue.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "keto_rct_012",
+      "query": "Explain the temporal pattern of CRP and glycoprotein acetyls (GlycA) changes in the ketogenic diet group and what this reveals about the inflammation response.",
+      "ground_truth_answer": "C-reactive protein (CRP) was elevated with carbohydrate restriction at week 4 compared to control, but this difference was no longer meaningful by week 12. This transient CRP elevation is mechanistically explained by the early phase of the ketogenic diet: combined carbohydrate and caloric restriction during weeks 1–4 produced an energy deficit, driving elevated lipolysis with increased fasting and postprandial glycerol and NEFAs. The liver processes these excess lipids, leading to elevated hepatic fatty acid availability, which strongly drives CRP production. By week 12, energy balance was re-established (stable body mass), lipolysis stimulus diminished, and hepatic fatty acid load normalised, resolving the CRP elevation. Glycoprotein acetyls (GlycA), a composite NMR marker of systemic inflammation considered a better cardiovascular disease predictor than CRP, decreased with both carbohydrate restriction and sugar restriction (both p < 0.05). The divergent early response of CRP versus GlycA suggests GlycA is more responsive to energy balance status while CRP is more sensitive to hepatic fatty acid availability.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "keto_rct_013",
+      "query": "Compare the interstitial glucose and fasting glucose trajectories of the ketogenic diet group between week 1 and week 11-12. What does this time-dependent pattern suggest about metabolic adaptation?",
+      "ground_truth_answer": "During week 1, ketogenic carbohydrate restriction significantly reduced mean daily interstitial glucose concentrations compared to MODSUG (p < 0.001), and fasting glucose was also reduced at week 4 (p = 0.004 vs. MODSUG, difference ~0.5 mmol/L). However, by weeks 11-12, the reduction in mean interstitial glucose was no longer detectable (p = 0.27), and fasting glucose was no longer significantly reduced at week 12 (p = 0.14). Despite ongoing ketosis confirmed by sustained urinary AcAc and βOHB, the glycemia-lowering effect dissipated. This time-dependent pattern suggests metabolic adaptation to the ketogenic diet: the initial reduction in fasting glucose may reflect direct βOHB-mediated suppression of endogenous glucose production and early improvements in hepatic insulin sensitivity, while longer-term adaptation—driven by impaired skeletal muscle glucose uptake (reduced GLUT4, AMPK, INSR) and potentially altered energy balance status—counteracts this effect.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "keto_rct_014",
+      "query": "How did the ketogenic diet affect FGF21 and leptin, and how do these hormonal changes mechanistically link to appetite regulation and the plateauing of weight loss over 12 weeks?",
+      "ground_truth_answer": "Both free-sugar restriction and ketogenic carbohydrate restriction reduced fasting leptin concentrations (LOWCHO at both week 4 and 12, p ≤ 0.002; LOWSUG at week 12, p = 0.006), consistent with the observed fat mass reduction since leptin is secreted by adipose tissue proportionally to fat stores. Ketogenic carbohydrate restriction additionally reduced fasting and postprandial FGF21 at week 12 (both p ≤ 0.01), an effect not seen with sugar restriction. The reductions in leptin and FGF21 were most apparent by week 12, coinciding with the plateau in weight loss. Leptin influences sweet taste sensitivity while FGF21 mediates hepatic control of simple sugar intake and sweet taste preference; together, their reduction likely signals energy depletion and drives appetite feedback. Consistent with this, both dietary groups showed increased desire for sweet foods at week 12 (p < 0.05 vs. baseline), but not yet at week 4, suggesting that hormonally-driven appetite feedback to energy deficits takes more than 4 weeks to manifest, contributing to the plateauing of energy restriction and weight loss over the intervention.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "keto_rct_015",
+      "query": "What was the overall conclusion about free-sugar restriction versus ketogenic carbohydrate restriction for cardiometabolic health, and what caveat about ketogenic diet weight loss does this study raise?",
+      "ground_truth_answer": "Both diets reduced body fat mass over 12 weeks without altering energy expenditure, but with fundamentally different cardiometabolic profiles. Free-sugar restriction had modest effects: reducing LDL-C, lowering fasting glucose by ~0.4 mmol/L, and showing minimal impact on gut microbiome or tissue metabolism. The ketogenic diet produced wide-ranging effects: increasing fat oxidation, transiently reducing fasting glucose and daily glycemia but with impaired glucose tolerance (increased postprandial glucose), transiently increasing atherogenic lipoprotein profiles (apoB, TAG, small LDL particles), altering gut microbial beta diversity, and reducing key skeletal muscle glucose transport and signalling proteins (GLUT4, AMPK, INSR) at week 12. The key caveat the study raises is that ketogenic carbohydrate restriction may not necessarily produce the cardiometabolic health benefit typically expected from equivalent weight loss: the metabolic trade-offs—impaired glucose tolerance and skeletal muscle adaptation away from glucose utilisation—suggest the mode of fat loss matters, not just the amount. The authors conclude free-sugar restriction may be a more appropriate dietary choice for overall cardiometabolic health.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "keto_rct_mcq_001",
+      "question": "What was the duration of the dietary interventions in this RCT?",
+      "options": [
+        "A) 4 weeks",
+        "B) 8 weeks",
+        "C) 12 weeks",
+        "D) 24 weeks"
+      ],
+      "correct_answer": "C",
+      "explanation": "The study was a 12-week randomized controlled trial. Participants were assessed at baseline, week 4, and week 12, with the intervention running under free-living conditions (only 3.5% of time spent in the laboratory).",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "keto_rct_mcq_002",
+      "question": "In the LOWSUG diet group, what was the target maximum intake of free sugars as a percentage of total energy intake?",
+      "options": [
+        "A) 10% of total energy",
+        "B) 5% of total energy",
+        "C) 8% of total energy",
+        "D) 15% of total energy"
+      ],
+      "correct_answer": "B",
+      "explanation": "The LOWSUG (free-sugar restriction) group was prescribed a diet restricting free sugars to below 5% of total energy intake, in line with UK and World Health Organization public health guidelines for sugar restriction.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "keto_rct_mcq_003",
+      "question": "By approximately how much did the LOWCHO group reduce fiber intake compared to the MODSUG group?",
+      "options": [
+        "A) 10% reduction",
+        "B) 20% reduction",
+        "C) 40% reduction",
+        "D) 60% reduction"
+      ],
+      "correct_answer": "C",
+      "explanation": "Fiber intake in the LOWCHO group was approximately 14-15g per day during the intervention (weeks 1-4 mean: 14g/day; weeks 5-12: 15g/day), compared to approximately 25-26g/day in MODSUG, representing a roughly 40% reduction. This reduction in dietary fiber is mechanistically linked to the observed decrease in Bifidobacterium, as fiber supports their survival and activity.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "keto_rct_mcq_004",
+      "question": "What happened to the respiratory exchange ratio (RER) in the LOWCHO group compared to MODSUG during fasted, postprandial, and exercise states?",
+      "options": [
+        "A) RER increased in all three states at week 4 and week 12",
+        "B) RER decreased in all three states at week 4 and remained reduced at week 12",
+        "C) RER decreased only during exercise but not in fasted or postprandial states",
+        "D) RER was unchanged in all three states at both time points"
+      ],
+      "correct_answer": "B",
+      "explanation": "Carbohydrate restriction in LOWCHO lowered RER in the fasted state (week 4: p=0.004; week 12: p=0.04), postprandial state (week 4: p=0.005; week 12: p=0.01), and during exercise (week 4: p<0.001; week 12: p=0.001), confirming a sustained shift toward greater fat oxidation across all metabolic states at both time points.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "keto_rct_mcq_005",
+      "question": "Which skeletal muscle proteins were significantly reduced in the LOWCHO group at week 12 compared to MODSUG?",
+      "options": [
+        "A) PDK4, LPL, and IRS1",
+        "B) INSR, AMPK, GLUT4, and Perilipin 1 (PLIN)",
+        "C) CPT1B, FFAR2, and TGR5",
+        "D) Akt, AS160, and IRS1"
+      ],
+      "correct_answer": "B",
+      "explanation": "At week 12, ketogenic carbohydrate restriction significantly decreased insulin receptor (INSR; p=0.006), AMPK (p=0.02), GLUT4 (p=0.03), and Perilipin 1 (PLIN; p=0.02) in skeletal muscle compared to MODSUG. PDK4 was notably increased at week 4, not decreased at week 12. These reductions collectively explain impaired glucose tolerance by reducing insulin signaling capacity, glucose transport, and intracellular energy sensing.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "keto_rct_mcq_006",
+      "question": "What was the effect of free-sugar restriction on skeletal muscle glycogen concentrations?",
+      "options": [
+        "A) Glycogen concentrations were significantly reduced at both week 4 and week 12",
+        "B) Glycogen concentrations were significantly increased at week 4 (p=0.03) and week 12 (p=0.004)",
+        "C) Glycogen concentrations were unchanged at both time points",
+        "D) Glycogen concentrations were increased at week 4 only, with no difference at week 12"
+      ],
+      "correct_answer": "B",
+      "explanation": "Free-sugar restriction (LOWSUG) increased vastus lateralis muscle glycogen concentrations at week 4 (p=0.03) and week 12 (p=0.004) compared to MODSUG. In contrast, ketogenic carbohydrate restriction did not meaningfully alter muscle glycogen at either time point (week 4: p=0.40; week 12: p=0.82), likely because skeletal muscle adapts to using fatty acids and ketone bodies instead of glycogen on a ketogenic diet.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "keto_rct_mcq_007",
+      "question": "What was observed with postprandial lactate concentrations in the LOWCHO group, and what metabolic process does this reflect?",
+      "options": [
+        "A) Postprandial lactate was elevated, reflecting increased glycolytic flux in skeletal muscle",
+        "B) Postprandial lactate was reduced at week 4 (p<0.001) and week 12 (p=0.003), reflecting reduced peripheral glucose uptake and glycolysis",
+        "C) Postprandial lactate was elevated at week 4 only, normalising by week 12",
+        "D) Postprandial lactate was unchanged versus MODSUG at both time points"
+      ],
+      "correct_answer": "B",
+      "explanation": "Postprandial peak lactate concentrations were significantly lower with ketogenic carbohydrate restriction at both week 4 (p<0.001) and week 12 (p=0.003). In the postprandial state, skeletal muscle disposes of circulating glucose via oxidation, storage as glycogen, and interconversion into lactate. Reduced postprandial lactate, alongside increased postprandial glucose, reflects reduced peripheral insulin sensitivity, glucose uptake, and glycolysis in skeletal muscle — consistent with the molecular changes in PDK4, GLUT4, and AMPK.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "keto_rct_mcq_008",
+      "question": "Which metabolomics approach was used to profile fasting plasma lipoprotein and metabolite profiles, and at which time point was this analysis performed?",
+      "options": [
+        "A) Mass spectrometry-based metabolomics at baseline and week 12",
+        "B) Targeted high-throughput nuclear magnetic resonance (NMR) spectroscopy at baseline and week 4",
+        "C) Gas chromatography-mass spectrometry (GC-MS) at baseline, week 4, and week 12",
+        "D) 16S rRNA sequencing-based metabolomics at week 12 only"
+      ],
+      "correct_answer": "B",
+      "explanation": "Fasting plasma samples from baseline and week 4 were analyzed using targeted high-throughput nuclear magnetic resonance (NMR) spectroscopy by Nightingale Health Ltd., Finland. Week 4 was chosen due to higher sample size and compliance at that time point, as well as cost constraints. This NMR approach simultaneously quantified lipoprotein subfractions, amino acids, and other metabolites.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "keto_rct_mcq_009",
+      "question": "In the NMR-based amino acid profiling at week 4, what pattern was observed in the LOWCHO group regarding glucogenic and branched-chain amino acids (BCAAs)?",
+      "options": [
+        "A) Both glucogenic amino acids and BCAAs increased with the ketogenic diet",
+        "B) Glucogenic amino acids decreased (e.g., alanine, glutamine) while BCAAs increased (e.g., isoleucine, leucine, valine)",
+        "C) Glucogenic amino acids increased while BCAAs decreased",
+        "D) Neither glucogenic amino acids nor BCAAs showed significant change"
+      ],
+      "correct_answer": "B",
+      "explanation": "NMR spectroscopy of fasting plasma at week 4 showed that in LOWCHO, concentrations of most glucogenic amino acids decreased (e.g., alanine and glutamine), while branched-chain amino acid (BCAA) concentrations increased (e.g., isoleucine, leucine, valine; all p < 0.05). The increase in BCAAs is relevant because elevated BCAAs can contribute to PDK4 upregulation in skeletal muscle, further promoting the metabolic shift away from glucose oxidation.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "keto_rct_mcq_010",
+      "question": "Why did the authors use accelerometry with branched-equation modelling rather than the doubly labeled water (DLW) method to measure energy expenditure under ketogenic conditions?",
+      "options": [
+        "A) DLW was too expensive for a study of this size",
+        "B) Accurate DLW measurement requires knowledge of the RER during the measurement period, which is unreliable in low-carbohydrate conditions due to increased ketone body production/oxidation",
+        "C) DLW cannot measure physical activity energy expenditure, only resting metabolic rate",
+        "D) Accelerometry provides a more accurate absolute measure of energy expenditure than DLW across all dietary conditions"
+      ],
+      "correct_answer": "B",
+      "explanation": "Accurate measurement of energy expenditure using doubly labeled water requires knowledge of the RER during the measurement period to correctly apportion CO2 production from fat and carbohydrate. Under ketogenic conditions, RER becomes unreliable due to increased ketone body production and oxidation: fasting and postprandial RER did not match food quotients during ketosis, though exercise RER did (where skeletal muscle predominates). The authors therefore used accelerometry with branched-equation modelling individually calibrated to account for changes in the heart rate-energy expenditure relationship—a method that does not rely on RER for accuracy.",
+      "expected_documents": [
+        "PMC11384946_Ketogenic_diet_but_not_free-sugar_restriction_alters_glucose_tolerance_lipid_metabolism_peripheral_tissue_phenotype_and_gut_microbiome_RCT.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

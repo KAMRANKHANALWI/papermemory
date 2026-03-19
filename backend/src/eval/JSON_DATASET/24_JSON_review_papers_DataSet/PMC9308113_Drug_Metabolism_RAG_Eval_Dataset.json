@@ -1,0 +1,307 @@
+{
+  "source_document": "PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf",
+  "metadata": {
+    "title": "Human Gut Microbiota and Drug Metabolism",
+    "authors": ["Archana Pant", "Tushar K. Maiti", "Dinesh Mahajan", "Bhabatosh Das"],
+    "journal": "Microbial Ecology",
+    "doi": "10.1007/s00248-022-02081-x",
+    "year": 2022
+  },
+  "test_cases": [
+    {
+      "id": "drug_meta_001",
+      "query": "What are the dominant bacterial phyla in the human gut?",
+      "ground_truth_answer": "The dominant human gut bacterial phyla are mainly represented by Firmicutes, Bacteroidetes, Actinobacteria, Proteobacteria, and Verrucomicrobia. The proportions of these phyla are documented to be sensitive to dietary habits, age, as well as disease conditions.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_meta_002",
+      "query": "How many unique genes does the gut microbiota contribute, and how does this compare to the human genome?",
+      "ground_truth_answer": "The gut microbiota contributes to approximately 3.3 million unique genes, which is roughly 150 times more than the human gene content. This contributes to a large enzymatic repository in the gut, outnumbering that in the liver, which is capable of metabolizing numerous drugs and xenobiotics.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_meta_003",
+      "query": "What are the two main phases of xenobiotic metabolism in the human body?",
+      "ground_truth_answer": "Xenobiotic metabolism occurs in two phases: Phase I involves chemical modification of xenobiotics by introducing reactive functional groups via oxidation, reduction, hydrolysis, deamination, demethylation, dehalogenation, epoxidation, and/or peroxigenation, often making the parent structure more polar. Phase II metabolism, which follows phase I, significantly enhances hydrophilicity by conjugation of the phase I metabolite using glucuronic acid, sulfonic acid, glutathione, certain amino acids, or other endogenous polar molecules.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_meta_004",
+      "query": "What is the difference between exogenous and endogenous xenobiotics? Give examples of each.",
+      "ground_truth_answer": "Exogenous xenobiotics are synthetic compounds that gain entry within the body through diet, therapeutic drugs, or inhaled as environmental pollutants. Examples include antibiotics, antidiabetics, antipsychotics, food additives, artificial sweeteners like saccharine, pesticides, and insecticides. Endogenous xenobiotics are synthesized within the body or produced as metabolites from different biological processes, and though indigenous to the body, have effects similar to exogenous xenobiotics. Examples include steroids, eicosanoids, bile acids, and certain fatty acids.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_meta_005",
+      "query": "What is the 'first pass effect' in the context of xenobiotic metabolism?",
+      "ground_truth_answer": "The 'first pass effect' refers to the process by which the human gut and the liver use metabolic enzymes to significantly reduce the concentration of any xenobiotic with certain chemical modifications before sending it to systemic circulation. This process occurs after dietary intake and involves both phase I and phase II metabolic reactions that transform xenobiotics prior to their entry into systemic circulation.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_meta_006",
+      "query": "How did Zimmermann and coworkers characterize the drug-metabolizing capacity of intestinal bacteria, and what were their key findings?",
+      "ground_truth_answer": "Zimmermann and coworkers measured the ability of 76 intestinal bacteria to metabolize 271 oral drugs, finding that approximately two-thirds of the screened drugs were metabolized by at least one bacterial strain. By combining high-throughput genetics with mass spectrometry, they identified and validated 30 microbiome-encoded enzymes collectively converting 20 drugs to 59 metabolite candidates. Using a gain-of-function approach with Bacteroides thetaiotaomicron, they discovered DNA fragments that confer drug-metabolizing capability, and validated the gene bt4096 for diltiazem metabolism. They ultimately identified 17 B. thetaiotaomicron gene products involved in metabolizing 18 different drugs to 41 different metabolites.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "drug_meta_007",
+      "query": "Explain how the chemotherapeutic drug irinotecan is affected by gut microbial enzymes, and what clinical consequences result.",
+      "ground_truth_answer": "Irinotecan is metabolically inactivated via glucuronidation in the liver. However, upon entering the intestine, it is metabolically reactivated by the activity of bacterially expressed beta-glucuronidase. This reactivation causes severe, dose-limiting gastrointestinal toxicity. The mechanism involves bacterial glucuronidase hydrolyzing the glucuronide conjugate, releasing the active aglycone form that then directly damages intestinal epithelial cells (enterocytes).",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_meta_008",
+      "query": "How do azo drugs like olsalazine and balsalazide work, and what is the role of gut microbiota in their activation?",
+      "ground_truth_answer": "Azo drugs like olsalazine, balsalazide, asacol, pentasa, and salazopyrin are used for treatment of ulcerative colitis and inflammatory bowel disease (IBD). These are prodrugs consisting of 5-aminosalicylate (5-ASA), a non-steroidal anti-inflammatory molecule, linked to an inert carrier via an azo bond, in order to avoid rapid absorption in the upper GI tract. Their activities rely upon azo bond cleavage by azoreductases secreted by gut microbiota, which releases the active 5-ASA molecule at the site of inflammation in the colon.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_meta_009",
+      "query": "What are the two broad mechanisms by which gut microbiota mediates drug metabolism?",
+      "ground_truth_answer": "The two broad mechanisms are: (1) Direct biotransformation, where metabolism of drugs is performed directly by microbial enzymes through hydrolytic and reductive biotransformations, including glucuronidase activity, azoreductase, nitroreductase, and other enzymatic reactions that chemically modify drugs. (2) Indirect biotransformation, where the impact of microbial metabolites on host receptors and signaling pathways alters drug metabolism. Indirect mechanisms include reactivation of secreted inactive drug metabolites, producing metabolites that compete with drugs for the same host-metabolizing enzymes, modulating immune cell dynamics, and altering the levels of metabolizing enzymes in the intestine and liver.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_meta_010",
+      "query": "How do proton pump inhibitors (PPIs) affect gut microbiota composition and metabolic pathways?",
+      "ground_truth_answer": "PPIs were found to have the largest associations among the drugs studied, with approximately 40 altered microbial taxa and 166 altered microbial pathways. Altered functions included increases in fermentation, NAD metabolism, fatty acid and lipid biosynthesis, purine deoxyribonucleoside degradation, and biosynthesis of L-arginine. This was identified in a study by Vila and coworkers that showed a correlation between 411 microbial pathways and the usage of 11 drugs.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_meta_011",
+      "query": "How does the gut microbiota regulate hepatic cytochrome P450 enzyme expression, and what evidence from germ-free animal models supports this?",
+      "ground_truth_answer": "Research with germ-free animals revealed that gut bacteria play a significant role in regulating functions of host-encoded metabolic enzymes including cytochrome P450s. The mRNA and protein expression of CYP3a11 (mouse homolog of the human CYP3A4, which metabolizes more than 60% of all drugs) were significantly lower in the livers of adult germ-free mice. However, the same study found enhanced gene expression of Cyp1a2 (involved in metabolic deactivation of certain anticancer drugs and activation of procarcinogens) and Cyp4a14 (metabolism of eicosanoids and fatty acids) in germ-free mice. Host-associated xenobiotic metabolizing enzymes (XMEs) involved in phase II metabolism were also differentially expressed in germ-free rats compared to conventional rats.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_meta_012",
+      "query": "What age-related changes in gut microbial xenobiotic metabolism functions have been observed in centenarians and semi-supercentenarians?",
+      "ground_truth_answer": "In a study with 69 people including centenarians (age 99-104) and semi-supercentenarians (age 105-109), the number of reads for genes involved in xenobiotic transformation and metabolism were higher with a concurrent decrease in genes devoted to carbohydrate metabolism with the progression of age. Degradation pathways for ethylbenzene, caprolactam, toluene, and chlorocyclohexane/chlorobenzene were more pronounced in aged individuals. Centenarians showed more reads for glycerolipid and alpha-linoleic acid metabolism, while young individuals had higher levels of genes for glycerophospholipid and sphingolipid metabolism. As age progressed, there was a progressive increase in genes for threonine, tyrosine, tryptophan, serine, and glycine amino acid metabolism, and genes for lipopolysaccharide biosynthesis were also more pronounced in aged people.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_meta_013",
+      "query": "Compare the effects of metformin and Helicobacter pylori on drug metabolism and gut microbiome composition, highlighting contrasting mechanisms.",
+      "ground_truth_answer": "Metformin, an anti-diabetic drug, modulates the gut microbiome broadly: it increases SCFA-producing bacteria such as Butyrivibrio, Bifidobacterium bifidum, and Megasphaera; increases mucin-degrading Akkermansia muciniphila; decreases Bacteroides fragilis; increases Escherichia species; causes significant decrease in microbial richness; reduces Faecalibacterium abundance in Indian and Danish subjects; and alters metabolic potential including increased quinone biosynthesis, butanoate production, and sugar derivative degradation pathways. In contrast, Helicobacter pylori affects drug metabolism by impairing absorption of levodopa (used in Parkinson's disease), reducing its efficacy through direct impairment at the site of absorption rather than through broad microbiome modulation. Eradication of H. pylori infection has been shown to improve levodopa action, clinical symptoms, and quality of life in Parkinson's patients.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "drug_meta_014",
+      "query": "Explain the role of microbial sulfatases in drug reactivation and describe their structural classification within the gut microbiome.",
+      "ground_truth_answer": "Microbial sulfatases are hydrolytic metalloenzymes that hydrolyze sulfate esters generated by phase II metabolism, using the unusual amino acid residue formyl glycine on their active site. The hydrate form of this residue undergoes transesterification with a sulfate ester substrate to generate a tetrahedral intermediate that breaks down to release sulfate and reform the aldehyde. Microbial sulfatases reactivate sulfated metabolite conjugates which enter the GI tract for excretion, enabling these molecules to either undergo enterohepatic recirculation or exert local effects on gut epithelium. Structurally, 80% of gut microbial sulfatases arise from Bacteroidetes and are Ser-type enzymes, whereas the remaining 20% are Cys-type sulfatases arising from Firmicutes, Proteobacteria, Fusobacteria, Verrucomicrobia, and Spirochaetes. Using protein structure-guided methods, 728 discrete microbiome-encoded sulfatase proteins were identified from 4.8 million unique proteins in the HMP stool sample database, and a total of 1766 gut microbial sulfatases were identified from the integrated gene catalogue database.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_meta_015",
+      "query": "How does antibiotic-induced gut dysbiosis affect long-term microbiome recovery, and what are the downstream clinical implications based on the tuberculosis and broad-spectrum antibiotic studies?",
+      "ground_truth_answer": "Two studies reveal different patterns of antibiotic-induced dysbiosis and recovery. In tuberculosis treatment, prolonged drug therapy leads to remarkable depletion of numerous immunologically significant commensal gut bacteria, and this dysbiosis persists for at least 1.2 years after therapy completion. In a short course of 4 days with a cocktail of gentamicin, vancomycin, and meropenem in healthy subjects, the gut microbiota was largely restored to near-baseline composition within 1.5 months. However, this short treatment still resulted in depletion of Bifidobacterium species, Methanobrevibacter smithii, and butyrate producers, while enterobacteria and pathobionts like Fusobacterium nucleatum and Enterococcus faecalis thrived. Critically, nine species common in all study subjects before treatment initiation were not recovered in most subjects even after 6 months. Both antibiotics and non-antibiotic drugs can induce acquisition of antimicrobial resistance (AMR) and aid in intra/inter-species transmission of AMR genes within the gut microbiota, potentially causing emergence of drug-resistant pathogens.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_meta_016",
+      "query": "Describe how the DrugBug database was developed and validated, and how it predicts microbial biotransformation of drugs like digoxin.",
+      "ground_truth_answer": "The DrugBug database was developed by Sharma and coworkers as an in silico tool that anticipates biotransformation of drugs through microbial enzymes produced by microbiota residing in the GI tract. The metabolic enzyme database was built from the genomes of 491 human intestinal bacteria, which carried 324,697 metabolic enzymes allotted with EC numbers. From six EC classes, the highest 65.75% of molecules were metabolized by enzymes belonging to EC1 and EC2 classes (oxidoreductases and transferases), while only 6.83% were metabolized by EC5 and EC6 classes (isomerases and ligases). Validation was done by predicting metabolic enzymes for digoxin, a cardiotonic glycoside. Digoxin's structure with three sugar moieties and one aglycone digoxigenin moiety suggested three metabolic reaction sites: the 3β-OH group, C-17 attached lactone ring, and the sugar moieties. DrugBug identified glucosyltransferases and mannosyltransferases from genera Citrobacter, Escherichia, Klebsiella, Lactobacillus, and Enterococcus, and FAD-dependent oxidoreductases, disulfide reductase, and hydroxylases from Escherichia, Providencia, Klebsiella, Eggerthella, and Streptomyces as the relevant metabolizing enzymes.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "hard",
+      "category": "factual"
+    }
+  ],
+  "mcq_questions": [
+    {
+      "id": "drug_meta_mcq_001",
+      "question": "What percentage of drugs were metabolized by at least one bacterial strain in Zimmermann and coworkers' screen of 271 oral drugs against 76 intestinal bacteria?",
+      "options": [
+        "A) Approximately one-third",
+        "B) Approximately two-thirds",
+        "C) Approximately half",
+        "D) Approximately three-quarters"
+      ],
+      "correct_answer": "B",
+      "explanation": "In Zimmermann and coworkers' study, the ability of 76 intestinal bacteria to metabolize 271 oral drugs was measured, and approximately two-thirds of these screened drugs were metabolized by at least one bacterial strain.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_meta_mcq_002",
+      "question": "What is the approximate pH range in the colon of the human gastrointestinal tract?",
+      "options": [
+        "A) pH 1.5 to 3.0",
+        "B) pH 4.0 to 7.0",
+        "C) pH 5.5 to 7.0",
+        "D) pH 7.0 to 8.0"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper states that the diverse regions of the gastrointestinal tract differ in pH: duodenum 6-6.5, jejunum and ileum 7-8, and colon 5.5-7. The small intestine is slightly aerobic while the colon is strict anaerobic.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_meta_mcq_003",
+      "question": "Which enzyme class accounts for the highest proportion of xenobiotic metabolism in the DrugBug database?",
+      "options": [
+        "A) EC3 (Hydrolases) and EC4 (Lyases)",
+        "B) EC1 (Oxidoreductases) and EC2 (Transferases)",
+        "C) EC5 (Isomerases) and EC6 (Ligases)",
+        "D) EC2 (Transferases) and EC3 (Hydrolases)"
+      ],
+      "correct_answer": "B",
+      "explanation": "From the six EC classes in the DrugBug database, the highest 65.75% of molecules were metabolized by enzymes belonging to EC1 and EC2 classes, i.e., oxidoreductases and transferases respectively.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_meta_mcq_004",
+      "question": "According to the paper, which drug was used to validate the gene bt4096 in Bacteroides thetaiotaomicron?",
+      "options": [
+        "A) Metformin",
+        "B) Digoxin",
+        "C) Diltiazem",
+        "D) Irinotecan"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper states that Zimmermann and coworkers validated the metabolic activity of the identified gene bt4096 for diltiazem metabolism. Diltiazem is an oral calcium channel blocker used to treat angina pectoris, arrhythmia, and hypertension. The intestinal levels of diltiazem and its metabolites suggested that their deacetylation in the gut depends on bt4096.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "drug_meta_mcq_005",
+      "question": "What proportion of gut microbial sulfatases arise from Bacteroidetes?",
+      "options": [
+        "A) 20%",
+        "B) 50%",
+        "C) 60%",
+        "D) 80%"
+      ],
+      "correct_answer": "D",
+      "explanation": "According to the paper, eighty percent of gut microbial sulfatases arise from Bacteroidetes and are Ser-type enzymes, whereas the remaining 20% are Cys-type sulfatases arising from Firmicutes, Proteobacteria, Fusobacteria, Verrucomicrobia, and Spirochaetes.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "drug_meta_mcq_006",
+      "question": "Which selective serotonin reuptake inhibitor (SSRI) association is correctly described in the paper?",
+      "options": [
+        "A) SSRIs are positively associated with Turicibacteraceae abundance",
+        "B) SSRIs are negatively associated with Eubacterium ramulus and Bifidobacterium dentium",
+        "C) SSRIs are negatively associated with Turicibacteraceae but positively associated with Eubacterium ramulus and Bifidobacterium dentium",
+        "D) SSRIs have no significant effect on gut microbiome composition"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper states that selective serotonin reuptake inhibitors (SSRIs) are negatively associated with Turicibacteraceae abundance but positively associated with Eubacterium ramulus and Bifidobacterium dentium, which are abundant in PPI users.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "drug_meta_mcq_007",
+      "question": "What was the key finding regarding gut microbiota recovery after a 4-day cocktail of gentamicin, vancomycin, and meropenem in healthy subjects?",
+      "options": [
+        "A) Full recovery occurred within 2 weeks with no long-term effects",
+        "B) Gut microbiota was restored to near-baseline within 1.5 months, but nine species common to all subjects before treatment were not recovered in most subjects even after 6 months",
+        "C) The dysbiosis persisted for more than 1.2 years, similar to tuberculosis treatment",
+        "D) All species were fully recovered within 3 months with no permanent losses"
+      ],
+      "correct_answer": "B",
+      "explanation": "The paper states that after a 4-day cocktail of gentamicin, vancomycin, and meropenem, the gut microbiota was restored to near-baseline composition within 1.5 months. However, nine species common in all the study subjects before treatment initiation were not recovered in most of the subjects even after 6 months.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_meta_mcq_008",
+      "question": "What percentage of non-antibiotic human-targeted drugs were found to repress the growth of at least one gut bacterial species, according to the study referenced in the paper?",
+      "options": [
+        "A) 10%",
+        "B) 17%",
+        "C) 27%",
+        "D) 37%"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper states that a study suggested that 27% of non-antibiotic human-targeted drugs repressed the growth of at least one gut bacterial species. Additionally, around 47 drugs, which were anti-infectives against viruses or eukaryotes, exhibited anti-commensal activity.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "drug_meta_mcq_009",
+      "question": "Which three families were identified as the most frequent in Almeida and coworkers' metagenomic analysis of 13,133 human gut datasets?",
+      "options": [
+        "A) Lachnospiraceae (20.6%), Bacteroidaceae (9.9%), and Ruminococcaceae (7.4%)",
+        "B) Coriobacteriaceae (20.6%), Ruminococcaceae (9.9%), and Peptostreptococcaceae (7.4%)",
+        "C) Enterobacteriaceae (20.6%), Clostridiaceae (9.9%), and Prevotellaceae (7.4%)",
+        "D) Bacteroidaceae (20.6%), Lachnospiraceae (9.9%), and Akkermansiaceae (7.4%)"
+      ],
+      "correct_answer": "B",
+      "explanation": "In Almeida and coworkers' metagenomic study retrieving 13,133 human gut metagenomic datasets, Coriobacteriaceae (20.6%), Ruminococcaceae (9.9%), and Peptostreptococcaceae (7.4%) were the three most frequent families found. The top genera were Collinsella (17.7%), Clostridium (7.3%), and Prevotella (4.4%).",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "drug_meta_mcq_010",
+      "question": "The bacterial enzyme Eggerthella lenta's cgr operon is specifically linked to which drug's inactivation?",
+      "options": [
+        "A) Levodopa",
+        "B) Metformin",
+        "C) Digoxin",
+        "D) Irinotecan"
+      ],
+      "correct_answer": "C",
+      "explanation": "According to Table 1 in the paper, Eggerthella lenta possessing the cgr operon is responsible for digoxin drug inactivation. This is a well-established example of direct microbial biotransformation leading to loss of drug efficacy.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "hard",
+      "category": "factual"
+    },
+    {
+      "id": "drug_meta_mcq_011",
+      "question": "Which of the following correctly describes the SAM enzyme-mediated antibiotic resistance mechanism in gut bacteria?",
+      "options": [
+        "A) Cfr and RlmN methylate guanine base G2503 at C4 and C8 positions, causing resistance to beta-lactam antibiotics",
+        "B) Cfr and RlmN methylate adenine base A2503 at C8 and C2 positions respectively, causing resistance to pleuromutilins, oxazolidinones, lincosamides, streptogramins A, and phenicols",
+        "C) RlmN only methylates adenine at C2 to cause resistance exclusively to oxazolidinones",
+        "D) Cfr methylates the 16S rRNA to prevent aminoglycoside binding"
+      ],
+      "correct_answer": "B",
+      "explanation": "The paper states that the SAM enzymes Cfr and its homolog RlmN methylate adenine base A2503 located in the peptidyl transferase center of 23S rRNA (E. coli numbering), at C8 and C2 positions, respectively. This modification develops resistance towards ribosomal antibiotics like pleuromutilins, oxazolidinones, lincosamides, streptogramins A, and phenicols acting on the peptidyl transferase center.",
+      "expected_documents": ["PMC9308113_Human_Gut_Microbiota_and_Drug_Metabolism.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "source_document": "Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf",
+  "metadata": {
+    "paper_title": "Bifidobacterium breve CCFM1025 attenuates major depression disorder via regulating gut microbiome and tryptophan metabolism: A randomized clinical trial",
+    "journal": "Brain, Behavior, and Immunity",
+    "year": 2022,
+    "volume": 100,
+    "pages": "233–241",
+    "doi": "https://doi.org/10.1016/j.bbi.2021.11.023"
+  },
+
+  "test_cases": [
+    {
+      "id": "ccfm1025_mdd_001",
+      "query": "What is the definition of psychobiotics and when was the term first introduced?",
+      "ground_truth_answer": "Psychobiotics are a novel class of probiotics that benefit the health of patients suffering from psychiatric illnesses by acting primarily on the gut-brain axis. The term was first defined in 2013 by Dinan et al.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ccfm1025_mdd_002",
+      "query": "What dose of B. breve CCFM1025 was administered to MDD patients and for how long?",
+      "ground_truth_answer": "MDD patients in the CCFM1025 group were given a daily sachet containing freeze-dried Bifidobacterium breve CCFM1025 powder at a dose of 10^10 CFU (viable bacteria) for four weeks, from day 0 to day 28.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ccfm1025_mdd_003",
+      "query": "How many patients were enrolled in the trial and how were they distributed between groups?",
+      "ground_truth_answer": "Forty-five MDD patients completed the trial. Twenty-five patients were assigned to the Placebo group (female rate 50%) and twenty patients were assigned to the CCFM1025 group (female rate 70%).",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ccfm1025_mdd_004",
+      "query": "What psychometric scales were used to evaluate depression in this study?",
+      "ground_truth_answer": "Three psychometric scales were used: the Hamilton Depression Rating Scale-24 Items (HDRS-24), the Montgomery-Asberg Depression Rating Scale (MADRS), and the Brief Psychiatric Rating Scale (BPRS). These served as primary outcome measures alongside the Gastrointestinal Symptom Rating Scale (GSRS) for gastrointestinal symptoms.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ccfm1025_mdd_005",
+      "query": "What was the placebo used in this study?",
+      "ground_truth_answer": "The placebo was maltodextrin, administered in a sachet identical in packaging, color, and quality to the probiotic sachet to ensure blinding.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ccfm1025_mdd_006",
+      "query": "How did CCFM1025 affect serum serotonin turnover and what does serotonin turnover represent?",
+      "ground_truth_answer": "CCFM1025 significantly reduced serum 5-HT turnover compared to placebo (CCFM1025: M = 0.27, SD = 0.40 vs. placebo: M = -0.01, SD = 0.41; P = 0.029, d = 0.681). Serotonin (5-HT) turnover is defined as the ratio of 5-HIAA (5-hydroxyindoleacetic acid, the serotonin metabolite) to 5-HT, and reflects the rate of serotonin degradation. A reduced turnover implies that less serotonin is being metabolized, potentially allowing more to remain active in the system.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ccfm1025_mdd_007",
+      "query": "What changes in alpha diversity were observed in the CCFM1025 group and what does this indicate?",
+      "ground_truth_answer": "CCFM1025 significantly increased the Chao 1 index (F(1, 40) = 4.633, P = 0.035) and showed a trend toward increased observed operational taxonomic units (OTUs) (F(1, 40) = 4.536, P = 0.062), but the Shannon index was not significantly changed. This indicates that CCFM1025 modestly enhanced gut microbial richness (the number of distinct microbial species present) without dramatically altering the overall evenness or community structure of the microbiome.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ccfm1025_mdd_008",
+      "query": "Which tryptophan metabolites showed significantly different concentration changes between the CCFM1025 and placebo groups, and how might they relate to depression?",
+      "ground_truth_answer": "Six tryptophan metabolites showed significantly different changes between the two groups: tryptophan (P = 0.030), 5-hydroxytryptophan (5-HTP, P = 0.004), tryptamine (P < 0.001), indole-3-acetamide (P = 0.034), indole-3-acetic acid (P = 0.016), and indole-3-propionic acid (IPA, P = 0.044). All eight metabolites including these were up-regulated by CCFM1025 but down-regulated by placebo. Their relevance to depression lies in the fact that tryptophan is the sole dietary precursor for serotonin synthesis in the gut; 5-HTP can cross the blood-brain barrier and contribute to central serotonin biosynthesis; and indole derivatives like IPA act as ligands for the aryl hydrocarbon receptor (AHR), modulating immune and metabolic functions implicated in depression.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ccfm1025_mdd_009",
+      "query": "How did CCFM1025 affect gastrointestinal symptoms, particularly bowel dysfunction?",
+      "ground_truth_answer": "Both CCFM1025 and placebo reduced GSRS scores from baseline, but CCFM1025 showed a significantly greater reduction (CCFM1025: M = 6.55, SD = 5.67 vs. placebo: M = 3.04, SD = 4.67; P = 0.027, d = 0.676). The most notable improvement was specifically in attenuating bowel dysfunction syndrome, where the probiotic significantly outperformed placebo (t(43) = 3.357, P = 0.002, d = 0.994), an effect size the authors considered clinically meaningful.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ccfm1025_mdd_010",
+      "query": "What gut microbial taxa were identified as significantly increased in the CCFM1025 group, and how were they identified?",
+      "ground_truth_answer": "Differential taxa between pre- and post-treatment were identified using random forest classification. In the CCFM1025-treated group, the abundance of Desulfovibrio (t = 3.357, P = 0.005) and Faecalibaculum (t = 2.066, P = 0.047) significantly increased. Additionally, Bifidobacterium OTU counts were elevated in the probiotic group compared to placebo, which the authors partly attributed to the intake of CCFM1025 itself. The placebo group showed no significant changes in any taxa.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ccfm1025_mdd_011",
+      "query": "What are the BPRS factor analysis results and what do they reveal about CCFM1025's psychiatric effects?",
+      "ground_truth_answer": "The BPRS items were classified into five factors: Hostility, Thinking Disorder, Activation, Withdrawal-Retardation, and Anxiety-Depression. The factor analysis confirmed that participants' psychiatric problems were majorly attributable to emotional disorders (anxiety and depression). CCFM1025 showed a significantly better emotion-beneficial effect than placebo on the Anxiety-Depression factor (t(43) = 2.982, P = 0.005, d = 0.899), the largest effect size among all psychometric comparisons, indicating that the probiotic's antidepressant action was concentrated in the emotional domain rather than cognitive or activation domains.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ccfm1025_mdd_012",
+      "query": "Why did the authors conclude that CCFM1025 did not cause dramatic gut microbial perturbation, and what is the significance of this finding for psychobiotic therapy?",
+      "ground_truth_answer": "The beta diversity analysis using PCA on Aitchison distance showed no significant difference among all groups (PERMANOVA: F = 0.095, R² = 0.033, P = 0.684), and the core microbiome (taxa detected in over 50% of the population) was not significantly altered. This contrasted with dramatic gut microbial perturbations previously observed in animal models. The significance is that despite minimal restructuring of the overall microbiome community, CCFM1025 still produced clinically meaningful improvements in depression and GI symptoms, suggesting the therapeutic mechanism operates through subtle metabolic outputs—particularly tryptophan metabolism—rather than wholesale microbiome remodeling, which has implications for the safety and tolerability profile of psychobiotics.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "ccfm1025_mdd_013",
+      "query": "Explain the mechanistic pathway through which gut-derived tryptophan and its metabolites may influence brain serotonin levels and depression, as described in the study.",
+      "ground_truth_answer": "The study describes a multi-step pathway: dietary tryptophan is the sole precursor for serotonin (5-HT) biosynthesis in vivo, with over 90% of serotonin synthesized in the gut. Gut microbiota regulate colonic serotonin biosynthesis and blood serotonin levels. While serotonin itself cannot cross the blood-brain barrier (BBB), tryptophan and its immediate precursor 5-hydroxytryptophan (5-HTP) can cross the BBB and participate in central serotonin biosynthesis—validated by radioisotope tracking studies. CCFM1025 increased gut tryptophan and 5-HTP levels, which may contribute to central 5-HT synthesis. Additionally, indole derivatives (indole-3-acetamide, indole-3-acetic acid, indole-3-propionic acid), produced directly from tryptophan by microorganisms, act as aryl hydrocarbon receptor (AHR) ligands and exert immunomodulatory effects relevant to depression pathophysiology. IPA changes were positively correlated with HDRS-24 score reductions, suggesting a direct mechanistic link.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "ccfm1025_mdd_014",
+      "query": "Compare the antidepressant effects of CCFM1025 versus placebo using HDRS-24 and MADRS scores, including statistical details and effect sizes.",
+      "ground_truth_answer": "Both groups showed significant reductions in HDRS-24 scores from baseline (F(1, 43) = 120.0, P < 0.001 for both). However, CCFM1025 produced a significantly greater score reduction than placebo: HDRS-24 reduction of M = 10.40 (SD = 6.85) vs. M = 6.44 (SD = 5.44) for placebo (t(43) = 2.163, P = 0.036, d = 0.640). Similarly for MADRS, CCFM1025 reduced scores by M = 9.60 (SD = 7.37) vs. M = 4.92 (SD = 7.15) for placebo (t(43) = 2.152, P = 0.037, d = 0.645). Both Cohen's d values (~0.64) represent medium-to-large effect sizes, indicating a clinically meaningful—not merely statistically significant—benefit of CCFM1025 over placebo on two independent depression rating instruments.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "ccfm1025_mdd_015",
+      "query": "What were the key limitations acknowledged by the authors, and how do they affect the interpretation of the trial findings?",
+      "ground_truth_answer": "The authors identified four major limitations: (1) Small sample size — the study included only 45 completers, limiting statistical power for subgroup analyses such as sex differences in treatment response; (2) Uncontrolled diet and medication — patients' diets and concurrent antidepressant medications (except antibiotics) were not strictly controlled, meaning diet-induced microbiome changes could obscure probiotic-specific effects, and shotgun metagenomics was not used; (3) Unverifiable probiotic adherence — adherence was encouraged via text reminders but not objectively confirmed, and no strain-specific primer was used to track CCFM1025 abundance in feces; (4) TNF-α and tryptophan metabolites were not pre-registered outcomes — these were measured externally using redundant samples outside the registered protocol, introducing potential bias. Together, these limitations mean the mechanistic conclusions (particularly regarding tryptophan metabolism and the absence of inflammatory changes) should be considered exploratory rather than definitive.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "ccfm1025_mdd_mcq_001",
+      "question": "What score threshold on the HDRS-24 was used to identify patients as having MDD in this study?",
+      "options": [
+        "A) Score over 7",
+        "B) Score over 10",
+        "C) Score over 14",
+        "D) Score over 20"
+      ],
+      "correct_answer": "C",
+      "explanation": "Patients who scored over 14 in HDRS-24 were identified as having MDD. However, based on doctors' suggestions, some patients who did not fulfill this criterion but had severe sleeping disorders or MDD tendency were also included.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ccfm1025_mdd_mcq_002",
+      "question": "What was the study design of the CCFM1025 clinical trial?",
+      "options": [
+        "A) Open-label, single-arm observational study",
+        "B) Placebo-controlled, double-blind Randomized Controlled Trial (RCT)",
+        "C) Crossover trial with a washout period",
+        "D) Cohort study with matched controls"
+      ],
+      "correct_answer": "B",
+      "explanation": "The study was a placebo-controlled, double-blind Randomized Controlled Trial (RCT). Subjects were blinded and given intervention products dispensed independently using a random number table by an authorized investigator.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ccfm1025_mdd_mcq_003",
+      "question": "What percentage of the body's serotonin is synthesized in the gut?",
+      "options": [
+        "A) Over 50%",
+        "B) Over 70%",
+        "C) Over 80%",
+        "D) Over 90%"
+      ],
+      "correct_answer": "D",
+      "explanation": "According to the paper, tryptophan is the only precursor for the biosynthesis of 5-HT in vivo, and over 90% of the 5-HT is synthesized in the gut.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ccfm1025_mdd_mcq_004",
+      "question": "Which method was used for gut microbiome sequencing in this study?",
+      "options": [
+        "A) Shotgun metagenomic sequencing of the whole genome",
+        "B) 16S rRNA gene amplicon sequencing of the V3-V4 region using primers 341F/806R",
+        "C) Internal transcribed spacer (ITS) sequencing for fungal profiling",
+        "D) Single-cell RNA sequencing of gut epithelial cells"
+      ],
+      "correct_answer": "B",
+      "explanation": "16S rRNA gene amplicon sequencing was performed using universal primers 341F/806R targeting the V3-V4 region. Raw data were processed using the QIIME2 software package and further analyzed using MicrobiomeAnalyst.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ccfm1025_mdd_mcq_005",
+      "question": "Which serum inflammatory markers were measured in this study, and what was the result?",
+      "options": [
+        "A) IL-6 and CRP; both were significantly reduced by CCFM1025",
+        "B) TNF-α and IL-1β; neither showed a statistically significant change with CCFM1025",
+        "C) TNF-α and IL-10; CCFM1025 increased anti-inflammatory IL-10",
+        "D) Cortisol and IFN-γ; cortisol was significantly reduced by CCFM1025"
+      ],
+      "correct_answer": "B",
+      "explanation": "Serum TNF-α and IL-1β were measured. No statistically significant difference was observed in concentration changes of TNF-α (P = 0.498) or IL-1β (P = 0.763) between groups. Similarly, serum cortisol changes were not significantly different (P = 0.169).",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ccfm1025_mdd_mcq_006",
+      "question": "What are the top three core taxa identified in the gut microbiome of the study cohort?",
+      "options": [
+        "A) Lactobacillus, Bifidobacterium, and Akkermansia",
+        "B) Blautia, Bacteroides, and Faecalibacterium",
+        "C) Prevotella, Ruminococcus, and Clostridium",
+        "D) Firmicutes, Bacteroidetes, and Proteobacteria"
+      ],
+      "correct_answer": "B",
+      "explanation": "Core microbiome analysis, which identified taxa detected in over 50% of the population above a given abundance threshold, revealed that Blautia, Bacteroides, and Faecalibacterium were the top three core taxa in this MDD patient cohort.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ccfm1025_mdd_mcq_007",
+      "question": "In the CCFM1025 group, which tryptophan metabolite had the highest degree (most connections to other nodes) in the DSPC network analysis linking gut changes to psychiatric symptoms?",
+      "options": [
+        "A) Tryptophan",
+        "B) 5-Hydroxytryptophan (5-HTP)",
+        "C) Serotonin (5-HT)",
+        "D) Indole-3-propionic acid (IPA)"
+      ],
+      "correct_answer": "C",
+      "explanation": "In the Debiased Sparse Partial Correlation (DSPC) network analysis for the CCFM1025 group, serotonin showed the highest degree — the greatest number of connections to other nodes — indicating it was the most central hub connecting gut metabolic changes to psychiatric and gastrointestinal symptom improvements.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ccfm1025_mdd_mcq_008",
+      "question": "What was the calculated sample size per group required for the study, and what assumption about dropout rate was made?",
+      "options": [
+        "A) 10 participants per group, assuming 10% dropout",
+        "B) 15 participants per group, assuming no dropout",
+        "C) 20 participants per group, assuming 25% dropout",
+        "D) 25 participants per group, assuming 20% dropout"
+      ],
+      "correct_answer": "C",
+      "explanation": "Power analysis using G*Power 3.1 showed that 15 participants per group were required to detect power = 0.8 with effect size d = 0.936 at α = 0.05. Assuming a 25% dropout rate, the calculation 15/(1−0.25) = 20 participants per group were needed and recruited.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ccfm1025_mdd_mcq_009",
+      "question": "Why can peripheral tryptophan and 5-HTP affect brain serotonin levels, while serotonin itself cannot? What is the implication for psychobiotic therapy?",
+      "options": [
+        "A) Tryptophan and 5-HTP are actively pumped into the brain via a serotonin transporter; this means drugs targeting this transporter will amplify psychobiotic effects",
+        "B) Tryptophan and 5-HTP can cross the blood-brain barrier (BBB) and serve as precursors for central serotonin synthesis, unlike serotonin which cannot cross the BBB; thus gut-derived metabolic changes can indirectly modulate brain chemistry",
+        "C) Tryptophan and 5-HTP are directly converted to dopamine in the brain, which then regulates mood; CCFM1025 therefore works through a dopaminergic rather than serotonergic mechanism",
+        "D) Serotonin cannot be synthesized in the gut; only peripheral tryptophan contributes to brain serotonin, meaning gut bacteria have no direct role in serotonin regulation"
+      ],
+      "correct_answer": "B",
+      "explanation": "Unlike serotonin (5-HT), which cannot cross the blood-brain barrier, peripheral tryptophan and 5-HTP can cross the BBB and participate in the biosynthesis of 5-HT in the brain, validated by radioisotope tracking studies. This creates a viable gut-brain communication pathway where increased gut tryptophan/5-HTP levels (as observed with CCFM1025) can indirectly boost central serotonin synthesis.",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "ccfm1025_mdd_mcq_010",
+      "question": "Regarding gut microbial beta diversity, what statistical method was used to assess group differences, and what was the conclusion?",
+      "options": [
+        "A) Mann-Whitney U test on Shannon index values; CCFM1025 significantly altered beta diversity (P = 0.02)",
+        "B) PERMANOVA on Aitchison distance; no significant difference was found among groups (F = 0.095, R² = 0.033, P = 0.684)",
+        "C) Kruskal-Wallis test on Bray-Curtis dissimilarity; significant differences were found between pre and post in the probiotic group only",
+        "D) Linear discriminant analysis (LEfSe); it identified Bifidobacterium as the key discriminating taxon driving beta diversity shifts"
+      ],
+      "correct_answer": "B",
+      "explanation": "PERMANOVA (Permutational Multivariate Analysis of Variance) was applied to the Aitchison distance from PCA-based beta diversity analysis. The results showed no significant difference among all groups (F = 0.095, R² = 0.033, P = 0.684). Volatility analysis (Aitchison distance change between pre and post) also showed no difference between placebo and CCFM1025 groups (t(42) = 0.361, P = 0.72).",
+      "expected_documents": ["Bifidobacterium_breve_CCFM1025_attenuates_major_depression_disorder.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

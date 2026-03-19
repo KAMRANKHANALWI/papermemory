@@ -1,0 +1,328 @@
+{
+  "source_document": "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf",
+  "test_cases": [
+    {
+      "id": "mdr_tb_microbiome_001",
+      "query": "How many participants were recruited in the study and what were the four groups?",
+      "ground_truth_answer": "A total of 76 participants were recruited at a hospital in Linyi, China. The study included four groups: a MDR-TB treated group (n=6), a MDR-TB recovered group (n=18), and two treatment-naive tuberculosis control groups (untreated group 1 with n=24 and untreated group 2 with n=28). The two untreated groups were constructed to match the sex and age of the treated and recovered groups respectively",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mdr_tb_microbiome_002",
+      "query": "How long had the MDR-TB recovered group been off treatment?",
+      "ground_truth_answer": "The MDR-TB recovered group had discontinued treatment for 3-8 years. They had previously been under MDR-TB treatment for 2-5 years before stopping the treatment",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mdr_tb_microbiome_003",
+      "query": "What is the typical duration of MDR-TB treatment and which drugs are commonly used?",
+      "ground_truth_answer": "MDR-TB treatment lasts for at least 20 months and consists of a variety of antibiotics. The treatment includes an 8-month intensive phase with one injection drug (kanamycin, amikacin, or capreomycin) and four oral drugs from first-line drugs, fluoroquinolones, and second-line oral bacteriostatic drugs. Then the administration of four oral drugs continues for another 12 months",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mdr_tb_microbiome_004",
+      "query": "What percentage decrease in gut microbiota richness was observed in the recovered group?",
+      "ground_truth_answer": "The MDR-TB recovered group exhibited a 16% decrease in gut microbiota richness (measured by ACE) compared to the untreated control group (p=0.018), even 3-8 years after discontinuing treatment",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mdr_tb_microbiome_005",
+      "query": "What gastrointestinal symptoms were observed in the recovered group?",
+      "ground_truth_answer": "Although there were persistent and pervasive gut microbiota alterations, no gastrointestinal symptom such as abdominal pain, diarrhea, nausea, flatulence, and constipation was observed in the recovered group",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mdr_tb_microbiome_006",
+      "query": "Describe the changes in alpha diversity metrics (ACE, Shannon index, and Shannon evenness) in the recovered group",
+      "ground_truth_answer": "In the recovered group compared to untreated controls: ACE (richness) significantly decreased (p=0.018), indicating reduced species richness. Shannon index (diversity) significantly increased (p=0.004), suggesting altered community structure. Shannon evenness significantly increased (p<0.001), indicating more even distribution of species. This pattern shows decreased richness but more even distribution among remaining species",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mdr_tb_microbiome_007",
+      "query": "How did the gut microbiota composition change at the phylum level during and after MDR-TB treatment?",
+      "ground_truth_answer": "During MDR-TB treatment, Actinobacteria and Firmicutes declined significantly (p=0.009 and p=0.029 respectively), while Bacteroidetes increased (p=0.038). After recovery, Actinobacteria and Firmicutes rebounded to pre-treatment levels, but Bacteroidetes remained elevated (p=0.029). Additionally, Cyanobacteria and Patescibacteria showed no response during treatment but significantly decreased after recovery (p<0.001 for both)",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mdr_tb_microbiome_008",
+      "query": "What metabolic changes were observed in the recovered group and were they statistically significant?",
+      "ground_truth_answer": "The recovered group exhibited significantly elevated lipid levels: LDLC increased to 2.7 mmol/L compared to 2.2 mmol/L in controls (p=0.034), and TC increased to 4.7 mmol/L compared to 4.2 mmol/L in controls (p=0.017). No significant differences were observed for HDLC, TG, or FPG. Liver function markers (ALT, AST, AST/ALT) were within normal range, indicating the altered lipid profile was not caused by liver damage",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "mdr_tb_microbiome_009",
+      "query": "How many bacterial genera biomarkers were identified in the treated group versus the recovered group?",
+      "ground_truth_answer": "In the MDR-TB treated group, 17 bacterial genera were identified as biomarkers (LDA>2), with 16 showing decreased abundance. In the MDR-TB recovered group, 58 biomarkers (LDA>2) were identified compared to untreated controls, with 28 decreased and 30 increased in abundance",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "mdr_tb_microbiome_010",
+      "query": "What were the PERMANOVA p-values for comparing gut microbiota communities between groups?",
+      "ground_truth_answer": "Based on unweighted UniFrac distance: the p-value between MDR-TB treated group and untreated group 1 was 0.003; between MDR-TB recovered group and untreated group 2 was 0.001; between the two untreated groups was 0.520 (no separation). Based on Bray-Curtis dissimilarity: p-value between recovered group and untreated group 2 was 0.001; between treated group and untreated group 1 was 0.141 (no separation); between two untreated groups was 0.826",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "mdr_tb_microbiome_011",
+      "query": "Explain the correlation between Verrucomicrobia/Akkermansia and LDLC levels",
+      "ground_truth_answer": "The LDLC level was negatively associated with Verrucomicrobia (r=-0.437, p=0.006) and its genus Akkermansia (r=-0.437, p=0.006). This means that as the abundance of these bacteria decreased, LDLC levels increased. This correlation suggests that Verrucomicrobia and Akkermansia may have protective effects against elevated cholesterol, and their reduction after MDR-TB treatment may contribute to adverse lipid profiles",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "mdr_tb_microbiome_012",
+      "query": "Describe the mechanisms by which altered gut microbiota may lead to elevated LDLC and TC levels",
+      "ground_truth_answer": "Several mechanisms explain this correlation: (1) Bile acid metabolism - Firmicutes convert bile acids to secondary bile acids that improve liver function and metabolic homeostasis; reduced Firmicutes decreases this beneficial conversion. (2) Short-chain fatty acid production - Coprococcus produces butyrate that modulates lipid metabolism; its decrease correlates with increased TC. (3) Trimethylamine production - bacteria like Prevotellaceae produce TMA from dietary choline/L-carnitine, which is metabolized to TMAO that inhibits reverse cholesterol transport and increases LDLC. The study found positive correlation between Prevotellaceae and LDLC",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "mdr_tb_microbiome_013",
+      "query": "Compare the recovery of gut microbiota after short-course versus long-course antibiotic treatment based on the literature discussed",
+      "ground_truth_answer": "For short-course single antibiotic treatment (5-day ciprofloxacin), the taxonomic composition was not distinguishable from untreated groups after 4-week recovery, and richness rebounded to pre-treatment levels. For high antibiotic exposure (6-month TB treatment with combination therapy), altered microbiota community was observed 1.2 years after cessation, though richness recovered. However, MDR-TB treatment (20+ months with multiple antibiotics) resulted in irreversible changes: 16% decreased richness and dramatically altered composition persisting 3-8 years after treatment cessation. The degree of recovery inversely correlates with treatment intensity and duration",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "mdr_tb_microbiome_014",
+      "query": "According to resilience theory, why did the gut microbiota not return to its original state after MDR-TB treatment?",
+      "ground_truth_answer": "According to resilience theory, gut microbiota as an ecosystem can return to its original equilibrium or achieve a new equilibrium after disturbance cessation, depending on the strength of the disturbance and the stability of the microbiota. The MDR-TB treatment represents an unprecedented disturbance - none of the previously studied antibiotic treatments has comparable impact. The new equilibrium is driven by both direct effects (elimination of certain bacterial species by antibiotics) and indirect effects (loss of autotrophic bacteria that rely on fermentation products of eliminated bacteria, or competitive bacteria that previously competed with eliminated bacteria). The network analysis also suggested close correlations among bacterial genera, meaning elimination of some species affects others",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "mdr_tb_microbiome_015",
+      "query": "What bacterial taxa showed correlations with total cholesterol (TC) levels in the study?",
+      "ground_truth_answer": "TC was negatively associated with: Firmicutes (r=-0.35, p=0.032), Butyricicoccus (r=-0.369, p=0.023), Coprococcus 1 (r=-0.409, p=0.011), Erysipelatoclostridium (r=-0.403, p=0.012), Psychrobacter (r=-0.332, p=0.042), and Streptococcus (r=-0.420, p=0.009). TC was positively associated with: Fusicatenibacter (r=0.381, p=0.018), Klebsiella (r=0.339, p=0.038), Lachnospiraceae FCS020 group (r=0.364, p=0.025), Lachnospiraceae ND3007 group (r=0.371, p=0.022), and Lachnospiraceae UCG001 group (r=0.327, p=0.045)",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "factual"
+    }
+  ],
+  
+  "mcq_questions": [
+    {
+      "id": "mdr_tb_microbiome_mcq_001",
+      "question": "What is the minimum duration for MDR-TB treatment according to the study?",
+      "options": [
+        "A) 12 months",
+        "B) 18 months",
+        "C) 20 months",
+        "D) 24 months"
+      ],
+      "correct_answer": "C",
+      "explanation": "MDR-TB treatment lasts for at least 20 months, consisting of an 8-month intensive treatment phase followed by 12 months of continuation phase with four oral antibiotic drugs",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mdr_tb_microbiome_mcq_002",
+      "question": "How long after discontinuing MDR-TB treatment were the recovered patients studied?",
+      "options": [
+        "A) 1-2 years",
+        "B) 2-4 years",
+        "C) 3-8 years",
+        "D) 5-10 years"
+      ],
+      "correct_answer": "C",
+      "explanation": "The MDR-TB recovered group had discontinued treatment for 3-8 years before participating in the study, yet still showed significant gut microbiota alterations",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mdr_tb_microbiome_mcq_003",
+      "question": "What sequencing method was used to analyze gut microbiota in this study?",
+      "options": [
+        "A) Whole genome shotgun sequencing",
+        "B) 16S rRNA V3-V4 region sequencing",
+        "C) Metagenomics sequencing",
+        "D) RNA-seq"
+      ],
+      "correct_answer": "B",
+      "explanation": "The study used 16S rRNA V3-V4 region sequencing with primers 338F and 806R, performed on Hiseq 2500 platform, to analyze bacterial community composition",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mdr_tb_microbiome_mcq_004",
+      "question": "What percentage of gut bacteria abundance can be altered by broad-spectrum antibiotic use according to the literature cited?",
+      "options": [
+        "A) 10%",
+        "B) 20%",
+        "C) 30%",
+        "D) 40%"
+      ],
+      "correct_answer": "C",
+      "explanation": "According to the literature cited (Dethlefsen et al., 2008), broad-spectrum antibiotic use can induce altered abundance of 30% gut bacteria and decreased richness, diversity and evenness",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "mdr_tb_microbiome_mcq_005",
+      "question": "Which phylum was identified as a biomarker in BOTH the treated and recovered groups?",
+      "options": [
+        "A) Actinobacteria",
+        "B) Bacteroidetes",
+        "C) Firmicutes",
+        "D) Proteobacteria"
+      ],
+      "correct_answer": "B",
+      "explanation": "Bacteroidetes was identified as a biomarker (LDA>2) in both groups. It increased during treatment (p=0.038) and remained elevated in the recovered group (p=0.029) compared to controls",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "mdr_tb_microbiome_mcq_006",
+      "question": "What was the p-value for the difference in Shannon evenness between the recovered group and its control?",
+      "options": [
+        "A) p = 0.018",
+        "B) p = 0.004",
+        "C) p < 0.001",
+        "D) p = 0.025"
+      ],
+      "correct_answer": "C",
+      "explanation": "The Shannon evenness showed a significantly higher value in the recovered group than its control group with p < 0.001, indicating a highly significant increase in the evenness of species distribution",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "mdr_tb_microbiome_mcq_007",
+      "question": "According to the study, what percentage does gut microbiota contribute to the variation in blood lipids?",
+      "options": [
+        "A) About 3%",
+        "B) About 6%",
+        "C) About 9%",
+        "D) About 12%"
+      ],
+      "correct_answer": "B",
+      "explanation": "According to Fu et al. (2015) cited in the study, gut microbiota contributes to a substantial proportion (about 6%) of the variation in blood lipids, independent of age, gender and host genetics",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "mdr_tb_microbiome_mcq_008",
+      "question": "Which bacterial genus is described as a major producer of butyrate that correlates with TC levels?",
+      "options": [
+        "A) Bacteroides",
+        "B) Prevotella",
+        "C) Coprococcus",
+        "D) Akkermansia"
+      ],
+      "correct_answer": "C",
+      "explanation": "The genus Coprococcus is identified as a major producer of butyrate (according to Rioscovian et al., 2016). The study found that decreased Coprococcus was correlated with increased TC level (r=-0.409, p=0.011) in the recovered group",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "mdr_tb_microbiome_mcq_009",
+      "question": "What happens to gut microbiota after disturbance cessation according to resilience theory?",
+      "options": [
+        "A) It always returns to its original equilibrium",
+        "B) It always achieves a completely new equilibrium",
+        "C) It can either return to original equilibrium or achieve a new equilibrium depending on disturbance strength and microbiota stability",
+        "D) It never recovers from major disturbances"
+      ],
+      "correct_answer": "C",
+      "explanation": "According to resilience theory discussed in the paper (Sommer et al., 2017), gut microbiota as an ecosystem can return to its original equilibrium or achieve a new equilibrium after disturbance cessation, depending on the strength of the disturbance and the stability of the microbiota",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "mdr_tb_microbiome_mcq_010",
+      "question": "What is the relationship between TMAO production and cholesterol metabolism?",
+      "options": [
+        "A) TMAO promotes reverse cholesterol transport and decreases LDLC",
+        "B) TMAO inhibits reverse cholesterol transport and increases LDLC",
+        "C) TMAO has no effect on cholesterol metabolism",
+        "D) TMAO only affects HDL cholesterol"
+      ],
+      "correct_answer": "B",
+      "explanation": "According to the study (citing Wang et al., 2011 and Koeth et al., 2013), certain gut bacteria produce trimethylamine (TMA) from dietary choline and L-carnitine, which is metabolized to trimethylamine N-oxide (TMAO). TMAO inhibits reverse cholesterol transportation and increases LDLC levels. The study found positive correlation between Prevotellaceae (a TMA producer) and LDLC levels",
+      "expected_documents": [
+        "21-Long-Term_Effects_of_Multi-Drug-Resistant_Tuberculosis_Treatment_on_Gut_Microbiota_and_Its_Health_Consequences.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

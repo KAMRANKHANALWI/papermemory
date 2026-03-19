@@ -1,0 +1,330 @@
+{
+  "source_document": "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf",
+  "author": "S. Shivaji",
+  "journal": "J Biosci (2019) 44:110",
+  "test_cases": [
+    {
+      "id": "eye_microbiome_001",
+      "query": "What are the two dominant bacterial phyla in the gut microbiome and what percentage do they account for?",
+      "ground_truth_answer": "The gut bacteria are primarily affiliated to the phyla Bacteroidetes and Firmicutes, which together account for 70–90% of the gut microbiota. Along with Actinobacteria and Proteobacteria, these phyla constitute more than 90% of the gut microbiota.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "eye_microbiome_002",
+      "query": "What is dysbiosis in the context of the gut microbiome?",
+      "ground_truth_answer": "Dysbiosis refers to alterations in the core microbiome in terms of diversity, abundance, and functionality with reference to the healthy control (HC) microbiome. Dysbiosis has been implicated in several diseases including auto-immune diseases, inflammatory diseases, cancers, and mental disorders.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "eye_microbiome_003",
+      "query": "What are the canonical roles of gut bacteria in human health?",
+      "ground_truth_answer": "The canonical roles of gut bacteria include the breakdown of food remnants, modulation of the immune system, biosynthesis of vitamins and amino acids, and metabolism of drugs.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "eye_microbiome_004",
+      "query": "What is the most common type of keratitis and what are its most frequent causative agents?",
+      "ground_truth_answer": "Bacterial keratitis (BK) is the most common type of keratitis. It can lead to sight-threatening complications including corneal scarring, perforation, endophthalmitis, and ultimately blindness. The most common causative agents are Coagulase-negative Staphylococci, Pseudomonas aeruginosa, and Staphylococcus aureus.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "eye_microbiome_005",
+      "query": "What percentage of individuals with inflammatory bowel disease develop ocular manifestations?",
+      "ground_truth_answer": "Approximately 10% of individuals with inflammatory bowel disease manifest ocular diseases such as episcleritis, uveitis, and conjunctivitis.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "eye_microbiome_006",
+      "query": "How did oral versus intraperitoneal antibiotic administration differ in their effects on autoimmune uveitis in mice?",
+      "ground_truth_answer": "In mice with autoimmune uveitis, oral administration of antibiotics reduced the severity of uveitis, but intraperitoneal administration did not have the desired effect. This indicated that antibiotics delivered orally may alter the balance of gut microbiota in favour of protective bacteria, thereby resolving uveitis — confirming that the gut microbiome, not systemic antibiotic exposure, mediates the effect.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "eye_microbiome_007",
+      "query": "How do gut commensals protect the eye from keratitis according to Kugadas et al. (2017)?",
+      "ground_truth_answer": "Kugadas et al. (2017) demonstrated that gut commensals confer protection to the eye by regulating secretory IgA levels and IgA transcripts, thereby regulating the host's susceptibility to ocular keratitis. This highlights a systemic immunological pathway through which the gut microbiome influences ocular mucosal immunity.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "eye_microbiome_008",
+      "query": "What mechanism links gut dysbiosis to retinal inflammation and angiogenesis in the eye?",
+      "ground_truth_answer": "Andriessen et al. (2016) demonstrated that gut dysbiosis drives retinal inflammation and pathological angiogenesis, establishing a direct link between gut dysbiosis and angiogenesis in the eye. Additionally, inferred functional potential of microbiomes under conditions of dysbiosis showed enormous increases in pro-inflammatory bacteria and decreases in organisms with probiotic properties.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "eye_microbiome_009",
+      "query": "What role does Bacteroides fragilis surface antigen play in immune regulation?",
+      "ground_truth_answer": "The surface polysaccharide antigen A of Bacteroides fragilis regulates immunity and reduces inflammation. This represents one mechanism by which commensal gut bacteria can exert a broad immunomodulatory influence on host health, including potentially at extra-intestinal sites.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "eye_microbiome_010",
+      "query": "What is the proposed mechanism by which gut microbiota promotes differentiation of peripheral regulatory T cells?",
+      "ground_truth_answer": "The mechanism by which gut bacteria participate in anti-inflammatory responses is proposed to be through promoting the differentiation of peripheral regulatory T cells (Tregs), which are involved in immunomodulation. This Treg-mediated pathway is thought to underlie how changes in gut microbiota composition can influence systemic and ocular inflammatory responses.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "eye_microbiome_011",
+      "query": "How does Corynebacterium mastitidis protect the eye from pathogenic infection?",
+      "ground_truth_answer": "Corynebacterium mastitidis lives on the conjunctiva and alters local mucosal immunity, thereby protecting the eye from pathogenic infection. This was demonstrated by St. Leger et al. (2017), who showed that this ocular commensal drives an interleukin-17 response from mucosal gamma delta T cells, illustrating the protective role of the ocular surface microbiome itself.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "eye_microbiome_012",
+      "query": "How does the cresol-myelin pathway link a dysbiotic gut microbiome to depression in the brain?",
+      "ground_truth_answer": "Gacias et al. (2016) demonstrated that transplanting a specific combination of fecal bacteria into normal mice rendered them depressed due to higher production of cresol, a metabolite produced by certain gut bacteria. Elevated cresol levels reduced myelin production by brain cells, establishing a gut–brain axis where dysbiosis-derived metabolites can impair neural function and induce behavioral changes like depression.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "eye_microbiome_013",
+      "query": "Compare the gut bacterial versus gut fungal microbiome alterations observed in fungal keratitis (FK) patients versus healthy controls.",
+      "ground_truth_answer": "In fungal keratitis patients, the gut fungal microbiome showed similar diversity and abundance compared to healthy controls. However, the gut bacterial microbiome showed significantly decreased richness and diversity in FK patients, demonstrating clear bacterial dysbiosis. This divergence is notable because it suggests that FK primarily disrupts the bacterial component of the gut microbiome, not the fungal compartment, despite the infection being fungal in nature.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "eye_microbiome_014",
+      "query": "What specific bacterial genera are decreased versus increased in the gut microbiome of fungal keratitis patients compared to healthy controls, and what functional roles do these bacteria have?",
+      "ground_truth_answer": "In healthy controls compared to FK patients, butyrate-producing bacteria affiliated to Lachnospiraceae and Ruminococcaceae, and genera including Megasphaera, Roseburia, Lachnospira, Acidaminococcus, and Mitsuokella multacida are increased. Anti-inflammatory bacteria including Faecalibacterium prausnitzii and Bifidobacterium adolescentis are also increased in healthy controls. In contrast, FK patients show increased pro-inflammatory Enterobacteriaceae, pathogenic genera Shigella and Treponema, and Bacteroides fragilis (an opportunistic pathogen). The loss of butyrate producers and anti-inflammatory bacteria in FK patients likely reduces immunomodulatory capacity and gut homeostasis.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "eye_microbiome_015",
+      "query": "What are the key open questions regarding the ocular surface microbiome and its relationship with the gut microbiome that the author identifies as priorities for future research?",
+      "ground_truth_answer": "The author identifies three key open questions: (1) Does the ocular microbiome change with the disease state of the eye? (2) Is the ocular microbiome influenced by the gut microbiome? (3) What mediates the cross-talk between the gut and ocular microbiome? The overarching challenge is to establish whether the gut microbiome influences ocular surface disease directly or indirectly by altering the ocular microbiome. The paper also calls for validation of human microbiome findings in animal models and development of novel probiotic approaches for ophthalmic diseases.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "complex_reasoning"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "eye_microbiome_mcq_001",
+      "question": "Which of the following is NOT listed as a canonical role of gut bacteria in the human body?",
+      "options": [
+        "A) Breakdown of food remnants",
+        "B) Modulation of the immune system",
+        "C) Direct regulation of intraocular pressure",
+        "D) Biosynthesis of vitamins and amino acids"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper lists the canonical roles of gut bacteria as breakdown of food remnants, modulation of the immune system, biosynthesis of vitamins and amino acids, and metabolism of drugs. Direct regulation of intraocular pressure is not mentioned as a canonical gut bacteria function.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "eye_microbiome_mcq_002",
+      "question": "What happened when germ-free mice received a fecal transplant from a human donor in the studies cited by Shivaji (2019)?",
+      "options": [
+        "A) They developed autoimmune uveitis",
+        "B) They became resistant to all gut pathogens",
+        "C) They gained weight (plumped up)",
+        "D) They showed reduced inflammation markers"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper cites Turnbaugh et al. (2006) and Ridaura et al. (2013) showing that skinny germ-free mice plump up upon receiving a fecal transplant from a human donor, demonstrating the direct role of gut microbiota in host metabolism and obesity.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "eye_microbiome_mcq_003",
+      "question": "Which bacterial species was shown to control obesity when supplemented into fecal transplant experiments?",
+      "options": [
+        "A) Faecalibacterium prausnitzii",
+        "B) Akkermansia muciniphila",
+        "C) Christensenella minuta",
+        "D) Bifidobacterium adolescentis"
+      ],
+      "correct_answer": "C",
+      "explanation": "Goodrich et al. (2014) demonstrated that supplementation of the fecal transplant with Christensenella minuta rendered recipient mice thinner, indicating that C. minuta controls obesity. The other listed bacteria have different beneficial roles (F. prausnitzii protects against intestinal inflammation; A. muciniphila is associated with reduction in diabetes).",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "eye_microbiome_mcq_004",
+      "question": "How were retina-specific T cells shown to be involved in autoimmune uveitis in mice?",
+      "options": [
+        "A) They were directly produced by gut epithelial cells",
+        "B) Signals from gut microbiota activated them",
+        "C) They were transferred via secretory IgA from the gut",
+        "D) They were activated through intraperitoneal antibiotic treatment"
+      ],
+      "correct_answer": "B",
+      "explanation": "Horai et al. (2015) demonstrated that in mice with autoimmune uveitis, signals from the gut microbiota activate retina-specific T cells that are involved in causing uveitis. This established a key gut-to-eye immunological signaling axis.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "eye_microbiome_mcq_005",
+      "question": "Which ocular diseases have been associated with gut microbiome dysbiosis in a high-fat diet mouse model?",
+      "options": [
+        "A) Bacterial keratitis and fungal keratitis",
+        "B) Uveitis and conjunctivitis",
+        "C) Age-related macular degeneration and choroidal neovascularization",
+        "D) Glaucoma and diabetic retinopathy"
+      ],
+      "correct_answer": "C",
+      "explanation": "Andriessen et al. (2016) implicated gut dysbiosis driven by a high-fat diet in choroidal neovascularization, while both high-fat diet and high-glycaemic-index diet have been linked to age-related macular degeneration in mice and patients. Gut dysbiosis also drives retinal inflammation and pathological angiogenesis.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "eye_microbiome_mcq_006",
+      "question": "What distinguishes fungal keratitis (FK) gut microbiome changes from bacterial keratitis (BK) gut microbiome changes as described in the review?",
+      "options": [
+        "A) FK shows fungal gut dysbiosis while BK shows bacterial gut dysbiosis",
+        "B) Both FK and BK show identical patterns of gut bacterial dysbiosis",
+        "C) FK shows bacterial gut dysbiosis while the fungal gut microbiome remains similar to healthy controls",
+        "D) BK shows both bacterial and fungal gut dysbiosis while FK shows neither"
+      ],
+      "correct_answer": "C",
+      "explanation": "In FK patients, the gut fungal microbiome was very similar in diversity and abundance compared to healthy controls, whereas the gut bacterial richness and diversity was significantly decreased, demonstrating bacterial dysbiosis. For BK, the review reports dysbiosis in both the bacterial and fungal diversity and abundance in the gut microbiome compared to healthy individuals.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "comparison"
+    },
+    {
+      "id": "eye_microbiome_mcq_007",
+      "question": "According to the paper, how many bacterial genera were initially identified in the core ocular surface microbiome by Dong et al. (2011), and how many have subsequently been described?",
+      "options": [
+        "A) 5 initially; greater than 20 subsequently",
+        "B) 12 initially; greater than 50 subsequently",
+        "C) 20 initially; greater than 100 subsequently",
+        "D) 8 initially; greater than 30 subsequently"
+      ],
+      "correct_answer": "B",
+      "explanation": "Dong et al. (2011) identified a core microbiome of 12 bacterial genera at the ocular surface. Subsequently, greater than 50 genera have been described, with Corynebacterium, Acinetobacteria, Pseudomonas, Sphingomonas, and Streptococcus predominating at the ocular surface (Ozkan et al. 2017).",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "eye_microbiome_mcq_008",
+      "question": "What gut microbiome feature is shared between patients with fungal keratitis, stage 4 hepatitis C, myalgic encephalomyelitis, inflammatory bowel diseases, Sjögren syndrome, and Alzheimer's disease?",
+      "options": [
+        "A) Increased abundance of Bacteroides fragilis",
+        "B) Elevated levels of Fusobacterium species",
+        "C) Reduction in microbiome abundance and diversity",
+        "D) Dominance of Proteobacteria over Firmicutes"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper notes that reduction in abundance and diversity of the gut microbiome has been observed across all these conditions — FK, stage 4 hepatitis C (Aly et al. 2016), myalgic encephalomyelitis (Giloteaux et al. 2016), inflammatory bowel diseases (Frank et al. 2007), Sjögren syndrome (de Paiva et al. 2016), and Alzheimer's disease (Vogt et al. 2017) — suggesting that reduced microbial diversity may be a shared feature of systemic disease states.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "comparison"
+    },
+    {
+      "id": "eye_microbiome_mcq_009",
+      "question": "The gut microbiome is described as dynamic and influenced by multiple factors. Which of the following is NOT listed among those factors in the paper?",
+      "options": [
+        "A) Age and gender",
+        "B) Ethnicity and genetics",
+        "C) Antibiotic resistance profiles",
+        "D) Pathology"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper states that the gut microbiome is dynamic depending on age, gender, ethnicity, genetics, and pathology. Antibiotic resistance profiles are not listed as a direct modulating factor of gut microbiome composition in this paper, though antibiotic use itself is mentioned as a perturbation in the context of uveitis experiments.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "eye_microbiome_mcq_010",
+      "question": "Which of the following best explains why establishing a gut microbiome–uveitis connection is described as particularly challenging compared to gut microbiome–digestive disease connections?",
+      "options": [
+        "A) Uveitis has no known immune component, making dysbiosis irrelevant",
+        "B) The eye, like the brain, is a remote extra-intestinal organ, requiring evidence of long-range gut-to-eye signaling axes",
+        "C) Gut microbiome studies in ocular disease are not permitted in human cohorts due to ethical concerns",
+        "D) Standard 16S rRNA sequencing cannot detect dysbiosis relevant to ocular conditions"
+      ],
+      "correct_answer": "B",
+      "explanation": "The paper explicitly states that implicating dysbiosis in extra-intestinal diseases like uveitis is 'all the more challenging' because the eye is as remote from the gut as the brain. Establishing a gut–eye axis requires demonstrating mechanistic links (e.g., T cell activation, IgA regulation, metabolite signaling) across this anatomical distance, which is conceptually and experimentally more demanding than showing dysbiosis in directly connected gut diseases.",
+      "expected_documents": [
+        "Connect_between_gut_microbiome_and_diseases_of_the_human_eye.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "complex_reasoning"
+    }
+  ]
+}

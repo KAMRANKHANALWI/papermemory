@@ -1,0 +1,341 @@
+{
+  "source_document": "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf",
+  "paper_title": "Gut microbiome and serum amino acid metabolome alterations in autism spectrum disorder",
+  "journal": "Scientific Reports (2024) 14:4037",
+  "doi": "https://doi.org/10.1038/s41598-024-54717-2",
+  "test_cases": [
+    {
+      "id": "asd_gut_001",
+      "query": "What was the ASD prevalence rate reported by the US CDC in 2023?",
+      "ground_truth_answer": "According to 2023 data from the United States Centers for Disease Control and Prevention, the prevalence of ASD increased from 1 in 44 (in 2021) to 1 in 36.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "asd_gut_002",
+      "query": "How many children with ASD and how many neurotypical controls were recruited in this study, and what was the age range?",
+      "ground_truth_answer": "The study recruited 30 children with ASD (average age 3.44 ± 0.85 years; 20 males and 10 females) and 30 sex- and age-matched neurotypical controls (average age 3.28 ± 0.65 years; 20 males and 10 females). The age range of ASD children was 2 to 4 years.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "asd_gut_003",
+      "query": "What sequencing platform was used for metagenomic sequencing in this study?",
+      "ground_truth_answer": "The qualified libraries were sequenced on the MGISEQ-2000 platform (BGI Shenzhen, China).",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "asd_gut_004",
+      "query": "Which two microbial classes were significantly lower in children with ASD compared to typically developing children?",
+      "ground_truth_answer": "At the class level, Deinococci (0.01 vs. 0.03%, P_FDR = 0.012) and Holophagae (0.00 vs. 0.01%, P_FDR = 0.034) were significantly lower in children with ASD compared with typically developing children.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "asd_gut_005",
+      "query": "What diagnostic tool was used to confirm ASD diagnosis in the study participants?",
+      "ground_truth_answer": "ASD diagnosis was confirmed by two experienced developmental and behavioral pediatricians using the Childhood Autism Rating Scale (CARS). The children were also diagnosed according to the Diagnostic and Statistical Manual of Mental Disorders, 5th Edition (DSM-5).",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "asd_gut_006",
+      "query": "How does the gut-brain axis mediate communication between the gut microbiota and the central nervous system in the context of ASD?",
+      "ground_truth_answer": "The gut-brain axis is the information exchange system between the gut and the brain, composed of immune, vagus, and neuroendocrine pathways. During intestinal metabolism, gut flora produces neurotransmitters such as 5-hydroxytryptamine, catecholamine, and gamma-aminobutyric acid, as well as short-chain fatty acids and amino acid metabolites. These can activate the afferent nerve of the intestinal nervous system and affect the central nervous system through surface receptors of intestinal epithelial cells and intestinal pheochromocytomes.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "asd_gut_007",
+      "query": "What were the five dominant altered microbial species identified by LDA analysis in the ASD group, and what LDA score threshold was used?",
+      "ground_truth_answer": "Using a LDA score threshold greater than 2.0 (P < 0.05), five dominant altered species were identified. The ASD group showed significantly higher relative abundance of Subdoligranulum, Faecalibacterium_praushitzii, Faecalibacterium, Veillonellaceae, and Rumminococcaceae compared with the typically developing group. Conversely, Bacteroides_thetaiotaomicron, Azospirillum_sp_CAG_260, and Prevotella_copri_CAG_164 were significantly lower in the ASD group.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "asd_gut_008",
+      "query": "What was the total number of specific genes found in the ASD group versus the typically developing group, and how did species richness differ between them?",
+      "ground_truth_answer": "The TD group contained 615,468 specific genes, while only 339,926 specific genes were found in the ASD group. Species richness was significantly lower in the ASD group than in the TD group, as measured by Chao1 index analyses. However, the evenness of species at the kingdom level was significantly higher in the ASD group than in the TD group, as measured by Simpson index analyses.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "asd_gut_009",
+      "query": "How was dietary habit classified in this study, and what proportion of ASD children versus controls had a 'single' diet type?",
+      "ground_truth_answer": "Dietary habits were evaluated by interviewing parents with a questionnaire covering dairy products, rice or noodles, meat or eggs, bean products, vegetables and fruits, and other snacks. Individuals with five or more diet types were classified as the 'normal group,' while those with fewer than five types were considered the 'single group.' Among ASD children, 57.33% (16 out of 30) had a single diet type, compared to 30% (9 out of 30) in the typically developing group, though this difference did not reach statistical significance (p = 0.067).",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "asd_gut_010",
+      "query": "What is the role of the peptides/nickel transport system in ASD, and how does it relate to valine and ornithine levels?",
+      "ground_truth_answer": "The peptides/nickel transport system (KEGG module M00239) was identified as the main metabolic pathway involved in the differential microbial species in the ASD group. The nickel transport system is the specific transport system of Helicobacter pylori, and H. pylori infection may increase the risk of neurodegenerative disease. Correlation analysis showed that this pathway was positively correlated with valine levels (p < 0.01) and negatively correlated with ornithine levels (p < 0.05). This suggests that decreased ornithine levels and elevated valine levels may increase the risk of ASD through this metabolic pathway.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "asd_gut_011",
+      "query": "Why might the decrease in Prevotella copri in children with ASD be linked to immune dysfunction?",
+      "ground_truth_answer": "Prevotella copri can utilize polysaccharides to produce succinic acid, which has been reported to enhance the immune response of antigen-specific T cells by binding to the succinic acid receptor GPR91 on the surface of dendritic cells, thereby protecting host health. Because many ASD children display immune dysfunction, this immune disorder may be related to the decreased abundance of Prevotella bacteria in the intestine. The study found that the relative abundance of Prevotella_copri_CAG_164 was significantly lower in the ASD group compared with the TD group, consistent with previous studies.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "asd_gut_012",
+      "query": "What statistical methods were used in this study to assess alpha diversity and beta diversity between the ASD and TD groups?",
+      "ground_truth_answer": "Alpha diversity differences were tested using the Wilcoxon rank-sum test, with indicators including the Shannon index, Chao1, and Simpson index. Beta diversity, which measures differences between groups, was assessed by calculating JSD (Jensen-Shannon Divergence) distance and Bray-Curtis distance from the abundance matrix. Differentially abundant taxa were identified using LEfSe (Linear Discriminant Analysis Effect Size). Differential abundance of class and phyla was tested by the Wilcoxon rank-sum test with P values corrected as false discovery rate (FDR) using the Benjamini-Hochberg method.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "asd_gut_013",
+      "query": "How does the evidence from fecal transplantation animal studies support a causal role of gut microbiota in ASD behavioral symptoms?",
+      "ground_truth_answer": "Animal experiments confirmed that fecal transplantation from ASD patients into the intestines of sterile mice resulted in behavioral defects in the offspring, including more repetitive behaviors and decreased social and motor ability compared with control groups. This suggests that the intestinal flora of patients with ASD may directly induce abnormal behavior. Additionally, transplanting fecal microbiota from ketogenic diet-fed human donors into germ-free mice has shown downstream immune and behavioral effects, further highlighting the causal potential of gut microbiota composition on behavior.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "asd_gut_014",
+      "query": "Compare the functional metabolic pathway dominance between the ASD group and the typically developing group, and explain the implications of arginine and phenylalanine metabolism dysregulation in ASD.",
+      "ground_truth_answer": "The overall functional structure of the ASD group was dominated by 13 functions including Streptomycin biosynthesis, Ascorbate and aldarate metabolism, Flagellar assembly, Methane metabolism, and Microbial metabolism in diverse environments, while the TD group was dominated by 14 different functions. Among the hypermetabolic functions in the ASD group, arginine metabolism was found to be related to cognitive development of the brain, and argininemia can affect brain development. Phenylalanine metabolism and amino acid biosynthesis are related to neurodegeneration. These findings suggest that gut microbiota may affect the central nervous system through these pathways, providing a mechanistic link between gut dysbiosis and the neurological symptoms of ASD.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "asd_gut_015",
+      "query": "Explain the multi-layered relationship between branched-chain amino acids (BCAAs), mitochondrial dysfunction, and ASD, including the role of the SLC7A5 transporter.",
+      "ground_truth_answer": "Leucine and valine are branched-chain amino acids (BCAAs) closely associated with ASD. Elevated BCAA levels cause catabolic abnormalities, which may lead to mitochondrial dysfunction. Studies have shown that most patients with ASD have mitochondrial dysfunction, which is believed to be related to ASD etiology. Conversely, lack of expression of SLC7A5, an amino acid transporter on the blood-brain barrier, leads to a significant decrease in the level of branched-chain amino acids, especially leucine and isoleucine, and this deficiency itself can result in the occurrence of ASD. In the current study, the CCA analysis confirmed that valine is among the metabolites most closely associated with changes in differential microbial species, and the peptide/nickel transport system was positively correlated with valine levels, further linking gut microbial changes to BCAA dysregulation in ASD pathophysiology.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "asd_gut_016",
+      "query": "What novel finding was reported about Phascolarctobacterium succinatutens in the context of ASD microbial metabolism, and why is it significant?",
+      "ground_truth_answer": "The study found, for the first time, that microbial metabolism in diverse environments (KEGG map01120) was negatively correlated with Phascolarctobacterium succinatutens (p < 0.05). This finding had not been previously reported. It may be due to the effect of microbial metabolism in diverse environments on the physiological processes of Phascolarctobacterium. This is significant because Phascolarctobacterium has been identified as a component of the stable microbiota community in children with ASD, and the genus Phascolarctobacterium has been found much more abundant in ASD children than in neurotypical participants. The discovery provides new clues for further study of the physiological processes of P. succinatutens in the context of ASD.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "asd_gut_mcq_001",
+      "question": "According to the study, what was the average CARS (Childhood Autism Rating Scale) test score in the ASD group?",
+      "options": [
+        "A) 28.50 ± 3.10",
+        "B) 31.97 ± 2.94",
+        "C) 35.20 ± 1.75",
+        "D) 25.60 ± 4.20"
+      ],
+      "correct_answer": "B",
+      "explanation": "The ASD group had an average CARS test score of 31.97 ± 2.94, as shown in Table 1 of the study. The TD group had no CARS score (NA) since the scale was only applied to diagnose ASD.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "asd_gut_mcq_002",
+      "question": "What percentage of ASD children in this study were male?",
+      "options": [
+        "A) 50.00%",
+        "B) 56.67%",
+        "C) 66.67%",
+        "D) 73.33%"
+      ],
+      "correct_answer": "C",
+      "explanation": "In this study, 20 out of 30 ASD children were male (66.67%), and 10 out of 30 were female (33.33%). This sex distribution was identical in the typically developing control group.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "asd_gut_mcq_003",
+      "question": "Which phylum was significantly lower in children with ASD compared to typically developing children in this study?",
+      "options": [
+        "A) Firmicutes",
+        "B) Bacteroidetes",
+        "C) Deinococcus-Thermus",
+        "D) Proteobacteria"
+      ],
+      "correct_answer": "C",
+      "explanation": "At the phylum level, Deinococcus-Thermus (0.01 vs. 0.03%, P_FDR = 0.008) was significantly lower in children with ASD compared with TD children. Parcubacteria was the most abundant phylum in both groups but showed no significant difference.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "asd_gut_mcq_004",
+      "question": "What is the correct interpretation of a higher Simpson index value in the ASD group at the kingdom level?",
+      "options": [
+        "A) Greater species richness in the ASD group",
+        "B) Greater species evenness in the ASD group",
+        "C) Lower microbial diversity overall in the ASD group",
+        "D) Greater beta diversity between groups"
+      ],
+      "correct_answer": "B",
+      "explanation": "The Simpson index measures evenness of species distribution. A higher Simpson index in the ASD group at the kingdom level indicates greater evenness — meaning microbial abundance was more evenly distributed across taxa — not greater richness. Species richness (measured by Chao1) was actually significantly lower in the ASD group.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "asd_gut_mcq_005",
+      "question": "Which of the following amino acid metabolites showed the STRONGEST correlation with differential microbial species according to the Canonical Correspondence Analysis (CCA) in this study?",
+      "options": [
+        "A) Phenylalanine, Aspartic acid, and Glutamic acid only",
+        "B) Citrulline, Tryptophan, Leucine, Valine, Tyrosine, Asparagine, and Ornithine",
+        "C) Histidine, Lysine, and Threonine",
+        "D) Arginine and Glutamine only"
+      ],
+      "correct_answer": "B",
+      "explanation": "The CCA analysis showed that most amino acid metabolites closely associated with changes in differential microbial species included Citrulline, Tryptophan, Leucine, Valine, Tyrosine, Asparagine, and Ornithine. The Spearman correlation heatmap showed that Phenylalanine, Aspartic acid, and Glutamic acid were positively correlated with specific species abundance, but the CCA specifically identified the group in option B.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "asd_gut_mcq_006",
+      "question": "What was the sample preparation fragment size range used for metagenomic library preparation in this study?",
+      "options": [
+        "A) 100-200 bp",
+        "B) 200-400 bp",
+        "C) 400-600 bp",
+        "D) 600-800 bp"
+      ],
+      "correct_answer": "B",
+      "explanation": "The genomic DNA was randomly fragmented by Covaris, and the fragmented DNA was selected by magnetic beads to an average size of 200-400 bp for library preparation.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "asd_gut_mcq_007",
+      "question": "In the bioinformatics pipeline, what similarity threshold was used to cluster sequences into the same group?",
+      "options": [
+        "A) 80% similarity",
+        "B) 90% similarity",
+        "C) 95% similarity",
+        "D) 99% similarity"
+      ],
+      "correct_answer": "C",
+      "explanation": "In the bioinformatics clustering step, each sequence was compared with the representatives of existing clusters. If the similarity with any representative was above 95%, it was grouped into that cluster. Otherwise, a new cluster was defined with that sequence as the representative.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "asd_gut_mcq_008",
+      "question": "Which tool was specifically used in this study for metagenomic assembly of high-quality short reads?",
+      "options": [
+        "A) SOAP2",
+        "B) CD-HIT",
+        "C) MEGAHIT",
+        "D) LEfSe"
+      ],
+      "correct_answer": "C",
+      "explanation": "High-quality short reads of each DNA sample were assembled by MEGAHIT, which is described as an ultra-fast single-node solution for large and complex metagenomics assembly via succinct de Bruijn graph. SOAP2 was used for short read alignment, CD-HIT for clustering, and LEfSe for biomarker discovery.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "asd_gut_mcq_009",
+      "question": "What was the main metabolic pathway enriched in the typically developing (control) group's differential species, in contrast to the peptides/nickel transport system enriched in the ASD group?",
+      "options": [
+        "A) ABC transporters",
+        "B) Eukaryotic ribosomes",
+        "C) Biosynthesis of amino acids",
+        "D) Galactose metabolism"
+      ],
+      "correct_answer": "B",
+      "explanation": "While the peptides/nickel transport system (M00239) was the main metabolic pathway involved in differential species in the ASD group, the main metabolic pathway in the normal (TD) group was Eukaryotic ribosomes (M00177). Eukaryotic ribosomes are more accurate at decoding mRNA than bacterial ribosomes, and changes in decoding fidelity in humans have been linked to neurodegenerative diseases.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "asd_gut_mcq_010",
+      "question": "Based on the Spearman correlation analysis, which of the following correctly describes the relationship between Phascolarctobacterium succinatutens and the microbial metabolism pathway in this study?",
+      "options": [
+        "A) Positively correlated with Biosynthesis of secondary metabolites (p < 0.05)",
+        "B) Negatively correlated with Microbial metabolism in diverse environments (p < 0.05)",
+        "C) Positively correlated with the peptides/nickel transport system (p < 0.01)",
+        "D) Negatively correlated with Biosynthesis of amino acids (p < 0.05)"
+      ],
+      "correct_answer": "B",
+      "explanation": "The study found for the first time that microbial metabolism in diverse environments (KEGG map01120) was negatively correlated with Phascolarctobacterium succinatutens (p < 0.05). This novel finding was noted as not having been previously reported. The genus Phascolarctobacterium is a stable community member in ASD children and is more abundant in ASD children than in neurotypical participants.",
+      "expected_documents": [
+        "PMC10874930_Gut_microbiome_and_serum_amino_acid_metabolome_alterations_in_ASD.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

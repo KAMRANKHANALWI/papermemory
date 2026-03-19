@@ -1,0 +1,344 @@
+{
+  "source_document": "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf",
+  "metadata": {
+    "authors": "Siddiqui R., Akbar N., Khan N.A.",
+    "journal": "Journal of Applied Microbiology",
+    "year": 2020,
+    "doi": "10.1111/jam.14789",
+    "topic": "Gut microbiome under space environment"
+  },
+  "test_cases": [
+    {
+      "id": "space_microbiome_001",
+      "query": "How many species of bacteria are typically harboured by a healthy adult human gut?",
+      "ground_truth_answer": "Healthy adult humans characteristically harbour more than 1000 species of bacteria in their gut, with Bacteroidetes and Firmicutes being the dominant phyla, and the overall microbiota is diverse.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "space_microbiome_002",
+      "query": "What is the definition of microgravity as used in the space environment context?",
+      "ground_truth_answer": "Microgravity denotes the setting of weightlessness or near-zero-g that is experienced in the space environment. The gravitational forces are not wholly equal to zero but are very minute, and the microgravity level typically fluctuates from approximately 10^-3 to 10^-6 g depending on the location within the spacecraft and other factors.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "space_microbiome_003",
+      "query": "What are the main environmental factors in space that are believed to alter the gut microbiota?",
+      "ground_truth_answer": "The three primary environmental factors in space believed to alter the gut microbiota are microgravity, radiation, and diet. These collectively pose a health risk to astronauts, particularly during long-term spaceflight missions.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "space_microbiome_004",
+      "query": "What happened to Serratia marcescens and Staphylococcus aureus counts in astronauts following space travel?",
+      "ground_truth_answer": "Following space travel, the microbial count of Serratia marcescens and Staphylococcus aureus (both pathogenic bacteria) was highly increased. Furthermore, S. aureus was transmitted among the astronauts, indicating that pathogens can be transferred from individual to individual in a spaceship environment.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "space_microbiome_005",
+      "query": "What diseases has the gut microbiome been linked to according to the paper?",
+      "ground_truth_answer": "The gut microbiome has been linked to a wide range of conditions. It provides protection against inflammatory bowel disease, systemic metabolic diseases (type 2 diabetes and obesity), atopic eczema, and allergic disease. It also offers protection against neurodevelopmental disorders like autism spectrum disorders (ASD) and schizophrenia, as well as having beneficial properties against cancer.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "space_microbiome_006",
+      "query": "How did E. coli growth change during spaceflight compared to ground controls?",
+      "ground_truth_answer": "E. coli exhibited higher growth during flight, where the lag phase was shortened followed by an extended log phase. As a result, the microbial cell density increased by 88% compared to ground controls.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "space_microbiome_007",
+      "query": "What specific changes in gut microbiome diversity were observed across ISS crew members during long-duration missions?",
+      "ground_truth_answer": "Analysis of ISS crew members revealed 17 gastrointestinal genera whose abundance significantly changed in space. Of these, 13 out of 17 genera belonged to the Phylum Firmicutes, mainly to the order Clostridiales, and nine genera were from the core microbiota of the GI. Notably, there was a greater than five-fold inflight reduction in Ruminococcus and Akkermansia, and approximately three-fold drop in Fusicatenibacter and Pseudobutyrivibrio. Most of these variations returned to pre-flight levels after astronauts returned to Earth, except for two genera of the phylum Firmicutes.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "space_microbiome_008",
+      "query": "Explain how commensal gut microbiota prevents pathogen colonisation in the human gut.",
+      "ground_truth_answer": "Commensal microbiota prevents pathogen colonisation through multiple mechanisms: (1) it outcompetes pathogenic microbes by utilizing all available nutrients and growth factors within the gut (for example, indigenous E. coli competes with enterohaemorrhagic E. coli for essential minerals, amino acids, and organic acids); (2) intestinal microbiota synthesizes short-chain fatty acids and bacteriocins that directly prevent pathogen growth; (3) commensal bacteria suppress pathogen growth through metabolites and can change virulence factor expression in pathogens by consuming residual oxygen; (4) gut microbiota upregulates the mucus layer to facilitate host barrier function.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "space_microbiome_009",
+      "query": "How does radiation exposure during space travel affect gut homeostasis?",
+      "ground_truth_answer": "Prolonged exposure to radiation during space travel may significantly induce alterations in gut homeostasis. Astronauts travelling beyond low Earth orbit are exposed to high linear energy transfer ionizing radiation from solar emissions, solar particle events, and galactic cosmic rays. Radiation doses significantly affect gastrointestinal microbial consortia, and the composition of these commensal microbial consortia in turn influences radiation-induced lethality. This dysbiosis is similar in nature to that seen in patients undergoing radiotherapy for gastrointestinal cancers.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "space_microbiome_010",
+      "query": "What is the microbiome-gut-brain axis and how does it relate to ASD in the context of this paper?",
+      "ground_truth_answer": "The gut microbiota is believed to control the activities of the central nervous system through endocrine, neural, and immune pathways. This indirect link between the gut microbiota and the CNS is known as the microbiome-gut-brain axis. Since gut microbiota alterations are well known to cause human diseases including ASD, and since the gut microbiota contributes to human metabolism and immune system maintenance, it is assumed that the gut microbiota plays a key role in ASD pathophysiology via this axis.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "space_microbiome_011",
+      "query": "How does stress during space travel alter the gut microbiome at the molecular level?",
+      "ground_truth_answer": "Exposure to social or space-related stressors changes both the number and composition of the gut microbiome and may alter its stability, potentially leading to gut bacterial translocation. Environmental stress increases the circulation of monocyte chemoattractant protein-1 (MCP-1) and interleukin-6 (IL-6), which are positively linked to changes in Coprococcus, Dorea and Pseudobutyrivibrio bacterial genera in the cecum. Studies using antibiotic cocktails confirmed that gut microflora is critical for the stress-induced increase in circulating cytokines, as antibiotic-treated mice failed to elevate IL-6 and MCP-1, demonstrating that gut microbiota mediates stressor-induced immunoenhancement.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "space_microbiome_012",
+      "query": "What specific dietary components constitute the typical astronaut diet and how do they relate to gut microbiota changes?",
+      "ground_truth_answer": "The typical astronaut diet consists of thermostabilized food items such as desserts, entrees, pouched soups, and puddings, as well as irradiated meat, rehydratable foods (cereals, spicy green beans), low-moisture foods (almonds, peanuts, dried fruit), and long-shelf-life bread products (dinner rolls, scones, waffles, tortillas). Consumption of a high-dietary-iron diet in combination with linear energy transfer radiation, which is typical for astronauts, can change faecal concentration, signifying alterations to the composition of the gut microbiota.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "space_microbiome_013",
+      "query": "How does microgravity alter microbial virulence, gene expression, and antibiotic resistance, and what are the mechanisms involved?",
+      "ground_truth_answer": "Microgravity induces several changes in microbial behaviour. In Salmonella Typhimurium, spaceflight caused widespread differential gene and protein regulation throughout the chromosome compared to ground cultures, and virtual microgravity significantly increased cell numbers in infected mice, virulence, and endurance within macrophages. In S. aureus, microgravity promoted biofilm formation, which paradoxically reduced growth rate and virulence degree. P. aeruginosa PAO1 drastically altered gene and protein expression under modelled microgravity, though changes in virulence remain unclear. For Candida albicans in space, budding configuration, cell aggregation, and gene expression changed with no improvement in virulence. Regarding antibiotic resistance, bacteria cultured from astronauts during flight showed more resistance (E. coli required ~4x higher antibiotic dose; S. aureus required ~2x higher dose) compared to ground controls, though some studies showed bacteria become more susceptible upon return to Earth.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "space_microbiome_014",
+      "query": "Compare the immune system effects of spaceflight with the role of gut microbiota in immune regulation, and explain how their interaction during space missions creates a compounded health risk.",
+      "ground_truth_answer": "Under normal conditions, commensal microbiota activates antigen-presenting cells and other immune cells, triggering cascades of interleukin and cytokine release that assist in pathogen clearance. However, in space, the immune system and immunological responses in astronauts are drastically suppressed due to microgravity and space stressors. This suppression allows latent viruses (Epstein-Barr virus, herpes simplex virus 1, varicella zoster virus) to reactivate. Simultaneously, spaceflight disrupts the gut microbiota (reducing beneficial Lactobacillus and Bifidobacterium while increasing pathogenic Clostridium, E. coli, Fusobacterium nucleatum, and P. aeruginosa), further weakening the body's first line of defence. The compounded effect is that both arms of protection — a functional immune system and a healthy microbiota — are simultaneously compromised, dramatically increasing susceptibility to infections, dysbiosis-driven inflammatory disease, and pathobiont invasion of the gut epithelium.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "space_microbiome_015",
+      "query": "How does the Western-style high-fat, high-sugar diet influence Bacteroidetes and Firmicutes ratios, and how does this mechanism relate to spaceflight-associated changes in these same phyla?",
+      "ground_truth_answer": "A high-sugar and high-fat Western-style diet augments the relative abundance of Firmicutes at the expense of Bacteroidetes in animal models. Since Firmicutes are needed to absorb fats, higher fat diets cause an increase in their abundance, leading to weight gain. Conversely, the relative proportion of Bacteroidetes is lower in obese people compared to lean people, and this proportion increases with weight loss. In spaceflight, a similar phylum-level shift occurs: low linear energy transfer radiation, iron diet, and spaceflight conditions increase Bacteroidetes and decrease Firmicutes. Interestingly, of the 17 gastrointestinal genera that significantly changed during ISS missions, 13 were Firmicutes. This highlights that both dietary and microgravity stressors can converge to reshape the Firmicutes/Bacteroidetes balance, though potentially through distinct mechanistic pathways.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "space_microbiome_016",
+      "query": "What are the metabolic consequences of spaceflight-associated gut microbiota disruption, and what future research directions does the paper propose to address this?",
+      "ground_truth_answer": "Spaceflight-associated gut dysbiosis contributes to altered lipid and glucose metabolism, bone loss, cardiovascular disorders, and muscular atrophy in astronauts. Mice and rats on spaceflight have shown higher levels of liver gluconeogenesis and liver glycogen content. Fluctuations in gut flora are closely related to metabolic syndromes including dyslipidaemia, insulin resistance, obesity, glucose intolerance, and fat accumulation in the liver. The paper proposes that future research should focus on determining the metabolites produced by gut bacteria under microgravity environments and comparing them to metabolites produced on Earth. Specifically, the effects of these molecules on obesity, ageing, senescence, and longevity need to be elucidated in vitro and in vivo, along with any potential neuroprotective effects. Understanding these microgravity-induced metabolite changes is described as pivotal for developing countermeasures such as prebiotics, probiotics, and postbiotics to protect astronaut health.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+  "mcq_questions": [
+    {
+      "id": "space_microbiome_mcq_001",
+      "question": "How many times greater is the number of bacteria in the human body compared to all other types of body cells?",
+      "options": [
+        "A) 2 times",
+        "B) 5 times",
+        "C) 10 times",
+        "D) 100 times"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper states that the human body harbours 10 times greater number of bacteria in comparison to all other types of body cells, and their collective genome (the microbiome) is much bigger than the human genome.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "space_microbiome_mcq_002",
+      "question": "Which of the following correctly describes what happened to gut microbiota diversity during spaceflight?",
+      "options": [
+        "A) Overall microbial count decreased and diversity increased",
+        "B) Overall microbial count increased and diversity decreased",
+        "C) Both microbial count and diversity increased",
+        "D) Both microbial count and diversity decreased"
+      ],
+      "correct_answer": "B",
+      "explanation": "In the gastrointestinal tract during spaceflight, the overall number of microbes increased while their diversity went down, as reported in sampling studies of space travellers pre-, during, and post-spaceflight.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "space_microbiome_mcq_003",
+      "question": "Which of the following beneficial bacteria decrease in astronauts' bodies during spaceflight?",
+      "options": [
+        "A) Salmonella and Fusobacterium nucleatum",
+        "B) Clostridium and P. aeruginosa",
+        "C) Lactobacillus and Bifidobacterium",
+        "D) Bacteroidetes and Firmicutes"
+      ],
+      "correct_answer": "C",
+      "explanation": "During spaceflight, beneficial bacteria — specifically Lactobacillus and Bifidobacterium species — are reduced in astronauts' bodies, while pathogenic/opportunistic microbes including Clostridium, E. coli, Fusobacterium nucleatum and P. aeruginosa accumulate and increase.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "space_microbiome_mcq_004",
+      "question": "In the NASA Twin Study, modifications in the gut microbiome were detected during the 1-year ISS mission. What was unique about this study design?",
+      "options": [
+        "A) It used germ-free mice as a control model",
+        "B) It compared identical twin astronauts, one in space and one on Earth simultaneously",
+        "C) It sampled astronauts only post-flight to detect lasting changes",
+        "D) It sequenced the entire ISS environmental microbiome as a baseline"
+      ],
+      "correct_answer": "B",
+      "explanation": "The NASA Twin Study used identical twin astronauts — one going on a 1-year ISS mission and the other remaining on Earth — to compare the impact of the spaceflight environment on one twin against the influence of the Earth environment on the other, allowing for a closely matched genetic control.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "space_microbiome_mcq_005",
+      "question": "Combined treatment of high dietary iron and radiation in rats had which of the following effects on short-chain fatty acids (SCFAs)?",
+      "options": [
+        "A) Increased total fecal SCFA concentration",
+        "B) Had no measurable effect on SCFA concentration",
+        "C) Reduced the concentration of total fecal SCFAs",
+        "D) Selectively increased butyrate while decreasing acetate"
+      ],
+      "correct_answer": "C",
+      "explanation": "Combined treatments of high dietary iron and radiation increased liver glutathione peroxidase, serum catalase, and colon myeloperoxidase, while reducing the concentration of total fecal short-chain fatty acids, indicating a disruption of microbial fermentation activity.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "space_microbiome_mcq_006",
+      "question": "How does microgravity affect the skin fungal microbiota of astronauts, specifically regarding the Malassezia genus?",
+      "options": [
+        "A) Overall fungal diversity increased and Malassezia proportion stayed the same",
+        "B) Malassezia proportion decreased while other fungal species expanded",
+        "C) Overall fungal diversity condensed but the ratio of Malassezia to all fungal colonization increased",
+        "D) Malassezia was completely eliminated from the skin microbiota during ISS stays"
+      ],
+      "correct_answer": "C",
+      "explanation": "A comprehensive study of skin fungal microbiota of astronauts during a half-year stay at the ISS found that other fungal diversity was condensed, but the ratio of Malassezia to all fungal colonization increased during the astronauts' stay. This is because Malassezia relies on sebum produced by sebaceous glands, which remains available on astronaut skin.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "space_microbiome_mcq_007",
+      "question": "What mechanism explains why antibiotic dosing requirements for E. coli and S. aureus increased during spaceflight?",
+      "options": [
+        "A) Microgravity-induced mutations in bacterial DNA repair genes caused rapid resistance evolution",
+        "B) Microgravity altered microbial gene expression and behaviour, including resistance patterns",
+        "C) Astronauts' impaired kidney function reduced antibiotic bioavailability in space",
+        "D) Increased bacterial biofilm formation in zero-gravity physically blocked antibiotic penetration"
+      ],
+      "correct_answer": "B",
+      "explanation": "Omics studies revealed that microgravity altered several microbial characteristics including gene expression, virulence, and behaviour. Bacteria cultured from astronauts during flight showed more resistance than bacteria isolated from the same individuals before and after spaceflight, requiring approximately 4x higher antibiotic dose for E. coli and 2x higher for S. aureus in space compared to ground controls.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "space_microbiome_mcq_008",
+      "question": "How do spaceflight-associated gut microbiota changes connect to the reactivation of latent viruses in astronauts?",
+      "options": [
+        "A) Gut dysbiosis directly activates viral replication in the gut epithelium",
+        "B) Disrupted microbiota reduces SCFA production, which normally inhibits viral transcription",
+        "C) Spaceflight-induced immune dysregulation (partly mediated by gut dysbiosis) allows latent viruses to reactivate",
+        "D) Pathogenic bacteria in the gut produce enzymes that cleave viral latency proteins"
+      ],
+      "correct_answer": "C",
+      "explanation": "The immune system during space travel is not properly functioning due to microgravity and other stressors. The gut microbiota plays a critical role in regulating the intestinal immune system, and its disruption in spaceflight may cause gastrointestinal and other diseases. This impaired immune system allows latent viruses such as Epstein-Barr virus, herpes simplex virus 1, and varicella zoster virus (normally kept deactivated by a healthy immune system) to reactivate and pose a health risk.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "space_microbiome_mcq_009",
+      "question": "What was the most significant limitation of the NASA Twin Study that the paper highlights as a reason for requiring additional research?",
+      "options": [
+        "A) The study lacked metagenomics data and relied only on 16S rRNA sequencing",
+        "B) The study did not include female astronauts, limiting generalizability",
+        "C) Only a single astronaut was analysed, requiring additional studies with more subjects on longer missions",
+        "D) The study was too short at 6 months and did not capture long-duration microbiome effects"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper explicitly states that the NASA Twin Study had limitations because only a single astronaut was analysed. It calls for additional studies with more subjects undergoing long-duration (≥12 months) missions to confirm the findings about microbiome changes during spaceflight.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "space_microbiome_mcq_010",
+      "question": "The paper proposes prebiotics, probiotics, and postbiotics as potential countermeasures for astronauts. Which of the following best describes the knowledge gap that must first be filled before these interventions can be properly designed?",
+      "options": [
+        "A) The complete 16S rRNA catalogue of the ISS environmental microbiome must first be established",
+        "B) The metabolites produced by gut bacteria under microgravity must be characterised and compared to those produced in normal Earth environments",
+        "C) Clinical trials in germ-free mice must confirm all spaceflight microbiome changes before human intervention studies begin",
+        "D) The genetic basis of microgravity-induced antibiotic resistance must be fully sequenced across all relevant species"
+      ],
+      "correct_answer": "B",
+      "explanation": "The paper explicitly states that once we understand changes in the metabolites of the microbiome as a result of microgravity environment, we will be able to propose measures to include prebiotics, probiotics, and postbiotics to counter pathological effects in astronauts. The critical knowledge gap is characterising how microgravity-induced microbiome shifts alter metabolite production relative to normal Earth conditions.",
+      "expected_documents": [
+        "J_of_Applied_Microbiology_-_2020_-_Siddiqui_-_Gut_microbiome_and_human_health_under_the_space_environment.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

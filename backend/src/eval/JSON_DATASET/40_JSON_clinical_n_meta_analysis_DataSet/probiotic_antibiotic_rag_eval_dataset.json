@@ -1,0 +1,295 @@
+{
+  "source_document": "PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf",
+  "paper_title": "Probiotic supplementation during antibiotic treatment is unjustified in maintaining the gut microbiome diversity: a systematic review and meta-analysis",
+  "authors": "Éliás et al., BMC Medicine (2023) 21:262",
+  "test_cases": [
+    {
+      "id": "prob_anti_001",
+      "query": "What is dysbiosis and what harmful bacteria can dominate during antibiotic treatment?",
+      "ground_truth_answer": "Dysbiosis is the microbial imbalance caused by antibiotic treatment, which affects gut bacterial microbiota quantitatively and qualitatively, causing a decrease or extinction of certain species leading to a low-diversity microbiome. During antibiotic treatment, potentially harmful bacteria such as Clostridium perfringens, Staphylococcus aureus, and Clostridioides difficile can become dominant in this dysbiotic state.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "prob_anti_002",
+      "query": "How long does gut microbiota recovery typically take after a single antibiotic exposure in healthy adults?",
+      "ground_truth_answer": "Previous research has shown that the gut microbiota recovers within about 2 weeks after a single antibiotic exposure in healthy adults. However, repeated antibiotic exposures can significantly prolong the recovery time, as the ecosystem is particularly disrupted when there is insufficient time for recovery after the initial impairment.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "prob_anti_003",
+      "query": "How many articles were identified in the systematic search and how many were ultimately included in the systematic review and meta-analysis?",
+      "ground_truth_answer": "The systematic search identified 19,596 records initially. After duplicate removal, 11,769 articles were screened. Of these, 15 articles were eligible for the qualitative systematic review (877 patients total), while only 5 articles were suitable for the quantitative meta-analysis of the Shannon diversity index (335 patients), and 3 articles for the Chao1 and observed OTUs indices (236 patients).",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "prob_anti_004",
+      "query": "What were the three diversity indices used in the meta-analysis and what were their pooled mean differences?",
+      "ground_truth_answer": "The three alpha diversity indices used in the meta-analysis were: Shannon index (MD = 0.23, 95% CI: -0.06 to 0.51), Chao1 index (MD = 11.59, 95% CI: -18.42 to 41.60), and observed OTUs or Operational Taxonomic Units (MD = 17.15, 95% CI: -9.43 to 43.73). None of these showed a statistically significant difference between the probiotic-supplemented and antibiotic-only groups.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "prob_anti_005",
+      "query": "What was the most common indication for antibiotic therapy across the included studies?",
+      "ground_truth_answer": "The most common indication for antibiotic therapy across the included studies was Helicobacter pylori eradication, which was the indication in eight of the fifteen eligible studies. Other indications included Clostridioides difficile infection (one study), various infections outside the gastrointestinal tract (two studies), and healthy volunteers with no medical indication for antibiotic therapy (four studies).",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "prob_anti_006",
+      "query": "What is the difference between α-diversity and β-diversity indices and how are each used in microbiome research?",
+      "ground_truth_answer": "Alpha (α)-diversity indices reflect the diversity of a single sample, measuring species richness (number of species) and/or distribution (evenness of species). Each alpha diversity index is calculated differently depending on how rare species presence or absence is assessed. Beta (β)-diversity indices are used to compare different samples and communities, considering both the overall abundance per sample and the abundance of each taxon. In simple terms, α-diversity represents within-sample diversity, whereas β-diversity describes similarity or dissimilarity between samples.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "prob_anti_007",
+      "query": "How did probiotic supplementation affect phylum-level changes in gut microbiota composition during antibiotic therapy?",
+      "ground_truth_answer": "At the phylum level, a decreasing trend in the proportion of Firmicutes and Bacteroidetes with a higher relative abundance of Proteobacteria was observed after antibiotic therapy in both probiotic-supplemented and control groups, regardless of probiotic supplementation. There was also a reduction in the Bacteroidetes:Firmicutes (B:F) ratio at the cessation of treatments in both groups. Importantly, these changes in phyla abundances disappeared by day 56 in studies by Chen et al. and Tang et al., suggesting the changes were transient.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "prob_anti_008",
+      "query": "What effect did probiotic supplementation appear to have on Bifidobacterium levels during antibiotic treatment?",
+      "ground_truth_answer": "Probiotic supplementation appeared to help maintain the level of the Bifidobacterium genus during antibiotic therapy across multiple studies. According to Plummer et al., Bifidobacterium decreased in both groups during antibiotic therapy but tended to increase after therapy cessation up to day 35 of follow-up. The results from Zhong et al. were especially notable as they showed probiotic supplementation was able to maintain Bifidobacteria levels in newborns during antibiotic therapy. This is clinically significant since Bifidobacteria are among the first colonizers of the human gut and play a crucial role during early life.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "prob_anti_009",
+      "query": "Why is enrichment of the Enterobacteriaceae family during antibiotic treatment considered clinically dangerous?",
+      "ground_truth_answer": "The enrichment of the Enterobacteriaceae family is considered dangerous because it is commonly associated with specific antibiotic resistance genes for aminoglycosides, beta-lactams, and carbapenems, making it a potentially dangerous source of antibiotic resistance gene transfer. Although members of this family are considered normal intestinal residents, some may become opportunistic pathogens. They also have higher abundance in inflammatory bowel disease patients. However, changes in Enterobacteriaceae induced by antibiotic treatment appear to be transient, with a tendency for abundance normalization after cessation of treatment.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "prob_anti_010",
+      "query": "What is the clinical significance of reduced Bacteroides abundance during antibiotic treatment?",
+      "ground_truth_answer": "Reduced abundance of several species in Bacteroides is associated with increased risk of Clostridioides difficile infection. The reduction of the Bacteroides genus was prevalent in the probiotic-supplemented group in several included studies, though the background mechanism for this remains unclear. However, regrowth of these bacteria during the follow-up period suggests that the changes are not permanent, as confirmed by studies reporting a re-growing tendency during 3–8 weeks of follow-up.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "prob_anti_011",
+      "query": "What are the health-relevant roles of Blautia and Roseburia that make their protection by probiotics potentially meaningful?",
+      "ground_truth_answer": "Blautia has been recently associated with the alleviation of inflammatory and metabolic diseases by regulating host health, and it has also been characterized by antibacterial activity. Gut Roseburia species produce short-chain fatty acids (SCFAs), modulate colonic motility, support immunity, and have anti-inflammatory effects. Some included studies suggested that probiotic supplementation during antibiotic therapy has a protective effect on both Blautia and Roseburia species levels. However, the tendency for Blautia levels to normalize spontaneously after antibiotic discontinuation casts doubt on the clinical relevance of this protective effect.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "prob_anti_012",
+      "query": "What methodological steps were taken to ensure study quality and reduce bias in this systematic review?",
+      "ground_truth_answer": "Several quality control measures were implemented: (1) The study protocol was pre-registered on PROSPERO (CRD42021282983) before the study began; (2) PRISMA 2020 Statement guidelines were followed for reporting; (3) Two independent investigators screened articles at each step, with Cohen's kappa calculated (0.86 for title/abstract, 0.95 for full-text) to quantify agreement; (4) Only randomized controlled trials (RCTs) were included; (5) Risk of bias was assessed using the revised Cochrane RoB2 tool by two independent authors; (6) The GRADE tool was applied to assess quality of evidence; (7) A random-effects model was used with maximum-likelihood estimator; and (8) Sensitivity analyses were performed for baseline values and before-after change values.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "hard",
+      "category": "methodology"
+    },
+    {
+      "id": "prob_anti_013",
+      "query": "How did the findings of this meta-analysis relate to current clinical guidelines on probiotic use from AGA and WGO?",
+      "ground_truth_answer": "The meta-analysis findings aligned with and extended the current AGA and WGO guidelines in nuanced ways. The AGA guideline highlights that patients at low risk of antibiotic-associated diarrhea would reasonably select no probiotics, thus avoiding potential harm and additional costs. The study's results support this, showing no significant effect of probiotics on gut microbiome diversity during antibiotic therapy. However, the authors noted that strain-specific probiotic supplementation may still be considered for vulnerable groups to prevent Clostridioides difficile infection or antibiotic-associated diarrhea, as advised by current guidelines. The key gap identified is that these clinical benefits were not connected to gut microbial composition changes, raising questions about the underlying mechanism.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "prob_anti_014",
+      "query": "What are the key limitations of this meta-analysis and how do they affect interpretation of the results?",
+      "ground_truth_answer": "The key limitations include: (1) Small number of eligible articles and low sample sizes, meaning the meta-analysis results should be handled with caution; (2) High variability across studies in antibiotic type, dose, and duration, as well as probiotic strain, dose, and duration; (3) Different health conditions across populations (diseased and healthy individuals); (4) Age variation ranging from neonates to adults; (5) Inability to perform quantitative synthesis of much of the data due to insufficient reporting and high variability in methods; (6) Use of OTU data rather than more accurate ASV (amplicon sequence variant) analysis due to insufficient studies meeting criteria; (7) Could not assess publication bias or perform leave-one-out analyses due to fewer than 10 studies; (8) GRADE assessment rated the quality of evidence for the meta-analyses as low.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "hard",
+      "category": "methodology"
+    },
+    {
+      "id": "prob_anti_015",
+      "query": "Compare the behavior of Escherichia and Enterococcus genera across probiotic and control groups during and after antibiotic treatment, and what does this reveal about probiotic efficacy?",
+      "ground_truth_answer": "For Escherichia, results were contradictory: Cárdenas et al. found higher proportions of Escherichia spp. in the probiotic group, while Kabbani et al. and Oh et al. reported that probiotic supplementation reduced Escherichia overgrowth compared to the control group. For Enterococcus, Tang et al. found increased abundance at weeks 2 and 4 of follow-up only in the intervention group when probiotics were continued after antibiotic cessation, while Wang et al. reported this increasing tendency in both groups. Crucially, both Escherichia and Enterococcus levels tended to normalize after antibiotic cessation regardless of probiotic supplementation. Since both genera can become pathogens in dysbiotic environments and carry antibiotic resistance, the fact that their levels normalize spontaneously in both groups calls into question the efficacy of probiotics in preventing this specific form of antibiotic-induced dysbiosis.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "prob_anti_mcq_001",
+      "question": "What diseases has deviation from normal gut microbiome diversity (dysbiosis) been linked to?",
+      "options": [
+        "A) Obesity, malnutrition, inflammatory bowel disease, neurological dysfunctions, and cancer",
+        "B) Type 1 diabetes, hypertension, asthma, and arthritis",
+        "C) Alzheimer's disease, Parkinson's disease, multiple sclerosis, and epilepsy",
+        "D) Celiac disease, Crohn's disease, ulcerative colitis, and irritable bowel syndrome only"
+      ],
+      "correct_answer": "A",
+      "explanation": "According to the paper, the deviation from the normal microbiome (dysbiosis) has been linked to obesity, malnutrition, inflammatory bowel disease, neurological dysfunctions, and cancer.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "prob_anti_mcq_002",
+      "question": "What is the definition of probiotics according to the paper?",
+      "options": [
+        "A) Chemical compounds that inhibit the growth of pathogenic bacteria",
+        "B) Preparations containing live microorganisms, typically composed of microbes also found in natural gut flora, which may contain bacteria, yeasts, or a mixture",
+        "C) Dietary fibers that selectively stimulate the growth of beneficial microorganisms",
+        "D) Antibodies derived from colostrum that neutralize pathogenic bacteria"
+      ],
+      "correct_answer": "B",
+      "explanation": "The paper defines probiotics as preparations containing live microorganisms, typically composed of microbes that are also found in the natural gut flora. Probiotics may contain bacteria, yeasts, or a mixture of them.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "prob_anti_mcq_003",
+      "question": "What were the Cohen's kappa coefficients at each selection step of the systematic review, indicating inter-rater agreement?",
+      "options": [
+        "A) 0.72 for title/abstract and 0.81 for full-text",
+        "B) 0.86 for title/abstract and 0.95 for full-text",
+        "C) 0.91 for title/abstract and 0.99 for full-text",
+        "D) 0.65 for title/abstract and 0.78 for full-text"
+      ],
+      "correct_answer": "B",
+      "explanation": "Cohen's kappa index for the title and abstract selection was 0.86, whereas it was 0.95 for the full-text selection, indicating very high inter-rater agreement at both stages of screening.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "prob_anti_mcq_004",
+      "question": "What was the mean difference in Shannon diversity index between probiotic-supplemented and antibiotic-only groups, and was it statistically significant?",
+      "options": [
+        "A) MD = 0.52 (95% CI: 0.21–0.83); statistically significant in favor of probiotics",
+        "B) MD = -0.14 (95% CI: -0.38–0.10); not statistically significant",
+        "C) MD = 0.23 (95% CI: -0.06–0.51); not statistically significant",
+        "D) MD = 0.07 (95% CI: 0.01–0.13); statistically significant in favor of probiotics"
+      ],
+      "correct_answer": "C",
+      "explanation": "The mean difference in Shannon diversity index between the intervention (antibiotics + probiotics) and control (antibiotics only) groups was 0.23 with a 95% CI of -0.06 to 0.51, which crosses zero and therefore represents a non-significant result.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "prob_anti_mcq_005",
+      "question": "Which microbiome analysis technique was most frequently used across the included studies?",
+      "options": [
+        "A) Standard microbiological culturing techniques",
+        "B) Shotgun metagenomics sequencing",
+        "C) 16S rRNA gene sequencing",
+        "D) qPCR and flow cytometry"
+      ],
+      "correct_answer": "C",
+      "explanation": "Nine of the fifteen included studies used 16S rRNA sequencing technique. Three used standard microbiological culturing techniques, one combined DNA-based TRFLP analysis with standard culturing, and two used other PCR-based techniques.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "prob_anti_mcq_006",
+      "question": "Why was the neonate study by Zhong et al. excluded from the Shannon diversity index meta-analysis despite reporting Shannon index data?",
+      "options": [
+        "A) The study did not report numerical data and only provided qualitative descriptions",
+        "B) The study population being neonates would have introduced indirectness into the meta-analysis results",
+        "C) The Shannon diversity values were considered statistical outliers that distorted the pooled estimate",
+        "D) The study used a different formula for calculating the Shannon index that was incompatible with other studies"
+      ],
+      "correct_answer": "B",
+      "explanation": "The article by Zhong et al. that reported on the neonate population exclusively was not included in the meta-analysis due to the impact on the indirectness of the results, as per Cochrane recommendations. Including a neonatal population alongside adult populations would compromise the directness of evidence.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "medium",
+      "category": "methodology"
+    },
+    {
+      "id": "prob_anti_mcq_007",
+      "question": "According to the sensitivity analysis for 'before-after' change values in Shannon diversity, what was the mean difference?",
+      "options": [
+        "A) MD = 0.23 (95% CI: -0.06–0.51); no significant change from the primary analysis",
+        "B) MD = 0.07 (95% CI: -0.19–0.32); still not statistically significant",
+        "C) MD = -0.15 (95% CI: -0.42–0.12); still not statistically significant",
+        "D) MD = 0.34 (95% CI: 0.08–0.60); became statistically significant"
+      ],
+      "correct_answer": "B",
+      "explanation": "The additional sensitivity analysis for the 'before-after' change values of Shannon diversity index showed a mean difference of 0.07 (95% CI: -0.19 to 0.32), confirming no significant difference between the experimental and control groups in the change values.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "medium",
+      "category": "methodology"
+    },
+    {
+      "id": "prob_anti_mcq_008",
+      "question": "What trend was observed for phylum-level microbiome changes after antibiotic treatment across both probiotic and control groups?",
+      "options": [
+        "A) An increase in Firmicutes and Bacteroidetes with decreased Proteobacteria",
+        "B) A decrease in Firmicutes and Bacteroidetes with higher relative abundance of Proteobacteria, and a reduced B:F ratio",
+        "C) Stable Firmicutes but markedly decreased Bacteroidetes and Actinobacteria",
+        "D) Increased Proteobacteria only in the control group, with no change in the probiotic group"
+      ],
+      "correct_answer": "B",
+      "explanation": "At phylum level, a decreasing trend in Firmicutes and Bacteroidetes with a higher relative abundance of Proteobacteria was observed after antibiotic therapy in both groups regardless of probiotic supplementation. There was also a reduction in the Bacteroidetes:Firmicutes ratio at the cessation of treatments.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "prob_anti_mcq_009",
+      "question": "When considering the temporal resolution of microbiome recovery, what did most studies find regarding both intervention and control groups after antibiotic treatment cessation?",
+      "options": [
+        "A) The probiotic group fully recovered within 1 week while the control group required 4–6 weeks",
+        "B) Neither group recovered within the observation window, showing permanent dysbiosis",
+        "C) Both groups showed a tendency to restore baseline microbiome levels after 3–8 weeks, regardless of probiotic supplementation",
+        "D) The control group recovered faster than the probiotic group due to competitive exclusion by probiotic strains"
+      ],
+      "correct_answer": "C",
+      "explanation": "Changes in taxonomic composition tended to be similar in both intervention and control groups, and both groups showed a potential tendency to restore baseline levels after 3–8 weeks, regardless of probiotic supplementation. This spontaneous recovery in both groups challenges the justification for routine probiotic use.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "prob_anti_mcq_010",
+      "question": "Why do the authors argue that OTUs (Operational Taxonomic Units), while used in this meta-analysis, are considered less accurate than ASVs (Amplicon Sequence Variants)?",
+      "options": [
+        "A) OTUs require more computational resources and time to calculate than ASVs",
+        "B) ASVs do not rely on arbitrary similarity thresholds and can identify individual variants within a taxon, whereas OTUs do",
+        "C) OTUs can only identify bacteria at the genus level while ASVs provide species-level resolution",
+        "D) ASVs are based on shotgun metagenomics while OTUs are based on 16S rRNA, making ASVs more comprehensive"
+      ],
+      "correct_answer": "B",
+      "explanation": "ASVs (amplicon sequence variants) are generally considered a more accurate method to represent groups of DNA sequences than OTUs because they do not rely on arbitrary similarity thresholds and can identify individual variants within a taxon. The meta-analysis used OTU data due to the lack of available studies meeting inclusion criteria that used ASV analysis.",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "hard",
+      "category": "methodology"
+    },
+    {
+      "id": "prob_anti_mcq_011",
+      "question": "In the context of the Kabbani et al. Chao1 index data and the sensitivity analysis performed, what was the mean difference in the 'before-after' change values for Chao1?",
+      "options": [
+        "A) MD = 21.57 (95% CI: 3.47–39.68); statistically significant difference at baseline",
+        "B) MD = 3.77 (95% CI: -10.17–17.71); no significant difference in change values",
+        "C) MD = 11.59 (95% CI: -18.42–41.60); same as the primary analysis",
+        "D) MD = -5.32 (95% CI: -19.44–8.80); favoring the control group"
+      ],
+      "correct_answer": "B",
+      "explanation": "While there was a large difference in baseline Chao1 values between intervention and control groups in the Kakiuchi et al. study (MD = 21.57, 3.47–39.68), the additional sensitivity analysis for before-after change values revealed no significant difference between groups (MD = 3.77, 95% CI: -10.17–17.71).",
+      "expected_documents": ["PMC10355080_Probiotic_supplementation_during_antibiotic_treatment.pdf"],
+      "difficulty": "hard",
+      "category": "methodology"
+    }
+  ]
+}

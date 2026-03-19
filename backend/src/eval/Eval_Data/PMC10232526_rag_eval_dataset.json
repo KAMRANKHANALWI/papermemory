@@ -1,0 +1,284 @@
+{
+  "source_document": "PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf",
+  "paper_title": "Host-Diet-Gut Microbiome Interactions Influence Human Energy Balance: a Randomized Clinical Trial",
+  "authors": "Karen D. Corbin, Elvis A. Carnero, Blake Dirks, Daria Igudesman, et al.",
+  "institutions": ["AdventHealth Translational Research Institute, Orlando, Florida", "Biodesign Center for Health through Microbiomes, Arizona State University, Tempe, AZ"],
+
+  "test_cases": [
+    {
+      "id": "host_diet_001",
+      "query": "What was the fiber content difference between the Western Diet and the Microbiome Enhancer Diet in this trial?",
+      "ground_truth_answer": "The Western Diet contained 6.4 ± 0.02 g of fiber per 1000 kcal, while the Microbiome Enhancer Diet contained 26.0 ± 0.06 g per 1000 kcal. The target ranges were 6–10 g/1000 kcal for the Western Diet and 23–30 g/1000 kcal for the Microbiome Enhancer Diet.",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "host_diet_002",
+      "query": "What was the resistant starch content in the Western Diet versus the Microbiome Enhancer Diet?",
+      "ground_truth_answer": "The Western Diet contained 1.2 ± 0 g of resistant starch per 1000 kcal (target: <2 g/1000 kcal), while the Microbiome Enhancer Diet contained 10.3 ± 0 g per 1000 kcal (target: >8 g/1000 kcal), representing more than an 8-fold difference.",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "host_diet_003",
+      "query": "How many participants were ultimately analyzed in each arm of the crossover trial?",
+      "ground_truth_answer": "After a 14-day washout period and two study periods, 8 participants were analyzed in one arm and 9 participants in the other arm. A total of 26 participants were randomized, but several discontinued due to nonadherence, concomitant medication use, medical reasons, or other causes.",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "host_diet_004",
+      "query": "What were the macronutrient targets for energy intake across the two diets?",
+      "ground_truth_answer": "Both diets targeted equivalent caloric intake (approximately 17,000 kcal over 8 inpatient days). Carbohydrates were targeted at 47–52% of energy, fat at 32–37%, and protein at 15–18%. The actual macronutrient distributions achieved were similar between diets, with the key difference being fiber and resistant starch content.",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "host_diet_005",
+      "query": "What dietary adherence rates were achieved by participants in the Western Diet and Microbiome Enhancer Diet arms?",
+      "ground_truth_answer": "Dietary adherence was very high in both arms: 99.9 ± 0.10% for the Western Diet and 99.6 ± 0.19% for the Microbiome Enhancer Diet, with no statistically significant difference between the two diets (P = 0.27).",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+
+    {
+      "id": "host_diet_006",
+      "query": "What happened to fecal weight production when participants consumed the Microbiome Enhancer Diet compared to the Western Diet?",
+      "ground_truth_answer": "The Microbiome Enhancer Diet significantly increased daily fecal weight production compared to the Western Diet. Participants on the MBD produced approximately 204.3 ± 26.1 g/day of feces compared to 98.8 ± 11.2 g/day on the WD, representing roughly a 2-fold increase (P < 0.0001, P = 1.24 × 10⁻⁵).",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "host_diet_007",
+      "query": "Did the two diets result in significantly different alpha-diversity (species richness and evenness) in the gut microbiome?",
+      "ground_truth_answer": "No, alpha-diversity was not significantly different between the Western Diet and the Microbiome Enhancer Diet. Species richness (P = 0.38) and evenness index (P = 0.93) were both statistically similar across diets, suggesting that short-term dietary changes affected microbial community composition but not overall diversity metrics.",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "host_diet_008",
+      "query": "Which microbial species were significantly more abundant in participants on the Microbiome Enhancer Diet?",
+      "ground_truth_answer": "Species significantly enriched in the MBD group included fiber-degrading and butyrate-producing taxa such as Oscillibacter sp., Eubacterium eligens, Prevotella copri, Prevotella sp. CAG_279, Lachnospira pectinoschiza, Roseburia hominis, Roseburia faecis, Eubacterium rectale, Ruminococcus bromii, Akkermansia muciniphila, Faecalibacterium prausnitzii, Clostridium bolteae, Bacteroides stercoris, Bacteroides caccae, and Parabacteroides distasonis.",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "host_diet_009",
+      "query": "Which microbial species were significantly enriched in the Western Diet group?",
+      "ground_truth_answer": "Species significantly enriched in the Western Diet group included Bifidobacterium bifidum, Bifidobacterium longum, Bifidobacterium pseudocatenulatum, Collinsella aerofaciens, Collinsella stercoris, Adlercreutzia equolifaciens, Anaerostipes hadrus, Asaccharobacter celatus, Coprococcus comes, Dorea longicatena, Dorea formicigenerans, Slackia isoflavoniconvertens, Ruminococcus torques, Actinomyces species, and multiple Blautia and Clostridium species.",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "host_diet_010",
+      "query": "Did the two diets significantly affect gastric emptying rate or subjective appetite ratings?",
+      "ground_truth_answer": "No significant differences were found between the Western Diet and Microbiome Enhancer Diet for gastric emptying (P = 0.85 by acetaminophen appearance test) or for subjective appetite measures including fullness (P = 0.73, 0.11, 0.80 across meals), hunger (P = 0.44, 0.17, 0.22), prospective food consumption (P = 0.18, 0.17, 0.38), satiety (P = 0.35, 0.56, 0.52), and composite appetite score (P = 0.92, 0.17, 0.60).",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "host_diet_011",
+      "query": "What was the statistical method used to correct for multiple comparisons in the differential abundance analysis at the phylum and family levels?",
+      "ground_truth_answer": "The Benjamini-Hochberg method was used to correct P-values to Q-values (false discovery rate correction). At the phylum level, Firmicutes showed a nominally significant P-value of 0.041 but a corrected Q-value of 0.744, and at the family level, Oscillospiraceae (P = 0.0045, Q = 0.402) and Propionibacteriaceae (P = 0.0077, Q = 0.402) had the lowest P-values but none survived FDR correction at standard thresholds.",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+
+    {
+      "id": "host_diet_012",
+      "query": "How was the whole-room calorimeter schedule structured, and what were the physical activity components included in the metabolic measurement days?",
+      "ground_truth_answer": "Participants spent a full day in the calorimeter beginning at 8:00 AM with 1 hour of quiet rest, followed by a standardized breakfast at 9:00 AM. Two 30-minute treadmill walking sessions at 3 mph and 1% incline were scheduled (12:45–1:15 PM and 4:15–4:45 PM), with meals at fixed times. Free time was allowed from 8–10 PM, and participants collected urine overnight. The schedule controlled for activity, feeding, and sleep to enable precise 24-hour energy expenditure measurement.",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "host_diet_013",
+      "query": "What was the relationship between microbial species abundance and host metabolizable energy, and how was this analyzed?",
+      "ground_truth_answer": "MaAsLin2 (multivariate association with linear models) was used to examine associations between host metabolizable energy (ME) and species relative abundances. Multiple species were associated with host ME at Q < 0.25, predominantly enriched under MBD conditions, including Clostridium bolteae (Q = 0.02), Coprococcus eutactus (Q = 0.03), Streptococcus australis (Q = 0.04), Erysipelatoclostridium ramosum (Q = 0.03), and Bifidobacterium pseudocatenulatum (Q = 0.09). Bland-Altman plots compared measured vs. modeled ME using both fixed (48h) and participant-specific colonic transit times.",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "host_diet_014",
+      "query": "How did the beta-diversity of the gut microbiome differ between the two dietary interventions, and what statistical approach was used?",
+      "ground_truth_answer": "Beta-diversity was significantly different between the Western Diet and Microbiome Enhancer Diet. At the species level, Jaccard Similarity assessed via a PERMANOVA test showed a statistically significant effect of diet (P = 0.021). The Canonical Analysis of Principal Coordinates (CAP) plot illustrated clear separation between diet groups, with the first two axes explaining 5.1% (CAP1) and 3.5% (CAP2) of the variance. This indicates that despite similar alpha-diversity, the overall community composition was distinct between diets.",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "host_diet_015",
+      "query": "What was the study design, and how were participants randomized and managed across the two dietary periods including the washout?",
+      "ground_truth_answer": "This was an inpatient randomized crossover controlled feeding study. Of 45 individuals assessed, 26 were randomized into two sequences: Sequence 1 (n=14, WD first) and Sequence 2 (n=12, MBD first). Each period lasted 8 inpatient days with all meals consumed on the metabolic ward. A 14-day washout separated the two periods. After dropouts due to nonadherence (n=2), concomitant medications (n=2), medical (n=2), and other reasons (n=3), 8 and 9 participants completed analysis in Periods B and A respectively. Energy balance was maintained at equivalence across both diets (~17,000 kcal/8 days).",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "host_diet_mcq_001",
+      "question": "What was the mean daily fecal weight production on the Microbiome Enhancer Diet compared to the Western Diet?",
+      "options": [
+        "A) ~100 g/day vs ~50 g/day",
+        "B) ~204 g/day vs ~99 g/day",
+        "C) ~150 g/day vs ~120 g/day",
+        "D) ~300 g/day vs ~100 g/day"
+      ],
+      "correct_answer": "B",
+      "explanation": "Supplementary Figure 4a reports fecal weight as 204.3 ± 26.1 g/day for the MBD and 98.8 ± 11.2 g/day for the WD (P = 1.24 × 10⁻⁵), indicating the MBD roughly doubled fecal output.",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "host_diet_mcq_002",
+      "question": "What was the dietary adherence level for participants on the Western Diet?",
+      "options": [
+        "A) 85.2 ± 1.5%",
+        "B) 92.4 ± 0.5%",
+        "C) 99.9 ± 0.10%",
+        "D) 97.3 ± 0.8%"
+      ],
+      "correct_answer": "C",
+      "explanation": "Supplementary Figure 3b shows dietary adherence for the Western Diet was 99.9 ± 0.10%, essentially full adherence, with no significant difference from the MBD (99.6 ± 0.19%, P = 0.27).",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "host_diet_mcq_003",
+      "question": "How many total participants were assessed for eligibility in this randomized controlled trial?",
+      "options": [
+        "A) 26",
+        "B) 30",
+        "C) 45",
+        "D) 17"
+      ],
+      "correct_answer": "C",
+      "explanation": "The CONSORT diagram (Supplementary Figure 2) shows that 45 individuals were assessed for eligibility. Of these, 19 were excluded (15 not meeting inclusion criteria, 3 declined, 1 other reason), resulting in 26 randomized participants.",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "host_diet_mcq_004",
+      "question": "What P-value was obtained for the beta-diversity (Jaccard Similarity) comparison between the Western Diet and Microbiome Enhancer Diet?",
+      "options": [
+        "A) P = 0.38",
+        "B) P = 0.001",
+        "C) P = 0.021",
+        "D) P = 0.93"
+      ],
+      "correct_answer": "C",
+      "explanation": "Supplementary Figure 4d shows that PERMANOVA testing of Jaccard Similarity (beta-diversity at species level) yielded P = 0.021, indicating a statistically significant effect of diet on overall community composition despite no significant alpha-diversity differences.",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "host_diet_mcq_005",
+      "question": "Which of the following species was enriched in the Microbiome Enhancer Diet group with the lowest Q-value (strongest statistical association)?",
+      "options": [
+        "A) Ruminococcus bromii",
+        "B) Clostridium bolteae",
+        "C) Akkermansia muciniphila",
+        "D) Oscillibacter sp. 57_20"
+      ],
+      "correct_answer": "D",
+      "explanation": "According to Supplementary Figure 5b, Oscillibacter sp. 57_20 had a Q-value of 2.27 × 10⁻⁷ for the MBD group, which is the lowest Q-value among MBD-enriched species. Clostridium bolteae had Q = 5.00 × 10⁻¹⁰ but was also MBD-enriched; however, its species label makes it the strongest with Q = 5.00 × 10⁻¹⁰. Eubacterium eligens had Q = 7.44 × 10⁻⁷.",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "host_diet_mcq_006",
+      "question": "What statistical model was primarily used to assess differential species abundance between the two diets?",
+      "options": [
+        "A) Mann-Whitney U test",
+        "B) Paired t-test with Bonferroni correction",
+        "C) Compound Poisson linear mixed model with Benjamini-Hochberg FDR correction",
+        "D) ANOVA with Tukey post-hoc correction"
+      ],
+      "correct_answer": "C",
+      "explanation": "Supplementary Table 3 notes that 'Phylum and family level differential abundance by diet tested by Compound Poisson linear mixed model. P-values were corrected to produce Q-values using the Benjamini-Hochberg method.' The same approach was applied at the species level.",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "host_diet_mcq_007",
+      "question": "What was the treadmill protocol used during the whole-room calorimetry measurement days?",
+      "options": [
+        "A) One 60-minute session at 5 mph and 2% incline",
+        "B) Two 30-minute sessions at 3 mph and 1% incline",
+        "C) One 45-minute session at 4 mph and 0% incline",
+        "D) Three 20-minute sessions at 2.5 mph and 1% incline"
+      ],
+      "correct_answer": "B",
+      "explanation": "Supplementary Table 2 specifies that participants walked on the treadmill for 30 minutes at 3 mph and 1% incline twice per measurement day: once from 12:45–1:15 PM and once from 4:15–4:45 PM, totaling 60 minutes of standardized exercise.",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "host_diet_mcq_008",
+      "question": "Which Bifidobacterium species were significantly enriched in the Western Diet group according to species-level differential abundance analysis?",
+      "options": [
+        "A) Bifidobacterium animalis and B. adolescentis only",
+        "B) Bifidobacterium breve and B. infantis only",
+        "C) Bifidobacterium bifidum, B. longum, and B. pseudocatenulatum",
+        "D) No Bifidobacterium species were significantly different between diets"
+      ],
+      "correct_answer": "C",
+      "explanation": "Supplementary Figure 5b lists Bifidobacterium bifidum (Q = 0.018), Bifidobacterium longum (Q = 0.0003), and Bifidobacterium pseudocatenulatum (Q = 5.60 × 10⁻⁵) as significantly enriched in the Western Diet group, a counterintuitive finding that highlights the complexity of diet–microbiome interactions.",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "host_diet_mcq_009",
+      "question": "What was the estimated energy balance (intake minus expenditure) during the inpatient feeding trial across both diets, and was it significantly different between diets?",
+      "options": [
+        "A) WD: +400 kcal/day, MBD: +200 kcal/day, significant difference (P < 0.05)",
+        "B) WD: +4.1 ± 5.1 kcal/day, MBD: +5.4 ± 2.8 kcal/day, no significant difference (P = 0.80)",
+        "C) WD: −150 kcal/day, MBD: +100 kcal/day, significant difference (P = 0.03)",
+        "D) WD: +100 kcal/day, MBD: +100 kcal/day, no significant difference (P = 0.99)"
+      ],
+      "correct_answer": "B",
+      "explanation": "Supplementary Figure 3a shows energy balance of 4.1 ± 5.1 kcal/day on the WD and 5.4 ± 2.8 kcal/day on the MBD, with P = 0.80, confirming successful equivalence in energy intake and expenditure across both dietary conditions.",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "host_diet_mcq_010",
+      "question": "In the microbial contributions to host energy balance analysis (Supplementary Figure 7), how were Bland-Altman plots used, and what two modeling approaches were compared?",
+      "options": [
+        "A) Comparing dietary recall vs. weighed food intake estimates",
+        "B) Comparing measured host metabolizable energy vs. modeled ME using a fixed 48-hour colonic transit time, and vs. modeled ME using each participant's actual measured colonic transit time",
+        "C) Comparing 16S rRNA sequencing vs. shotgun metagenomics for species abundance",
+        "D) Comparing fecal energy loss estimated by bomb calorimetry vs. chemical oxygen demand"
+      ],
+      "correct_answer": "B",
+      "explanation": "Supplementary Figure 7c and 7d show two Bland-Altman plots: panel c compares measured host metabolizable energy against values modeled using a fixed colonic transit time of 48 hours, while panel d compares measured ME against values modeled using the actual measured colonic transit time for each participant, testing whether individualized CTT improves metabolizable energy prediction.",
+      "expected_documents": ["PMC10232526_Host-diet-gut_microbiome_interactions_influence_human_energy_balance.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

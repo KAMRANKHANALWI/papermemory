@@ -1,0 +1,331 @@
+{
+  "source_document": "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf",
+  "paper_title": "The gut microbiome is associated with brain structure and function in schizophrenia",
+  "journal": "Scientific Reports (2021) 11:9743",
+  "doi": "10.1038/s41598-021-89166-8",
+  "test_cases": [
+    {
+      "id": "sz_microbiome_001",
+      "query": "How many participants were recruited in this study and what was the composition of the cohort?",
+      "ground_truth_answer": "A total of 76 participants were recruited: 38 patients with schizophrenia (SZ) recruited from the Affiliated Brain Hospital of Guangzhou Medical University, and 38 demographically matched normal controls (NCs) recruited in Guangzhou and surrounding areas. The two groups were matched for age, sex, and BMI.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "sz_microbiome_002",
+      "query": "Which bacterial genera were significantly different between schizophrenia patients and normal controls at the genus level?",
+      "ground_truth_answer": "At the genus level, the relative abundance of Ruminococcus (p=0.017, uncorrected) and Roseburia (p=0.023, uncorrected) were significantly lower in SZ patients compared to NCs, while the relative abundance of Veillonella was significantly higher in SZ patients.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "sz_microbiome_003",
+      "query": "What sequencing method and sequencing platform were used to analyze the gut microbiome in this study?",
+      "ground_truth_answer": "16S rRNA gene sequencing was used, specifically targeting the V4 region of the 16S rRNA gene. Sequencing was performed on the Illumina MiSeq platform. Sequence data were processed using QIIME2 and the DADA2 algorithm to generate feature sequences, and the output was rarefied to 13,500 sequences per sample.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "sz_microbiome_004",
+      "query": "What MRI techniques were used in this study to assess brain structure and function in schizophrenia patients?",
+      "ground_truth_answer": "The study used structural magnetic resonance imaging (sMRI) to calculate gray matter volume (GMV) using voxel-based morphometry, and resting-state functional MRI (rs-fMRI) to calculate regional homogeneity (ReHo) and amplitude of low-frequency fluctuation (ALFF). MRI data were acquired on a Philips Achieva 3T MRI Scanner.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "sz_microbiome_005",
+      "query": "What are the most abundant bacterial genera in the gut microbiome of normal controls and schizophrenia patients in this study?",
+      "ground_truth_answer": "In the normal control (NC) group, the most abundant genera were Faecalibacterium, Megamonas, Roseburia, and Gemmiger. In the schizophrenia (SZ) group, the most abundant genus was also Faecalibacterium, followed by Megamonas, Ruminococcus, and Akkermansia.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "sz_microbiome_006",
+      "query": "How do microbial-derived short-chain fatty acids (SCFAs) potentially influence brain function and mental health?",
+      "ground_truth_answer": "Microbial-derived SCFAs can cross the blood-brain barrier (BBB) and activate specific receptors in brain regions relevant to depression and anxiety-related behaviors. Roseburia, which is depleted in SZ, produces butyrate and propionate via the butyrate kinase route and the 1,2-propanediol pathway. A decrease in Roseburia abundance may impair insulin sensitivity and affect concentrations of branched-chain amino acids (BCAAs). Excessive BCAAs compete with tryptophan for brain transporters, reducing tryptophan transport, ultimately lowering cerebral serotonin (5-HT) concentrations and affecting mood.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "sz_microbiome_007",
+      "query": "What is regional homogeneity (ReHo) and how is it calculated in resting-state fMRI analysis?",
+      "ground_truth_answer": "Regional homogeneity (ReHo) is a measure of local resting-state functional connectivity or synchronization that represents the temporal similarity of a given voxel to that of its nearest neighbors. It is computed as Kendall's coefficient of concordance (KCC) of the time series of each voxel with its 26 nearest neighbors. The raw ReHo index of each voxel is then divided by the global mean ReHo index to reduce global variability across participants, and the mean ReHo index of each brain region is acquired by averaging the ReHo indexes within that region using the AAL atlas.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "sz_microbiome_008",
+      "query": "How does chronic alcohol consumption alter gut microbiota composition and what are the downstream consequences?",
+      "ground_truth_answer": "Chronic alcohol consumption leads to specific modifications in microbiome composition, bacterial overgrowth, and disruption of mucosal barrier function. It increases Proteobacteria and decreases Bacteroidetes, and also increases intestinal permeability. This results in translocation of lipopolysaccharide (LPS) and endotoxins into the bloodstream, which eventually contributes to hepatic damage. This was noted as a confounding factor in the study since NC participants had higher rates of alcohol consumption than SZ patients.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "sz_microbiome_009",
+      "query": "What alpha diversity metrics were used in this study, and were there significant alpha diversity differences between SZ patients and normal controls?",
+      "ground_truth_answer": "The alpha diversity indexes used were evenness, Faith's phylogenetic diversity (Faith_PD), observed species, and the Shannon index. Differences in alpha diversity between groups were calculated using the nonparametric Kruskal-Wallis H test. There was no significant difference between the two groups on any assessed measure of alpha diversity, meaning the overall richness and evenness of the microbiome did not significantly differ at the group level.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "sz_microbiome_010",
+      "query": "How was the association between gut microbial genera and MRI indexes statistically tested in this study?",
+      "ground_truth_answer": "Differential abundances at the genus level were tested using the Mann-Whitney U test. To determine associations between differential genus abundance and MRI indexes, the researchers calculated residuals of the relative abundances of altered taxa and MRI indexes with significant group differences, controlling for age, sex, and years of education using the 'vglm' function in the VGAM package. Pearson's correlations were then calculated between these residuals of the altered genera and the different MRI indexes. Significance was set at p<0.05 or FDR corrected p<0.05 (two-sided).",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "sz_microbiome_011",
+      "query": "What role does ALFF play as a neuroimaging biomarker, and what was the key finding regarding ALFF in this study?",
+      "ground_truth_answer": "Amplitude of low-frequency fluctuation (ALFF) is calculated by converting the time series of each voxel to the frequency domain via fast Fourier transformation, then averaging the square root of the power spectrum across a predefined frequency range. It reflects the absolute intensity of spontaneous brain activity. In this study, only one brain region showed a significant between-group difference in ALFF: SZ patients showed increased ALFF in the right caudate compared to NCs. No significant correlation was detected between microbial diversity and the ALFF index.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "sz_microbiome_012",
+      "query": "What are the proposed mechanistic pathways by which depletion of Roseburia in SZ patients may contribute to auditory verbal hallucinations and thought disturbances?",
+      "ground_truth_answer": "The study found that reduced Roseburia abundance in SZ was significantly negatively correlated with ReHo indexes in the right superior temporal cortex (STC) and right middle temporal cortex (MTC), brain regions that are associated with auditory verbal hallucinations and thought disturbances, respectively. Mechanistically, Roseburia depletion may impair SCFA production (butyrate and propionate), which can cross the BBB. Additionally, reduced Roseburia may worsen insulin sensitivity, elevating BCAAs, which compete with tryptophan for brain transport, thereby lowering serotonin synthesis. Dhiman et al. have separately reported that Roseburia is associated with good cognitive performance, further supporting the link between this genus and neurological function in SZ.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "sz_microbiome_013",
+      "query": "Compare the structural and functional brain abnormalities found in SZ patients in this study and discuss how these may relate to the clinical symptoms of schizophrenia.",
+      "ground_truth_answer": "Structurally, GMV was significantly lower in 16 brain regions in SZ patients compared to NCs, including the bilateral insula, frontal and temporal regions, which aligns with prior findings of GMV reductions in the insula, superior temporal pole, amygdala, anterior cingulate, and frontal cortices. Functionally, 34 brain regions showed significantly altered ReHo (mostly lower) in SZ, particularly in the STG, MTC, and SFG, which are involved in visual and auditory perception. These temporal lobe abnormalities may relate to auditory hallucinations and abnormal language processing, while frontal lobe changes may impair executive function, working memory, abstract reasoning, social behavior, and impulse control. Only one region showed increased ALFF (right caudate), consistent with prior SZ literature. The broad disruption of local spontaneous brain activity could help explain the diverse psychopathology of SZ.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "sz_microbiome_014",
+      "query": "How does the microbiome-gut-brain (MGB) axis potentially mediate the relationship between gut microbial alpha diversity and visual hallucinations in schizophrenia?",
+      "ground_truth_answer": "The study found that both evenness and Shannon indexes of alpha diversity in SZ patients were positively associated with ReHo indexes of the bilateral calcarine cortex, among other visual processing regions. The calcarine cortex is a primary visual processing area, and its altered functional activity has been linked to visual hallucinations in SZ. The authors infer that gut microbial alpha diversity in SZ may be associated with visual hallucinations, and this relationship could be mediated by functional brain activity in the calcarine cortex. This suggests a pathway where reduced microbial diversity, via MGB axis signaling (e.g., through SCFAs, neurotrophic factors like BDNF/GDNF, or immune-inflammatory mechanisms), may contribute to dysregulated activity in visual processing areas and thereby to perceptual disturbances.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "sz_microbiome_015",
+      "query": "What are the major limitations of this study and how might they affect the interpretation of the gut microbiome-brain structure/function findings?",
+      "ground_truth_answer": "The study has four major limitations: (1) SZ patients varied considerably in their medications — the durations and types of antipsychotic medication were distinct, and medication can affect both microbiota composition and brain activity, potentially confounding the results; (2) the study is cross-sectional, meaning that while correlations between MRI indexes and microbiota were detected, causal relationships cannot be determined — a longitudinal study is needed to resolve directionality; (3) rates of smoking and alcohol consumption were low among all participants and detailed information was not collected, so these known microbiome-altering confounders could not be controlled for; and (4) the sample size was moderate (38 per group), so a larger independent cohort is needed to verify reproducibility of the findings.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "sz_microbiome_mcq_001",
+      "question": "What was the result of beta diversity analysis (Bray-Curtis distance) between SZ patients and normal controls?",
+      "options": [
+        "A) No significant difference was found between the two groups",
+        "B) A significant between-group difference was found (pseudo-F=1.71, p=0.019)",
+        "C) A significant between-group difference was found (pseudo-F=2.34, p=0.001)",
+        "D) The groups formed overlapping clusters with no separation"
+      ],
+      "correct_answer": "B",
+      "explanation": "PCoA of Bray-Curtis distance showed a significant between-group difference (pseudo-F=1.71, p=0.019) under 999 permutations, and the PCoA plot showed that the SZ and NC groups formed distinct clusters.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "sz_microbiome_mcq_002",
+      "question": "How many brain regions showed significant differences in ReHo between SZ patients and normal controls?",
+      "options": [
+        "A) 8 brain regions",
+        "B) 16 brain regions",
+        "C) 34 brain regions",
+        "D) 90 brain regions"
+      ],
+      "correct_answer": "C",
+      "explanation": "The study found significant differences in ReHo in 34 brain regions between SZ patients and NCs. In addition, 16 brain regions showed significant GMV differences, and only 1 brain region showed significant ALFF differences.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "sz_microbiome_mcq_003",
+      "question": "What demographic variable was significantly different between SZ patients and normal controls in this study?",
+      "options": [
+        "A) Age and BMI",
+        "B) Gender distribution",
+        "C) Years of education and sleep time",
+        "D) Blood glucose and cholesterol levels"
+      ],
+      "correct_answer": "C",
+      "explanation": "SZ patients had significantly fewer years of education (12.26 vs 14.42 years, p=0.01) and longer sleep times (8.43 vs 7.31 hours, p=0.007) compared to NCs. SZ patients also had higher smoking rates and lower alcohol consumption. Age, BMI, and metabolic markers were not significantly different.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "sz_microbiome_mcq_004",
+      "question": "In this study, which alpha diversity index showed a positive correlation with gray matter volume (GMV) of the left inferior operculum frontal cortex in SZ patients?",
+      "options": [
+        "A) Shannon index",
+        "B) Evenness",
+        "C) Faith's Phylogenetic Diversity (Faith_PD)",
+        "D) Observed species"
+      ],
+      "correct_answer": "C",
+      "explanation": "Faith_PD showed a positive correlation with the GMV of the left inferior operculum frontal cortex (p<0.05) in SZ patients. Both Faith_PD and observed species were correlated with the GMV of the bilateral insula and right postcentral gyrus, but only Faith_PD uniquely showed the additional correlation with the frontal cortex region.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "sz_microbiome_mcq_005",
+      "question": "According to the study, which metabolic pathway does Ruminococcus primarily use related to SCFA production?",
+      "options": [
+        "A) The butyrate kinase route, producing butyrate as end product",
+        "B) The 1,2-propanediol pathway, producing propionate",
+        "C) The succinate pathway, producing succinate rather than propionate as end product",
+        "D) The acetate pathway, producing acetate via acetyl-CoA"
+      ],
+      "correct_answer": "C",
+      "explanation": "The study notes that Ruminococcus lacks the ability to form butyrate from carbohydrates. The succinate pathway is known to be present in Ruminococcus, but it produces succinate rather than propionate as the end product. Conversion of succinate to propionate requires Negativicutes class bacteria. By contrast, Roseburia produces butyrate and propionate via the butyrate kinase route and the 1,2-propanediol pathway.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "sz_microbiome_mcq_006",
+      "question": "In SZ patients, the ReHo indexes of which three brain regions were negatively correlated with the relative abundance of the genus Roseburia?",
+      "options": [
+        "A) Left insula, right postcentral gyrus, left superior occipital cortex",
+        "B) Right superior temporal cortex (STC), left cuneus, and right middle temporal cortex (MTC)",
+        "C) Bilateral calcarine cortex, bilateral lingual gyrus, and right superior parietal cortex",
+        "D) Right caudate, left superior frontal gyrus, and bilateral fusiform gyrus"
+      ],
+      "correct_answer": "B",
+      "explanation": "The study found that in SZ patients, the ReHo indexes in the right STC (r=−0.35, p=0.031, FDR=0.039), the left cuneus (r=−0.33, p=0.044, FDR=0.053), and the right MTC (r=−0.33, p=0.03, FDR=0.052) were all negatively correlated with the relative abundance of the genus Roseburia.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "sz_microbiome_mcq_007",
+      "question": "What software pipeline was used for preprocessing both structural and functional MRI data in this study?",
+      "options": [
+        "A) FSL and FreeSurfer",
+        "B) SPM 12 and DPABI (version 4.3)",
+        "C) AFNI and BrainVoyager",
+        "D) ANTs and fMRIPrep"
+      ],
+      "correct_answer": "B",
+      "explanation": "Both structural and functional MRI data were preprocessed using SPM 12 (Statistical Parametric Mapping) and DPABI version 4.3 (http://rfmri.org/dpabi). For structural data, GMV was derived using DARTEL template-based segmentation and normalization to MNI space. For functional data, the pipeline included slice timing, motion correction, coregistration, normalization, bandpass filtering (0.01–0.08 Hz), and spatial smoothing.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "sz_microbiome_mcq_008",
+      "question": "What role does the genus Veillonella play in short-chain fatty acid metabolism, and why is its elevated abundance in SZ patients clinically relevant?",
+      "options": [
+        "A) Veillonella produces butyrate from dietary fiber, so its increase benefits gut health in SZ",
+        "B) Veillonella converts lactate to propionate via the succinate pathway, and its elevation in SZ may reflect altered colonic metabolism",
+        "C) Veillonella synthesizes serotonin precursors, so its elevation directly increases brain serotonin in SZ",
+        "D) Veillonella degrades branched-chain amino acids, and its elevation compensates for the depletion of Clostridiales taxa in SZ"
+      ],
+      "correct_answer": "B",
+      "explanation": "According to the paper, Veillonella can convert lactate to propionate via the succinate pathway. Its relative abundance was significantly higher in SZ patients compared to NCs. While the exact clinical significance is still being explored, its elevation alongside the depletion of other SCFA-producing bacteria like Roseburia indicates a broader disruption of SCFA metabolism in the SZ gut microbiome.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "sz_microbiome_mcq_009",
+      "question": "What is the biological basis for the proposed link between reduced Roseburia abundance, elevated BCAAs, and decreased cerebral serotonin in schizophrenia?",
+      "options": [
+        "A) Roseburia directly synthesizes serotonin, so its depletion reduces brain 5-HT concentrations",
+        "B) Roseburia depletion impairs insulin sensitivity, elevating BCAAs; elevated BCAAs compete with tryptophan for brain transporters, reducing tryptophan uptake and serotonin synthesis",
+        "C) Roseburia breaks down serotonin precursors in the colon, and its depletion paradoxically increases peripheral serotonin",
+        "D) Roseburia produces GABA which is transported via the vagus nerve to modulate serotonin release in the raphe nuclei"
+      ],
+      "correct_answer": "B",
+      "explanation": "The mechanistic chain is: Roseburia depletion → impaired insulin sensitivity → elevated circulating BCAAs → competition with tryptophan for shared brain transporters → reduced tryptophan transport into the brain → decreased tryptophan availability (precursor to serotonin) → reduced cerebral 5-hydroxytryptamine (5-HT) concentrations → mood and cognitive effects. This pathway was supported by Li et al., who speculated that depletion of Clostridiales taxa (which degrade BCAAs) leads to elevated BCAAs and indirectly reduces cerebral serotonin.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "sz_microbiome_mcq_010",
+      "question": "How does this study's finding of a positive correlation between alpha diversity and GMV/ReHo in SZ patients challenge or support the broader understanding of the MGB axis in neuropsychiatric disease?",
+      "options": [
+        "A) It challenges the MGB axis hypothesis by showing that microbial diversity has no measurable impact on brain structure",
+        "B) It supports prior ADHD mouse studies showing decreased structural integrity when colonized with disease-specific microbiota, suggesting microbial diversity may protect against gray matter loss and maintain functional brain synchronization",
+        "C) It is the first evidence of any gut-brain relationship in a psychiatric context, establishing a novel hypothesis not supported by prior animal or human data",
+        "D) It suggests that gut microbiome diversity is causally upstream of all neuropsychiatric disorders, making it more important than genetic or environmental factors"
+      ],
+      "correct_answer": "B",
+      "explanation": "The positive correlation between alpha diversity measures (Faith_PD, observed species, evenness, Shannon) and GMV/ReHo indexes in SZ patients is consistent with broader MGB axis evidence. The authors cite a mouse study by Tengeler et al. showing decreased structural integrity in gray matter when mice were colonized with ADHD microbiota, and a study by Tillisch et al. linking Bacteroides abundance to brain structure in healthy women. These converging findings suggest that gut microbial diversity may help maintain both structural brain integrity and functional synchronization, though the study is careful to note that causal directionality cannot be determined.",
+      "expected_documents": [
+        "PMC8105323_The_gut_microbiome_is_associated_with_brain_struct.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

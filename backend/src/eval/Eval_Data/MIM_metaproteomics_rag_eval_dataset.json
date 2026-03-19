@@ -1,0 +1,307 @@
+{
+  "source_document": "Metagenome-informed_metaproteomics_of_the_human_gut_microbiome_host_and_dietary_exposome_uncovers_signatures_of_health_and_inflammatory_bowel_disease.pdf",
+  "citation": "Valdés-Mas et al., 2025, Cell 188, 1062–1083. https://doi.org/10.1016/j.cell.2024.12.016",
+
+  "test_cases": [
+
+    {
+      "id": "mim_001",
+      "query": "What does MIM stand for and what three compartments does it simultaneously assess?",
+      "ground_truth_answer": "MIM stands for Metagenome-Informed Metaproteomics. It simultaneously assesses three compartments from a single fecal sample: (1) the bacterial microbiome, (2) the host, and (3) the dietary exposome (dietary proteins).",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+
+    {
+      "id": "mim_002",
+      "query": "How many host, bacterial, and dietary proteins does MIM detect on average in healthy human fecal samples?",
+      "ground_truth_answer": "In feces from healthy humans (n = 76), MIM detected an average of 363 host proteins (1,778 unique peptides), 3,746 bacterial proteins (10,194 unique peptides), and 58 dietary proteins (226 unique peptides) per sample.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+
+    {
+      "id": "mim_003",
+      "query": "What is calprotectin and what proteins does it comprise?",
+      "ground_truth_answer": "Calprotectin is the combination of S100A8 and S100A9 proteins. It is the only fecal biomarker currently used routinely in clinical practice to assess IBD severity, with moderate sensitivity and specificity.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+
+    {
+      "id": "mim_004",
+      "query": "What percentage of fecal microbial proteins does MIM correctly assign to species-level resolution?",
+      "ground_truth_answer": "MIM correctly assigned 97% of fecal microbial proteins to species-level resolution.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+
+    {
+      "id": "mim_005",
+      "query": "What dietary exposure difference was detected by MIM between Israeli and German cohorts, and what cultural factor explains it?",
+      "ground_truth_answer": "MIM detected a substantially higher pork-related protein signal in German fecal samples compared with a nearly non-existent signal in Israeli samples. This was reflected across 14 different pork-related proteins with unique peptides. The difference is explained by the fact that Jews and Muslims—the overwhelming majority of Israelis—often strictly refrain from consuming pork products due to religious dietary restrictions.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+
+    {
+      "id": "mim_006",
+      "query": "How does the alpha diversity of MIM compare to shotgun metagenomics, and what explains the difference?",
+      "ground_truth_answer": "Alpha diversity (within-sample species richness) is greater in metagenomic analysis compared with MIM. This is because some bacterial genes are not constitutively expressed—MIM detects proteins only from genes that are actively translated at the time of sampling, while metagenomics captures all DNA regardless of expression. As a result, MIM reflects the actively functioning microbial community rather than the full genetic potential.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+
+    {
+      "id": "mim_007",
+      "query": "What is the distinction between 'compositional dysbiosis' and 'functional dysbiosis' as defined by the MIM framework in IBD?",
+      "ground_truth_answer": "Compositional dysbiosis is characterized by an altered commensal abundance—a unidirectional change in the expression of the vast majority of species-specific proteins, indicating a gain or loss of that organism. This can be either detectable by both MIM and metagenomics, or solely by MIM. Functional dysbiosis, in contrast, is defined by changes occurring in a discrete subset of proteins within a given species while the majority of housekeeping proteins and the associated metagenomic (taxonomic abundance) signal remain unchanged. In IBD, functional dysbiosis was predominantly characterized by a downregulation of discrete bacterial protein modules in commensal species, even when those species appeared compositionally stable by metagenomics.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+
+    {
+      "id": "mim_008",
+      "query": "How does fecal dietary protein accumulation serve as a proxy for small intestinal function in IBD, and what was the evidence from the DSS colitis model?",
+      "ground_truth_answer": "In the DSS colitis mouse model, the relative fecal abundance of dietary MIM proteins increased progressively over the course of colonic inflammation, despite no increase in dietary intake. The authors hypothesized this results from subclinical small intestinal malabsorption—impaired digestion and absorption leading to dietary protein fecal accumulation. Supporting this, increased fecal dietary MIM signals were positively correlated with S100A8 and S100A9 (calprotectin) levels. Additionally, distinct nutrient-specific changes were observed: fecal wheat proteins increased, soybean proteins decreased, and corn proteins remained stable, despite constant relative proportions in the mouse chow, suggesting nutrient-specific alterations in small intestinal digestive function during inflammation.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+
+    {
+      "id": "mim_009",
+      "query": "What was the clinical significance of detecting a non-compliant patient in the MIM celiac disease cohort?",
+      "ground_truth_answer": "In a cohort of children diagnosed with celiac disease who were instructed to follow a gluten-free diet, MIM-based dietary assessment of feces accurately captured the reduction in gluten signal upon diet initiation. Crucially, MIM correctly identified one child who was not adhering to the gluten-free diet despite medical recommendation, as evidenced by continued detection of gluten proteins in their fecal sample. This demonstrates MIM's potential as an objective, non-invasive tool for monitoring dietary compliance in therapeutic dietary interventions, overcoming the limitations of self-reported dietary questionnaires which are prone to recall bias.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+
+    {
+      "id": "mim_010",
+      "query": "What was the relationship between Exclusive Enteral Nutrition (EEN) and fecal dietary protein signals in pediatric Crohn's disease patients?",
+      "ground_truth_answer": "In newly diagnosed pediatric Crohn's disease patients (n = 7) who began exclusive enteral nutrition (EEN) as a first-line anti-inflammatory dietary intervention, MIM detected an expected reduction in both the number of fecal dietary proteins and the total dietary signal upon EEN initiation compared with their regular diet. This reduction showed marked inter-individual variability. Importantly, the number of fecal dietary proteins detected positively correlated with levels of the inflammatory marker S100A9 (calprotectin), suggesting that simultaneous MIM assessment of dietary compliance and intestinal inflammation may be directly and simultaneously quantified.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+
+    {
+      "id": "mim_011",
+      "query": "Explain the niche-specific distribution of bacterial proteins along the treatment-naive human gastrointestinal tract as revealed by MIM.",
+      "ground_truth_answer": "In treatment-naive healthy individuals (n = 11), MIM identified a distinct distal increase in both the number of detected bacterial proteins and species along the gastrointestinal tract—consistent with known metagenomic bacterial density gradients. Niche-specific commensal protein configurations were distinct from shotgun metagenomics. For example, 53 carbohydrate utilization proteins expressed by Streptococcus salivarius were significantly more abundant in gastric samples compared with feces by MIM, a difference not captured by metagenomics. The host proteome was divided into three main spatial clusters: (1) stomach; (2) duodenum and jejunum; and (3) ileum, large intestine, and feces. Broad-spectrum antibiotic treatment abolished the bacterial protein and species gradients but did not alter the triple-cluster host proteome configuration, though individual antibiotic-responsive host proteins were identified in specific GI regions.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+
+    {
+      "id": "mim_012",
+      "query": "Why are 'unpredicted' bacterial proteins more likely to be extracellular, and what does this imply about the superiority of MIM over genomic approaches?",
+      "ground_truth_answer": "The study found that the abundance of species-specific proteins was often significantly different from the corresponding species-specific gene abundances, meaning many bacterial proteins cannot be inferred or 'predicted' from genomic data. These 'unpredictable' proteins—those with abundances poorly correlated with their gene abundance—were more likely to be extracellular (secreted). This implies that genomic approaches, which only detect DNA, are suboptimal for investigating the secreted protein landscape of the gut microbiome. Since secreted proteins are particularly relevant for host-microbiome crosstalk, immune modulation, and antimicrobial activity, MIM provides a functionally richer view that genomics fundamentally cannot replicate.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+
+    {
+      "id": "mim_013",
+      "query": "Compare the performance of MIM versus metagenomics in diagnosing IBD in the ISR-pCD and GER-UC cohorts, and explain the mechanistic basis for MIM's superiority.",
+      "ground_truth_answer": "In both the ISR-pCD (pediatric Crohn's disease) and GER-UC (adult ulcerative colitis) cohorts, a random forest diagnostic prediction demonstrated significantly superior performance of MIM (based on protein abundance) compared with metagenomics (based on gene abundance) in differentiating diseased from healthy controls. MIM was also superior to a de novo genome assembly-based approach in the HMP-MGH cohort. The mechanistic basis for MIM's advantage is multi-layered: (1) MIM identifies both compositional dysbiosis patterns invisible to metagenomics (e.g., species like Faecalibacterium prausnitzii and Fusicatenibacter saccharivorans whose altered protein abundances were MIM-specific), (2) MIM captures functional dysbiosis—discrete intra-species protein module changes in IBD that occur even when global species abundance and metagenomics are unaltered, and (3) MIM detects a markedly higher number of differentially abundant bacterial proteins in IBD patients versus healthy controls compared with database-only approaches, providing richer discriminating features.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+
+    {
+      "id": "mim_014",
+      "query": "Describe the cross-kingdom transfer experiments that mechanistically link host inflammation signals to commensal bacterial protein suppression, detailing the directionality and kinetics of these interactions.",
+      "ground_truth_answer": "The study performed a series of fecal transfer experiments to causally disentangle host-microbiome interactions during intestinal inflammation. First, when a naive microbiome was transferred into germ-free mice that had been pre-exposed to sterilized DSS (creating a sterile inflammatory intestinal environment without microbiota), a marked commensal proteomic shift developed within as early as 2 days post-transfer. This demonstrated that host inflammatory signals alone—independent of a resident dysbiotic microbiome—can rapidly suppress commensal protein expression, with organisms like Parabacteroides goldsteinii and Parabacteroides bacterium YL27 showing notable protein decreases. In the reverse direction, when inflamed SPF microbiomes (from DSS-treated donors) were transferred into naive germ-free mice, within 2 days the naive host proteome was significantly altered, showing upregulation of antimicrobial, metabolic, and inflammatory signatures. These experiments reveal a bidirectional, rapid (within 48 hours) host-microbiome cross-regulatory program where: (a) host inflammation suppresses commensal bacterial functions, and (b) an inflamed microbiome can independently trigger host intestinal inflammatory and metabolic responses even in genetically intact hosts without overt IBD-susceptibility.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+
+    {
+      "id": "mim_015",
+      "query": "What novel IBD biomarker combinations did MIM identify that outperformed calprotectin, and how does the use of KEGG Orthology (KO) functional entities improve biomarker generalizability across cohorts?",
+      "ground_truth_answer": "MIM identified several pairs of proteins—combining bacterial and host proteins—that outperformed calprotectin (S100A8/S100A9) for both CD and UC diagnosis in independent validation cohorts (GER-UC, ISR-pCD, and HMP Cedars-Sinai). For CD differentiation from UC, the most distinctive pair was haptoglobin (HP) and type 1 glyceraldehyde-3-phosphate dehydrogenase (RS04585 from Dysgonomonas mossii), with an average AUC of 0.78. The combination of lactoferrin (LTF) and bacterial K01006 (pyruvate dikinase, ppdK) outperformed calprotectin in diagnosing both UC and CD. For disease severity prediction, multiple MIM protein pairs exceeded calprotectin's performance in both CD and UC. Regarding KEGG Orthology (KO): when bacterial proteins were merged by KO functional entities rather than individual protein identities, biomarker accuracy further improved. Critically, some KO biomarkers (e.g., K00133, aspartate-semialdehyde dehydrogenase) were contributed by different bacterial species in different patient cohorts, yet retained their discriminatory power. This demonstrates that microbiome function represents a more generalizable 'common denominator' between health and disease than species-level composition, which varies considerably across individuals and populations.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+
+  ],
+
+  "mcq_questions": [
+
+    {
+      "id": "mim_mcq_001",
+      "question": "How many dietary proteins with at least one unique peptide did MIM detect in feces of normal chow-fed naive SPF mice?",
+      "options": [
+        "A) 10 proteins",
+        "B) 40 proteins",
+        "C) 100 proteins",
+        "D) 200 proteins"
+      ],
+      "correct_answer": "B",
+      "explanation": "In feces obtained from normal chow-fed naive SPF mice, MIM detected 40 different dietary proteins with at least one unique peptide (41 dietary proteins in total) originating from wheat (Triticum), soybean (Glycine), or corn (Zea).",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+
+    {
+      "id": "mim_mcq_002",
+      "question": "In the step-up peanut consumption trial, MIM was able to detect peanut exposure through how many distinct peanut proteins?",
+      "options": [
+        "A) 3 proteins",
+        "B) 7 proteins",
+        "C) 15 proteins",
+        "D) 30 proteins"
+      ],
+      "correct_answer": "C",
+      "explanation": "The step-up peanut consumption trial (8, 20, and 40 g peanuts, n = 4 healthy participants) demonstrated that fecal dietary MIM could detect peanut exposure in a sensitive and dose-dependent manner via detection of 15 distinct peanut proteins.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+
+    {
+      "id": "mim_mcq_003",
+      "question": "What is the term coined by the authors for the integrated simultaneous proteo-genomic recording of host-microbiome-diet signals described in this study?",
+      "options": [
+        "A) MICROMET",
+        "B) IPHOMED",
+        "C) TRIMICS",
+        "D) DIETOMICS"
+      ],
+      "correct_answer": "B",
+      "explanation": "The authors coined the term IPHOMED (Integrated Proteo-genomics of HOst-MicrobiomE-Diet) to describe the simultaneous recording of dietary, microbial, and host signals and their trilateral interactions.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+
+    {
+      "id": "mim_mcq_004",
+      "question": "What sequence coverage threshold for protein sequences was applied in the MIM metagenomic filtration pipeline to retain proteins in the reference database?",
+      "options": [
+        "A) More than 50% amino acid sequence coverage",
+        "B) More than 60% amino acid sequence coverage",
+        "C) More than 75% amino acid sequence coverage",
+        "D) More than 90% amino acid sequence coverage"
+      ],
+      "correct_answer": "C",
+      "explanation": "The third step of the MIM stepwise filtration process retains proteins potentially produced by detected bacterial species that feature more than 75% amino acid sequence coverage, based on realignment of metagenomic reads using the DIAMOND algorithm.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+
+    {
+      "id": "mim_mcq_005",
+      "question": "In the in silico validation using a synthetic community of 40 gut-residing bacterial species, what percentage of bacterial species and protein sequences did MIM correctly identify?",
+      "options": [
+        "A) 80% of species, more than 70% of protein sequences",
+        "B) 90% of species, more than 80% of protein sequences",
+        "C) 100% of species, more than 90% of protein sequences",
+        "D) 95% of species, more than 95% of protein sequences"
+      ],
+      "correct_answer": "C",
+      "explanation": "In the in silico benchmarking using an annotated complex synthetic metagenomic community of 40 gut-residing bacterial species, MIM correctly identified 100% of the included bacterial species and more than 90% of all bacterial protein sequences encoded by the detected species, after discarding protein sequences with low coverage (less than 75% coverage).",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+
+    {
+      "id": "mim_mcq_006",
+      "question": "In the HMP Cincinnati cohort, which CD patient subgroup showed significantly higher total fecal dietary protein abundance compared with healthy controls, and what does this implicate?",
+      "options": [
+        "A) CD patients with only ileocolonic (L3) involvement; implicating colonic malabsorption",
+        "B) CD patients with upper gastrointestinal (L4) involvement; implicating small intestinal malabsorption",
+        "C) All CD patients regardless of location; implicating pan-intestinal protein leakage",
+        "D) CD patients on immunosuppressive therapy; implicating drug-related mucosal damage"
+      ],
+      "correct_answer": "B",
+      "explanation": "In the HMP-Cin cohort (but not the HMP-MGH cohort, which included only lower intestinal CD), a significant increase in total fecal dietary protein intensity was noted in IBD patients versus healthy controls. Within HMP-Cin, CD patients with upper GI involvement (L4) showed significantly higher dietary protein abundance than those with only ileocolonic involvement (L3), implicating upper intestinal small intestinal malabsorption leading to fecal dietary protein accumulation.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+
+    {
+      "id": "mim_mcq_007",
+      "question": "Which bacterial species showed nicotinate and nicotinamide metabolism as significantly enriched in the GER-UC cohort, consistent with prior descriptions in ulcerative colitis?",
+      "options": [
+        "A) Faecalibacterium prausnitzii",
+        "B) Bacteroides vulgatus",
+        "C) Segatella copri",
+        "D) Akkermansia muciniphila"
+      ],
+      "correct_answer": "C",
+      "explanation": "In the German adult ulcerative colitis (GER-UC) cohort, MIM identified enriched species-resolved pathways including nicotinate and nicotinamide metabolism in Segatella copri, which had been previously described in UC.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+
+    {
+      "id": "mim_mcq_008",
+      "question": "What effect did supplementing the MIM protein database with random bacterial protein sequences from metagenomically undetected species have on analytical performance?",
+      "options": [
+        "A) It improved sensitivity by covering rare taxa but did not affect specificity",
+        "B) It significantly impaired both sensitivity and specificity in a dose-dependent manner, and generated spurious protein detections",
+        "C) It only increased computational runtime without affecting protein identification accuracy",
+        "D) It improved taxonomic resolution but reduced the number of identified pathways"
+      ],
+      "correct_answer": "B",
+      "explanation": "When the refined experimental human microbiome protein database was supplemented with 1 to 5 million random bacterial protein sequences from species not detected by metagenomics, this random addition significantly impaired the output's sensitivity and specificity in a dose-dependent manner. It was also associated with detection of hundreds of proteins spuriously assigned to bacterial species not identified by metagenomics, while substantially prolonging computational processing time to weeks.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+
+    {
+      "id": "mim_mcq_009",
+      "question": "In the DSS colitis mouse model, what specific pattern was observed for Eubacterium plexicaudatum that exemplifies 'functional dysbiosis'?",
+      "options": [
+        "A) All detected proteins of E. plexicaudatum were upregulated, with a corresponding metagenomically confirmed taxonomic increase",
+        "B) 62 bacterial proteins produced by E. plexicaudatum were significantly reduced on day 3, while the other 120 detected proteins and metagenomic taxonomic abundance remained constant",
+        "C) E. plexicaudatum was completely lost from the fecal microbiome by day 3, as confirmed by both MIM and metagenomics",
+        "D) E. plexicaudatum showed increased abundance by metagenomics but reduced protein detection by MIM, suggesting translational suppression across all proteins"
+      ],
+      "correct_answer": "B",
+      "explanation": "E. plexicaudatum exemplifies functional dysbiosis in the DSS colitis model: 62 bacterial proteins produced by this species were significantly reduced on day 3 of DSS treatment, while the other 120 detected proteins remained constant, in agreement with the unaltered taxonomic abundance of this species by metagenomics. This pattern of discrete module inactivation without compositional change defines functional dysbiosis.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+
+    {
+      "id": "mim_mcq_010",
+      "question": "When germ-free mice were colonized with microbiomes from GER-UC patients versus healthy controls, which best describes the outcome in naive GF recipients?",
+      "options": [
+        "A) UC microbiome recipients developed overt colitis and systemic inflammation indistinguishable from human UC",
+        "B) Both host and microbiome proteomes were altered primarily through immune pathways, with histological evidence of colitis",
+        "C) Differentially abundant host and microbiome proteins were primarily associated with metabolic rather than immune pathways, with no overt colitis or systemic inflammation detected",
+        "D) UC microbiome transfer caused complete loss of Akkermansia muciniphila and Faecalibacterium prausnitzii, resulting in spontaneous colitis within 48 hours"
+      ],
+      "correct_answer": "C",
+      "explanation": "In naive germ-free mice colonized with GER-UC patient microbiomes, the differentially abundant host (105 proteins) and microbiome (729 bacterial proteins) proteins were primarily associated with pathways related to metabolic rather than immune functions. Critically, these mice did not exhibit evidence of colitis by histology or systemic inflammation by multiplexed cytokine ELISA, suggesting that in the absence of underlying host IBD susceptibility factors, a UC-associated microbiome alone is unlikely to acutely elicit overt auto-inflammatory responses in genetically intact hosts.",
+      "expected_documents": ["Metagenome-informed_metaproteomics_of_the_human_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "source_document": "PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf",
+  "metadata": {
+    "paper_title": "Interaction between drugs and the gut microbiome",
+    "authors": ["Rinse K Weersma", "Alexandra Zhernakova", "Jingyuan Fu"],
+    "journal": "Gut",
+    "year": 2020,
+    "doi": "10.1136/gutjnl-2019-320204"
+  },
+  "test_cases": [
+    {
+      "id": "drug_microbiome_001",
+      "query": "What is pharmacomicrobiomics?",
+      "ground_truth_answer": "Pharmacomicrobiomics is the study of how the gut microbiome can directly influence an individual's response to a specific drug by enzymatically transforming the drug's structure and altering its bioavailability, bioactivity, or toxicity. It is conceptually a natural expansion of pharmacogenomics, which studies how human genome variations affect drug disposition and action, but extends this to include the gut microbiome as the 'second human genome'.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_microbiome_002",
+      "query": "Which drugs remained significantly associated with gut microbiome features even after correcting for polypharmacy?",
+      "ground_truth_answer": "After statistically correcting for polypharmacy using a stepwise regression approach in a meta-analysis of three independent cohorts, four drug categories remained significantly associated with microbial features: proton pump inhibitors (PPIs), metformin, antibiotics, and laxatives.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_microbiome_003",
+      "query": "What percentage of the 1000+ drugs tested in the high-throughput antimicrobial study showed antibacterial activity?",
+      "ground_truth_answer": "In the landmark high-throughput study by Maier et al., the authors systematically assessed the antimicrobial effects of over 1000 drugs, including 835 human-targeted drugs. Notably, 24% of these drugs showed antibacterial activity, affecting the growth rate of at least one of the 40 bacterial strains tested. Among them, eight drugs were found to be toxic to bacteria, affecting the growth rate of at least 50% of the strains.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_microbiome_004",
+      "query": "What is the estimated cost of proton pump inhibitors in the UK per year, and what proportion of PPI prescriptions may be unnecessary?",
+      "ground_truth_answer": "The total cost of PPIs in the UK is estimated to be more than £100 million per year. Despite their widespread use, it has been suggested that up to 70% of PPI prescriptions may be unnecessary, with a major contributor being the use of PPIs as prophylaxis for stress ulcers in patients who do not meet evidence-based prescription criteria.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_microbiome_005",
+      "query": "Which two bacterial strains were identified as super drug-metabolising strains, and how many drugs could they each metabolise?",
+      "ground_truth_answer": "The super drug-metabolising strains were Bacteroides dorei (strain DSM17855) and Clostridium sp., which could metabolise 164 and 154 drugs out of 271 orally administered drugs tested, respectively. These two strains exhibited the broadest metabolic capacity across all 76 gut microbial strains studied by Zimmermann et al.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_microbiome_006",
+      "query": "How do proton pump inhibitors cause 'oralisation' of the gut microbiome and what are the key taxonomic changes associated with PPI use?",
+      "ground_truth_answer": "PPIs reduce gastric acidity, which normally acts as a barrier preventing oral microbes from colonising the gut. When this acid barrier is compromised, oral bacteria can pass through the stomach into the intestine, causing a phenomenon described as 'oralisation' of the gut microbiome. Key taxonomic changes include an increase in the families Enterobacteriaceae, Enterococcaceae, and Lactobacillaceae, and a decrease in Ruminococcaceae and Bifidobacteriaceae. Specific oral bacteria that increase include Rothia dentocariosa, Rothia mucilaginosa, the genus Actinomyces, and the family Micrococcaceae. Additionally, a direct effect is also possible, potentially mediated through binding of PPIs to bacterial H+/K+ATPases.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_microbiome_007",
+      "query": "How does metformin influence the gut microbiome and contribute to its therapeutic effect in type 2 diabetes?",
+      "ground_truth_answer": "Metformin induces significant changes in gut microbiome composition, altering over 80 species compared to placebo controls. It notably increases Escherichia coli and lowers Intestinibacter abundance. Some of metformin's beneficial effects are thought to be mediated through the gut microbiota — specifically by promoting the growth of short-chain fatty acid (particularly butyrate)-producing bacteria and increasing the abundance of Akkermansia muciniphila, both of which contribute to improved insulin resistance and glucose homeostasis. This causal relationship was demonstrated by transplanting faecal samples from metformin-treated donors into germ-free mice, which resulted in lower blood glucose levels in recipient mice.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_microbiome_008",
+      "query": "What are the two proposed action modes by which drugs influence gut microbial composition?",
+      "ground_truth_answer": "Two action modes have been proposed for how drugs influence gut microbial composition. The first mode is translocation: drugs can enable microorganisms from other body sites (such as the oral cavity) to colonise the gut — for example, PPIs reduce gastric acidity, allowing oral microbes to pass through the stomach and induce microbial dysbiosis. The second mode, considered potentially dominant, is that drugs can change intestinal microenvironments and directly affect bacterial growth — either by promoting the growth of beneficial bacteria (as metformin promotes SCFA producers) or by inhibiting the growth of specific bacteria, thereby showing antimicrobial activity similar to antibiotics.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_microbiome_009",
+      "query": "What were the predicted functional pathway changes associated with PPI use in the metagenomic study of 41 commonly used drugs?",
+      "ground_truth_answer": "Using metagenomic sequence data allowing high-resolution taxonomy and predicted pathway analysis, PPIs were found to be significantly associated with 24 taxa and 133 pathways after correcting for co-medication. The predicted functional changes included increases in fatty acid and lipid biosynthesis, fermentation nicotinamide adenine dinucleotide (NAD) metabolism, biosynthesis of L-arginine, and purine deoxyribonucleoside degradation. Of the bacterial taxa contributing to these pathway changes, statistical analyses showed that only changes in Streptococcus mutans contributed to the predicted pathway changes due to PPI use.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_microbiome_010",
+      "query": "What is the interindividual variability of the gut microbiome and what evidence supports this finding from large European cohort studies?",
+      "ground_truth_answer": "The gut microbiome shows extremely high interindividual variability — only a minority of gut microbes are shared across the majority of individuals. Evidence from a European dataset of 3000 samples showed that only 17 bacteria were identified as a core microbiome present in more than 95% of all samples. Furthermore, in a population study of 1135 Dutch individuals, 469 out of 639 species identified (73%) were present in fewer than 10 individuals. This high interindividual variability likely leads to significant variation in the metabolic functions carried out by the gut microbiome across individuals.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "drug_microbiome_011",
+      "query": "How does laxative use affect gut microbiome composition and what mechanistic insights have animal studies provided?",
+      "ground_truth_answer": "Laxative use is associated with increased abundance of Bacteroides species, though this is also observed in low-consistency stool samples, making it important to account for confounders such as intestinal transit time and stool consistency. A mechanistic mouse study using polyethylene glycol (PEG) to induce mild osmotic diarrhoea demonstrated that this caused long-term changes in the gut microbiome, transient disruption of the mucus barrier, and subsequent innate and adaptive immune responses. After PEG administration, the S24-7 Family (within order Bacteroidales) disappeared and was permanently replaced by outgrowth of the family Bacteroidaceae unless the S24-7 Family was reintroduced. Other taxa like Verrucomicrobia and Gammaproteobacteria showed only transient changes before returning to initial levels. These findings suggest laxatives likely have both short-term and long-term effects on gut microbiome composition independent of stool consistency.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_microbiome_012",
+      "query": "Describe the full bidirectional interaction of the gut microbiome with levodopa, including the bacterial species involved and the potential adverse drug reactions.",
+      "ground_truth_answer": "Levodopa, used for Parkinson's disease, exemplifies a complex bidirectional drug-microbiome interaction. For levodopa to work, it must be absorbed in the small intestine, cross the blood-brain barrier, and then be converted to dopamine by the human enzyme aromatic amino acid decarboxylase. However, gut microbial tyrosine decarboxylases (tyrDCs), dominantly from Enterococcus faecalis and also present in Lactobacillus species, can metabolise levodopa to dopamine in the gut before it reaches the brain, thereby reducing drug bioavailability and efficacy. Mutating tyrDCs in E. faecalis can block this bacterial metabolism and improve drug efficacy. Furthermore, the bacterially-derived dopamine can be further converted to m-tyramine by Eggerthella lenta and 10 other bacterial species containing the dopamine-dehydroxylating enzyme, which can induce hypertensive crisis as an adverse drug reaction. Additionally, there is a bidirectional effect on co-administered drugs: numerous microbes can metabolise entacapone (a catechol metabolism inhibitor co-administered with levodopa), and conversely entacapone can inhibit the growth rate of 10 different species including Ruminococcus torques, which itself can metabolise entacapone at 84% efficiency.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_microbiome_013",
+      "query": "What landmark study disentangled the effect of metformin from the effect of type 2 diabetes on gut microbiome composition, and what was its key finding?",
+      "ground_truth_answer": "A landmark study (Forslund et al., Nature 2015) addressed the confounding challenge of separating drug effects from disease effects by disentangling the gut microbiome signatures of type 2 diabetes and metformin treatment. The key finding was that previously observed changes in the gut microbiome that were attributed to the underlying type 2 diabetes were actually caused by the use of metformin rather than the disease itself. This finding highlighted the critical need to rigorously control for drug use as a confounder in microbiome studies examining specific diseases, since drug use — including metformin, antibiotics, PPIs and others — can masquerade as disease-associated microbiome signatures.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "drug_microbiome_014",
+      "query": "How does the gut microbiome influence the clinical response to immune checkpoint inhibition therapy in cancer, and what evidence from mouse studies supports this?",
+      "ground_truth_answer": "The gut microbiome fine-tunes the host's general immune status and subsequently modulates antitumour activation of the immune system during checkpoint inhibition. Mouse studies provided the first compelling evidence: the efficacy of anti-CTLA-4 therapy was reduced in germ-free mice and in antibiotic-treated specific pathogen-free mice. When mice were orally fed Bacteroides fragilis combined with Burkholderia cepacia or B. thetaiotaomicron, this induced a Th1-mediated immune response and maturation of intratumorous dendritic cells, improving antitumour reactivity. Transferring faecal material from patients with high B. fragilis levels into mice also improved antitumour response. For PD-L1 blockade, higher relative abundance of Bifidobacterium species in mice led to better efficacy, an effect that could also be induced via faecal microbiome transplantation or cohousing with beneficial species. In humans, patients treated with checkpoint inhibitors who had received antibiotics prior to, during, or after PD-L1/PD-1 inhibition had lower progression-free survival compared to antibiotic-naive patients.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_microbiome_015",
+      "query": "Compare the impact of PPI-associated microbiome changes on enteric infection risk, and critically analyse why the current widespread PPI prescribing practice is concerning from a microbiome health perspective.",
+      "ground_truth_answer": "PPI-induced microbiome changes closely resemble the gut microbiome alterations that are known to decrease colonisation resistance to enteric infections. The enteric pathogens implicated include Clostridium difficile, Campylobacter, and Salmonella. In PPI users, the odds ratios for these infections are estimated at 1.5–1.8 for C. difficile and 2.0–4.0 for Campylobacter and Salmonella. The mechanism mirrors that of antibiotic-associated C. difficile infections, where an altered microbial environment enables pathogen colonisation. Beyond infection risk, PPIs also influence clinical outcomes in decompensated liver cirrhosis, and increased PPI use in early childhood may cause long-term changes in the developing gut microbiome, with potential links to later obesity. These risks are particularly concerning given that up to 70% of PPI prescriptions may be unnecessary, and re-assessment of ongoing prescriptions is rarely performed. PPIs affect the gut microbiome of up to one-fifth of the population in western society — a major shift in the human microbiome occurring over a very short period in evolutionary history, particularly when the long-term impact of altering the early-life developing microbiome is considered.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "drug_microbiome_mcq_001",
+      "question": "In the Dutch LifeLines-DEEP cohort study, how many out of 42 commonly used drugs were found to be associated with gut microbiome changes?",
+      "options": [
+        "A) 9 out of 42",
+        "B) 19 out of 42",
+        "C) 29 out of 42",
+        "D) 39 out of 42"
+      ],
+      "correct_answer": "B",
+      "explanation": "The Dutch LifeLines-DEEP cohort study reported microbial associations to 19 out of 42 commonly used drugs, including not just antibiotics but many human-targeted non-antibiotic drugs such as PPIs, statins, laxatives, metformin, beta-blockers, ACE inhibitors, and SSRIs.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_microbiome_mcq_002",
+      "question": "What proportion of the 271 orally administered drugs tested in the Zimmermann et al. systematic study were metabolised by at least one bacterial strain?",
+      "options": [
+        "A) 33% (89 drugs)",
+        "B) 50% (135 drugs)",
+        "C) 66% (176 drugs)",
+        "D) 80% (216 drugs)"
+      ],
+      "correct_answer": "C",
+      "explanation": "The systematic analysis by Zimmermann et al. tested the metabolic capacity of 76 gut microbial strains against 271 orally administered drugs and found that 176 drugs (66%) were metabolised by at least one bacterial strain, demonstrating how broadly the gut microbiome can chemically transform common drugs.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_microbiome_mcq_003",
+      "question": "What percentage of the Dutch population currently uses either pantoprazole or omeprazole by prescription?",
+      "options": [
+        "A) ~5%",
+        "B) ~12%",
+        "C) ~20%",
+        "D) ~30%"
+      ],
+      "correct_answer": "B",
+      "explanation": "In the Netherlands, approximately two million individuals — roughly 12% of the population — use either pantoprazole or omeprazole by prescription. Similar usage percentages have been reported for other countries such as the UK. Because PPIs are also available over-the-counter in the Netherlands, the true total number of PPI users is likely much higher.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_microbiome_mcq_004",
+      "question": "In the population-based Netherlands study, which drug category was most strongly associated with decreased gut microbiome diversity and taxonomical changes?",
+      "options": [
+        "A) Metformin",
+        "B) Antibiotics",
+        "C) Proton pump inhibitors",
+        "D) Statins"
+      ],
+      "correct_answer": "C",
+      "explanation": "The large population-based study from the Netherlands showed that PPIs were the drugs most associated with decreased diversity and taxonomical changes in the gut microbiome. When the analysis was extended using metagenomic sequence data on 41 commonly used drugs, PPIs again accounted for the largest number of associations, being significantly associated with 24 taxa and 133 functional pathways.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "drug_microbiome_mcq_005",
+      "question": "In the study of 1135 Dutch individuals that assessed gut microbiome diversity, what proportion of the 639 bacterial species identified were present in fewer than 10 individuals?",
+      "options": [
+        "A) 33% (210 species)",
+        "B) 53% (339 species)",
+        "C) 63% (403 species)",
+        "D) 73% (469 species)"
+      ],
+      "correct_answer": "D",
+      "explanation": "In the population-based metagenomics study of 1135 Dutch individuals, 469 out of 639 species identified (73%) were present in fewer than 10 individuals, highlighting the extreme rarity of most gut bacterial species and the high interindividual variability in gut microbiome composition.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "drug_microbiome_mcq_006",
+      "question": "What was the earliest historical demonstration that gut microbes can impact drug efficacy, and when was it made?",
+      "options": [
+        "A) Discovery of penicillin effects on gut bacteria in 1928",
+        "B) Discovery of gut microbial activation of the antibacterial drug prontosil in 1937",
+        "C) Discovery of bacterial metabolism of levodopa in 1967",
+        "D) First characterisation of gut microbiome by 16S rRNA sequencing in 1977"
+      ],
+      "correct_answer": "B",
+      "explanation": "The concept that the gut microbiome can impact drug efficacy dates back to 1937 and the discovery of the impact of gut microbes on the activation of the antibacterial drug prontosil. This early finding foreshadowed the field now formally known as pharmacomicrobiomics.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "drug_microbiome_mcq_007",
+      "question": "What percentage of brivudine's hepatotoxicity was attributed to gut microbes in the study by Zimmermann et al., and which bacterial species were primarily responsible?",
+      "options": [
+        "A) 30%, primarily Lactobacillus species",
+        "B) 50%, primarily Escherichia coli and Klebsiella species",
+        "C) 70%, primarily Bacteroides thetaiotaomicron and Bacteroides ovatus",
+        "D) 90%, primarily Enterococcus faecalis and Enterococcus faecium"
+      ],
+      "correct_answer": "C",
+      "explanation": "By comparing plasma and liver concentrations of brivudine and its toxic metabolite bromovinyluracil between conventional and germ-free mice, Zimmermann et al. determined that 70% of brivudine's hepatotoxicity is attributable to gut microbes. The bacteria primarily responsible were Bacteroides thetaiotaomicron and Bacteroides ovatus, which convert brivudine to the hepatotoxic metabolite bromovinyluracil.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_microbiome_mcq_008",
+      "question": "Which bacterial species was identified as the dominant driver of levodopa metabolism via tyrosine decarboxylases (tyrDCs) in the gut?",
+      "options": [
+        "A) Bacteroides fragilis",
+        "B) Akkermansia muciniphila",
+        "C) Enterococcus faecalis",
+        "D) Eggerthella lenta"
+      ],
+      "correct_answer": "C",
+      "explanation": "Novel bacterial L-dopa metabolism by tyrosine decarboxylases (tyrDCs) was identified and was found to be dominantly driven by Enterococcus faecalis. Mutating tyrDCs in E. faecalis was shown to block the bacterial L-dopa-to-dopamine conversion, thereby improving levodopa's therapeutic efficacy. Note: Eggerthella lenta plays a separate but related role in converting bacterially-derived dopamine to m-tyramine, inducing hypertensive crisis.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_microbiome_mcq_009",
+      "question": "In the context of cancer immunotherapy, which bacterial species were positively correlated with response to checkpoint inhibitors, according to the series of clinical studies described in the paper?",
+      "options": [
+        "A) Escherichia coli and Fusobacterium nucleatum",
+        "B) Bifidobacterium longum, Enterococcus faecium, and Bacteroides thetaiotaomicron",
+        "C) Akkermansia muciniphila and Clostridium difficile",
+        "D) Ruminococcus gnavus and Collinsella aerofaciens"
+      ],
+      "correct_answer": "B",
+      "explanation": "A series of subsequent clinical papers identified baseline gut microbial taxa associated with response to checkpoint inhibitors. Among the many reported, Bifidobacterium longum, Enterococcus faecium, and Bacteroides thetaiotaomicron were positively correlated with treatment response, while Escherichia coli was negatively correlated. The authors note there is currently very little overlap in the specific species identified across different studies, likely due to lack of standardised sampling protocols and statistical approaches.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "factual"
+    },
+    {
+      "id": "drug_microbiome_mcq_010",
+      "question": "In a Phase 1/2 clinical trial described in the paper, an oral microbial product (VE800) containing 11 clonal commensal bacterial strains was developed. What was the therapeutic objective and what immune response did these strains induce?",
+      "options": [
+        "A) Treating Clostridioides difficile infection by inducing IgA antibody production",
+        "B) Improving anti-tumour efficacy of checkpoint inhibition by inducing CD8+ T cell responses",
+        "C) Reducing PPI-associated dysbiosis by inducing Th17-mediated mucosal repair",
+        "D) Enhancing metformin efficacy in type 2 diabetes by promoting SCFA-producing bacteria"
+      ],
+      "correct_answer": "B",
+      "explanation": "A Phase 1/2 clinical trial (ClinicalTrials.gov Identifier: NCT04208958) was initiated using an oral microbial product (VE800) containing 11 clonal commensal bacterial strains. These 11 strains, identified in a 2018 study (Tanoue et al., Nature 2019), were shown to induce CD8+ T cell responses and invigorate the efficacy of checkpoint inhibition in cancer immunotherapy. The speed of translation from basic discovery in 2018 to a Phase 1/2 trial was noted as exceptional.",
+      "expected_documents": ["PMC7398478_Interaction_between_drugs_and_the_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

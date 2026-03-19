@@ -1,0 +1,286 @@
+{
+  "source_document": "PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf",
+  "metadata": {
+    "title": "Association between antibiotics and gut microbiome dysbiosis in children: systematic review and meta-analysis",
+    "authors": "Lucy McDonnell, Alexander Gilkes, Mark Ashworth, Victoria Rowland, Timothy Hugh Harries, David Armstrong, Patrick White",
+    "journal": "Gut Microbes",
+    "year": 2021,
+    "study_type": "Systematic review and meta-analysis",
+    "registration": "CRD42018094188"
+  },
+  "test_cases": [
+    {
+      "id": "abx_microbiome_001",
+      "query": "How many publications were identified in the literature search and how many studies were included in the final analysis?",
+      "ground_truth_answer": "The literature search identified 4,688 publications. After a screening and eligibility assessment process, 12 studies met the eligibility criteria and were included in the final analysis: 5 randomized controlled trials (RCTs), 5 cohort studies, and 2 cross-sectional studies.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "abx_microbiome_002",
+      "query": "What were the three main microbiome outcomes measured across the included studies?",
+      "ground_truth_answer": "All studies detected changes in the microbiome following antibiotic exposure in three main outcomes: (1) reduction in microbiome species richness, (2) reduction in species diversity, and (3) change in taxonomic composition (change in the abundance of a specific phylum, genus, or species).",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "abx_microbiome_003",
+      "query": "What was the result of the meta-analysis on azithromycin's effect on alpha-diversity as measured by the Shannon Index?",
+      "ground_truth_answer": "The meta-analysis of 4 RCTs examining the effect of azithromycin on gut microbiome alpha-diversity found a statistically significant overall reduction in the Shannon Index, with a mean difference of -0.86 (95% CI -1.59 to -0.13, p < .001).",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "abx_microbiome_004",
+      "query": "What childhood diseases have been linked to antibiotic use, as described in the introduction of this study?",
+      "ground_truth_answer": "Antibiotics in childhood have been linked with diseases including asthma, allergy, juvenile idiopathic arthritis, type 1 diabetes, obesity, celiac disease, mental illness, Crohn's disease, and impaired neurocognitive outcomes.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "abx_microbiome_005",
+      "query": "What are the four major bacterial phyla reported across all included studies?",
+      "ground_truth_answer": "The four major phyla reported across all studies were Actinobacteria (which includes the genus Bifidobacterium), Bacteroidetes, Firmicutes (which includes Lactobacillus and Clostridium), and Proteobacteria (gram-negative bacteria including E. coli). One study also reported the phylum Verrucomicrobia.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "abx_microbiome_006",
+      "query": "How do macrolide antibiotics compare to penicillins in their effect on microbiome richness and duration of disruption?",
+      "ground_truth_answer": "According to Korpela et al., macrolide exposure was associated with reduced microbiome richness for up to 2 years following exposure, whereas penicillin exposure reduced richness for up to 1 year. Thus, macrolide exposure was associated with reduced richness for approximately twice as long as penicillin. Macrolides also caused a fourfold decrease in Bifidobacterium, which was not observed with penicillins, and led to increases in Bacteroides and Proteobacteria that were not seen with penicillin use.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "comparison"
+    },
+    {
+      "id": "abx_microbiome_007",
+      "query": "Explain the divergent effects of different antibiotic classes on Proteobacteria levels in children.",
+      "ground_truth_answer": "The effect on Proteobacteria was not consistent across antibiotic classes. Four studies reported an increase in Proteobacteria following exposure to penicillins, cephalosporins, and macrolides. In contrast, one study (Parker et al.) reported a statistically significant decrease in Proteobacteria specifically following azithromycin exposure in infants aged 6-11 months, driven by reduced relative abundance of Escherichia coli. This means that within the macrolide class, azithromycin in particular may suppress E. coli, while broader macrolide and penicillin use tends to expand Proteobacteria.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "abx_microbiome_008",
+      "query": "What is the significance of the decrease in Clostridium clusters IV and XIVa following antibiotic exposure?",
+      "ground_truth_answer": "Clostridium clusters IV and XIVa are known inducers of T regulatory (Treg) immune cells, which play a critical role in regulating or suppressing other cells in the immune system. Yassour et al. reported a 40% decrease in the abundance of species from these Clostridium clusters in children aged 3 who had received antibiotics (median abundance ~9% vs ~15% in controls). This reduction is clinically significant because it suggests that antibiotic-driven depletion of these taxa may impair immune regulation, potentially contributing to the observed link between childhood antibiotic use and immune-mediated conditions such as asthma and inflammatory diseases.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "abx_microbiome_009",
+      "query": "How did Bokulich et al. find that beta-diversity can change even when alpha-diversity remains unchanged after antibiotic exposure?",
+      "ground_truth_answer": "Bokulich et al. studied infants exposed to multiple antibiotic classes (cephalosporins, beta-lactams, macrolides, quinolones, nitrofurantoin) and found that microbiome alpha-diversity — which measures the number of individual bacteria from each species within a single sample — was unchanged following antibiotic exposure. However, beta-diversity — which measures differences in microbial composition between two samples — differed significantly between antibiotic-exposed and unexposed children (UniFrac distance, permutational MANOVA, R² < 0.01, p < .001). This means that while the overall diversity index within each child did not change, the types and composition of bacterial species were significantly altered, indicating a restructuring of the microbiome even without a detectable drop in overall richness.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "abx_microbiome_010",
+      "query": "What were the findings regarding the recovery of Bifidobacterium levels after ampicillin and gentamicin treatment in neonates, according to Fouhy et al.?",
+      "ground_truth_answer": "Fouhy et al. studied neonates treated with a combination of ampicillin and gentamicin (IV, 2-9 days). At 4 weeks post-exposure, the treated group showed significantly decreased Bifidobacterium levels (5% vs 25% in the control group, p = .013) and reduced Lactobacillus (1% vs 4%, p < .009). However, by 8 weeks, Bifidobacterium and Lactobacillus levels had returned to those of the control group, suggesting partial short-term recovery. Notably, Proteobacteria and Enterobacteriaceae remained significantly elevated at 8 weeks (44% vs 23% and 50% vs 32%, respectively), indicating that the recovery was incomplete and that dysbiosis in other taxa persisted longer.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "abx_microbiome_011",
+      "query": "Why did the review authors note that variation in Shannon Index scores by geographical location is a significant limitation of the meta-analysis?",
+      "ground_truth_answer": "The initial Shannon diversity index values varied substantially by geographical location. Studies from China, Denmark, India, and Ireland had approximate baseline Shannon indices around 3, while studies from Burkina Faso and Niger had approximate values around 15. This means that a mean difference of -0.86 carries very different clinical and biological meaning depending on the starting baseline. A drop of 0.86 from a baseline of 3 (roughly 28% reduction) is proportionally far greater than the same absolute drop from a baseline of 15 (roughly 6% reduction). The authors could find no consensus in the literature on what constitutes a 'normal' Shannon Index, making cross-study comparisons and interpretation of the pooled meta-analysis result challenging.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "abx_microbiome_012",
+      "query": "How does Akkermansia mucinophila connect antibiotic exposure to intestinal health, and which antibiotic was specifically associated with its depletion?",
+      "ground_truth_answer": "Akkermansia mucinophila belongs to the phylum Verrucomicrobia and has been recognized for its anti-inflammatory and immunostimulant properties, as well as its role in improving intestinal barrier function, reducing endotoxinaemia, and improving insulin sensitivity. Parker et al. found that azithromycin exposure in infants aged 6-11 months was associated with a statistically significant reduction in the relative abundance of Verrucomicrobia, with Akkermansia mucinophila specifically completely disappearing (p < .003) following azithromycin treatment. This is notable because the depletion of this beneficial species may weaken the intestinal mucosal barrier and promote low-grade inflammation, potentially contributing to downstream metabolic and immune dysregulation.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "abx_microbiome_013",
+      "query": "Compare the short-term versus long-term microbiome effects of azithromycin as reported by Wei et al., and what are the clinical implications of this trajectory?",
+      "ground_truth_answer": "Wei et al. conducted a double-blind, randomized, placebo-controlled trial in 72 children aged 12-36 months (33 received azithromycin). At 14 days post-exposure, azithromycin was associated with a 23% reduction in observed richness (177.8 ± 56.0 vs 230.6 ± 61.2, p < .001), a 13% reduction in Shannon alpha-diversity (2.96 vs 3.41, p = .009), and a dramatic 50-fold reduction in the genus Bifidobacterium (p adjusted < 0.011). However, at the second analysis (mean of 233 days following exposure), observed richness had fully resolved with no significant difference between groups. In the long-term follow-up (13-39 months), no differences in Bifidobacterium or other taxa were detected. Clinically, while this suggests resilience and eventual recovery, the critical developmental window of disruption — especially the profound Bifidobacterium depletion early on — may have lasting immunological consequences given the role of these bacteria in immune maturation during infancy, even if the microbiome appears to quantitatively recover.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "abx_microbiome_014",
+      "query": "How does the specific disappearance of Bifidobacterium adolescentis following amoxicillin exposure, as reported by Mangin et al., illustrate the limits of studying microbiome changes at the genus level alone?",
+      "ground_truth_answer": "Mangin et al. studied 31 infants aged 12-24 months all treated with oral amoxicillin for 7 days. They found that total Bifidobacterium concentrations were not significantly altered — meaning if only genus-level data were examined, one would conclude that amoxicillin had no effect on Bifidobacteria. However, at the species level, Bifidobacterium adolescentis completely disappeared following amoxicillin treatment (0% post-treatment vs 36.4% at baseline, p < .001). This illustrates that genus-level analysis can mask clinically important species-level changes. Different Bifidobacterium species have distinct functional roles, metabolic capacities, and immunomodulatory effects, so the loss of a specific species may have consequences not captured by aggregate abundance data. The review authors themselves noted this as a limitation, stating that most studies did not report changes at species level, limiting appreciation of specific changes associated with different antibiotics.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "abx_microbiome_015",
+      "query": "What methodological factors in the included studies limited the ability to draw firm conclusions about the duration of antibiotic-associated microbiome disruption in children?",
+      "ground_truth_answer": "Several methodological factors limited conclusions about the duration of disruption. First, the majority of studies focused on short-term outcomes, with most measuring microbiome changes within 1 month of antibiotic exposure; very few studies followed children beyond 1 month. Second, the studies were highly heterogeneous — they varied in participant age (newborn to 12 years), antibiotic type, duration of treatment, route of administration, outcome measures used, molecular techniques employed, and time between exposure and analysis. Third, different indices of richness and diversity were used (OTU count, Shannon index, Simpson index, UniFrac), precluding meta-analysis across all studies. Fourth, several studies included multiple antibiotics, making it impossible to attribute specific microbiome changes to a single agent or class. Fifth, during the recovery interval, some children may have received further courses of antibiotics, potentially confounding any observed recovery pattern. Of the few studies that did report longer-term data, microbiome disruption was observed for up to 1-2 years depending on the antibiotic studied.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "abx_microbiome_mcq_001",
+      "question": "How many studies in this systematic review measured microbiome species richness?",
+      "options": [
+        "A) 2 studies",
+        "B) 3 studies",
+        "C) 6 studies",
+        "D) 10 studies"
+      ],
+      "correct_answer": "B",
+      "explanation": "Microbiome richness data were available for 3 studies (Wei et al., Parker et al., and Korpela et al.), all of which found statistically significant reductions in richness associated with antibiotic exposure. Species diversity was measured in 6 studies and species composition in 10 studies.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "abx_microbiome_mcq_002",
+      "question": "In how many of the 8 studies reporting on species diversity did the authors find a significant association between antibiotic use and reduced species diversity?",
+      "options": [
+        "A) 3 studies",
+        "B) 4 studies",
+        "C) 6 studies",
+        "D) 8 studies"
+      ],
+      "correct_answer": "C",
+      "explanation": "Microbiome species diversity was reported by 8 studies, with data available for 6. Six of eight studies reporting on species diversity found a significant association between antibiotic use and a reduction in species diversity.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "abx_microbiome_mcq_003",
+      "question": "According to Korpela et al., a single course of macrolide antibiotics was associated with reduced Bifidobacterium by what fold-change?",
+      "options": [
+        "A) 0.12-fold decrease",
+        "B) 0.23-fold decrease",
+        "C) 2.04-fold decrease",
+        "D) 50-fold decrease"
+      ],
+      "correct_answer": "B",
+      "explanation": "Korpela et al. found that macrolide exposure within the previous 6 months was associated with a 0.23-fold decrease in Bifidobacterium (p < .004). By contrast, penicillin exposure was not associated with significant Bifidobacterium changes. The 50-fold reduction was reported by Wei et al. for azithromycin at 14 days, and 0.12-fold was the reduction in Lactobacillus with macrolides.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "abx_microbiome_mcq_004",
+      "question": "In Parker et al.'s RCT of azithromycin in infants in India, what was the approximate percentage reduction in OTU count (species richness) compared to placebo?",
+      "options": [
+        "A) 3.5% less",
+        "B) 7.5% less",
+        "C) 13% less",
+        "D) 25% less"
+      ],
+      "correct_answer": "B",
+      "explanation": "Parker et al. found that azithromycin-exposed infants (aged 6-11 months) had a lower OTU count (68.1 ± 15.4) compared to the placebo group (73.6 ± 13.7), representing approximately 7.5% fewer species (p = .027). Alpha-diversity as measured by Shannon index showed no statistically significant change (p = .087).",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "abx_microbiome_mcq_005",
+      "question": "Which of the following antibiotic combinations was associated with increased Clostridium levels in children within 6 months of exposure?",
+      "options": [
+        "A) Amoxicillin only",
+        "B) Ampicillin and gentamicin",
+        "C) Macrolides only",
+        "D) Azithromycin only"
+      ],
+      "correct_answer": "C",
+      "explanation": "Korpela et al. found a nearly 3-fold increase in Clostridium (2.68-fold change, p < .004) within 6 months of macrolide exposure. Importantly, this was not observed with penicillin exposure. Yassour et al. separately found a decrease in beneficial Clostridium clusters IV and XIVa following mixed antibiotic exposure, illustrating that macrolides may paradoxically increase certain Clostridium species while broader antibiotic use depletes immunoregulatory Clostridium clusters.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "abx_microbiome_mcq_006",
+      "question": "What quality assessment tools were used to evaluate the included studies in this systematic review?",
+      "options": [
+        "A) GRADE framework for all studies",
+        "B) Newcastle-Ottawa Scale for RCTs and Cochrane Risk of Bias Tool for observational studies",
+        "C) Newcastle-Ottawa Scale for observational studies and Cochrane Risk of Bias Tool for RCTs",
+        "D) PRISMA checklist for all study types"
+      ],
+      "correct_answer": "C",
+      "explanation": "Observational cohort and cross-sectional studies were assessed using a modified version of the Newcastle-Ottawa Scale, which assigns quality scores on a nine-point scale assessing comparability, exposure records, and confounders. RCT quality was assessed using the Cochrane Risk of Bias Tool. A high risk of bias was found in one specific aspect of Wei et al.'s trial relating to the 4-year analysis but not the 14-day analysis.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "abx_microbiome_mcq_007",
+      "question": "In Bai et al.'s cross-sectional study in China, what happened to the Firmicutes/Bacteroidetes (F/B) ratio following cephalosporin and penicillin exposure?",
+      "options": [
+        "A) It increased by approximately one third",
+        "B) It decreased by approximately one third",
+        "C) It doubled",
+        "D) It remained unchanged"
+      ],
+      "correct_answer": "B",
+      "explanation": "Bai et al. found that the Firmicutes/Bacteroidetes ratio decreased by approximately one third (p < .05) following cephalosporin and penicillin exposure. This resulted from a simultaneous increase in Bacteroidetes and decrease in Firmicutes. No significant difference was found in the abundances of Actinobacteria or Proteobacteria in this study.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "abx_microbiome_mcq_008",
+      "question": "In the adult gut microbiome study cited for comparison (Palleja et al., 2018), for approximately how long did the majority of antibiotic-induced changes persist, and had the microbiome fully recovered by the study endpoint?",
+      "options": [
+        "A) Changes lasted ~14 days; fully recovered by 30 days",
+        "B) Changes lasted ~45 days; not fully recovered by 180 days",
+        "C) Changes lasted ~90 days; fully recovered by 6 months",
+        "D) Changes lasted ~180 days; fully recovered by 1 year"
+      ],
+      "correct_answer": "B",
+      "explanation": "The review cites Palleja et al. (2018) who studied the gut microbiota of adults following antibiotic exposure. The majority of changes lasted for approximately 45 days, but the microbiome had not fully recovered by 180 days. This is referenced to contextualize that children's microbiomes show similarly prolonged disruption, with some pediatric studies showing effects lasting 1-2 years.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "abx_microbiome_mcq_009",
+      "question": "Amoxicillin exposure in 1-2 year old children (Brunser et al.) and azithromycin exposure in 6-11 month old infants (Parker et al.) had opposite effects on E. coli levels. Which statement correctly describes this divergence?",
+      "options": [
+        "A) Both antibiotics increased E. coli — the discrepancy is due to different molecular techniques used",
+        "B) Amoxicillin increased E. coli levels, while azithromycin decreased E. coli levels",
+        "C) Azithromycin increased E. coli, while amoxicillin decreased E. coli",
+        "D) Neither antibiotic significantly altered E. coli levels; only Bifidobacterium was affected"
+      ],
+      "correct_answer": "B",
+      "explanation": "Brunser et al. found that amoxicillin (oral, 7 days) in children aged 1-2 years led to a statistically significant increase in E. coli (log count 4.77 ± 0.96 at baseline vs 5.10 ± 1.39 after treatment, p = .015). In contrast, Parker et al. found that azithromycin (3 days) in infants aged 6-11 months was associated with a statistically significant decrease in E. coli relative abundance (12.087% placebo vs 7.309% azithromycin, FDR p < .013). This divergence highlights that antibiotic class, age of the child, and dosing all influence the direction of microbiome changes.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "abx_microbiome_mcq_010",
+      "question": "In the Doan et al. RCT in Niger, azithromycin's single oral dose affected which diversity measures, and which measure was notably unaffected?",
+      "options": [
+        "A) Both alpha and beta diversity were significantly reduced; gamma diversity was unaffected",
+        "B) Alpha and gamma diversity were significantly reduced; beta diversity was unaffected",
+        "C) Beta and gamma diversity were significantly reduced; alpha diversity was unaffected",
+        "D) Only alpha diversity was reduced; beta and gamma diversity were both unaffected"
+      ],
+      "correct_answer": "B",
+      "explanation": "In Doan et al.'s RCT of 80 children (1-5 years) in Niger receiving a single oral dose of azithromycin, both alpha-diversity (Inverse Simpson's and Shannon's index both significantly decreased, p = .03 and p = .004 respectively) and gamma-diversity (Simpson's community-level gamma diversity decreased by 43%, p < .001) were significantly reduced. Beta-diversity, however, was not significantly changed — meaning the overall types of species found across groups remained similar, even though within-sample diversity and community-wide diversity declined. This stands in contrast to Wei et al. who did find significant beta-diversity changes with azithromycin.",
+      "expected_documents": ["PMC7928022_Association_between_antibiotics_and_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

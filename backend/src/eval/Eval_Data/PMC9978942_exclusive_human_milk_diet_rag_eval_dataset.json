@@ -1,0 +1,329 @@
+{
+  "source_document": "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf",
+  "citation": "Embleton ND, Sproat T, Uthaya S, et al. Effect of an exclusive human milk diet on the gut microbiome in preterm infants: a randomized clinical trial. JAMA Netw Open. 2023;6(3):e231165. doi:10.1001/jamanetworkopen.2023.1165",
+  "test_cases": [
+    {
+      "id": "ehmd_001",
+      "query": "How many infants were assessed for eligibility in the RCT and how many were ultimately randomized?",
+      "ground_truth_answer": "A total of 269 infants were assessed for eligibility. Of these, 143 were excluded (64 did not meet inclusion criteria, 35 declined to participate, and 44 were excluded for other reasons). This resulted in 126 infants being randomized — 63 to the control arm and 63 to the intervention arm.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ehmd_002",
+      "query": "How many infants in each arm had their microbiome analysed at the end of the trial?",
+      "ground_truth_answer": "Microbiome analysis was performed on 58 infants in the control arm and 58 infants in the intervention arm. In the intervention arm, 2 of these 58 infants had provided stool samples before receiving the trial intervention.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ehmd_003",
+      "query": "What were the two most common primary causes of death among recruited infants in the trial?",
+      "ground_truth_answer": "Respiratory failure was the most common cause of death, accounting for three infant deaths (two in the intervention arm and one in the control arm). Intraventricular haemorrhage was the second most common, also accounting for two deaths — both in the intervention arm.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ehmd_004",
+      "query": "What statistical method was used in the MaAsLin2 analysis to model relative abundance data?",
+      "ground_truth_answer": "Mixed-effects linear models were used with a variance-stabilizing arcsin square root transformation applied to relative abundance genera data. The models were adjusted for covariates and controlled for repeated measures.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ehmd_005",
+      "query": "Which bacterial genera were the only ones found to be associated with probiotic use in the preterm gut microbiome?",
+      "ground_truth_answer": "Bifidobacterium and Lactobacillus were the only two genera significantly associated with probiotic use. These are also the species used in preterm probiotics administered on the NICU.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ehmd_006",
+      "query": "How did days of mother's own milk (MOM) exposure relate to Bifidobacterium abundance according to MaAsLin2 results?",
+      "ground_truth_answer": "MaAsLin2 analysis showed a positive association between days of MOM exposure and Bifidobacterium abundance, with a coefficient of 0.0752 (SE = 0.0296, p = 0.0125). This indicates that greater cumulative exposure to mother's own milk was linked to higher relative abundance of Bifidobacterium in the preterm gut.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ehmd_007",
+      "query": "How did day of life (DOL) affect Staphylococcus abundance in the preterm infant gut?",
+      "ground_truth_answer": "Staphylococcus showed a strong and highly significant negative association with day of life (DOL), with a coefficient of -0.1729 and a p-value of 2.38E-21 (Q value: 4.95E-19). This means Staphylococcus abundance decreased sharply as the infants aged, representing one of the most statistically robust findings in the MaAsLin2 analysis.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ehmd_008",
+      "query": "How did Enterobacter abundance change with day of life (DOL) and what does this suggest about the developing preterm microbiome?",
+      "ground_truth_answer": "Enterobacter showed a significant positive association with day of life (coefficient = 0.1249, p = 2.69E-11, Q = 2.80E-09), meaning its relative abundance increased as infants aged. This contrasts with Staphylococcus, which declined with DOL, suggesting a shift in dominant early colonizers from Staphylococcus toward Enterobacteriaceae as the preterm gut microbiome matures.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ehmd_009",
+      "query": "What was the effect of probiotic unit assignment on Bifidobacterium abundance in MaAsLin2 results?",
+      "ground_truth_answer": "Being on a probiotic unit had a large and highly significant positive effect on Bifidobacterium abundance, with a coefficient of 0.2854 (SE = 0.0581, p = 3.48E-06, Q = 0.000145). This was the largest coefficient among the significant associations reported, highlighting that NICU probiotic protocols had a stronger effect on Bifidobacterium than MOM feeding duration or antibiotic use.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ehmd_010",
+      "query": "What role did mode of delivery play in shaping the preterm gut microbiome based on MaAsLin2 findings?",
+      "ground_truth_answer": "Caesarean section (CS) delivery was positively associated with Lactobacillus abundance (coefficient = 0.0559, p = 0.0104). This is notable because Lactobacillus is typically associated with vaginal birth rather than CS delivery. The finding may reflect probiotic supplementation or other NICU-specific factors rather than intrapartum colonization, since CS-born preterm infants are typically not exposed to vaginal microbiota.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ehmd_011",
+      "query": "How did the Weighted UniFrac PCoA reveal the impact of probiotic use on preterm gut microbiome composition across study centres?",
+      "ground_truth_answer": "The Weighted UniFrac PCoA (eFigure 3a) demonstrated a strong separation between probiotic and non-probiotic units, with the analysis yielding a significant p-value of 0.001 and an R-squared of 0.0752. PC1 explained 43% of variation and PC2 explained 40.2%. Samples from probiotic units (blue) and non-probiotic units (red) clustered distinctly regardless of centre (A, B, C, or D), indicating that the probiotic protocol at the unit level was a major driver of microbiome composition variability across the study.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ehmd_012",
+      "query": "How did antibiotic exposure and MOM feeding duration have opposing effects on Bifidobacterium in the MaAsLin2 analysis?",
+      "ground_truth_answer": "The MaAsLin2 results revealed that days of MOM exposure positively predicted Bifidobacterium abundance (coefficient = +0.0752), while total days of antibiotic exposure negatively predicted it (coefficient = -0.0440, p = 0.0214). This opposing relationship suggests that while sustained human milk feeding promotes colonization with Bifidobacterium, antibiotic use suppresses it — creating a potential tension in NICU care where antibiotics are frequently administered alongside efforts to establish beneficial microbiota through human milk feeding.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "ehmd_013",
+      "query": "What was the relationship between Shannon diversity and the intervention arm at study completion (time point E), and how was this modified by probiotic unit status?",
+      "ground_truth_answer": "At time point E (study completion), the intervention arm had significantly lower Shannon diversity and fewer observed OTUs compared to controls across all samples (OTU adj. P = 0.016; Shannon adj. P = 0.036). However, this effect was modified by probiotic unit status: in non-probiotic units, the difference was non-significant (OTU adj. P = 0.8; Shannon adj. P = 0.71), whereas in probiotic units, the OTU difference was highly significant (adj. P = 0.0073) and Shannon diversity trended lower (adj. P = 0.074). This suggests the diet-driven reduction in diversity was primarily observed in the context of probiotic use, potentially because Bifidobacterium enrichment from both the intervention and probiotics together narrowed the overall community.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "ehmd_014",
+      "query": "What ethical and methodological challenges in the trial design are reflected by the causes of death and exclusion patterns in the CONSORT diagram?",
+      "ground_truth_answer": "The CONSORT diagram reveals several challenges: 7 intervention infants did not receive the allocated intervention (3 died before intervention, 4 were transferred), compared to 5 in the control arm, suggesting the intervention arm had a slightly higher rate of early clinical deterioration or logistical barriers. Notably, 5 intervention infants died after enrolment compared to 1 in the control arm. Deaths spanned a wide range of causes — including respiratory failure, intraventricular haemorrhage, late-onset sepsis, fungal infection, and congenital herpes — reflecting the extreme clinical vulnerability of the preterm population. Two infants provided stool samples before receiving the trial intervention, introducing a potential intent-to-treat analysis complexity. These patterns illustrate the inherent difficulty of conducting RCTs in critically ill preterm neonates where the intervention window is narrow and mortality is unpredictable.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "ehmd_015",
+      "query": "Among infants who died in the trial, what pattern of MOM versus formula exposure can be observed, and what does this imply about the intervention fidelity?",
+      "ground_truth_answer": "Among the 12 infant deaths recorded in eTable 1, intervention arm infants received variable MOM exposure ranging from 0 to 107 days. One infant in the intervention arm (gestational age 26 weeks, 400g) who died at 112 days had 107 days of MOM and 37 days of fortifier but 14 days of formula/RTF, indicating protocol deviations occurred in longer-surviving infants. Several intervention infants who died early had 0 MOM days (e.g., the 24-week, 600g infant who died at day 3), indicating they never received the intervention. In contrast, one control arm infant who died late at 133 days had 0 MOM and 117 days of formula. This pattern suggests intervention fidelity was compromised by early mortality and clinical instability, highlighting that microbiome-level effects of the exclusive human milk diet could only be assessed in infants who survived long enough to receive it.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "ehmd_mcq_001",
+      "question": "How many infants were excluded from the trial due to not meeting inclusion criteria?",
+      "options": [
+        "A) 35",
+        "B) 44",
+        "C) 64",
+        "D) 143"
+      ],
+      "correct_answer": "C",
+      "explanation": "Of the 143 excluded infants, 64 did not meet inclusion criteria, 35 declined to participate, and 44 were excluded for other reasons.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ehmd_mcq_002",
+      "question": "What was the primary cause of death for the control arm infant who survived the longest (133 days)?",
+      "options": [
+        "A) Respiratory failure",
+        "B) Late onset sepsis",
+        "C) Intraventricular haemorrhage",
+        "D) Chronic lung disease"
+      ],
+      "correct_answer": "D",
+      "explanation": "The control arm infant born at 28 weeks (500g) who died at 133 days had chronic lung disease listed as the primary cause of death. This infant received 117 days of formula/RTF and had developed surgical NEC, though NEC was not the primary cause of death.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ehmd_mcq_003",
+      "question": "What do the five time points (A–E) in the sample collection schematic (eFigure 2) represent?",
+      "options": [
+        "A) Five different NICU centres",
+        "B) Five sequential stool sampling occasions per infant over the study period",
+        "C) Five gestational age groups of enrolled infants",
+        "D) Five dietary intervention phases"
+      ],
+      "correct_answer": "B",
+      "explanation": "eFigure 2 shows samples collected from each infant plotted against day of life, with points coloured and shaped according to time point (A through E), representing sequential sampling occasions. Most infants contributed samples clustered around days 0–25 for early time points and up to day 75+ for later ones.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ehmd_mcq_004",
+      "question": "Which covariate had the strongest statistical association (lowest p-value) with any genus in the MaAsLin2 analysis?",
+      "options": [
+        "A) Days of MOM exposure with Bifidobacterium",
+        "B) Probiotic unit with Bifidobacterium",
+        "C) Day of life with Staphylococcus",
+        "D) Day of life with Enterobacter"
+      ],
+      "correct_answer": "C",
+      "explanation": "The association between day of life (DOL) and Staphylococcus had the lowest p-value of 2.38E-21 (Q = 4.95E-19), far surpassing all other associations in the table, including the probiotic unit effect on Bifidobacterium (p = 3.48E-06) and DOL with Enterobacter (p = 2.69E-11).",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ehmd_mcq_005",
+      "question": "What was the Q value (FDR-adjusted p-value) for the association between probiotic unit and Bifidobacterium?",
+      "options": [
+        "A) 0.0001",
+        "B) 0.00014484",
+        "C) 0.01246316",
+        "D) 0.25923368"
+      ],
+      "correct_answer": "B",
+      "explanation": "The MaAsLin2 results table shows that the probiotic unit effect on Bifidobacterium had a Q value of 0.00014484, making it one of the few associations that survived FDR correction at q < 0.05. The unadjusted p-value was 3.48E-06.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ehmd_mcq_006",
+      "question": "What was observed about Shannon diversity at study completion (time point E) in infants from non-probiotic units when comparing control vs. intervention arms?",
+      "options": [
+        "A) The intervention arm had significantly higher Shannon diversity",
+        "B) There was no significant difference (adj. P = 0.71)",
+        "C) Shannon diversity was identical between arms",
+        "D) The control arm had significantly lower Shannon diversity (adj. P = 0.036)"
+      ],
+      "correct_answer": "B",
+      "explanation": "In non-probiotic units at time point E, Shannon diversity showed no significant difference between the control and intervention arms (adj. P = 0.71). This contrasts with the probiotic unit stratum (adj. P = 0.074, trending lower in the intervention) and the overall analysis (adj. P = 0.036, lower in the intervention arm), suggesting probiotic use confounds the diet effect on diversity.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ehmd_mcq_007",
+      "question": "What proportion of the variance in the Weighted UniFrac PCoA was explained by the first two principal coordinates (PC1 and PC2)?",
+      "options": [
+        "A) PC1: 30%, PC2: 25%",
+        "B) PC1: 43%, PC2: 40.2%",
+        "C) PC1: 50%, PC2: 20%",
+        "D) PC1: 43%, PC2: 20%"
+      ],
+      "correct_answer": "B",
+      "explanation": "The Weighted UniFrac PCoA (eFigure 3a) shows that PC1 explained 43% of the variation and PC2 explained 40.2%, together accounting for over 83% of the total variance. The overall PERMANOVA p-value was 0.001 with R-squared = 0.0752 for probiotic unit assignment.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ehmd_mcq_008",
+      "question": "Which genus showed a positive association with male sex in the MaAsLin2 analysis?",
+      "options": [
+        "A) Bifidobacterium",
+        "B) Streptococcus",
+        "C) Enterobacter",
+        "D) Veillonella"
+      ],
+      "correct_answer": "C",
+      "explanation": "The MaAsLin2 results table shows that male sex was associated with increased Enterobacter abundance (coefficient = 0.177, p = 0.0217). This sex-linked difference in Enterobacteriaceae colonization may have implications for understanding differential NEC risk or infection susceptibility between male and female preterm infants.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ehmd_mcq_009",
+      "question": "Comparing the effect sizes of probiotic unit assignment and cumulative antibiotic use on Bifidobacterium, what does the MaAsLin2 analysis reveal?",
+      "options": [
+        "A) Antibiotics had a larger absolute effect on Bifidobacterium than probiotic unit (coefficient -0.0440 vs. +0.2854)",
+        "B) Probiotic unit had a larger absolute positive effect (coefficient +0.2854) than antibiotics had a negative effect (coefficient -0.0440)",
+        "C) Both covariates had equal and opposite effects on Bifidobacterium",
+        "D) Neither association reached statistical significance after FDR correction"
+      ],
+      "correct_answer": "B",
+      "explanation": "The MaAsLin2 results show probiotic unit assignment had a coefficient of +0.2854 on Bifidobacterium (p = 3.48E-06, Q = 0.000145), while total antibiotic days had a coefficient of -0.0440 (p = 0.0214, Q = 0.323). The probiotic effect was approximately 6.5 times larger in magnitude than the antibiotic suppression effect, suggesting that probiotic protocols may partially counteract antibiotic-driven Bifidobacterium depletion in the NICU.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "ehmd_mcq_010",
+      "question": "What does the association between MOM exposure at 34 weeks and Clostridium_sensu_stricto_1 suggest about the timing of diet-microbiome interactions in preterm infants?",
+      "options": [
+        "A) MOM feeding at 34 weeks was positively associated with Clostridium abundance, suggesting milk promotes Clostridia colonization",
+        "B) MOM feeding at 34 weeks was negatively associated with Clostridium abundance (coefficient -0.034), suggesting human milk may suppress early Clostridia colonization at a critical developmental window",
+        "C) Clostridium abundance was unaffected by any dietary variable and only changed with DOL",
+        "D) MOM at 34 weeks was associated with suppression of Bifidobacterium, not Clostridium"
+      ],
+      "correct_answer": "B",
+      "explanation": "MaAsLin2 showed that achieving MOM feeding at 34 weeks was negatively associated with Clostridium_sensu_stricto_1 (coefficient = -0.034, p = 0.018). This implies that sustained human milk exposure at a critical gestational timepoint (34 weeks corrected age) may reduce the relative abundance of Clostridium — a genus associated with adverse outcomes in preterm neonates including NEC — pointing to a potentially protective timing-specific effect of the exclusive human milk diet beyond simple caloric provision.",
+      "expected_documents": [
+        "PMC9978942_Effect_of_an_Exclusive_Human_Milk_Diet_on_the_Gut.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

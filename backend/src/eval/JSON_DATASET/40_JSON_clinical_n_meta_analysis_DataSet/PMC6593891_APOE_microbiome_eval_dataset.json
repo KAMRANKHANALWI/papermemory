@@ -1,0 +1,288 @@
+{
+  "source_document": "PMC6593891_APOE_genotype_influences_the_gut_microbiome_structure_and_function.pdf",
+  "paper_title": "APOE genotype influences the gut microbiome structure and function in humans and mice: relevance for Alzheimer's disease pathophysiology",
+  "authors": "Tran et al., FASEB Journal 2019",
+  "test_cases": [
+    {
+      "id": "apoe_microbiome_001",
+      "query": "What is the strongest prevalent genetic risk factor for Alzheimer's disease?",
+      "ground_truth_answer": "Apolipoprotein E (APOE) genotype is the strongest prevalent genetic risk factor for Alzheimer's disease (AD).",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "apoe_microbiome_002",
+      "query": "How many APOE isoforms exist in humans, and what are they?",
+      "ground_truth_answer": "In humans, APOE exists in 3 different isoforms: apoE2, apoE3, and apoE4, arising from 3 different alleles (e2, e3, and e4). These alleles give rise to 3 homozygous genotypes (APOE2/E2, APOE3/E3, and APOE4/E4) and 3 heterozygous genotypes (APOE3/E2, APOE4/E3, and APOE4/E2).",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "apoe_microbiome_003",
+      "query": "What percentage of the population carries the APOE3/E3 genotype, and what are the allele frequencies of e2, e3, and e4?",
+      "ground_truth_answer": "Generally, 50–70% of populations present with the APOE3/E3 genotype. The e3 allele accounts for 70–80% of the gene pool, while the e2 and e4 alleles account for 5–10% and 10–15%, respectively.",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "apoe_microbiome_004",
+      "query": "How many human participants were enrolled in the study, and how were they selected?",
+      "ground_truth_answer": "Fifty-six healthy participants aged between 56 and 78 years were prospectively selected according to APOE genotype from the COB (NCT01922869) and the CANN (NCT02525198) studies. Twenty-four participants were selected as APOE4 carriers (APOE3/4 and APOE4/4; 12 men and 12 women), and 32 participants were selected as APOE4 non-carriers (APOE2/3 and APOE3/3; 16 men and 16 women). The selection process matched the genotype groups for age, BMI, and gender.",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "apoe_microbiome_005",
+      "query": "What bacterial family showed higher abundance in APOE2/E3 compared to APOE3/E3, APOE3/E4, and APOE4/E4 genotypes?",
+      "ground_truth_answer": "Ruminococcaceae, a family of fermentative anaerobes associated with fiber degradation and SCFA production, showed higher abundance in APOE2/E3 compared to APOE3/E3 (P = 0.004), APOE3/E4 (P = 0.002), and APOE4/E4 (P = 0.072).",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "apoe_microbiome_006",
+      "query": "What was the overall alpha diversity finding across APOE genotypes in the human cohort?",
+      "ground_truth_answer": "Alpha diversity was measured using chao1 (richness), phylogenetic diversity, and Shannon diversity index. None of these metrics was significantly different between APOE genotypes. Similarly, there was no significant difference in any of the alpha diversity metrics between males and females. However, the microbiota alpha diversity of obese subjects (n = 3) was significantly lower than that of normal weight and overweight subjects (P < 0.05).",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "apoe_microbiome_007",
+      "query": "What was the role of Prevotellaceae abundance differences across APOE genotypes and what disease associations have been observed for this family?",
+      "ground_truth_answer": "Prevotellaceae abundance was lower in APOE2/E3 than the other 3 APOE genotypes, and was slightly more abundant (at close-to-significant levels, P = 0.088) in APOE3/E4 compared with APOE4/E4. Higher levels of Prevotellaceae were evident in APOE3/E3 carriers relative to other genotype subgroups. Loss of Prevotellaceae has been reported to negatively correlate with neurodegenerative disorders—they were noted as less abundant in patients with Parkinson's disease and Alzheimer's disease. A reduction of Prevotellaceae influenced mucin synthesis and increased mucosal permeability, allowing local and systemic exposure to bacterial endotoxin, which may lead to the accumulation of alpha-synuclein in the colon.",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "apoe_microbiome_008",
+      "query": "How were APOE-targeted replacement (TR) mice used in this study, and what were the key age groups compared?",
+      "ground_truth_answer": "Twenty young (4 months; n = 10/genotype) and 12 old (18 months; n = 6 per genotype) male human APOE3 and APOE4 transgenic mice homozygous for the human APOE3 or APOE4 gene were used. Considering the average lifespan of laboratory mice, 18 months of age would correspond to approximately 65 human years, which approximates the human participants' age (68.5 ± 4.4 yr). Within each age group, both UniFrac measures showed significant microbiota differences between APOE3 and APOE4 genotypes (PERMANOVA P < 0.005).",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "apoe_microbiome_009",
+      "query": "What metabolomic approach was used to analyze fecal samples from APOE-TR mice and what were the key metabolic pathways found to differ by APOE genotype?",
+      "ground_truth_answer": "Metabolites were analyzed and quantified by [1H] NMR (nuclear magnetic resonance) analysis of fecal water prepared from caecal contents. Metabolite set enrichment analysis identified the significant pathways associated with APOE genotype as ammonia recycling, urea cycle, and alanine metabolism. For age-associated pathways, the significant ones were ammonia recycling, urea cycle, glycine and serine metabolism, glutamate metabolism, and alanine metabolism.",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "apoe_microbiome_010",
+      "query": "What did the coinertia analysis (COIA) reveal about the relationship between gut microbiota composition and fecal metabolome in APOE-TR mice?",
+      "ground_truth_answer": "The Monte Carlo permutation test revealed a high overall similarity in the structure between the two data sets, which was statistically significant (RV coefficient = 0.685; P = 0.01). The aggregate arrow length was shorter in APOE4 mice compared with APOE3 mice, indicating a higher consensus between microbiota composition and metabolites in APOE4 mice. Notably, SCFAs including acetate, butyrate, and propionate were located in the direction of butyrate-producing bacteria from Clostridium cluster IV genus and the families Ruminococcaceae and Lachnospiraceae, showing a positive correlation between SCFA levels and these specific taxa.",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "apoe_microbiome_011",
+      "query": "Describe the four metabolite clusters identified in the 2-way ANOVA heatmap analysis of APOE-TR mice fecal metabolomes and their associations with age and APOE genotype.",
+      "ground_truth_answer": "Four clusters with distinct correlations were identified. Cluster A comprised 5 metabolites (lactate, pyruvate, fumarate, hypoxanthine, and uracil) with inverse direct correlations with APOE4-TR old mice and strong direct correlations with the 3 other groups. Cluster B included 10 metabolites (methylamine, acetate, butyrate, propionate, arabinose, xylose, succinate, glucose, AMP, GTP) that were more abundant in young mice, especially APOE3-TR young compared with old mice. Cluster C contained 14 metabolites (amino acids: asparagine, alanine, tryptophan, threonine, tyrosine, lysine, phenylalanine, glutamate, histidine, leucine, glutamine, valine, isoleucine, methionine) that showed an opposite trend. Cluster D was divided into D1 (4 metabolites: 2-oxoisocaproate, alpha-ketoisovalerate, 3-methyl-2-oxovalerate, urocanate) with direct correlations with APOE4-TR young mice, and D2 (14 metabolites including isobutyrate, glycine, choline, creatine, taurine, formate, among others) with positive correlations with old mice.",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "apoe_microbiome_012",
+      "query": "How does APOE4 carrier status relate to Alzheimer's disease risk, and what increased risk is conferred by APOE3/E4 and APOE4/E4 genotypes compared to APOE3/E3?",
+      "ground_truth_answer": "APOE4 carrier status is highly predictive of dementia and Alzheimer's disease, with APOE3/E4 and APOE4/E4 being at 3–4-fold and 8–12-fold increased risk respectively, along with a much earlier age of onset compared with the APOE3/E3 genotype. Despite extensive research, the main etiological mechanism underlying APOE4 neuropathological associations has not been clearly defined.",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "apoe_microbiome_013",
+      "query": "Compare the gut microbiota compositional differences between APOE3-TR and APOE4-TR mice at the phylum, family, and genus levels, including age-related interactions.",
+      "ground_truth_answer": "At the phylum level, Deferribacteres were notably higher in APOE4-TR mice across combined age groups, while Candidatus Saccharibacteria showed the opposite trend. Lower relative abundance of Proteobacteria was seen in APOE4-TR young mice. At the family level, Lachnospiraceae and Deferribacteraceae abundance increased in APOE4 transgenes compared with APOE3, while Bacteroidaceae decreased. Desulfovibrionaceae, Clostridiales Incertae Sedis XIII, Rikenellaceae, Prevotellaceae, and Erysipelotrichaceae were significantly different between APOE genotypes in young mice. At the genus level, differentially abundant taxa in combined age groups included Mucispirillum, Clostridium cluster XIVa, Butyricicoccus, Odorobacter, Enterorhabdus, and Bacteroides, while young mice showed differences in Mucispirillum, Desulfovibrio, Butyricicoccus, Bacteroides, Alistipes, and Johnsonella.",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "apoe_microbiome_014",
+      "query": "Explain the proposed mechanistic pathway by which loss of butyrate-producing bacteria in APOE4 carriers could contribute to Alzheimer's disease pathology, including the role of SCFAs and aggregation-prone proteins.",
+      "ground_truth_answer": "In APOE4 carriers, there is a reduction of butyrate-producing bacteria including Clostridium cluster IV, Roseburia, and Ruminococcaceae. This leads to lower concentrations of SCFAs (acetate, butyrate, propionate) and their precursors (lactate and succinate), as observed in APOE4 old mice. Several SCFAs have been shown to inhibit the formation of toxic soluble beta-amyloid aggregates in vitro, thereby decreasing AD risk. Furthermore, reduced Prevotellaceae—also more depleted in APOE4 carriers—leads to increased mucosal permeability and bacterial endotoxin exposure, which may promote accumulation of alpha-synuclein in the colon. Aggregation-prone proteins such as beta-amyloid and alpha-synuclein can then propagate from the gut to the brain via the vagus nerve, contributing to the pathogenesis of AD and other neurodegenerative disorders. Thus, the loss of butyrate-producing bacteria and SCFAs in APOE4 carriers represents a potential intervention point to mitigate the impact of the APOE4 allele on neuropathology.",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "apoe_microbiome_015",
+      "query": "What were the key limitations in directly comparing the murine and human gut microbiome findings by APOE genotype, and how did the authors account for these discrepancies?",
+      "ground_truth_answer": "Several genera that were significantly different between APOE3 and APOE4 genotypes in murine gut microbiomes could not be detected or correlated in human data for three main reasons: (1) absence of some mouse-specific gut microbiota in humans, such as Mucispirillum; (2) differences in relative abundance of each individual taxa; and (3) the complexity of interactions of human gut microbiota with genetics, diet, and other environmental factors. Additionally, while both alpha and beta diversity analyses of the gut microbiota did not discriminate between APOE genotypes in humans—as these are global measures detecting relatively large differences—the study used taxon-level abundance comparisons via the Kruskal-Wallis H test to detect more subtle differences. The authors also noted that host genetic influence must be weighed against stronger environmental influences reported in other studies.",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "apoe_microbiome_016",
+      "query": "How do the gut microbiome differences between APOE genotypes observed in this study intersect with the known roles of the ApoE protein in lipid metabolism, neuroinflammation, and immune regulation, and what does this suggest about the gut-brain axis in AD?",
+      "ground_truth_answer": "The ApoE protein is involved in multiple biologic processes including lipoprotein metabolism, intracellular cholesterol utilization, cell growth, immunoregulation, (neuro)inflammation, and neuroprotection. Although the role of ApoE in gut chylomicron metabolism and inflammation had been described previously, the impact of APOE genotype on intestinal integrity and gut microbiome composition was unknown prior to this study. The study found that APOE genotype is associated with differences in butyrate-producing bacteria (Ruminococcaceae, Clostridium cluster IV, Roseburia) and Prevotellaceae, which are involved in SCFA production and mucosal barrier integrity respectively. Depletion of these bacteria in APOE4 carriers may amplify neuroinflammation through reduced SCFA-mediated anti-inflammatory effects and increased gut permeability allowing bacterial endotoxin (LPS) to enter systemic circulation—a pathway already linked to AD pathology. This suggests the gut microbiome acts as an intermediary in which APOE genotype-driven microbial differences modulate neuroinflammatory and metabolic processes relevant to the gut-brain axis in AD.",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "apoe_microbiome_mcq_001",
+      "question": "How many unique OTUs (operational taxonomic units) were identified in the human gut microbiota analysis at a 97% similarity threshold?",
+      "options": [
+        "A) 1,214 OTUs",
+        "B) 2,186 OTUs",
+        "C) 3,314 OTUs",
+        "D) 4,502 OTUs"
+      ],
+      "correct_answer": "C",
+      "explanation": "The reads were clustered at a 97% similarity threshold into 3,314 unique OTUs or sequence-based bacterial classifications approximating to species. The total OTUs were assigned to 15 phyla, 27 classes, 43 orders, 70 families, and 155 unique genera across the entire dataset.",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "apoe_microbiome_mcq_002",
+      "question": "What was the most dominant phylum in the human gut microbiota samples from this study?",
+      "options": [
+        "A) Bacteroidetes (82.2 ± 10.8%)",
+        "B) Firmicutes (82.2 ± 10.8%)",
+        "C) Actinobacteria (82.2 ± 10.8%)",
+        "D) Proteobacteria (82.2 ± 10.8%)"
+      ],
+      "correct_answer": "B",
+      "explanation": "The vast majority (99.5%) of all sequences were affiliated to 5 dominant phyla. The most dominant was Firmicutes (82.2 ± 10.8%), followed by Bacteroidetes (7.7 ± 6.3%), Actinobacteria (3.8 ± 4.5%), Proteobacteria (3.2 ± 9.5%), and Verrucomicrobia (2.6 ± 5.1%).",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "apoe_microbiome_mcq_003",
+      "question": "What was the rarefaction depth used to ensure even sampling in the human microbiota diversity analysis?",
+      "options": [
+        "A) 4,368 reads per sample",
+        "B) 6,512 reads per sample",
+        "C) 8,736 reads per sample",
+        "D) 12,000 reads per sample"
+      ],
+      "correct_answer": "C",
+      "explanation": "After rarefaction with a depth of 8,736 reads per sample, alpha diversity was measured using three diversity indices: chao1 (richness), phylogenetic diversity, and Shannon diversity index.",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "apoe_microbiome_mcq_004",
+      "question": "What was the P-value significance threshold found for Ruminococcaceae abundance differences between APOE2/E3 and APOE3/E3 genotypes in humans?",
+      "options": [
+        "A) P = 0.041",
+        "B) P = 0.004",
+        "C) P = 0.027",
+        "D) P = 0.099"
+      ],
+      "correct_answer": "B",
+      "explanation": "The abundance of Ruminococcaceae was higher in APOE2/E3 than in APOE3/E3 (P = 0.004), APOE3/E4 (P = 0.002), or APOE4/E4 (P = 0.072). Ruminococcaceae is a family of fermentative anaerobes associated with fiber degradation and SCFA production.",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "apoe_microbiome_mcq_005",
+      "question": "Which two biomarkers of intestinal integrity were measured in plasma to assess possible microbial translocation associated with APOE genotype?",
+      "options": [
+        "A) Interleukin-6 (IL-6) and C-reactive protein (CRP)",
+        "B) Haptoglobin and LPS binding protein (LBP)",
+        "C) Zonulin and claudin-3",
+        "D) Tumor necrosis factor-alpha (TNF-α) and lipopolysaccharide (LPS)"
+      ],
+      "correct_answer": "B",
+      "explanation": "To determine possible associations between APOE genotypes and microbial translocation, plasma levels of two biomarkers of intestinal integrity—haptoglobin and LPS binding protein (LBP)—were measured by ELISA. No significant differences were observed in these levels according to genotype.",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "apoe_microbiome_mcq_006",
+      "question": "In APOE-TR mice, what was the PERMANOVA P-value finding for beta diversity differences between APOE3 and APOE4 genotypes within each age group?",
+      "options": [
+        "A) P > 0.05 (not significant)",
+        "B) P < 0.05",
+        "C) P < 0.005",
+        "D) P < 0.001"
+      ],
+      "correct_answer": "C",
+      "explanation": "Within each age group, both UniFrac measures (unweighted and weighted) showed significant microbiota differences between APOE3 and APOE4 genotypes, with the P-value from PERMANOVA analysis < 0.005. This is contrasted with the human cohort where beta diversity analysis found no significant difference in gut microbiota composition according to APOE genotype.",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "apoe_microbiome_mcq_007",
+      "question": "Which genus, abundant in APOE2/E3 individuals, is described as a strictly anaerobic bacterium that ferments carbohydrates to produce formic and N-butyric acids?",
+      "options": [
+        "A) Roseburia",
+        "B) Clostridium cluster IV",
+        "C) Gemmiger",
+        "D) Butyricicoccus"
+      ],
+      "correct_answer": "C",
+      "explanation": "Higher presence of Gemmiger was observed in fecal samples from APOE2/E3 compared with APOE3/E3 (P = 0.0499). Gemmiger are strictly anaerobic bacteria that ferment a variety of carbohydrates to produce formic and N-butyric acids, often with small amounts of acetic, lactic, succinic, malonic, and pyruvic acids.",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "apoe_microbiome_mcq_008",
+      "question": "What was the RV coefficient found in the coinertia analysis (COIA) between the fecal metabolome and microbiota composition at OTU level in APOE-TR mice?",
+      "options": [
+        "A) RV = 0.321, P = 0.05",
+        "B) RV = 0.485, P = 0.01",
+        "C) RV = 0.685, P = 0.01",
+        "D) RV = 0.812, P = 0.001"
+      ],
+      "correct_answer": "C",
+      "explanation": "The Monte Carlo permutation test revealed a high overall similarity in the structure between the two data sets, which was statistically significant with RV coefficient = 0.685; P = 0.01. The first 4 axes represented 72.5, 8.9, 7.0, and 2.6% of the explained variance, so the analysis focused on the first axis.",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "apoe_microbiome_mcq_009",
+      "question": "This was described as the first study to directly compare gut microbiota composition in humans and transgenic mice with different APOE genotypes. Which combination of findings best represents the novel contribution of this study?",
+      "options": [
+        "A) Discovery that APOE4 increases overall gut microbiota diversity and promotes beneficial SCFA production",
+        "B) Identification of APOE genotype-specific differences in Prevotellaceae and Ruminococcaceae abundance, and corresponding metabolomic differences in amino acids and SCFAs, across both human and mouse models",
+        "C) Demonstration that APOE genotype determines alpha diversity but not beta diversity in both human and murine gut microbiomes",
+        "D) Proof that APOE4 carriers have higher intestinal permeability based on elevated LBP and haptoglobin levels"
+      ],
+      "correct_answer": "B",
+      "explanation": "The study's key novel contributions were: (1) detecting significantly different relative abundance of Prevotellaceae and Ruminococcaceae and butyrate-producing genera by APOE genotype in both humans and APOE-TR mice; (2) metabolomic analysis detecting significant differences in microbe-associated amino acids and SCFAs between APOE genotypes. This combination suggests the gut microbiome is a potential target to mitigate the deleterious impact of the APOE4 allele on cognitive decline and AD prevention. The other options are incorrect—alpha diversity was NOT significantly different by APOE genotype, intestinal permeability markers showed no significant differences, and APOE4 was associated with REDUCED SCFA production.",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "apoe_microbiome_mcq_010",
+      "question": "In APOE4 old mice, which of the following best explains the lower concentrations of SCFAs observed in the metabolomic analysis, and what compensatory mechanism is noted in APOE3 old mice?",
+      "options": [
+        "A) APOE4 old mice produce excess bile acids that inhibit SCFA synthesis; APOE3 old mice compensate via elevated propionate from Prevotella",
+        "B) APOE4 old mice experience loss of butyrate-producing bacteria; APOE3 old mice have higher lactate that can be converted to butyrate by Lachnospiraceae members including Eubacterium hallii and Anaerostipes caccae",
+        "C) APOE4 old mice have increased intestinal transit time reducing fermentation; APOE3 old mice compensate via increased protein fermentation to branched-chain SCFAs",
+        "D) APOE4 old mice have higher abundance of Desulfovibrio that competitively inhibits SCFA producers; APOE3 old mice compensate via elevated Prevotellaceae activity"
+      ],
+      "correct_answer": "B",
+      "explanation": "The lower concentrations of several fatty acids, especially SCFAs and their precursors (lactate and succinate), in APOE4 old mice were attributed to loss of butyrate-producing bacteria—similar to what was observed in humans with an APOE4/E4 genotype. Although lower levels of SCFAs were also noted in old APOE3 mice, the lactate level was higher in this group, which is able to convert to butyrate by a subset of Lachnospiraceae including Eubacterium hallii and Anaerostipes caccae. Similarly, Bacteroides, which were significantly more abundant in APOE3 mice, have propionate-producing capacity through the succinate pathway.",
+      "expected_documents": ["PMC6593891_APOE_genotype_influences_the_gut_microbiome_struct.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

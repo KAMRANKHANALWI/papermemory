@@ -1,0 +1,328 @@
+{
+  "source_document": "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf",
+  "test_cases": [
+    {
+      "id": "bgm_asd_001",
+      "query": "What are the two core deficits that define autism spectrum disorder according to the DSM-5?",
+      "ground_truth_answer": "Autism spectrum disorder is characterized by two core deficits: persistent difficulties in social communication and interaction, and restricted, repetitive patterns of behavior.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "bgm_asd_002",
+      "query": "What percentage of individuals with ASD experience gastrointestinal symptoms?",
+      "ground_truth_answer": "GI symptoms — including abdominal pain, constipation, and diarrhea — have been reported in 46 to 84% of individuals with ASD, making gastrointestinal dysfunction one of the most prevalent physiological symptoms of the disorder.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "bgm_asd_003",
+      "query": "What biological systems does the Brain-Gut-Microbiome system interact with?",
+      "ground_truth_answer": "The BGM system closely interacts with the immune system, the hypothalamic-pituitary-adrenal (HPA) axis, and the two branches of the autonomic nervous system. It also includes the central and enteric nervous systems and various neural, metabolic, endocrine, and immune mediators.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "bgm_asd_004",
+      "query": "What is the definition of probiotics as cited in the paper?",
+      "ground_truth_answer": "The paper cites the FAO/WHO definition of probiotics as 'live microorganisms which when administered in adequate amounts confer a health benefit on the host.'",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "bgm_asd_005",
+      "query": "What percentage of ASD patients exhibit hyperserotonemia?",
+      "ground_truth_answer": "Approximately 30% of ASD patients have hyperserotonemia, or elevated whole-blood serotonin levels, which is believed to be due in part to increased serotonin production in enterochromaffin cells in the gut.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "bgm_asd_006",
+      "query": "How does the vagus nerve contribute to the Brain-Gut-Microbiome system?",
+      "ground_truth_answer": "The afferent vagus nerve transmits information from visceral organs to brain regions including the hypothalamus, amygdala, and insular cortex, as well as brainstem nuclei. These brainstem nuclei are critical for bidirectional communication between the gut and the brain, forming a major signaling highway within the BGM system.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "bgm_asd_007",
+      "query": "What happened when germ-free mice were colonized with fecal bacteria from neurotypical mice in Desbonnet et al.'s experiments?",
+      "ground_truth_answer": "In Desbonnet et al.'s experiments, male mice raised in germ-free conditions exhibited social avoidant and repetitive behaviors, a lack of interest in social novelty, and reduced social motivation — all ASD-like behaviors. When a second set of germ-free mice was colonized with fecal bacteria from neurotypical, normally behaving mice, many of these behavioral deficits were reversed, demonstrating the significance of healthy microbiota for typical social functioning.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "bgm_asd_008",
+      "query": "What are the three main metabolic pathways through which dietary tryptophan is processed, and which is the most dominant?",
+      "ground_truth_answer": "Dietary tryptophan is metabolized through three main pathways: the serotonin pathway, the kynurenine (KYN) pathway, and the indole metabolic pathway. The kynurenine pathway is by far the most dominant, with over 95% of tryptophan being oxidized and degraded along this route.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "bgm_asd_009",
+      "query": "How does the indole pathway differ from the serotonin and kynurenine pathways in terms of dependence on gut microbiota?",
+      "ground_truth_answer": "The indole pathway is entirely microbe-dependent: the biosynthesis of indoles and their derivatives from tryptophan relies fully on the enzyme tryptophanase, which is only found in select gut microbes. In contrast, the serotonin and kynurenine pathways are modulated — but not exclusively controlled — by gut microbiota, meaning they also involve host enzymes such as tryptophan hydroxylase and indoleamine-2,3-dioxygenase.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "bgm_asd_010",
+      "query": "What is the role of IDO and TDO in the kynurenine pathway, and what activates each enzyme?",
+      "ground_truth_answer": "Both IDO (indoleamine-2,3-dioxygenase) and TDO (tryptophan-2,3-dioxygenase) are enzymes responsible for metabolizing tryptophan into kynurenine. IDO is expressed in all body tissues and is typically activated in the presence of pro-inflammatory cytokines, while TDO is expressed primarily in liver tissues and is activated by glucocorticoids. The kynurenine produced then metabolizes further into neuroprotective kynurenic acid (KA) and neurotoxic quinolinic acid (QA).",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "bgm_asd_011",
+      "query": "How did Microbiota Transfer Therapy (MTT) affect ASD children in the Kang et al. clinical trial, and how durable were the effects?",
+      "ground_truth_answer": "In Kang et al.'s exploratory clinical trial with 18 ASD children with moderate to severe GI issues, MTT — which combined antibiotic treatment, a bowel cleanse, a stomach-acid suppressant, and an extended fecal microbiota transplant — led to significant improvements in both GI and ASD symptoms, including improvements in social skill deficits. Importantly, a majority of these improvements were sustained and even further improved two years after treatment completion. Additionally, plasma and fecal metabolite profiles of the ASD group became more similar to those of typically developing controls following MTT.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "bgm_asd_012",
+      "query": "What is the significance of the Turicibacter sanguinis finding by Fung et al. for understanding the microbiome-serotonin-ASD connection?",
+      "ground_truth_answer": "Fung et al. found that the gut bacterium Turicibacter sanguinis expresses a neurotransmitter sodium symporter-related protein with sequence and structural homology to the mammalian serotonin transporter (SERT). This microbe imports serotonin through a mechanism that is inhibited by the SSRI fluoxetine, just like its host counterpart. Serotonin exposure reduces expression of sporulation factors in T. sanguinis, and treating it with serotonin or fluoxetine modulates its competitive colonization in the GI tract. This suggests that genetic variants of this microbial SERT-like mechanism may exist, and that bidirectional host-microbe tryptophan metabolite interactions could play a role in ASD pathophysiology, including gut symptoms.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "bgm_asd_013",
+      "query": "Compare the findings of Sharon et al. and Needham et al. regarding how gut microbiota from ASD donors influence behavior and metabolome in animal models.",
+      "ground_truth_answer": "Sharon et al. transferred gut microbiota from ASD and typically developing (TD) hosts into germ-free wild-type mice; after colonization with ASD microbiota, mice displayed hallmark ASD-like behaviors including increased repetitive behavior, decreased locomotion and communication, and distinct metabolome profiles compared to mice colonized with TD microbiota. Needham et al., on the other hand, demonstrated that significant differences in fecal and plasma metabolomes between ASD and TD children existed regardless of whether GI symptoms were present in the ASD group, indicating that microbial abnormalities and their behavioral influence are not exclusive to ASD patients with GI dysfunction. Together, these studies suggest that the gut microbiome broadly contributes to ASD-related behavioral and metabolic alterations, independent of GI comorbidity status.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "bgm_asd_014",
+      "query": "How does the 5-HTTLPR polymorphism differentially affect amygdala functioning and default mode network connectivity in ASD versus typically developing individuals?",
+      "ground_truth_answer": "In ASD youth, low-expressing 5-HTTLPR alleles (which reduce serotonin transporter expression) were associated with stronger posterior-anterior default mode network (DMN) connectivity, whereas the opposite pattern was seen in typically developing controls. At the functional level, ASD youth with low-expressing genotypes failed to show normal amygdala habituation to repeated sad faces and displayed abnormally high amygdala-subgenual ACC connectivity when viewing happy faces, compared to both TD individuals and ASD individuals with high-expressing genotypes. This suggests that 5-HTTLPR genotype defines a serotonin-related subtype within ASD, influencing both resting-state network dynamics and social-emotional face processing in ways that diverge fundamentally from the neurotypical serotonergic pattern.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "bgm_asd_015",
+      "query": "How do Prevotella and Bacteroides abundance differentially relate to insula cortical thickness and brain connectivity, and what are the implications for ASD?",
+      "ground_truth_answer": "In a study by Tillisch et al. on healthy adult women, greater Prevotella abundance was associated with increased connectivity between emotion-, attention-, and sensory-processing brain regions and lower cortical thickness in the anterior insula, while higher Bacteroides abundance was associated with greater cortical thickness in the frontal cortex and anterior insula. Separately, Curtis et al. found that microbiota diversity was positively associated with resting-state functional connectivity of the middle insular cortices, and that anterior and inferior insula connectivity specifically correlated with Bacteroides and Prevotella levels — two genera with well-established abnormalities in individuals with ASD. Since reduced anterior insula connectivity is consistently implicated in ASD, these findings suggest that the dysbiotic microbiome profile characteristic of ASD may contribute to insular structural and functional abnormalities through the BGM system.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "bgm_asd_mcq_001",
+      "question": "During which critical period of life is gut microbiota development considered most foundational for establishing a healthy and protective microbiome?",
+      "options": [
+        "A) The first 100 days of life",
+        "B) The first 500 days of life",
+        "C) The first 1000 days of life (including prenatal life)",
+        "D) The first 2000 days of life"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper states that gut microbiota development during the first 1000 days of life, including prenatal life, is critical for establishing a healthy and protective microbiome.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "bgm_asd_mcq_002",
+      "question": "Which gut bacterium, when administered orally to maternal immune activation (MIA) mouse offspring, corrected gut permeability and ameliorated atypical anxiety, communicative, repetitive, and sensorimotor behaviors?",
+      "options": [
+        "A) Lactobacillus reuteri",
+        "B) Bifidobacterium longum",
+        "C) Bacteroides fragilis",
+        "D) Akkermansia muciniphila"
+      ],
+      "correct_answer": "C",
+      "explanation": "Hsiao et al. demonstrated that oral administration of the gut commensal Bacteroides fragilis to MIA offspring corrected gut permeability, improved gut microbiota and blood metabolite profiles, and ameliorated atypical anxiety, communicative, repetitive, and sensorimotor behavioral symptoms — though it did not restore sociability or social preference.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "bgm_asd_mcq_003",
+      "question": "In Golubeva et al.'s study of BTBR mice (a validated ASD model), how many of the identified gut bacterial genera showed altered relative abundance levels?",
+      "options": [
+        "A) 10 out of 44",
+        "B) 18 out of 44",
+        "C) 25 out of 44",
+        "D) 35 out of 44"
+      ],
+      "correct_answer": "B",
+      "explanation": "Golubeva et al. found that BTBR mice displayed altered relative abundance levels in 18 out of 44 identified gut bacterial genera, which were linked to physiological and behavioral impairments, including significantly reduced amounts of Bifidobacteria and Blautia species.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "bgm_asd_mcq_004",
+      "question": "What percentage of dietary tryptophan is oxidized and degraded along the kynurenine (KYN) pathway?",
+      "options": [
+        "A) Over 50%",
+        "B) Over 75%",
+        "C) Over 85%",
+        "D) Over 95%"
+      ],
+      "correct_answer": "D",
+      "explanation": "The paper states that over 95% of tryptophan is oxidized and degraded to yield metabolites along the KYN pathway, making it the dominant route of tryptophan metabolism.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "bgm_asd_mcq_005",
+      "question": "In Bryn et al.'s study on the kynurenine pathway in ASD children, which of the following patterns was observed compared to typically developing children?",
+      "options": [
+        "A) Higher KA levels, lower KYN/KA ratios, and lower QA concentrations",
+        "B) Lower KA levels, higher KYN/KA ratios, and higher QA concentrations",
+        "C) Higher KA levels, higher KYN/KA ratios, and lower QA concentrations",
+        "D) Lower KA levels, lower KYN/KA ratios, and lower QA concentrations"
+      ],
+      "correct_answer": "B",
+      "explanation": "Bryn et al. showed that children with ASD had significantly lower kynurenic acid (KA) serum levels, higher KYN/KA ratios, and higher quinolinic acid (QA) serum concentrations than typically developing children — indicating a shift toward neurotoxic metabolites and increased risk of neurotoxicity.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "bgm_asd_mcq_006",
+      "question": "Where is the majority of the body's serotonin (>90%) synthesized?",
+      "options": [
+        "A) Neurons of the central nervous system, particularly the raphe nuclei",
+        "B) Enterochromaffin cells in the gastrointestinal tract",
+        "C) The hypothalamus and amygdala",
+        "D) Liver hepatocytes via the kynurenine pathway"
+      ],
+      "correct_answer": "B",
+      "explanation": "Although serotonin is also synthesized in ENS and CNS neurons (especially the raphe nuclei in the brainstem), the majority — over 90% — comes from enterochromaffin cells in the GI tract, underscoring the gut's central role in serotonin production.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "bgm_asd_mcq_007",
+      "question": "In Tillisch et al.'s study on healthy women, what structural brain finding was associated with greater Prevotella abundance in gut microbiota?",
+      "options": [
+        "A) Greater cortical thickness in the frontal cortex",
+        "B) Increased amygdala volume",
+        "C) Increased connectivity between emotion- and sensory-processing regions and lower cortical thickness in the anterior insula",
+        "D) Greater white matter integrity in the thalamus"
+      ],
+      "correct_answer": "C",
+      "explanation": "Tillisch et al. found that greater Prevotella abundance was associated with increased connections between emotion-, attention-, and sensory-processing brain regions alongside lower cortical thickness in the anterior insula, while higher Bacteroides was linked to greater cortical thickness in the frontal cortex and anterior insula.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "bgm_asd_mcq_008",
+      "question": "What did the Fernández-Real et al. study on obese and non-obese participants find regarding Actinobacteria abundance and brain structure?",
+      "options": [
+        "A) Actinobacteria was negatively associated with fractional anisotropy in the hippocampus",
+        "B) Actinobacteria abundance was positively associated with executive functioning and white matter structural microstructure in the amygdala and thalamus",
+        "C) Actinobacteria was positively associated with cortical thinning in the prefrontal cortex",
+        "D) Actinobacteria was unrelated to any brain structural measure"
+      ],
+      "correct_answer": "B",
+      "explanation": "Fernández-Real et al. found that abundance of Actinobacteria was positively associated with executive functioning and structural microstructure as measured by fractional anisotropy (FA) in the amygdala and thalamus, supporting the link between the microbiome and emotion processing at the structural brain level.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "bgm_asd_mcq_009",
+      "question": "Which of the following best explains why the lack of consensus in gut microbiota findings in ASD is difficult to resolve?",
+      "options": [
+        "A) ASD is caused solely by genetic factors, making microbiome studies irrelevant",
+        "B) There are no validated biomarkers linking gut bacteria to brain function",
+        "C) Study-wide differences in collection methods, preprocessing, statistical analysis, age, sex, participant diet, specimen type, ASD heterogeneity, and GI disorder presence complicate interpretation",
+        "D) All microbiome studies in ASD have been conducted only in animal models with no human data"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper explicitly notes that the lack of consensus across ASD microbiome studies may be due to several factors including study-wide differences in collection methods, preprocessing, statistical analysis, age, sex, participant diet, specimen type, ASD heterogeneity, and the presence of GI disorders — all of which demonstrate a need for more homogeneous samples and standardized protocols.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "bgm_asd_mcq_010",
+      "question": "In a PET study by Andersson et al., where was serotonin transporter availability found to be lower in adults with ASD compared to matched controls, and what behavioral correlate was identified?",
+      "options": [
+        "A) Lower availability in the cerebellum; correlated with motor deficits",
+        "B) Lower availability in the total gray matter and brainstem; availability in the nucleus accumbens, ACC, and putamen positively correlated with social cognition",
+        "C) Lower availability only in the hippocampus; correlated with memory impairments",
+        "D) Lower availability in the frontal lobe; correlated with executive dysfunction"
+      ],
+      "correct_answer": "B",
+      "explanation": "Andersson et al. found lower serotonin transporter availability in the total gray matter and brainstem of adults with ASD relative to matched controls. Critically, serotonin transporter availability in the nucleus accumbens, anterior cingulate cortex (ACC), and putamen was positively correlated with social cognition, indicating the serotonin transporter as a potential pharmacological target.",
+      "expected_documents": [
+        "PMC8704412_The_Brain-Gut-Microbiome_System_Pathways_and_Implications_for_ASD.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

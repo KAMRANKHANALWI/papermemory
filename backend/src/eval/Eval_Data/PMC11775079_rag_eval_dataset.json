@@ -1,0 +1,306 @@
+{
+  "source_document": "PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf",
+  "paper_title": "Human gut microbiome, diet, and mental disorders",
+  "authors": "Alejandro Borrego-Ruiz, Juan J. Borrego",
+  "journal": "International Microbiology (2025) 28:1–15",
+  "doi": "https://doi.org/10.1007/s10123-024-00518-6",
+
+  "test_cases": [
+    {
+      "id": "mental_microbiome_001",
+      "query": "What are the four main dietary variants discussed in the paper?",
+      "ground_truth_answer": "The four main dietary variants discussed are: (i) high-calorie diets such as the Western diet; (ii) mixed-balanced diets such as the Mediterranean diet; (iii) plant-based diets such as the vegetarian diet; and (iv) low-carbohydrate diets such as the ketogenic diet.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mental_microbiome_002",
+      "query": "What are the most prevalent bacterial families in the healthy adult human gut bacteriome?",
+      "ground_truth_answer": "The most prevalent bacterial families in the healthy human adult gut bacteriome are Bacteroidaceae (65.6%), Lachnospiraceae (11.5%), and Ruminococcaceae (8.4%). More than 93% of gut bacteria belong to the phyla Actinomycetota, Bacillota, Bacteroidota, and Pseudomonadota.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mental_microbiome_003",
+      "query": "What distinguishes the terms 'microbiome' and 'microbiota' according to the paper?",
+      "ground_truth_answer": "The term microbiome is broader and encompasses the full range of microorganisms (bacteria, archaea, viruses, fungi), the collection of all their genomes, microbial structural elements, metabolites, and environmental conditions. The term microbiota is more restricted and refers only to the group of commensalist, symbiotic, and pathogenic microorganisms found in a given environment.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mental_microbiome_004",
+      "query": "What bacterial genera are increased by following a Mediterranean diet?",
+      "ground_truth_answer": "Following a Mediterranean diet increases the population of bacterial families Clostridiaceae and Lactobacillaceae, and the genera Bacteroides, Bifidobacterium, Clostridium, Faecalibacterium, Lactobacillus, Oscillospira, Prevotella, and Roseburia. It also leads to a decrease in members of the phyla Pseudomonadota and Bacillota, and the genera Coprococcus and Ruminococcus.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mental_microbiome_005",
+      "query": "What specific microbial metabolites does the Western diet produce that contribute to inflammation and metabolic disease?",
+      "ground_truth_answer": "The Western diet, through alterations in the gut microbiota, leads to the production of high levels of lipopolysaccharide (LPS) and trimethylamine N-oxide (TMAO), as well as a decrease in short-chain fatty acids (SCFAs). These factors are associated with chronic inflammation, metabolic syndrome (diabetes, hypertension, cardiovascular disease), and obesity.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mental_microbiome_006",
+      "query": "How does the ketogenic diet alter the gut microbiota composition, and what are the key changes observed?",
+      "ground_truth_answer": "The ketogenic diet causes a decrease in members of the Bacillota phylum and an increase in members of the Bacteroidota phylum. In human studies using a modified KD, there was a decrease in Bifidobacterium spp. and Lachnobacterium spp., while Akkermansia spp., Slackia spp., and members of the Christensenellaceae family were increased. In children with severe epilepsy, relative abundance of Bifidobacterium, Eubacterium, and Dialister were significantly diminished, and Escherichia increased. KD also decreases Actinomycetota, Lactobacillus spp., and Bifidobacterium spp.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mental_microbiome_007",
+      "query": "Through what mechanisms does the gut-brain axis connect the central nervous system with the intestine?",
+      "ground_truth_answer": "The gut-brain axis is a bidirectional communication network connecting the nervous system — central (CNS), autonomic (ANS), and enteric (ENS) — or the hypothalamic–pituitary–adrenal (HPA) axis, with the intestine via vagal, neuroimmune, and neuroendocrine pathways. Intermediate metabolites including SCFAs and tryptophan catabolites, cytokines, and neurotransmitters produced by the gut microbiome may be involved in various brain functions.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mental_microbiome_008",
+      "query": "How does long-term exposure to the Western diet affect the hypothalamic-pituitary-adrenal (HPA) axis and what neuropsychiatric outcomes result?",
+      "ground_truth_answer": "Long-term exposure to the Western diet can dysregulate the HPA axis through the release of corticosterone, which provokes chronic stress, anxiety, and depression. Additionally, stress triggers changes in the HPA axis that stimulate the production of leptin, ghrelin, insulin, or neuropeptide Y, establishing neuropeptide circuits that regulate intake control, memory, and motivation. WD can also produce addictive eating behaviors through dopamine release in the mesocorticolimbic system.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mental_microbiome_009",
+      "query": "What role do short-chain fatty acids (SCFAs) play in gut-brain communication and host metabolism?",
+      "ground_truth_answer": "SCFAs such as butyrate, acetate, and propionate are produced by microbial degradation of indigestible dietary fibers, proteins, and glycoproteins. They act as signaling molecules that locally modulate gut function from the duodenum to the colon. Through enteroendocrine cells, they also control liver, muscle, and brain metabolism, influencing host energy homeostasis. SCFAs additionally have neuroactive properties through induction of neuroinflammatory responses.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mental_microbiome_010",
+      "query": "Describe the microbial changes that occur during the transition from breastfeeding to solid foods in infants.",
+      "ground_truth_answer": "During weaning, a variety of solid foods and new nutrients are introduced, and microbial alpha-diversity and gut pH increase. This results in the replacement of Actinomycetota and Pseudomonadota by Bacillota and Bacteroidota as the dominant phyla. Between 9 and 18 months, dominant bacterial genera change: infants no longer breastfed become dominated by Akkermansia, Bacteroides, Bifidobacterium, Bilophila, and Bacillota members including Anaerostipes, Blautia, Clostridium, Faecalibacterium, Roseburia, and Ruminococcus. The transition to solid food also induces development of a mature microbiota with genes for degradation of complex carbohydrates, xenobiotics, and vitamin production.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mental_microbiome_011",
+      "query": "How does the vegetarian diet affect gut microbiota beta-diversity versus alpha-diversity, and which bacterial genera are enriched?",
+      "ground_truth_answer": "Adopting a vegetarian diet reduces beta-diversity (differentiation between species communities) of the gut microbiome, but not individual diversity at the local scale (alpha-diversity). Long-term adherence to a plant-based diet is associated with increased Prevotella, Roseburia, Haemophilus, Neisseria, Aggregatibacter, and Veillonella species, while the Ruminococcus enterotype is conserved. More recently, vegetarians have been found to have increased diversity with higher abundance of Prevotella, Clostridium, Lactobacillus, Ruminococcus, Eubacterium, and Faecalibacterium, and lower loads of Bacteroides and Bifidobacterium.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mental_microbiome_012",
+      "query": "How do tryptophan metabolites derived from microbial metabolism connect the gut microbiome to brain function and serotonin regulation?",
+      "ground_truth_answer": "Indole and 5-hydroxytryptamine are biologically active compounds derived from tryptophan metabolism by the gut microbiome. These metabolites regulate the secretion of serotonin and melatonin and may serve as signaling molecules for intercellular communication between microorganisms and host cells. The gut microbiome-brain shifts in tryptophan catabolites influence various brain functions through the gut microbiota–brain axis.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mental_microbiome_013",
+      "query": "Compare the neuropsychiatric outcomes of the Western diet and Mediterranean diet through the lens of gut microbiome composition and microbial metabolites.",
+      "ground_truth_answer": "The Western diet induces a shift in gut microbiome composition, increasing Escherichia, Klebsiella, Alistipes, Bacteroides, and Bilophila, while decreasing Bacillus, Enterococcus, Eubacterium, Lactobacillus, Roseburia, and Prevotella. It elevates pro-inflammatory cytokines, TMAO, and LPS, and decreases SCFAs, leading to neuroinflammation, cognitive impairment, dementia symptoms, schizophrenia symptoms, stress, depression, and anxiety. By contrast, the Mediterranean diet increases Clostridium, Faecalibacterium, Lactobacillus, Oscillospira, Roseburia, Bacteroides, Prevotella, and Bifidobacterium, and promotes SCFAs, anti-inflammatory interleukin-10, and GABA production, reducing anxiety, depression, bipolar disorder symptoms, schizophrenia symptoms, and increasing stress resilience.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "mental_microbiome_014",
+      "query": "What is the proposed mechanism by which the ketogenic diet may be therapeutic for autoimmune diseases, and what are its trade-offs related to Bifidobacteria?",
+      "ground_truth_answer": "The ketogenic diet has been proposed as a therapeutic tool to control autoimmune diseases due to its reduction of pro-inflammatory Th17 cells. KD feeding decreases the abundance of Actinomycetota, Lactobacillus spp., and Bifidobacterium spp. However, a key negative trade-off is the significant reduction in the Bifidobacteria group, which has been positively associated with human health. Additionally, while KD can reduce pro-inflammatory cytokines via altered microbiota, preclinical studies have shown it can also increase inflammation through the TLR4 signaling pathway.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "mental_microbiome_015",
+      "query": "How does the delivery mode (vaginal vs. C-section) shape the initial gut microbiome of neonates, and how does this differ from the breastfeeding vs. formula-feeding microbiome profile?",
+      "ground_truth_answer": "Vaginally delivered infants acquire a microbiome similar to the mother's vaginal microbiota, with dominant genera including Bifidobacterium, Collinsella, Clostridium, Lactobacillus, Streptococcus, Veillonella, Bacteroides, and Akkermansia. C-section infants instead acquire microbial communities from human skin and opportunistic pathogens, dominated by Corynebacterium, Propionibacterium, Slackia, Staphylococcus, Streptococcus, Enterobacter, and Haemophilus. Breastfed infants show enrichment of Bifidobacterium, Corynebacterium, Propionibacterium, Enterococcus, Lactobacillus, Streptococcus, and Sneathia, with decreased Bacteroides and Staphylococcus. Formula-fed infants differ with dominance of Atopobium, Clostridium, Enterococcus, Granulicatella, Citrobacter, Enterobacter, Escherichia, and Bilophila.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "mental_microbiome_016",
+      "query": "What is nutritional psychiatry, and why is it considered an emerging field linking diet, microbiome, and brain health?",
+      "ground_truth_answer": "Nutritional psychiatry is a relatively new field of research that has evolved from preclinical outcomes and a series of cross-sectional and epidemiological studies linking diet to various aspects of mental health, as well as from insights of microbiome science. It provides a relationship between diet, microbial function, and brain health. Its potential future implications include the role of diagnostic testing of the gut microbiome to identify targets for personalized psychological and psychiatric treatments, and integrative approaches combining dietary interventions, pharmacotherapy, and cognitive-behavioral treatments.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "hard",
+      "category": "conceptual"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "mental_microbiome_mcq_001",
+      "question": "What proportion of the human gut microbial gene catalog is of bacterial origin?",
+      "options": [
+        "A) 75%",
+        "B) 85%",
+        "C) 93%",
+        "D) 99%"
+      ],
+      "correct_answer": "D",
+      "explanation": "According to the paper, more than 3.8 million microbial genes have been characterized in the human gut microbiome — a proportion 150 times greater than the entire human genome — of which 99% are of bacterial origin.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mental_microbiome_mcq_002",
+      "question": "Which of the following is NOT listed as a bioactive molecule produced by food that has neuroactive properties modulating neural signaling within the enteric nervous system?",
+      "options": [
+        "A) Serotonin",
+        "B) Dopamine",
+        "C) Insulin",
+        "D) GABA"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper lists serotonin, dopamine, histamine, GABA, glutamate, and acetylcholine as bioactive molecules from food sources with neuroactive properties modulating neural signaling within the ENS and influencing several brain functions. Insulin is not listed in this context.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mental_microbiome_mcq_003",
+      "question": "According to the paper, the gut microbiota profile of individuals fed a Western diet is similar to that found in which group?",
+      "options": [
+        "A) Elderly individuals",
+        "B) Obese individuals",
+        "C) Vegan individuals",
+        "D) Athletes"
+      ],
+      "correct_answer": "B",
+      "explanation": "The paper explicitly states that 'The gut microbiota profile of individuals fed with a WD is similar to that found in obese individuals.'",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mental_microbiome_mcq_004",
+      "question": "Which metabolic consequence is specifically attributed to ketogenic diet (KD) feeding that results in changes in gut microbiota composition?",
+      "options": [
+        "A) Increased production of bile acids",
+        "B) Elevated levels of ketone bodies, including beta-hydroxybutyrate and acetoacetate",
+        "C) Increased dietary fiber fermentation by Bifidobacterium",
+        "D) Upregulation of the HPA axis via cortisol"
+      ],
+      "correct_answer": "B",
+      "explanation": "KD feeding results in increased amounts of acetoacetate, beta-hydroxybutyrate, and acetone in the blood and urine. These ketone bodies are linked to the changes in gut microbiota composition, including changes in Th17 cells and inhibition of apoptotic proteins.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mental_microbiome_mcq_005",
+      "question": "Which of the following neuropsychiatric conditions has a large body of literature supporting the ketogenic diet as a therapeutic tool?",
+      "options": [
+        "A) Schizophrenia",
+        "B) Generalized anxiety disorder",
+        "C) Epileptic seizures",
+        "D) Obsessive compulsive disorder"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper states: 'A large body of literature has reported that KD significantly reduces epileptic seizures, suggesting it as a therapeutic tool.' It also notes KD helps rebalance neurotransmitter systems, stabilizes neural networks, and improves neuroplasticity.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "mental_microbiome_mcq_006",
+      "question": "What are the three prominent enterotypes of the human microbiome identified by Arumugam et al. (2011)?",
+      "options": [
+        "A) Lactobacillus, Faecalibacterium, Akkermansia",
+        "B) Bacteroides, Ruminococcus, Prevotella",
+        "C) Clostridium, Bifidobacterium, Escherichia",
+        "D) Roseburia, Oscillospira, Blautia"
+      ],
+      "correct_answer": "B",
+      "explanation": "Arumugam et al. (2011) found that the prominent enterotypes of the human microbiome are the genera Bacteroides, Ruminococcus, and Prevotella. Different diets alter the distribution of these enterotypes.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "mental_microbiome_mcq_007",
+      "question": "Which proposed mechanism explains the association between vegetarian diets and depression, according to the paper?",
+      "options": [
+        "A) Reduced intake of omega-6 fatty acids leading to impaired dopamine synthesis",
+        "B) Elevated TMAO levels from plant protein metabolism",
+        "C) Deficiencies of essential amino acids such as methionine, tryptophan, and tyrosine that affect dopamine and serotonin metabolism",
+        "D) Increased LPS production due to fiber fermentation"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper suggests that deficiencies of essential amino acids such as methionine, tryptophan, and tyrosine — which are present at very low concentrations in plant-based diets — may explain the relationship between vegetarian diets and depression, based on their role in dopamine and serotonin metabolism.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mental_microbiome_mcq_008",
+      "question": "Which of the following best explains why high-fat diets are linked to neuroinflammation, depression, and anxiety?",
+      "options": [
+        "A) They decrease production of TMAO by gut bacteria",
+        "B) They increase proliferation of adipose tissue phagocytic cells, leading to pro-inflammatory cytokine release and neuroinflammation",
+        "C) They increase Bifidobacterium populations, which produce excessive GABA",
+        "D) They reduce bile acid production, impairing fat absorption and SCFAs synthesis"
+      ],
+      "correct_answer": "B",
+      "explanation": "High-fat diets increase the proliferation of adipose tissue phagocytic cells, which leads to the release of pro-inflammatory cytokines and causes neuroinflammation. This neuroinflammation is associated with depression, anxiety, and impaired cognitive function. High levels of endotoxins and reduced levels of anti-inflammatory gut bacterial species also link to neuroinflammation.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mental_microbiome_mcq_009",
+      "question": "According to the paper, by what age does the infant gut microbiota typically reach a composition similar to that of adults?",
+      "options": [
+        "A) 6–9 months",
+        "B) 9–12 months",
+        "C) 2–3 years",
+        "D) 4–5 years"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper states that 'the microbiota remains unstable, suffering sudden microbial succession phenomena, until the infant is 2 to 3 years old, when the microbiota reaches a composition similar to that of adults.'",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "mental_microbiome_mcq_010",
+      "question": "Which combination of interventions does the paper propose as the most promising future strategies for treating cognitive impairment through the gut microbiome?",
+      "options": [
+        "A) High-fat diet with antibiotic treatment to reset the microbiome",
+        "B) Personalized nutritional interventions, synbiotics (probiotics + prebiotics), and development of predictive nutrient patterns",
+        "C) Strict vegan diets combined with probiotic supplements of Bifidobacterium only",
+        "D) Ketogenic diet combined with fecal microbiota transplantation from healthy donors"
+      ],
+      "correct_answer": "B",
+      "explanation": "The paper proposes new strategies based on the development of probiotic treatment with newer bacteria, on the combination of probiotics and prebiotics (synbiotics), and on personalized nutritional interventions. The development of predictive nutrient patterns will provide empirical nutrition therapies for cognitive and neurological impairments. It also discusses using polyamine-rich foods and probiotics that synthesize polyamines as promising approaches.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "hard",
+      "category": "synthesis"
+    },
+    {
+      "id": "mental_microbiome_mcq_011",
+      "question": "Considering the ketogenic diet's effect on the gut microbiome and mental health, which pairing of outcome and mechanism is MOST accurately described in the paper?",
+      "options": [
+        "A) Reduced epileptic seizures — mediated by increased SCFA production from Bifidobacterium",
+        "B) Increased depression — caused by suppression of SCFAs and 5-hydroxytryptamine, alongside amyloid plaque reduction and reduced autism symptoms",
+        "C) Improved cognition — due to increased Bifidobacterium and Ruminococcus populations",
+        "D) Reduced schizophrenia symptoms — via increased Bacteroidota and elevated LPS production"
+      ],
+      "correct_answer": "B",
+      "explanation": "The paper states that KD induces the synthesis of ketone bodies and suppresses the release of SCFAs and 5-hydroxytryptamine. These intermediates increase depression but reduce epileptic seizure symptoms, amyloid plaque deposition, and autism symptoms. This captures the paradoxical dual outcome of KD on mental and neurological conditions.",
+      "expected_documents": ["PMC11775079_Human_gut_microbiome__diet_and_mental_disorders.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

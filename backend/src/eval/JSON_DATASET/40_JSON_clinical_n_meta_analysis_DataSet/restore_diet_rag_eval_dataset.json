@@ -1,0 +1,329 @@
+{
+  "source_document": "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf",
+  "paper_reference": "Li et al., 2025, Cell 188, 1226–1247, March 6, 2025. https://doi.org/10.1016/j.cell.2024.12.034",
+  "test_cases": [
+    {
+      "id": "restore_diet_001",
+      "query": "What is the restore diet and what are its key macronutrient proportions?",
+      "ground_truth_answer": "The restore diet (formally trademarked as the NiMe diet) is a dietary intervention designed to mimic key characteristics of non-industrialized dietary patterns. It is primarily plant-based, devoid of dairy and wheat, limited in highly processed foods, low in glycemic index and energy density, and high in dietary fiber (22 g per 1,000 kcal, exceeding recommendations). The macronutrient distribution is approximately 60% of total energy from carbohydrate, 15% from protein, and 25% from fat, which falls within acceptable macronutrient distribution ranges.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "restore_diet_002",
+      "query": "What bacterium was used alongside the restore diet, and where was it originally isolated from?",
+      "ground_truth_answer": "Limosilactobacillus reuteri was used alongside the restore diet. The specific strain used was PB-W1, which was isolated from the fecal microbiomes of rural Papua New Guineans, where it was found to be dominant. It is rarely found in industrialized gut microbiomes, with its prevalence being approximately 20 times higher in hunter-gatherers compared with industrialized societies.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "restore_diet_003",
+      "query": "How many participants completed the randomized controlled feeding trial and what were their baseline characteristics?",
+      "ground_truth_answer": "30 participants completed the intervention and were included in statistical analyses. Their baseline characteristics were: mean age of 28.2 ± 6.7 years and mean BMI of 23.8 ± 2.6 kg/m². Of the 41 individuals without detectable L. reuteri who were randomized, 11 withdrew — for personal reasons (n=7), low compliance (n=2), or unwillingness to tolerate GI symptoms (n=2).",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "restore_diet_004",
+      "query": "What were the key cardiometabolic improvements observed during the restore diet intervention?",
+      "ground_truth_answer": "The restore diet produced substantial cardiometabolic improvements: body weight decreased by 1.4 ± 1.9%, BMI by 1.4 ± 1.9%, fasting total cholesterol by 14.1 ± 11.2%, LDL cholesterol by 16.8 ± 15.8%, non-HDL cholesterol by 15.2 ± 14.5%, fasting plasma glucose by 6.3 ± 11.1%, C-reactive protein (CRP) by 14.0 ± 58.3%, and fecal calprotectin by 21.0 ± 88.3%. Insulin sensitivity (QUICKI) was also improved by 2.4 ± 6.4%. Notably, HDL cholesterol was reduced by 11.3 ± 11.2%, which has been observed with other plant-rich diets.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "restore_diet_005",
+      "query": "What study design was used in the trial and how long was each diet period?",
+      "ground_truth_answer": "The trial used a crossover design for the dietary intervention and a parallel-arm design for L. reuteri supplementation. Each diet period (restore diet or usual diet) lasted 3 weeks, separated by a 3-week washout period. Participants were randomized to receive either L. reuteri PB-W1 (n=9), L. reuteri DSM 20016T (n=11), or a maltodextrin placebo (n=10) on the fourth day of each diet period. The total trial duration was 12 weeks, concluding with a final 3-week washout.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "restore_diet_006",
+      "query": "How did the restore diet affect alpha-diversity of the gut microbiome, and what is the proposed mechanistic explanation for this unexpected finding?",
+      "ground_truth_answer": "Paradoxically, the restore diet reduced gut microbiome alpha-diversity (richness and evenness), which was unexpected. The reduction occurred within the first 4 days and was stably maintained throughout the diet period. Several mechanisms may explain this: (1) the diet induced high SCFA production and low fecal pH, which inhibit certain acid-sensitive microbes like Parabacteroides and Bacteroides; (2) the diet altered bile acid excretion, reducing the competitive advantage of bile-resistant taxa such as Bilophila and Alistipes; (3) the diet removed growth substrates like dairy- and meat-derived glycoproteins, reducing microbes reliant on these resources; and (4) microbial dispersal is low in industrialized settings, limiting the potential to recruit fiber-degrading microbes. Diet-induced diversity changes were negatively correlated with baseline richness, consistent with the diversity-stability hypothesis.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "restore_diet_007",
+      "query": "How did the restore diet modulate short-chain fatty acids (SCFAs) and branched-chain fatty acids (BCFAs), and what does this indicate about fermentation metabolism?",
+      "ground_truth_answer": "The restore diet decreased fecal pH from 6.82 ± 0.43 to 6.58 ± 0.44 (p=0.003), increased total SCFAs (p=0.028) and acetate concentrations (p=0.023), and simultaneously reduced total BCFA concentrations (p=0.045) and the ratio of BCFAs to SCFAs (p=0.007). BCFAs are products of proteolytic fermentation (protein degradation), while SCFAs are products of saccharolytic fermentation (fiber degradation). These combined changes indicate that the restore diet shifted gut fermentation metabolism away from proteolytic pathways and toward saccharolytic fermentation — reflecting a more fiber-driven microbial metabolism consistent with non-industrialized microbiome patterns.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "restore_diet_008",
+      "query": "What were the key plasma metabolites altered by the restore diet and what health implications do they carry?",
+      "ground_truth_answer": "The restore diet significantly altered 31 plasma metabolites (FDR-adjusted p<0.10), with 22 increased and 9 decreased. More than 90% of these are produced or modified by the microbiome. Key increased metabolites include: indole-3-propionic acid (a neuroprotective antioxidant associated with reduced risk of type 2 diabetes and atherosclerosis), biotin, pipecolic acid (with antioxidant properties), and coniferyl aldehyde (anti-inflammatory). Key decreased metabolites include: deoxycholic acid and ursodeoxycholic acid (established carcinogens as secondary bile acids), and 8-hydroxyguanine (a marker of mutagenesis and carcinogenesis). These findings provide potential mechanistic explanations for the benefits of plant-based diets on cancer prevention and longevity.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "restore_diet_009",
+      "query": "What role did carbohydrate-active enzymes (CAZymes) play in the microbiome response to the restore diet?",
+      "ground_truth_answer": "The restore diet significantly altered CAZyme profiles. It increased the total abundance of CAZymes (p=0.029), particularly those targeted toward plant-carbohydrate utilization (p=0.021). Four CAZyme sub-families of GH43 (GH43_22, GH43_26, GH43_27, and GH43_29), which play a role in breaking down plant fiber hemicelluloses, were enriched. Conversely, the largest decrease was seen in the GH29 CAZyme family, which contains alpha-fucosidases involved in mucus degradation. The ratio of mucin-targeted to plant-targeted CAZymes also trended downward. These shifts indicate that the gut microbiome increased its enzymatic capacity for plant carbohydrate utilization while reducing its potential for mucus degradation — a key pathological driver of gut inflammation.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "restore_diet_010",
+      "query": "How did the restore diet affect microbial community interconnectedness and stability?",
+      "ground_truth_answer": "Despite reducing overall diversity, the restore diet increased microbial community interconnectedness and stability. Interaction network analysis revealed a higher number of positive (likely syntrophic) interactions among bacterial families during the restore diet compared to the usual diet period, while negative interactions remained unchanged. Lachnospiraceae, Christensenellaceae, and Ruminococcaceae emerged as putative keystone taxa during the restore diet, having strong positive influences on several other taxa. On the usual diet, Lachnospiraceae and Ruminococcaceae lost these keystone characteristics, likely because fiber degradation capacity was not realized. Consistent with the prediction that more positive interactions would enhance stability, smaller Bray-Curtis distances were detected between successive timepoints during the restore diet (p<0.001), confirming increased microbiome stability.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "restore_diet_011",
+      "query": "What was the effect of the restore diet on L. reuteri PB-W1 persistence versus the type strain DSM 20016T, and what mechanism was proposed for the difference?",
+      "ground_truth_answer": "The restore diet enhanced the abundance of L. reuteri PB-W1 but not DSM 20016T at 4 and 8 days post-administration. PB-W1 consistently reached higher numbers than DSM 20016T (7.64 vs. 6.36 Log10 cells/g by culture, 2 days post-administration). The ratio of culture to qPCR counts (a proxy for survival of live bacteria) was significantly higher for PB-W1 on the restore diet, suggesting the diet specifically enhanced PB-W1 survival rather than just abundance. The proposed mechanism is strain-level ecological adaptation: PB-W1, being derived from rural Papua New Guinea, has evolutionary adaptations to a non-industrialized-type diet, while DSM 20016T was derived from a German laboratory environment. Additionally, the restore diet was designed to include foods high in raffinose and stachyose (e.g., Jerusalem artichokes, peas, onions), which are known growth substrates of L. reuteri. Despite this, stable colonization was only achieved in one of 30 participants throughout the entire trial.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "restore_diet_012",
+      "query": "How were machine learning models used to predict glucose responses to the restore diet, and what were the top predictive features?",
+      "ground_truth_answer": "Random forest (RF) classification models were used to predict 'responders' (glucose reduction ≥0.3 mmol/L) vs. 'non-responders' (<0.3 mmol/L reduction) to the restore diet. Baseline metabolic status (AUROC=0.82) and baseline microbiome composition at ASV level (AUROC=0.92) were accurate predictors. Shifts in microbial pathways (AUROC=0.94) and plasma metabolites (AUROC=0.84) were even more accurate. The top predictive pathway was tetrapyrrole biosynthesis I (from glutamate), and the top metabolite was 1-pyrroline-2-carboxylic acid — both involved in pyrrole metabolism. Shifts in tetrapyrrole biosynthesis I were negatively correlated with glucose changes (rs=-0.45), while 1-pyrroline-2-carboxylic acid was positively correlated (rs=0.65, p=0.001). The mechanistic hypothesis is that microbiome-driven reductions in 1-pyrroline-2-carboxylic acid (derived from proline, which can be converted to glucose via gluconeogenesis) may have contributed to lower plasma glucose in responders.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "restore_diet_013",
+      "query": "How did the restore diet affect the taxa considered as BloSSUM taxa and VANISH taxa, and what ecological insight does this provide about microbiome restoration?",
+      "ground_truth_answer": "The restore diet reduced several BloSSUM taxa (Bloom or Selected in Societies of Urbanization/Modernization), including Bilophila wadsworthia, Alistipes putredinis, Mediterraneibacter torques (Ruminococcus torques), and Parabacteroides merdae — taxa that are characteristically enriched in industrialized microbiomes. However, VANISH taxa (Volatile and/or Associated Negatively with Industrialized Societies of Humans) that are typically associated with non-industrialized populations — specifically Segatella copri — were not enriched by the restore diet. This asymmetry reveals an important ecological constraint: while the restore diet can redress industrialization-associated dysbiotic taxa, it cannot easily reintroduce microbes that have been lost. This is likely because microbial exposure and dispersal are inherently low in industrialized settings, and switching to a high-fiber diet without direct fecal exposure is insufficient to restore lost microbial diversity — as also shown in multigenerational murine models of western diet-induced microbiome extinctions.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "restore_diet_014",
+      "query": "What were the microbiome predictors of LDL cholesterol and CRP reduction, and how do these predictors implicate specific microbiome-host mechanistic links?",
+      "ground_truth_answer": "For LDL cholesterol, baseline microbiota composition at the family level was the strongest predictor (RF mean R²=0.75; MLR R²=0.29, p=0.010). When using diet-induced shifts, genus-level microbiota changes produced the best model (RF mean R²=0.66), with Bilophila shifts as the top predictor — diet-induced decreases in Bilophila were positively correlated with LDL reductions (rs=0.54, p=0.027). Mechanistically, Bilophila blooms during increased saturated fat intake and has been shown to aggravate metabolic and immunological dysfunction in mice and is associated with colorectal cancer in epidemiological studies. For CRP, baseline fecal SCFA levels were the best predictor (RF mean R²=0.47; MLR R²=0.35, p=0.012). Notably, higher baseline ratios of BCFAs to SCFAs and lower propionate and total SCFAs correlated with greater CRP reductions — indicating that participants with the most unfavorable fermentation profiles at baseline derived the greatest anti-inflammatory benefit. Shifts in CAZyme ratios (mucin-glycan and animal-carbohydrate-targeted CAZymes to total reads) were positively correlated with CRP changes (rs=0.51 and 0.43), meaning that greater reductions in these CAZymes corresponded to larger reductions in CRP.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "restore_diet_015",
+      "query": "How do the cardiometabolic effects of the restore diet compare with those of the Mediterranean diet and plant-based (vegan) diets in controlled trials?",
+      "ground_truth_answer": "The restore diet produced a 17% reduction in LDL, 6.3% reduction in fasting glucose, and 14% reduction in CRP. By comparison, in male subjects with metabolic syndrome following a Mediterranean diet (24 g/day fiber), glucose decreased by 3.4%, HOMA-IR by 24.3%, total cholesterol by 17.5%, LDL by 16.7%, and HDL by 15.4%, but CRP did not significantly change. In subjects with obesity on a calorically restricted Mediterranean diet for 6 months, LDL improved by 3.5%, HDL by +5.1%, triglycerides by 13.2%, and CRP by 10.9%. A strictly plant-based diet in an inpatient crossover study (31.4 g fiber/1,000 kcal, comparable to the restore diet) for 2 weeks reduced total cholesterol by 25.7%, LDL by 26.3%, CRP by 42.9%, glucose by 6.6%, and insulin by 26.5%. The restore diet's effects align with other plant-rich diets, particularly when strictly controlled food intake is provided. The advantage of the restore diet study over the high-fiber dietary advice trials is that food intake was strictly controlled, likely explaining why the benefits were more pronounced than free-living fiber intervention studies.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "restore_diet_mcq_001",
+      "question": "How much did average fiber intake change when participants consumed the restore diet compared to their usual diet?",
+      "options": [
+        "A) Fiber intake increased by approximately 25%",
+        "B) Fiber intake approximately doubled",
+        "C) Fiber intake increased by approximately 10 grams per day",
+        "D) Fiber intake tripled"
+      ],
+      "correct_answer": "B",
+      "explanation": "On average, fiber intake doubled during the restore diet period compared with participants' usual diets, as shown in Figure 1C of the paper.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "restore_diet_mcq_002",
+      "question": "What proportion of participants screened for the study were ultimately found to have detectable L. reuteri in their feces at baseline?",
+      "options": [
+        "A) None of the participants screened",
+        "B) Only 1 out of 42 assessed for eligibility",
+        "C) Approximately 10% of the 266 screened",
+        "D) 5 out of 41 randomized participants"
+      ],
+      "correct_answer": "B",
+      "explanation": "Of the 42 individuals assessed for eligibility, only one had detectable levels of L. reuteri in feces, confirming that L. reuteri is rare in western cohorts. All 41 others without detectable L. reuteri were randomized.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "restore_diet_mcq_003",
+      "question": "What percentage of variation in gut microbiota composition did individuality versus the restore diet explain in the overall PERMANOVA analysis?",
+      "options": [
+        "A) Individuality: 50%, Diet: 25%",
+        "B) Individuality: 77.4%, Diet: 1.5%",
+        "C) Individuality: 60%, Diet: 10%",
+        "D) Individuality: 90%, Diet: 5%"
+      ],
+      "correct_answer": "B",
+      "explanation": "PERMANOVA analysis revealed that individuality explained 77.4% of microbiota variation (R²=0.774) while the restore diet explained only 1.5% (R²=0.015) in the overall participant cohort. However, within each individual, the diet explained 22.6–58.6% of the temporal variation.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "restore_diet_mcq_004",
+      "question": "Which of the following microbial genera were enriched during the restore diet period?",
+      "options": [
+        "A) Bacteroides, Parabacteroides, and Bilophila",
+        "B) Bifidobacterium, Faecalibacterium, and Roseburia hominis",
+        "C) Alistipes, Ruminococcus torques, and Collinsella",
+        "D) Streptococcus, Dorea, and Blautia"
+      ],
+      "correct_answer": "B",
+      "explanation": "The restore diet enriched several putative health-promoting species including Bifidobacterium (three species: B. adolescentis, B. longum, B. pseudocatenulatum), Faecalibacterium prausnitzii, Roseburia hominis, and Lachnospira sp. Conversely, Bilophila wadsworthia, Alistipes putredinis, Mediterraneibacter torques, and Parabacteroides merdae were reduced.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "restore_diet_mcq_005",
+      "question": "How quickly did the gut microbiome changes induced by the restore diet reverse after the dietary intervention ended?",
+      "options": [
+        "A) The changes were permanent and did not reverse",
+        "B) Changes reversed within 1–2 days of stopping the diet",
+        "C) Changes returned to baseline by the end of the washout or shortly after the usual diet period began",
+        "D) Changes persisted for at least 6 months after the intervention"
+      ],
+      "correct_answer": "C",
+      "explanation": "Analysis of participants who consumed the restore diet first showed that alpha-diversity indices, intra-individual beta diversity differences, and inter-individual beta diversity differences all returned to baseline values either by the end of the first 3-week washout or shortly after the usual diet period began. This established that the effects were transient and reversible, and the microbiome displayed resilience toward the dietary change.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "restore_diet_mcq_006",
+      "question": "What was the average nucleotide identity (ANI) between L. reuteri PB-W1 and DSM 20016T, and what does this indicate?",
+      "options": [
+        "A) 99.9%, indicating they are nearly identical strains",
+        "B) 96.2%, indicating genetic divergence and distinct phylogenetic lineages",
+        "C) 85.0%, indicating they belong to different species",
+        "D) 92.0%, indicating minor sequence differences only"
+      ],
+      "correct_answer": "B",
+      "explanation": "PB-W1 and DSM 20016T belong to distinct phylogenetic lineages and subspecies of L. reuteri and show an average nucleotide identity (ANI) value of only 96.2%, indicating genetic divergence. This genetic divergence likely underlies the different ecological performance of the two strains in the human gut and their differential response to the restore diet.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "restore_diet_mcq_007",
+      "question": "What was the relationship between baseline microbiome diversity and the magnitude of microbiome change in response to the restore diet?",
+      "options": [
+        "A) Higher baseline diversity led to greater diet-induced microbiome changes",
+        "B) Baseline diversity had no relationship with diet-induced microbiome changes",
+        "C) Higher baseline diversity was associated with greater resistance to diet-induced changes",
+        "D) Lower baseline diversity predicted non-response to the restore diet"
+      ],
+      "correct_answer": "C",
+      "explanation": "Diet-induced differences of beta diversity between baseline and day 4 of the restore diet period were negatively correlated with baseline richness (rs=-0.38, p=0.04). This indicates that a more diverse baseline microbiota is more resistant to diet-induced changes, which agrees with the diversity-stability hypothesis and several previous dietary intervention studies.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "restore_diet_mcq_008",
+      "question": "What does the study conclude about the need for personalized nutrition based on the observed inter-individual variation in host clinical responses?",
+      "options": [
+        "A) The high inter-individual variation in clinical responses confirms that personalized nutrition is essential for plant-rich diets",
+        "B) Consistent host responses despite variable microbiome changes suggest plant-rich diets may benefit populations without personalization",
+        "C) The variability in LDL response means the restore diet should only be recommended to individuals with specific microbiome profiles",
+        "D) L. reuteri administration is needed to achieve consistent clinical responses"
+      ],
+      "correct_answer": "B",
+      "explanation": "The paper observed that although microbiome composition changes were highly individualized (mCV=0.87–4.45 for ASVs), the effects on plasma metabolites (mCV=0.27–0.73) and risk markers (mCV=0.36–1.30) were highly consistent among individuals. The authors conclude that these findings are relevant for dietary recommendations, as they demonstrate that plant-rich diets exert consistent and likely population-wide benefits that require no personalization.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "restore_diet_mcq_009",
+      "question": "The restore diet increased indole-3-propionic acid in plasma. What is the proposed biosynthetic pathway linking the gut microbiome to this metabolite?",
+      "options": [
+        "A) Bilophila wadsworthia directly synthesizes indole-3-propionic acid from bile acids",
+        "B) Bifidobacterium species produce indole-3-lactic acid from tryptophan, which can then be converted to indole-3-propionic acid",
+        "C) Faecalibacterium prausnitzii converts dietary indole directly to indole-3-propionic acid via butyrate pathways",
+        "D) Roseburia hominis synthesizes indole-3-propionic acid from plant fiber via SCFA fermentation intermediates"
+      ],
+      "correct_answer": "B",
+      "explanation": "The paper reports a positive correlation between B. longum and indole-3-propionic acid, noting that this metabolite can be synthesized from indole-3-lactic acid that is produced by bifidobacteria. Specifically, gut-associated Bifidobacterium species can salvage exogenous indole (a uremic toxin precursor) to synthesize indole-3-lactic acid via tryptophan, which can then be converted to indole-3-propionic acid.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "restore_diet_mcq_010",
+      "question": "The paper identifies a key ecological constraint on microbiome restoration in industrialized settings. Which of the following most accurately summarizes this constraint and the evidence supporting it?",
+      "options": [
+        "A) Industrialized microbiomes cannot respond to dietary fiber because they have lost all fiber-degrading enzymes, as shown by the absence of any CAZyme enrichment",
+        "B) Stable reintroduction of lost microbes requires repeated dosing, and diversity reduction from the restore diet shows industrialized microbiomes are misadapted to fiber-rich diets, while VANISH taxa cannot be restored without co-administration",
+        "C) The restore diet failed entirely because it could not reduce any inflammatory markers in the absence of a probiotic",
+        "D) Microbiome restoration is fully achievable within 3 weeks if fiber intake exceeds 40 g/day, as demonstrated by complete diversity restoration"
+      ],
+      "correct_answer": "B",
+      "explanation": "The paper presents several lines of evidence for this constraint: (1) stable L. reuteri colonization was achieved in only 1 of 30 participants with a single dose; (2) the restore diet paradoxically reduced diversity, suggesting some industrialized microbiome members are misadapted to fiber-rich diets; (3) VANISH taxa like Segatella copri were not enriched despite the fiber-rich diet; (4) this aligns with multigenerational murine models showing that switching from low- to high-fiber diet without fecal microbial exposure is insufficient to restore lost diversity. The authors note that functional redundancy in the industrialized microbiome allows it to mediate some health effects of the diet despite these limitations.",
+      "expected_documents": [
+        "Cardiometabolic_benefits_of_a_non-industrializedtype_diet_are_linked_to_gut_microbiome_modulation.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

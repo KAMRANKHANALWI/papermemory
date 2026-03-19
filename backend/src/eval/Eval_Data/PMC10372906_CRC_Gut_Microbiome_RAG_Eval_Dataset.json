@@ -1,0 +1,331 @@
+{
+  "source_document": "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf",
+  "paper_title": "Gut Microbiome in Colorectal Cancer: Clinical Diagnosis and Treatment",
+  "authors": "Yali Liu, Harry Cheuk-Hay Lau, Wing Yin Cheng, Jun Yu",
+  "journal": "Genomics Proteomics Bioinformatics 21 (2023) 84–96",
+  "test_cases": [
+    {
+      "id": "crc_microbiome_001",
+      "query": "What percentage of all cancers does colorectal cancer account for globally, and how many deaths does it cause annually?",
+      "ground_truth_answer": "Colorectal cancer accounts for approximately 10% of all cancers diagnosed worldwide, with almost 700,000 associated deaths every year, making it the world's third most deadly cancer.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "crc_microbiome_002",
+      "query": "What is the heritability of colorectal cancer based on twin and family studies?",
+      "ground_truth_answer": "Evidence from twin and family studies reveals that the heritability of CRC is only 12%–35%, reflecting the importance of environmental factors in the development of CRC.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "crc_microbiome_003",
+      "query": "Which bacterial taxa are increased in CRC patients and which are decreased, based on metagenomic studies?",
+      "ground_truth_answer": "In CRC patients, pro-carcinogenic taxa that increase significantly include Bacteroides fragilis, Enterococcus faecalis, E. coli, Fusobacterium nucleatum, Peptostreptococcus anaerobius, Porphyromonas, and Micromonas parvum. Potentially protective taxa that show reduced abundances include Clostridium butyicum, Roseburia, and Bifidobacterium.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "crc_microbiome_004",
+      "query": "What was the AUC achieved using 2 microbial gene markers (F. nucleatum and P. micra) to separate CRC microbiomes from controls?",
+      "ground_truth_answer": "Using 2 microbial gene markers — the butyryl-CoA dehydrogenase gene of F. nucleatum and the RNA polymerase β subunit gene of P. micra — to separate CRC microbiomes from controls achieved high accuracy with an area under the curve (AUC) of 0.84.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "crc_microbiome_005",
+      "query": "What were the two new bacterial species associated with CRC discovered in the 2015 metagenome-wide association study on a Chinese cohort?",
+      "ground_truth_answer": "The 2015 metagenome-wide association study on fecal samples of 74 patients with CRC and 54 healthy controls in the Chinese cohort discovered two new species associated with CRC: Parvimonas micra and Solobacterium moorei, as well as 20 gene markers that can significantly differentiate CRC-associated and control microbiomes.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "crc_microbiome_006",
+      "query": "How does Fusobacterium nucleatum adhere to colorectal cancer cells and what oncogenic signaling pathway does its adhesin FadA activate?",
+      "ground_truth_answer": "F. nucleatum adheres to N-acetyl-D-galactosamine (Gal-GalNAc)-expressing CRC cells through its surface protein Fap2, facilitating colonization and enrichment in tumor tissue. Its adhesin FadA binds to E-cadherin, activating β-catenin signaling and thereby promoting inflammatory and oncogenic responses. F. nucleatum's Fap2 protein also binds to the immunosuppressive receptor TIGIT, inhibiting the cytotoxic effects of T cells and natural killer cells on tumors.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "crc_microbiome_007",
+      "query": "Describe the mechanism by which deoxycholic acid (DCA) contributes to colorectal cancer development.",
+      "ground_truth_answer": "Deoxycholic acid (DCA) contributes to CRC through multiple mechanisms. DCA levels in feces, intestine, and serum are increased in CRC patients and high-risk individuals. Mechanistically, DCA blocks the activation of the NF-κB signaling pathway and the nuclear translocation of RelA, inducing inflammation and tumorigenesis. DCA also induces DNA damage in host cells through ROS generation and β-catenin signaling activation. Additionally, DCA modulates the gut microbiome toward a dysbiotic composition that promotes tumor-promoting activities. DCA arises from cholic acid through bacterial 7α-dehydroxylation and its accumulation is correlated with increased CRC risk.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "crc_microbiome_008",
+      "query": "What is the role of butyrate in colorectal cancer prevention and how does it regulate epithelial function?",
+      "ground_truth_answer": "Butyrate, a short-chain fatty acid produced by fermentation of indigestible carbohydrates, has multiple anti-tumorigenic roles. It inhibits histone deacetylases in colonocytes and immune cells, promoting hyperacetylation of specific transcription factors and proteins, which leads to down-regulation of pro-inflammatory factors, inhibition of cell proliferation, and selective induction of apoptosis in CRC cells. Butyrate also inhibits angiogenesis and suppresses the proliferation of gut pathogenic bacteria. It activates PPAR-γ, driving colonocyte energy metabolism toward β-oxidation and maintaining the hypoxic intestinal environment. PPAR-γ signaling limits luminal nitrate availability by inhibiting NOS2 expression, thereby limiting excessive proliferation of potentially pathogenic E. coli and Salmonella. In healthy or precancerous states, butyrate serves as the major energy source for colonocytes, promoting their proliferation and epithelial growth.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "crc_microbiome_009",
+      "query": "How does Bacteroides fragilis toxin (BFT) promote colorectal cancer initiation?",
+      "ground_truth_answer": "Enterotoxin-producing B. fragilis secretes a zinc-dependent metalloprotease known as B. fragilis enterotoxin (BFT). BFT causes inflammation in preclinical CRC models, increasing intestinal permeability and facilitating pathogen transmigration. BFT-mediated cleavage of E-cadherin initiates oncogenic responses through activating the WNT signaling pathway and stimulating the release of β-catenin, which then activates the expression of proto-oncogenes such as CCND1 or MYC.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "crc_microbiome_010",
+      "query": "How does cyclophosphamide interact with the gut microbiome to exert its antitumor effects, and which specific bacteria are involved?",
+      "ground_truth_answer": "Cyclophosphamide (CTX) disrupts the intestinal mucosal barrier, increasing the abundance of potentially pathogenic bacteria (E. coli, Enterobacteriaceae, Pseudomonas, and Enterococci) and facilitating bacterial translocation. CTX specifically promotes translocation of distinct Gram-positive bacteria, such as Lactobacillus johnsonii and Enterococcus hirae, into secondary lymphoid organs, where they stimulate the generation of 'pathogenic' TH17 (pTH17) cells and differentiation of naïve CD4+ T cells into TH1 and TH17 cells. Adoptive transfer of pTH17 cells partially restores CTX antitumor efficacy in antibiotic-treated mice. Additionally, the Gram-negative Barnesiella intestinihominis ameliorates CTX effects by influencing the abundance of polyfunctional splenic TH1 and type 1 CD8+ T cells and increasing IFN-γ+ γδT cells in tumor-infiltrating lymphocytes, behaving as 'oncomicrobiotics.'",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "crc_microbiome_011",
+      "query": "How does the gut microbiome modulate the irinotecan (CPT-11) toxicity pathway, and what therapeutic strategies can mitigate this?",
+      "ground_truth_answer": "Irinotecan is converted by hepatic or gastrointestinal carboxylesterases to its active metabolite SN-38, which is then conjugated in the liver by glucuronyltransferase to its inactive form SN-38G before being secreted into the gut. However, SN-38G is susceptible to bacterial β-glucuronidase (produced by E. coli, Staphylococcus spp., Bacteroides spp., and Clostridium spp.), which reconverts it back to SN-38 in the gut, causing accumulation and contributing to irinotecan-induced diarrhea. The unbalanced gut microbiome upregulates β-glucuronidase activity. Therapeutic strategies include bacterial β-glucuronidase inhibitors, which partially alleviate irinotecan-induced tissue damage and diarrhea by blocking the irinotecan-induced bloom of Enterobacteriaceae and increasing epithelial regeneration, as well as probiotic use in clinical trials to reduce gastrointestinal toxicity.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "crc_microbiome_012",
+      "query": "How does Bifidobacterium pseudolongum enhance immunotherapy response in CRC, and why is IFN-γ critical for this mechanism?",
+      "ground_truth_answer": "Bifidobacterium pseudolongum enhances immunotherapy response in CRC mice through the production of the metabolite inosine. The systemic translocation of inosine induced by immunotherapy activates antitumor T cells through the type 2a adenosine receptor (A2AR). Oral and systemic administration of inosine can improve the efficacy of immune checkpoint inhibitors targeting CTLA-4, reducing tumor weights and enhancing antitumor immunity. Crucially, the effect of inosine on promoting anti-CTLA-4 therapy response is context-dependent, relying on the existence of IFN-γ — without IFN-γ present, the inosine-mediated enhancement of immunotherapy does not function. This makes IFN-γ a critical cofactor in the B. pseudolongum-inosine-A2AR signaling axis.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "crc_microbiome_013",
+      "query": "Compare the diagnostic performance of fungal and viral biomarkers vs. standard bacterial biomarkers for CRC detection, including the specific AUC values reported.",
+      "ground_truth_answer": "Fungal biomarkers demonstrated impressive diagnostic performance: 14 fungal biomarkers could distinguish CRC from healthy controls with an AUC of 0.93 and distinguish early-stage CRC from healthy controls with an AUC of 0.91, validated in an independent cohort. The gut fungal community showed disrupted homeostasis in CRC, with an increased Basidiomycota:Ascomycota ratio, enrichment of class Malasseziomycetes, and depletion of classes Saccharomycetes and Pneumocystidomycetes. Viral biomarkers were similarly powerful: 22 viral biomarkers could distinguish CRC patients from healthy controls with an AUC of 0.93. For comparison, bacterial biomarkers using 2 gene markers from F. nucleatum and P. micra achieved an AUC of 0.84, while combining F. nucleatum abundance with FIT improved FIT sensitivity from 73.1% to 92.3%. Fungal and viral biomarkers thus demonstrate comparable or superior discriminatory power to standard bacterial biomarker approaches.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "crc_microbiome_014",
+      "query": "Explain the complex dual role of F. nucleatum in CRC — as both a promoter of chemoresistance and an enhancer of immunotherapy efficacy — and what clinical implications this paradox presents.",
+      "ground_truth_answer": "F. nucleatum presents a remarkable therapeutic paradox. On one hand, it promotes chemoresistance: CRC patients with high intratumoral F. nucleatum are more resistant to oxaliplatin, and it activates autophagy in cancer cells through the TLR4/MYD88 signaling pathway, potentiating CRC resistance to oxaliplatin and 5-fluorouracil. In contrast, F. nucleatum has been shown to enhance anti-PD-L1 immunotherapy efficacy by activating STING signaling and recruiting tumor-infiltrating lymphocytes. This dual role creates a complex clinical implication: for F. nucleatum-positive CRC patients, standard chemotherapy (particularly oxaliplatin and 5-Fu regimens) may be less effective, suggesting clinicians should screen for F. nucleatum status when selecting therapy. However, these same patients might paradoxically respond better to PD-L1 immunotherapy. This highlights the need for personalized, biomarker-guided treatment selection in CRC rather than a one-size-fits-all therapeutic approach.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "crc_microbiome_015",
+      "query": "What are the major technical and biological challenges that currently limit clinical translation of gut microbiome-based CRC biomarkers?",
+      "ground_truth_answer": "Several major challenges impede clinical translation of gut microbiome-based CRC biomarkers. Biologically, patterns of microbiome dysbiosis vary among studies due to intrinsic factors (genetic background) and extrinsic factors (geographical location, diet, medication), and most studies focus on advanced CRC stages rather than early detection. Technically, results of microbiome sequencing are more varied among technical protocols than among populations, and contamination or unsuitable storage of samples can alter fecal microbiome composition (samples require storage at -80°C, which is challenging for large-scale studies). Current metagenomic-based markers may produce confusing results because the genetic content of different microbial strains within the same species can differ by 5%–30%. Next-generation sequencing generates highly fragmented short reads that may be inadequate for accurate genome assembly of hypervariable and repeating genomic regions. Current bioinformatics tools have limitations including low sequencing coverage and inferior reproducibility. The cost of deep sequencing remains unaffordable for many labs. Most studies are observational with small sample sizes, lacking mechanistic insights needed for understanding specific bacterial-cancer therapy interactions.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "crc_microbiome_mcq_001",
+      "question": "What is the progression sequence of colorectal cancer development?",
+      "options": [
+        "A) Adenoma → Polyp → Malignant tumor",
+        "B) Polyp → Adenoma → Malignant tumor",
+        "C) Malignant tumor → Adenoma → Polyp",
+        "D) Polyp → Malignant tumor → Adenoma"
+      ],
+      "correct_answer": "B",
+      "explanation": "According to the paper, CRC progresses from polyp, adenoma, and then to malignant tumor, and this transformation may take many years to complete under the influence of various genetic and environmental factors.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "crc_microbiome_mcq_002",
+      "question": "In the 2017 study by the authors, combining the abundance of F. nucleatum with FIT increased FIT sensitivity for CRC detection to what percentage?",
+      "options": [
+        "A) 78.5%",
+        "B) 85.0%",
+        "C) 92.3%",
+        "D) 96.1%"
+      ],
+      "correct_answer": "C",
+      "explanation": "The 2017 study found that combining the abundance of F. nucleatum with FIT (fecal immunochemical test) increased the sensitivity of FIT detection from 73.1% to 92.3% for CRC diagnosis.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "crc_microbiome_mcq_003",
+      "question": "Which of the following bacteria was found to degrade aspirin and abolish its preventive effect against colorectal tumor development?",
+      "options": [
+        "A) Bifidobacterium pseudolongum",
+        "B) Lactobacillus johnsonii",
+        "C) Lysinibacillus sphaericus",
+        "D) Enterococcus hirae"
+      ],
+      "correct_answer": "C",
+      "explanation": "The authors' team discovered that Lysinibacillus sphaericus degrades aspirin and abolishes its preventive effect against the development of colorectal tumors. Aspirin showed significant antitumor effect in microbiome-depleted mice but not in mice with an intact microbiome, and L. sphaericus was identified as the prominent microbe responsible for this biotransformation.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "crc_microbiome_mcq_004",
+      "question": "Through which surface protein does Peptostreptococcus anaerobius bind to intestinal epithelial cells, and what signaling pathway does it activate?",
+      "options": [
+        "A) FadA adhesin → WNT/β-catenin pathway",
+        "B) Fap2 protein → TLR4/MYD88 pathway",
+        "C) PCWBR2 protein → PI3K-Akt-NF-κB pathway",
+        "D) BFT toxin → MAPK/STAT3 pathway"
+      ],
+      "correct_answer": "C",
+      "explanation": "P. anaerobius directly binds to the surface receptor integrin α2/β1 (ITGA2/ITGB1) of intestinal epithelial cells through its surface protein putative cell wall binding repeat 2 (PCWBR2), activating the tumor-promoting pathway PI3K-Akt-NF-κB, resulting in hyperproliferation of cancer cells.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "crc_microbiome_mcq_005",
+      "question": "In a 2019 Japanese metagenomic study of 631 participants, which bacteria were significantly enriched in multiple polypoid adenomas and/or stage 0 CRC, making them useful for early-stage CRC diagnosis?",
+      "options": [
+        "A) Bacteroides fragilis, Enterococcus faecalis, and Roseburia",
+        "B) Fusobacterium nucleatum, Atopobium parvulum, and Actinomyces odontolyticus",
+        "C) Parvimonas micra, Solobacterium moorei, and Clostridium hathewayi",
+        "D) Porphyromonas gingivalis, Peptostreptococcus anaerobius, and Prevotella intermedia"
+      ],
+      "correct_answer": "B",
+      "explanation": "The 2019 Japanese study collecting fecal samples from 631 participants revealed that F. nucleatum, Atopobium parvulum, and Actinomyces odontolyticus were significantly enriched in multiple polypoid adenomas and/or in stage 0 CRC, suggesting these bacteria are useful for early-stage CRC diagnosis.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "crc_microbiome_mcq_006",
+      "question": "What is the mechanism by which bacteria-derived lipopolysaccharide (LPS) promotes colorectal tumorigenesis through immune cells?",
+      "options": [
+        "A) LPS directly activates CD8+ T cells to produce pro-tumorigenic cytokines",
+        "B) LPS stimulates CCL2 expression, induces MLM accumulation, which produce IL-1β, activating IL-17-producing TH cells",
+        "C) LPS suppresses TLR signaling and reduces NF-κB activation in colonic epithelial cells",
+        "D) LPS stimulates Bifidobacterium growth, which triggers inflammatory responses in colon tissue"
+      ],
+      "correct_answer": "B",
+      "explanation": "Bacteria-derived LPS stimulates CC chemokine ligand 2 (CCL2) expression in colonic epithelial cells and induces the accumulation of monocyte-like macrophage (MLM). LPS further stimulates IL-1β production from MLM, inducing the activation of IL-17-producing T-helper (TH) cells and generating a precancerous inflammatory milieu to facilitate tumorigenesis.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "crc_microbiome_mcq_007",
+      "question": "Which immune checkpoint inhibitors received regulatory approval in 2017 for treatment of metastatic CRC, and for which patient subgroup?",
+      "options": [
+        "A) Atezolizumab and ipilimumab, for all metastatic CRC patients",
+        "B) Pembrolizumab and nivolumab, for mismatch-repair-deficient CRC or high microsatellite instability",
+        "C) Durvalumab and tremelimumab, for KRAS-mutated metastatic CRC",
+        "D) Cemiplimab and dostarlimab, for HER2-positive metastatic CRC"
+      ],
+      "correct_answer": "B",
+      "explanation": "Two immune checkpoint inhibitors — pembrolizumab and nivolumab — which are antibodies blocking programmed cell death-1 (PD-1), received regulatory approval in 2017 for the treatment of metastatic CRC that is mismatch-repair-deficient or has high levels of microsatellite instability.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "crc_microbiome_mcq_008",
+      "question": "In the first human clinical trial of FMT for restoring immunotherapy sensitivity in melanoma patients, what was the treatment sequence and overall outcome?",
+      "options": [
+        "A) FMT alone from complete responders; 5 out of 10 patients showed complete responses",
+        "B) Antibiotics followed by FMT from two nivolumab-complete-responder donors; 1 complete and 2 partial responses among 10 patients",
+        "C) Probiotics plus anti-PD-1 therapy; 4 out of 10 patients showed partial responses",
+        "D) Antibiotics followed by FMT and concurrent pembrolizumab; 3 complete responses among 10 patients"
+      ],
+      "correct_answer": "B",
+      "explanation": "Ten melanoma patients with no prior response to immunotherapy were treated with antibiotics followed by a combined treatment of FMT from two donors who exhibited a complete response to nivolumab. One patient showed a complete response and two showed partial responses after FMT. Increased expression of immune-related genes and infiltration of CD8+ T cells and CD68+ cells were observed in the three responders.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "crc_microbiome_mcq_009",
+      "question": "What is the genetic content variation range between different strains within the same bacterial species, and why does this create a challenge for metagenomic-based CRC biomarkers?",
+      "options": [
+        "A) 1%–5%; this causes minor misidentification issues in 16S rRNA analysis",
+        "B) 5%–30%; this can lead to confusing diagnostic results because strain-level differences are not captured by species-level analysis",
+        "C) 30%–50%; this makes it impossible to develop any species-level biomarkers",
+        "D) Less than 1%; the variation is negligible but sequencing error rates compound the problem"
+      ],
+      "correct_answer": "B",
+      "explanation": "The genetic content of different microbial strains, even those belonging to the same species, may differ from 5% to 30%. This means current metagenomic-based microbial biomarkers of CRC may lead to confusing diagnostic results, because strain-level differences are masked when analysis is performed only at the species level. Characterizing gut microbes at the strain level via deep metagenomic sequencing is therefore necessary for future translation of microbial markers.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "crc_microbiome_mcq_010",
+      "question": "The anti-tumor effect of oxaliplatin is attenuated in antibiotic-treated or germ-free mice. Which of the following best explains the mechanism by which commensal bacteria contribute to oxaliplatin efficacy?",
+      "options": [
+        "A) Commensal bacteria directly metabolize oxaliplatin into a more active form inside tumor cells",
+        "B) Commensal bacteria maintain intestinal barrier integrity, preventing oxaliplatin from being degraded before reaching tumors",
+        "C) Commensal bacteria support the inflammatory tone required for response: they promote ROS production needed for oxaliplatin genotoxicity and maintain monocyte differentiation/activation gene expression",
+        "D) Commensal bacteria produce short-chain fatty acids that synergize with oxaliplatin's platinum-DNA adduct formation"
+      ],
+      "correct_answer": "C",
+      "explanation": "Antibiotic treatment reduces the expression of pro-inflammatory genes induced by oxaliplatin, as well as genes related to monocyte differentiation, activation, and function. Antibiotic treatment not only attenuates the production of ROS, which is required for oxaliplatin to exhibit genotoxicity in tumor cells, but also hinders ROS production by tumor-infiltrating immune cells. This indicates that commensal bacteria support the type of inflammatory tone required for chemotherapy response, including the immune cell-mediated ROS production central to oxaliplatin's genotoxic mechanism.",
+      "expected_documents": [
+        "PMC10372906_Gut_Microbiome_in_Colorectal_Cancer_Clinical_Diag.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

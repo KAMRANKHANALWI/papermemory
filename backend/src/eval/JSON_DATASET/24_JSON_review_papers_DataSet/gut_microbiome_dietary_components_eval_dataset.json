@@ -1,0 +1,329 @@
+{
+  "source_document": "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf",
+  "paper_reference": "Rajeev et al. (2022). Gut microbiome responses in the metabolism of human dietary components: Implications in health and homeostasis. Critical Reviews in Food Science and Nutrition, 62(27), 7615-7631.",
+  "test_cases": [
+    {
+      "id": "gut_dietary_001",
+      "query": "Which bacterial species are responsible for converting acetate into butyrate in the human gut?",
+      "ground_truth_answer": "Faecalibacterium prausnitzii and Roseburia spp. are responsible for converting exogenously present acetate into butyrate in the human gut. This cross-feeding mechanism is an important route for butyrate production from simpler SCFA precursors.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "gut_dietary_002",
+      "query": "What are the three major short-chain fatty acids produced by gut microbiota and what are their relative proportions?",
+      "ground_truth_answer": "The three most dominant SCFAs produced by gut microbiota are acetate (60%), propionate (25%), and butyrate (15%). Valerate is also produced in smaller amounts. Acetate is the most predominant SCFA and is utilized by gut microbes as a precursor to synthesize other SCFAs like butyrate and propionate through cross-feeding mechanisms.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "gut_dietary_003",
+      "query": "What is trimethylamine (TMA) and which gut bacteria are responsible for synthesizing it?",
+      "ground_truth_answer": "Trimethylamine (TMA) is a tertiary aliphatic amine synthesized in the colon by gut microbes including Lactobacillus, Clostridium, Proteus, Desulfovibrio, and Collinsella. These bacteria produce TMA from dietary compounds such as choline, phosphatidylcholine, and L-carnitine. TMA subsequently enters the portal circulation and is oxidized by hepatic flavin-containing monooxygenases (primarily FMO3) to produce Trimethylamine N-oxide (TMAO), which is associated with cardiovascular disease risk.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "gut_dietary_004",
+      "query": "Which bacteria are responsible for the de novo synthesis of vitamins B1 and B2 in the gut?",
+      "ground_truth_answer": "Vitamin B1 (thiamine) is produced by Bacteroides fragilis, Fusobacterium varium, Clostridium difficile, Lactobacillus sp., Prevotella copri, Bifidobacterium sp., and Ruminococcus lactaris. These same bacteria, along with Lactobacillus plantarum and L. fermentum, also synthesize vitamin B2 (riboflavin) in the large intestine. De novo vitamin synthesis in the gut is broadly attributed to lactic acid bacteria (LAB) and Bifidobacterium spp.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "gut_dietary_005",
+      "query": "What is the role of Ruminococcus champanellensis in carbohydrate metabolism?",
+      "ground_truth_answer": "Ruminococcus champanellensis is involved exclusively in metabolizing cellulose, cellobiose, and xylan in the gut. Its fermentation of these substrates produces succinate and acetate as primary end products, along with minor amounts of ethanol, formate, and lactate. Unlike Ruminococcus flavefaciens and Ruminococcus albus, which degrade cellulose without producing succinate, R. champanellensis is distinguished by its succinate output, which can then serve as a substrate for other gut microbes in propionate or butyrate synthesis through cross-feeding.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "gut_dietary_006",
+      "query": "How do SCFAs exert anti-inflammatory effects through histone deacetylase (HDAC) inhibition?",
+      "ground_truth_answer": "SCFAs are transported across the colonic epithelium via MCT-1 and SMCT-1 transporters and once inside host cells, they directly inhibit histone deacetylases (HDACs). HDACs normally remove acetyl groups from lysine residues on histone N-terminal tails, leading to gene silencing. By inhibiting HDACs, SCFAs promote enhanced histone acetylation, which leads to increased transcription of certain genes and altered gene expression. Specifically, HDAC inhibition by SCFAs alters the NF-κB signaling pathway, resulting in reduced production of pro-inflammatory cytokines including Interleukin (IL)-8, IL-6, and Tumor Necrosis Factor (TNF)-α, thereby conferring significant anti-inflammatory benefits to the host.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "gut_dietary_007",
+      "query": "Describe the step-by-step mechanism by which Bifidobacterium bifidum degrades Lacto-N-tetraose from breast milk.",
+      "ground_truth_answer": "Bifidobacterium bifidum from the infant intestine degrades the breast milk glycan Lacto-N-tetraose through a specific enzymatic process. First, it secretes the extracellular enzyme Lacto-N-biosidase, which cleaves Lacto-N-tetraose into two products: lactose and lacto-N-biose. These components are then transported inside the microbial cell, where the enzyme lacto-N-biose phosphorylase further breaks down lacto-N-biose into galactose and N-acetylglucosamine. The resulting galactose can be further converted to tagatose by bacteria such as Lactobacillus crispatus, Enterococcus faecalis, and Anaerococcus prevotii, and tagatose is subsequently fermented into SCFAs by Enterococcus faecium, E. faecalis, some Lactobacillus strains, and Haloimpatiens massiliensis.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "gut_dietary_008",
+      "query": "How does the gut microbiome regulate cholesterol levels and what bacterial species are involved?",
+      "ground_truth_answer": "When cholesterol reaches the large intestine, it is metabolized by gut microbes, primarily being converted to coprostanol with minor amounts of coprostanone. The rate of this transformation varies among individuals depending on their cholesterol-metabolizing bacterial load. In humans, Bacteroides spp. strain D8 has been identified as the primary cholesterol-reducing bacterium. Recent research has shown that the microbial cholesterol dehydrogenase enzyme responsible for converting cholesterol to coprostanol is encoded by ismA genes found in Cluster IV Clostridium present in the human gut. This microbial transformation of cholesterol, along with bile acid conversion, plays a significant role in the overall cholesterol cycle, suggesting that microbiome-based interventions could serve as therapeutic tools to control systemic cholesterol levels.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "gut_dietary_009",
+      "query": "How do the GPCR41 and GPCR43 receptors differ in their tissue expression and activation by specific SCFAs?",
+      "ground_truth_answer": "GPCR41 (FFAR3) and GPCR43 (FFAR2) differ in both tissue distribution and SCFA specificity. GPCR43 is mainly expressed in immune cells and L cells of the intestine, while GPCR41 is expressed in adipose, endothelial, and immune cells. Regarding activation specificity, butyrate and isobutyrate activate GPCR41, while propionate activates both GPCR41 and GPCR43 more actively than butyrate and acetate. Acetate is quite specific to GPCR43. In terms of physiological location, both receptors are activated by SCFAs in enteroendocrine cells, while GPCR41 alone is activated in enteric neurons, and GPCR43 is activated in enteric leukocytes. GPCR43 activation in intestinal L cells is particularly important as it stimulates the release of satiety hormones PYY and GLP-1 to modulate appetite.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "gut_dietary_010",
+      "query": "What happens to gut microbiota composition when dietary protein content is high, and what are the health consequences?",
+      "ground_truth_answer": "A high-protein diet alters microbial consortia in the colon by reducing beneficial butyrate producers such as Ruminococcus bromii and Faecalibacterium prausnitzii, while promoting the growth of Escherichia coli, Enterococcus spp., and Streptococcus spp. This compositional shift enhances cadaverine levels, a biogenic amine that is detrimental to health as it causes DNA damage and stimulates oxidative stress. The simultaneous reduction in butyrate-producing bacteria weakens gut immunity since butyrate is essential for colonocyte energy, epithelial integrity, and immune regulation. Additionally, protein-deficient diets can paradoxically cause excess excretion of TMA, TMAO, and dimethylamine from microbial degradation of dietary choline, illustrating that both excess and deficiency of protein disrupt healthy gut microbial metabolism.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "gut_dietary_011",
+      "query": "Explain how SCFAs regulate glucose, lipid, and cholesterol metabolism through the AMPK pathway.",
+      "ground_truth_answer": "SCFAs activate the AMP-activated protein kinase (AMPK) pathway, which regulates fatty acid oxidation and lipolysis in the liver and muscle. AMPK stimulation upregulates the expression of peroxisome proliferator-activated receptor-gamma coactivator (PGC)-1α, which in turn controls the transcriptional activity of several nuclear receptors including PPARα, PPARδ, PPARγ, liver X receptor (LXR), and farnesoid X receptor (FXR). These transcription factors play crucial roles in regulating glucose, lipid, and cholesterol metabolism. More specifically, acetate and butyrate can enhance fat oxidation in muscles in an AMPK-dependent manner. In the liver, acetate and butyrate serve as substrates for lipogenesis, while propionate is primarily used for gluconeogenesis. This AMPK-mediated action of SCFAs also enhances intestinal integrity and homeostasis, and positively modulates both hepatic and peripheral insulin sensitivity alongside regulation of glucose homeostasis.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "gut_dietary_012",
+      "query": "What is the choline TMA-lyase (CutC/CutD) system and why is it a therapeutic target for cardiovascular disease?",
+      "ground_truth_answer": "The choline TMA-lyase system is the primary microbial catabolic enzyme system responsible for converting dietary choline into TMA in the human gut microbiome. It consists of two key components encoded by the choline-utilization gene cluster: CutC (choline TMA-lyase, the catalytic enzyme) and CutD (choline TMA-lyase activating enzyme, the regulatory component). The TMA produced is absorbed into the portal circulation and oxidized by hepatic FMO3 enzymes to form TMAO, which is linked to arteriosclerosis, platelet aggregation, and thrombosis. Blocking TMA formation through CutC/CutD inhibition has been shown to reduce circulating TMAO levels, making this enzyme system an attractive therapeutic target. This approach could reduce cardiovascular disease risk without abolishing the bacteria themselves, representing a precision microbiome intervention strategy.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "gut_dietary_013",
+      "query": "Compare and contrast how Bifidobacterium longum subsp. infantis and Bifidobacterium breve metabolize human milk oligosaccharides (HMOs), and what implications does this have for neonatal gut ecology?",
+      "ground_truth_answer": "Bifidobacterium longum subsp. infantis and Bifidobacterium breve exhibit fundamentally different strategies for HMO utilization that shape their ecological roles in the neonatal gut. B. longum subsp. infantis is highly autonomous: it deploys intracellular enzymes — specifically fucosidases, sialidases, and galactosidases — to directly cleave intact HMOs into monomeric units inside its own cells, enabling self-sufficient metabolism of diverse HMO structures. In contrast, Bifidobacterium breve lacks the ability to hydrolyze intact HMOs and instead relies on other bacterial species to procure monosaccharide breakdown products for its own nutrition. This cross-dependent strategy makes B. breve a cross-feeding organism within the infant microbiome. The ecological implication of this difference is that B. longum subsp. infantis can colonize and thrive in a breast-fed infant's gut independently, while B. breve's establishment depends on the metabolic activity of other HMO-metabolizing species. The catabolic end products of HMO metabolism from both organisms participate in metabolic cross-feeding with other gut commensals or enter host metabolic pathways, collectively influencing neonatal health outcomes including weight gain via correlation with SCFA levels.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "gut_dietary_014",
+      "query": "How do gut microbes regulate bile acid signaling through FXR and TGR5 pathways, and what are the downstream metabolic consequences?",
+      "ground_truth_answer": "Gut microbes regulate bile acid signaling through two major receptor pathways. Through the FXR (Farnesoid X Receptor) pathway, bile acids activate FXR in the ileum, which triggers expression of Fibroblast Growth Factor 19 (FGF19). FGF19 travels via enterohepatic circulation to the liver where it binds to the FGFR4/β-klotho heterodimer complex, activating JNK1/2 and ERK1/2 signaling cascades that suppress Cyp7a1 gene expression, inhibiting further bile acid synthesis in a negative feedback loop. FXR also controls GLP-1 synthesis and activates the small heterodimer partner (SHP), which binds to LRH-1 to further repress bile acid biosynthesis. Through the TGR5 (Takeda G-protein-coupled bile acid receptor) pathway, bile acids promote energy homeostasis by improving intracellular thyroid hormone action and enhancing thermogenesis in brown adipose tissue. Gut microbiome-mediated biotransformation of primary to secondary bile acids (through deconjugation, oxidation, epimerization, 7-dehydroxylation, esterification, and desulfation) directly shapes the pool of bile acid ligands available for these receptors. Dysregulation of these microbiome-bile acid interactions has been linked to obesity susceptibility, non-alcoholic fatty liver disease, gastrointestinal carcinogenesis, and inflammatory conditions.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "gut_dietary_015",
+      "query": "What are the differences between probiotics, prebiotics, and the emerging concept of postbiotics, and what microbial candidates are considered next-generation probiotics?",
+      "ground_truth_answer": "These three concepts represent distinct but complementary microbiome intervention strategies. Probiotics are defined by WHO/FAO (2002) as 'live microorganisms which when administered in adequate amounts confer a health benefit on the host.' Prebiotics are defined (Gibson et al., 2017) as 'a substrate that is selectively utilized by host microorganisms conferring a health benefit' — notably this definition covers any host microorganism, not just gut bacteria. Postbiotics is an emerging concept referring to metabolic products or structural components of microbes that can improve host physiological functions without requiring live organisms; SCFAs, which modulate energy metabolism, insulin production, and feeding behavior, are a canonical example of postbiotic molecules. Probiotics benefit health through antibacterial molecule production, mucosal barrier enhancement, and adaptive immune stimulation. Prebiotics activate the immune system and increase mineral bioavailability. Currently widely used probiotic strains include Saccharomyces, Bifidobacterium, and Lactobacillus species. Promising next-generation probiotic candidates include Propionibacterium spp., Roseburia spp., Faecalibacterium spp., and Akkermansia spp., which are not yet widely commercialized but show strong evidence of health-conferring properties.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "gut_dietary_mcq_001",
+      "question": "Which of the following enzyme families does Prevotella spp. produce to degrade plant-based polysaccharides and xylans?",
+      "options": [
+        "A) GH13-family starch hydrolases only",
+        "B) GH3-family xylosidase, GH51-family arabinofuranosidase, GH43 β-xylosidase, GH28 endopolygalacturonase, and GH13 starch hydrolases",
+        "C) GH28-family cellulases and GH51-family glucanases",
+        "D) GH3-family glucosidases and GH43-family amylases"
+      ],
+      "correct_answer": "B",
+      "explanation": "Prevotella spp. produce a diverse array of CAZymes specific to plant-based polysaccharide degradation, including Xylan-1,4-β-xylosidase (GH3 family), α-L-arabinofuranosidase (GH51), β-xylosidase (GH43), GH28-family endopolygalacturonase, and starch-hydrolyzing enzymes of the GH13 family.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "gut_dietary_mcq_002",
+      "question": "What is butyrate's primary physiological role for colonocytes?",
+      "options": [
+        "A) Serving as a substrate for hepatic gluconeogenesis",
+        "B) Directly activating GPCR43 to stimulate hormone secretion",
+        "C) Acting as the most important energy source for colonocytes and improving epithelial integrity",
+        "D) Inhibiting cholesterol synthesis in intestinal cells"
+      ],
+      "correct_answer": "C",
+      "explanation": "Butyrate is the most important source of energy for colonocytes. In addition to fueling these cells, it improves epithelial integrity and barrier function, thereby preventing inflammation. These properties make butyrate-producing bacteria particularly important for colonic health.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "gut_dietary_mcq_003",
+      "question": "According to the paper, which diet formulation was found to specifically enhance the abundance of SCFA-producing microbes such as Bifidobacterium sp., Anaerostipes, and Lachnospiraceae?",
+      "options": [
+        "A) A diet comprising 50% whole wheat and 50% legumes",
+        "B) A diet comprising 50% raw potato starch and 50% chitin-glucan",
+        "C) A diet comprising 50% inulin and 50% fructooligosaccharides",
+        "D) A diet comprising 50% resistant starch and 50% pectin"
+      ],
+      "correct_answer": "B",
+      "explanation": "A diet formulation comprising 50% raw potato starch and 50% chitin-glucan was specifically shown to enhance the abundance of SCFA-producing microbes including Bifidobacterium sp., Anaerostipes, and Lachnospiraceae unclassified.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "gut_dietary_mcq_004",
+      "question": "How do Microbiota-Accessible Carbohydrates (MACs) influence gut microbiome behavior when absent from the diet?",
+      "options": [
+        "A) The microbiome shifts to increased protein fermentation, producing more beneficial amino acids",
+        "B) The microbiome reduces SCFA production and begins consuming host mucus glycans, potentially leading to inflammation",
+        "C) The microbiome compensates by increasing lipid metabolism and bile acid recycling",
+        "D) The microbiome switches to vitamin synthesis pathways to maintain host health"
+      ],
+      "correct_answer": "B",
+      "explanation": "When MACs are absent from the diet (such as in a Western low-MAC diet), SCFA production from the host microbiome is depleted. Furthermore, the absence of MACs causes the microbial consortia to shift to feeding upon host mucus glycans instead. Persistence of this condition can lead to inflammatory responses, as degradation of the mucus layer compromises gut barrier integrity.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "gut_dietary_mcq_005",
+      "question": "Which specific enzyme system does Bifidobacterium longum subsp. infantis deploy to metabolize HMOs, and how does it differ from Bifidobacterium bifidum's approach?",
+      "options": [
+        "A) B. infantis uses extracellular Lacto-N-biosidase like B. bifidum, but with a higher substrate affinity",
+        "B) B. infantis uses intracellular fucosidases, sialidases, and galactosidases to cleave intact HMOs, while B. bifidum secretes extracellular Lacto-N-biosidase to degrade them outside the cell",
+        "C) B. infantis relies on cross-feeding from B. bifidum, while B. bifidum uses both intracellular and extracellular enzymes",
+        "D) Both use identical intracellular enzyme systems but differ only in the types of HMO substrates they target"
+      ],
+      "correct_answer": "B",
+      "explanation": "B. longum subsp. infantis deploys intracellular enzymes — fucosidases, sialidases, and galactosidases — to cleave HMOs into monomeric units inside its cells after transport. In contrast, B. bifidum secretes the extracellular enzyme Lacto-N-biosidase that acts outside the cell to first break down Lacto-N-tetraose into lactose and lacto-N-biose before these products enter the cell.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "gut_dietary_mcq_006",
+      "question": "Through which transport mechanisms are SCFAs absorbed across the colonic epithelium into host circulation?",
+      "options": [
+        "A) Passive diffusion only, driven by concentration gradients",
+        "B) Anti-port transport with HCO3-, MCT-1 co-transport with H+, and SMCT-1 co-transport with Na+",
+        "C) GPCR-mediated endocytosis and passive lipid bilayer diffusion",
+        "D) Exclusively via SMCT-1 sodium co-transport in the proximal colon"
+      ],
+      "correct_answer": "B",
+      "explanation": "SCFAs are transported via three mechanisms: (1) anti-port transport where SCFA exit is coupled with HCO3- entry into the lumen, (2) co-transport with H+ via monocarboxylate transporter 1 (MCT-1/SLC16A1), and (3) co-transport with Na+ via sodium-coupled monocarboxylate transporter 1 (SMCT1). Among these, active transport using MCT-1 and SMCT-1 is the primary mode.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "gut_dietary_mcq_007",
+      "question": "What microbial sequence of reactions converts dietary lignans (specifically secoisolariciresinol diglucoside) to enterolactone in the human colon?",
+      "options": [
+        "A) Direct deglycosylation by Lactobacillus → ring-opening by Clostridium → final hydroxylation by Bacteroides",
+        "B) Primary deglycosylation by Bacteroides ovatus/distasonis/fragilis and Clostridium spp. → demethylation by Eubacterium/Peptostreptococcus/Blautia/Eubacterium limosum → dehydroxylation by Clostridium scindens/Eggerthella lenta → dehydrogenation and lactone ring closure by Lactonifactor longoviformis",
+        "C) Deconjugation by Bifidobacterium → ring breakage by Fusobacterium → oxidation by Bacteroides",
+        "D) Hydrolysis by Prevotella → dehydroxylation by Ruminococcus → methylation by Clostridiales"
+      ],
+      "correct_answer": "B",
+      "explanation": "The multi-step gut microbial conversion of secoisolariciresinol diglucoside to enterolactone proceeds as follows: primary deglycosylation by Bacteroides ovatus, Bacteroides distasonis, Clostridium cocleatum, B. fragilis, and Clostridium saccharogumia; demethylation of lignan aglycone by Eubacterium callanderi, Peptostreptococcus productus, Butyribacterium methylotrophicum, Blautia producta, and Eubacterium limosum; dehydroxylation by Clostridium scindens and Eggerthella lenta; and finally dehydrogenation of enterodiol to enterolactone with lactone ring closure catalyzed by Lactonifactor longoviformis.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "gut_dietary_mcq_008",
+      "question": "What happens to hepatic Cyp7a1 gene expression when bile acids activate FXR in the distal ileum?",
+      "options": [
+        "A) Cyp7a1 expression is upregulated, increasing bile acid synthesis to restore the bile acid pool",
+        "B) Cyp7a1 expression is inhibited via FGF19-FGFR4/β-klotho-JNK1/2-ERK1/2 signaling and SHP-LRH-1 pathway, suppressing further bile acid synthesis",
+        "C) Cyp7a1 is unaffected; instead TGR5 directly suppresses cholesterol synthesis in the liver",
+        "D) FXR activation in the ileum stimulates ASBT transporter expression, increasing bile acid reabsorption without affecting Cyp7a1"
+      ],
+      "correct_answer": "B",
+      "explanation": "When bile acids activate FXR in the distal ileum, two parallel inhibitory cascades converge on Cyp7a1: (1) FGF19 is expressed and travels to the liver to bind FGFR4/β-klotho heterodimer, activating JNK1/2 and ERK1/2 signaling that suppresses Cyp7a1; (2) activated FXR in the liver itself induces expression of SHP, which binds to LRH-1 and represses Cyp7a1 transcription. Both pathways act as negative feedback to limit excessive bile acid synthesis.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "gut_dietary_mcq_009",
+      "question": "Which of the following best explains why the authors used in silico analysis to study amino acid degradation pathways, and what was the key finding regarding shared genes between humans and gut microbiome?",
+      "options": [
+        "A) In silico analysis was used because wet lab experiments are too expensive; the key finding was that all 28 genes are unique to the microbiome",
+        "B) In silico analysis was used to reveal molecular networks; the key finding was that 14 of 28 experimentally characterized genes are common across humans and gut flora, distributed across Firmicutes, Bacteroidetes, Actinobacteria, and Proteobacteria",
+        "C) In silico analysis was used to replace animal models; the key finding was that only 4 hub genes (PdhA1, Dbt, GcsH, DlsT) exist in both host and microbiome",
+        "D) In silico analysis was used to validate 16S rRNA sequencing data; the key finding was that amino acid degradation is exclusive to Firmicutes in the gut"
+      ],
+      "correct_answer": "B",
+      "explanation": "The authors used in silico analysis to reveal the complex inter- and intracellular molecular networks between humans and their microbial partners in amino acid degradation. The key finding was that 14 genes are common across humans and gut flora: 11 attributed to Firmicutes, 8 to Bacteroidetes, 10 to Actinobacteria, and 13 to Proteobacteria. These shared hub genes (including ogdH, pdhAB, sdaA, bckdhA, gcvH, idh2, and cth) act as functional intermediates during metabolic cross-talk between host and microbiome.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "gut_dietary_mcq_010",
+      "question": "Considering the full metabolic trajectory described in the paper, which statement most accurately captures the relationship between dietary fat-soluble vitamins and the gut microbiome?",
+      "options": [
+        "A) Fat-soluble vitamins are entirely synthesized by the gut microbiome and dietary intake is largely irrelevant",
+        "B) Fat-soluble vitamins modulate gut microbial composition by interfering with metabolic mechanisms, and the microbiome reciprocally regulates their absorption, metabolism, and transport — including vitamin D activation via microbial steroid hydroxylase enzymes (CYP105A1, CYP-sb3a) in Streptomyces griseolus and Sebekia benihana",
+        "C) The gut microbiome only affects water-soluble vitamins; fat-soluble vitamins are exclusively absorbed passively in the small intestine without microbial influence",
+        "D) Vitamin D is solely regulated through sunlight-mediated synthesis in host skin, with no significant microbial involvement"
+      ],
+      "correct_answer": "B",
+      "explanation": "The relationship between fat-soluble vitamins and the gut microbiome is bidirectional. Fat-soluble vitamins modulate gut microbial composition by interfering in metabolic mechanisms. Reciprocally, the gut microbiome plays essential roles in production, metabolism, and transport of fat-soluble vitamins: it modulates vitamin A absorption and immune function, regulates vitamin D metabolism via Fibroblast Growth Factor 23, and certain microbes (Streptomyces griseolus, Sebekia benihana) possess enzymes (CYP105A1, CYP-sb3a) that hydroxylate steroids for vitamin D metabolic activation. Gut microbes initiate CYP450-dependent vitamin E metabolism and synthesize vitamin K2 for bone and vascular homeostasis.",
+      "expected_documents": [
+        "Gut_microbiome_responses_in_the_metabolism_of_human_dietary_components__Implications_in_health_and_homeostasis.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

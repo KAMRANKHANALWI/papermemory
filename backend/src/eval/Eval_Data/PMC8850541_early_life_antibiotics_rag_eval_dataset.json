@@ -1,0 +1,282 @@
+{
+  "source_document": "PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf",
+  "paper_title": "Effects of early-life antibiotics on the developing infant gut microbiome and resistome: a randomized trial",
+  "description": "RAG evaluation dataset covering antibiotic regimens, OTU-level microbiota dynamics, resistome profiling, breastfeeding interactions, methodological design, and statistical analysis from a neonatal randomized controlled trial",
+
+  "test_cases": [
+    {
+      "id": "early_ab_001",
+      "query": "What is the title and study design of this paper?",
+      "ground_truth_answer": "The paper is titled 'Effects of early-life antibiotics on the developing infant gut microbiome and resistome: a randomized trial.' It is a randomized controlled trial (RCT) investigating how different antibiotic regimens administered in the first week of life affect the longitudinal development of the infant gut microbiome and antimicrobial resistance (AMR) gene profile (resistome) over the first year of life.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "early_ab_002",
+      "query": "What were the two cohorts used in this study and when were they recruited?",
+      "ground_truth_answer": "The study included two cohorts: an RCT cohort consisting of infants who received antibiotics, and a control cohort consisting of infants who did not receive antibiotics. The control infants were born between 19 December 2012 and 2 November 2014. The RCT and control cohorts were recruited from the same hospitals but at different time periods, which was flagged as a potential source of systematic bias by peer reviewers.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "early_ab_003",
+      "query": "What three antibiotic regimens were compared in the randomized trial?",
+      "ground_truth_answer": "The randomized trial compared three antibiotic regimens administered in the first week of life: (1) amoxicillin + cefotaxime, (2) co-amoxiclav + gentamicin, and (3) a third comparator group. The co-amoxiclav + gentamicin group received antibiotics for a relatively longer duration compared to the other two groups, with a median treatment duration of 4.5 days versus less than 3 days in the other groups.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "early_ab_004",
+      "query": "What statistical method was used to identify differentially abundant OTUs over time between treatment groups?",
+      "ground_truth_answer": "Differential abundance testing was performed using smoothing spline analysis of variance (SS-ANOVA). This method identifies specific time intervals in which significant differences in OTU abundance exist between groups. Results were adjusted for mode of delivery (and breastfeeding in sensitivity analyses), and multiple testing correction was performed using the Benjamini-Hochberg method. The method reports interval start, interval end, and area under the curve (positive area = higher in antibiotic group; negative area = higher in controls).",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "early_ab_005",
+      "query": "What was the primary data type used for the majority of the analyses in this study?",
+      "ground_truth_answer": "The vast majority of the analyses were based on PCR of known antimicrobial resistance (AMR) genes, rather than full metagenomic sequencing. Only a subset of samples underwent further investigation with metagenomic sequencing (mgx). This distinction was flagged by peer reviewers as being insufficiently clear early in the manuscript, since readers initially assumed all analyses were based on metagenomic sequencing.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+
+    {
+      "id": "early_ab_006",
+      "query": "How did the amoxicillin + cefotaxime regimen affect Bifidobacterium abundance compared to controls, and over what time interval?",
+      "ground_truth_answer": "In the amoxicillin + cefotaxime group, multiple Bifidobacterium OTUs showed significantly reduced abundance compared to controls. For example, the primary Bifidobacterium OTU (Bifidobacterium_1) showed a negative area of -322.223 (unadjusted) and -324.479 (adjusted for breastfeeding), from day 1 to day 43. Additional Bifidobacterium OTUs (e.g., Bifidobacterium_bifidum, Bifidobacterium_breve, Bifidobacterium_animalis, and multiple unspecified Bifidobacterium OTUs) also showed persistent negative area values across the first several months of life, confirming a broad and sustained suppression of Bifidobacterium following early amoxicillin + cefotaxime exposure.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "early_ab_007",
+      "query": "What was the effect size of breastfeeding on overall microbiota composition in both the overarching cohort and the antibiotic-treated cohort?",
+      "ground_truth_answer": "In the overarching multivariate analysis, breastfeeding at the time of sampling had an effect size of 0.7% on microbiota composition across the entire cohort, and 0.8% in the antibiotic-treated cohort specifically. These are considered modest effect sizes, supporting the conclusion that breastfeeding alone is not sufficient to compensate for the microbiota disruption caused by antibiotic treatment in the first week of life.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "early_ab_008",
+      "query": "Which opportunistic or potentially pathogenic bacteria were found at increased abundance in the amoxicillin + cefotaxime group compared to controls?",
+      "ground_truth_answer": "In the amoxicillin + cefotaxime group, several potentially pathogenic or opportunistic bacteria showed increased abundance relative to controls. These included Klebsiella (OTU_4, area +412, days 16–127), Enterococcus faecium (OTU_5, area +330, days 1–117), Streptococcus (OTU_11, area +676, days 1–384), Clostridium sensu stricto 1 (multiple OTUs with positive areas), Clostridium butyricum, Corynebacterium striatum, Finegoldia, and Plesiomonas. This pattern of depleted commensals and enriched opportunists is consistent with antibiotic-induced dysbiosis.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "early_ab_009",
+      "query": "How does the relative effect size of antibiotic treatment duration compare to the effect of antibiotic initiation itself on microbiota composition?",
+      "ground_truth_answer": "The study found that antibiotic treatment duration had a modest association with microbiota composition, with an R² of 0.3%, or 0.4% when treatment duration was categorized into 1–4 days versus more than 4 days. In contrast, the initiation of antibiotic treatment in the first place was associated with a substantially larger effect size of R² 0.9%. This indicates that it is primarily the exposure to antibiotics itself — rather than how long treatment lasted — that drives microbiota disruption in early infancy.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "early_ab_010",
+      "query": "Which Akkermansia OTUs showed altered abundance in the amoxicillin + cefotaxime group, and what direction were these changes?",
+      "ground_truth_answer": "Three distinct Akkermansia OTUs were differentially abundant in the amoxicillin + cefotaxime group relative to controls. Akkermansia_28 showed decreased abundance (area -386.684, days 101–384), Akkermansia_64 showed decreased abundance (area -201.447 unadjusted / -229.221 adjusted, days 34–384 / 15–384), and Akkermansia_153 showed decreased abundance (area -99.484 / -114.827, days 59–308 / 51–324), and Akkermansia_196 also showed decreased abundance. All identified Akkermansia OTUs were consistently lower in the antibiotic group, suggesting a sustained depletion of this health-associated mucosal colonizer following early antibiotic exposure.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "early_ab_011",
+      "query": "How was medication data collected, and what error occurred that required data correction during the revision process?",
+      "ground_truth_answer": "Medication data was collected through parent-reported online questionnaires using the Research Manager software. Questionnaires about perinatal characteristics were completed by research nurses and physicians, while health follow-up questionnaires at 1, 4, 6, 8, 10, and 12 months were filled in by parents and could not be edited after submission. However, the medication questionnaire was the only exception — it was editable, allowing parents to add new medications and input end dates. An error occurred when some parents changed the answer to the question 'has your child received any medication after discharge from the hospital' from 'yes' to 'no,' misinterpreting it as referring to new medication since the last questionnaire. This resulted in the under-reporting of later antibiotic use in one group. The Research Manager software tracked all changes, allowing the team to identify and correct the inconsistencies, which led to 4 additional cases being identified and changes in statistical significance for that group.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "early_ab_012",
+      "query": "How does this study's finding on duration of antibiotic treatment (>4 days) contrast with findings from most other published studies, and how did the authors explain this discrepancy?",
+      "ground_truth_answer": "Most previously published studies have found that prolonged antibiotic treatment (>4 days) is associated with more adverse microbiota and health outcomes compared to shorter courses. However, this study found only a modest difference (R² 0.4%) when comparing 1–4 day versus >4 day courses, which was much smaller than the effect of antibiotic initiation itself (R² 0.9%). The authors attributed this discrepancy partly to the distribution of treatment duration in the co-amoxiclav + gentamicin group (which had a median of 4.5 days and therefore included more infants treated for >4 days), and to the relatively small effect of duration once antibiotics had been initiated at all. The authors acknowledged this as a notable finding that warranted more detailed discussion in the revision, particularly given that the study design — a randomized trial with different regimens — differed from the observational designs common in other literature.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "early_ab_013",
+      "query": "What is the methodological concern raised by Reviewer #3 regarding the comparison between the RCT cohort and the control cohort, and how did the authors attempt to address it?",
+      "ground_truth_answer": "Reviewer #3 raised the concern that comparing the RCT cohort (antibiotic-receiving infants) to the control cohort (non-antibiotic infants) creates a high risk of systematic bias, because the two cohorts were recruited from the same hospitals but at different time periods, and it is well established that gut microbiome composition fluctuates over time (e.g., due to environmental changes, hospital practices, circulating microorganisms). It was ethically impossible to include non-antibiotic infants within the RCT itself. The authors addressed this by: (1) adding recruitment year information to the abstract and results section, (2) presenting pre-antibiotic exposure data from both cohorts showing limited and non-significant differences between them at baseline, and (3) performing post-hoc analyses correcting for multiple co-drivers of microbial development. However, the authors conceded that this limitation should be more prominently discussed.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "early_ab_014",
+      "query": "Compare the differentially abundant OTU results with and without breastfeeding adjustment in the amoxicillin + cefotaxime versus control analysis. What key species remained significant and what changed?",
+      "ground_truth_answer": "When comparing SS-ANOVA results without breastfeeding adjustment versus with adjustment, the core pattern of dysbiosis was robustly maintained. Key OTUs that remained significantly different after adjustment include: Bifidobacterium_1 (area ~-324, p.adj 0.005), Klebsiella_4 (area ~+390, p.adj 0.010), Enterococcus_faecium_5 (area ~+251, p.adj 0.005), Bifidobacterium_bifidum_NCIMB_41171_13 (area ~-601, p.adj 0.008), Akkermansia_64 (area ~-229, p.adj 0.014), Bacteroides_31 (area ~-830, p.adj 0.012), Collinsella_24 (area ~-1325, p.adj 0.008), and Corynebacterium_striatum_77 (area ~+214, p.adj 0.005). Some OTUs appeared or disappeared between the two analyses (e.g., Akkermansia_28, Lactobacillus_40, Ruminococcaceae_277, Peptostreptococcaceae_396, and Collinsella_227 emerged only in the breastfeeding-adjusted model). The overall conclusion — that breastfeeding cannot compensate for antibiotic-induced disruption of Bifidobacterium, Akkermansia, and Bacteroides — was unchanged across both models.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "early_ab_015",
+      "query": "What broader parallel does the study draw between early antibiotic-induced Bifidobacterium depletion and another well-known perinatal factor, and what does this imply for compensatory strategies?",
+      "ground_truth_answer": "The study draws a parallel between early antibiotic-induced Bifidobacterium depletion and the reduced Bifidobacterium observed in infants born by caesarean section compared to vaginally born infants. Just as breastfeeding alone has been shown to be insufficient to compensate for the lower Bifidobacterium levels in caesarean-born infants, the study's fitTimeSeries analyses (with breastfeeding as a covariate) demonstrate that breastfeeding alone is similarly unable to compensate for antibiotic-induced Bifidobacterium suppression. This implies that passive strategies like breastfeeding may be inadequate and that targeted interventions — such as probiotic supplementation or microbiome restoration strategies — may be needed to mitigate the long-term consequences of early-life antibiotic exposure on beneficial commensal colonization.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "early_ab_mcq_001",
+      "question": "What is the name of the statistical method used to test for differentially abundant OTUs across longitudinal time intervals in this study?",
+      "options": [
+        "A) Linear mixed-effects modeling (LMM)",
+        "B) Smoothing spline analysis of variance (SS-ANOVA)",
+        "C) DESeq2 negative binomial regression",
+        "D) Permutational multivariate ANOVA (PERMANOVA)"
+      ],
+      "correct_answer": "B",
+      "explanation": "The study used smoothing spline analysis of variance (SS-ANOVA), also referred to as fitTimeSeries analysis, to identify specific intervals of significant differential abundance between groups over the first year of life.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "easy",
+      "category": "methodology"
+    },
+    {
+      "id": "early_ab_mcq_002",
+      "question": "Between which dates were the control cohort infants born?",
+      "options": [
+        "A) 1 January 2011 to 31 December 2012",
+        "B) 19 December 2012 to 2 November 2014",
+        "C) 3 March 2014 to 15 August 2016",
+        "D) 7 June 2015 to 22 September 2017"
+      ],
+      "correct_answer": "B",
+      "explanation": "The control infants were born between 19 December 2012 and 2 November 2014. This information was added to the results section and abstract in the revised manuscript following Reviewer #3's request.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "early_ab_mcq_003",
+      "question": "What was the effect size (R²) of antibiotic initiation itself on microbiota composition?",
+      "options": [
+        "A) 0.3%",
+        "B) 0.4%",
+        "C) 0.7%",
+        "D) 0.9%"
+      ],
+      "correct_answer": "D",
+      "explanation": "The initiation of antibiotics was associated with an R² of 0.9% on microbiota composition, compared to R² 0.3% for treatment duration (or 0.4% when categorized into 1–4 vs >4 days). Breastfeeding had an effect size of 0.7–0.8%.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "early_ab_mcq_004",
+      "question": "In the fitTimeSeries analysis of the amoxicillin + cefotaxime group versus controls (unadjusted for breastfeeding), what was the area and time interval for Bifidobacterium_1?",
+      "options": [
+        "A) Area: -322.223, Days 1–43",
+        "B) Area: +412.066, Days 16–127",
+        "C) Area: -797.615, Days 1–343",
+        "D) Area: -630.168, Days 1–213"
+      ],
+      "correct_answer": "A",
+      "explanation": "Bifidobacterium_1 showed an area of -322.223 from days 1 to 43 (p.adj = 0.006327), indicating significantly lower abundance in the amoxicillin + cefotaxime group compared to controls over the first 43 days of life.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "early_ab_mcq_005",
+      "question": "How many additional antibiotic cases were discovered during data correction for the medication questionnaire error, and what was the outcome on statistical significance?",
+      "options": [
+        "A) 2 cases; difference became more significant",
+        "B) 4 cases; difference changed from significant to non-significant",
+        "C) 6 cases; difference remained non-significant",
+        "D) 8 cases; difference changed from non-significant to significant"
+      ],
+      "correct_answer": "B",
+      "explanation": "During revision, 4 additional cases of later antibiotic use were identified after checking all medication questionnaires for inconsistencies. This correction changed the initially reported significant difference in the percentage of later antibiotic use in one group to a non-significant difference.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "early_ab_mcq_006",
+      "question": "What effect does adjusting the fitTimeSeries analysis for breastfeeding have on the Bifidobacterium results in the amoxicillin + cefotaxime versus control comparison?",
+      "options": [
+        "A) All Bifidobacterium OTUs become non-significant after breastfeeding adjustment",
+        "B) Bifidobacterium differences are largely maintained after breastfeeding adjustment, supporting that breastfeeding cannot compensate for antibiotic effects",
+        "C) Breastfeeding adjustment reverses the direction of the Bifidobacterium effect",
+        "D) Breastfeeding adjustment increases the area values for all Bifidobacterium OTUs from negative to positive"
+      ],
+      "correct_answer": "B",
+      "explanation": "After adjusting for breastfeeding, most Bifidobacterium OTUs remained significantly different between the antibiotic and control groups with similar area values, supporting the conclusion that breastfeeding alone cannot compensate for the impact of antibiotics on Bifidobacterium colonization in the first week of life.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "early_ab_mcq_007",
+      "question": "In the SS-ANOVA results for the amoxicillin + cefotaxime group, Collinsella_24 shows an area of -1214.79 (unadjusted) from days 1–334. What does a negative area indicate in this context?",
+      "options": [
+        "A) The OTU is more abundant in the amoxicillin + cefotaxime group than controls",
+        "B) The OTU is more abundant in the control group than in the amoxicillin + cefotaxime group",
+        "C) The OTU was undetectable in both groups during this interval",
+        "D) The OTU decreased over time within the control group only"
+      ],
+      "correct_answer": "B",
+      "explanation": "A negative Area value indicates that the abundance of the specific OTU is higher in the control group than in the antibiotic-treated group. Thus, Collinsella_24 is substantially more abundant in controls than in infants who received amoxicillin + cefotaxime, across days 1–334.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "medium",
+      "category": "methodology"
+    },
+    {
+      "id": "early_ab_mcq_008",
+      "question": "Which of the following correctly describes the primary ethical and design challenge that prevented non-antibiotic infants from being included in the RCT arm of this study?",
+      "options": [
+        "A) It was technically impossible to recruit healthy infants into the same hospital wards",
+        "B) It was ethically not possible to randomize infants with clinical need for antibiotics to a no-antibiotic arm",
+        "C) Regulatory authorities prohibited inclusion of control infants in antibiotic trials",
+        "D) The sample size was too small to accommodate a no-antibiotic arm"
+      ],
+      "correct_answer": "B",
+      "explanation": "As acknowledged in the manuscript and highlighted by Reviewer #3, it was ethically impossible to include non-antibiotic infants within the RCT because the study enrolled infants who had a clinical indication for antibiotic treatment; withholding antibiotics in such cases would be unethical. This necessitated the use of a separate observational control cohort.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "early_ab_mcq_009",
+      "question": "Which two bacteria showed simultaneous and persistently increased abundance in the amoxicillin + cefotaxime group from early in the first year of life (days 1–100+), potentially indicating antibiotic-induced opportunistic colonization?",
+      "options": [
+        "A) Bifidobacterium bifidum and Akkermansia muciniphila",
+        "B) Klebsiella and Enterococcus faecium",
+        "C) Bacteroides and Collinsella",
+        "D) Lactobacillus and Faecalibacterium"
+      ],
+      "correct_answer": "B",
+      "explanation": "Klebsiella (OTU_4, area +412, days 16–127) and Enterococcus faecium (OTU_5, area +330, days 1–117) both showed significantly elevated abundance in the amoxicillin + cefotaxime group from early in life. These genera are recognized opportunistic pathogens and their enrichment in antibiotic-exposed infants is consistent with competitive release following suppression of commensal Bifidobacterium and Bacteroides.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "early_ab_mcq_010",
+      "question": "Fusicatenibacter saccharivorans showed a positive area (+727.045) in the unadjusted model from days 78–384 in the amoxicillin + cefotaxime group. Which of the following best interprets this finding in the context of antibiotic-induced microbiome succession?",
+      "options": [
+        "A) Fusicatenibacter is an early-life commensal suppressed by antibiotics, similar to Bifidobacterium",
+        "B) Fusicatenibacter colonizes later in infancy and its enrichment in the antibiotic group may reflect altered ecological succession following early dysbiosis",
+        "C) Fusicatenibacter is a well-characterized pathogen associated with neonatal sepsis",
+        "D) The positive area simply indicates a statistical artifact due to the small sample size in that interval"
+      ],
+      "correct_answer": "B",
+      "explanation": "Fusicatenibacter saccharivorans is a butyrate-producing Lachnospiraceae member that typically appears later in gut microbiome succession. Its significantly higher abundance in the amoxicillin + cefotaxime group from days 78–384 suggests that early antibiotic exposure alters the trajectory of microbiome assembly, potentially enabling later-colonizing organisms to occupy ecological niches differently than in undisturbed microbiome development.",
+      "expected_documents": ["PMC8850541_Effects_of_early-life_antibiotics_on_the_developing_infant_gut_microbiome_and_resistome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

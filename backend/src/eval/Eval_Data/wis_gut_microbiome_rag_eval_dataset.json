@@ -1,0 +1,294 @@
+{
+  "source_document": "An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf",
+  "paper_info": {
+    "title": "An expanded reference map of the human gut microbiome reveals hundreds of previously unknown species",
+    "authors": "Sigal Leviatan, Saar Shoer, Daphna Rothschild, Maria Gorodetski, Eran Segal",
+    "journal": "Nature Communications",
+    "year": 2022,
+    "doi": "10.1038/s41467-022-31502-1"
+  },
+
+  "test_cases": [
+    {
+      "id": "wis_microbiome_001",
+      "query": "What is the WIS reference set and how many species does it contain?",
+      "ground_truth_answer": "The WIS (Weizmann Institute of Science) reference set is a curated human gut microbiome genome reference set constructed from 241,118 genomes. It contains 3594 high-quality species genomes belonging to 2365 genera and 628 families, and successfully matches 83.65% of validation sample reads.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "wis_microbiome_002",
+      "query": "How many novel species were discovered in the WIS reference set, and what percentage of validation samples contain the most prevalent novel species?",
+      "ground_truth_answer": "The WIS reference set discovered 310 novel species, 19 of which belong to previously unfamiliar genera. The most prevalent novel species — belonging to the Faecalibacterium genus — was present in 15.02% of internal validation samples and 18.98% of external validation samples.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "wis_microbiome_003",
+      "query": "What is the median completeness and contamination of genomes in the WIS reference set?",
+      "ground_truth_answer": "The WIS reference set has a median genome completeness of 95% and a median contamination of 0.67%. The completeness threshold used during construction was 70%, which is stricter than the 50% threshold used in UNITN.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "wis_microbiome_004",
+      "query": "How many metagenomic samples were used to build the WIS reference set compared to the UNITN reference set?",
+      "ground_truth_answer": "The WIS reference set was built from 51,052 human gut microbiome samples, which is approximately 6 times more than the 9,428 samples used to build the UNITN reference set. The WIS samples were sourced mostly from Israeli adults, while UNITN samples came from 31 countries.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "wis_microbiome_005",
+      "query": "What percentage of reads from external western validation cohorts did the WIS reference set successfully align?",
+      "ground_truth_answer": "The WIS reference set aligned a median of 83.65% of reads from the external Netherlands LifeLines cohort (n=1528 samples), compared to 79.78% for UNITN. This reduced the amount of unaligned (unknown) reads by 19.1%. For unique read alignment, WIS achieved 65.20% versus 58.51% for UNITN.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "wis_microbiome_006",
+      "query": "Why did the authors exclude NCBI-RefSeq genomes from the WIS reference set construction?",
+      "ground_truth_answer": "The authors excluded NCBI-RefSeq genomes for two main reasons. First, those genomes lacked the metadata required by their filtration criteria. Second, NCBI-RefSeq is biased toward species that are the focus of scientific research — for example, Escherichia coli makes up 10% of the NCBI-RefSeq dataset despite being relatively low-abundance in the human gut, while Prevotella copri, a highly abundant gut species, represents less than 0.05% of that dataset.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "wis_microbiome_007",
+      "query": "Explain the anti-biasing strategy the authors used to prevent duplication artifacts during hierarchical clustering.",
+      "ground_truth_answer": "To prevent duplication bias in hierarchical clustering, the authors processed multiple samples from the same individual but ensured only one assembly per species per individual was included. All assemblies from a single individual were ranked by quality, and each was added to the pool only if it exceeded the species-level MASH distance threshold (0.05) from all previously added assemblies. This was applied to both MAG and isolate assemblies, preventing closely related genomes from the same person from artificially inflating certain species clusters during average-linkage hierarchical clustering.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "wis_microbiome_008",
+      "query": "How does the WIS reference set perform on non-western populations compared to western populations?",
+      "ground_truth_answer": "On non-western cohorts from India (n=110), El Salvador (n=113), and Tanzania (n=68), the difference in total read alignment between WIS and UNITN was not statistically significant. In the case of Tanzania, read alignment was even significantly higher in UNITN, possibly because Tanzania was relatively well-represented in the UNITN dataset. However, the WIS set maintained a significant advantage in unique read alignment across all non-western populations, indicating that WIS captures greater genomic diversity and did not overfit to the Israeli adult cohort.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "medium",
+      "category": "comparison"
+    },
+    {
+      "id": "wis_microbiome_009",
+      "query": "What role does the 16S rRNA gene play in microbial identification, and how does the WIS reference set improve its utility?",
+      "ground_truth_answer": "The 16S rRNA gene is present in all bacteria and contains a highly conserved region identifiable by PCR, interspersed with variable regions that are species- or genus-specific. However, 16S-based identification requires prior knowledge linking those variable regions to a taxonomy and provides no information about the broader genomic context of the organism. For many gut bacteria this prior knowledge did not exist, but the WIS reference set, which has 6.72x more 16S genes per genome on average than UNITN (0.68 vs 0.10 per genome), now allows that taxonomic link to be deduced for previously uncharacterized species.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "wis_microbiome_010",
+      "query": "What is the MASH distance threshold used to define species-level boundaries, and what genomic identity does it correspond to?",
+      "ground_truth_answer": "The WIS reference set uses a MASH distance threshold of 0.05 to define species-level boundaries. This threshold is a proxy for one minus the average nucleotide identity (ANI), meaning a MASH distance of 0.05 corresponds to the widely accepted 95% ANI species boundary for prokaryotes. The closest pair of representative genomes in the WIS reference set is 0.040 MASH distance apart, ensuring no two representative genomes are at species-level proximity.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "wis_microbiome_011",
+      "query": "What gene products unique to the novel species were found, and what are their potential biological significance?",
+      "ground_truth_answer": "The 310 novel species encode 42 gene products not present in any known species of the WIS reference set. Among those with potential direct host effects: Lp49 antigen, a membrane-associated protein recognized by antibodies in leptospirosis patients; and Fragilysin, a metalloprotease toxin cytopathic to intestinal epithelial cells that induces fluid secretion and tissue damage in ligated intestinal loops. An example affecting microbial competition is the ParE3 toxin, which is involved in plasmid partition. Novel species also carry significantly fewer potential antibiotic resistances compared to known species (21.94% vs. 30.21% holding at least one resistance).",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "wis_microbiome_012",
+      "query": "Why does focusing on a single ecological niche (the human gut) improve species clustering accuracy compared to a multi-body-site approach?",
+      "ground_truth_answer": "Different ecological niches can host the same microbial species, but the gene content of a genome may vary based on the niche, causing the genomic distance between different assemblies of the same species to be artificially inflated. When assemblies from multiple body sites are pooled, a single species may be incorrectly split across different clusters due to niche-driven genomic variation. By focusing exclusively on the human gut, the WIS approach ensures that distance thresholds used in hierarchical clustering reflect genuine species-level diversity rather than niche-driven genomic divergence.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "wis_microbiome_013",
+      "query": "Compare the WIS and UHGG reference sets in terms of species count, read alignment performance, and unique alignment performance.",
+      "ground_truth_answer": "The UHGG reference set contains 4,644 species-level clusters, 29% more than WIS's 3,594, partly because UHGG used lower quality thresholds (completeness >50%). In total read alignment on the external validation cohort, WIS outperforms UHGG (83.65% vs. 82.85%, q<0.0001). However, UHGG achieves higher unique read alignment than WIS (66.12% vs. 65.20%, q<0.0001), suggesting UHGG's representatives are more genomically distinct from each other. When the WIS and UHGG sets were merged into a combined reference, total alignment improved to 84.43%, but unique alignment dropped to 64.9%, indicating increased redundancy in the combined set.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "wis_microbiome_014",
+      "query": "How do nanopore-based MAGs and isolate-based genomes compare to short-read MAGs in terms of quality metrics, and what trade-off exists between them?",
+      "ground_truth_answer": "Both nanopore MAG and isolates significantly outperform short-read MAG across all quality metrics (completeness, contamination, N50, genome length; q<0.0001). Comparing nanopore vs. isolates: isolates have significantly higher completeness (median 99 vs. 96) and genome length (3.37e+06 vs. 2.66e+06 bp), but isolates have a much lower N50 (2.16e+05 vs. 1.88e+06 bp for nanopore). Nanopore MAGs also have fewer chimeric genomes than isolates (0.88% vs. 1.28% CSS>0.45 vs. 8.39% for short-read MAG). The key trade-off is that while these methods produce higher-quality genomes, they are significantly more expensive and can only be applied to a small number of samples, and not all gut microbes can be successfully cultured. As a result, 98% of assembled genomes and 79% of species representative genomes in WIS still come from short-read MAG.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "wis_microbiome_015",
+      "query": "What is the significance of the Kiritimatiellae class expansion in the WIS reference set, and what characterizes these newly discovered species?",
+      "ground_truth_answer": "The Kiritimatiellae class is dramatically expanded by WIS, with novel species constituting 80% of all its genomes in the reference set. By GTDB identifiers, these species belong to two unnamed genera. One genus has a single known species that was also represented in UNITN and UHGG. The other genus has four entirely new species, all singletons or doubletons assembled from short-read MAG from the authors' own Israeli samples. These four new species are within genus-level distance from the closest UNITN/UHGG genomes, and the WIS Kiritimatiellae genomes are 0.14–0.34 MASH distance apart from each other, indicating substantial within-class diversity. This represents a major contribution to understanding an undercharacterized gut microbial class.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "wis_microbiome_016",
+      "query": "What does the Reference Representation Score (RRS) reveal about the novelty of WIS genomes compared to UNITN and UHGG?",
+      "ground_truth_answer": "The Reference Representation Score (RRS) from GUNC estimates how closely a query genome is already represented in the GUNC reference set — unknown species score near 0 while known ones score near 1. WIS representative genomes have a significantly lower median RRS (0.67) compared to UNITN (0.74) and UHGG (0.72, q<0.0001), indicating WIS contains genuinely more novel genomic content. Specifically, the 310 novel WIS species have a much lower median RRS of 0.58 compared to 0.68 for known species (P<0.0001), further confirming the novelty of these newly discovered organisms.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "wis_microbiome_mcq_001",
+      "question": "How many total genomes form the curated assembly pool used to construct the WIS reference set?",
+      "options": [
+        "A) 51,052",
+        "B) 154,723",
+        "C) 241,118",
+        "D) 286,997"
+      ],
+      "correct_answer": "C",
+      "explanation": "The WIS reference set was built from a curated set of 241,118 genomes, combining 142,912 newly assembled genomes from 51,052 in-house samples with assemblies gathered from multiple previously published studies.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "wis_microbiome_mcq_002",
+      "question": "What is the MASH distance threshold used in WIS to define species-level boundaries?",
+      "options": [
+        "A) 0.01",
+        "B) 0.03",
+        "C) 0.05",
+        "D) 0.10"
+      ],
+      "correct_answer": "C",
+      "explanation": "The WIS reference set uses an average MinHash (MASH) distance of 0.05 as the species-level boundary, which is a proxy for one minus the 95% average nucleotide identity (ANI) widely accepted for prokaryotic species definition.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "wis_microbiome_mcq_003",
+      "question": "What percentage of the WIS species representative genomes were produced using alternative assembly methods (nanopore and isolates)?",
+      "options": [
+        "A) 2%",
+        "B) 9%",
+        "C) 21%",
+        "D) 36%"
+      ],
+      "correct_answer": "C",
+      "explanation": "While alternative methods (nanopore and isolates) represent only 2% of all assembled genomes, they account for 21% of the chosen species representative genomes — composed of 12% nanopore-based MAG and 9% isolate-based genomes — because of their superior quality.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "wis_microbiome_mcq_004",
+      "question": "Compared to the UNITN reference set, how much more frequently does the WIS reference set have 16S rRNA genes per genome on average?",
+      "options": [
+        "A) ~2x more",
+        "B) ~4x more",
+        "C) ~7x more",
+        "D) ~10x more"
+      ],
+      "correct_answer": "C",
+      "explanation": "The WIS reference set has 0.68 16S genes per genome on average, while UNITN has only 0.10 — a 6.72-fold difference. This increase in rRNA curation is largely driven by the nanopore and isolate assembly methods used in WIS.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "wis_microbiome_mcq_005",
+      "question": "What does the Genome UNClutterer (GUNC) Clade Separation Score (CSS) assess?",
+      "options": [
+        "A) The completeness of an assembled genome",
+        "B) The probability that a genome is a chimeric mixture of distinct lineages",
+        "C) The alignment rate of metagenomic reads to a reference",
+        "D) The evolutionary distance between two species"
+      ],
+      "correct_answer": "B",
+      "explanation": "GUNC's CSS assesses the probability that a genome is a chimeric mixture from distinct lineages — i.e., a mis-binned assembly. WIS has significantly fewer suspected chimeric genomes than UNITN (6.82% vs. 11.36% with CSS > 0.45, median CSS 0.09 vs. 0.12).",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "wis_microbiome_mcq_006",
+      "question": "Why does the UNITN reference set have multiple representative genomes assigned to the same species name (e.g., 15 genomes for Clostridium sp.)?",
+      "options": [
+        "A) Because UNITN intentionally retains duplicate assemblies for robustness",
+        "B) Because species were historically delineated by biochemical properties, leading to non-unique genomic identifications within the same taxonomic label",
+        "C) Because the MASH distance threshold in UNITN is larger than 0.05",
+        "D) Because UNITN includes assemblies from multiple body sites, inflating species counts"
+      ],
+      "correct_answer": "B",
+      "explanation": "Due to the historical basis of species naming using biochemical and morphological properties rather than genomic data, non-unique species names are not inherently problematic. However, it becomes a technical issue when representative genomes are too genomically similar (close MASH distances), causing inconclusive read alignment. WIS reduces this to only 79 genomes with non-unique identities, none assigned to more than 7 genomes.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "wis_microbiome_mcq_007",
+      "question": "What formula did the authors use to select cluster representative genomes?",
+      "options": [
+        "A) Completeness + Contamination + log10(N50)",
+        "B) Completeness − 5 × Contamination + 15 × log10(N50)",
+        "C) Completeness − Contamination × log10(N50)",
+        "D) Completeness × (1 − Contamination) / N50"
+      ],
+      "correct_answer": "B",
+      "explanation": "The representative genome for each cluster was chosen using the quality formula: Completeness − 5 × Contamination + 15 × log10(N50), which balances completeness, contamination penalty, and contig length (N50) to select the best genome from each species cluster.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "wis_microbiome_mcq_008",
+      "question": "What was the most abundant novel species in the internal validation cohort (in terms of relative abundance among carriers), and what genus does it belong to?",
+      "options": [
+        "A) A species of Faecalibacterium with mean relative abundance of 0.10%",
+        "B) A species of Prevotella with mean relative abundance of 11.68%",
+        "C) A species of Ruminococcus with mean relative abundance of 4.93%",
+        "D) A species of Bacteroides with mean relative abundance of 8.20%"
+      ],
+      "correct_answer": "B",
+      "explanation": "The most abundant novel species in the internal validation cohort belongs to the Prevotella genus — a cluster of nine short-read MAGs from the authors' own samples. It existed in 0.10% of internal validation samples with a mean relative abundance of 11.68% and a maximum of 23.40% among those who carried it. Notably, it was absent from the external validation cohort entirely.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "wis_microbiome_mcq_009",
+      "question": "When WIS and UHGG reference sets were combined into a single merged reference, what was the trade-off in read alignment performance?",
+      "options": [
+        "A) Total alignment increased to 84.43% but unique alignment dropped to 64.9%",
+        "B) Both total and unique alignment improved significantly over either set alone",
+        "C) Total alignment dropped below WIS alone but unique alignment improved",
+        "D) The combined set showed no significant improvement over WIS alone"
+      ],
+      "correct_answer": "A",
+      "explanation": "Creating a combined set of all WIS representatives plus the 1,158 UHGG genomes not in WIS improved total read alignment to 84.43% (significantly higher than either set alone, q<0.0001). However, unique read alignment dropped to 64.9% (significantly worse than either set alone), indicating that the additional genomes introduced redundancy that created ambiguous alignments.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "wis_microbiome_mcq_010",
+      "question": "Which of the following correctly explains why WIS has fewer total genomes (3594) than UNITN (4930), despite using far more starting samples?",
+      "options": [
+        "A) WIS applied a stricter completeness threshold (70% vs. 50%), reducing the number of qualifying assemblies",
+        "B) WIS focused on a single body site (gut only), excluding species exclusive to skin, oral cavity, vagina, and other sites present in UNITN",
+        "C) Both A and B together explain the lower species count in WIS",
+        "D) WIS deliberately downsampled its genome pool to avoid redundancy"
+      ],
+      "correct_answer": "C",
+      "explanation": "Both factors contributed. First, WIS's stricter completeness threshold (70% vs. UNITN's 50%) means many partial assemblies that qualified for UNITN did not qualify for WIS. Second, WIS focused exclusively on the human gut, so species exclusive to other body sites (skin, oral, vaginal, maternal milk) represented in UNITN's multi-site dataset are absent from WIS. The combination of these two constraints explains the smaller but higher-quality species count.",
+      "expected_documents": ["An_expanded_reference_map_of_the_human_gut_microbiome_reveals_hundreds_of_previously_unknown_species.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

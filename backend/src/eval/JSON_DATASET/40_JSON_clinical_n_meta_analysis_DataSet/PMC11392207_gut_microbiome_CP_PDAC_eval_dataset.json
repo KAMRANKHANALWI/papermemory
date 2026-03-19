@@ -1,0 +1,340 @@
+{
+  "source_document": "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf",
+  "paper_title": "Gut microbiome changes associated with chronic pancreatitis and pancreatic cancer: a systematic review and meta-analysis",
+  "authors": "Hong et al., International Journal of Surgery (2024) 110:5781-5794",
+  "test_cases": [
+    {
+      "id": "cp_pdac_001",
+      "query": "How many total individuals were included in this meta-analysis, and how were they distributed across PDAC, CP, and control groups?",
+      "ground_truth_answer": "A total of 1511 individuals were included in the meta-analysis: 285 were PDAC patients, 342 were CP patients, and 649 were healthy controls.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "cp_pdac_002",
+      "query": "How many studies were included in the final meta-analysis and what was the publication date range?",
+      "ground_truth_answer": "14 studies were included in the final meta-analysis. They were published between 2017 and 2023, with nine from Asia, three from Europe, and two from the United States.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "cp_pdac_003",
+      "query": "What is the approximate fold-increased risk of developing PDAC in patients diagnosed with chronic pancreatitis?",
+      "ground_truth_answer": "Patients with CP have a nearly eight-fold increased risk of developing PDAC within 5 years after diagnosis, suggesting that CP is a significant risk factor for PDAC.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "cp_pdac_004",
+      "query": "What four bacterial genera were consistently increased in PDAC patients compared to healthy controls across more than two studies?",
+      "ground_truth_answer": "At the genus level, four genera were consistently increased in PDAC patients compared to healthy controls across more than two studies: Actinomyces, Bifidobacterium, Veillonella, and Escherichia-Shigella.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "cp_pdac_005",
+      "query": "What was the predominant sample type used for gut microbiome assessment in the included studies?",
+      "ground_truth_answer": "Stool (fecal) samples were used in 13 of the 14 included studies. Only one study used duodenal fluid for gut microbiome sequencing. The majority of studies employed Illumina Miseq with 16S rRNA gene sequencing.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "cp_pdac_006",
+      "query": "Describe the meta-analysis findings on alpha-diversity (Shannon Index) for both PDAC and CP patients compared to healthy controls.",
+      "ground_truth_answer": "The meta-analysis showed that both PDAC and CP patients had significantly lower Shannon Index values compared to healthy controls. For PDAC vs. HC, the pooled SMD was -0.33 (95% CI: -0.53 to -0.12; P=0.002). For CP vs. HC, the reduction was more pronounced with an SMD of -0.59 (95% CI: -0.75 to -0.44; P<0.001). Importantly, no significant difference was found in Shannon Index between PDAC and CP groups (P=0.685).",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "cp_pdac_007",
+      "query": "What is the mechanistic role of decreased butyrate-producing bacteria such as Faecalibacterium and Coprococcus in chronic pancreatitis?",
+      "ground_truth_answer": "Multiple studies consistently showed a reduction of butyric-acid-producing bacteria including Faecalibacterium, Coprococcus, Roseburia, and Fusicatenibacter in CP patients. Decreased butyrate and SCFA levels reduce tight junction protein levels and increase the permeability of the intestinal mucosa. This leads to dysfunction of the intestinal mucosal barrier, which allows intestinal pathogens to be released into the bloodstream through the damaged mucosa, thereby potentially promoting the occurrence of pancreatitis.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "cp_pdac_008",
+      "query": "What functional and metabolomic pathway changes were observed in the PDAC group compared to healthy controls?",
+      "ground_truth_answer": "Compared to healthy controls, the PDAC group showed significant increases in LPS synthesis pathways, phosphotransferase systems, ATP-binding cassette (ABC) transporters, and terpenoid backbone biosynthesis, as well as activation of inflammatory pathways and decreased cell motility. Metabolically, PDAC patients had a higher potential for degrading fatty acids, a significantly lower capacity for synthesizing short-chain fatty acids (especially acetate and butyrate), higher potential for putrescine and spermidine transport, and significant decreases in propionic acid, deoxycholic acid, amino acid biosynthesis, and porphyrin/chlorophyll metabolism.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "cp_pdac_009",
+      "query": "How does Escherichia-Shigella contribute to the pathogenesis of pancreatitis?",
+      "ground_truth_answer": "Escherichia-Shigella is the most common pathogen of bacterial dysentery in humans and was found to be significantly elevated in both PDAC and CP patients across multiple studies. It produces endotoxins and exotoxins that damage the intestinal mucosa. Bacterial invasion of epithelial cells in pancreatitis is highly correlated with the abundance of Escherichia-Shigella. Studies have also shown that NLRP3 deficiency can counteract pancreatitis-induced microbial interference, suggesting a link between Escherichia-Shigella abundance and NLRP3-mediated inflammatory pathways.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "cp_pdac_010",
+      "query": "What was the key finding regarding the Firmicutes phylum at the phylum level in both PDAC and CP patients from the pooled meta-analysis?",
+      "ground_truth_answer": "At the phylum level, pooled meta-analysis results showed that the proportion of Firmicutes was significantly lower in PDAC patients compared to healthy controls (OR=0.63; 95% CI: 0.42-0.95; P=0.029; I²=0%) and also significantly lower in CP patients compared to healthy controls (OR=0.68; 95% CI: 0.46-0.99; P=0.049; I²=0%). No significant differences were observed at the phylum level for Actinobacteria, Bacteroidetes, Fusobacteria, or Proteobacteria in either condition.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "cp_pdac_011",
+      "query": "What is the dual and conflicting role of Bifidobacterium in PDAC as described in the paper?",
+      "ground_truth_answer": "Bifidobacterium has a conflicting dual role in PDAC. One study reported a lower abundance of Bifidobacterium in the fecal microbiome of PDAC patients compared to healthy controls, while another study using duodenal fluid samples reported a higher abundance. Mechanistically, repopulation of a germ-free KC mouse model of pancreatic tumors with Bifidobacterium accelerated pancreatic tumorigenesis and could be detected in the pancreas of treated mice. In contrast, many recent studies have found that Bifidobacterium strains enhance the efficacy of anti-PD-L1 immunotherapy treatment and synergistically reduce tumor burden by inducing antitumor host immune responses. This makes Bifidobacterium's role in PDAC complex and sample-type dependent.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "cp_pdac_012",
+      "query": "How does Bifidobacterium protect against acute pancreatitis at the molecular level?",
+      "ground_truth_answer": "In the context of chronic pancreatitis, fecal Bifidobacteria abundance was found to be inversely correlated with systemic inflammation. Experimentally, Bifidobacteria and its metabolite lactate prevent pancreatitis in mice by alleviating macrophage-associated pancreatic and systemic inflammation through the combined action of the TLR4/MyD88 and NLRP3/Caspase1 signaling pathways. This represents an important protective anti-inflammatory mechanism linking Bifidobacterium to pancreatitis prevention.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "cp_pdac_013",
+      "query": "Compare the beta-diversity findings between PDAC vs. HC, CP vs. HC, and PDAC vs. CP groups as reported in the systematic review.",
+      "ground_truth_answer": "For PDAC vs. HC, seven studies reported beta-diversity comparisons, six of which showed statistically significant differences in gut microbiome composition while one showed no significant difference. For CP vs. HC, nine studies reported comparisons: six had statistically significant differences, one had no significant difference, and two showed no significant difference at weighted UniFrac distances but did show statistical differences at unweighted UniFrac PCoA distances. Strikingly, for PDAC vs. CP comparisons, all three studies that reported beta-diversity showed statistically significant differences in microbial community composition, which contrasts with the alpha-diversity finding of no significant difference between the two groups — suggesting distinct compositional profiles despite similar overall diversity levels.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "cp_pdac_014",
+      "query": "Critically analyze the limitations of this systematic review and explain how geographic and methodological heterogeneity may affect the interpretation of the findings.",
+      "ground_truth_answer": "This review has several important limitations. First, participants were heterogeneous: some studies included specific pancreatitis subtypes (autoimmune, alcoholic, childhood, pancreatitis with diabetes), which are influenced by age, alcohol use, metabolic status, and immune factors, all of which independently affect microbiome distribution. Second, major methodological inconsistencies existed across studies including differences in sequencing methods (16S rRNA vs. metagenomics), variable hypervariable regions (V1-V2, V3-V4, V4), different pipeline analyses (QIIME, Mothur), different reference databases (RDP, SILVA, Greengenes), and different specimen handling and DNA extraction protocols — all of which can directly bias microbiome composition results. Third, the majority of included studies (9/14) were from Asia, with dietary patterns that differ significantly from those in Europe and America, and no subgroup analysis by geographic region was possible. Fourth, the observational nature of all included studies prevents causal conclusions about whether gut microbiome dysbiosis is a cause or consequence of CP/PDAC. Fifth, the small number of studies directly comparing PDAC and CP limited the power of that specific comparison.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "analysis"
+    },
+    {
+      "id": "cp_pdac_015",
+      "query": "Compare the genus-level microbiota changes in CP patients versus PDAC patients relative to healthy controls, specifically focusing on genera that are increased versus decreased.",
+      "ground_truth_answer": "At the genus level, PDAC patients showed increases in Actinomyces, Bifidobacterium, Veillonella, and Escherichia-Shigella compared to healthy controls. CP patients showed a broader pattern of dysbiosis: increases in Escherichia-Shigella, Enterococcus, Klebsiella, and Streptococcus, while eight genera were decreased — Faecalibacterium, Bifidobacterium, Coprococcus, Subdoligranulum, Parasutterella, Paraprevotella, Fusicatenibacter, and Roseburia. Notably, Escherichia-Shigella and Bifidobacterium appear in the altered genera lists of both conditions. An important distinction is that while Bifidobacterium is increased in PDAC, it is decreased in CP, suggesting divergent roles in these two related pancreatic diseases. The CP group exhibited a larger number of consistently altered genera (52 genera from 7 studies vs. 22 genera from 5 studies in PDAC), suggesting a more established and broader-reaching dysbiosis pattern in CP.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "cp_pdac_016",
+      "query": "What does the finding of no significant difference in gut microbiota composition between PDAC and CP patients imply for clinical diagnostic applications?",
+      "ground_truth_answer": "The finding that no significant difference was found in gut microbiota between PDAC and CP patients at the phylum level (Bacteroidetes, Firmicutes, and Proteobacteria proportions were comparable), combined with the absence of significant alpha-diversity differences between the two groups, has important clinical implications. It suggests that the shared microbial signature between CP and PDAC may limit the independent diagnostic utility of gut microbiome profiling for distinguishing between the two conditions. Given that CP is itself a known risk factor for PDAC, this microbial overlap could reflect a continuum of disease progression. The authors emphasize that while detection of microbial composition differences could serve as a biomarker, further research is urgently needed to identify specific compositional or functional signatures unique to PDAC versus CP, possibly requiring deeper metagenomic or metabolomic resolution beyond the phylum level.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "cp_pdac_mcq_001",
+      "question": "What proportion of the gut bacteria in the digestive tract are accounted for by Firmicutes and Bacteroidetes combined?",
+      "options": [
+        "A) ~50-60%",
+        "B) ~65-75%",
+        "C) ~80-90%",
+        "D) ~95-99%"
+      ],
+      "correct_answer": "C",
+      "explanation": "According to the paper, Firmicutes and Bacteroidetes are the predominant bacteria in the digestive tract, accounting for approximately 80-90% of the bacterial population.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "cp_pdac_mcq_002",
+      "question": "How many distinct resident bacterial species does the human gut harbor, as cited in the paper?",
+      "options": [
+        "A) More than 100 species",
+        "B) More than 500 species",
+        "C) More than 1000 species",
+        "D) More than 5000 species"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper states that the human gut is home to a vast community of 100 trillion microorganisms encompassing more than 1000 distinct resident bacterial species.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "cp_pdac_mcq_003",
+      "question": "What quality score range on the Newcastle-Ottawa Scale (NOS) was used to indicate superior/high study quality in this meta-analysis?",
+      "options": [
+        "A) 3-5",
+        "B) 5-6",
+        "C) 6-8",
+        "D) 7-9"
+      ],
+      "correct_answer": "D",
+      "explanation": "The paper used the Newcastle-Ottawa Scale for methodological quality assessment, where a score of 7-9 indicated superior quality. Six studies were rated moderate (7 points) and eight were rated high (more than 8 points).",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "cp_pdac_mcq_004",
+      "question": "What was the pooled Shannon Index SMD for the CP group versus healthy controls in this meta-analysis?",
+      "options": [
+        "A) SMD = -0.18; P = 0.041",
+        "B) SMD = -0.33; P = 0.002",
+        "C) SMD = -0.59; P < 0.001",
+        "D) SMD = -0.78; P < 0.001"
+      ],
+      "correct_answer": "C",
+      "explanation": "The pooled results from 9 studies comparing CP vs. HC showed a Shannon Index SMD of -0.59 (95% CI: -0.75 to -0.44; P<0.001), indicating significantly lower alpha-diversity in CP patients. The SMD of -0.33 (P=0.002) was the value for PDAC vs. HC.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "cp_pdac_mcq_005",
+      "question": "According to the meta-analysis of Firmicutes at the phylum level, what was the odds ratio (OR) for its proportion in PDAC patients compared to healthy controls?",
+      "options": [
+        "A) OR = 0.42; P = 0.019",
+        "B) OR = 0.63; P = 0.029",
+        "C) OR = 0.68; P = 0.049",
+        "D) OR = 0.75; P = 0.061"
+      ],
+      "correct_answer": "B",
+      "explanation": "The meta-analysis showed that the proportion of Firmicutes in PDAC patients was significantly reduced compared to healthy controls with OR=0.63 (95% CI: 0.42-0.95; P=0.029; I²=0%). The OR of 0.68 (P=0.049) was for CP patients versus healthy controls.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "cp_pdac_mcq_006",
+      "question": "Which of the following Klebsiella-related findings was reported in this systematic review regarding chronic pancreatitis?",
+      "options": [
+        "A) Klebsiella was consistently decreased in CP patients and associated with improved gut barrier function",
+        "B) Klebsiella was significantly elevated in pancreatic cysts/pancreatitis fluid, suggesting the intestine as a route of pancreatic invasion",
+        "C) Klebsiella was only elevated in PDAC but not in CP patients",
+        "D) Klebsiella colonization was causally proven to initiate pancreatic inflammation via Mendelian randomization"
+      ],
+      "correct_answer": "B",
+      "explanation": "Several studies reported increased Klebsiella in the intestines of CP patients. Importantly, Klebsiella was also found significantly elevated in pancreatic cysts and pancreatitis fluid, suggesting that the intestine is likely the pathway through which Klebsiella invades the pancreas.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "cp_pdac_mcq_007",
+      "question": "What was the total number of studies screened by title and abstract after removing duplicates from the initial systematic literature search?",
+      "options": [
+        "A) 3966",
+        "B) 2512",
+        "C) 1504",
+        "D) 50"
+      ],
+      "correct_answer": "C",
+      "explanation": "A total of 3966 studies were initially identified. After removing duplicate records, 1504 records were assessed based on title and abstracts. This then yielded 50 articles for full-text eligibility assessment, and finally 14 studies were included.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "cp_pdac_mcq_008",
+      "question": "In the metagenomic study by Nagata et al. (2022) included in this review, which bacterial species were found to be DECREASED in PDAC patients compared to healthy controls?",
+      "options": [
+        "A) Streptococcus anginosus, Veillonella atypica, Clostridium symbiosum",
+        "B) Faecalibacterium prausnitzii, Ruminococcus bromii, Eubacterium eligens, Blautia wexlerae",
+        "C) Fusobacterium nucleatum, Escherichia coli, Veillonella parvula",
+        "D) Akkermansia muciniphila, Megamonas spp., Prevotella stercorea"
+      ],
+      "correct_answer": "B",
+      "explanation": "In the Nagata et al. (2022) metagenomic study, species including Faecalibacterium prausnitzii, Ruminococcus bromii, Eubacterium eligens, Blautia wexlerae, Bacteroides rodentium/uniformis, Eubacterium sp. CAG:156, and Eubacterium ventriosum were among the species decreased in PDAC patients. The species in option A (Streptococcus anginosus, Veillonella atypica, etc.) were increased, not decreased.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "cp_pdac_mcq_009",
+      "question": "A two-sample Mendelian Randomization (MR) study cited in this paper identified which bacterial genus as having a PROTECTIVE effect against PDAC?",
+      "options": [
+        "A) Streptococcus",
+        "B) Odoribacter",
+        "C) Senegalimassilia",
+        "D) Ruminococcaceae UCG011"
+      ],
+      "correct_answer": "C",
+      "explanation": "The cited Mendelian Randomization study (Jiang et al., 2023) found that Senegalimassilia showed protective effects against PDAC, while Streptococcus, Odoribacter, Ruminiclostridium 9, and Ruminococcaceae (UCG011) were identified as causative risk factors for PDAC.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "factual"
+    },
+    {
+      "id": "cp_pdac_mcq_010",
+      "question": "Based on the CP vs. HC comparison in this meta-analysis, which alpha-diversity metrics showed SIGNIFICANT differences (P<0.05), and which did NOT?",
+      "options": [
+        "A) Shannon (significant), Richness (significant); Simpson (not significant), Evenness (not significant)",
+        "B) Shannon (significant), Simpson (significant); Richness (not significant), Evenness (not significant)",
+        "C) All four metrics (Shannon, Simpson, Richness, Evenness) showed significant differences",
+        "D) Only Shannon (significant); Simpson, Richness, and Evenness were all not significant"
+      ],
+      "correct_answer": "A",
+      "explanation": "For the CP vs. HC comparison, the pooled results showed that Shannon Index (SMD=-0.59; P<0.001) and Richness (SMD=-0.43; P<0.001) were significantly lower in CP patients. However, the Simpson Index (SMD=-0.11; P=0.189) and Evenness (SMD=0.24; P=0.155) did not show significant differences. This nuanced pattern indicates that CP reduces overall species diversity and richness but not evenness of distribution.",
+      "expected_documents": [
+        "PMC11392207_Gut_microbiome_changes_associated_with_chronic_pancreatitis_and_pancreatic_cancer.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "analysis"
+    }
+  ]
+}

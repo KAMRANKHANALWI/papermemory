@@ -1,0 +1,330 @@
+{
+  "source_document": "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf",
+  "paper_title": "The gut microbiome, mild cognitive impairment, and probiotics: A randomized clinical trial in middle-aged and older adults",
+  "authors": "Aljumaah et al. (2022), Clinical Nutrition 41, 2565–2576",
+  "test_cases": [
+    {
+      "id": "mci_microbiome_001",
+      "query": "What is the definition of psychobiotics and what types of interventions do they include?",
+      "ground_truth_answer": "Psychobiotics are defined as microbiota-targeted interventions including beneficial bacteria (probiotics) or the support for such bacteria (e.g., prebiotics) that result in mental health benefits. They encompass both direct microbial supplementation and prebiotic support strategies aimed at improving cognitive and psychological outcomes.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mci_microbiome_002",
+      "query": "How many participants were enrolled in the randomized clinical trial and what was the age range?",
+      "ground_truth_answer": "A total of 169 community-dwelling middle-aged and older adults were enrolled in the trial, with age ranging from 52 to 75 years. Participants were subdivided into middle-aged (52–59 years) and older adult (60–75 years) groups and were randomized into probiotic and placebo groups.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mci_microbiome_003",
+      "query": "What probiotic strain was used in this study and what was the dosage formulation?",
+      "ground_truth_answer": "The probiotic strain used was Lactobacillus rhamnosus GG (LGG). Participants received two capsules of Culturelle Vegetarian Capsules containing a 10 billion CFU blend of L. rhamnosus GG and 200 mg prebiotic inulin from chicory root extract. The placebo group received capsules containing microcrystalline cellulose.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mci_microbiome_004",
+      "query": "Which five major phyla dominated the gut microbiota of participants in this trial?",
+      "ground_truth_answer": "The gut microbiota of participants was dominated by five major phyla: Bacteroidetes (48%) and Firmicutes (46%) were the most abundant, followed by Proteobacteria (2.3%), Actinobacteria (1.5%), and Verrucomicrobia (1.3%).",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mci_microbiome_005",
+      "query": "What were the top ten genera found in the fecal microbiota of participants?",
+      "ground_truth_answer": "The top ten genera in the fecal microbiota were Bacteroides (36.8%), Faecalibacterium (6.5%), Alistipes (4.5%), Parabacteroides (3.6%), Blautia (2.8%), Agathobacter (2.6%), Prevotella (2.3%), Subdoligranulum (2.2%), Roseburia (1.8%), and Anaerostipes (1.3%).",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mci_microbiome_006",
+      "query": "How did Prevotella abundance differ between cognitively intact and cognitively impaired individuals, and what statistical tests confirmed this?",
+      "ground_truth_answer": "Differential abundance analysis at baseline identified Prevotella as significantly more prevalent in cognitively impaired individuals compared to cognitively intact individuals (ALDEx2 P = 0.0017, ANCOM-BC P = 0.0004). Univariate comparison analysis further confirmed significantly higher relative abundance of Prevotella in the cognitively impaired group (Adj. p = 0.0136). Random forest analysis additionally ranked Prevotella as the highest contributor to classification accuracy between cognitive groups.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "mci_microbiome_007",
+      "query": "What functional pathways were differentially represented between cognitively intact and impaired groups according to PICRUSt analysis?",
+      "ground_truth_answer": "PICRUSt analysis identified three features from the EC database and two orthologs from the KO database differentially represented between groups. FMN reductase [NAD(P)H] and glutaminyl-tRNA synthetase (GlnRS) had higher relative abundance in the cognitively impaired group (Adj. p = 0.045 and 0.040 for EC; 0.032 and 0.017 for KO), while hygromycin B 4-O-kinase had lower abundance in the cognitively intact group (Adj. p = 0.041 EC). No complete pathways were significantly differentially represented after multiple comparison correction.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mci_microbiome_008",
+      "query": "How did LGG supplementation affect the absolute abundance of Lactobacillus, and did it change the total microbial load?",
+      "ground_truth_answer": "Participants in the probiotic group had significantly more copies of LGG DNA/ng compared to baseline and the placebo group (Adj. P < 0.0001). Lactobacillus was 11.5 times more abundant in the probiotic group compared to the placebo group (3.8-fold increase). However, using universal Eubacteria primers targeting the 16S rRNA gene, no differences were observed in total bacterial cell counts after probiotic supplementation, suggesting that LGG displaced other taxa rather than increasing total microbial load.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mci_microbiome_009",
+      "query": "What were the effects of LGG supplementation specifically in the cognitively impaired group at the individual level, and how did this differ from the cognitively intact group?",
+      "ground_truth_answer": "In the cognitively impaired cohort, two genera were identified as differentially abundant in response to LGG treatment: Dehalobacterium and Prevotella. Dehalobacterium showed a significant downward trend in non-zero relative abundance (P = 2.07e-09, Adj. = 2.03e-07). Prevotella's non-zero relative abundance significantly decreased in cognitively impaired individuals receiving LGG treatment (P = 2.33e-05, Adj. = 0.001). Notably, this decrease in Prevotella was not observed in cognitively intact individuals also receiving the probiotic, highlighting a cognitive status-dependent response to the intervention.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mci_microbiome_010",
+      "query": "What is the proposed metabolic role of Prevotella ruminicola and why might it be relevant to cognitive decline?",
+      "ground_truth_answer": "Prevotella ruminicola is one of the most predominant species in the rumen gut with known functions in generating short-chain fatty acids (SCFAs), where it consumes butyrate and produces propionic, acetic, formic, and succinic acids. In the context of cognitive decline, shotgun sequencing of a Huntington's disease mouse model found that P. ruminicola was positively correlated with butyrate levels and negatively correlated with ATP and pipecolic acid levels, and was reduced in HD fecal samples. This suggests a mechanistic role for P. ruminicola in regulating plasma metabolites preceding cognitive and motor dysfunction, linking microbiome-gut-brain axis signaling to cognitive decline pathogenesis.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mci_microbiome_011",
+      "query": "Explain the proposed mechanism by which B. thetaiotaomicron may contribute to cognitive impairment via neurotransmitter metabolism.",
+      "ground_truth_answer": "B. thetaiotaomicron can ferment glutamate, which is the most abundant excitatory neurotransmitter that transports signals to the brain via the vagus nerve. Glutamate is also the precursor of gamma-aminobutyric acid (GABA), another well-known neurotransmitter. Both glutamate and GABA have been reported to decrease with aging and have been suggested as markers for early diagnosis of Alzheimer's disease. PICRUSt analysis further identified higher abundance of glutaminyl-tRNA synthetases (GlnRS) in cognitively impaired individuals, supporting a link between B. thetaiotaomicron's metabolic activity and disrupted neurotransmitter homeostasis.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mci_microbiome_012",
+      "query": "What evidence did WGS sequencing provide that 16S rRNA amplicon sequencing alone could not, particularly regarding diversity and species-level associations with MCI?",
+      "ground_truth_answer": "While 16S rRNA amplicon sequencing found no significant differences in overall diversity or composition between cognitive groups, WGS sequencing of a subset with the highest Prevotella abundance revealed significant differences in both alpha and beta diversity. Cognitively impaired individuals had significantly lower evenness at the genus level (p = 0.0372) and family level (p = 0.064), and significant beta diversity clustering at family and genus levels (p = 0.03 and 0.049, respectively). At the species level, SIA and LEfSe analysis pinpointed Bacteroides thetaiotaomicron as specifically associated with cognitive impairment, and random forest analysis also identified Bacteroides xylanisolvens as correlated with impairment. Conversely, intact cognition was associated with Bifidobacterium longum, Bifidobacterium breve, and Faecalibacterium prausnitzii — associations that would not have been resolvable at 16S genus level.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "mci_microbiome_013",
+      "query": "What is the significance of Dehalobacterium in the context of cognitive impairment, and what prior animal study evidence supports its relevance?",
+      "ground_truth_answer": "In the cognitively impaired group, Dehalobacterium was identified as differentially abundant in response to LGG treatment, showing a significant downward trend in its non-zero relative abundance (P = 2.07e-09). Animal study evidence supports its relevance: Dehalobacterium has been identified as an indicator of postoperative cognitive dysfunction (POCD) in aged mice, and has been described as a driver of autism spectrum disorder (ASD) pathological traits including altered behavior and elevated TNF-alpha expression. These findings suggest Dehalobacterium may be a microbial marker of neurological dysfunction, and its reduction following LGG treatment in MCI individuals warrants further investigation.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "mci_microbiome_014",
+      "query": "How does this study's findings on Prevotella and cognitive status align with or contradict other published literature on neurological and psychiatric conditions?",
+      "ground_truth_answer": "The role of Prevotella in brain function is overall discordant across the literature, with both eubiotic and dysbiotic roles proposed. Supporting this study's findings, Prevotella abundance has been associated with worse cognitive scores in obese and non-obese subjects, and a higher abundance of Prevotellaceae including P. ruminicola was reported in major depressive disorder patients. Contrarily, a study by Guo et al. found a decline in Bacteroides and an increase in Prevotella in newly diagnosed MCI/AD patients, partly aligning with this study. However, a negative association between P. ruminicola and cognitive impairment in minimal hepatic encephalopathy has been reported, and lower abundance of multiple Prevotella species (P. oralis, P. ruminicola, P. tannerae) was found in autistic children versus neurotypical children. The authors conclude that most discordance arises from genus-level observations, and their study presents species- and strain-level insight suggesting different functional roles at finer taxonomic resolution.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "mci_microbiome_015",
+      "query": "What are the key limitations acknowledged by the authors, and what future research directions do they propose?",
+      "ground_truth_answer": "The authors acknowledge several key limitations: first, findings are limited to DNA-level analysis, without assessment of gene expression or metabolic activities of the identified organisms. Second, conditions commonly associated with aging such as low-grade inflammation, increased intestinal permeability, and obesity add complexity to host-microbe interactions in this context. Third, the study was conducted in the USA, while comparable RCTs have only been conducted in Japan, South Korea, and China, limiting cross-population generalizability. For future directions, the authors propose linking healthy dietary patterns such as the Mediterranean and MIND diets with gut microbiome components in relation to cognition, and suggest that taxa like Prevotella ruminicola and B. thetaiotaomicron could be targeted through pre-, pro-, or synbiotics to prevent or slow the progression of cognitive impairment.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "mci_microbiome_mcq_001",
+      "question": "How long was the probiotic intervention period in this clinical trial?",
+      "options": [
+        "A) Six weeks",
+        "B) Eight weeks",
+        "C) Three months",
+        "D) Six months"
+      ],
+      "correct_answer": "C",
+      "explanation": "Participants received a three-month intervention and were randomized to probiotic and placebo groups, with stool samples collected at baseline and three-month follow-up visits.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mci_microbiome_mcq_002",
+      "question": "What sequencing technology was used for 16S rRNA amplicon sequencing in this study?",
+      "options": [
+        "A) Oxford Nanopore MinION",
+        "B) PacBio SMRT Sequencing",
+        "C) Illumina MiSeq with 2×250 bp paired-end sequencing",
+        "D) Ion Torrent PGM"
+      ],
+      "correct_answer": "C",
+      "explanation": "Sequencing was performed on the Illumina MiSeq platform using 2×250 bp paired-end sequencing, targeting the hypervariable V4 region of the 16S rRNA gene.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mci_microbiome_mcq_003",
+      "question": "How many participants had cognitive impairment at baseline in each treatment group?",
+      "options": [
+        "A) Placebo: 15, Probiotic: 15",
+        "B) Placebo: 23, Probiotic: 21",
+        "C) Placebo: 30, Probiotic: 28",
+        "D) Placebo: 18, Probiotic: 20"
+      ],
+      "correct_answer": "B",
+      "explanation": "According to Table 1, at baseline there were 23 participants with cognitive impairment in the placebo group and 21 in the probiotic group.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mci_microbiome_mcq_004",
+      "question": "Which bioinformatic pipeline was used for processing 16S rRNA amplicon sequencing data, including quality filtering and chimera detection?",
+      "options": [
+        "A) QIIME 1 with UCLUST",
+        "B) QIIME 2 wrapper for DADA2",
+        "C) Mothur with UCHIME",
+        "D) VSEARCH with SILVA classifier"
+      ],
+      "correct_answer": "B",
+      "explanation": "Raw sequencing data were processed with the QIIME 2 2018.11 wrapper for DADA2, which included merging paired ends, quality filtering, error correction, and chimera detection.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "mci_microbiome_mcq_005",
+      "question": "Which taxon was associated with cognitively INTACT individuals in the LEfSe analysis at the phylum level?",
+      "options": [
+        "A) Verrucomicrobia",
+        "B) Actinobacteria",
+        "C) Proteobacteria",
+        "D) Firmicutes"
+      ],
+      "correct_answer": "C",
+      "explanation": "LEfSe analysis of non-probiotic groups identified Proteobacteria as associated with cognitively intact individuals, while Verrucomicrobia was associated with the cognitively impaired group.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "mci_microbiome_mcq_006",
+      "question": "What does the significant pairwise beta diversity difference (Bray Curtis P = 0.018) following LGG supplementation indicate about the nature of microbiome change?",
+      "options": [
+        "A) A large-scale introduction of completely new taxa into the gut",
+        "B) A change in relative abundance without necessarily introducing or depleting existing taxa",
+        "C) A complete restructuring of the microbial community at the phylum level",
+        "D) A significant decrease in alpha diversity following supplementation"
+      ],
+      "correct_answer": "B",
+      "explanation": "The significant difference in non-phylogenetic beta diversity (Bray Curtis P = 0.018) was less significant when using phylogenetic metrics (Weighted UniFrac P = 0.09), suggesting a change in relative abundance but not necessarily introduction or depletion of taxa.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mci_microbiome_mcq_007",
+      "question": "How many Prevotella species were identified in both cognitive groups by Bracken during WGS analysis?",
+      "options": [
+        "A) 6 species",
+        "B) 9 species",
+        "C) 12 species",
+        "D) 15 species"
+      ],
+      "correct_answer": "C",
+      "explanation": "A total of 12 species of Prevotella were identified by Bracken in both cognitive groups, including P. scopos, P. ruminicola, P. melaninogenica, P. jejuni, P. intermedia, P. fusca, P. enoeca, P. oris, P. denticola, Paraprevotella xylaniphila, P. dentalis, and Prevotella sp. oral taxon 299.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "mci_microbiome_mcq_008",
+      "question": "According to a meta-analysis cited in this paper, what duration and type of probiotic intervention was found most effective for cognitive improvement in human studies?",
+      "options": [
+        "A) A multi-strain probiotic for 8 weeks",
+        "B) A single strain probiotic for 12 weeks",
+        "C) A multi-strain probiotic for 16 weeks",
+        "D) A single strain probiotic for 6 weeks"
+      ],
+      "correct_answer": "B",
+      "explanation": "A meta-analysis by Lv et al. (including 7 controlled clinical trials and 11 animal studies) and a systematic review by Baldi et al. (including 23 papers) both showed that a single strain probiotic with a duration of 12 weeks was effective in human studies.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "mci_microbiome_mcq_009",
+      "question": "What unexpected taxon showed increased differential abundance in the probiotic group at the aggregate level, and what was the most likely explanation for its presence?",
+      "options": [
+        "A) Akkermansia muciniphila; due to inulin-induced mucosal enrichment",
+        "B) Bifidobacterium longum; due to cross-feeding from L. rhamnosus GG metabolites",
+        "C) Cyanobacteria chloroplast; likely derived from the inulin prebiotic in the formulation",
+        "D) Lactobacillus plantarum; due to contamination of the probiotic capsule"
+      ],
+      "correct_answer": "C",
+      "explanation": "Paired differential abundance analysis indicated one taxon, Cyanobacteria chloroplast, increased differentially in the probiotic group. The authors stated this is unlikely to represent true Cyanobacteria but rather relates to chloroplast sequences in the inulin from the chicory root prebiotic formulation. Its non-significance in longitudinal ZIBR analysis supported this interpretation.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "mci_microbiome_mcq_010",
+      "question": "Which of the following best explains why the study selected only participants with the highest Prevotella relative abundance for WGS sequencing?",
+      "options": [
+        "A) To reduce sequencing costs by limiting the sample size to the most informative individuals",
+        "B) To capture the maximum species-level diversity within the Prevotella genus across both cognitive groups",
+        "C) Because WGS is not suitable for low-abundance taxa and would yield unreliable results",
+        "D) To specifically investigate whether Prevotella abundance drives WGS-level alpha diversity differences"
+      ],
+      "correct_answer": "B",
+      "explanation": "The study selected the subset of samples from individuals with the highest Prevotella relative abundance in both cognitive groups specifically for WGS sequencing in order to capture most of the species' diversity within the genus, enabling deeper species-level resolution of Prevotella's role in MCI.",
+      "expected_documents": [
+        "The_gut_microbiome__mild_cognitive_impairment__and_probiotics.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}
