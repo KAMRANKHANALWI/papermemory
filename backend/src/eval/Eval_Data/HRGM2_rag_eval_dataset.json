@@ -1,0 +1,337 @@
+{
+  "source_document": "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf",
+  "metadata": {
+    "journal": "Nature Microbiology",
+    "volume": 11,
+    "year": 2026,
+    "pages": "317-334",
+    "doi": "https://doi.org/10.1038/s41564-025-02206-1",
+    "first_author": "Junyeong Ma",
+    "corresponding_author": "Insuk Lee"
+  },
+  "test_cases": [
+    {
+      "id": "hrgm2_001",
+      "query": "What are the completeness and contamination thresholds used to define near-complete (NC) genomes in HRGM2?",
+      "ground_truth_answer": "Near-complete (NC) genomes in HRGM2 are defined as those with completeness ≥90% and contamination ≤5%, as assessed by CheckM. This is in contrast to medium-quality (MQ) genomes which require only ≥50% completeness and ≤5% contamination.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hrgm2_002",
+      "query": "How many non-redundant near-complete genomes and prokaryotic species does HRGM2 comprise?",
+      "ground_truth_answer": "HRGM2 comprises 155,211 non-redundant near-complete genomes representing 4,824 prokaryotic species (4,798 bacterial and 26 archaeal) across 41 countries.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hrgm2_003",
+      "query": "How many countries are represented in HRGM2, and how does this compare to UHGG and HRGM1?",
+      "ground_truth_answer": "HRGM2 includes metagenomic samples from 41 countries, compared to 28 countries in UHGG and 30 countries in HRGM1. This represents a 1.4-fold increase in country coverage over both predecessor catalogues.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hrgm2_004",
+      "query": "What is the most prevalent antibiotic resistance type detected across HRGM2 species?",
+      "ground_truth_answer": "Tetracycline resistance was the most prevalent, detected in 561 out of 1,042 species carrying resistance genes (53.8%), followed by lincosamide and macrolide resistance found in 278 species (26.7%).",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hrgm2_005",
+      "query": "What percentage of species in UHGG are composed solely of medium-quality MAGs?",
+      "ground_truth_answer": "In UHGG, only 3,207 of 4,644 species (69%) contain NC genomes. The remaining 1,437 species are composed only of MQ MAGs, and notably 66% of these MQ-only species include just a single MAG, raising reliability concerns about their existence in the human gut.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hrgm2_006",
+      "query": "How did the inclusion of African metagenomic samples in HRGM2 improve detection of specific phyla, and what were the phyla involved?",
+      "ground_truth_answer": "HRGM2 incorporated 10,855 MAGs from over 1,000 African samples—a 9.3-fold increase over the 1,168 NC genomes for Africa in UHGG and HRGM1. This expansion enabled detection of two phyla enriched with microbial genomes from African samples: Elusimicrobiota and Spirochaetota. Abundance analysis confirmed these phyla are more prevalent and abundant in African samples than in non-African regions, and their detection was directly linked to the inclusion of previously missing African genomes in HRGM2.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "hrgm2_007",
+      "query": "Why does the genus Collinsella pose a problem for marker-based taxonomic profiling, and what biological mechanism explains this?",
+      "ground_truth_answer": "The genus Collinsella shows overdispersion in HRGM2 and UHGG phylogenies, making it difficult to define species-specific marker genes. Marker genes were not identified for 584 of 771 Collinsella species, accounting for 95% of all species lacking markers. This probably reflects rapid speciation, where Collinsella species show a high density of single nucleotide variations (SNVs) but limited gene-level divergence—meaning species diverge at the nucleotide level faster than they develop distinct gene complements, undermining the core assumption of marker-based profiling.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "hrgm2_008",
+      "query": "Describe the metabolic interaction patterns observed in Crohn's disease (CD)-associated microbial communities and identify the key donor species.",
+      "ground_truth_answer": "Cooperative interactions were enriched in the CD-associated microbial community, in contrast to the competitive pattern seen in CRC. Using SMETANA in detailed mode, Klebsiella pneumoniae and Pseudescherichia sp002298805 were identified as the key metabolite donors. Receivers mainly depended on donor-supplied amino acids for growth. Both donors showed similar metabolite profiles, suggesting shared ecological roles. Validation in actual CD samples confirmed that higher donor abundance correlated with significantly higher receiver abundance in 7 out of 9 tested donor-receiver pairs, supporting the reliability of GEM-based predictions.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "hrgm2_009",
+      "query": "Why are NC genomes preferred over MQ genomes for genome-scale metabolic model (GEM) reconstruction, and what quantitative improvements do NC-based GEMs offer?",
+      "ground_truth_answer": "Low genome completeness reduces model quality and limits downstream analysis. GEMs from NC MAGs contain on average 24.6% more genes, 12.8% more reactions, and 10.3% more metabolites than GEMs from MQ MAGs. Lower completeness also increases the proportion of gap-filled reactions, which are computationally inferred rather than evidence-based. In comparisons of 327 conspecific MQ-NC genome pairs, NC GEMs consistently included more unique elements not captured by MQ models, with gene-associated reactions showing the largest difference in the proportion of unique elements.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "hrgm2_010",
+      "query": "How does the Kraken2 pipeline with concatenated genomes outperform MetaPhlAn4 in high-complexity gut microbiome samples, and what analysis justified recommending it?",
+      "ground_truth_answer": "Kraken2-based pipelines using representative genomes or no confidence threshold had low precision, but the Kraken2 pipeline using concatenated pangenomes with a confidence threshold of 0.2 reached precision similar to MetaPhlAn4 in samples with over 600 species, while maintaining near-perfect recall. MetaPhlAn4 showed superior precision only in simpler communities of 40 or 150 species, but had much lower recall due to fast-evolving species like Collinsella lacking marker genes. Analysis of 1,160 healthy gut samples showed that 89% contained more than 600 species—the complexity range where Kraken2 with concatenated genomes and confidence thresholding outperforms MetaPhlAn4 by F1 score.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "hrgm2_011",
+      "query": "What are the roles of metabolic resource overlap (MRO) and metabolic interaction potential (MIP) scores in SMETANA analysis, and what thresholds define cooperative vs competitive species pairs?",
+      "ground_truth_answer": "MRO estimates competition potential based on nutrient requirement overlap between two species—higher MRO means more competition for shared metabolic resources. MIP estimates cooperation potential based on the number of exchangeable metabolites—higher MIP means greater potential for one species to supply metabolites to another. A significant negative correlation (Pearson r = -0.339) was found between MRO and MIP across all 499,500 species pairs. Species pairs were classified as cooperative if MIP > 3 and MRO < 0.667, and as competitive if MIP < 3 and MRO > 0.667. Among the top 1,000 prevalent species in healthy guts, 121,679 pairs (24.4%) were cooperative and 98,686 pairs (19.8%) were competitive.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "hrgm2_012",
+      "query": "What specific metabolites facilitate cooperation between the LMI orders RF39 and TANB77 and other gut microbial species, and what does this imply about their metabolic lifestyle?",
+      "ground_truth_answer": "Using SMETANA in detailed mode, thiamin, L-lysine, L-arginine, and uracil were identified as the key metabolites commonly supplied to RF39 and TANB77 species. Thiamin acts as a coenzyme in energy metabolism; L-lysine supports energy metabolism and cell wall synthesis; L-arginine provides carbon and nitrogen for metabolism and biofilm regulation; and uracil, essential for nucleic acid metabolism, may be scavenged via the salvage pathway. The fact that RF39 and TANB77 depend on these metabolites but lack the biosynthetic capacity to produce them suggests a parasitic metabolic lifestyle where they depend on cooperative partners for basic metabolite supply. These two LMI clades showed high cooperation with Peptostreptococcales, Lachnospirales, and Coriobacteriales.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "hrgm2_013",
+      "query": "Compare how HRGM2 resolves the geographic bias problem of existing catalogues and explain why targeting underrepresented regions was essential to reveal new biological patterns.",
+      "ground_truth_answer": "UHGG is dominated by Western countries and China, and while HRGM1 added data from Korea, Japan, and India, many regions remained underrepresented. HRGM2 addresses this by expanding to 41 countries—a 1.5-fold increase over UHGG's 28—including 10 previously understudied regions in Southeast Asia, Africa, and South America. The critical biological consequence is that geographic sampling bias directly obscures real taxonomic diversity: the phyla Elusimicrobiota and Spirochaetota, which were previously underrepresented, are now shown to be strongly associated with African samples through inclusion of African genomes. Similarly, strain-level SNV analysis identified 83 species (~20%) with clear subspecies-level geographic separation between Europe/USA and Asia—patterns invisible without broad geographic sampling. Diet-driven divergence in CAZyme profiles between Western and non-Western strains of the same species (e.g., Faecalibacillus intestinalis with GH1, GH140, GH128, GH55 enrichment in non-Western strains) could also only be detected with geographically diverse genomes.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "hrgm2_014",
+      "query": "Explain why MQ genome functional variation is considered technical artefact rather than biological signal, and what evidence from HRGM2 supports this conclusion?",
+      "ground_truth_answer": "The paper demonstrates that functional variation among MQ genomes is mainly technical while variation among NC genomes reflects true biological differences between strains. The evidence is: (1) Genome overlap analysis of 327 conspecific MQ-NC pairs showed 89% of MQ genomes overlapped with NC genomes, but 26% of NC genome content was absent from conspecific MQ genomes—meaning MQ genomes systematically miss real biological content. (2) Core biosynthesis modules for amino acids, co-factors, vitamins, and nucleotide metabolism were frequently absent in MQ genomes but present in NC counterparts, representing false negatives. (3) Jaccard distance-based functional composition analysis across 543 UHGG species with ≥10 genomes of both types showed significantly higher functional distances among MQ genomes with more variability, while NC genomes showed consistent profiles (p < 1×10⁻³⁰⁰). This pattern was observed across all species tested and was not limited to specific phylogenetic clades, confirming it is a systematic quality issue rather than a lineage-specific phenomenon.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "hrgm2_015",
+      "query": "What distinct metabolic interaction patterns differentiate Crohn's disease (CD) from colorectal cancer (CRC) microbial communities, and what does this imply about disease-specific microbial ecology?",
+      "ground_truth_answer": "CD-associated microbial communities are enriched for cooperative interactions, with Klebsiella pneumoniae and Pseudescherichia spp. acting as key metabolite donors that supply amino acids to other community members. In contrast, CRC-associated communities are dominated by competitive interactions, where species compete mainly for amino acids and inorganic ions. In CRC, this sustained competition favors dominance by the most competitive species: the median relative abundance of the top species was 0.53, with a 0.27 median gap between the first and second most abundant species, and Parvimonas micra was the most frequently dominant species across cohorts. These contrasting patterns suggest fundamentally different ecological assembly rules: CD communities may rely on metabolic cooperation that sustains diverse, interdependent species, while CRC communities undergo competitive exclusion dynamics. Disrupting the cooperative metabolite exchange in CD (e.g., targeting K. pneumoniae) could offer therapeutic strategies distinct from CRC interventions.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "hrgm2_mcq_001",
+      "question": "How many NC-genome species does HRGM2 add that are not found in UHGG?",
+      "options": [
+        "A) 617",
+        "B) 856",
+        "C) 1,056",
+        "D) 1,437"
+      ],
+      "correct_answer": "C",
+      "explanation": "HRGM2 adds 1,056 NC-genome species not found in UHGG. In contrast, only 3,207 of 4,644 UHGG species (69%) contain NC genomes at all.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hrgm2_mcq_002",
+      "question": "What percentage of healthy human gut samples analyzed in the benchmarking study contained more than 600 species?",
+      "options": [
+        "A) 62%",
+        "B) 74%",
+        "C) 82%",
+        "D) 89%"
+      ],
+      "correct_answer": "D",
+      "explanation": "Analysis of 1,160 healthy gut samples showed that 89% contained more than 600 species. This high complexity is the key reason the authors recommend the Kraken2/Bracken pipeline with concatenated genomes over MetaPhlAn4 for HRGM2-based profiling.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hrgm2_mcq_003",
+      "question": "What percentage of short-read MAGs in HRGM2 met high-quality (HQ) criteria (requiring rRNAs and ≥18 of 20 amino acid tRNAs)?",
+      "options": [
+        "A) 2.08%",
+        "B) 4.73%",
+        "C) 12.4%",
+        "D) 19.7%"
+      ],
+      "correct_answer": "A",
+      "explanation": "Only 2.08% of short-read MAGs met HQ criteria. In contrast, 89.6% of HiFi long-read MAGs met HQ criteria. This disparity arises because ribosomal RNA regions are difficult to recover from short-read MAGs. Overall, 7,348 genomes (4.73%) of all HRGM2 genomes met HQ criteria.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hrgm2_mcq_004",
+      "question": "In the metabolic independence framework used in HRGM2, a species is classified as High Metabolic Independence (HMI) if it possesses what proportion of the 33 KEGG modules?",
+      "options": [
+        "A) More than 50%",
+        "B) More than 60%",
+        "C) More than 75%",
+        "D) More than 80%"
+      ],
+      "correct_answer": "D",
+      "explanation": "A representative genome was classified as HMI if it possessed more than 80% of the 33 KEGG modules related to essential metabolite biosynthesis. Species with 20% or fewer of these modules were classified as LMI (Low Metabolic Independence). Among 4,824 HRGM2 species, 751 (15.6%) were HMI and 388 (8.0%) were LMI.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "hrgm2_mcq_005",
+      "question": "Which of the following tools was used to reconstruct genome-scale metabolic models (GEMs) for the 4,824 representative species genomes in HRGM2?",
+      "options": [
+        "A) SMETANA",
+        "B) METABOLIC",
+        "C) CarveMe",
+        "D) eggNOG-mapper"
+      ],
+      "correct_answer": "C",
+      "explanation": "CarveMe (v.1.5.2) was used with default parameters to reconstruct GEMs for 4,824 representative species genomes. On average, reconstructed GEMs contained 889.30 metabolites, 1,267.77 reactions, and 810.54 gene-associated reactions. SMETANA was used separately to analyze metabolic interactions between species.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "hrgm2_mcq_006",
+      "question": "By how many fold did HRGM2 increase African genome representation compared to UHGG and HRGM1?",
+      "options": [
+        "A) 3.1-fold",
+        "B) 5.7-fold",
+        "C) 9.3-fold",
+        "D) 12.4-fold"
+      ],
+      "correct_answer": "C",
+      "explanation": "HRGM2 incorporated 10,855 MAGs from over 1,000 African samples, representing a 9.3-fold increase over the 1,168 non-redundant NC genomes for Africa in UHGG and HRGM1. This expansion was critical for detecting Elusimicrobiota and Spirochaetota as Africa-associated phyla.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "hrgm2_mcq_007",
+      "question": "What GUNC clade separation score (CSS) threshold was used to exclude chimeric genomes from HRGM2?",
+      "options": [
+        "A) CSS > 0.25",
+        "B) CSS > 0.35",
+        "C) CSS > 0.45",
+        "D) CSS > 0.55"
+      ],
+      "correct_answer": "C",
+      "explanation": "Genomes with clade separation scores greater than 0.45 were excluded as chimeric genomes—0.45 is the default GUNC threshold. This quality control step was applied using GUNC v.1.0.1 to ensure genomic integrity before NC genome selection.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "hrgm2_mcq_008",
+      "question": "According to the species-specific marker gene analysis, for what proportion of HRGM2 species could markers NOT be identified?",
+      "options": [
+        "A) ~5%",
+        "B) ~12.7%",
+        "C) ~19.5%",
+        "D) ~26.3%"
+      ],
+      "correct_answer": "B",
+      "explanation": "Species-specific marker genes were identified for 4,209 of 4,824 species (87.3%), meaning markers could not be found for approximately 12.7% of species. Of those lacking markers, 584 of 615 species (95%) were from the genus Collinsella, which shows overdispersion and rapid speciation with high SNV density but limited gene-level divergence.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "hrgm2_mcq_009",
+      "question": "In the analysis of 499,500 pairwise metabolic interactions among the top 1,000 prevalent gut species, what is the Pearson correlation coefficient between MRO (competition) and MIP (cooperation) scores?",
+      "options": [
+        "A) r = -0.147",
+        "B) r = -0.239",
+        "C) r = -0.339",
+        "D) r = -0.489"
+      ],
+      "correct_answer": "C",
+      "explanation": "A significant negative correlation of Pearson r = -0.339 (P = 0.0) was found between MRO and MIP scores across all 499,500 species pairs. This confirms that species pairs with high competition potential tend to have low cooperation potential, and vice versa—a trade-off between competitive and cooperative metabolic strategies.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "hrgm2_mcq_010",
+      "question": "When comparing conspecific MQ and NC representative genome pairs, what percentage of NC genome content was absent from the corresponding MQ genomes?",
+      "options": [
+        "A) 11%",
+        "B) 17%",
+        "C) 26%",
+        "D) 34%"
+      ],
+      "correct_answer": "C",
+      "explanation": "Alignment of conspecific representative genomes showed that 89% of MQ genomes overlapped with NC genomes, but critically, 26% of NC genome content was absent from conspecific MQ genomes. This 26% missing content in MQ genomes is responsible for false negatives in functional profiling, including absence of core biosynthesis modules for amino acids, cofactors, vitamins, and nucleotide metabolism.",
+      "expected_documents": [
+        "A_human_gut_metagenome-assembled_genome_catalogue_spanning_41_countries_supports_genome-scale_metabolic_models.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

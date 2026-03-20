@@ -1,0 +1,288 @@
+{
+  "source_document": "Human_Gut_Microbiome-_Function_Matters.pdf",
+  "paper_title": "Human Gut Microbiome: Function Matters",
+  "authors": "Anna Heintz-Buschart and Paul Wilmes",
+  "journal": "Trends in Microbiology, July 2018, Vol. 26, No. 7",
+  "test_cases": [
+    {
+      "id": "func_matters_001",
+      "query": "What are the essential functions conferred by the gut microbiome on the human host?",
+      "ground_truth_answer": "The gut microbiome confers several essential functions on the human host, including the fermentation of indigestible food components into absorbable metabolites, the synthesis of essential vitamins, the removal of toxic compounds, the outcompetition of pathogens, the strengthening of the intestinal barrier, and the stimulation and regulation of the immune system.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "func_matters_002",
+      "query": "What is metatranscriptomics and what is its primary aim?",
+      "ground_truth_answer": "Metatranscriptomics is the analysis of RNA of microbial communities, usually with the aim of inferring activity. It allows high sampling depths and high taxonomic resolution of functional processes, and by highlighting changes in expression, reveals a more dynamic picture of the microbiome than metagenomics.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "func_matters_003",
+      "query": "What is functional redundancy in the context of the gut microbiome?",
+      "ground_truth_answer": "Functional redundancy is a measure of the number of different populations within a community that are able to perform the same functions. Functional redundancy can increase functional resilience in cases where perturbations affect the taxonomic community structure, allowing for a return to community function and therefore increasing stability.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "func_matters_004",
+      "query": "What proportion of protein-coding genes in the human microbiome cannot have a molecular function predicted?",
+      "ground_truth_answer": "Between 40 to 70 percent of protein-coding genes in the human microbiome cannot have a molecular function predicted, depending on the prediction method used. This proportion is even higher for rarer microbial genes and for genes encoded in taxa that are not well described or remain uncharacterized.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "func_matters_005",
+      "query": "What three-part strategy does the paper describe for improving human health through microbiome research?",
+      "ground_truth_answer": "The paper describes a triad strategy comprising: (i) high-resolution, high-fidelity, and high-throughput omics of microbial biomass and comparative analyses, (ii) hypothesis testing in relevant model experimental systems, and (iii) intervention studies in humans. The first type of study should yield testable hypotheses relating to microbiome functions and their impact on human health.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "func_matters_006",
+      "query": "Why do functional omics display greater variability compared to metagenomic data, and what does this imply for health and disease research?",
+      "ground_truth_answer": "Functional omics display greater variability and sensitivity to perturbation compared to the information content of the metagenome. This greater variability is partly due to commonly applied normalization techniques that do not account for taxonomic profiles, the aggregation of genes into broad functional categories based on homology irrespective of metabolic flux direction, and the large proportion of unknown functional genes that are not considered. Because functional omes more accurately capture active microbial states, they are expected to more accurately portray health and disease states than purely structural metagenomic profiles.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "func_matters_007",
+      "query": "How does metatranscriptomics help resolve gut compartment-specific functional information from fecal samples?",
+      "ground_truth_answer": "Metatranscriptomic data can resolve gut compartment-specific information because the relative abundance of housekeeping transcripts is related to the site of activity of specific microbial taxa. For example, oral species have very low transcript levels in stool samples while colonic organisms are highly active. By resolving gene expression to the taxon of origin and relating it to the overall activity of that taxon, metatranscriptomics can help distinguish in situ activity from noise in functional profiles, and can facilitate discovery of compartment-specific functional features relevant to health and disease.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "func_matters_008",
+      "query": "What is functional plasticity and how does it relate to community stability in the gut microbiome?",
+      "ground_truth_answer": "Functional plasticity is the ability of the microbial community or its members to adapt to perturbations by changing gene expression. It can stabilize the taxonomic community structure as well as ecosystem functions. The variability observed at the level of gene expression may be a reflection of functional plasticity and a prerequisite for stable community function. Consequently, resolving functional differences at multiple omic levels to the taxa contributing them is necessary to understand when and how these functions may impact human physiology.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "func_matters_009",
+      "query": "Why is predicting functional potential from genus-level taxonomic profiles considered questionable by the authors?",
+      "ground_truth_answer": "Predicting functional potential from rough genus-level taxonomic profiles is considered questionable because: approaches that map data to annotated reference genomes make inefficient use of the data and are likely to introduce biases in interpretation; they do not account for the large proportion of horizontally transferred functions in the microbiome; and they cannot handle strain-specific functional gene complements that make up taxa-specific pangenomes. Horizontally transferred and strain-specific genes may be essential, particularly when they code for medically relevant functions such as antibiotic resistance or toxins.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "func_matters_010",
+      "query": "What does 'Culturomics' refer to and what problem does it attempt to solve in microbiome research?",
+      "ground_truth_answer": "Culturomics refers to the combination of miniaturized cultivation and advanced sequencing approaches, for example to generate metagenomes from enrichment cultures. It attempts to solve the problem of studying 'the dark matter' of the human microbiome by allowing detailed characterization of organisms that are not culturable at a traditional laboratory scale. This approach is part of a broader set of experimental strategies aimed at gaining functional knowledge about previously unknown microbial taxa and functions in the microbiome.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "func_matters_011",
+      "query": "How do short-chain fatty acids exemplify the interconnected nature of microbial and host physiology?",
+      "ground_truth_answer": "Short-chain fatty acids serve as an example of how tightly intertwined microbial functions and human physiology are. They are products of microbial fermentation that represent essential substrates for intestinal cells and play important roles in immunomodulatory processes such as T cell differentiation. In turn, the outcome of T cell differentiation can affect the gut microbiome itself, illustrating a bidirectional feedback loop between microbial metabolic output and host immune regulation.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "func_matters_012",
+      "query": "What is the relationship between the frequency of occurrence of a gene and its likelihood of having a known function in the human gut microbiome?",
+      "ground_truth_answer": "The proportion of genes with unknown molecular functions is higher the rarer a microbial gene is in the human population. This pattern holds across multiple annotation methods (KO BLAST, KO HMM, FOAM, eggNOG, MuSt HMM). Genes found in a small fraction of metagenome samples are disproportionately likely to have no known function, while more ubiquitous genes tend to be better annotated. This has important implications since these rare, unknown genes may still be highly expressed and biologically significant.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "func_matters_013",
+      "query": "Compare the information captured by metatranscriptomics versus metaproteomics, and explain why metaproteomic profiles appear more stable than metatranscriptomic ones despite metaproteomics being a better indicator of actual phenotype.",
+      "ground_truth_answer": "Metatranscriptomics highlights changes in gene expression, revealing a more dynamic picture of the microbiome with high sampling depths and high taxonomic resolution. Metaproteomic profiles may be a better indicator of the actual phenotype because proteins are the functional effectors. However, metaproteomic analyses are not yet able to achieve the information content or sampling depth of sequencing-based technologies. Due to this limitation, highly abundant, stably expressed conserved proteins make up the majority of metaproteomic data points, leading to a higher apparent stability of metaproteomic profiles. This creates a paradox where the technically superior functional readout appears artificially stable due to current detection limitations, whereas metatranscriptomic profiles more faithfully reflect the dynamic variability of the microbiome.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "func_matters_014",
+      "query": "Why do the authors argue that 'function first, taxa second' should be the guiding principle for microbiome research, and how does the concept of functional redundancy challenge taxonomy-centric approaches?",
+      "ground_truth_answer": "The authors argue for 'function first, taxa second' because the identity of microbial populations contributing specific functions may differ across individuals even when the microbiota have widely divergent taxonomic compositions. Functions of interest may be contributed to the community-wide phenotype by single or multiple microbial populations in the absence of observable differences in those populations' abundances. Functional redundancy means that the same function can be carried out by different taxa in different individuals, so taxonomy-centric approaches may miss functionally equivalent states. This makes it essential to first identify functional genes of interest and then link them to the taxa that carry them, rather than the reverse.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "func_matters_015",
+      "query": "What is the proposed 'functional most-wanted list' and how does it extend the concept of the most-wanted taxa list to address the unknowns in microbiome research?",
+      "ground_truth_answer": "Analogous to the most-wanted taxa list (which was largely resolved within half a decade), the authors propose establishing a functional most-wanted list by the research community. This list should explicitly take unknown genes and functions into account based on information from omics experiments, such as when or where the genes and products are observed. It should incorporate information on potential interaction partners to generate hypotheses for assays to elucidate molecular functions. The list should draw on existing metagenomic and functional meta-omic data, functional reference genome databases, and should anticipate future readouts such as population growth rates, regulatory elements, and small RNAs. The goal is to systematically prioritize unknown functions for experimental elucidation, especially those observed to be enriched or depleted in disease contexts.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "func_matters_016",
+      "query": "How does the observation that most metabolic functions are encoded by multiple microbial populations in any given sample, while the relative transcript abundance of a function is independent of the number of populations carrying it, challenge our understanding of the relationship between community structure and function?",
+      "ground_truth_answer": "This observation reveals that the relationship between community structure and function is far more complex than a simple mapping of one taxon to one function. The fact that most metabolic functions are encoded by multiple microbial populations means there is widespread functional redundancy, yet this redundancy does not proportionally scale the functional output — the relative transcript abundance remains independent of how many populations carry that function. Furthermore, populations' gene expression can change over time even when their relative abundance remains constant. Together, these findings imply that community structure (taxonomic composition) is an insufficient predictor of community function, and that microbiome-conferred services must be explored with respect to their structural and spatial dimensions in relation to their effect on host physiology.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+  "mcq_questions": [
+    {
+      "id": "func_matters_mcq_001",
+      "question": "Which of the following is listed as an essential function conferred by the gut microbiome on the human host?",
+      "options": [
+        "A) Synthesis of digestive enzymes for protein breakdown",
+        "B) Fermentation of indigestible food components into absorbable metabolites",
+        "C) Production of bile acids from cholesterol",
+        "D) Direct digestion of complex carbohydrates in the small intestine"
+      ],
+      "correct_answer": "B",
+      "explanation": "The paper explicitly lists fermentation of indigestible food components into absorbable metabolites as one of several essential functions conferred by the gut microbiome. Bile acid production and digestive enzyme synthesis are primarily host functions, not microbiome functions highlighted in this paper.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "func_matters_mcq_002",
+      "question": "What is functional diversity in the context of the gut microbiome?",
+      "options": [
+        "A) The number of different species in a microbial community",
+        "B) The measure of the number and distribution of different functions within the community",
+        "C) The ability of bacteria to transfer genes horizontally",
+        "D) The ratio of known to unknown genes in the metagenome"
+      ],
+      "correct_answer": "B",
+      "explanation": "According to the paper's glossary, functional diversity is a measure of the number (richness) and distribution of different functions within the community. It is related to gene richness and also to phylogenetic diversity, as phylogenetically diverse communities often have a wider functional potential.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "func_matters_mcq_003",
+      "question": "According to the paper, what percentage of genes without predicted known functions in the integrated gene catalogue (IGC) were found to be expressed in the authors' own data?",
+      "options": [
+        "A) 8%",
+        "B) 14%",
+        "C) 28%",
+        "D) 40%"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper states that in the IGC of the human gut microbiome, 14% of the genes without predicted known functions can be associated with orthologous groups without known function, and importantly 28% of these genes were found to be expressed in the authors' own data — highlighting that a substantial portion of unknown-function genes are actively transcribed.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "func_matters_mcq_004",
+      "question": "Why do commonly applied normalization techniques in metagenomic analysis contribute to an underestimation of functional variability?",
+      "options": [
+        "A) They rely on 16S rRNA gene sequencing which has limited resolution",
+        "B) They do not take into account the taxonomic profiles of samples",
+        "C) They overcount rare genes by amplifying them during library preparation",
+        "D) They fail to distinguish between DNA and RNA molecules in the sample"
+      ],
+      "correct_answer": "B",
+      "explanation": "The paper explicitly states that 'commonly applied normalization techniques which do not take into account the taxonomic profiles have been shown to underestimate functional variability.' This is one of several methodological confounders that create the misleading impression that metagenomic functional profiles are stable.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "func_matters_mcq_005",
+      "question": "What key finding about inter-individual versus intra-individual variability applies to functional omics in the gut microbiome?",
+      "options": [
+        "A) Intra-individual variation is greater than inter-individual variation at all omic levels",
+        "B) Inter-individual variation is greater than intra-individual variation at metagenomic, metatranscriptomic, and metaproteomic levels",
+        "C) There is no significant difference between inter- and intra-individual variation in functional profiles",
+        "D) Intra-family variation exceeds inter-family variation at the metaproteomic level only"
+      ],
+      "correct_answer": "B",
+      "explanation": "The paper reports that greater inter-individual than intra-individual variation is observable for functional profiles at the metagenomic, metatranscriptomic, and metaproteomic levels. This means individuals have distinct, persistent functional microbiome signatures, and the signal is not dominated by nonspecific momentary fluctuations.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "func_matters_mcq_006",
+      "question": "What does the paper say about the relationship between functional richness and human health?",
+      "options": [
+        "A) Higher functional richness is consistently associated with worse health outcomes",
+        "B) Functional richness has no documented relationship to human health",
+        "C) Higher functional richness has been suggested to positively impact human health, and decreased functional diversity has been observed in several diseases",
+        "D) Functional richness is only relevant in the context of antibiotic resistance"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper states that functional richness has been suggested to positively impact human health, and decreased functional diversity has been observed in several diseases. A higher metabolic diversity ensures digestibility of a wider range of nutrients and may also offer protective potential against environmental toxic substances.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "func_matters_mcq_007",
+      "question": "What does the paper identify as a significant limitation of current metabolomic approaches for studying the gut microbiome?",
+      "options": [
+        "A) Metabolomics can only detect metabolites produced by the host, not microbes",
+        "B) Metabolomics is too expensive and technically complex for routine use",
+        "C) A very large fraction of measured metabolite features are unknowns, potentially exceeding 90% even when searched against comprehensive databases",
+        "D) Metabolomics requires invasive biopsies and cannot be performed on stool samples"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper explicitly states that 'well in excess of 90% of measured features may be unknowns, even when searching metabolomic data against comprehensive databases,' and that there is also a difficulty in linking specific metabolite features to their microbial provenance. These are identified as current major limitations of metabolomics in microbiome research.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "func_matters_mcq_008",
+      "question": "According to the paper's analysis of the integrated gene catalogue (IGC), what is true about the unique genes found in gut microbiome metagenomes?",
+      "options": [
+        "A) Most unique genes are present in the majority of samples and carry unique, sample-specific functions",
+        "B) The majority of unique genes are found in only a few percent of samples, but functional annotations are typically carried by many unique genes",
+        "C) Unique genes are evenly distributed across all samples and represent core microbiome functions",
+        "D) Unique genes are mostly found in well-characterized taxa and have well-predicted functions"
+      ],
+      "correct_answer": "B",
+      "explanation": "The paper states that 'the majority of the unique genes in the IGC are not found in more than a few percent of the samples.' However, 'functional annotations in the IGC are usually carried by many unique genes, with respect to both the whole catalogue and the subset present in single samples.' This illustrates that at the gene sequence level there is great diversity, but at the functional level there is substantial redundancy.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "func_matters_mcq_009",
+      "question": "Which combination of approaches does the paper recommend for rational intervention strategies leveraging the gut microbiome to alter host phenotype?",
+      "options": [
+        "A) 16S rRNA sequencing followed by antibiotic treatment to reshape the microbiome",
+        "B) Miniaturized in vitro gut models, animal models, and human intervention trials through diet or fecal transplants with detailed omics monitoring",
+        "C) Culturomics alone to identify all relevant microbiome taxa before any clinical intervention",
+        "D) Metaproteomic profiling exclusively, as it directly captures the active phenotype"
+      ],
+      "correct_answer": "B",
+      "explanation": "The paper recommends a staged approach: miniaturized in vitro models of the human gut interface for cellular interaction studies; animal models (despite limitations) to observe systemic impacts; and finally human intervention trials through diet and/or fecal transplants or faeces-derived selected microbiota. Endpoints should include health-related physiological markers and detailed omics measurements of induced microbiome changes over time.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "func_matters_mcq_010",
+      "question": "What does the paper conclude about the discriminatory power of metatranscriptomic versus metagenomic functional profiles for distinguishing between different individuals?",
+      "options": [
+        "A) Metagenomic profiles have significantly greater discriminatory power because they capture the full genetic potential of the microbiome",
+        "B) Metaproteomic profiles are the only reliable way to discriminate between individuals' functional states",
+        "C) Metatranscriptomic functional profiles are at least as powerful as, if not more powerful than, metagenomic profiles for resolving functional differences between individuals",
+        "D) Neither metagenomic nor metatranscriptomic profiles have sufficient power to discriminate between individuals without very large sample sizes"
+      ],
+      "correct_answer": "C",
+      "explanation": "Based on their own datasets and estimation methods for sample sizes needed to reach a targeted statistical power, the authors conclude that 'metatranscriptomic functional profiles are at least as (if not more) powerful in resolving differences as metagenomic profiles.' This supports the broader argument that functional omics should not be considered merely supplementary to structural metagenomics.",
+      "expected_documents": ["Human_Gut_Microbiome-_Function_Matters.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "source_document": "Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf",
+  "paper_metadata": {
+    "title": "Gut Microbiome: What We Do and Don't Know",
+    "authors": "Gail A. Cresci, PhD, RD, LD, CNSC; Emmy Bawden, RD",
+    "journal": "Nutrition in Clinical Practice",
+    "volume": 30,
+    "issue": 6,
+    "pages": "734–746",
+    "year": 2015,
+    "doi": "10.1177/0884533615609899"
+  },
+  "test_cases": [
+    {
+      "id": "cresci_2015_001",
+      "query": "Who was Eli Metchnikoff and what was his contribution to gut microbiome research?",
+      "ground_truth_answer": "Eli Metchnikoff was a Russian scientist at the Pasteur Institute in Paris who, in the early 1900s, associated the longevity of rural Bulgarians with their consumption of fermented milk products. He named the organism Lactobacillus bulgaricus and hypothesized that seeding the gut with healthy bacteria by drinking fermented milk could fight off harmful bacteria and prolong life. He was the first scientist to suggest it was possible to modify the gut microbiome by replacing bad bacteria with good bacteria, and he earned the Nobel Prize in 1908 for his work in immunity.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "cresci_2015_002",
+      "query": "What is the Human Microbiome Project (HMP) and what has it produced so far?",
+      "ground_truth_answer": "The Human Microbiome Project (HMP) is one of several international efforts that uses high-throughput multi-omics analyses to identify and study the microbiome in human health. Funded by the National Institutes of Health common fund in 2008, the HMP has resulted in the isolation and sequencing of more than 1,300 reference strains from the human body. The HMP Consortium reported the structure and function of the human microbiome in 300 healthy adults aged 18–40 years at 18 body sites from a single time point, generating an unprecedented amount of data about the complexity of the human microbiome.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "cresci_2015_003",
+      "query": "What are the key factors that influence gut microbiome composition?",
+      "ground_truth_answer": "The gut microbiome is influenced by multiple factors including mode of infant delivery and feeding, the aging process, diet composition, geography, medications, and stress. Analysis of HMP samples has revealed associations between life-history characteristics such as breastfeeding status, gender, and education level with microbiome composition. These factors interact in complex ways to shape the gut microbial community throughout an individual's lifetime.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "cresci_2015_004",
+      "query": "What bacterial species are found in breast milk?",
+      "ground_truth_answer": "Breast milk is not sterile; it contains as many as 600 different species of bacteria, including beneficial Bifidobacterium breve, Bifidobacterium adolescentis, Bifidobacterium longum, Bifidobacterium bifidum, and Bifidobacterium dentium. In addition to these bacteria, breast milk contains human milk oligosaccharides that selectively stimulate growth of Bifidobacterium genera, which is why breastfed infants show an increased proportion of Bifidobacteria compared with formula-fed infants.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "cresci_2015_005",
+      "query": "What are the reported cure rates for fecal microbiota transplantation (FMT) in treating recurrent Clostridium difficile infection?",
+      "ground_truth_answer": "Fecal microbiota transplantation (FMT) has been shown to be a successful treatment option for recurrent and refractory Clostridium difficile infection. FMT achieves a 91% primary cure rate and a 98% secondary cure rate, making it an increasingly sought-out treatment. FMT works by administering a homogenized stool sample from a healthy donor into the GI tract of an affected individual to eradicate C. difficile colonization and restore a healthy microbial colony.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "cresci_2015_006",
+      "query": "How does delivery mode (vaginal vs. cesarean section) affect the infant gut microbiome composition?",
+      "ground_truth_answer": "The mode of delivery significantly affects the composition of an infant's gut microbiota because the gut microbiota of the newborn closely resembles the microbiota encountered during birth. During a vaginal birth, the infant is inoculated with vaginal microbiota, whereas cesarean section exposes the infant to skin microbiota. At the phylum level, infants delivered vaginally have a larger population of Bacteroidetes than Firmicutes compared with infants delivered via cesarean section. Despite in utero exposure, the majority of microbes colonizing the infant gut are acquired post-partum.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "cresci_2015_007",
+      "query": "Describe the succession of microbial colonization in the infant gut during the first year of life.",
+      "ground_truth_answer": "Gut colonization in an infant occurs in successive stages. Initially, the gut becomes colonized primarily by aerobic organisms such as enterobacteria, staphylococci, and streptococci, many of which are potentially pathogenic. These early colonizers begin changing the gut environment by reducing oxygen, paving the way for colonization by an increasingly anaerobic community of microbes. The structure of the gut community continues to change over the first year of life in response to external factors such as diet and antibiotic use. Weaning, breastfeeding status, and the successive introduction of different food types all correspondingly affect the infant gut microbiome and immune system.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "cresci_2015_008",
+      "query": "How does the gut microbiota change with aging, and what specific changes are seen in elderly individuals?",
+      "ground_truth_answer": "Gut microbiota composition transforms throughout human development. When a child is around 3 years of age, bacterial composition resembles that of an adult and remains stable until old age, when variability in community composition increases. In ecological succession, the Bifidobacterium-dominated microbiota of infancy transitions into the Bacteroidetes- and Firmicutes-dominated microbiota of adulthood. In elderly people, relative proportions of Bacteroidetes predominate compared with higher proportions of Firmicutes in young adults. Elderly individuals also show significant decreases in Bifidobacteria, Bacteroides, and Clostridium cluster IV. Declines in dentition, salivary function, digestion, and intestinal transit time further affect the gut microbiota with aging. Variability among individuals is high, ranging from 3% to 92% for Bacteroidetes and 7% to 94% for Firmicutes.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "cresci_2015_009",
+      "query": "How does the gut microbiota differ between African rural children and European children, and what dietary factors explain these differences?",
+      "ground_truth_answer": "A study comparing children aged 1–6 years from rural Africa and European children (Florence, Italy) found substantial differences linked to diet. African children ate a predominantly vegetarian diet low in fat and animal protein but rich in starch, plant polysaccharides, and fiber, whereas European children consumed a Western diet high in animal protein, sugar, starch, and fat and low in fiber. At the phylum level, Actinobacteria and Bacteroidetes were more represented in African children (57.7% vs 22.4% Bacteroidetes), while Firmicutes and Proteobacteria were more abundant in European children (63.7% vs 27.3% Firmicutes). SCFA-producing bacteria such as Xylanibacter, Prevotella, Butyrivibrio, and Treponema were found exclusively in African children, who also had four times higher levels of butyrate and propionate.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "comparison"
+    },
+    {
+      "id": "cresci_2015_010",
+      "query": "What is the gut-brain axis and how does psychological stress influence the gut microbiome?",
+      "ground_truth_answer": "The gut-brain axis describes the bidirectional interaction between psychological factors and gut function, where brain and gut symptoms reciprocally influence each other's expression. This forms the conceptual framework for functional GI disorders such as irritable bowel syndrome. Psychological and physical stressors activate the hypothalamic-pituitary-adrenal (HPA) axis, leading to release of corticotropin-releasing hormone, corticotropin, and glucocorticoids (cortisol), as well as catecholamines like noradrenaline and adrenaline. Enteric bacteria respond to the release of these stress-related neurochemical mediators, which can influence the response to bacterial infection. Data suggest that stress, whether acute or chronic, creates a dysbiotic gut microbiome that may then induce anxiety and depression. Metabolites produced by gut microbiota can modulate brain biochemistry and behavior through regulation of the vagus nerve.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "cresci_2015_011",
+      "query": "How do antibiotics affect the gut microbiome beyond killing pathogenic organisms?",
+      "ground_truth_answer": "Antibiotics have broad-spectrum activity that targets not only pathogenic microorganisms but also host-associated microbial communities. The negative effects persist long after antibiotic use has ceased. Antibiotics promote expansion of antibiotic-resistant strains that act as a reservoir for resistance genes. Decreased diversity typically follows antibiotic treatment, and even though most microbiota returns to pretreatment levels, some members are lost indefinitely. Antibiotic-induced changes important to microbial regulation of host immunity include loss of bacterial ligands recognized by the host, loss of specific bacterial signals, and alterations in metabolites produced by the microbiota such as SCFAs. Subsets of the microbiota can shift toward increased colonization by opportunistic pathogens such as Clostridium difficile and Candida albicans. Even intravenously delivered antibiotics can affect the gut microbiota as they become incorporated into bile and secreted into the intestine via the biliary system.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "cresci_2015_012",
+      "query": "What is the role of short-chain fatty acids (SCFAs) in gut health, and how are they affected in critical illness?",
+      "ground_truth_answer": "SCFAs are critical for gut health because they serve as a primary fuel source for colonocytes, are involved with water and electrolyte absorption, help maintain the intestinal barrier, and modulate cell proliferation, differentiation, growth, and apoptosis. In patients with severe systemic inflammatory response syndrome (SIRS), concentrations of total organic acids—particularly SCFAs acetate, propionate, and butyrate—are significantly decreased compared with healthy controls. This reduction in SCFAs accompanies markedly increased fecal pH and a shift toward pathogenic bacteria. In critically ill trauma patients, total SCFA concentrations (propionate, butyrate) decrease with fecal pH above 6.6, and this is associated with higher incidence of bacteremia and mortality. Provision of butyrate during broad-spectrum antibiotic therapy can mitigate the negative effects of antibiotics on gut health.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "cresci_2015_013",
+      "query": "How does the gut microbiome differ between populations from different geographic regions, and what enzymatic differences have been observed?",
+      "ground_truth_answer": "Geographic location and ethnicity are significant determinants of microbiota diversity and composition. A study comparing gut microbiota of 531 healthy individuals from Venezuela (Amazonas), rural Malawi, and U.S. metropolitan areas found that phylogenetic composition of fecal microbiota was significantly altered between countries, with the most pronounced separation between U.S. and Malawian/Amerindian gut communities. Bacterial diversity increased with age in all three populations, with the U.S. population having the least diversity. A total of 476 enzymes were identified as significantly different between U.S. and Malawian/Amerindian breastfed babies. Malawian and Amerindian babies had higher representation of riboflavin biosynthetic pathway enzymes and alpha-amylase for starch degradation, reflecting their corn-rich diet. U.S. microbiomes had overrepresentation of enzymes involved in amino acid degradation, catabolism of simple sugars, and bile salt metabolism, reflecting a protein- and fat-rich Western diet.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "cresci_2015_014",
+      "query": "Explain the relationship between frailty in elderly individuals and gut microbiome composition. What specific microbial and clinical associations were found?",
+      "ground_truth_answer": "Alterations in the gut microbiome are associated with frailty in elderly people. A significant reduction in microbial diversity, with reduced composition of Lactobacilli, Bacteroides/Prevotella, and Faecalibacterium prausnitzii and increased proportions of Ruminococcus, Atopobium, and Enterobacteriaceae, was observed in people with high frailty scores. Claesson et al. investigated 178 older people (≥65 years) and found that decreased microbial diversity was noted in individuals living in short- or long-term residential care compared with those living in the community. This difference was associated with increased frailty, decreased diet diversity, and increased inflammatory markers including serum TNF-α, IL-6, IL-8, and C-reactive protein. Four dietary groupings were identified by complete linkage clustering: low fat/high fiber and moderate fat/high fiber included 98% of community and day hospital subjects; moderate fat/low fiber and high fat/low fiber included 83% of long-stay subjects. The most significant associations within long-stay subjects were related to functional independence, Barthel index, and nutrition.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "cresci_2015_015",
+      "query": "How does the gut microbiome change in critical illness, specifically in patients with systemic inflammatory response syndrome (SIRS), and what are the clinical consequences?",
+      "ground_truth_answer": "In critically ill patients with severe SIRS, the gut plays an important role in promoting infectious complications and multiple organ dysfunction syndrome due to deteriorated intestinal epithelium, altered gut immune system, and dysfunctional metabolic activities of commensal bacteria. Shimizu et al. found that patients with severe SIRS had significantly lower total anaerobic bacterial counts (2- to 4-log fewer commensal Bifidobacterium and Lactobacillus) and 2-log higher potentially pathogenic Staphylococcus and Pseudomonas group counts compared with healthy controls. SCFAs (acetate, propionate, butyrate) were significantly decreased while fecal pH was markedly increased. In 138 trauma patients, acidic or alkaline feces were associated with decreased Bacteroides and Bifidobacterium species, and the incidence of bacteremia was significantly higher than in patients with normal fecal pH. When fecal pH was increased or decreased by 1, bacteremia incidence more than tripled and mortality more than doubled. Critically, alterations in the gut microbiome occur within 6 hours of a metabolic insult, and the microbiome fails to return to healthy control patterns.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "cresci_2015_016",
+      "query": "Compare the gut microbiome of professional athletes with non-athletes and explain the mechanisms through which exercise modifies gut microbial diversity.",
+      "ground_truth_answer": "In a study of professional rugby players during preseason training, Clarke et al. demonstrated that enhanced gut microbial diversity was significantly higher in athletes and positively correlated with increased exercise and dietary protein intake. Athletes exhibited representatives of 22 phyla of bacteria in contrast to 11 and 9 phyla in low-BMI and high-BMI nonathletic controls, respectively. Athletes also exhibited lower inflammatory markers and improved metabolic markers. Microbiota diversity measures were positively correlated with protein intake and plasma creatine kinase levels (a marker of extreme exercise), suggesting both diet and exercise influenced microbial diversity. Mechanistically, abrupt exercise produces multiple metabolites and inflammatory mediators, whereas habitual exercise suppresses basal inflammatory cytokines—suggesting a regulatory loop between exercise biology and host immunity. Regular exercise has anti-inflammatory effects, and animal models show that repeated exercise reduces pro-inflammatory cytokine expression and increases anti-inflammatory IL-10 expression, while also decreasing colonic oxidative insult.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "cresci_2015_mcq_001",
+      "question": "In which year did Eli Metchnikoff earn the Nobel Prize for his work in immunity related to gut bacteria?",
+      "options": [
+        "A) 1900",
+        "B) 1905",
+        "C) 1908",
+        "D) 1912"
+      ],
+      "correct_answer": "C",
+      "explanation": "Eli Metchnikoff earned the Nobel Prize in 1908 for his work in immunity. He was the first scientist to suggest that it was possible to modify the gut microbiome by replacing bad bacteria with good bacteria.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "cresci_2015_mcq_002",
+      "question": "How many reference strains from the human body has the Human Microbiome Project isolated and sequenced thus far?",
+      "options": [
+        "A) More than 300",
+        "B) More than 700",
+        "C) More than 1,000",
+        "D) More than 1,300"
+      ],
+      "correct_answer": "D",
+      "explanation": "The HMP has thus far resulted in the isolation and sequencing of more than 1,300 reference strains from the human body, funded by the National Institutes of Health common fund in 2008.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "cresci_2015_mcq_003",
+      "question": "What percentage of the sequences from African and European children's gut samples belonged to the four most populated bacterial phyla?",
+      "options": [
+        "A) 78.4%",
+        "B) 86.1%",
+        "C) 94.2%",
+        "D) 99.1%"
+      ],
+      "correct_answer": "C",
+      "explanation": "Multiplex pyrosequencing of the 16S rRNA gene revealed that 94.2% of the sequences in all African and European samples belonged to the four most populated bacterial phyla: Actinobacteria, Bacteroidetes, Firmicutes, and Proteobacteria.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "cresci_2015_mcq_004",
+      "question": "According to Shimizu et al., compared to healthy controls, patients with severe SIRS had how many fewer logs of commensal Bifidobacterium and Lactobacillus?",
+      "options": [
+        "A) 1- to 2-log fewer",
+        "B) 2- to 4-log fewer",
+        "C) 4- to 6-log fewer",
+        "D) 5- to 8-log fewer"
+      ],
+      "correct_answer": "B",
+      "explanation": "Shimizu et al. found that patients with severe SIRS had significantly lower total anaerobic bacterial counts, especially 2- to 4-log fewer commensal Bifidobacterium and Lactobacillus, along with 2-log higher potentially pathogenic Staphylococcus and Pseudomonas group counts.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "cresci_2015_mcq_005",
+      "question": "In the Cochrane review of probiotic supplementation in preterm neonates, how many randomized controlled trials (n = 5529) were included and what was the mean difference in days to achieve full enteral feeds?",
+      "options": [
+        "A) 18 trials; −0.85 days",
+        "B) 24 trials; −1.54 days",
+        "C) 30 trials; −2.10 days",
+        "D) 35 trials; −2.75 days"
+      ],
+      "correct_answer": "B",
+      "explanation": "The Cochrane review included 24 randomized controlled trials (n = 5529). The meta-analysis by Athalye-Jape et al. including 25 trials (n = 5895) found that probiotic-supplemented subjects took less time to achieve full feeds with a mean difference of −1.54 days (95% CI, −2.75 to −0.32 days; P = .01).",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "cresci_2015_mcq_006",
+      "question": "What happens to the incidence of bacteremia when fecal pH is increased or decreased by 1 unit in critically ill patients?",
+      "options": [
+        "A) It doubles",
+        "B) It triples",
+        "C) It quadruples",
+        "D) It increases fivefold"
+      ],
+      "correct_answer": "B",
+      "explanation": "When the fecal pH level was increased or decreased by 1, the incidence of bacteremia more than tripled and mortality more than doubled, based on the study in 138 trauma patients investigating fecal pH as a risk factor in critical illness.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "cresci_2015_mcq_007",
+      "question": "How quickly do alterations in the gut microbiome occur after a metabolic insult in critically ill patients, and do they normalize?",
+      "options": [
+        "A) Within 1 hour; the microbiome fully normalizes within 48 hours",
+        "B) Within 6 hours; the microbiome fails to return to healthy control patterns",
+        "C) Within 12 hours; the microbiome partially recovers within 1 week",
+        "D) Within 24 hours; the microbiome normalizes within 30 days"
+      ],
+      "correct_answer": "B",
+      "explanation": "Alterations in the gut microbiome have been shown to occur within 6 hours of a metabolic insult, and the microbiome fails to return to the microbial patterns seen in healthy controls, making early intervention critical.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "cresci_2015_mcq_008",
+      "question": "What proportion of distance runners have reportedly experienced intestinal problems related to high-intensity exercise?",
+      "options": [
+        "A) 10%–30%",
+        "B) 20%–50%",
+        "C) 30%–90%",
+        "D) 50%–95%"
+      ],
+      "correct_answer": "C",
+      "explanation": "Some reports indicate that 30%–90% of distance runners have experienced intestinal problems related to exercise. The degree of intestinal distress can range from mild to severe, with symptoms including nausea, vomiting, abdominal angina, and bloody diarrhea.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "cresci_2015_mcq_009",
+      "question": "In the study by Lombardo et al. on proton pump inhibitor (PPI) use and small intestinal bacterial overgrowth (SIBO), what was the incidence of SIBO in long-term PPI users compared to healthy controls?",
+      "options": [
+        "A) PPI users: 25%; healthy controls: 3%",
+        "B) PPI users: 35%; healthy controls: 4%",
+        "C) PPI users: 50%; healthy controls: 6%",
+        "D) PPI users: 65%; healthy controls: 8%"
+      ],
+      "correct_answer": "C",
+      "explanation": "Lombardo et al. conducted a study in 200 PPI patients, 200 IBS patients (no PPIs), and 50 healthy controls. The incidence of SIBO was significantly different: PPI users 50%, IBS patients not using PPIs 24.5%, and healthy control subjects 6% (P < .001).",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "factual"
+    },
+    {
+      "id": "cresci_2015_mcq_010",
+      "question": "In the geographic microbiome comparison study by Yatsunenko et al., how many enzymes were identified as significantly different between U.S. and Malawian/Amerindian breastfed babies, and what was the significance threshold?",
+      "options": [
+        "A) 198 enzymes; P < .05",
+        "B) 312 enzymes; P < .01",
+        "C) 476 enzymes; P < .001",
+        "D) 589 enzymes; P < .001"
+      ],
+      "correct_answer": "C",
+      "explanation": "A total of 476 enzymes were identified as being significantly different in U.S. versus Malawian and Amerindian breastfed babies (P < .001). The most prominent differences involved pathways related to vitamin biosynthesis and carbohydrate metabolism, reflecting differences in their respective diets.",
+      "expected_documents": ["Nut_in_Clin_Prac_-_2015_-_Cresci_-_Gut_Microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "factual"
+    }
+  ]
+}

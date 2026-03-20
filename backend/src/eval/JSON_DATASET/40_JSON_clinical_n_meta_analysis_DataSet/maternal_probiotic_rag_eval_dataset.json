@@ -1,0 +1,337 @@
+{
+  "source_document": "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf",
+  "metadata": {
+    "paper_title": "Effects of maternal probiotic supplementation on breast milk microbiome and infant gut microbiome and health: a systematic review and meta-analysis of randomized controlled trials",
+    "authors": "Alemu BK, Azeze GG, Wu L, Lau SL, Wang CC, Wang Y",
+    "journal": "American Journal of Obstetrics and Gynecology MFM",
+    "year": 2023,
+    "study_design": "Systematic review and meta-analysis of RCTs",
+    "total_studies": 24,
+    "total_mothers": 2761,
+    "total_infants": 1756
+  },
+  "test_cases": [
+    {
+      "id": "maternal_probiotic_001",
+      "query": "How many randomized controlled trials and participants were included in this meta-analysis?",
+      "ground_truth_answer": "The final dataset included 24 randomized controlled trials with a total of 2761 mothers and 1756 infants. The included studies were published between 2008 and 2022.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_probiotic_002",
+      "query": "Which electronic databases were searched in this systematic review and until what date?",
+      "ground_truth_answer": "Six electronic databases were systematically searched: PubMed, EMBASE, Web of Science, Scopus, CINAHL, and Science Direct. The search was conducted until December 15, 2022.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_probiotic_003",
+      "query": "What was the overall risk difference for beneficial bacteria detection rate in breast milk following maternal probiotic supplementation?",
+      "ground_truth_answer": "The overall beneficial bacteria detection rate in breast milk was 24% higher in the probiotics group than in the controls, with a risk difference of 0.24 (95% CI, 0.11 to 0.37; P<.001; I2=91.12%).",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_probiotic_004",
+      "query": "What was the effect of maternal probiotic supplementation on infantile colic, and what was the risk ratio?",
+      "ground_truth_answer": "Probiotic interventions significantly reduced the occurrence of infantile colic, with a risk ratio of 0.30 (95% CI, 0.16 to 0.57; P<.001; I2=0.00%), indicating a 70% relative reduction in the risk of infantile colic in the probiotic group compared to controls.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_probiotic_005",
+      "query": "Which probiotic genera and species were recommended as maternal supplements to promote infant health according to the study conclusions?",
+      "ground_truth_answer": "According to the study conclusions, Lactobacillus, Bifidobacterium, Streptococcus thermophilus, and Saccharomyces boulardii can be used as maternal supplements to promote infant health. These were identified as safe and feasible approaches to boost beneficial bacteria in breast milk and reduce pathogenic bacteria, mainly Staphylococcus.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_probiotic_006",
+      "query": "What are the entero-mammary and oro-mammary pathways, and how do they regulate the breast milk microbiome composition?",
+      "ground_truth_answer": "The breast milk microbiome composition is mainly regulated by two pathways. In the entero-mammary pathway, dendritic cells smuggle beneficial bacteria from the maternal gut to the mammary epithelium, programming the mammary system to establish nutritional, microbiological, immunologic, and neuroendocrine requirements for the newborn. The oro-mammary pathway is evidenced by the fact that breast milk microbiome in pump-fed mothers shows significant association with environmental bacteria compared to direct nursing, and bacteria in precolostrum breast milk during pregnancy mimics common infant oral bacteria, suggesting a gut-breast axis that determines milk microbiome composition.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "maternal_probiotic_007",
+      "query": "How does maternal oral probiotic supplementation transfer microbiome benefits to the infant through breastfeeding?",
+      "ground_truth_answer": "Maternal oral probiotic supplementation alters the maternal gut microbiome, which then influences the breast milk microbiome via the entero-mammary pathway, where dendritic cells translocate bacteria from the maternal gut to the mammary glands. The enriched beneficial bacteria in breast milk are then transferred to the infant during breastfeeding. The meta-analysis demonstrated that infants whose mothers received probiotic supplements had 0.89 log10 CFU/g more beneficial bacteria in their stools than controls (95% CI, 0.22 to 1.56; P=.01), confirming that the milk microbiome serves as an essential route for mother-to-infant bacterial translocation.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "maternal_probiotic_008",
+      "query": "What mechanisms do Lactobacillus and Bifidobacterium species use to suppress pathogenic bacteria?",
+      "ground_truth_answer": "Lactobacillus and Bifidobacterium suppress pathogenic bacteria in the intestine through multiple mechanisms: limiting adhesion sites and receptors available to pathogens, competing for nutrients, and producing acids that can inhibit pathogens. They also remodel the innate and adaptive immunity of the consumer by modulating immune cells such as macrophages and dendritic cells, thereby providing both direct antimicrobial and indirect immune-mediated protection.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "maternal_probiotic_009",
+      "query": "What was the pooled standard mean difference for pathogenic bacteria abundance in breast milk and which genus showed the most significant suppressive effect?",
+      "ground_truth_answer": "The pooled SMD of pathogenic bacteria in breast milk was -1.05 log10 CFU/mL (95% CI, -1.99 to -0.12; P=.03; I2=96.79%), indicating a significant suppressive effect of maternal probiotics on pathogenic bacteria. Subgroup analysis by genus category showed that probiotics had the most significant suppressive effect on Staphylococcus (SMD, -1.14; 95% CI, -2.15 to -0.13), with substantial reduction in heterogeneity among aerobes and anaerobes.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_probiotic_010",
+      "query": "How did the timing of probiotic intervention initiation (pregnancy vs. lactation) affect the beneficial bacteria abundance in breast milk?",
+      "ground_truth_answer": "Subgroup analysis showed that mothers who started the probiotic intervention during pregnancy had a notably higher SMD for beneficial bacteria abundance in breast milk (SMD, 1.98 log10 CFU/mL; 95% CI, 0.59 to 3.38) compared to the overall pooled estimate (SMD, 1.22 log10 CFU/mL; 95% CI, 0.48 to 1.97). This suggests that earlier initiation of probiotic supplementation during pregnancy may yield a greater enrichment of beneficial bacteria in breast milk than initiation during lactation alone.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "comparison"
+    },
+    {
+      "id": "maternal_probiotic_011",
+      "query": "What role does breast milk play in the cognitive and immune development of infants beyond microbiome transfer?",
+      "ground_truth_answer": "Beyond microbiome transfer, breast milk contributes to physiological immune system programming in newborns by translocating cytokines, maternal antibodies, and T-cells from the mother. It also benefits cognitive and intellectual capacity development, psycho-affective maturation, and mother-infant bonding. The early-life microbiome established through breast milk regulates the development of the cognitive and immune systems during the perinatal period and determines the occurrence of diseases, including metabolic disorders, throughout life.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "maternal_probiotic_012",
+      "query": "What was the effect of maternal probiotic supplementation on infant weight gain and what is the proposed molecular mechanism linking probiotics to obesity risk reduction?",
+      "ground_truth_answer": "Infants in the control group had approximately 490 g excess weight gain compared to those in the probiotic group at the sixth month after birth (SMD, -0.49 kg/equivalent age; 95% CI, -0.82 to -0.17; I2=0.00%; P=.00). The proposed molecular mechanism involves DNA methylation: a study by Vähämiko et al. indicated that the weight gain reduction and lower risk of obesity may be associated with altered DNA methylation status of certain promoters of obesity and weight gain-related genes in both women and their infants, suggesting that probiotics may exert epigenetic effects that modulate metabolic programming.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "maternal_probiotic_013",
+      "query": "Compare the heterogeneity levels across the different meta-analytic outcomes in this study and discuss what this implies for interpreting the pooled estimates.",
+      "ground_truth_answer": "There was substantial variation in heterogeneity across outcomes. For beneficial bacteria detection rate in breast milk (I2=91.12%) and beneficial bacteria abundance in breast milk (I2=95.51%) and pathogenic bacteria in breast milk (I2=96.79%) and infant gut beneficial bacteria (I2=95.01%), heterogeneity was very high, suggesting considerable variability across studies likely due to differences in probiotic strains, dosages, intervention durations, health status of participants, and geographic settings. In contrast, infant weight gain (I2=0.00%) and infantile colic (I2=0.00%) showed no heterogeneity, indicating consistent effects across studies. The high heterogeneity in microbiome-related outcomes means the pooled SMD estimates should be interpreted with caution as average effects across heterogeneous conditions, rather than as precise universal magnitudes. Meta-regression for intervention initiation time, region, health status, and duration did not identify the source of heterogeneity in most outcomes.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "maternal_probiotic_014",
+      "query": "What are the key methodological limitations of this meta-analysis that could affect the reliability and generalizability of its findings?",
+      "ground_truth_answer": "Several key limitations were identified. First, the search was limited to electronic databases, potentially missing unpublished or grey literature. Second, there was uncontrollable high heterogeneity across microbiome outcomes that could not be explained by meta-regression, partly due to large variation in sample sizes (9 to 251 in probiotic groups and 7 to 152 in control groups). Third, important confounders such as maternal dietary pattern, mode of delivery, and breastfeeding practice were not investigated due to lack of data. Fourth, whether infants were directly breastfed or fed pumped milk was not specified, which constitutes a biological confounding factor since the breast milk microbiome differs between these two methods. Fifth, the pooling of effects across various probiotic species (some studies used multistrains like VSL#3 with 8 strains, others used single strains) limits species-specific conclusions. Publication bias was detected by Egger's test for beneficial bacteria detection rate and abundance outcomes, though trim-and-fill analyses were conducted.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "maternal_probiotic_015",
+      "query": "How does the duration of probiotic intervention affect beneficial bacteria abundance in breast milk, and what duration threshold showed significant effects in subgroup analysis?",
+      "ground_truth_answer": "Subgroup analysis of the mean effect size by duration of intervention showed that a significant effect was observed among groups who took the probiotic for more than 4 weeks (SMD, 1.35 log10 CFU/mL; 95% CI, 0.38 to 2.31). Figure 5 illustrates that the mean beneficial bacterial load in breast milk among the probiotic-supplemented group progressively diverges from the control group as the duration of intervention increases. However, meta-regression for duration of intervention did not reveal it as a statistically significant source of heterogeneity (P=.29), suggesting that while longer durations trend toward greater effects, duration alone may not fully explain the variability across studies.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+  "mcq_questions": [
+    {
+      "id": "maternal_probiotic_mcq_001",
+      "question": "According to the PRISMA flow chart, how many articles were included in the final systematic review?",
+      "options": [
+        "A) 21 articles",
+        "B) 24 articles",
+        "C) 49 articles",
+        "D) 2965 articles"
+      ],
+      "correct_answer": "B",
+      "explanation": "From 2965 initially identified articles, 321 duplicates were removed, leaving 2644 screened articles. After full-text review of 49 articles, 25 were excluded by eligibility criteria, leaving 24 articles included in the systematic review (21 in the meta-analysis).",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_probiotic_mcq_002",
+      "question": "What tool was used to assess the risk of bias across the included randomized controlled trials?",
+      "options": [
+        "A) Newcastle-Ottawa Scale (NOS)",
+        "B) GRADE framework",
+        "C) Risk of Bias 2 (RoB-2) tool",
+        "D) Cochrane Collaboration Risk of Bias Tool (RoB-1)"
+      ],
+      "correct_answer": "C",
+      "explanation": "The Risk of Bias 2 (RoB-2) tool was used to assess the methodological quality of the included studies across 5 domains. Overall, 95.8% of studies had a low risk of bias, one study (Bisanz et al., open-label) had high risk, and two studies had some concerns.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_probiotic_mcq_003",
+      "question": "Which geographic region contributed the most studies to this systematic review?",
+      "options": [
+        "A) Asia (Japan, Korea, Indonesia)",
+        "B) Europe (Spain, Finland, Norway, Italy, Sweden)",
+        "C) Oceania (Australia)",
+        "D) Africa (Tanzania)"
+      ],
+      "correct_answer": "B",
+      "explanation": "The majority of included studies were from Europe: 7 from Spain, 4 from Finland, 2 from Norway, 2 from Italy, and 1 from Sweden — totaling 16 out of 24 studies. The remaining studies came from Australia (2), Indonesia, Iran, Korea, Turkey, Japan, and Tanzania (1 each).",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_probiotic_mcq_004",
+      "question": "What was the standard mean difference (SMD) for beneficial bacteria abundance in the infant gut stool of infants whose mothers received probiotic supplementation?",
+      "options": [
+        "A) 0.49 log10 CFU/g (95% CI, 0.82 to 0.17)",
+        "B) 1.22 log10 CFU/mL (95% CI, 0.48 to 1.97)",
+        "C) 0.89 log10 CFU/g (95% CI, 0.22 to 1.56)",
+        "D) 1.05 log10 CFU/mL (95% CI, 1.99 to 0.12)"
+      ],
+      "correct_answer": "C",
+      "explanation": "The mean probiotic bacterial abundance in the stools of infants whose mothers received probiotic supplements was 0.89 log10 CFU/g (95% CI, 0.22 to 1.56; P=.01) more than the controls, with I2=95.01% indicating substantial heterogeneity.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_probiotic_mcq_005",
+      "question": "Which statistical model was used for all summary measures in this meta-analysis, and what was the primary reason for this choice?",
+      "options": [
+        "A) Fixed-effects model, because the studies used identical probiotic strains",
+        "B) Random-effects model, to account for expected variability across studies",
+        "C) Bayesian hierarchical model, to incorporate prior probabilities",
+        "D) Mixed-effects model, to handle both fixed and random variables"
+      ],
+      "correct_answer": "B",
+      "explanation": "A random-effects model was used for all summary measures. This is the appropriate choice given the considerable heterogeneity observed across studies (I2 values reaching 91–97% for microbiome outcomes), reflecting true variability in the underlying effects due to differences in probiotic strains, dosages, populations, and settings.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "maternal_probiotic_mcq_006",
+      "question": "In the study by Arroyo et al. (2010), what was the comparator used in the control group, making it methodologically distinct from most other included trials?",
+      "options": [
+        "A) Placebo capsule",
+        "B) Standard diet without supplementation (follow-up only)",
+        "C) Antibiotics",
+        "D) A different probiotic strain"
+      ],
+      "correct_answer": "C",
+      "explanation": "Arroyo et al. (2010) compared Lactobacillus fermentum or L. salivarius against antibiotics in lactating women with illness (infectious mastitis), making it one of the few trials where the control was an active treatment (antibiotics) rather than a placebo or follow-up. This reflects the study's focus on probiotics as an alternative to antibiotic therapy for mastitis.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_probiotic_mcq_007",
+      "question": "What was the key finding from the Vähämiko et al. (2019) study that provided a molecular explanation for the weight regulation effect of prenatal probiotics?",
+      "options": [
+        "A) Probiotics increased leptin receptor expression in infant adipose tissue",
+        "B) Probiotic supplementation was associated with altered DNA methylation of obesity-related gene promoters in mothers and infants",
+        "C) Probiotics increased the abundance of short-chain fatty acid-producing bacteria linked to satiety",
+        "D) Maternal probiotics reduced maternal gestational weight gain, limiting nutrient transfer to the fetus"
+      ],
+      "correct_answer": "B",
+      "explanation": "Vähämiko et al. (2019) found that the weight gain reduction and lower risk of obesity associated with probiotic supplementation may be linked to altered DNA methylation status of certain promoters of obesity and weight gain-related genes, both in women and their infants. This epigenetic mechanism represents a plausible molecular pathway through which perinatal probiotics may have lasting metabolic effects.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "maternal_probiotic_mcq_008",
+      "question": "What effect measure was used for the beneficial bacteria detection rate in breast milk, and why was it preferred over relative risk?",
+      "options": [
+        "A) Odds ratio, because it is the standard for binary outcomes in meta-analyses",
+        "B) Risk difference, to express the absolute increase in detection probability in the probiotic group",
+        "C) Hazard ratio, to account for time-to-detection differences",
+        "D) Standardized mean difference, to allow pooling across studies with different scales"
+      ],
+      "correct_answer": "B",
+      "explanation": "Risk difference (RD) was used to measure the effect of the intervention on beneficial bacteria detection rate in breast milk, resulting in an RD of 0.24 (24% absolute increase in detection probability). Risk difference directly communicates the absolute probability difference, which is more interpretable for clinical application than relative risk in this context, particularly when baseline detection rates vary across studies.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "maternal_probiotic_mcq_009",
+      "question": "Among the following combinations of effect size and confidence interval reported in this meta-analysis, which outcome showed NO statistically significant publication bias by Egger's test?",
+      "options": [
+        "A) Beneficial bacteria detection rate in breast milk (Egger P<.001)",
+        "B) Beneficial bacteria abundance in breast milk (Egger P=.03)",
+        "C) Pathogenic bacteria abundance in breast milk (Egger P=.01)",
+        "D) Beneficial bacteria abundance in infant stool (Egger P=.34)"
+      ],
+      "correct_answer": "D",
+      "explanation": "The Egger's test for beneficial bacteria abundance in infant stool yielded P=.34, indicating no significant publication bias, and therefore trim-and-fill analysis was not required. In contrast, all breast milk microbiome outcomes showed significant publication bias: detection rate (P<.001), beneficial bacteria abundance (P=.03), and pathogenic bacteria abundance (P=.01), all necessitating trim-and-fill analyses.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "maternal_probiotic_mcq_010",
+      "question": "What is the theoretical basis for why maternal ORAL probiotic supplementation can influence the breast milk microbiome, according to the gut-breast axis model?",
+      "options": [
+        "A) Probiotic bacteria pass directly into the bloodstream and filter into breast milk via passive diffusion",
+        "B) Probiotic bacteria colonize the skin around the nipple and contaminate expressed milk",
+        "C) Dendritic cells in the gut capture probiotic bacteria and transport them via the lymphatic system to the mammary glands, a process termed the entero-mammary pathway",
+        "D) Probiotic metabolites alter hormonal signaling that directly controls mammary gland microbiome composition"
+      ],
+      "correct_answer": "C",
+      "explanation": "The entero-mammary pathway is the mechanistic foundation for why oral probiotics can modify breast milk microbiome. Dendritic cells in the gut sample luminal bacteria (including administered probiotics) and smuggle them from the gut to the mammary epithelium via the lymphatic and circulatory systems. This plays an essential role in programming the mammary system to establish the nutritional, microbiological, immunologic, and neuroendocrine requirements for the newborn, and is supported by evidence that precolostrum bacteria resemble common infant oral bacteria.",
+      "expected_documents": [
+        "Effects_of_maternal_probiotic_supplementation_on_breast_milk_microbiome_and_infant_gut_microbiome_and_health.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

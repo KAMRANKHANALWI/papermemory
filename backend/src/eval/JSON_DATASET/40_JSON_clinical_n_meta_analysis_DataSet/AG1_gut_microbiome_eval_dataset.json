@@ -1,0 +1,289 @@
+{
+  "source_document": "PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf",
+  "paper_title": "The effects of AG1® supplementation on the gut microbiome of healthy adults: a randomized, double-blind, placebo-controlled clinical trial",
+  "authors": "La Monica MB, Raub B, Hartshorn S, Gustat AL, Grdic J, Kirby TO, Townsend JR, Sandrock J, Ziegenfuss TN",
+  "journal": "Journal of the International Society of Sports Nutrition, 2024, Vol. 21, No. 1",
+  "test_cases": [
+    {
+      "id": "ag1_microbiome_001",
+      "query": "What is AG1® and what category of dietary supplement does it belong to?",
+      "ground_truth_answer": "AG1® is a novel synbiotic dietary supplement blend that includes vitamins, minerals, prebiotics, probiotics, and phytonutrients. As a synbiotic, it combines both prebiotics and probiotics, which together amplify and promote health benefits to the host.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ag1_microbiome_002",
+      "query": "How many participants completed the AG1® clinical trial and what was their demographic breakdown?",
+      "ground_truth_answer": "30 healthy adults completed all study visits — 15 men and 15 women. They were randomized equally, with 15 participants in the AG1® group (7 men, 8 women; mean age 39.2 ± 8.6 years) and 15 in the placebo group (8 men, 7 women; mean age 38.1 ± 9.2 years). All participants were between 18 and 50 years of age with a BMI of 18.5–29.9 kg/m².",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ag1_microbiome_003",
+      "query": "What was the placebo used in this trial and why is its validity as a control questioned?",
+      "ground_truth_answer": "The placebo consisted of 12 grams of maltodextrin plus flavoring. Its validity as a placebo control is questioned because previous reports suggest that maltodextrin is not entirely inert and itself exhibits an effect on the gut microbiome. Despite this limitation, maltodextrin remains the most commonly utilized placebo in similar studies. The authors acknowledged this as a limitation and suggested future studies use an alternative placebo when assessing functional and structural changes in the gut microbiome.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ag1_microbiome_004",
+      "query": "What were the two probiotic taxa specifically enriched by AG1® supplementation and why was their enrichment expected?",
+      "ground_truth_answer": "AG1® supplementation enriched Lactobacillus acidophilus and Bifidobacterium bifidum. Their enrichment was expected because these are the same probiotic species that exist in the AG1® product itself. This finding confirmed that the probiotics in AG1® were able to survive GI passage and successfully reach the large intestine, demonstrating viability through the gastrointestinal tract.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ag1_microbiome_005",
+      "query": "What diversity indices were used to assess alpha diversity in this study and what were the main findings?",
+      "ground_truth_answer": "Alpha diversity was assessed using the Shannon Diversity Index and the Chao1 Diversity Index. The main findings were: there was no significant interaction between time and treatment for either the Shannon (p = 0.589) or Chao1 (p = 0.547) indices. The Shannon index showed a significant main effect of time (p = 0.03) but not for treatment (p = 0.686). The Chao1 index yielded no significant effect of time (p = 0.21) or treatment (p = 0.721). Overall, alpha diversity did not change significantly in either group, consistent with prior research on probiotics administered to healthy individuals.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ag1_microbiome_006",
+      "query": "What was the compliance rate among participants in this study and how was adherence monitored?",
+      "ground_truth_answer": "Most subjects were greater than 96% compliant with the supplement regimen, with two participants exceeding 89% compliance. Adherence was monitored through two mechanisms: participants were given a supplement sign-off sheet to record their daily compliance using an easily viewable 4-week check-off diagram, and they were instructed to return their empty sachets as proof of compliance and adherence.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ag1_microbiome_007",
+      "query": "Explain the mechanism by which prebiotics in AG1® may contribute to gut barrier integrity through their interaction with enriched taxa.",
+      "ground_truth_answer": "The prebiotics and phytonutrients in AG1® may act as metabolic substrates for enriched taxa. These taxa are linked to increased SCFA production and the ability to cleave glycosidic residues from complex carbohydrate species, producing beneficial metabolites through carbohydrate fermentation. These enriched taxa may exert an immune-modulatory effect through interaction with toll-like receptor 2, which plays a role in maintaining intestinal epithelial barrier integrity. This may subsequently result in improved GI permeability and enhancement of the GI barrier through upregulation of tight junction proteins or protein kinase signaling pathways that lead to the formation of tight junctions.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ag1_microbiome_008",
+      "query": "Why did the researchers use LEfSe analysis rather than relying solely on PERMANOVA for assessing microbiome changes, and what did each method reveal?",
+      "ground_truth_answer": "PERMANOVA analysis of beta diversity showed no statistically significant differences between the AG1® and placebo groups at baseline (p = 0.105, R² = 0.03762) or at the end of the experimental period (p = 0.119, R² = 0.03764), with approximately 96% of the variation explained by another variable — primarily the individual donor effect (~91%). Despite the PLS-DA ordination showing clear clustering around both treatment group and time point, PERMANOVA could not attribute this heterogeneity to treatment. LEfSe was therefore employed because it is the only method that provides a direct assessment of the treatment effect on microbiome structure, allowing identification of specific taxa acting as biomarkers for differences before and after intervention. LEfSe revealed four taxa enriched and one diminished in the AG1® group, while six were enriched and five diminished in the placebo group.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ag1_microbiome_009",
+      "query": "What functional pathways were enriched in the AG1® group and what were the functional changes observed in the placebo group?",
+      "ground_truth_answer": "In the AG1® group, two functional pathways were enriched: palmitate biosynthesis type I fatty acid synthase (MetaCyc, PWY_5994) and guanosine ribonucleotides de novo biosynthesis (MetaCyc, PWY_7221), while no pathways were diminished. In contrast, the placebo group had six functional pathways enriched while five were diminished. These included pathways related to menaquinol biosynthesis (enriched) and pyrimidine deoxyribonucleotide and inosine-related pathways (diminished). PERMANOVA analysis showed no significant difference in predicted metabolic function between the two groups (p = 0.434, R² = 0.03285).",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ag1_microbiome_010",
+      "query": "How did AG1® supplementation affect the Digestion-associated Quality of Life Questionnaire (DQLQ) score compared to the placebo, and what does this instrument measure?",
+      "ground_truth_answer": "The DQLQ is a 9-item questionnaire that assesses how often digestive symptoms interfere with quality of life over the past seven days, capturing associations between digestive symptoms and physical activity, dietary intake, worries or concerns, emotional well-being, social interaction, and physical appearance. Scores range from 0 to 9, with higher scores indicating worse digestion-associated quality of life. While no statistically significant group-by-time interaction was found (p = 0.057 trend), there was a trend for differences between groups in the DQLQ change score (mean difference = 0.71, 95% CI: -0.025 to 1.44, p = 0.058, d = 0.73). AG1® improved DQLQ scores by 62.5% while the placebo group showed a 50% reduction (worsening) from baseline to week 4.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ag1_microbiome_011",
+      "query": "What role does the individual donor effect play in interpreting the beta diversity findings of this study?",
+      "ground_truth_answer": "The individual donor effect was found to explain approximately 91% of the variation in microbiome community structure, while only approximately 4% was attributable to treatment group differences (R² ≈ 0.038). This massive inter-individual variability meant that despite PLS-DA ordination showing clear clustering by treatment group and time point, PERMANOVA could not detect statistically significant differences between the AG1® and placebo groups — approximately 96% of total variation was explained by variables other than treatment. This finding underscores a fundamental challenge in human microbiome research: baseline individuality of the gut microbiota can overwhelm treatment signals, particularly in small sample sizes, necessitating approaches like LEfSe to detect within-group treatment-related changes.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ag1_microbiome_012",
+      "query": "What clinical safety markers showed significant interactions in the placebo group but not in the AG1® group, and what is the clinical implication of this finding?",
+      "ground_truth_answer": "Two significant group-by-time interactions were observed exclusively in the placebo group: creatinine increased from baseline to week four by approximately 6.7% (mean difference = -0.053 mg/dL, 95% CI: -0.097 to -0.008, p = 0.020, d = 0.72), and estimated Glomerular Filtration Rate (eGFR) decreased from baseline by approximately 5.6% (mean difference = 5.6 mL/min/1.73, 95% CI: 0.27 to 10.9, p = 0.038, d = 0.64). There was also an interaction trend for elevated bilirubin in the placebo group (p = 0.086). These changes in the placebo group — but not the AG1® group — support the clinical safety profile of AG1® and further underscore concerns about maltodextrin's validity as an inert placebo, since the substance itself appeared to elicit metabolic changes.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ag1_microbiome_013",
+      "query": "How does the strain-specific effect observed within Faecalibacterium prausnitzii after AG1® supplementation reflect the complexity of probiotic interventions, and why is F. prausnitzii clinically significant?",
+      "ground_truth_answer": "After correcting for baseline differences, 19 taxa were enriched and 21 were diminished within the AG1®-treated group. Notably, within F. prausnitzii specifically, AG1® appeared to elicit a strain-specific effect where four distinct strains were either enriched or diminished over the experimental period — illustrating that probiotic and synbiotic interventions do not uniformly increase or decrease a species but can selectively modulate individual strains within the same species. Clinically, F. prausnitzii is particularly significant for its ability to produce butyrate, a short-chain fatty acid closely linked to GI health. Its abundance can serve as a biomarker of intestinal health, as depletion of F. prausnitzii has been associated with multiple health complications including diabetes, IBS, IBD, and metabolic syndrome, though the causal direction of this relationship is not yet fully understood.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "ag1_microbiome_014",
+      "query": "Compare the microbiome stability effects of AG1® versus the maltodextrin placebo, and explain how this difference relates to broader concepts of dysbiosis and health.",
+      "ground_truth_answer": "The AG1® group showed enrichment of four taxa and diminishment of one, reflecting a relatively contained and directional effect on the microbiome. In contrast, the placebo (maltodextrin) group had six taxa enriched and five diminished in the taxonomic analysis, and six functional pathways enriched while five were diminished — indicating greater bidirectional instability. The authors argue that AG1® may be better able to stabilize the gut microbiome than maltodextrin. This distinction is clinically meaningful because the gut microbiome is constantly subjected to stressors such as poor diet, lack of exercise, stress, and environmental toxins that can lead to a dysbiotic state — an imbalance linked to chronic health conditions including obesity, diabetes, and cardiovascular disease. A supplement that stabilizes the microbiome rather than introducing net variability would theoretically confer greater protective benefit against dysbiosis, although the sample size and study duration limit firm conclusions.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "ag1_microbiome_015",
+      "query": "Critically evaluate the translational gap between the preclinical SHIME model findings and the in vivo clinical results of AG1® on the gut microbiome, highlighting which effects were replicated and which were not.",
+      "ground_truth_answer": "Preclinical data from the SHIME (Simulator of the Human Intestinal Microbial Ecosystem) model showed that AG1® exerts a prebiotic effect by increasing total SCFA production, enriching beneficial bacteria such as F. prausnitzii, Microcoleaceae, Waltera intestinalis, and Arthrospira, and producing beneficial shifts in the polar fecal metabolome including serotonin metabolism pathway metabolites. The in vivo RCT partially replicated these findings: probiotics L. acidophilus and B. bifidum were successfully enriched (indicating GI survival), additional health-promoting taxa associated with SCFA production were also enriched, and the two enriched functional pathways are consistent with metabolic activity. However, the in vivo study did not directly measure SCFA production, transcriptomic, or metabolomic changes — which the authors themselves identify as a key limitation. The serotonin pathway effects observed preclinically remain unconfirmed in vivo. Furthermore, the SHIME model is an ex vivo system with inherent limitations in replicating the full complexity of in vivo human GI physiology, including host immune interactions, intestinal motility, and absorption dynamics, which explains why not all preclinical signals translated quantitatively to human outcomes.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "ag1_microbiome_016",
+      "query": "Assess the conflict of interest landscape of this study and discuss how it should affect interpretation of the results.",
+      "ground_truth_answer": "The study was funded in part by AG1 (Athletic Greens International). Two of the authors — Trevor O. Kirby and Jeremy R. Townsend — are employees of Athletic Greens International, and both J.R.T. and T.N.Z. have received funding from dietary supplement companies for research, honoraria for speaking at conferences, and fees for writing articles and consulting. However, the authors disclosed that the funders had no role in the collection, analyses, or interpretation of questionnaire data, clinical safety markers, or adverse events. From an interpretive standpoint, industry funding and author employment relationships represent a meaningful risk of bias, particularly in how findings are framed and which analyses are emphasized. The statistically non-significant DQLQ trend (p = 0.058) being reported as a noteworthy 62.5% improvement is one area where framing could be questioned. Readers should weigh these findings alongside independent replications, and the study design itself — double-blind, randomized, placebo-controlled with pre-specified endpoints registered on clinicaltrials.gov — does partially mitigate these concerns.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "critical_appraisal"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "ag1_mcq_001",
+      "question": "What percentage of US adults reported using non-food prebiotic, probiotic, or synbiotic products according to the cross-sectional data cited in this study?",
+      "options": [
+        "A) 1 in 10 (10%)",
+        "B) 1 in 20 (5%)",
+        "C) 1 in 5 (20%)",
+        "D) 1 in 50 (2%)"
+      ],
+      "correct_answer": "B",
+      "explanation": "The paper states that according to current data, 1 in 20 people in the US report using non-food pre, pro, or synbiotic products.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ag1_mcq_002",
+      "question": "What was the Bristol stool chart score range considered to represent normal stools?",
+      "options": [
+        "A) 1–2",
+        "B) 2–5",
+        "C) 3–4",
+        "D) 4–6"
+      ],
+      "correct_answer": "C",
+      "explanation": "According to the study, the Bristol stool chart uses a 7-option scale where scores of 3–4 are considered normal stools. Low scores suggest constipation and high scores suggest diarrhea.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ag1_mcq_003",
+      "question": "How many items does the Digestion-associated Quality of Life Questionnaire (DQLQ) contain, and what does a higher score indicate?",
+      "options": [
+        "A) 7 items; higher score indicates better quality of life",
+        "B) 9 items; higher score indicates worse digestion-associated quality of life",
+        "C) 12 items; higher score indicates more frequent bowel movements",
+        "D) 9 items; higher score indicates better digestive health"
+      ],
+      "correct_answer": "B",
+      "explanation": "The DQLQ is a 9-item questionnaire with possible scores ranging from 0 to 9. A higher score indicates worse digestion-associated quality of life, as it captures how frequently digestive symptoms interfere with daily activities.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ag1_mcq_004",
+      "question": "What LDA score threshold was applied in the LEfSe analysis to report key biomarker taxa in this study?",
+      "options": [
+        "A) Greater than 0.5 with p < 0.10",
+        "B) Greater than 1.0 with p < 0.05",
+        "C) Greater than 1.5 with p < 0.05",
+        "D) Greater than 2.0 with p < 0.01"
+      ],
+      "correct_answer": "C",
+      "explanation": "The study applied a threshold of LDA score greater than 1.5 combined with associated p-values less than 0.05 for reporting key biomarker features in taxonomic relative abundance and functional pathway counts via LEfSe analysis.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "methodology"
+    },
+    {
+      "id": "ag1_mcq_005",
+      "question": "Which taxon was significantly diminished in the AG1® group following 4 weeks of supplementation?",
+      "options": [
+        "A) Faecalibacterium prausnitzii",
+        "B) Clostridium sp000435835",
+        "C) Roseburia hominis",
+        "D) Eubacterium ventriosum"
+      ],
+      "correct_answer": "B",
+      "explanation": "Within the AG1® group, LEfSe analysis identified four enriched taxa (L. acidophilus, B. bifidum, Acetatifactor sp900066565 ASM1486575v1, and L. lactis CH_LC01) and one diminished taxon: Clostridium sp000435835.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ag1_mcq_006",
+      "question": "What statistical method was used to visualize beta diversity in taxonomic abundances and functional pathways in this study?",
+      "options": [
+        "A) Principal Component Analysis (PCA)",
+        "B) Partial Least Squares-Discriminant Analysis (PLS-DA)",
+        "C) Non-metric Multidimensional Scaling (NMDS)",
+        "D) Uniform Manifold Approximation and Projection (UMAP)"
+      ],
+      "correct_answer": "B",
+      "explanation": "Beta diversity in taxonomic abundances and functional pathways was visualized using Partial Least Squares-Discriminant Analyses (PLS-DA) using the mixOmics R package, and statistically evaluated by PERMANOVA (adonis approach).",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "methodology"
+    },
+    {
+      "id": "ag1_mcq_007",
+      "question": "Approximately what percentage of the microbiome community structure variation was explained by the individual donor effect in this study?",
+      "options": [
+        "A) 40%",
+        "B) 65%",
+        "C) 91%",
+        "D) 96%"
+      ],
+      "correct_answer": "C",
+      "explanation": "The effect of the donor was analyzed and found to explain approximately 91% of the variation in microbiome community structure. The study noted that approximately 96% of total variation was explained by variables other than treatment group, with the donor effect being the dominant factor at ~91%.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ag1_mcq_008",
+      "question": "What power level did the study achieve based on the observed effect size from the DQLQ outcome?",
+      "options": [
+        "A) 80%",
+        "B) 87%",
+        "C) 93%",
+        "D) 97%"
+      ],
+      "correct_answer": "D",
+      "explanation": "The authors stated that given the observed effect size in the study based on the DQLQ outcome, they achieved a statistical power of 97%, indicating the study was adequately powered to detect meaningful differences in this primary quality-of-life outcome.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "methodology"
+    },
+    {
+      "id": "ag1_mcq_009",
+      "question": "Which of the following best describes why the enrichment of L. acidophilus and B. bifidum in the AG1® group carries particular significance beyond simple taxonomic change?",
+      "options": [
+        "A) These species are not normally found in the human gut, making their presence a sign of microbial colonization from the product.",
+        "B) Their enrichment confirms that the probiotics in AG1® survive GI passage to reach the distal GI tract, and both species have clinical evidence for increasing SCFA production, improving IBS symptoms, and enhancing quality of life.",
+        "C) They are the most abundant bacteria in the human gut microbiome and their increase directly predicts improved alpha diversity.",
+        "D) These species specifically degrade maltodextrin, explaining the difference between groups in terms of placebo metabolism."
+      ],
+      "correct_answer": "B",
+      "explanation": "The enrichment of L. acidophilus and B. bifidum confirms probiotic survival through GI passage to the large intestine. These strains have demonstrated in clinical trials the ability to positively shift the microbiome, increase SCFA production (e.g. butyrate and acetate), improve IBS symptoms and stool consistency, and enhance overall quality of life by reducing pain, bloating, urgency, and digestive discomfort.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "ag1_mcq_010",
+      "question": "Which of the following most accurately characterizes the difference between the AG1® and placebo groups in terms of functional pathway changes, and what is the best interpretation of this finding?",
+      "options": [
+        "A) Both groups showed identical patterns of functional pathway enrichment, suggesting AG1® has no unique effect on microbial function.",
+        "B) AG1® enriched two functional pathways and diminished none, while the placebo enriched six and diminished five, suggesting AG1® may confer greater metabolic stability to the gut microbiome.",
+        "C) The placebo enriched more pathways than AG1®, indicating that maltodextrin has a stronger prebiotic effect than AG1®.",
+        "D) AG1® enriched ten functional pathways and diminished three, indicating a broad metabolic reprogramming of the gut microbiome."
+      ],
+      "correct_answer": "B",
+      "explanation": "AG1® enriched exactly two functional pathways (palmitate biosynthesis type I and guanosine ribonucleotides de novo biosynthesis) while diminishing none. The placebo group had six enriched and five diminished pathways. The authors interpret this as evidence that AG1® may better stabilize the gut microbiome compared to maltodextrin, since the placebo showed greater bidirectional instability in functional pathways. This aligns with the broader conclusion about microbiome stability being important for preventing dysbiosis.",
+      "expected_documents": ["PMC11445888_The_effects_of_AG1_supplementation_on_the_gut_microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    }
+  ]
+}

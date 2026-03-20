@@ -1,0 +1,331 @@
+{
+  "source_document": "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf",
+  "paper_title": "Gut microbiome modulates the effects of a personalised postprandial-targeting (PPT) diet on cardiometabolic markers: a diet intervention in prediabetes",
+  "authors": "Ben-Yacov O, Godneva A, Rein M, Shilo S, Lotan-Pompan M, Weinberger A, Segal E",
+  "journal": "Gut 2023;72:1486–1496",
+  "test_cases": [
+    {
+      "id": "ppt_gut_001",
+      "query": "What type of study design was used in this dietary intervention?",
+      "ground_truth_answer": "The study was a biphasic, randomised, controlled, single-blind dietary intervention. Phase 1 included a 6-month dietary intervention comparing two diets targeting glycaemic control, while Phase 2 included a 6-month follow-up period. Participants were randomly assigned in a 1:1 ratio to either a Mediterranean (MED) diet or a personalised postprandial-targeting (PPT) diet.",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ppt_gut_002",
+      "query": "What were the inclusion criteria for participants in this study?",
+      "ground_truth_answer": "Inclusion criteria were: (1) fasting plasma glucose (FPG) levels between 100–125 mg/dL (5.6–6.9 mmol/L), (2) HbA1c level between 5.7–6.5% (39–48 mmol/mol), (3) age of 18–65 years, and (4) capability to work with a smartphone app on a daily basis for dietary intake logging. All volunteers self-reported pre-diabetes and were recruited from Israel.",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ppt_gut_003",
+      "query": "How many participants completed the intervention and how was gut microbiome data collected?",
+      "ground_truth_answer": "200 participants completed the 6-month dietary intervention. Gut microbiome data was obtained from shotgun metagenomics sequencing of faecal samples collected at baseline and at 6 months. Stool samples were collected at home using an OMNIgene GUT stool collection kit, stored in a home freezer at -18°C, then transferred to -20°C at the trial site pending DNA extraction.",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ppt_gut_004",
+      "query": "What is the PPT diet and what algorithm underpins it?",
+      "ground_truth_answer": "The PPT (personalised postprandial-targeting) diet is a personalised dietary approach based on a machine-learning algorithm for predicting personal postprandial glucose responses (PPGR) to meals. The algorithm integrates clinical and gut microbiome features, including anthropometrics, blood tests (FPG, HbA1c, haemoglobin), lifestyle features from questionnaires, and microbiome features (abundances of species and functional modules). Macronutrient composition was not predetermined for the PPT diet, and participants received real-time feedback through a smartphone app.",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ppt_gut_005",
+      "query": "What was the macronutrient composition prescribed for the Mediterranean diet arm in this trial?",
+      "ground_truth_answer": "The Mediterranean diet arm was designed with the following macronutrient composition: 45%–65% of energy intake from carbohydrates, 15%–20% from protein, and less than 35% from fat, with less than 10% from saturated fat. Recommended foods included whole-wheat bread and grains, legumes, low-fat dairy products, fish, poultry, olive oil, fruits and vegetables. Discouraged foods included commercial bakery goods, sweets, fried foods, fatty and processed meat, and high-fat dairy products.",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ppt_gut_006",
+      "query": "How did alpha-diversity change differently between the PPT and MED diet arms?",
+      "ground_truth_answer": "Microbiome alpha-diversity increased significantly in the PPT arm (p=0.007) but not in the MED arm (p=0.18). Similarly, microbiome richness (number of species) increased significantly more in the PPT arm (p=0.00017) than in MED arm (p=0.04). This was consistent with the overall greater dietary modifications observed in the PPT arm. However, the between-arm change difference in these high-level microbiome features was not statistically significant (Mann-Whitney test, p=0.55 and p=0.17 for diversity and richness, respectively).",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "comparison"
+    },
+    {
+      "id": "ppt_gut_007",
+      "query": "What was the role of Bifidobacterium adolescentis in the context of dietary fibre and arm assignment?",
+      "ground_truth_answer": "Bifidobacterium adolescentis, a bacterial species consistently linked in the literature to various dietary fibre intake, was significantly enriched in the MED arm following the intervention but not in the PPT arm. This was consistent with the observed increase in dietary fibre consumption by MED arm participants, since the MED diet promoted whole-grain foods and fibre intake. The PPT arm, by contrast, significantly decreased total dietary fibre intake (95% CI: −2.4 to −1.0 g/1000 kcal) due to its low-carbohydrate, high-fat dietary pattern.",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ppt_gut_008",
+      "query": "What is Flavonifractor plautii and why was it enriched in the PPT arm?",
+      "ground_truth_answer": "Flavonifractor plautii is a bacterium previously reported to participate in the metabolism of the flavonoid catechin in the gut. It was significantly enriched in the PPT arm following the intervention but not in the MED arm. The proposed mechanism is that PPT dieters significantly increased their consumption of catechin-rich foods such as dark chocolate, walnuts, almonds and cashews, which may have driven the enrichment in F. plautii. The relative abundance of F. plautii was also positively associated with almond consumption across the cohort at baseline. Additionally, oral administration of F. plautii has been reported to attenuate obesity-induced chronic inflammation in mice.",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ppt_gut_009",
+      "query": "How was the PPT adherence score calculated and how was it applied across the cohort?",
+      "ground_truth_answer": "The PPT adherence score was a composite score on a scale of 0–100 (worst to best) based on meal recommendation scores (1–5, best to worst). Each meal score was assigned an adherence score: score 1=100, score 2=80, score 3=50, score 4=25, score 5=0. These meal adherence scores were averaged calorie-wise, trimming meals to a 100–500 kcal interval to proportionally account for large versus small meals. As a post hoc analysis, the score was computed across the entire cohort regardless of arm assignment, allowing greater statistical power to assess PPT-based dietary approach effects on microbiome and clinical outcomes.",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ppt_gut_010",
+      "query": "What were the most substantial food category changes in the PPT arm compared to the MED arm?",
+      "ground_truth_answer": "In the PPT arm, the most substantial food category increases were in 'Nuts and Seeds' (95% CI 6.1%–8.1% kcal), 'Med Oil and Fats' (3.3%–4.7% kcal), 'Eggs and products' (2.6%–3.6% kcal), and 'Milk and Dairy' (2.3%–4.3% kcal). Decreases were largest in 'Refined-grains cooked side dishes' (−7.4% to −5.6% kcal) and 'Refined-grains Bread' (−7.4% to −5.2% kcal). In contrast, the MED arm's most substantial increases were in 'Whole-grains Bread' (5.5%–7.5% kcal) and 'Whole-grains cooked side dishes' (1.9%–2.9% kcal). Both arms increased vegetable intake and decreased refined-grains bread and sweets.",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "comparison"
+    },
+    {
+      "id": "ppt_gut_011",
+      "query": "What was the role of Alistipes onderdonkii in relation to PPT adherence and clinical outcomes?",
+      "ground_truth_answer": "The bacterial species Alistipes onderdonkii was positively associated with PPT adherence score and negatively associated with changes in clinical readouts of triglycerides, body weight, BMI and basal metabolic rate (BMR). This species was identified among 17 PPT adherence-associated species that were significantly changed between the diet arms. Notably, A. onderdonkii has also been recently suggested to suppress the proliferation of pancreatic primary cancer cells, indicating a potential broader role in health beyond cardiometabolic outcomes.",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ppt_gut_012",
+      "query": "Describe the full causal mediation framework used in this study and explain the findings for the three species mediating PPT adherence effects.",
+      "ground_truth_answer": "The study applied causal mediation analysis where changes in dietary features were treated as independent variables (X), changes in clinical outcomes as dependent variables (Y), and changes in microbiome species abundances as potential mediators (M). Age, gender and BMI change were treated as covariates. Out of 384 potential mediation paths, 30 significant mediation effects were found comprising 9 bacterial species. Three bacterial species from Bacteroidales, Lachnospiraceae, and Oscillospirales orders were found to partially mediate the association between PPT adherence score and clinical outcomes: HbA1c, HDL-cholesterol, and triglycerides. For example, Negativibacillus sp000435195 (Ruminococcaceae family) partially mediated PPT adherence on HDL-C (proportion mediated: 13%, ACME β=0.00025, p=0.036), and UBA11471 sp000434215 (Bacteroidales) partially mediated the effect of 'Med Oil and Fats' consumption on HbA1c (proportion mediated: 38%).",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "ppt_gut_013",
+      "query": "How did machine-learning models incorporating dietary changes and personal clinical data compare to baseline-only models in predicting cardiometabolic outcomes?",
+      "ground_truth_answer": "Four models were compared for each clinical outcome: (1) Basic — baseline levels only; (2) Personalised — all baseline clinical features plus age and gender; (3) Basic+Diet — baseline + dietary changes; (4) Personalised+Diet — all clinical baseline features + dietary changes. For 9 of 21 clinical outcomes, a diet-based model yielded significant prediction accuracy. For 8 outcomes, the Personalised+Diet model performed best: HDL-C (R=0.2, p=0.004), Trig/HDL-C (R=0.52, p<0.001), fructosamine (R=0.33, p<0.001), time>140 (R=0.64, p<0.001), mean CGM glucose (R=0.37, p<0.001), BMI (R=0.25, p<0.001), BMR (R=0.23, p=0.001), and body weight (R=0.2, p=0.005), demonstrating that combining personal clinical data with actual dietary changes substantially improves prediction of metabolic responses.",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "ppt_gut_014",
+      "query": "What was the significance of the bacterial species KLE1615 Unknown in the context of BMR prediction, and how was this validated?",
+      "ground_truth_answer": "KLE1615 Unknown (from the Lachnospiraceae family) showed a significant negative correlation (R=−0.26, p=0.0002) between its baseline levels and the difference between measured and predicted change in BMR outcome — meaning higher baseline levels of this species were associated with better actual clinical outcomes than the model predicted. This finding was validated in an independent cohort of 7,000 healthy adults (the '10K' cohort), where this species was negatively associated with BMI, body weight, hips, waist circumference, and triglycerides, and positively associated with HDL-C, vitamin B12 status, and dietary consumption of brazil nuts, pinenuts and walnuts. It had also been previously linked to nuts consumption and urinary urolithins in a Mediterranean diet intervention study, and urolithin production was negatively associated with triglycerides, body fat mass and BMI.",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "ppt_gut_015",
+      "query": "Why does the study describe CAG-81 sp000435795 as a 'controversial' finding, and what does this suggest about microbiome research?",
+      "ground_truth_answer": "CAG-81 sp000435795 (from Lachnospiraceae family) was reported in this study to mediate the effects of dietary modifications on glycaemic control outcomes (time>140 and mean CGM glucose). However, in the independent 10K cohort it showed inverse associations — being positively associated with adverse metabolic markers including triglycerides, ALT, blood glucose, HbA1c and BMI. Other studies similarly associated this species positively with a Fatty Liver Index and TMAO levels in urine. This discrepancy suggests that specific microbes may function differently in different ecological environments or metabolic contexts. The authors conclude this requires further investigation and underscores that cross-study replication in microbiome research is complex, as microbiome effects may be context-dependent rather than universally applicable.",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "ppt_gut_mcq_001",
+      "question": "How many participants completed the 6-month dietary intervention?",
+      "options": [
+        "A) 225",
+        "B) 191",
+        "C) 200",
+        "D) 113"
+      ],
+      "correct_answer": "C",
+      "explanation": "200 participants completed the 6-month dietary intervention. Of the original 225 adults with prediabetes screened, 200 completed the intervention (baseline characteristics summarised in the paper). A total of 382 stool samples from 191 participants were included in the microbiome analysis (94 PPT and 97 MED arm), as some participants did not have both baseline and 6-month stool samples.",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ppt_gut_mcq_002",
+      "question": "What is the primary dietary instrument used by participants to log their food intake during the study?",
+      "options": [
+        "A) Paper food diary submitted monthly",
+        "B) A designated smartphone application called 'Personalised Nutrition Project'",
+        "C) Weekly 24-hour dietary recall interviews with dietitians",
+        "D) A wearable metabolic sensor that detected food intake automatically"
+      ],
+      "correct_answer": "B",
+      "explanation": "Participants were asked to record their full dietary intake in real time every day for the full study period using a designated smartphone app called 'Personalised Nutrition Project' developed by the research team. Each food item was logged along with its weight or portion units, selected from a database of over 7,000 foods.",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ppt_gut_mcq_003",
+      "question": "What was the total number of bacterial species retained for analysis after filtering the metagenomic sequencing data?",
+      "options": [
+        "A) 382 species",
+        "B) 320 species",
+        "C) 296 species",
+        "D) 191 species"
+      ],
+      "correct_answer": "C",
+      "explanation": "After filtering by species present in at least 20% of samples, 320 species were obtained. Of these, 296 species that were present in both baseline and 6-month samples were included in the final analysis. Changes in microbiome features were calculated as log(RA_t6) − log(RA_t0).",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ppt_gut_mcq_004",
+      "question": "What was the significance threshold for alpha-diversity change in the PPT arm compared to the MED arm?",
+      "options": [
+        "A) PPT: p=0.18, MED: p=0.007",
+        "B) PPT: p=0.007, MED: p=0.04",
+        "C) PPT: p=0.007, MED: p=0.18",
+        "D) PPT: p=0.001, MED: p=0.18"
+      ],
+      "correct_answer": "C",
+      "explanation": "Alpha-diversity (Shannon's diversity index) increased significantly in the PPT arm (p=0.007) but not in the MED arm (p=0.18), based on a one-sided t-test. This was consistent with the overall greater dietary modifications observed in the PPT arm.",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ppt_gut_mcq_005",
+      "question": "Which machine learning framework was used to build the clinical outcome prediction models in this study?",
+      "options": [
+        "A) Random Forest using scikit-learn",
+        "B) Deep neural networks using TensorFlow",
+        "C) Gradient-boosted decision trees (GBDT) using LightGBM",
+        "D) Support vector machines using libSVM"
+      ],
+      "correct_answer": "C",
+      "explanation": "The study used gradient-boosted decision trees (GBDT) implemented via the LightGBM Python package (Sklearn._version_'1.0.2') with modified parameters: feature_fraction=0.6 and bagging_fraction=0.6. Five-fold cross-validation was generated six times for each predictor with different random states to estimate accuracy and calculate SE.",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ppt_gut_mcq_006",
+      "question": "How many bacterial species changed significantly within the PPT arm, and how does this compare to the MED arm?",
+      "options": [
+        "A) PPT: 33 species, MED: 69 species",
+        "B) PPT: 24 species, MED: 33 species",
+        "C) PPT: 69 species, MED: 33 species",
+        "D) PPT: 69 species, MED: 24 species"
+      ],
+      "correct_answer": "C",
+      "explanation": "69 bacterial species changed significantly within the PPT arm compared to 33 species in the MED arm (one-sided t-test, p<0.05, FDR corrected). Of these, 24 species showed significant differences between arms (Mann-Whitney test, p<0.05). The PPT diet thus induced significant changes to approximately 2-fold more species than the MED diet.",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ppt_gut_mcq_007",
+      "question": "In the macronutrient analysis, which of the following best describes the direction of dietary fat change in the PPT arm versus the MED arm?",
+      "options": [
+        "A) Both arms increased total dietary fat intake significantly",
+        "B) PPT arm decreased fat intake; MED arm increased fat intake",
+        "C) PPT arm increased all fat subtypes; MED arm decreased all fat subtypes",
+        "D) Neither arm showed significant changes in dietary fat"
+      ],
+      "correct_answer": "C",
+      "explanation": "In the PPT arm, intake of total dietary fat and all fat subtypes (SatFat, MUFA and PUFA) were all significantly increased: total fat (95% CI 12.8%–14.9% kcal), SatFat (2.8%–3.7%), MUFA (5.1%–6.3%), PUFA (3.5%–4.5%). In the MED arm, all fat subtypes were significantly decreased: total fat (95% CI −5% to −3.4%), SatFat (−2.1% to −1.4%), MUFA (−1.6% to −0.9%), PUFA (−1.1% to −0.4%).",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "comparison"
+    },
+    {
+      "id": "ppt_gut_mcq_008",
+      "question": "Which of the following clinical outcomes had the highest prediction correlation (R value) in the 'Personalised+Diet' machine learning model?",
+      "options": [
+        "A) HbA1c (R=0.52)",
+        "B) BMI (R=0.64)",
+        "C) Time>140 glucose (R=0.64)",
+        "D) Trig/HDL-C ratio (R=0.64)"
+      ],
+      "correct_answer": "C",
+      "explanation": "Among all clinical outcomes tested, time>140 (daily time of glucose levels above 140 mg/dL) had the highest prediction correlation in the Personalised+Diet model with R=0.64, p<0.001. Trig/HDL-C had R=0.52, fructosamine R=0.33, mean CGM glucose R=0.37, and BMI R=0.25.",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ppt_gut_mcq_009",
+      "question": "What proportion of mediation effect was attributed to the bacterial species UBA11471 sp000434215 in the association between 'Med Oil and Fats' consumption and HbA1c outcome?",
+      "options": [
+        "A) 13%",
+        "B) 22%",
+        "C) 38%",
+        "D) 51%"
+      ],
+      "correct_answer": "C",
+      "explanation": "The bacterial species UBA11471 sp000434215 (from Bacteroidales order) was found to partially mediate the effect of change in 'Med Oil and Fats' consumption on HbA1c outcome, with a proportion mediated by bacteria change of 38% (ACME β=−0.32, p=0.008). This species differentially changed between arms — enriched on PPT and decreased on MED — and is largely uncharacterised but recently reported as a diet-associated taxa highly associated with complex foods.",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "ppt_gut_mcq_010",
+      "question": "What does the finding of CAG-81 sp000435795 having opposite associations in this RCT versus the 10K cohort most directly support?",
+      "options": [
+        "A) That shotgun metagenomics sequencing produces unreliable species classifications",
+        "B) That specific microbes may function differently depending on ecological environment and metabolic context",
+        "C) That observational cohorts are always more reliable than randomised controlled trials for microbiome research",
+        "D) That causal mediation analysis is an invalid statistical approach for microbiome studies"
+      ],
+      "correct_answer": "B",
+      "explanation": "CAG-81 sp000435795 mediated glycaemic control improvements in this RCT, yet was positively associated with adverse metabolic markers (triglycerides, ALT, blood glucose, HbA1c, BMI) in the independent 10K cohort. This discrepancy led the authors to conclude that specific microbes may function differently in different ecological environments or metabolic contexts, and that the finding requires further investigation. This highlights the complex, context-dependent nature of microbiome-host interactions.",
+      "expected_documents": [
+        "PMC10359530_Gut_microbiome_modulates_the_effects_of_a_personal.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

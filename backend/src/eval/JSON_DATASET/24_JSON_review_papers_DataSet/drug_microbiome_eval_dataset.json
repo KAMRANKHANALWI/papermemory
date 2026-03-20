@@ -1,0 +1,279 @@
+{
+  "source_document": "Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf",
+  "paper_reference": "Javdan et al., 2020, Cell 181, 1661–1679",
+  "test_cases": [
+    {
+      "id": "drug_mdm_001",
+      "query": "What does the acronym MDM stand for in this paper, and what does it describe?",
+      "ground_truth_answer": "MDM stands for Microbiome-Derived Metabolism. It refers to the partial or complete biochemical transformation of a drug into more or less active metabolites by microbiome-derived enzymes. This is distinct from indirect microbiome-drug interactions such as competition for host enzymes or modulation of immune responses.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_mdm_002",
+      "query": "How many drugs were screened in the initial MDM-Screen with the pilot donor (PD), and what fraction were successfully analyzed?",
+      "ground_truth_answer": "575 orally administered drugs were screened in the initial MDM-Screen with the pilot donor (PD). Of these, 438 drugs (76%) were successfully analyzed. The remaining 137 drugs (24%) failed due to issues related to drug stability, incompatibilities with the extraction method, or incompatibilities with the reverse phase chromatography used.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_mdm_003",
+      "query": "What medium was identified as optimal for culturing the pilot donor (PD) microbiome ex vivo, and why was it selected?",
+      "ground_truth_answer": "Modified Gifu Anaerobic Medium (mGAM) was identified as the optimal medium for culturing the PD microbiome ex vivo. It was selected because it supported the growth of a bacterial community most similar in composition and diversity to the original PD fecal sample, showing the lowest Jensen-Shannon divergence (DJS) from PD among 14 tested media. At the single ASV level, mGAM day two cultures captured 79% of the ASVs present above 1% relative abundance in PD, accounting for 70% of the PD composition by relative abundance.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_mdm_004",
+      "query": "What is the ENDS metric and what inputs does it use?",
+      "ground_truth_answer": "ENDS stands for Expected Number of Detectable Strains. It is a corrected richness metric developed to select the optimal culture medium for multi-donor MDM screening, where the contribution of each ASV is weighed by the probability that its metabolite can be detected while accounting for total biomass. ENDS uses four inputs: (1) relative abundance of ASVs at a given taxonomic level in the ex vivo culture, (2) total community biomass, (3) a model of instrument background noise, and (4) a model of instrument measurement noise. Using a mechanistic model of MDM metabolite production and statistical power estimations, it computes the probability that each strain's metabolic reactions will be detected.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_mdm_005",
+      "query": "What criteria must be met for a drug to be classified as MDM+ in the MDM-Screen?",
+      "ground_truth_answer": "For a drug to be classified as MDM+, two conditions must be satisfied: first, either a new metabolite must be observed when the drug is incubated with the microbiome culture, or the drug must no longer be detectable after incubation (indicating complete consumption or conversion to an undetectable molecule). Second, this metabolic event must occur reproducibly in at least two out of three independent experiments. An abiotic medium control is also used to distinguish passive drug degradation from active microbial metabolism.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_mdm_006",
+      "query": "What is the BG medium and how was it formulated? Why was it selected for the 20-donor screen over mGAM alone?",
+      "ground_truth_answer": "BG medium is a mixture of Bryant and Burkey (BB) medium and modified Gifu Anaerobic Medium (mGAM) in a 70:30 ratio. It was formulated because analysis showed that while mGAM had moderate ASV richness and high biomass, it suffered from consistent expansion of Enterobacteriaceae. BB medium yielded high richness but low biomass. Mathematical modeling of ENDS predicted that a 70/30 BB/mGAM mixture would provide optimal performance—moderate biomass, high richness, and reduced Enterobacteriaceae expansion. BG was chosen for the 20-donor screen because it had the highest average ENDS at physiologically relevant reaction rates, recovered on average 76.6% of ASVs above 1% from original fecal samples, had the highest average diversity (H=4.3), and was closest in composition to donor samples (DJS=0.16).",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_mdm_007",
+      "query": "What biochemical transformations were identified for tolcapone through MDM-Screen, and what is their clinical significance?",
+      "ground_truth_answer": "MDM-Screen revealed that tolcapone undergoes two consecutive transformations by the gut microbiome: first, a nitroreduction of the nitro group, followed by a relatively uncommon N-acetylation, producing N-acetylamino-tolcapone. Neither transformation had been previously linked to the microbiome for this drug. The clinical significance is substantial: N-acetylamino-tolcapone has been detected systemically in humans following tolcapone administration and has been suggested as a contributor to the liver toxicity clinically observed with tolcapone use, yet its mechanism of production remained unknown. The MDM-Screen discovery provides a possible mechanism and suggests a link between gut microbiome activity and tolcapone-associated hepatotoxicity.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_mdm_008",
+      "query": "Explain how Pearson correlation analysis between drug depletion and metabolite production was used to evaluate nicardipine, and what the untargeted metabolomics revealed.",
+      "ground_truth_answer": "The researchers computed Pearson correlation coefficients between remaining drug levels and total detected metabolite levels for drugs with variable MDM (variability entropy HV > 0.5). For nicardipine, the initial correlation between drug depletion and the one known metabolite was very poor (Pearson coefficient = -0.22), implying that additional unknown metabolic products were driving the drug depletion. The untargeted metabolomics pipeline then identified 11 additional nicardipine metabolites. When all 12 metabolites were included in the analysis, the Pearson correlation improved substantially (coefficient = -0.6, FDR corrected p = 0.0102). This demonstrated that nicardipine undergoes complex, community-wide metabolism producing multiple simultaneous metabolites, and highlighted the value of using microbial communities rather than single isolates to detect interacting metabolic factors.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_mdm_009",
+      "query": "Why did the study use microbial communities rather than single bacterial isolates for the initial drug screen? What are the three main advantages described?",
+      "ground_truth_answer": "The authors chose microbial communities over single isolates for three main reasons. First, gene expression and biochemical transformation profiles of a strain grown in monoculture may differ dramatically from the same strain growing as part of a complex community, meaning monoculture results may not reflect real in vivo conditions. Second, sequential or cooperative MDM transformations involving multiple community members—such as the two-step deacetylation and ketone reduction of hydrocortisone acetate—can only be identified in mixed communities; testing all pairwise and higher-order permutations of isolates would be impractical. Third, the community approach is personalized: the results, including the extent and type of modifications, are specific to the strain-level composition of each donor's microbiome, enabling meaningful assessment of inter-individual variability in MDM.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_mdm_010",
+      "query": "What structural features were significantly enriched in MDM+ drugs in the PD screen, and what biological logic underlies these enrichments?",
+      "ground_truth_answer": "Functional group analysis revealed that nitro groups (FDR corrected p = 3e-16), ketones (FDR corrected p = 3e-8), carbonyl groups with one carbon attachment (FDR corrected p = 8e-4), azo groups (FDR corrected p = 0.001), imines (FDR corrected p = 0.002), and alkenes (FDR corrected p = 0.001) were significantly enriched in MDM+ drugs. These enrichments are consistent with common biochemical reactions performed by gut bacteria, specifically reduction reactions (acting on nitro, ketone, azo, and imine groups) and hydrolysis reactions (acting on ester and amide bonds). Steroidal skeletons also showed a dramatically elevated hit rate (57.1% vs 10% for non-steroids), which is consistent with the fact that steroids such as bile acids are normally present at high concentrations in the gut, making bacteria more likely to have evolved enzymes capable of acting on this class.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_mdm_011",
+      "query": "How was personalization of ex vivo cultures confirmed across the 20 donors? What statistical evidence was presented?",
+      "ground_truth_answer": "Personalization was confirmed through ASV-level analysis showing clear patterns unique to individual donors and their cultures. Statistically, significantly more ASVs were shared between donor feces and their own (self) ex vivo cultures than between donor feces and other donors' (non-self) cultures (47.1 versus 27.5 ASVs on average, p < 0.001 by permutation test). Additionally, 167 ASVs were identified that were unique to one of the 20 donors in their fecal samples and were concordantly unique to the same donor in their ex vivo cultures. Replicate cultures from the same donor—whether grown from the same or separate glycerol stock aliquots—showed high correlation between ASV abundances (Pearson correlation coefficient > 0.9), confirming both personalization and replicability.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_mdm_012",
+      "query": "Why did taxonomic abundance data fail to predict MDM, even for cases where metabolism was attributed to a single species (e.g., digoxin reduction by Eggerthella lenta)?",
+      "ground_truth_answer": "Spearman correlations between absolute abundances of taxonomic elements in BG cultures and measured drug/metabolite levels showed no statistically significant correlations, even for digoxin reduction by Eggerthella lenta. Two factors explain this failure. First, taxonomic classifications—even at the high-resolution ASV level—do not reliably reflect the presence or absence of specific gene variants encoding strain-specific drug-metabolizing enzymes. Different strains of the same species can differ in the enzymes they encode, making taxonomic identity a poor proxy for metabolic capability. Second, the observed level of MDM may not be monotonically dependent on a single taxon's abundance when community-wide confounding effects exist, such as multiple community members jointly contributing to metabolite production, competing bacteria consuming the drug or metabolite, or community members inhibiting the metabolite-producing enzyme.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_mdm_013",
+      "query": "Compare the MDM transformations observed for capecitabine, doxifluridine, and trifluridine. How does the same biochemical reaction (deglycosylation) produce different clinical consequences for each drug?",
+      "ground_truth_answer": "All three drugs are oral fluoropyrimidines (FPs) that undergo MDM deglycosylation catalyzed by bacterial thymidine phosphorylase (TP) and/or uridine phosphorylase (UP) in E. coli and related gut bacteria. However, the pharmacological consequences diverge dramatically. For capecitabine, deglycosylation produces deglycocapecitabine, a novel metabolite not previously reported; this represents partial premature processing of a prodrug designed to be sequentially activated. For doxifluridine (itself an anticancer prodrug), deglycosylation produces 5-fluorouracil (5-FU), the intended active metabolite—meaning gut bacteria prematurely activate the drug in the intestinal lumen before it reaches target tissues; this premature activation could explain the gastrointestinal toxicity commonly associated with oral doxifluridine. For trifluridine, deglycosylation produces trifluorothymine, an inactive compound, because trifluridine exerts its cytotoxic effect by being incorporated intact into DNA; premature deglycosylation thus inactivates the drug and may contribute to its established low bioavailability. Furthermore, enzyme specificity differs: both TP and UP together are required for doxifluridine and trifluridine deglycosylation, while UP alone is sufficient for capecitabine deglycosylation.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "drug_mdm_014",
+      "query": "Describe the untargeted functional metagenomic screening strategy used to identify the 20β-HSDH enzyme. Why was a homology-based approach not suitable for this case, and what advantages does the functional metagenomic approach offer?",
+      "ground_truth_answer": "The homology-based approach was not suitable for identifying the enzyme responsible for converting hydrocortisone to 20β-dihydrocortisone because oxidoreductases—the enzyme class involved—are extremely diverse, typically substrate-specific, and have numerous homologs per bacterial genome. Additionally, the previously known 20β-HSDH came from a cat microbiome isolate (Butyricicoccus desmolans ATCC 43058), and neither that enzyme nor close homologs (≥60% protein sequence identity) could be found in the PD fecal metagenome. Instead, the team built a 3×10^6-member metagenomic clone library (PD-CL) from PD fecal DNA cloned into an E. coli expression vector (inserts of 2–4 Kbp). The library was split into 80 pools and screened by incubating each pool with hydrocortisone and detecting 20β-dihydrocortisone by HPLC-HRMS. Positive pools were progressively sub-pooled (from 2×10^4 to 2×10^3 to 2×10^2 to 20 unique clones) until a single positive clone (Hyd-red-1, from Bifidobacterium sp.) was identified. The functional metagenomic approach offers three key advantages: it does not require enzymatic sequence homology, it does not require bacterial isolation (providing access to enzymes from uncultured organisms), and it can identify enzymes sharing no close homology with previously characterized ones. The discovered 20β-HSDH was confirmed by metatranscriptomics to be actively expressed in PD under host colonization conditions, and a second independent screening round identified Hyd-red-2 with the same gene, corroborating the result.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_mdm_015",
+      "query": "How did the in vivo pharmacokinetic experiment with capecitabine validate the ex vivo MDM-Screen findings, and what were the key differences observed between PD-colonized and non-colonized mice?",
+      "ground_truth_answer": "To test whether MDM deglycosylation observed ex vivo could occur in a living mammalian host, mice were treated with antibiotics for 14 days to eliminate their native microbiome; one group was then colonized with PD (n=6) while the other remained non-colonized (n=6). Both groups received a single human-equivalent oral dose of capecitabine (755 mg/kg) and were sampled serially from blood and feces at 0, 20, 40, 60, 120, and 240 minutes post-dosing. In blood samples, capecitabine and its major liver-derived metabolite (5'-deoxy-5-fluorocytidine) were detected in both groups with no significant difference between them, and deglycocapecitabine was absent from blood. However, in fecal samples, deglycocapecitabine—a metabolite never previously reported in animals or humans—was detected in PD-colonized mice as early as 20 minutes after dosing and was almost completely absent in non-colonized mice (p < 0.01). This demonstrated that MDM deglycosylation of capecitabine is genuinely microbiome-dependent and that ex vivo MDM-Screen findings translate to in vivo conditions in mice, validating the screening platform as a model for gut-based drug metabolism.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "drug_mdm_mcq_001",
+      "question": "How many times more genes does the human gut microbiome encode compared to the human genome?",
+      "options": [
+        "A) 10 times more",
+        "B) 50 times more",
+        "C) 100 times more",
+        "D) 1000 times more"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper states that the human gut microbiome harbors hundreds of bacterial species encoding an estimated 100 times more genes than the human genome, representing a vast repertoire of yet-uncharacterized biochemical activities.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_mdm_mcq_002",
+      "question": "What fraction of the 575 drugs screened with the PD microbiome were identified as MDM+?",
+      "options": [
+        "A) 8% (approximately 35 drugs)",
+        "B) 13% (57 drugs)",
+        "C) 20% (approximately 115 drugs)",
+        "D) 25% (approximately 144 drugs)"
+      ],
+      "correct_answer": "B",
+      "explanation": "Of the 438 drugs successfully analyzed in the PD screen, 57 drugs (13%) were identified as MDM+. These spanned 28 pharmacological classes, and 45 of the 57 (80%) represented novel MDM cases not previously reported.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_mdm_mcq_003",
+      "question": "What concentration of drug was used in the MDM-Screen incubations with the PD microbiome, and why was this level chosen?",
+      "options": [
+        "A) 1 µM, to match plasma drug concentrations",
+        "B) 10 µM, to match standard in vitro assay conditions",
+        "C) 33 µM, in line with estimates of drug concentrations in the gastrointestinal tract",
+        "D) 100 µM, to ensure detection sensitivity"
+      ],
+      "correct_answer": "C",
+      "explanation": "Drugs were used at a final concentration of 33 µM in the MDM-Screen incubations, chosen to be in line with estimates of drug concentrations in the gastrointestinal tract—the physiological site where gut microbiome-drug interactions would occur in vivo.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "drug_mdm_mcq_004",
+      "question": "In the multi-donor screen of 20 subjects, for which drug was inter-individual variability in MDM clinically known for decades before this study?",
+      "options": [
+        "A) Capecitabine, due to variable fluoropyrimidine bioavailability",
+        "B) Sulfasalazine, due to variation in azoreductase activity",
+        "C) Digoxin, due to significant reduction to dihydrodigoxin in only a subset of patients",
+        "D) Risperidone, due to variation in isoxazole hydrolysis"
+      ],
+      "correct_answer": "C",
+      "explanation": "Significant inter-individual variability in digoxin MDM has been clinically known for decades: significant reduction of digoxin into dihydrodigoxin and related metabolites occurs in only a subset of patients. The study confirmed this with 3 out of 20 donors producing dihydrodigoxin in statistically significant amounts (variability entropy = 0.61).",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "drug_mdm_mcq_005",
+      "question": "When E. coli BW25113 uridine phosphorylase knockout (Δudp) was tested for capecitabine deglycosylation, what was the result compared to wild type?",
+      "options": [
+        "A) Deglycosylation was completely abolished (0% conversion), showing UP is solely responsible",
+        "B) Deglycosylation was significantly diminished to less than 4% conversion, compared to ~30% in wild type",
+        "C) Deglycosylation was unchanged, showing UP is not required for capecitabine",
+        "D) Deglycosylation increased to ~50% conversion due to compensatory mechanisms"
+      ],
+      "correct_answer": "B",
+      "explanation": "The Δudp mutant showed significant diminishment of deglycosylating activity to less than 4% conversion rate (p value < 0.001), compared to ~30% conversion by wild-type E. coli BW25113. Interestingly, the ΔdeoA (thymidine phosphorylase knockout) mutant showed an increase to ~50% conversion, possibly due to compensatory overexpression of udp.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "drug_mdm_mcq_006",
+      "question": "What is the Shannon variability entropy (HV) metric used for in the 20-donor MDM screen, and when is it maximal?",
+      "options": [
+        "A) It measures microbial diversity within a single donor culture; it is maximal when all taxa are equally abundant",
+        "B) It quantifies inter-individual variability in MDM; it is maximal (HV=1) when exactly half of donors metabolize the drug",
+        "C) It measures the diversity of metabolite products from a single drug; it is maximal when one unique metabolite is produced",
+        "D) It quantifies the correlation between drug depletion and metabolite production; it is maximal when both are perfectly correlated"
+      ],
+      "correct_answer": "B",
+      "explanation": "HV (Shannon entropy computed in base 2) was used to quantify inter-individual variability in MDM across the 20 donors, specifically the variability in the distribution of metabolizers versus non-metabolizers for each drug-metabolite pair. It is maximal at HV=1 when exactly half of donors show significant metabolism, and is minimal at HV=0 when a drug is either always or never metabolized.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_mdm_mcq_007",
+      "question": "What was the prevalence of E. coli-derived deoA and udp genes (fluoropyrimidine deglycosylating enzymes) in Western versus non-Western metagenomic cohorts?",
+      "options": [
+        "A) Similar prevalence across all cohorts (~60%), indicating these genes are ubiquitous globally",
+        "B) Higher in Western cohorts (~60%) and lower in non-Western cohorts (~25%), reflecting antibiotic use patterns",
+        "C) Higher in non-Western cohorts (China: 74%/76%, Fiji: 64%/70%) compared to Western cohorts (~24%/26% on average)",
+        "D) Absent from all non-Western cohorts and present in ~80% of Western cohorts"
+      ],
+      "correct_answer": "C",
+      "explanation": "Analysis across six large metagenomic cohorts revealed that E. coli-derived deoA and udp genes were most prevalent in non-Western cohorts: 74%/76% in the Chinese cohort and 64%/70% in the Fijian (Fijicomp) cohort for deoA/udp respectively, compared to an average of ~24%/26% across the Western cohorts (HMP-1-1, HMP-1-2, Denmark, Spain). This has implications for the variability in fluoropyrimidine drug metabolism across global populations.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "drug_mdm_mcq_008",
+      "question": "In the functional metagenomic screening for the 20β-HSDH enzyme, from which bacterial genus did the positive metagenomic clone (Hyd-red-1) likely originate, and how was this established?",
+      "options": [
+        "A) Clostridium, identified through homology to the known C. scindens 20α-HSDH",
+        "B) Escherichia, because the library was expressed in E. coli and E. coli performed the reaction",
+        "C) Bifidobacterium, revealed by DNA sequencing of the metagenomic insert and analysis of its genetic context in the PD scaffold",
+        "D) Parabacteroides, because P. distasonis was shown to deacetylate hydrocortisone acetate in the study"
+      ],
+      "correct_answer": "C",
+      "explanation": "Sequencing of the Hyd-red-1 metagenomic clone revealed that it likely originated from a Bifidobacterium sp. This was determined by sequencing the metagenomic insert and analyzing its genetic context in the assembled PD metagenomic scaffold, which harbored a single putative oxidoreductase (the 20β-HSDH). This finding was consistent with the 40-year-old observation that Bifidobacterium adolescentis converts hydrocortisone to 20β-dihydrocortisone.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_mdm_mcq_009",
+      "question": "Spironolactone MDM by the PD microbiome produced 7α-thiospironolactone through thioester hydrolysis. Why is this clinically relevant?",
+      "options": [
+        "A) 7α-thiospironolactone is a toxic metabolite responsible for the drug's known renal side effects",
+        "B) 7α-thiospironolactone is a postulated intermediate en route to 7α-thiomethylspironolactone, the drug's main active metabolite",
+        "C) 7α-thiospironolactone is an inactive compound, meaning MDM leads to premature inactivation of the drug",
+        "D) 7α-thiospironolactone blocks aldosterone receptors more potently than the parent drug"
+      ],
+      "correct_answer": "B",
+      "explanation": "7α-thiospironolactone produced by gut microbiome thioester hydrolysis is a postulated intermediate en route to 7α-thiomethylspironolactone, the main active metabolite of spironolactone. This means MDM may contribute to the activation pathway of this antihypertensive drug, though additional experiments are needed to differentiate the relative contributions of human- and microbiome-derived metabolism to observed pharmacokinetics in humans.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "drug_mdm_mcq_010",
+      "question": "The 20β-HSDH discovered from the PD microbiome (Bifidobacterium-derived) was found to be widespread in human populations. How did its prevalence compare to the previously known 20α-HSDH from Clostridium scindens?",
+      "options": [
+        "A) Both enzymes were equally prevalent, present in approximately 36% of subjects across all cohorts",
+        "B) The C. scindens 20α-HSDH was more common (present in ~36% of subjects), while the PD-derived 20β-HSDH was rare (~0.6% of subjects)",
+        "C) The PD-derived 20β-HSDH was widespread (present in ~36% of subjects on average), while the C. scindens 20α-HSDH was rare (present in only ~0.6% of subjects on average)",
+        "D) Both enzymes were rare, present in fewer than 5% of subjects across all cohorts, explaining the low frequency of hydrocortisone MDM"
+      ],
+      "correct_answer": "C",
+      "explanation": "Mapping fecal metagenomic reads from six large human cohorts revealed a striking difference: the C. scindens-derived 20α-HSDH gene was rare, present in only 0.6% of subjects on average, while the PD-derived 20β-HSDH gene was widespread across all cohorts, present in 36% of subjects on average—though its abundance varied widely between subjects and cohorts. This highlights that the functional metagenomic approach discovered an enzyme that is far more relevant to the human population than existing homology-based knowledge would have predicted.",
+      "expected_documents": ["Personalized_Mapping_of_Drug_Metabolism_by_the_Human_Gut_Microbiome.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    }
+  ]
+}

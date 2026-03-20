@@ -1,0 +1,331 @@
+{
+  "source_document": "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf",
+  "paper_title": "A meta-analysis of the gut microbiome in inflammatory bowel disease patients identifies disease-associated small molecules",
+  "authors": "Elmassry et al., 2025",
+  "journal": "Cell Host & Microbe 33, 218–234, February 12, 2025",
+  "test_cases": [
+    {
+      "id": "ibd_meta_001",
+      "query": "How many total metagenomic samples and subjects were included in the meta-analysis of the IBD microbiome?",
+      "ground_truth_answer": "The meta-analysis included 5,306 samples from 2,866 subjects. This comprised 1,323 healthy control (HC) samples from 833 HC subjects, 2,476 Crohn's disease (CD) samples from 1,302 CD subjects, and 1,507 ulcerative colitis (UC) samples from 731 UC subjects. The data were collated from 18 published studies.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ibd_meta_002",
+      "query": "What are the six fatty acid amides (FAAs) discovered as products of the ebf and ecf biosynthetic gene clusters?",
+      "ground_truth_answer": "The six FAAs discovered as products of the ebf and ecf BGCs are: (1) N-Acetyl-Myristoyl-Putrescine (NAMP), (2) N-Acetyl-Palmitoyl-Putrescine (NAPP), (3) N-Acetyl-Palmitoleoyl-Putrescine (NAPeP), (4) N-Lauroyl-L-Lysine (NLL), (5) N-Myristoyl-Putrescine (NMP), and (6) N-Myristoyl-L-Lysine (NML). Five of these are novel natural products; only NMP had been previously discovered via an unrelated non-NRPS biosynthetic pathway from soil-derived environmental DNA.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ibd_meta_003",
+      "query": "What are the two IBD subtypes and which bacterial species harbor the top CD-enriched biosynthetic gene clusters?",
+      "ground_truth_answer": "The two IBD subtypes are Crohn's disease (CD) and ulcerative colitis (UC). The top two CD-enriched biosynthetic gene clusters, named ebf and ecf, are harbored by Enterocloster bolteae (formerly Clostridium bolteae) and Enterocloster clostridioformis (formerly Clostridium clostridioforme), respectively. These are both members of the class Clostridia, which is generally known to be depleted in CD — making their enrichment unexpected.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ibd_meta_004",
+      "query": "Which four cohorts were selected for the meta-analysis and from which countries did they originate?",
+      "ground_truth_answer": "The four independent cohorts selected for the meta-analysis were: HMP2-IBDMDB (USA), MetaHIT (Spain), PRISM (USA), and LLDEEP-NLIBD (the Netherlands). These cohorts were chosen because they include all three sub-cohorts (CD, UC, and HC) with at least ten subjects per group and have been extensively used for other analyses in the field.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ibd_meta_005",
+      "query": "What percentage of CD and UC patients in the internal IBD cohort harbored at least one of the ebf or ecf BGCs in their gut microbiome?",
+      "ground_truth_answer": "In the internal IBD cohort of 46 patients, 77.8% of CD patients and 66.7% of UC patients harbored at least one of the two BGCs (ebf or ecf) in their gut microbiome. The cohort comprised 27 CD patients, 18 UC patients, and one patient with undetermined IBD diagnosis.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ibd_meta_006",
+      "query": "Describe the computational pipeline developed to identify disease-associated biosynthetic gene clusters (BGCs) in metagenomic samples.",
+      "ground_truth_answer": "The computational pipeline involves four main steps: (1) BGCs are identified from assembled metagenomic scaffolds (≥5 Kbps) using antiSMASH; (2) BGCs are dereplicated to produce a non-redundant set; (3) a non-redundant set of open reading frames (ORFs) encoding core biosynthetic enzymes (CB-ORFs) is extracted from all BGCs; and (4) CB-ORF abundances are quantified via read mapping and used as a proxy to evaluate BGC enrichment. Disease enrichment is then calculated using a meta-analysis approach based on the differential abundance of CB-ORFs across independent cohorts. This approach circumvents the difficulty of accurately defining BGC boundaries by focusing solely on core biosynthetic enzyme-encoding genes.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ibd_meta_007",
+      "query": "How did the researchers use synthetic biology to characterize the small molecule products of ebf and ecf, and why was this approach necessary?",
+      "ground_truth_answer": "The researchers employed heterologous expression in E. coli because Clostridia species are inherently difficult to genetically manipulate. They cloned the native sequence of ebf from E. bolteae ATCC BAA-613 and a fully synthetic, codon-optimized version of ecf into E. coli expression vectors under strong promoter control, with an additional PPTase from Bacillus subtilis (sfp) to activate the peptide carrier protein. HPLC-HR-MS/MS analysis of chemical extracts identified six FAA peaks commonly produced by both expression lines. The compounds were then purified at large scale (75 L culture), and their structures were elucidated by HR-MS/MS, NMR, and chemical synthesis. Validation that these matched native products was confirmed by detecting the same molecules in cultures of the native Clostridia isolates.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ibd_meta_008",
+      "query": "What evidence from metatranscriptomic analysis supports the in vivo relevance of ebf and ecf in the gut microbiome of IBD patients?",
+      "ground_truth_answer": "Paired metagenomic and metatranscriptomic data from the HMP2-IBDMDB cohort (55 subjects: 14 HC, 25 CD, 16 UC) showed that ebf or ecf are actively expressed in 35.7% of HC subjects, 72% of CD subjects, and 68.8% of UC subjects. Notably, some samples showed very high metatranscriptomic abundance despite low metagenomic abundance, with RNA/DNA RPKM ratios exceeding 10 or even 100 in one CD sample, indicating robust expression even at low organismal abundance. This finding is consistent with E. bolteae having previously been identified as one of few species with high transcriptional activity in IBD patients with microbiome dysbiosis.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ibd_meta_009",
+      "query": "How many total BGCs were identified in the study, and what proportion of them mapped to known sequenced genomes?",
+      "ground_truth_answer": "Overall, 10,060 non-redundant BGCs were identified from assembled metagenomic scaffolds across all cohorts, harboring 199,333 ORFs of which 5,157 are unique CB-ORFs. Only 62% of the identified BGCs could be mapped to sequenced genomes in the NCBI RefSeq Genome and Nucleotide databases, suggesting that a substantial portion of small molecule-producing gut microbes have not yet been isolated or sequenced. The successfully mapped BGCs are distributed across all major gut microbiome phyla: Firmicutes, Bacteroidetes, Proteobacteria, Actinobacteria, and several minor phyla.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ibd_meta_010",
+      "query": "What were the results of the DSS-induced colitis mouse model when comparing ecf-expressing E. coli colonized mice versus empty vector controls?",
+      "ground_truth_answer": "In the DSS-induced colitis model in SPF C57BL/6 mice, ecf+ mice (colonized with E. coli expressing ecf) showed significantly decreased colon length (p = 3.1×10⁻⁶) and increased colon density (weight/length, p = 2.5×10⁻⁵) compared to ecf⁻ controls, both hallmarks of increased inflammation. Additionally, ecf+ mice exhibited significantly higher intestinal permeability as measured by FITC-dextran assay (p = 0.0034), indicating disrupted gut barrier integrity. Colonic TNF-α was also significantly elevated in ecf+ mice. Importantly, no significant differences were found between groups in terms of gut microbiome diversity or composition, suggesting the effects are independent of alterations to the resident microbiota.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ibd_meta_011",
+      "query": "What was the cytotoxic profile of the ebf-ecf-FAAs against Caco-2 colonic epithelial cells, and which molecule showed the strongest cytotoxicity?",
+      "ground_truth_answer": "Among the five ebf-ecf-FAAs tested (NAMP, NAPP, NLL, NML, NMP), NMP (N-Myristoyl-Putrescine) showed the strongest cytotoxicity against the Caco-2 colonic cell line with an IC50 of 15.2 μM at 32 μM concentration. Evidence suggests NMP's cytotoxicity occurs via apoptosis induction, as further supported by the apoptosis assay. The other four FAAs (NAMP, NAPP, NLL, NML) showed no significant cytotoxicity in the tested concentration range of 1–32 μM. Furthermore, none of the four tested ebf-ecf-FAAs exhibited significant activity against a panel of 241 GPCRs in either agonist or antagonist modes, distinguishing them from other characterized gut Clostridia-derived FAAs.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ibd_meta_012",
+      "query": "How does the enrichment of ebf and ecf in Crohn's disease appear paradoxical given the known microbiome changes in CD, and what does this reveal about using functional versus taxonomic approaches?",
+      "ground_truth_answer": "The paradox lies in the fact that ebf and ecf are derived from Clostridia — a class that is generally known to be depleted in Crohn's disease. The finding that 32 out of 39 CD-enriched Firmicutes-derived BGCs derive from members of the class Clostridia reveals that taxonomic depletion of a microbial group does not necessarily mean functional depletion of all capabilities encoded by that group. Specific, rare strains within a depleted class (e.g., Enterocloster bolteae and E. clostridioformis) can still be enriched at the BGC level. This highlights the superiority of functionally-driven over taxonomically-driven microbiome analyses: a strain harboring these disease-enriched BGCs may have a competitive advantage in the IBD-associated inflammatory environment, explaining its relative enrichment despite the broader Clostridia depletion.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "ibd_meta_013",
+      "query": "Compare the findings from the DSS-induced colitis model and the IL-10-deficient gnotobiotic mouse model regarding ebf-ecf-FAA-induced disease, including what was learned about host susceptibility and microbiome independence.",
+      "ground_truth_answer": "Both mouse models showed consistent results: ecf+ mice had significantly shorter colons and significantly higher intestinal permeability than ecf⁻ mice. In the DSS model (SPF mice), colon length reduction (p = 3.1×10⁻⁶) and elevated FITC-dextran levels (p = 0.0034) were accompanied by elevated TNF-α. In the IL-10⁻/⁻ gnotobiotic model (germ-free mice colonized for 4 weeks), similar decreases in colon length (p = 0.034) and increased permeability (p = 0.043) were observed. Critically, when ecf was introduced into healthy SPF mice, no such phenotypes were detected, demonstrating that the disease-exacerbating effects of ebf-ecf-FAAs are conditional on host susceptibility — either chemical (DSS) or genetic (IL-10 deficiency). The IL-10⁻/⁻ gnotobiotic model also confirmed that the effects are independent of the resident microbiome, since these mice were germ-free except for the introduced E. coli strain. Both models showed downregulation of Claudin-1 and increased cleaved caspase-3 in colonic tissues, pointing to tight junction disruption and apoptosis as shared mechanisms.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "ibd_meta_014",
+      "query": "Within the broader phylogenetic landscape of Clostridia FAA-encoding NRPSs, how are the ebf/ecf-like BGCs distributed, and what fraction were found to be enriched versus depleted in IBD?",
+      "ground_truth_answer": "From 8,427 publicly available Clostridia genome assemblies, 713 genomes (8.5%) were found to harbor NRPS BGCs similar to ebf and ecf, with 95.4% of these belonging to Clostridium cluster XIVa. Of the 592 BGCs that had representative CB-ORFs in the meta-analysis dataset (matched at ≥90% protein identity, ≥50% coverage), 30 (8.4% of matched BGCs) were differentially enriched or depleted in IBD. Of these 30, the majority — 23 (76.7%) — were depleted in CD and/or UC, while only 7 (23.3%) were enriched in CD or UC, including ebf and ecf. Depleted FAA-BGCs include those producing oleoyl aminovaleric acid (from Coprococcus eutactus, depleted in both CD and UC) and oleoyl dopamine (from Clostridium sp. L2-50, depleted in CD). This pattern suggests that most Clostridia-derived FAA-BGC capacity is lost in IBD, while a specific, functionally distinct subset is selectively enriched — perhaps providing a survival advantage under inflammatory conditions.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "ibd_meta_015",
+      "query": "What are the key limitations of the BGC meta-analysis approach described in this study, and how might they affect the interpretation of the findings?",
+      "ground_truth_answer": "The authors acknowledge two primary limitations. First, the analysis relies exclusively on profiling BGCs identifiable in assembled metagenomic data by established BGC-finding algorithms (antiSMASH). Small molecules produced by unknown biosynthetic classes, single enzymes, or BGCs not assembled in any analyzed sample would be missed. As metagenome assembly technology and characterization of new biosynthetic classes improve, the approach's comprehensiveness will increase. Second, and more conceptually important, enrichment of a BGC in disease does not necessarily imply a causative role — it could reflect a selection process where the produced molecule provides a survival or competitive advantage to the producing organism in the disease environment (e.g., as expansion of facultative anaerobes in CD is thought to be a consequence of oxidative stress from inflammation). This is why computational enrichment must be followed by functional validation in disease-relevant animal models, as the authors did. The bidirectionality of cause and effect in microbiome-disease associations remains a fundamental interpretive challenge.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "ibd_meta_mcq_001",
+      "question": "Which tool was used to identify biosynthetic gene clusters (BGCs) from assembled metagenomic scaffolds in this study?",
+      "options": [
+        "A) BLAST",
+        "B) antiSMASH",
+        "C) PhyloPhlAn",
+        "D) SPAdes"
+      ],
+      "correct_answer": "B",
+      "explanation": "antiSMASH (v5.1.1) was used as an unbiased tool for discovering and annotating diverse small molecule BGCs from assembled metagenomic scaffolds (≥5 Kbps). SPAdes was used for metagenomic assembly, PhyloPhlAn for phylogenetic tree construction, and BLAST for sequence comparisons.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ibd_meta_mcq_002",
+      "question": "How many BGCs were found to be significantly enriched in Crohn's disease (CD) compared to healthy controls in the meta-analysis?",
+      "options": [
+        "A) 24",
+        "B) 36",
+        "C) 102",
+        "D) 188"
+      ],
+      "correct_answer": "C",
+      "explanation": "Using a meta-analysis approach with Benjamini-Hochberg FDR correction (adjusted p ≤ 0.05), 102 BGCs were found significantly enriched in CD and 24 in UC when compared to healthy controls. In contrast, 188 and 36 BGCs were depleted in CD and UC, respectively.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ibd_meta_mcq_003",
+      "question": "What percentage of identified BGCs in this study mapped to known sequenced genomes in the NCBI RefSeq database?",
+      "options": [
+        "A) 38%",
+        "B) 62%",
+        "C) 79%",
+        "D) 91%"
+      ],
+      "correct_answer": "B",
+      "explanation": "Only 62% of the metagenomically identified BGCs mapped to sequenced genomes in the NCBI RefSeq Genome and Nucleotide databases, indicating that a substantial portion (~38%) of gut microbes capable of producing small molecules have not yet been isolated and/or sequenced.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "ibd_meta_mcq_004",
+      "question": "What structural feature distinguishes N-Acetyl-Palmitoleoyl-Putrescine (NAPeP) from N-Acetyl-Palmitoyl-Putrescine (NAPP)?",
+      "options": [
+        "A) NAPeP has a longer carbon chain (C18 vs C16)",
+        "B) NAPeP contains a lysine head group instead of putrescine",
+        "C) NAPeP has one unsaturation (double bond) in the fatty acid moiety",
+        "D) NAPeP lacks the N-acetyl group present in NAPP"
+      ],
+      "correct_answer": "C",
+      "explanation": "NAPeP (N-Acetyl-Palmitoleoyl-Putrescine) harbors the same acetyl amide head group as NAPP but differs from NAPP by having one unsaturation (a double bond, specifically at C-9 corresponding to a palmitoleic acid moiety) in the fatty acid moiety. NAPeP has a predicted molecular formula C22H46N2O2 but with a monoisotopic mass 2 Da less than NAPP due to the double bond.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ibd_meta_mcq_005",
+      "question": "In the HMP2-IBDMDB metatranscriptomic analysis, what percentage of CD subjects showed active expression of ebf or ecf?",
+      "options": [
+        "A) 35.7%",
+        "B) 50.0%",
+        "C) 68.8%",
+        "D) 72.0%"
+      ],
+      "correct_answer": "D",
+      "explanation": "Analysis of paired metagenomic and metatranscriptomic data from the HMP2-IBDMDB cohort (55 subjects) showed that ebf or ecf were actively expressed in 72% (18 out of 25) of CD subjects, compared to 35.7% (5/14) of HC subjects and 68.8% (11/16) of UC subjects.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "ibd_meta_mcq_006",
+      "question": "What functional domain architecture does the ecf BGC encode, and what role does the adenylation (A) domain play?",
+      "options": [
+        "A) A glycosyltransferase and thioesterase; the A domain adds sugar moieties",
+        "B) A PPTase, lipid transport protein, hydrolase, and three NRPS domains (C, T, A); the A domain activates specific amino acids to be added to the growing chain",
+        "C) A PKS module with ketoreductase and dehydratase domains; the A domain acts as an acyl carrier",
+        "D) A ribosomal peptide synthetase and protease; the A domain performs post-translational modification"
+      ],
+      "correct_answer": "B",
+      "explanation": "The ecf BGC encodes six proteins: a 4'-phosphopantetheinyl transferase (PPTase), a protein with similarity to mammalian lipid transport proteins, a predicted hydrolase, and three stand-alone NRPS domains: a condensation domain (C, responsible for amide bond formation), a thiolation domain (T, acting as acyl/peptide carrier protein), and an adenylation domain (A, which typically activates specific amino acids to be added to the growing chain).",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ibd_meta_mcq_007",
+      "question": "What was the key finding regarding tight junction proteins in colonic tissues of ecf+ mice in both the DSS and IL-10-deficient colitis models?",
+      "options": [
+        "A) Occludin was significantly upregulated in both models",
+        "B) ZO-1 was significantly downregulated in both models",
+        "C) Claudin-3 was significantly upregulated in both models",
+        "D) Claudin-1 was significantly downregulated in both models"
+      ],
+      "correct_answer": "D",
+      "explanation": "Among the tight junction proteins assessed (Claudin-1, Claudin-3, Occludin, and ZO-1), Claudin-1 was significantly downregulated in colonic tissues of ecf+ mice in both the DSS-induced and IL-10-deficient colitis models. This was confirmed at both the mRNA level (qPCR) and protein level (immunohistochemistry), supporting a role for ebf-ecf-FAAs in disrupting epithelial barrier integrity.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ibd_meta_mcq_008",
+      "question": "What statistical method was primarily used to calculate the enrichment of BGCs across multiple independent cohorts while minimizing batch effects?",
+      "options": [
+        "A) ANOVA with Tukey's post-hoc correction",
+        "B) Logistic regression with LOCOM framework",
+        "C) Meta-analysis using a random effects model with log ratio of means, followed by Benjamini-Hochberg FDR correction",
+        "D) Pearson correlation with Bonferroni correction"
+      ],
+      "correct_answer": "C",
+      "explanation": "To minimize technical batch effects and demographic/geographical differences across studies, a meta-analysis approach was used: effect sizes were calculated using a meta-analysis of log ratio of means between CD vs. HC or UC vs. HC across the four independent cohorts, using a random effects model. Benjamini-Hochberg procedure was used to control FDR, with an adjusted p-value cutoff of ≤0.05.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "ibd_meta_mcq_009",
+      "question": "The ebf and ecf BGCs share 92% identity at the DNA level. What were the FDR-adjusted p-values and effect sizes reported for their enrichment in CD versus healthy controls in the overall meta-analysis?",
+      "options": [
+        "A) ebf: p = 1.38×10⁻¹¹, effect size 2.6; ecf: p = 2.16×10⁻³⁰, effect size 2.2",
+        "B) ebf: p = 2.16×10⁻³⁰, effect size 2.2; ecf: p = 1.38×10⁻¹¹, effect size 2.6",
+        "C) ebf: p = 2.57×10⁻³⁵, effect size 3.0; ecf: p = 4.78×10⁻²⁵, effect size 2.8",
+        "D) ebf: p = 4.81×10⁻⁴, effect size 1.5; ecf: p = 6.57×10⁻¹², effect size 2.1"
+      ],
+      "correct_answer": "B",
+      "explanation": "The meta-analysis using a random effects model on ebf and ecf abundance revealed: ebf had a mean effect size estimate of 2.2 (95% CI: 2.4–3.5) with p = 2.16×10⁻³⁰, and ecf had a mean effect size estimate of 2.6 (95% CI: 2.4–4.3) with p = 1.38×10⁻¹¹. The FDR-adjusted p-values of 2.57×10⁻³⁵ and 4.78×10⁻²⁵ cited in option C refer to the initial CB-ORF-level enrichment statistics, not the whole-BGC meta-analysis values.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "factual"
+    },
+    {
+      "id": "ibd_meta_mcq_010",
+      "question": "Which of the following best explains why the authors argue that their approach is superior to purely taxonomic microbiome studies when studying disease associations?",
+      "options": [
+        "A) Taxonomic approaches are computationally expensive and cannot be applied to large cohorts",
+        "B) Functional BGC-based analyses can identify disease-relevant molecules even from taxa that are taxonomically depleted in disease, revealing mechanistic insights rather than mere compositional associations",
+        "C) Taxonomic approaches require metatranscriptomic data and cannot use metagenomic data alone",
+        "D) Taxonomic approaches are only valid for UC and not for CD due to the differing microbiome composition in each subtype"
+      ],
+      "correct_answer": "B",
+      "explanation": "The study exemplifies this superiority: ebf and ecf are derived from Clostridia — a class generally depleted in CD — yet these specific BGCs are significantly enriched in CD. A purely taxonomic approach would have missed these disease-relevant molecules entirely by flagging Clostridia as depleted. The functionally-driven approach identifies specific BGCs and their small molecule products, enabling the discovery of molecular mediators and mechanistic pathways rather than just observational compositional differences. The authors explicitly state the goal of migrating from observational to mechanistic microbiome studies.",
+      "expected_documents": [
+        "PMC12268991_A_meta-analysis_of_the_gut_microbiome_in_inflammatory_bowel_disease.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

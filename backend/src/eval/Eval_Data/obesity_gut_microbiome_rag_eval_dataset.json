@@ -1,0 +1,340 @@
+{
+  "source_document": "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf",
+  "paper_title": "Gut Microbiome Composition in Obese and Non-Obese Persons: A Systematic Review and Meta-Analysis",
+  "journal": "Nutrients 2022, 14, 12",
+  "test_cases": [
+    {
+      "id": "obesity_microbiome_001",
+      "query": "What were the global prevalence rates of overweight and obesity in adults in 2016?",
+      "ground_truth_answer": "In 2016, the global prevalence of overweight in adults (BMI ≥ 25 kg/m²) was 39%, affecting 1.9 billion adults, while the prevalence of obesity (BMI ≥ 30 kg/m²) was 13%, affecting 650 million adults.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "obesity_microbiome_002",
+      "query": "What are the two dominant phyla in the human gut microbiome and what percentage of the total community do they account for?",
+      "ground_truth_answer": "The two dominant phyla in the human gut microbiome are Firmicutes and Bacteroidetes, which together account for 90% of the total microbial community. The remaining phyla — Proteobacteria, Actinobacteria, and Verrucomicrobia — are less dominant.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "obesity_microbiome_003",
+      "query": "How many cross-sectional studies and individual stool samples were included in this systematic review?",
+      "ground_truth_answer": "The systematic review included 32 cross-sectional studies from 33 primary reports, yielding a total of 13,186 individual stool samples for microbiome analyses.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "obesity_microbiome_004",
+      "query": "What genera were found to be consistently and significantly higher in obese versus non-obese persons across at least two studies?",
+      "ground_truth_answer": "Thirteen genera were found to be significantly more abundant among obese persons in at least two studies: Acidaminococcus, Anaerococcus, Catenibacterium, Dialister, Dorea, Escherichia-Shigella, Eubacterium, Fusobacterium, Megasphera, Prevotella, Roseburia, Streptococcus, and Sutterella.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "obesity_microbiome_005",
+      "query": "What genera were found to be consistently lower in obese persons compared to non-obese persons across at least two studies?",
+      "ground_truth_answer": "Only two genera — Bifidobacterium and Eggerthella — were found to be significantly less abundant among obese persons than among non-obese persons in at least two studies.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "obesity_microbiome_006",
+      "query": "What was the result of the meta-analysis on the Shannon diversity index comparing obese and non-obese persons, and how many studies were included?",
+      "ground_truth_answer": "The meta-analysis of seven studies on the Shannon index revealed a non-significant mean difference of −0.06 (95% CI −0.24, 0.12) between obese and non-obese persons, with substantial heterogeneity (I² = 81%). Despite this non-significant pooled result, nine out of 22 individual studies did observe significantly lower Shannon index in obese compared to non-obese adults.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "obesity_microbiome_007",
+      "query": "What were the meta-analysis results for Firmicutes and Bacteroidetes relative abundance in obese versus non-obese persons?",
+      "ground_truth_answer": "Meta-analysis of six studies found a statistically significant higher relative abundance of Firmicutes in obese compared to non-obese persons (MD 5.50, 95% CI 0.27–10.73, I² = 87%), while Bacteroidetes showed a non-significant lower abundance (MD −4.79, 95% CI −10.77 to 1.20, I² = 86%). Both analyses showed substantial heterogeneity.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "obesity_microbiome_008",
+      "query": "How do short-chain fatty acids (SCFAs) provide a mechanistic explanation for the differential abundance of Firmicutes and Bacteroidetes in obese versus non-obese persons?",
+      "ground_truth_answer": "SCFAs are formed during bacterial fermentation of carbohydrates in the colon, with acetate being most common, followed by butyrate and propionate. A positive correlation between Firmicutes and fecal SCFA has been observed, supporting the hypothesis that obese persons have a microbial profile more efficient at fermenting substrates and producing higher fecal SCFA concentrations. While Bacteroidetes members are acetate and propionate producers, Firmicutes are mainly butyrate producers. In animal studies, acetate produced by microbes is used as a substrate for hepatic lipo- and gluconeogenesis, promoting obesity. Diets rich in fats or carbohydrates also favor increased Firmicutes and decreased Bacteroidetes.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "obesity_microbiome_009",
+      "query": "What evidence from germ-free mouse transplant studies supports the causal role of gut microbiota in obesity?",
+      "ground_truth_answer": "Two key animal studies support a causal link. First, when gut microbiota from conventionally raised wild-type mice was transplanted into germ-free mice, a rapid 60% increase in body fat was observed without any change in food consumption. Second, when gut microbiota from obese adult female humans was transplanted into germ-free mice, a rapid increase in body weight was also observed. Additionally, gut microbiota from genetically obese (ob/ob) mice was less diverse and enriched in Firmicutes while depleted in Bacteroidetes compared to lean counterparts.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "obesity_microbiome_010",
+      "query": "What is the Bact2 enterotype, and how is its prevalence different between obese and non-obese persons? What role does statin treatment play?",
+      "ground_truth_answer": "The Bact2 enterotype is characterized by a high proportion of Bacteroides, a low proportion of Faecalibacterium, and low microbial cell densities. It was found to be more common in obese persons (17.7%) compared to non-obese persons, i.e., lean or overweight (3.90%). Notably, obese persons who received statin treatment had a substantially lower Bact2 prevalence of 5.88%, suggesting a protective role of statins against this dysbiotic enterotype.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "obesity_microbiome_011",
+      "query": "Why did the authors conclude that the Firmicutes to Bacteroidetes (F:B) ratio cannot yet be considered a reliable hallmark of obesity in humans?",
+      "ground_truth_answer": "The authors found contradictory results across studies: four out of ten studies reported a significantly higher F:B ratio in obese than in non-obese persons, while six studies found no significant differences. The meta-analysis of two studies yielded a non-significantly higher F:B ratio (MD 0.43, 95% CI −0.25 to 1.12; I² = 66%). Although a significantly lower B:F ratio was found in the meta-analysis of two other studies, the overall evidence was inconsistent. The authors also noted that the F:B ratio may not capture the full complexity of the microbial ecosystem, since several genera within both phyla showed opposing directionality across studies. More research with standardized technologies was recommended before adopting it as a hallmark.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "obesity_microbiome_012",
+      "query": "What role did methodological and technical factors play in the observed heterogeneity of results across studies in this systematic review?",
+      "ground_truth_answer": "Methodological differences were a major source of heterogeneity. These include different sequencing techniques (16S rRNA with varying amplified regions such as V3–V4, V4, V3–V5, etc., as well as shotgun metagenomics), differences in DNA extraction kits, varying bioinformatic pipelines, and different reference databases (Greengenes used by 17 studies, RDP by 4, SILVA by 3, NCBI by 2, DB-BA9.0 by 2). These technical variations can yield substantial variability in results. The authors identified that one Japanese study using the DB-BA 9.0 database contributed the most to heterogeneity in the Shannon index meta-analysis. Additionally, lack of adjustment for confounders like sex, diet, physical activity, smoking, medication, and geographic factors further contributed to inconsistencies.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "obesity_microbiome_013",
+      "query": "Compare the findings on alpha diversity in obese versus non-obese persons using the Shannon index (qualitative synthesis) with the meta-analysis result, and explain the discrepancy.",
+      "ground_truth_answer": "In the qualitative synthesis, nine out of 22 studies using the Shannon index found significantly lower alpha diversity in obese compared to non-obese adults, while eleven found no significant difference and two found higher diversity in obese persons. However, the meta-analysis of seven studies (those with sufficient data) showed a non-significant pooled mean difference of −0.06 (95% CI −0.24 to 0.12; I² = 81%). The discrepancy arises because the qualitative synthesis counts individual study-level significant results, whereas the meta-analysis combines effect sizes weighted by precision — and the high heterogeneity (I² = 81%) and small average effect size masked any pooled significant difference. Sensitivity analysis identified one Japanese study (using DB-BA 9.0 database) as driving much of the heterogeneity; when removed, the direction reversed but remained non-significant (MD 0.01, I² = 43%).",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "obesity_microbiome_014",
+      "query": "How do sex and geographic region act as confounders in studies examining the gut microbiome in obesity, and what specific study-level findings illustrate this?",
+      "ground_truth_answer": "Sex and geographic region can significantly modify gut microbiome-obesity associations. The Yasir et al. study comparing French and Saudi Arabian participants illustrated both effects: significantly lower Shannon diversity and higher Firmicutes were found in French obese versus non-obese persons, but no significant differences were found in the Saudi cohort — likely due to both dietary differences between countries and the fact that the French arm included both men and women while the Saudi arm included only men. Similarly, Ozato et al. found significantly higher Firmicutes and lower Bacteroidetes across BMI groups in women (p for trend < 0.001 and 0.004, respectively), but no significant associations in men. Peters et al. also observed significantly lower microbial richness in obese versus non-obese women (p = 0.03) but not in men (p = 0.47). These examples show that sex-stratified and region-stratified analyses are critical for accurate interpretation.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "obesity_microbiome_015",
+      "query": "Why is the genus Oscillospira considered a paradoxical finding in the context of the Firmicutes-obesity hypothesis, and what biological explanation is offered?",
+      "ground_truth_answer": "Oscillospira belongs to the phylum Firmicutes, which the study's qualitative and quantitative analyses show to be overall enriched in obesity. However, Oscillospira was found to be significantly lower in obese compared to non-obese persons in four studies (and significantly higher in only one), making it an exception to the phylum-level trend. This is considered paradoxical because it contradicts the expectation that if Firmicutes are broadly elevated in obesity, all genera within Firmicutes should follow the same pattern. The biological explanation offered is that Oscillospira has been associated with leanness and health, and has been found enriched in metabolically healthy obese persons compared to metabolically unhealthy obese persons, likely because of its capability to produce high SCFA concentrations — particularly propionate and butyrate — which have beneficial effects on body weight control, inflammatory status, and insulin sensitivity. This highlights that phylum-level patterns do not necessarily translate into uniform genus-level patterns.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "obesity_microbiome_016",
+      "query": "What taxonomic signature of obesity was identified by Peters et al. using a machine learning model, and why did Finucane et al. reach the opposite conclusion?",
+      "ground_truth_answer": "Peters et al. used a microbiome-based machine learning model on two independent study populations and identified a taxonomic signature of obesity characterized by higher abundance of class Bacilli and its families Streptococcaceae and Lactobacillaceae, and lower abundance of several Clostridia groups including Christensenellaceae, Clostridiaceae, and Dehalobacteriaceae (q < 0.05), with findings consistent across both cohorts. In contrast, Finucane et al. analyzed data from the Human Microbiome Project (HMP) and MetaHIT and concluded there is no simple taxonomic signature of obesity, because they found large variability between the two studies in taxonomic composition that did not allow differences to be evident between lean and obese persons within or across individuals. The discrepancy likely reflects differences in study populations, geographic contexts, and the analytical methods used — machine learning can capture multivariate patterns that conventional comparisons miss.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "obesity_microbiome_mcq_001",
+      "question": "According to projections cited in this paper, what percentage of the world's adult population is estimated to be obese by 2030?",
+      "options": [
+        "A) 10%",
+        "B) 15%",
+        "C) 20%",
+        "D) 25%"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper cites a projection that by 2030, 1.12 billion individuals — representing 20% of the world's adult population — will be obese, while 2.16 billion (38%) will be overweight.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "obesity_microbiome_mcq_002",
+      "question": "Which sequencing platform was most widely used across the included studies in this systematic review?",
+      "options": [
+        "A) Illumina HiSeq",
+        "B) Ion Torrent PGM",
+        "C) Illumina MiSeq",
+        "D) Pacific Biosciences SMRT"
+      ],
+      "correct_answer": "C",
+      "explanation": "The Illumina MiSeq was the most widely used sequencing platform, employed in 23 of the included studies. Shotgun metagenomics was conducted in three studies using other platforms including Illumina HiSeq and Ion-Proton.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "obesity_microbiome_mcq_003",
+      "question": "Which reference database was most commonly used for taxonomic classification across the studies included in this review?",
+      "options": [
+        "A) SILVA",
+        "B) RDP",
+        "C) NCBI",
+        "D) Greengenes"
+      ],
+      "correct_answer": "D",
+      "explanation": "Greengenes was the most frequently used reference database, employed in 17 of the included studies. RDP was used in 4 studies, SILVA in 3, NCBI in 2, and DB-BA9.0 in 2 studies.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "obesity_microbiome_mcq_004",
+      "question": "In the meta-analysis of six studies comparing Firmicutes abundance in obese versus non-obese persons, what was the mean difference and its confidence interval?",
+      "options": [
+        "A) MD 2.30 (95% CI 0.10, 4.50)",
+        "B) MD 5.50 (95% CI 0.27, 10.73)",
+        "C) MD 8.75 (95% CI 3.10, 14.40)",
+        "D) MD 3.15 (95% CI −1.00, 7.30)"
+      ],
+      "correct_answer": "B",
+      "explanation": "The meta-analysis of six studies found significantly higher Firmicutes in obese compared to non-obese persons with a mean difference of 5.50 (95% CI 0.27, 10.73; I² = 87%). Despite reaching statistical significance, the substantial heterogeneity calls for cautious interpretation.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "obesity_microbiome_mcq_005",
+      "question": "What was the overall risk of bias assessment for the majority of included studies, based on the adapted ROBINS-I tool?",
+      "options": [
+        "A) Low risk of bias for the majority",
+        "B) Moderate risk of bias for the majority",
+        "C) Serious risk of bias for the majority",
+        "D) Critical risk of bias for the majority"
+      ],
+      "correct_answer": "C",
+      "explanation": "Of the 32 studies, 21 were assessed as having an overall serious risk of bias, and only 11 were deemed as having a moderate risk of bias. The main domains driving serious risk were confounding (18 studies did not adjust for confounders) and selection of participants (12 studies used non-representative recruitment such as volunteers or advertisements).",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "obesity_microbiome_mcq_006",
+      "question": "The Verdam et al. study classified obese and non-obese subjects into two microbial clusters. Which of the following best describes the characteristics of the obese cluster?",
+      "options": [
+        "A) Increased Bacteroidetes, reduced Firmicutes, high microbial diversity",
+        "B) Reduced bacterial diversity, decreased B:F ratio, increased Proteobacteria, more Clostridium IV and XIVa",
+        "C) Increased Akkermansia, reduced Streptococcus, high Shannon diversity",
+        "D) Reduced Proteobacteria, increased Verrucomicrobia, normal microbial diversity"
+      ],
+      "correct_answer": "B",
+      "explanation": "The obese cluster in Verdam et al. showed reduced bacterial diversity compared to the non-obese cluster, a decreased Bacteroidetes to Firmicutes ratio, increased abundance of Proteobacteria, and enrichment in Clostridium clusters IV and XIVa of the Firmicutes phylum, while Bacteroidetes was less abundant.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "obesity_microbiome_mcq_007",
+      "question": "In which specific population subgroup did the Peters et al. study find significantly lower microbial richness in obese versus non-obese persons?",
+      "options": [
+        "A) Men aged over 60",
+        "B) Women only",
+        "C) Men and women equally",
+        "D) Hispanic/Latino individuals"
+      ],
+      "correct_answer": "B",
+      "explanation": "Peters et al. found significantly lower species richness (OTU count) in obese versus non-obese women (p = 0.03), but no significant difference in men (p = 0.47). This sex-specific finding underscores the importance of stratifying microbiome analyses by sex.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "obesity_microbiome_mcq_008",
+      "question": "What is the key reason the authors argue that working with relative abundances alone is a limitation in microbiome research, and what methods do they suggest to overcome it?",
+      "options": [
+        "A) Relative abundances cannot detect phylum-level differences; whole genome sequencing should be used instead",
+        "B) Relative abundances mask absolute microbial load differences; spike-in standards or flow cytometry-based cell counting should be applied",
+        "C) Relative abundances are inaccurate for rare taxa; deep amplicon sequencing targeting V1-V2 regions is preferred",
+        "D) Relative abundances are biased by host DNA; host DNA depletion methods must be used prior to sequencing"
+      ],
+      "correct_answer": "B",
+      "explanation": "The authors specifically state that an important limitation is working with relative rather than absolute abundances, and suggest overcoming this by applying spike-in standards or flow cytometry-based cell counting to include absolute counts. These approaches allow more accurate profiling of total microbial load changes, which compositional data alone cannot capture.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "obesity_microbiome_mcq_009",
+      "question": "The study by Kaplan et al. (2019), which used data from the Hispanic Community Health Study, found a significantly lower Shannon diversity only in which obesity class compared to normal weight?",
+      "options": [
+        "A) Obesity Class I (BMI 30–35 kg/m²)",
+        "B) Obesity Class II (BMI 35–40 kg/m²)",
+        "C) Obesity Class III (BMI > 40 kg/m²)",
+        "D) All obesity classes showed significant differences"
+      ],
+      "correct_answer": "C",
+      "explanation": "Kaplan et al. found that only Obesity Class III (BMI > 40 kg/m²) showed a significantly lower Shannon diversity compared to normal weight individuals (Beta −0.19, 95% CI −0.35, −0.03), while Classes I and II showed non-significant trends. This suggests a dose-response relationship where diversity reductions become significant only at severe obesity.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "factual"
+    },
+    {
+      "id": "obesity_microbiome_mcq_010",
+      "question": "Which of the following best explains why the genus Fusobacterium and Megasphera are considered potentially harmful genera enriched in obesity?",
+      "options": [
+        "A) They degrade mucin in the gut lining, increasing intestinal permeability",
+        "B) They produce butyrate from glutamate and lysine amino acids while releasing harmful by-products like ammonia",
+        "C) They activate inflammatory TH17 pathways through LPS-mediated signaling",
+        "D) They compete with Akkermansia muciniphila for mucosal colonization sites"
+      ],
+      "correct_answer": "B",
+      "explanation": "The paper states that Fusobacterium and Megasphera produce butyrate from glutamate and lysine amino acids, but critically, this process also releases harmful by-products such as ammonia, which can have deleterious effects upon the host. This distinguishes them from other butyrate producers and explains their potentially adverse role despite producing the beneficial metabolite butyrate.",
+      "expected_documents": [
+        "PMC8746372_Gut_Microbiome_Composition_in_Obese_and_Non-Obese.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

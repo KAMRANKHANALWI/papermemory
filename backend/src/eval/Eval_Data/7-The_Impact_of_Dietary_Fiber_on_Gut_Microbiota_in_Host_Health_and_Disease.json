@@ -1,0 +1,328 @@
+{
+  "source_document": "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf",
+  "test_cases": [
+    {
+      "id": "fiber_microbiota_001",
+      "query": "What are the three main categories of dietary fiber according to the Codex Alimentarius commission definition?",
+      "ground_truth_answer": "The three categories are: (1) edible carbohydrate polymers naturally occurring in foods such as fruits, vegetables, legumes, and cereals; (2) edible carbohydrate polymers obtained from food raw materials by physical, enzymatic, and chemical means that have a proven physiological benefit; and (3) synthetic carbohydrate polymers with a proven physiological benefit",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "fiber_microbiota_002",
+      "query": "What percentage of the fecal microbiota can specific fiber-responding species constitute during dietary fiber intervention?",
+      "ground_truth_answer": "Specific species can constitute more than 30% of the total sequences obtained by amplicon sequencing of the fecal microbiota during dietary fiber intervention",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "fiber_microbiota_003",
+      "query": "Which bacterial species is considered a keystone species for the degradation of resistant starch?",
+      "ground_truth_answer": "Ruminoccocus bromii is considered a keystone species for the degradation of resistant starch and contributes significantly to butyrate production in the colon, although the species itself does not produce butyrate",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "fiber_microbiota_004",
+      "query": "How many glycoside hydrolase, polysaccharide lyase, and carbohydrate esterase families does the gut microbiome harbor?",
+      "ground_truth_answer": "The gut microbiome harbors 130 glycoside hydrolase families, 22 polysaccharide lyase families, and 16 carbohydrate esterase families, which provide flexibility to switch between different energy sources of fibers depending on availability",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "fiber_microbiota_005",
+      "query": "What bacterial phyla were found to be most abundant in Hadza hunter-gatherers compared to Italian controls?",
+      "ground_truth_answer": "Hadza hunter-gatherers had higher levels of microbial richness and biodiversity, with increased Bacteroidetes and decreased Firmicutes abundances. They almost lack the Actinobacteria phylum, including low levels of Bifidobacterium",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "fiber_microbiota_006",
+      "query": "Explain the mechanism by which butyrate consumption by colonocytes creates an anaerobic environment in the gut",
+      "ground_truth_answer": "Beta-oxidation of butyrate by colonocytes consumes oxygen, resulting in an anaerobic milieu in the gut. Since butyrate-producing bacteria are very sensitive to oxygen, their abundance is reduced when butyrate levels are low, creating a feedforward loop that increases luminal oxygen levels. This allows Proteobacteria such as Escherichia coli and Salmonella enterica to bloom",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "fiber_microbiota_007",
+      "query": "How do Bacteroides thetaiotaomicron and Faecalibacterium prausnitzii work together to regulate mucus production?",
+      "ground_truth_answer": "Bacteroides thetaiotaomicron, an acetate and propionate producer, promotes goblet cell differentiation and expression of mucin-related genes. In contrast, Faecalibacterium prausnitzii, a consumer of acetate and a butyrate producer, reduces the effect of acetate on mucus and prevents overproduction of mucus, thus maintaining an appropriate structure and composition of the gut epithelium",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "fiber_microbiota_008",
+      "query": "What happens to the gut microbiota when the diet is devoid of dietary fibers?",
+      "ground_truth_answer": "When the diet is devoid of dietary fibers, prolonged lack damages the mucus barrier and is associated with increased abundance of mucin-degrading bacteria such as Akkermansia muciniphila. Some gut bacteria switch their metabolism to use mucin glycans by inducing gene expression of mucin-degrading enzymes. This leads to increased penetrability of the inner mucus layer and may increase susceptibility to infections",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "fiber_microbiota_009",
+      "query": "How do SCFAs promote the generation of colonic regulatory T cells?",
+      "ground_truth_answer": "SCFAs promote generation of colonic regulatory T cells (Tregs) in a GPR43-dependent manner as well as by inducing histone H3 acetylation. Additionally, maternal high-fiber feeding during pregnancy and lactation modulates thymic microenvironment and induces autoimmune regulator (Aire) expression, which contributes to enhanced peripheral and thymic Treg counts in a GPR41-dependent manner",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "fiber_microbiota_010",
+      "query": "Describe the differences in SCFA production profiles between Hadza hunter-gatherers and Italian cohorts",
+      "ground_truth_answer": "SCFA production in Hadza hunter-gatherers was characterized by increased propionate concentrations, while the Italian cohort had more butyrate. This segregation in SCFA production reflects differences in dietary variation related to the amount and type of fiber and carbohydrates consumed by both communities",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "comparison"
+    },
+    {
+      "id": "fiber_microbiota_011",
+      "query": "What are the detrimental metabolites produced from protein fermentation when dietary fiber intake is low?",
+      "ground_truth_answer": "When dietary fiber intake is low, gut microbial metabolism shifts toward utilization of dietary and endogenous proteins, leading to production of branched-chain fatty acids, ammonia, amines, N-nitroso compounds, phenolic compounds including p-Cresol, sulphides, indolic compounds, and hydrogen sulfide. These metabolites are cytotoxic and pro-inflammatory, contributing to the development of chronic diseases, particularly colorectal cancer",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "fiber_microbiota_012",
+      "query": "Explain the concept of fiber binding as a platform for bile acid transformation and its health implications",
+      "ground_truth_answer": "Conjugated bile acids in the small intestine can bind to fibers before they are deconjugated by Bacteroides and Lactobacillus species. Binding of both bile acids and specific bacteria to the same fiber creates a platform that allows low abundant bacteria like Clostridium scindens to efficiently transform biomolecules and increase production of secondary bile acids. Secondary bile acids such as deoxycholic acids have been positively associated with both colorectal cancer and improved metabolism",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "fiber_microbiota_013",
+      "query": "Compare the gut microbiota composition of children from rural Burkina Faso versus Italy and explain the impact of urbanization",
+      "ground_truth_answer": "Children from rural Burkina Faso showed a significant increase in abundance of Prevotella and Xylanibacter genera associated with higher levels of fecal SCFAs, reflecting their ability to degrade complex carbohydrates. Children from urban areas of Burkina Faso had bacterial communities more similar to Italian children, with bacteria more suited to metabolize animal protein, fat, and sugar-rich foods. Rural Burkina Faso children had enrichment in Prevotella, Treponema, and Succinivibrio adapted for fiber and carbohydrate fermentation. These differences are independent of ethnicity, highlighting the important impact of diet over host genetics",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "fiber_microbiota_014",
+      "query": "Describe the generational effects of a low-MAC diet in mice and its implications for human populations",
+      "ground_truth_answer": "Sonnenburg et al. investigated the consequences of lack of fiber (microbiota-accessible carbohydrates or MACs) intake in mice colonized with human microbiota. A low-MAC diet led to dramatically reduced microbial diversity in just three generations, which could not be restored when mice were moved back to a normal-MAC diet. This suggests that long-term reduction in fiber intake, like in the Western world, may lead to permanent extinction of important microbial taxa, potentially explaining reduced diversity in industrialized populations",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "fiber_microbiota_015",
+      "query": "How does personalized microbiota profiling predict metabolic response to dietary fiber, as demonstrated in the barley kernel-based bread study?",
+      "ground_truth_answer": "A study showed that supplementation of barley kernel-based bread (BKB) rich in beta-glucans did not result in metabolic improvement in all healthy subjects. Individuals who exhibited improved metabolic profile after 3 days of BKB consumption had a higher Prevotella/Bacteroides ratio with an enrichment of Prevotella copri, reflecting the ability to degrade complex carbohydrates. This demonstrates that the capacity for using fibers varies between Prevotella- versus Bacteroides-dominated gut microbiota, with Prevotella-dominated bacteria producing higher levels and different proportions of SCFAs",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+  
+  "mcq_questions": [
+    {
+      "id": "fiber_microbiota_mcq_001",
+      "question": "According to the Codex Alimentarius commission, what is the minimum number of monomeric units required for a carbohydrate polymer to be classified as dietary fiber?",
+      "options": [
+        "A) Two or more monomeric units",
+        "B) Three or more monomeric units",
+        "C) Four or more monomeric units",
+        "D) Five or more monomeric units"
+      ],
+      "correct_answer": "B",
+      "explanation": "The Codex Alimentarius commission defines dietary fiber as edible carbohydrate polymers with three or more monomeric units that are resistant to endogenous digestive enzymes",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "fiber_microbiota_mcq_002",
+      "question": "How quickly can gut microbiota composition change in response to dramatic changes in macronutrient composition?",
+      "options": [
+        "A) Within 6 hours",
+        "B) Within 24 hours",
+        "C) Within 3 days",
+        "D) Within 1 week"
+      ],
+      "correct_answer": "B",
+      "explanation": "Gut microbial communities respond within 24 hours to dramatic changes in macronutrient composition. Taxa with fiber-degrading capacity increase rapidly when humans are fed a plant-based diet",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "fiber_microbiota_mcq_003",
+      "question": "What is the estimated amount of dietary fiber consumed daily by our ancestors before the advent of agriculture?",
+      "options": [
+        "A) More than 30 g/day",
+        "B) More than 50 g/day",
+        "C) More than 75 g/day",
+        "D) More than 100 g/day"
+      ],
+      "correct_answer": "D",
+      "explanation": "The estimated amount of fiber consumed by our ancestors before the advent of agriculture was more than 100 g/day, which is much higher than current recommendations of 30 g/day",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "fiber_microbiota_mcq_004",
+      "question": "Which of the following best describes the relationship between fiber fermentation and protein fermentation in the gut?",
+      "options": [
+        "A) They occur simultaneously and independently",
+        "B) Protein fermentation enhances fiber fermentation",
+        "C) There is a trade-off between saccharolytic and proteolytic fermentation",
+        "D) They both require the same bacterial species"
+      ],
+      "correct_answer": "C",
+      "explanation": "There is a trade-off between saccharolytic (fiber) and proteolytic (protein) fermentation. A high-fiber diet is likely to inhibit protein fermentation, counteracting many of the detrimental effects of meat and fat consumption",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "fiber_microbiota_mcq_005",
+      "question": "What effect did 1% inulin supplementation have on mice fed a Western diet?",
+      "options": [
+        "A) It improved metabolic parameters but not mucus layer properties",
+        "B) It corrected inner mucus layer penetrability but not metabolic features",
+        "C) It had no effect on either mucus or metabolic parameters",
+        "D) It improved both mucus properties and metabolic parameters"
+      ],
+      "correct_answer": "B",
+      "explanation": "Low amount of inulin (1%) corrected the penetrability of the inner mucus layer but did not improve metabolic features. In contrast, high inulin intake (20%) prevented microbiota encroachment, improved gut health, and led to resolution of low-grade inflammation with improved metabolic parameters",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "fiber_microbiota_mcq_006",
+      "question": "Which bacterial phyla are the main responders to dietary fiber?",
+      "options": [
+        "A) Bacteroidetes and Proteobacteria",
+        "B) Firmicutes and Actinobacteria",
+        "C) Bacteroidetes and Firmicutes",
+        "D) Proteobacteria and Actinobacteria"
+      ],
+      "correct_answer": "B",
+      "explanation": "Species belonging to Firmicutes and Actinobacteria are the main responders to dietary fiber, although they contain relatively few fiber-metabolizing enzymes per organism. They generally have more specialized roles such as the initiation of complex substrate degradation",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "fiber_microbiota_mcq_007",
+      "question": "What percentage of patients with irritable bowel syndrome have a positive clinical response to a low-fiber diet according to the paper?",
+      "options": [
+        "A) 30-40%",
+        "B) 40-50%",
+        "C) 50-60%",
+        "D) The paper suggests caution with fiber for IBS but doesn't specify low-fiber diet response rates"
+      ],
+      "correct_answer": "D",
+      "explanation": "The paper mentions that fiber intake can lead to undesirable side effects such as flatulence, bloating, and stomachaches, and may be negative for individuals with irritable bowel syndrome, but does not specify response rates to low-fiber diets",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "fiber_microbiota_mcq_008",
+      "question": "What microbial functions were enriched in the gut microbiome of Malawian and Venezuelan infants compared to US infants?",
+      "options": [
+        "A) Enhanced ability to metabolize fucose",
+        "B) Enrichment in vitamin B12 biosynthesis, host glycan utilization, and urea catabolism",
+        "C) Higher production of branched-chain fatty acids",
+        "D) Increased capacity for protein fermentation"
+      ],
+      "correct_answer": "B",
+      "explanation": "The microbiome of Malawian and Venezuelan infants was characterized by enrichment of bacterial genes implicated in vitamin B12 biosynthesis, host glycan utilization, and urea catabolism, while increased ability to metabolize fucose was observed in US infants",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "comparison"
+    },
+    {
+      "id": "fiber_microbiota_mcq_009",
+      "question": "How does ferulic acid (FA), released through microbial metabolism of dietary fibers, benefit health?",
+      "options": [
+        "A) It only acts locally in the gut to modulate physiology",
+        "B) It acts as a prebiotic to increase beneficial bacteria",
+        "C) It has antioxidant and anti-inflammatory properties and can be transported to the bloodstream",
+        "D) It inhibits SCFA production to prevent inflammation"
+      ],
+      "correct_answer": "C",
+      "explanation": "Ferulic acid (FA), a phenolic compound released from plant cell walls by bacteria, has antioxidant and anti-inflammatory properties. It can act locally in the gut or be transported in its free form into the bloodstream to influence systemic health, including benefits for neurodegeneration, obesity, diabetes, and cancer",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "fiber_microbiota_mcq_010",
+      "question": "What was the result of moving African Americans to an 'African-style' diet with 55g fiber for 2 weeks in the O'Keefe study?",
+      "options": [
+        "A) No significant changes were observed",
+        "B) It reversed risk markers of colorectal cancer",
+        "C) It increased inflammatory markers",
+        "D) It reduced gut microbiota diversity"
+      ],
+      "correct_answer": "B",
+      "explanation": "Moving African Americans to an 'African-style' diet with 55g fiber reversed risk markers of colorectal cancer within only 2 weeks. This demonstrates that high fiber intake can rapidly impact disease risk markers and supports recommendations for fiber amounts greater than 50g/day to achieve health benefits",
+      "expected_documents": [
+        "7-The_Impact_of_Dietary_Fiber_on_Gut_Microbiota_in_Host_Health_and_Disease.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "factual"
+    }
+  ]
+}

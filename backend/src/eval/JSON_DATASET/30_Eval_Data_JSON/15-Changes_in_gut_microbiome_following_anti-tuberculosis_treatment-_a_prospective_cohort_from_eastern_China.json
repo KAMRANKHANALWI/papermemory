@@ -1,0 +1,328 @@
+{
+  "source_document": "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf",
+  "test_cases": [
+    {
+      "id": "tb_microbiome_001",
+      "query": "What was the total number of tuberculosis patients enrolled in the study who provided fecal samples at all three time points?",
+      "ground_truth_answer": "Out of 204 tuberculosis patients diagnosed during the study period, 85 patients provided fecal samples at baseline, 2 months, and 6 months during treatment. The average age was 41.8±15.193 years, with a gender ratio of 77 males to 8 females",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "tb_microbiome_002",
+      "query": "What percentage of tuberculosis patients reported being free of gastrointestinal symptoms during anti-tuberculosis treatment?",
+      "ground_truth_answer": "Only 28.2% of the cohort reported being free of gastrointestinal symptoms during anti-tuberculosis treatment, meaning 71.8% experienced gastrointestinal symptoms. Nausea and vomiting were the most reported symptoms, followed by heartburn and acid reflux",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "tb_microbiome_003",
+      "query": "What are the four first-line drugs used in the standard 6-month anti-tuberculosis treatment regimen?",
+      "ground_truth_answer": "The four first-line drugs are isoniazid (INH), rifampicin (RIF), pyrazinamide (PZA), and ethambutol (EMB). Treatment consists of INH, RIF, EMB and PZA in the first 2 months (intensive phase) followed by INH and RIF in the following 4 months (continuation phase)",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "tb_microbiome_004",
+      "query": "Which four cities in Jiangsu Province were selected as research sites for this multi-center study?",
+      "ground_truth_answer": "The four cities selected were Wuxi, Changzhou, Taizhou and Xuzhou city, representing geographical, demographic, and economic variations across southern, central, and northern Jiangsu Province in eastern China",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "tb_microbiome_005",
+      "query": "What were the top four predominant bacterial phyla in the gut microbiome of tuberculosis patients?",
+      "ground_truth_answer": "The top four bacterial phyla were Firmicutes, Proteobacteria, Actinobacteriota, and Bacteroidota, which accounted for more than 90% of the abundance. The dominant species remained the same throughout treatment, but their relative abundances varied",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "tb_microbiome_006",
+      "query": "How does anti-tuberculosis treatment affect gut microbiota diversity over the course of treatment?",
+      "ground_truth_answer": "Anti-tuberculosis treatment significantly reduces gut microbiota diversity, with a transient decrease in alpha diversity indices observed after two months. Patients at baseline had higher alpha diversity (Shannon index 2.92±0.93) compared to after 2 months of treatment (2.50±0.84, P=0.0014). The diversity recovered slightly after 6 months of treatment but remained lower than baseline, and the recovery process was slow and potentially incomplete",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "tb_microbiome_007",
+      "query": "Explain how the gut microbiota influences the immune response to tuberculosis through short-chain fatty acids (SCFAs)",
+      "ground_truth_answer": "Bacteria within the Bacteroidota phylum utilize dietary fibers to produce SCFAs (acetate, propionate, and butyrate). SCFAs serve as energy sources for colonocytes, regulate host fatty acid and lipid synthesis, maintain gut microbiota stability, elevate anti-inflammatory cytokine levels and reduce inflammation, and regulate the immune system including immune response to Mycobacterium tuberculosis. SCFAs act as signaling molecules that travel throughout the body via bloodstream, aiding in immune system regulation",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "tb_microbiome_008",
+      "query": "What changes occur to Proteobacteria abundance during and after the intensive phase of anti-tuberculosis treatment?",
+      "ground_truth_answer": "Proteobacteria exhibited a significant increase during the intensive phase of anti-tuberculosis treatment, rising from 13.36% at baseline to 25.06% at 2 months (P=0.008). After the intensive treatment phase ended, Proteobacteria showed a significant decrease from 25.06% to 16.47% at 6 months (P=0.006), demonstrating a pattern of increasing then decreasing relative abundance",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "tb_microbiome_009",
+      "query": "Describe the role of Firmicutes in systemic immune responses and how anti-tuberculosis treatment affects this phylum",
+      "ground_truth_answer": "Firmicutes produce SCFAs and control systemic immune responses through their cell wall glycoconjugates, notably by facilitating the release of IL-34, which activates macrophages and bolsters defensive capabilities against pulmonary inflammation. The cell wall glycoconjugates of Firmicutes more readily traverse the intestinal barrier, gaining access to the host's systemic circulation and persisting within the body, thereby enhancing their ability to modulate systemic immunity. Anti-tuberculosis therapy is associated with a reduction in the abundance of Firmicutes, potentially exerting consequential effects on the immune system",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "tb_microbiome_010",
+      "query": "How does the Gastrointestinal Symptom Rating Scale (GSRS) assess gastrointestinal symptoms in tuberculosis patients?",
+      "ground_truth_answer": "The GSRS is a self-report questionnaire developed by Svedlund et al. that assesses the severity and frequency of common gastrointestinal symptoms. It encompasses 15 gastrointestinal-related symptoms including abdominal pain, heartburn, acid reflux, upper abdominal tightness, nausea and vomiting, abdominal rumbling, abdominal distension, belching, increased flatulence, reduced defecation, increased defecation, loose stools, hard stools, urgency of defecation, and feeling of incomplete evacuation. Items are rated along a four-point Likert scale ranging from 0 (none/nothing or symptom does not occur) to 3 (very frequent and troublesome symptom), with patients graded based on degree, frequency, duration, mitigating factors, and impact on social activities",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "tb_microbiome_011",
+      "query": "What is the gut-lung axis and how does it relate to tuberculosis pathogenesis?",
+      "ground_truth_answer": "The gut-lung axis refers to the bidirectional relationship where the gut microbiota can influence respiratory diseases and vice versa. Intestinal disorders may affect the lungs through lung inflammation, as both have similar immune messengers and inflammatory processes. The relationship between gut microbiota and respiratory diseases may be related to classic immune inflammatory pathways such as the T cell family and pattern recognition receptors. TNF-α, inflammatory factors such as IL-22 and their regulatory substances constitute the common substance of the intestinal lung axis, which may be related to drug resistance. Intestinal microbiota can regulate the immune response of lung tissue through SCFAs, cytokines, and other factors, thereby affecting the development and outcome of lung diseases including tuberculosis",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "tb_microbiome_012",
+      "query": "Compare the changes in Bacteroidota abundance throughout the anti-tuberculosis treatment course and explain their significance",
+      "ground_truth_answer": "Bacteroidota showed a significant decrease in genus abundance both before and after the start of the intensive phase of anti-tuberculosis treatment. Specifically, it decreased from 11.95% at baseline to 7.69% at 2 months (P=0.04), and further decreased from baseline 11.95% to 6.64% at 6 months (P=0.006). This is significant because bacteria within the Bacteroidota phylum are capable of utilizing dietary fibers to produce SCFAs, which are crucial for colonocyte energy, immune regulation, and inflammatory response. The sustained reduction throughout treatment suggests prolonged impairment of SCFA production capacity, potentially affecting immune function and gut homeostasis",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "tb_microbiome_013",
+      "query": "Describe the dynamic changes in Escherichia-Shigella and Akkermansia genera during anti-tuberculosis treatment and their potential clinical implications",
+      "ground_truth_answer": "Escherichia-Shigella demonstrated a significant increase during the intensive phase (from 11.44% to 21.11%, P=0.003), followed by a significant decrease after the intensive treatment phase (from 21.11% to 14.85%, P=0.026). Escherichia-Shigella has been found to dominate gut microbiome dysbiosis in tuberculous meningitis patients and could serve as a strong indicator for forecasting microbiota dysbiosis triggered by anti-tuberculosis treatment. Conversely, Akkermansia exhibited a decrease during the intensive phase (from 2.29% to 1.61%, P=0.427), followed by a gradual increase afterward (from 1.61% to 3.59%, P=0.117). Akkermansia muciniphila or its metabolite palmitoleic acid has been shown to suppress Mycobacterium tuberculosis infection in animal models, though its role may be influenced by multiple factors",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "tb_microbiome_014",
+      "query": "What were the specific changes observed in the genus Enterococcus during anti-tuberculosis treatment and what are the potential clinical concerns?",
+      "ground_truth_answer": "Enterococcus showed a decrease in relative abundance during the intensive phase of anti-tuberculosis treatment (from 1.31% to 0.40%, P=0.168), but then rapidly increased afterward, far exceeding the levels before the start of treatment (from 0.40% to 2.66%, P=0.007). This is clinically concerning because while Enterococcus can enhance gastrointestinal adhesion by producing extracellular polysaccharides and facilitate probiotic colonization, in tuberculosis patients undergoing long-term antibiotic therapy or with compromised immunity, Enterococcus are prone to translocation leading to enterococcal infections. Moreover, their ability to accumulate mutations and acquire exogenous genetic elements confers additional antibiotic resistance, rendering Enterococcus as one of the major nosocomial pathogens, suggesting potential drug resistance or pathogenic risk",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "tb_microbiome_015",
+      "query": "What were the key methodological approaches used for gut microbiome analysis in this study?",
+      "ground_truth_answer": "The study extracted total microbial genomic DNA from fecal samples and amplified the hypervariable region V3-V4 of the bacterial 16S rRNA gene using primers 338F and 806R. Purified amplicons were paired-end sequenced on an Illumina PE300/PE250 platform. Raw FASTQ files were quality filtered by fastp version 0.19.6 and merged by FLASH version 1.2.11. Optimized sequences were clustered into operational taxonomic units (OTUs) using UPARSE 11 with 97% sequence similarity level. The number of 16S rRNA gene sequences from each sample was rarefied to 20,000, yielding an average Good's coverage of 99.09%. Alpha diversity indices (observed OTUs, Chao1 richness, Shannon index) and beta diversity using Principal Coordinate Analysis (PCoA) based on Bray-Curtis dissimilarity were calculated",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    }
+  ],
+  
+  "mcq_questions": [
+    {
+      "id": "tb_microbiome_mcq_001",
+      "question": "What was the study period during which tuberculosis patients were recruited for this multi-center prospective cohort study?",
+      "options": [
+        "A) October 2018 to December 2020",
+        "B) October 2019 to December 2021",
+        "C) October 2020 to December 2022",
+        "D) October 2021 to December 2023"
+      ],
+      "correct_answer": "C",
+      "explanation": "The multi-center, observational prospective cohort study was conducted from October 2020 to December 2022 at four designated hospitals in Jiangsu Province in eastern China",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "tb_microbiome_mcq_002",
+      "question": "At what three time points were fecal samples collected from tuberculosis patients during the study?",
+      "options": [
+        "A) Baseline, 1 month, and 3 months",
+        "B) Baseline, 2 months, and 6 months",
+        "C) Baseline, 3 months, and 9 months",
+        "D) Baseline, 4 months, and 8 months"
+      ],
+      "correct_answer": "B",
+      "explanation": "Fecal samples were collected at baseline prior to initiating anti-tuberculosis therapy, at the end of 2 months (after intensive phase), and at 6 months during treatment (end of treatment). Samples were immediately frozen at -80°C and delivered with dry ice to the laboratory within 2 hours",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "tb_microbiome_mcq_003",
+      "question": "What percentage of the tuberculosis patient cohort had bacteriologically positive results?",
+      "options": [
+        "A) Over one-quarter (25%)",
+        "B) Over one-third (>33%)",
+        "C) Over one-half (>50%)",
+        "D) Over two-thirds (>66%)"
+      ],
+      "correct_answer": "B",
+      "explanation": "Over one-third of patients with tuberculosis (N=58 out of 85, which is 68.23%) were bacteriologically positive according to Table 1 in the study",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "tb_microbiome_mcq_004",
+      "question": "What was the Shannon diversity index value for tuberculosis patients at baseline compared to after 2 months of treatment?",
+      "options": [
+        "A) Baseline: 2.50±0.84, 2 months: 2.92±0.93",
+        "B) Baseline: 2.92±0.93, 2 months: 2.50±0.84",
+        "C) Baseline: 3.50±0.93, 2 months: 2.92±0.84",
+        "D) Baseline: 2.58±0.81, 2 months: 2.50±0.84"
+      ],
+      "correct_answer": "B",
+      "explanation": "People with tuberculosis before treatment had a higher Shannon index of 2.92±0.93 compared to 2.50±0.84 after 2 months of treatment (P=0.0014), demonstrating a significant reduction in gut microbiota diversity during the intensive treatment phase",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "tb_microbiome_mcq_005",
+      "question": "Which bacterial genus has been found to dominate gut microbiome dysbiosis in tuberculous meningitis patients?",
+      "options": [
+        "A) Bifidobacterium",
+        "B) Faecalibacterium",
+        "C) Escherichia-Shigella",
+        "D) Akkermansia"
+      ],
+      "correct_answer": "C",
+      "explanation": "Apart from being opportunistic pathogens, Escherichia-Shigella has been found to dominate the gut microbiome dysbiosis in people with tuberculous meningitis. The study suggests it could serve as a strong indicator for forecasting microbiota dysbiosis triggered by anti-tuberculosis treatment",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "tb_microbiome_mcq_006",
+      "question": "What happens to gut microbiota diversity between 2 months and 6 months of anti-tuberculosis treatment?",
+      "options": [
+        "A) It continues to decrease significantly",
+        "B) It remains stable with no significant change",
+        "C) It recovers completely to baseline levels",
+        "D) It increases dramatically above baseline"
+      ],
+      "correct_answer": "B",
+      "explanation": "No significant differences in microbiota diversity were identified between 2 months of treatment and at the end of 6 months of treatment (Shannon index 2.50±0.84 vs 2.58±0.81, P=0.55; inverse Simpson's index 7.87±6.42 vs 11.90±8.66, P=0.43). The recovery of gut microbiota diversity after intensive treatment is slow and potentially incomplete",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "tb_microbiome_mcq_007",
+      "question": "How many operational taxonomic units (OTUs) were generated per sample in this study?",
+      "options": [
+        "A) 100-500 OTUs per sample",
+        "B) 548-7,271 OTUs per sample",
+        "C) 10,000-15,000 OTUs per sample",
+        "D) 20,000-25,000 OTUs per sample"
+      ],
+      "correct_answer": "B",
+      "explanation": "The 255 fecal samples yielded 12,475,450 reads in total, ranging from 16,493 to 77,921 reads per sample. Reads were classified into OTUs at a 3% similarity cutoff, and generated 548-7,271 OTUs per sample",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "tb_microbiome_mcq_008",
+      "question": "Which interleukin (IL) is facilitated by Firmicutes cell wall glycoconjugates to activate macrophages and enhance defense against pulmonary inflammation?",
+      "options": [
+        "A) IL-6",
+        "B) IL-22",
+        "C) IL-34",
+        "D) IL-10"
+      ],
+      "correct_answer": "C",
+      "explanation": "Firmicutes exert control over systemic immune responses through their cell wall glycoconjugates, notably by facilitating the release of IL-34, which activates macrophages and bolsters defensive capabilities against pulmonary inflammation. The cell wall glycoconjugates of Firmicutes more readily traverse the intestinal barrier, gaining access to the host's systemic circulation",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "tb_microbiome_mcq_009",
+      "question": "What was the primary finding regarding the recovery of gut microbiota after the intensive phase of anti-tuberculosis treatment?",
+      "options": [
+        "A) Gut microbiota fully recovered to pre-treatment levels within weeks",
+        "B) Gut microbiota diversity increased dramatically above baseline levels",
+        "C) Gut microbiota showed partial recovery but the process was extremely slow and potentially incomplete",
+        "D) Gut microbiota continued to decline throughout the entire treatment period"
+      ],
+      "correct_answer": "C",
+      "explanation": "The study's key finding was that after the intensive treatment phase, the gut microbiota has partially recovered, but it is an extremely slow process and potentially incomplete. Anti-tuberculosis treatment significantly reduces gut microbiota diversity, with a transient decrease in alpha diversity indices observed after two months, and the amount of diversity only recovered slightly after 6 months of treatment",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "tb_microbiome_mcq_010",
+      "question": "According to the study, what is the significance of the gut microbiota comprising over 1000 species with a bacterial cell count ten times that of human body cells?",
+      "options": [
+        "A) It means gut bacteria are pathogenic and should be eliminated",
+        "B) It demonstrates that gut microbiota plays a considerably important role in human health through material and information exchange with host cells",
+        "C) It indicates that humans are primarily bacterial organisms rather than human",
+        "D) It shows that antibiotics have no effect on human health"
+      ],
+      "correct_answer": "B",
+      "explanation": "The human gut harbors a diverse array of microorganisms comprising over 1000 species with a bacterial cell count ten times that of human body cells. The diverse gut microbiota's influence extends far beyond simple symbiotic relationship - it engages in material and information exchange among themselves and continuously communicates with host cells, co-evolves with the host, participates in host metabolism, and regulates the transformation of important chemical substances including drugs, playing a considerably important role in human health",
+      "expected_documents": [
+        "15-Changes_in_gut_microbiome_following_anti-tuberculosis_treatment-_a_prospective_cohort_from_eastern_China.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    }
+  ]
+}

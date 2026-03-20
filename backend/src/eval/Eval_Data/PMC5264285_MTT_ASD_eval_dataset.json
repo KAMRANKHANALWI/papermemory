@@ -1,0 +1,329 @@
+{
+  "source_document": "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_and_improves_gastrointestinal_and_autism_symptoms.pdf",
+  "paper_reference": "Kang et al. (2017). Microbiota Transfer Therapy alters gut ecosystem and improves gastrointestinal and autism symptoms: an open-label study. Microbiome, 5(1), 10.",
+  "test_cases": [
+    {
+      "id": "mtt_asd_001",
+      "query": "What type of study design was used in the MTT trial for children with ASD?",
+      "ground_truth_answer": "The MTT trial used an open-label study design, meaning all participants and researchers knew that treatment was being administered. There was no placebo or blinded control group. The study enrolled 18 children with ASD who had gastrointestinal problems, and assessed outcomes at baseline (week 0), treatment end (week 10), and 8 weeks after treatment concluded (week 18).",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mtt_asd_002",
+      "query": "What does MTT stand for and how does it differ from a standard FMT?",
+      "ground_truth_answer": "MTT stands for Microbiota Transfer Therapy. It differs from a standard Fecal Microbiota Transplant (FMT) in that it is a more intensive and extended protocol. MTT includes a bowel cleanse prior to treatment, followed by high-dose fecal microbiota administered initially via rectal or oral routes, then maintained with daily oral doses over a 7–8 week maintenance period. Standard FMT is typically a single or limited-course administration.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mtt_asd_003",
+      "query": "What were the primary outcome measures used to assess gastrointestinal symptoms in the study?",
+      "ground_truth_answer": "The primary GI outcome measure was the Gastrointestinal Symptom Rating Scale (GSRS), which assessed subscores including abdominal pain, reflux, indigestion, diarrhea, and constipation. Stool consistency and frequency were also tracked through daily stool records averaged over 2-week intervals. All GI subscores showed statistically significant improvement from baseline to treatment end and were sustained 8 weeks post-treatment.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mtt_asd_004",
+      "query": "What behavioral assessment tools were used to evaluate autism-related symptoms in the study?",
+      "ground_truth_answer": "Two main behavioral assessment tools were used. The Aberrant Behavior Checklist (ABC) measured subscales including irritability, lethargy, stereotypy, hyperactivity, and inappropriate speech. The Parent Global Impressions-III (PGI-III) captured parental assessments of overall improvement across 19 specific ASD-related and GI symptoms, rated on a scale from -3 (much worse) to +3 (much better). The Vineland Adaptive Behavior Scales measured developmental age across communication, daily living skills, and socialization domains.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mtt_asd_005",
+      "query": "What was the average chronological age of participants at the start of the MTT treatment?",
+      "ground_truth_answer": "The average chronological age of participants at the start of treatment was 10.9 years. Vineland developmental assessments at baseline showed that children were functioning at developmental ages substantially below their chronological age, particularly in language and social (interpersonal) ability, which are core areas of deficit in autism.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mtt_asd_006",
+      "query": "How did gut microbiota diversity change in ASD children following MTT, and how did it compare to neurotypical controls and donors?",
+      "ground_truth_answer": "Following MTT, gut microbiota diversity in ASD children increased significantly, as measured by Faith's Phylogenetic Diversity (PD) and Observed OTUs. At baseline, ASD children had lower diversity than neurotypical controls. By week 18 (8 weeks after treatment ended), the Observed OTUs in ASD participants had significantly increased (p<0.01) and approached the median diversity level of neurotypical controls. Faith's PD from swab samples showed a similar trend, with significant increases observed at later timepoints. Donor diversity, particularly from the initial dose samples, remained higher overall.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mtt_asd_007",
+      "query": "What does UniFrac distance to donor indicate, and what did the study find about engraftment?",
+      "ground_truth_answer": "UniFrac distance to donor measures how compositionally different the recipient's gut microbiota is from the donor's. A decreasing distance over time indicates successful engraftment — that donor microbial taxa are colonizing the recipient's gut. The study found that unweighted UniFrac distances between ASD participants and donors decreased significantly across all post-treatment timepoints (weeks 3, 10, and 18) compared to baseline, with q<0.001 at weeks 10 and 18. This indicates robust and durable engraftment. Most individuals became more compositionally similar to the donor over the full study period.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mtt_asd_008",
+      "query": "What was the correlation between GI symptom improvement and autism behavioral improvement?",
+      "ground_truth_answer": "The study found a significantly negative correlation between the percentage change in GSRS scores (GI symptoms) and overall PGI-III scores (parental-rated behavioral improvement). Spearman correlation was r = -0.59 and Pearson correlation was r = -0.56, both with p < 0.001. The negative correlation means that as GSRS scores decreased (GI symptoms improved), PGI-III improvement scores increased, suggesting that GI and behavioral improvements co-occur and may be mechanistically linked through the gut-brain axis.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mtt_asd_009",
+      "query": "What did Vineland Developmental Age scores reveal about behavioral gains after MTT?",
+      "ground_truth_answer": "Vineland Developmental Age scores showed significant improvements across all subscales at 4 months after the start of treatment (end of observation). Significant gains were found in all 10 subscale domains: receptive language, expressive language, written language, personal daily living skills, domestic skills, community skills, interpersonal relationships, play and leisure time, coping skills, and the overall average. All improvements were statistically significant at p < 0.01 or p < 0.001 (two-tailed Wilcoxon signed-rank test), indicating broad developmental gains beyond just GI symptom relief.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mtt_asd_010",
+      "query": "How was the gut phageome (viral microbiome) characterized in the study, and what were the key findings about gut phage taxonomy?",
+      "ground_truth_answer": "Gut phageome characterization was based on viral sequence identification using blastx against the Viral Protein RefSeq database. Viral populations were assigned a viral family if more than 50% of genes had a bit score above 50 to a family in the database. All assignable viral populations belonged to the Order Caudovirales: 2.97% were Siphoviridae, 0.73% Myoviridae, and 0.67% Podoviridae. The vast majority — 95.64% — could not be assigned any familial-level taxonomy, highlighting the extent to which gut phage diversity remains uncharacterized. Additionally, only 4.91% of identified gut viral populations matched the 23 core gut phages identified by Manrique et al. (2016), based on blastn alignment length >500bp at >75% identity.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mtt_asd_011",
+      "query": "How did PGI-III subscores at the end of treatment (week 10) differ between responders and non-responders across different symptom domains?",
+      "ground_truth_answer": "At treatment end (week 10), PGI-III subscores consistently showed higher improvement ratings for responders compared to non-responders across nearly all 19 symptom domains including stools/GI problems, overall autism-related symptoms, attention/focus, expressive and receptive language, sociability, cognition, irritability/mood, anxiety, tantrums/meltdowns, hyperactivity, aggression, sleep, and sensory sensitivity. Responders clustered around scores of +1 to +3 (slightly better to much better), while non-responders were more centered near 0 (no change) or occasionally negative values. The pattern persisted at week 18, confirming durable treatment effects among responders.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mtt_asd_012",
+      "query": "Explain the relationship between gut microbiota diversity metrics — Faith's PD versus Observed OTUs — and what each captures in the context of the MTT study.",
+      "ground_truth_answer": "Faith's Phylogenetic Diversity (PD) and Observed OTUs (Operational Taxonomic Units) both measure alpha-diversity (within-sample diversity) but capture different dimensions. Observed OTUs is a non-phylogenetic metric that simply counts the number of distinct microbial species detected; it treats all taxa as equally different. Faith's PD, in contrast, is a phylogenetic metric that accounts for the evolutionary relatedness of microbial taxa — it sums the branch lengths of the phylogenetic tree spanned by the detected species. In the MTT study, both metrics were tracked across timepoints. The supplementary data shows that Observed OTUs reached statistical significance at week 18 (q<0.01), reflecting a meaningful increase in species richness. Faith's PD from swab samples showed a similar trend. The dual use of metrics ensures that changes in both raw species counts and phylogenetic breadth (functional potential) are captured, providing a more complete picture of microbiome restoration.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "mtt_asd_013",
+      "query": "Compare the engraftment evidence from stool samples versus rectal swab samples in the study. What methodological insight does this comparison provide?",
+      "ground_truth_answer": "The study used both stool samples and rectal swab samples to assess microbiota engraftment, with swab results presented as an analog to the stool-based primary analyses (Figure S7 mirrors the main Figure 3). Both sample types showed decreasing UniFrac distance to donor over time, confirming engraftment across different sampling modalities. However, the stool sample data (Figure S9) showed that unweighted UniFrac and Jaccard distances reached significance at multiple timepoints, while weighted UniFrac (which accounts for abundance, not just presence) showed non-significant trends — suggesting engraftment of new taxa (presence-based) was more robust than shifts in the dominant abundance structure. The convergence of swab and stool results strengthens confidence in the biological findings. The fact that swab samples (which capture mucosal-adherent microbiota) showed similar diversity gains suggests that engraftment was not merely luminal but potentially involved colonization of the mucosal microenvironment.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "mtt_asd_014",
+      "query": "What does the gut-brain axis hypothesis predict about the mechanism by which MTT might improve autism behavioral symptoms, and how does the Kang et al. study design test this?",
+      "ground_truth_answer": "The gut-brain axis hypothesis proposes that bidirectional communication between the gut microbiome and the brain — via the vagus nerve, immune signaling, tryptophan/serotonin pathways, and short-chain fatty acid production — can influence neurodevelopment and behavior. Applied to ASD, the hypothesis suggests that gut dysbiosis may exacerbate neurological symptoms through impaired metabolite signaling, intestinal inflammation, and altered neurotransmitter production. The Kang et al. study tests this indirectly by simultaneously measuring GI outcomes (GSRS), behavioral outcomes (ABC, PGI-III, Vineland), and gut microbiota composition changes post-MTT. The strong negative correlation between GSRS improvement and PGI-III behavioral scores (r = -0.59, p < 0.001) provides correlational support for this axis. However, as an open-label study without a placebo control, the design cannot establish causality — it cannot rule out that the rigorous diet, parental attention, or behavioral changes related to reduced GI discomfort independently drove behavioral gains.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "mtt_asd_015",
+      "query": "What are the key limitations of the Kang et al. 2017 MTT study that would need to be addressed in future trials?",
+      "ground_truth_answer": "Several key limitations constrain interpretation of the Kang et al. findings. First, it was an open-label, single-arm study without a placebo-controlled or double-blind comparison group, making it impossible to separate treatment effects from placebo effects, regression to the mean, or natural developmental progression. Second, the sample size was small (18 children), limiting statistical power to detect effect sizes reliably or generalize findings. Third, participants were selected for having both ASD and GI symptoms, making findings potentially applicable only to this ASD subgroup rather than ASD broadly. Fourth, the study lacked long-term follow-up beyond 8 weeks post-treatment, so durability of microbiome and behavioral changes beyond 18 weeks is unknown. Fifth, the simultaneous use of bowel cleanse, antibiotics (vancomycin), and MTT makes it difficult to attribute effects to the microbiota transfer alone. Future trials should include randomized placebo-controlled designs, larger cohorts, stratified ASD subgroups, and longer follow-up periods.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "mtt_asd_mcq_001",
+      "question": "How many children with ASD were enrolled and completed the MTT study as reported in the supplementary figures?",
+      "options": [
+        "A) 10 children",
+        "B) 15 children",
+        "C) 18 children",
+        "D) 20 children"
+      ],
+      "correct_answer": "C",
+      "explanation": "The supplementary figures (e.g., Figure S1 and S6) explicitly state that data points represent 18 individual participants. Figure S7 shows Faith PD for the ASD microbiota with n=20 for swab samples, but the primary behavioral and stool sample analyses involved 18 children.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mtt_asd_mcq_002",
+      "question": "What percentage of gut viral populations in the MTT study could NOT be assigned a familial-level taxonomy?",
+      "options": [
+        "A) 50.12%",
+        "B) 75.33%",
+        "C) 85.91%",
+        "D) 95.64%"
+      ],
+      "correct_answer": "D",
+      "explanation": "As shown in Figure S5, 95.64% of viral populations could not be assigned a familial-level taxonomy. Only 4.36% could be classified, all belonging to the Order Caudovirales (Siphoviridae: 2.97%, Myoviridae: 0.73%, Podoviridae: 0.67%), underscoring how poorly characterized the gut phageome remains.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mtt_asd_mcq_003",
+      "question": "On the PGI-III scale used in the MTT study, what does a score of +2 represent?",
+      "options": [
+        "A) Slightly better",
+        "B) Better",
+        "C) Much better",
+        "D) No change"
+      ],
+      "correct_answer": "B",
+      "explanation": "The PGI-III scale used in the study ranged from -3 (much worse) to +3 (much better). A score of +2 represents 'better', +1 represents 'slightly better', 0 represents 'no change', and +3 represents 'much better'. This scale was used to assess parental impressions across 19 GI- and ASD-related symptom domains.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "mtt_asd_mcq_004",
+      "question": "What correlation coefficient (Spearman) was found between % change in GSRS scores and overall PGI-III scores across the 18-week study?",
+      "options": [
+        "A) r = -0.31, p < 0.05",
+        "B) r = -0.45, p < 0.01",
+        "C) r = -0.59, p < 0.001",
+        "D) r = -0.72, p < 0.001"
+      ],
+      "correct_answer": "C",
+      "explanation": "Figure S2 reports that the Spearman correlation between % change in GSRS and overall PGI-III scores was r = -0.59 (p < 0.001), and the Pearson correlation was r = -0.56 (p < 0.001). The negative correlation means that improvements in GI symptoms (decreasing GSRS) were significantly associated with improvements in autism-related behavioral ratings (increasing PGI-III).",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "mtt_asd_mcq_005",
+      "question": "What percentage of gut viral populations in the MTT study were related to the 23 core gut phages identified by Manrique et al. (2016)?",
+      "options": [
+        "A) 0.73%",
+        "B) 2.97%",
+        "C) 4.91%",
+        "D) 25.00%"
+      ],
+      "correct_answer": "C",
+      "explanation": "Figure S5 shows that only 4.91% of the gut viral populations identified in the study were related to the 23 core gut phages from Manrique et al. (2016). Relatedness was defined as a blastn alignment length >500bp to the core phage contigs at a percent identity greater than 75%.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "mtt_asd_mcq_006",
+      "question": "Which of the following statistical tests was used to compare Vineland Developmental Age subscale scores between baseline and end of observation?",
+      "options": [
+        "A) Paired t-test",
+        "B) ANOVA with post-hoc correction",
+        "C) Two-tailed Wilcoxon signed-rank test",
+        "D) Mann-Whitney U test"
+      ],
+      "correct_answer": "C",
+      "explanation": "Figure S3 explicitly states that Vineland Developmental Age subscale comparisons between baseline and end of observation were analyzed using the two-tailed Wilcoxon signed-rank test. This non-parametric test was appropriate given the small sample size (18 participants) and non-normal distribution of developmental age scores.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "mtt_asd_mcq_007",
+      "question": "In the MTT study, a decrease in UniFrac distance to donor over time indicates which of the following?",
+      "options": [
+        "A) The ASD gut microbiota is becoming more diverse independently of the donor",
+        "B) The donor microbiota composition is changing to match the ASD recipients",
+        "C) Successful engraftment of donor microbial taxa into the ASD recipient gut",
+        "D) Loss of the recipient's native microbial community without donor colonization"
+      ],
+      "correct_answer": "C",
+      "explanation": "As stated in Figure S9 of the supplementary material, a decrease in the distance to donor is an indication that some engraftment has occurred. UniFrac distance measures compositional dissimilarity between two microbial communities — so a decreasing distance between the ASD recipient microbiota and the donor microbiota means the recipient's gut is becoming more similar to the donor's, which is the hallmark of successful engraftment.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "mtt_asd_mcq_008",
+      "question": "Among the ABC behavioral subscales measured in the MTT study, which domain showed the greatest statistical significance of improvement (*** p<0.001) at multiple timepoints including treatment end and post-treatment?",
+      "options": [
+        "A) Inappropriate Speech",
+        "B) Stereotypy",
+        "C) Hyperactivity",
+        "D) Irritability"
+      ],
+      "correct_answer": "C",
+      "explanation": "Based on Figure S1c, Hyperactivity showed *** significance (p<0.001) at multiple timepoints including week 10 (treatment end) and week 18. Lethargy showed ** significance at week 10. Irritability and Stereotypy showed * significance. Inappropriate Speech showed * significance. Hyperactivity demonstrated the most consistent and strongest statistical significance across timepoints in the ABC subscale analysis.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "mtt_asd_mcq_009",
+      "question": "Which of the following best explains why the Kang et al. MTT study used BOTH weighted and unweighted UniFrac distance metrics to assess engraftment?",
+      "options": [
+        "A) Unweighted UniFrac is used for bacterial communities only, while weighted is used for viral communities",
+        "B) Unweighted UniFrac captures presence/absence of taxa while weighted UniFrac incorporates relative abundance, together providing a complete view of compositional change",
+        "C) Weighted UniFrac is preferred for small sample sizes while unweighted is preferred for larger cohorts",
+        "D) The two metrics measure alpha-diversity and beta-diversity respectively, which are complementary"
+      ],
+      "correct_answer": "B",
+      "explanation": "Unweighted UniFrac only considers presence or absence of taxa and their phylogenetic relationships, making it sensitive to rare taxa and new colonizers. Weighted UniFrac also incorporates the relative abundance of each taxon, making it more sensitive to dominant community members. Using both metrics together — as shown in Figure S9 — allows researchers to distinguish between shallow engraftment (new rare taxa appearing, captured by unweighted) versus shifts in the dominant community structure (captured by weighted). In this study, unweighted metrics showed significant engraftment while weighted UniFrac did not, suggesting engraftment of new taxa without wholesale replacement of dominant species.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "mtt_asd_mcq_010",
+      "question": "Based on the supplementary data, which combination of factors best supports the conclusion that MTT-induced microbiome changes were biologically meaningful and not transient artifacts?",
+      "options": [
+        "A) Statistically significant GSRS improvements at week 10 only, with return to baseline by week 18",
+        "B) Increased Observed OTUs at week 18 (8 weeks post-treatment), sustained UniFrac similarity to donor, and concurrent behavioral improvements at week 18",
+        "C) Improved stool consistency scores at week 3 (during early treatment), which normalized by week 10",
+        "D) Strong improvements in Faith's PD at week 3 but no significant change at week 18"
+      ],
+      "correct_answer": "B",
+      "explanation": "The most compelling evidence for biologically meaningful and durable changes comes from the convergence of multiple sustained outcomes at week 18 — 8 weeks after active treatment ended. The Observed OTUs showed significant increases (q<0.01) at week 18 (Figure S4), UniFrac distances to donor remained significantly reduced at weeks 10 and 18 (Figure S10), and behavioral improvements on ABC and PGI-III were maintained through week 18. The persistence of these changes long after active dosing ceased strongly argues against transient washout effects, suggesting true establishment of donor-derived microbial communities with lasting functional impact.",
+      "expected_documents": [
+        "PMC5264285_Microbiota_Transfer_Therapy_alters_gut_ecosystem_a.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

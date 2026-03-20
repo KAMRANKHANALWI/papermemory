@@ -1,0 +1,287 @@
+{
+  "source_document": "A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf",
+  "paper_reference": "Chibani et al., Nature Microbiology, VOL 7, January 2022, 48–61",
+  "test_cases": [
+    {
+      "id": "archaeome_001",
+      "query": "How many nonredundant archaeal genomes were recovered in this study and from how many countries were the samples sourced?",
+      "ground_truth_answer": "The study recovered 1,167 nonredundant archaeal genomes (608 of which were high-quality) from human gastrointestinal tract samples spanning 24 countries, covering both rural and urban populations.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "archaeome_002",
+      "query": "What is the prevalence of Methanobrevibacter smithii and Methanosphaera stadtmanae in the human gut?",
+      "ground_truth_answer": "Methanobrevibacter smithii has a prevalence of up to 97.5% in the human gut, while Methanosphaera stadtmanae has a prevalence of up to 23%.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "archaeome_003",
+      "query": "What percentage of the 1,167 archaeal genomes were annotated as hypothetical proteins in the protein catalogue?",
+      "ground_truth_answer": "Of the 1.8 million proteins identified from the 1,167 genomes, 54% were annotated as hypothetical proteins. The protein catalogue contained 28,581 cluster representatives after clustering at greater than 50% amino acid identity and greater than 80% coverage.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "archaeome_004",
+      "query": "What are the four taxonomic orders represented in the 1,167 archaeal genome collection and their relative proportions?",
+      "ground_truth_answer": "The 1,167 genomes span four orders: Methanobacteriales (87.15%), Methanomassiliicoccales (12.43%), Methanomicrobiales (0.26%), and Halobacteriales (0.17%). The majority of genomes (85%) were taxonomically affiliated with the genus Methanobrevibacter.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "archaeome_005",
+      "query": "What fraction of archaeal reads were identified in representative metagenomic datasets in this study?",
+      "ground_truth_answer": "Read-based community profiling revealed a fraction of 1.22% archaeal reads in representative original datasets. M. smithii was responsible for 0.56% and M. smithii_A for 0.13% of all microbial reads, together representing 0.69% of all microbial reads and 1.21% of all archaeal reads.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "archaeome_006",
+      "query": "What metadata category achieved the highest prediction accuracy using the archaeal protein catalogue, and what accuracy was achieved?",
+      "ground_truth_answer": "The lifestyle (urban/rural) of an individual achieved the highest prediction accuracy of 100% overall accuracy when using the archaeal protein catalogue as input to supervised learning models. Prediction accuracies greater than 70% were also reached for continent, country, health status, age group, and sex.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "archaeome_007",
+      "query": "How do the two M. smithii clades (smithii and smithii_A) differ in terms of the modA gene and molybdate transport?",
+      "ground_truth_answer": "All M. smithii strains carry the modA gene, which is involved in molybdate transport and responsible for substrate binding, but this gene was not detected in any of the smithii_A genomes. The molybdate ABC transporter permease component and ATP-binding protein were identified in 94% of M. smithii genomes but in none of the M. smithii_A genomes, indicating a fundamentally different pathway for molybdate acquisition in the M. smithii_A clade.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "archaeome_008",
+      "query": "Why can M. smithii and Ca. M. intestini not be distinguished using 16S rRNA gene sequences, and what marker gene does allow their differentiation?",
+      "ground_truth_answer": "The two Methanobrevibacter clades (M. smithii and Ca. M. intestini, formerly M. smithii_A) cannot be distinguished on 16S ribosomal RNA gene sequences, which is the most likely reason this clade separation was missed previously. However, analysis of the mcrA gene revealed a consistent difference between the two clades, with an average of 2.15% difference in amino acid sequence (range 1.82–2.22%).",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "archaeome_009",
+      "query": "What is the role of bile salt hydrolase (choloylglycine hydrolase, CGH) in gut archaea, and in which species was it detected?",
+      "ground_truth_answer": "Bile salt hydrolases (CGH homologues) are considered important adaptive traits for specialization towards the human gut. They were detected in 11 of 27 archaeal species, including the 5 most prevalent ones: M. smithii, Ca. M. intestini, M. stadtmanae, M. alvus, and Ca. M. hominis. CGH genes were notably absent in any of the Methanomassiliicoccus genomes and in the Haloferaceae. The CGH genes in Methanomassiliicoccales, Methanomicrobiales and Methanobacteriales formed separate clusters within the bacterial BSH gene tree, suggesting acquisition through distinct horizontal gene transfer events.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "archaeome_010",
+      "query": "Explain the TMA-degradation capacity in Methanomassiliicoccales and its potential health relevance.",
+      "ground_truth_answer": "The majority (11 of 13) of the GIT-associated Methanomassiliicoccales species encode the MttBC methyltransferase and corrinoid protein needed for methanogenesis from trimethylamine (TMA). This capacity would allow these archaea to decrease concentrations of TMA, a bacterial metabolite involved in trimethylaminuria and suspected to contribute to cardiometabolic, cardiovascular and renal diseases. The mttBC genes were detected in a larger proportion of Methanomassiliicoccales MAGs from Europe and North America (~60%) compared to Africa and Asia (~40%) or Oceania (17%), potentially reflecting different TMA-production capacity by bacteria across populations.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "archaeome_011",
+      "query": "What evidence suggests that loss of oxidative stress resistance genes is a marker of host adaptation in gut archaea?",
+      "ground_truth_answer": "Loss of genes involved in dealing with oxidative stress is considered a trait of host association because environmental strains must face non-permanently strict anaerobic conditions, whereas GIT-inhabiting strains do not. Analysis showed that catalase was only detected in some Methanomassiliicoccales and Haloarchaea, and in M. arboriphilus and Methanobacterium spp. Superoxide dismutase was rarely detected, only in Haloferax and Halorubrum. None of the Methanobrevibacter representatives, except M. arboriphilus, carried the peroxiredoxin gene. In contrast, thioredoxin and rubredoxin were detected in most genomes, suggesting a scaled-down oxygen resistance repertoire consistent with permanent gut residency.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "archaeome_012",
+      "query": "What is the significance of the Mx06 / Ca. Methanoprimaticola hominis species being strongly linked to non-westernized populations and younger individuals?",
+      "ground_truth_answer": "Ca. Methanoprimaticola hominis (formerly Methanomassiliicoccales Mx06) was mostly present in young adults (average age 32 years) from rural areas (80%) in Oceania, Asia and Africa (65%, 13% and 7% respectively). Together with its high prevalence (80%) in a population of 7- to 48-year-old uncontacted Amerindians, this pattern strongly links the species with non-westernized populations. This is significant because the young age of people carrying this species contrasts with the previously reported positive correlation between age and methanogen prevalence generally, suggesting a distinct ecological niche or transmission dynamic. Several representatives also have the genetic potential to metabolize TMA, adding health relevance.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "archaeome_013",
+      "query": "Compare the proportion of bacterially-derived genes in human-associated versus animal-associated Methanobrevibacter and Methanosphaera, and explain what this implies about host adaptation.",
+      "ground_truth_answer": "Human-associated Methanobrevibacter spp. carried approximately 2.84% genes of non-archaeal origin on average, significantly lower than animal-associated Methanobrevibacter (6.09%; p=0.00308). The difference was mainly due to increased clostridia-derived genes (specifically from Lachnospiraceae, which specialize in plant degradation) in animal genomes. M. smithii/Ca. M. intestini representatives showed an especially low contribution of potentially non-archaeal genes (2.11%). Similarly, human-associated Methanosphaera spp. carried ~1.45% bacterial genes versus 6.74% in animal-associated Methanosphaera (p=0.00452), with differences driven by Bacilli- and Erysipelotrichia-derived genes in animal genomes. Crucially, the authors conclude that adaptation towards the human host is not necessarily reflected by a higher proportion of bacterially-derived genes — the opposite is true, suggesting host specialization may involve gene loss or purification rather than horizontal acquisition.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "archaeome_014",
+      "query": "Describe the distinct methanogenesis pathways of Methanobacteriales versus Methanomassiliicoccales in the human gut, including substrate utilization differences.",
+      "ground_truth_answer": "The two dominant gut methanogen orders have very distinct methanogenesis pathways. All human gut Methanobrevibacter spp. (Methanobacteriales) have the genetic potential for formate and H2/CO2 utilization, which Methanomassiliicoccales lack entirely. In contrast, the majority (11/13) of GIT-associated Methanomassiliicoccales encode MttBC for TMA utilization. However, 83% of all methanogenic MAGs from both orders share the mtaABC genes providing the genetic potential to use methanol, strongly suggesting methanol utilization confers a selective advantage in the gut. The two dominant Methanobrevibacter spp. also have the genetic potential to use alcohols (secondary alcohols and ethanol) as electron donors. One Methanosphaera species may reduce methanol with ethanol, but M. stadtmanae cannot perform this pathway. Methanomassiliicoccales Mx02 (Ca. Methanarcanum hacksteinii) notably lacks all known methanogenesis pathway genes, suggesting unknown methanogenesis pathways.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "archaeome_015",
+      "query": "What genomic and phylogenetic evidence justifies splitting the M. smithii clade into two separate species, and what is the proposed name for the new species?",
+      "ground_truth_answer": "Multiple lines of evidence justify the species split. First, average nucleotide identity (ANI) analysis shows only 93.95% ANI between representative genomes of M. smithii and M. smithii_A, below the 95% ANI species boundary threshold. Second, the protein catalogue reveals highly discriminative differences: M. smithii_A lacks the modA gene and molybdate ABC transporter components found in 94% of M. smithii genomes, while M. smithii_A uniquely carries additional membrane/cell-wall-associated proteins such as adhesin-like proteins, surface proteins and uncharacterized membrane transporters. Third, analysis of the mcrA gene shows a consistent 2.15% average amino acid sequence difference between the clades. Fourth, PCoA analysis of protein profiles shows clearly separate clustering of the two groups. Based on this evidence, the smithii_A clade, represented by isolate WWM1085, was proposed to be renamed 'Candidatus Methanobrevibacter intestini' sp. nov. (meaning 'of the gut'), to emphasize the presence of two predominant, distinctive Methanobrevibacter clades in the GIT.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "archaeome_016",
+      "query": "How novel were the archaeal viruses (proviruses) identified in this study, and what were the limitations in characterizing them?",
+      "ground_truth_answer": "The study identified 94 viral populations from the genome datasets, derived from clustering 45 high-quality (>90% completeness) and 130 medium-quality (50–90% completeness) archaeal proviruses at 95% identity and 80% coverage. Of the identified proviruses, 91 viral species representatives were specific for Methanobrevibacter A, with one each for Methanomassiliicoccus, Methanosphaera, and Methanomethylophilaceae UBA71. When compared against the human Gut Virome Database (GVD) and the Viral RefSeq Database using vConTACT2, none of the viruses clustered with any sequences in those databases, confirming they are entirely novel. The key limitation is that the lack of similar archaeal viral genomes in reference databases makes taxonomic classification and further characterization extremely challenging. The authors note this reveals archaeal viruses likely have a currently underestimated diversity and ecological importance in the human gut microbiome.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "archaeome_mcq_001",
+      "question": "What is the prevalence of Methanomassiliicoccales Mx06 (Ca. Methanoprimaticola hominis) among uncontacted Amerindians?",
+      "options": [
+        "A) 40%",
+        "B) 60%",
+        "C) 80%",
+        "D) 97.5%"
+      ],
+      "correct_answer": "C",
+      "explanation": "Ca. Methanoprimaticola hominis (Mx06) had a high prevalence of 80% in a population of 7- to 48-year-old uncontacted Amerindians, indicating a strong link with non-westernized populations.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "archaeome_mcq_002",
+      "question": "How many novel genera, species, and strains were identified in the study?",
+      "options": [
+        "A) 1 genus, 5 species, 20 strains",
+        "B) 2 genera, 10 species, 30 strains",
+        "C) 3 genera, 15 species, 52 strains",
+        "D) 4 genera, 20 species, 98 strains"
+      ],
+      "correct_answer": "C",
+      "explanation": "The study identified previously undescribed taxa including 3 genera, 15 species, and 52 strains from the 1,167 archaeal genomes collected across 24 countries.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "archaeome_mcq_003",
+      "question": "Which of the following archaeal genera is represented by the most genomes in the catalogue?",
+      "options": [
+        "A) Methanosphaera (1.7%)",
+        "B) Methanomethylophilus (3.3%)",
+        "C) Methanomassiliicoccus (2.5%)",
+        "D) Methanobrevibacter (85%)"
+      ],
+      "correct_answer": "D",
+      "explanation": "Most genomes (996; 85%) were taxonomically affiliated with the genus Methanobrevibacter, in agreement with earlier reports that this is the dominant archaeal genus in the human gut.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "archaeome_mcq_004",
+      "question": "What ANI (average nucleotide identity) value was used to define species-level boundaries in this study?",
+      "options": [
+        "A) 90% ANI",
+        "B) 95% ANI",
+        "C) 99% ANI",
+        "D) 97% ANI"
+      ],
+      "correct_answer": "B",
+      "explanation": "A 95% ANI threshold was used to separate between species boundaries, yielding 27 species representatives. A 99% ANI cutoff was used for strain-level delineation, yielding 98 strains.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "archaeome_mcq_005",
+      "question": "What percentage of methane emitters (>5 ppm methane in breath) are present in the western population, and what fraction of the gut microbial community do they carry as archaeal signatures?",
+      "options": [
+        "A) ~10% of population; 1% archaeal signatures",
+        "B) ~20% of population; 2% archaeal signatures",
+        "C) ~30% of population; 3% archaeal signatures",
+        "D) ~40% of population; 5% archaeal signatures"
+      ],
+      "correct_answer": "B",
+      "explanation": "Approximately 20% of the western population are methane emitters (exhaling >5 ppm methane), carrying ~2% archaeal signatures in their overall gut microbial community. Non-emitters carry only 0.002% archaeal signatures.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "archaeome_mcq_006",
+      "question": "What was the median genome size difference between M. smithii and M. smithii_A (Ca. M. intestini)?",
+      "options": [
+        "A) M. smithii: 1.5 Mbp; M. smithii_A: 1.6 Mbp",
+        "B) M. smithii: 1.7 Mbp; M. smithii_A: 1.8 Mbp",
+        "C) M. smithii: 1.9 Mbp; M. smithii_A: 2.1 Mbp",
+        "D) M. smithii: 2.0 Mbp; M. smithii_A: 2.5 Mbp"
+      ],
+      "correct_answer": "B",
+      "explanation": "The two M. smithii groups had median genome sizes of 1.7 Mbp for M. smithii and 1.8 Mbp for M. smithii_A. Genome sizes for isolates were 1.7 Mbp (M. smithii DSM2374) and 1.9 Mbp (isolate WWM1085).",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "archaeome_mcq_007",
+      "question": "How many of the 27 archaeal species detected in human gut metagenomes had a cultured representative?",
+      "options": [
+        "A) 5 out of 27",
+        "B) 7 out of 27",
+        "C) 9 out of 27",
+        "D) 14 out of 27"
+      ],
+      "correct_answer": "C",
+      "explanation": "Only 9 of the 27 archaeal species detected in human gut metagenomes had a cultured representative, highlighting the vast uncultivated diversity of the human gut archaeome and the need for targeted cultivation efforts.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "archaeome_mcq_008",
+      "question": "What percentage of all methanogenic MAGs (Methanobacteriales AND Methanomassiliicoccales combined) have the mtaABC genes for methanol utilization?",
+      "options": [
+        "A) 55%",
+        "B) 67%",
+        "C) 83%",
+        "D) 91%"
+      ],
+      "correct_answer": "C",
+      "explanation": "83% of all methanogenic MAGs, including both Methanobacteriales and Methanomassiliicoccales, possess the mtaABC genes providing genetic potential to use methanol. This high prevalence strongly suggests methanol utilization provides a selective advantage in the human gut.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "archaeome_mcq_009",
+      "question": "The M. cuniculi MAGs recovered in this study were found in which host group, and why is this significant?",
+      "options": [
+        "A) Healthy European adults; because M. cuniculi was thought to only infect sheep",
+        "B) Diseased African subjects; because it confirms archaeal pathogenicity",
+        "C) Healthy Asian subjects in urban environments; because M. cuniculi type strain was originally isolated from rabbit intestines and had not been reported in humans before",
+        "D) Elderly North American subjects; because it confirms age-dependent archaeal colonization"
+      ],
+      "correct_answer": "C",
+      "explanation": "Two MAGs (ANI 98.5%) clustered within M. cuniculi and were retrieved from healthy Asian subjects living in an urban environment. The M. cuniculi type strain was originally isolated from the intestinal tract of a rabbit and had not been reported in human hosts before, making this a novel finding for human-associated archaea.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "hard",
+      "category": "factual"
+    },
+    {
+      "id": "archaeome_mcq_010",
+      "question": "What is the proposed name and rationale for the new genus encompassing Methanomassiliicoccales Mx02, and what makes its metabolism puzzling?",
+      "options": [
+        "A) Ca. Methanoprimaticola hominis; because it lacks TMA methyltransferase",
+        "B) Ca. Methanarcanum hacksteinii; because it lacks all known methanogenesis pathway genes suggesting an unknown methanogenic mechanism",
+        "C) Ca. Methanobrevibacter intestini; because it cannot be distinguished from M. smithii by 16S rRNA",
+        "D) Ca. Methanoprimaticola macfarlanii; because it encodes pyrrolysine synthesis genes"
+      ],
+      "correct_answer": "B",
+      "explanation": "Methanomassiliicoccales Mx02 was proposed to be named 'Candidatus Methanarcanum hacksteinii' (meaning 'an archaeon forming methane in a puzzling way', named after Johannes H.P. Hackstein). It is metabolically puzzling because it lacks all known methanogenesis genes including any genes involved in methyl-compound utilization or any alternative methanogenesis pathways, suggesting the presence of entirely unknown methanogenic pathways.",
+      "expected_documents": ["A_catalogue_of_1_167_genomes_from_the_human_gut_archaeome.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

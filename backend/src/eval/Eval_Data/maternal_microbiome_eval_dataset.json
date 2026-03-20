@@ -1,0 +1,341 @@
+{
+  "source_document": "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf",
+  "paper_title": "Maternal exposures and the infant gut microbiome: a systematic review with meta-analysis",
+  "authors": "Grech et al., 2021",
+  "journal": "Gut Microbes, Vol. 13, No. 1",
+  "test_cases": [
+    {
+      "id": "maternal_microbiome_001",
+      "query": "How many publications were identified in the initial database search and how many were ultimately included in this systematic review?",
+      "ground_truth_answer": "The initial database search identified 1,996 publications, from which 555 duplicates were removed, leaving 1,441 unique publications. After screening titles and abstracts, 204 full-text articles were retrieved and assessed for eligibility. A total of 76 publications were ultimately included in the review.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_microbiome_002",
+      "query": "What were the five databases searched in this systematic review and what time period did the publications cover?",
+      "ground_truth_answer": "Five databases were searched: MEDLINE, EMBASE, Scopus, CINAHL, and Cochrane/CENTRAL. The search was conducted in August 2019. Studies were published from 2004 to 2019, with the majority (72%) from the past 5 years (2015–2019). There were no limits applied regarding year of publication.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_microbiome_003",
+      "query": "What is the Shannon Index and why was it selected as the primary outcome measure for meta-analyses in this review?",
+      "ground_truth_answer": "The Shannon Index is a measure of within-sample (alpha) diversity, based on the sum of the proportion of each species relative to the total number of species in the community. It integrates both species richness and abundance into a single number. It was selected as the primary outcome measure because it was the most frequently used index across included studies, allowing for the most consistent comparison of outcomes across meta-analyses.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_microbiome_004",
+      "query": "What proportion of included studies were observational versus interventional, and how many were randomized controlled trials?",
+      "ground_truth_answer": "The majority of included studies were observational (74%, n = 56). The remaining 20 articles (26%) were intervention studies, 12 of which were randomized controlled trials. The total number of mother-infant dyads included in the review was 17,509, with a median sample size of 84 (range: 6–1,681).",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_microbiome_005",
+      "query": "What are the geographic settings of the studies included in this systematic review?",
+      "ground_truth_answer": "The settings of included studies spanned multiple continents: Europe (n = 39), North America (n = 26), Asia (n = 8), Africa (n = 1), South America (n = 1), and Oceania (n = 1). This highlights a significant geographic imbalance, with most research concentrated in Europe and North America.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_microbiome_006",
+      "query": "How does intrapartum antibiotic prophylaxis (IAP) affect the Bifidobacterium populations in infants, and is there a dose-response relationship?",
+      "ground_truth_answer": "IAP was associated with a significantly reduced relative abundance of Bifidobacterium in infants compared to controls, as found in multiple studies. In three studies, this difference did not persist beyond 30 days of age, by which time the Bifidobacterial population appeared to have recovered. Stearns and colleagues found a dose-response relationship: every hour of maternal IAP was associated with a 7% decrease in the relative abundance of Bifidobacteria in 3-month-old infants.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "maternal_microbiome_007",
+      "query": "What is the Developmental Origins of Health and Disease (DOHaD) hypothesis and how does it relate to the infant gut microbiome?",
+      "ground_truth_answer": "The DOHaD hypothesis proposes that the period from conception to age 2 years — the 'First 1,000 Days' of life — is a critical window of growth and development. This period is characterized by rapid maturation of metabolic, endocrine, neural, and immune signal/response pathways, all of which are highly influenced by maternal milieu and perinatal exposures, which can 'program' offspring development in ways that affect future disease risk. The DOHaD framework is extended to incorporate the microbiome as a dynamic community, recognizing the influence of perinatal factors on microbiome assembly in early life and their possible long-term effects.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "maternal_microbiome_008",
+      "query": "How does maternal gestational weight gain (GWG) affect infant gut microbiome alpha diversity according to the meta-analysis in this review?",
+      "ground_truth_answer": "The meta-analysis across two studies found that excessive GWG was associated with a slightly lower alpha diversity in infants compared to those whose mothers had adequate GWG (mean difference, −0.07, 95% CI: −0.08 to −0.06, I² = 0%). This association showed very low heterogeneity between the two included studies. Maternal overweight/obesity was also associated with a marginally lower Shannon Index (mean difference, −0.01, 95% CI: −0.19–0.17), though with considerable heterogeneity (I² = 81%).",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_microbiome_009",
+      "query": "What are the two colonization 'phases' of postnatal microbiome development and what triggers each phase?",
+      "ground_truth_answer": "Postnatal development of the microbiome occurs in two colonization phases. The first phase begins at birth, with rapid colonization by facultatively anaerobic bacteria such as Enterobacter, Enterococcus, Staphylococcus, and Streptococcus, followed by the development of a simple community of obligate anaerobes with milk feeding. The second phase is triggered by the introduction of solid food around 6 months of age, when the infant microbiome evolves from a simple, Bifidobacteria-rich community toward a more diverse community structure. Cessation of breastfeeding, rather than solid food introduction alone, is most closely associated with maturation toward an 'adult-like' microbiota.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "maternal_microbiome_010",
+      "query": "What impact did maternal high-fat diet during pregnancy have on the infant gut microbiome, independent of BMI?",
+      "ground_truth_answer": "Chu and colleagues found that, independent of maternal BMI, infants whose mothers consumed high-fat diets (one standard deviation higher than the mean fat intake, or greater than 40% total energy) were associated with an altered meconium composition and a relative depletion of Bacteroides at six weeks of age, compared to controls. All infants received both breastmilk and formula at six weeks of age. This depletion of Bacteroides species — known to contribute to modulating host metabolism and immune system development — persisted in post-hoc analyses.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "maternal_microbiome_011",
+      "query": "How does maternal prenatal stress and cortisol levels influence the infant intestinal microbiome?",
+      "ground_truth_answer": "Zijlmans and colleagues found that maternal prenatal reported stress and cortisol levels were significantly associated with total microbiota composition in infants (P < 0.01). Infants whose mothers were categorized as having experienced high cumulative stress during pregnancy — defined as both high reported stress and high cortisol concentrations — were characterized by an increased relative abundance of Proteobacterial groups, alongside reduced relative abundances of lactic acid bacteria (Lactobacillus, Lactococcus, Aerococcus) and Bifidobacteria, compared to controls.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "maternal_microbiome_012",
+      "query": "What was the overall finding regarding maternal probiotic supplementation during pregnancy and its persistent effects on the infant gut microbiome?",
+      "ground_truth_answer": "The review found limited evidence that maternal probiotic supplementation during pregnancy led to ongoing colonization by the probiotic strain within the infant gut microbiome or that it impacted overall infant microbiome diversity. Eight studies found that at the time of probiotic intervention and shortly after birth, the supplemented species was detected at significantly higher abundance in infants whose mothers received the supplement. However, six studies showed no significant differences once the probiotic intervention was ceased. The overall conclusion was that there was no persistent effect of maternal probiotic or prebiotic supplementation on the infant gut microbiome following cessation of treatment.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "maternal_microbiome_013",
+      "query": "How does delivery mode modify the effect of intrapartum antibiotic exposure on the infant microbiome, and what are the specific phylum-level differences observed?",
+      "ground_truth_answer": "Delivery mode modified the effect of antibiotic exposure in seven studies. Infants exposed to IAP born via emergency caesarean-section were associated with a lower relative abundance of Bacteroidetes (P < 0.001) and a higher relative abundance of Firmicutes (P < 0.001) and Proteobacteria (P < 0.05) compared to vaginally-delivered infants without IAP exposure. Importantly, no persistent microbiota differences were found among infants exposed to IAP who were born via vaginal or elective caesarean-section delivery. IAP with emergency caesarean delivery was paradoxically associated with increased microbiota diversity at 12 months (P < 0.001) compared to vaginal delivery without IAP.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "maternal_microbiome_014",
+      "query": "How does maternal gestational diabetes mellitus (GDM) affect the infant intestinal microbiome at both phylum and genus level, and are findings consistent across studies?",
+      "ground_truth_answer": "Findings were inconsistent across studies. Hu and colleagues found significant overall microbiome differences between GDM and control groups (P = 0.022), largely driven by relative enrichment of Bacteroidetes and depletion of Proteobacteria in women with diabetes. This increased relative abundance of Bacteroidetes in infants of GDM mothers (P = 0.029) was replicated in one other study. However, two other studies found inverse associations — reduced Bacteroidetes abundance in association with DM status (P < 0.05 for both) and maternal fasting glucose levels (P = 0.018). At the genus level, infants whose mothers had GDM were associated with a reduced relative abundance of Prevotella and Lactobacillus (both P < 0.05) compared to controls, highlighting inconsistent but biologically plausible effects.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "maternal_microbiome_015",
+      "query": "What are the key methodological limitations in current microbiome research that make synthesis of findings difficult, and what recommendations does this review propose for future research standardization?",
+      "ground_truth_answer": "Key methodological limitations include: (1) highly variable frequency and timing of stool sample collection — over 40% of studies relied on a single fecal sampling timepoint with an average of two samples per study; (2) variable level of taxonomic resolution and analysis methods (16S rRNA, PCR, FISH, culture-based, metagenomics); (3) varying diversity indices used across studies; (4) inconsistent conceptual terminology; and (5) substantial heterogeneity in sample sizes, study designs, and reporting standards. For future research, the review recommends: longitudinal sampling across the first 1,000 days with multiple timepoints; use of metagenomic sequencing for finer resolution; early recruitment from preconception; broad ethnically diverse cohorts including underrepresented populations in Africa, Southeast Asia, South America, and Australia; strain-level microbiome classification; and a standardized core data set with consistent terminology and methodology for composition and diversity metrics.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "maternal_microbiome_016",
+      "query": "Compare the microbiome characteristics of exclusively breastfed versus formula-fed infants at 4 months and 12 months of age, including both diversity and specific taxa.",
+      "ground_truth_answer": "At 4 months of age (from the CHILD study), richness and diversity of infant gut microbiota are lowest in exclusively breastfed infants, higher in partially breastfed infants, and highest in formula-fed infants. Low gut bacterial diversity in breastfeeding infants is thought to result from breastmilk oligosaccharides serving as substrates for a limited number of gut microbes. Formula-fed infants are associated with lower levels of Bifidobacteria and Lactobacilli alongside higher diversity, dominated by Bacteroides, Staphylococci, Enterococci, and Clostridia. At 12 months, infants still receiving breastmilk are enriched in Bifidobacteriaceae, Veillonellaceae and Proteobacteria, with greater relative abundance of Bifidobacterium and Lactobacillus species compared to formula-fed counterparts. A follow-up study found no significant differences in microbiome composition at 1, 2, or 4 years of age according to breastfeeding in infancy, suggesting early differences may not persist long-term.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "maternal_microbiome_mcq_001",
+      "question": "According to the CHILD study, what is the correct ranking of infant gut microbiota richness and diversity at 4 months of age by feeding type?",
+      "options": [
+        "A) Exclusively breastfed > Partially breastfed > Formula-fed",
+        "B) Formula-fed > Partially breastfed > Exclusively breastfed",
+        "C) Partially breastfed > Formula-fed > Exclusively breastfed",
+        "D) All feeding types show equal diversity at 4 months"
+      ],
+      "correct_answer": "B",
+      "explanation": "Results from the Canadian Healthy Infant Longitudinal Development (CHILD) study showed that the richness and diversity of infant gut microbiota at 4 months of age are lowest in exclusively breastfed infants, higher in partially breastfed infants, and highest in formula-fed infants. Low diversity in breastfeeding infants is attributed to breastmilk oligosaccharides which serve as substrates for a limited number of gut microbes.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_microbiome_mcq_002",
+      "question": "What methodology was used by the majority of studies in this systematic review for assessing the infant microbiome?",
+      "options": [
+        "A) Fluorescence in situ hybridization (FISH)",
+        "B) Polymerase chain reaction (PCR)",
+        "C) 16S rRNA gene sequencing",
+        "D) Metagenomic sequencing"
+      ],
+      "correct_answer": "C",
+      "explanation": "The majority of studies (76%, n = 58) used 16S rRNA gene sequencing as their primary methodology for assessment of the infant microbiome, with 12 studies (16%) using more than one method. PCR was used by 16% (n = 12), FISH by 11% (n = 8), culture-based methods by 4% (n = 3), and a small number of recent studies (9%, n = 7) used metagenomic sequencing.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_microbiome_mcq_003",
+      "question": "What percentage of included studies in this review were classified as 'acceptable' methodological quality by the SIGN criteria?",
+      "options": [
+        "A) 5%",
+        "B) 44%",
+        "C) 83%",
+        "D) 96%"
+      ],
+      "correct_answer": "C",
+      "explanation": "The majority of included studies (83%, n = 63) were classified as being of acceptable methodological quality using the SIGN criteria. Only 5% (two intervention studies and two observational studies) were considered of high methodological quality, and 4% (three trials) were considered of poor quality.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_microbiome_mcq_004",
+      "question": "What was the mean difference in infant gut microbiome alpha diversity associated with maternal intrapartum antibiotic prophylaxis (IAP) in the meta-analysis of five studies?",
+      "options": [
+        "A) −0.07 (95% CI: −0.08 to −0.06)",
+        "B) −0.24 (95% CI: −0.58 to 0.09)",
+        "C) −0.01 (95% CI: −0.19 to 0.17)",
+        "D) −0.50 (95% CI: −0.65 to −0.35)"
+      ],
+      "correct_answer": "B",
+      "explanation": "The meta-analysis of five studies assessing the relationship between IAP exposure and infant intestinal microbiome alpha diversity found that maternal IAP exposure was associated with a nonsignificant reduction in infant alpha diversity (mean difference, −0.24, 95% CI: −0.58–0.09), with high heterogeneity (I² = 91%).",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_microbiome_mcq_005",
+      "question": "In Stearns and colleagues' study, what was the quantified dose-response relationship between intrapartum antibiotic prophylaxis duration and infant Bifidobacteria?",
+      "options": [
+        "A) Every hour of IAP was associated with a 3% decrease in Bifidobacteria",
+        "B) Every hour of IAP was associated with a 5% decrease in Bifidobacteria",
+        "C) Every hour of IAP was associated with a 7% decrease in Bifidobacteria",
+        "D) Every hour of IAP was associated with a 10% decrease in Bifidobacteria"
+      ],
+      "correct_answer": "C",
+      "explanation": "Stearns and colleagues found a dose-response relationship between IAP duration and Bifidobacterium populations in 3-month-old infants, where every hour of maternal IAP was associated with a 7% decrease in the relative abundance of Bifidobacteria.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_microbiome_mcq_006",
+      "question": "What is 'dysbiosis' as described in this review, and in what clinical context is the concept applied?",
+      "options": [
+        "A) A complete absence of gut bacteria, used to describe neonatal gut sterility",
+        "B) A single pathogen-driven infection, used to describe acute gastroenteritis",
+        "C) A concept to describe diseases with complex etiology not explained by genetics or a single pathogen alone",
+        "D) Excessive microbial diversity, used to describe post-antibiotic gut overgrowth"
+      ],
+      "correct_answer": "C",
+      "explanation": "The concept of 'dysbiosis' has been proposed to distinguish those diseases with complex etiology that cannot be adequately explained by genetic factors or a single pathogenic agent. It describes maladaptive interactions between the microbial community, the host, and their environment — and has been associated with conditions including obesity, inflammatory bowel disease, allergies, asthma, cardiovascular disease, and neurodevelopmental disorders.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "maternal_microbiome_mcq_007",
+      "question": "In the study by Bisanz and colleagues, what microbiome change was observed in infants at 10–25 days of age whose mothers received Lactobacillus rhamnosus GR-1 probiotics?",
+      "options": [
+        "A) A 2-fold increase in Lactobacillus and a 5-fold decrease in Staphylococcus",
+        "B) A 3-fold increase in Bifidobacterium and a 16.8-fold decrease in Enterobacteriaceae",
+        "C) A 5-fold increase in Bacteroides and a 3-fold decrease in Firmicutes",
+        "D) No significant differences compared to the placebo group"
+      ],
+      "correct_answer": "B",
+      "explanation": "In the Bisanz 2015 study, infants aged 10–25 days whose mothers received Lactobacillus rhamnosus GR-1 probiotics had a 3-fold increase in relative abundance of Bifidobacterium and a 16.8-fold decrease in Enterobacteriaceae (P < 0.05), compared to controls. This effect was observed early in infancy but its persistence was not studied long-term in this cohort.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "maternal_microbiome_mcq_008",
+      "question": "What is the 'holobiont' concept as used in this paper, and what does it encompass?",
+      "options": [
+        "A) A term for the complete bacterial genome of the gut microbiome",
+        "B) A complex adaptive system with an interconnected network between the microbiome, immune function, and metabolic regulation affecting nutrient metabolism, development, and long-term health",
+        "C) A statistical model used to measure microbiome diversity across multiple body sites",
+        "D) A classification system for categorizing healthy versus dysbiotic microbial communities"
+      ],
+      "correct_answer": "B",
+      "explanation": "The 'holobiont' refers to the outcome of microbial colonization of the neonatal gastrointestinal tract — a complex adaptive system (human 'holobiont') with an interconnected network between microbiome, immune function, and metabolic regulation, affecting an individual's nutrient metabolism, development, and long-term health outcomes.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "maternal_microbiome_mcq_009",
+      "question": "In Azad and colleagues' large study, infants born via emergency caesarean-section who were exposed to IAP showed which of the following microbiome characteristics at 12 months compared to vaginally-delivered infants without IAP?",
+      "options": [
+        "A) Higher Bacteroidetes, lower Firmicutes, and unchanged Proteobacteria",
+        "B) Lower Bacteroidetes (P < 0.001), higher Firmicutes (P < 0.001), higher Proteobacteria (P < 0.05), but paradoxically increased diversity",
+        "C) No significant differences at 12 months regardless of delivery mode",
+        "D) Higher Bifidobacterium and lower Proteobacteria compared to controls"
+      ],
+      "correct_answer": "B",
+      "explanation": "Azad and colleagues found that infants exposed to IAP born via emergency caesarean-section were associated with lower relative abundance of Bacteroidetes (P < 0.001) and higher relative abundance of Firmicutes (P < 0.001) and Proteobacteria (P < 0.05) compared to vaginally-delivered infants without IAP. Importantly, IAP with emergency caesarean delivery was paradoxically associated with increased overall microbiota diversity at 12 months (P < 0.001). No persistent differences were found in infants exposed to IAP via vaginal or elective caesarean delivery.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "maternal_microbiome_mcq_010",
+      "question": "What is the key reason why this systematic review could not perform meta-analyses for all maternal exposure groups, and what primary limitation does this reflect about the field?",
+      "options": [
+        "A) All studies had too small a sample size (under 50 subjects each) to generate meaningful pooled estimates",
+        "B) Diverse interventions and outcomes measured with respect to the infant gut microbiome meant pooling was not possible across many exposure categories",
+        "C) The review protocol pre-specified that only IAP studies would be meta-analysed",
+        "D) Most included studies were intervention trials with incompatible statistical designs"
+      ],
+      "correct_answer": "B",
+      "explanation": "It was not possible to perform meta-analyses for all exposure groups owing to diverse interventions and/or outcomes measured with respect to the infant gut microbiome. This reflects a fundamental limitation of the field: the frequency and timing of stool sample collection, levels of taxonomic resolution, microbiome analysis methodologies, and diversity indices all vary substantially across studies, making meaningful synthesis and pooling of results across exposure categories largely impossible. Only three meta-analyses were feasible (IAP, pre-pregnancy BMI, and GWG), all using the Shannon Index as the common outcome.",
+      "expected_documents": [
+        "PMC8276657_Maternal_exposures_and_the_infant_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

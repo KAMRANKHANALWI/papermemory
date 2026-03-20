@@ -1,0 +1,279 @@
+{
+  "source_document": "PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf",
+  "paper_reference": "Wastyk et al., 2021, Cell 184, 4137-4153. https://doi.org/10.1016/j.cell.2021.06.019",
+  "test_cases": [
+    {
+      "id": "immune_diet_001",
+      "query": "What was the study design of the FeFiFo dietary intervention trial?",
+      "ground_truth_answer": "The FeFiFo (Fermented and Fiber-rich Food) Study was a 17-week randomized, prospective study with n=18 participants per arm. It included a 3-week pre-intervention baseline, a 4-week ramp phase where participants gradually increased intake, a 6-week maintenance phase at high consumption levels, and a 4-week choice period. Blood and stool samples were collected longitudinally throughout.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "immune_diet_002",
+      "query": "How much fiber did participants in the high-fiber diet arm consume at baseline versus at the end of the maintenance phase?",
+      "ground_truth_answer": "Participants in the high-fiber diet arm increased their fiber consumption from an average of 21.5 ± 8.0 grams per day at baseline to 45.1 ± 10.7 grams per day at the end of the maintenance phase.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "immune_diet_003",
+      "query": "How many servings per day of fermented food did participants in the high-fermented-food diet arm consume at baseline versus at the end of the maintenance phase?",
+      "ground_truth_answer": "Participants in the high-fermented-food diet arm consumed an average of 0.4 ± 0.6 servings per day at baseline, which increased to an average of 6.3 ± 2.9 servings per day at the end of the maintenance phase.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "immune_diet_004",
+      "query": "What was the primary outcome measure of the study and what was its result?",
+      "ground_truth_answer": "The primary outcome was the cytokine response score (CRS) difference from baseline to the end of the intervention. The CRS was not significantly changed in either the high-fiber or high-fermented-food diet arms. Despite this, several secondary and exploratory outcomes showed significant changes, including decreased inflammatory markers and increased microbiota diversity in the fermented-food arm.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "immune_diet_005",
+      "query": "What types of fermented foods did participants consume in the high-fermented-food diet arm?",
+      "ground_truth_answer": "Participants consumed a variety of fermented foods including yogurt, kefir, fermented cottage cheese, kombucha, vegetable brine drinks, and fermented vegetables such as kimchi and sauerkraut. One serving was defined as: 6 oz for kombucha, yogurt, kefir, buttermilk, and kvass; 1/4 cup for kimchi, sauerkraut, or other fermented vegetables; and 2 oz for vegetable brine drinks.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "immune_diet_006",
+      "query": "How did the high-fiber diet affect carbohydrate-active enzymes (CAZymes) in the gut microbiome, and what does this indicate?",
+      "ground_truth_answer": "Metagenomic sequencing revealed an increase in the relative abundance of 11 different CAZymes in the high-fiber diet arm, all of which (from 10 putative non-ambiguous substrate predictions) were predicted to degrade plant cell wall carbohydrates. Crucially, no CAZymes decreased in relative abundance, indicating that the high-fiber diet led to an overall increase in complex carbohydrate processing capacity cohort-wide rather than a simple reconfiguration of carbohydrate utilization. This suggests that fiber consistently increases CAZyme abundance, though the specific taxonomic changes that drive these increases differ across individuals.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "immune_diet_007",
+      "query": "Why did the high-fiber diet fail to significantly increase gut microbiota alpha diversity, and what evidence from the study supports this explanation?",
+      "ground_truth_answer": "The authors hypothesize that the industrialized microbiota of participants lacked sufficient fiber-degrading taxa to respond to increased fiber intake, and that the study duration may have been too short for new taxa to colonize. Supporting this, a significant positive correlation was found between increased fiber intake and the percentage of carbohydrates detected in the stool, indicating incomplete fermentation. Microbial protein density in stool did increase, suggesting that fiber fueled the growth of existing fiber-degrading bacteria without recruiting new species. This is consistent with high sanitation levels in industrialized populations limiting microbe-sharing between individuals.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "immune_diet_008",
+      "query": "What changes in short-chain fatty acids were observed in the high-fiber diet arm, and what are the clinical implications of these changes?",
+      "ground_truth_answer": "The high-fiber diet arm showed a significant decrease in branched-chain fatty acids (BCFAs) isobutyric acid, isovaleric acid, and valeric acid. No significant increase in butyrate was observed, though there was notable heterogeneity between participants. The clinical implications are meaningful: elevated isobutyric and isovaleric acids have been associated with hypercholesterolemia, and elevated valeric acid has been linked to autism spectrum disorder. The decrease in BCFAs may result from either reduced microbial production or decreased consumption of dairy and beef, which are high in BCFAs.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "immune_diet_009",
+      "query": "How did the fermented-food diet affect gut microbiota alpha diversity over time, and what was the significance of the continued diversity increase during the choice phase?",
+      "ground_truth_answer": "The high-fermented-food diet steadily and significantly increased microbiota alpha diversity across all measures (observed ASVs, phylogenetic diversity, Shannon diversity) over the course of the intervention. Importantly, this diversity increase was sustained during the choice phase, when fermented food intake was lower than at peak maintenance but higher than baseline. This persistence suggests that the diversity increase involved genuine gut ecosystem remodeling rather than being a transient reflection of consumed microbes, and implies a time-dependent process of microbiome restructuring through diet.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "immune_diet_010",
+      "query": "What was the source of the new microbial taxa that contributed to increased diversity in the fermented-food diet arm?",
+      "ground_truth_answer": "The new taxa contributing to increased diversity were largely not directly sourced from the fermented foods themselves. Only a small percentage of new microbiota ASVs overlapped with those found in the fermented foods, and this overlap was highest early in the intervention when overall microbiota diversity was still low (around 5.4%). At later timepoints, overlap was not significantly different from the high-fiber arm. The data suggest an indirect effect: fermented food consumption remodeled the gut microbiota to become receptive to the incorporation or increased representation of previously undetected or low-abundance strains already residing in the gut.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "immune_diet_011",
+      "query": "Describe the relationship between fecal butyrate levels and B cell frequency observed across both diet arms, and explain its potential therapeutic relevance.",
+      "ground_truth_answer": "A significant negative correlation was found between fecal butyrate levels and blood B cell frequency across both diet arms: as butyrate increased, B cell frequency decreased. Most participants showing this pattern were in the high-fiber arm, where butyrate increased without reaching cohort-wide significance. The therapeutic relevance is notable because B-cell-depleting therapies are established treatments for immune-mediated diseases including multiple sclerosis, rheumatoid arthritis, and type-1 diabetes. This correlation suggests that diet-induced increases in butyrate may naturally modulate B cell populations, potentially offering a dietary means to influence immune-mediated conditions.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "immune_diet_012",
+      "query": "Compare the impact of the high-fiber and high-fermented-food diets on gut microbiota diversity and inflammatory markers, explaining the mechanistic basis for their divergent outcomes.",
+      "ground_truth_answer": "The two diets produced strikingly different outcomes. The high-fiber diet failed to increase alpha diversity cohort-wide despite substantially raising CAZyme abundance and altering SCFA profiles, likely because industrialized microbiomes lack the fiber-fermenting taxa necessary to respond to increased fiber and the study was too short for new taxa to establish. By contrast, the fermented-food diet consistently increased alpha diversity across all metrics and simultaneously decreased 19 of 93 circulating inflammatory cytokines and chemokines (including IL-6, IL-10, and IL-12b), as well as broadly reducing endogenous immune cell signaling. The mechanistic divergence likely relates to fermented foods indirectly remodeling the gut ecosystem to promote colonization of new or previously suppressed taxa, which then interact with the immune system to dampen chronic low-grade inflammation — a pathway unavailable to fiber alone in the absence of adequate microbial diversity.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "immune_diet_013",
+      "query": "Explain the three immunological response clusters observed in the high-fiber diet arm, including their relationship to baseline microbiota diversity and the specific immune cell signaling changes involved.",
+      "ground_truth_answer": "High-dimensional immune profiling of fiber consumers revealed three distinct immunological trajectories based on hierarchical clustering of immune feature changes from baseline to end of maintenance. The 'high-inflammation' cluster exhibited broad increases in JAK/STAT and MAP kinase signaling across monocytes, B cells, CD4 and CD8 T cells. The two 'low-inflammation' clusters (i and ii) showed decreases in these same markers. Critically, baseline microbiota alpha diversity tracked with cluster membership: the low-inflammation ii group had significantly higher baseline microbiota diversity than the high-inflammation group (p=0.037), with the low-inflammation i group showing an intermediate trend. Specific taxa including Coprococcus, Ruminococcus, Oscillospira, and Anaerostipes were more prevalent in low-inflammation i versus high-inflammation participants, while Akkermansia was enriched in the high-inflammation cluster. These data suggest that individuals with richer baseline microbiomes are better positioned to respond to dietary fiber with anti-inflammatory immune outcomes.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "immune_diet_014",
+      "query": "How did the random forest models reveal diet-specific biological signatures, and which data modality was most predictive of diet arm assignment beyond nutritional intake?",
+      "ground_truth_answer": "The researchers built separate random forest models using participant-specific changes from baseline to end of maintenance across multiple -omics platforms, using recursive feature elimination to maximize accuracy with minimum features. Nutritional intake classified participants with 91% accuracy (positive control), relying on animal protein, total fiber, and insoluble fiber. Beyond nutrition, host stool proteomics achieved 89% accuracy via a single protein, myosin-1, which increased in the fermented-food arm and may reflect increased epithelial cell turnover. Overall 16S rRNA-based microbiome composition achieved 80% accuracy, with increased Lachnospira being characteristic of the high-fiber arm. Stool microbe proteomics (74%), stool SCFAs (67%), and metagenomic CAZymes (67%) followed. Notably, immune system measurements such as endogenous signaling (61%), inflammatory cytokines (61%), and cell frequency (58%) were less predictive than microbiome measures, suggesting diet-induced microbiome changes are more consistent across individuals than immune responses.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "immune_diet_015",
+      "query": "What is the broader significance of the fermented-food diet findings in the context of industrialized society and non-communicable chronic diseases (NCCDs)?",
+      "ground_truth_answer": "The study situates fermented food consumption within the urgent problem of rising NCCDs, which are largely driven by chronic inflammation and are increasing with industrialization. Industrialization is associated with well-documented declines in gut microbiota diversity — through sanitation, antibiotic use, and dietary change — and a parallel rise in chronic inflammatory conditions. The fermented-food diet's ability to consistently increase microbiome diversity and broadly decrease inflammatory markers across a diverse cohort (regardless of whether participants consumed fermented dairy or fermented vegetables) suggests it could offer a population-wide dietary strategy to counter microbiome deterioration. Unlike pharmaceuticals, dietary interventions require no regulatory approval, making them accessible tools to abate microbiota deterioration. The authors propose that fermented foods may reintroduce evolutionarily important host-microbe interactions lost through sanitization of the industrialized environment.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "immune_diet_mcq_001",
+      "question": "How many total participants completed the full study analysis (n per arm)?",
+      "options": [
+        "A) 12 per arm",
+        "B) 15 per arm",
+        "C) 18 per arm",
+        "D) 21 per arm"
+      ],
+      "correct_answer": "C",
+      "explanation": "Of 381 individuals assessed for eligibility, 39 were assigned to one of two interventions. After one participant dropped out and two were excluded for antibiotic use, the final count was identical in each arm: n=18.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "immune_diet_mcq_002",
+      "question": "How many circulating inflammatory cytokines and serum proteins decreased significantly in the high-fermented-food diet arm during the intervention?",
+      "options": [
+        "A) 7",
+        "B) 12",
+        "C) 19",
+        "D) 26"
+      ],
+      "correct_answer": "C",
+      "explanation": "Using an inflammation panel assessing 93 circulating cytokines, chemokines, and other serum inflammatory proteins, 19 were found to significantly decrease over the course of the fermented food intervention (SAM analysis; FDR ≤ 0.05; q-value ≤ 0.1), including IL-6, IL-10, and IL-12b.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "immune_diet_mcq_003",
+      "question": "What was the ratio of insoluble to soluble fiber consumed by participants in the high-fiber diet arm at the end of the study (week 10)?",
+      "options": [
+        "A) 1.8 ± 0.4",
+        "B) 2.6 ± 0.6",
+        "C) 3.5 ± 1.1",
+        "D) 4.2 ± 0.9"
+      ],
+      "correct_answer": "C",
+      "explanation": "The ratio between insoluble:soluble fiber was significantly increased from baseline (ratio = 2.6 ± 0.6) to study end at week 10 (ratio = 3.5 ± 1.1; p = 0.002), indicating that participants shifted toward proportionally more insoluble fiber over the course of the intervention.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "immune_diet_mcq_004",
+      "question": "Which single host protein was selected by the random forest model as the best predictor of the high-fermented-food diet arm, and what does its increase suggest?",
+      "options": [
+        "A) IL-6, suggesting systemic inflammation",
+        "B) Myosin-1, suggesting increased small intestinal epithelial cell turnover",
+        "C) Lachnospira, suggesting increased fiber fermentation capacity",
+        "D) IFN-gamma, suggesting activation of adaptive immunity"
+      ],
+      "correct_answer": "B",
+      "explanation": "The host stool proteomics random forest model selected myosin-1 as its single predictive parameter, achieving 89% classification accuracy. Myosin-1 is highly expressed in microvilli within the brush border of the small intestine; its increase in the fermented-food arm may indicate increased epithelial cell turnover in the small intestine.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "immune_diet_mcq_005",
+      "question": "Which of the following bacterial genera was significantly enriched in the high-inflammation cluster relative to the low-inflammation ii cluster in fiber-consuming participants?",
+      "options": [
+        "A) Coprococcus",
+        "B) Ruminococcus",
+        "C) Akkermansia",
+        "D) Anaerostipes"
+      ],
+      "correct_answer": "C",
+      "explanation": "Akkermansia was enriched in the high-inflammation cluster relative to the low-inflammation ii cluster in the high-fiber diet arm. Although Akkermansia is positively associated with metabolic health, it is also associated with low-fiber diets and is rare in populations consuming traditional diets — suggesting it may be an indicator of a depleted microbiome rather than a broadly beneficial taxon.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "immune_diet_mcq_006",
+      "question": "How did CAZyme profiles differ between the high-fiber and high-fermented-food diet arms in terms of direction of change?",
+      "options": [
+        "A) Both arms showed exclusively increased CAZyme abundance",
+        "B) The high-fiber arm showed all increases; the fermented-food arm showed all decreases in a different set of CAZymes",
+        "C) The high-fiber arm showed mixed increases and decreases; the fermented-food arm showed only increases",
+        "D) Neither arm showed statistically significant CAZyme changes"
+      ],
+      "correct_answer": "B",
+      "explanation": "In the high-fiber arm, all 11 significantly changed CAZymes increased in relative abundance, reflecting expansion of plant carbohydrate degradation capacity. In contrast, the high-fermented-food arm showed 8 CAZymes that all decreased in relative abundance during maintenance (including 3 starch-degrading and 5 plant-degrading families), demonstrating that the two diets drove CAZyme changes in opposite directions.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "medium",
+      "category": "comparison"
+    },
+    {
+      "id": "immune_diet_mcq_007",
+      "question": "What significant gastrointestinal symptom was reported in the high-fermented-food diet arm, and when did it resolve?",
+      "options": [
+        "A) Increased stool hardness, resolving by end of maintenance",
+        "B) Increased bloating, which was no longer significant by end of maintenance phase",
+        "C) Increased diarrhea, persisting through the choice period",
+        "D) Increased constipation, resolving during the ramp phase"
+      ],
+      "correct_answer": "B",
+      "explanation": "Participants in the fermented-food diet arm reported a significant increase in bloating (abdominal distention score rose from 0.06 ± 0.06 at baseline to 0.4 ± 0.1 at end of ramp phase; p = 0.03). However, this was no longer statistically significant by the end of the maintenance phase, suggesting the gut adapted to the increased fermented food intake over time.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "immune_diet_mcq_008",
+      "question": "Which fermented food types showed the strongest individual correlation with increased microbiota alpha diversity in the fermented-food arm?",
+      "options": [
+        "A) Kombucha and kimchi",
+        "B) Kefir and fermented cottage cheese",
+        "C) Yogurt and vegetable brine drinks",
+        "D) Fermented vegetables and other fermented drinks"
+      ],
+      "correct_answer": "C",
+      "explanation": "Although total fermented food servings were positively correlated with observed ASVs, the number of servings of yogurt and vegetable brine drinks were each more strongly correlated with increased alpha diversity than the overall total. The authors note that these two types were consumed at higher rates relative to other fermented foods, which may partly explain the stronger correlation.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "immune_diet_mcq_009",
+      "question": "In the cross-omics correlation analysis, which pairing showed the highest fraction of significant correlations with host inflammatory response proteins, and in which direction were most of these correlations?",
+      "options": [
+        "A) Microbiota SCFAs and serum cytokines; predominantly positive correlations",
+        "B) Microbiota CAZymes and host stool proteins; predominantly negative correlations",
+        "C) Microbiota ASVs and immune cell frequency; predominantly positive correlations",
+        "D) Alpha diversity and endogenous immune signaling; predominantly negative correlations"
+      ],
+      "correct_answer": "B",
+      "explanation": "In the Spearman correlation analysis between microbiome features and host parameters, host stool proteins by microbiota CAZymes had the highest fraction of significant correlations. The majority of correlations between CAZymes and disease-associated host proteins annotated to inflammatory response were negative — meaning as microbiota CAZyme abundance increased, inflammation-associated host proteins decreased — suggesting a coordinated yet opposing relationship between dietary fiber-degrading capacity and host inflammatory status.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "immune_diet_mcq_010",
+      "question": "What does the observed convergence in microbiota composition within each diet arm (despite retained individual identity) reveal about how dietary interventions shape the microbiome?",
+      "options": [
+        "A) Diet completely overrides host-specific microbiome identity within 10 weeks",
+        "B) Dietary interventions reduce inter-individual microbiome variability while preserving individualized composition, suggesting diet acts as a directing force within personal microbiome constraints",
+        "C) Microbiome changes are driven entirely by new taxa sourced directly from the diet",
+        "D) No meaningful community-level shifts occurred; only functional gene expression changed"
+      ],
+      "correct_answer": "B",
+      "explanation": "Using Bray-Curtis beta diversity, the linear regression of distance from centroid versus time had a significantly negative coefficient in both diet arms, meaning individual microbiota became more similar to others within the same arm over time. However, participants' microbiota still clustered by individual rather than by diet group at the end of the intervention. This dual pattern — convergence within arms, retained individuality — reveals that diet acts as a shaping force that nudges diverse microbiomes toward a shared functional trajectory without erasing highly individualized community identities, a finding with important implications for precision dietary medicine.",
+      "expected_documents": ["PMC9020749_Gut-microbiota-targeted_diets_modulate_human_immune_status.pdf"],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

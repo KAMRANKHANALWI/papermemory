@@ -1,0 +1,347 @@
+{
+  "source_document": "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf",
+  "paper_metadata": {
+    "title": "Integration of 168,000 samples reveals global patterns of the human gut microbiome",
+    "authors": "Richard J. Abdill, Samantha P. Graham, Vincent Rubinetti, et al.",
+    "journal": "Cell",
+    "volume": 188,
+    "pages": "1100-1118",
+    "year": 2025,
+    "doi": "https://doi.org/10.1016/j.cell.2024.12.017"
+  },
+  "test_cases": [
+    {
+      "id": "hmc_qa_001",
+      "query": "How many publicly available human gut microbiome samples were processed in the Human Microbiome Compendium, and from how many countries?",
+      "ground_truth_answer": "The Human Microbiome Compendium processed 168,464 publicly available human gut microbiome samples from 68 countries across 482 BioProjects, encompassing 5.57 terabases of sequencing data processed using a uniform pipeline.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hmc_qa_002",
+      "query": "Which phylum is the most prevalent in the Human Microbiome Compendium, and in how many samples was it detected?",
+      "ground_truth_answer": "The Bacillota phylum (formerly Firmicutes) is by far the most prevalent, found in 150,540 of 150,721 filtered samples (99.9%). It also contains three of the five most prevalent classes and six of the ten most prevalent orders in the dataset.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hmc_qa_003",
+      "query": "What was the median Shannon diversity index across the compendium, and what was the maximum value observed?",
+      "ground_truth_answer": "The median Shannon diversity index across the compendium was 2.33, with values reaching as high as 5.07. This is consistent with ranges identified in previous meta-analyses of alpha diversity across multiple microbiome studies.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hmc_qa_004",
+      "query": "What proportion of all shotgun sequencing samples in the BioSample database were from Europe and Northern America?",
+      "ground_truth_answer": "76.4% of all shotgun sequencing samples were from Europe and Northern America, despite residents of that region making up less than 15% of the world's population. This highlights a severe geographic imbalance in the type and depth of sequencing data available globally.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hmc_qa_005",
+      "query": "What is the MicroBioMap R package and how does it facilitate use of the compendium?",
+      "ground_truth_answer": "MicroBioMap is an open-source R package developed alongside the Human Microbiome Compendium that provides convenient access to compendium data. Data are loaded into a Bioconductor TreeSummarizedExperiment object, enabling users to leverage extensive Bioconductor microbiome analysis and visualization tools. The package includes documentation and example use cases, and the compendium data is also browsable at microbiomap.org.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hmc_qa_006",
+      "query": "How were technical factors such as bead-beating and amplicon choice found to affect alpha diversity, and how did these effects compare to world region?",
+      "ground_truth_answer": "World region had the largest effect on alpha diversity with a Cohen's f of 0.237, followed closely by bead-beating with an estimated Cohen's f of 0.218, and amplicon choice with a Cohen's f of 0.140. A PERMANOVA analysis confirmed all evaluated factors had a significant effect (p ≤ 0.002), with world region having a stronger effect on composition than technical factors (world region R² = 0.026, amplicon R² = 0.009, bead beating R² = 0.004). Notably, the interaction between world region and amplicon (R² = 0.010) was larger than amplicon alone, indicating amplicon choice can have region-specific impacts.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "hmc_qa_007",
+      "query": "Describe the rarefaction analysis performed on the compendium. What did it reveal about the completeness of taxon discovery?",
+      "ground_truth_answer": "The rarefaction analysis involved repeatedly selecting random subsets of samples without replacement and counting the number of unique taxa observed. The discovery rate for taxa approached zero after 25,000 samples for all levels except genus. Between subsamples of 150,000 and the full 168,464 samples, only one new genus was discovered every 4,831 samples. This suggests the reference database saturates at most taxonomic ranks after approximately 25,000 samples, and the compendium likely captures all but the rarest taxa represented in the reference database for the populations covered.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "hmc_qa_008",
+      "query": "What is the robust Aitchison distance and why was it used for the principal coordinates analysis in this study?",
+      "ground_truth_answer": "The robust Aitchison distance is a compositional dissimilarity metric suited for microbiome count data, which accounts for the compositional nature of relative abundance data. It was used to build a distance matrix between all samples for the PCoA visualization of global microbiome composition. This approach is well-suited for large-scale microbiome data because it is robust to zeros and compositional artifacts that would confound simpler distance measures like Euclidean distance on raw abundances.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "hmc_qa_009",
+      "query": "How was extraction kit information inferred from project-associated publications, and what semantic matching approach was used?",
+      "ground_truth_answer": "Extraction kit information was inferred by first retrieving full-text descriptions from publications using the PubTator API, then preprocessing text by removing stop words, numbers, and punctuation. A semantic matching approach was developed using BioMedBERT word embeddings: for each extraction kit name and study description, the cosine similarity between every kit word and its closest study word (and vice versa) was computed. The overall kit-study similarity was the weighted average of these best word-pair similarities (weighted by TF-IDF informativeness). A Stouffer's z-score correction was applied to account for background signal, and the kit with the highest corrected similarity was assigned to each study. The bottom 10% of similarity scores were manually reviewed for accuracy.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "hmc_qa_010",
+      "query": "Explain the variance score metric used to define region-specific microbiome signatures. Which six genera were found to be core taxa appearing in all world regions' signatures?",
+      "ground_truth_answer": "The variance score is a heuristic ranging from 0 to 1 derived from PCA applied separately to each region's microbiome data. As many principal components as needed to explain at least 50% of variance were retained, and their eigenvectors were summed per taxon. The resulting proportions indicate how much of a taxon's variance is captured by the dominant axes, reflecting how strongly it is linked to overall variability. The six genera appearing in the top 10 taxa signatures of all world regions—forming the core taxa for explaining global variation—are Bifidobacterium, Bacteroides, Prevotella, Streptococcus, Veillonella, and Escherichia/Shigella.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "hmc_qa_011",
+      "query": "What were the key findings of the differential abundance analysis comparing Bacteroides and Prevotella between Europe/Northern America and other world regions?",
+      "ground_truth_answer": "Bacteroides was significantly higher in Europe and Northern America compared to Sub-Saharan Africa, Latin America and the Caribbean, Central and Southern Asia, and Australia/New Zealand (all q < 2.2×10⁻¹⁶ except Australia/New Zealand at q = 7.50×10⁻¹⁴). More than 20% of European/Northern American samples contain at least 30% Bacteroides by relative abundance, compared to only 2.6% of Sub-Saharan African and 1.6% of Central/Southern Asian samples. Conversely, Prevotella was significantly lower in Europe and Northern America than Sub-Saharan Africa, Latin America, and Central/Southern Asia (all q < 2.2×10⁻¹⁶). Only 17.5% of European/Northern American samples have more than 1% Prevotella, compared to 42% in Northern Africa/Western Asia, 59% in Latin America/Caribbean, and 63% in Sub-Saharan Africa.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "comparison"
+    },
+    {
+      "id": "hmc_qa_012",
+      "query": "How were BioProjects associated with pyrosequencing excluded from the compendium, and what exception was made during this process?",
+      "ground_truth_answer": "The authors retrieved sequencing instrument information for each sample via the SRA Toolkit APIs and evaluated BioProjects reporting 454 or Ion Torrent instruments. However, a manual review revealed that many BioProjects using Mothur (a popular microbiome tool) had their instrument field automatically filled as '454 GS'—a default entry—even though the actual sequencing was performed on Illumina platforms like MiSeq. To avoid removing legitimate Illumina samples, the authors removed BioProjects reporting all other pyrosequencing instruments but retained those reporting only '454 GS' after verifying they used Illumina sequencing.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "hmc_qa_013",
+      "query": "Compare the taxonomic richness found in Eastern and South-Eastern Asia versus Europe and Northern America. Why is this pattern particularly notable given the sample sizes?",
+      "ground_truth_answer": "Eastern and South-Eastern Asia had the highest number of observed taxa in the compendium—3,662 of the 4,018 total taxa—despite having approximately 70,000 fewer samples than Europe and Northern America. In contrast, Latin America and the Caribbean had only 874 taxa observed. This pattern is notable because despite Europe and Northern America being by far the most sampled region (91,144 samples), Eastern and South-Eastern Asia with far fewer samples (17,086) still yields greater taxonomic richness. Furthermore, the taxa discovery rate in Europe and Northern America falls below 1 per million reads before 30,000 samples are assayed, while regions like Northern Africa/Western Asia continue to yield an average of 8.19 new taxa per million reads even when all available samples are exhausted—strongly suggesting extensive undiscovered diversity in undersampled regions.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "hmc_qa_014",
+      "query": "Explain how the DADA2 pipeline handled BioProjects where paired-end read merging failed, and what criteria were used to decide when to reprocess as single-end data.",
+      "ground_truth_answer": "When DADA2 processed paired-end data, a minimum overlap of 20 bases was required for merging. If fewer than 50% of forward reads were successfully merged (likely due to non-overlapping or minimally overlapping read strategies), the reverse reads were removed and the BioProject was reprocessed as single-end data. If the number of forward and reverse reads for a sample did not match, DADA2 was used to detect the sequence identifier field in the FASTQ files to match salvageable samples; if this was unsuccessful, the BioProject was again reprocessed as single-end. Additionally, any BioProject where at least five of the first ten samples processed had more than 25% chimeric reads was excluded entirely, as correcting these would require manual intervention and project-specific knowledge of sequencing strategy.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "hmc_qa_015",
+      "query": "How were random forest classifiers trained to predict world region from microbiome composition, and what were the highest and lowest performing regions? What does the classifier performance reveal about microbiome distinctiveness across regions?",
+      "ground_truth_answer": "Binary one-versus-all random forest classifiers were trained using the ranger R package with hyperparameter tuning via grid search across multiple parameters (min.node.size, sample.fraction, mtry, num.trees) plus filtering thresholds (abundance and prevalence). Samples were CLR-transformed, and class weights were applied inversely proportional to each region's representation in the dataset to account for imbalance. The final parameters were: min.node.size=1, sample.fraction=1, mtry=210, num.trees=2000, with 1,050 taxa retained after filtering. Australia/New Zealand achieved the highest AUC (0.944), while Europe and Northern America had the lowest (0.797). At the region-versus-region level, Eastern and South-Eastern Asia vs. Central and Southern Asia was most distinguishable (AUC=0.945), while Europe/Northern America vs. Latin America/Caribbean was hardest (AUC=0.704). Crucially, taxa that were differentially abundant between regions were significantly overrepresented among the most important classifier features, validating that the composition-based geographic signal is biologically meaningful rather than an artifact.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "hmc_qa_016",
+      "query": "What are the key limitations the authors acknowledge regarding drawing conclusions from the Human Microbiome Compendium, particularly around batch effects and confounding variables?",
+      "ground_truth_answer": "The authors acknowledge several important limitations. First, world region may be confounded with sample collection intent (disease studies vs. healthy cohorts), and the dataset lacks consistent host health or disease status metadata. Diet information is absent despite its known relationship to microbiome composition. Ethnicity data is unavailable, and though geography partially captures this, studies show ethnic background independently affects microbiome composition even within a single city. Reference databases may have less coverage of taxa more common outside Europe and North America, inflating unidentified taxa and deflating diversity estimates in underrepresented regions. Regarding batch effects, the authors argue these are mitigated at large scales: with 482 studies, disparate project-level effects are overshadowed by consistent biological signal, consistent with their prior work showing batch correction becomes ineffective when there are many batches, and other work showing large phenotypic effects outweigh study-level batch effects across 12 studies.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "hmc_mcq_001",
+      "question": "After applying quality control filters (minimum 10,000 reads, rare taxon removal), how many samples and unique taxa were retained in the final analysis dataset?",
+      "options": [
+        "A) 120,500 samples and 1,022 taxa",
+        "B) 150,721 samples and 1,422 taxa",
+        "C) 168,464 samples and 4,018 taxa",
+        "D) 134,900 samples and 2,200 taxa"
+      ],
+      "correct_answer": "B",
+      "explanation": "After removing samples with fewer than 10,000 reads, rare taxa (fewer than 1,000 total reads or detected in fewer than 100 samples), and samples where more than 10% of reads had an unassigned phylum, the filtered compendium contained 150,721 samples and 1,422 taxa. The full unfiltered dataset contained 168,464 samples and 4,018 taxa.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hmc_mcq_002",
+      "question": "Which world region had the highest alpha diversity (median Shannon index) in the compendium?",
+      "options": [
+        "A) Eastern and South-Eastern Asia",
+        "B) Sub-Saharan Africa",
+        "C) Latin America and the Caribbean",
+        "D) Europe and Northern America"
+      ],
+      "correct_answer": "C",
+      "explanation": "Latin America and the Caribbean had the highest alpha diversity with a median Shannon index of 2.69, despite having only 1,195 samples. Central and Southern Asia had the lowest average diversity at a median Shannon index of 1.68. The authors note that diversity in understudied regions is likely underestimated due to gaps in reference databases.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hmc_mcq_003",
+      "question": "What proportion of samples in the Human Microbiome Compendium came from Europe and Northern America?",
+      "options": [
+        "A) 45.2%",
+        "B) 72.8%",
+        "C) 60.5%",
+        "D) 53.1%"
+      ],
+      "correct_answer": "C",
+      "explanation": "Europe and Northern America contributed 91,144 samples, representing 60.5% of the filtered compendium. Eastern and South-Eastern Asia was a distant second at 17,086 samples (11.3%), followed by Sub-Saharan Africa at 5,538 (3.7%) and Central and Southern Asia at 5,046 (3.4%).",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hmc_mcq_004",
+      "question": "In the differential abundance analysis comparing world regions to Europe and Northern America, which pair of regions showed the greatest number of differentially abundant taxa, and which pair showed the fewest?",
+      "options": [
+        "A) Most: Sub-Saharan Africa vs. Latin America (n=60); Fewest: Europe vs. Eastern Asia (n=12)",
+        "B) Most: Sub-Saharan Africa vs. Australia/New Zealand (n=56); Fewest: Europe vs. Northern Africa and Western Asia (n=8)",
+        "C) Most: Central and Southern Asia vs. Eastern Asia (n=54); Fewest: Europe vs. Australia/New Zealand (n=10)",
+        "D) Most: Latin America vs. Sub-Saharan Africa (n=50); Fewest: Europe vs. Central and Southern Asia (n=16)"
+      ],
+      "correct_answer": "B",
+      "explanation": "The highest number of differentially abundant taxa (n=56) was found between Sub-Saharan Africa and Australia/New Zealand, while the fewest (n=8) were found between Europe and Northern America and Northern Africa and Western Asia. All 65 tested taxa were significantly differentially abundant between at least one pair of regions.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "comparison"
+    },
+    {
+      "id": "hmc_mcq_005",
+      "question": "Which hypervariable region amplicon was the most popular across the compendium, and approximately how many samples used it?",
+      "options": [
+        "A) V3, approximately 90,000 samples",
+        "B) V4, approximately 75,000 samples",
+        "C) V3-V4, approximately 50,000 samples",
+        "D) V1-V4, approximately 60,000 samples"
+      ],
+      "correct_answer": "B",
+      "explanation": "The V4 region was by far the most commonly used amplicon, with approximately 75,000 samples. V3-V4 was the second most popular and grew in popularity after 2017 but still trailed V4 substantially. The Illumina MiSeq has been the dominant 16S rRNA gene sequencing platform since 2014, accounting for 405,907 samples (75.6% of all amplicon samples).",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "hmc_mcq_006",
+      "question": "What was the effect of using the V4 hypervariable region on the relative abundance of Akkermansia compared to other amplicons?",
+      "options": [
+        "A) Akkermansia was significantly depleted with V4 (q = 0.019)",
+        "B) Akkermansia showed no significant difference with V4",
+        "C) Akkermansia had higher relative abundance in studies using V4 (q = 0.019)",
+        "D) Akkermansia was only detected in V3-V4 studies"
+      ],
+      "correct_answer": "C",
+      "explanation": "The differential abundance analysis of amplicon choice found that Akkermansia has a higher relative abundance in studies using the V4 hypervariable region (q = 0.019). Methanobrevibacter was increased with V4 (q = 1.36×10⁻⁹) but decreased with V1-V2 (q = 0.00476). Enterobacter was higher with V3-V4 (q = 1.30×10⁻¹⁸) and depleted with V4 (q = 1.42×10⁻¹¹).",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "hmc_mcq_007",
+      "question": "How was amplicon choice (i.e., which hypervariable region was targeted) inferred from the processed DADA2 data for each BioProject?",
+      "options": [
+        "A) By querying the SRA metadata field 'library_strategy' for each sample",
+        "B) By aligning each BioProject's ASVs to the E. coli 16S rRNA gene using Smith-Waterman alignment and mapping coverage to known hypervariable region coordinates",
+        "C) By using the BioMedBERT model to extract amplicon information from project publications",
+        "D) By comparing ASV lengths to expected amplicon sizes from a curated reference table"
+      ],
+      "correct_answer": "B",
+      "explanation": "Amplicon choice was inferred by aligning all ASVs from each BioProject to the full E. coli 16S rRNA gene (GenBank accession J01859.1) using the Smith-Waterman algorithm implemented in scikit-bio. Alignments covering ≤70% of the ASV were discarded. For remaining ASVs, the alignment coordinates determined which hypervariable regions were covered (using Chakravorty et al.'s definitions), with a region considered covered if more than half its length was spanned. Starting and ending regions were then tallied to assign an amplicon to the entire BioProject.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "hmc_mcq_008",
+      "question": "What did the phylogenetic gain analysis reveal when the taxa of Eastern and South-Eastern Asia were added to the baseline phylogenetic tree of Europe and Northern America?",
+      "options": [
+        "A) It increased the total branch length (Faith's PD) by 18.9%",
+        "B) It increased the total branch length (Faith's PD) by 68.6%",
+        "C) It increased the total branch length (Faith's PD) by 36.2%",
+        "D) It caused no measurable increase since the same core taxa were shared"
+      ],
+      "correct_answer": "B",
+      "explanation": "Using the phylogenetic tree of Europe and Northern America as the baseline (the most overrepresented region), adding the taxa of Eastern and South-Eastern Asia increased the total branch length by 68.6%—the largest gain of any region. Sub-Saharan Africa added 18.9% and Latin America/Caribbean added 16.9%. This highlights that even regions with similar diversity levels can harbor taxa from entirely different phylogenetic clades.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "comparison"
+    },
+    {
+      "id": "hmc_mcq_009",
+      "question": "The authors found that the interaction term between world region and amplicon choice (R² = 0.010) was larger than amplicon choice alone (R² = 0.009) in PERMANOVA. What is the most accurate interpretation of this finding?",
+      "options": [
+        "A) Amplicon choice confounds world region differences, making regional comparisons unreliable",
+        "B) The influence of amplicon choice on microbiome composition is amplified or modified depending on the specific microbial taxa characteristic of a given region",
+        "C) World region and amplicon choice are perfectly correlated, meaning they cannot be separated analytically",
+        "D) Bead-beating is more important than the interaction between region and amplicon"
+      ],
+      "correct_answer": "B",
+      "explanation": "The interaction R² being larger than the main effect of amplicon alone indicates that amplicon choice does not affect all microbial communities equally—its impact depends on the region-specific microbial community composition. Certain taxa prevalent in specific regions may be more susceptible to amplification bias from particular hypervariable regions, meaning the same primer set can produce different compositional distortions in different geographic populations.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "hmc_mcq_010",
+      "question": "The authors argue that batch correction of large-scale compendia containing many studies is ineffective. Which of the following best describes the reasoning they provide for why regional biological signals can nevertheless be reliably detected?",
+      "options": [
+        "A) They applied a strict PERMANOVA-based batch correction that removed all project-level variance before analysis",
+        "B) They excluded all studies with fewer than 300 samples to minimize batch heterogeneity",
+        "C) As the number of batches (studies) grows large, the disparate project-level technical effects average out while consistent biological signals (shared across studies) persist and dominate",
+        "D) They used weighted UniFrac distance which inherently accounts for batch effects through phylogenetic normalization"
+      ],
+      "correct_answer": "C",
+      "explanation": "The authors cite their prior work and an independent study (evaluating 12 studies) showing that when the number of batches is large, the inconsistent project-level technical effects are overshadowed by consistent biological signals present across many studies. With 482 BioProjects in this compendium, this principle applies strongly. Rather than correcting for batch effects (which they found ineffective in prior work), they account for technical factors (BioProject, bead beating, amplicon) as random effects in their linear mixed models for differential abundance analysis.",
+      "expected_documents": [
+        "Integration_of_168_000_samples_reveals_global_patterns_of_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

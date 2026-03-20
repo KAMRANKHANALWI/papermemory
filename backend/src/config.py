@@ -91,11 +91,15 @@ class EvalConfig:
     # Dataset paths
     # ----------------------------------------
     EVAL_DIR = BASE_DIR / "eval"
-    DATASETS_DIR = EVAL_DIR / "datasets"
-    OUTPUT_DIR = EVAL_DIR / "results"
+    # DATASETS_DIR = EVAL_DIR / "datasets"
+    DATASETS_DIR = EVAL_DIR / "Eval_Dataset"
+    # OUTPUT_DIR = EVAL_DIR / "results"
+    OUTPUT_DIR = EVAL_DIR / "Eval_Results"
 
-    OPEN_ENDED_CSV = DATASETS_DIR / "full_open_ended.csv"
-    MCQ_CSV = DATASETS_DIR / "full_mcq.csv"
+    # OPEN_ENDED_CSV = DATASETS_DIR / "full_open_ended.csv"
+    OPEN_ENDED_CSV = DATASETS_DIR / "gut_microbiome_open_ended.csv"
+    # MCQ_CSV = DATASETS_DIR / "full_mcq.csv"
+    MCQ_CSV = DATASETS_DIR / "gut_microbiome_mcq.csv"
 
     # ----------------------------------------
     # Vector DB — references AppConfig so they stay in sync

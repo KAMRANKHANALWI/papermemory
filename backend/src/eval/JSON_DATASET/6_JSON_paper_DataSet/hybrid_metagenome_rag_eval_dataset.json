@@ -1,0 +1,349 @@
+{
+  "source_document": "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf",
+  "metadata": {
+    "paper_title": "Hybrid metagenome assemblies link carbohydrate structure with function in the human gut microbiome",
+    "journal": "Communications Biology",
+    "year": 2022,
+    "doi": "https://doi.org/10.1038/s42003-022-03865-0"
+  },
+
+  "test_cases": [
+    {
+      "id": "hybrid_mag_001",
+      "query": "How many metagenome-assembled genomes (MAGs) were recovered in this study, and what proportion were high-quality?",
+      "ground_truth_answer": "A total of 509 MAGs were recovered that met the MIMAG quality score criteria. Around 65% (n=331) of these were high-quality, defined as having completeness of >90% and contamination <5%.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hybrid_mag_002",
+      "query": "What six carbohydrate substrates were used in the model colon fermentation experiment?",
+      "ground_truth_answer": "The six substrates used were: native Hylon VII (a highly recalcitrant starch), native potato starch (highly recalcitrant), native normal maize starch (accessible starch), gelatinised then retrograded maize starch (accessible starch), Avicel PH-101 (insoluble fibre, resistant to fermentation), and chicory inulin (highly fermentable soluble fibre).",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hybrid_mag_003",
+      "query": "What sequencing platforms were combined to generate hybrid metagenome assemblies in this study?",
+      "ground_truth_answer": "The study combined Illumina NovaSeq (short-read sequencing) and Oxford Nanopore PromethION (long-read sequencing) data to generate hybrid metagenome assemblies using the Opera-MS tool.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hybrid_mag_004",
+      "query": "What were the taxonomic breadth of the dereplicated MAG set in terms of bacterial classes and families?",
+      "ground_truth_answer": "The dereplicated set consisted of 151 unique genome clusters belonging to ten bacterial classes and 28 bacterial families, encompassing both Gram-positive and Gram-negative species.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hybrid_mag_005",
+      "query": "What was the most abundant species at baseline across all carbohydrate treatments in the model colon experiment?",
+      "ground_truth_answer": "Prevotella copri was consistently the most abundant species at baseline (0 h) across all substrate treatments. It decreased in abundance over time but remained one of the most abundant species throughout the experiment.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+
+    {
+      "id": "hybrid_mag_006",
+      "query": "Why was Escherichia coli observed dominating the N. maize treatment, and how pronounced was this effect?",
+      "ground_truth_answer": "Escherichia coli showed an exceptionally high abundance specifically in the normal maize (N. maize) treatment, reflecting rapid preferential utilisation of this accessible starch. By 24 h, E. coli showed 17x greater abundance than at time 0 h, the highest dominance observed across all treatments, and this caused the N. maize microbiome profile to diverge markedly from all other treatments in PCoA analysis.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "hybrid_mag_007",
+      "query": "Explain the role of Polysaccharide Utilisation Loci (PULs) in carbohydrate degradation and which phylum they were exclusively found in.",
+      "ground_truth_answer": "PULs are genomic arrangements that co-localise carbohydrate-active enzymes and associated binding/transport proteins for coordinated polysaccharide degradation. In this study, all PULs identified were within the phylum Bacteroidetes. The most PULs found in a single MAG was 79, identified in Butyricimonas faecihominis. An example was the PUL in Bacteroides uniformis containing GH32-GH32;CBM38 genes arranged for inulin degradation.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "hybrid_mag_008",
+      "query": "What is the biological significance of the CBM74 carbohydrate-binding module, and which MAGs were found to carry it in this study?",
+      "ground_truth_answer": "CBM74 is a relatively recently described carbohydrate-binding module originally identified in a raw starch-degrading amylase from a potato processing plant waste stream. It is hypothesised to facilitate the degradation of raw granular starches. In this study, CBM74 increased in abundance exclusively in response to the two most recalcitrant starches (Hylon and Potato) but not the accessible starches, suggesting it is specifically required for recalcitrant starch degradation. The MAGs carrying CBM74 that increased in these treatments were R. bromii, Candidatus Blautia hennigii, Candidatus Ruminococcus anthropic, and Candidatus Colihabitans norwichensis.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "hybrid_mag_009",
+      "query": "How did the study distinguish between early and late carbohydrate degraders, and what was the fold-change threshold used?",
+      "ground_truth_answer": "Genomes were partitioned as early degraders (those first showing increased relative abundance at 0 and 6 h) and late degraders (those first showing an increase at 12 and 24 h) based on when they first exhibited a significant rise in abundance. The threshold for classifying a MAG as an active carbohydrate utiliser was a 2x log2 fold change (log2 fold change = 1) in relative abundance compared to baseline (time 0 h).",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "hybrid_mag_010",
+      "query": "Why does the Avicel treatment show the smallest changes in microbial community composition and gene abundance among all substrates?",
+      "ground_truth_answer": "Avicel (microcrystalline cellulose) is the most recalcitrant and poorly fermentable substrate evaluated. The human gut microbiota has a very limited capacity to degrade crystalline celluloses. As a result, relative abundance was largely constant for Avicel throughout the experiment, very few CAZyme genes showed distinct changes (mainly limited to cell wall remodelling and core metabolism), and the diversity index showed a different pattern compared to starch treatments. The slight activity observed was mainly a 1.5x shift in 6-phospho-beta-glucosidase, suggesting only minimal cellulose degradation.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "hybrid_mag_011",
+      "query": "Describe the evidence presented for Candidatus Ruminococcus anthropic as a starch degrader in the Potato treatment.",
+      "ground_truth_answer": "Candidatus Ruminococcus anthropic, a less well-characterised Ruminococcus species closely related to R. bromii, was identified specifically in the Potato treatment where it showed a significant increase in abundance. Its MAG contained ten GH13 genes (encoding alpha-amylases, the key starch-degrading enzyme family) and one CBM48 gene (a starch-binding module commonly appended to GH13 enzymes). This combination of increased abundance during potato starch fermentation and the presence of amylolytic machinery strongly supports its role as a starch degrader.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "hybrid_mag_012",
+      "query": "What key metabolic gene pathway shifts were observed in the Potato, Hylon and R. maize starch treatments at 24 hours, and what do these indicate about the endpoint of starch metabolism?",
+      "ground_truth_answer": "In Hylon, a twofold increase in alpha-amylase gene abundance was observed at 24 h, while Potato showed a 1.5-fold increase. Both Potato (1.6-fold) and R. maize (1.5-fold) showed increased oligo-1,6-glucosidase genes involved in cleaving the 1,6 branch points present in Potato and R. maize starches (largely absent in Hylon). Notably, all three treatments also showed broad increases in genes directly involved in acetyl-CoA and fatty acid metabolism, consistent with the production of high levels of short-chain fatty acids (SCFAs) as the primary metabolic endpoint of starch fermentation.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+
+    {
+      "id": "hybrid_mag_013",
+      "query": "Compare the assembly quality metrics of MAGs generated in this study versus those in the GTDb reference database, and explain the implications of these differences.",
+      "ground_truth_answer": "While the average overall assembly length was similar (2,237,598 bp in this study vs 2,533,373 bp in GTDb), the MAGs in this study had far fewer contigs on average (68 contigs vs 162 in GTDb). Fewer contigs indicate a more contiguous, less fragmented assembly — meaning the genomes are assembled into longer, more complete stretches. This greater contiguity results from the hybrid assembly approach combining long-read PromethION data with short-read NovaSeq data, and suggests these MAGs are of higher quality than reference database entries, enabling more reliable functional annotation of CAZymes and PULs.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "hybrid_mag_014",
+      "query": "Critically compare the bead beating versus phenol-chloroform DNA extraction methods for long-read metagenomic sequencing, referencing findings from this study and prior literature.",
+      "ground_truth_answer": "A prior publication (Moss et al.) and its associated protocol paper recommended against bead beating for long-read sequencing, claiming it shears DNA excessively, and advocated enzymatic cell lysis followed by phenol-chloroform purification for high molecular weight DNA. However, this study's experience contradicted that claim: the N50 achieved using bead beating was 4972 bp on PromethION, which was on average longer than the 1432–5205 bp range Moss et al. reported using phenol-chloroform on the same platform. Furthermore, Bertrand et al. found phenol-chloroform gave higher molecular weight DNA but with low integrity that compromised sequencing quality. Crucially, bead beating in this study enabled recovery of near-complete MAGs from five Bifidobacterium species — gram-positive organisms that were underrepresented with phenol-chloroform in Moss et al.'s data. The Human Microbiome Project also recommends bead beating to avoid microbial community biases, further supporting its use.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "hybrid_mag_015",
+      "query": "How does the structural complexity of starch (recalcitrant vs accessible) differentially shape microbial community succession, CAZyme profiles, and species specialisation in the human gut?",
+      "ground_truth_answer": "Recalcitrant starches (Hylon and Potato) and accessible starches (N. maize and R. maize) drove distinct microbial community trajectories. Recalcitrant starches strongly selected for R. bromii (the specialist 'keystone' degrader with an amylosome), along with Candidatus Ruminococcus anthropic and Candidatus Blautia hennigii — all carrying CBM74, a binding module specific to raw granular starch. Accessible starches selected for a broader range of Bifidobacterium species (with B. adolescentis confined to Hylon). CAZyme profiles showed high GH13 (alpha-amylase) representation in all starch treatments, but CBM74 appeared only in Hylon and Potato, while CBM48 (general starch-binding) increased across all four starch types. Accessible substrates also mobilised a wider range of CAZyme families overall. This demonstrates that fine structural differences — crystallinity, branch point density, granular integrity — directly select for distinct specialist microbial lineages and enzyme arsenals, with implications for precision dietary modulation of the microbiome.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "complex_mechanism"
+    },
+    {
+      "id": "hybrid_mag_016",
+      "query": "What novel taxonomic contributions did this study make, and what naming convention was applied to previously uncharacterised genomes?",
+      "ground_truth_answer": "The study provided Candidatus names to 70 bacterial species that lacked representative Latin binomial names in the GTDb database. Of the 151 MAG clusters, 46 had alphanumeric genus names and 19 had alphanumeric species names in GTDb. Using the approach described in Pallen et al., the authors provided 12 new genus names and 51 new species names for previously unnamed genomes. For 15 MAGs that were already named or cultured in NCBI, the existing Latin binomial was applied. The decision to formally name these species was justified by the higher assembly quality of these MAGs relative to database entries.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "factual"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "hybrid_mag_mcq_001",
+      "question": "What tool was used to perform hybrid assembly by combining PromethION long reads with Illumina short-read assemblies?",
+      "options": [
+        "A) MEGAHIT",
+        "B) MetaBat2",
+        "C) Opera-MS",
+        "D) MaxBin2"
+      ],
+      "correct_answer": "C",
+      "explanation": "Opera-MS version 0.8.2 was used to combine the short-read-only Illumina assembly (produced by MEGAHIT) with high-quality PromethION long reads to create hybrid assemblies. MEGAHIT performed short-read assembly, while MaxBin2 and MetaBat2 were used for genome binning.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hybrid_mag_mcq_002",
+      "question": "At what time points were samples collected from each fermentation vessel in the model colon experiment?",
+      "options": [
+        "A) 0, 3, 6, and 12 hours",
+        "B) 0, 6, 12, and 24 hours",
+        "C) 0, 12, 24, and 48 hours",
+        "D) 0, 6, 24, and 48 hours"
+      ],
+      "correct_answer": "B",
+      "explanation": "Samples were collected from each fermentation vessel at 0 (5 min), 6, 12, and 24 hours after inoculation. This four-point time series allowed the study to track dynamic microbiome shifts and identify early versus late carbohydrate degraders.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "hybrid_mag_mcq_003",
+      "question": "Which Bifidobacterium species was the only one to increase in abundance specifically in response to Hylon starch?",
+      "options": [
+        "A) Bifidobacterium animalis",
+        "B) Bifidobacterium longum",
+        "C) Bifidobacterium adolescentis",
+        "D) Bifidobacterium breve"
+      ],
+      "correct_answer": "C",
+      "explanation": "B. adolescentis was the only Bifidobacterium species to increase in abundance in response to Hylon, consistent with prior characterisation showing it can better utilise this hard-to-digest high-amylose starch compared to other Bifidobacterium species. A broader range of Bifidobacterium species responded to the more accessible R. maize and N. maize substrates.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+
+    {
+      "id": "hybrid_mag_mcq_004",
+      "question": "What percentage of reads were removed during quality trimming and filtering of PromethION data?",
+      "options": [
+        "A) 10.2 ± 5.1%",
+        "B) 20.5 ± 10.2%",
+        "C) 33.3 ± 14.7%",
+        "D) 45.0 ± 8.3%"
+      ],
+      "correct_answer": "C",
+      "explanation": "After consolidating the two PromethION sequencing runs and performing trimming and quality filtering, 33.3 ± 14.7% of reads were removed. The median read length after trimming was 4972.5 ± 229 bp with a median quality score of 9.7 ± 0.9.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "hybrid_mag_mcq_005",
+      "question": "According to the CAZyme analysis, which three glycoside hydrolase families accounted for 34.1% of all GH and CBM counts in MAGs showing >2-log fold change in abundance?",
+      "options": [
+        "A) GH1, GH5, and GH13",
+        "B) GH2, GH3, and GH13",
+        "C) GH13, GH32, and GH57",
+        "D) GH3, GH13, and GH43"
+      ],
+      "correct_answer": "B",
+      "explanation": "In MAGs that showed a larger than 2-log fold change in abundance, GH13, GH2, and GH3 together accounted for 34.1% of all glycoside hydrolase and carbohydrate-binding module counts. GH13 is the alpha-amylase family, central to starch degradation, while GH2 and GH3 cover a range of beta-glucosidase and related activities.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "hybrid_mag_mcq_006",
+      "question": "How many GH13 genes were identified in the R. bromii MAG assembled in this study, and how does this compare to a previously sequenced isolate?",
+      "options": [
+        "A) 10 GH13 genes; the isolate had 12",
+        "B) 12 GH13 genes; the isolate had 10",
+        "C) 14 GH13 genes; the isolate had 15",
+        "D) 18 GH13 genes; the isolate had 15"
+      ],
+      "correct_answer": "C",
+      "explanation": "The R. bromii MAG assembled in this study contained 14 GH13 genes, closely matching the 15 GH13 genes reported in a previous genome sequencing study of an R. bromii isolate. This high number of amylolytic genes is consistent with R. bromii's role as a specialist 'keystone' degrader of highly recalcitrant starch, using specialised starch-degrading machinery termed the 'amylosome'.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "hybrid_mag_mcq_007",
+      "question": "What was the primary criterion used for dereplication of MAGs into secondary unique clusters?",
+      "options": [
+        "A) 16S rRNA gene sequence identity at 97% threshold",
+        "B) Average Nucleotide Identity (ANI) at a 99% threshold",
+        "C) Average Nucleotide Identity (ANI) at a 95% threshold",
+        "D) CRISPR array similarity at a 90% threshold"
+      ],
+      "correct_answer": "B",
+      "explanation": "MAGs were dereplicated using dRep, which applies pairwise genome comparisons via Average Nucleotide Identity (ANI). Primary clusters were formed at <97% ANI and secondary (unique) clusters at <99% ANI. A total of 151 secondary unique clusters were identified from the 509 MAGs, with each cluster containing between one and seven genomes.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "hybrid_mag_mcq_008",
+      "question": "Which two previously uncharacterised species (not identified in NCBI) were found to harbour multiple copies of the GH32 (inulinase) gene and showed increased abundance during inulin fermentation?",
+      "options": [
+        "A) Candidatus Blautia hennigii and Candidatus Ruminococcus anthropic",
+        "B) Candidatus Minthovivens enterohominis and Collinsella aerofaciens_J",
+        "C) Candidatus Cholicenecus caccae and Candidatus Eisenbergiella faecalis",
+        "D) Candidatus Enteromorpha quadrami and Candidatus Colihabitans norwichensis"
+      ],
+      "correct_answer": "B",
+      "explanation": "Collinsella aerofaciens_J (cluster 29_1) and Candidatus Minthovivens enterohominis (cluster 81_1) were both not previously identified in NCBI and showed a 2x-log fold increase in the presence of inulin. Candidatus Minthovivens enterohominis harboured five copies of GH32, and its abundance increased early in inulin degradation. Collinsella aerofaciens_J also increased in response to inulin and harboured multiple inulinase (GH32) copies.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+
+    {
+      "id": "hybrid_mag_mcq_009",
+      "question": "How many total MAG secondary unique clusters exhibited a ≥2x log fold increase in relative abundance across all treatments, and which treatment had the highest count of such MAGs?",
+      "options": [
+        "A) 24 clusters total; Hylon had the most with 15",
+        "B) 36 clusters total; R. maize had the most with 18",
+        "C) 42 clusters total; N. maize had the most with 14",
+        "D) 36 clusters total; Potato had the most with 18"
+      ],
+      "correct_answer": "B",
+      "explanation": "In total, 36 of 151 dereplicated clusters exhibited ≥2x log fold increase in relative abundance. Breaking this down by treatment: 6 MAGs for Avicel, 9 for N. maize, 12 for Hylon, 11 for Potato, and 18 for R. maize. R. maize therefore had the highest number of MAGs showing a significant increase, suggesting that retrograded maize starch stimulated the greatest breadth of microbial responders.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "factual"
+    },
+    {
+      "id": "hybrid_mag_mcq_010",
+      "question": "Which of the following correctly describes why the Blautia hydrogenotrophica showed the largest abundance increase in the Avicel (cellulose) treatment despite Avicel being highly resistant to fermentation?",
+      "options": [
+        "A) It produces novel cellulases encoded by GH8 and GH5 families that can directly degrade crystalline cellulose",
+        "B) It is an acetogen that utilises hydrogen gas produced by primary cellulose degraders, acting as a cross-feeder rather than a direct degrader",
+        "C) It secretes CBM74 binding modules that allow it to adsorb onto cellulose fibres and release degradation products",
+        "D) It co-cultures with Bacteroides uniformis to synergistically break down cellulose via complementary enzyme systems"
+      ],
+      "correct_answer": "B",
+      "explanation": "Blautia hydrogenotrophica is an acetogen — it does not directly degrade cellulose but instead uses the hydrogen gas generated as a byproduct by primary cellulose degraders. This cross-feeding mechanism explains why it showed the largest abundance increase in the Avicel treatment despite the substrate's high recalcitrance. Notably, none of the six genomes associated with the Avicel treatment contained characteristic cellulose-active CAZy genes, indicating they were all cross-feeders rather than primary degraders.",
+      "expected_documents": [
+        "Hybrid_metagenome_assemblies_link_carbohydrate_structure_with_function_in_the_human_gut_microbiome.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

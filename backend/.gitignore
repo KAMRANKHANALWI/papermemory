@@ -94,3 +94,9 @@ dmypy.json
 # Docker
 # -----------------------------
 docker-data/
+
+# -----------------------------
+# RAG Eval outputs (ignore)
+# -----------------------------
+backend/src/eval/results/
+backend/src/eval/checkpoints/

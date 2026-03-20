@@ -1,0 +1,328 @@
+{
+  "source_document": "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf",
+  "test_cases": [
+    {
+      "id": "gi_microbiota_tb_001",
+      "query": "How many cohorts were analyzed in this study and what were their sizes?",
+      "ground_truth_answer": "The study analyzed three cohorts: Cohort 1 was a 2-week longitudinal interventional clinical trial with 35 individuals (16 HRZE, 19 NTZ), Cohort 2 was a 6-month longitudinal observational study with 20 individuals at baseline, and Cohort 3 was a cross-sectional study with 55 healthy controls (36 community controls and 19 family contacts)",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "gi_microbiota_tb_002",
+      "query": "What is the clinical trial registration number for the HRZE/NTZ study?",
+      "ground_truth_answer": "The clinical trial registration number is NCT02684240, which compared the early bactericidal effect of standard tuberculosis therapy HRZE to the antiparasitic drug nitazoxanide (NTZ)",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "gi_microbiota_tb_003",
+      "query": "What bacterial classes were primarily depleted by HRZE treatment?",
+      "ground_truth_answer": "HRZE treatment primarily depleted members of the class Clostridia, particularly from the order Clostridiales. This included 82 ASVs from genera such as Blautia, Butyrivibrio, Clostridium, Eubacterium, Faecalibacterium, Roseburia, and Ruminococcus",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "gi_microbiota_tb_004",
+      "query": "What was the key difference in treatment outcomes between HRZE and NTZ?",
+      "ground_truth_answer": "HRZE resulted in a predictable increase in time to positivity (TTP), corresponding to reduced Mtb bacterial load (p<0.001), while NTZ had no significant effect on TTP after 14 days (p>0.05), despite having potent in vitro activity. This lack of NTZ antimicrobial effect was traced to failure of the drug to penetrate the sputum",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "gi_microbiota_tb_005",
+      "query": "Which oxygen-tolerant pathobionts were expanded by NTZ treatment?",
+      "ground_truth_answer": "NTZ caused an expansion of oxygen-tolerant pathobionts including Klebsiella pneumoniae, Escherichia coli, Citrobacter freundii, Streptococcus alactolyticus, and Enterococcus faecium. These representatives of the Order Bacilli and family Enterobacteriaceae are positively selected by antibiotic treatment due to increased gut epithelial oxygenation",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "gi_microbiota_tb_006",
+      "query": "Explain how HRZE and NTZ differently affected peripheral inflammatory gene expression pathways",
+      "ground_truth_answer": "HRZE treatment showed significant depletion of inflammatory response pathways at day 14 including IFNα response, IFNγ response, TNFα signaling via NFκB, and IL6 JAK STAT3, consistent with pathogen clearance and disease resolution. In contrast, NTZ showed the opposite effect, with significant enrichment of these same inflammatory pathways (TNFα signaling, IFNγ signaling, type 1 interferon signaling) at day 14, along with enrichment of pathways related to immune dysregulation such as hypoxia, apoptosis, and reactive oxygen species",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "gi_microbiota_tb_007",
+      "query": "How did the microbiome diversity change during the 6-month longitudinal HRZE treatment?",
+      "ground_truth_answer": "Microbiome diversity dropped after just 7 days of HRZE treatment, increased after 1 month of treatment, but remained significantly lower compared to baseline at the 6-month follow-up timepoint (p<0.05). During the first month, microbiome depletion was evident, but after 2 months, the trajectory changed with 53 ASVs increased in abundance compared to baseline, and at 6 months, 327 ASVs increased in abundance while only 3 remained depleted",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "gi_microbiota_tb_008",
+      "query": "Describe the analytical approach used to decouple microbiome effects from pathogen sterilization",
+      "ground_truth_answer": "The study used Random Forest Regression models to assess changes in peripheral inflammatory pathways as a function of both changes in microbiota species abundances and simultaneous changes in Mtb burden (TTP). The NTZ treatment arm served as a natural experimental control because it perturbed the microbiome without affecting Mtb bacterial load, allowing the researchers to isolate microbiome-dependent effects from pathogen-killing effects. Models were trained on 34 paired samples from both longitudinal datasets using 5000 trees with 80-20% train-validation split",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "gi_microbiota_tb_009",
+      "query": "What were the findings regarding TB-associated inflammatory genes after HRZE versus NTZ treatment?",
+      "ground_truth_answer": "Out of 363 TB-associated transcripts detected, 157 were significantly affected by HRZE (FDR<0.05), with 144 (92%) renormalizing toward healthy control levels and only 13 (8%) exacerbating. In contrast, only 4 TB-related inflammatory genes were affected by NTZ, and all 4 (100%) were in the exacerbation category, meaning they moved further away from healthy control expression levels",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "comparison"
+    },
+    {
+      "id": "gi_microbiota_tb_010",
+      "query": "How did the study validate microbiome-inflammatory relationships using the healthy control cohort?",
+      "ground_truth_answer": "The study performed Random Forest Regression for each Hallmark pathway against the microbiome in 55 healthy controls (19 family contacts and 36 community controls). They found that higher abundance of health-associated Clostridia including Faecalibacterium prausnitzii, Ruminococcus spp., and Clostridium catus were associated with reduction in pro-inflammatory pathways including IFNα and IFNγ, consistent with findings from the treatment cohorts. This independent validation reinforced that specific gastrointestinal microbiota members correlate with inflammatory peripheral gene expression even in homeostatic conditions",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "gi_microbiota_tb_011",
+      "query": "Explain the concept of the gut-lung axis as it relates to tuberculosis treatment",
+      "ground_truth_answer": "The gut-lung axis refers to bidirectional cross-talk between intestinal bacteria and the lung, where gastrointestinal colonization by specific taxa differentially modulates host biology both locally and systemically. In TB treatment, gut microbiota-educated immune cells and small molecules circulate throughout the periphery, affecting systemic immune responses. For example, modulation of macrophage-inducible C-type lectin (Mincle) by gut bacteria regulates immune response to Mtb in a dendritic cell-dependent manner in the lung. This means antibiotic-induced perturbations of the gut microbiome can influence pulmonary TB disease outcomes through systemic immunomodulation",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "gi_microbiota_tb_012",
+      "query": "Compare the microbiome perturbation effects of HRZE versus NTZ treatment in detail",
+      "ground_truth_answer": "HRZE depleted 82 ASVs from Clostridiales including SCFA producers and bile acid transformers, with no differences in alpha diversity at baseline between arms, and both treatments significantly reduced diversity (p<0.01). NTZ had a more substantial disruptive effect, depleting 387 ASVs and enhancing 16 ASVs. NTZ caused reduction of a larger swath of Clostridiales including all but one ASV depleted by HRZE, plus many additional Firmicutes. Critically, NTZ uniquely caused expansion of pathobionts (K. pneumoniae, E. coli, C. freundii, S. alactolyticus, E. faecium) which HRZE did not, representing oxygen-tolerant pathobionts selected by increased gut epithelial oxygenation",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "gi_microbiota_tb_013",
+      "query": "What were the key findings from the Random Forest Regression modeling regarding predictors of inflammatory pathway changes?",
+      "ground_truth_answer": "Random Forest Regression with Permutated Importance and Accumulated Local Effects analysis identified that increase in TTP (decreased Mtb burden) and increased abundance of Clostridia ASVs, especially Cluster IV and XIVa groups (E. rectale, F. prausnitzii, G. formicilis, E. hallii, O. ruminantium, D. formicerans, S. variable, B. faecis, B. obeum) were associated with reduction in peripheral pro-inflammatory responses including IFNγ, IFNα, IL6 JAK STAT3 signaling, and Inflammatory Response pathways. Conversely, increased abundances of E. coli and E. faecium were associated with inflammatory exacerbation, demonstrating that both pathogen clearance and microbiome composition independently predict treatment-induced changes in TB inflammatory response",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "gi_microbiota_tb_014",
+      "query": "How did the study address the challenge of isolating microbiome effects from pathogen-killing effects?",
+      "ground_truth_answer": "The study leveraged the unique properties of the NTZ treatment arm, which perturbed the microbiome without reducing Mtb bacterial load due to failure to penetrate sputum. This created a natural experimental control allowing dissociation of immunologic effects of pathogen killing from microbiota perturbation. By comparing three groups (HRZE with both effects, NTZ with only microbiome perturbation, and baseline), and using individual variability in responses within each arm, the researchers could train Random Forest models that explicitly accounted for both TTP changes and microbiome changes as independent predictors of inflammatory pathway expression. The validation in healthy controls further confirmed microbiome-inflammatory relationships independent of active infection",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "gi_microbiota_tb_015",
+      "query": "What were the findings regarding IBD-associated genes during TB treatment?",
+      "ground_truth_answer": "Out of 880 genes differentially expressed in IBD colon biopsies, 364 were detected in peripheral blood. HRZE administration changed 117 of these genes (FDR<0.05) with 66 renormalizing and 55 exacerbating. NTZ changed 55 genes (FDR<0.05) with 34 renormalizing and 21 exacerbating. These findings suggest that microbiome-related changes in peripheral inflammatory state are induced by both treatments, and despite HRZE's more limited microbiome effect compared to NTZ, it still affected a substantial number of IBD-associated inflammatory genes, indicating microbiome perturbations during TB therapy may have systemic inflammatory consequences",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+  
+  "mcq_questions": [
+    {
+      "id": "gi_microbiota_tb_mcq_001",
+      "question": "What is tuberculosis ranked as in terms of causes of death globally?",
+      "options": [
+        "A) 5th leading cause",
+        "B) 7th leading cause",
+        "C) 9th leading cause",
+        "D) 11th leading cause"
+      ],
+      "correct_answer": "C",
+      "explanation": "Individuals infected by Mycobacterium tuberculosis and having active TB disease is the 9th leading cause of death on Earth",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "gi_microbiota_tb_mcq_002",
+      "question": "What sequencing platform was used for 16S rDNA analysis in this study?",
+      "options": [
+        "A) Illumina HiSeq 2500",
+        "B) Illumina MiSeq",
+        "C) Ion Torrent PGM",
+        "D) Oxford Nanopore MinION"
+      ],
+      "correct_answer": "B",
+      "explanation": "The completed library was sequenced on an Illumina MiSeq platform per the Illumina recommended protocol using V4-V5 16S rDNA sequencing",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "gi_microbiota_tb_mcq_003",
+      "question": "How many ASVs were depleted by HRZE treatment after 14 days?",
+      "options": [
+        "A) 52 ASVs",
+        "B) 72 ASVs",
+        "C) 82 ASVs",
+        "D) 92 ASVs"
+      ],
+      "correct_answer": "C",
+      "explanation": "The HRZE effect on the gastrointestinal microbiota consisted of depletion of 82 ASVs, many belonging to genera from the Order Clostridiales (FDR<0.05)",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "gi_microbiota_tb_mcq_004",
+      "question": "How many trees were used in the Random Forest Regression models?",
+      "options": [
+        "A) 1000 trees",
+        "B) 2500 trees",
+        "C) 5000 trees",
+        "D) 10000 trees"
+      ],
+      "correct_answer": "C",
+      "explanation": "Each Random Forest Regression model was trained using 5000 trees with a train-validation partitioning of 80-20% of the data",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "gi_microbiota_tb_mcq_005",
+      "question": "What was the PCoA component that accounted for the greatest variation in microbiome data after NTZ treatment?",
+      "options": [
+        "A) Component representing baseline differences",
+        "B) Component representing changes after NTZ treatment",
+        "C) Component representing sequencing batch",
+        "D) Component representing HRZE treatment"
+      ],
+      "correct_answer": "B",
+      "explanation": "Using Principal Coordinate Analysis with Bray-Curtis distances, the component accounting for the greatest variation qualitatively represented changes in microbiome community structure that occur after two weeks of NTZ treatment",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "gi_microbiota_tb_mcq_006",
+      "question": "How many TB-associated inflammatory genes renormalized with HRZE treatment?",
+      "options": [
+        "A) 124 genes (88%)",
+        "B) 134 genes (90%)",
+        "C) 144 genes (92%)",
+        "D) 154 genes (94%)"
+      ],
+      "correct_answer": "C",
+      "explanation": "Of the 157 active TB signature genes significantly affected by HRZE, 144 (92%) were found to renormalize with the treatment, while 13 (8%) exacerbated",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "gi_microbiota_tb_mcq_007",
+      "question": "At which timepoint during the 6-month longitudinal cohort did the most ASVs show increased abundance compared to baseline?",
+      "options": [
+        "A) 1 month with 83 ASVs increased",
+        "B) 2 months with 53 ASVs increased",
+        "C) 6 months with 327 ASVs increased",
+        "D) Day 14 with 61 ASVs increased"
+      ],
+      "correct_answer": "C",
+      "explanation": "At the 6-month mark of HRZE treatment, compared to day 0, 3 ASVs were depleted in abundance while 327 ASVs increased in abundance, the highest number during the treatment course",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "gi_microbiota_tb_mcq_008",
+      "question": "Which statistical method was used for differential analysis of microbial ASVs and host genes?",
+      "options": [
+        "A) DESeq2",
+        "B) edgeR",
+        "C) limma/voom pipeline",
+        "D) ANCOM-BC"
+      ],
+      "correct_answer": "C",
+      "explanation": "Both raw 16S rRNA microbiota ASVs and peripheral blood RNAseq gene-expression counts were modeled using the limma/voom pipeline, which allows linear mixed-effect modeling with random effects to control for baseline differences",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "gi_microbiota_tb_mcq_009",
+      "question": "What is the significance of Clostridia Clusters IV and XIVa in the context of this study?",
+      "options": [
+        "A) They are pathobionts that exacerbate inflammation",
+        "B) They produce toxins that worsen TB symptoms",
+        "C) They induce anti-inflammatory responses through SCFA production and Treg induction",
+        "D) They compete with Mtb for nutrients in the gut"
+      ],
+      "correct_answer": "C",
+      "explanation": "Increased abundance of Clostridia Clusters IV and XIVa (including E. rectale, F. prausnitzii, G. formicilis) were associated with reduction in pro-inflammatory responses. These groups induce anti-inflammatory responses including Treg-induction through SCFA production",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "gi_microbiota_tb_mcq_010",
+      "question": "What was the main conclusion regarding the resolution of TB inflammatory state during treatment?",
+      "options": [
+        "A) Resolution is solely dependent on pathogen clearance",
+        "B) Resolution is solely dependent on microbiome changes",
+        "C) Resolution is independently associated with both pathogen burden reduction and microbiome-driven immunomodulation",
+        "D) Resolution is unrelated to microbiome composition"
+      ],
+      "correct_answer": "C",
+      "explanation": "The study concluded that renormalization of TB inflammatory state is associated with both Mtb pathogen clearance and changes in microbiome (increased Clusters IV and XIVa Clostridia, decreased Bacilli and Proteobacteria), indicating that antibiotic therapy response may be a combined effect of pathogen killing and microbiome-driven immunomodulation",
+      "expected_documents": [
+        "18-Gastrointestinal_microbiota_composition_predicts_peripheral_inflammatory_state_during_treatment_of_human_tuberculosis.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}

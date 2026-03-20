@@ -1,0 +1,328 @@
+{
+  "source_document": "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf",
+  "test_cases": [
+    {
+      "id": "abx_vaccine_001",
+      "query": "What antibiotic cocktail was administered to subjects in this study?",
+      "ground_truth_answer": "Subjects in the antibiotics-treated group received a 5-day oral broad-spectrum antibiotic cocktail consisting of neomycin, vancomycin, and metronidazole. Neomycin and vancomycin targeted gram-positive and gram-negative bacteria, while metronidazole targeted anaerobic bacteria in the gastrointestinal tract.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "abx_vaccine_002",
+      "query": "What vaccine was used in this study and during which influenza seasons was it administered?",
+      "ground_truth_answer": "The study used the Trivalent Inactivated Influenza Vaccine (TIV), specifically the Fluzone formulation. Phase 1 was conducted during the 2014-2015 influenza season and Phase 2 was conducted during the 2015-2016 influenza season.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "abx_vaccine_003",
+      "query": "By how much did the antibiotic treatment reduce gut bacterial load?",
+      "ground_truth_answer": "Antibiotic treatment caused a three to four-log (10,000-fold) reduction in the total number of 16S rRNA copies per gram of stool on the day of vaccination. The total bacterial content reached its nadir on Day 1 (the last day of antibiotics) and gradually recovered to baseline levels between days 7 and 30.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "abx_vaccine_004",
+      "query": "How many total subjects were enrolled across both phases of the study?",
+      "ground_truth_answer": "A total of 33 healthy adults were enrolled across both phases. In Phase 1, conducted during the 2014-2015 season, 22 subjects were enrolled (11 antibiotics-treated, 11 controls). In Phase 2, conducted during the 2015-2016 season, 11 subjects were enrolled (5 antibiotics-treated, 6 controls). Subjects were males and non-pregnant females aged 18-40.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "abx_vaccine_005",
+      "query": "What was the key eligibility criterion for subjects enrolled in Phase 2 of the study that distinguished it from Phase 1?",
+      "ground_truth_answer": "Phase 2 subjects were pre-screened to have microneutralization (MN) titers of 320 or less for each of the three influenza strains in the 2015-2016 TIV formulation. Additionally, they had not received TIV in the prior three influenza seasons. This selection criterion ensured subjects had low pre-existing antibody immunity to influenza, in contrast to Phase 1 where subjects had generally higher baseline titers.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "abx_vaccine_006",
+      "query": "How did antibiotic treatment affect IgG1 and IgA antibody responses in Phase 2 subjects?",
+      "ground_truth_answer": "In Phase 2, antibiotics-treated subjects showed significantly reduced H1N1 A/California-specific IgG1 concentrations on Day 7 and Day 30 post-vaccination, as confirmed by both ELISA and independent Luminex-based assay. Additionally, antibody affinity to the H1N1 A/California strain was also altered by antibiotic use. H1N1-specific IgA antibody responses were also significantly lower in the Phase 2 antibiotic group before and after vaccination, confirmed by both surface plasmon resonance (SPR) and Luminex. Importantly, these effects were not observed in Phase 1 subjects who had higher baseline titers.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "abx_vaccine_007",
+      "query": "What inflammatory transcriptional modules were upregulated following antibiotic treatment, and how did this compare to aging-related immune changes?",
+      "ground_truth_answer": "Following antibiotic administration, transcriptional modules associated with AP-1 (FOS/JUN) and Nur (NR4A) transcription factors were significantly elevated, along with modules for inflammatory dendritic cell activation and pro-inflammatory cytokines including IL-6, IL-8, and CXCL2. Strikingly, the kinetics of these AP-1/NR4A modules in antibiotics-treated subjects mirrored the pattern seen in elderly vaccinees (aged 65 or over) during the 2010-2011 influenza season — both showed upregulation of these pathways post-vaccination — whereas young subjects and control subjects showed downregulation of the same modules. This suggests that antibiotic-driven gut dysbiosis induces a pro-inflammatory state reminiscent of immunosenescence.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "abx_vaccine_008",
+      "query": "What happened to secondary bile acid levels in antibiotics-treated subjects, and what specific bile acid showed the strongest association with inflammatory responses?",
+      "ground_truth_answer": "Antibiotics-treated subjects showed a dramatic, roughly 1,000-fold reduction in serum secondary bile acid levels following treatment. Primary bile acid levels were elevated as a consequence of reduced microbial conversion. Among the secondary bile acids, Lithocholic Acid (LCA) showed the strongest inverse association with inflammatory responses — it underwent a 1,000-fold reduction in plasma — and was most significantly correlated with AP-1 signaling modules (particularly M35.0) and inflammasome-related gene expression, including NLRP3 and IL-1B signaling pathways.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "abx_vaccine_009",
+      "query": "How did antibiotic treatment affect microbial diversity at 6 months post-treatment?",
+      "ground_truth_answer": "Both alpha-diversity metrics — observed richness (number of unique OTUs) and Shannon diversity (accounting for richness and evenness) — were heavily compromised after antibiotic treatment, reaching their lowest values on Day 3. Crucially, species richness and biodiversity were not fully recovered at 6 months (Day 180) post-treatment, indicating long-lasting loss of unique bacterial species. Beta-diversity analysis using Bray-Curtis distances also showed that microbial composition of the two groups still showed substantial dissimilarity at Day 180, suggesting only partial restoration of the original microbial community.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "abx_vaccine_010",
+      "query": "What role did flagellin play in connecting gut bacteria to the H1N1-specific IgG1 antibody response?",
+      "ground_truth_answer": "Fecal flagellin levels — a surrogate for microbial abundance — were significantly reduced following antibiotic administration. In the MMRN integrative analysis, decreases in fecal flagellin concentrations were positively and significantly correlated with the abundance of H1N1-specific IgG1 titers on Day 7 and Day 30. Critically, this positive correlation between flagellin and IgG1 titers was only statistically significant in Phase 2 subjects with low baseline titers, not in Phase 1 subjects with high pre-existing immunity, underscoring the role of immune memory in conferring resilience to dysbiosis.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "abx_vaccine_011",
+      "query": "What changes in dendritic cell populations were observed following antibiotic administration?",
+      "ground_truth_answer": "Flow cytometry revealed significant increases in two dendritic cell subsets following antibiotic treatment: CD80+ CD16+ myeloid dendritic cells (mDCs) and CD123++ plasmacytoid dendritic cells (pDCs). Both populations were elevated in antibiotics-treated subjects throughout the antibiotic course (Days 0 and 1) and began returning to control levels after antibiotics were stopped. These cellular changes were consistent with the transcriptional enrichment of dendritic cell activation modules identified through gene set enrichment analysis (GSEA). Together, they indicate that gut dysbiosis directly promotes innate immune activation.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "abx_vaccine_012",
+      "query": "What was the proposed molecular mechanism by which depletion of secondary bile acids leads to elevated inflammasome signaling?",
+      "ground_truth_answer": "The proposed mechanism involves Lithocholic Acid (LCA), the most potent agonist of the bile acid receptor TGR5. In the normal state, LCA signaling through TGR5 inhibits NLRP3 inflammasome activation. Following antibiotic-driven depletion of LCA and other secondary bile acids, this TGR5-mediated suppression is lost, resulting in elevated NLRP3 inflammasome signaling and increased IL-1B pathway activation. Additionally, secondary bile acids such as LCA are known to suppress pro-inflammatory cytokine production and NF-kB target expression through binding to both the vitamin D receptor and pregnane X receptor. Loss of these bile acids thus removes multiple layers of inflammasome inhibition, driving the enhanced inflammatory state observed in antibiotics-treated subjects.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "abx_vaccine_013",
+      "query": "What did the MMRN integrative analysis reveal about whether bile acid metabolism and the IgG1 antibody response share common mechanisms of microbiome influence?",
+      "ground_truth_answer": "The Multiscale Multifactorial Response Network (MMRN) analysis integrated transcriptomic, metabolomic, microbiomic, and cellular data to identify associations during antibiotics use and vaccination. The analysis revealed that despite both LCA reduction and impaired IgG1 being consequences of antibiotic treatment, the network features associated with each were largely distinct — there was minimal overlap in the metabolic and transcriptional clusters associated with both parameters. LCA was primarily connected to an inflammatory transcriptional cluster (G3) containing AP-1 and dendritic cell activation modules, and to a bile acid-enriched metabolite cluster (M79). In contrast, IgG1 abundance was uniquely associated with two metabolite clusters highly enriched in fatty acid metabolism (M26 and M58). The only shared elements were bacterial clusters — particularly those enriched in Lachnospiraceae and Ruminococcaceae families — that positively correlated with both LCA and IgG1. This indicates the microbiome regulates inflammation and antibody responses through mechanistically distinct but parallel pathways.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "abx_vaccine_014",
+      "query": "Compare the humoral immune response outcomes between Phase 1 and Phase 2 subjects and explain the biological reason for the divergence.",
+      "ground_truth_answer": "In Phase 1 (subjects with generally high baseline MN titers), antibiotic treatment did not significantly impair microneutralization titers or IgG1 concentrations for any of the three vaccine strains. In Phase 2 (subjects pre-screened for low baseline titers with MN ≤320), antibiotics-treated subjects showed significant impairment in H1N1 A/California-specific neutralization on Day 90 and Day 180, and significantly reduced IgG1 and IgA concentrations on Days 7 and 30. The impairment was restricted to the H1N1 strain; H3N2 and influenza B responses were not significantly affected even in Phase 2. The biological explanation is that most adults have high H3N2 and B subtype memory from prior vaccination or infection, making these recall responses resilient to microbiome disruption. H1N1 responses in immunologically naive individuals lack this pre-established memory, making them dependent on gut microbiota-mediated support during the primary immune response.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "abx_vaccine_015",
+      "query": "What adaptive immune parameters were measured but found to be unaffected by antibiotic treatment, and what broader conclusion does this support?",
+      "ground_truth_answer": "Several key adaptive immune parameters were assessed but showed no significant difference between antibiotic-treated and control subjects. These included: (1) frequencies of vaccine-specific plasmablasts (CD27hi CD38hi B cells), (2) frequencies of activated B cells (ABCs, CD71+ CD20hi), (3) frequencies of blood T follicular helper (Tfh)-like cells critical for B cell help, (4) ex vivo ELISPOT measurements of TIV-specific IgG antibody-secreting cells, and (5) the degree of somatic hypermutation (SHM) in light and heavy chains of vaccine-induced human monoclonal antibodies. Additionally, transcriptional analysis showed that the kinetics and magnitude of vaccine-induced interferon signaling and plasma cell/immunoglobulin gene expression were preserved. Together, these findings indicate that antibiotic-induced dysbiosis does not broadly dismantle vaccine-induced adaptive immunity, but specifically impairs antibody quantity and affinity in subjects lacking pre-existing humoral immunity, supporting the concept of immune resilience in those with established immune memory.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "abx_vaccine_mcq_001",
+      "question": "What was the timing of antibiotic administration relative to influenza vaccination in this study?",
+      "options": [
+        "A) Starting 7 days before vaccination and ending on the day of vaccination",
+        "B) Starting 3 days before vaccination and ending 1 day after vaccination",
+        "C) Starting on the day of vaccination and ending 5 days after vaccination",
+        "D) Starting 1 day before vaccination and ending 4 days after vaccination"
+      ],
+      "correct_answer": "B",
+      "explanation": "The antibiotic regimen was administered for 5 days starting 3 days prior to vaccination (Day -3) and concluding 1 day after vaccination (Day 1), with the aim of creating maximal gut bacterial depletion around the time of immunization.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "abx_vaccine_mcq_002",
+      "question": "Which bacterial families were dominant in the gut of antibiotics-treated subjects on Days 0, 1, and 3 post-antibiotic initiation?",
+      "options": [
+        "A) Lachnospiraceae and Ruminococcaceae",
+        "B) Bacteroidaceae and Prevotellaceae",
+        "C) Enterobacteriaceae and Streptococcaceae",
+        "D) Bifidobacteriaceae and Lactobacillaceae"
+      ],
+      "correct_answer": "C",
+      "explanation": "Family-level analysis showed that Enterobacteriaceae dominated the gut microbiota of treated subjects at Days 0, 1, and 3, while Streptococcaceae were also more abundant at early time points. Conversely, Lachnospiraceae, Ruminococcaceae, Bacteroidaceae, and Veillonellaceae were significantly diminished during this period.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "abx_vaccine_mcq_003",
+      "question": "What is the correct description of the prior observation in mice (Oh et al., 2014) that motivated this human study?",
+      "options": [
+        "A) TLR4 knockout mice showed impaired antibody responses to influenza",
+        "B) Germ-free mice showed enhanced antibody responses due to lack of microbial competition",
+        "C) TLR5 knockout and antibiotics-treated mice showed impaired plasma cell and antibody responses to inactivated influenza vaccination",
+        "D) Microbiome transplantation from vaccinated donors improved vaccine efficacy in naive mice"
+      ],
+      "correct_answer": "C",
+      "explanation": "A key motivating finding from Oh et al. (2014) was that abrogation of TLR5-mediated sensing of bacterial flagellin — either through TLR5 knockout or antibiotic administration in mice — resulted in significant impairment of plasma cell and antibody responses to inactivated influenza vaccination, establishing a potential role for gut flora in influencing humoral vaccine responses.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "abx_vaccine_mcq_004",
+      "question": "What metabolic analysis tool was used to identify significantly enriched metabolic pathways from the untargeted metabolomics data?",
+      "options": [
+        "A) MetaboAnalyst",
+        "B) mummichog software",
+        "C) apLCMS",
+        "D) GSEA with blood transcriptional modules"
+      ],
+      "correct_answer": "B",
+      "explanation": "The mummichog software (Li et al., 2013) was used to identify enriched metabolic pathways from differential metabolite features identified by the untargeted LC-MS metabolomics approach. This identified antibiotic-induced changes in multiple pathways including bile acid biosynthesis and tryptophan metabolism. apLCMS was used for peak extraction, while GSEA with BTMs was used for transcriptomics analysis.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "abx_vaccine_mcq_005",
+      "question": "Which of the following best describes the effect of antibiotics on the transcriptional response to TIV vaccination (vaccine-induced gene expression changes)?",
+      "options": [
+        "A) Antibiotics completely abolished the interferon signaling and plasma cell transcriptional signatures",
+        "B) Antibiotics reversed the kinetics of vaccine-induced responses, with peaks appearing earlier in treated subjects",
+        "C) Antibiotics had little effect on vaccine-induced transcriptional pathways; similar enrichment patterns were maintained across both groups and both phases",
+        "D) Antibiotics enhanced monocyte-related transcriptional modules in response to vaccination"
+      ],
+      "correct_answer": "C",
+      "explanation": "GSEA analysis of vaccine-induced gene expression showed very similar enrichment patterns for blood transcriptional modules (BTMs) in both control and antibiotics-treated subjects, maintained across phases 1 and 2. Both groups showed the same enrichment kinetics: innate modules (DC activation, interferon signaling) peaking at Day 1, followed by plasma cell/immunoglobulin modules by Day 7. Temporal expression of individual genes for interferon signaling and plasma cell markers was also preserved in the antibiotic group.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "abx_vaccine_mcq_006",
+      "question": "The study found evidence arguing against direct translocation of microbial products to the periphery as a mechanism for the observed inflammatory effects. What specific evidence supported this conclusion?",
+      "options": [
+        "A) Serum LPS and flagellin concentrations were undetectable in antibiotic-treated subjects throughout the study",
+        "B) Measurement of serum flagellin and anti-LPS antibodies showed no differences between control and antibiotics-treated subjects",
+        "C) Tight junction protein expression was preserved in gut biopsies from antibiotics-treated subjects",
+        "D) Germ-free mice with no gut bacteria showed the same inflammatory phenotype, ruling out bacterial products"
+      ],
+      "correct_answer": "B",
+      "explanation": "The study measured concentrations of flagellin and anti-LPS (IgA and IgG) antibodies in the serum and found no significant differences between control and antibiotics-treated subjects. This argues against systemic translocation of microbial products (microbial translocation hypothesis) as the driver of the observed inflammatory signatures, pointing instead toward indirect metabolic mechanisms such as loss of secondary bile acids.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "abx_vaccine_mcq_007",
+      "question": "Which metabolite cluster in the MMRN was uniquely associated with H1N1-specific IgG1 responses but NOT with LCA levels?",
+      "options": [
+        "A) Metabolite clusters enriched in bile acid biosynthesis (M79)",
+        "B) Metabolite cluster M84, enriched in androgen and estrogen metabolism",
+        "C) Metabolite clusters M26 and M58, highly enriched in fatty acid metabolism",
+        "D) Metabolite cluster G3, associated with AP-1 and dendritic cell activation"
+      ],
+      "correct_answer": "C",
+      "explanation": "The MMRN analysis showed that two metabolite clusters — M26 and M58 — were highly enriched in fatty acid metabolism and were uniquely positively associated with H1N1-specific IgG1 responses, but not with LCA changes. M79 was linked to LCA and bile acid biosynthesis, M84 (androgen/estrogen metabolism) was the only metabolite cluster associated with both parameters, and G3 is a transcriptional cluster (not metabolite), highlighting that fatty acid metabolism may be a distinct microbiome-regulated pathway affecting antibody responses.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "abx_vaccine_mcq_008",
+      "question": "Two subjects in the Phase 1 antibiotics-treated group appeared to resist microbial disturbance. What was the suspected reason, and what provided corroborating metabolic evidence?",
+      "options": [
+        "A) These subjects had naturally antibiotic-resistant microbiomes; their bile acid profiles confirmed retained secondary bile acid production",
+        "B) These subjects had likely taken probiotics, confirmed by elevated Bifidobacterium in their stool samples",
+        "C) These subjects likely had poor compliance with the antibiotic regimen; their metabolic trajectories in PCA clustered with control subjects rather than other antibiotic-treated subjects",
+        "D) These subjects had pre-existing high IgG titers that protected their microbiome from disruption"
+      ],
+      "correct_answer": "C",
+      "explanation": "The two antibiotics-treated subjects who showed little change in microbiome composition were suspected of having poor compliance with the antibiotic regimen based on their unchanged 16S profiles. Corroborating this, in the principal-component analysis (PCA) of metabolic trajectories, these same two subjects grouped with control subjects rather than the other antibiotic-treated subjects — providing independent metabolomic evidence consistent with the non-compliance hypothesis.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "abx_vaccine_mcq_009",
+      "question": "Based on this study's findings and the authors' discussion, which of the following populations would theoretically be MOST vulnerable to microbiome-mediated impairment of vaccine responses?",
+      "options": [
+        "A) Healthy adults in their 30s who have received influenza vaccines in previous years and have high baseline MN titers",
+        "B) Elderly adults who already exhibit reduced gut diversity and AP-1/NR4A inflammatory signatures similar to those induced by antibiotics",
+        "C) Infants with immature immune systems, no pre-existing humoral immunity, and a developing microbiome not yet shaped by prior antigen exposure",
+        "D) Athletes with high metabolic turnover who rapidly clear antibiotics from their system"
+      ],
+      "correct_answer": "C",
+      "explanation": "The authors explicitly discuss that the immature state of the infant immune system may be more susceptible to microbiome perturbation and not subject to imprinting (immunological memory). Since this study showed that impairment occurred specifically in subjects WITHOUT pre-existing humoral immunity, and infants lack both immune memory and a mature microbiome, they represent the population most vulnerable to such effects. The authors cite evidence linking delivery-method-associated microbial differences in infants to autoimmune disorders as supporting this reasoning.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "abx_vaccine_mcq_010",
+      "question": "What is the most accurate interpretation of the finding that antibiotic-treated subjects in Phase 1 showed no impairment in H1N1-specific MN titers, despite a 10,000-fold reduction in gut bacterial load?",
+      "options": [
+        "A) The antibiotics failed to sufficiently deplete the microbiome in Phase 1 subjects, and their gut bacteria were essentially preserved",
+        "B) MN titers are insensitive to microbiome changes and cannot reliably detect microbiome-mediated immune modulation",
+        "C) Pre-existing humoral immunity confers resilience — memory B cells can drive robust recall antibody responses independently of microbiome-mediated signals that are critical for primary responses",
+        "D) The trivalent vaccine used in Phase 1 contained an adjuvant that compensated for the loss of microbiome signals"
+      ],
+      "correct_answer": "C",
+      "explanation": "The authors conclude that the mechanisms involved in recall responses — driven by pre-existing immunological memory in Phase 1 subjects — are more resilient to changes in the gut microbiota compared to a primary response. This is consistent with the fact that Phase 2 subjects (low baseline titers, reduced prior exposure) showed significant impairment. The human immune system, once imprinted by prior antigen exposure, can largely maintain appropriate responses despite significant physiological disturbances from microbiome dysbiosis. In contrast, a first-encounter antibody response appears to depend on microbiota-derived signals for full efficacy.",
+      "expected_documents": [
+        "PMC6750738_Antibiotics-Driven_Gut_Microbiome_Perturbation_Alters_Immunity_to_Vaccines_in_Humans.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ]
+}
