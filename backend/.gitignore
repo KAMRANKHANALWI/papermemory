@@ -94,3 +94,6 @@ dmypy.json
 # Docker
 # -----------------------------
 docker-data/
+
+# result
+results/

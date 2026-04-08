@@ -8,7 +8,7 @@ from pathlib import Path
 RESULTS_DIR = Path("results")
 SUMMARY_DIR = Path("results")
 
-CSV_PATTERN = "open_ended_eval_results_*.csv"
+CSV_PATTERN = "open_ended_eval_results*.csv"
 
 csv_files = list(RESULTS_DIR.glob(CSV_PATTERN))
 

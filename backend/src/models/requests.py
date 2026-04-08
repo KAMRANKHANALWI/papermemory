@@ -48,3 +48,10 @@ class FileSearchRequest(BaseModel):
     query: str = Field(..., description="Search query")
     collection_name: Optional[str] = Field(None, description="Specific collection to search in")
     num_results: int = Field(25, description="Number of results to return")
+
+
+class ChatRequest(BaseModel):
+    """Request model for chat endpoints"""
+    message: str = Field(..., description="User message/question")
+    chat_id: Optional[str] = Field(None, description="Chat session ID")
+    eval: Optional[bool] = Field(False, description="Eval mode flag")

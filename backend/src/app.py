@@ -40,8 +40,7 @@ from src.models.selection_models import (
 from src.models import (
     QueryClassificationRequest,
     QueryClassificationResponse,
-    ValidateNameRequest,
-    ValidateNameResponse,
+    ChatRequest,
     RenameCollectionRequest,
     RenamePDFRequest,
     AddMemoryRequest,
@@ -522,57 +521,102 @@ async def get_conversation_summary(chat_id: str):
 # CHAT ENDPOINTS
 # ============================================================================
 
-@app.get("/api/chat/single/{collection_name}/{message}")
+# @app.get("/api/chat/single/{collection_name}/{message}")
+# async def chat_single_collection(
+#     collection_name: str,
+#     message: str,
+#     chat_id: Optional[str] = Query(None),
+#     eval: Optional[bool] = Query(False),
+# ):
+#     if eval:
+#         return await generate_chat_response_eval(
+#             message=message,
+#             collection_name=collection_name,
+#             chat_mode="single",
+#             chat_id=chat_id,
+#         )
+
+#     return StreamingResponse(
+#         generate_chat_response(
+#             message=message,
+#             collection_name=collection_name,
+#             chat_mode="single",
+#             chat_id=chat_id,
+#             eval_mode=False,
+#         ),
+#         media_type="text/event-stream",
+#     )
+
+# @app.get("/api/chat/all/{message}")
+# async def chat_all_collections(
+#     message: str,
+#     chat_id: Optional[str] = Query(None),
+#     eval: Optional[bool] = Query(False),
+# ):
+#     if eval:
+#         return await generate_chat_response_eval(
+#             message=message,
+#             collection_name=None,
+#             chat_mode="chatall",
+#             chat_id=chat_id,
+#         )
+
+#     return StreamingResponse(
+#         generate_chat_response(
+#             message=message,
+#             collection_name=None,
+#             chat_mode="chatall",
+#             chat_id=chat_id,
+#             eval_mode=False,
+#         ),
+#         media_type="text/event-stream",
+#     )
+
+@app.post("/api/chat/single/{collection_name}")
 async def chat_single_collection(
     collection_name: str,
-    message: str,
-    chat_id: Optional[str] = Query(None),
-    eval: Optional[bool] = Query(False),
+    body: ChatRequest,
 ):
-    if eval:
+    if body.eval:
         return await generate_chat_response_eval(
-            message=message,
+            message=body.message,
             collection_name=collection_name,
             chat_mode="single",
-            chat_id=chat_id,
+            chat_id=body.chat_id,
         )
 
     return StreamingResponse(
         generate_chat_response(
-            message=message,
+            message=body.message,
             collection_name=collection_name,
             chat_mode="single",
-            chat_id=chat_id,
+            chat_id=body.chat_id,
             eval_mode=False,
         ),
         media_type="text/event-stream",
     )
 
-@app.get("/api/chat/all/{message}")
-async def chat_all_collections(
-    message: str,
-    chat_id: Optional[str] = Query(None),
-    eval: Optional[bool] = Query(False),
-):
-    if eval:
+
+@app.post("/api/chat/all")
+async def chat_all_collections(body: ChatRequest):
+    if body.eval:
         return await generate_chat_response_eval(
-            message=message,
+            message=body.message,
             collection_name=None,
             chat_mode="chatall",
-            chat_id=chat_id,
+            chat_id=body.chat_id,
         )
 
     return StreamingResponse(
         generate_chat_response(
-            message=message,
+            message=body.message,
             collection_name=None,
             chat_mode="chatall",
-            chat_id=chat_id,
+            chat_id=body.chat_id,
             eval_mode=False,
         ),
         media_type="text/event-stream",
     )
-
 
 # =============================================================================
 # NEW CUSTOM PDFs SELECT ENDPOINTS

@@ -9,6 +9,7 @@ from .requests import (
     RenamePDFRequest,
     AddMemoryRequest,
     FileSearchRequest,
+    ChatRequest,
 )
 
 from .responses import (
@@ -41,6 +42,7 @@ __all__ = [
     "RenamePDFRequest",
     "AddMemoryRequest",
     "FileSearchRequest",
+    "ChatRequest",
     # Responses
     "QueryClassificationResponse",
     "PDFDetail",
