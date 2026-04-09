@@ -330,7 +330,8 @@ async def handle_content_search(
                     vectorstore=vectorstore,
                     collection_name=col.name,
                     top_k=AppConfig.TOP_K_CHATALL,
-                    sample_size=AppConfig.TOP_K_CHATALL * 3,
+                    # sample_size=AppConfig.TOP_K_CHATALL * 3,
+                    sample_size=AppConfig.RERANKING_SAMPLE_SIZE,
                 )
                 all_pages.extend(srcs)
             except Exception as e:
@@ -338,9 +339,13 @@ async def handle_content_search(
                 continue
 
         # Sort merged results and keep top TOP_K
-        all_sources = sorted(all_pages, key=lambda x: x["similarity"], reverse=True)[
-            : AppConfig.TOP_K
-        ]
+        # Current — sorts by similarity (vector score), ignores rerank_score
+        # all_sources = sorted(all_pages, key=lambda x: x["similarity"], reverse=True)[
+        #     : AppConfig.TOP_K
+        # ]
+        
+        # Better — respects what the reranker actually decided
+        all_sources = sorted(all_pages, key=lambda x: x.get("rerank_score", x["similarity"]), reverse=True)[:AppConfig.TOP_K]
 
         # Rebuild context from the final merged+sorted pages
         context_parts = []

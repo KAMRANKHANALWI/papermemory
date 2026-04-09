@@ -13,6 +13,7 @@ from __future__ import annotations
 import logging
 from typing import List, Dict, Tuple
 from src.config import AppConfig
+from sentence_transformers import CrossEncoder
 
 logger = logging.getLogger(__name__)
 
@@ -20,6 +21,7 @@ logger = logging.getLogger(__name__)
 # ============================================================
 # Base interface
 # ============================================================
+
 
 class BaseReranker:
     """
@@ -45,6 +47,7 @@ class BaseReranker:
 # 1. NoReranker — just return top-K by similarity score
 # ============================================================
 
+
 class NoReranker(BaseReranker):
     def rerank(self, query: str, chunks: List[Dict], top_k: int) -> List[Dict]:
         sorted_chunks = sorted(chunks, key=lambda x: x["similarity"], reverse=True)
@@ -57,17 +60,15 @@ class NoReranker(BaseReranker):
 # 2. CrossEncoderReranker — local, no API cost
 # ============================================================
 
+
 class CrossEncoderReranker(BaseReranker):
+    _model = None
+
     def __init__(self, model_name: str = AppConfig.CROSS_ENCODER_MODEL):
-        try:
-            from sentence_transformers import CrossEncoder
-            self.model = CrossEncoder(model_name)
+        if CrossEncoderReranker._model is None:
+            CrossEncoderReranker._model = CrossEncoder(model_name)
             logger.info(f"CrossEncoder loaded: {model_name}")
-        except ImportError:
-            raise ImportError(
-                "sentence-transformers not installed. "
-                "Run: pip install sentence-transformers"
-            )
+        self.model = CrossEncoderReranker._model
 
     def rerank(self, query: str, chunks: List[Dict], top_k: int) -> List[Dict]:
         if not chunks:
@@ -75,6 +76,8 @@ class CrossEncoderReranker(BaseReranker):
 
         pairs = [(query, chunk["content"]) for chunk in chunks]
         scores = self.model.predict(pairs)
+        
+        logger.info(f"Rerank scores: min={min(scores):.4f} max={max(scores):.4f}")
 
         for chunk, score in zip(chunks, scores):
             chunk["rerank_score"] = float(score)
@@ -124,6 +127,7 @@ class LLMReranker(BaseReranker):
     def _build_llm(self, provider: str):
         if provider == "local":
             from langchain_ollama import ChatOllama
+
             logger.info(f"LLMReranker using Ollama: {AppConfig.OLLAMA_MODEL}")
             return ChatOllama(
                 model=AppConfig.OLLAMA_MODEL,
@@ -133,6 +137,7 @@ class LLMReranker(BaseReranker):
 
         if provider == "gemini":
             from langchain_google_genai import ChatGoogleGenerativeAI
+
             logger.info(f"LLMReranker using Gemini: {AppConfig.GEMINI_MODEL}")
             return ChatGoogleGenerativeAI(
                 model=AppConfig.GEMINI_MODEL,
@@ -142,6 +147,7 @@ class LLMReranker(BaseReranker):
 
         if provider == "groq":
             from langchain_groq import ChatGroq
+
             logger.info(f"LLMReranker using Groq: {AppConfig.GROQ_MODEL}")
             return ChatGroq(
                 model=AppConfig.GROQ_MODEL,
@@ -222,6 +228,7 @@ class LLMReranker(BaseReranker):
 # ============================================================
 # Factory function — single import point
 # ============================================================
+
 
 def get_reranker(reranker_type: str = None) -> BaseReranker:
     """

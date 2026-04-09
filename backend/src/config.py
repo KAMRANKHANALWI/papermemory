@@ -40,7 +40,7 @@ class AppConfig:
     TOP_K: int = int(os.getenv("TOP_K", "10"))
 
     # Per-collection results in chatall mode
-    TOP_K_CHATALL: int = int(os.getenv("TOP_K_CHATALL", "4"))
+    TOP_K_CHATALL: int = int(os.getenv("TOP_K_CHATALL", "6"))
 
     # How many chunks to pull before reranking
     RERANKING_SAMPLE_SIZE: int = int(os.getenv("RERANKING_SAMPLE_SIZE", "30"))

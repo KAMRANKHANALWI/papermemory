@@ -100,3 +100,6 @@ docker-data/
 # -----------------------------
 backend/src/eval/results/
 backend/src/eval/checkpoints/
+
+# results
+results/

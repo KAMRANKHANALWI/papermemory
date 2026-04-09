@@ -114,7 +114,7 @@ class ParentPageRetriever:
 
         # Step 5: Build context string and source metadata
         context = self._build_context(pages)
-        sources = self._pages_to_sources(pages, collection_name)
+        sources = self._pages_to_sources(pages, collection_name, top_chunks)
 
         return context, sources
 
@@ -194,7 +194,9 @@ class ParentPageRetriever:
                     seen.add(key)
                     refs.append(key)
 
-        logger.debug(f"Extracted {len(refs)} unique page refs from {len(chunks)} chunks")
+        logger.debug(
+            f"Extracted {len(refs)} unique page refs from {len(chunks)} chunks"
+        )
         return refs
 
     # ------------------------------------------------------------------ #
@@ -269,24 +271,45 @@ class ParentPageRetriever:
         for page in pages:
             if not page["text"]:
                 continue
-            header = (
-                f"[Source: {page['filename']} | Page {page['page_num']}]"
-            )
+            header = f"[Source: {page['filename']} | Page {page['page_num']}]"
             parts.append(f"{header}\n{page['text']}")
 
         return "\n\n---\n\n".join(parts)
 
     def _pages_to_sources(
-        self, pages: List[Dict], collection_name: str
+        self, pages: List[Dict], collection_name: str, top_chunks: List[Dict]
     ) -> List[Dict]:
-        """Convert pages list to sources format expected by frontend."""
+        # Build a lookup: filename+page_num → best rerank score from chunks
+        score_lookup = {}
+        for chunk in top_chunks:
+            filename = chunk["filename"]
+            try:
+                page_list = ast.literal_eval(chunk.get("page_numbers", "[1]"))
+            except Exception:
+                page_list = [1]
+            for page_num in page_list:
+                key = (filename, int(page_num))
+                existing = score_lookup.get(key, 0)
+                score_lookup[key] = max(
+                    existing, chunk.get("rerank_score", chunk.get("similarity", 0))
+                )
+
         return [
             {
-                "content": page["text"][:500] + "..." if len(page["text"]) > 500 else page["text"],
+                "content": (
+                    page["text"][:500] + "..."
+                    if len(page["text"]) > 500
+                    else page["text"]
+                ),
                 "filename": page["filename"],
                 "collection": collection_name,
                 "page_numbers": str([page["page_num"]]),
-                "similarity": 1.0,   # page-level, original score already used for ranking
+                "similarity": score_lookup.get(
+                    (page["filename"], page["page_num"]), 0.0
+                ),
+                "rerank_score": score_lookup.get(
+                    (page["filename"], page["page_num"]), 0.0
+                ),
                 "title": "No Title",
             }
             for page in pages
@@ -301,9 +324,7 @@ class ParentPageRetriever:
         """Use raw chunk content when pages_store is unavailable."""
         parts = []
         for chunk in chunks:
-            header = (
-                f"[Source: {chunk['filename']} | Pages {chunk['page_numbers']}]"
-            )
+            header = f"[Source: {chunk['filename']} | Pages {chunk['page_numbers']}]"
             parts.append(f"{header}\n{chunk['content']}")
         return "\n\n---\n\n".join(parts)
 
@@ -316,7 +337,8 @@ class ParentPageRetriever:
                 "filename": chunk["filename"],
                 "collection": collection_name,
                 "page_numbers": chunk["page_numbers"],
-                "similarity": chunk["similarity"],
+                "similarity": chunk.get("rerank_score", chunk["similarity"]),  # use rerank if available
+                "rerank_score": chunk.get("rerank_score", chunk["similarity"]),  
                 "title": chunk.get("title", "No Title"),
             }
             for chunk in chunks
