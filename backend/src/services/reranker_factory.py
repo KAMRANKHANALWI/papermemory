@@ -14,6 +14,7 @@ import logging
 from typing import List, Dict, Tuple
 from src.config import AppConfig
 from sentence_transformers import CrossEncoder
+import torch
 
 logger = logging.getLogger(__name__)
 
@@ -66,8 +67,9 @@ class CrossEncoderReranker(BaseReranker):
 
     def __init__(self, model_name: str = AppConfig.CROSS_ENCODER_MODEL):
         if CrossEncoderReranker._model is None:
-            CrossEncoderReranker._model = CrossEncoder(model_name)
-            logger.info(f"CrossEncoder loaded: {model_name}")
+            device = "cuda" if torch.cuda.is_available() else "cpu"
+            CrossEncoderReranker._model = CrossEncoder(model_name, device=device)
+            logger.info(f"CrossEncoder loaded: {model_name} on {device}")
         self.model = CrossEncoderReranker._model
 
     def rerank(self, query: str, chunks: List[Dict], top_k: int) -> List[Dict]:
