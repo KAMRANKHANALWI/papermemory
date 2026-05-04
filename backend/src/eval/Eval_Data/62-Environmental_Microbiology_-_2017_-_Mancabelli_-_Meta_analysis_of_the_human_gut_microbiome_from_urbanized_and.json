@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Meta-analysis of the human gut microbiome from urbanized and pre-agricultural populations",
+    "authors": ["Leonardo Mancabelli", "Christian Milani", "Gabriele Andrea Lugli", "Francesca Turroni", "Chiara Ferrario", "Douwe van Sinderen", "Marco Ventura"],
+    "journal": "Environmental Microbiology",
+    "year": 2017,
+    "doi": "10.1111/1462-2920.13692",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings from a meta-analysis comparing gut microbiomes of urbanized/industrialized vs. pre-agricultural (hunter-gatherer) populations using shotgun metagenomics.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "wgmd_easy_001",
+      "difficulty": "easy",
+      "question": "What is the 'core microbiome' of the human gut, and why is it scientifically significant?",
+      "answer": "The human intestinal core microbiome refers to the set of bacterial taxa that are consistently present across all analysed human populations worldwide. These microorganisms are presumed to be evolutionarily selected symbionts that co-evolved closely with humans and perform key biological functions for the host, including providing added metabolic capabilities, enhancing pathogen resistance, and supporting immune functionalities. Identifying the core microbiome is significant because it captures the shared microbial foundation of human gut ecology, regardless of geography or lifestyle.",
+      "topic_tags": ["core microbiome", "human gut", "symbiosis", "metabolic function", "immune function"]
+    },
+    {
+      "id": "wgmd_easy_002",
+      "difficulty": "easy",
+      "question": "How do the dietary habits of hunter-gatherer communities differ from those of urbanized populations, and what does this imply for their gut microbiota?",
+      "answer": "Hunter-gatherer communities subsist on foods gathered or hunted directly from their immediate environment, with diets based primarily on a limited variety of tubers, vegetables, and fruits, with only infrequent consumption of meat and eggs. In contrast, urbanized populations follow a Western diet characterised by far greater glycan diversity, higher protein and animal fat intake, and the inclusion of industrially processed foods. These dietary differences are reflected in the gut microbiota: hunter-gatherer communities show higher abundance of bacteria adapted to plant-fibre breakdown (such as Prevotella), while industrialized populations harbour microbiota with broader carbohydrate-degrading enzymatic repertoires suited to a more varied diet.",
+      "topic_tags": ["hunter-gatherer diet", "Western diet", "gut microbiota", "Prevotella", "dietary fibre"]
+    },
+    {
+      "id": "wgmd_easy_003",
+      "difficulty": "easy",
+      "question": "What advantages does shotgun metagenomic sequencing offer over 16S rRNA gene-based profiling for studying gut microbiomes?",
+      "answer": "Shotgun metagenomics minimises methodological biases that are inherent to 16S rRNA gene profiling, such as variation in PCR primer efficiency and universality, and differences in DNA extraction protocols that can prevent faithful comparisons across datasets. More importantly, shotgun sequencing enables functional investigation of the gut microbiome — including characterisation of metabolic pathways, glycobiomes, and resistomes — which is not possible with 16S rRNA profiling alone. This makes shotgun metagenomics the more comprehensive and reliable tool for both taxonomic and functional comparisons across diverse populations.",
+      "topic_tags": ["shotgun metagenomics", "16S rRNA", "methodology", "functional profiling", "taxonomic profiling"]
+    },
+    {
+      "id": "wgmd_easy_004",
+      "difficulty": "easy",
+      "question": "What are antibiotic resistance enzymes (AREs) in the gut microbiome context, and how does urbanization relate to their abundance?",
+      "answer": "Antibiotic resistance enzymes (AREs) are microbially encoded proteins that confer resistance to antibiotics, and their abundance in gut metagenomic data constitutes the 'resistome' — the full complement of antibiotic resistance genes harboured by the gut microbial community. Studies comparing urbanized/industrialized and pre-agricultural populations consistently show that ARE abundance scales with the level of urbanization and industrialization, with pre-agricultural hunter-gatherer communities displaying significantly lower levels of AREs compared to people living in developed countries. This gradient likely reflects the much rarer use of antibiotics in pre-agricultural communities.",
+      "topic_tags": ["antibiotic resistance", "resistome", "urbanization", "hunter-gatherer", "ARE"]
+    },
+    {
+      "id": "wgmd_easy_005",
+      "difficulty": "easy",
+      "question": "How does microbial biodiversity in the gut compare between industrialized and pre-agricultural populations, and what does this suggest about the impact of modern lifestyles?",
+      "answer": "Pre-agricultural hunter-gatherer populations harbour greater microbial biodiversity in the gut than urbanized/industrialized populations. This is evidenced by the larger proportion of accessory (non-core) microbial genera in hunter-gatherer communities compared to people in industrialized societies, whose gut microbiota is more heavily dominated by core taxa. These findings support the notion that urbanization and industrialization have caused a simplification — or reduction in diversity — of the microbial gut community, likely driven by dietary changes, increased antibiotic use, improved hygiene standards, and other lifestyle factors associated with modern urban living.",
+      "topic_tags": ["microbial diversity", "industrialization", "urbanization", "hunter-gatherer", "biodiversity loss"]
+    },
+
+    {
+      "id": "wgmd_medium_001",
+      "difficulty": "medium",
+      "question": "What is the 'pan-microbiome', and how does its composition differ between urbanized and pre-agricultural populations?",
+      "answer": "The pan-microbiome refers to the complete catalogue of all bacterial genera identified across all analysed gut microbiome datasets from a given set of populations, encompassing both ubiquitous 'core' taxa and taxa that are present only in specific populations. In the context of comparing urbanized and pre-agricultural populations, the pan-microbiome can be partitioned into: a global core (taxa present in all populations), accessory genera (present in some but not all populations), taxa unique to pre-agricultural communities (such as Treponema and Brachyspira), and taxa unique to industrialized communities (such as Barnesiella and unclassified Bacteroidales). The core microbiome constitutes a much larger fraction of the total gut microbiota in urbanized individuals (~82%) than in pre-agricultural individuals (~47%), while accessory genera make up a far greater proportion in hunter-gatherer communities, reflecting their higher overall diversity.",
+      "topic_tags": ["pan-microbiome", "core microbiome", "accessory genera", "Treponema", "Barnesiella", "biodiversity"]
+    },
+    {
+      "id": "wgmd_medium_002",
+      "difficulty": "medium",
+      "question": "How does the abundance and diversity of glycoside hydrolase (GH) families differ between industrialized and hunter-gatherer gut microbiomes, and what dietary factors explain this difference?",
+      "answer": "Industrialized gut microbiomes contain a higher abundance of glycoside hydrolase (GH)-encoding reads and a greater number of distinct GH families compared to hunter-gatherer microbiomes. Industrialized populations carry approximately 2.92% GH-encoding reads on average and an average of 46 GH families, compared to 1.18% and an average of 26 GH families in hunter-gatherer populations. The industrialized microbiomes also show higher abundance of broad-substrate GH families (e.g., GH2, GH3, GH43) capable of degrading multiple carbohydrate types. This difference is driven by dietary diversity: the Western urbanized diet encompasses a much wider range of polysaccharides — including industrially added compounds like alginate, carrageenan, and gellan gum — compared to the more limited variety of plant foods in pre-agricultural diets, creating selective pressure for microbiomes with expanded carbohydrate-degrading capabilities.",
+      "topic_tags": ["glycoside hydrolase", "glycobiome", "CAZy", "carbohydrate metabolism", "diet diversity", "industrialization"]
+    },
+    {
+      "id": "wgmd_medium_003",
+      "difficulty": "medium",
+      "question": "What is the functional significance of Treponema being present in pre-agricultural gut microbiomes but absent from industrialized ones?",
+      "answer": "While Treponema species are generally associated with infectious diseases in clinical contexts, gut-associated members of this genus appear to serve a beneficial function in pre-agricultural communities by aiding nutrient extraction from fibrous foods — a dietary staple typical of hunter-gatherer lifestyles. The fact that Treponema is also found in non-human primates and all traditional populations studied to date suggests it represents an ancient gut commensal that has been lost from the human microbiota as a consequence of urbanization and industrialization. Genome reconstruction of Treponema succinifaciens from hunter-gatherer metagenomic data reveals it encodes genes and pathways for carbohydrate and amino acid degradation, though with a smaller enzymatic repertoire than urbanization-associated bacteria, consistent with adaptation to simpler, plant-rich diets.",
+      "topic_tags": ["Treponema", "gut commensal", "pre-agricultural", "fibre fermentation", "microbiome loss", "genome reconstruction"]
+    },
+    {
+      "id": "wgmd_medium_004",
+      "difficulty": "medium",
+      "question": "How does the association between Prevotella and Bacteroides genera reflect differences in diet between pre-agricultural and urbanized populations?",
+      "answer": "The relative abundance of Prevotella versus Bacteroides in the gut microbiome serves as a dietary indicator. Prevotella is highly abundant in hunter-gatherer (pre-agricultural) populations, such as the Hadza community, where it constitutes a large portion of the microbiota. This is consistent with evidence that Prevotella genus members are adapted to carbohydrate-rich, plant-based diets and harbour genetic features for breaking down cellulose and xylan — polysaccharides common in pre-agricultural diets. In contrast, Bacteroides is dominant in urbanized/industrialized populations, correlating with diets enriched in protein and animal fat — characteristic of Western food patterns. Thus, the Prevotella-to-Bacteroides ratio reflects a fundamental dietary axis: plant-carbohydrate-based versus protein-and-fat-enriched diets.",
+      "topic_tags": ["Prevotella", "Bacteroides", "dietary biomarker", "enterotype", "plant-based diet", "Western diet"]
+    },
+    {
+      "id": "wgmd_medium_005",
+      "difficulty": "medium",
+      "question": "What role does Methanobrevibacter play in gut energy metabolism, and why is it particularly notable in certain pre-agricultural populations?",
+      "answer": "Methanobrevibacter is an archaeal genus belonging to the phylum Euryarchaeota whose members act as methanogens in the gut, using hydrogen (produced by fermentative bacteria) to reduce CO2 to methane. In doing so, they increase the thermodynamic efficiency of fermentation, thereby enhancing the total energy extracted from dietary polysaccharides by the gut microbial community. Methanobrevibacter smithii specifically has been shown to increase host energy harvest from complex carbohydrates. This genus is especially abundant in certain pre-agricultural populations (comprising a substantial fraction of their gut microbiota), suggesting a strong role in maximising caloric extraction from plant-heavy, fibre-rich diets. Because of this capacity for enhanced energy harvest, M. smithii has been discussed as a potential target for interventions aimed at reducing energy extraction in metabolically obese individuals.",
+      "topic_tags": ["Methanobrevibacter", "archaea", "methanogenesis", "energy harvest", "fermentation", "obesity"]
+    },
+    {
+      "id": "wgmd_medium_006",
+      "difficulty": "medium",
+      "question": "How does genome reconstruction from shotgun metagenomic data help characterise bacterial taxa that have been lost or gained during urbanization?",
+      "answer": "Targeted genome reconstruction from shotgun metagenomic data allows researchers to assemble draft genomes of bacteria directly from complex environmental samples, without the need for laboratory cultivation. By applying assembly pipelines to hunter-gatherer or urbanized gut metagenomes, it is possible to reconstruct genomes of bacterial taxa unique to those communities — such as Treponema succinifaciens (found only in pre-agricultural populations) and Barnesiella intestinihominis (found only in industrialized populations). In silico functional annotation of these reconstructed genomes using databases like CAZy and MetaCyc then enables prediction of their metabolic capabilities, including the range of carbohydrates, amino acids, and lipids they can degrade. This approach provides mechanistic insight into how microbial gains and losses during urbanization may have altered the functional potential of the human gut microbiome.",
+      "topic_tags": ["genome reconstruction", "metagenomics", "Barnesiella intestinihominis", "Treponema succinifaciens", "functional annotation", "urbanization"]
+    },
+
+    {
+      "id": "wgmd_hard_001",
+      "difficulty": "hard",
+      "question": "Comparing Barnesiella intestinihominis and Treponema succinifaciens as representative 'gained' and 'lost' gut microbes of industrialization, what do their genomic profiles reveal about how the gut microbiome has functionally adapted to urbanized lifestyles?",
+      "answer": "Genome reconstruction and in silico functional analysis reveal striking differences between these two species that mirror the dietary and ecological contrasts between industrialized and pre-agricultural lifestyles. Barnesiella intestinihominis, found exclusively in urbanized populations, encodes 118 glycoside hydrolase genes compared to only 47 in Treponema succinifaciens. It also possesses a larger number of genes and pathways for carbohydrate degradation, amino acid degradation, and fatty acid and lipid metabolism. This broad metabolic repertoire is consistent with the diverse polysaccharides, proteins, and lipids found in Western diets. Treponema succinifaciens, by contrast, is adapted to the simpler, plant-fibre-rich diet of hunter-gatherers, possessing a leaner enzymatic toolkit focused on carbohydrate substrates available in that dietary context. The acquisition of B. intestinihominis and the loss of T. succinifaciens thus represent microbial adaptations driven by the dietary shift associated with industrialization — toward greater macronutrient diversity and away from fibrous plant-centric substrates.",
+      "topic_tags": ["Barnesiella intestinihominis", "Treponema succinifaciens", "genome comparison", "glycoside hydrolase", "metabolic adaptation", "industrialization", "dietary shift"]
+    },
+    {
+      "id": "wgmd_hard_002",
+      "difficulty": "hard",
+      "question": "What are the key limitations of comparing gut microbiomes across populations using publicly available metagenomic datasets, and how do these limitations affect interpretation of urbanization-related microbiome changes?",
+      "answer": "Several interrelated limitations constrain interpretation in cross-population metagenomic comparisons. First, metadata regarding dietary habits and lifestyle of assessed populations is frequently absent from public datasets, making it impossible to directly attribute microbiome differences to specific dietary or environmental variables — even when compositional differences are clearly present. Second, the availability of pre-agricultural datasets is extremely limited; only a small number of hunter-gatherer cohorts have been metagenomically characterised, which is insufficient for statistically robust or generalisable conclusions about pre-agricultural populations globally. Third, differences in stool collection and processing methods, DNA extraction protocols, and sequencing platforms across studies introduce technical batch effects that can confound biological signals. Fourth, the use of exclusively fecal samples introduces a sampling bias, as fecal microbiota do not fully represent mucosal or luminal communities along the gastrointestinal tract. Together, these limitations mean that observed associations between urbanization and microbiome composition should be treated as hypothesis-generating rather than causally definitive, and that future studies must integrate standardised protocols, dietary metadata, and broader geographic sampling of pre-agricultural communities.",
+      "topic_tags": ["methodological limitations", "metadata", "pre-agricultural populations", "sampling bias", "batch effects", "causal inference"]
+    },
+    {
+      "id": "wgmd_hard_003",
+      "difficulty": "hard",
+      "question": "How does the concept of an expanded microbial 'glycobiome' in industrialized populations challenge or refine previous assumptions drawn from small-cohort comparisons between hunter-gatherer and Western gut microbiomes?",
+      "answer": "Prior small-cohort studies comparing Hadza and Matses hunter-gatherer microbiomes with limited Western samples had suggested that pre-agricultural microbiomes possess an extended metabolic potential for carbohydrate utilization — implying that hunter-gatherer gut communities were metabolically richer in carbohydrate-degrading capacity. The broader meta-analysis of the worldwide gut microbiome database (WGMD) challenges this assumption: when compared against a far more representative and diverse set of industrialized gut microbiomes, hunter-gatherer communities actually show lower abundance of glycoside hydrolase-encoding reads and fewer GH families. This reversal is explained by dietary complexity: while pre-agricultural diets are plant-based, they are limited in glycan variety. Industrialized diets, though not necessarily more 'natural', expose the gut microbiome to a far more diverse range of polysaccharides — including food additives like alginate, carrageenan, and gellan gum — driving selective expansion of the microbial glycobiome. This finding underscores how conclusions drawn from small, non-representative cohort comparisons can be misleading and highlights the necessity of comprehensive, worldwide meta-analyses for robust conclusions.",
+      "topic_tags": ["glycobiome", "GH families", "dietary complexity", "meta-analysis", "hunter-gatherer", "Western diet", "previous studies comparison"]
+    },
+    {
+      "id": "wgmd_hard_004",
+      "difficulty": "hard",
+      "question": "How do beta-diversity analyses of global gut microbiome data inform our understanding of the relative influence of geography versus lifestyle on gut microbial community composition?",
+      "answer": "Beta-diversity analysis using principal coordinate analysis (PCoA) based on Bray-Curtis dissimilarity across global gut microbiome samples reveals a nuanced picture of the drivers of microbiota composition. Most samples from urbanized/industrialized populations cluster partially together regardless of geographic origin, suggesting convergence toward a shared compositional profile — consistent with the existence of a conserved core microbiome shaped by shared Westernized dietary and lifestyle features. However, certain populations (e.g., Australian, German, and South Korean) show atypical distributions, suggesting that local factors also matter. In stark contrast, hunter-gatherer populations form separate, distinct clusters from all urbanized samples and from each other, likely reflecting both their unique geographic origins and their markedly different lifestyles and diets. The fact that urbanized populations show partial overlap despite continental separation, while pre-agricultural populations cluster distinctly, implies that lifestyle and diet — rather than geography per se — are the primary determinants of gut microbiome structure at the population level, though geography contributes additional variation within the urbanized grouping.",
+      "topic_tags": ["beta-diversity", "PCoA", "Bray-Curtis", "geography", "lifestyle", "diet", "community composition", "core microbiome"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "wgmd_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which bacterial genus is characteristically enriched in the gut microbiota of hunter-gatherer communities consuming plant-rich, carbohydrate-based diets?",
+      "options": {
+        "A": "Bacteroides",
+        "B": "Prevotella",
+        "C": "Alistipes",
+        "D": "Barnesiella"
+      },
+      "correct_answer": "B",
+      "explanation": "Prevotella is highly abundant in hunter-gatherer populations such as the Hadza, consistent with its association with carbohydrate-based diets. Members of the Prevotella genus harbour genetic features for the breakdown of cellulose and xylan, substrates abundant in plant-rich pre-agricultural diets. Bacteroides, by contrast, is dominant in urbanized populations following protein- and fat-enriched diets.",
+      "topic_tags": ["Prevotella", "hunter-gatherer", "plant-based diet", "gut microbiota"]
+    },
+    {
+      "id": "wgmd_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What does the term 'resistome' refer to in the context of gut microbiome research?",
+      "options": {
+        "A": "The set of host immune genes that confer resistance to gut infections",
+        "B": "The collection of antibiotic resistance genes encoded within the gut microbial community",
+        "C": "The capacity of the gut microbiota to resist colonisation by pathogens",
+        "D": "The host genome regions that regulate microbiota composition"
+      },
+      "correct_answer": "B",
+      "explanation": "The resistome refers to the full complement of antibiotic resistance genes — specifically antibiotic resistance enzymes (AREs) — encoded by the gut microbial community as revealed by metagenomic sequencing. It reflects prior antibiotic exposure and the selective pressure this exerts on microbial communities. Pre-agricultural communities show lower resistome abundance compared to industrialized populations, consistent with minimal antibiotic use.",
+      "topic_tags": ["resistome", "antibiotic resistance", "AREs", "metagenomics"]
+    },
+    {
+      "id": "wgmd_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "What is the main reason that dietary metadata is considered a critical limitation in cross-population gut microbiome studies?",
+      "options": {
+        "A": "Dietary data introduces sequencing bias when included in metagenomic pipelines",
+        "B": "Diet is not a known factor influencing gut microbiota composition",
+        "C": "Without dietary information, it is impossible to directly link observed microbiota differences to specific dietary or lifestyle variables",
+        "D": "Dietary metadata is legally protected and cannot be shared in public databases"
+      },
+      "correct_answer": "C",
+      "explanation": "Diet is one of the most important modulators of gut microbiota composition. When dietary metadata is absent from publicly available datasets — as is frequently the case — researchers cannot attribute observed compositional differences between populations to specific dietary factors, limiting causal inference. This is acknowledged as a crucial limitation that prevents a comprehensive understanding of diet-microbiome relationships in cross-population comparisons.",
+      "topic_tags": ["dietary metadata", "study limitations", "causal inference", "gut microbiota"]
+    },
+
+    {
+      "id": "wgmd_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "What was the unexpected finding about glycoside hydrolase (GH) diversity when comparing hunter-gatherer and industrialized gut microbiomes at a global scale, compared to previous small-cohort studies?",
+      "options": {
+        "A": "Hunter-gatherer communities had more GH families than industrialized ones, confirming earlier reports",
+        "B": "GH diversity was identical between hunter-gatherer and industrialized populations",
+        "C": "Contrary to earlier small-cohort findings, industrialized microbiomes contained greater GH diversity and abundance than hunter-gatherer microbiomes",
+        "D": "Hunter-gatherer communities lacked GH-encoding genes entirely due to low carbohydrate intake"
+      },
+      "correct_answer": "C",
+      "explanation": "Previous small-cohort studies suggested pre-agricultural microbiomes had an extended metabolic potential for carbohydrate utilization. However, the broader global meta-analysis found that industrialized microbiomes possessed higher GH-encoding read abundance (2.92% vs 1.18%) and more GH families (46 vs 26 on average). This is attributed to the greater glycan diversity of industrialized diets — including novel polysaccharides from food processing — which drives selection for expanded carbohydrate-degrading capabilities, even though pre-agricultural diets are plant-based.",
+      "topic_tags": ["glycoside hydrolase", "GH diversity", "meta-analysis", "dietary diversity", "hunter-gatherer", "industrialized"]
+    },
+    {
+      "id": "wgmd_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "What is the functional role of the Phascolarctobacterium genus, and what is significant about its distribution between pre-agricultural and industrialized populations?",
+      "options": {
+        "A": "It produces bile acids and is enriched in industrialized populations with high fat diets",
+        "B": "It produces high amounts of SCFAs acetate and propionate, and is far more abundant in hunter-gatherer communities than in industrialized populations",
+        "C": "It degrades mucin and is found exclusively in industrialized populations",
+        "D": "It encodes antibiotic resistance enzymes and is elevated in populations with high antibiotic use"
+      },
+      "correct_answer": "B",
+      "explanation": "Members of the genus Phascolarctobacterium are known producers of the short-chain fatty acids (SCFAs) acetate and propionate. They are markedly more abundant in hunter-gatherer communities (average ~7.03%) compared to industrialized populations (average ~0.35%), and are notably absent from US, Swedish, and Asian microbiome datasets. This abundance in pre-agricultural communities likely reflects their dietary intake of soluble fibres and resistant starch — the main fermentation substrates for SCFA production.",
+      "topic_tags": ["Phascolarctobacterium", "SCFA", "propionate", "acetate", "hunter-gatherer", "dietary fibre"]
+    },
+    {
+      "id": "wgmd_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "Why are urbanized gut microbiomes enriched in pathways for degrading alginate, carrageenan, and gellan gum, substrates absent from pre-agricultural diets?",
+      "options": {
+        "A": "These polysaccharides are naturally produced by Bacteroides species that dominate industrialized gut microbiomes",
+        "B": "These compounds are widely used as food industry additives (stabilisers, thickeners, emulsifiers) in processed foods consumed by industrialized populations",
+        "C": "Urbanized populations evolved genetic mutations that enable production of these enzymes",
+        "D": "These polysaccharides are present in animal fats and meats that form a core part of Western diets"
+      },
+      "correct_answer": "B",
+      "explanation": "Alginate, carrageenan, and gellan gum are polysaccharides derived from algae or bacteria that are extensively used in the food industry as stabilisers, thickeners, or emulsifying agents in processed foods. Because industrialized populations consume these additives regularly, their gut microbiomes have developed or acquired metabolic pathways for degrading them. Pre-agricultural communities, whose diets consist solely of unprocessed gathered or hunted foods, have no exposure to these compounds, and their microbiomes accordingly lack these pathways.",
+      "topic_tags": ["alginate", "carrageenan", "gellan gum", "food additives", "carbohydrate pathways", "industrialized diet"]
+    },
+    {
+      "id": "wgmd_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "How does the proportion of gut microbiota attributable to the core microbiome differ between urbanized and pre-agricultural populations, and what does this indicate?",
+      "options": {
+        "A": "Core microbiome constitutes ~82% in urbanized and ~47% in pre-agricultural populations, indicating that industrialization simplifies gut community structure",
+        "B": "Core microbiome constitutes ~47% in urbanized and ~82% in pre-agricultural populations, indicating that hunter-gatherers have more stable microbiotas",
+        "C": "Core microbiome constitutes ~50% in both groups, suggesting lifestyle has no effect on core community structure",
+        "D": "Core microbiome is absent in pre-agricultural populations because they lack standard Western taxa"
+      },
+      "correct_answer": "A",
+      "explanation": "In urbanized/industrialized populations, the core microbiome accounts for approximately 82% of total gut microbiota, whereas in pre-agricultural populations it accounts for only approximately 47%. This means that hunter-gatherer communities harbour a much larger proportion of accessory (non-core) genera — approximately 39.65% vs 11.63% in industrialized individuals — reflecting their greater overall biodiversity. This supports the conclusion that industrialization has caused a simplification of gut microbial community structure.",
+      "topic_tags": ["core microbiome", "accessory genera", "biodiversity", "urbanization", "simplification"]
+    },
+    {
+      "id": "wgmd_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What does the geographical clustering pattern observed in beta-diversity analyses of global gut microbiomes suggest about the primary drivers of microbiota composition?",
+      "options": {
+        "A": "Host genetics based on ethnicity is the strongest driver, as populations always cluster by continental origin",
+        "B": "Sampling method and sequencing platform are the dominant sources of variation in global microbiome data",
+        "C": "Lifestyle and diet are important compositional drivers, with urbanized populations showing partial convergence and pre-agricultural communities forming distinct separate clusters",
+        "D": "Climate and environmental temperature determine microbiome composition, as tropical populations always cluster together"
+      },
+      "correct_answer": "C",
+      "explanation": "Beta-diversity PCoA analysis shows that most urbanized/industrialized populations partially overlap regardless of geographic origin, suggesting convergence linked to shared Western dietary and lifestyle features. In contrast, pre-agricultural Hadza and Matses populations form two separate, distinct clusters from all other samples, reflecting their unique lifestyles and diets. This pattern supports lifestyle and diet as primary compositional drivers, rather than geography alone, since geographically distant urban populations resemble each other more than they resemble geographically proximate hunter-gatherer communities.",
+      "topic_tags": ["beta-diversity", "PCoA", "lifestyle", "diet", "geographical clustering", "Bray-Curtis"]
+    },
+
+    {
+      "id": "wgmd_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "What does the comparative genomic analysis of Barnesiella intestinihominis and Treponema succinifaciens reveal about the directionality and mechanism of gut microbiome functional change during urbanization?",
+      "options": {
+        "A": "Both species have equivalent metabolic repertoires, suggesting that taxonomic rather than functional changes drive urbanization-associated microbiome shifts",
+        "B": "T. succinifaciens has a broader glycobiome than B. intestinihominis, meaning urbanization led to loss of carbohydrate-degrading capacity",
+        "C": "B. intestinihominis, found in urbanized populations, encodes substantially more GH genes and broader pathways for carbohydrate, amino acid, and lipid degradation than T. succinifaciens, suggesting urbanization expanded the gut microbiome's catabolic repertoire in line with greater dietary complexity",
+        "D": "Neither species encodes carbohydrate-degrading genes, indicating that these taxa contribute primarily to immune modulation rather than metabolism"
+      },
+      "correct_answer": "C",
+      "explanation": "Comparative analysis shows that B. intestinihominis (urbanization-associated) encodes 118 GH genes versus only 47 in T. succinifaciens (pre-agricultural), and also has more genes and pathways for amino acid and lipid/fatty acid degradation. This profile reflects the metabolic demands of a Western diet rich in diverse polysaccharides, proteins, and animal fats. The acquisition of B. intestinihominis and loss of T. succinifaciens during urbanization thus represents a directional functional expansion of gut metabolic capacity, driven by the increased nutritional complexity of industrialized diets.",
+      "topic_tags": ["Barnesiella intestinihominis", "Treponema succinifaciens", "glycobiome", "metabolic capacity", "urbanization", "functional expansion"]
+    },
+    {
+      "id": "wgmd_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "When evaluating the claim that pre-agricultural populations have an 'extended metabolic potential' for carbohydrate utilization, what methodological factor most critically determines whether this conclusion is valid or misleading?",
+      "options": {
+        "A": "The sequencing depth used for metagenomic analysis, since deeper sequencing always reveals more GH genes",
+        "B": "The representativeness and size of the urbanized comparison cohort; small or geographically limited urbanized cohorts can yield misleading comparisons that are reversed when a globally representative dataset is used",
+        "C": "The taxonomy profiling software used, since different tools classify GH families differently and produce incompatible outputs",
+        "D": "The age range of study participants, since older individuals in industrialized countries consistently show lower GH diversity"
+      },
+      "correct_answer": "B",
+      "explanation": "Earlier studies comparing hunter-gatherer microbiomes to small, non-representative urbanized cohorts concluded that pre-agricultural microbiomes have higher carbohydrate-degrading potential. However, when a globally representative meta-analysis is performed with diverse, large urbanized datasets, the finding inverts — industrialized microbiomes show greater GH diversity and abundance. This reversal occurs because small Western cohorts do not capture the full dietary and microbial diversity of industrialized populations. This illustrates that the representativeness of the comparison group is the most critical methodological determinant of such conclusions in cross-population microbiome research.",
+      "topic_tags": ["methodological bias", "cohort representativeness", "meta-analysis", "GH diversity", "carbohydrate metabolism", "hunter-gatherer comparison"]
+    }
+  ]
+}

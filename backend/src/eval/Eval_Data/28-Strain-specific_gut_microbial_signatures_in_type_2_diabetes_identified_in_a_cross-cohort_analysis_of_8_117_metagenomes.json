@@ -1,328 +1,270 @@
 {
-  "source_document": "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf",
-  "test_cases": [
+  "metadata": {
+    "source_paper": "Strain-specific gut microbial signatures in type 2 diabetes identified in a cross-cohort analysis of 8,117 metagenomes",
+    "authors": [
+      "Zhendong Mei", "Fenglei Wang", "Amrisha Bhosle", "Danyue Dong",
+      "Raaj Mehta", "Andrew Ghazi", "Yancong Zhang", "Yuxi Liu",
+      "Ehud Rinott", "Siyuan Ma", "Eric B. Rimm", "Martha Daviglus",
+      "Walter C. Willett", "Rob Knight", "Frank B. Hu", "Qibin Qi",
+      "Andrew T. Chan", "Robert D. Burk", "Meir J. Stampfer", "Iris Shai",
+      "Robert C. Kaplan", "Curtis Huttenhower", "Dong D. Wang"
+    ],
+    "journal": "Nature Medicine",
+    "year": 2024,
+    "doi": "10.1038/s41591-024-03067-7",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
     {
-      "id": "t2d_microbiome_001",
-      "query": "How many metagenomes were analyzed in this cross-cohort study of type 2 diabetes and the gut microbiome?",
-      "ground_truth_answer": "The study analyzed 8,117 shotgun metagenomes from 10 cohorts, including 1,851 patients with T2D, 2,770 individuals with prediabetes, and 2,277 normoglycemic controls from the United States, Europe, Israel and China",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
+      "id": "T2D_MICRO_easy_001",
       "difficulty": "easy",
-      "category": "factual"
+      "question": "Why is studying gut microbial features at the strain level, rather than only at the species level, important for understanding type 2 diabetes?",
+      "answer": "Species-level analysis can miss critical associations because pathogenic mechanisms in type 2 diabetes are potentially strain-specific — meaning specific microbial strains may be causally linked to disease outcomes, or the functional processes responsible for host disease development may be carried out by only a subset of strains within a given species. A classic illustration of this principle is Escherichia coli, which includes strains ranging from benign to highly pathogenic to probiotic, despite being the same species. For T2D specifically, the host diet and immune system act as selective pressures shaping within-species variation, making strain-level resolution essential for mechanistic insight.",
+      "topic_tags": ["strain-level analysis", "type 2 diabetes", "gut microbiome", "within-species variation", "pathogenic mechanisms"]
     },
     {
-      "id": "t2d_microbiome_002",
-      "query": "How many phylogenetically diverse bacterial species were significantly associated with type 2 diabetes at FDR < 0.10?",
-      "ground_truth_answer": "Dysbiosis in 19 phylogenetically diverse species was associated with T2D (FDR < 0.10). Of these, five were associated with T2D only, and 14 were associated with both prediabetes and T2D",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
+      "id": "T2D_MICRO_easy_002",
       "difficulty": "easy",
-      "category": "factual"
+      "question": "What are the main categories of microbial species found to be differentially abundant in type 2 diabetes, and in which direction do they shift?",
+      "answer": "In type 2 diabetes, several phylogenetically diverse microbial species are enriched or depleted. Enriched species include members associated with pro-inflammatory states, such as certain Clostridium species (e.g., Clostridium bolteae, Clostridium citroniae), Escherichia coli, Bacteroides fragilis (which produces immunogenic fragilysin), and Streptococcus species that are common oral cavity residents — suggesting possible translocation of oral microbes to the gut. Depleted species are predominantly butyrate-producing bacteria and primary degraders of plant-derived polysaccharides, such as Butyrivibrio crossotus, Coprococcus eutactus, Ruminococcus lactaris, and Oscillibacter sp. 57_20. Turicibacter sanguinis, linked to lower metabolic risk via bile acid and lipid metabolism modification, is also found at higher abundance in normoglycemic controls.",
+      "topic_tags": ["T2D biomarker species", "enriched bacteria", "depleted bacteria", "butyrate producers", "inflammation"]
     },
     {
-      "id": "t2d_microbiome_003",
-      "query": "What bioinformatic workflow was used for uniform taxonomic and functional profiling across all cohorts?",
-      "ground_truth_answer": "The bioBakery 3.0 workflows were applied to process sequencing data for uniform taxonomic and functional profiling. This included MetaPhlAn 3.0 for taxonomic profiling and HUMAnN 3.0.0 for functional profiling",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
+      "id": "T2D_MICRO_easy_003",
       "difficulty": "easy",
-      "category": "factual"
+      "question": "What is the significance of metformin use as a confounding variable in gut microbiome studies of type 2 diabetes?",
+      "answer": "Metformin use is a major confounder in microbiome–T2D association studies because the drug itself directly alters gut microbiome composition, independent of the disease. Studies that fail to adequately adjust for metformin use may identify microbial signatures of the medication rather than of the disease. Metformin-treated and metformin-naïve T2D patients have detectably different microbial compositions. Many microbe–T2D associations are attenuated after adjusting for metformin use, suggesting a portion of previously reported signals were driven by the drug rather than the diabetic state itself.",
+      "topic_tags": ["metformin", "confounding", "gut microbiome", "type 2 diabetes", "study design"]
     },
     {
-      "id": "t2d_microbiome_004",
-      "query": "Which bacterial species enriched in T2D patients were identified as common oral cavity residents?",
-      "ground_truth_answer": "Two Streptococcus species, common residents of the oral cavity, were enriched in individuals with T2D, suggesting a potential translocation of oral microbes to the gut, indicative of a pro-inflammatory state",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
+      "id": "T2D_MICRO_easy_004",
       "difficulty": "easy",
-      "category": "factual"
+      "question": "What community-level functional shift in the gut microbiome is most prominently associated with type 2 diabetes?",
+      "answer": "The most prominent community-level functional shift associated with type 2 diabetes is a broad move toward glucose dysregulation. This manifests as higher abundance of microbial functions favoring glycolysis (including the glycolysis pathway from glucose 6-phosphate and constituent enzymes such as glyceraldehyde-3-phosphate dehydrogenase), upregulation of the methylglyoxal degradation super-pathway (suggesting increased demand for detoxification of a glycolysis byproduct), and enrichment of saturated fatty acid biosynthesis pathways that can contribute to insulin resistance. Additionally, genes encoding pitrilysin, an enzyme with insulin-degrading capability, are more abundant in T2D patients.",
+      "topic_tags": ["microbial function", "glycolysis", "insulin resistance", "glucose dysregulation", "type 2 diabetes"]
     },
     {
-      "id": "t2d_microbiome_005",
-      "query": "Name three butyrate-producing bacteria that were depleted in T2D patients.",
-      "ground_truth_answer": "T2D-depleted species included butyrate-producing bacteria such as Oscillibacter sp. 57_20, Coprococcus eutactus, Ruminococcus lactaris and Butyrivibrio crossotus, which are primary degraders of plant-derived polysaccharides",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
+      "id": "T2D_MICRO_easy_005",
       "difficulty": "easy",
-      "category": "factual"
+      "question": "How does the inclusion of gut microbial species data improve the classification of type 2 diabetes status in predictive models?",
+      "answer": "Adding gut microbial species abundances to predictive models improves classification performance over basic models that include only age, sex, and BMI. For metformin-naïve T2D versus normoglycemic controls, including microbial species raises the average area under the receiver operating characteristic curve (AUC) from approximately 0.63 to 0.69. The improvement is more pronounced for metformin-treated T2D, where the AUC rises from approximately 0.69 to 0.79. This suggests that gut microbial profiles carry disease-relevant information beyond standard clinical risk factors, and the signal is particularly strong in treated patients, likely because metformin further reshapes the microbiome in ways that correlate with disease status.",
+      "topic_tags": ["random forest", "AUC", "T2D classification", "predictive model", "microbiome biomarkers"]
     },
     {
-      "id": "t2d_microbiome_006",
-      "query": "Describe the community-level microbial functional shift towards glucose dysregulation observed in T2D patients.",
-      "ground_truth_answer": "The community-level microbial functional shift towards glucose dysregulation in T2D patients manifested as intertwined relationships between insulin resistance, glycolysis and glucose uptake. There was higher abundance of functions involved in glycolysis (like GLYCOLYSIS-PWY pathway and glyceraldehyde-3-phosphate dehydrogenase), enrichment of methylglyoxal degradation pathway (METHGLYUT-PWY), high abundance of pitrilysin enzyme with insulin-degrading capability, and enrichment of saturated fatty acid biosynthesis functions that potentially contribute to insulin resistance",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
+      "id": "T2D_MICRO_medium_001",
       "difficulty": "medium",
-      "category": "mechanism"
+      "question": "How do Prevotella copri subclades differ in their contribution to type 2 diabetes risk, and what specific metabolic functions underlie this subclade-dependent effect?",
+      "answer": "Prevotella copri comprises four distinct subclades (A, B, C, D) with different geographic distributions and functional potentials. In the context of T2D, P. copri strains are more likely to carry biosynthetic functions for branched-chain amino acids (BCAAs) — a group of diabetogenic metabolites — in T2D patients compared to controls. The relevant functions include the super-pathway of BCAA biosynthesis, L-valine biosynthesis, L-isoleucine biosynthesis, and the multifunctional enzyme branched-chain amino acid aminotransferase. Importantly, the upregulated BCAA biosynthesis in T2D is unique to clade A of P. copri and is not detected in other subclades. Clade A dominates in non-Hispanic white populations in Europe and the United States, while co-presence of all clades is observed mainly in Chinese, Israeli, and US Hispanic populations. This subclade specificity would be entirely missed by species-level analysis, demonstrating that T2D risk from P. copri is both subclade- and population-dependent.",
+      "topic_tags": ["Prevotella copri", "subclades", "BCAA biosynthesis", "type 2 diabetes", "strain-level variation", "population specificity"]
     },
     {
-      "id": "t2d_microbiome_007",
-      "query": "How does the study address the confounding effect of metformin use on gut microbiome composition?",
-      "ground_truth_answer": "The study confirmed that metformin use strongly confounded the association between microbes and T2D in this international population. They found different microbial compositions between metformin-treated versus -naïve T2D patients (PERMANOVA P < 0.001) and attenuated associations for many microbial species after further adjustment for metformin use. The modeling approach effectively addressed confounding by metformin use, demonstrated by a high correlation (Spearman correlation coefficient 0.95) between beta coefficients from the primary analysis and those from a sensitivity analysis excluding metformin-treated T2D patients",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
+      "id": "T2D_MICRO_medium_002",
       "difficulty": "medium",
-      "category": "mechanism"
+      "question": "What is the mechanistic basis by which upregulated biosynthesis of lipopolysaccharides and teichoic acids in the T2D gut microbiome may contribute to disease pathogenesis?",
+      "answer": "In type 2 diabetes, two pathways upstream of highly pro-inflammatory bacterial structural components are enriched: lipid IVA biosynthesis (a precursor to lipopolysaccharides, LPS) and poly(glycerol phosphate) wall teichoic acid biosynthesis. LPS are potent immunomodulatory molecules that can trigger systemic low-grade inflammation — a hallmark of T2D — through pattern recognition receptor activation. Enzymes involved in LPS precursor biosynthesis, including N-acetylglucosaminephosphotransferase and lipid IVA 4-amino-4-deoxy-L-arabinosyltransferase, show positive associations with circulating high-sensitivity C-reactive protein (hs-CRP) levels, directly linking microbial structural component production to measurable systemic inflammation. A diverse group of Bacteroides species are predominantly responsible for encoding these pathways, and Bacteroides membrane components are known to be particularly immunogenic.",
+      "topic_tags": ["LPS", "lipopolysaccharide", "teichoic acid", "inflammation", "hs-CRP", "T2D pathogenesis", "Bacteroides"]
     },
     {
-      "id": "t2d_microbiome_008",
-      "query": "Explain how the biosynthesis of immunomodulatory bacterial structural components was altered in T2D patients.",
-      "ground_truth_answer": "The study found upregulated biosynthesis of immunomodulatory bacterial structural components in T2D patients. Two pathways upstream of the production of highly pro-inflammatory lipopolysaccharides (LPS) and teichoic acids were enriched: lipid IVA biosynthesis (NAGLIPASYN-PWY) and poly (glycerol phosphate) wall teichoic acid biosynthesis (TEICHOICACID-PWY). Individual enzymes involved in LPS and teichoic acid biosynthesis were also enriched, such as peptidoglycan glycosyltransferase (EC 2.4.1.129) and lipid IVA 4-amino-4-deoxy-l-arabinosyltransferase (EC 2.4.2.43). Positive associations between these LPS precursor biosynthesis enzymes and circulating hs-CRP levels further supported their immunogenicity",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
+      "id": "T2D_MICRO_medium_003",
       "difficulty": "medium",
-      "category": "mechanism"
+      "question": "How does horizontal gene transfer (HGT) contribute to strain-level variation in gut microbial associations with type 2 diabetes?",
+      "answer": "Horizontal gene transfer is a key mechanism generating within-species functional diversity relevant to T2D. In E. coli strains enriched in T2D patients, certain strain clusters are enriched in gene families involved in various HGT mechanisms, including mobile genetic elements, phages, conjugation, and genetic rearrangement. Through these processes, E. coli strains can acquire advantageous traits and virulence factors from other bacteria. Specific examples identified include genes associated with plasmid virulence in enteroaggregative E. coli (known for inducing inflammatory responses and mucosal toxicity), LPS biosynthesis proteins linked to heightened inflammatory responses, rearrangement hotspot elements (rhsA), and VgrG proteins involved in delivering immunity proteins into eukaryotic cells. Across multiple species, gene ontology terms related to HGT — including DNA integration, conjugation, and transposition — are enriched in T2D patients, suggesting that acquisition of new functional genes through HGT is a broadly relevant process in microbiome-mediated T2D risk.",
+      "topic_tags": ["horizontal gene transfer", "HGT", "E. coli", "virulence factors", "strain variation", "type 2 diabetes"]
     },
     {
-      "id": "t2d_microbiome_009",
-      "query": "What method did the study use to identify pathways in Prevotella copri that differ between T2D patients and controls while controlling for species-level abundance?",
-      "ground_truth_answer": "The study applied the pathway-specific random effects model in anpan (analysis of microbial phylogenies and genes) to identify functions encoded by P. copri that were differentially abundant between T2D patients versus controls while controlling for its species-level abundance. This model enables identification of microbial functions encoded by P. copri that are differentially abundant between patients with T2D and controls while controlling for species-level abundance",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
+      "id": "T2D_MICRO_medium_004",
       "difficulty": "medium",
-      "category": "mechanism"
+      "question": "What does within-species phylogenetic analysis reveal about population-specific versus population-agnostic microbial contributions to type 2 diabetes risk?",
+      "answer": "Within-species phylogenetic analysis using phylogenetic generalized linear mixed models (PGLMMs) identifies strains within species whose phylogenetic structure accounts for inter-individual differences in T2D risk. Many of the identified strain clusters are specific to particular ethnic or geographic populations, aligning with the 'isolation by distance' hypothesis — reflecting co-dispersal of hosts and microbes contributing to genetic stratification. However, the analysis also identifies exceptions to population specificity: for example, certain Blautia wexlerae strains show strong associations with T2D regardless of population, appearing across all participating cohorts. These findings together provide evidence that microbiome-induced T2D risk can derive from both population-specific and population-agnostic microbial genetics. Crucially, none of the species showing strong subclade effects were identified as T2D biomarker species at the overall species level, confirming that species-level analysis alone would miss these strain-level associations.",
+      "topic_tags": ["phylogenetic analysis", "PGLMM", "population-specific", "strain associations", "Eubacterium rectale", "Blautia wexlerae", "T2D risk"]
     },
     {
-      "id": "t2d_microbiome_010",
-      "query": "Describe the batch effect correction method used in this study and its effectiveness.",
-      "ground_truth_answer": "The study corrected batch and study effects using a method from the MMUPHin workflow (MMUPHin_Correct) specifically designed for zero-inflated microbiome sequencing profiles. This method differentiated between technical effects (batch, study) versus covariates of biological interest by extending batch correction methods based on linear models for gene expression data by adding a binary zero-count indicator. The method was effective, reducing the variance explained by batch effects from 8.4% to 4.0% (as quantified by PERMANOVA) while retaining biologically meaningful inter-individual variation",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
+      "id": "T2D_MICRO_medium_005",
       "difficulty": "medium",
-      "category": "mechanism"
+      "question": "How do researchers address the challenge of distinguishing true microbial signatures of type 2 diabetes from signatures of long-term disease duration or its comorbidities?",
+      "answer": "To distinguish true T2D microbial signatures from those reflecting long-term disease duration or comorbidities, researchers employ multiple sensitivity analyses. First, a prospective analysis leveraging incident T2D cases — individuals who were normoglycemic at baseline and developed T2D during follow-up — tests whether microbial features precede clinical disease rather than merely reflecting its consequences. Second, an analysis restricted to insulin-naïve T2D cases removes individuals whose microbial profiles might be altered by insulin therapy. Both sensitivity analyses yield associations largely consistent with the primary findings, supporting the conclusion that identified microbiome features reflect the diabetic state rather than its duration or comorbid conditions. Additionally, the observation of a consistent dose–response gradient in microbial abundance across normoglycemic controls, prediabetes, and T2D adds biological plausibility and further supports the biomarker validity of identified species.",
+      "topic_tags": ["sensitivity analysis", "incident T2D", "dose-response", "confounding", "disease duration", "study design"]
     },
     {
-      "id": "t2d_microbiome_011",
-      "query": "How did the inclusion of microbial species improve the classification performance of random forest models distinguishing T2D from controls?",
-      "ground_truth_answer": "In random forest models classifying metformin-naïve T2D versus normoglycemic controls, there was a moderate improvement in the average AUC from the basic model (age, sex, BMI: average AUC 0.63) to the model that additionally included microbial species (average AUC 0.69). For models classifying metformin-treated T2D versus controls, the average AUC was 0.69 in the basic model and increased to 0.79 in the model that included microbial species, demonstrating significant improvement in classification performance",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
+      "id": "T2D_MICRO_medium_006",
       "difficulty": "medium",
-      "category": "mechanism"
+      "question": "What strain-specific functional adaptations in Eubacterium rectale are associated with type 2 diabetes, and what do they suggest about the gut environment in T2D?",
+      "answer": "In Eubacterium rectale — a prominent butyrate-producing bacterium depleted at the species level in T2D — strain-level analysis reveals that genes involved in flagellum-dependent cell motility and chemotaxis are more prevalent in T2D patients. This indicates strain-specific adaptations to oxidative stress and inflammation in the gut. In contrast, the gene ontology term for quorum sensing is enriched in normoglycemic controls, suggesting that E. rectale strains in healthy individuals rely more on cooperative, quorum sensing-based behaviors that may confer survival advantages. Together, these findings suggest that the T2D gut environment is characterized by elevated oxidative stress and inflammation, creating selective pressure for E. rectale strains with enhanced motility and stress-response capabilities, while quorum sensing — associated with stable community behavior — is diminished.",
+      "topic_tags": ["Eubacterium rectale", "flagellar motility", "chemotaxis", "quorum sensing", "oxidative stress", "strain adaptation", "T2D gut environment"]
     },
     {
-      "id": "t2d_microbiome_012",
-      "query": "Compare the functional capacity for branched-chain amino acid biosynthesis in different Prevotella copri subclades and explain how this relates to T2D risk.",
-      "ground_truth_answer": "P. copri in T2D patients was more likely to carry biosynthetic functions of branched-chain amino acids (BCAAs), a group of diabetogenic metabolites, including the super-pathway of BCAA biosynthesis (BRANCHED-CHAIN-AA-SYN-PWY), l-valine biosynthesis (VALSYN-PWY), l-isoleucine biosynthesis I (ILEUSYN-PWY), and branched-chain amino acid aminotransferase. The abundance of these functions was significantly lower in P. copri dominated by clade A compared with P. copri with co-presence of all clades. However, the upregulated BCAA biosynthesis in T2D patients was unique to P. copri clade A and was not detected in other P. copri subclades. This shows that the BCAA biosynthesizing capacity of P. copri is subclade and population dependent",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
+      "id": "T2D_MICRO_hard_001",
       "difficulty": "hard",
-      "category": "comparison"
+      "question": "How does the interplay between community-level microbial functional shifts, strain-specific gene carriage, and within-species phylogenetic diversity together paint a more complete mechanistic picture of gut microbiome involvement in type 2 diabetes than any single analytical layer alone?",
+      "answer": "Each analytical layer in the study captures distinct aspects of microbiome–T2D biology that are invisible to the others. Community-level functional analysis reveals broad metabolic shifts: upregulated glycolysis, saturated fatty acid biosynthesis, LPS and teichoic acid biosynthesis, and insulin degradation via pitrilysin. However, this level attributes functions to the entire community without resolving which organisms or strains are responsible. Species-level taxonomic analysis identifies 19 phylogenetically diverse biomarker species (enriched and depleted), providing candidate organisms, but misses associations that exist only at the strain level — none of the 27 species showing significant within-species phylogenetic effects were species-level biomarkers, illustrating complementarity between these layers. Strain-specific gene carriage analysis then resolves the functional heterogeneity within individual species: for example, only certain E. coli strains carry virulence genes and HGT machinery; only P. copri clade A strains show upregulated BCAA biosynthesis in T2D; and E. rectale strains in T2D have motility adaptations consistent with an inflamed, oxidatively stressed niche. The within-species phylogenetic analysis further contextualizes these effects geographically and ethnographically, identifying both population-specific and population-agnostic strain effects. Together, these layers suggest a model where the T2D gut harbors a specific combination of pro-inflammatory, glycolysis-favoring, virulence-enriched bacterial strains that actively degrade insulin, stimulate inflammation through LPS production, and produce diabetogenic metabolites like BCAAs — while simultaneously depleting the butyrate producers and polysaccharide degraders that maintain mucosal integrity and metabolic homeostasis.",
+      "topic_tags": ["multi-layer analysis", "community function", "strain-level", "species-level", "mechanistic integration", "T2D pathogenesis", "BCAA", "LPS", "butyrate"]
     },
     {
-      "id": "t2d_microbiome_013",
-      "query": "Describe the within-species phylogenetic analysis approach used to identify strain-level associations with T2D and provide an example of findings from Eubacterium rectale.",
-      "ground_truth_answer": "The study used anpan's phylogenetic generalized linear mixed models (PGLMMs) to assess the extent to which within-species phylogeny accounted for inter-individual heterogeneity in T2D risk. Within-species phylogenetic divergence was associated with inter-individual differences in T2D risk for 27 species. For E. rectale specifically, strong associations were observed between strains from Southern China and T2D in subclade B (predominantly composed of strains from Chinese and US white participants). Subclade C, containing strains from diverse geographical origins, showed strong associations between a strain from the US Hispanic population and another from Northern European populations with T2D. The analysis identified phylogenies of species linked to T2D based on difference in ELPD (ΔELPD) ≥ 4 and ΔELPD − (2 × s.e. of ΔELPD) > 0",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
+      "id": "T2D_MICRO_hard_002",
       "difficulty": "hard",
-      "category": "mechanism"
+      "question": "What are the key methodological challenges in conducting a cross-cohort meta-analysis of gut metagenomes for a metabolic disease like type 2 diabetes, and how do batch effects and confounding variables threaten the validity of findings?",
+      "answer": "Cross-cohort metagenomic meta-analysis faces several interrelated methodological challenges. First, batch effects arise from inconsistent methods of stool sample collection, DNA extraction, and sequencing platforms across studies, which can inflate or obscure true biological signals. These are addressed using computational batch effect correction methods (e.g., MMUPHin), which reduce variance attributable to study effects while preserving biologically meaningful variation — for example, reducing batch-explained variance from 8.4% to 4.0% in one approach. Second, confounding by metformin is a particularly insidious problem in T2D research because this commonly prescribed drug independently alters the gut microbiome; failure to adjust for it produces spurious species associations that reflect drug pharmacology rather than disease biology. The study addresses this by adjusting for metformin use in regression models, comparing metformin-treated and naïve patients separately, and validating that associations remain consistent in sensitivity analyses excluding treated patients. Third, population stratification and ethnographic heterogeneity create challenges because microbial community composition and strain distributions differ systematically across geographic and ethnic groups, leading to potential confounding of disease associations by ancestry. The study mitigates this by including cohort membership as a covariate in within-species phylogenetic models. Fourth, the observational design makes causal inference impossible — observed microbiome differences may be causes, consequences, or correlates of T2D. Prospective analyses of incident cases partially address this, but true causal attribution requires experimental models. Finally, inability to control for unmeasured confounders like diet, physical activity, and smoking remains a limitation that could bias effect estimates.",
+      "topic_tags": ["batch effects", "MMUPHin", "metformin confounding", "population stratification", "observational design", "causal inference", "meta-analysis methodology"]
     },
     {
-      "id": "t2d_microbiome_014",
-      "query": "Explain the strain-specific functional variations identified in Escherichia coli and their potential mechanisms for contributing to T2D pathogenesis.",
-      "ground_truth_answer": "The study identified several clusters of E. coli strains with specific virulence factors and mechanisms. T2D-enriched Block 5 (from Chinese and Swedish populations) was enriched in gene families involved in various horizontal gene transfer mechanisms (mobile genetic elements, phages, conjugation, genetic rearrangement), including genes for plasmid virulence (UniRef90_A0A376NZ25) in enteroaggregative E. coli (EAEC) and LPS biosynthesis protein (UniRef90_A0A3E1VFS6). T2D-enriched Block 3 showed enrichment in rearrangement hotspot element (rhsA), YD-peptide repeat, and vgrG proteins, as well as Ail/Lom family proteins. Blocks 1 and 4 contained genes encoding adherence factors including putative adhesin and fimbrial protein. The T2D-depleted cluster (Block 2) contained gene families associated with microbial response to environmental stress, conferring adaptive advantages",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
+      "id": "T2D_MICRO_hard_003",
       "difficulty": "hard",
-      "category": "mechanism"
+      "question": "How does the concept of 'within-species phylogenetic divergence' challenge the conventional assumption that a species-level association with type 2 diabetes implies uniform biological relevance across all strains of that species?",
+      "answer": "The conventional assumption in microbiome epidemiology is that detecting a species as enriched or depleted in a disease state implies all strains of that species behave similarly. Within-species phylogenetic divergence analysis directly challenges this by revealing that strains within the same species can have opposing associations with T2D depending on their phylogenetic subclade and the geographic or ethnic context of the host. For example, within Eubacterium rectale — a species broadly associated with metabolic health — specific strain subclades from Chinese populations are strongly associated with T2D risk, while other subclades from Northern European populations also show T2D associations, yet through different phylogenetic lineages. Similarly, Coprococcus comes harbors four discrete strain clades with distinct geographic compositions, where only specific Swedish and Chinese strains drive T2D associations. Most strikingly, none of the 27 species showing significant within-species phylogenetic effects on T2D risk were identified as T2D biomarker species in the species-level analysis. This complete non-overlap demonstrates that many critical microbe–disease relationships are structurally invisible to conventional taxonomic approaches. The biological implication is profound: the same species name can encompass strains ranging from potentially protective to potentially pathogenic, meaning species-level relative abundance is an insufficient summary statistic for understanding microbiome contributions to metabolic disease.",
+      "topic_tags": ["within-species phylogeny", "PGLMM", "strain heterogeneity", "Eubacterium rectale", "species-level limitation", "T2D associations", "phylogenetic divergence"]
     },
     {
-      "id": "t2d_microbiome_015",
-      "query": "What novel biological processes underlying metabolic risk were identified through gene ontology enrichment analysis of strain-specific genes, and which species demonstrated these findings?",
-      "ground_truth_answer": "The gene ontology enrichment analysis identified 31 GO terms associated with T2D (FDR < 0.10). In T2D patients, enriched GO terms encompassed biological processes related to glycolysis, biosynthesis of bacterial structural components, survival in adverse conditions, virulence factors and antibiotic resistance genes. Notably, GO terms related to horizontal gene transfer explained strain-level diversity in multiple species. Taking E. rectale as an example, genes involved in flagellum-dependent cell motility and chemotaxis were more prevalent in T2D patients, indicating strain-specific adaptations to oxidative stress and inflammation in the gut. Conversely, the GO term of quorum sensing was enriched in normoglycemic controls, suggesting survival advantages of the strains",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
+      "id": "T2D_MICRO_hard_004",
       "difficulty": "hard",
-      "category": "mechanism"
+      "question": "How do the functional gene signatures of E. coli strains enriched in type 2 diabetes reflect a broader ecological adaptation to the diabetic gut environment, and what does this imply about the role of gut inflammation in selecting for pro-pathogenic microbial communities?",
+      "answer": "E. coli strains enriched in T2D harbor gene signatures that collectively point to an organism well-adapted to — and potentially contributing to — an inflamed, immune-compromised gut environment. T2D-enriched E. coli clusters carry genes encoding flagellin structural proteins (supporting motility), adhesins and fimbrial proteins (enabling epithelial attachment), invasins and toxins (virulence), LPS biosynthesis proteins (triggering inflammatory responses), phage-derived and HGT-associated elements (genetic plasticity for rapid adaptation), and genes involved in antibiotic resistance and response to environmental stress. In contrast, T2D-depleted E. coli clusters carry genes associated with environmental stress response that may confer adaptive advantages in terms of nutrient utilization and evasion from harmful environments — suggesting these strains are better adapted to a homeostatic, less inflamed gut. This pattern implies a bidirectional amplification loop: the low-grade systemic inflammation and insulin resistance characterizing T2D create a gut environment with elevated oxidative stress, disrupted mucus barriers, and altered nutrient availability, which selectively favors strains with motility, adhesion, virulence, and HGT capabilities. These strains, in turn, produce LPS and other immunogenic structural components that further amplify inflammation, degrade insulin via pitrilysin, and potentially contribute to metabolic endotoxemia — a state where circulating LPS triggers insulin resistance. The net result is a self-reinforcing cycle where microbial adaptation to gut inflammation actively perpetuates the metabolic dysfunction defining T2D.",
+      "topic_tags": ["E. coli", "virulence factors", "gut inflammation", "LPS", "pitrilysin", "metabolic endotoxemia", "microbial ecology", "T2D feedback loop", "HGT"]
     }
   ],
-  
+
   "mcq_questions": [
     {
-      "id": "t2d_microbiome_mcq_001",
-      "question": "How many countries were represented in the 10 cohorts analyzed in this study?",
-      "options": [
-        "A) 5 countries",
-        "B) 6 countries",
-        "C) 7 countries",
-        "D) 8 countries"
-      ],
-      "correct_answer": "D",
-      "explanation": "The study included 10 cohorts from 8 countries: the United States, Israel, Sweden, Finland, Denmark, Germany, France and China",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
+      "id": "T2D_MICRO_mcq_easy_001",
       "difficulty": "easy",
-      "category": "factual"
-    },
-    {
-      "id": "t2d_microbiome_mcq_002",
-      "question": "What percentage of identified microbial species were present in all 10 included cohorts ('universal species')?",
-      "options": [
-        "A) 16.2%",
-        "B) 30.9%",
-        "C) 52.9%",
-        "D) 69.1%"
-      ],
+      "question": "Which category of bacteria is consistently depleted in type 2 diabetes patients compared to normoglycemic controls?",
+      "options": {
+        "A": "Oral Streptococcus species",
+        "B": "Butyrate-producing bacteria and plant polysaccharide degraders",
+        "C": "LPS-producing Bacteroides species",
+        "D": "Clostridium species associated with inflammation"
+      },
       "correct_answer": "B",
-      "explanation": "Of the identified microbial species, 30.9% were present in all included cohorts ('universal species'), 52.9% existed in 2-9 cohorts ('overlapping species'), and 16.2% were unique to one specific cohort ('singular species')",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
-      "difficulty": "easy",
-      "category": "factual"
+      "explanation": "Butyrate-producing bacteria and primary degraders of plant-derived polysaccharides — including Butyrivibrio crossotus, Coprococcus eutactus, Ruminococcus lactaris, and Oscillibacter sp. 57_20 — are depleted in T2D patients. In contrast, oral Streptococcus species, immunogenic Bacteroides fragilis, and certain Clostridium species are enriched in T2D.",
+      "topic_tags": ["T2D biomarker species", "butyrate producers", "depleted bacteria", "gut microbiome"]
     },
     {
-      "id": "t2d_microbiome_mcq_003",
-      "question": "Which bacterial species was identified as enriched in T2D patients and produces immunogenic fragilysin?",
-      "options": [
-        "A) Bacteroides uniformis",
-        "B) Bacteroides fragilis",
-        "C) Bacteroides plebeius",
-        "D) Bacteroides vulgatus"
-      ],
+      "id": "T2D_MICRO_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What does the presence of oral Streptococcus species in the gut microbiome of type 2 diabetes patients suggest?",
+      "options": {
+        "A": "These bacteria are native gut colonizers that increase in abundance during hyperglycemia",
+        "B": "Oral microbial translocation to the gut may contribute to pro-inflammatory states in T2D",
+        "C": "These bacteria produce butyrate, which is beneficial in T2D",
+        "D": "Streptococcus species are the primary cause of insulin resistance"
+      },
       "correct_answer": "B",
-      "explanation": "Bacteroides fragilis, a species that produces immunogenic fragilysin, was enriched in T2D cases. In contrast, Bacteroides plebeius was depleted mainly in nonwhite T2D patients",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
-      "difficulty": "easy",
-      "category": "factual"
+      "explanation": "Streptococcus species are common residents of the oral cavity. Their enrichment in the gut of T2D patients suggests potential translocation of oral microbes to the gut, which is indicative of a pro-inflammatory state. This is consistent with evidence linking ectopic colonization of oral bacteria in the intestine to immune activation.",
+      "topic_tags": ["Streptococcus", "oral-gut axis", "inflammation", "T2D microbiome"]
     },
     {
-      "id": "t2d_microbiome_mcq_004",
-      "question": "How many species showed within-species phylogenetic divergence associated with inter-individual differences in T2D risk?",
-      "options": [
-        "A) 19 species",
-        "B) 23 species",
-        "C) 27 species",
-        "D) 31 species"
-      ],
+      "id": "T2D_MICRO_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "In gut microbiome meta-analyses of type 2 diabetes, what is the primary reason the majority of previously reported microbial findings have been inconsistent?",
+      "options": {
+        "A": "Gut microbiome composition does not actually differ between diabetic and healthy individuals",
+        "B": "Small study populations, varying study designs, and failure to adjust for key confounders such as metformin use",
+        "C": "Metagenomic sequencing technology is insufficiently sensitive to detect relevant microbes",
+        "D": "Type 2 diabetes is entirely genetic and does not involve microbial mechanisms"
+      },
+      "correct_answer": "B",
+      "explanation": "The inconsistency in reported microbial signatures of T2D is largely attributable to small study populations, variation in study design and analytical approaches, and inadequate adjustment for major confounders — particularly metformin use and adiposity. Standardizing data processing and conducting large, multi-cohort analyses helps overcome these limitations.",
+      "topic_tags": ["meta-analysis", "study design", "confounding", "inconsistency", "metformin"]
+    },
+    {
+      "id": "T2D_MICRO_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "What is the key finding from within-species phylogenetic analysis that challenges standard species-level microbiome epidemiology?",
+      "options": {
+        "A": "Species that are enriched in T2D at the community level have identical strain compositions across geographic populations",
+        "B": "None of the species with significant within-species phylogenetic associations with T2D were T2D biomarker species at the species level",
+        "C": "Strain-level analysis confirms that species-level associations are always stronger and more reproducible",
+        "D": "Within-species phylogenetic diversity is only relevant for bacterial pathogens, not for commensals"
+      },
+      "correct_answer": "B",
+      "explanation": "A striking finding is that none of the 27 species showing significant within-species phylogenetic effects on T2D risk were identified as T2D biomarker species in the conventional species-level analysis. This complete non-overlap demonstrates that critical microbe–disease relationships are structurally invisible to species-level approaches, underscoring the necessity of strain-resolved analysis.",
+      "topic_tags": ["within-species phylogeny", "PGLMM", "species-level analysis", "strain heterogeneity", "T2D biomarkers"]
+    },
+    {
+      "id": "T2D_MICRO_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "How does Prevotella copri's relationship to type 2 diabetes illustrate the concept of strain-dependent and population-dependent metabolic risk?",
+      "options": {
+        "A": "All P. copri strains increase BCAA biosynthesis uniformly across all human populations",
+        "B": "P. copri is universally protective in T2D regardless of subclade",
+        "C": "Only P. copri clade A strains show upregulated BCAA biosynthesis in T2D patients, and this effect is absent in other clades",
+        "D": "P. copri subclades differ only in geographic distribution, not in functional potential"
+      },
       "correct_answer": "C",
-      "explanation": "The study identified within-species phylogenetic divergence associated with inter-individual differences in T2D risk for 27 species using phylogenetic generalized linear mixed models",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
-      "difficulty": "medium",
-      "category": "factual"
+      "explanation": "BCAA biosynthesis functions encoded by P. copri are differentially elevated in T2D patients, but this effect is specific to clade A. Clade A-dominant samples from T2D patients carry significantly more BCAA biosynthetic pathways compared to controls, while other P. copri subclades show no such T2D-specific upregulation. This demonstrates that disease risk is subclade-specific and would be invisible to species-level analysis.",
+      "topic_tags": ["Prevotella copri", "subclades", "BCAA", "population-specific", "clade A", "T2D metabolic risk"]
     },
     {
-      "id": "t2d_microbiome_mcq_005",
-      "question": "What was the Spearman correlation coefficient demonstrating the effectiveness of controlling for metformin confounding?",
-      "options": [
-        "A) 0.76",
-        "B) 0.85",
-        "C) 0.90",
-        "D) 0.95"
-      ],
-      "correct_answer": "D",
-      "explanation": "The modeling approach effectively addressed the confounding by metformin use by demonstrating a high correlation (Spearman correlation coefficient 0.95) between the beta coefficients of species-T2D associations from the primary analysis and those from a sensitivity analysis excluding metformin-treated T2D patients",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
+      "id": "T2D_MICRO_mcq_medium_003",
       "difficulty": "medium",
-      "category": "factual"
-    },
-    {
-      "id": "t2d_microbiome_mcq_006",
-      "question": "What is the relationship between Prevotella copri clade A dominance and BCAA biosynthesis capacity?",
-      "options": [
-        "A) Clade A has higher BCAA biosynthesis capacity than other clades",
-        "B) Clade A has lower BCAA biosynthesis capacity than other clades",
-        "C) Clade A has the same BCAA biosynthesis capacity as other clades",
-        "D) BCAA biosynthesis capacity is not related to clade structure"
-      ],
+      "question": "Which community-level microbial functional enrichment in type 2 diabetes directly suggests increased systemic inflammation through a measurable circulating biomarker?",
+      "options": {
+        "A": "Enrichment of butyrate fermentation pathways correlated with elevated HbA1c",
+        "B": "Upregulation of LPS precursor biosynthesis enzymes positively associated with circulating hs-CRP levels",
+        "C": "Increased quorum sensing genes correlated with elevated fasting glucose",
+        "D": "Enrichment of BCAA transaminase correlated with elevated HDL-C"
+      },
       "correct_answer": "B",
-      "explanation": "The abundance of BCAA biosynthesis functions was significantly lower in P. copri dominated by clade A compared with P. copri with co-presence of all clades. However, the upregulated BCAA biosynthesis in T2D patients was unique to P. copri clade A",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
-      "difficulty": "medium",
-      "category": "mechanism"
+      "explanation": "Enzymes participating in LPS precursor biosynthesis, including N-acetylglucosaminephosphotransferase and lipid IVA 4-amino-4-deoxy-L-arabinosyltransferase, show positive associations with circulating high-sensitivity C-reactive protein (hs-CRP) levels in T2D patients. This directly links enriched microbial structural component production to a validated marker of systemic inflammation, supporting a mechanistic link between gut microbial LPS production and the low-grade inflammation characteristic of T2D.",
+      "topic_tags": ["LPS biosynthesis", "hs-CRP", "inflammation biomarker", "T2D pathogenesis", "teichoic acid"]
     },
     {
-      "id": "t2d_microbiome_mcq_007",
-      "question": "Which phylogenetic analysis approach was used to identify subspecies-level associations with T2D?",
-      "options": [
-        "A) Generalized linear models (GLMs)",
-        "B) Phylogenetic generalized linear mixed models (PGLMMs)",
-        "C) Random forest classification",
-        "D) Principal component analysis (PCA)"
-      ],
+      "id": "T2D_MICRO_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "What does enrichment of methylglyoxal degradation pathway activity in the gut microbiome of type 2 diabetes patients mechanistically imply?",
+      "options": {
+        "A": "Microbial communities in T2D are producing less glucose through gluconeogenesis",
+        "B": "Upregulated bacterial glycolysis in T2D generates increased methylglyoxal, requiring compensatory detoxification",
+        "C": "Methylglyoxal is a substrate for butyrate production, and its degradation reflects reduced butyrate output",
+        "D": "Methylglyoxal degradation is linked to antibiotic resistance and therefore marks pathogenic strains"
+      },
       "correct_answer": "B",
-      "explanation": "The study used anpan's phylogenetic generalized linear mixed models (PGLMMs) to assess the extent to which within-species phylogeny accounted for inter-individual heterogeneity in T2D risk",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
-      "difficulty": "medium",
-      "category": "factual"
+      "explanation": "The enrichment of the methylglyoxal degradation super-pathway in T2D patients is interpreted as a consequence of upregulated glycolysis: methylglyoxal is a toxic byproduct of accelerated glycolytic activity, and its increased production in T2D necessitates greater microbial detoxification capacity. This finding is part of a coherent picture in which the T2D microbiome shifts toward higher glucose consumption and glycolytic flux.",
+      "topic_tags": ["methylglyoxal", "glycolysis", "T2D microbiome", "metabolic pathway", "detoxification"]
     },
     {
-      "id": "t2d_microbiome_mcq_008",
-      "question": "According to PERMANOVA analysis, what explained the largest proportion of variation in microbiome composition among the tested factors?",
-      "options": [
-        "A) Age and sex",
-        "B) BMI",
-        "C) Metformin use",
-        "D) T2D status"
-      ],
-      "correct_answer": "D",
-      "explanation": "T2D status accounted for the largest proportion of variation in the microbiome composition among T2D status, covariables and circulating biomarkers, with R² = 0.47% for taxonomy (P < 0.001)",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
+      "id": "T2D_MICRO_mcq_medium_005",
       "difficulty": "medium",
-      "category": "factual"
-    },
-    {
-      "id": "t2d_microbiome_mcq_009",
-      "question": "What is the primary mechanism by which horizontal gene transfer (HGT) contributes to strain-level variation in T2D-associated microbes?",
-      "options": [
-        "A) It only affects taxonomic classification",
-        "B) It introduces genetic variability including virulence factors and adaptive traits through mechanisms like phages, conjugation and mobile genetic elements",
-        "C) It reduces microbial diversity",
-        "D) It has no impact on disease associations"
-      ],
+      "question": "What is the significance of identifying a consistent dose-response relationship in microbial species abundance across normoglycemic, prediabetic, and T2D status?",
+      "options": {
+        "A": "It proves a causal relationship between microbial abundance and disease onset",
+        "B": "It strengthens confidence that microbial signatures reflect the biological continuum of glycemic dysregulation rather than binary disease artifacts",
+        "C": "It demonstrates that gut microbiome composition determines whether prediabetes progresses to T2D",
+        "D": "It suggests that prediabetes and T2D are caused by identical microbial mechanisms"
+      },
       "correct_answer": "B",
-      "explanation": "The study found that GO terms related to HGT explained strain-level diversity in multiple species. Through HGT mechanisms (phages, mobile genetic elements, conjugation, genetic rearrangement), microbes can acquire new traits that contribute to gut microbial evolution, conferring new phenotypes such as virulence, symbiosis and competitive fitness, which may give rise to strains with varying associations with T2D",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
+      "explanation": "Observing a consistent dose-response gradient in microbial abundance across normoglycemic controls, prediabetes, and T2D adds biological plausibility and helps rule out the possibility that identified microbial features merely reflect the binary diagnosis of T2D or its comorbidities. This graded relationship suggests microbial features track with the underlying glycemic severity, making them more credible biomarkers of metabolic risk across the disease spectrum.",
+      "topic_tags": ["dose-response", "prediabetes", "T2D progression", "biomarker validity", "glycemic continuum"]
+    },
+    {
+      "id": "T2D_MICRO_mcq_hard_001",
       "difficulty": "hard",
-      "category": "mechanism"
+      "question": "Considering the E. coli strain-level findings, which combination of gene families and their functional categories best characterizes the T2D-enriched E. coli strains?",
+      "options": {
+        "A": "Butyrate synthesis genes, short-chain fatty acid transporters, and mucin degradation enzymes",
+        "B": "Quorum sensing receptors, BCAA biosynthesis pathways, and anti-inflammatory cytokine inducers",
+        "C": "Adhesins, invasins, virulence toxins, HGT-associated mobile elements, and LPS biosynthesis genes",
+        "D": "Glycoside hydrolases, resistant starch fermentation pathways, and propionate biosynthesis genes"
+      },
+      "correct_answer": "C",
+      "explanation": "T2D-enriched E. coli strain clusters carry a coherent set of virulence-related and HGT-associated gene families: adhesins (including putative adhesin and fimbrial protein genes for epithelial attachment), invasins, toxins (including plasmid-encoded toxin pet), VgrG and RhsA proteins (for immunological interactions with host cells), LPS biosynthesis proteins (driving inflammatory responses), as well as phage, conjugation, and transposase genes mediating horizontal gene transfer and genetic plasticity. This profile is consistent with pathoadaptive, pro-inflammatory E. coli strains.",
+      "topic_tags": ["E. coli", "virulence genes", "HGT", "adhesins", "LPS", "T2D strain enrichment"]
     },
     {
-      "id": "t2d_microbiome_mcq_010",
-      "question": "What is the significance of identifying both population-specific and population-agnostic strain associations with T2D?",
-      "options": [
-        "A) It suggests all microbial associations are due to confounding",
-        "B) It demonstrates that microbe-induced T2D risk can derive from both ethnic/geographic-specific microbial genetics and universal strain characteristics",
-        "C) It proves that geography is the only factor determining microbiome composition",
-        "D) It indicates that strain-level analysis is not useful"
-      ],
-      "correct_answer": "B",
-      "explanation": "The study found that although many clusters of strains strongly associated with T2D could be attributed to specific ethnic and/or geographic groups, exceptions were also identified. For example, both a Blautia wexlerae strain detectable in all participating cohorts and another strain from US Hispanic, Israeli and Swedish populations showed strong associations with T2D. These findings provide evidence that microbe-induced T2D risk can derive from both population-specific and population-agnostic microbial genetics",
-      "expected_documents": [
-        "28-Strain-specific_gut_microbial_signatures_in_type_2_diabetes_identified_in_a_cross-cohort_analysis_of_8_117_metagenomes.pdf"
-      ],
+      "id": "T2D_MICRO_mcq_hard_002",
       "difficulty": "hard",
-      "category": "mechanism"
+      "question": "Which combination of analytical observations most compellingly demonstrates that a gut microbiome analysis must integrate species-level, functional, and strain-resolved layers to fully capture microbiome contributions to type 2 diabetes?",
+      "options": {
+        "A": "Finding that species-level and strain-level biomarkers completely overlap, confirming that taxonomic analysis is sufficient",
+        "B": "Discovering that community-level functions are exclusively driven by T2D biomarker species, removing the need for strain analysis",
+        "C": "Observing that none of the 27 species with significant within-species phylogenetic effects were T2D biomarker species, that P. copri clade A-specific BCAA upregulation is invisible at the species level, and that critical E. coli virulence gene clusters are distributed only among certain strains",
+        "D": "Demonstrating that batch correction alone eliminates all between-cohort variation and that functional profiles differ only by geography"
+      },
+      "correct_answer": "C",
+      "explanation": "The non-overlap between species-level biomarkers and within-species phylogenetic associations, combined with the clade-specific BCAA biosynthesis in P. copri (only clade A in T2D) and the strain-block-specific virulence and HGT gene carriage in E. coli, together demonstrate that each analytical layer reveals distinct, non-redundant biology. No single analytical layer captures the full picture: species-level analysis identifies epidemiological associations; functional profiling identifies metabolic mechanisms; and strain-resolved analysis explains why the same species can have opposite effects in different individuals or populations.",
+      "topic_tags": ["multi-layer analysis", "strain resolution", "species-level", "P. copri clade A", "E. coli strain blocks", "within-species phylogeny", "analytical integration"]
     }
   ]
 }

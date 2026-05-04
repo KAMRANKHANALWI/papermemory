@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Excess Fermentation and Lactic Acidosis as Detrimental Functions of the Gut Microbes in Treatment-Naive TB Patients",
+    "authors": ["Milyausha Yunusbaeva", "Liliya Borodina", "Darya Terentyeva", "Anna Bogdanova", "Aigul Zakirova", "Shamil Bulatov", "Radick Altinbaev", "Fanil Bilalov", "Bayazit Yunusbayev"],
+    "journal": "Frontiers in Cellular and Infection Microbiology",
+    "year": 2024,
+    "doi": "10.3389/fcimb.2024.1331521",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "TB_LACIDOSIS_easy_001",
+      "difficulty": "easy",
+      "question": "What is gut dysbiosis and how is it characterized in pulmonary tuberculosis?",
+      "answer": "Gut dysbiosis refers to an altered and disrupted microbial community composition in the intestine. In active pulmonary tuberculosis, dysbiosis is characterized by a systematic depletion of commensal Bacteroidetes — the dominant healthy flora of the large intestine — alongside a marked increase in Actinobacteria, Firmicutes, and Proteobacteria. Families such as Streptococcaceae, Erysipelotrichaceae, Lachnospiraceae, and Enterobacteriaceae expand significantly. Together, these disease-associated pathobionts can account for up to a quarter of the total gut microbial community in affected individuals.",
+      "topic_tags": ["gut dysbiosis", "tuberculosis", "Bacteroidetes", "Firmicutes", "pathobionts", "microbiome composition"]
+    },
+    {
+      "id": "TB_LACIDOSIS_easy_002",
+      "difficulty": "easy",
+      "question": "Why is taxonomic profiling of the gut microbiome alone insufficient for understanding its impact on host immunity?",
+      "answer": "Taxonomic profiling reveals 'who is present' in the gut community but does not explain 'what they can do.' The functional impact of the microbiota on host immunity is primarily mediated through microbial metabolic outputs — the biochemical products that microbes produce. Without reconstructing metabolic pathways and inferring the community's metabolic capacity, it is impossible to assess whether the observed compositional changes translate into harmful or beneficial effects on the host. Metagenomic approaches that combine taxonomic and functional pathway inference are therefore necessary to evaluate the true effect of the microbiome on immunity.",
+      "topic_tags": ["taxonomic profiling", "metabolic capacity", "host immunity", "metagenomics", "functional pathways"]
+    },
+    {
+      "id": "TB_LACIDOSIS_easy_003",
+      "difficulty": "easy",
+      "question": "What is homolactic fermentation and which bacterial groups predominantly carry it out?",
+      "answer": "Homolactic fermentation is a metabolic pathway in which bacteria convert glucose or other simple sugars exclusively into lactic acid as the end product, without producing other byproducts such as ethanol or acetate. It is the dominant pathway used by lactic acid bacteria, including Lactobacillus, Lactococcus, and many Streptococci, as well as members of the family Enterobacteriaceae. In the context of the gut, increased homolactic fermentation raises the intestinal lactate concentration, which can lower colonic pH and disrupt the microbial ecosystem.",
+      "topic_tags": ["homolactic fermentation", "lactic acid bacteria", "Streptococcaceae", "Enterobacteriaceae", "lactate", "gut pH"]
+    },
+    {
+      "id": "TB_LACIDOSIS_easy_004",
+      "difficulty": "easy",
+      "question": "What role does Bacteroidetes play in maintaining a healthy colonic environment?",
+      "answer": "Bacteroidetes are the dominant commensals of the large intestine and play a central role in breaking down complex carbohydrates — including diet-derived fiber and host-derived mucins — into simple sugars that are then available for other gut bacteria. They are responsible for producing propionate, an important short-chain fatty acid. Their presence supports microbial diversity and homeostasis in the colon. Depletion of Bacteroidetes is a hallmark of gut dysbiosis and is associated with disrupted fermentation patterns, reduced SCFA production, and an increased abundance of pathobionts.",
+      "topic_tags": ["Bacteroidetes", "complex carbohydrate degradation", "short-chain fatty acids", "colonic homeostasis", "dysbiosis"]
+    },
+    {
+      "id": "TB_LACIDOSIS_easy_005",
+      "difficulty": "easy",
+      "question": "What is the significance of inferred metabolic potential versus actual metabolic activity in gut microbiome studies?",
+      "answer": "Inferred metabolic potential, derived from shotgun metagenomic sequencing, reflects the presence and relative abundance of genes and metabolic pathways in the gut community — it reveals what microbes are capable of doing. However, it does not directly confirm that these pathways are actively operating at any given moment. Rather, changes in inferred metabolic potential reflect long-term shifts in the composition of microbes carrying specific pathways, representing a community-level adaptation to the intestinal environment. This distinction is critical for interpreting microbiome studies: enrichment of a pathway means more bacterial carriers are present, not necessarily that the pathway is currently producing metabolites at increased rates.",
+      "topic_tags": ["metabolic potential", "metabolic activity", "metagenomics", "pathway inference", "HUMAnN", "functional profiling"]
+    },
+
+    {
+      "id": "TB_LACIDOSIS_medium_001",
+      "difficulty": "medium",
+      "question": "How does elevated glucose availability in the colon drive a shift toward anaerobic glycolysis and lactic acid fermentation in the gut microbiome?",
+      "answer": "Under homeostatic conditions, simple sugars in the large intestine are scarce because complex carbohydrates are efficiently degraded by resident Bacteroidetes into simple sugars that are rapidly consumed. When glucose availability increases — as may occur when normal Bacteroidetes are depleted — most bacteria preferentially switch to glycolysis, which generates ATP and biosynthetic precursors up to 110 times faster than oxidative phosphorylation. In anaerobic conditions, rapid glycolysis leads to pyruvate accumulation, which is then fermented to lactate. Furthermore, when glycolysis rates are high and pH shifts, bacteria that perform homolactic fermentation — converting pyruvate entirely to lactate — gain a growth advantage. This creates a positive feedback loop: increased glycolysis drives lactate accumulation, which further acidifies the colon and selects for acid-tolerant, lactate-producing species.",
+      "topic_tags": ["glucose availability", "anaerobic glycolysis", "homolactic fermentation", "lactate", "colon pH", "Bacteroidetes depletion"]
+    },
+    {
+      "id": "TB_LACIDOSIS_medium_002",
+      "difficulty": "medium",
+      "question": "How does lactic acidosis in the gut affect the resident microbial community composition?",
+      "answer": "Lactic acidosis in the gut — the accumulation of lactic acid leading to a drop in colonic pH — has a destabilizing effect on the resident microbial community. It strongly inhibits commensal bacteria from Bacteroidetes, which are pH-sensitive, leading to their depletion. At the same time, it provides a competitive advantage to acid-tolerant and lactate-consuming species from Actinobacteria, Proteobacteria, and certain Firmicutes. Pathogenic bacteria such as Streptococcus bovis, Salmonella, E. coli, Campylobacter jejuni, Clostridioides difficile, and Vibrio cholerae — which are adapted to low pH and can metabolize lactate — are promoted. This mirrors the taxonomic pattern observed in tuberculosis patients, where Bacteroidetes are depleted and Proteobacteria and certain Firmicutes expand, suggesting that gut lactic acidosis may be a driver of the observed dysbiosis.",
+      "topic_tags": ["lactic acidosis", "gut pH", "Bacteroidetes", "pathobionts", "Proteobacteria", "Firmicutes", "microbial competition"]
+    },
+    {
+      "id": "TB_LACIDOSIS_medium_003",
+      "difficulty": "medium",
+      "question": "What are the known mechanisms by which lactate affects macrophage function and the outcome of mycobacterial infection?",
+      "answer": "Lactate has a multifaceted and partially paradoxical effect on macrophage function during mycobacterial infection. On one hand, lactate can enhance clearance of M. tuberculosis within already-infected macrophages by promoting autophagy. On the other hand, it markedly suppresses key pro-inflammatory cytokines TNF-α and IFN-γ — both critical for anti-mycobacterial activity — while leaving IL-6 and IL-10 unaffected. This cytokine suppression interferes with further activation of anti-TB immunity. Additionally, lactate specifically upregulates matrix metalloproteinases (MMPs), enzymes that cause lung tissue destruction in tuberculosis. The overall net effect of lactate is therefore harmful in the context of TB: it blunts the Th1 immune response needed to control M. tuberculosis while simultaneously worsening pulmonary pathology through MMP-driven tissue destruction.",
+      "topic_tags": ["lactate", "macrophage function", "TNF-alpha", "IFN-gamma", "matrix metalloproteinases", "autophagy", "mycobacterium tuberculosis"]
+    },
+    {
+      "id": "TB_LACIDOSIS_medium_004",
+      "difficulty": "medium",
+      "question": "What compensatory microbial responses occur in the gut in response to elevated lactate, and what are the limitations of detecting them?",
+      "answer": "When lactate accumulates in the colon, the gut microbial community partially compensates by increasing the abundance of lactate-utilizing bacteria. In tuberculosis patients, lactate utilizers such as Coprococcus catus and Megasphaera, which use the acrylate pathway, as well as the genera Anaerobutyricum and Anaerostipes, show enrichment. These bacteria consume lactate and convert it to butyrate or other fermentation products, partially buffering the acidosis. However, accurately quantifying this compensatory response is methodologically challenging: the acrylate pathway is limited to a small number of bacteria and is easily counted, but most other lactate utilization pathways involve conversion to pyruvate, which is intertwined with central metabolism and cannot be easily distinguished from other pyruvate-generating processes. This limitation means the full extent of lactate utilization in the gut community may be underestimated by standard bioinformatic tools.",
+      "topic_tags": ["lactate utilization", "Coprococcus catus", "Megasphaera", "acrylate pathway", "Anaerostipes", "compensatory response", "methodology limitations"]
+    },
+    {
+      "id": "TB_LACIDOSIS_medium_005",
+      "difficulty": "medium",
+      "question": "How does the expansion of pathobionts in the gut potentially compound the immune burden in tuberculosis patients?",
+      "answer": "In tuberculosis, M. tuberculosis infection already imposes a heavy burden on host immunity by hijacking macrophages and evading immune clearance. The concurrent expansion of gut pathobionts adds an additional immunological challenge. Bacteria such as E. coli, Klebsiella pneumoniae, Citrobacter freundii, Clostridium innocuum, and various Streptococcaceae carry virulence determinants and produce lipopolysaccharides, peptidoglycans, and other immune-activating compounds through increased cell wall synthesis pathways. These microbial products can trigger systemic endotoxemia and chronic low-grade inflammation, diverting immune resources away from combating the mycobacterial infection. Because pathobionts can constitute as much as a quarter of the total gut microbiota in severely affected patients, this dual immune challenge — infection plus gut dysbiosis — likely significantly worsens TB outcomes.",
+      "topic_tags": ["pathobionts", "immune burden", "endotoxemia", "lipopolysaccharide", "M. tuberculosis", "gut-immune axis", "cell wall synthesis"]
+    },
+    {
+      "id": "TB_LACIDOSIS_medium_006",
+      "difficulty": "medium",
+      "question": "Why is the alpha diversity of the gut microbiome not a reliable indicator of gut dysbiosis in tuberculosis, and what metric better captures it?",
+      "answer": "Alpha diversity measures the species richness and evenness within an individual's gut microbiome. In tuberculosis patients, alpha diversity is not significantly reduced compared to healthy controls, which might superficially suggest a relatively intact microbiome. However, this is misleading because alpha diversity fails to capture shifts in the identity and proportional abundance of microbial taxa. Beta diversity — specifically Bray-Curtis dissimilarity, which measures the compositional difference between two samples — reveals statistically significant divergence between TB patients and healthy controls. Principal component analysis based on this metric clearly separates the two groups along the primary axis of variation. Thus, the TB-associated gut community is compositionally distinct without necessarily being less species-rich, meaning that the type of bacteria present — not just the number of types — is what matters for detecting dysbiosis in this disease.",
+      "topic_tags": ["alpha diversity", "beta diversity", "Bray-Curtis dissimilarity", "PCA", "gut dysbiosis", "Shannon index", "tuberculosis"]
+    },
+
+    {
+      "id": "TB_LACIDOSIS_hard_001",
+      "difficulty": "hard",
+      "question": "How do the overlapping metabolic changes in glycolysis, homolactic fermentation, and cell wall biosynthesis collectively suggest a shift toward a rapid-growth bacterial community phenotype in tuberculosis gut dysbiosis?",
+      "answer": "In a healthy colon, the dominant metabolic profile of the microbiota reflects steady-state maintenance — bacterial cells are primarily engaged in the metabolic reactions necessary for normal cellular function, not rapid proliferation. In tuberculosis patients, the gut microbial community shows a fundamentally different metabolic orientation. The coordinated enrichment of glycolysis pathways (which generate ATP and biosynthetic precursors at high speed), homolactic fermentation (which regenerates NAD+ to sustain glycolytic flux), the pentose phosphate pathway (which produces nucleotide and amino acid precursors needed for DNA and protein synthesis), and cell wall biosynthesis pathways (for peptidoglycan, lipopolysaccharide, and enterobacterial common antigen production) collectively describe a community that is actively dividing and growing at an increased rate. The same bacterial taxa — primarily Enterobacteriaceae and Streptococcaceae — appear as major contributors to all of these elevated pathways simultaneously, indicating that specific fast-growing opportunistic species are expanding. This metabolic phenotype is characteristic of bacteria exploiting an altered colonic environment with higher glucose availability and reduced competition from depleted Bacteroidetes commensals.",
+      "topic_tags": ["glycolysis", "homolactic fermentation", "pentose phosphate pathway", "cell wall biosynthesis", "rapid bacterial growth", "Enterobacteriaceae", "Streptococcaceae", "metabolic phenotype"]
+    },
+    {
+      "id": "TB_LACIDOSIS_hard_002",
+      "difficulty": "hard",
+      "question": "What is the hypothesized mechanistic link between gut microbial lactic acidosis and elevated serum lactate in tuberculosis, and what makes this hypothesis clinically significant?",
+      "answer": "During active tuberculosis, elevated serum lactate has been documented and correlates with worse pulmonary pathology and higher mortality. The conventional explanation attributes this to lactate produced by glycolytically active immune cells — particularly macrophages and neutrophils — in the inflamed lung tissue. The hypothesis proposed in this work posits an additional, underappreciated source: the gut microbiota. When gut microbial communities in TB patients shift toward excess homolactic fermentation, they produce large quantities of intestinal lactate. Since the intestinal epithelium absorbs lactate into the portal circulation, a sufficiently elevated gut lactate load could contribute meaningfully to systemic lactate levels. This is clinically significant for multiple reasons: (1) serum lactic acidosis is associated with higher TB mortality; (2) lactate directly suppresses anti-mycobacterial macrophage activity by blunting TNF-α and IFN-γ while promoting MMP-driven lung destruction; (3) targeting gut-derived lactic acidosis through microbiome-directed or dietary interventions represents a novel, host-directed therapeutic strategy that could complement existing anti-TB drugs; (4) this framing elevates gut health monitoring as a potentially useful clinical indicator in TB management.",
+      "topic_tags": ["serum lactate", "gut lactic acidosis", "macrophage function", "matrix metalloproteinases", "host-directed therapy", "TB mortality", "gut-systemic axis"]
+    },
+    {
+      "id": "TB_LACIDOSIS_hard_003",
+      "difficulty": "hard",
+      "question": "How does the depletion of Bacteroidetes in tuberculosis create a self-reinforcing cycle of dysbiosis, and what are the multiple downstream consequences for the colonic environment?",
+      "answer": "Bacteroidetes are the primary degraders of complex dietary and host-derived polysaccharides in the large intestine. Their depletion in tuberculosis initiates a cascade of interdependent consequences. First, with fewer Bacteroidetes, the breakdown of complex carbohydrates into simple sugars is reduced, yet paradoxically, other data suggest increased glucose is available — possibly from altered host physiology, increased intestinal permeability, or from Clostridiales that can degrade both simple and complex carbohydrates. Second, the normal fermentation output — primarily propionate and acetate from Bacteroidetes — is diminished, weakening the anti-inflammatory SCFA environment. Third, opportunistic bacteria such as Enterobacteriaceae, which cannot degrade polysaccharides but thrive on simple sugars, expand into the ecological niche vacated by Bacteroidetes. Fourth, these expanding species rely on glycolysis and homolactic fermentation, producing excess lactate. Fifth, accumulated lactate lowers colonic pH, which directly inhibits pH-sensitive Bacteroidetes, further deepening their depletion. Sixth, the acidified environment promotes additional expansion of acid-tolerant and lactate-utilizing pathobionts from Proteobacteria and Firmicutes. This creates a self-reinforcing dysbiotic loop where the initial loss of Bacteroidetes drives metabolic and pH changes that prevent their recovery and continuously amplify the pathobiont burden.",
+      "topic_tags": ["Bacteroidetes depletion", "self-reinforcing dysbiosis", "lactate feedback loop", "Enterobacteriaceae", "colonic pH", "SCFAs", "polysaccharide degradation", "propionate"]
+    },
+    {
+      "id": "TB_LACIDOSIS_hard_004",
+      "difficulty": "hard",
+      "question": "How do the findings on gut microbial metabolic shifts in tuberculosis challenge the conventional framework of interpreting microbiome-disease associations, and what methodological approach is needed to advance the field?",
+      "answer": "Most prior studies of gut microbiome changes in tuberculosis relied on 16S rRNA amplicon sequencing, which provides taxonomic composition data but is blind to metabolic function. This purely taxonomic lens described 'who is present' but could not address 'what they do' — a critical gap because it is the metabolic output of the microbiota, not its composition per se, that shapes immune responses. The present work demonstrates that even without major changes in alpha diversity, profound functional shifts can occur: the community transitions from a maintenance-oriented metabolic profile to one focused on rapid growth and fermentative energy production. This reveals that disease-relevant dysbiosis can be functionally invisible to taxonomic analysis alone. The appropriate methodological advancement requires: (1) deep shotgun metagenomic sequencing rather than 16S rRNA approaches, to enable both species/strain-level resolution and metabolic pathway inference; (2) integration of fecal metabolomics to directly measure metabolite outputs such as lactate, acetate, and SCFAs, validating inferred metabolic potential with actual activity; (3) longitudinal sampling across the disease and treatment course, rather than single time-point cross-sectional designs; (4) collection of matched serum biomarkers alongside gut readouts to test hypothesized gut-systemic connections; and (5) mechanistic validation using ex vivo or animal models to establish causal direction between microbiome changes and immune outcomes.",
+      "topic_tags": ["16S rRNA limitations", "shotgun metagenomics", "metabolomics", "functional dysbiosis", "microbiome methodology", "causality", "longitudinal study", "TB treatment"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "TB_LACIDOSIS_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which phylum is systematically depleted in the gut microbiome of active tuberculosis patients and is considered a hallmark of disrupted intestinal homeostasis?",
+      "options": {
+        "A": "Firmicutes",
+        "B": "Actinobacteria",
+        "C": "Bacteroidetes",
+        "D": "Proteobacteria"
+      },
+      "correct_answer": "C",
+      "explanation": "Bacteroidetes are the dominant commensals of the large intestine responsible for complex carbohydrate degradation and propionate production. Their depletion — concurrent with increases in Firmicutes, Actinobacteria, and Proteobacteria — is the defining taxonomic shift in the gut microbiome of tuberculosis patients and is a recognized indicator of dysbiosis.",
+      "topic_tags": ["Bacteroidetes", "gut dysbiosis", "tuberculosis", "taxonomic composition"]
+    },
+    {
+      "id": "TB_LACIDOSIS_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What is the primary end product of homolactic fermentation and why is its accumulation in the gut considered harmful?",
+      "options": {
+        "A": "Acetate; it disrupts the intestinal epithelial barrier",
+        "B": "Butyrate; it inhibits Firmicutes growth",
+        "C": "Lactate; it lowers colonic pH and inhibits commensal flora while promoting pathogenic bacteria",
+        "D": "Ethanol; it causes systemic toxicity"
+      },
+      "correct_answer": "C",
+      "explanation": "Homolactic fermentation produces lactic acid as its sole end product. Unlike acetate (which is the most abundant normal colonic SCFA and relatively benign), lactate is normally kept at very low concentrations in the colon. Its accumulation lowers colonic pH, strongly inhibits resident Bacteroidetes, and creates an environment that promotes acid-tolerant, disease-associated pathobionts such as E. coli, Salmonella, and Clostridioides difficile.",
+      "topic_tags": ["homolactic fermentation", "lactate", "colonic pH", "Bacteroidetes", "pathobionts"]
+    },
+    {
+      "id": "TB_LACIDOSIS_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "What does an increase in glycolysis pathways in the gut microbiome infer about the colonic environment?",
+      "options": {
+        "A": "Reduced oxygen levels requiring anaerobic metabolism",
+        "B": "Higher than normal glucose availability, as bacteria preferentially use glycolysis when simple sugars are abundant",
+        "C": "Increased dietary fiber intake by the host",
+        "D": "Greater production of short-chain fatty acids from complex polysaccharides"
+      },
+      "correct_answer": "B",
+      "explanation": "Bacteria preferentially switch to glycolysis when simple sugars such as glucose are readily available, as glycolysis allows them to generate ATP and biosynthetic precursors far more rapidly than other pathways. An increase in the proportion of gut bacteria carrying glycolytic pathways therefore implies elevated glucose availability in the intestinal lumen, which in turn drives faster bacterial growth and fermentation.",
+      "topic_tags": ["glycolysis", "glucose availability", "bacterial metabolism", "colonic environment"]
+    },
+
+    {
+      "id": "TB_LACIDOSIS_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "How does lactic acidosis affect the balance between macrophage antibacterial activity and tissue destruction in tuberculosis?",
+      "options": {
+        "A": "Lactate enhances both TNF-α and IFN-γ production, improving bacterial clearance but causing collateral tissue damage",
+        "B": "Lactate improves intracellular bacterial clearance via autophagy but suppresses TNF-α and IFN-γ while upregulating matrix metalloproteinases, worsening lung pathology",
+        "C": "Lactate activates the NF-κB pathway, which increases IL-6 and drives protective granuloma formation",
+        "D": "Lactate inhibits matrix metalloproteinases and limits lung tissue destruction at the cost of reduced bacterial clearance"
+      },
+      "correct_answer": "B",
+      "explanation": "Lactate has a complex, net-negative effect in TB. It promotes autophagy in already-infected macrophages (mildly beneficial) but strongly suppresses TNF-α and IFN-γ — the critical Th1 cytokines needed for sustained anti-mycobacterial activity — while leaving IL-6 and IL-10 unchanged. Critically, lactate also specifically upregulates matrix metalloproteinases (MMPs) that drive lung tissue destruction, contributing to higher morbidity and mortality in TB treatment.",
+      "topic_tags": ["lactate", "macrophage", "TNF-alpha", "IFN-gamma", "matrix metalloproteinases", "autophagy", "tuberculosis"]
+    },
+    {
+      "id": "TB_LACIDOSIS_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "Why does the Bacteroidetes depletion in tuberculosis patients paradoxically coexist with increased glycolysis in the gut community, despite Bacteroidetes being the main producers of simple sugars from complex carbohydrates?",
+      "options": {
+        "A": "The increase in glycolysis is driven entirely by dietary glucose from the small intestine, independent of microbial carbohydrate degradation",
+        "B": "Enterobacteriaceae compensate for depleted Bacteroidetes by producing superior polysaccharide-degrading enzymes, generating more simple sugars",
+        "C": "Clostridiales, which can degrade both simple and complex carbohydrates, increase alongside other factors (such as altered host physiology) that may elevate colonic glucose, driving glycolysis in the expanded pathobiont community",
+        "D": "Depleted Bacteroidetes release their intracellular glycolytic enzymes upon death, which are then taken up by surrounding bacteria"
+      },
+      "correct_answer": "C",
+      "explanation": "The source of elevated glucose in the TB colon is not fully resolved, but evidence points to multiple contributions: Clostridiales (which can metabolize both complex and simple carbohydrates) are increased in patients; altered host physiology during active TB infection — including increased intestinal permeability, glycolytic immune activity, and altered intestinal secretions — may raise simple sugar levels. Enterobacteriaceae (like E. coli) cannot themselves degrade complex polysaccharides, yet they expand and drive glycolysis, suggesting the glucose source is external to their own degradative capacity.",
+      "topic_tags": ["Bacteroidetes", "glycolysis", "Clostridiales", "Enterobacteriaceae", "glucose source", "colonic carbohydrate metabolism"]
+    },
+    {
+      "id": "TB_LACIDOSIS_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "What is the significance of the pentose phosphate pathway (PPP) being enriched in the gut microbiome of tuberculosis patients?",
+      "options": {
+        "A": "The PPP indicates increased oxygen consumption and aerobic respiration in the colon",
+        "B": "Enrichment of the PPP indicates increased glucose consumption and synthesis of nucleotide and amino acid precursors needed for actively dividing bacteria",
+        "C": "The PPP is a marker of increased propionate production from complex carbohydrates",
+        "D": "PPP enrichment indicates that the microbiome is shifting toward lipid oxidation as a primary energy source"
+      },
+      "correct_answer": "B",
+      "explanation": "The pentose phosphate pathway is a glucose-consuming metabolic route that generates NADPH and ribose-5-phosphate — essential precursors for nucleotide biosynthesis (DNA, RNA) and amino acid synthesis. Its enrichment in the TB gut microbiome indicates higher glucose consumption and provides strong evidence of increased bacterial cell division, complementing the glycolysis and homolactic fermentation findings. Together these pathways describe a community shifting toward rapid growth.",
+      "topic_tags": ["pentose phosphate pathway", "glucose consumption", "bacterial growth", "nucleotide biosynthesis", "metabolic pathways", "tuberculosis"]
+    },
+    {
+      "id": "TB_LACIDOSIS_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "Which of the following correctly describes why certain healthy individuals carried high proportions of TB-associated bacterial species without having the disease?",
+      "options": {
+        "A": "These individuals had subclinical TB infection that had not yet been diagnosed",
+        "B": "Microbiome sequencing is unreliable and these results represent technical artifacts of cross-contamination",
+        "C": "These outlier healthy donors showed laboratory evidence of gut dysbiosis — including pathogen overgrowth and iodophilic flora — suggesting the TB-associated species are pathobionts linked to intestinal imbalance regardless of TB status",
+        "D": "These bacteria are part of the normal healthy microbiome and their presence in TB patients is coincidental"
+      },
+      "correct_answer": "C",
+      "explanation": "Healthy donors carrying elevated levels of TB-associated species like Phocaeicola dorei, E. coli, and Prevotella copri clade C were found upon follow-up culturing to have signs of gut imbalance — overgrowth of C. albicans or lactose-negative E. coli, and iodophilic flora on stool testing, indicating an imbalance between normal and pathogenic gut flora. This supports the interpretation that these organisms are pathobionts associated with intestinal dysbiosis broadly, not disease-specific organisms exclusive to TB.",
+      "topic_tags": ["pathobionts", "healthy donors", "gut dysbiosis", "Phocaeicola dorei", "iodophilic flora", "microbiome outliers"]
+    },
+    {
+      "id": "TB_LACIDOSIS_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "Why does a large effect size (Cohen's d) of tuberculosis on the gut microbiome strengthen the confidence in findings from a relatively small sample study?",
+      "options": {
+        "A": "A large effect size indicates that confounding variables such as diet and lifestyle had no influence on the results",
+        "B": "A large effect size means the microbiome difference between TB patients and healthy controls is so substantial that it can be reliably detected even with modest sample sizes, as the signal overwhelms background noise from confounders",
+        "C": "A large effect size guarantees that the microbial changes observed are the cause, rather than consequence, of tuberculosis",
+        "D": "A large effect size means the results are automatically reproducible across all geographic populations"
+      },
+      "correct_answer": "B",
+      "explanation": "Effect size quantifies the magnitude of a difference independent of sample size. When TB status shows Cohen's d values between 1.8 and 4.5 on microbiome parameters — compared to d < 0.2 for major lifestyle and dietary confounders — it means tuberculosis exerts a dominant influence on microbiome composition. Such a large effect means that the disease-related signal is strong enough that even a moderate sample size provides sufficient statistical power to detect it reliably, and that confounders (which have much smaller effects) are unlikely to explain the observed patterns.",
+      "topic_tags": ["Cohen's d", "effect size", "statistical power", "sample size", "confounders", "tuberculosis microbiome"]
+    },
+
+    {
+      "id": "TB_LACIDOSIS_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "How do the combined metabolic and taxonomic findings in tuberculosis gut dysbiosis suggest a possible mechanism by which gut microbiota could contribute to elevated systemic lactate levels in TB patients, distinct from the established immune cell glycolysis hypothesis?",
+      "options": {
+        "A": "TB-associated gut bacteria produce lipopolysaccharides that directly stimulate hepatic gluconeogenesis, increasing blood glucose and subsequently blood lactate",
+        "B": "Depleted gut Bacteroidetes reduce intestinal propionate absorption, which impairs hepatic gluconeogenesis, indirectly elevating blood lactate",
+        "C": "The shift toward excess homolactic fermentation in the gut community generates high intestinal lactate concentrations, which — given that the intestinal epithelium absorbs lactate into portal circulation — could serve as a substantial gut-derived contribution to systemic lactate, independent of immune cell glycolysis in inflamed lung tissue",
+        "D": "Expanded Enterobacteriaceae in the gut directly translocate across the epithelium and produce lactate within systemic circulation during episodes of bacteremia"
+      },
+      "correct_answer": "C",
+      "explanation": "The conventional explanation for elevated serum lactate in TB focuses on glycolytic activity in infected macrophages and inflamed lung tissue. The gut-derived hypothesis adds a second source: the gut microbial community in TB patients shows a marked enrichment of homolactic fermentation pathways, producing large amounts of intestinal lactate. Because lactate is normally absorbed by colonocytes and enters the portal circulation, chronically elevated gut bacterial lactate production could meaningfully contribute to systemic lactate burden. This mechanism is distinct from immune cell glycolysis, operates through a different anatomical route, and is potentially targetable through microbiome-directed interventions.",
+      "topic_tags": ["systemic lactate", "gut fermentation", "portal circulation", "macrophage glycolysis", "host-directed therapy", "lactate absorption", "tuberculosis"]
+    },
+    {
+      "id": "TB_LACIDOSIS_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "In the context of gut microbiome research, why is a shift in Prevotella copri clade composition (with clade C enriched in patients and clade B in healthy controls) more likely to reflect general dysbiosis rather than a specifically detrimental role of clade C?",
+      "options": {
+        "A": "Prevotella copri clade C has been proven in multiple independent studies to be pathogenic, whereas clade B is universally protective",
+        "B": "Because healthy donors show a diverse repertoire of Prevotella copri clades and lineages, the observed enrichment of clade C in patients most likely reflects the selective depletion of other clades in a dysbiotic context, leaving clade C as a relative survivor rather than an active driver of disease",
+        "C": "Clade C is only enriched because it is genetically more resistant to M. tuberculosis infection than other clades",
+        "D": "The enrichment of clade C is an artifact of the sequencing method used, as clade C is easier to detect than other clades"
+      },
+      "correct_answer": "B",
+      "explanation": "Large-scale studies have shown that diverse Prevotella copri clades and lineages are characteristic of non-industrialized populations with fiber-rich diets and good health, while reduced clade diversity correlates with Westernized diets and disease states. In TB patients, healthy donors show richer Prevotella clade diversity while patients show narrowed diversity with clade C as the remaining representative. This pattern suggests that the relative enrichment of clade C is a consequence of losing the other clades — likely due to dysbiotic pressures — rather than clade C actively playing a harmful role. This is a critical interpretive distinction: compositional enrichment in a dysbiotic context does not equal causative pathogenicity.",
+      "topic_tags": ["Prevotella copri", "clade diversity", "dysbiosis interpretation", "compositional shift", "clade B vs C", "fiber-rich diet"]
+    }
+  ]
+}

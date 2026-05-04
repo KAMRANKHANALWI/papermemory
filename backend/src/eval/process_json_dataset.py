@@ -36,28 +36,83 @@ class RAGDatasetProcessor:
             print(f"Error loading {filepath.name}: {e}")
             return None
 
+    # def extract_test_cases(self, data: Dict, source_file: str) -> List[Dict]:
+    #     """Extract test cases from JSON data"""
+    #     test_cases = []
+
+    #     if "test_cases" not in data or not data["test_cases"]:
+    #         return test_cases
+
+    #     for tc in data["test_cases"]:
+    #         test_case = {
+    #             "id": tc.get("id", ""),
+    #             "question": tc.get("query", ""),
+    #             "reference": tc.get("ground_truth_answer", ""),
+    #             "source_document": data.get("source_document", source_file),
+    #             "expected_documents": tc.get("expected_documents", []),
+    #             "difficulty": tc.get("difficulty", "unknown"),
+    #             "category": tc.get("category", "unknown"),
+    #             "question_type": "open_ended",
+    #         }
+    #         test_cases.append(test_case)
+
+    #     return test_cases
+    
     def extract_test_cases(self, data: Dict, source_file: str) -> List[Dict]:
-        """Extract test cases from JSON data"""
         test_cases = []
 
-        if "test_cases" not in data or not data["test_cases"]:
-            return test_cases
+        # Handle both "test_cases" (old) and "qa_pairs" (new) keys
+        raw_cases = data.get("test_cases") or data.get("qa_pairs") or []
 
-        for tc in data["test_cases"]:
+        for tc in raw_cases:
             test_case = {
                 "id": tc.get("id", ""),
-                "question": tc.get("query", ""),
-                "reference": tc.get("ground_truth_answer", ""),
-                "source_document": data.get("source_document", source_file),
+                "question": tc.get("query") or tc.get("question", ""),  # old uses "query", new uses "question"
+                "reference": tc.get("ground_truth_answer") or tc.get("answer", ""),  # old vs new key
+                "source_document": data.get("source_document") or data.get("metadata", {}).get("source_paper", source_file),
                 "expected_documents": tc.get("expected_documents", []),
                 "difficulty": tc.get("difficulty", "unknown"),
-                "category": tc.get("category", "unknown"),
+                # "category": tc.get("category") or ", ".join(tc.get("topic_tags", [])) or "unknown",
                 "question_type": "open_ended",
             }
             test_cases.append(test_case)
 
         return test_cases
 
+    # def extract_mcq_questions(self, data: Dict, source_file: str) -> List[Dict]:
+    #     mcqs = []
+
+    #     if "mcq_questions" not in data or not data["mcq_questions"]:
+    #         return mcqs
+
+    #     for mcq in data["mcq_questions"]:
+    #         options = mcq.get("options", [])
+
+    #         # Safely extract individual options
+    #         option_a = options[0] if len(options) > 0 else ""
+    #         option_b = options[1] if len(options) > 1 else ""
+    #         option_c = options[2] if len(options) > 2 else ""
+    #         option_d = options[3] if len(options) > 3 else ""
+
+    #         mcq_case = {
+    #             "id": mcq.get("id", ""),
+    #             "question": mcq.get("question", ""),
+    #             "option_a": option_a,
+    #             "option_b": option_b,
+    #             "option_c": option_c,
+    #             "option_d": option_d,
+    #             "correct_option": mcq.get("correct_answer", ""),
+    #             "explanation": mcq.get("explanation", ""),
+    #             "difficulty": mcq.get("difficulty", "unknown"),
+    #             "category": mcq.get("category", "unknown"),
+    #             "question_type": "mcq",
+    #             "source_document": data.get("source_document", source_file),
+    #             "expected_documents": mcq.get("expected_documents", []),
+    #         }
+    #         mcqs.append(mcq_case)
+
+    #     return mcqs
+    
     def extract_mcq_questions(self, data: Dict, source_file: str) -> List[Dict]:
         mcqs = []
 
@@ -67,11 +122,17 @@ class RAGDatasetProcessor:
         for mcq in data["mcq_questions"]:
             options = mcq.get("options", [])
 
-            # Safely extract individual options
-            option_a = options[0] if len(options) > 0 else ""
-            option_b = options[1] if len(options) > 1 else ""
-            option_c = options[2] if len(options) > 2 else ""
-            option_d = options[3] if len(options) > 3 else ""
+            # Handle both list format (old) and dict format (new)
+            if isinstance(options, dict):
+                option_a = options.get("A", "")
+                option_b = options.get("B", "")
+                option_c = options.get("C", "")
+                option_d = options.get("D", "")
+            else:
+                option_a = options[0] if len(options) > 0 else ""
+                option_b = options[1] if len(options) > 1 else ""
+                option_c = options[2] if len(options) > 2 else ""
+                option_d = options[3] if len(options) > 3 else ""
 
             mcq_case = {
                 "id": mcq.get("id", ""),
@@ -83,9 +144,9 @@ class RAGDatasetProcessor:
                 "correct_option": mcq.get("correct_answer", ""),
                 "explanation": mcq.get("explanation", ""),
                 "difficulty": mcq.get("difficulty", "unknown"),
-                "category": mcq.get("category", "unknown"),
+                # "category": mcq.get("category") or ", ".join(mcq.get("topic_tags", [])) or "unknown",
                 "question_type": "mcq",
-                "source_document": data.get("source_document", source_file),
+                "source_document": data.get("source_document") or data.get("metadata", {}).get("source_paper", source_file),
                 "expected_documents": mcq.get("expected_documents", []),
             }
             mcqs.append(mcq_case)
@@ -198,8 +259,8 @@ class RAGDatasetProcessor:
         print("\nBy Difficulty:")
         print(df["difficulty"].value_counts())
 
-        print("\nBy Category:")
-        print(df["category"].value_counts())
+        # print("\nBy Category:")
+        # print(df["category"].value_counts())
 
         print("\nBy Source Document:")
         print(df["source_document"].value_counts().head(10))
@@ -216,7 +277,8 @@ class RAGDatasetProcessor:
         print(f"Saved full dataset: {full_path}")
 
         # 2. Open-ended CSV
-        open_ended_cols = ["id", "question", "reference", "difficulty", "category"]
+        # open_ended_cols = ["id", "question", "reference", "difficulty", "category"]
+        open_ended_cols = ["id", "question", "reference", "difficulty"]
         open_df = df[df["question_type"] == "open_ended"][open_ended_cols]
         open_path = output_path / "gut_microbiome_open_ended.csv"
         open_df.to_csv(open_path, index=False)
@@ -233,7 +295,7 @@ class RAGDatasetProcessor:
             "correct_option",
             "explanation",
             "difficulty",
-            "category",
+            # "category",
         ]
         mcq_df = df[df["question_type"] == "mcq"][mcq_cols]
         mcq_path = output_path / "gut_microbiome_mcq.csv"
@@ -254,7 +316,7 @@ def main():
     # Configuration
     BASE_DIR = Path(__file__).parent
     DATA_DIR = BASE_DIR / "Eval_Data"
-    OUTPUT_DIR = BASE_DIR / "Eval_Dataset"
+    OUTPUT_DIR = BASE_DIR / "Eval_Dataset_New"
     INCLUDE_MCQS = True  # Set to False if you only want open-ended questions
 
     print("=" * 60)

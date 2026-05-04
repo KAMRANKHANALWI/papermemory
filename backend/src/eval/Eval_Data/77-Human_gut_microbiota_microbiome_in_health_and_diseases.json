@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Human gut microbiota/microbiome in health and diseases: a review",
+    "authors": ["Eman Zakaria Gomaa"],
+    "journal": "Antonie van Leeuwenhoek",
+    "year": 2020,
+    "doi": "10.1007/s10482-020-01474-7",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "gutmicro77_easy_001",
+      "difficulty": "easy",
+      "question": "What are the primary functions of the gut microbiota in the human body?",
+      "answer": "The gut microbiota performs several critical functions in the human body: it supports protection against pathogens by colonising mucosal surfaces and producing antimicrobial substances; it enhances and regulates the immune system; it plays a vital role in digestion and metabolism of dietary components including indigestible carbohydrates; it controls epithelial cell proliferation and differentiation; it modifies insulin resistance and affects insulin secretion; and it influences brain–gut communication, thereby affecting mental and neurological functions of the host. Additionally, it synthesises essential vitamins such as B and K.",
+      "topic_tags": ["gut microbiota", "functions", "immunity", "metabolism", "gut-brain axis"]
+    },
+    {
+      "id": "gutmicro77_easy_002",
+      "difficulty": "easy",
+      "question": "What are short-chain fatty acids (SCFAs), which bacteria produce them, and what are their general health benefits?",
+      "answer": "Short-chain fatty acids (SCFAs) — primarily acetic, propionic, and butyric acids — are produced when gut bacteria ferment indigestible dietary carbohydrates such as cellulose, hemicelluloses, resistant starch, pectin, oligosaccharides, and lignin. They are mainly produced by Firmicutes, Bacteroidetes, and some anaerobic gut microorganisms. SCFAs serve as a significant energy source for intestinal epithelial cells and strengthen the mucosal barrier. They also have anti-inflammatory and chemopreventive properties, acting as potential tumor suppressors partly through their ability to reduce histone deacetylase activity in colonocytes and immune cells. SCFAs also play roles in improving insulin sensitivity and supporting cardiovascular and metabolic health.",
+      "topic_tags": ["SCFAs", "short-chain fatty acids", "butyrate", "fermentation", "Firmicutes", "Bacteroidetes"]
+    },
+    {
+      "id": "gutmicro77_easy_003",
+      "difficulty": "easy",
+      "question": "How does diet influence the composition of the gut microbiota across different life stages?",
+      "answer": "Diet is a critical driver of gut microbiota composition throughout life. In early infancy, gut microbiota is shaped by whether infants are breast-fed or formula-fed: breast-fed infants show overgrowth of Actinobacteria and inhibition of Firmicutes and Proteobacteria, while formula-fed infants show increases in Clostridia, Streptococci, Bacteroides, and Enterobacteria. After infancy, diet becomes the primary factor organising the structure, shape, and variety of the gut microbiota. Vegetarian diets are associated with greater species diversity and dominance of Firmicutes and Bacteroidetes. High-fiber diets support mucosal barrier integrity, while diets rich in protein and fat — typical of Western diets — are correlated with abundance of bile-tolerant species and suppression of Firmicutes, potentially lowering immunity and increasing susceptibility to metabolic diseases.",
+      "topic_tags": ["diet", "infant microbiota", "breast-feeding", "fiber", "Firmicutes", "Bacteroidetes"]
+    },
+    {
+      "id": "gutmicro77_easy_004",
+      "difficulty": "easy",
+      "question": "What is dysbiosis and what disease states has it been associated with?",
+      "answer": "Dysbiosis refers to an alteration in the normal composition and function of the gut microbial community. When this balance is disrupted, it can have detrimental effects on host health and is associated with a wide range of diseases. These include gastrointestinal conditions such as irritable bowel syndrome (IBS) and inflammatory bowel disease (IBD), metabolic diseases such as obesity and type 2 diabetes, liver diseases including non-alcoholic fatty liver disease, immune-related disorders such as allergies and autoimmune conditions, cardiovascular disease, and neurological and psychiatric disorders including anxiety, depression, autism spectrum disorder, and Alzheimer's disease. The pro-inflammatory state caused by altered gut microbiota balance is a key driver of many of these pathological conditions.",
+      "topic_tags": ["dysbiosis", "IBD", "obesity", "diabetes", "neurological disease", "cardiovascular disease"]
+    },
+    {
+      "id": "gutmicro77_easy_005",
+      "difficulty": "easy",
+      "question": "What are the dominant bacterial phyla in the human gut and how does their distribution vary across the gastrointestinal tract?",
+      "answer": "The most dominant bacterial phyla in the human gut are Firmicutes, Bacteroidetes, Actinobacteria, and Proteobacteria, collectively making up to 90% of the total microbial population. Additional phyla include Verrucomicrobia, Fusobacteria, and Tenericutes. The most recorded bacterial genera include Bacteroides, Clostridium, Peptococcus, Bifidobacterium, Eubacterium, Ruminococcus, Faecalibacterium, and Peptostreptococcus, with Bacteroides being the most abundant and comprising about 30% of gut bacteria. Microbial density varies greatly along the GI tract: the stomach and small intestine harbour relatively few bacterial species, while the colon contains a densely populated microbial ecosystem with up to 10^12 cells per gram of intestinal content, representing 300–1000 different species with 99% originating from approximately 30–40 species.",
+      "topic_tags": ["bacterial phyla", "Firmicutes", "Bacteroidetes", "gut composition", "GI tract distribution"]
+    },
+
+    {
+      "id": "gutmicro77_medium_001",
+      "difficulty": "medium",
+      "question": "How does the gut microbiota communicate with the brain, and what mechanisms underlie the gut-brain axis?",
+      "answer": "The gut-brain axis is defined as a bidirectional communication system that enables gut microbes and the brain to interact with each other. This axis correlates the gastrointestinal tract with the central nervous system and coordinates gut functions, connecting emotional centres of the brain with peripheral intestinal functions and mechanisms such as enteric reflexes, intestinal permeability, immune activation, and enteroendocrine signalling. The mechanisms involve: SCFAs produced by the gut microbiota affecting blood-brain barrier (BBB) integrity by increasing production of tight junction proteins, thereby limiting entry of undesirable metabolites into brain tissue; microbially produced compounds such as lipoprotein and lipopolysaccharide stimulating immune cells to release cytokines, which can cross the BBB and activate neurons to alter neurological function and mood; and gut microbiota synthesising neurochemicals such as gamma amino butyric acid (GABA), an inhibitory neurotransmitter whose dysfunction is linked to neuropsychiatric disorders.",
+      "topic_tags": ["gut-brain axis", "BBB", "GABA", "SCFAs", "cytokines", "neurotransmitters"]
+    },
+    {
+      "id": "gutmicro77_medium_002",
+      "difficulty": "medium",
+      "question": "What is the role of the gut microbiota in the development and progression of obesity?",
+      "answer": "The gut microbiota plays a vital role in establishing and perpetuating obesity through several mechanisms. The microbiota of obese individuals has an increased capacity for fermentation and energy harvesting from the diet. A high Firmicutes-to-Bacteroidetes ratio in obese individuals enhances microbial genes involved in polysaccharide degradation and increases SCFA levels, resulting in increased expression of genes responsible for carbohydrate metabolism and SCFA production, leading to greater energy extraction. Furthermore, obese individuals show abundance of specific genera such as Porphyromonas, Campylobacter, Bacteroides, Staphylococcus, and Ruminococcus, alongside reduced levels of Lactobacillus, Bifidobacterium, Faecalibacterium, Akkermansia, and Coprococcus — species generally associated with metabolic health. Conversely, Akkermansia muciniphila is noted as a potential therapeutic target for obesity, as it has been shown to prevent high-fat diet-induced obesity and restore gut barrier integrity in animal models.",
+      "topic_tags": ["obesity", "Firmicutes", "Bacteroidetes", "Akkermansia", "energy harvest", "gut barrier"]
+    },
+    {
+      "id": "gutmicro77_medium_003",
+      "difficulty": "medium",
+      "question": "How does antibiotic treatment disrupt the gut microbiota, and what are the downstream consequences for host health?",
+      "answer": "Antibiotics disrupt gut microbiota by destroying both pathogenic and beneficial microbes simultaneously, a state referred to as dysbiosis. They interfere with the competitive exclusion mechanism by which the normal microbiota inhibits pathogen colonisation. The specific effects depend on the type and duration of antibiotic use: for example, clindamycin causes persistent changes in Bacteroides diversity even two years later; clarithromycin reduces Actinobacteria; ciprofloxacin decreases Ruminococcus without recovery after six months; and vancomycin reduces Bacteroidetes, Ruminococcus, and Faecalibacterium while increasing Proteobacteria. These disruptions lead to reduced SCFA production, impaired immune function, weakened mucosal barrier, and increased susceptibility to opportunistic pathogens. The altered nutritional landscape following antibiotic-induced dysbiosis — including increased availability of mucosal sugars — can favour expansion of dangerous pathogens.",
+      "topic_tags": ["antibiotics", "dysbiosis", "clindamycin", "vancomycin", "microbiota disruption", "colonisation resistance"]
+    },
+    {
+      "id": "gutmicro77_medium_004",
+      "difficulty": "medium",
+      "question": "What mechanisms connect gut microbiota alterations to the development of type 2 diabetes?",
+      "answer": "Gut microbiota contributes to type 2 diabetes (T2D) pathogenesis through multiple interconnected mechanisms. The gut microbiota of people with T2D shows higher propagation of Proteobacteria, Bacteroidetes, and Firmicutes with abnormal ratios compared to healthy individuals. Lipopolysaccharides (LPS) extracted from cell membranes of Gram-negative bacteria promote metabolic endotoxemia by stimulating secretion of pro-inflammatory cytokines; high-fat diets modify microbiota composition and increase circulating LPS levels. Dysbiosis also affects polysaccharide and energy metabolism through altered SCFA production: butyrate has beneficial effects on insulin sensitivity by blocking translocation of endotoxic compounds that drive insulin resistance, while SCFAs also act as substrates for lipogenesis and gluconeogenesis in the liver. Reduced levels of butyrate-producing and lactate-producing bacteria are characteristic of T2D-associated dysbiosis.",
+      "topic_tags": ["type 2 diabetes", "LPS", "metabolic endotoxemia", "insulin resistance", "butyrate", "Proteobacteria"]
+    },
+    {
+      "id": "gutmicro77_medium_005",
+      "difficulty": "medium",
+      "question": "What is fecal microbiota transplantation (FMT), how does it work, and what conditions has it been used to treat?",
+      "answer": "Fecal microbiota transplantation (FMT) is the process of transplanting fecal microorganisms from healthy donors to patients with disrupted gut microbiota, with the goal of restoring the composition and function of the gut microbial community. The mechanism is not fully understood but may involve changes in bacterial composition, modifications in host metabolic profiles, introduction of new microbial species from healthy donor feces, and the presentation of donor peptides that modify host immune responses. FMT has been extensively used for the treatment of irritable bowel syndrome, inflammatory bowel disease, insulin resistance, obesity, autism, diarrhea, allergic disorders, metabolic syndrome, colon cancer, anti-tumor immunity, neuropsychiatric conditions, and Parkinson's disease. However, risks include transfer of microbial pathogens or undesired disease phenotypes such as obesity, diabetes, and cardiovascular diseases from donor to recipient.",
+      "topic_tags": ["FMT", "fecal microbiota transplantation", "IBD", "C. difficile", "therapeutic strategy", "donor microbiota"]
+    },
+    {
+      "id": "gutmicro77_medium_006",
+      "difficulty": "medium",
+      "question": "How does the gut microbiota change with aging, and what are the health implications of age-related microbial shifts?",
+      "answer": "The gut microbiota undergoes significant compositional changes across the human lifespan. In infancy, Proteobacteria are the first colonisers, decreasing oxygen levels to allow subsequent colonisation by anaerobes such as Firmicutes, Actinobacteria, and Bacteroides. In childhood (2–5 years), the microbiota becomes more stable with Firmicutes and Bacteroidetes including butyrate-producing species. Adolescents show higher abundances of Clostridium and Bifidobacterium relative to adults. In healthy adults, the microbiota is dominated by Firmicutes and Bacteroidetes with smaller proportions of Verrucomicrobia, Actinobacteria, and Proteobacteria. In the elderly (>65 years), there is a significant decline in Bifidobacteria and Bacteroides, reduced SCFAs production, decreased microbial diversity, increased opportunistic pathogens, a lower Bacteroidetes-to-Firmicutes ratio, and increased Enterobacteriaceae. These changes are linked to dietary shifts, decreased digestive function, polypharmacy, and increased systemic inflammation, contributing to higher vulnerability to disease.",
+      "topic_tags": ["aging", "elderly microbiota", "Bifidobacterium", "microbial diversity", "Firmicutes", "Bacteroidetes"]
+    },
+
+    {
+      "id": "gutmicro77_hard_001",
+      "difficulty": "hard",
+      "question": "What are the multi-level mechanisms by which the gut microbiota contributes to colorectal cancer development and progression?",
+      "answer": "The gut microbiota contributes to colorectal cancer (CRC) through multiple interconnected mechanisms. Certain bacteria directly enhance carcinogenesis: Bacteroides fragilis, Enterococcus faecalis, and Helicobacter hepaticus produce compounds that cause DNA damage, while Fusobacterium nucleatum maintains a persistent pro-inflammatory microenvironment that indirectly promotes carcinogenesis. Microbial products can enter barrier-defective colonic tumors and use the host immune response to drive IL-23/IL-17-mediated tumor growth. At a metabolic level, individuals susceptible to CRC have more species producing secondary bile acids and fewer butyrate-producing species; butyrate reduction removes an important tumor-suppressive influence through loss of histone deacetylase inhibition. A high-fat, low-fiber diet further promotes pro-tumorigenic microbial shifts. Conversely, the gut microbiota also influences the efficacy of cancer immunotherapy: patients responding to anti-PD1 therapy tend to harbour more diverse microbiota enriched in Faecalibacterium, Bifidobacterium, and Akkermansia, whereas non-responders are depleted of these health-associated taxa.",
+      "topic_tags": ["colorectal cancer", "CRC", "Fusobacterium", "butyrate", "anti-PD1", "carcinogenesis", "tumor immunity"]
+    },
+    {
+      "id": "gutmicro77_hard_002",
+      "difficulty": "hard",
+      "question": "How do cardiovascular diseases relate to gut microbiota composition and metabolism, and which specific microbial metabolic pathways drive cardiovascular risk?",
+      "answer": "Cardiovascular disease (CVD) risk is closely linked to gut microbiota through several metabolic pathways. The key driver is the metabolism of dietary choline and carnitine — abundant in Western diets — by gut microbiota, which produces trimethylamine (TMA). TMA is then oxidised in the liver to trimethylamine-N-oxide (TMAO), an amine oxide strongly associated with atherosclerosis development. TMAO also suppresses bile acid synthetic enzymes and cholesterol transporters in the liver, altering lipid metabolism. The microbiota of atherosclerosis patients is characterised by reduced abundance of butyrate-producing Eubacterium and Roseburia, while microbiota from CVD patients is enriched in genes encoding peptidoglycan synthesis and depleted in phytoene dehydrogenase, contributing to a pro-inflammatory state. Additionally, increased alcohol intake leads to overgrowth of Gram-negative bacteria, increasing gut permeability and availability of pro-inflammatory molecules such as LPS to the liver, further exacerbating cardiovascular risk.",
+      "topic_tags": ["cardiovascular disease", "TMAO", "choline", "carnitine", "atherosclerosis", "butyrate", "LPS"]
+    },
+    {
+      "id": "gutmicro77_hard_003",
+      "difficulty": "hard",
+      "question": "How does the gut microbiota modulate host immunity at multiple levels, and how do these immunomodulatory mechanisms relate to inflammatory bowel disease pathogenesis?",
+      "answer": "The gut microbiota shapes host immunity through a complex, multi-level interplay. At the mucosal level, commensal bacteria occupy intestinal surfaces and prevent invasion by pathogens through competitive exclusion and production of antimicrobial substances. SCFAs produced by gut bacteria strengthen the mucosal barrier by serving as energy sources for colonocytes and reducing inflammation. At the cellular level, interactions between gut microbiota and pattern recognition receptors on immune cells modulate microbiome composition and associated disease susceptibility. In inflammatory bowel disease (IBD), specifically Crohn's disease (CD) and ulcerative colitis (UC), this immune-microbiota relationship breaks down: IBD patients have a compromised mucus layer, allowing luminal microflora to penetrate intraepithelial cells and trigger proliferative and inflammatory responses. IBD-associated dysbiosis is characterised by decreased Bacteroidetes and Firmicutes, particularly reduced Faecalibacterium prausnitzii and Roseburia — key SCFA producers and anti-inflammatory commensals — alongside increases in Proteobacteria and pathobionts. Yeast and fungal taxa are also elevated in CD. These microbial imbalances perpetuate chronic intestinal inflammation, illustrating how dysbiosis and mucosal immune dysfunction are mutually reinforcing in IBD.",
+      "topic_tags": ["IBD", "Crohn's disease", "ulcerative colitis", "immune regulation", "Faecalibacterium prausnitzii", "dysbiosis", "mucosal immunity"]
+    },
+    {
+      "id": "gutmicro77_hard_004",
+      "difficulty": "hard",
+      "question": "What is the evidence that the gut microbiota plays a causal role in neuropsychiatric disorders such as depression and autism, and what mechanisms are proposed?",
+      "answer": "Evidence for a causal role of the gut microbiota in neuropsychiatric disorders comes from both observational and interventional studies. For depression, transplantation of fecal microbiota from depressed patients to microbiota-depleted rats was shown to alter tryptophan metabolism, inducing anhedonia and anxiety-like behaviour in recipient animals — suggesting the gut microbiota can directly cause depressive neurobehavioural changes. The gut-brain axis mechanisms involved include: disruption of intestinal permeability and barrier integrity allowing translocation of Gram-negative Enterobacteriaceae, activating inflammatory processes; altered tryptophan and serotonin metabolism; and dysregulated GABA signalling. For autism spectrum disorder (ASD), affected individuals show altered gut microbiota with higher abundance of Proteobacteria and Bacteroidetes, lower Firmicutes and Bifidobacteria, and an elevated Firmicutes-to-Bacteroidetes ratio driven by reduced Bacteroidetes. The initial hypothesis linking ASD to gut microbiota involved neurotoxic effects of Clostridium. Microbial transfer therapy in ASD children has been reported to improve both gastrointestinal and neurological symptoms. Together, these findings support a bidirectional, mechanistic relationship between the microbiome and brain function that extends beyond correlation to causation.",
+      "topic_tags": ["depression", "autism", "ASD", "gut-brain axis", "tryptophan", "FMT", "GABA", "neuropsychiatric"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "gutmicro77_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which bacterial genus is the most abundant in the human gut and comprises approximately 30% of all gut bacteria?",
+      "options": {
+        "A": "Clostridium",
+        "B": "Bacteroides",
+        "C": "Bifidobacterium",
+        "D": "Ruminococcus"
+      },
+      "correct_answer": "B",
+      "explanation": "Bacteroides is reported to be the most abundant bacterial genus in the human gut, with species from this family alone comprising about 30% of bacteria in the gut. This makes Bacteroides particularly significant in the functioning of the host organism.",
+      "topic_tags": ["Bacteroides", "gut composition", "bacterial genera", "abundance"]
+    },
+    {
+      "id": "gutmicro77_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What types of dietary carbohydrates are fermented by gut bacteria to produce short-chain fatty acids?",
+      "options": {
+        "A": "Simple sugars such as glucose and fructose",
+        "B": "Indigestible carbohydrates such as cellulose, resistant starch, pectin, and oligosaccharides",
+        "C": "Animal-derived glycoproteins and collagen",
+        "D": "Lactose and other dairy-derived disaccharides"
+      },
+      "correct_answer": "B",
+      "explanation": "Gut bacteria metabolise indigestible carbohydrates — including cellulose, hemicelluloses, resistant starch, pectin, oligosaccharides, and lignin — through anaerobic fermentation to produce SCFAs such as acetic, propionic, and butyric acids. These substrates escape digestion in the upper GI tract and reach the colon where they are fermented.",
+      "topic_tags": ["SCFAs", "dietary fiber", "fermentation", "indigestible carbohydrates", "resistant starch"]
+    },
+    {
+      "id": "gutmicro77_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "How does exercise affect gut microbiota composition?",
+      "options": {
+        "A": "Exercise reduces microbial diversity and decreases butyrate-producing taxa",
+        "B": "Exercise has no demonstrable effect on gut microbiota composition",
+        "C": "Exercise enriches gut microbiota diversity and increases butyrate-producing taxa such as Clostridiales and Roseburia",
+        "D": "Exercise specifically increases Proteobacteria abundance while reducing Firmicutes"
+      },
+      "correct_answer": "C",
+      "explanation": "Several studies have shown that exercise enriches the diversity of gut microflora. Athletes show lower Bacteroidetes and greater Firmicutes than non-athletes. Exercise is associated with increases in Lactobacillus, Bifidobacterium, and Akkermansia, while SCFAs production and butyrate-producing taxa such as Clostridiales, Roseburia, Lachnospiraceae, and Erysipelotrichaceae also increase in response to exercise.",
+      "topic_tags": ["exercise", "microbial diversity", "butyrate", "Akkermansia", "Lactobacillus"]
+    },
+
+    {
+      "id": "gutmicro77_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "Which mechanism best explains the relationship between non-alcoholic fatty liver disease (NAFLD) and gut microbiota?",
+      "options": {
+        "A": "Overgrowth of Lactobacillus species produces excess lactic acid that directly damages hepatocytes",
+        "B": "Gut dysbiosis increases SCFA levels and reduces the Bacteroidetes-to-Firmicutes ratio, promoting greater energy harvest, gluconeogenesis, lipogenesis, and triglyceride accumulation via reduced butyrate and lipoprotein lipase activation",
+        "C": "NAFLD is caused purely by dietary fat intake independently of gut microbiota composition",
+        "D": "Bile acid excess produced by Bacteroidetes drives hepatic steatosis through cholesterol accumulation"
+      },
+      "correct_answer": "B",
+      "explanation": "NAFLD pathogenesis involves a higher SCFA level combined with a decreased Bacteroidetes-to-Firmicutes ratio, driving greater energy harvest that initiates gluconeogenesis and lipogenesis in the liver. Dysbiosis also decreases butyrate creation, which activates lipoprotein lipase and leads to subsequent triglyceride accumulation in the liver. Ethanol-related mechanisms further increase intestinal permeability and LPS entry, contributing to hepatic inflammation.",
+      "topic_tags": ["NAFLD", "liver disease", "gut dysbiosis", "lipogenesis", "butyrate", "lipoprotein lipase"]
+    },
+    {
+      "id": "gutmicro77_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "What distinguishes the gut microbiota composition of infants born vaginally compared to those born by caesarean section?",
+      "options": {
+        "A": "Caesarean-born infants have higher Bifidobacterium and lower Proteobacteria",
+        "B": "Vaginally born infants show higher initial abundances of lactobacilli and develop microbiota more closely resembling their mothers, while caesarean-born infants show delayed Bacteroides colonisation and greater facultative anaerobe presence",
+        "C": "There is no significant difference in gut microbiota between delivery modes after two weeks of life",
+        "D": "Caesarean-born infants have higher Firmicutes due to hospital environmental exposure"
+      },
+      "correct_answer": "B",
+      "explanation": "Microbiota colonisation varies depending on delivery route. Vaginal delivery exposes infants to the mother's vaginal flora, resulting in early high lactobacilli abundance and microbiota that more closely resembles the mother's. Caesarean-born infants show delayed Bacteroides colonisation and are more frequently colonised by facultative anaerobes. These early differences can have lasting effects on immune and metabolic development.",
+      "topic_tags": ["birth mode", "caesarean section", "vaginal delivery", "infant microbiota", "Lactobacillus", "Bacteroides"]
+    },
+    {
+      "id": "gutmicro77_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "What role does the gut microbiota play in allergic disease and asthma development?",
+      "options": {
+        "A": "Gut bacteria have no influence on respiratory allergic conditions since the gut and lungs are anatomically separate",
+        "B": "Overabundance of Bifidobacterium in early infancy consistently causes asthma through excessive immune stimulation",
+        "C": "Dysbiosis in early infancy — including reduced abundances of Faecalibacterium, Akkermansia, and Lachnospira — is associated with increased asthma risk, with microbiota influencing immune regulation through the gut–lung axis",
+        "D": "Antibiotic treatment in infants protects against asthma by eliminating dysbiotic bacterial communities"
+      },
+      "correct_answer": "C",
+      "explanation": "Evidence from independent birth cohorts identifies that reduced abundances of Faecalibacterium, Akkermansia, and Lachnospira in infants at risk of asthma suggest a gut-lung axis connection. Bacteroidetes and other butyrate-producing bacteria that help establish the immune system show reduced density in early infancy in those who develop allergic symptoms. The concept of the gut-lung axis highlights that gut microbiota composition in early life shapes systemic immune responses relevant to allergic airway disease.",
+      "topic_tags": ["asthma", "allergy", "gut-lung axis", "Akkermansia", "Faecalibacterium", "immune regulation"]
+    },
+    {
+      "id": "gutmicro77_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "What role does host genetics play in shaping gut microbiota composition?",
+      "options": {
+        "A": "Host genetics has negligible influence on gut microbiota, with environment and diet being entirely dominant",
+        "B": "Monozygotic twins always have identical gut microbiota regardless of environmental exposures",
+        "C": "Host genetic factors significantly shape gut microbiota, with phyla such as Firmicutes, Actinobacteria, and Tenericutes being more heritable, while Bacteroidetes shows low heritability; genetically related individuals show greater microbiota similarities",
+        "D": "Host genetics exclusively controls Bacteroidetes abundance while diet controls Firmicutes"
+      },
+      "correct_answer": "C",
+      "explanation": "Research confirms that host genetics contributes significantly to gut microbiome composition. Studies of monozygotic twins living apart showed high similarities in microbial profiles despite different environments, while married partners sharing environments showed less similarity. Firmicutes, Actinobacteria, Tenericutes, and Euryarchaeota were found to be more heritable, whereas the highly abundant Bacteroidetes phylum shows very little heritability. Pattern recognition receptor genes associated with innate immunity are also linked to microbiome composition.",
+      "topic_tags": ["host genetics", "heritability", "Firmicutes", "Bacteroidetes", "twins", "innate immunity"]
+    },
+    {
+      "id": "gutmicro77_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "How do probiotics exert their beneficial effects on host health?",
+      "options": {
+        "A": "Probiotics permanently replace all dysbiotic bacteria with healthy strains through competitive suppression",
+        "B": "Probiotics work exclusively by producing large amounts of vitamins that correct nutritional deficiencies",
+        "C": "Probiotics exert multiple mechanisms including lowering intestinal pH via SCFAs, synthesising vitamins, producing bacteriocins, stimulating immune responses, enforcing gut epithelial barrier integrity, and altering mucus secretion",
+        "D": "Probiotics function only in the stomach and are destroyed before reaching the colon"
+      },
+      "correct_answer": "C",
+      "explanation": "Probiotics exert their effects through multiple mechanisms: they lower intestinal pH by producing SCFAs; synthesise vitamins such as B and K; metabolise carcinogenic substances; exhibit antimicrobial activity through bacteriocin production; directly stimulate immune responses by increasing macrophage activity and modulating immunoglobulins and cytokines; and indirectly support health by enforcing the gut epithelial barrier and altering mucus secretion. Their efficacy depends on dose, duration, strain selection, and gastrointestinal persistence.",
+      "topic_tags": ["probiotics", "bacteriocin", "immune stimulation", "gut barrier", "SCFA", "mucus"]
+    },
+
+    {
+      "id": "gutmicro77_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "Which of the following best describes the interplay between Alzheimer's disease and gut microbiota through the gut-brain axis?",
+      "options": {
+        "A": "Alzheimer's disease is caused solely by genetic mutations and gut microbiota plays no mechanistic role",
+        "B": "Gut dysbiosis in Alzheimer's increases gut and blood-brain barrier permeability, promotes LPS and amyloid production, and drives neuroinflammation; affected mice show higher Bacteroidetes and Firmicutes but lower Akkermansia and Allobaculum",
+        "C": "Higher Akkermansia abundance is consistently observed in Alzheimer's patients and is considered a causal driver of amyloid accumulation",
+        "D": "The gut microbiota influences Alzheimer's only through tryptophan depletion causing serotonin deficiency in the hippocampus"
+      },
+      "correct_answer": "B",
+      "explanation": "Several studies confirm that gut dysbiosis contributes to Alzheimer's disease pathogenesis through the bidirectional gut-brain axis. Dysbiosis increases permeability of both the gut and blood-brain barrier. Gut microbiota produces LPS, amyloids, and inflammatory cytokines associated with AD. In AD mouse models, the gut microbiota exhibited higher Bacteroidetes and Firmicutes but lower levels of Akkermansia and Allobaculum genera compared to healthy controls, suggesting that reduced health-associated commensals contribute to disease progression.",
+      "topic_tags": ["Alzheimer's disease", "gut-brain axis", "BBB", "LPS", "amyloid", "Akkermansia", "neuroinflammation"]
+    },
+    {
+      "id": "gutmicro77_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "Why is phage therapy considered a promising but still underdeveloped therapeutic strategy for modulating gut microbiota, and what characteristics make it uniquely suitable for precision microbiome editing?",
+      "options": {
+        "A": "Phage therapy is advantageous because phages nonspecifically kill all bacteria indiscriminately, acting faster than antibiotics",
+        "B": "Phages represent approximately 90% of the human virome, can amplify exponentially after administration in a bacteria-dependent manner, and can be engineered as gene carriers; however, lack of standardised clinical trial data and dosing complexity due to variable kinetics and immune interactions still limit regulatory approval",
+        "C": "Phage therapy is already widely approved globally and used as the first-line treatment for all dysbiosis-related conditions",
+        "D": "Phages are suitable only for treating viral infections of the gut, not bacterial dysbiosis"
+      },
+      "correct_answer": "B",
+      "explanation": "Phages represent approximately 90% of the human virome and have great therapeutic potential for both antimicrobial purposes and modulation of microbial community composition. They amplify exponentially after administration, but this amplification is not constant and depends on the concentration of susceptible bacteria and host immune responses, making precise dosing and timing critical. Phages can also be modified as 'gene carriers' for targeted delivery. Despite a long history of phage therapy use in Eastern Europe, essential data for regulatory approval as antibacterial drugs are still needed and studies to address these gaps are ongoing.",
+      "topic_tags": ["phage therapy", "human virome", "microbiome editing", "dosing", "antimicrobial", "gene carrier"]
+    }
+  ]
+}

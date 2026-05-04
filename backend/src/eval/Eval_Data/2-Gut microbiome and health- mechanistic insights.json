@@ -1,0 +1,265 @@
+{
+  "metadata": {
+    "source_paper": "Gut microbiome and health: mechanistic insights",
+    "authors": ["Willem M de Vos", "Herbert Tilg", "Matthias Van Hul", "Patrice D Cani"],
+    "journal": "Gut",
+    "year": 2022,
+    "doi": "10.1136/gutjnl-2021-326789",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "gutmech_qa_easy_e1a3",
+      "difficulty": "easy",
+      "question": "What are short-chain fatty acids (SCFAs) and how are they produced in the gut?",
+      "answer": "Short-chain fatty acids (SCFAs) — primarily acetate, butyrate, and propionate — are produced when resident colonic bacteria ferment non-digestible complex carbohydrates such as dietary fibres. Because the body lacks the enzymes to break down these fibres in the small intestine, they pass intact to the colon where specific bacteria metabolise them into SCFAs. These metabolites regulate numerous physiological processes in the gut and at distant organs including the liver, adipose tissue, muscles, and brain, influencing energy homeostasis, glucose and lipid metabolism, inflammation, and immunity.",
+      "topic_tags": ["SCFAs", "short-chain fatty acids", "fermentation", "dietary fibre", "gut microbiota metabolism"]
+    },
+    {
+      "id": "gutmech_qa_easy_f2b7",
+      "difficulty": "easy",
+      "question": "What is the dominant microbial community of the human colon in terms of bacterial phyla?",
+      "answer": "The colonic microbiome is dominated by mainly anaerobic bacteria distributed among the major phyla of Firmicutes (predominantly Ruminococcaceae and Lachnospiraceae), Bacteroidetes, Actinobacteria, Proteobacteria, and Verrucomicrobia (represented by Akkermansia). The colon can host climax communities of up to 100 billion cells per gram, making it the most densely colonised site in the human body. Transit in the colon is over a dozen times longer than in the small intestine, which allows these communities to establish and thrive.",
+      "topic_tags": ["colonic microbiome", "bacterial phyla", "Firmicutes", "Bacteroidetes", "Akkermansia", "gut composition"]
+    },
+    {
+      "id": "gutmech_qa_easy_c9d4",
+      "difficulty": "easy",
+      "question": "What are bile acids, and what is their primary physiological function in digestion?",
+      "answer": "Bile acids (BAs) are amphipathic molecules synthesised in the liver from cholesterol. Primary BAs such as cholic acid and chenodeoxycholic acid can be conjugated to glycine or taurine before secretion into bile and storage in the gallbladder. When food is ingested, they are released into the small intestine to assist in the digestion and absorption of dietary fat. Around 95% of intestinal BAs are reabsorbed in the ileum and returned to the liver for re-secretion in a process called enterohepatic circulation, which is an important mechanism for maintaining whole-body glucose, lipid, and energy homeostasis.",
+      "topic_tags": ["bile acids", "digestion", "enterohepatic circulation", "cholesterol", "liver", "lipid absorption"]
+    },
+    {
+      "id": "gutmech_qa_easy_b3k1",
+      "difficulty": "easy",
+      "question": "What is metabolic endotoxemia and how is it triggered?",
+      "answer": "Metabolic endotoxemia is a state of low-grade chronic inflammation caused by elevated circulating levels of lipopolysaccharide (LPS) in plasma. It is triggered when a high-fat diet and weight gain increase gut permeability, allowing small amounts of LPS — endotoxins from the cell membranes of Gram-negative bacteria — to leak into the systemic circulation. Even minor increases in circulating LPS are sufficient to activate the inflammatory response. This condition is a pathological feature of a range of chronic diseases including type 2 diabetes, non-alcoholic fatty liver disease (NAFLD), chronic kidney disease, and atherosclerosis.",
+      "topic_tags": ["metabolic endotoxemia", "LPS", "gut permeability", "low-grade inflammation", "type 2 diabetes", "NAFLD"]
+    },
+    {
+      "id": "gutmech_qa_easy_r7z9",
+      "difficulty": "easy",
+      "question": "How does the bacterial composition of the small intestine differ from that of the colon?",
+      "answer": "The small intestine has much lower bacterial density than the colon, with microbial abundance in the duodenum being roughly 1000-fold lower than in oral samples. The small intestine contains thousands to several hundred million cells per gram, with partly oxygen-tolerant Firmicutes and Proteobacteria as major phyla. In contrast, the colon hosts up to 100 billion cells per gram and is dominated by strictly anaerobic bacteria including Ruminococcaceae, Lachnospiraceae, Bacteroidetes, and Akkermansia. Key factors governing this gradient include pH, oxygen concentration, redox potential, bile acid production, antimicrobial proteins, peristalsis, and transit time.",
+      "topic_tags": ["small intestine microbiome", "colonic microbiome", "microbial gradient", "bacteria density", "GI tract"]
+    },
+
+    {
+      "id": "gutmech_qa_med_m2p5",
+      "difficulty": "medium",
+      "question": "How does butyrate regulate oxygen levels in the colon to maintain an anaerobic environment?",
+      "answer": "Butyrate plays a critical role in preserving anaerobic conditions in the colon through two interconnected mechanisms. First, colonocytes use butyrate as an energy substrate via beta-oxidation in the mitochondria, which consumes oxygen and directly reduces oxygen availability in the colonic lumen. Second, butyrate activates the nuclear receptor peroxisome proliferator-activated receptor gamma (PPARγ) in colonic cells, which limits the diffusion of oxygen from colonocytes into the lumen. PPARγ activation also represses inducible nitric oxide synthase (iNOS), thereby reducing nitric oxide (NO) production and ultimately decreasing luminal nitrate levels. This is significant because nitrate is a specific energy source exploited by facultative anaerobes such as Enterobacteriaceae, which are associated with intestinal inflammation. When butyrate is scarce — as in IBD, cancer, obesity, and diabetes — these protective mechanisms fail, leading to oxygen and nitrate accumulation that favours pathogenic bacteria.",
+      "topic_tags": ["butyrate", "PPARgamma", "anaerobic conditions", "iNOS", "nitrate", "Enterobacteriaceae", "colonocytes", "oxygen regulation"]
+    },
+    {
+      "id": "gutmech_qa_med_l4w8",
+      "difficulty": "medium",
+      "question": "Through which receptors do SCFAs stimulate the secretion of gut peptides, and what are the downstream metabolic effects?",
+      "answer": "SCFAs stimulate gut peptide secretion primarily by acting on G protein-coupled receptors GPR43 (FFAR2) and GPR41 (FFAR3) expressed on the surface of enteroendocrine L-cells, which are concentrated in the terminal ileum and colon. Activation of these receptors promotes the secretion of key gut peptides including glucagon-like peptide-1 (GLP-1), GLP-2, and peptide YY (PYY). The downstream metabolic effects are broad: increased GLP-1 improves insulin secretion and insulin sensitivity; GLP-2 reduces intestinal permeability; and PYY reduces food intake. These effects have been demonstrated using mouse models lacking GPR43 or GPR41, which show reduced secretion of GLP-1 and PYY after SCFA or prebiotic exposure. GPR41 and GPR43 are also expressed in adipocytes and immune cells, extending SCFA signalling beyond the gut.",
+      "topic_tags": ["SCFAs", "GPR41", "GPR43", "GLP-1", "PYY", "enteroendocrine L-cells", "gut peptides", "insulin sensitivity"]
+    },
+    {
+      "id": "gutmech_qa_med_t6n2",
+      "difficulty": "medium",
+      "question": "What is the endocannabinoid system and how does the gut microbiota interact with it?",
+      "answer": "The endocannabinoid (eCB) system is a pleiotropic signalling network that regulates energy, glucose, and lipid metabolism, as well as immunity and inflammation. It comprises cannabinoid receptors CB1 and CB2, endogenous ligands such as anandamide (AEA) and 2-arachidonoylglycerol (2-AG), and a wider family of bioactive lipids called eCB-like compounds. The gut microbiota influences this system bidirectionally. Obesity and diabetes alter the gut microbiota and increase intestinal AEA levels, triggering gut permeability via CB1-dependent mechanisms. Conversely, the microbiota directly impacts the endocannabinoidome (eCBome) — as shown by germ-free mice displaying profound eCBome alterations reversed by microbiota transfer. The gut microbiota can also directly produce specific eCBs. Mouse models with tissue-specific deletion of the synthesis enzyme NAPE-PLD demonstrate that disruption of eCB synthesis in adipocytes, intestinal epithelial cells, or hepatocytes each leads to distinct metabolic phenotypes associated with shifts in gut microbiota composition.",
+      "topic_tags": ["endocannabinoid system", "gut microbiota", "CB1", "CB2", "NAPE-PLD", "obesity", "AEA", "eCBome"]
+    },
+    {
+      "id": "gutmech_qa_med_v1s6",
+      "difficulty": "medium",
+      "question": "How do gut bacteria modify primary bile acids, and what are the consequences for host signalling?",
+      "answer": "Gut bacteria chemically transform primary bile acids (BAs) through several reactions: deconjugation via bile salt hydrolase (BSH) activity, dehydroxylation, oxidation (dehydrogenation), and epimerisation. These transformations produce secondary BAs such as deoxycholic acid, lithocholic acid, and ursodeoxycholic acid. This bacterial metabolism fundamentally changes the bioavailability and biological activities of BAs, altering their impact on metabolic responses. Because BAs are chemically modified by the microbiota and possess signalling capacities, they are considered microbiota-derived signalling metabolites. Secondary BAs activate receptors including farnesoid X receptor (FXR) and TGR5 (Takeda G protein-coupled receptor 5), which regulate glucose, lipid, and energy metabolism, and stimulate secretion of gut hormones such as GLP-1 and PYY. A study in centenarians suggested their unique gut microbiota generates distinct secondary BA profiles that may partially explain their reduced susceptibility to age-related illness.",
+      "topic_tags": ["bile acids", "secondary bile acids", "BSH", "FXR", "TGR5", "GLP-1", "microbiota-derived metabolites", "centenarians"]
+    },
+    {
+      "id": "gutmech_qa_med_k8p3",
+      "difficulty": "medium",
+      "question": "What is the role of the aryl hydrocarbon receptor (AhR) pathway in connecting gut microbiota to immune and metabolic function?",
+      "answer": "The aryl hydrocarbon receptor (AhR) is a ubiquitous transcription factor activated by ligand binding. Key AhR ligands include bacterial metabolites derived from tryptophan such as indole, indole-3-ethanol, indole-3-pyruvate, and indole-3-aldehyde. Upon ligand binding, AhR translocates to the nucleus and drives transcription of genes involved in immunity and inflammation. In the gut, microbial tryptophan metabolites protect the epithelial barrier by maintaining the integrity of tight junctions. A reduced capacity to metabolise tryptophan into AhR ligands has been linked to metabolic syndrome, and restoring AhR ligand levels via Lactobacillus strains improved metabolic functions and intestinal barrier integrity. The AhR pathway is also implicated in inflammatory disorders including IBD, coeliac disease, and alcoholic liver disease, where AhR ligand production by the gut microbiota is decreased, contributing to intestinal inflammation.",
+      "topic_tags": ["AhR", "aryl hydrocarbon receptor", "tryptophan", "indole", "gut barrier", "metabolic syndrome", "coeliac disease", "inflammation"]
+    },
+    {
+      "id": "gutmech_qa_med_d5q7",
+      "difficulty": "medium",
+      "question": "What is TMAO, and how does the gut microbiota contribute to its production and its association with cardiovascular risk?",
+      "answer": "Trimethylamine N-oxide (TMAO) is a metabolite derived from dietary quaternary amines — including betaine, choline, and L-carnitine found in vegetables, fruits, meat, and seafood. Gut bacteria encoding TMA lyase convert these amines into trimethylamine (TMA), which enters the bloodstream and is oxidised by flavin monooxygenase in the liver to form TMAO. Elevated serum TMAO is strongly associated with atherosclerosis and cardiovascular risk, and has been shown to promote atherosclerotic plaque formation in animal models. TMAO is also a common uraemic toxin. Certain gut bacteria, such as Eubacterium limosum and its related isolate E. maltosivorans, can instead convert betaine and other quaternary amines via a vitamin B12-dependent pathway to acetate and butyrate — offering a potential mechanism to mitigate TMAO production through microbiota modulation.",
+      "topic_tags": ["TMAO", "trimethylamine N-oxide", "atherosclerosis", "cardiovascular risk", "choline", "L-carnitine", "gut bacteria", "Eubacterium limosum"]
+    },
+
+    {
+      "id": "gutmech_qa_hard_h3c9",
+      "difficulty": "hard",
+      "question": "How do LPS and other pathogen-associated molecular patterns (PAMPs) activate host inflammatory signalling through toll-like receptors, and what are the consequences of dysregulated TLR signalling in metabolic disease?",
+      "answer": "LPS and other PAMPs are detected by pattern recognition receptors (PRRs), the most characterised of which are toll-like receptors (TLRs). Humans encode 10 TLR members, each recognising distinct microbial components: TLR2 senses bacterial lipoproteins and the Akkermansia muciniphila outer membrane protein Amuc_1100; TLR4 recognises bacterial LPS. Upon activation, TLRs signal predominantly through the adaptor protein MyD88, triggering antigen-presenting cell activation that bridges innate and adaptive immunity and stimulates pro-inflammatory cytokine production. Excessive TLR activation disrupts immune homeostasis, causing sustained inflammation and increasing risk of inflammatory and autoimmune diseases. In metabolic disease, high-fat diet and weight gain increase gut permeability, enabling LPS to enter the circulation and cause low-grade systemic inflammation — a state termed metabolic endotoxaemia — which underlies type 2 diabetes, NAFLD, chronic kidney disease, and atherosclerosis. Importantly, LPS from different bacterial species exert distinct effects on gut-barrier function and glucose metabolism, so the net impact of metabolic endotoxaemia depends on microbiota composition. Deletion of MyD88 in the intestines partially protects against diet-induced obesity and diabetes, demonstrating the centrality of this signalling axis.",
+      "topic_tags": ["LPS", "PAMPs", "TLR", "MyD88", "metabolic endotoxemia", "type 2 diabetes", "NAFLD", "innate immunity", "TLR4", "TLR2"]
+    },
+    {
+      "id": "gutmech_qa_hard_p1x4",
+      "difficulty": "hard",
+      "question": "What are enterosynes, and how does the enteric nervous system link gut microbiota to systemic glucose metabolism?",
+      "answer": "Enterosynes are a newly defined class of molecules originating from the gut that modulate duodenal contraction by targeting the enteric nervous system (ENS). They can be chemically diverse, encompassing hormones, bioactive peptides, lipids, nutrients, microbiota factors, and immune factors. The concept emerged from the observation that subjects with type 2 diabetes exhibit duodenal hypermotility, which promotes glucose absorption and contributes to hyperglycaemia. Duodenal contractions are sensed by the hypothalamus, and during diabetes the abnormal hypermotility creates aberrant afferent nervous signals to the brain; restoring natural duodenal contraction via the ENS improves insulin sensitivity. In a mechanistic example, feeding oligofructose to diabetic mice reduced duodenal contraction frequency via enteric neuron activity. Lipidomic analysis revealed this was mediated by increased intestinal production of 12-HETE — a bioactive lipid generated from the microbiota — acting on mu-opioid receptors (MOR) and PPARγ. Similarly, bacteria-derived C18-3OH (3-hydroxyoctadecaenoic acid) from Escherichia coli Nissle 1917 and oligofructose-modulated bacteria exerted anti-inflammatory effects via PPARγ activation. These findings position the ENS and microbiota-derived lipid mediators as novel therapeutic targets for metabolic disease.",
+      "topic_tags": ["enterosynes", "enteric nervous system", "duodenal motility", "type 2 diabetes", "12-HETE", "oligofructose", "mu-opioid receptor", "PPARgamma", "gut-brain axis"]
+    },
+    {
+      "id": "gutmech_qa_hard_w6m2",
+      "difficulty": "hard",
+      "question": "What are advanced glycation end products (AGEs), how are they processed by gut bacteria, and what are the implications for metabolic disease?",
+      "answer": "Advanced glycation end products (AGEs) are Maillard reaction products formed when free amino groups of proteins react with reducing carbohydrates during thermal food processing. They are poorly bioavailable and have been mechanistically linked to type 2 diabetes and colorectal cancer through stimulation of the pro-inflammatory receptor for AGEs (RAGE), increased gut permeability, and consequent leakage of bacterial toxins into systemic circulation. Fructoselysine is a primary dietary AGE formed from lysine and glucose. While E. coli can respire fructoselysine, recent research showed it can also be converted into butyrate by members of the genus Intestinimonas via a novel metabolic pathway — turning a potentially harmful compound into a beneficial signalling metabolite. The capability to degrade fructoselysine was found only in formula-fed, not breastfed, infants, likely because infant formula contains higher levels of this compound after thermal treatment. Another major AGE, N-ε-carboxymethyllysine, is completely utilised by Cloacibacillus and potentially Oscillibacter spp. These findings illustrate that certain intestinal bacteria can detoxify AGEs and even convert them into metabolites with beneficial signalling potential, suggesting a therapeutic opportunity through microbiota modulation.",
+      "topic_tags": ["AGEs", "advanced glycation end products", "fructoselysine", "Intestinimonas", "butyrate", "RAGE", "type 2 diabetes", "infant formula", "gut bacteria"]
+    },
+    {
+      "id": "gutmech_qa_hard_j9b6",
+      "difficulty": "hard",
+      "question": "How does Akkermansia muciniphila exert its beneficial effects on host metabolism, and which specific molecular components have been identified as responsible?",
+      "answer": "Akkermansia muciniphila is a mucolytic bacterium of the Verrucomicrobia phylum that resides in the mucus layer of the gut. Its administration in overweight and obese subjects demonstrated beneficial metabolic effects in proof-of-principle trials. Several molecular candidates have been investigated. The 30 kDa outer membrane protein Amuc_1100 is thermostable, has virtually no homology to other bacteria outside Verrucomicrobia, and signals through TLR2 to improve gut barrier function and reduce inflammation. It has been shown to prevent diet-induced obesity in mice. A second protein, P9 (encoded by Amuc_1831, 84 kDa), induces serum GLP-1 after oral administration and interacts with intercellular adhesion molecule 2 (ICAM-2) receptors. A third, Amuc_1434* (50 kDa), suppresses colorectal cancer cell viability via a TRAIL-mediated apoptosis pathway. However, P9 and Amuc_1434* are found in many bacteria, are annotated as proteases, have not been localised extracellularly without cell lysis, and their stability has not been established — limiting their current claim as specific effectors. Notably, pasteurised A. muciniphila cells are as effective or more effective than live cells, suggesting thermostable surface components like Amuc_1100 are key mediators. Beneficial effects are also linked to increased mono-palmitoylglycerol levels acting as PPARα agonists.",
+      "topic_tags": ["Akkermansia muciniphila", "Amuc_1100", "TLR2", "GLP-1", "PPARalpha", "gut barrier", "obesity", "metabolic health", "pasteurised bacteria"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "gutmech_mcq_easy_e4h7",
+      "difficulty": "easy",
+      "question": "Which receptor does butyrate activate in colonic cells to maintain anaerobic conditions in the colonic lumen?",
+      "options": {
+        "A": "GPR43 (FFAR2)",
+        "B": "TGR5",
+        "C": "Peroxisome proliferator-activated receptor gamma (PPARγ)",
+        "D": "Farnesoid X receptor (FXR)"
+      },
+      "correct_answer": "C",
+      "explanation": "Butyrate activates PPARγ in colonocytes, which limits oxygen diffusion from colonocytes to the lumen and represses iNOS expression, thereby reducing nitrate production. This maintains the anaerobic conditions required by obligate anaerobes and prevents expansion of pathogenic facultative anaerobes like Enterobacteriaceae.",
+      "topic_tags": ["butyrate", "PPARgamma", "anaerobic conditions", "colonocytes", "iNOS"]
+    },
+    {
+      "id": "gutmech_mcq_easy_r2v5",
+      "difficulty": "easy",
+      "question": "Which of the following bacteria belongs to the phylum Verrucomicrobia and is known to reside in the gut mucus layer?",
+      "options": {
+        "A": "Faecalibacterium prausnitzii",
+        "B": "Akkermansia muciniphila",
+        "C": "Bacteroides fragilis",
+        "D": "Fusobacterium nucleatum"
+      },
+      "correct_answer": "B",
+      "explanation": "Akkermansia muciniphila is the representative of the Verrucomicrobia phylum in the human gut. It is a mucin-degrading bacterium occupying the mucus layer and has been extensively studied for its beneficial effects on host metabolic health and gut barrier function.",
+      "topic_tags": ["Akkermansia muciniphila", "Verrucomicrobia", "mucus layer", "gut bacteria"]
+    },
+    {
+      "id": "gutmech_mcq_easy_n8q1",
+      "difficulty": "easy",
+      "question": "What is the primary source of short-chain fatty acids (SCFAs) produced by the gut microbiota?",
+      "options": {
+        "A": "Simple sugars and amino acids absorbed in the small intestine",
+        "B": "Dietary fats that escape absorption in the small intestine",
+        "C": "Non-digestible complex carbohydrates (dietary fibres) fermented by colonic bacteria",
+        "D": "Bile acids that are not reabsorbed in the ileum"
+      },
+      "correct_answer": "C",
+      "explanation": "SCFAs are produced when resident colonic bacteria ferment non-digestible complex carbohydrates such as dietary fibres. The human body lacks the enzymes to digest these fibres, so they reach the colon intact where specific bacteria break them down into SCFAs including acetate, butyrate, and propionate.",
+      "topic_tags": ["SCFAs", "dietary fibre", "fermentation", "colonic bacteria", "non-digestible carbohydrates"]
+    },
+    {
+      "id": "gutmech_mcq_med_m5k3",
+      "difficulty": "medium",
+      "question": "How does the chemical structure of fermentable dietary fibres influence which SCFAs are preferentially produced?",
+      "options": {
+        "A": "All fermentable fibres produce SCFAs in a fixed 1:1:1 ratio of acetate, propionate, and butyrate regardless of structure",
+        "B": "The chemical structure directly determines the SCFA production profile; for example, inulin is propionogenic while resistant starches are more butyrogenic",
+        "C": "Fibre structure determines only the rate of fermentation, not the type of SCFA produced",
+        "D": "Only the molecular weight of fibre affects SCFA composition; short-chain fibres produce butyrate while long-chain fibres produce propionate"
+      },
+      "correct_answer": "B",
+      "explanation": "The chemical structure of fermentable fibres directly determines the SCFA production profile. For example, inulin is described as propionogenic (favouring propionate production), whereas resistant starches are more butyrogenic (favouring butyrate). Additionally, some colonic bacteria use alternative pathways to produce butyrate from amino acids like lysine or propionate from plant compounds such as phytate.",
+      "topic_tags": ["dietary fibre", "SCFAs", "inulin", "resistant starch", "butyrate", "propionate", "fermentation"]
+    },
+    {
+      "id": "gutmech_mcq_med_c7f2",
+      "difficulty": "medium",
+      "question": "What is the significance of the gut microbiota for bile acid biology beyond their role in fat digestion?",
+      "options": {
+        "A": "Gut bacteria synthesise primary bile acids de novo, supplementing hepatic production",
+        "B": "Gut bacteria deconjugate and further modify primary bile acids into secondary BAs that act as signalling metabolites activating receptors like FXR and TGR5",
+        "C": "Gut bacteria reabsorb bile acids in the colon to prevent their loss in faeces, contributing to the enterohepatic circulation",
+        "D": "Gut bacteria inactivate bile acids to prevent toxic accumulation in the colonic epithelium"
+      },
+      "correct_answer": "B",
+      "explanation": "Gut bacteria transform primary BAs through deconjugation, dehydroxylation, oxidation, and epimerisation, generating secondary bile acids such as deoxycholic acid and lithocholic acid. These secondary BAs are considered microbiota-derived signalling metabolites that activate receptors including FXR and TGR5, regulating glucose, lipid, and energy metabolism, and stimulating GLP-1 and PYY secretion.",
+      "topic_tags": ["bile acids", "secondary bile acids", "FXR", "TGR5", "GLP-1", "signalling metabolites", "gut microbiota"]
+    },
+    {
+      "id": "gutmech_mcq_med_q4t9",
+      "difficulty": "medium",
+      "question": "In the context of gut diseases, which bacteria have been specifically implicated in colorectal cancer based on their association with the disturbed gut microbiome?",
+      "options": {
+        "A": "Ruminococcus bromii, Faecalibacterium prausnitzii, and Akkermansia muciniphila",
+        "B": "Fusobacterium nucleatum, Escherichia coli, and Bacteroides fragilis",
+        "C": "Dialister invisus, Parabacteroides spp, and Lachnospiraceae",
+        "D": "Streptococcus mutans, Eggerthella lenta, and Eubacterium limosum"
+      },
+      "correct_answer": "B",
+      "explanation": "Colorectal cancer (CRC) has been convincingly correlated with a disturbed gut microbiome, and specific bacteria implicated include Fusobacterium nucleatum, Escherichia coli, and Bacteroides fragilis, some of which are derived from the oral microbiome. CRC is described as the most common malignancy in the lower gut.",
+      "topic_tags": ["colorectal cancer", "gut microbiome", "Fusobacterium nucleatum", "Bacteroides fragilis", "dysbiosis", "CRC"]
+    },
+    {
+      "id": "gutmech_mcq_med_u9b4",
+      "difficulty": "medium",
+      "question": "What metabolic consequence follows when the enzyme NAPE-PLD is deleted specifically in adipocytes?",
+      "options": {
+        "A": "Mice become hyperphagic and develop hepatic steatosis due to defective gut-brain axis signalling",
+        "B": "Mice develop obesity, insulin resistance, and inflammation on a normal diet, with impaired thermogenic browning of adipose tissue and altered gut microbiota",
+        "C": "Mice develop high-fat diet-like metabolic phenotype under normal diet due to changes in bile acid profiles",
+        "D": "Mice show reduced fat absorption in the small intestine and decreased circulating endocannabinoids"
+      },
+      "correct_answer": "B",
+      "explanation": "Deletion of NAPE-PLD (the key synthesis enzyme for N-acylethanolamines) specifically in adipocytes caused mice to spontaneously develop obesity, insulin resistance, and inflammation on a normal caloric diet, with greater sensitivity to high-fat diet effects. This deletion decreased the thermogenic programme (browning/beiging) in adipose tissue and caused a profound shift in gut microbiota composition. Transferring this microbiota to germ-free mice replicated the phenotype, establishing a causal role of the gut microbiota.",
+      "topic_tags": ["NAPE-PLD", "adipocytes", "endocannabinoid system", "obesity", "gut microbiota", "browning", "insulin resistance"]
+    },
+    {
+      "id": "gutmech_mcq_med_x3n6",
+      "difficulty": "medium",
+      "question": "What is the proposed mechanism by which imidazole propionate (IMP) is associated with type 2 diabetes?",
+      "options": {
+        "A": "IMP activates TLR4 signalling to promote systemic inflammation and beta-cell apoptosis",
+        "B": "IMP is a substrate for gluconeogenesis, causing excessive glucose production in the liver",
+        "C": "IMP is produced from histidine by intestinal bacteria and impairs insulin signalling through the mTORC1-dependent pathway",
+        "D": "IMP inhibits GLP-1 secretion from enteroendocrine L-cells, reducing insulin release"
+      },
+      "correct_answer": "C",
+      "explanation": "Imidazole propionate (IMP) is produced from histidine by intestinal bacteria including Streptococcus mutans and Eggerthella lenta. Serum IMP is elevated in patients with type 2 diabetes, and the mechanism involves impaired insulin signalling and glucose tolerance through the mTORC1 (mammalian target of rapamycin complex 1)-dependent pathway, highlighting the role of gut-derived metabolites in diabetic pathophysiology.",
+      "topic_tags": ["imidazole propionate", "IMP", "type 2 diabetes", "mTORC1", "insulin signalling", "histidine", "gut bacteria"]
+    },
+    {
+      "id": "gutmech_mcq_hard_h1d8",
+      "difficulty": "hard",
+      "question": "Which of the following correctly describes why pasteurised Akkermansia muciniphila retains or even exceeds the efficacy of live cells in metabolic studies, and what molecular basis underlies this?",
+      "options": {
+        "A": "Pasteurisation increases the release of intracellular propionate stores that directly activate GPR43, explaining efficacy independent of bacterial viability",
+        "B": "Pasteurisation inactivates immunosuppressive surface proteins and allows host PRRs to better sense beneficial metabolites from the bacterium",
+        "C": "The thermostable outer membrane protein Amuc_1100, which signals through TLR2 to improve gut barrier and metabolism, remains structurally intact and active after pasteurisation — unlike other candidate proteins whose stability is unestablished",
+        "D": "Pasteurisation converts surface glycoproteins into bioavailable PPARγ ligands that reduce intestinal permeability more effectively than native cell surface components"
+      },
+      "correct_answer": "C",
+      "explanation": "The Amuc_1100 protein from A. muciniphila is thermostable and has been shown to signal through TLR2, improving gut barrier function, reducing inflammation, and preventing diet-induced obesity in mice. Its thermostability explains why pasteurised A. muciniphila retains or exceeds the efficacy of live cells. In contrast, other candidate proteins (P9 and Amuc_1434*) have not had their stability adequately characterised, making Amuc_1100 the most credible effector molecule for beneficial effects mediated by the pasteurised form.",
+      "topic_tags": ["Akkermansia muciniphila", "Amuc_1100", "pasteurised bacteria", "TLR2", "thermostability", "gut barrier", "metabolic disease"]
+    },
+    {
+      "id": "gutmech_mcq_hard_f5y2",
+      "difficulty": "hard",
+      "question": "What distinguishes the 'leaky gut' (impaired gut barrier) state from a healthy gut barrier at the molecular level, in terms of microbial metabolite signalling?",
+      "options": {
+        "A": "In leaky gut, AhR is overactivated by excess tryptophan metabolites, causing excessive tight junction remodelling and immune hyper-activation",
+        "B": "In leaky gut, reduced butyrate leads to lower PPARγ activity and reduced beta-oxidation, causing increased oxygen and nitrate availability that favours pathogenic Enterobacteriaceae, while impaired GLP-1/GLP-2/PYY secretion worsens metabolic outcomes and high-oxygen conditions promote a shift from obligate to facultative anaerobes",
+        "C": "In leaky gut, excess SCFA production overwhelms colonocyte metabolism, causing mitochondrial uncoupling and loss of tight junction integrity via excessive PPARγ activation",
+        "D": "In leaky gut, TGR5 is desensitised by excess secondary bile acids, abolishing GLP-1 secretion and causing systemic endocannabinoid imbalance that raises CB2-mediated inflammation"
+      },
+      "correct_answer": "B",
+      "explanation": "In pathological gut barrier states, reduced butyrate leads to lower PPARγ activity and decreased beta-oxidation in colonocytes, raising oxygen and nitrate levels in the lumen. This environment favours pathogenic facultative anaerobes (Enterobacteriaceae) over obligate anaerobes. Concurrently, altered endocannabinoid tone, reduced SCFAs, and impaired bile acid profiles reduce L-cell activation, lowering GLP-1, GLP-2, and PYY secretion — worsening insulin sensitivity, food intake, and intestinal permeability — while PAMPs entering the circulation through the leaky barrier promote endotoxaemia and systemic inflammation.",
+      "topic_tags": ["leaky gut", "gut barrier", "butyrate", "PPARgamma", "Enterobacteriaceae", "GLP-1", "PYY", "endotoxemia", "oxygen", "nitrate"]
+    }
+  ]
+}

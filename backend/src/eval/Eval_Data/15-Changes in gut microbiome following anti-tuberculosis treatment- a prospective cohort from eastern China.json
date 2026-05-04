@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Changes in gut microbiome following anti-tuberculosis treatment: a prospective cohort from eastern China",
+    "authors": ["Simin Zhang", "Zhipeng Xu", "Zhan Wang", "Xinru Fei", "Zhongqi Li", "Limei Zhu", "Leonardo Martinez", "Jianming Wang", "Qiao Liu"],
+    "journal": "BMC Infectious Diseases",
+    "year": 2025,
+    "doi": "10.1186/s12879-025-10800-1",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "tbgut_easy_7a3f",
+      "difficulty": "easy",
+      "question": "Why does prolonged antibiotic therapy used in tuberculosis treatment pose a particular risk to gut microbiota stability?",
+      "answer": "Tuberculosis treatment requires a six-month course combining both broad-spectrum and narrow-spectrum antibiotics. The extended duration and the dual nature of the antibiotic regimen — affecting both a wide range and a narrow range of bacterial species simultaneously — can be devastating to the gut microbiome's stability, disrupting its composition, diversity, and abundance in ways that may persist beyond the treatment period.",
+      "topic_tags": ["anti-tuberculosis treatment", "antibiotic therapy", "gut microbiota", "dysbiosis", "treatment duration"]
+    },
+    {
+      "id": "tbgut_easy_2b1c",
+      "difficulty": "easy",
+      "question": "What is the gut-lung axis and how does it relate to respiratory infections like tuberculosis?",
+      "answer": "The gut-lung axis refers to bidirectional communication between the intestinal microbiota and lung tissue, mediated by shared immune messengers and inflammatory processes. Intestinal disorders can affect the lungs via inflammatory pathways, and lung inflammation can similarly affect gut function. Key mediators include short-chain fatty acids (SCFAs), cytokines, T cell families, and pattern recognition receptors. In tuberculosis, dysregulation of the gut microbiota may influence the onset and progression of pulmonary disease by modulating the immune response to Mycobacterium tuberculosis.",
+      "topic_tags": ["gut-lung axis", "intestinal microbiota", "lung inflammation", "tuberculosis", "SCFAs", "cytokines"]
+    },
+    {
+      "id": "tbgut_easy_9c4e",
+      "difficulty": "easy",
+      "question": "What are the dominant bacterial phyla found in the gut microbiome of people with pulmonary tuberculosis, and how do their relative abundances change during treatment?",
+      "answer": "The dominant bacterial phyla in the gut microbiome of people with tuberculosis are Firmicutes, Proteobacteria, Actinobacteriota, and Bacteroidota, collectively accounting for more than 90% of abundance. During the intensive phase of anti-tuberculosis treatment, Proteobacteria showed a trend of increasing and then decreasing, while Firmicutes first decreased and then increased. Bacteroidota showed a significant decrease in abundance after treatment initiation that persisted through the full course.",
+      "topic_tags": ["gut microbiota", "tuberculosis", "Firmicutes", "Proteobacteria", "Bacteroidota", "phylum-level changes"]
+    },
+    {
+      "id": "tbgut_easy_5d2a",
+      "difficulty": "easy",
+      "question": "What is alpha diversity in the context of gut microbiome research, and what happens to it during anti-tuberculosis therapy?",
+      "answer": "Alpha diversity refers to the richness and evenness of microbial species within a single sample, commonly measured using indices such as the Shannon index, inverse Simpson's index, Chao1 richness, and observed operational taxonomic units (OTUs). During anti-tuberculosis treatment, alpha diversity is significantly reduced after the first two months of therapy, reflecting disruption of the gut microbial community. Although there is a slight recovery by the end of the full treatment course, the difference between the two-month and six-month timepoints is not statistically significant, indicating that recovery is slow and incomplete.",
+      "topic_tags": ["alpha diversity", "Shannon index", "gut microbiome", "anti-tuberculosis treatment", "microbial richness"]
+    },
+    {
+      "id": "tbgut_easy_3e8b",
+      "difficulty": "easy",
+      "question": "What gastrointestinal symptoms are most commonly experienced by people undergoing anti-tuberculosis treatment, and why does this matter clinically?",
+      "answer": "The majority of people undergoing anti-tuberculosis treatment experience gastrointestinal symptoms. The most prevalent symptoms are abdominal bloating and nausea, with many patients also reporting heartburn, acid reflux, and abdominal pain. These symptoms are clinically important because gastrointestinal adverse effects are one of the leading causes of treatment interruption in tuberculosis patients, which can jeopardize treatment outcomes and contribute to drug resistance. Early recognition and intervention are therefore critical for maintaining treatment continuity.",
+      "topic_tags": ["gastrointestinal symptoms", "anti-tuberculosis treatment", "nausea", "abdominal bloating", "treatment adherence", "GSRS"]
+    },
+
+    {
+      "id": "tbgut_med_f1b7",
+      "difficulty": "medium",
+      "question": "How do SCFAs produced by gut bacteria contribute to immune defense against pulmonary pathogens like Mycobacterium tuberculosis?",
+      "answer": "Short-chain fatty acids (SCFAs) — primarily acetate, propionate, and butyrate — are produced by colonic bacteria, especially Bacteroidota, through fermentation of dietary fibers. SCFAs act as signaling molecules that travel via the bloodstream throughout the body, where they regulate immune system activity. In the context of tuberculosis, SCFAs serve as energy sources for colonocytes, regulate host fatty acid and lipid synthesis, maintain gut microbiota stability, elevate anti-inflammatory cytokines, and directly modulate the immune response to Mycobacterium tuberculosis. Their reduction during anti-tuberculosis treatment, as a result of dysbiosis in SCFA-producing taxa, may therefore impair host immune defenses against the pathogen.",
+      "topic_tags": ["SCFAs", "immune regulation", "Mycobacterium tuberculosis", "Firmicutes", "Bacteroidota", "gut-lung axis", "anti-inflammatory"]
+    },
+    {
+      "id": "tbgut_med_a4c3",
+      "difficulty": "medium",
+      "question": "What role does Firmicutes play in regulating systemic immunity beyond SCFA production, and how does anti-tuberculosis treatment affect this?",
+      "answer": "Beyond producing SCFAs, Firmicutes exert control over systemic immune responses through their cell wall glycoconjugates. These glycoconjugates facilitate the release of IL-34, which activates macrophages and bolsters defensive capabilities against pulmonary inflammation. Notably, the cell wall glycoconjugates of Firmicutes can more readily traverse the intestinal barrier, enter systemic circulation, and persist in the body — thereby extending their ability to modulate immunity systemically. Anti-tuberculosis treatment is associated with a reduction in Firmicutes abundance, which may consequently impair macrophage activation and weaken systemic immune defenses relevant to tuberculosis control.",
+      "topic_tags": ["Firmicutes", "systemic immunity", "IL-34", "macrophage activation", "cell wall glycoconjugates", "anti-tuberculosis treatment"]
+    },
+    {
+      "id": "tbgut_med_d9e2",
+      "difficulty": "medium",
+      "question": "How does the abundance of Escherichia-Shigella change during anti-tuberculosis therapy, and what is its significance as a marker of gut dysbiosis?",
+      "answer": "Escherichia-Shigella demonstrates a significant increase in relative abundance during the intensive phase of anti-tuberculosis treatment, followed by a significant decrease after the intensive phase concludes. This genus has been found to dominate gut microbiome dysbiosis in people with tuberculous meningitis — a condition requiring even higher antibiotic doses. Because its expansion mirrors the extent of antibiotic disruption to the gut community, Escherichia-Shigella is proposed as a strong indicator for forecasting microbiota dysbiosis triggered by anti-tuberculosis treatment and potentially for monitoring treatment-related gut disruption.",
+      "topic_tags": ["Escherichia-Shigella", "gut dysbiosis", "anti-tuberculosis treatment", "opportunistic pathogens", "biomarker", "intensive phase"]
+    },
+    {
+      "id": "tbgut_med_b6f5",
+      "difficulty": "medium",
+      "question": "What is the temporal pattern of gut microbiota recovery following the intensive phase of anti-tuberculosis treatment, and what does this imply for patient management?",
+      "answer": "After the intensive phase of anti-tuberculosis treatment (the first two months), gut microbiota diversity shows only a slight and statistically non-significant recovery by the end of the full six-month treatment course. This pattern suggests that while the intensive phase inflicts the most severe disruption, the recovery process is extremely slow and potentially incomplete even after treatment ends. For patient management, this implies a need for strategies specifically aimed at supporting microbiome restoration post-treatment, such as probiotic supplementation or dietary interventions, and that microbiota disruption should be considered a therapeutic target alongside bacteriological cure.",
+      "topic_tags": ["microbiota recovery", "intensive phase", "anti-tuberculosis treatment", "post-treatment", "dysbiosis", "clinical management"]
+    },
+    {
+      "id": "tbgut_med_c2d8",
+      "difficulty": "medium",
+      "question": "What is the dual and complex role of Akkermansia in the context of tuberculosis and anti-tuberculosis treatment?",
+      "answer": "Akkermansia exhibits a paradoxical role in tuberculosis. During the intensive phase of anti-tuberculosis treatment, its abundance decreases, with a gradual recovery afterward — a pattern also observed in animal models treated with isoniazid and rifampicin. On the protective side, oral administration of Akkermansia muciniphila or its metabolite palmitoleic acid has been shown to significantly suppress Mycobacterium tuberculosis infection in animal models, suggesting a beneficial immune-modulatory role. Conversely, Mendelian randomization analyses have identified Akkermansia as a potential risk factor for tuberculosis development. This dual nature — simultaneously protective against infection but potentially associated with disease risk — underscores the complexity of host-microbe interactions and the need for further mechanistic research.",
+      "topic_tags": ["Akkermansia muciniphila", "tuberculosis", "anti-tuberculosis treatment", "palmitoleic acid", "dysbiosis biomarker", "Mendelian randomization"]
+    },
+    {
+      "id": "tbgut_med_e3a6",
+      "difficulty": "medium",
+      "question": "Why can Enterococcus become pathogenic in the context of prolonged anti-tuberculosis therapy, and what mechanisms underlie this shift?",
+      "answer": "Under normal conditions, Enterococcus can enhance gastrointestinal adhesion through extracellular polysaccharide production, which facilitates probiotic colonization. However, during prolonged anti-tuberculosis antibiotic therapy or in immunocompromised states, Enterococcus becomes prone to translocation from the gut to other tissues, leading to enterococcal infections. Additionally, Enterococcus has a high capacity to accumulate mutations and acquire exogenous genetic elements, which confers antibiotic resistance — making it a major nosocomial pathogen. During anti-tuberculosis treatment, Enterococcus abundance initially decreases during the intensive phase but then sharply rebounds, far exceeding pre-treatment levels, signaling both a microbial shift and a potential pathogenic risk.",
+      "topic_tags": ["Enterococcus", "opportunistic pathogen", "antibiotic resistance", "gut translocation", "anti-tuberculosis treatment", "nosocomial infection"]
+    },
+
+    {
+      "id": "tbgut_hard_7b1f",
+      "difficulty": "hard",
+      "question": "How does anti-tuberculosis treatment differentially affect Firmicutes and Bacteroidota, and what are the downstream immunological consequences of depleting both phyla simultaneously?",
+      "answer": "Anti-tuberculosis treatment is associated with a reduction in both Firmicutes and Bacteroidota — the two dominant phyla in the human gut. The depletion of Bacteroidota reduces the primary source of SCFA production (particularly propionate and acetate), impairing colonocyte energy supply, lipid metabolism regulation, and anti-inflammatory cytokine elevation. The concurrent reduction in Firmicutes undermines butyrate production, macrophage activation via IL-34 release, and systemic immune modulation mediated by cell wall glycoconjugates. Since both phyla contribute complementary but distinct immunological functions — Firmicutes driving systemic macrophage responses and Bacteroidota mediating mucosal and metabolic immune regulation — their simultaneous depletion creates a compounded immune deficit that may compromise host defense against Mycobacterium tuberculosis itself, potentially influencing disease progression and treatment outcomes.",
+      "topic_tags": ["Firmicutes", "Bacteroidota", "anti-tuberculosis treatment", "SCFAs", "IL-34", "macrophage activation", "immune consequence", "dysbiosis"]
+    },
+    {
+      "id": "tbgut_hard_4c9d",
+      "difficulty": "hard",
+      "question": "What are the key methodological limitations that make comparing gut microbiome studies across tuberculosis cohorts difficult, and how do these limitations affect the interpretation of findings?",
+      "answer": "Comparing gut microbiome findings across tuberculosis studies is hampered by several interrelated methodological challenges. First, case-control studies frequently fail to specify whether participants have already initiated anti-tuberculosis drugs, confounding the microbiota signal. Second, published cohort studies suffer from limited sample sizes and short follow-up periods, reducing statistical power and temporal resolution. Third, key variables such as study population demographics, sampling timepoints, 16S rRNA gene regions sequenced, sequencing platforms, and bioinformatic pipelines differ substantially across studies — all of which independently influence microbial community profiles. Fourth, dietary intake and probiotic use during follow-up are rarely documented, introducing unmeasured confounding. These cumulative sources of heterogeneity mean that conflicting conclusions across studies may reflect methodological artifacts rather than true biological differences, making meta-analytic synthesis unreliable without stringent harmonization.",
+      "topic_tags": ["study design", "methodological limitations", "tuberculosis microbiome", "cohort studies", "16S rRNA", "confounding", "heterogeneity"]
+    },
+    {
+      "id": "tbgut_hard_2e5a",
+      "difficulty": "hard",
+      "question": "How does the concept of the gut-lung immune axis provide a mechanistic framework for understanding why gut microbiota dysbiosis during anti-tuberculosis treatment could paradoxically worsen pulmonary outcomes?",
+      "answer": "The gut-lung axis operates through bidirectional immune signaling: gut microbiota-derived metabolites such as SCFAs travel systemically to regulate lung immune responses, while pulmonary inflammation can reciprocally alter gut microbial composition. In tuberculosis, anti-tuberculosis antibiotics cause profound gut dysbiosis — depleting beneficial SCFA producers (Firmicutes, Bacteroidota), reducing anti-inflammatory cytokine levels, and impairing macrophage activation via reduced IL-34 signaling. These changes may attenuate the very immune responses needed to control Mycobacterium tuberculosis in the lungs. Moreover, the overgrowth of opportunistic pathogens such as Escherichia-Shigella and Enterococcus following dysbiosis can trigger pro-inflammatory endotoxin release, stimulating immune cells to produce cytokines that promote systemic inflammation without resolving pulmonary infection. Thus, the treatment itself — while bactericidal — may create an immunological environment that is less capable of sustaining pulmonary defense, highlighting the gut microbiome as both a casualty and a potential modulator of tuberculosis treatment efficacy.",
+      "topic_tags": ["gut-lung axis", "anti-tuberculosis treatment", "SCFAs", "immune modulation", "dysbiosis", "Mycobacterium tuberculosis", "pulmonary outcomes", "macrophage"]
+    },
+    {
+      "id": "tbgut_hard_8f3c",
+      "difficulty": "hard",
+      "question": "How does the dynamic behavior of multiple microbial genera across three longitudinal timepoints reveal the phased nature of gut microbiota disruption and partial recovery during tuberculosis treatment?",
+      "answer": "Longitudinal profiling across pre-treatment, two-month, and six-month timepoints reveals a phased and non-uniform pattern of disruption and recovery. During the intensive treatment phase, beneficial genera including Eubacterium_ruminantium_group, Alistipes, Lachnospiraceae_NK4A136_group, Catabacter, and Marvinbryantia show significant declines, while pathobiont genera such as Escherichia-Shigella surge. Akkermansia decreases during the intensive phase but begins a slow rebound thereafter. Enterococcus follows a more extreme pattern — declining initially and then surging to levels far above baseline after the intensive phase. At the phylum level, Proteobacteria peaks during the intensive phase and then partially recedes, while Firmicutes and Bacteroidota remain suppressed throughout. The genus Eubacterium_ventriosum_group exhibits a temporary loss followed by partial resurgence — illustrating resilience in some taxa. Taken together, these patterns indicate that the intensive treatment phase is the most destabilizing, that opportunistic pathogens capitalize rapidly on ecological disruption, that some beneficial taxa show partial resilience while others remain depleted, and that full recovery has not occurred even by treatment completion — providing a nuanced, taxa-level portrait of microbiome dynamics.",
+      "topic_tags": ["longitudinal microbiome", "tuberculosis treatment", "Escherichia-Shigella", "Akkermansia", "Enterococcus", "Lachnospiraceae", "microbial recovery", "phased dysbiosis"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "tbgut_mcq_easy_3b2d",
+      "difficulty": "easy",
+      "question": "Which of the following best describes the temporal pattern of alpha diversity in the gut microbiome across a standard six-month tuberculosis treatment course?",
+      "options": {
+        "A": "Alpha diversity increases steadily from baseline through the end of treatment",
+        "B": "Alpha diversity decreases significantly after two months and then fully recovers by six months",
+        "C": "Alpha diversity decreases significantly after two months, with only a slight and non-significant recovery by six months",
+        "D": "Alpha diversity remains unchanged throughout treatment, as gut microbiota is resistant to antibiotic effects"
+      },
+      "correct_answer": "C",
+      "explanation": "Anti-tuberculosis treatment significantly reduces gut microbiota diversity after the first two months (intensive phase). While there is a slight increase by six months, the difference between the two-month and six-month timepoints is not statistically significant, indicating that recovery is slow and incomplete within the treatment period.",
+      "topic_tags": ["alpha diversity", "anti-tuberculosis treatment", "Shannon index", "microbiota recovery"]
+    },
+    {
+      "id": "tbgut_mcq_easy_9a4f",
+      "difficulty": "easy",
+      "question": "What are the four first-line drugs used in standard tuberculosis treatment, and why is their prolonged combined use problematic for gut health?",
+      "options": {
+        "A": "Amoxicillin, ciprofloxacin, metronidazole, and doxycycline — they suppress beneficial gut bacteria",
+        "B": "Isoniazid, rifampicin, pyrazinamide, and ethambutol — their combined broad- and narrow-spectrum activity over six months can profoundly disrupt gut microbiota stability",
+        "C": "Isoniazid, rifampicin, pyrazinamide, and ethambutol — they directly damage the intestinal epithelial barrier",
+        "D": "Streptomycin, linezolid, bedaquiline, and delamanid — their use causes permanent eradication of beneficial microbiota"
+      },
+      "correct_answer": "B",
+      "explanation": "The standard first-line tuberculosis regimen consists of isoniazid (INH), rifampicin (RIF), pyrazinamide (PZA), and ethambutol (EMB) for the first two months, followed by INH and RIF for four more months. The combination of broad- and narrow-spectrum antibiotics over this extended period is theoretically capable of devastating gut microbiome stability.",
+      "topic_tags": ["anti-tuberculosis drugs", "INH", "RIF", "PZA", "EMB", "gut dysbiosis", "treatment regimen"]
+    },
+    {
+      "id": "tbgut_mcq_easy_c1e6",
+      "difficulty": "easy",
+      "question": "Which bacterial genus shows the most dramatic increase in relative abundance specifically during the intensive phase of anti-tuberculosis treatment?",
+      "options": {
+        "A": "Akkermansia",
+        "B": "Bifidobacterium",
+        "C": "Escherichia-Shigella",
+        "D": "Faecalibacterium"
+      },
+      "correct_answer": "C",
+      "explanation": "Escherichia-Shigella demonstrates a significant increase in relative abundance during the intensive phase of anti-tuberculosis treatment, followed by a decline after the intensive phase ends. This expansion is consistent with its role as an opportunistic pathobiont that benefits from antibiotic-induced disruption of the competing commensal community.",
+      "topic_tags": ["Escherichia-Shigella", "intensive phase", "gut dysbiosis", "opportunistic pathogen", "anti-tuberculosis treatment"]
+    },
+
+    {
+      "id": "tbgut_mcq_med_5f8b",
+      "difficulty": "medium",
+      "question": "How do SCFAs connect gut microbial activity to the regulation of pulmonary immune responses in the context of tuberculosis?",
+      "options": {
+        "A": "SCFAs are produced in the lungs by resident bacteria and act locally on alveolar macrophages",
+        "B": "SCFAs produced by gut bacteria are absorbed into the bloodstream and act as systemic signaling molecules that regulate immune responses, including those directed against Mycobacterium tuberculosis",
+        "C": "SCFAs function exclusively within the intestinal lumen and do not enter systemic circulation",
+        "D": "SCFAs promote inflammation by stimulating neutrophil recruitment to the lung during tuberculosis infection"
+      },
+      "correct_answer": "B",
+      "explanation": "SCFAs — including acetate, propionate, and butyrate — are produced primarily by Bacteroidota and Firmicutes through dietary fiber fermentation in the colon. They are absorbed and travel through the bloodstream as signaling molecules, regulating immune responses systemically, including modulating the immune response to Mycobacterium tuberculosis. Their depletion due to anti-tuberculosis treatment-induced dysbiosis may therefore impair pulmonary immune defense.",
+      "topic_tags": ["SCFAs", "gut-lung axis", "immune regulation", "Mycobacterium tuberculosis", "Firmicutes", "Bacteroidota"]
+    },
+    {
+      "id": "tbgut_mcq_med_7d3a",
+      "difficulty": "medium",
+      "question": "What distinguishes the pattern of Enterococcus abundance across the tuberculosis treatment timeline, and what is the clinical concern this raises?",
+      "options": {
+        "A": "Enterococcus decreases throughout treatment, indicating successful microbiome restoration",
+        "B": "Enterococcus remains stable, confirming it is resistant to antibiotic disruption",
+        "C": "Enterococcus decreases during the intensive phase but then surges to levels far exceeding pre-treatment abundance after the intensive phase, raising concern for opportunistic infection and antibiotic resistance",
+        "D": "Enterococcus increases during the intensive phase and then returns to baseline, posing no special clinical concern"
+      },
+      "correct_answer": "C",
+      "explanation": "Enterococcus decreases during the intensive phase of anti-tuberculosis treatment, but then sharply rebounds to levels substantially higher than at baseline. This is clinically concerning because in immunocompromised or antibiotic-treated hosts, Enterococcus can translocate beyond the gut, cause enterococcal infections, and acquire antibiotic resistance — making it a major nosocomial pathogen.",
+      "topic_tags": ["Enterococcus", "antibiotic resistance", "opportunistic infection", "anti-tuberculosis treatment", "gut dysbiosis"]
+    },
+    {
+      "id": "tbgut_mcq_med_2c5e",
+      "difficulty": "medium",
+      "question": "Why does a cohort study design that follows tuberculosis patients longitudinally offer methodological advantages over a case-control design for studying gut microbiota changes?",
+      "options": {
+        "A": "Cohort studies use larger sample sizes and therefore always produce more reliable microbiota data than case-control designs",
+        "B": "Case-control studies are unable to measure microbiota composition, whereas cohort studies can",
+        "C": "Longitudinal cohort studies allow each participant to serve as their own baseline, capturing within-individual microbiota changes over time rather than comparing potentially different populations at a single timepoint",
+        "D": "Cohort studies eliminate the need for statistical analysis because temporal trends are self-evident in the data"
+      },
+      "correct_answer": "C",
+      "explanation": "A key limitation of case-control studies in this field is that they often do not specify whether participants have already started anti-tuberculosis treatment, confounding microbiota observations. Longitudinal cohort studies that collect samples before and at multiple timepoints during treatment allow each individual to serve as their own control, isolating the treatment effect and capturing the trajectory of microbiota change over time.",
+      "topic_tags": ["study design", "longitudinal cohort", "case-control", "gut microbiota", "methodology", "tuberculosis"]
+    },
+    {
+      "id": "tbgut_mcq_med_8e1b",
+      "difficulty": "medium",
+      "question": "What is the proposed significance of the gut microbiota disruption observed during tuberculosis treatment for future therapeutic strategies?",
+      "options": {
+        "A": "The findings suggest that tuberculosis patients should avoid all probiotic supplementation to prevent further microbiome disruption",
+        "B": "The disruption is considered clinically insignificant since antibiotics are expected to affect gut bacteria and the microbiome recovers on its own",
+        "C": "Gut microbiota homeostasis disruption may emerge as a therapeutic target and biomarker, suggesting a role for adjunctive strategies such as probiotics or dietary interventions to support microbiome restoration during and after treatment",
+        "D": "Microbiome disruption should be used as a reason to shorten the duration of anti-tuberculosis therapy to minimize gut damage"
+      },
+      "correct_answer": "C",
+      "explanation": "The study concludes that disruption of gut microbiota homeostasis during anti-tuberculosis treatment may represent both a therapeutic target and a valuable biomarker for medical interventions. The slow and incomplete recovery of the microbiome highlights the need for adjunctive strategies — such as dietary modification, probiotic supplementation, or microbiome-targeted therapies — to support restoration after treatment.",
+      "topic_tags": ["therapeutic target", "biomarker", "microbiome restoration", "adjunctive treatment", "anti-tuberculosis", "dysbiosis"]
+    },
+    {
+      "id": "tbgut_mcq_med_6a9c",
+      "difficulty": "medium",
+      "question": "Which phylum-level changes in the gut microbiome during anti-tuberculosis treatment are most likely to impair the host's production of immunomodulatory short-chain fatty acids?",
+      "options": {
+        "A": "Increase in Proteobacteria and decrease in Euryarchaeota",
+        "B": "Decrease in Firmicutes and Bacteroidota, which are the primary SCFA-producing phyla",
+        "C": "Decrease in Actinobacteriota and Verrucomicrobiota",
+        "D": "Increase in Firmicutes combined with a decrease in Proteobacteria"
+      },
+      "correct_answer": "B",
+      "explanation": "Both Firmicutes and Bacteroidota are the predominant SCFA-producing phyla in the human gut — Bacteroidota primarily generates propionate and acetate, while Firmicutes is a major source of butyrate. Anti-tuberculosis treatment is associated with significant reductions in both phyla, which would consequently reduce SCFA availability and impair SCFA-mediated immune regulation and anti-inflammatory signaling.",
+      "topic_tags": ["SCFAs", "Firmicutes", "Bacteroidota", "anti-tuberculosis treatment", "immune modulation", "phylum-level changes"]
+    },
+
+    {
+      "id": "tbgut_mcq_hard_4d7f",
+      "difficulty": "hard",
+      "question": "In the context of anti-tuberculosis treatment-induced gut dysbiosis, what combined mechanisms explain why a reduction in Akkermansia abundance during the intensive phase could have implications beyond gut health?",
+      "options": {
+        "A": "Akkermansia reduction decreases mucin degradation, which increases the thickness of the mucus layer and prevents pathogen colonization",
+        "B": "Akkermansia reduction impairs propionate production, and since oral administration of Akkermansia or its metabolite palmitoleic acid can suppress Mycobacterium tuberculosis infection in animal models, its depletion may reduce a specific anti-mycobacterial immune modulatory signal",
+        "C": "Akkermansia reduction is beneficial because Mendelian randomization shows it is a risk factor for tuberculosis; its depletion therefore reduces disease susceptibility",
+        "D": "Akkermansia reduction has no functional consequence during tuberculosis treatment because its role is limited to the mucosal niche and does not interact with systemic immune pathways"
+      },
+      "correct_answer": "B",
+      "explanation": "Akkermansia is a key propionate producer and has immune-regulatory roles beyond the gut. Critically, oral administration of Akkermansia muciniphila or its metabolite palmitoleic acid has been shown in animal models to significantly suppress Mycobacterium tuberculosis infection, suggesting the genus provides anti-mycobacterial immune modulation. Its depletion during anti-tuberculosis treatment may therefore remove a protective immune signal at the very time the host is combating tuberculosis. The Mendelian randomization risk finding adds complexity but does not negate the protective role observed in experimental models — the relationship is described as dependent on multiple interacting factors.",
+      "topic_tags": ["Akkermansia muciniphila", "palmitoleic acid", "Mycobacterium tuberculosis", "immune modulation", "propionate", "anti-tuberculosis treatment", "microbiome dysbiosis"]
+    },
+    {
+      "id": "tbgut_mcq_hard_1b6e",
+      "difficulty": "hard",
+      "question": "How does the simultaneous expansion of Proteobacteria and contraction of Bacteroidota during the intensive phase of anti-tuberculosis treatment create a self-reinforcing dysbiotic state?",
+      "options": {
+        "A": "Proteobacteria compete directly with Bacteroidota for fiber substrates, so increasing Proteobacteria necessarily reduces Bacteroidota abundance through nutrient competition alone",
+        "B": "Expanding Proteobacteria — including genera like Escherichia-Shigella — produce endotoxins that stimulate pro-inflammatory cytokine release, which can further disrupt gut epithelial integrity and reduce the mucosal niches that Bacteroidota occupy, while simultaneously depleted Bacteroidota reduces SCFA-mediated anti-inflammatory signaling that would otherwise limit inflammation",
+        "C": "Proteobacteria produce butyrate that suppresses Bacteroidota, creating a one-directional competitive relationship",
+        "D": "The reduction in Bacteroidota is driven purely by direct antibiotic targeting, while Proteobacteria expansion is independent and unrelated to the Bacteroidota decline"
+      },
+      "correct_answer": "B",
+      "explanation": "The expansion of Proteobacteria — including pathobionts like Escherichia-Shigella — during anti-tuberculosis treatment can release endotoxins that activate immune cells to produce pro-inflammatory cytokines, potentially damaging epithelial integrity and creating conditions unfavorable for Bacteroidota colonization. Meanwhile, the reduction in Bacteroidota depletes SCFA production, particularly anti-inflammatory propionate and acetate, removing a key brake on intestinal inflammation. This creates a self-reinforcing cycle: inflammation drives further Bacteroidota decline, which reduces SCFA-mediated inflammation suppression, which allows further Proteobacteria overgrowth — a hallmark of sustained dysbiosis.",
+      "topic_tags": ["Proteobacteria", "Bacteroidota", "dysbiosis", "endotoxins", "SCFAs", "anti-tuberculosis treatment", "gut inflammation", "self-reinforcing cycle"]
+    }
+  ]
+}

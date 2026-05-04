@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Microbiome and Human Health: Current Understanding, Engineering, and Enabling Technologies",
+    "authors": ["Nikhil Aggarwal", "Shohei Kitano", "Ginette Ru Ying Puah", "Sandra Kittelmann", "In Young Hwang", "Matthew Wook Chang"],
+    "journal": "Chemical Reviews",
+    "year": 2023,
+    "doi": "10.1021/acs.chemrev.2c00431",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "MHH_easy_001",
+      "difficulty": "easy",
+      "question": "What is the human microbiome and how does it relate to the host genome?",
+      "answer": "The human microbiome refers to the collective set of genes of all microorganisms inhabiting virtually all parts of the human body. It is considered a 'second genome' with a symbiotic relationship with the host. The microbiome is estimated to encode 50- to 100-fold more genes than the human genome itself. These extra genes contribute to host physiology by encoding various enzymatic proteins that influence metabolite production and host metabolism. The microbiota — the living members forming the microbiome — includes bacteria, archaea, fungi, algae, small protists, viruses, phages, and mobile genetic elements.",
+      "topic_tags": ["microbiome definition", "second genome", "host-microbiome relationship", "microbiota composition"]
+    },
+    {
+      "id": "MHH_easy_002",
+      "difficulty": "easy",
+      "question": "How does dysbiosis relate to disease development, and what categories of disease have been associated with a disrupted microbiome?",
+      "answer": "Dysbiosis refers to a disturbed or shifted microbiome composition. Because the microbiome has an intricate relationship with the host, disruption in one often leads to disruption in the other. Dysbiosis has been observed in a broad spectrum of disease states, ranging from metabolic disorders (e.g., obesity, type 2 diabetes) to immune disorders and mood disorders. Specific examples include inflammatory bowel disease (IBD), irritable bowel syndrome (IBS), celiac disease, colorectal cancer, atopic dermatitis, chronic rhinosinusitis, urinary tract infections, bacterial vaginosis, and neuropsychiatric disorders. Disease development is often correlated with altered microbial composition, which promotes the emergence of opportunistic pathogens.",
+      "topic_tags": ["dysbiosis", "disease association", "microbiome disruption", "opportunistic pathogens"]
+    },
+    {
+      "id": "MHH_easy_003",
+      "difficulty": "easy",
+      "question": "What are the major intrinsic and extrinsic factors that shape the composition and diversity of the human microbiome?",
+      "answer": "Intrinsic factors include the nature and physiology of different body environments (e.g., pH, oxygen concentration, temperature, osmolarity, nutrient availability), as well as host genetics, ethnicity, gender, and age. Extrinsic factors include diet, lifestyle, medication use (especially antibiotics), geographic location, climate, seasonality, and mode of delivery at birth. Age is a particularly notable intrinsic driver: the microbiome diversifies from birth through childhood, reaches an adult-like composition around age 3, and undergoes further shifts in old age — with declining Bifidobacteria and increasing Bacteroidetes and Enterobacteriaceae in elderly adults.",
+      "topic_tags": ["microbiome determinants", "intrinsic factors", "extrinsic factors", "age", "diet", "genetics"]
+    },
+    {
+      "id": "MHH_easy_004",
+      "difficulty": "easy",
+      "question": "How do probiotics and prebiotics differ in their mechanisms for modulating microbiome composition?",
+      "answer": "Probiotics are live beneficial bacteria administered exogenously to rebalance the microbiome by directly introducing specific microbial taxa. Common probiotic genera include Lactobacillus, Bifidobacterium, and Akkermansia muciniphila. In contrast, prebiotics are non-digestible substrates — typically oligosaccharides such as fructo-oligosaccharides (FOS), galacto-oligosaccharides (GOS), and xylo-oligosaccharides (XOS) — that selectively stimulate the growth of beneficial bacteria already present in the microbiome. Prebiotics therefore reshape the microbiome indirectly by providing a nutritional advantage to specific resident taxa rather than introducing new organisms.",
+      "topic_tags": ["probiotics", "prebiotics", "microbiome modulation", "oligosaccharides", "Bifidobacterium"]
+    },
+    {
+      "id": "MHH_easy_005",
+      "difficulty": "easy",
+      "question": "Why is the vaginal microbiome considered unique compared to microbiomes at other body sites, and what health consequences arise from disruption of its dominant composition?",
+      "answer": "Unlike most body-site microbiomes characterized by high species diversity, the healthy vaginal microbiome is dominated by a single genus — Lactobacillus. Lactobacillus species lower vaginal pH by producing lactic acid, thereby inhibiting pathogen growth and beneficially modulating the host immune system and epithelium. When the vaginal microbiome is not Lactobacillus-dominated — containing instead obligate and facultative anaerobes such as Gardnerella, Prevotella, and Atopobium — it is associated with bacterial vaginosis (BV), increased susceptibility to sexually transmitted infections (STIs) including HIV, elevated risk of human papillomavirus infection, and a higher likelihood of preterm birth.",
+      "topic_tags": ["vaginal microbiome", "Lactobacillus", "bacterial vaginosis", "STIs", "preterm birth"]
+    },
+
+    {
+      "id": "MHH_medium_001",
+      "difficulty": "medium",
+      "question": "How do short-chain fatty acids (SCFAs) produced by the gut microbiota influence host immune regulation and metabolic health?",
+      "answer": "SCFAs — primarily acetate, butyrate, and propionate — are fermentation products of dietary fibers by colonic bacteria. They modulate the differentiation and accumulation of regulatory T cells (Treg cells) by activating G-protein coupled receptors, and activated Treg cells produce the anti-inflammatory cytokine IL-10, which suppresses gut inflammatory diseases like IBD. Butyrate serves as the primary energy source for colonocytes, has anti-inflammatory and anticancer properties, and can reduce insulin resistance while promoting fat oxidation and stimulating insulinotropic hormones. Propionate is mainly metabolized by the liver where it can activate gluconeogenesis. Both SCFAs act as histone deacetylase inhibitors, regulating gene expression epigenetically, and together mediate crosstalk between the metabolic, immune, and neuroendocrine systems.",
+      "topic_tags": ["SCFAs", "butyrate", "propionate", "Treg cells", "IL-10", "immune regulation", "epigenetics"]
+    },
+    {
+      "id": "MHH_medium_002",
+      "difficulty": "medium",
+      "question": "What is fecal microbiota transplantation (FMT), and through what mechanisms does it successfully treat recurrent Clostridioides difficile infection?",
+      "answer": "FMT involves administering fecal material from a healthy donor to a recipient patient, with the aim of reconstituting a dysbiotic microbiome. Routes of administration include oral freeze-dried capsules, small/large intestine infusion, and enema. In recurrent C. difficile infection (CDI), FMT achieves resolution by restoring microbial diversity and colonization resistance that had been destroyed by antibiotic treatment. The reintroduced microbiome — particularly Firmicutes — is associated with higher concentrations of secondary bile acids, which inhibit vegetative growth and spore germination of C. difficile. Following FMT, there is typically an increase in Bacteroidetes and Clostridium clusters and a decrease in pro-inflammatory Proteobacteria. Autologous FMT after antibiotic exposure enables rapid and complete recovery of the dysbiotic microbiome.",
+      "topic_tags": ["FMT", "C. difficile", "colonization resistance", "bile acids", "microbiome reconstitution"]
+    },
+    {
+      "id": "MHH_medium_003",
+      "difficulty": "medium",
+      "question": "How can bacteriophages be used as precision tools for microbiome engineering, and what advantages do they offer over traditional antibiotics?",
+      "answer": "Bacteriophages are viruses that infect specific bacteria with a narrow host range, enabling precise elimination of targeted pathogens without broadly disrupting the microbiome. Unlike antibiotics — which cause significant collateral damage to microbial diversity and can promote antibiotic resistance — phages target only their specific host bacteria. Phages have been used to deplete E. faecalis (reducing liver injury in alcoholic hepatitis), target Fusobacterium nucleatum in colorectal cancer (improving chemotherapy efficacy), and combat Propionibacterium acnes in acne vulgaris. Phages can also be engineered to deliver CRISPR-Cas9 systems into target bacteria, enabling sequence-specific gene editing or bacterial killing with even greater specificity than wild-type phages.",
+      "topic_tags": ["bacteriophages", "phage therapy", "precision microbiome editing", "CRISPR delivery", "C. difficile", "antibiotics comparison"]
+    },
+    {
+      "id": "MHH_medium_004",
+      "difficulty": "medium",
+      "question": "What are the primary mechanisms by which the gut microbiome composition changes across the human lifespan, and what functional consequences arise from age-related shifts?",
+      "answer": "At birth, facultative anaerobes are the first colonizers, creating anaerobic conditions that enable obligate anaerobes like Bifidobacterium and Bacteroides to establish within two weeks. Mode of delivery (vaginal vs. Caesarean) influences initial microbial composition. Breastfed infants maintain higher Bifidobacteria proportions than formula-fed infants, but these differences resolve around 18 months. By approximately age 3, the microbiome resembles an adult composition in diversity and function. In old age, there is a decline in microbiome diversity with reduced Bifidobacteria and increased Enterobacteriaceae; Bacteroidetes abundance rises while Firmicutes declines. In elderly adults, decreased Bifidobacterium — which stimulates the immune system and metabolic processes — is associated with malnutrition and low-grade systemic inflammation, increasing susceptibility to pathogens.",
+      "topic_tags": ["microbiome development", "life cycle", "aging", "Bifidobacteria", "infant microbiome", "elderly microbiome"]
+    },
+    {
+      "id": "MHH_medium_005",
+      "difficulty": "medium",
+      "question": "How does the Firmicutes-to-Bacteroidetes ratio serve as a biomarker in human disease, and what diseases show alterations in this ratio?",
+      "answer": "The Firmicutes-to-Bacteroidetes ratio is one of the most important parameters representing microbiome diversity in the gut. An elevated Firmicutes/Bacteroidetes ratio has been observed in obese individuals compared to lean counterparts, supported by systematic reviews across multiple populations. Conversely, a decreased ratio is observed in inflammatory bowel disease (IBD): patients with Crohn's disease show significantly reduced Firmicutes proportions compared to healthy individuals, and lower Firmicutes correlates with greater disease activity and severity — both in active ulcerative colitis and aggressive Crohn's disease. Firmicutes, particularly the genus Faecalibacterium, are also reduced in major depressive disorder, bipolar disorder, and chronic fatigue syndrome, suggesting this ratio reflects broader systemic health beyond gut disease.",
+      "topic_tags": ["Firmicutes/Bacteroidetes ratio", "obesity", "IBD", "Crohn's disease", "mood disorders", "biomarker"]
+    },
+    {
+      "id": "MHH_medium_006",
+      "difficulty": "medium",
+      "question": "How do engineered bacteria equipped with biosensors and quorum-sensing machinery enable more precise and targeted microbiome interventions compared to wild-type probiotics?",
+      "answer": "Wild-type probiotics rely primarily on competitive exclusion and native antimicrobial production, which often show poor clinical efficacy due to lack of specificity. Engineered bacteria with biosensors can detect specific environmental signals — such as quorum-sensing molecules produced by target pathogens (e.g., acyl homoserine lactone from P. aeruginosa, autoinducing peptides from S. aureus) — and respond by producing and secreting targeted antibacterial agents only in the presence of the pathogen. This environment-dependent activation reduces off-target effects and genetic burden on the engineered microbe. Additionally, genetic logic circuits (AND gates, NOR gates) allow bacteria to express therapeutic outputs only when multiple conditions are simultaneously met, enabling spatiotemporal control within complex microbiome environments such as the gut.",
+      "topic_tags": ["engineered bacteria", "biosensors", "quorum sensing", "genetic logic circuits", "spatiotemporal control", "targeted therapy"]
+    },
+
+    {
+      "id": "MHH_hard_001",
+      "difficulty": "hard",
+      "question": "Why does microbiome function often prove to be a more reliable indicator of disease association than microbiome composition, and what are the implications for therapeutic design?",
+      "answer": "Microbiomes that differ substantially in taxonomic composition can still exhibit similar functional profiles due to 'functional redundancy' — different bacterial species encoding overlapping metabolic capabilities. A study on obese and lean female twins found that gut microbiomes sharing >93% of functional genes had limited similarity at the phylum level, supporting the idea that a core functional microbiome exists despite compositional diversity. Additionally, analyzing differences in microbial composition alone may not reflect meaningful differences in metabolite output, as phylogenetic prediction from metabolomic data has been largely unsuccessful. In IBD, for example, there was a more consistent shift in microbial functions (decreased carbohydrate metabolism, amino acid biosynthesis; increased nutrient transport) than in compositional patterns. These observations imply that therapeutic strategies should aim to restore specific metabolic functions — through engineered bacteria producing defined metabolites, enzyme inhibitors, or defined synthetic consortia — rather than simply restoring taxonomic composition.",
+      "topic_tags": ["functional redundancy", "microbiome function", "metabolomics", "IBD", "therapeutic design", "core microbiome"]
+    },
+    {
+      "id": "MHH_hard_002",
+      "difficulty": "hard",
+      "question": "How do antibiotic-induced microbiome disruptions create conditions that paradoxically favor pathogen expansion, and what targeted alternatives have been developed to avoid this collateral damage?",
+      "answer": "Broad-spectrum antibiotics cause rapid, non-specific shifts in gut microbiome composition within days, reducing diversity and richness. Recovery after antibiotics is often incomplete, leaving the microbiome in an altered state with increased susceptibility to opportunistic pathogens, immune dysregulation, and accumulation of resistance genes. The disrupted nutritional landscape — including increased availability of mucosal sugars like sialic acid and fucose liberated from mucins by remaining microbes — selectively favors pathogen expansion (e.g., Salmonella Typhimurium and C. difficile). Interestingly, post-antibiotic probiotic administration paradoxically delays microbiome recovery due to soluble factors produced by probiotics inhibiting indigenous microbiome recolonization; autologous FMT is more effective. To circumvent collateral damage, targeted alternatives have been developed: (1) ridinilazole, a narrow-spectrum antibiotic targeting C. difficile with minimal disruption to Firmicutes compared to vancomycin; (2) engineered endolysins (e.g., PM-447) that selectively degrade Gardnerella biofilm without harming Lactobacillus; (3) CRISPR-Cas9-delivering bacteriophages targeting specific resistance genes; and (4) programmed inhibitor cells (PICs) using type-6 secretion systems with surface nanobodies for targeted bacterial depletion.",
+      "topic_tags": ["antibiotics", "microbiome disruption", "C. difficile", "targeted antibiotics", "ridinilazole", "CRISPR phages", "PICs", "FMT"]
+    },
+    {
+      "id": "MHH_hard_003",
+      "difficulty": "hard",
+      "question": "What are the three key limitations hindering the clinical translation of engineered microbiome therapies, and how do multiomics and synthetic biology approaches address each?",
+      "answer": "Three major limitations have been identified: (1) Inadequate mechanistic understanding of microbiome-associated diseases. Metagenomic data alone cannot reveal intramicrobial community interactions or host responses. Multiomics approaches — including metabolomics, metatranscriptomics, and metaproteomics — address this by characterizing active microbes, gene expression, metabolite profiles, and post-translational modifications in both healthy and diseased states, revealing causal molecular mechanisms. (2) Challenges in modifying genetically intractable organisms. Most clinically relevant commensal bacteria (e.g., Clostridium and other anaerobic Firmicutes) are poorly cultivable and resistant to standard genetic tools. CRISPR-Cas9, CRISPRi/CRISPRa, base editors, and CRISPR-associated Tn7 transposases (CAST), combined with in situ DNA transfer via bacterial conjugation (e.g., MAGIC system) and phage-mediated delivery, enable genetic manipulation of previously intractable organisms both in vitro and in situ. (3) Lack of spatiotemporal regulation of engineered microbiomes. Engineered microbes without regulatory mechanisms may behave unpredictably or trigger off-target effects. Synthetic biology tools — including genetic logic circuits (AND/NOR gates), oscillators, toggle switches, biosensors, and kill switches — confer environment-responsive and time-controlled gene expression, enabling precise spatial and temporal regulation within complex gut environments.",
+      "topic_tags": ["microbiome engineering limitations", "multiomics", "CRISPR", "synthetic biology", "spatiotemporal control", "genetically intractable organisms"]
+    },
+    {
+      "id": "MHH_hard_004",
+      "difficulty": "hard",
+      "question": "How does the lung microbiome contribute to the pathogenesis and exacerbation of chronic respiratory diseases, and what is the proposed mechanistic cycle linking dysbiosis to inflammation?",
+      "answer": "The lungs were historically considered sterile, but healthy lungs harbor a diverse interkingdom community including Prevotella, Veillonella, Streptococcus, Haemophilus, Neisseria, and Corynebacteria, plus viruses and fungi. In disease, the lung microbiome becomes altered — with a compositional shift from Bacteroidetes (dominant in health) toward Proteobacteria and other disease-associated bacteria during exacerbations. The proposed mechanistic cycle is: in inflammatory states, increased airway wall permeability and mucus production introduce new nutrients into the normally sparse lung environment, creating pockets of increased temperature and decreased oxygen tension. These microenvironmental changes selectively favor growth of disease-associated microbes such as P. aeruginosa, S. pneumoniae, and S. aureus, driven partly by intraalveolar catecholamines and inflammatory cytokines. Exposure of airways and alveoli to pathogen-associated molecular patterns and microbial metabolites provokes further immune activation, which in turn alters airway conditions, creating a positive feedback loop of dysbiosis-inflammation that can be resolved only by breaking the cycle. This dysregulation has been linked to asthma, COPD, and idiopathic pulmonary fibrosis.",
+      "topic_tags": ["lung microbiome", "respiratory dysbiosis", "exacerbation", "inflammation cycle", "asthma", "COPD", "P. aeruginosa"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "MHH_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which of the following best describes the primary distinction between the 'microbiome' and the 'microbiota'?",
+      "options": {
+        "A": "Microbiome refers only to bacteria, while microbiota includes all microorganisms",
+        "B": "Microbiota comprises all living members forming the community, while microbiome encompasses the full set of genes plus all molecules (metabolites, structural elements) produced by the microorganisms and host",
+        "C": "Microbiome and microbiota are interchangeable terms with no meaningful distinction",
+        "D": "Microbiota refers to the gut community only, while microbiome applies to all body sites"
+      },
+      "correct_answer": "B",
+      "explanation": "The microbiota refers to all living microbial members (bacteria, archaea, fungi, algae, protists, viruses, phages). The microbiome has been further defined to include not only the community of microorganisms but the entire spectrum of molecules they produce — structural elements, metabolites, and molecules produced by the coexisting host — making it a broader ecological and functional concept.",
+      "topic_tags": ["microbiome definition", "microbiota", "terminology"]
+    },
+    {
+      "id": "MHH_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What is the main mechanism by which Lactobacillus species protect the vaginal environment from pathogens?",
+      "options": {
+        "A": "Producing bacteriocins that kill Gram-negative bacteria",
+        "B": "Competing for mucosal attachment sites on the epithelium",
+        "C": "Lowering vaginal pH through lactic acid production, inhibiting pathogen growth and modulating the immune system",
+        "D": "Secreting mucinases that reinforce the vaginal mucus layer against pathogen penetration"
+      },
+      "correct_answer": "C",
+      "explanation": "Lactobacillus species lower vaginal pH by producing lactic acid, which inhibits the growth of many pathogens and beneficially impacts the host epithelium and immune modulation. This is why a Lactobacillus-dominated vaginal microbiome is associated with protection against STIs, bacterial vaginosis, and preterm birth.",
+      "topic_tags": ["vaginal microbiome", "Lactobacillus", "lactic acid", "pathogen protection"]
+    },
+    {
+      "id": "MHH_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "Which of the following correctly describes a key difference in gut microbiome colonization between vaginally delivered and Caesarean-delivered newborns?",
+      "options": {
+        "A": "Caesarean-delivered infants have higher Lactobacillus counts due to exposure to hospital environments rich in probiotics",
+        "B": "Vaginally delivered infants are inoculated by the mother's vaginal and fecal microbiota and possess greater abundance of Bifidobacterium spp. in the first days of life",
+        "C": "Both delivery modes result in identical microbiome composition by 3 days of age",
+        "D": "Caesarean-delivered infants develop more diverse microbiomes because exposure to multiple environmental microbes accelerates colonization"
+      },
+      "correct_answer": "B",
+      "explanation": "Vaginally delivered infants are directly inoculated with the mother's vaginal and fecal microbiota during birth, resulting in greater abundance and variety of Bifidobacterium spp. at 3 days of age. Caesarean-delivered infants are initially exposed to skin microbiota and environmental microbiomes instead, resulting in a different, less Bifidobacterium-rich early microbiome profile.",
+      "topic_tags": ["birth mode", "infant microbiome", "Bifidobacterium", "Caesarean section", "vaginal delivery"]
+    },
+
+    {
+      "id": "MHH_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "What is the primary reason that post-antibiotic probiotic administration has been found to paradoxically delay microbiome recovery compared to spontaneous recovery or autologous FMT?",
+      "options": {
+        "A": "Probiotics compete with native bacteria for nutrients and physically occupy epithelial attachment sites, blocking re-colonization",
+        "B": "Probiotic bacteria produce soluble factors that inhibit the indigenous microbiome from re-establishing itself",
+        "C": "Probiotics alter bile acid profiles in ways that are incompatible with anaerobic commensal growth",
+        "D": "The antibiotic-resistant probiotic strains persist and outcompete returning commensal bacteria for several months"
+      },
+      "correct_answer": "B",
+      "explanation": "Research has shown that following antibiotic-induced dysbiosis, probiotic administration significantly delayed microbiome recovery compared to spontaneous recovery, and the recovery was incomplete. This was attributed to soluble factors produced by the probiotic strains that inhibited the indigenous microbiome from re-establishing. In contrast, autologous FMT enabled rapid and complete recovery within days.",
+      "topic_tags": ["probiotics", "post-antibiotic recovery", "FMT", "microbiome reconstitution", "dysbiosis"]
+    },
+    {
+      "id": "MHH_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "How does Akkermansia muciniphila exert its beneficial metabolic effects, and what finding challenges the assumption that viable bacteria are required for these effects?",
+      "options": {
+        "A": "A. muciniphila produces SCFAs that directly activate pancreatic beta cells; live bacteria are essential because dead cells cannot ferment fibers",
+        "B": "A. muciniphila reinforces tight junctions through mucin synthesis; heat kills the bacterium so only live administration works",
+        "C": "A. muciniphila improves insulin sensitivity, reduces cholesterol, and restores gut barrier integrity; pasteurized bacteria showed equal or greater efficacy than live bacteria, with an outer membrane protein (Amuc_1100) partly responsible",
+        "D": "A. muciniphila degrades mucin to release propionate that crosses into the portal circulation; only live bacteria degrade mucin effectively"
+      },
+      "correct_answer": "C",
+      "explanation": "Clinical supplementation with A. muciniphila in overweight/obese individuals showed improved insulin sensitivity, reduced cholesterol, and reduced body weight. Strikingly, pasteurized A. muciniphila exacerbated these benefits compared to live bacteria, and a purified outer membrane protein (Amuc_1100) was found to partly recapitulate the effects. This challenges the assumption that viability is required and suggests membrane-associated components drive the therapeutic mechanism.",
+      "topic_tags": ["Akkermansia muciniphila", "metabolic health", "pasteurized bacteria", "Amuc_1100", "insulin sensitivity"]
+    },
+    {
+      "id": "MHH_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "What mechanism allows microbial enzyme inhibitors (such as inhibitors of TMA lyases) to modulate microbiome function without causing the broader collateral damage associated with antibiotics?",
+      "options": {
+        "A": "Enzyme inhibitors are selectively absorbed only by Gram-negative bacteria, sparing Gram-positive commensals entirely",
+        "B": "They inhibit specific microbial metabolic enzymes without killing the bacteria, thereby altering the metabolite output rather than the microbial community composition",
+        "C": "Enzyme inhibitors are rapidly degraded in the gut and only act for short windows, preventing long-term microbiome disruption",
+        "D": "They competitively bind to mammalian enzyme analogues that happen to be present only in pathogenic bacteria"
+      },
+      "correct_answer": "B",
+      "explanation": "Microbial enzyme inhibitors such as those targeting TMA lyases and bacterial beta-glucuronidases are designed to be non-lethal — they inhibit a specific enzymatic function without killing the microbes, thereby modulating the metabolite profile (e.g., reducing TMAO levels or preventing SN-38 toxin regeneration) without the broad reduction in microbial diversity caused by antibiotics. Some inhibitors can even accumulate within microbes for sustained effect.",
+      "topic_tags": ["enzyme inhibitors", "TMAO", "TMA lyase", "microbiome function", "non-lethal targeting"]
+    },
+    {
+      "id": "MHH_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "What is the functional role of kill switches in engineered microbe therapies, and what is a key engineering challenge that must be overcome for reliable kill switch function?",
+      "options": {
+        "A": "Kill switches enable controlled drug release; the challenge is ensuring they activate only inside tumor microenvironments",
+        "B": "Kill switches provide biocontainment by eliminating engineered microbes under specific conditions; the key challenge is genetic instability, as engineered cells have selection pressure to accumulate mutations that disable the switch",
+        "C": "Kill switches synchronize the growth phase of microbial consortia; the challenge is coordinating multiple quorum-sensing pathways simultaneously",
+        "D": "Kill switches activate CRISPR editing to remove virulence genes from commensal bacteria; the challenge is avoiding off-target edits in the host genome"
+      },
+      "correct_answer": "B",
+      "explanation": "Kill switches are biocontainment systems that ensure engineered microbes can be eliminated if they escape their intended environment or are no longer needed. The critical engineering challenge is genetic stability: because kill switches are lethal by design, there is strong selective pressure on cells to accumulate loss-of-function mutations that disable the switch. Approaches to improve stability include CRISPR-based mutation restoration systems and functionally redundant Cas9 cassettes.",
+      "topic_tags": ["kill switches", "biocontainment", "synthetic biology", "genetic stability", "engineered microbes"]
+    },
+    {
+      "id": "MHH_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "In the context of oral health, how does disruption of the oral microbiome extend beyond local disease to affect systemic health?",
+      "options": {
+        "A": "Oral microbiome disruption primarily affects nutrition by impairing nitrate metabolism, leading to vascular disease via reduced nitric oxide",
+        "B": "Oral bacteria are confined to the mouth and cannot translocate to cause systemic effects without invasive procedures",
+        "C": "Oral microbiome disruption — including periodontitis-associated dysbiosis — has been linked to systemic diseases such as endocarditis, osteoporosis, rheumatoid arthritis, obesity, diabetes, cancers, and neuropsychiatric disorders through systemic translocation of oral microbes and inflammatory mediators",
+        "D": "The oral microbiome affects systemic health exclusively through the gut-brain axis by altering neurotransmitter production"
+      },
+      "correct_answer": "C",
+      "explanation": "The oral cavity is the principal entry point to the human body, and oral microbes can spread to different body sites and cause systemic disease. Disruption of the oral microbiome has been linked to endocarditis, osteoporosis, rheumatoid arthritis, obesity, diabetes, cancers, and neuropsychiatric disorders. The progression from gingivitis to periodontitis involves microbial community shifts that damage connective tissue and bone, while chronic bacterial infections can contribute to broader non-communicable disease development.",
+      "topic_tags": ["oral microbiome", "periodontitis", "systemic disease", "endocarditis", "oral-systemic link"]
+    },
+
+    {
+      "id": "MHH_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "What is the MAGIC (metagenomic alteration of gut microbiome by in situ conjugation) system, and what key limitation prevents it from being immediately applicable for stable genomic modification of gut microbiota?",
+      "options": {
+        "A": "MAGIC uses engineered bacteriophages to deliver CRISPR payloads in situ; its limitation is high off-target insertion rates exceeding 20% at non-target loci",
+        "B": "MAGIC uses an E. coli donor to transfer plasmid DNAs via bacterial conjugation to both Gram-positive and Gram-negative gut bacteria in situ; transconjugants were undetectable after 72 hours due to toxicity or vector instability, limiting stable genomic modification",
+        "C": "MAGIC uses nanoparticle-encapsulated DNA delivered orally to target specific microbiome members; its limitation is poor penetration through the mucus layer",
+        "D": "MAGIC uses a synthetic RNA vector that integrates into microbial ribosomes; its limitation is dependence on actively dividing bacteria, missing dormant populations"
+      },
+      "correct_answer": "B",
+      "explanation": "The MAGIC system was developed by Ronda et al. and uses an E. coli donor strain with the Inc.Palpha-family RP4 conjugation system to deliver plasmid DNAs — both replicative and integrative — to gut microbiota in situ, reaching at least 5% of gut bacteria across all four major phyla. However, transconjugants were no longer detectable after 72 hours, likely due to toxicity or vector instability, which means further improvements are needed for MAGIC to achieve stable genome modification for identifying causal genes in microbiome-associated diseases.",
+      "topic_tags": ["MAGIC", "in situ conjugation", "microbiome engineering", "genetic manipulation", "horizontal gene transfer"]
+    },
+    {
+      "id": "MHH_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "How do host genetic loci — particularly the FUT2 and LCT loci — influence gut microbiome composition, and what does this imply for precision microbiome-based medicine?",
+      "options": {
+        "A": "FUT2 encodes a fucosidase that degrades mucin glycans, reducing substrate availability for Bacteroides; LCT encodes a lectin that directly binds and concentrates Bifidobacteria in the mucus layer",
+        "B": "FUT2 determines the presence of H and ABO antigens on GI mucosa through alpha-1,2-fucosyltransferase activity, shaping the glycan landscape available for bacterial colonization; LCT encodes lactase and is associated with Bifidobacteria abundance because Bifidobacteria compensate for reduced host lactase activity by digesting lactose — together suggesting that host genotype-specific microbiome targeting will be needed for effective therapies",
+        "C": "FUT2 and LCT are transcription factors that regulate host defensin production, indirectly shaping microbiome composition by antimicrobial pressure; precision medicine must account for individual defensin profiles",
+        "D": "Both loci influence microbiome composition through effects on intestinal transit time: FUT2 slows motility in secretors, and LCT accelerates it in lactase non-persisters, creating different fermentation niches"
+      },
+      "correct_answer": "B",
+      "explanation": "FUT2 encodes alpha-1,2-fucosyltransferase, and secretor status (presence or absence of H/ABO antigens in GI mucosa) influences which bacterial groups can colonize by altering the glycan binding sites and nutrient landscape. The LCT locus encodes lactase; strong associations between LCT functional SNPs and Bifidobacteria abundance suggest Bifidobacteria compensate for reduced host lactase activity. Together these findings indicate that host genetic variation directly shapes microbiome composition, implying that precision microbiome medicine must account for individual host genotypes to achieve consistent therapeutic outcomes.",
+      "topic_tags": ["FUT2", "LCT", "host genetics", "microbiome composition", "precision medicine", "Bifidobacteria", "ABO antigens"]
+    }
+  ]
+}

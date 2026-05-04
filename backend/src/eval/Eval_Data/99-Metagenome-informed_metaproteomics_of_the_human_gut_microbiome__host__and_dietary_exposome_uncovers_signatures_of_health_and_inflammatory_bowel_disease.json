@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Metagenome-informed metaproteomics of the human gut microbiome, host, and dietary exposome uncovers signatures of health and inflammatory bowel disease",
+    "authors": ["Rafael Valdés-Mas", "Avner Leshem", "Danping Zheng", "Hagit Shapiro", "Alon Savidor", "Eran Elinav"],
+    "journal": "Cell",
+    "year": 2025,
+    "doi": "10.1016/j.cell.2024.12.016",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "MIM_easy_001",
+      "difficulty": "easy",
+      "question": "What is metagenome-informed metaproteomics (MIM) and what makes it distinct from standard metaproteomic approaches?",
+      "answer": "Metagenome-informed metaproteomics (MIM) is a methodology that generates a per-experiment, refined protein reference catalog derived from shotgun metagenomic sequencing of the same samples being analyzed. This catalog is then used to guide the identification and quantification of proteins by liquid chromatography-tandem mass spectrometry (LC-MS/MS). What makes MIM distinct is that its reference database is tailored to the microbial species actually present in the experiment, filtered to include only relatively abundant species with sufficient genome and protein sequence coverage. This approach achieves higher taxonomic resolution (down to species level), greater sensitivity and specificity, and fewer spurious protein identifications compared with generic protein databases or standard genome-assembly-based methods.",
+      "topic_tags": ["MIM", "metaproteomics", "metagenomics", "methodology", "species-level resolution"]
+    },
+    {
+      "id": "MIM_easy_002",
+      "difficulty": "easy",
+      "question": "What are the three main biological compartments that MIM simultaneously characterizes from a single fecal sample?",
+      "answer": "MIM simultaneously characterizes proteins originating from three biological compartments: (1) the host — human or mouse intestinal proteins including antimicrobial peptides and immune mediators; (2) the gut bacterial microbiome — species-resolved microbial proteins reflecting active metabolic functions; and (3) the dietary exposome — proteins derived from consumed plant and animal food sources. This tri-kingdom simultaneous assessment enables direct study of the interplay between host, microbiome, and diet in a single non-invasive measurement.",
+      "topic_tags": ["MIM", "host proteome", "microbiome", "dietary exposome", "tri-kingdom assessment"]
+    },
+    {
+      "id": "MIM_easy_003",
+      "difficulty": "easy",
+      "question": "What is compositional dysbiosis versus functional dysbiosis in the context of gut microbiome analysis?",
+      "answer": "Compositional dysbiosis refers to a state in which the abundance of a microbial species changes — either detectable by both proteomics and metagenomics, or only by proteomics but not reflected in metagenomic signals. Functional dysbiosis, by contrast, is a more subtle state in which a species' overall abundance and most of its housekeeping proteins remain unchanged, but a discrete subset of its proteins — reflecting specific functional modules — is significantly altered. Functional dysbiosis is thus invisible to metagenomic approaches and can only be detected at the protein level. Both types co-exist in inflammatory bowel disease, and the distinction has implications for understanding which microbial activities are specifically perturbed during disease.",
+      "topic_tags": ["compositional dysbiosis", "functional dysbiosis", "metaproteomics", "IBD", "microbiome function"]
+    },
+    {
+      "id": "MIM_easy_004",
+      "difficulty": "easy",
+      "question": "Why does alpha diversity differ between metagenomic and metaproteomic analyses of the same gut microbiome samples?",
+      "answer": "Alpha diversity (within-sample species richness) is higher in metagenomic analysis than in metaproteomic analysis of the same samples because not all bacterial genes are constitutively expressed at detectable protein levels. MIM detects proteins from species whose genes are actively transcribed and translated at sufficient abundance, so species with very low or conditionally expressed proteins may escape detection. As a result, metaproteomics captures a narrower but functionally active subset of the community. Conversely, MIM-based functional readouts are less variable between individuals compared with genomic ones, consistent with the concept that microbiome function is more conserved across individuals than taxonomic composition.",
+      "topic_tags": ["alpha diversity", "metagenomics", "metaproteomics", "gene expression", "functional readouts"]
+    },
+    {
+      "id": "MIM_easy_005",
+      "difficulty": "easy",
+      "question": "How does MIM enable non-invasive assessment of dietary intake, and what are the limitations of current sequencing-based dietary estimation methods?",
+      "answer": "MIM enables non-invasive dietary assessment by including a curated database of proteins from edible plant and animal species in its reference catalog. Proteins uniquely assignable to dietary genera that survive gastrointestinal transit are detected in fecal samples and quantified alongside host and microbial proteins. This allows detection of recently consumed foods in a dose-dependent and genus-specific manner. Current sequencing-based dietary estimation methods (such as MEDI) suffer from low specificity, detecting only a narrow range of dietary taxa — typically plant DNA — while generating spurious signals from species not present in the diet. They also fail to capture absorption-related differences or detect animal-derived dietary components reliably.",
+      "topic_tags": ["dietary exposome", "fecal proteomics", "MEDI", "dietary assessment", "food proteins"]
+    },
+
+    {
+      "id": "MIM_medium_001",
+      "difficulty": "medium",
+      "question": "How does MIM detect and distinguish functional dysbiosis from compositional dysbiosis at the species level in inflammatory bowel disease?",
+      "answer": "MIM achieves this by analyzing the full protein repertoire of each species detected. For compositional dysbiosis, the majority of species-specific proteins shift directionally in abundance, mirroring or departing from metagenomic abundance changes. For functional dysbiosis, the overall metagenomic abundance of a species and the majority of its housekeeping proteins remain stable, but a specific subset of proteins — often reflecting a discrete metabolic or stress-response module — is significantly upregulated or downregulated. This pattern is flagged computationally: a chi-squared test assesses whether the distribution of differentially expressed proteins departs from what would be expected by chance. Functional dysbiosis was prominent in IBD, where multiple commensals displayed reduced expression of specific protein modules despite stable overall abundance, suggesting targeted suppression of particular bacterial functions by the inflammatory environment.",
+      "topic_tags": ["functional dysbiosis", "IBD", "species-level proteomics", "housekeeping proteins", "commensal suppression"]
+    },
+    {
+      "id": "MIM_medium_002",
+      "difficulty": "medium",
+      "question": "What is the mechanistic evidence that inflammatory host signals suppress specific commensal bacterial protein programs, and how was this demonstrated experimentally?",
+      "answer": "The evidence comes from fecal microbiome transfer experiments in germ-free (GF) mice. Naive microbiomes were transplanted into GF mice that had been pre-exposed to DSS (a sterile inflammatory stimulus) or into non-inflamed GF mice. Within two days of colonization, microbiomes in the inflamed host environment showed a marked reduction in proteins produced by specific commensals, while their overall metagenomic abundance was unaltered — recapitulating the functional dysbiosis seen in spontaneously inflamed mice. Conversely, when microbiomes from DSS-inflamed SPF donors were transferred into naive GF recipients, the naive host exhibited rapid upregulation of antimicrobial, metabolic, and inflammatory proteins. These bidirectional transfer experiments establish that the host inflammatory milieu directly suppresses commensal bacterial protein output, and that dysbiotic microbiomes can themselves initiate host inflammatory and metabolic responses.",
+      "topic_tags": ["host-microbiome cross-talk", "germ-free mice", "DSS colitis", "functional dysbiosis", "commensal suppression", "fecal transfer"]
+    },
+    {
+      "id": "MIM_medium_003",
+      "difficulty": "medium",
+      "question": "How can fecal dietary protein abundance serve as a proxy for small intestinal malabsorption, and what is the proposed mechanism linking intestinal inflammation to increased fecal dietary proteins?",
+      "answer": "When dietary proteins are adequately digested and absorbed in the small intestine, they leave minimal residual signal in feces. An increase in fecal dietary protein abundance therefore suggests either that digestion or absorption has been impaired upstream. In murine DSS colitis, fecal dietary protein levels rose progressively over the course of inflammation despite stable food intake, and this increase correlated positively with levels of calprotectin (S100A8/S100A9), an inflammatory biomarker. Although DSS primarily induces colonic inflammation, it also exerts subclinical effects on small intestinal epithelial cells, which may impair motility and absorptive capacity. In human IBD patients with upper gastrointestinal involvement, significantly higher fecal dietary protein abundances were detected compared with patients with only lower intestinal disease, supporting the interpretation that inflamed or dysfunctional small intestinal epithelium reduces protein uptake and allows more dietary protein to pass into the colon and feces.",
+      "topic_tags": ["dietary protein malabsorption", "small intestinal function", "IBD", "calprotectin", "fecal dietary MIM", "intestinal inflammation"]
+    },
+    {
+      "id": "MIM_medium_004",
+      "difficulty": "medium",
+      "question": "What technical steps in the MIM database construction pipeline prevent spurious protein identifications, and why is a per-experiment approach important?",
+      "answer": "MIM uses a three-stage filtration pipeline to construct a refined per-experiment protein reference catalog. First, only species contributing to the top 95th percentile of metagenomic abundance are retained, excluding very rare species. Second, only species for which at least 70% of the genome sequence is covered by metagenomic reads are included, ensuring reliable genome representation. Third, only proteins for which more than 75% of amino acid sequence coverage is achieved by mapped metagenomic reads are included in the final catalog. This per-experiment approach is critical because adding random or irrelevant bacterial protein sequences to the database — even in large numbers — significantly reduces the sensitivity and specificity of protein identification, leads to hundreds of spurious assignments to species not actually present, and dramatically increases computational processing time. A generic or universal database cannot achieve these quality thresholds for diverse sample types.",
+      "topic_tags": ["MIM database construction", "metagenomic filtration", "protein identification", "specificity", "spurious assignments"]
+    },
+    {
+      "id": "MIM_medium_005",
+      "difficulty": "medium",
+      "question": "How does MIM characterize niche-specific microbiome activity along the gastrointestinal tract, and what patterns were observed between the upper and lower gut?",
+      "answer": "By applying MIM to luminal and mucosal samples collected simultaneously from multiple anatomical sites — including stomach, duodenum, jejunum, terminal ileum, cecum, descending colon, and feces — the approach revealed distinct species-resolved protein activity profiles at each niche. In treatment-naive individuals, the number of detected bacterial proteins and species increased distally along the gastrointestinal tract, consistent with known bacterial density gradients. MIM identified site-specific protein configurations not apparent from metagenomics alone; for example, carbohydrate utilization proteins expressed by Streptococcus salivarius were significantly enriched in gastric samples relative to feces at the protein level, even though metagenomics showed no such site-specific enrichment. Antibiotic treatment disrupted these gradients and led to expansion of facultative anaerobes such as Escherichia coli and Enterococcus throughout the GIT, while niche-specific host protein clusters (stomach; duodenum/jejunum; ileum/large intestine) remained stable.",
+      "topic_tags": ["GIT biogeography", "niche-specific proteomics", "microbiome gradient", "antibiotics", "Streptococcus salivarius"]
+    },
+    {
+      "id": "MIM_medium_006",
+      "difficulty": "medium",
+      "question": "How does MIM-based antimicrobial peptide (AMP) profiling reveal potential mechanisms of dysbiosis-associated disease?",
+      "answer": "MIM identifies both established AMPs and novel AMP candidates in fecal samples by detecting host-secreted proteins meeting defined criteria: predicted secretion, structural similarity to known AMPs or possession of bacterial ligand-binding domains, demonstrated or suggested antibacterial or immunomodulatory activity, and abundance patterns mirroring known AMPs. By correlating AMP dynamics with species-resolved microbial protein profiles over the course of intestinal inflammation, MIM revealed that specific AMP combinations were predictive of the loss of commensal species and the concurrent emergence of disease-associated dysbiotic species. For example, proteins such as Apcs, Pon1, Mbl, Ctsb, Vtn, and Dmbt1 predicted both commensal loss and colitis-associated bacterial blooming, suggesting that distinct, hard-wired AMP programs shape disease-specific microbiome configurations. This implies that AMPs do not simply respond to dysbiosis but may actively drive or perpetuate it.",
+      "topic_tags": ["antimicrobial peptides", "AMP candidates", "dysbiosis", "host-microbiome interactions", "IBD", "colitis"]
+    },
+
+    {
+      "id": "MIM_hard_001",
+      "difficulty": "hard",
+      "question": "Why do MIM-identified candidate IBD biomarkers — particularly combinations of host and bacterial proteins — outperform calprotectin, and what properties of the microbiome proteome enable this?",
+      "answer": "Calprotectin (S100A8/S100A9) is a single-compartment host biomarker with moderate sensitivity and specificity. MIM-identified biomarker pairs gain diagnostic advantage by combining signals from two different biological sources — a host protein and a bacteria-derived protein — each capturing complementary aspects of the disease state. Host IBD-predictive proteins were substantially shared between Crohn's disease and ulcerative colitis, while bacterial microbiome proteins showed more disease-specific patterns, enabling both diagnosis and subtype differentiation. When bacterial proteins are collapsed into functional KEGG Orthology (KO) terms rather than used at the single-protein level, prediction accuracy improves further. This is because functional grouping mitigates inter-individual variation in microbiome species composition (functional redundancy), identifying a generalizable disease signal anchored in conserved metabolic activities rather than species identity. Severity prediction was also superior when microbial functional entities were integrated alongside host proteins, suggesting that quantitative functional microbiome perturbation tracks with disease activity independently of host inflammation markers.",
+      "topic_tags": ["IBD biomarkers", "calprotectin", "functional redundancy", "KEGG Orthology", "diagnostic prediction", "host-microbiome biomarker pairs"]
+    },
+    {
+      "id": "MIM_hard_002",
+      "difficulty": "hard",
+      "question": "How do the findings from fecal microbiome transfer experiments into germ-free mice shed light on the relative contributions of the microbiome versus host genetic susceptibility in initiating IBD-like inflammation?",
+      "answer": "Transfer experiments provided critical evidence that a UC-associated human microbiome, when transplanted into genetically intact, immunologically naive germ-free mice, does not elicit overt colitis or systemic inflammation. Despite inducing microbiome-level and host metabolic protein shifts in recipient mice, the dysbiotic microbiome alone was insufficient to trigger the full IBD phenotype in hosts lacking intrinsic susceptibility factors. This points to a model in which IBD pathogenesis requires a convergence of genetic host susceptibility (potentially affecting intestinal epithelial cell sensing or immune regulation) and an associated altered commensal microbiome. The metabolic — rather than immune — perturbations observed early in these transfer experiments suggest that the initial host-microbiome mismatch may manifest as intestinal 'metabolic injury', which could serve as a precursor to uncontrolled inflammation only in genetically predisposed individuals. This implies that microbiome-targeted therapies alone may be insufficient without addressing host susceptibility factors.",
+      "topic_tags": ["germ-free mice", "fecal microbiome transfer", "IBD pathogenesis", "host susceptibility", "metabolic injury", "ulcerative colitis"]
+    },
+    {
+      "id": "MIM_hard_003",
+      "difficulty": "hard",
+      "question": "What are the conceptual and technical distinctions between compositional MIM dysbiosis that is metagenomically concordant versus discordant, and what biological phenomena explain metagenomically discordant protein changes?",
+      "answer": "Metagenomically concordant compositional dysbiosis occurs when shifts in species-specific protein abundance are directionally consistent with changes in metagenomic taxonomic abundance — i.e., when a species becomes more or less abundant at both the DNA and protein level simultaneously. Metagenomically discordant compositional dysbiosis, by contrast, is detected when all species-specific proteins change in abundance in a coordinated fashion but the corresponding metagenomic signal does not change. Several biological phenomena can explain this discordance. First, regulated gene expression means that bacteria can substantially increase or decrease production of specific proteins — or their entire proteome — under different environmental conditions without changing their cell number. Second, post-transcriptional and translational regulation can decouple protein abundance from mRNA or DNA levels. Third, proteins with differential turnover rates or secretion dynamics may accumulate or deplete in luminal space independently of species biomass. Fourth, extracellular or secreted proteins — which were shown to be disproportionately 'unpredictable' from genomic data — may reflect acute functional states rather than species abundance. These phenomena collectively highlight that metagenomic analysis provides an incomplete picture of functional microbiome status.",
+      "topic_tags": ["metagenomics vs proteomics", "discordant dysbiosis", "gene expression regulation", "extracellular proteins", "functional microbiome"]
+    },
+    {
+      "id": "MIM_hard_004",
+      "difficulty": "hard",
+      "question": "How does integrating dietary, microbial, and host proteomic signals simultaneously (the IPHOMED framework) offer conceptual advantages over single-omics or dual-omics gut microbiome studies?",
+      "answer": "Single-omics approaches (e.g., metagenomics alone) capture only one dimension of the gastrointestinal ecosystem. Dual-omics approaches such as metagenomics plus host transcriptomics reveal associations but cannot directly measure the active protein-level biology of all three players. The IPHOMED (Integrated Proteo-genomics of HOst-MicrobiomE-Diet) framework overcomes this by simultaneously capturing active species-resolved microbial functions, host secretory immune and metabolic responses, and quantitative dietary exposures — all from a single non-invasive fecal sample. This parallelized assessment allows several conceptual advances: (1) it can disentangle whether a host inflammatory signal precedes or follows a microbial change; (2) it links dietary inputs directly to downstream changes in both host and microbiome protein activity; (3) it can detect subclinical functional perturbations (e.g., dietary protein malabsorption correlated with calprotectin) before overt clinical symptoms; (4) it identifies trans-kingdom biomarker combinations that are more informative than single-compartment markers; and (5) it reveals how specific dietary changes dynamically reshape both host and commensal protein programs in real time, enabling personalized dietary interventions.",
+      "topic_tags": ["IPHOMED", "multi-omics", "trans-kingdom", "dietary-host-microbiome", "personalized medicine", "biomarkers"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "MIM_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "What is the primary reason MIM achieves higher species-level taxonomic resolution than generic database-based metaproteomics?",
+      "options": {
+        "A": "MIM uses a universal protein database containing all known bacterial species",
+        "B": "MIM applies a per-experiment metagenomic database filtered to species actually present in the samples",
+        "C": "MIM relies exclusively on de novo genome assembly to identify proteins",
+        "D": "MIM uses RNA sequencing to confirm protein identifications"
+      },
+      "correct_answer": "B",
+      "explanation": "MIM constructs a per-experiment protein reference database derived from shotgun metagenomics of the same samples, filtered through three criteria for abundance, genome coverage, and protein sequence coverage. This ensures the search space only contains proteins from species genuinely present, reducing spurious identifications and maximizing species-level resolution.",
+      "topic_tags": ["MIM", "taxonomy", "protein database", "species resolution"]
+    },
+    {
+      "id": "MIM_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "Which of the following best describes the relationship between bacterial gene abundance and bacterial protein abundance in the gut microbiome?",
+      "options": {
+        "A": "Gene and protein abundances are always tightly correlated because protein production directly reflects gene copy number",
+        "B": "For most detected bacteria, species-specific protein abundances differ significantly from the corresponding gene abundances, reflecting regulated expression",
+        "C": "Protein abundance is always lower than gene abundance because proteins are rapidly degraded in the gut",
+        "D": "Gene and protein abundances are correlated only for housekeeping genes but not for metabolic genes"
+      },
+      "correct_answer": "B",
+      "explanation": "Across most detected bacteria, MIM demonstrated that protein abundances were significantly different from corresponding gene abundances, highlighting that many proteins cannot be inferred from genomic data alone. This is driven by regulated expression patterns, and the discrepancy is especially pronounced for extracellular and secreted proteins.",
+      "topic_tags": ["gene vs protein abundance", "regulated expression", "metagenomics vs proteomics"]
+    },
+    {
+      "id": "MIM_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "What major limitation of traditional dietary assessment methods does MIM-based dietary exposome profiling address?",
+      "options": {
+        "A": "Traditional methods cannot detect foods containing plant-based proteins",
+        "B": "Traditional methods are limited to 24-hour recall windows",
+        "C": "Traditional methods relying on self-reported questionnaires are prone to recall bias, non-compliance, and insufficient resolution",
+        "D": "Traditional methods cannot distinguish between different macronutrient types"
+      },
+      "correct_answer": "C",
+      "explanation": "Self-reported dietary methods such as food diaries and questionnaires are subject to recall bias, variable compliance, and inability to resolve complex food combinations at the individual nutrient level. MIM provides an objective, direct, and non-invasive assessment of actual dietary protein exposure by detecting food-derived proteins in feces.",
+      "topic_tags": ["dietary assessment", "recall bias", "dietary exposome", "MIM"]
+    },
+
+    {
+      "id": "MIM_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "In the context of intestinal inflammation, what does an increase in fecal dietary protein abundance most likely indicate?",
+      "options": {
+        "A": "Increased food intake by the host during illness",
+        "B": "Enhanced digestion of proteins in the large intestine",
+        "C": "Subclinical impairment of small intestinal digestion, absorption, or motility leading to dietary protein accumulation",
+        "D": "Upregulation of dietary protein synthesis by gut bacteria during inflammation"
+      },
+      "correct_answer": "C",
+      "explanation": "In DSS colitis, fecal dietary protein abundance increased during inflammation without any change in food intake. The increase correlated with calprotectin levels and was most prominent in IBD patients with upper gastrointestinal involvement, suggesting that inflamed or dysfunctional small intestinal epithelium impairs protein digestion and absorption, causing dietary proteins to accumulate in feces.",
+      "topic_tags": ["dietary protein malabsorption", "intestinal inflammation", "small intestinal function", "fecal dietary MIM"]
+    },
+    {
+      "id": "MIM_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "Which experimental design best demonstrated that the host inflammatory microenvironment can directly suppress commensal bacterial protein expression?",
+      "options": {
+        "A": "Comparing fecal metagenomics between healthy and IBD patients",
+        "B": "Transferring naive microbiomes into sterile DSS-inflamed germ-free mice and observing rapid commensal proteomic shifts",
+        "C": "Administering antibiotics to SPF mice and monitoring species composition",
+        "D": "Performing in vitro incubation of gut bacteria with inflammatory cytokines"
+      },
+      "correct_answer": "B",
+      "explanation": "By colonizing sterile DSS-inflamed germ-free mice with naive microbiomes and observing marked commensal protein reductions within two days — without changes in species-level metagenomic abundance — the study demonstrated that the inflammatory host milieu directly suppresses specific commensal bacterial functional programs. This causal design controlled for microbial composition differences.",
+      "topic_tags": ["germ-free mice", "DSS colitis", "commensal suppression", "functional dysbiosis", "host-microbiome interaction"]
+    },
+    {
+      "id": "MIM_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "Why might collapsing bacterial proteins into functional KEGG Orthology (KO) terms improve IBD biomarker accuracy compared with using individual protein abundances?",
+      "options": {
+        "A": "KO terms include host proteins, providing a broader signal",
+        "B": "KO-level aggregation reduces noise from inter-individual species variability by capturing conserved functional signals regardless of which species carry them",
+        "C": "KO terms are easier to measure by ELISA than individual proteins",
+        "D": "KO annotations are specific to human gut bacteria and not found in other organisms"
+      },
+      "correct_answer": "B",
+      "explanation": "The gut microbiome exhibits functional redundancy: different species in different individuals can perform the same metabolic functions. By aggregating protein abundances into KO functional groups, biomarker signals reflect conserved disease-relevant functions irrespective of which specific species carry them in a given patient, improving cross-cohort generalizability and prediction accuracy.",
+      "topic_tags": ["KEGG Orthology", "functional redundancy", "IBD biomarkers", "microbiome function", "inter-individual variability"]
+    },
+    {
+      "id": "MIM_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "What does the detection of IBD-predictive host proteins with significant overlap between Crohn's disease and ulcerative colitis reveal about gut inflammatory biology?",
+      "options": {
+        "A": "Crohn's disease and ulcerative colitis are caused by the same pathogen",
+        "B": "The host mucosal inflammatory response shares common protein signatures across IBD subtypes, while microbial perturbations are more disease-specific",
+        "C": "Host proteins are not useful for distinguishing IBD subtypes at any level",
+        "D": "Host proteins are only altered in ulcerative colitis, not in Crohn's disease"
+      },
+      "correct_answer": "B",
+      "explanation": "MIM-based analysis showed that host IBD-predictive proteins substantially overlapped between CD and UC, suggesting convergent host mucosal responses to intestinal inflammation. In contrast, IBD-predictive bacterial microbiome proteins were mostly specific to either CD or UC, indicating that microbiome perturbations are more disease-subtype-specific and can aid in differential diagnosis.",
+      "topic_tags": ["IBD subtypes", "Crohn's disease", "ulcerative colitis", "host proteins", "microbiome proteins", "differential diagnosis"]
+    },
+    {
+      "id": "MIM_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What observation from the dietary MIM analysis of Israeli versus German populations best exemplifies the capacity of this approach to capture culturally driven nutritional differences?",
+      "options": {
+        "A": "Germans consumed more wheat, while Israelis consumed more rice",
+        "B": "Pork-derived proteins were nearly absent in Israeli fecal samples but substantially elevated in German samples, reflecting religious dietary restrictions",
+        "C": "Israeli participants consumed more vegetables than German participants",
+        "D": "Both populations showed identical dietary protein profiles, suggesting diet is not a driver of microbiome differences"
+      },
+      "correct_answer": "B",
+      "explanation": "MIM detected a striking difference in pork-related fecal protein signals between the two cohorts — Germans showed high pork protein signals across 14 different pork-specific proteins, while Israelis showed near-zero pork signal, consistent with religious prohibitions on pork consumption among the predominantly Jewish and Muslim Israeli population. Israelis instead showed higher chicken-derived protein signals. Wheat signals were similar across both groups.",
+      "topic_tags": ["dietary exposome", "cultural diet", "population differences", "religious dietary restrictions", "fecal dietary MIM"]
+    },
+
+    {
+      "id": "MIM_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "Why does supplementing the MIM protein database with large numbers of random bacterial protein sequences from metagenomically undetected species impair performance, and what does this reveal about database design principles?",
+      "options": {
+        "A": "More proteins increase computational time, which causes algorithm errors",
+        "B": "Additional proteins reduce the pH of the lysis buffer, degrading proteins before analysis",
+        "C": "Irrelevant protein sequences compete during database search, leading to spurious assignments, reduced sensitivity and specificity in a dose-dependent manner, and prolonged computation",
+        "D": "Random proteins mimic the spectra of genuine gut proteins and are indistinguishable by mass spectrometry"
+      },
+      "correct_answer": "C",
+      "explanation": "In a dose-dependent manner, adding 1–5 million random non-detected bacterial protein sequences to the MIM database significantly reduced sensitivity and specificity, led to hundreds of spurious protein identifications assigned to species not present in the samples, and substantially prolonged computational processing to weeks. This demonstrates that database specificity — achieved by restricting entries to metagenomically verified species — is essential for high-quality metaproteomic analysis.",
+      "topic_tags": ["MIM database", "spurious identifications", "database specificity", "computational proteomics", "sensitivity and specificity"]
+    },
+    {
+      "id": "MIM_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "What does the observation that germ-free mice colonized with UC-associated microbiomes did not develop overt colitis suggest about the pathogenesis of inflammatory bowel disease?",
+      "options": {
+        "A": "UC-associated microbiomes are not pathogenic and play no role in disease",
+        "B": "IBD likely requires a convergence of a dysbiotic microbiome and underlying host genetic susceptibility factors, with the microbiome alone being insufficient to initiate overt auto-inflammation in genetically intact hosts",
+        "C": "Germ-free mice are immune to all forms of colitis regardless of microbiome composition",
+        "D": "UC can only be modeled in immunodeficient mice, making germ-free models inappropriate"
+      },
+      "correct_answer": "B",
+      "explanation": "When UC patient microbiomes were transferred into genetically intact germ-free mice, the recipients did not show overt colitis or systemic inflammation, despite exhibiting metabolic protein perturbations in both host and microbial compartments. This suggests that while a dysbiotic microbiome can initiate metabolic and functional perturbations, full IBD pathology requires host genetic susceptibility factors — possibly affecting epithelial sensing or immune regulation — in addition to a dysbiotic microbiome.",
+      "topic_tags": ["IBD pathogenesis", "germ-free mice", "host susceptibility", "microbiome transfer", "ulcerative colitis", "genetic susceptibility"]
+    }
+  ]
+}

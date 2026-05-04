@@ -1,0 +1,269 @@
+{
+  "metadata": {
+    "source_paper": "Roles of the gut microbiome in weight management",
+    "authors": ["Rachel N. Carmody", "Jordan E. Bisanz"],
+    "journal": "Nature Reviews Microbiology",
+    "year": 2023,
+    "volume": 21,
+    "pages": "535-550",
+    "doi": "10.1038/s41579-023-00888-0",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "gutweight_easy_001",
+      "difficulty": "easy",
+      "question": "How do germ-free animal studies demonstrate the gut microbiome's net effect on host energy status?",
+      "answer": "Germ-free mice reared in sterile conditions display lower adiposity than conventionally raised mice despite eating more food and expending less energy. When formerly germ-free mice are colonized with murine or human gut microbiota, their adiposity increases, demonstrating a strong, generally net-positive effect of microbial colonization on host energy status. Furthermore, metabolic phenotypes such as obesity and insulin resistance can be recapitulated in gnotobiotic animals through microbiota transplantation, providing causal evidence that the gut microbiome profoundly influences energy metabolism.",
+      "topic_tags": ["germ-free animals", "gnotobiotic models", "energy balance", "adiposity", "microbiome colonization"]
+    },
+    {
+      "id": "gutweight_easy_002",
+      "difficulty": "easy",
+      "question": "What are short-chain fatty acids (SCFAs), and how do they contribute to dietary energy harvest?",
+      "answer": "Short-chain fatty acids (SCFAs) — primarily acetate, butyrate, and propionate — are microbial metabolites produced through fermentation of undigested carbohydrates and proteins in the colon. They are absorbed by the host and contribute to energy metabolism across multiple tissues: acetate supports muscle and brain function, butyrate supplies up to 60–70% of the energetic needs of the colonic epithelium, and propionate serves as a substrate for hepatic gluconeogenesis. Energy returns from SCFAs are approximately 1.5 kcal per gram, less than half the rate of carbohydrates digested directly in the small intestine. SCFAs account for roughly 5–10% of daily energy requirements in industrialized populations and a likely greater fraction in populations consuming minimally processed, fibre-rich diets.",
+      "topic_tags": ["SCFAs", "short-chain fatty acids", "fermentation", "energy harvest", "acetate", "butyrate", "propionate"]
+    },
+    {
+      "id": "gutweight_easy_003",
+      "difficulty": "easy",
+      "question": "How does the gut microbiome influence hunger and satiety through the gut–brain axis?",
+      "answer": "The gut microbiome influences hunger and satiety primarily through SCFA-mediated signalling. SCFAs activate GPR41 and GPR43 receptors on enteroendocrine L-cells in the gut, triggering the release of glucagon-like peptide 1 (GLP-1) and peptide YY (PYY), hormones that promote satiety by activating endocrine receptors in the hypothalamus and nucleus of the solitary tract. Acetate can also cross the blood–brain barrier and induce expression of anorexia-promoting genes. Additionally, gut microorganisms synthesize peptide mimics of satiety-regulating hormones such as leptin and insulin, produce neurotransmitters including GABA, dopamine, and serotonin, and may influence food reward pathways, all of which affect energy intake.",
+      "topic_tags": ["gut-brain axis", "hunger", "satiety", "GLP-1", "PYY", "SCFAs", "neurotransmitters"]
+    },
+    {
+      "id": "gutweight_easy_004",
+      "difficulty": "easy",
+      "question": "What general effect does physical activity have on gut microbiome composition, and how does this compare to dietary effects?",
+      "answer": "Physical activity alters gut microbiome composition in both rodents and humans, but its effects are typically smaller in magnitude than those of diet. Diet shapes the gut microbiome directly by altering the luminal nutritional environment, whereas exercise effects are mostly indirect. One of the more reproducible findings across human and animal studies is that exercise — particularly voluntary endurance exercise — increases the gut microbiome's capacity for butyrate production, including higher relative abundance of butyrate-producing taxa and elevated faecal butyrate concentrations in exercised versus sedentary individuals.",
+      "topic_tags": ["physical activity", "exercise", "gut microbiome", "butyrate", "diet comparison"]
+    },
+    {
+      "id": "gutweight_easy_005",
+      "difficulty": "easy",
+      "question": "What is faecal microbiota transplantation (FMT), and what has been observed about its utility in weight management?",
+      "answer": "Faecal microbiota transplantation (FMT) is the experimental or therapeutic transfer of faecal material from a donor to a recipient, intended to transfer microbiota-mediated effects. While FMT has proven effective for recalcitrant Clostridioides difficile infection and shown promise in inflammatory bowel disease, its results in weight management have been mixed — ranging from no clinical effect to modest positive effects on secondary outcomes such as reduced abdominal adiposity or improved insulin response when combined with dietary intervention. Evidence suggests that whole-community replacement approaches like FMT are unlikely to succeed as standalone weight management solutions, and that diet plays a critical adjuvant role in determining whether FMT-associated microbial changes are maintained.",
+      "topic_tags": ["FMT", "faecal microbiota transplantation", "obesity", "weight management", "clinical outcomes"]
+    },
+
+    {
+      "id": "gutweight_medium_001",
+      "difficulty": "medium",
+      "question": "Through what mechanisms does the gut microbiome modulate energy utilization in adipose tissue and the liver?",
+      "answer": "The gut microbiome modulates energy utilization through several interconnected mechanisms. In adipose tissue, gut microbial colonization increases triglyceride storage in adipocytes by suppressing fasting-induced adipocyte factor (FIAF), a circulating lipoprotein lipase inhibitor, leading to increased cellular fatty acid uptake. SCFAs exert differential effects: acetate and propionate inhibit lipolysis and promote fat accumulation in white adipose tissue (WAT), while butyrate promotes lipolysis and fatty acid oxidation in WAT and enhances thermogenesis in brown adipose tissue (BAT). Acetate and acetate-rich SCFA mixtures also increase WAT browning. In the liver, propionate promotes gluconeogenesis and hepatic acetate reduces lipogenesis, limits fat accumulation, and increases expression of thermogenesis and fatty acid oxidation genes. Additionally, gut microorganisms convert primary bile acids into secondary bile acids via deconjugation and dehydroxylation, generating ligands for FXR — a transcription factor regulating lipid, cholesterol, bile acid, and glucose metabolism — and producing secondary bile acids such as lithocholic acid that activate TGR5, inducing thermogenesis in both WAT and BAT.",
+      "topic_tags": ["energy utilization", "adipose tissue", "liver metabolism", "FIAF", "SCFAs", "bile acids", "thermogenesis", "FXR", "TGR5"]
+    },
+    {
+      "id": "gutweight_medium_002",
+      "difficulty": "medium",
+      "question": "How does dietary fibre intake shape gut microbial contributions to metabolism, and what are the limitations of isolated fibre supplementation?",
+      "answer": "Dietary fibre delivers fermentable substrate to the colon, enriching for microorganisms that synthesize carbohydrate-active enzymes and upregulating SCFA production. Chronic low-fibre consumption has been shown to cause extinction of fibre-degrading taxa in mice, and these losses can compound across generations. In humans, high-fibre diets increase microbiome-derived glycan-degrading enzymes or known fermentative taxa. However, isolated fibre supplements — such as arabinoxylan and long-chain inulin commonly found in over-the-counter weight-loss products — primarily target the growth of bifidobacteria and lactobacilli and therefore may not replicate the broader metabolic effects of a diverse polysaccharide-rich whole diet. High-dose inulin supplementation has even been shown to elicit inflammation and elevated liver enzymes. Because fermentable fibres differ in their capacity to stimulate specific SCFAs, and because individual SCFAs exert distinct biological effects at distal tissues, precision fibre interventions could theoretically be engineered to manipulate the SCFA pool composition to target specific metabolic outcomes.",
+      "topic_tags": ["dietary fibre", "SCFA production", "fibre supplements", "bifidobacteria", "precision fibre", "microbiome extinctions"]
+    },
+    {
+      "id": "gutweight_medium_003",
+      "difficulty": "medium",
+      "question": "What is the evidence that early-life gut microbiome disruption has lasting metabolic consequences, and what mechanisms have been proposed?",
+      "answer": "Studies in mice and humans suggest that disruption of the gut microbiome in early life — through pulsed therapeutic or chronic subtherapeutic antibiotic doses — confers increased risks of adult adiposity. Critically, metabolic consequences of such disruption were observed even when microbiome signatures ultimately rebounded to become indistinguishable from controls, suggesting that some metabolic programming by the microbiome is irreversible or very slow to reverse. Additionally, a murine study demonstrated that SCFAs from the maternal microbiome cross the placental barrier and bind to GPR41 and GPR43 receptors in the developing embryo, affecting downstream tissue development. Pups born to mothers with SCFA-deficient microbiomes had higher risks of metabolic syndrome when encountering high-fat diets as adults, and this effect was attributable specifically to embryonic SCFA exposure rather than vertical microbiome inheritance. Separately, signals of delayed gut microbial maturation have been shown to precede the onset of malnutrition in infants, with decompartmentalization and small intestinal bacterial overgrowth proposed as contributing factors.",
+      "topic_tags": ["early life", "antibiotics", "metabolic programming", "SCFAs", "placental barrier", "microbiome maturation", "adiposity"]
+    },
+    {
+      "id": "gutweight_medium_004",
+      "difficulty": "medium",
+      "question": "How do interactions between the gut microbiome and common anti-diabetic drugs illustrate the broader pharmacomicrobiomics concept?",
+      "answer": "The gut microbiome can profoundly influence drug efficacy and side effects through several mechanisms: direct metabolism of drugs by gut bacteria, off-target antibacterial effects of drugs on microbiome composition, and effects of drugs on host physiological systems that interact with the microbiome. Metformin, a first-line type 2 diabetes therapy, is a well-studied example: transplantation of faeces from metformin-treated human donors into germ-free mice improved glucose tolerance compared to pre-treatment donor faeces, providing strong causal evidence that the gut microbiome contributes to metformin's efficacy. Gastrointestinal side effects of metformin have been correlated with intestinal abundance of Escherichia coli. For acarbose, a prevalent microbial resistance mechanism that inactivates the drug has been identified, though its clinical significance remains to be determined. Statins offer another example: microbiome composition can predict treatment responses, with a Bacteroides-enriched, low-diversity microbiome associated with both increased adverse outcomes and, paradoxically, greater therapeutic statin effects.",
+      "topic_tags": ["pharmacomicrobiomics", "metformin", "acarbose", "statins", "drug-microbiome interactions", "glucose tolerance", "Bacteroides"]
+    },
+    {
+      "id": "gutweight_medium_005",
+      "difficulty": "medium",
+      "question": "How can baseline gut microbiota composition serve as a predictive biomarker for weight management intervention outcomes?",
+      "answer": "Baseline gut microbiota composition has been linked to several intervention outcomes, suggesting its utility as a prognostic biomarker. In animal models, classifier models exploiting microbiota composition predicted weight regain in yo-yo dieting paradigms with high accuracy. In human studies, baseline levels of Prevotella spp. predicted weight loss on a high-fibre whole-grain diet, while higher gut microbiota diversity and relative abundance of Ruminococcaceae and Lachnospiraceae spp. predicted weight gain over a decade. A notable fraction of body fat change during weight loss intervention — approximately 22–38% — has been explained by the baseline microbiota, with certain Clostridia and Parabacteroides spp. associated with increased fat loss. Interestingly, elevated baseline microbiota diversity has been correlated with lower fat loss, challenging the assumption that higher diversity is universally beneficial. Microbiome composition integrated with anthropometric and lifestyle data has also improved prediction of postprandial glycaemic responses to meals.",
+      "topic_tags": ["biomarker", "baseline microbiota", "weight loss prediction", "Prevotella", "diversity", "glycaemic response", "personalized nutrition"]
+    },
+    {
+      "id": "gutweight_medium_006",
+      "difficulty": "medium",
+      "question": "What do meta-analytic comparisons of weight management interventions reveal about their relative effects on gut microbiome composition?",
+      "answer": "A subject-level meta-analysis across longitudinal studies of common weight management interventions found that gut microbiota composition was reproducibly altered by intervention in the majority of studies examined, even though alpha-diversity was neither a robust nor reproducible indicator of intervention. Intervention explained only 0.6–9.0% of variation in gut microbiota composition, while interindividual variation explained 55.2–87.0%, highlighting that individual differences dominate over treatment effects. Roux-en-Y gastric bypass surgery exhibited the greatest effect on microbiome composition, followed closely by caloric restriction and nutrient modulation, with exercise showing the smallest effects. Among dietary interventions, intermittent fasting, prolonged caloric restriction, and ketogenic diets showed the greatest effects, while vegetarian and low-gluten diets showed the least. Machine learning analyses revealed that high-protein, Mediterranean, and low-gluten diets produced distinct, distinguishable microbial signatures, while intermittent fasting, ketogenic, and vegetarian diets were difficult to distinguish from general caloric restriction.",
+      "topic_tags": ["meta-analysis", "weight management", "microbiome composition", "RYGB surgery", "caloric restriction", "interindividual variation", "diet effects"]
+    },
+
+    {
+      "id": "gutweight_hard_001",
+      "difficulty": "hard",
+      "question": "How does the gut microbiome exhibit both energy-exacerbating and energy-buffering roles depending on host metabolic context, and why does this duality complicate therapeutic targeting?",
+      "answer": "The gut microbiome's influence on energy status is context-dependent rather than uniformly obesogenic or anti-obesogenic. At the positive extreme of energy balance, the microbiome associated with obese hosts harbours structural and functional changes that increase dietary energy harvest capacity. The microbiome also potentiates weight rebound after caloric restriction, relapsing obesity after weight cycling, and gestational weight gain in the third trimester. At the negative extreme, the microbiome of severely malnourished children exhibits a juvenilized state that impairs nutrient uptake, and the post-gastric-bypass microbiome has been causally shown to contribute to weight loss. However, under certain conditions the host–microbial system exhibits dynamic energetic buffering: a lower-digestibility diet that causes weight loss can foster a gut microbiome that itself promotes increased host energy status, as evidenced by gnotobiotic recipients of such microbiotas gaining more weight and adiposity. The specific conditions governing whether the microbiome exacerbates or buffers host energy status remain unclear. This duality complicates therapeutic targeting because intervening to reduce energy harvest in obesity could, under some conditions, inadvertently trigger compensatory buffering responses, and interventions aimed at correcting undernutrition must account for the microbiome's capacity to impair nutrient uptake. Additionally, the pleiotropic downstream effects of microbial metabolites like SCFAs — which simultaneously affect energy salvage, hunger, thermogenesis, and embryonic development — mean that targeting one function risks unintended consequences across others.",
+      "topic_tags": ["energy buffering", "energetic exacerbation", "obesity", "undernutrition", "context dependence", "therapeutic targeting", "pleiotropic effects"]
+    },
+    {
+      "id": "gutweight_hard_002",
+      "difficulty": "hard",
+      "question": "What is the current evidence for and against Akkermansia muciniphila as a therapeutic target for obesity and metabolic disease, and what molecular mechanisms underlie its proposed benefits?",
+      "answer": "A. muciniphila is a mucin-degrading bacterium of the Verrucomicrobia phylum and a key intestinal propionate producer. Evidence for its therapeutic potential is substantial: in animal models, administration of A. muciniphila or its pasteurized form protects against high-fat diet-induced obesity, insulin resistance, and low-grade inflammation through improvements in gut barrier integrity, including increased mucin barrier thickness and reduced translocation of lipopolysaccharide into circulation. In a human exploratory study, daily oral administration of pasteurized A. muciniphila over three months was well tolerated, significantly reduced insulin resistance and insulinaemia, and was associated with a non-significant reduction in body fat and hip circumference. Mechanistically, efficacy has been attributed to the outer membrane protein Amuc_1100, the secreted protein P9 (which induces GLP-1 expression), and phosphatidylethanolamine a15:0-i15:0, which modulates homeostatic immunity. The finding that pasteurized A. muciniphila is more efficacious than live bacteria improves both safety and shelf-stability for clinical development. However, recent genomic analyses have uncovered substantial whole-genome divergence among A. muciniphila strains despite homogeneity in their 16S rRNA gene sequences, contributing to differential impacts on inflammation across strains — a heterogeneity that may explain variable outcomes and represents a key challenge for standardized therapeutic development.",
+      "topic_tags": ["Akkermansia muciniphila", "obesity therapy", "gut barrier", "Amuc_1100", "pasteurized bacteria", "insulin resistance", "strain heterogeneity"]
+    },
+    {
+      "id": "gutweight_hard_003",
+      "difficulty": "hard",
+      "question": "How does the gut microbiome's role in bile acid metabolism connect to thermogenesis, and what therapeutic implications does this connection suggest?",
+      "answer": "The gut microbiome transforms host-produced primary bile acids (1° BAs) into secondary bile acids (2° BAs) through deconjugation and dehydroxylation. These transformed BAs carry diverse signalling functions that regulate energy metabolism. Deconjugated primary and secondary BAs are principal ligands for the nuclear farnesoid X receptor (FXR), a transcription factor with key regulatory roles in bile acid, cholesterol, lipid, and glucose metabolism. Through FXR signalling, microbial deconjugation of primary BAs can decrease hepatic expression of CYP7A1, the rate-limiting enzyme in primary BA synthesis, with downstream effects on lipid absorption. Critically, the secondary BA lithocholic acid is a high-affinity agonist of the G protein-coupled receptor TGR5, and TGR5 activation induces thermogenesis in both white adipose tissue and brown adipose tissue through upregulation of uncoupling protein 1 (UCP1). This BA–thermogenesis axis has direct therapeutic implications: supplementation with non-12α-hydroxylated bile acids or the bacterium Parabacteroides distasonis, which produces these acids, has been shown to suppress weight rebound after caloric restriction in mice. This suggests that precision manipulation of the gut microbiome's BA-transforming activity could be leveraged to maintain weight loss and prevent relapse — a particularly compelling target given the challenge of weight regain that undermines most existing interventions.",
+      "topic_tags": ["bile acid metabolism", "secondary bile acids", "TGR5", "thermogenesis", "UCP1", "FXR", "Parabacteroides distasonis", "weight rebound"]
+    },
+    {
+      "id": "gutweight_hard_004",
+      "difficulty": "hard",
+      "question": "What are the principal translational barriers to developing effective microbiome-directed therapies for weight management, and what research strategies are proposed to address them?",
+      "answer": "Several key barriers impede translation of microbiome discoveries into effective weight management therapies. First, most foundational knowledge derives from mouse models that differ from humans in anatomy, physiology, behaviour, and microbiome structure and function, creating a substantial translational gap. Second, the human gut microbiome exhibits high interindividual variability and longitudinal resilience, meaning responses to interventions differ widely across individuals and are difficult to sustain. Third, low ecological control drives significant day-to-day microbiome variation around long-term signatures, and developmental plasticity exerts influence across an extended human lifespan, creating temporal disconnects between phenotypes and contributory microbial signatures. Fourth, the pleiotropic effects of microbial products — such as SCFAs affecting energy salvage, hunger, thermogenesis, and embryonic development simultaneously — risk unintended consequences from targeted interventions, potentially even intergenerational ones. Proposed strategies to address these barriers include: developing protocols and synthetic microbial communities enabling animal hosts to more faithfully replicate human–microbiome energy metabolism interactions; supplementing murine studies with gnotobiotic experiments in pigs that more closely mimic human physiology; leveraging in vivo bioreactors and ex vivo organoid approaches for greater control and reproducibility; shifting focus from microbiome composition to function and metabolites as intervention targets; pursuing personalized interventions rather than one-size-fits-all approaches; and standardizing diet in clinical trials to provide substrates supporting microbial engraftment.",
+      "topic_tags": ["translational barriers", "microbiome therapy", "interindividual variation", "gnotobiotic models", "personalized medicine", "pleiotropic effects", "clinical trials"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "gutweight_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "What is the primary mechanism by which the gut microbiome enhances host dietary energy harvest from otherwise indigestible nutrients?",
+      "options": {
+        "A": "By increasing small intestinal surface area through stimulation of villus growth",
+        "B": "By fermenting carbohydrates and proteins escaping small intestinal digestion into SCFAs with residual caloric value",
+        "C": "By producing digestive enzymes that supplement host pancreatic secretions",
+        "D": "By slowing intestinal transit time to increase absorption of macronutrients"
+      },
+      "correct_answer": "B",
+      "explanation": "The gut microbiome salvages energy from nutrients escaping small intestinal digestion by fermenting them — primarily undigested carbohydrates — into SCFAs (acetate, butyrate, propionate) with an energy return of approximately 1.5 kcal per gram. This accounts for roughly 5–10% of daily energy requirements in industrialized populations.",
+      "topic_tags": ["energy harvest", "fermentation", "SCFAs", "dietary energy", "colon"]
+    },
+    {
+      "id": "gutweight_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "Which weight management intervention has been shown to produce the greatest effect on gut microbiome composition in comparative analyses?",
+      "options": {
+        "A": "High-protein diet",
+        "B": "Endurance exercise training",
+        "C": "Roux-en-Y gastric bypass surgery",
+        "D": "Mediterranean diet"
+      },
+      "correct_answer": "C",
+      "explanation": "Meta-analytic comparison of weight management interventions found that Roux-en-Y gastric bypass (RYGB) surgery exhibited the greatest effect on microbiome composition, followed closely by caloric restriction and nutrient modulation, with exercise showing the smallest effects.",
+      "topic_tags": ["RYGB surgery", "weight management", "microbiome composition", "meta-analysis", "dietary interventions"]
+    },
+    {
+      "id": "gutweight_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "What role does fasting-induced adipocyte factor (FIAF) play in the gut microbiome's regulation of fat storage?",
+      "options": {
+        "A": "FIAF produced by the microbiome stimulates lipolysis in white adipose tissue",
+        "B": "Gut microbial colonization suppresses intestinal FIAF expression, reducing inhibition of lipoprotein lipase and thereby increasing fatty acid uptake into adipocytes",
+        "C": "FIAF is a microbial metabolite that activates brown adipose tissue thermogenesis via UCP1",
+        "D": "Gut colonization increases FIAF levels, which in turn reduces triglyceride synthesis in the liver"
+      },
+      "correct_answer": "B",
+      "explanation": "Early animal studies showed that gut microbial colonization leads to increased triglyceride storage in adipocytes through intestinal suppression of FIAF, a circulating lipoprotein lipase (LPL) inhibitor. Suppressing FIAF removes the brake on LPL activity, leading to high cellular uptake of fatty acids and increased fat storage.",
+      "topic_tags": ["FIAF", "lipoprotein lipase", "fat storage", "adipocytes", "gut colonization"]
+    },
+
+    {
+      "id": "gutweight_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "Why do studies of non-caloric artificial sweeteners (NAS) and their effects on the gut microbiome present a challenge for drawing firm conclusions about metabolic safety?",
+      "options": {
+        "A": "NAS compounds are degraded by gut bacteria before reaching the colon, making microbiome effects impossible to study",
+        "B": "Initial studies suggesting NAS-induced microbiome changes and glucose intolerance were not consistently replicated in follow-up animal and human studies, and available human studies had small sample sizes",
+        "C": "NAS compounds are known to be directly toxic to Firmicutes, making their metabolic effects attributable entirely to composition shifts rather than metabolite changes",
+        "D": "NAS effects on the microbiome are only observed at doses far exceeding acceptable daily intake ranges, making clinical relevance negligible"
+      },
+      "correct_answer": "B",
+      "explanation": "While initial studies suggested NAS compounds like saccharin and sucralose promote glucose intolerance and microbiota-transmissible weight gain, these results were not corroborated in follow-up animal experiments or human studies. The lack of reproducibility across groups, combined with small human study sample sizes (under 20 participants per intervention group), indicates that adequately powered double-blind, placebo-controlled studies are needed to establish any deleterious effects.",
+      "topic_tags": ["artificial sweeteners", "NAS", "glucose intolerance", "gut microbiome", "reproducibility", "saccharin", "sucralose"]
+    },
+    {
+      "id": "gutweight_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "What explains the observation that exercise-induced improvements in gut microbiome composition and butyrate production appear to differ between lean and obese participants?",
+      "options": {
+        "A": "Obese individuals produce less intestinal mucin, limiting the substrate available for butyrate-producing bacteria regardless of exercise",
+        "B": "Exercise-induced changes in the gut microbiome, including increased faecal butyrate and abundance of butyrate-producing taxa, were observed in lean but not obese participants, suggesting the host's baseline metabolic phenotype modulates microbiome responsiveness to exercise",
+        "C": "Obese individuals have lower cardiorespiratory fitness, meaning they do not reach the exercise intensity threshold required to shift the gut microbiome",
+        "D": "Elite athletes consume more dietary protein, which is the actual driver of butyrate-producing taxa enrichment rather than the exercise itself"
+      },
+      "correct_answer": "B",
+      "explanation": "In a study of previously sedentary adults undergoing 6 weeks of supervised endurance exercise with standardized dietary control, changes in the gut microbiome differed based on baseline host phenotype. Exercise increased faecal butyrate and acetate concentrations and the relative abundance of butyrate-producing taxa in lean participants but not in obese participants, indicating that the host's metabolic state modulates gut microbial responsiveness to exercise.",
+      "topic_tags": ["exercise", "butyrate", "obesity", "lean phenotype", "host phenotype", "microbiome responsiveness"]
+    },
+    {
+      "id": "gutweight_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "How does the gut microbiome associated with kwashiorkor (severe acute malnutrition) exemplify a net-negative influence on host energy status?",
+      "options": {
+        "A": "The kwashiorkor-associated microbiome produces excess SCFAs that impair intestinal barrier integrity and trigger systemic inflammation",
+        "B": "The kwashiorkor-associated microbiome exhibits a juvenilized state that impairs nutrient uptake, and gnotobiotic recipients of this microbiome exhibit lower body mass and adiposity than germ-free controls",
+        "C": "The kwashiorkor-associated microbiome overpopulates the small intestine and competitively blocks host enzyme access to dietary carbohydrates",
+        "D": "The kwashiorkor-associated microbiome reduces bile acid diversity, impairing lipid absorption in the small intestine"
+      },
+      "correct_answer": "B",
+      "explanation": "The gut microbiome of children with kwashiorkor exhibits a juvenilized state that impairs nutrient uptake. Critically, gnotobiotic transplant recipients of kwashiorkor-associated microbiotas exhibited lower body mass and adiposity versus germ-free mice, providing a rare example of a microbiome with net-negative influences on host energy status — the opposite of the typical obesogenic direction.",
+      "topic_tags": ["kwashiorkor", "malnutrition", "gnotobiotic transplant", "net-negative energy", "nutrient uptake", "microbiome maturation"]
+    },
+    {
+      "id": "gutweight_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "What is the significance of the finding that α-diversity was not a robust indicator of weight management intervention effects in the meta-analysis?",
+      "options": {
+        "A": "It confirms that all weight management diets are microbiologically equivalent and that compositional metrics should not be reported",
+        "B": "It indicates that despite reproducible compositional shifts in microbiota in most studies, the diversity metric fails to capture these changes, highlighting the importance of using compositional and functional measures rather than diversity alone",
+        "C": "It suggests that only surgical interventions achieve meaningful microbiome changes, making dietary interventions clinically irrelevant",
+        "D": "It demonstrates that the human gut microbiome is too stable to be measurably altered by lifestyle interventions"
+      },
+      "correct_answer": "B",
+      "explanation": "The meta-analysis found that gut microbiota composition was reproducibly altered by weight management intervention in 12 of 14 studies when using compositional metrics, yet α-diversity was not a robust or reproducible indicator of intervention. This highlights that alpha-diversity alone is an insufficient summary statistic and that compositional or functional profiling provides more informative and sensitive measures of microbiome changes.",
+      "topic_tags": ["alpha diversity", "microbiome metrics", "weight management", "meta-analysis", "compositional analysis"]
+    },
+    {
+      "id": "gutweight_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What role does diet play in determining the success of autologous faecal microbiota transplantation (FMT) for weight maintenance after weight loss?",
+      "options": {
+        "A": "Diet is irrelevant to FMT outcomes because the transplanted microbiome overwrites the resident community regardless of nutritional context",
+        "B": "Only participants who underwent a specific green-Mediterranean diet during the weight-loss phase had meaningful microbiome changes, and only in this group did autologous FMT attenuate subsequent weight regain and metabolic rebound versus placebo",
+        "C": "Low-fat diets during the weight-loss phase produce the most stable microbiome configurations that are best preserved by autologous FMT",
+        "D": "Diet standardization improves FMT outcomes only when the transplant is heterologous, not when autologous faeces are used"
+      },
+      "correct_answer": "B",
+      "explanation": "In the autologous FMT weight maintenance study, only the green-Mediterranean diet group experienced significant changes in gut microbiome during the weight-loss phase. Correspondingly, autologous FMT attenuated weight regain, waist circumference gain, and insulin rebound versus placebo only in the green-Mediterranean group. This demonstrates that diet is a critical adjuvant that must prime the microbiome for FMT to be effective.",
+      "topic_tags": ["autologous FMT", "green-Mediterranean diet", "weight regain", "microbiome priming", "diet adjuvant"]
+    },
+
+    {
+      "id": "gutweight_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "Why might higher gut microbiota diversity be correlated with reduced fat loss during weight management interventions, and what does this suggest about targeting diversity as a therapeutic goal?",
+      "options": {
+        "A": "Higher diversity communities produce more SCFA overall, increasing caloric availability to the host and counteracting the energy deficit of weight loss interventions",
+        "B": "Higher diversity microbiomes tend to include more Proteobacteria, which are specifically linked to fat storage through LPS-mediated inflammation",
+        "C": "Elevated baseline diversity has been correlated with lower fat loss, and taken with other evidence, this reinforces that maximizing gut microbiota diversity is unlikely to be uniformly beneficial — diversity is an imperfect proxy for healthy microbiome function and specific functional profiles matter more",
+        "D": "High diversity communities are more ecologically resistant to dietary perturbation, meaning they are less able to shift their metabolic outputs in response to caloric restriction"
+      },
+      "correct_answer": "C",
+      "explanation": "The correlation between elevated baseline microbiota diversity and lower fat loss challenges the widespread assumption that more microbial diversity is always better. This finding, combined with other evidence, reinforces that diversity is a crude proxy for microbiome health. Specific functional profiles — such as the capacity to produce particular SCFAs or to modulate bile acid metabolism — are likely to be more meaningful targets than broad compositional diversity for weight management interventions.",
+      "topic_tags": ["microbiome diversity", "fat loss", "weight management", "therapeutic targets", "diversity versus function"]
+    },
+    {
+      "id": "gutweight_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "How does the gut microbiome's capacity to exert metabolic effects that persist beyond changes in microbiome composition complicate mechanistic interpretation and therapeutic intervention?",
+      "options": {
+        "A": "Persistent effects are mediated by epigenetic changes in host cells triggered by microbial metabolites, which are fully reversed once microbiome composition normalizes",
+        "B": "Metabolic consequences of early-life microbiome disruption can persist even after microbiome signatures rebound to resemble controls, suggesting that microbiome-driven metabolic programming during critical developmental windows has lasting tissue-level consequences that standard microbiome composition analyses will fail to detect",
+        "C": "Persistent microbiome effects are only relevant in severe malnutrition contexts and do not apply to overweight or obesity in adults",
+        "D": "The persistent effects result entirely from altered host immune programming by the microbiome, rather than any direct metabolic contributions of gut bacteria"
+      },
+      "correct_answer": "B",
+      "explanation": "Studies showed that metabolic consequences of disrupted early-life gut microbiomes — such as increased adult adiposity — were found even when microbiome signatures ultimately rebounded to become indistinguishable from controls. This temporal disconnect between microbiome composition and metabolic phenotype means that tracking microbiome composition is insufficient to capture its full metabolic contribution, and that interventions targeting composition alone may miss persistent programming effects established during developmental windows.",
+      "topic_tags": ["metabolic programming", "early life", "microbiome resilience", "persistent effects", "developmental windows", "mechanistic interpretation"]
+    }
+  ]
+}

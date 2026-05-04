@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Meta-analysis of the human gut microbiome uncovers shared and distinct microbial signatures between diseases",
+    "authors": ["Dong-Min Jin", "James T. Morton", "Richard Bonneau"],
+    "journal": "mSystems",
+    "year": 2024,
+    "doi": "10.1128/msystems.00295-24",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "gutmeta_easy_7f2a",
+      "difficulty": "easy",
+      "question": "What is the rationale for studying gut microbiome signatures across multiple diseases simultaneously, rather than studying each disease in isolation?",
+      "answer": "Studying diseases in isolation ignores the reality that many patients have multiple comorbidities. The gut microbiome acts as a central metabolic hub and has strong interactions with the immune system, meaning microbes can have multifaceted impacts across disorders that may not have been previously linked. Identifying shared microbial signatures across diseases can reveal previously unknown disease similarities, which is a necessary first step toward drug repositioning — repurposing treatments from one condition to another with similar microbial profiles.",
+      "topic_tags": ["disease similarity", "comorbidities", "drug repositioning", "meta-analysis", "microbiome"]
+    },
+    {
+      "id": "gutmeta_easy_3c81",
+      "difficulty": "easy",
+      "question": "Why do researchers prefer shotgun metagenomic sequencing over 16S rRNA gene sequencing for cross-disease microbiome comparisons?",
+      "answer": "Shotgun metagenomics provides species- or strain-level resolution, whereas 16S rRNA gene sequencing lacks this precision and cannot deliver sufficient genomic insight into the functional roles of microbes. Higher resolution is essential when comparing subtle differences in microbial signatures between diseases, as it enables identification of specific species and their metabolic gene content, rather than just broad taxonomic groupings.",
+      "topic_tags": ["shotgun metagenomics", "16S rRNA", "species resolution", "sequencing methodology"]
+    },
+    {
+      "id": "gutmeta_easy_b9d3",
+      "difficulty": "easy",
+      "question": "What role does Fusobacterium nucleatum play in colorectal cancer, and why is its presence notable beyond the gut?",
+      "answer": "Fusobacterium nucleatum is enriched in colorectal adenomas and adenocarcinomas and creates a proinflammatory microenvironment that supports the progression of colorectal neoplasia. Its presence is particularly notable because it is also a common oral bacterium. The connection between oral bacteria and the gut may occur through ectopic gut colonization by oral commensals and the induction of migratory immune cells, illustrating a complex interplay between the oral microbiome, gut microbiome, and immune system in cancer progression.",
+      "topic_tags": ["Fusobacterium nucleatum", "colorectal cancer", "oral microbiome", "inflammation", "cancer"]
+    },
+    {
+      "id": "gutmeta_easy_d04e",
+      "difficulty": "easy",
+      "question": "What is the significance of Faecalibacterium prausnitzii in the context of gut inflammatory diseases?",
+      "answer": "Faecalibacterium prausnitzii is a control-associated (health-associated) commensal bacterium that is consistently depleted in Crohn's disease patients. It can produce proteins with anti-inflammatory properties, and its loss is considered a hallmark of gut dysbiosis in inflammatory bowel disease. Its depletion plays a substantial role in distinguishing disease cases from healthy controls, making it a key microbial biomarker and potential therapeutic target in inflammatory gut conditions.",
+      "topic_tags": ["Faecalibacterium prausnitzii", "Crohn's disease", "anti-inflammatory", "dysbiosis", "IBD"]
+    },
+    {
+      "id": "gutmeta_easy_1e7c",
+      "difficulty": "easy",
+      "question": "How does the dysbiosis pattern in colorectal cancer differ from that typically observed in Crohn's disease?",
+      "answer": "Colorectal cancer dysbiosis is generally characterized by an increased prevalence of pathogenic microbes (enrichment of case-associated pathogens), whereas Crohn's disease dysbiosis is primarily characterized by the depletion of control-associated (health-promoting) commensal microbes. Despite these distinct patterns, the two diseases share some overlapping microbial signatures, indicating that their similarities involve a mixture of both pathogenic enrichment and beneficial microbe depletion.",
+      "topic_tags": ["dysbiosis", "colorectal cancer", "Crohn's disease", "pathogenic microbes", "commensal depletion"]
+    },
+
+    {
+      "id": "gutmeta_med_52b6",
+      "difficulty": "medium",
+      "question": "What mechanisms are thought to underlie the microbial similarity between Parkinson's disease and type 2 diabetes?",
+      "answer": "The similarity between Parkinson's disease and type 2 diabetes is primarily driven by shared increases of case-associated microbes in both patient populations, rather than shared depletions. Overlapping case-associated microbes include species from genera such as Acidaminococcus, Limosilactobacillus, and Morganella morganii. Additionally, Akkermansia muciniphila is differentially increased in both disorders, though its causal role remains controversial given conflicting evidence in the literature about whether its increase is beneficial or pathogenic. The shared microbial profile raises the possibility of repurposing metabolic disease drugs (like metformin) for neurological conditions.",
+      "topic_tags": ["Parkinson's disease", "type 2 diabetes", "disease similarity", "Akkermansia muciniphila", "drug repositioning"]
+    },
+    {
+      "id": "gutmeta_med_8a3f",
+      "difficulty": "medium",
+      "question": "How does metformin's relationship with the gut microbiome support the potential for drug repositioning in neurological disorders?",
+      "answer": "Metformin, a widely used type 2 diabetes treatment, is known to alter the gut microbiome, and some of its antidiabetic effects are mediated by those microbiome changes. Since Parkinson's disease and schizophrenia share high microbial similarity with type 2 diabetes, this raises the hypothesis that metformin's microbiome-modulating effects may also benefit neurological conditions. Supporting evidence includes studies showing metformin has positive effects on anxiety and depression, and that it exerts neuroprotective effects in animal models of Parkinson's disease, suggesting a microbiome-mediated mechanism bridging metabolic and neurological disease treatment.",
+      "topic_tags": ["metformin", "gut microbiome", "drug repositioning", "Parkinson's disease", "type 2 diabetes", "neuroprotection"]
+    },
+    {
+      "id": "gutmeta_med_c72d",
+      "difficulty": "medium",
+      "question": "Why are Lachnospiraceae-family bacteria considered important microbial markers of health, and what diseases are associated with their depletion?",
+      "answer": "Bacteria from the Lachnospiraceae family are important producers of butyrate, a short-chain fatty acid with beneficial effects on cellular metabolism and intestinal homeostasis. Their loss is linked to chronic inflammation and is thought to be involved in the pathogenesis of metabolic diseases such as type 2 diabetes. Their depletion has also been observed in schizophrenia, highlighting the Lachnospiraceae as shared control-associated microbes whose reduction contributes to microbial similarity across metabolic and neurological disorders.",
+      "topic_tags": ["Lachnospiraceae", "butyrate", "type 2 diabetes", "schizophrenia", "intestinal homeostasis", "dysbiosis"]
+    },
+    {
+      "id": "gutmeta_med_0b9e",
+      "difficulty": "medium",
+      "question": "What metabolic pathway disruptions are shared between Crohn's disease and ulcerative colitis at the microbial gene level, and which pathogens are implicated?",
+      "answer": "At the microbial gene level, both Crohn's disease and ulcerative colitis show case-associated microbes with higher prevalence of genes involved in amino acid metabolism, energy metabolism, and lipid metabolism pathways. These pathways are linked to inflammation and infection. Pathogenic microbes heavily involved in these disrupted pathways include Fusobacterium, Klebsiella, and Stenotrophomonas, which contribute to tryptophan biosynthesis, oxidative phosphorylation, and fatty acid biosynthesis. The high gene-level correlation (Pearson R = 0.6) between the two IBD subtypes reflects these shared metabolic disruptions.",
+      "topic_tags": ["Crohn's disease", "ulcerative colitis", "metabolic pathways", "amino acid metabolism", "Fusobacterium", "Klebsiella"]
+    },
+    {
+      "id": "gutmeta_med_e3a1",
+      "difficulty": "medium",
+      "question": "What is the significance of Acidaminococcus intestini as a cross-disease microbial marker, and what dietary factor has been associated with its abundance?",
+      "answer": "Acidaminococcus intestini is notable for being the most commonly shared case-associated microbe in the multi-disease meta-analysis, with increased abundance detected across seven different diseases. It has been identified in cross-sectional research as one of the microbes more abundant in individuals consuming the most pro-inflammatory diets. This positions it as both a broad indicator of disease-associated dysbiosis and a potential link between dietary inflammation and microbial changes across metabolically and neurologically distinct conditions.",
+      "topic_tags": ["Acidaminococcus intestini", "case-associated microbe", "pro-inflammatory diet", "cross-disease signature", "dysbiosis"]
+    },
+    {
+      "id": "gutmeta_med_7d54",
+      "difficulty": "medium",
+      "question": "How does the concept of functional redundancy in the gut microbiome complicate interpretation of disease similarity assessments based purely on microbial species overlap?",
+      "answer": "Functional redundancy means that different microbial species can perform overlapping metabolic functions, so two diseases may share similar metabolic dysfunction even when their specific microbial taxa differ. This creates discrepancies when comparing disease similarity at the species level versus the gene level. For example, two diseases may have strong similarity in microbial gene profiles (reflecting shared metabolic disruptions) but relatively small overlap in differentially abundant species. Relying solely on taxonomic overlap can therefore underestimate the true biological similarity between diseases, making gene-level and pathway-level comparisons essential complements to species-level analysis.",
+      "topic_tags": ["functional redundancy", "disease similarity", "microbial genes", "metabolic pathways", "species overlap"]
+    },
+
+    {
+      "id": "gutmeta_hard_4c2b",
+      "difficulty": "hard",
+      "question": "What is the inverse relationship between Alzheimer's disease and inflammatory bowel disease at the microbial gene level, and what are the potential therapeutic implications of this anti-correlation?",
+      "answer": "At the microbial gene level, Alzheimer's disease shows strong negative correlation with both Crohn's disease (R = −0.55) and ulcerative colitis (R = −0.46), meaning the differentially abundant gene profiles are essentially mirror images. In IBD, case-associated microbes are enriched in genes for amino acid, lipid, and energy metabolism pathways, while in Alzheimer's disease, it is the control-associated microbes that carry these genes — microbes that are depleted in AD patients. Some of these AD control-associated microbes generate neuroprotective metabolites such as histamine, conjugated fatty acids, and dopamine. The anti-correlation also highlights that while IBD drugs are immunosuppressants and AD drugs target amyloid plaques, the diseases affect the same metabolic pathways through opposite microbial mechanisms — raising questions about whether immune-enhancing drugs used in IBD could antagonize Alzheimer's pathology, or whether the anti-correlated gut environments could be leveraged for novel cross-disease therapeutic strategies.",
+      "topic_tags": ["Alzheimer's disease", "IBD", "anti-correlation", "microbial gene profiles", "drug repositioning", "neuroprotective metabolites"]
+    },
+    {
+      "id": "gutmeta_hard_91df",
+      "difficulty": "hard",
+      "question": "How do the dysbiosis patterns of Crohn's disease and colorectal cancer individually differ, and why does their shared microbial signature suggest a more complex pathological overlap than either disease's classic dysbiosis model predicts?",
+      "answer": "Crohn's disease dysbiosis is classically defined by the depletion of beneficial control-associated microbes, while colorectal cancer dysbiosis is characterized by enrichment of pathogenic case-associated microbes. However, shared microbial signatures between CD and CRC include both overlapping case-associated species (such as Fusobacterium spp., Veillonella spp., and Escherichia coli) and shared control-associated depletions (such as Coprococcus spp.). This indicates that CD dysbiosis is not purely a loss-of-commensals phenomenon — it also involves pathogenic enrichment. Similarly, CRC is not solely a pathogen-enrichment story but also involves commensal depletion. The overlap implies that CD's role as a risk factor for CRC may operate partly through shared pathogenic microbe accumulation and partly through the erosion of the same protective commensals, opening new possibilities for narrow-spectrum antimicrobials and probiotic interventions that could address both conditions simultaneously.",
+      "topic_tags": ["Crohn's disease", "colorectal cancer", "dysbiosis patterns", "Fusobacterium", "Coprococcus", "comorbidity mechanism"]
+    },
+    {
+      "id": "gutmeta_hard_b38c",
+      "difficulty": "hard",
+      "question": "What are the key methodological limitations in establishing causal inferences from cross-disease microbiome meta-analyses, and what multi-omic approaches are proposed to overcome them?",
+      "answer": "Several methodological limitations hinder causal inference in cross-disease microbiome meta-analyses. First, most studies use relative rather than absolute quantification, making it impossible to confirm whether detected microbes are truly differentially abundant or artifacts of the chosen reference frame — a problem partially mitigated by focusing only on the top-ranked differentially abundant microbes. Second, confounding factors such as medication history, dietary patterns, age, gender, and BMI are inconsistently documented across studies and may drive apparent microbiome differences. Third, the analysis is limited to a single omics layer (metagenomics), missing the contributions of host transcriptomics (host gene–microbiome associations), metabolomics (lipid and bile acid metabolism), and proteomics (amino acid metabolism and immune response). To overcome these limitations, longitudinal observational cohorts and clinical trials are needed to identify indirect effects of external interventions. Incorporating multi-omics data would increase the resolution of causal biomarker identification, since more observed biomarker layers increase the probability of capturing causally relevant signals. Preclinical mechanistic studies are also essential to confirm causal roles identified through observational approaches.",
+      "topic_tags": ["causal inference", "methodological limitations", "multi-omics", "metagenomics", "confounders", "longitudinal studies"]
+    },
+    {
+      "id": "gutmeta_hard_2e6f",
+      "difficulty": "hard",
+      "question": "How does the machine learning framework used in this meta-analysis balance interpretability and predictive performance, and what does the generalization of classifiers to hold-out cohorts reveal about disease-specific versus cohort-specific microbial signals?",
+      "answer": "The framework uses gradient boosting (GB) and random forest (RF) classifiers, with GB showing superior overall performance. SHAP (Shapley Additive Explanations) is applied to interpret which microbial features most contribute to classification, providing transparency in an otherwise black-box model by calculating each microbe's marginal contribution across all possible feature coalitions. A key design choice is training on one cohort and testing on an independent hold-out cohort, which distinguishes true disease-associated signals from cohort-specific confounders such as demographics, sample storage, or sequencing platform differences. The strong generalization of classifiers for CD (AUC = 1.00 on hold-out) and CRC (AUC = 0.87 on hold-out) suggests that certain microbial signatures — particularly control-associated Faecalibacterium in CD and case-associated Fusobacterium in CRC — are robust biological markers rather than cohort artifacts. The use of both SHAP values and differential abundance analysis together provides convergent evidence: microbes that score highly in both analyses are the most biologically meaningful, even when the two methods occasionally conflict in their rankings.",
+      "topic_tags": ["gradient boosting", "SHAP", "machine learning interpretability", "hold-out validation", "generalization", "Faecalibacterium", "Fusobacterium"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "gutmeta_mcq_easy_3b7a",
+      "difficulty": "easy",
+      "question": "Which disease pair showed the highest degree of microbial similarity at the gene level, as measured by Pearson's correlation coefficient of log2 fold changes?",
+      "options": {
+        "A": "Parkinson's disease vs type 2 diabetes",
+        "B": "Crohn's disease vs ulcerative colitis",
+        "C": "Schizophrenia vs type 2 diabetes",
+        "D": "Crohn's disease vs colorectal cancer"
+      },
+      "correct_answer": "B",
+      "explanation": "Crohn's disease vs ulcerative colitis had a Pearson R of 0.6 at the microbial gene level, the highest positive correlation observed across all disease pairs. As two subtypes of IBD, both conditions share substantial microbial gene profiles reflecting their shared pathophysiology of transmural gastrointestinal inflammation.",
+      "topic_tags": ["CD vs UC", "gene-level similarity", "Pearson correlation", "IBD"]
+    },
+    {
+      "id": "gutmeta_mcq_easy_9d2c",
+      "difficulty": "easy",
+      "question": "Which microbe is consistently classified as a control-associated (health-associated) species in Crohn's disease and serves as a key distinguishing marker between CD patients and healthy controls?",
+      "options": {
+        "A": "Fusobacterium nucleatum",
+        "B": "Morganella morganii",
+        "C": "Faecalibacterium prausnitzii",
+        "D": "Akkermansia muciniphila"
+      },
+      "correct_answer": "C",
+      "explanation": "Faecalibacterium prausnitzii is a control-associated species with high Shapley values in CD classification. It produces anti-inflammatory proteins and is depleted in Crohn's disease, making it one of the most important distinguishing markers between CD patients and healthy controls. Fusobacterium nucleatum is instead a case-associated marker in CRC, while Akkermansia and Morganella morganii are case-associated in other diseases.",
+      "topic_tags": ["Faecalibacterium prausnitzii", "Crohn's disease", "SHAP", "control-associated microbe"]
+    },
+    {
+      "id": "gutmeta_mcq_easy_f14b",
+      "difficulty": "easy",
+      "question": "What threshold of classification accuracy was used to determine whether a dataset's microbial profile could meaningfully distinguish disease cases from healthy controls?",
+      "options": {
+        "A": "AUC > 0.5",
+        "B": "AUC > 0.6",
+        "C": "AUC > 0.7",
+        "D": "AUC > 0.8"
+      },
+      "correct_answer": "B",
+      "explanation": "An AUC threshold of 0.6 was applied to retain only datasets with discernible microbial signatures capable of distinguishing cases from controls. An AUC of 0.5 is equivalent to random guessing, so 0.6 represents the minimum meaningful predictive ability. Studies falling below this threshold were excluded from further analysis.",
+      "topic_tags": ["AUC threshold", "classifier performance", "dataset selection", "machine learning"]
+    },
+
+    {
+      "id": "gutmeta_mcq_med_6e3d",
+      "difficulty": "medium",
+      "question": "What does the finding that Veillonella species are control-associated in Alzheimer's disease but case-associated in Crohn's disease most likely indicate?",
+      "options": {
+        "A": "The differential abundance analysis pipeline produces inconsistent results across diseases",
+        "B": "Veillonella species have no genuine biological role in either disease",
+        "C": "Genomic diversity within Veillonella may mean different strains contribute to distinct disease mechanisms in different gut environments",
+        "D": "Veillonella is universally depleted in disease states, and the Crohn's finding is a technical artifact"
+      },
+      "correct_answer": "C",
+      "explanation": "The contrasting roles of Veillonella across diseases are attributed to the genomic diversity differences among Veillonella strains. Different strains may have distinct metabolic capabilities and interactions with the host immune system, meaning the same genus can promote health in one disease context (AD, where its depletion is associated with disease) while contributing to pathology in another (CD, where it is enriched in disease cases). This underscores the importance of species- and strain-level resolution in microbiome studies.",
+      "topic_tags": ["Veillonella", "Alzheimer's disease", "Crohn's disease", "genomic diversity", "disease-specific roles"]
+    },
+    {
+      "id": "gutmeta_mcq_med_a82f",
+      "difficulty": "medium",
+      "question": "Why is the shared microbial similarity between schizophrenia and type 2 diabetes scientifically significant from a therapeutic perspective?",
+      "options": {
+        "A": "It confirms that schizophrenia is a direct metabolic disorder caused by insulin resistance",
+        "B": "It provides a microbiome-based rationale for exploring whether T2D treatments like metformin could have therapeutic effects in schizophrenia",
+        "C": "It demonstrates that the two diseases share identical genetic risk factors mediated through the gut",
+        "D": "It shows that antipsychotic drugs used in schizophrenia are known to alter the gut microbiome identically to T2D drugs"
+      },
+      "correct_answer": "B",
+      "explanation": "The shared microbial signature between schizophrenia and T2D establishes a previously unknown microbiome-level connection between these disorders. Since metformin (a T2D drug) is known to exert some of its effects through gut microbiome modulation, and since studies have shown metformin has positive effects on anxiety and depression, the microbiome similarity supports exploring metformin and related interventions for neurological conditions like schizophrenia. The higher prevalence of T2D in schizophrenia patients was clinically observed but lacked a microbiome-level explanation before this finding.",
+      "topic_tags": ["schizophrenia", "type 2 diabetes", "metformin", "drug repositioning", "gut-brain axis"]
+    },
+    {
+      "id": "gutmeta_mcq_med_c09e",
+      "difficulty": "medium",
+      "question": "What does the consistent increase of Akkermansia muciniphila across multiple neurological and metabolic disease cohorts suggest about interpreting its role?",
+      "options": {
+        "A": "Akkermansia muciniphila is definitively pathogenic and should be targeted for elimination in disease treatment",
+        "B": "Akkermansia muciniphila is definitively beneficial and its enrichment reflects a compensatory protective response",
+        "C": "Its role is ambiguous — prior studies show both beneficial and pathogenic associations, and its abundance may be influenced by geographic and other confounding factors",
+        "D": "Increased Akkermansia muciniphila is a universal marker of antibiotic use across all disease populations"
+      },
+      "correct_answer": "C",
+      "explanation": "Akkermansia muciniphila was found to be differentially increased in multiple disorders including PD, schizophrenia, and T2D. However, the literature is controversial, with some studies showing it is beneficial (protective against obesity and metabolic disease) and others suggesting a pathogenic role. Its abundance may also be influenced by geographic location, complicating interpretation. The paper acknowledges this controversy and calls for follow-up mechanistic studies rather than drawing causal conclusions.",
+      "topic_tags": ["Akkermansia muciniphila", "disease association", "beneficial vs pathogenic", "geographic variation", "causal ambiguity"]
+    },
+    {
+      "id": "gutmeta_mcq_med_5f71",
+      "difficulty": "medium",
+      "question": "What is the primary reason that combining multiple cohorts per disease improved overall classification performance compared to analyzing each cohort individually?",
+      "options": {
+        "A": "Larger sample sizes always increase AUC regardless of data quality",
+        "B": "Combining cohorts reduces individual sequencing depth requirements",
+        "C": "Pooling diverse cohorts enhances the representativeness of the disease microbial signature by capturing broader inter-individual variation",
+        "D": "Per-disease classifiers benefit from cohort-specific batch effects that act as additional features"
+      },
+      "correct_answer": "C",
+      "explanation": "The consolidation of datasets from diverse cohorts into a per-disease classifier improves representativeness of the disease phenotype because it captures microbial signatures that generalize across different patient populations, geographic regions, and experimental protocols. This is consistent with findings from prior multi-cohort analyses of ASD and CRC, where pooling data produced more generalizable classifiers than individual cohort analyses.",
+      "topic_tags": ["per-disease classifier", "cohort consolidation", "classification performance", "generalizability", "representativeness"]
+    },
+    {
+      "id": "gutmeta_mcq_med_38d0",
+      "difficulty": "medium",
+      "question": "Among case-associated microbes shared between Crohn's disease and ulcerative colitis, what makes Morganella morganii particularly concerning for disease progression?",
+      "options": {
+        "A": "It produces large quantities of lipopolysaccharide that trigger systemic autoimmunity",
+        "B": "It competitively displaces Faecalibacterium prausnitzii, thereby removing anti-inflammatory protection",
+        "C": "It generates genotoxic metabolites called indolimines that can induce DNA damage and potentially contribute to cancer progression",
+        "D": "It is a known producer of butyrate that paradoxically promotes inflammation in IBD patients"
+      },
+      "correct_answer": "C",
+      "explanation": "Morganella morganii isolated from IBD patients has been shown to generate genotoxic metabolites called indolimines. These metabolites can induce DNA damage, which raises concerns about their potential contribution to cancer progression — particularly relevant given that IBD is a known risk factor for colorectal cancer. The presence of M. morganii in both CD and UC cases highlights a shared pathogenic mechanism that could link IBD chronicity to oncogenic risk.",
+      "topic_tags": ["Morganella morganii", "indolimines", "genotoxic metabolites", "IBD", "cancer progression"]
+    },
+
+    {
+      "id": "gutmeta_mcq_hard_d2a5",
+      "difficulty": "hard",
+      "question": "When comparing disease similarity at the microbial species level versus the microbial gene level, discrepancies can arise. Which of the following best explains why PD vs UC shows a small species-level overlap but strong gene-level similarity?",
+      "options": {
+        "A": "The DESeq2 differential abundance method is less sensitive for species-level data, artificially lowering the species overlap",
+        "B": "Functional redundancy means that different microbial taxa can perform equivalent metabolic functions, so shared pathway disruptions occur even when the specific species involved differ between diseases",
+        "C": "The Pearson correlation of log2 fold changes overcounts similarity because it is sensitive to outliers in the gene abundance matrix",
+        "D": "PD and UC share identical genetic risk variants in the host that constrain microbiome composition regardless of species identity"
+      },
+      "correct_answer": "B",
+      "explanation": "PD vs UC has a strong gene-level similarity (Pearson R = 0.43) despite a relatively small species-level overlap (21%). This discrepancy is explained by functional redundancy: different microbial species in PD and UC patients encode overlapping sets of metabolic genes. Even if the specific taxa differ, the metabolic capacity lost or gained can be equivalent, resulting in similar gene-level dysbiosis patterns. This principle, documented in healthy human microbiome research, means gene-level analysis provides a more functionally complete picture of disease similarity than species overlap alone.",
+      "topic_tags": ["functional redundancy", "PD vs UC", "species-level vs gene-level similarity", "metabolic pathways", "Pearson correlation"]
+    },
+    {
+      "id": "gutmeta_mcq_hard_8b3e",
+      "difficulty": "hard",
+      "question": "The finding that AD microbiome profiles are anti-correlated with IBD profiles at the gene level, combined with the observation that AD is characterized by metabolic deficiencies while IBD shows metabolic hyperactivation in the same pathways, leads to which of the following most nuanced conclusions?",
+      "options": {
+        "A": "AD and IBD should be treated as the same disease with opposite symptom presentation, and therapies should be interchangeable",
+        "B": "The anti-correlation reflects a technical artifact from using different sequencing platforms across the AD and IBD cohorts",
+        "C": "The shared but oppositely disrupted metabolic pathways suggest that IBD-targeted immunosuppressants may antagonize AD symptoms, warranting pre-clinical investigation of immune-enhancing approaches in AD",
+        "D": "The anti-correlation proves that IBD is causally protective against AD, supporting a clinical recommendation against treating IBD in at-risk AD patients"
+      },
+      "correct_answer": "C",
+      "explanation": "The gene-level anti-correlation between AD and IBD indicates that the same metabolic pathways (amino acid, lipid, energy metabolism) are disrupted in opposite directions — IBD shows enrichment of microbial genes in these pathways via pathogenic microbes, while AD shows depletion of these same microbial gene functions. Since IBD drugs are immunosuppressants and the AD microbiome appears metabolically under-activated in these shared pathways, the authors suggest that immune-enhancing drugs — rather than the immunosuppressants used in IBD — might be therapeutically relevant for AD. This is a hypothesis-generating, not causally proven, conclusion that requires pre-clinical follow-up, and no clinical recommendations can yet be made.",
+      "topic_tags": ["Alzheimer's disease", "IBD", "anti-correlation", "immune-enhancing drugs", "metabolic pathway", "therapeutic hypothesis"]
+    }
+  ]
+}

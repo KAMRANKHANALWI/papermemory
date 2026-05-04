@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Establishing or Exaggerating Causality for the Gut Microbiome: Lessons from Human Microbiota-Associated Rodents",
+    "authors": ["Jens Walter", "Anissa M. Armet", "B. Brett Finlay", "Fergus Shanahan"],
+    "journal": "Cell",
+    "year": 2020,
+    "doi": "https://doi.org/10.1016/j.cell.2019.12.025",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "hma_causality_easy_001",
+      "difficulty": "easy",
+      "question": "What is a human microbiota-associated (HMA) rodent model and what is its primary scientific purpose?",
+      "answer": "A human microbiota-associated (HMA) rodent model involves transplanting fecal microbial communities from human individuals — either with or without a specific disease — into germ-free or antibiotic-treated rodents. The primary purpose is to test whether an altered or 'dysbiotic' gut microbiome associated with human disease is causally responsible for pathology, by comparing pathological phenotypes in recipient animals that received microbiomes from diseased versus healthy human donors.",
+      "topic_tags": ["HMA rodents", "germ-free mice", "microbiome causality", "fecal transplantation", "dysbiosis"]
+    },
+    {
+      "id": "hma_causality_easy_002",
+      "difficulty": "easy",
+      "question": "What does the term 'dysbiosis' mean in the context of gut microbiome research, and why is it considered a vaguely defined concept?",
+      "answer": "In gut microbiome research, dysbiosis refers to an altered microbiome associated with a specific disease or condition compared to a healthy control state. It is considered vaguely defined because a 'normal' or 'healthy' microbiome has not yet been established, making it difficult to determine what constitutes a truly dysbiotic community. The term is widely used but frequently misapplied, and the alterations it describes are often non-specific to any single disease — meaning they are likely secondary responses to disease rather than primary causes.",
+      "topic_tags": ["dysbiosis", "definition", "microbiome", "disease association", "terminology"]
+    },
+    {
+      "id": "hma_causality_easy_003",
+      "difficulty": "easy",
+      "question": "What are the two well-documented examples in microbiome research where a microbial biomarker has been convincingly linked to causation in disease?",
+      "answer": "The two well-documented examples where microbial causation in disease has been convincingly established are: (1) Helicobacter pylori-associated peptic ulceration and gastric cancer, and (2) Clostridium (or Clostridioides) difficile infection-associated diarrhea. In both cases, intervention-based evidence — including treatment studies and fecal microbiota transplantation — has confirmed the causal role of these specific microbes in the respective diseases.",
+      "topic_tags": ["H. pylori", "C. difficile", "causality", "microbial biomarker", "disease"]
+    },
+    {
+      "id": "hma_causality_easy_004",
+      "difficulty": "easy",
+      "question": "What is pseudoreplication in the context of HMA animal studies, and why does it inflate the evidence for scientific claims?",
+      "answer": "Pseudoreplication occurs when individual animals (observational units) are used as the statistical unit of inference instead of the human donor samples (experimental units). Because the purpose of HMA experiments is to determine the contribution of the gut microbiome to human disease, the human donor is the true experimental unit. When multiple mice receiving the same donor microbiome are each treated as independent replicates, the sample size is artificially inflated — greatly increasing the risk of false-positive findings and overstating the strength of causal claims.",
+      "topic_tags": ["pseudoreplication", "statistical analysis", "experimental unit", "HMA rodents", "false positives"]
+    },
+    {
+      "id": "hma_causality_easy_005",
+      "difficulty": "easy",
+      "question": "What is publication bias, and how does it specifically distort the evidence base in microbiome causality research?",
+      "answer": "Publication bias refers to the tendency for positive results to be published in high-impact journals while negative findings are rarely published or are relegated to lower-prestige outlets. In microbiome causality research, this creates a systematic distortion where virtually all studies using HMA rodent models report successful transfer of pathological phenotypes — a rate so high it is biologically implausible. Researchers are incentivized to withhold or reframe negative data (the 'file drawer effect'), and editors preferentially select sensational findings. This results in an inflated and misleading evidence base for the causal role of the microbiome in disease.",
+      "topic_tags": ["publication bias", "negative results", "file drawer effect", "HMA rodents", "scientific rigor"]
+    },
+
+    {
+      "id": "hma_causality_medium_001",
+      "difficulty": "medium",
+      "question": "Why do human pathogens like H. pylori and C. difficile fail to cause reliable disease in conventional murine models, and what does this imply for HMA experiments?",
+      "answer": "Human pathogens such as H. pylori and C. difficile fail to colonize conventional mice at sufficient levels to cause reliable pathology, partly because their virulence mechanisms are adapted to the human host and not to murine physiology or immune responses. More broadly, pathogens like enteropathogenic E. coli, Salmonella Typhi, Vibrio cholerae, and Shigella species neither colonize well nor replicate human-like disease in mice. This has major implications for HMA experiments: if even individual human pathogens with defined virulence factors cannot reliably cause disease in mice, it is even less plausible that complex dysbiotic whole microbiomes — which lack the ecological context that originally drove the dysbiosis — would consistently do so across a wide range of human conditions.",
+      "topic_tags": ["H. pylori", "C. difficile", "host specificity", "murine models", "HMA limitations", "cross-species pathogenicity"]
+    },
+    {
+      "id": "hma_causality_medium_002",
+      "difficulty": "medium",
+      "question": "What ecological limitations of HMA rodent models make it unlikely that human disease-associated microbiome alterations will be faithfully replicated in recipient animals?",
+      "answer": "Several ecological limitations reduce the fidelity of HMA models. First, a substantial proportion of human gut microbiome taxa fail to colonize rodent recipients, and those that do assemble into communities that differ markedly from those in the human donors. Second, the ecological factors that originally drove dysbiosis in humans — including diet, lifestyle, disease phenotype, and host genetics — are absent in the recipient rodents, making it unlikely that disease-associated alterations are properly replicated. Third, taxa that do colonize may not engage in the evolutionarily established host-microbe interactions they have with their native host, since the rodent has not co-evolved with the human microbiome. These factors collectively mean that HMA rodents are imperfect proxies for testing human-specific causal relationships.",
+      "topic_tags": ["HMA limitations", "colonization failure", "ecological context", "host-microbe interactions", "dysbiosis replication"]
+    },
+    {
+      "id": "hma_causality_medium_003",
+      "difficulty": "medium",
+      "question": "What are the key flaws in the experimental design of most published HMA rodent studies, and how do they contribute to false positive causal claims?",
+      "answer": "The main design flaws are: (1) Use of a small number of human donors (often 1–5) per group, which fails to capture the extensive inter-individual variability of the human gut microbiome — variability that typically exceeds the effect sizes caused by disease states; (2) Pseudoreplication, where individual animals rather than human donors are used as the statistical N, artificially inflating sample size and false positive rates; (3) Pooling of donor samples before inoculation, which reduces the number of experimental units to the number of inocula; (4) Failure to confirm that the human dysbiosis was actually transferred to and replicated in the recipient animals; and (5) Lack of mechanistic investigation to identify causal components of the microbiome. Together, these flaws create conditions under which false positive findings are highly probable.",
+      "topic_tags": ["experimental design", "donor variability", "pseudoreplication", "sample size", "false positives", "HMA rodents"]
+    },
+    {
+      "id": "hma_causality_medium_004",
+      "difficulty": "medium",
+      "question": "How does the 'interventionist framework' offer an approach to establishing microbial causality, and what are some examples of how it has been or could be applied?",
+      "answer": "The interventionist framework, proposed by Woodward and applied to microbiome science, holds that cause-effect relationships can be inferred when an intervention directed at a putative cause produces a favorable change in the effect. Rather than observing associations or transferring microbiomes into animal models, this approach directly tests whether manipulating the microbiome in humans alters disease outcomes. It was successfully used to demonstrate H. pylori as a cause of peptic ulceration (antibiotic eradication reduces ulcer recurrence) and the microbiome as a protective factor against C. difficile infection (via FMT). Future applications could involve targeting specific microbiome patterns or microbial species — for example, supplementing Akkermansia muciniphila in overweight individuals and observing whether metabolic improvements follow — combined with mechanistic follow-up in animal models.",
+      "topic_tags": ["interventionist framework", "causality", "microbiome intervention", "Akkermansia", "FMT", "human studies"]
+    },
+    {
+      "id": "hma_causality_medium_005",
+      "difficulty": "medium",
+      "question": "Why is fecal microbiota transplantation (FMT) considered a useful but limited paradigm for establishing microbiome causality in humans?",
+      "answer": "FMT is considered a valuable experimental paradigm because it directly tests whether a human microbiome can transfer protective effects to another individual — as demonstrated in preventing recurrent C. difficile-associated disease. However, it has important limitations: (1) FMT can only ethically be used to study protective attributes of the microbiome, not pathological ones; (2) FMT may fail to correct altered microbiomes in diseases where disruption is less severe; and (3) FMT is impractical for studying microbiome contributions to the risk of chronic disease development, because such questions require long prospective studies. These limitations make FMT insufficient on its own for establishing causality across the range of conditions where microbiome involvement has been proposed.",
+      "topic_tags": ["FMT", "fecal microbiota transplantation", "causality", "C. difficile", "experimental paradigm", "limitations"]
+    },
+    {
+      "id": "hma_causality_medium_006",
+      "difficulty": "medium",
+      "question": "What novel statistical approaches have been proposed to infer causal relationships between the gut microbiome and host health directly in human studies?",
+      "answer": "Several novel statistical and computational approaches have been proposed for inferring microbiome causality in humans. Mendelian randomization uses genetic variants as instrumental variables to test whether microbiome-related factors causally influence health outcomes, exploiting the random allocation of alleles at conception to minimize confounding. Mediation analysis evaluates whether microbiome metabolites or features mediate the relationship between an exposure and a health outcome, and is especially informative when longitudinal data are available because temporal ordering helps distinguish cause from effect. Mathematical and machine learning approaches — including causal molecular networks, structural equation modeling, and Bayesian network inference — can also be applied to microbiome datasets to identify causal relationships from observational data. Each of these approaches has its own assumptions and limitations that must be validated before reliable causal inference is possible.",
+      "topic_tags": ["Mendelian randomization", "mediation analysis", "causal inference", "statistical methods", "human microbiome", "machine learning"]
+    },
+
+    {
+      "id": "hma_causality_hard_001",
+      "difficulty": "hard",
+      "question": "What is the fundamental conceptual tension between the plausibility of widespread microbiome causality in human disease and the empirical findings from HMA rodent research, and how can this tension be resolved?",
+      "answer": "The core tension is that HMA rodent studies report an implausibly high rate (around 95%) of successful phenotype transfer across a vast range of human diseases — including inflammatory, metabolic, neoplastic, developmental, and neurobehavioral conditions. This is biologically implausible for several reasons: most reported dysbiotic patterns in human microbiomes are not disease-specific and are likely secondary to disease rather than causative; HMA rodents cannot faithfully replicate the ecological context of human dysbiosis; and human pathogens with well-defined virulence mechanisms already fail to reliably cause disease in mice, making it even less plausible that complex whole microbiomes would do so across such diverse conditions. The near-universal positivity rate likely reflects a combination of pseudoreplication, insufficient donor numbers, absence of mechanistic validation, and publication bias rather than genuine biology. The resolution requires a paradigm shift: adopting rigorous experimental designs with adequate donor numbers, proper statistical inference units, confirmation of dysbiosis replication, mechanistic investigation, publication of negative findings, and complementary human-based causal approaches such as interventionist frameworks and advanced statistical methods.",
+      "topic_tags": ["causality plausibility", "publication bias", "HMA rodents", "experimental rigor", "false positives", "paradigm shift"]
+    },
+    {
+      "id": "hma_causality_hard_002",
+      "difficulty": "hard",
+      "question": "How do the concepts of biological unit, experimental unit, and observational unit apply in HMA rodent studies, and what are the consequences when they are conflated?",
+      "answer": "In HMA rodent experiments, these three units are conceptually distinct and must not be conflated. The biological unit (BU) is the entity about whose biology the researcher wants to make inferences — in this case, the human donor, because the goal is to understand the contribution of the microbiome to disease in humans. The experimental unit (EU) is the entity that receives an independent treatment — ideally identical to the BU — and whose genuine replication increases sample size and enables statistical hypothesis testing. The observational unit (OU) is the entity on which measurements are made — here, the individual mouse. When individual mice (OUs) are used as the statistical N rather than the human donors (EUs/BUs), the result is pseudoreplication: the sample size is artificially inflated far above the number of independent experimental units. If donor samples are also pooled before inoculation, the number of EUs is further reduced to the number of inocula, compounding the problem. The consequences include greatly elevated rates of false positive findings, misleading statistical significance, and scientifically unwarranted causal claims — all of which have been found to characterize the majority of published HMA rodent studies.",
+      "topic_tags": ["biological unit", "experimental unit", "observational unit", "pseudoreplication", "statistical inference", "HMA design"]
+    },
+    {
+      "id": "hma_causality_hard_003",
+      "difficulty": "hard",
+      "question": "How should the criteria for establishing 'human-like disease' phenotypes in HMA rodent experiments be defined, and why is the current vagueness of these criteria a scientific problem?",
+      "answer": "Currently, criteria for what constitutes a human-like disease phenotype in HMA rodents are largely vague, undefined, or defined post hoc — meaning researchers often decide after observing data whether an animal phenotype qualifies as a meaningful proxy for human disease. This is problematic for several reasons. First, many human disease phenotypes — such as autism-like behavior, depression, or anxiety — do not occur naturally in rodents, and what these labels mean in animal terms is scientifically contested and poorly validated. Second, when criteria are set post hoc, confirmation bias can drive acceptance of marginal or non-specific readouts as disease proxies. Third, phenotypes assessed in recipient animals are at best proxies for human conditions, and interpreting them as equivalent to clinical syndromes overstates the translational significance. To improve rigor, phenotypic criteria should be pre-specified, should relate to likely molecular mechanisms rather than superficial behavioral or physiological analogies, and interpretations should be explicitly limited to pathophysiological mechanisms rather than being extrapolated to human clinical diagnoses.",
+      "topic_tags": ["disease phenotype criteria", "HMA rodents", "translational validity", "post hoc analysis", "autism", "depression", "scientific rigor"]
+    },
+    {
+      "id": "hma_causality_hard_004",
+      "difficulty": "hard",
+      "question": "What strategies are proposed to improve the capacity of animal models to detect human-specific host-microbe interactions, and what are the trade-offs of each approach?",
+      "answer": "Several strategies have been proposed to overcome the limitations of standard HMA rodent models. First, immunologically or metabolically 'humanized' rodents — created by engrafting human immune or metabolic cells — increase the likelihood of detecting host-microbe interactions that are specific to human biology, since many immune-mediated phenotypes fail to transfer in standard rodents due to species-specific immune maturation. However, these models are technically complex and costly. Second, using alternative hosts that more closely approximate human anatomy, physiology, and metabolism — such as pigs and non-human primates — improves translational fidelity, particularly for gastrointestinal and immune conditions. The trade-off is substantially higher cost and greater ethical constraints. Third, gnotobiotic models with defined microbial cultures (rather than complex communities) allow precise experimental control, reduce the replication requirements of HMA studies, and enable mechanistic dissection of causal components, provided the strains used are genuinely representative of the causal element being tested. Each approach has residual limitations and is best viewed as complementary to human-based causal inference methods rather than a replacement for them.",
+      "topic_tags": ["humanized rodents", "gnotobiotic models", "pigs", "primates", "defined cultures", "host-microbe interactions", "experimental models"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "hma_causality_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "What is the primary reason why the near-universal rate of positive findings in HMA rodent studies is considered biologically implausible?",
+      "options": {
+        "A": "Rodents have far more diverse gut microbiomes than humans, making cross-species transfer impossible",
+        "B": "Most dysbiotic patterns in human microbiomes are not disease-specific and are likely secondary to disease rather than causative",
+        "C": "Germ-free rodents cannot survive long enough to develop chronic disease phenotypes",
+        "D": "Fecal transplantation always normalizes the microbiome regardless of donor disease status"
+      },
+      "correct_answer": "B",
+      "explanation": "Most reported dysbiotic patterns in human microbiomes are not specific to any one disease and are therefore likely to be consequences or bystanders of disease rather than causes. Given this non-specificity, it is implausible that transferring these microbiomes to rodents would reliably reproduce pathology across such a wide range of diverse disease states.",
+      "topic_tags": ["dysbiosis", "disease specificity", "causality", "HMA implausibility"]
+    },
+    {
+      "id": "hma_causality_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "Which of the following best describes why pooling donor fecal samples before inoculating groups of rodents is a methodological problem in HMA studies?",
+      "options": {
+        "A": "Pooling introduces contaminants that invalidate the microbiome transplant",
+        "B": "Pooling eliminates inter-individual variability and reduces the number of experimental units to the number of inocula",
+        "C": "Pooling causes immune rejection in the germ-free recipient animals",
+        "D": "Pooling artificially increases the microbial diversity transferred, biasing results toward colonization success"
+      },
+      "correct_answer": "B",
+      "explanation": "When donor samples are pooled before inoculation, the biological variation between individual donors is erased, and the number of genuine experimental units is reduced to the number of distinct inocula prepared. This drastically lowers the real sample size and eliminates the independent replication needed for valid statistical inference about inter-individual differences in microbiome effects.",
+      "topic_tags": ["donor pooling", "experimental units", "sample size", "pseudoreplication"]
+    },
+    {
+      "id": "hma_causality_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "What does Karl Popper's principle of falsifiability imply for the conduct of microbiome research?",
+      "options": {
+        "A": "All microbiome hypotheses are inherently unfalsifiable and should be tested only with observational data",
+        "B": "Researchers should design studies specifically to reject their hypotheses, treating negative results as scientifically valid outcomes",
+        "C": "Only randomized controlled trials can falsify claims about the microbiome's role in disease",
+        "D": "Falsification requires the replication of studies across at least five independent research groups"
+      },
+      "correct_answer": "B",
+      "explanation": "Popper held that rigorous science requires attempts to falsify rather than merely confirm hypotheses. In microbiome research, this means that negative findings — experiments that fail to demonstrate a causal role for dysbiosis — are scientifically valuable and should be pursued, published, and treated with equal merit to positive findings, rather than being withheld or deprioritized.",
+      "topic_tags": ["falsifiability", "Popper", "negative results", "scientific rigor", "publication bias"]
+    },
+
+    {
+      "id": "hma_causality_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "Why do HMA murine models have particular limitations for studying immune-mediated disorders compared to metabolic conditions?",
+      "options": {
+        "A": "Germ-free mice lack the gut flora necessary to mount any immune response",
+        "B": "Immune-mediated phenotypes often depend on evolved host-microbe interactions that are not recapitulated in a non-native rodent host, whereas metabolic interactions are less host-specific",
+        "C": "Metabolic diseases always involve single bacterial species, making them easier to model than polygenic immune conditions",
+        "D": "Immune cells in germ-free mice are destroyed during the colonization process, preventing any immune phenotype from emerging"
+      },
+      "correct_answer": "B",
+      "explanation": "HMA mice show deficits in immune and gut maturation because immune development depends on co-evolved host-microbe interactions that a non-native microbiome cannot fully recapitulate. Metabolic interactions — such as SCFA production and energy harvest — are more conserved across species and less dependent on precise evolutionary co-adaptation, making HMA models more reliable for metabolic questions than immune-mediated ones.",
+      "topic_tags": ["HMA limitations", "immune maturation", "metabolic interactions", "host specificity", "co-evolution"]
+    },
+    {
+      "id": "hma_causality_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "What is Mendelian randomization, and why is it considered a useful tool for inferring microbiome causality in human studies?",
+      "options": {
+        "A": "A technique for randomly assigning probiotic interventions to human participants to avoid confounding",
+        "B": "A statistical method that uses genetic variants as instrumental variables to test whether microbiome-associated factors causally influence health outcomes, minimizing confounding",
+        "C": "A method for sequencing microbial genomes to identify causal species in human disease cohorts",
+        "D": "A randomized controlled trial design in which participants are stratified by their Firmicutes-to-Bacteroidetes ratio"
+      },
+      "correct_answer": "B",
+      "explanation": "Mendelian randomization exploits the random allocation of genetic variants at conception — which are less susceptible to confounding and reverse causation than environmental exposures — as instrumental variables to test whether microbiome-related factors are causally linked to health outcomes. Because genotype is fixed before disease onset, this approach can help disentangle cause from consequence in observational human data.",
+      "topic_tags": ["Mendelian randomization", "causal inference", "genetic instruments", "human microbiome", "confounding"]
+    },
+    {
+      "id": "hma_causality_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "Which of the following best explains why a small number of human donors in HMA experiments is insufficient to draw reliable causal conclusions?",
+      "options": {
+        "A": "Each donor requires a separate germ-free facility, making larger cohorts logistically impossible",
+        "B": "Inter-individual variability in the human gut microbiome typically exceeds the effect size caused by disease states, so a small group of donors is unlikely to be representative",
+        "C": "Human microbiomes are too complex to engraft successfully in more than five recipients per donor",
+        "D": "Regulatory guidelines restrict microbiome studies to fewer than ten human donors per group"
+      },
+      "correct_answer": "B",
+      "explanation": "The inter-individual variability of the human gut microbiome is typically much larger than the effect sizes caused by disease states, and more than 80% of this variability cannot be attributed to known factors. Therefore, a small group of donors is statistically unlikely to capture the true range of variation in the human population, making it impossible to determine whether any observed phenotype reflects the effect of dysbiosis or merely the idiosyncratic microbiome of the chosen donors.",
+      "topic_tags": ["donor variability", "sample size", "inter-individual variation", "HMA design", "effect size"]
+    },
+    {
+      "id": "hma_causality_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "What does it mean for the clinical translation of microbiome science that some microbiome alterations might represent compensatory beneficial responses to disease rather than causes?",
+      "options": {
+        "A": "It means all microbiome-based therapies should be avoided until causality is fully established",
+        "B": "It implies that correcting an altered microbiome could be detrimental if the alteration is actually a protective response, underlining the importance of confirming causality before therapeutic intervention",
+        "C": "It has no practical implication because FMT always restores the microbiome to a healthy baseline",
+        "D": "It means microbiome alterations should be classified as either 'beneficial' or 'harmful' based on diversity indices alone"
+      },
+      "correct_answer": "B",
+      "explanation": "If some microbiome changes observed in disease are adaptive or compensatory rather than causal, then interventions aimed at 'correcting' them could remove a protective response and worsen outcomes. This means that simply demonstrating an association between a microbiome change and disease is insufficient justification for therapeutic targeting — causality must be established first to avoid inadvertent harm.",
+      "topic_tags": ["clinical translation", "compensatory microbiome", "FMT", "therapeutic intervention", "causality"]
+    },
+    {
+      "id": "hma_causality_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "How does mediation analysis contribute to causal inference in gut microbiome research, and what type of data enhances its reliability?",
+      "options": {
+        "A": "Mediation analysis replaces animal models by simulating gut microbiome dynamics in silico",
+        "B": "Mediation analysis identifies whether microbiome features or metabolites mediate the relationship between an exposure and a health outcome, with longitudinal data improving reliability by enabling temporal ordering of variables",
+        "C": "Mediation analysis is used exclusively to validate gnotobiotic animal model findings before human trials",
+        "D": "Mediation analysis quantifies the proportion of variance in microbiome composition explained by host genetic factors"
+      },
+      "correct_answer": "B",
+      "explanation": "Mediation analysis tests whether a microbiome-related variable (such as a metabolite or taxon) lies on the causal pathway between an exposure and a disease outcome. Longitudinal data — where the temporal sequence of variables can be observed — enhance its validity by allowing researchers to confirm that the proposed mediator precedes the outcome in time, helping to distinguish causal mediation from mere correlation or reverse causation.",
+      "topic_tags": ["mediation analysis", "causal inference", "longitudinal data", "microbiome metabolites", "temporal ordering"]
+    },
+
+    {
+      "id": "hma_causality_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "A researcher transplants fecal microbiota from patients with a neurological disorder into germ-free mice and observes anxiety-like behavior in recipient animals compared to controls. What is the most critical methodological concern with interpreting this as evidence that the gut microbiome causes the neurological disorder?",
+      "options": {
+        "A": "Germ-free mice cannot survive long enough to be assessed for behavioral phenotypes",
+        "B": "Anxiety-like behavior in mice is a validated and disease-specific proxy for human neurological disorders and therefore requires no further qualification",
+        "C": "The individual mice rather than the human donors were likely used as the statistical N, the criteria for 'anxiety-like behavior' in mice are poorly validated as proxies for human neurological disease, and the dysbiotic pattern was probably not confirmed to be transferred — making the causal inference scientifically unjustified",
+        "D": "The study is valid as long as the donor and control microbiomes differ significantly in alpha diversity"
+      },
+      "correct_answer": "C",
+      "explanation": "This scenario illustrates multiple compounding problems: (1) pseudoreplication if mice rather than donors are used as the N; (2) the use of behavioral phenotypes like 'anxiety-like behavior' that are poorly defined as proxies for human neurological conditions and may reflect generic stress responses rather than disease-specific mechanisms; (3) the likely absence of confirmation that the human dysbiosis was replicated in recipient animals; and (4) the absence of mechanistic investigation. Together, these make any causal inference to a specific human neurological disorder scientifically unjustified.",
+      "topic_tags": ["neurological disease", "HMA rodents", "pseudoreplication", "behavioral phenotype", "causal inference", "dysbiosis replication"]
+    },
+    {
+      "id": "hma_causality_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "What set of conditions would be required to move from a finding in HMA rodents to a credible causal claim that the gut microbiome contributes to a specific human disease?",
+      "options": {
+        "A": "It is sufficient to show that at least one disease-associated phenotype is more severe in mice receiving dysbiotic microbiomes than in mice receiving healthy microbiomes, provided the result is statistically significant",
+        "B": "A credible causal claim requires: an adequate number of human donors to account for inter-individual variability; confirmation that dysbiosis was transferred to recipient animals; use of donor numbers as the statistical N; identification of causal components and underlying mechanisms; and ideally complementary evidence from human interventionist or statistical causal frameworks",
+        "C": "The finding must be replicated using both germ-free and antibiotic-treated rodent models in at least two independent laboratories",
+        "D": "Causal claims are justified once the transplanted microbiome has been shown to alter at least three independent phenotypic markers in recipient animals"
+      },
+      "correct_answer": "B",
+      "explanation": "A credible causal claim from HMA rodent data requires convergence of multiple rigorous criteria: appropriate donor numbers to capture biological variability; statistical inference based on donors (experimental units), not individual animals (observational units); confirmation that the dysbiotic pattern was replicated in recipient rodents; mechanistic identification of the causal microbiome components; and ideally corroboration from independent human-based approaches such as interventionist studies or advanced causal statistical methods. Satisfying only one or two of these criteria, especially without mechanistic insight, is insufficient for a credible causal claim.",
+      "topic_tags": ["causal criteria", "HMA rigor", "experimental design", "mechanistic insight", "donor numbers", "causal frameworks"]
+    }
+  ]
+}

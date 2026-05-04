@@ -1,0 +1,273 @@
+{
+  "metadata": {
+    "source_paper": "Gut Microbiota Markers in Obese Adolescent and Adult Patients: Age-Dependent Differential Patterns",
+    "authors": [
+      "Federica Del Chierico", "Francesca Abbatini", "Alessandra Russo",
+      "Andrea Quagliariello", "Sofia Reddel", "Danila Capoccia",
+      "Romina Caccamo", "Stefano Ginanni Corradini", "Valerio Nobili",
+      "Francesco De Peppo", "Bruno Dallapiccola", "Frida Leonetti",
+      "Gianfranco Silecchia", "Lorenza Putignani"
+    ],
+    "journal": "Frontiers in Microbiology",
+    "year": 2018,
+    "doi": "10.3389/fmicb.2018.01210",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "gut_ob_ado_easy_001",
+      "difficulty": "easy",
+      "question": "How is gut microbial diversity typically altered in obese individuals compared to lean individuals?",
+      "answer": "Obese individuals generally harbor less diverse bacterial communities than lean individuals. Lower bacterial richness has been associated with marked overall adiposity, insulin resistance, and dyslipidemia. This reduction in diversity is considered a hallmark of an obesity-associated dysbiosis, reflecting a shift away from a complex, functionally redundant microbial ecosystem toward a less diverse one.",
+      "topic_tags": ["obesity", "microbial diversity", "dysbiosis", "alpha-diversity", "bacterial richness"]
+    },
+    {
+      "id": "gut_ob_ado_easy_002",
+      "difficulty": "easy",
+      "question": "What role does the gut microbiota play in host energy metabolism and how does this relate to obesity?",
+      "answer": "The gut microbiota functions as a microbial metabolic organ that regulates energy uptake from the diet, influences host metabolism, and participates in the release of gut hormones. Gut bacteria possess enzymatic capacities absent from the human genome, enabling them to digest dietary components — particularly non-digestible nutrients such as plant polysaccharides and fibers — that would otherwise be inaccessible to the host. In obesity, this capacity for energy recovery from unabsorbed carbohydrates may be amplified, contributing to excess caloric harvest.",
+      "topic_tags": ["gut microbiota", "energy metabolism", "obesity", "dietary fermentation", "host physiology"]
+    },
+    {
+      "id": "gut_ob_ado_easy_003",
+      "difficulty": "easy",
+      "question": "What are the key bacterial phyla that have been most frequently examined in obesity research, and what directional shifts are commonly reported?",
+      "answer": "Firmicutes and Bacteroidetes are the two phyla most commonly studied in obesity research. A frequently described pattern is a reduction in Bacteroidetes abundance with a proportional increase in Firmicutes in both human and animal models of obesity, though this finding has been contradicted by other studies reporting divergent ratios. This inconsistency reflects the large inter-individual variation in gut microbiota composition and differences in research methodologies across studies.",
+      "topic_tags": ["Firmicutes", "Bacteroidetes", "obesity", "phylum-level changes", "conflicting evidence"]
+    },
+    {
+      "id": "gut_ob_ado_easy_004",
+      "difficulty": "easy",
+      "question": "What is Faecalibacterium prausnitzii and why is its abundance in the gut considered metabolically significant?",
+      "answer": "Faecalibacterium prausnitzii is one of the most common bacterial species found in the gastrointestinal tract of adults consuming a Western diet. It plays a key role in host metabolism by fermenting unabsorbed carbohydrates, which would not otherwise contribute to dietary energy intake. Elevated abundance of this bacterium in obese individuals — particularly adolescents — may lead to increased energy recovery from undigested carbohydrates, potentially contributing to the obese phenotype. Its presence has also been associated with lower success in weight loss interventions.",
+      "topic_tags": ["Faecalibacterium prausnitzii", "carbohydrate fermentation", "energy harvest", "obesity", "gut microbiota"]
+    },
+    {
+      "id": "gut_ob_ado_easy_005",
+      "difficulty": "easy",
+      "question": "How do Bacteroidetes-associated bacteria relate to body weight and metabolic health?",
+      "answer": "Bacteroidetes-associated bacteria, including genera such as Parabacteroides and Bacteroides, are more frequently found at higher abundances in lean, healthy individuals. Studies in both humans and animal models have demonstrated a positive correlation between Bacteroidetes abundance and weight loss. Parabacteroides distasonis, in particular, is prominently found in the gut of healthy individuals, while several members of this phylum including Bacteroides caccae and Barnesiellaceae have been identified as markers of normal-weight microbiota profiles.",
+      "topic_tags": ["Bacteroidetes", "Parabacteroides", "weight loss", "normal weight", "gut microbiota markers"]
+    },
+
+    {
+      "id": "gut_ob_ado_med_001",
+      "difficulty": "medium",
+      "question": "How does age interact with obesity to shape gut microbiota composition, and why does this matter clinically?",
+      "answer": "Age and obesity appear to exert a synergistic influence on gut microbiota composition. Obese adolescents harbor a distinctly different microbiota than obese adults, with the most pronounced compositional differences emerging when comparing adolescent obese individuals with normal-weight adolescents. This age-dependent patterning suggests that the microbiota markers of obesity are not uniform across the lifespan. Clinically, this means that microbiota-targeted interventions such as probiotics may need to be tailored to the patient's developmental stage rather than applying a one-size-fits-all approach — an important consideration for developing age-dependent treatments for childhood-onset obesity.",
+      "topic_tags": ["age", "obesity", "microbiota composition", "adolescents", "adults", "age-dependent markers", "probiotics"]
+    },
+    {
+      "id": "gut_ob_ado_med_002",
+      "difficulty": "medium",
+      "question": "What metabolic pathway alterations in the gut microbiome are specifically associated with obese adolescents, and what is their significance?",
+      "answer": "The gut microbiome of obese adolescents shows enrichment in several metabolic pathways, including primary bile acid biosynthesis, steroid acid biosynthesis, fructose and mannose metabolism, glycolysis/gluconeogenesis, galactose metabolism, butanoate metabolism, and pentose phosphate metabolism. The enrichment in lipopolysaccharide metabolism is particularly notable as it is recognized to initiate inflammation-related processes associated with the onset of obesity and insulin resistance. Pathways related to fructose, mannose, and galactose metabolism are consistent with patterns seen in high-fat/high-sugar Western diet models, reflecting a microbial landscape adapted to processing simple sugars.",
+      "topic_tags": ["KEGG pathways", "metabolic pathways", "obese adolescents", "lipopolysaccharide", "glycolysis", "bile acid biosynthesis", "inflammation"]
+    },
+    {
+      "id": "gut_ob_ado_med_003",
+      "difficulty": "medium",
+      "question": "What metabolic pathways are enriched in the gut microbiome of normal-weight adolescents and how do these differ functionally from obesity-associated pathways?",
+      "answer": "Normal-weight adolescents show microbiome enrichment in glycan biosynthesis and metabolism, secondary bile acid biosynthesis, steroid hormone biosynthesis, and lipoic acid metabolism pathways. These differ functionally from obesity-associated pathways in important ways: secondary bile acids influence energy expenditure and glucose homeostasis through effects on gluconeogenesis, insulin secretion, and insulin sensitivity, while lipoic acid has been shown to improve glucose tolerance. Glycan biosynthesis pathways are largely driven by dietary fiber fermentation and mucin utilization, producing short-chain fatty acids that nourish colonocytes. These pathways collectively support metabolic regulation rather than energy extraction.",
+      "topic_tags": ["normal weight", "glycan biosynthesis", "secondary bile acids", "lipoic acid", "steroid hormone", "KEGG pathways", "adolescents"]
+    },
+    {
+      "id": "gut_ob_ado_med_004",
+      "difficulty": "medium",
+      "question": "How does Actinomyces relate to the gut microbiota of obese adolescents, and what does this association suggest about the oral-gut microbial axis?",
+      "answer": "Actinomyces species, normally part of the resident oral microbiota, have been identified as microbial markers associated with the gut microbiota of obese adolescents. Actinomyces contributes to plaque-related diseases and has been shown to correlate with glucose-rich diets. Their presence in the gut in the context of obesity may suggest translocation of oral bacteria to the gastrointestinal tract, potentially driven by dietary patterns typical of obese individuals. Historically, Actinomyces have been implicated in rare gastrointestinal complications following bariatric surgery. Their emergence as an obesity-associated gut marker points to a possible oral-gut microbial connection that warrants further investigation.",
+      "topic_tags": ["Actinomyces", "obese adolescents", "oral microbiota", "oral-gut axis", "glucose diet", "microbial markers"]
+    },
+    {
+      "id": "gut_ob_ado_med_005",
+      "difficulty": "medium",
+      "question": "What is the relationship between gut microbiota composition and comorbid conditions like diabetes and hypertension in obese patients?",
+      "answer": "In obese adolescents, diabetes-associated microbial correlations include positive associations with Bacteroides, Parabacteroides, Prevotella copri, and Parabacteroides distasonis. In obese adults, diabetes is positively correlated with Bacteroidaceae, Parabacteroides distasonis, Lachnospiraceae, and Blautia, while showing negative correlations with Prevotella, Lachnospira, and Enterobacteriaceae. Hypertension in obese adults is associated with Sutterella, Butyricimonas, and Paraprevotella. These associations highlight that specific gut bacteria co-vary with cardiometabolic comorbidities, though causality remains unclear and likely reflects complex bidirectional interactions between host metabolic state and microbial composition.",
+      "topic_tags": ["diabetes", "hypertension", "comorbidities", "obesity", "Bacteroides", "Lachnospiraceae", "microbiota correlations"]
+    },
+    {
+      "id": "gut_ob_ado_med_006",
+      "difficulty": "medium",
+      "question": "How does gut microbiota composition differ between obese adults and normal-weight adults at the functional pathway level?",
+      "answer": "In obese adults, the microbiome is enriched in pathways involved in the initial breakdown of indigestible dietary polysaccharides — including starch and sucrose metabolism, galactose metabolism, glutamate metabolism, and carbohydrate metabolism — along with taurine and hypotaurine metabolism, beta-alanine metabolism, propanoate metabolism, and tryptophan metabolism. Normal-weight adults, in contrast, show enrichment in nitrogen metabolism, amino and nucleotide sugar metabolism, and alanine, aspartate, and glutamate metabolism. These functional differences are less pronounced than those observed in adolescents, suggesting that age mediates the magnitude of microbiota functional divergence in obesity.",
+      "topic_tags": ["obese adults", "normal weight adults", "KEGG pathways", "polysaccharide degradation", "tryptophan", "propanoate", "functional microbiome"]
+    },
+
+    {
+      "id": "gut_ob_ado_hard_001",
+      "difficulty": "hard",
+      "question": "How do primary and secondary bile acid biosynthesis pathways differ in their association with obesity versus normal weight, and what are the downstream metabolic consequences of this imbalance?",
+      "answer": "Primary bile acid biosynthesis (involving cholate and chenodeoxycholate) is enriched in the gut microbiome of obese adolescents, whereas secondary bile acid biosynthesis is more prominent in normal-weight individuals. Primary bile acids are deconjugated by gram-positive bacteria such as Lactobacilli, and additional microbial modifications then convert them into secondary bile acids — a process performed by a minor population of gram-positive anaerobic Clostridium species. Secondary bile acids have important downstream effects on energy homeostasis: they influence gluconeogenesis, insulin secretion, and insulin sensitivity, thereby serving as signaling molecules that regulate metabolic health. The dominance of primary over secondary bile acid pathways in obesity indicates a disrupted microbial conversion process, with potential consequences for glucose homeostasis and energy balance.",
+      "topic_tags": ["primary bile acids", "secondary bile acids", "bile acid biosynthesis", "insulin sensitivity", "gluconeogenesis", "Lactobacilli", "Clostridium", "obesity metabolism"]
+    },
+    {
+      "id": "gut_ob_ado_hard_002",
+      "difficulty": "hard",
+      "question": "Why are microbial biomarkers for obesity more clearly identifiable in adolescents than in adults, and what methodological and biological factors might explain this?",
+      "answer": "Receiver operating characteristic analyses show that discriminatory biomarkers for obesity achieve meaningful accuracy (AUROC > 0.7) only in adolescent groups, while adult groups yield AUROC values below this threshold. Several biological and methodological factors may explain this. First, adolescent gut microbiota composition is more strongly influenced by age, dietary factors, and the ongoing developmental maturation of the microbiome, creating more pronounced compositional divergence between obese and normal-weight individuals. Second, the adult microbiota is more stable and subject to greater inter-individual variation that may obscure obesity-specific signals. Third, obese adults often have more complex clinical profiles including hypertension and longer-term dietary habits that introduce additional microbiota variability. Methodologically, the larger compositional overlap between obese and normal-weight adults makes statistical discrimination harder. These findings collectively suggest that adolescence may represent a window during which gut microbiota is more sensitively responsive to metabolic perturbation, and where microbial intervention may be most impactful.",
+      "topic_tags": ["biomarkers", "AUROC", "obesity", "adolescents", "adults", "microbiota development", "inter-individual variation", "discriminant analysis"]
+    },
+    {
+      "id": "gut_ob_ado_hard_003",
+      "difficulty": "hard",
+      "question": "How do ecological diversity measures differ across obese and normal-weight groups, and what do these patterns suggest about niche-driven processes in obesity-associated dysbiosis?",
+      "answer": "Alpha-diversity analyses reveal a gradient in species richness from highest in normal-weight adolescents, followed by normal-weight adults, then obese adolescents, and lowest in obese adults. This pattern suggests that both obesity and aging independently reduce microbial diversity, and that the combination of youth and normal weight supports the most ecologically rich gut community. Beta-diversity analyses show that adolescent groups (obese and normal-weight) form more distinct and separated clusters than adult groups, indicating that age amplifies the compositional signature of obesity. These patterns support a niche-driven model of gut ecology in which disease states like obesity alter the gut environment — through altered nutrient availability, pH, bile acid profiles, and immune activity — creating conditions that favor specific bacterial lineages while eliminating others. The gut microbiota thus functions as an ecological unit whose diversity and composition are shaped by interactions between host metabolic state and niche-specific selection pressures.",
+      "topic_tags": ["alpha-diversity", "beta-diversity", "ChaoI index", "niche-driven ecology", "obesity", "UniFrac", "dysbiosis", "microbial community structure"]
+    },
+    {
+      "id": "gut_ob_ado_hard_004",
+      "difficulty": "hard",
+      "question": "What is the broader significance of identifying age-stratified gut microbiota markers for obesity, and how could these findings inform the design of microbiota-based therapeutic strategies?",
+      "answer": "The identification of distinct, age-dependent gut microbiota profiles in obesity has several important therapeutic implications. Because the microbial signatures of obesity differ between adolescents and adults — with identifiable markers only in adolescent groups — therapeutic interventions targeting the microbiome must be age-stratified rather than generically applied. For adolescents, the clear divergence between obese and normal-weight microbiota profiles, supported by robust discriminatory markers, provides specific bacterial targets for probiotic or dietary intervention. Organisms enriched in normal-weight adolescents — such as Parabacteroides, Rikenellaceae, Bacteroides caccae, Barnesiellaceae, and Oscillospira — represent candidate probiotic targets, as their introduction or enrichment might shift the obese microbiota toward a healthier compositional state. Additionally, the distinct metabolic pathway enrichment in obese adolescent microbiota — particularly in lipopolysaccharide, glycolysis, and primary bile acid pathways — suggests that reducing these pro-inflammatory and energy-harvesting microbial functions could have preventive effects against obesity-related insulin resistance. Addressing childhood obesity through microbiota modulation is especially urgent because childhood obesity tends to persist into adulthood, and early intervention could prevent long-term cardiometabolic consequences.",
+      "topic_tags": ["therapeutic targets", "probiotics", "age-stratified treatment", "childhood obesity", "microbiota modulation", "prevention", "clinical implications"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "gut_ob_ado_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which of the following bacterial taxa have been identified as microbial markers specifically associated with the gut microbiota of obese adolescents?",
+      "options": {
+        "A": "Parabacteroides and Oscillospira",
+        "B": "Faecalibacterium prausnitzii and Actinomyces",
+        "C": "Bacteroides caccae and Barnesiellaceae",
+        "D": "Rikenellaceae and Clostridiaceae"
+      },
+      "correct_answer": "B",
+      "explanation": "Discriminant analysis and ROC curve evaluations identified F. prausnitzii and Actinomyces as the bacterial markers with sufficient discriminatory accuracy (AUROC > 0.7) to distinguish the obese adolescent group. The other taxa listed are markers of normal-weight adolescents.",
+      "topic_tags": ["microbial markers", "obese adolescents", "Faecalibacterium prausnitzii", "Actinomyces", "biomarkers"]
+    },
+    {
+      "id": "gut_ob_ado_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "Which phylum was identified as significantly differentiating all four study groups (obese adolescents, obese adults, normal-weight adolescents, normal-weight adults) after false discovery rate correction?",
+      "options": {
+        "A": "Bacteroidetes",
+        "B": "Firmicutes",
+        "C": "Actinobacteria",
+        "D": "Proteobacteria"
+      },
+      "correct_answer": "C",
+      "explanation": "While Actinobacteria, Bacteroidetes, and Firmicutes all showed statistically significant differences by Kruskal-Wallis test, only Actinobacteria retained significance after false discovery rate (FDR) correction, making it the sole phylum that statistically differentiates all four groups. Actinobacteria levels were notably higher in obese adolescents.",
+      "topic_tags": ["Actinobacteria", "phylum-level differences", "FDR correction", "obesity", "adolescents"]
+    },
+    {
+      "id": "gut_ob_ado_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "What is the general trend in gut microbial species richness as obesity status and age group change, from most to least diverse?",
+      "options": {
+        "A": "Obese adults > obese adolescents > normal-weight adults > normal-weight adolescents",
+        "B": "Normal-weight adolescents > normal-weight adults > obese adolescents > obese adults",
+        "C": "Normal-weight adults > normal-weight adolescents > obese adults > obese adolescents",
+        "D": "Obese adolescents > normal-weight adolescents > obese adults > normal-weight adults"
+      },
+      "correct_answer": "B",
+      "explanation": "ChaoI index values follow the gradient from highest in normal-weight adolescents, then normal-weight adults, then obese adolescents, and lowest in obese adults. This indicates that both obesity and advancing age independently reduce gut microbial richness.",
+      "topic_tags": ["alpha-diversity", "ChaoI index", "species richness", "obesity", "age", "gut microbiota"]
+    },
+
+    {
+      "id": "gut_ob_ado_mcq_med_001",
+      "difficulty": "medium",
+      "question": "How does Faecalibacterium prausnitzii contribute to the obese phenotype, particularly in adolescents?",
+      "options": {
+        "A": "It produces lipopolysaccharides that trigger systemic inflammation and insulin resistance",
+        "B": "It reduces gut barrier permeability by enhancing tight-junction protein expression",
+        "C": "It ferments unabsorbed carbohydrates, potentially increasing energy recovery from otherwise non-caloric dietary components",
+        "D": "It degrades secondary bile acids, reducing their role in regulating insulin secretion"
+      },
+      "correct_answer": "C",
+      "explanation": "F. prausnitzii's key metabolic role is the fermentation of unabsorbed carbohydrates. In obese adolescents, its elevated abundance may lead to increased energy recovery from dietary carbohydrates that would otherwise pass through undigested, potentially contributing to excess caloric harvest and the obese phenotype.",
+      "topic_tags": ["Faecalibacterium prausnitzii", "carbohydrate fermentation", "energy harvest", "obese adolescents", "caloric intake"]
+    },
+    {
+      "id": "gut_ob_ado_mcq_med_002",
+      "difficulty": "medium",
+      "question": "Which of the following best explains why microbiota composition research in obesity often produces conflicting results across studies?",
+      "options": {
+        "A": "Gut bacteria rapidly evolve resistance to the host immune system, making longitudinal comparisons invalid",
+        "B": "Large inter-individual variation driven by different dietary habits, ethnicity, and methodological differences across studies",
+        "C": "Functional redundancy in the microbiome means that compositional shifts have no consistent metabolic effect",
+        "D": "The gut microbiota of obese individuals reverts to a normal composition after 12 months regardless of dietary changes"
+      },
+      "correct_answer": "B",
+      "explanation": "The large inter-individual variation in microbiota composition related to obesity is primarily attributed to differences in research methodologies and the involvement of participants with different backgrounds, including food habits and ethnicity. This variability makes it difficult to consistently identify universal compositional markers of obesity across studies.",
+      "topic_tags": ["inter-individual variation", "methodological differences", "obesity", "conflicting results", "microbiota research"]
+    },
+    {
+      "id": "gut_ob_ado_mcq_med_003",
+      "difficulty": "medium",
+      "question": "Which metabolic pathways are enriched in the gut microbiome of obese adolescents but not in normal-weight adolescents?",
+      "options": {
+        "A": "Glycan biosynthesis, secondary bile acid biosynthesis, and lipoic acid metabolism",
+        "B": "Primary bile acid biosynthesis, fructose and mannose metabolism, and glycolysis/gluconeogenesis",
+        "C": "Nitrogen metabolism, amino and nucleotide sugar metabolism, and alanine biosynthesis",
+        "D": "Taurine metabolism, tryptophan catabolism, and beta-alanine biosynthesis"
+      },
+      "correct_answer": "B",
+      "explanation": "The obese adolescent microbiome is specifically enriched in primary bile acid biosynthesis, steroid acid biosynthesis, fructose and mannose metabolism, glycolysis/gluconeogenesis, galactose metabolism, butanoate metabolism, and pentose phosphate metabolism. Options A and C represent pathways enriched in normal-weight adolescents. Option D describes pathways associated with obese adults.",
+      "topic_tags": ["KEGG pathways", "obese adolescents", "primary bile acids", "fructose metabolism", "glycolysis", "metabolic pathways"]
+    },
+    {
+      "id": "gut_ob_ado_mcq_med_004",
+      "difficulty": "medium",
+      "question": "What does the finding that adult obese and normal-weight groups cannot be distinguished by bacterial OTU-based discriminant models suggest about microbiota and obesity in adulthood?",
+      "options": {
+        "A": "Adult gut microbiota is completely unrelated to obesity status",
+        "B": "The discriminatory bacterial signals for obesity are weaker or more confounded in adults, possibly due to greater inter-individual variation and longer-term dietary and clinical complexity",
+        "C": "Adults with obesity have higher microbial diversity than normal-weight adults, making statistical separation impossible",
+        "D": "The 16S rRNA sequencing method is not sensitive enough to detect differences in adult microbiota"
+      },
+      "correct_answer": "B",
+      "explanation": "AUROC values below 0.7 for adult groups indicate insufficient discriminatory accuracy of bacterial markers in adults. This is consistent with the greater inter-individual variability in adult gut microbiota, the influence of longer-term dietary habits, comorbidities such as hypertension and diabetes, and the reduced separation observed in beta-diversity clustering for adult groups compared to adolescents.",
+      "topic_tags": ["adult obesity", "AUROC", "discriminant analysis", "microbial markers", "inter-individual variation"]
+    },
+    {
+      "id": "gut_ob_ado_mcq_med_005",
+      "difficulty": "medium",
+      "question": "What does the enrichment of lipopolysaccharide (LPS) metabolism pathways in the gut microbiome of obese adolescents suggest about the link between gut bacteria and metabolic disease?",
+      "options": {
+        "A": "Higher LPS metabolism indicates better clearance of bacterial endotoxins and reduced systemic inflammation",
+        "B": "Elevated LPS-related microbial activity may initiate inflammation-related processes associated with obesity onset and insulin resistance",
+        "C": "LPS metabolism enrichment is a marker of gut barrier integrity and protection against dysbiosis",
+        "D": "Enrichment in LPS pathways reflects greater abundance of gram-positive bacteria in the obese gut"
+      },
+      "correct_answer": "B",
+      "explanation": "Lipopolysaccharide metabolism enrichment in the obese adolescent microbiome is significant because LPS — an endotoxin derived from gram-negative bacterial cell walls — has been recognized as a key initiator of inflammation-related processes associated with metabolic endotoxemia, which drives the onset of obesity and insulin resistance. This represents a mechanistic link between specific microbial activity and systemic metabolic dysfunction.",
+      "topic_tags": ["lipopolysaccharide", "LPS metabolism", "metabolic endotoxemia", "inflammation", "insulin resistance", "obese adolescents"]
+    },
+
+    {
+      "id": "gut_ob_ado_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "Why is the dysbiosis pattern in obese adolescents considered more diagnostically informative than that in obese adults, and what is the implication for developing microbiota-based interventions?",
+      "options": {
+        "A": "Obese adolescents have completely absent normal-weight microbiota taxa, making diagnosis straightforward, while adults retain all taxa at similar abundances",
+        "B": "Adolescent microbiota is more sensitive to metabolic perturbation and shows more statistically separable compositional profiles between obese and normal-weight groups, allowing identification of specific bacterial targets for age-tailored probiotic strategies",
+        "C": "Adult microbiota has greater functional redundancy that obscures all compositional differences, making intervention futile in adults",
+        "D": "The bacterial markers in obese adolescents are more stable over time than those in adults, making them more reliable for longitudinal monitoring"
+      },
+      "correct_answer": "B",
+      "explanation": "Beta-diversity clustering shows more defined and separated clusters for adolescent groups, and discriminant biomarkers achieve AUROC > 0.7 only in adolescents. This means the microbiota signal of obesity is clearer and more actionable in adolescents. Specific taxa — both obesity markers (F. prausnitzii, Actinomyces) and normal-weight markers (Parabacteroides, Rikenellaceae, Bacteroides caccae, Barnesiellaceae, Oscillospira) — provide concrete targets for age-tailored probiotic development, something not achievable for adults with current evidence.",
+      "topic_tags": ["obese adolescents", "diagnostic accuracy", "AUROC", "age-tailored probiotics", "microbiota intervention", "beta-diversity", "biomarkers"]
+    },
+    {
+      "id": "gut_ob_ado_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "How does the opposing enrichment of primary versus secondary bile acid biosynthesis pathways between obese and normal-weight adolescents mechanistically connect gut microbiota to glucose metabolism?",
+      "options": {
+        "A": "Primary bile acids directly suppress hepatic gluconeogenesis, so their enrichment in obese individuals lowers blood glucose, while secondary bile acids have no glucose-regulatory effects",
+        "B": "Primary bile acids are enriched in obesity while secondary bile acids dominate in normal weight; secondary bile acids — produced by anaerobic Clostridium species from primary precursors — influence gluconeogenesis, insulin secretion, and insulin sensitivity, suggesting disrupted bile acid conversion contributes to impaired glucose homeostasis in obesity",
+        "C": "Secondary bile acids are elevated in obesity because Clostridium species outcompete Lactobacilli, leading to greater deconjugation activity and excess insulin secretion",
+        "D": "Primary bile acid enrichment in normal-weight adolescents reflects higher fiber intake, which promotes glucose uptake independent of insulin signaling"
+      },
+      "correct_answer": "B",
+      "explanation": "Primary bile acids (cholate, chenodeoxycholate) are deconjugated by Lactobacilli; additional microbial modification by anaerobic Clostridium species then converts them to secondary bile acids. Secondary bile acids serve as metabolic signaling molecules that regulate gluconeogenesis, insulin secretion, and insulin sensitivity. Their relative deficiency in the obese microbiome — due to disrupted microbial conversion — may impair these regulatory functions and contribute to the insulin resistance and glucose dysregulation observed in obese adolescents.",
+      "topic_tags": ["primary bile acids", "secondary bile acids", "gluconeogenesis", "insulin sensitivity", "Clostridium", "Lactobacilli", "glucose homeostasis", "obese adolescents"]
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "source_document": "1-Introduction to the human gut microbiota.pdf",
+  "test_cases": [
+    {
+      "id": "gut_intro_001",
+      "query": "What are the two dominant bacterial phyla in the human gut microbiota?",
+      "ground_truth_answer": "Firmicutes and Bacteroidetes are the two dominant bacterial phyla in the human gut microbiota",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "gut_intro_002",
+      "query": "What is the ratio of human to bacterial cells in the body according to recent estimates?",
+      "ground_truth_answer": "Recent estimates suggest that the ratio of human to bacterial cells is closer to 1:1, revising the earlier estimate of 1:10",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "gut_intro_003",
+      "query": "How does mode of delivery affect infant gut microbiota composition?",
+      "ground_truth_answer": "Vaginally delivered infants have microbiota containing high abundance of lactobacilli, while C-section delivered infants are depleted in Bacteroides and colonized by Clostridium species instead",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "gut_intro_004",
+      "query": "What are short-chain fatty acids and which are the three predominant types found in the GI tract?",
+      "ground_truth_answer": "Short-chain fatty acids are metabolites produced by colonic bacteria through fermentation of complex carbohydrates. The three predominant types are acetate, propionate, and butyrate, typically found in a 3:1:1 ratio",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "gut_intro_005",
+      "query": "Describe the role of butyrate in intestinal health",
+      "ground_truth_answer": "Butyrate serves as an important energy source for colonocytes, has anti-inflammatory and anticancer activities, controls intestinal epithelial turnover by promoting proliferation at crypt bottoms while increasing apoptosis near the lumen, and enhances gut barrier function by affecting tight-junction assembly and mucin synthesis",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "gut_intro_006",
+      "query": "What is dysbiosis and how is it related to disease?",
+      "ground_truth_answer": "Dysbiosis is an altered gut bacterial composition that differs from the normal microbiota. It has been associated with the pathogenesis of many inflammatory diseases and infections",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "definition"
+    },
+    {
+      "id": "gut_intro_007",
+      "query": "How does dietary fiber deficiency affect the gut microbiota and mucosal barrier?",
+      "ground_truth_answer": "Dietary fiber deficiency causes the gut microbiota to switch to utilizing secreted mucins as a nutrient source, leading to erosion of the colonic mucus barrier, thinner mucus in the distal colon, increased microbial proximity to the epithelium, and enhanced pathogen susceptibility",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "gut_intro_008",
+      "query": "What role does Akkermansia muciniphila play in metabolic health?",
+      "ground_truth_answer": "Akkermansia muciniphila prevents development of high-fat diet-induced obesity, ameliorates metabolic endotoxemia-induced inflammation, restores gut barrier function by increasing mucin secretion and intestinal tight-junction proteins, and reduces body weight gain and fat mass",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "gut_intro_009",
+      "query": "Compare the microbiota composition between the small intestine and the colon",
+      "ground_truth_answer": "The small intestine has high levels of acids, oxygen and antimicrobials with short transit time, limiting bacterial growth to rapidly growing facultative anaerobes dominated by Lactobacillaceae. The colon supports a dense diverse community mainly of anaerobes dominated by Prevotellaceae, Lachnospiraceae and Rikenellaceae that can utilize complex carbohydrates",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "comparison"
+    },
+    {
+      "id": "gut_intro_010",
+      "query": "At what age does the infant gut microbiota resemble adult microbiota?",
+      "ground_truth_answer": "By around 2.5 years of age, the composition, diversity and functional capabilities of the infant microbiota resemble those of adult microbiota",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "gut_intro_011",
+      "query": "How do antibiotics affect the gut microbiota in terms of pathogen colonization?",
+      "ground_truth_answer": "Antibiotics dramatically disrupt microbial balance and alter the nutritional landscape of the gut, leading to increased mucosal carbohydrate availability including fucose and sialic acid liberated by the microbiota. This favors expansion of pathogens like Salmonella Typhimurium and Clostridium difficile",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "gut_intro_012",
+      "query": "What is the role of secretory IgA in the gut?",
+      "ground_truth_answer": "Secretory IgA co-localizes with gut bacteria in the outer mucus layer, limits exposure of epithelial cell surface to bacteria, mediates bacterial biofilm formation via binding to bacterial SIgA receptors, and is anchored in the outer colonic mucus layer providing immune protection against pathogens while maintaining mutually beneficial relationships with commensals",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "mechanism"
+    },
+    {
+      "id": "gut_intro_013",
+      "query": "Explain the concept of microbial cross-feeding in the gut",
+      "ground_truth_answer": "Microbial cross-feeding occurs when fermentation products from one bacterium serve as substrates for others. For example, acetate produced by Ruminococcus bromii or lactate from lactic acid bacteria is converted to butyrate by Eubacterium hallii and Anaerostipes caccae. This cooperation allows colonization by more diverse organisms and shapes the microbiota community",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    },
+    {
+      "id": "gut_intro_014",
+      "query": "What are the main benefits the gut microbiota provides to the host?",
+      "ground_truth_answer": "The gut microbiota strengthens gut integrity, shapes the intestinal epithelium, harvests energy through SCFA production, protects against pathogens through colonization resistance and antimicrobial production, regulates host immunity, synthesizes essential vitamins, and metabolizes bile acids",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "gut_intro_015",
+      "query": "How does FUT2 genotype affect gut microbiota composition?",
+      "ground_truth_answer": "FUT2 genotype determines the presence (secretor) or absence (non-secretor) of H and ABO antigens in GI mucosa through expression of an α1,2-fucosyltransferase. This affects mucin O-glycosylation patterns and influences the abundance of many bacterial groups in the gut microbiota",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "mechanism"
+    }
+  ],
+  
+  "mcq_questions": [
+    {
+      "id": "gut_intro_mcq_001",
+      "question": "How many bacterial species have been isolated from human beings according to the MetaHit and Human Microbiome Project?",
+      "options": [
+        "A) 1,000 species",
+        "B) 2,172 species",
+        "C) 5,000 species",
+        "D) 10,000 species"
+      ],
+      "correct_answer": "B",
+      "explanation": "Combined data from MetaHit and Human Microbiome Project identified 2,172 species isolated from human beings, classified into 12 different phyla",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "gut_intro_mcq_002",
+      "question": "What percentage of the 2,172 human-associated bacterial species belong to Proteobacteria, Firmicutes, Actinobacteria and Bacteroidetes?",
+      "options": [
+        "A) 75.5%",
+        "B) 85.0%",
+        "C) 93.5%",
+        "D) 99.0%"
+      ],
+      "correct_answer": "C",
+      "explanation": "93.5% of the identified species belonged to these four major phyla",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "gut_intro_mcq_003",
+      "question": "Which bacterial species is the only known representative of the Verrucomicrobia phyla in the human gut?",
+      "options": [
+        "A) Bacteroides thetaiotaomicron",
+        "B) Faecalibacterium prausnitzii",
+        "C) Akkermansia muciniphila",
+        "D) Ruminococcus bromii"
+      ],
+      "correct_answer": "C",
+      "explanation": "Akkermansia muciniphila is the only known representative of the Verrucomicrobia phyla identified in humans",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "gut_intro_mcq_004",
+      "question": "What is the typical ratio of propionate:butyrate:acetate in the GI tract?",
+      "options": [
+        "A) 3:1:1",
+        "B) 1:1:3",
+        "C) 2:2:1",
+        "D) 1:3:1"
+      ],
+      "correct_answer": "B",
+      "explanation": "The three predominant SCFAs (propionate, butyrate and acetate) are typically found in a proportion of 1:1:3 in the GI tract",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "gut_intro_mcq_005",
+      "question": "Which bacterial group is primarily responsible for butyrate production in the human gut?",
+      "options": [
+        "A) Bacteroidetes",
+        "B) Proteobacteria",
+        "C) Firmicutes",
+        "D) Actinobacteria"
+      ],
+      "correct_answer": "C",
+      "explanation": "Butyrate production in the human gut is dominated by Firmicutes, while propionate is mainly produced by Bacteroidetes",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "gut_intro_mcq_006",
+      "question": "How many glycoside hydrolases does Bacteroides thetaiotaomicron encode compared to humans?",
+      "options": [
+        "A) B. thetaiotaomicron: 97, Humans: 260",
+        "B) B. thetaiotaomicron: 150, Humans: 150",
+        "C) B. thetaiotaomicron: 260, Humans: 97",
+        "D) B. thetaiotaomicron: 500, Humans: 200"
+      ],
+      "correct_answer": "C",
+      "explanation": "The B. thetaiotaomicron genome contains 260 GHs, in comparison with the 97 hydrolases encoded by humans",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "factual"
+    },
+    {
+      "id": "gut_intro_mcq_007",
+      "question": "What percentage of faecal microbiota of vaginally delivered infants resembles their mothers' faecal microbiota?",
+      "options": [
+        "A) 41%",
+        "B) 55%",
+        "C) 72%",
+        "D) 90%"
+      ],
+      "correct_answer": "C",
+      "explanation": "72% of vaginally delivered infants' faecal microbiota resembles their mothers', compared to only 41% for C-section delivered babies",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    },
+    {
+      "id": "gut_intro_mcq_008",
+      "question": "Which of the following is NOT a benefit provided by gut microbiota mentioned in the paper?",
+      "options": [
+        "A) Vitamin synthesis",
+        "B) Energy harvesting",
+        "C) DNA replication",
+        "D) Protection against pathogens"
+      ],
+      "correct_answer": "C",
+      "explanation": "The paper mentions vitamin synthesis, energy harvesting, and pathogen protection as microbiota benefits, but not DNA replication which is a host cellular function",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "easy",
+      "category": "factual"
+    },
+    {
+      "id": "gut_intro_mcq_009",
+      "question": "In the elderly population, which metabolic change is observed in gut microbiota function?",
+      "options": [
+        "A) Increased SCFA production",
+        "B) Decreased proteolytic activity",
+        "C) Reduced proteolytic activity",
+        "D) Increased proteolytic activity and reduced SCFA production"
+      ],
+      "correct_answer": "D",
+      "explanation": "The capacity to produce SCFAs is reduced in the elderly while proteolytic activity is increased",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "hard",
+      "category": "factual"
+    },
+    {
+      "id": "gut_intro_mcq_010",
+      "question": "Which of the following correctly describes the colonic mucus structure?",
+      "options": [
+        "A) Single layer that is completely impermeable",
+        "B) Two layers: dense impermeable inner layer and loose penetrable outer layer",
+        "C) Three layers with varying densities",
+        "D) No distinct layers, uniform throughout"
+      ],
+      "correct_answer": "B",
+      "explanation": "Colonic mucus is divided into two layers: a dense and impermeable inner layer that is virtually sterile, and a loose outer coating penetrable by bacteria",
+      "expected_documents": [
+        "1-Introduction to the human gut microbiota.pdf"
+      ],
+      "difficulty": "medium",
+      "category": "factual"
+    }
+  ]
+}

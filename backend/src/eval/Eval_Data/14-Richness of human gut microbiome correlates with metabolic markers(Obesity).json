@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "source_paper": "Richness of human gut microbiome correlates with metabolic markers",
+    "journal": "Nature",
+    "year": 2013,
+    "doi": "10.1038/nature12506",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "GMRM_easy_001",
+      "difficulty": "easy",
+      "question": "What is the significance of gut microbial gene richness as a biological characteristic?",
+      "answer": "Gut microbial gene richness — measured by the total number of distinct microbial genes detectable in an individual's gut — reflects the diversity and complexity of the gut bacterial community. It appears to be a relatively stable individual-level characteristic during adulthood, analogous to a personal biological fingerprint. Low gene richness corresponds to a less diverse microbiota, while high gene richness corresponds to a richer and more functionally varied microbial community. This richness metric has been shown to correlate strongly with key metabolic and inflammatory phenotypes, suggesting it serves as a meaningful proxy for overall gut health status.",
+      "topic_tags": ["gut microbiome", "gene richness", "microbial diversity", "quantitative metagenomics"]
+    },
+    {
+      "id": "GMRM_easy_002",
+      "difficulty": "easy",
+      "question": "How does gut bacterial richness relate to obesity and metabolic risk?",
+      "answer": "Individuals with low gut bacterial richness (a less diverse microbiome) are significantly more likely to be obese and exhibit a constellation of adverse metabolic features. These include greater overall adiposity, higher fat mass percentage, insulin resistance, elevated triglycerides, elevated free fatty acids, lower HDL-cholesterol, and a more pronounced systemic inflammatory phenotype (elevated C-reactive protein and white blood cell counts). Additionally, obese individuals with low gut bacterial richness tend to gain more weight over time compared to those with high bacterial richness, suggesting that microbiome diversity may actively influence the trajectory of metabolic disease.",
+      "topic_tags": ["obesity", "gut microbiome", "metabolic risk", "inflammation", "insulin resistance"]
+    },
+    {
+      "id": "GMRM_easy_003",
+      "difficulty": "easy",
+      "question": "What is the concept of 'quantitative metagenomics' and what does it measure?",
+      "answer": "Quantitative metagenomics is an approach that assesses the abundance of microbial genes by mapping large numbers of sequencing reads from total faecal DNA onto a reference catalogue of bacterial genes. Rather than simply detecting the presence or absence of species, it quantifies the relative abundance of millions of microbial genes across a sample, allowing researchers to estimate the total number of distinct genes harboured by an individual's gut microbiota. This technique provides a high-resolution portrait of both the richness (diversity) and the functional potential of the gut microbial community.",
+      "topic_tags": ["quantitative metagenomics", "gut microbiome", "gene catalogue", "sequencing"]
+    },
+    {
+      "id": "GMRM_easy_004",
+      "difficulty": "easy",
+      "question": "What is the relationship between gut microbiota composition and low-grade systemic inflammation?",
+      "answer": "Individuals with low gut bacterial richness harbour a microbiota composition that is associated with an inflammatory state. This community is enriched in potentially pro-inflammatory bacteria (such as Bacteroides and Ruminococcus gnavus/torques) and depleted of anti-inflammatory species (such as Faecalibacterium prausnitzii). The imbalance between pro- and anti-inflammatory bacterial species is hypothesised to trigger chronic low-grade inflammation, which in turn drives insulin resistance and dyslipidaemia. Supporting markers of this inflammatory shift include elevated highly sensitive C-reactive protein (hsCRP) and elevated blood leucocyte and lymphocyte counts.",
+      "topic_tags": ["inflammation", "gut microbiota", "Faecalibacterium prausnitzii", "insulin resistance", "dysbiosis"]
+    },
+    {
+      "id": "GMRM_easy_005",
+      "difficulty": "easy",
+      "question": "How does gut microbiota composition differ between individuals with high and low bacterial richness at the phylum level?",
+      "answer": "At the phylum level, individuals with low bacterial richness show a higher relative abundance of Proteobacteria and Bacteroidetes. In contrast, individuals with high bacterial richness have increased populations of Verrucomicrobia (primarily Akkermansia muciniphila), Actinobacteria (including Bifidobacterium), and Euryarchaeota (including the methanogen Methanobrevibacter smithii). This phylogenetic shift in the low-richness group correlates with functional changes, including reduced butyrate production, increased mucus degradation, and a shift from methanogenic hydrogen disposal to sulphate-reducing pathways.",
+      "topic_tags": ["phylum", "Proteobacteria", "Bacteroidetes", "Verrucomicrobia", "Actinobacteria", "microbial diversity"]
+    },
+
+    {
+      "id": "GMRM_med_001",
+      "difficulty": "medium",
+      "question": "What functional metabolic differences characterise the gut microbiota of individuals with low versus high bacterial richness?",
+      "answer": "The microbiota of low-richness individuals shows increased capacity for handling oxidative stress (higher peroxidase and catalase activity), increased production of potentially deleterious metabolites such as pro-carcinogens from beta-glucuronide degradation and aromatic amino acid degradation, and increased dissimilatory nitrate reduction. In contrast, high-richness individuals have microbiota characterised by greater production of beneficial short-chain fatty acids — including lactate, propionate, and butyrate — and higher hydrogen production potential. Regarding hydrogen disposal, a shift from methanogenesis and acetogenesis (prevalent in high-richness individuals) towards sulphate reduction (prevalent in low-richness individuals) appears to occur. Together, this functional signature suggests that low-richness microbiota adopts an inflammation-promoting metabolic profile.",
+      "topic_tags": ["SCFA", "butyrate", "oxidative stress", "metabolic modules", "KEGG", "functional metagenomics"]
+    },
+    {
+      "id": "GMRM_med_002",
+      "difficulty": "medium",
+      "question": "How does low gut bacterial richness relate to the integrity of the intestinal mucus layer?",
+      "answer": "Low-richness microbiota is associated with increased mucus degradation potential. Specifically, individuals with low bacterial richness have a decreased ratio of Akkermansia (a commensal that supports mucus layer health) relative to mucus-degrading species such as Ruminococcus torques and R. gnavus. This shift suggests that the mucus barrier may be compromised in low-richness individuals, potentially allowing greater bacterial contact with the intestinal epithelium. This disruption of mucosal integrity can promote translocation of bacterial components such as lipopolysaccharide (LPS) into circulation, contributing to metabolic endotoxaemia and systemic inflammation.",
+      "topic_tags": ["mucus barrier", "Akkermansia", "Ruminococcus gnavus", "intestinal integrity", "LPS", "endotoxaemia"]
+    },
+    {
+      "id": "GMRM_med_003",
+      "difficulty": "medium",
+      "question": "What is the proposed mechanism by which gut microbiota composition influences triglyceride and free fatty acid levels in the bloodstream?",
+      "answer": "The gut microbiota of low-richness individuals is associated with elevated serum levels of fasting-induced adipose factor (FIAF, also known as ANGPTL4). Based on rodent model evidence, increased FIAF leads to elevated release of triglycerides and free fatty acids from adipose tissue, resulting in hypertriglyceridaemia and increased circulating free fatty acids. This pathway provides a mechanistic link between gut microbial composition and dyslipidaemia — a key component of the metabolic syndrome. The imbalance of pro-inflammatory bacterial species in the low-richness gut microbiota is thought to be a driver of FIAF elevation.",
+      "topic_tags": ["FIAF", "ANGPTL4", "triglycerides", "free fatty acids", "dyslipidaemia", "microbiota-host signalling"]
+    },
+    {
+      "id": "GMRM_med_004",
+      "difficulty": "medium",
+      "question": "How can a small number of bacterial species be used to classify individuals by their gut microbiota richness status?",
+      "answer": "Despite the immense complexity of the gut microbiome, just a handful of bacterial species show strongly differential abundance between individuals with low versus high gut gene richness. By computing a 'decisive bacterial abundance' (DBA) score — calculated as the sum of abundances of species enriched in the high-richness group minus the sum of abundances of species enriched in the low-richness group — individuals can be accurately stratified. A combination of as few as four species yields a receiver operating characteristic (ROC) area under the curve (AUC) of approximately 0.98, and this discriminatory power holds up in cross-validation. This suggests that simple molecular diagnostic tests based on a small microbial signature could identify metabolic risk in the general adult population.",
+      "topic_tags": ["bacterial species classification", "ROC analysis", "DBA score", "diagnostic biomarker", "AUC"]
+    },
+    {
+      "id": "GMRM_med_005",
+      "difficulty": "medium",
+      "question": "What is the role of Faecalibacterium prausnitzii in the context of gut microbiota richness and inflammatory disease?",
+      "answer": "Faecalibacterium prausnitzii is an anti-inflammatory commensal bacterium that is significantly more prevalent in individuals with high gut bacterial richness. Its reduced abundance in low-richness individuals contributes to the pro-inflammatory microbial profile characteristic of that group. F. prausnitzii is known to produce anti-inflammatory compounds that inhibit the NF-κB signalling pathway in intestinal epithelial cells, thereby dampening mucosal inflammation. Its depletion is also associated with Crohn's disease and other inflammatory bowel conditions, highlighting a consistent pattern in which loss of this bacterium correlates with intestinal and systemic inflammatory states.",
+      "topic_tags": ["Faecalibacterium prausnitzii", "anti-inflammatory", "gut richness", "NF-κB", "IBD", "Crohn's disease"]
+    },
+    {
+      "id": "GMRM_med_006",
+      "difficulty": "medium",
+      "question": "How does gut microbiota diversity compare in its ability to distinguish lean from obese individuals relative to human genomic markers?",
+      "answer": "Gut microbiota composition outperforms known human genetic markers in distinguishing lean from obese individuals. Analysis of microbial species in the gut achieves an AUC of approximately 0.78 with a small number of species — substantially better than the AUC of around 0.58 achieved by combining 32 human genome loci associated with adiposity. This finding suggests that variation in the gut microbiome carries a stronger obesity-associated signal than currently known human genetic variants, and raises the possibility that the microbiome plays a more direct causal role in obesity pathogenesis than inherited human genome variation alone.",
+      "topic_tags": ["obesity", "human genome", "microbiome", "AUC", "lean vs obese", "genetic markers"]
+    },
+
+    {
+      "id": "GMRM_hard_001",
+      "difficulty": "hard",
+      "question": "How does the relationship between gut microbiota richness and weight gain trajectory support a causal rather than merely correlational role for the microbiome in obesity?",
+      "answer": "Several lines of evidence support a directional or causal role of gut microbiota richness in obesity progression rather than a simple correlation. First, obese individuals with low bacterial richness gain significantly more weight over time compared to their obese counterparts with high bacterial richness — even after adjusting for baseline BMI and age. This longitudinal signal is not present in lean individuals, suggesting a specific vulnerability conferred by low richness in those already susceptible to weight gain. Second, the bacterial species associated with protection against weight gain are consistently enriched in high-richness individuals and are predominantly butyrate producers, linking metabolic function to the protective effect. Third, mouse studies have shown that the obese phenotype can be transmitted via gut microbiota transplantation, supporting a causative role. Together, these observations suggest that a low-richness microbiota is not merely a downstream consequence of obesity but an active contributor to its progression.",
+      "topic_tags": ["weight gain", "causality", "gut richness", "longitudinal", "butyrate producers", "germ-free mice"]
+    },
+    {
+      "id": "GMRM_hard_002",
+      "difficulty": "hard",
+      "question": "What methodological approach was used to identify and characterise novel, previously unsequenced bacterial species from metagenomic data, and what validations were applied?",
+      "answer": "To identify genes from species lacking sequenced reference genomes, an unsupervised co-abundance clustering approach was applied. The core principle is that genes from the same bacterial species should show correlated abundance variation across individuals (co-vary) because they are carried on the same DNA molecule and thus rise and fall together. Genes with Spearman correlation coefficients above a threshold of 0.85 were grouped into clusters representing putative species. Clusters were validated through four independent lines of evidence: (1) coherence of BLASTP taxonomic assignments — genes in a cluster share consistent taxonomy; (2) homogeneity of gene abundance profiles within individuals; (3) similarity of tetramer (k-mer) nucleotide composition, which is characteristic of individual genomes; and (4) physical linkage — genes from the same cluster co-localise on the same metagenomic scaffolds. These stringent validations confirmed that the co-abundance clusters reliably represent genes from the same microbial species, even when those species have no sequenced reference genome.",
+      "topic_tags": ["gene clustering", "co-abundance", "Spearman correlation", "novel species", "metagenomics", "k-mer composition"]
+    },
+    {
+      "id": "GMRM_hard_003",
+      "difficulty": "hard",
+      "question": "What is the functional significance of the shift from methanogenic to sulphate-reducing hydrogen disposal in low-richness gut microbial communities, and what are its potential health implications?",
+      "answer": "In the gut, hydrogen produced by bacterial fermentation must be removed to prevent product inhibition of fermentation pathways. This is accomplished by three main hydrogen-consuming groups: methanogens (producing methane), acetogens (producing acetate), and sulphate-reducing bacteria (producing hydrogen sulphide, H2S). High-richness individuals show greater methanogenic and acetogenic potential — pathways whose end products are largely benign or beneficial. By contrast, low-richness individuals show a shift toward sulphate-reducing metabolism, increasing H2S production. Hydrogen sulphide at elevated concentrations has toxic effects on colonocytes, can inhibit cytochrome c oxidase in the mitochondrial respiratory chain, impair butyrate oxidation in colonocytes, and has been associated with mucosal damage and increased risk of colorectal cancer. Additionally, the depletion of methanogens (such as Methanobrevibacter smithii) in low-richness individuals contributes to reduced fermentation efficiency and lower SCFA output. This metabolic shift thus represents an additional mechanism by which low gut richness may promote mucosal inflammation and compromise metabolic health.",
+      "topic_tags": ["hydrogen disposal", "methanogens", "sulphate-reducing bacteria", "H2S", "hydrogen sulphide", "colonocytes", "fermentation"]
+    },
+    {
+      "id": "GMRM_hard_004",
+      "difficulty": "hard",
+      "question": "How does the bimodal distribution of gut microbial gene counts across a population challenge previous conceptualisations of microbiome variation, and what are the clinical stratification implications?",
+      "answer": "Prior to this work, gut microbiome variation between individuals was largely treated as a continuous spectrum without discrete subgroups. The observation of a bimodal distribution of gut microbial gene counts in an adult population — confirmed across independent cohorts and by two orthogonal profiling platforms (metagenomic sequencing and phylogenetic microarrays) — fundamentally reframes this view. It suggests that adults cluster into two distinct ecological states: a low-richness community characterised by fewer species, an inflammation-associated functional profile, and adverse metabolic phenotypes; and a high-richness community with greater diversity, anti-inflammatory species, and healthier metabolic indicators. This binary structure has direct clinical implications: it enables the population to be stratified into metabolic risk groups using simple microbiome-based diagnostics. It also opens questions about the determinants and reversibility of the low-richness state — including the potential roles of antibiotic use, diet, and host genetics — since individuals in the low-richness group may be candidates for targeted dietary or microbiome-modulating interventions to reduce their risk of progressing to metabolic co-morbidities.",
+      "topic_tags": ["bimodal distribution", "population stratification", "metabolic risk", "microbiome states", "clinical implications", "dietary intervention"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "GMRM_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which bacterial genera are significantly enriched in individuals with high gut bacterial richness compared to those with low richness?",
+      "options": {
+        "A": "Bacteroides, Ruminococcus gnavus, and Campylobacter",
+        "B": "Faecalibacterium, Bifidobacterium, Akkermansia, and Methanobrevibacter",
+        "C": "Staphylococcus, Porphyromonas, and Dialister",
+        "D": "Parabacteroides, Anaerostipes, and Clostridium bolteae"
+      },
+      "correct_answer": "B",
+      "explanation": "Genera including Faecalibacterium, Bifidobacterium, Lactobacillus, Akkermansia, Coprococcus, and Methanobrevibacter are significantly associated with high gene count (high richness) individuals. In contrast, Bacteroides, Ruminococcus gnavus/torques, Campylobacter, and Staphylococcus are more dominant in low-richness individuals.",
+      "topic_tags": ["microbial genera", "HGC", "LGC", "gut diversity"]
+    },
+    {
+      "id": "GMRM_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What adipokine pattern is associated with low gut bacterial richness, and what does it reflect?",
+      "options": {
+        "A": "Increased adiponectin and decreased leptin, reflecting improved insulin sensitivity",
+        "B": "Decreased adiponectin and increased leptin, reflecting greater adiposity and insulin resistance",
+        "C": "Increased adiponectin and increased leptin, reflecting a compensatory anti-inflammatory response",
+        "D": "Normal adiponectin with decreased leptin, reflecting reduced fat mass"
+      },
+      "correct_answer": "B",
+      "explanation": "Low-richness individuals show decreased serum adiponectin (an anti-inflammatory adipokine associated with insulin sensitivity) and increased serum leptin (a pro-inflammatory marker of adiposity). This pattern is consistent with greater fat mass, systemic inflammation, and impaired insulin signalling — features collectively characteristic of the metabolic syndrome.",
+      "topic_tags": ["adiponectin", "leptin", "adipokines", "insulin resistance", "metabolic syndrome"]
+    },
+    {
+      "id": "GMRM_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "Which of the following best describes the distribution pattern of gut microbial gene counts observed across an adult population?",
+      "options": {
+        "A": "A normal (bell-shaped) distribution with the majority of individuals near the mean",
+        "B": "A uniform distribution with equal numbers at all gene count levels",
+        "C": "A bimodal distribution with two distinct clusters separated by a threshold",
+        "D": "A right-skewed distribution with most individuals having very few genes"
+      },
+      "correct_answer": "C",
+      "explanation": "Gut microbial gene counts across an adult population show a bimodal distribution, with individuals clustering into two groups — those with relatively low gene counts and those with relatively high gene counts. This bimodality was confirmed by multiple analytical approaches including sequencing-based gene counting, phylogenetic microarray analysis, and single-copy marker gene scoring.",
+      "topic_tags": ["bimodal distribution", "gene count", "population", "quantitative metagenomics"]
+    },
+
+    {
+      "id": "GMRM_mcq_med_001",
+      "difficulty": "medium",
+      "question": "What mechanism explains how a low-richness gut microbiota may promote insulin resistance?",
+      "options": {
+        "A": "Low-richness microbiota produces excess bile acids that directly inhibit pancreatic beta-cell function",
+        "B": "An imbalance of pro- and anti-inflammatory species triggers low-grade inflammation, which drives insulin resistance; additionally, elevated FIAF increases circulating free fatty acids that impair insulin signalling",
+        "C": "Low-richness microbiota produces excess short-chain fatty acids that saturate hepatic gluconeogenesis pathways",
+        "D": "Decreased microbial diversity reduces intestinal transit time, leading to excessive caloric absorption from dietary carbohydrates"
+      },
+      "correct_answer": "B",
+      "explanation": "The proposed mechanism involves two parallel pathways: (1) an imbalance favouring pro-inflammatory species over anti-inflammatory species (such as Faecalibacterium prausnitzii) drives chronic low-grade systemic inflammation that impairs insulin receptor signalling; and (2) an altered microbiota elevates FIAF (fasting-induced adipose factor / ANGPTL4), which promotes triglyceride and free fatty acid release from adipose tissue — excess free fatty acids are known to impair insulin signalling in muscle and liver.",
+      "topic_tags": ["insulin resistance", "inflammation", "FIAF", "free fatty acids", "gut microbiota mechanism"]
+    },
+    {
+      "id": "GMRM_mcq_med_002",
+      "difficulty": "medium",
+      "question": "Why is gut microbiome-based stratification considered more informative than BMI-based classification alone for identifying metabolic risk?",
+      "options": {
+        "A": "BMI does not correlate at all with gut microbiome composition",
+        "B": "Within obese individuals, low-richness and high-richness subgroups have distinct metabolic profiles, and low-richness obese individuals gain more weight over time — differences that BMI classification alone cannot capture",
+        "C": "Microbiome analysis is cheaper and faster than measuring BMI in clinical settings",
+        "D": "All lean individuals have high gut bacterial richness, making the microbiome redundant with BMI for risk prediction"
+      },
+      "correct_answer": "B",
+      "explanation": "BMI-based classification collapses heterogeneous groups. Among obese individuals, those with low gut bacterial richness show worse metabolic profiles (greater inflammation, dyslipidaemia, insulin resistance) and gain more weight over time than obese individuals with high richness. Microbiome richness stratification thus identifies a metabolically distinct subgroup within obesity that BMI alone cannot differentiate, making it a complementary and more granular risk marker.",
+      "topic_tags": ["BMI", "metabolic stratification", "obesity heterogeneity", "microbiome richness", "clinical risk"]
+    },
+    {
+      "id": "GMRM_mcq_med_003",
+      "difficulty": "medium",
+      "question": "What does the hydrogen disposal pathway shift in low-richness individuals (from methanogens/acetogens to sulphate-reducing bacteria) suggest about their gut environment?",
+      "options": {
+        "A": "Low-richness individuals consume more dietary sulphur compounds, which stimulates sulphate reduction as a detoxification pathway",
+        "B": "Sulphate-reducing bacteria are opportunistic colonisers that replace methanogens when fermentable substrates are depleted, suggesting a less productive fermentative ecosystem",
+        "C": "The shift reflects a fundamentally different hydrogen disposal ecology that produces hydrogen sulphide rather than methane, associated with reduced butyrate availability and potential mucosal toxicity",
+        "D": "Methanogens preferentially colonise lean individuals, so their absence in obese individuals simply reflects the effect of body composition on microbial niche availability"
+      },
+      "correct_answer": "C",
+      "explanation": "In high-richness individuals, hydrogen produced during fermentation is primarily disposed of via methanogens and acetogens — metabolically benign or even beneficial pathways that support efficient fermentation. In low-richness individuals, sulphate-reducing bacteria become relatively dominant, producing hydrogen sulphide (H2S). H2S is a colonic toxicant that can inhibit butyrate oxidation in colonocytes, impair mitochondrial function, and promote mucosal inflammation — linking this metabolic shift to adverse gut health outcomes.",
+      "topic_tags": ["hydrogen disposal", "methanogens", "sulphate reduction", "H2S", "fermentation ecology"]
+    },
+    {
+      "id": "GMRM_mcq_med_004",
+      "difficulty": "medium",
+      "question": "Why are butyrate-producing bacterial species specifically associated with protection against weight gain?",
+      "options": {
+        "A": "Butyrate is directly absorbed into the bloodstream and suppresses appetite by acting on hypothalamic receptors",
+        "B": "Butyrate-producing species are associated with high gut richness, and among species linked to lower weight gain, all but one are butyrate producers — consistent with the overall depletion of butyrate production capacity in low-richness individuals",
+        "C": "Butyrate inhibits lipase activity in the small intestine, reducing dietary fat absorption and thus preventing weight gain",
+        "D": "Butyrate-producing bacteria outcompete fat-storing bacteria, physically displacing species responsible for enhanced energy harvest"
+      },
+      "correct_answer": "B",
+      "explanation": "Among the bacterial species identified as associated with lower BMI gain over time, all but one (Methanobrevibacter smithii) are butyrate producers. This is consistent with the broader finding that low-richness individuals have reduced abundance of butyrate-producing taxa. Butyrate supports colonocyte health, has anti-inflammatory effects, and improves gut barrier integrity — plausibly explaining protection against weight gain through reduced inflammation and improved metabolic regulation, though direct mechanistic proof in humans requires further study.",
+      "topic_tags": ["butyrate", "weight gain", "gut richness", "BMI change", "SCFA producers"]
+    },
+    {
+      "id": "GMRM_mcq_med_005",
+      "difficulty": "medium",
+      "question": "How does the co-abundance gene clustering approach validate that clustered genes originate from the same bacterial species rather than different species?",
+      "options": {
+        "A": "Each cluster is validated purely by matching to a known reference genome in a public database",
+        "B": "Clustering relies solely on 16S rRNA gene sequence similarity, which uniquely identifies each species",
+        "C": "Multiple independent lines of evidence are used: coherent BLASTP taxonomic assignment, homogeneous gene abundance profiles within individuals, similar tetramer nucleotide composition, and physical co-localisation on metagenomic scaffolds",
+        "D": "Cluster validity is inferred from the number of genes in each cluster — larger clusters are assumed to represent genuine species while smaller ones are discarded"
+      },
+      "correct_answer": "C",
+      "explanation": "The clustering approach is validated by four orthogonal lines of evidence: (1) taxonomic coherence — genes in a cluster share consistent BLASTP assignment; (2) abundance homogeneity — genes from the same cluster have similar abundance profiles within individuals; (3) k-mer composition similarity — tetranucleotide profiles of genes in a cluster are significantly more correlated than random groupings; and (4) physical linkage — cluster genes are found on the same metagenomic scaffolds, indicating they derive from the same genomic source.",
+      "topic_tags": ["co-abundance clustering", "species validation", "metagenomics", "k-mer", "scaffold linkage"]
+    },
+
+    {
+      "id": "GMRM_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "What does the comparison between microbiome-based classification of lean versus obese individuals and human genome-based classification reveal about the relative contribution of the microbiome to obesity?",
+      "options": {
+        "A": "Human genome variants outperform microbiome markers because genetic variants are fixed and not confounded by environmental factors",
+        "B": "Both approaches perform equally well, suggesting that host genetics and microbiome composition are completely redundant in obesity",
+        "C": "Microbiome-based species signatures achieve a substantially higher AUC for distinguishing lean from obese individuals than the best available human genetic risk scores, suggesting the gut microbiome carries a stronger obesity-associated signal than currently known human genomic variants",
+        "D": "Microbiome classification only works in obese individuals and fails to stratify lean individuals, limiting its clinical utility"
+      },
+      "correct_answer": "C",
+      "explanation": "Microbiome-based classification of lean versus obese individuals achieves an AUC of approximately 0.78 using a small number of bacterial species. This compares favourably to an AUC of approximately 0.58 achieved by 32 human genome loci associated with adiposity — a difference that is clinically meaningful. The finding supports the hypothesis that gut microbial variation may have a greater role than human genome variation in obesity pathogenesis, and that the microbiome-obesity signal is much stronger than currently resolved by genome-wide association studies.",
+      "topic_tags": ["human genome", "GWAS", "microbiome obesity signal", "AUC", "lean vs obese", "causal inference"]
+    },
+    {
+      "id": "GMRM_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "How does the concept of a bimodal population distribution of gut microbiome richness challenge therapeutic strategies for metabolic disease?",
+      "options": {
+        "A": "It suggests that all individuals should receive the same probiotic supplement regardless of their baseline microbiome state",
+        "B": "It implies that metabolic disease treatment should focus exclusively on diet, since gut richness cannot be modified by pharmacological means",
+        "C": "It suggests that the population contains a discrete high-risk subgroup (low-richness) whose microbiota may require targeted restoration of diversity — through dietary intervention, prebiotics, or microbiome transplantation — rather than generic metabolic therapies, and that microbiome screening could identify candidates for such intervention before clinical disease manifests",
+        "D": "It proves that gut microbiome composition is entirely determined by host genetics and therefore cannot be therapeutically modified"
+      },
+      "correct_answer": "C",
+      "explanation": "The bimodal distribution implies the existence of a discrete, identifiable subgroup at elevated metabolic risk due to low gut richness. This has therapeutic implications: rather than applying uniform treatments, clinicians could screen individuals for microbiome richness and direct targeted interventions — such as high-fibre dietary regimens, specific prebiotics, or defined microbial consortia — at those in the low-richness group. Such stratified approaches could potentially reverse or prevent the progression to metabolic co-morbidities before they fully manifest, representing a precision medicine application of microbiome diagnostics.",
+      "topic_tags": ["bimodal distribution", "precision medicine", "microbiome restoration", "dietary intervention", "stratified treatment", "metabolic disease"]
+    }
+  ]
+}

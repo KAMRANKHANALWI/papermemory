@@ -1,0 +1,268 @@
+{
+  "metadata": {
+    "source_paper": "The Brain-Gut-Microbiome System: Pathways and Implications for Autism Spectrum Disorder",
+    "authors": ["Michelle A. Chernikova", "Genesis D. Flores", "Emily Kilroy", "Jennifer S. Labus", "Emeran A. Mayer", "Lisa Aziz-Zadeh"],
+    "journal": "Nutrients",
+    "year": 2021,
+    "doi": "10.3390/nu13124497",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "bgm_asd_easy_001",
+      "difficulty": "easy",
+      "question": "What is the brain-gut-microbiome (BGM) system and what major biological components does it encompass?",
+      "answer": "The brain-gut-microbiome (BGM) system refers to the bidirectional communication network linking the brain and the human gut microbiome. It includes the central nervous system (CNS), the enteric nervous system (ENS), and various neural, metabolic, endocrine, and immune mediators. The system closely interacts with the immune system, the hypothalamic-pituitary-adrenal (HPA) axis, and both branches of the autonomic nervous system. The afferent vagus nerve plays a key role by transmitting information from visceral organs to brain regions such as the hypothalamus, amygdala, and insular cortex.",
+      "topic_tags": ["brain-gut-microbiome", "BGM system", "enteric nervous system", "vagus nerve", "bidirectional communication"]
+    },
+    {
+      "id": "bgm_asd_easy_002",
+      "difficulty": "easy",
+      "question": "What gastrointestinal symptoms are commonly reported in individuals with autism spectrum disorder, and how prevalent are they?",
+      "answer": "GI symptoms — including abdominal pain, constipation, and diarrhea — have been reported in 46–84% of individuals with autism spectrum disorder (ASD). This high prevalence has led researchers to hypothesize that gut dysbiosis may be especially relevant to ASD patients with GI distress. Studies have identified abnormal gut-derived metabolite patterns as well as certain bacterial taxa that differ significantly in relative abundance from healthy controls, and these are strongly associated with GI symptoms.",
+      "topic_tags": ["ASD", "gastrointestinal symptoms", "gut dysbiosis", "abdominal pain", "prevalence"]
+    },
+    {
+      "id": "bgm_asd_easy_003",
+      "difficulty": "easy",
+      "question": "What are the three main metabolic pathways through which dietary tryptophan is processed, and which pathway accounts for the largest proportion of tryptophan metabolism?",
+      "answer": "Dietary tryptophan is metabolized through three main pathways: the serotonin pathway, the kynurenine (KYN) pathway, and the indole metabolic pathway. Over 95% of tryptophan is oxidized and degraded to yield metabolites along the KYN pathway, making it the dominant route. Tryptophan is also the sole precursor to the neurotransmitter serotonin (5-HT) in both the brain and gut, synthesized by the enzyme tryptophan hydroxylase (TPH). The biosynthesis of indoles and indole derivatives from tryptophan is entirely dependent on the enzyme tryptophanase, found only in select microbes.",
+      "topic_tags": ["tryptophan", "kynurenine pathway", "serotonin", "indole pathway", "metabolism"]
+    },
+    {
+      "id": "bgm_asd_easy_004",
+      "difficulty": "easy",
+      "question": "How does early life gut microbiota development influence neurodevelopmental outcomes, and what factors shape the early microbiome?",
+      "answer": "Gut microbiota development during the first 1000 days of life, including prenatal life, is critical for establishing a healthy and protective microbiome. The microbiome begins to develop rapidly after birth, shaped by factors such as delivery method, infant feeding practices, antibiotic use, and environmental exposure. Early life dysbiosis can alter the integrity of the blood-brain barrier and disrupt brain-gut signaling, potentially leading to adverse health outcomes later in life. Prenatal maternal factors including psychosocial stress, infections, obesity, and metabolic syndrome can cause maternal dysbiosis and dysregulated immune activation, posing significant risks to offspring neurodevelopment.",
+      "topic_tags": ["early life microbiome", "neurodevelopment", "blood-brain barrier", "dysbiosis", "maternal factors"]
+    },
+    {
+      "id": "bgm_asd_easy_005",
+      "difficulty": "easy",
+      "question": "What are probiotics and what types of behavioral and physiological improvements have been observed following probiotic treatment in animal models of autism-like conditions?",
+      "answer": "Probiotics are defined as live microorganisms which, when administered in adequate amounts, confer a health benefit on the host. In animal models of autism-like conditions, probiotic treatment has been shown to correct gut permeability, improve gut microbiota and blood metabolite profiles, and ameliorate atypical anxiety, communicative, repetitive, and sensorimotor behavioral symptoms. Certain Lactobacillus strains have been shown to reduce social impairments. Probiotic treatment can alter the composition of the gut microbiota, improve epithelial barrier integrity, reduce leakage of particular gut metabolites, restore serum metabolites, and ameliorate specific autism-related behavioral abnormalities.",
+      "topic_tags": ["probiotics", "ASD", "animal models", "behavioral symptoms", "gut permeability", "Lactobacillus"]
+    },
+
+    {
+      "id": "bgm_asd_medium_001",
+      "difficulty": "medium",
+      "question": "How does the indole metabolic pathway relate to autism spectrum disorder, and what is the source and significance of indole-derived metabolites?",
+      "answer": "The indole pathway is an exclusively microbe-dependent process in which certain bacterial taxa convert undigested tryptophan from the gut lumen into indole and indole derivatives such as indole-3-acetic acid, indole-3-propionic acid, and indole-3-acryloylglycine. The biosynthesis of these metabolites depends on the enzyme tryptophanase, which is only found in select microbes. Many bacterial taxa associated with indole production have been linked to the development of ASD and related neuropsychiatric disorders. Studies in both animal models and human populations have found elevated levels of indole metabolites in ASD compared to typically developing controls, and these altered pathways overlap with those of rodent models displaying ASD-like behaviors. After indole is absorbed in the gut, it is oxidized and sulfated by liver enzymes into indoxyl and indoxyl sulfate metabolites, which have been identified as potential metabolic markers for ASD.",
+      "topic_tags": ["indole pathway", "tryptophan", "ASD biomarkers", "gut microbiota", "tryptophanase", "indole metabolites"]
+    },
+    {
+      "id": "bgm_asd_medium_002",
+      "difficulty": "medium",
+      "question": "What is the kynurenine pathway, and how is its dysregulation implicated in the neurotoxic features observed in autism spectrum disorder?",
+      "answer": "The kynurenine (KYN) pathway is derived from tryptophan and is modulated by gut microbes. It primarily depends on the enzyme indoleamine-2,3-dioxygenase (IDO), which is activated by pro-inflammatory cytokines, and to a lesser degree on tryptophan-2,3-dioxygenase (TDO), activated by glucocorticoids. Once tryptophan is transformed into KYN, it further metabolizes into two downstream products: neuroprotective kynurenic acid (KA) and neurotoxic quinolinic acid (QA). In ASD, altered KYN metabolism is indicative of greater tryptophan depletion and an impaired serotonergic pathway. Children with ASD have been found to have significantly lower KA serum levels, higher KYN/KA ratios, and higher QA serum concentrations than typically developing children. Tryptophan is disproportionately metabolized into QA in ASD, increasing potential for neurotoxicity and contributing to the pathophysiology of the disorder.",
+      "topic_tags": ["kynurenine pathway", "IDO", "quinolinic acid", "kynurenic acid", "neurotoxicity", "ASD"]
+    },
+    {
+      "id": "bgm_asd_medium_003",
+      "difficulty": "medium",
+      "question": "What is hyperserotonemia, how is it related to autism spectrum disorder, and what is the proposed microbial contribution to this phenomenon?",
+      "answer": "Hyperserotonemia refers to elevated whole-blood serotonin levels and is observed in approximately 30% of ASD patients. It is believed to be partly due to increased serotonin production in enterochromaffin cells in the gut. Hyperserotonemia has been postulated to represent a highly heritable biomarker of ASD, with the serotonin pathway as a whole thought to be dysfunctional in at least a subgroup of ASD individuals. In preclinical models, hyperserotonemia has been linked to social-behavioral deficits characteristic of ASD. Evidence suggests hyperserotonemia may have a microbial origin: elevated serum serotonin levels in environmental risk factor mouse models of ASD were associated with changes in bacteria known to stimulate serotonin production. Furthermore, the gut bacterium Turicibacter sanguinis expresses a protein with structural homology to the mammalian serotonin transporter (SERT), imports serotonin, and has its gut colonization modulated by serotonin and fluoxetine, suggesting a bidirectional host-microbe interaction in serotonin regulation.",
+      "topic_tags": ["hyperserotonemia", "serotonin", "ASD", "enterochromaffin cells", "Turicibacter sanguinis", "SERT", "gut microbiota"]
+    },
+    {
+      "id": "bgm_asd_medium_004",
+      "difficulty": "medium",
+      "question": "How does fecal microbiota transplantation (FMT) affect behavioral and metabolic outcomes in autism spectrum disorder, based on animal and human evidence?",
+      "answer": "FMT has been shown to alleviate behavioral symptoms of various neuropsychiatric disorders including ASD. In human clinical research, a modified FMT protocol called Microbiota Transfer Therapy (MTT) — combining antibiotic treatment, bowel cleanse, stomach-acid suppressant, and an extended fecal transplant — led to significant improvements in both GI and ASD symptoms, including social skill deficits. A majority of these improvements were sustained and even increased two years after treatment completion. Additionally, plasma and fecal metabolite profiles in the ASD group became more similar to those of typically developing controls following MTT. In animal models, transfer of ASD gut microbiota into germ-free mice induced hallmark ASD-like behaviors such as increased repetitive behavior, decreased locomotion and communication, and altered metabolome profiles. Conversely, FMT from typically developing donors reversed many of these behavioral deficits, demonstrating the causal role of microbiota in modulating ASD-like symptoms.",
+      "topic_tags": ["FMT", "fecal microbiota transplantation", "ASD", "MTT", "behavioral outcomes", "metabolome", "germ-free mice"]
+    },
+    {
+      "id": "bgm_asd_medium_005",
+      "difficulty": "medium",
+      "question": "What is the role of the amygdala in autism spectrum disorder, and how do gut microbiota influence amygdala structure and function?",
+      "answer": "The amygdalae are bilateral nuclei primarily involved in high-level information processing, emotional behaviors such as fear and aggression, decision-making, and social interaction. In ASD, the amygdala shows well-documented structural and functional impairments related to social and emotional processing. Rodent studies have found that microbial status influences amygdala volume, dendritic morphology, and spine density, as well as gene expression and neural development during critical time windows. The presence of microbiota has been shown to be necessary for socially induced gene expression regulation in the amygdala. The microbial metabolite propionic acid, which in excess has been linked to ASD symptomatology, significantly reduces social motivation and alters amygdala structure in rodents. In human infants, microbiome diversity has been negatively associated with functional connectivity of the amygdala during early brain development, and the developmental trajectory of amygdala functional connectivity in the first two years of life is a significant predictor of cognitive and emotional outcomes.",
+      "topic_tags": ["amygdala", "ASD", "gut microbiota", "propionic acid", "dendritic morphology", "functional connectivity", "early development"]
+    },
+    {
+      "id": "bgm_asd_medium_006",
+      "difficulty": "medium",
+      "question": "How does the insular cortex relate to gut microbiome composition, and why is this relationship particularly relevant to autism spectrum disorder?",
+      "answer": "The insular cortex, particularly the anterior insula, serves as a crucial hub for detecting salient events, processing interoceptive signals from the viscera including the gut, and integrating external sensory stimuli to guide behavior. Reduced connectivity in the anterior insula and dysfunction of this network have been consistently implicated in ASD. Research in healthy individuals and those with irritable bowel syndrome (IBS) demonstrates that insular structure is modulated by changes in the microbiome. Cortical thickness of the insula has been found to correlate with both IBS status and microbiota composition — specifically, Bacteroides abundance has been positively associated with insula cortical thickness in healthy women. Microbiota diversity has also been positively associated with resting-state functional connectivity between the middle insular cortices and frontal and cerebellar areas. Anterior and inferior insula connectivity has been correlated with Bacteroides and Prevotella — two genera with well-established abnormalities in individuals with ASD. Fecal microbiota-derived indole metabolites have further been positively associated with the anatomical and functional connectivity of the amygdala-anterior insula circuit.",
+      "topic_tags": ["insula", "gut microbiome", "interoception", "ASD", "Bacteroides", "Prevotella", "cortical thickness", "IBS"]
+    },
+
+    {
+      "id": "bgm_asd_hard_001",
+      "difficulty": "hard",
+      "question": "How does the serotonin transporter gene (5-HTTLPR) polymorphism modulate social brain network connectivity and amygdala function differently in individuals with autism spectrum disorder compared to typically developing individuals?",
+      "answer": "The serotonin transporter gene polymorphism 5-HTTLPR regulates serotonin transporter expression, with short variants reducing expression compared to long variants. In typically developing individuals, low expressing 5-HTTLPR alleles are associated with weaker posterior-anterior default mode network (DMN) connectivity. In ASD, this relationship is reversed: youth with ASD who have low expressing 5-HTTLPR alleles show stronger posterior-anterior DMN connectivity than those with high expressing genotypes, suggesting that 5-HTTLPR influences brain networks differently across diagnostic groups. At the level of the amygdala, ASD youth with low expressing genotypes fail to show amygdala habituation to repeated presentations of sad faces, unlike typically developing controls. When viewing happy faces, ASD individuals with low expressing genotypes show abnormally high functional connectivity between the amygdala and the subgenual anterior cingulate cortex (ACC) — key regions for emotion arousal and regulation — compared to all other groups. These findings collectively indicate that some of the socioemotional functioning differences during social processing in ASD may be partly driven by atypicalities in the serotonergic system, with 5-HTTLPR genotype contributing to the heterogeneity of social function in ASD.",
+      "topic_tags": ["5-HTTLPR", "serotonin transporter", "default mode network", "amygdala", "ASD", "social cognition", "functional connectivity", "habituation"]
+    },
+    {
+      "id": "bgm_asd_hard_002",
+      "difficulty": "hard",
+      "question": "What are the proposed multi-step mechanisms by which dysbiotic gut microbiota might causally contribute to the behavioral and neurological symptoms of autism spectrum disorder, integrating evidence from animal models and human studies?",
+      "answer": "Several converging lines of evidence support a causal role for dysbiotic gut microbiota in ASD-related behavioral and neurological symptoms. First, germ-free mice lacking microbiota display social avoidance, repetitive behaviors, and lack of social novelty interest — all ASD-like behaviors — which are reversed when colonized with microbiota from neurotypical mice. Second, transferring gut microbiota from ASD donors into germ-free mice induces hallmark ASD behaviors (increased repetitive behavior, decreased locomotion and communication) along with altered metabolome profiles, directly implicating microbial composition in behavioral outcomes. Third, key metabolic pathways are disrupted: dysbiotic microbiota alter tryptophan metabolism, shifting it toward excessive indole production and neurotoxic quinolinic acid, while depleting neuroprotective kynurenic acid and dysregulating serotonin synthesis and reuptake. These neuroactive metabolites can cross the gut and blood-brain barriers and affect brain function. Fourth, dysbiosis increases intestinal permeability, allowing systemic leakage of gut-derived metabolites including 4-ethylphenylsulfate, which has been linked to anxiety-like behavior in mouse models and can be reversed by probiotic treatment. Fifth, gut microbiota modulate brain structure and function over development through their effects on inflammatory signaling, HPA axis reactivity, and direct neuroendocrine pathways, with effects on amygdala connectivity, insula structure, and broader socioemotional neural networks. Taken together, the microbiome appears to influence ASD through convergent metabolic, neuroimmune, and structural pathways — though heterogeneity in ASD likely means that gut-microbial contributions are especially prominent in a subgroup with GI comorbidities.",
+      "topic_tags": ["dysbiosis", "ASD mechanisms", "germ-free mice", "tryptophan", "4-ethylphenylsulfate", "intestinal permeability", "neuroimaging", "causal pathways"]
+    },
+    {
+      "id": "bgm_asd_hard_003",
+      "difficulty": "hard",
+      "question": "How do the serotonin pathway abnormalities observed in autism spectrum disorder interconnect with gut microbiota dysbiosis, and what does the evidence from neuroimaging suggest about serotonin's role in social and emotional brain networks in ASD?",
+      "answer": "The connection between serotonin, gut microbiota, and ASD involves multiple levels. At the peripheral level, gut microbiota modulate serotonin biosynthesis in enterochromaffin cells, and dysbiosis in ASD is associated with hyperserotonemia — elevated whole-blood serotonin seen in approximately 30% of ASD patients. The gut bacterium Turicibacter sanguinis expresses a SERT-like protein and can import serotonin, suggesting that gut microbes directly participate in serotonin regulation in a bidirectional manner. The SERT Ala56 variant, overexpressed in ASD patients, causes excess central serotonin clearance, augmented serotonin receptor sensitivity, and hyperserotonemia, with downstream GI and neurobiological consequences. Neuroimaging studies reveal that serotonin transporter binding is globally reduced in adults with ASD, and reduced SERT binding in the anterior and posterior cingulate cortex correlates with impaired social cognition, while reduced binding in the thalamus correlates with repetitive behaviors. SERT availability in the nucleus accumbens, ACC, and putamen positively correlates with social cognition, suggesting serotonin transporter as a pharmacological target. Functional MRI studies show that ASD individuals have altered neural responses to serotonin availability in emotion-related brain regions — increased serotonin maintains activation in these regions rather than allowing habituation, consistent with homeostatic dysregulation. Acute tryptophan depletion (which lowers serotonin) causes deficits in facial affect processing and inhibitory control specifically in ASD, implicating the serotonergic system in core social and behavioral features. Taken together, gut microbiota dysbiosis may drive serotonin dysregulation that cascades through peripheral and central systems, ultimately contributing to atypical socioemotional neural network functioning in ASD.",
+      "topic_tags": ["serotonin", "SERT", "ASD", "neuroimaging", "PET", "fMRI", "social cognition", "gut microbiota", "hyperserotonemia", "tryptophan depletion"]
+    },
+    {
+      "id": "bgm_asd_hard_004",
+      "difficulty": "hard",
+      "question": "What methodological and conceptual challenges must future research address to establish causal relationships between gut microbiome alterations and ASD, and what integrated research strategies have been proposed?",
+      "answer": "Establishing causality between gut microbiome alterations and ASD faces several overlapping challenges. Observationally, studies show high inconsistency at phylum, genus, and species levels due to differences in collection methods, preprocessing, statistical analysis, participant age, sex, diet, specimen type, ASD heterogeneity, and presence of GI disorders — necessitating more homogeneous samples and standardized procedures. Determining direction of causality is fundamental: altered microbiota could be a consequence of ASD-related behaviors (e.g., food selectivity), a contributor to ASD pathophysiology, or both. Most studies have examined gut microbial composition in isolation using single-omics approaches, limiting mechanistic insight. Future research should prioritize: (1) prenatal trajectory studies tracking BGM interactions in pregnant mothers and their effects on fetal brain development, including maternal immune activation and dietary factors; (2) longitudinal tracking of microbial profiles and metabolic states from prenatal life through early childhood in high-risk infants, identifying biomarkers such as tryptophan metabolites and inflammatory markers; (3) multimodal studies combining transcriptomic, metabolomic, proteomic, and microbiome profiling with accurate dietary assessment, deep clinical phenotyping, and neuroimaging; (4) back-translational validation using humanized gnotobiotic mouse models; (5) microbiota-based intervention studies to directly assess causality; and (6) identification of ASD subgroups or clinical phenotypes with gut-microbial disturbances to enable individualized therapies. The goal is to move beyond compositional characterization toward a mechanistic understanding of how microbiome-brain-behavior interactions operate at molecular, structural, and functional levels.",
+      "topic_tags": ["causality", "ASD research methodology", "multi-omics", "longitudinal studies", "gnotobiotic models", "ASD heterogeneity", "biomarkers", "individualized medicine"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "bgm_asd_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Through which primary neural pathway does the gut communicate bidirectionally with brain regions such as the hypothalamus, amygdala, and insular cortex?",
+      "options": {
+        "A": "The sympathetic efferent pathway via spinal ganglia",
+        "B": "The afferent vagus nerve",
+        "C": "The hypothalamic-pituitary-adrenal (HPA) axis directly",
+        "D": "The enteric nervous system via interneurons only"
+      },
+      "correct_answer": "B",
+      "explanation": "The afferent vagus nerve transmits sensory information from visceral organs to brain regions including the hypothalamus, amygdala, and insular cortex, as well as to brainstem nuclei, serving as a critical pathway for bidirectional gut-brain communication in the BGM system.",
+      "topic_tags": ["vagus nerve", "gut-brain axis", "BGM system", "bidirectional communication"]
+    },
+    {
+      "id": "bgm_asd_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "Which neurotransmitter is the sole downstream product of tryptophan that is relevant to both mood regulation and neurodevelopment of the CNS and ENS?",
+      "options": {
+        "A": "Dopamine",
+        "B": "GABA",
+        "C": "Serotonin (5-HT)",
+        "D": "Acetylcholine"
+      },
+      "correct_answer": "C",
+      "explanation": "Tryptophan is the sole precursor to serotonin (5-HT), which is important for mood regulation, higher order cognition, and the neurodevelopment of both the CNS and ENS. More than 90% of the body's serotonin is produced in the GI tract by enterochromaffin cells.",
+      "topic_tags": ["serotonin", "tryptophan", "neurotransmitter", "ENS", "CNS"]
+    },
+    {
+      "id": "bgm_asd_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "What behavioral effects were observed in germ-free mice lacking any gut microbiota, and what happened when these mice were colonized with microbiota from neurotypically behaving mice?",
+      "options": {
+        "A": "Germ-free mice showed increased aggression; colonization had no effect on behavior",
+        "B": "Germ-free mice displayed social avoidance, repetitive behaviors, and lack of social novelty interest; colonization reversed many of these behavioral deficits",
+        "C": "Germ-free mice showed enhanced sociability; colonization reduced social behavior",
+        "D": "Germ-free mice were indistinguishable from colonized mice behaviorally"
+      },
+      "correct_answer": "B",
+      "explanation": "Male mice under germ-free rearing conditions engaged in social avoidant and repetitive behaviors and displayed a lack of interest in social novelty and social motivation — all ASD-like behaviors. When colonized with fecal bacteria from neurotypical mice, many of these behavioral deficits were reversed, demonstrating the significance of healthy microbiota for typical social functioning.",
+      "topic_tags": ["germ-free mice", "social behavior", "microbiota colonization", "ASD-like behaviors", "animal models"]
+    },
+
+    {
+      "id": "bgm_asd_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "What downstream metabolic imbalance in the kynurenine pathway is most consistently associated with increased neurotoxic potential in children with autism spectrum disorder?",
+      "options": {
+        "A": "Elevated kynurenic acid (KA) and decreased quinolinic acid (QA)",
+        "B": "Decreased KYN/KA ratios with normal QA levels",
+        "C": "Decreased kynurenic acid (KA), elevated KYN/KA ratios, and elevated quinolinic acid (QA)",
+        "D": "Increased tryptophan availability with decreased IDO activity"
+      },
+      "correct_answer": "C",
+      "explanation": "Children with ASD show significantly lower KA serum levels, higher KYN/KA ratios, and higher QA serum concentrations than typically developing children. Because QA is neurotoxic and KA is neuroprotective, this imbalance represents an increased potential for neurotoxicity in ASD, thought to be involved in the pathophysiology of the disorder.",
+      "topic_tags": ["kynurenine pathway", "kynurenic acid", "quinolinic acid", "neurotoxicity", "ASD", "IDO"]
+    },
+    {
+      "id": "bgm_asd_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "How does the microbial metabolite propionic acid relate to autism spectrum disorder at the level of the brain?",
+      "answer": "C",
+      "options": {
+        "A": "Propionic acid in moderate amounts promotes social motivation by stimulating amygdala activity",
+        "B": "Propionic acid activates serotonin production in the raphe nuclei, improving social behavior",
+        "C": "Excess propionic acid has been associated with ASD symptomatology, significantly reducing social motivation and altering amygdala structure in rodent models",
+        "D": "Propionic acid acts as a neuroprotective agent that reduces amygdala hyperreactivity in ASD"
+      },
+      "correct_answer": "C",
+      "explanation": "The microbial metabolite propionic acid, when present in excess, has been associated with ASD symptomatology. Animal studies have shown it significantly reduces social motivation and alters amygdala structure in rodents. Propionic acid has also been shown to modulate mitochondrial function, further implicating it in the neurobiological aspects of ASD.",
+      "topic_tags": ["propionic acid", "amygdala", "ASD", "social motivation", "microbial metabolites"]
+    },
+    {
+      "id": "bgm_asd_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "What is the significance of the SERT Ala56 variant in the context of autism spectrum disorder and serotonin biology?",
+      "options": {
+        "A": "SERT Ala56 reduces serotonin production in the raphe nuclei, causing hyposerotonemia in ASD",
+        "B": "SERT Ala56 is overexpressed in ASD patients and is linked to excess clearance of central serotonin, augmented serotonin receptor sensitivity, and hyperserotonemia, along with neurobiological and GI symptoms",
+        "C": "SERT Ala56 blocks tryptophan absorption in the gut, reducing available serotonin precursors",
+        "D": "SERT Ala56 is only expressed in the peripheral gut and has no CNS relevance"
+      },
+      "correct_answer": "B",
+      "explanation": "SERT Ala56, the most common SERT variant found overexpressed in ASD patients, causes excess clearance of central serotonin, augmented serotonin receptor sensitivity, and hyperserotonemia. Research has demonstrated a positive relationship between serotonin and SERT levels with autism symptom severity in humans, and SERT Ala56 mice exhibit serotonin-related dysfunction alongside GI symptoms.",
+      "topic_tags": ["SERT Ala56", "serotonin transporter", "hyperserotonemia", "ASD", "GI symptoms", "neurobiological symptoms"]
+    },
+    {
+      "id": "bgm_asd_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "Based on neuroimaging evidence, which brain regions show reduced serotonin transporter (SERT) binding in adults with autism spectrum disorder, and what behaviors correlate with binding in specific areas?",
+      "options": {
+        "A": "Only the hippocampus shows reduced SERT binding, correlating with memory deficits",
+        "B": "Global gray matter and brainstem show reduced SERT availability; thalamic binding reduction correlates with repetitive behaviors and ACC binding correlates with social cognition",
+        "C": "Only the prefrontal cortex shows reduced SERT binding, correlating with executive dysfunction",
+        "D": "SERT binding is increased across all brain regions in ASD, correlating with hyperactivity"
+      },
+      "correct_answer": "B",
+      "explanation": "PET studies have found reduced SERT binding in the anterior and posterior cingulate cortices (correlated with impaired social cognition) and reduced binding in the thalamus (correlated with repetitive behaviors). A more recent study found lower SERT availability in total gray matter and brainstem, with SERT availability in the nucleus accumbens, ACC, and putamen positively correlating with social cognition.",
+      "topic_tags": ["SERT", "PET neuroimaging", "ASD", "social cognition", "repetitive behaviors", "cingulate cortex", "thalamus"]
+    },
+    {
+      "id": "bgm_asd_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What is the proposed role of gut microbiota diversity during early infancy in relation to amygdala functional connectivity and long-term emotional and cognitive outcomes?",
+      "options": {
+        "A": "Higher microbiome diversity in infancy is consistently associated with stronger amygdala-thalamus connectivity and better emotional outcomes",
+        "B": "Microbiome diversity has no measurable relationship with amygdala connectivity during infancy",
+        "C": "Higher microbiome diversity in infancy is negatively associated with amygdala connectivity to regions such as the thalamus and anterior insula-ACC circuit, while being positively associated with sensorimotor-parietal connectivity linked to later cognitive ability",
+        "D": "Lower microbiome diversity in infancy is associated with better amygdala maturation and more efficient emotion processing"
+      },
+      "correct_answer": "C",
+      "explanation": "Research found strong negative associations between alpha diversity (microbiome diversity) and connectivity between the amygdala and thalamus, as well as between the right anterior insula and ACC. Higher diversity was also positively correlated with sensorimotor-parietal connectivity, which has been linked to cognitive ability at two years of age. These results suggest microbiome-associated changes in functional neural circuits during early human development.",
+      "topic_tags": ["microbiome diversity", "amygdala", "infant brain", "functional connectivity", "cognitive development", "early life"]
+    },
+
+    {
+      "id": "bgm_asd_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "What evidence supports the hypothesis that the gut bacterium Turicibacter sanguinis plays a direct role in modulating serotonin availability in the gut, and what are the implications for understanding ASD pathophysiology?",
+      "options": {
+        "A": "T. sanguinis synthesizes tryptophan de novo and donates it to enterochromaffin cells, increasing serotonin production in ASD",
+        "B": "T. sanguinis expresses a neurotransmitter sodium symporter-related protein homologous to mammalian SERT, imports serotonin via a fluoxetine-inhibitable mechanism, and has its colonization modulated by serotonin and fluoxetine — suggesting bidirectional microbe-host serotonin interactions relevant to ASD",
+        "C": "T. sanguinis degrades serotonin into tryptophan metabolites that cross the blood-brain barrier, directly causing hyperserotonemia in ASD",
+        "D": "T. sanguinis produces IDO, diverting tryptophan away from serotonin synthesis and causing hyposerotonemia in ASD"
+      },
+      "correct_answer": "B",
+      "explanation": "T. sanguinis expresses a neurotransmitter sodium symporter-related protein with structural and sequence homology to mammalian SERT. This microbe imports serotonin through a mechanism inhibited by fluoxetine. Serotonin reduces T. sanguinis sporulation and membrane transporter expression, which is reversed by fluoxetine. Treating with serotonin or fluoxetine modulates T. sanguinis's competitive colonization in antibiotic-treated mice, suggesting genetic variants in this microbial SERT-like mechanism may contribute to bidirectional host-microbe tryptophan metabolite interactions in ASD.",
+      "topic_tags": ["Turicibacter sanguinis", "SERT", "serotonin", "fluoxetine", "microbial colonization", "ASD", "gut microbiota"]
+    },
+    {
+      "id": "bgm_asd_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "How do perturbations to the BGM system during sensitive developmental periods differ in their consequences from those occurring in adulthood, and what specific neural and systemic pathways are most vulnerable?",
+      "options": {
+        "A": "Developmental perturbations are less impactful than adult perturbations because the infant immune system provides greater protection to the microbiome",
+        "B": "Early life perturbations (from stress, antibiotics, diet, or infection) can alter blood-brain barrier integrity, disrupt brain-gut signaling, impair immune system development, negatively affect cognitive and socioemotional outcomes, and increase risk for neurodevelopmental disorders — effects not observed with equivalent adult exposures",
+        "C": "BGM perturbations have equal effects regardless of developmental timing, as the gut microbiome has the same resilience at all life stages",
+        "D": "Only postnatal perturbations matter; prenatal factors such as maternal stress have no documented effect on offspring BGM system development"
+      },
+      "correct_answer": "B",
+      "explanation": "The developing microbiome is particularly sensitive during early life, and perturbations from stress, adversity, diet, environmental microbes, and antibiotics have both immediate and long-term negative effects on immune system integrity, metabolism, and overall health. Early life dysbiosis can alter the blood-brain barrier and brain-gut signaling. Such perturbations during sensitive developmental periods have been linked to negative cognitive outcomes, socioemotional dysfunction, and internalizing and externalizing problem behaviors. Prenatal maternal factors including psychosocial stress, infections, obesity, and metabolic syndrome can also cause dysbiosis and dysregulated immune activation, posing significant risks to offspring neurodevelopment.",
+      "topic_tags": ["developmental windows", "early life microbiome", "blood-brain barrier", "neurodevelopment", "prenatal factors", "immune system", "sensitive periods"]
+    }
+  ]
+}

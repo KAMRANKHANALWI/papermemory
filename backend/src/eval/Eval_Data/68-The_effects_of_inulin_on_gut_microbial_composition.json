@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "The effects of inulin on gut microbial composition: a systematic review of evidence from human studies",
+    "authors": ["Quentin Le Bastard", "Guillaume Chapelet", "François Javaudin", "Didier Lepelletier", "Eric Batard", "Emmanuel Montassier"],
+    "journal": "European Journal of Clinical Microbiology & Infectious Diseases",
+    "year": 2020,
+    "doi": "10.1007/s10096-019-03721-w",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings from a systematic review of inulin's effects on human gut microbiota — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "inulin_gmb_easy_001",
+      "difficulty": "easy",
+      "question": "What is inulin and how is it structurally defined?",
+      "answer": "Inulin is a prebiotic dietary fiber consisting of repetitive fructosyl units linked by β(2,1) bonds. It is classified as a non-digestible food ingredient that beneficially affects the host by selectively stimulating the growth and/or activity of one or a limited number of bacterial species in the colon. It is readily fermentable by intestinal bacteria and is capable of generating large quantities of short-chain fatty acids (SCFAs).",
+      "topic_tags": ["inulin", "prebiotic", "fructosyl units", "structure", "definition"]
+    },
+    {
+      "id": "inulin_gmb_easy_002",
+      "difficulty": "easy",
+      "question": "What is the most consistently observed microbial change following inulin supplementation in humans?",
+      "answer": "The most consistently observed microbial change following inulin supplementation is an increase in the relative abundance of the genus Bifidobacterium. This finding was reported across all included studies. At the species level, increases in Bifidobacterium longum, Bifidobacterium adolescentis, Bifidobacterium breve, and Bifidobacterium pseudolongum were specifically noted in multiple reports.",
+      "topic_tags": ["Bifidobacterium", "inulin supplementation", "microbiota change", "bifidogenic effect"]
+    },
+    {
+      "id": "inulin_gmb_easy_003",
+      "difficulty": "easy",
+      "question": "What are prebiotics and what health benefits are they associated with?",
+      "answer": "Prebiotics are defined as non-digestible food ingredients that beneficially affect the host by selectively stimulating the growth and/or activity of one or a limited number of bacteria in the colon, thereby improving health. They have been recognized since 1995. Inulin, as a well-studied prebiotic, has been associated with increased stool frequency in constipated individuals. The European Food Safety Authority has stated that native chicory inulin contributes to maintenance of normal defecation at a daily consumption of 12 g.",
+      "topic_tags": ["prebiotics", "definition", "health benefits", "dietary fiber", "constipation"]
+    },
+    {
+      "id": "inulin_gmb_easy_004",
+      "difficulty": "easy",
+      "question": "What other bacterial genera, beyond Bifidobacterium, show concordant increases in abundance following inulin supplementation?",
+      "answer": "Beyond Bifidobacterium, the genera Anaerostipes, Faecalibacterium, and Lactobacillus showed concordant increases in relative abundance following inulin supplementation across multiple studies. Anaerostipes increased in two studies, while Faecalibacterium and Lactobacillus each increased in three studies. Conversely, the genus Bacteroides showed a consistent decrease in relative abundance in three studies.",
+      "topic_tags": ["Anaerostipes", "Faecalibacterium", "Lactobacillus", "Bacteroides", "inulin", "microbiota"]
+    },
+    {
+      "id": "inulin_gmb_easy_005",
+      "difficulty": "easy",
+      "question": "What diversity metrics are used to characterize gut microbiota changes in response to dietary interventions?",
+      "answer": "Gut microbiota diversity is typically assessed using two complementary metrics. Alpha diversity measures diversity within each individual sample and can be reported using the Shannon index, Chao1 index, Simpson index, observed OTU count, or phylogenetic diversity. Beta diversity represents the intervariability between samples and describes how samples cluster together, commonly measured using Bray-Curtis or UniFrac distance matrices. An OTU (operational taxonomic unit) is a population of phylogenetically related organisms grouped by 16S rRNA sequence similarity, typically at a 97% similarity threshold.",
+      "topic_tags": ["alpha diversity", "beta diversity", "Shannon index", "Chao1", "OTU", "microbiome assessment"]
+    },
+
+    {
+      "id": "inulin_gmb_medium_001",
+      "difficulty": "medium",
+      "question": "What is the proposed mechanism by which inulin supplementation leads to an increase in Anaerostipes abundance?",
+      "answer": "The proposed mechanism for Anaerostipes increase following inulin supplementation involves cross-feeding relationships. Anaerostipes is thought to use lactate and acetate as substrates — metabolites produced by the inulin-stimulated increase in Bifidobacterium. This cross-feeding dynamic means that the rise in Anaerostipes is not necessarily from direct inulin fermentation, but rather from utilizing the fermentation products of Bifidobacterium. It has also been suggested that Anaerostipes may have some capacity to metabolize inulin directly.",
+      "topic_tags": ["Anaerostipes", "cross-feeding", "Bifidobacterium", "lactate", "acetate", "inulin fermentation"]
+    },
+    {
+      "id": "inulin_gmb_medium_002",
+      "difficulty": "medium",
+      "question": "Why might inulin supplementation decrease the relative abundance of Bacteroides in the gut?",
+      "answer": "The proposed mechanism for the decrease in Bacteroides relative abundance following inulin supplementation is linked to a reduction in intestinal pH. Inulin fermentation by intestinal bacteria generates large quantities of short-chain fatty acids (SCFAs), and the resulting increase in acid production lowers the pH of the colonic environment. Since Bacteroides are sensitive to acidic conditions, this pH shift likely creates a less favorable environment for their proliferation, leading to a reduction in their relative abundance.",
+      "topic_tags": ["Bacteroides", "pH reduction", "SCFA", "fermentation", "inulin", "microbiota modulation"]
+    },
+    {
+      "id": "inulin_gmb_medium_003",
+      "difficulty": "medium",
+      "question": "How does prior dietary fiber intake influence the gut microbiota response to inulin-type fructan supplementation?",
+      "answer": "Prior habitual dietary fiber intake is a significant modifier of the gut microbiota response to inulin supplementation. Studies examining participants stratified by low and high dietary fiber intake found large inter-individual variability in whole-community microbiota responses to inulin prebiotic. For example, increases in Lactobacillus were specifically observed in the low dietary fiber (LDF) group, while increases in Faecalibacterium were more pronounced in the high dietary fiber (HDF) group. This suggests that baseline dietary patterns shape the composition and functional capacity of the resident microbiota, which in turn determines the magnitude and nature of the response to prebiotic intervention.",
+      "topic_tags": ["dietary fiber intake", "inter-individual variability", "prebiotic response", "Lactobacillus", "Faecalibacterium", "baseline microbiota"]
+    },
+    {
+      "id": "inulin_gmb_medium_004",
+      "difficulty": "medium",
+      "question": "What is the discrepancy between in vitro and in vivo findings regarding inulin's ability to increase short-chain fatty acid production?",
+      "answer": "In vitro experiments have established inulin as a readily fermentable fiber capable of generating large quantities of SCFAs. However, in vivo human studies failed to confirm this relationship. Despite finding increases in members of the Bifidobacteriaceae, Lachnospiraceae, and Ruminococcaceae families — which include most known butyrate producers — inulin supplementation was not consistently associated with significant increases in fecal butyrate or total SCFA levels. This disconnect suggests that the link between inulin-stimulated microbiota changes and SCFA production is more complex in the in vivo setting than what is observed in controlled in vitro conditions.",
+      "topic_tags": ["SCFA", "butyrate", "in vitro vs in vivo", "inulin", "fermentation", "microbiota"]
+    },
+    {
+      "id": "inulin_gmb_medium_005",
+      "difficulty": "medium",
+      "question": "Can inulin supplementation worsen inflammatory bowel disease, and what is the proposed mechanism?",
+      "answer": "Yes, inulin supplementation can potentially worsen inflammatory bowel disease (IBD) in certain contexts. Animal studies demonstrated that replacing cellulose with inulin exacerbated induced colitis through enrichment of butyrate-producing bacteria in the gut. This paradoxical worsening, despite butyrate's general anti-inflammatory reputation, suggests that in an already inflamed intestinal environment, the specific pattern of microbial stimulation by inulin can promote dysbiosis and worsen disease. Furthermore, the American College of Gastroenterology recommends against the use of prebiotics for overall symptom improvement in patients with irritable bowel syndrome (IBS), and serious adverse events in clinical trials manipulating the gut microbiome are often not reported or inadequately measured.",
+      "topic_tags": ["IBD", "inulin", "adverse effects", "dysbiosis", "butyrate", "colitis", "IBS"]
+    },
+    {
+      "id": "inulin_gmb_medium_006",
+      "difficulty": "medium",
+      "question": "What are the key methodological limitations of using 16S rRNA sequencing to assess gut microbiota changes in dietary intervention studies?",
+      "answer": "16S rRNA sequencing, while widely used for gut microbiota characterization, has several important limitations in the context of dietary intervention studies. It is unable to provide resolution at the species or strain level, which is critical for understanding the precise functional implications of microbiota changes. It also cannot provide information on microbial functional capacity — meaning it identifies who is present but not what metabolic activities they are performing. This limitation is particularly relevant when assessing interventions like inulin supplementation, where the relationship between taxonomic changes and metabolite production (e.g., SCFAs) is not straightforward. Future research should therefore incorporate metatranscriptomics, metaproteomics, and metabolomics to gain a more complete understanding of dietary intervention effects.",
+      "topic_tags": ["16S sequencing", "methodological limitations", "species resolution", "functional capacity", "metatranscriptomics", "metabolomics"]
+    },
+
+    {
+      "id": "inulin_gmb_hard_001",
+      "difficulty": "hard",
+      "question": "How does Faecalibacterium prausnitzii respond to inulin supplementation and what are the mechanistic and clinical implications of this response?",
+      "answer": "Faecalibacterium prausnitzii shows concordant increases in relative abundance following inulin supplementation, observed across multiple studies in both healthy subjects and individuals with metabolic conditions. Mechanistically, F. prausnitzii has the demonstrated capacity to ferment inulin to butyrate, and in vitro evidence confirms it can degrade oligofructose. The clinical implications are significant: F. prausnitzii is known to produce an anti-inflammatory protein that inhibits the NF-κB pathway in intestinal epithelial cells, and it is found at reduced levels in Crohn's disease patients. Therefore, inulin-driven enrichment of F. prausnitzii could provide anti-inflammatory benefits through butyrate production and direct immunomodulatory activity. However, despite the taxonomic increases observed in vivo, these changes were not consistently accompanied by measurable increases in fecal butyrate, suggesting that functional translation of the taxonomic shift is more complex than anticipated. In IBD patients, increases in Faecalibacterium were specifically observed at intermediate inulin doses (7.5 g/day), highlighting a possible dose-dependent and disease context-dependent response.",
+      "topic_tags": ["Faecalibacterium prausnitzii", "butyrate", "NF-κB", "inulin fermentation", "anti-inflammatory", "IBD", "clinical implications"]
+    },
+    {
+      "id": "inulin_gmb_hard_002",
+      "difficulty": "hard",
+      "question": "What is the impact of inulin supplementation on overall gut microbiota diversity, and how should these findings be interpreted given the high inter-individual variability observed?",
+      "answer": "The impact of inulin supplementation on overall gut microbiota diversity is inconsistent. Studies assessing alpha diversity largely found no significant changes using metrics such as Shannon index, Chao1, or inverse Simpson index, with only one study reporting a decrease in observed species. For beta diversity, three studies reported significant changes in overall community structure following inulin supplementation, while two others found no change. A critical finding relevant to interpreting all diversity results is the high inter-individual variability: some participants showed pre- and post-intervention samples clustering closely together (indicating minimal microbiota change), while others showed their samples clustering far apart (indicating marked community restructuring). This extreme variability means that group-level diversity statistics may obscure individual-level responses, and that population-level average effects of inulin may not reflect what any given individual experiences. Controlling for potential confounders — including baseline diet, medication use, and resident microbiota composition — is essential in future, adequately powered trials to accurately characterize the effect of inulin on gut diversity.",
+      "topic_tags": ["alpha diversity", "beta diversity", "inter-individual variability", "microbiota structure", "inulin response", "confounders"]
+    },
+    {
+      "id": "inulin_gmb_hard_003",
+      "difficulty": "hard",
+      "question": "How does the metabolic cross-feeding network involving Bifidobacterium, Anaerostipes, and butyrate-producing bacteria relate to the expected but unobserved SCFA increases following inulin supplementation?",
+      "answer": "The expected metabolic cascade following inulin supplementation involves a hierarchical cross-feeding network: inulin is fermented by Bifidobacterium (which has the enzymatic capacity to degrade oligofructose), producing lactate and acetate as primary fermentation products. These metabolites are then consumed by Anaerostipes and other lactate-utilizing bacteria such as Eubacterium hallii, which convert them to butyrate. This cross-feeding model predicts that inulin-driven bifidogenic activity should ultimately translate into increased butyrate levels. However, in vivo human studies consistently failed to detect significant increases in fecal butyrate or total SCFA levels, despite observing increases in Bifidobacteriaceae, Lachnospiraceae, and Ruminococcaceae — families that include the major butyrate producers. This paradox suggests that the cross-feeding network is more context-dependent and metabolically flexible than in vitro models predict. Possible explanations include rapid absorption of butyrate by colonocytes before it reaches fecal sampling sites, altered metabolic routing under in vivo conditions, and insufficient sensitivity of bulk fecal SCFA measurements to detect localized microenvironmental changes. This highlights the need for functional approaches — including metabolomics and stable isotope tracing — to properly characterize inulin's metabolic impact.",
+      "topic_tags": ["cross-feeding", "Bifidobacterium", "Anaerostipes", "butyrate", "SCFA", "inulin fermentation", "in vivo paradox", "metabolic network"]
+    },
+    {
+      "id": "inulin_gmb_hard_004",
+      "difficulty": "hard",
+      "question": "What are the critical methodological limitations of current human intervention studies on inulin and gut microbiota, and how do these affect the interpretation of results and the design of future research?",
+      "answer": "Current human intervention studies on inulin's effects on gut microbiota are limited by several intersecting methodological weaknesses. First, most studies relied on convenience sampling without formal sample size calculations, resulting in small cohorts with limited statistical power. Second, studies conducted multiple statistical tests for taxonomic changes without applying corrections for multiple testing, which likely inflated false-positive rates. Third, adverse event reporting was inconsistent, undermining safety evaluation. Fourth, there was substantial heterogeneity across studies in supplementation doses (ranging from 5 to 20 g/day), inulin sources (chicory, agave, artichoke), duration, and the presence of co-supplemented compounds such as oligofructose — making pooled analysis or direct comparison infeasible. Fifth, 16S sequencing methods precluded species- and strain-level resolution and provided no functional data. Sixth, the high inter-individual variability in microbiota architecture, shaped by background diet, medication use, and host genetics, acted as a major uncontrolled confounder. The implication for future research is a need for larger, adequately powered trials with standardized supplementation protocols; correction for multiple comparisons; comprehensive adverse event monitoring; functional omics approaches including metatranscriptomics, metaproteomics, and metabolomics; and careful covariate control, particularly for baseline diet and microbiota composition, to extract meaningful and reproducible insights.",
+      "topic_tags": ["methodological limitations", "sample size", "multiple testing", "inter-individual variability", "heterogeneity", "future research", "omics approaches"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "inulin_gmb_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which genus shows the most consistent increase in relative abundance following inulin supplementation across human studies?",
+      "options": {
+        "A": "Bacteroides",
+        "B": "Lactobacillus",
+        "C": "Bifidobacterium",
+        "D": "Faecalibacterium"
+      },
+      "correct_answer": "C",
+      "explanation": "Bifidobacterium showed an increase in all included studies, making it the most consistently observed microbial change. This is explained by Bifidobacterium's well-documented capacity to degrade oligofructose, the core fructan structure of inulin.",
+      "topic_tags": ["Bifidobacterium", "inulin supplementation", "bifidogenic effect", "microbiota change"]
+    },
+    {
+      "id": "inulin_gmb_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What structural feature distinguishes inulin from digestible carbohydrates?",
+      "options": {
+        "A": "It consists of glucose units linked by α(1,4) glycosidic bonds",
+        "B": "It consists of repetitive fructosyl units linked by β(2,1) bonds, making it resistant to human digestive enzymes",
+        "C": "It is a branched polymer of galactose and mannose units",
+        "D": "It contains alternating glucose and galactose units joined by β(1,4) bonds"
+      },
+      "correct_answer": "B",
+      "explanation": "Inulin is defined by its β(2,1) fructosyl-fructose bonds, which human digestive enzymes cannot cleave. This non-digestibility allows inulin to reach the colon intact, where it is fermented by specific bacterial species, conferring its prebiotic properties.",
+      "topic_tags": ["inulin", "structure", "β(2,1) bonds", "non-digestible", "prebiotic"]
+    },
+    {
+      "id": "inulin_gmb_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "Which of the following genera consistently decreases in relative abundance following inulin supplementation?",
+      "options": {
+        "A": "Bifidobacterium",
+        "B": "Anaerostipes",
+        "C": "Faecalibacterium",
+        "D": "Bacteroides"
+      },
+      "correct_answer": "D",
+      "explanation": "Three studies reported a decrease in Bacteroides following inulin supplementation. The proposed mechanism is that the increased production of SCFAs from inulin fermentation reduces colonic pH, creating an unfavorable environment for Bacteroides.",
+      "topic_tags": ["Bacteroides", "inulin", "microbiota decrease", "SCFA", "pH"]
+    },
+
+    {
+      "id": "inulin_gmb_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "Why did in vivo human studies fail to detect significant increases in fecal butyrate despite observing increases in known butyrate-producing bacterial families after inulin supplementation?",
+      "options": {
+        "A": "Inulin selectively stimulates propionate-producing bacteria rather than butyrate producers",
+        "B": "The relationship between taxonomic enrichment of butyrate-producing bacteria and actual butyrate production is more complex in vivo than in vitro experiments suggest",
+        "C": "Butyrate is produced in the small intestine and is not measurable in fecal samples",
+        "D": "The studies used incorrect sequencing methods that overestimated the abundance of butyrate-producing families"
+      },
+      "correct_answer": "B",
+      "explanation": "Despite increases in Bifidobacteriaceae, Lachnospiraceae, and Ruminococcaceae — all known butyrate-producing families — fecal butyrate levels did not significantly increase in vivo. This suggests that the in vivo relationship between microbial community shifts and SCFA production is more complex than predicted by in vitro experiments, possibly involving rapid colonocyte absorption, metabolic routing differences, or limitations of bulk fecal metabolite measurement.",
+      "topic_tags": ["butyrate", "SCFA", "in vitro vs in vivo", "inulin", "functional gap"]
+    },
+    {
+      "id": "inulin_gmb_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "What is the proposed mechanism by which inulin supplementation indirectly increases the abundance of Anaerostipes?",
+      "options": {
+        "A": "Anaerostipes directly ferments inulin polysaccharides to produce butyrate",
+        "B": "Anaerostipes utilizes lactate and acetate produced by inulin-stimulated Bifidobacterium as growth substrates",
+        "C": "Anaerostipes expands because Bacteroides decline removes competitive exclusion",
+        "D": "Anaerostipes is stimulated by the reduction in pH caused by SCFA production from inulin"
+      },
+      "correct_answer": "B",
+      "explanation": "The primary proposed mechanism is cross-feeding: inulin fermentation by Bifidobacterium produces lactate and acetate, which Anaerostipes can utilize as growth substrates and convert into butyrate. This indirect stimulation via cross-feeding, rather than direct inulin degradation, explains the Anaerostipes increase observed in multiple studies.",
+      "topic_tags": ["Anaerostipes", "cross-feeding", "Bifidobacterium", "lactate", "acetate", "butyrate"]
+    },
+    {
+      "id": "inulin_gmb_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "What does the high inter-individual variability in gut microbiota response to inulin supplementation imply for interpreting results from prebiotic intervention studies?",
+      "options": {
+        "A": "It suggests that inulin is ineffective and should not be studied further",
+        "B": "It indicates that only participants with low baseline fiber intake benefit from inulin",
+        "C": "It means that group-level averages may obscure heterogeneous individual responses and that confounders such as baseline diet and resident microbiota must be controlled",
+        "D": "It implies that beta diversity metrics are more reliable than alpha diversity for measuring prebiotic effects"
+      },
+      "correct_answer": "C",
+      "explanation": "In one study, some participants showed their pre- and post-intervention samples clustering together (minimal microbiota change), while others showed their samples very distant (marked restructuring). This large variability means population-level statistics may misrepresent what individuals experience, and highlights the importance of controlling for baseline diet, medication use, and microbiota composition in future trials.",
+      "topic_tags": ["inter-individual variability", "prebiotic response", "confounders", "microbiota", "study design"]
+    },
+    {
+      "id": "inulin_gmb_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "How does habitual dietary fiber intake modify the gut microbiota response to inulin-type fructan supplementation?",
+      "options": {
+        "A": "High dietary fiber intake amplifies the bifidogenic response to inulin because the existing microbiota is already primed for fructan fermentation",
+        "B": "Low dietary fiber intake abolishes any response to inulin because the microbiota is too depleted to ferment prebiotics",
+        "C": "Habitual fiber intake shapes the baseline resident microbiota, which determines whether specific taxa like Lactobacillus or Faecalibacterium respond to inulin",
+        "D": "Both high and low fiber intake groups show identical microbiota responses to inulin, confirming that baseline diet is irrelevant"
+      },
+      "correct_answer": "C",
+      "explanation": "Studies stratifying participants by low (LDF) and high (HDF) dietary fiber intake found different patterns of microbiota response. Lactobacillus increases were observed specifically in the LDF group, while Faecalibacterium increases were more pronounced in the HDF group. This indicates that baseline dietary fiber habits shape the existing microbiota, which in turn determines which taxa respond to prebiotic supplementation.",
+      "topic_tags": ["dietary fiber intake", "LDF", "HDF", "Lactobacillus", "Faecalibacterium", "prebiotic response modifier"]
+    },
+    {
+      "id": "inulin_gmb_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What key limitation arises from the use of 16S rRNA sequencing in studies examining the effects of dietary interventions on the gut microbiome?",
+      "options": {
+        "A": "16S sequencing cannot detect changes in bacterial relative abundance at the genus or family level",
+        "B": "16S sequencing is unable to provide species- and strain-level resolution and cannot characterize microbial functional capacity",
+        "C": "16S sequencing systematically underestimates Firmicutes and overestimates Bacteroidetes in human fecal samples",
+        "D": "16S sequencing requires fresh stool samples and cannot be used with frozen biobanked specimens"
+      },
+      "correct_answer": "B",
+      "explanation": "While 16S sequencing is widely used for microbiome profiling, its major limitation is that it cannot reliably distinguish taxa below the genus level (species and strains), and it provides no information about functional gene content or activity. Since strain-level variation is critical for determining metabolic outputs (e.g., which Bifidobacterium strains produce which metabolites), and since dietary intervention effects may be driven by functional rather than compositional changes, this limitation significantly constrains the conclusions that can be drawn.",
+      "topic_tags": ["16S sequencing", "species resolution", "functional capacity", "methodological limitation", "microbiome"]
+    },
+
+    {
+      "id": "inulin_gmb_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "Which of the following best explains the paradox of Ruminococcus abundance changes observed across inulin supplementation studies?",
+      "options": {
+        "A": "Ruminococcus universally increases after inulin supplementation because all species in this genus can ferment fructans",
+        "B": "Some Ruminococcus species increased in abundance while Ruminococcus gnavus specifically decreased, suggesting species-level heterogeneity within this genus with distinct responses to inulin",
+        "C": "Ruminococcus changes are an artifact of 16S sequencing database inconsistencies between studies",
+        "D": "Ruminococcus consistently decreases because it competes with Bifidobacterium for fructan substrates and loses"
+      },
+      "correct_answer": "B",
+      "explanation": "The studies reported opposing trends within the same genus: some studies found increased Ruminococcus relative abundance following inulin, while one study specifically reported a decrease in Ruminococcus gnavus. R. gnavus is known to harbour an intramolecular trans-sialidase enabling mucin degradation, and behaves differently from other Ruminococcaceae members. This species-level heterogeneity demonstrates why genus-level taxonomy is insufficient and why strain- or species-level resolution is necessary to accurately characterize microbiota responses to dietary interventions.",
+      "topic_tags": ["Ruminococcus", "Ruminococcus gnavus", "species heterogeneity", "inulin", "genus-level limitation"]
+    },
+    {
+      "id": "inulin_gmb_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "Why should future research on inulin's effects on the gut microbiome incorporate metatranscriptomics, metaproteomics, and metabolomics in addition to 16S sequencing?",
+      "options": {
+        "A": "Because 16S sequencing is too expensive and these methods provide cheaper alternatives for assessing diversity",
+        "B": "Because taxonomic profiling alone cannot capture whether detected microbial changes translate into altered functional outputs, such as SCFA biosynthesis or immune-modulating metabolite production",
+        "C": "Because metatranscriptomics provides species-level phylogenetic resolution superior to 16S rRNA amplicon sequencing",
+        "D": "Because these methods are required by regulatory agencies before inulin can be approved as a therapeutic prebiotic"
+      },
+      "correct_answer": "B",
+      "explanation": "The central unresolved discrepancy in inulin research is that taxonomic enrichment of known SCFA-producing bacteria did not translate into measurable increases in fecal butyrate or SCFA levels. Metatranscriptomics (gene expression), metaproteomics (protein activity), and metabolomics (metabolite profiles) provide layers of functional information that explain whether and how compositional changes produce metabolic consequences. Without these approaches, the downstream health implications of inulin-induced microbiota changes remain unclear and cannot be mechanistically interpreted.",
+      "topic_tags": ["metatranscriptomics", "metabolomics", "functional microbiome", "SCFA", "16S limitation", "future research"]
+    }
+  ]
+}

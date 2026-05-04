@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Gut Microbiome in Colorectal Cancer: Clinical Diagnosis and Treatment",
+    "authors": ["Yali Liu", "Harry Cheuk-Hay Lau", "Wing Yin Cheng", "Jun Yu"],
+    "journal": "Genomics Proteomics Bioinformatics",
+    "year": 2023,
+    "doi": "10.1016/j.gpb.2022.07.002",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "CRC_GMB_easy_001",
+      "difficulty": "easy",
+      "question": "What is gut dysbiosis and how has it been linked to colorectal cancer development?",
+      "answer": "Gut dysbiosis refers to a pathological imbalance in the gut microbiome composition. In the context of colorectal cancer (CRC), dysbiosis is characterized by enrichment of pro-carcinogenic taxa such as Bacteroides fragilis, pks+ Escherichia coli, and Fusobacterium nucleatum, alongside depletion of potentially protective taxa like Clostridium butyricum, Roseburia, and Bifidobacterium. This altered microbial landscape has been strongly associated with cancer initiation and progression. Evidence supporting this link includes the observation that germ-free and conventional mice treated with azoxymethane developed more polyps and higher levels of intestinal dysplasia when fed feces from CRC patients, demonstrating a functional role for dysbiotic microbiota in colorectal tumorigenesis.",
+      "topic_tags": ["dysbiosis", "colorectal cancer", "pro-carcinogenic bacteria", "gut microbiome imbalance"]
+    },
+    {
+      "id": "CRC_GMB_easy_002",
+      "difficulty": "easy",
+      "question": "What are the main mechanisms by which Fusobacterium nucleatum promotes colorectal cancer development?",
+      "answer": "Fusobacterium nucleatum promotes CRC through several mechanisms. First, it adheres to N-acetyl-D-galactosamine (Gal-GalNAc)-expressing CRC cells via its surface protein Fap2, facilitating colonization and enrichment in tumor tissue. Second, it secretes the adhesin FadA, which binds to E-cadherin and activates beta-catenin signaling, promoting both inflammatory and oncogenic responses. Third, the Fap2 protein also binds to the immunosuppressive receptor TIGIT on immune cells, thereby inhibiting the cytotoxic effects of T cells and natural killer cells on tumors. Fourth, F. nucleatum activates the pro-inflammatory NF-κB pathway, further contributing to CRC progression. Clinically, high intratumoral abundance of F. nucleatum has been associated with resistance to chemotherapy drugs such as oxaliplatin and 5-fluorouracil.",
+      "topic_tags": ["Fusobacterium nucleatum", "CRC mechanisms", "FadA adhesin", "Fap2", "beta-catenin", "TIGIT", "chemoresistance"]
+    },
+    {
+      "id": "CRC_GMB_easy_003",
+      "difficulty": "easy",
+      "question": "How do short-chain fatty acids, particularly butyrate, exert protective effects against colorectal cancer?",
+      "answer": "Short-chain fatty acids (SCFAs), especially butyrate, have multiple anti-tumorigenic properties relevant to CRC. Butyrate inhibits histone deacetylases in colonocytes and immune cells, promoting hyperacetylation of transcription factors involved in signal transduction, which leads to downregulation of pro-inflammatory factors, inhibition of cell proliferation, and selective induction of apoptosis in CRC cells. It also inhibits angiogenesis and suppresses the growth of pathogenic gut bacteria. In healthy or precancerous states, butyrate serves as the primary energy source for colonocytes, promoting their proliferation, increasing crypt depth, thickening the mucosa, and reinforcing the intestinal barrier — all of which contribute to CRC prevention. Additionally, butyrate activates PPAR-γ signaling, which limits luminal nitrate availability and restricts the overgrowth of potentially pathogenic bacteria like E. coli and Salmonella in the colon.",
+      "topic_tags": ["butyrate", "SCFAs", "anti-tumorigenic", "histone deacetylase", "PPAR-gamma", "colonocytes", "CRC prevention"]
+    },
+    {
+      "id": "CRC_GMB_easy_004",
+      "difficulty": "easy",
+      "question": "What is the role of fecal microbiota transplantation (FMT) in modulating colorectal cancer outcomes?",
+      "answer": "Fecal microbiota transplantation (FMT) has demonstrated bidirectional effects on CRC depending on the donor source. Transplanting feces from CRC patients into germ-free mice increases tissue inflammation and expression of pro-inflammatory genes, thereby promoting colorectal carcinogenesis — indicating the tumor-promoting potential of a dysbiotic CRC microbiome. Conversely, FMT from long-term CRC survivors boosts immune responses and limits tumor growth in mouse models by altering the tumor microbiome. In clinical settings, a trial in immunotherapy-refractory melanoma patients showed that FMT from donors who had achieved complete response to nivolumab could restore sensitivity to immune checkpoint inhibitors, with some patients showing complete or partial responses and increased infiltration of immune cells in the tumor microenvironment. These findings support FMT as a potential adjuvant strategy to modulate microbiome composition for improved cancer therapy outcomes.",
+      "topic_tags": ["fecal microbiota transplantation", "FMT", "tumor microbiome", "immunotherapy", "CRC", "germ-free mice"]
+    },
+    {
+      "id": "CRC_GMB_easy_005",
+      "difficulty": "easy",
+      "question": "How does diet and lifestyle influence the gut microbiome in the context of colorectal cancer risk?",
+      "answer": "Diet and lifestyle are major modulators of gut microbiome composition, which in turn affects CRC risk. An unhealthy diet — particularly excess fat intake — accelerates colorectal tumorigenesis by inducing gut dysbiosis with enrichment of pathogenic bacteria and accumulation of the harmful metabolite lysophosphatidic acid. In contrast, high fiber intake is associated with increased levels of SCFAs and higher abundance of SCFA-producing bacteria such as Eubacterium rectale and Clostridium symbiosum, which modulate host immunity and suppress inflammation to prevent CRC. Physical activity also plays a protective role; frequent exercise is associated with reduced CRC risk, increased microbiome diversity, and enrichment of SCFA-producing bacteria. Western diets and sedentary lifestyles therefore contribute to CRC development through microbiome-mediated pathways.",
+      "topic_tags": ["diet", "lifestyle", "CRC risk", "gut microbiome", "SCFAs", "fiber", "exercise", "dysbiosis"]
+    },
+
+    {
+      "id": "CRC_GMB_medium_001",
+      "difficulty": "medium",
+      "question": "How does Bacteroides fragilis enterotoxin (BFT) promote colorectal tumorigenesis through molecular signaling pathways?",
+      "answer": "Enterotoxin-producing Bacteroides fragilis secretes a zinc-dependent metalloprotease called B. fragilis enterotoxin (BFT). BFT promotes colorectal tumorigenesis through several interconnected mechanisms. First, it cleaves E-cadherin on colonic epithelial cells, disrupting cell-cell adhesion and increasing intestinal permeability, which facilitates pathogen transmigration across the epithelial barrier. The cleavage of E-cadherin also initiates oncogenic responses by activating the WNT signaling pathway and stimulating the release of β-catenin into the nucleus, where it activates the expression of pro-tumorigenic genes such as CCND1 (Cyclin D1) and MYC. BFT additionally causes inflammation in preclinical CRC models, creating a pro-carcinogenic environment. Thus, BFT acts as a multi-functional virulence factor that simultaneously disrupts the physical epithelial barrier, activates oncogenic signaling, and promotes chronic intestinal inflammation.",
+      "topic_tags": ["Bacteroides fragilis", "BFT", "E-cadherin", "WNT signaling", "beta-catenin", "CCND1", "MYC", "CRC tumorigenesis"]
+    },
+    {
+      "id": "CRC_GMB_medium_002",
+      "difficulty": "medium",
+      "question": "What are the mechanisms by which the gut microbiome modulates the efficacy and toxicity of irinotecan chemotherapy?",
+      "answer": "The gut microbiome modulates irinotecan (CPT-11) pharmacology through a complex enzymatic pathway. Irinotecan is converted by hepatic or gastrointestinal carboxylesterases into its active metabolite SN-38, which is then conjugated in the liver by glucuronyltransferase to its inactive form SN-38G and secreted into the gut. Once in the intestinal lumen, SN-38G becomes susceptible to bacterial β-glucuronidase enzymes, which reconvert it back to the active and toxic SN-38. This increases SN-38 concentrations in the gut, contributing to irinotecan-induced diarrhea — a major dose-limiting toxicity. Irinotecan also induces shifts in gut microbial composition, upregulating β-glucuronidase-producing bacteria (E. coli, Staphylococcus spp., Bacteroides spp., Clostridium spp.) while dysregulating bacterial populations that normally inhibit β-glucuronidase activity (Lactobacillus spp.) or provide general intestinal benefits (Bifidobacterium spp.). Pharmacological inhibition of bacterial β-glucuronidases has been shown to alleviate tissue damage and reduce irinotecan-induced diarrhea in preclinical models.",
+      "topic_tags": ["irinotecan", "CPT-11", "beta-glucuronidase", "SN-38", "chemotherapy toxicity", "gut microbiome", "pharmacokinetics"]
+    },
+    {
+      "id": "CRC_GMB_medium_003",
+      "difficulty": "medium",
+      "question": "How does the gut microbiome influence the anti-tumor efficacy of cyclophosphamide through immune cell modulation?",
+      "answer": "The gut microbiome plays a critical role in mediating cyclophosphamide (CTX)'s anti-tumor immune effects. CTX-induced toxicity damages intestinal epithelial cells and disrupts the mucosal barrier, facilitating the translocation of specific Gram-positive commensal bacteria — particularly Lactobacillus johnsonii and Enterococcus hirae — from the gut lumen into secondary lymphoid organs. Once there, these translocated bacteria stimulate the generation of a specific subset of 'pathogenic' TH17 (pTH17) cells and promote differentiation of naïve CD4+ T cells into TH1 and TH17 cells. This immunomodulatory cascade is essential for CTX's anti-tumor efficacy, as demonstrated by the dramatic decrease in anti-tumor effects observed in antibiotic-treated or germ-free mice. Additionally, the Gram-negative bacterium Barnesiella intestinihominis contributes by increasing polyfunctional splenic TH1 and type 1 CD8+ T cells, and enhancing the recruitment of IFN-γ+ γδT cells at tumor sites, acting as 'oncomicrobiotics' to further potentiate CTX's effects.",
+      "topic_tags": ["cyclophosphamide", "CTX", "pTH17 cells", "Lactobacillus johnsonii", "Enterococcus hirae", "Barnesiella intestinihominis", "anti-tumor immunity", "bacterial translocation"]
+    },
+    {
+      "id": "CRC_GMB_medium_004",
+      "difficulty": "medium",
+      "question": "How do secondary bile acids, particularly deoxycholic acid, contribute to colorectal carcinogenesis?",
+      "answer": "Secondary bile acids — primarily synthesized in the liver and converted by gut bacteria — play significant roles in CRC development. Deoxycholic acid (DCA) in particular has been extensively linked to CRC. DCA levels are elevated in feces, intestinal tissue, and serum of individuals at high CRC risk and in CRC patients compared to healthy controls. The molecular mechanisms of DCA-mediated carcinogenesis are multifaceted: it blocks the activation of the NF-κB signaling pathway and the nuclear translocation of transcription factor RelA, inducing chronic intestinal inflammation and tumorigenesis; it induces DNA damage through reactive oxygen species (ROS) generation and β-catenin signaling activation; and it can directly modulate the gut microbiome toward a dysbiotic, tumor-promoting composition. DCA arises from cholic acid (CA) via bacterial 7α-dehydroxylation reactions, and the elevated production of DCA through this pathway correlates with increased CRC risk. The gut microbiome therefore regulates the composition of the bile acid pool, with accumulation of toxic secondary bile acids feeding back to further disrupt microbial composition.",
+      "topic_tags": ["deoxycholic acid", "DCA", "secondary bile acids", "NF-kB", "ROS", "beta-catenin", "CRC", "bile acid metabolism"]
+    },
+    {
+      "id": "CRC_GMB_medium_005",
+      "difficulty": "medium",
+      "question": "What is the role of pattern recognition receptor signaling — specifically TLRs and NLRs — in microbiome-driven colorectal cancer progression?",
+      "answer": "Pattern recognition receptors (PRRs), including Toll-like receptors (TLRs) and NOD-like receptors (NLRs), are central mediators of microbiome-driven CRC progression. Pathogenic bacteria are recognized by host PRRs, which activate downstream inflammatory signaling pathways including NF-κB, MAPK, and STAT3 — all of which bridge inflammation to cancer development. Specifically, Peptostreptococcus anaerobius activates TLRs, leading to elevated reactive oxygen species (ROS) expression and colonic dysplasia. Pathogenic bacteria in the tumor can activate TLR4 on mesenchymal cells, triggering the MYD88 pathway and releasing IL-23, which in turn activates IL-17A, IL-6, and IL-22 to promote CRC. Regarding NLRs, NOD1 deficiency leads to epithelial cell apoptosis and increased intestinal permeability, promoting CRC; conversely, elevated NOD1 expression in human CRC has been shown to augment cancer cell adhesion, migration, and metastasis. NOD2-related gut dysbiosis also increases susceptibility to CRC. F. nucleatum further exploits TIGIT signaling to inhibit cytotoxic T cell responses, protecting tumors from immune clearance.",
+      "topic_tags": ["TLR", "NLR", "NOD1", "NOD2", "MYD88", "NF-kB", "STAT3", "MAPK", "innate immunity", "CRC"]
+    },
+    {
+      "id": "CRC_GMB_medium_006",
+      "difficulty": "medium",
+      "question": "How does Bifidobacterium pseudolongum enhance the efficacy of immune checkpoint inhibitor therapy, and what is the mechanistic basis of this effect?",
+      "answer": "Bifidobacterium pseudolongum enhances immunotherapy response — specifically to anti-CTLA-4 checkpoint inhibitors — through the production of the metabolite inosine. During immunotherapy, systemic translocation of inosine produced by B. pseudolongum occurs, and this metabolite activates antitumor T cells through the type 2a adenosine receptor (A2AR). Both oral and systemic administration of inosine can improve the efficacy of anti-CTLA-4 therapy, resulting in reduced tumor weights and enhanced antitumor immunity. Importantly, this pro-immunotherapy effect of inosine is context-dependent: it requires the presence of IFN-γ to exert its full benefit. This mechanism is clinically significant because inosine is a small-molecule metabolite rather than a live bacterium, making it a more druggable target for developing adjuvants to improve immunotherapy efficacy. This finding exemplifies how microbially-derived metabolites can serve as important mediators of the interaction between the gut microbiome and host antitumor immunity.",
+      "topic_tags": ["Bifidobacterium pseudolongum", "inosine", "CTLA-4", "A2AR", "immune checkpoint", "immunotherapy", "metabolite", "antitumor T cells"]
+    },
+
+    {
+      "id": "CRC_GMB_hard_001",
+      "difficulty": "hard",
+      "question": "How does pks+ Escherichia coli promote colorectal tumorigenesis at the molecular level, and what is the interplay between bacterial genotoxicity and host inflammatory responses in this process?",
+      "answer": "pks+ E. coli harbors the 'pks' virulence island and contributes to CRC through two distinct but complementary molecular mechanisms. First, it produces cytolethal distending toxins — heat-labile protein exotoxins that infect intestinal mucosa, induce inflammation, and increase the frequency of host cell mutations. Second, and more distinctly, pks+ E. coli encodes the polypeptide colibactin. When infecting eukaryotic cells, colibactin induces double-strand DNA breaks, causes eukaryotic cell cycle arrest, and produces chromosome aberrations, thereby directly promoting colorectal tumorigenesis through genotoxic mechanisms. Critically, the relationship between bacterial genotoxicity and host inflammation is not independent but synergistic: studies in colitis-associated CRC mouse models demonstrate that chronic inflammation creates a favorable mucosal environment for pks+ E. coli to adhere to the colonic mucosa and exert its DNA-damaging effects. Inflammation alone, in the absence of pks+ E. coli, is insufficient to induce CRC, and conversely, the genotoxic bacteria require an inflammation-conditioned microenvironment to maximally promote tumorigenesis. This dual requirement highlights how microbial virulence factors and host immune dysregulation cooperate in a feedforward loop to drive colorectal malignancy.",
+      "topic_tags": ["pks+ E. coli", "colibactin", "cytolethal distending toxin", "DNA double-strand breaks", "genotoxicity", "inflammation", "CRC", "colon mucosa"]
+    },
+    {
+      "id": "CRC_GMB_hard_002",
+      "difficulty": "hard",
+      "question": "What are the key technical and biological challenges limiting the clinical translation of gut microbiome-based diagnostic biomarkers for colorectal cancer, and how might these be addressed?",
+      "answer": "The clinical translation of microbiome-based CRC diagnostics faces multiple intertwined technical and biological challenges. Biologically, microbiome dysbiosis patterns vary substantially across studies due to intrinsic factors such as genetic background, geographic location, sex, and age, as well as extrinsic factors like diet, lifestyle, and medication use. The high inter-individual variability in baseline microbiome composition makes it difficult to identify universal dysbiosis signatures. Furthermore, current metagenomic biomarkers may yield confusing diagnostic results because genetic content between strains of the same species can differ by 5–30%, meaning species-level identification is insufficient for precision diagnostics. Technically, sequencing methodology itself introduces significant variation — microbiome sequencing results can differ more between technical protocols than between populations. Inadequate sample handling (contamination, improper storage temperatures) alters fecal microbiome composition. Next-generation sequencing generates fragmented short reads that are inadequate for accurate assembly of microbial genomes containing hypervariable sequences or repeat regions. Most studies have focused on advanced CRC stages rather than early detection. Potential solutions include standardized sample collection and storage protocols, deep metagenomic sequencing at strain level, long-read sequencing technologies (e.g., PacBio, Oxford Nanopore), family-paired study designs to control for environmental confounders, multi-omics integration (genomic, transcriptomic, proteomic, metabolomic), and longitudinal tracking to capture dynamics across CRC stages.",
+      "topic_tags": ["microbiome biomarkers", "CRC diagnosis", "clinical translation", "metagenomics", "technical challenges", "inter-individual variability", "strain-level sequencing", "long-read sequencing"]
+    },
+    {
+      "id": "CRC_GMB_hard_003",
+      "difficulty": "hard",
+      "question": "How does the gut microbiome modulate platinum-based chemotherapy efficacy through immune mechanisms, and what are the implications of antibiotic use on this interaction?",
+      "answer": "Platinum-based compounds like oxaliplatin and cisplatin exert anti-tumor cytotoxicity by forming platinum DNA adducts and intrastrand DNA cross-links in tumor cells. However, the full anti-tumor effect of these drugs depends critically on an intact gut microbiome. In antibiotic-treated or germ-free mice, the efficacy of oxaliplatin is significantly attenuated. Mechanistically, commensal bacteria modulate the tumor microenvironment by influencing the inflammatory tone necessary for chemotherapeutic response. Antibiotic treatment reduces the expression of pro-inflammatory genes induced by oxaliplatin, as well as genes related to monocyte differentiation, activation, and function. Critically, the microbiome is required for oxaliplatin to induce ROS production, which is necessary both for direct genotoxicity in tumor cells and for the reactive oxygen burst by tumor-infiltrating immune cells. Without adequate ROS generation — which depends on commensal microbial signaling — the genotoxic and immunostimulatory arms of platinum therapy are both compromised. This means that antibiotic administration during chemotherapy — common in clinical practice to manage infections — may inadvertently undermine drug efficacy by stripping away the microbial co-factors that support the tumor-destructive immune response, highlighting a critical but underappreciated drug-microbiome-immunity axis in oncology.",
+      "topic_tags": ["oxaliplatin", "cisplatin", "platinum chemotherapy", "ROS", "gut microbiome", "antibiotics", "tumor microenvironment", "myeloid cells", "chemotherapy efficacy"]
+    },
+    {
+      "id": "CRC_GMB_hard_004",
+      "difficulty": "hard",
+      "question": "How do fungi and viruses in the gut microbiome contribute to colorectal cancer, and how does their diagnostic potential compare to bacterial biomarkers?",
+      "answer": "While bacteria have been the dominant focus of gut microbiome-CRC research, fungi and viruses also undergo significant compositional shifts in CRC and hold diagnostic potential. In the gut mycobiome (fungal component), CRC is associated with disrupted homeostasis: the Basidiomycota-to-Ascomycota ratio is elevated in CRC patients compared to healthy controls, characterized by enrichment of the class Malasseziomycetes and depletion of Saccharomycetes and Pneumocystidomycetes. Fungal biomarker panels have shown strong diagnostic performance in distinguishing CRC from healthy controls and in identifying early-stage CRC, suggesting that fungal community profiling could complement bacterial approaches. Similarly, in the gut virome, CRC is associated with significantly increased bacteriophage diversity, with specific viral biomarkers able to distinguish CRC patients from healthy controls with high discriminative performance. The fact that multiple kingdoms within the gut microbiome — bacteria, fungi, and viruses — all exhibit CRC-associated shifts suggests that CRC-related dysbiosis is a pan-microbial phenomenon rather than a purely bacterial one. From a diagnostic standpoint, combining fungal and viral biomarkers with established bacterial markers may improve sensitivity and specificity for CRC detection, particularly at early stages, and provides the conceptual basis for developing truly comprehensive gut microbiome diagnostic panels.",
+      "topic_tags": ["gut mycobiome", "gut virome", "CRC", "fungal biomarkers", "viral biomarkers", "Basidiomycota", "Ascomycota", "bacteriophages", "multi-kingdom dysbiosis"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "CRC_GMB_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which bacterial species has been most extensively studied as a CRC-associated pathogen and is known to activate autophagy in cancer cells to promote chemotherapy resistance?",
+      "options": {
+        "A": "Bacteroides fragilis",
+        "B": "Fusobacterium nucleatum",
+        "C": "Peptostreptococcus anaerobius",
+        "D": "pks+ Escherichia coli"
+      },
+      "correct_answer": "B",
+      "explanation": "Fusobacterium nucleatum is among the most well-studied CRC-associated pathogens. It activates autophagy through TLR4 and MYD88 signaling, potentiating CRC resistance to oxaliplatin and 5-fluorouracil. It also enriches in CRC tissue via its Fap2 surface protein and promotes oncogenic signaling through FadA adhesin.",
+      "topic_tags": ["Fusobacterium nucleatum", "chemoresistance", "autophagy", "CRC-associated bacteria"]
+    },
+    {
+      "id": "CRC_GMB_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "Which of the following correctly describes the protective anti-CRC role of indole-derived metabolites produced by gut bacteria?",
+      "options": {
+        "A": "They inhibit histone deacetylases to suppress CRC cell proliferation",
+        "B": "They act as endogenous ligands for the aromatic hydrocarbon receptor (AHR), inhibiting inflammatory CRC through the AHR/IL-22 axis",
+        "C": "They convert secondary bile acids to less toxic primary bile acids, reducing genotoxic stress",
+        "D": "They directly bind and neutralize bacterial LPS to prevent pro-inflammatory NF-κB signaling"
+      },
+      "correct_answer": "B",
+      "explanation": "Indole-derived metabolites — produced from tryptophan by Clostridium spp. and Bacteroides spp. — act as endogenous ligands for the aromatic hydrocarbon receptor (AHR). They exert a protective effect against CRC by influencing systemic immune status through the AHR/IL-22 axis to inhibit inflammatory CRC. The histone deacetylase inhibition described in option A is the mechanism of butyrate, not indole metabolites.",
+      "topic_tags": ["indole metabolites", "tryptophan", "AHR", "IL-22", "CRC protection", "metabolomics"]
+    },
+    {
+      "id": "CRC_GMB_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "What is the primary mechanism by which Peptostreptococcus anaerobius promotes colorectal cancer cell hyperproliferation?",
+      "options": {
+        "A": "Secretion of a metalloprotease that cleaves E-cadherin and activates WNT signaling",
+        "B": "Direct DNA double-strand breaks via its polypeptide toxin colibactin",
+        "C": "Binding to integrin α2/β1 on intestinal epithelial cells through its surface protein PCWBR2, activating the PI3K-Akt-NF-κB pathway",
+        "D": "Binding to Gal-GalNAc-expressing cancer cells via Fap2 protein to enrich in tumor tissue"
+      },
+      "correct_answer": "C",
+      "explanation": "P. anaerobius binds directly to the surface receptor integrin α2/β1 (ITGA2/ITGB1) on intestinal epithelial cells through its surface protein PCWBR2. This interaction activates the tumor-promoting PI3K-Akt-NF-κB pathway, resulting in hyperproliferation of cancer cells. Options A and D describe mechanisms of B. fragilis and F. nucleatum, respectively; Option B describes pks+ E. coli's colibactin mechanism.",
+      "topic_tags": ["Peptostreptococcus anaerobius", "PCWBR2", "integrin", "PI3K-Akt-NF-kB", "CRC hyperproliferation"]
+    },
+
+    {
+      "id": "CRC_GMB_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "How does Lysinibacillus sphaericus interfere with aspirin's chemopreventive effects against colorectal cancer?",
+      "options": {
+        "A": "It secretes inflammatory cytokines that counteract aspirin's anti-inflammatory properties",
+        "B": "It metabolically degrades aspirin and its active metabolite salicylic acid, abolishing its preventive effect against colorectal tumor development",
+        "C": "It converts aspirin into a pro-carcinogenic secondary metabolite that accelerates polyp formation",
+        "D": "It activates NF-κB signaling to overcome the apoptotic effects of aspirin on CRC cells"
+      },
+      "correct_answer": "B",
+      "explanation": "Lysinibacillus sphaericus is able to biologically degrade aspirin and its active metabolite salicylic acid through biotransformation. This metabolic degradation abolishes aspirin's preventive effects against colorectal tumor development. Aspirin showed significant antitumor effects in microbiome-depleted mice but not in mice with intact microbiome containing L. sphaericus, directly demonstrating microbial undermining of chemoprevention.",
+      "topic_tags": ["Lysinibacillus sphaericus", "aspirin", "salicylic acid", "biotransformation", "CRC chemoprevention", "pharmacomicrobiomics"]
+    },
+    {
+      "id": "CRC_GMB_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "What is the significance of combining fecal microbiome data with standard fecal immunochemical tests (FITs) for colorectal cancer screening?",
+      "options": {
+        "A": "The combination reduces false positives by filtering out benign polyp-associated bacterial signals",
+        "B": "Fecal microbiome data alone is sufficient for CRC detection and FIT is added only to improve regulatory approval",
+        "C": "Combining fecal microbial markers (e.g., Fusobacterium nucleatum abundance) with FIT significantly improves sensitivity for detecting advanced CRC and adenoma compared to FIT alone",
+        "D": "The combination exclusively improves detection of late-stage CRC and does not benefit early neoplasia screening"
+      },
+      "correct_answer": "C",
+      "explanation": "Combining quantitative fecal F. nucleatum detection with FIT has been shown to increase FIT sensitivity for detecting advanced colorectal neoplasia from 73.1% to 92.3%. Combining F. nucleatum with additional bacterial markers (Bacteroides clarus, Roseburia intestinalis, Clostridium hathewayi) further improves both sensitivity and specificity for CRC and colon adenoma detection, demonstrating clear clinical additive value.",
+      "topic_tags": ["FIT", "fecal microbiome", "CRC screening", "Fusobacterium nucleatum", "biomarker", "sensitivity", "specificity"]
+    },
+    {
+      "id": "CRC_GMB_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "Which mechanism best explains why bacteria such as Akkermansia muciniphila and E. rectale are enriched in patients who respond to anti-PD-1 immunotherapy for gastrointestinal cancer?",
+      "options": {
+        "A": "These bacteria directly produce PD-L1 antibodies that enhance checkpoint blockade",
+        "B": "They produce SCFAs (E. rectale) or promote mucosal integrity (A. muciniphila), providing evidence of crosstalk between gut microbiome metabolites and host antitumor immunity that supports ICI efficacy",
+        "C": "They inhibit regulatory T cells (Tregs) by secreting IFN-γ-inducing cytokines directly into the tumor microenvironment",
+        "D": "They deplete immunosuppressive Bacteroides species, restoring adaptive immune activation against cancer antigens"
+      },
+      "correct_answer": "B",
+      "explanation": "Enrichment of A. muciniphila, E. rectale, Lactobacillus, and Streptococcus — along with depletion of Bacteroides — has been observed in anti-PD-1 responders. Notably, E. rectale and Streptococcus are SCFA producers, and their enrichment in responders provides mechanistic evidence of a crosstalk between SCFA production, gut microbiome health, and host antitumor immunity. These microbes are proposed as adjuvant candidates for ICI therapies.",
+      "topic_tags": ["anti-PD-1", "immunotherapy", "Akkermansia muciniphila", "E. rectale", "SCFAs", "responders", "gastrointestinal cancer"]
+    },
+    {
+      "id": "CRC_GMB_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "What role does bacteria-derived lipopolysaccharide (LPS) play in the gut microbiome's contribution to colorectal tumorigenesis?",
+      "options": {
+        "A": "LPS directly crosslinks DNA strands in colonic epithelial cells, causing tumor-initiating mutations",
+        "B": "LPS stimulates CCL2 expression in colonic epithelial cells, induces monocyte-like macrophage (MLM) accumulation, and triggers IL-1β-dependent IL-17-producing T helper cell activation, generating a pro-cancerous inflammatory milieu",
+        "C": "LPS downregulates PPAR-γ signaling in colonocytes, impairing butyrate oxidation and promoting an anaerobic pro-tumor microenvironment",
+        "D": "LPS activates NOD2 on colonic epithelial cells, suppressing adaptive immune responses and allowing tumor immune evasion"
+      },
+      "correct_answer": "B",
+      "explanation": "Bacteria-derived LPS stimulates CC chemokine ligand 2 (CCL2) expression in colonic epithelial cells, inducing the accumulation of monocyte-like macrophages (MLMs). LPS further stimulates IL-1β production from MLMs, which activates IL-17-producing TH cells. This cascade creates a precancerous inflammatory milieu that facilitates tumorigenesis. This illustrates how the microbiome releases chemokines and cytokines to recruit immune cells in a tumor-promoting fashion.",
+      "topic_tags": ["LPS", "CCL2", "IL-1beta", "IL-17", "TH cells", "monocyte macrophage", "inflammation", "CRC tumorigenesis"]
+    },
+    {
+      "id": "CRC_GMB_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "How do probiotics help mitigate the adverse gastrointestinal effects associated with CRC chemotherapy?",
+      "options": {
+        "A": "Probiotics directly neutralize chemotherapy metabolites in the gut lumen before they can cause mucosal injury",
+        "B": "They enhance SCFA production, maintain a favorable gut microbiome composition, and reduce the expression of pro-inflammatory cytokines, collectively improving intestinal integrity during chemotherapy",
+        "C": "Probiotics secrete antimicrobial peptides that selectively eliminate pathogenic bacteria activated by chemotherapy drugs",
+        "D": "They competitively inhibit bacterial β-glucuronidase enzymes, directly blocking the conversion of inactive drug metabolites to their toxic active forms"
+      },
+      "correct_answer": "B",
+      "explanation": "Clinical and preclinical evidence shows that probiotic administration — including Lactobacillus and Bifidobacterium species — reduces chemotherapy-induced diarrhea and inflammatory side effects by enhancing SCFA production (e.g., B. breve), maintaining a favorable gut microbiome, and reducing pro-inflammatory cytokine levels. These combined effects improve the intestinal microenvironment and help prevent adverse effects associated with chemotherapy regimens like 5-Fu and FOLFOX.",
+      "topic_tags": ["probiotics", "chemotherapy toxicity", "SCFA", "diarrhea", "CRC", "Lactobacillus", "Bifidobacterium", "intestinal microenvironment"]
+    },
+
+    {
+      "id": "CRC_GMB_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "In the context of immune checkpoint inhibitor (ICI) therapy and the gut microbiome, which of the following most accurately describes the complex and potentially paradoxical role of Fusobacterium nucleatum?",
+      "options": {
+        "A": "F. nucleatum universally reduces ICI efficacy by binding TIGIT on T cells and inducing systemic immune suppression, making it purely detrimental in the immunotherapy context",
+        "B": "F. nucleatum promotes chemotherapy resistance via TLR4/MYD88-induced autophagy, but has been shown to paradoxically enhance anti-PD-L1 immunotherapy efficacy by activating STING signaling and recruiting tumor-infiltrating lymphocytes",
+        "C": "F. nucleatum enhances anti-CTLA-4 immunotherapy efficacy through IL-12-dependent Th1 immune activation, consistent with its role as a pro-inflammatory pathogen",
+        "D": "F. nucleatum has no defined role in immunotherapy response, acting solely as a chemotherapy resistance factor through epigenetic mechanisms"
+      },
+      "correct_answer": "B",
+      "explanation": "F. nucleatum presents a clinically complex and context-dependent picture. It promotes resistance to platinum-based chemotherapy (oxaliplatin) and 5-Fu via TLR4/MYD88-mediated autophagy activation. However, paradoxically, F. nucleatum has been shown to enhance the efficacy of anti-PD-L1 immunotherapy by activating STING signaling and recruiting tumor-infiltrating lymphocytes — a beneficial immunotherapy-enhancing effect. This context-dependency underscores the complexity of microbiome-cancer-therapy interactions and the need to consider specific therapeutic modalities when evaluating the clinical role of individual bacteria.",
+      "topic_tags": ["Fusobacterium nucleatum", "anti-PD-L1", "STING signaling", "chemoresistance", "TLR4", "MYD88", "tumor-infiltrating lymphocytes", "ICI therapy"]
+    },
+    {
+      "id": "CRC_GMB_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "What does the observation that germ-free mice show attenuated anti-tumor efficacy of both oxaliplatin and cyclophosphamide most fundamentally imply about the role of the gut microbiome in cancer therapy?",
+      "options": {
+        "A": "The gut microbiome is needed to absorb and bioactivate chemotherapy drugs in the intestinal lumen before they reach systemic circulation",
+        "B": "The gut microbiome acts as an essential co-regulator of host antitumor immunity by calibrating inflammatory tone, shaping immune cell populations, and enabling the ROS-dependent and immune-dependent mechanisms by which these drugs kill tumor cells",
+        "C": "Germ-free conditions alter gut permeability and pharmacokinetics, reducing drug concentrations at the tumor site and thus impairing efficacy regardless of immune status",
+        "D": "The microbiome prevents chemotherapy-induced immunosuppression by continuously replenishing circulating lymphocyte populations depleted by cytotoxic drug effects"
+      },
+      "correct_answer": "B",
+      "explanation": "The evidence from germ-free and antibiotic-treated mouse models demonstrates that the gut microbiome acts as an essential immunological partner for both oxaliplatin (which requires microbial support for ROS production and myeloid cell activation) and cyclophosphamide (which requires microbial translocation to drive pTH17 and TH1 anti-tumor responses). This indicates that the microbiome's role is not merely pharmacokinetic but fundamentally immunological — it calibrates the inflammatory and immune environment that enables chemotherapy to trigger tumor-destructive immune cascades. This insight has major implications for antibiotic use during cancer treatment.",
+      "topic_tags": ["germ-free mice", "oxaliplatin", "cyclophosphamide", "antitumor immunity", "ROS", "inflammatory tone", "immunological co-regulator", "microbiome-immunity axis"]
+    }
+  ]
+}

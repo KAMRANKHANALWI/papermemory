@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "An expanded reference map of the human gut microbiome reveals hundreds of previously unknown species",
+    "authors": ["Sigal Leviatan", "Saar Shoer", "Daphna Rothschild", "Maria Gorodetski", "Eran Segal"],
+    "journal": "Nature Communications",
+    "year": 2022,
+    "doi": "10.1038/s41467-022-31502-1",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "gutrefmap_easy_001",
+      "difficulty": "easy",
+      "question": "What are the two primary approaches used to study the microbial content of the human gut, and what is the fundamental limitation they share?",
+      "answer": "The two main paths to microbial research are marker gene sequencing, such as 16S ribosomal RNA gene sequencing, and reference alignment of shotgun metagenomic sequencing. Both approaches share a critical limitation: the broad genetic content of each microbe must be inferred from what is already known about its genome. This means that microbes lacking well-characterized reference genomes cannot be identified or studied in depth, making the completeness of reference genome sets a bottleneck for the entire field.",
+      "topic_tags": ["16S rRNA", "metagenomics", "reference genomes", "microbial identification", "shotgun sequencing"]
+    },
+    {
+      "id": "gutrefmap_easy_002",
+      "difficulty": "easy",
+      "question": "What is a metagenome-assembled genome (MAG) and why is this approach necessary for studying gut microbiota?",
+      "answer": "A metagenome-assembled genome (MAG) is a draft microbial genome reconstructed computationally from metagenomic sequencing data — that is, bulk sequencing of all genetic material in a sample — without requiring the organism to be cultured in a laboratory. This approach is necessary for gut microbiota research because many gut microbes are difficult or impossible to cultivate using current laboratory techniques. MAGs allow researchers to characterize the genomic content of these organisms based purely on sequence data, enabling the identification and study of species that would otherwise remain entirely unknown.",
+      "topic_tags": ["MAG", "metagenome-assembled genome", "unculturable bacteria", "metagenomic sequencing", "gut microbiome"]
+    },
+    {
+      "id": "gutrefmap_easy_003",
+      "difficulty": "easy",
+      "question": "What genomic distance metric is commonly used to define species-level boundaries in microbial taxonomy, and what is the accepted threshold?",
+      "answer": "Average nucleotide identity (ANI) is the standard genomic distance metric for defining species boundaries in prokaryotic taxonomy. A threshold of 95% ANI is widely accepted as the species-level boundary, meaning two organisms with less than 95% ANI are considered to belong to distinct species. In computational workflows, the MinHash (MASH) distance serves as a proxy for this measure, with a MASH distance of 0.05 approximately corresponding to a 95% ANI threshold.",
+      "topic_tags": ["average nucleotide identity", "ANI", "MASH distance", "species definition", "microbial taxonomy"]
+    },
+    {
+      "id": "gutrefmap_easy_004",
+      "difficulty": "easy",
+      "question": "What quality parameters are used to assess the reliability of metagenome-assembled genomes, and why do they matter?",
+      "answer": "The key quality parameters for assessing MAGs are completeness, contamination, N50 (a measure of contig length where half the genome is covered by contigs at least this size), genome length, and chimera likelihood (assessed via tools such as GUNC using a clade separation score). Completeness reflects how much of the true genome has been captured. Contamination reflects the proportion of sequences that originate from other organisms. N50 reflects assembly contiguity. These parameters matter because incomplete or contaminated genomes produce systematic biases in clustering and annotation, and may lead to incorrect species assignments or false functional inferences.",
+      "topic_tags": ["MAG quality", "completeness", "contamination", "N50", "chimeric genomes", "GUNC"]
+    },
+    {
+      "id": "gutrefmap_easy_005",
+      "difficulty": "easy",
+      "question": "Why is the 16S ribosomal RNA gene particularly useful for bacterial identification, and what are its limitations?",
+      "answer": "The 16S rRNA gene is valuable for bacterial identification because it is present in all bacteria and contains both a highly conserved region — which can be detected using PCR — and variable regions that are species- or genus-specific, enabling taxonomic discrimination. However, its main limitations are that it requires prior knowledge to link the variable region sequences to a taxonomy, and that it provides only information about bacterial presence rather than the full genomic context. For many gut bacteria, the necessary reference taxonomy for variable 16S regions does not yet exist, limiting the utility of this approach for novel or poorly characterized organisms.",
+      "topic_tags": ["16S rRNA gene", "bacterial identification", "variable regions", "PCR", "taxonomic classification"]
+    },
+
+    {
+      "id": "gutrefmap_medium_001",
+      "difficulty": "medium",
+      "question": "How does increasing the number of metagenomic samples improve the discovery of rare microbial species?",
+      "answer": "Increasing the number of metagenomic samples from diverse individuals raises the probability of assembling genomes of rare microbial species for two complementary reasons. First, rare species that are present at low abundance in most individuals are unlikely to surpass the read depth threshold required for genome assembly in any single sample. Across a large cohort, however, the chance that at least some individuals harbor that species at sufficient abundance for assembly is greatly increased. Second, a larger and more diverse sample pool enables the discovery of organisms that may be restricted to certain subpopulations or disease states, expanding coverage beyond what could be achieved from a smaller, more homogeneous cohort.",
+      "topic_tags": ["rare species", "metagenomic sampling", "genome assembly", "microbial diversity", "cohort size"]
+    },
+    {
+      "id": "gutrefmap_medium_002",
+      "difficulty": "medium",
+      "question": "What is the problem of 'mis-binning' in metagenomic assembly, and how can it be detected?",
+      "answer": "Mis-binning refers to the computational error of grouping unrelated DNA contigs into the same assembled genome during the binning step of MAG construction, resulting in a chimeric genome composed of sequences from distinct microbial lineages. This arises because binning algorithms rely on sequence composition and coverage to cluster contigs, which can fail when contigs from distinct organisms share similar properties. Chimeric genomes can be detected using tools such as Genome UNClutterer (GUNC), which assesses the probability of chimerism by computing a clade separation score (CSS) — a measure of the phylogenetic incongruence among the predicted genes in a genome. Genomes with high CSS values are flagged as likely chimeras.",
+      "topic_tags": ["mis-binning", "chimeric genomes", "GUNC", "clade separation score", "MAG assembly", "binning"]
+    },
+    {
+      "id": "gutrefmap_medium_003",
+      "difficulty": "medium",
+      "question": "Why can including public genome repositories introduce biases when constructing a gut microbiome reference set, and how can this be avoided?",
+      "answer": "Public genome repositories such as NCBI-RefSeq are heavily biased toward species that have been the focus of active scientific research, which are often not representative of the actual ecological distribution of microbes in the gut. For example, organisms of medical or laboratory importance may be vastly overrepresented relative to their true gut abundance, while highly prevalent gut commensals may have only sparse representation. This imbalance distorts the hierarchical clustering step used to define species clusters, because overrepresented species will artificially dominate the clustering space. To avoid this, researchers can restrict their reference set to genomes assembled directly from metagenomic samples and curated isolate collections, ensuring that the number of assemblies per species reflects their actual prevalence and diversity in the ecological niche of interest.",
+      "topic_tags": ["reference bias", "NCBI-RefSeq", "genome repositories", "clustering bias", "gut microbiome reference set"]
+    },
+    {
+      "id": "gutrefmap_medium_004",
+      "difficulty": "medium",
+      "question": "How do nanopore sequencing-based assemblies differ from short-read metagenome-assembled genomes in terms of genome quality, and what practical limitations restrict their use?",
+      "answer": "Nanopore sequencing produces assemblies with substantially longer contigs, as measured by N50, compared to short-read MAGs, reflecting the long-read nature of nanopore technology that spans repetitive or complex genomic regions more effectively. Nanopore MAGs also tend to have fewer chimeric genomes (lower clade separation scores) than short-read MAGs, making them more reliable for taxonomic and functional analysis. Isolate-based genomes also outperform short-read MAGs in completeness and genome length but are lower than nanopore in terms of N50. The key practical limitations of both nanopore sequencing and isolate-based approaches are that they are significantly more expensive and technically demanding than short-read sequencing, and not all gut microbes can yet be successfully cultured, meaning these methods can only be applied to a small fraction of samples.",
+      "topic_tags": ["nanopore sequencing", "short-read MAG", "genome quality", "N50", "isolate assembly", "sequencing cost"]
+    },
+    {
+      "id": "gutrefmap_medium_005",
+      "difficulty": "medium",
+      "question": "What is the concept of 'unique read alignment' in the context of metagenomic reference validation, and why is it an important measure beyond general read alignment?",
+      "answer": "Unique read alignment refers to the percentage of metagenomic reads that map better — in terms of fewer alignment errors — to a single specific position in one genome of the reference set than to any other position across the entire set. This is distinct from general (non-unique) read alignment, which counts any read that maps to the reference regardless of whether it could equally well map to multiple locations. Unique alignment is important because it indicates increased genomic diversity and distinctiveness within the reference set: if many reads map uniquely, it means the reference genomes are sufficiently different from each other that most reads have one best-fitting match. High unique alignment is a sign of reduced redundancy, more precise species-level resolution, and better capacity for strain-level differentiation in downstream analyses.",
+      "topic_tags": ["unique read alignment", "metagenomic mapping", "reference validation", "genome diversity", "read alignment"]
+    },
+    {
+      "id": "gutrefmap_medium_006",
+      "difficulty": "medium",
+      "question": "How does the anti-biasing procedure used during genome assembly prevent distortions in species clustering?",
+      "answer": "When multiple samples from the same individual are processed, the same microbial species may be assembled multiple times, producing near-duplicate assemblies that cluster together early in hierarchical clustering and are subsequently given excessive weight in subsequent averaging steps, biasing cluster formation. To prevent this, the anti-biasing procedure ranks all assemblies from a single individual by quality, then adds each one to the assembly pool only if it exceeds the species-level MASH distance threshold from all previously added assemblies from that individual. This ensures that each species from a given individual contributes at most one assembly to the final pool, regardless of how many samples were collected from that individual, preserving the ecological representativeness of the reference set.",
+      "topic_tags": ["anti-biasing", "hierarchical clustering", "assembly deduplication", "MASH distance", "bias reduction", "metagenomics"]
+    },
+
+    {
+      "id": "gutrefmap_hard_001",
+      "difficulty": "hard",
+      "question": "Why might a gut-specific microbial reference set contain more uniquely annotated genes per base pair than a multi-body-site reference set, and what does this imply about the relationship between ecological focus and functional coverage?",
+      "answer": "Counterintuitively, a reference set built exclusively from gut samples can contain more uniquely annotated functional elements per base pair than one derived from multiple body sites. This occurs for several reasons: the gut is among the most intensively studied microbial environments, making its organisms better represented in functional annotation databases. Furthermore, focusing on a single ecological niche allows the assembly of genomes for rare, gut-specific species that a multi-site study might miss due to dilution across body site sampling. Higher-quality genomes, which are more achievable when strict quality thresholds are applied consistently, are also more amenable to accurate gene calling. Finally, including a much larger number of gut-specific samples increases the chances of capturing diverse strains of rare organisms, revealing unique gene content. This implies that ecological depth — intensive sampling of a single niche — may yield greater functional discovery per genomic unit than ecological breadth across multiple niches.",
+      "topic_tags": ["functional annotation", "gene density", "ecological specificity", "gut microbiome", "body site comparison", "genome quality"]
+    },
+    {
+      "id": "gutrefmap_hard_002",
+      "difficulty": "hard",
+      "question": "What are the trade-offs between a higher completeness threshold and a lower completeness threshold when constructing a species-level genome reference set?",
+      "answer": "Setting a higher completeness threshold — such as requiring genomes to be at least 70% complete rather than 50% — offers multiple advantages: it reduces systematic biases in quality parameter estimates (which become unreliable at lower completeness), and critically, it ensures that two partial assemblies of the same species will reliably cluster together since their MASH distance stays below the species threshold. At 50% completeness, two partial assemblies of the same species may appear farther apart than the species boundary due to missing shared sequence, causing them to be incorrectly classified as distinct species. However, the higher completeness threshold comes at a cost: fewer assemblies pass quality control, reducing the total pool available for clustering and potentially leading to a smaller final reference set. This is especially relevant for rare or low-abundance organisms whose genomes are harder to assemble completely. Thus, the choice of completeness threshold represents a fundamental trade-off between reference quality/reliability and reference breadth/completeness of ecological coverage.",
+      "topic_tags": ["completeness threshold", "MASH distance", "species clustering", "genome quality", "assembly bias", "reference set construction"]
+    },
+    {
+      "id": "gutrefmap_hard_003",
+      "difficulty": "hard",
+      "question": "How do newly discovered gut microbial species differ from known species in terms of antibiotic resistance profiles, and what are the potential implications for microbiome-drug interaction research?",
+      "answer": "Newly discovered gut microbial species tend to carry significantly fewer potential antibiotic resistance determinants compared to known species: a lower proportion hold at least one potential resistance gene, and the average number of resistances per genome is roughly half that seen in known species. This likely reflects a sampling bias in existing knowledge — organisms that have been studied are often those of clinical relevance or that have been cultured and tested in antibiotic resistance assays, introducing a selection toward resistance-carrying species in known databases. The novel species, being largely assembled from metagenomic data without prior characterization, are not subject to this bias. The implication for microbiome-drug interaction research is significant: the gut harbors a reservoir of previously uncharacterized organisms whose drug metabolism and resistance capabilities are unknown, meaning that current models of how the gut microbiome modulates drug efficacy and toxicity are incomplete. Characterizing the functional gene content of these novel species could reveal new microbial enzymes that activate, inactivate, or transform pharmaceuticals.",
+      "topic_tags": ["antibiotic resistance", "novel species", "microbiome-drug interactions", "resistance genes", "gut microbiome", "pharmacomicrobiomics"]
+    },
+    {
+      "id": "gutrefmap_hard_004",
+      "difficulty": "hard",
+      "question": "What does population-specific variation in novel species prevalence reveal about the limitations and design requirements of a universal gut microbiome reference set?",
+      "answer": "The observation that some newly discovered species are highly prevalent in one population's validation cohort but entirely absent in another's illustrates a fundamental limitation in constructing a truly universal gut microbiome reference: no single cohort, regardless of size, fully captures the global diversity of gut microbiota. Different human populations — shaped by geography, diet, lifestyle, disease prevalence, and host genetics — harbor distinct microbial compositions. Organisms that are common in one population may be rare or absent in others, and vice versa. This means that a reference set built predominantly from one demographic will systematically underperform for other populations, leading to higher fractions of unaligned reads and missed species. A robust universal reference therefore requires deep sampling across geographically and demographically diverse cohorts, ideally including populations that are typically underrepresented in research, such as rural or non-western communities. Additionally, the difficulty of aligning reads from certain non-western cohorts — even when the overall reference contains vastly more genomes — suggests that population-specific diversity cannot be captured by scale alone, but requires targeted recruitment strategies.",
+      "topic_tags": ["population diversity", "reference generalizability", "non-western populations", "microbiome geography", "gut microbial diversity", "global microbiome"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "gutrefmap_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which of the following best describes why focusing a microbial reference set on a single body site is advantageous for species clustering?",
+      "options": {
+        "A": "It reduces the total number of genomes needed, making computational processing faster",
+        "B": "Microbes from different body sites may harbor different gene content despite belonging to the same species, causing their assemblies to appear more distant and be split across clusters incorrectly",
+        "C": "It prevents contamination of gut-specific assemblies with oral or skin microbiome reads",
+        "D": "Regulatory guidelines require body-site specific analyses for clinical microbiome research"
+      },
+      "correct_answer": "B",
+      "explanation": "Different ecological niches may host the same species but with distinct gene repertoires, potentially inflating the genomic distance between assemblies of the same species across sites and causing them to be split into separate clusters. Focusing on one niche ensures that genomic distances between assemblies reflect true taxonomic differences rather than niche-driven gene content variation.",
+      "topic_tags": ["body site specificity", "species clustering", "ecological niche", "gene content variation"]
+    },
+    {
+      "id": "gutrefmap_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What is the primary purpose of using the Genome Taxonomy Database (GTDB) in the context of building a gut microbiome reference set?",
+      "options": {
+        "A": "To perform quality control on assembled genomes by measuring contamination",
+        "B": "To classify representative genomes into a phylogenetically consistent, rank-normalized taxonomy",
+        "C": "To align metagenomic reads against known species genomes",
+        "D": "To detect chimeric assemblies by measuring clade separation scores"
+      },
+      "correct_answer": "B",
+      "explanation": "GTDB and its companion toolkit GTDB-Tk are used to classify assembled genomes according to a phylogenetically consistent and rank-normalized taxonomy. This allows researchers to identify whether a genome represents a known species, an unknown species within a known genus, or a novel lineage at higher taxonomic levels.",
+      "topic_tags": ["GTDB", "genome taxonomy", "phylogenetic classification", "novel species identification"]
+    },
+    {
+      "id": "gutrefmap_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "Why are ribosomal RNA genes — particularly 16S — found at substantially higher counts per genome in assemblies produced by nanopore or isolate methods compared to short-read MAGs?",
+      "options": {
+        "A": "Nanopore and isolate methods selectively enrich for RNA-encoding genomic regions",
+        "B": "Short-read assemblies are shorter on average, so they inherently contain fewer genes",
+        "C": "The long reads and complete genome sequences produced by these methods are better at spanning repetitive rRNA gene regions, enabling more complete assembly and annotation",
+        "D": "16S genes are only present in organisms that can be cultured, so they appear more often in isolate-based assemblies"
+      },
+      "correct_answer": "C",
+      "explanation": "rRNA genes exist in repetitive clusters that are notoriously difficult to assemble from short reads due to their repetitive nature. Nanopore long reads and isolate-derived complete genomes span these regions more reliably, resulting in far more complete rRNA gene recovery per genome compared to fragmented short-read MAGs.",
+      "topic_tags": ["16S rRNA", "nanopore sequencing", "rRNA assembly", "genome completeness", "short-read limitations"]
+    },
+
+    {
+      "id": "gutrefmap_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "What does a low Reference Representation Score (RRS) for a genome indicate, and why is it used as supporting evidence for novel species discovery?",
+      "options": {
+        "A": "A low RRS indicates poor sequencing quality and suggests the genome should be excluded from the reference set",
+        "B": "A low RRS means the genome is closely related to many genomes in the reference, making it redundant",
+        "C": "A low RRS indicates the genome is poorly represented by known reference databases, consistent with it belonging to a previously undescribed species",
+        "D": "A low RRS reflects high contamination levels and chimeric content in the assembly"
+      },
+      "correct_answer": "C",
+      "explanation": "The RRS (from the GUNC tool) estimates how well a query genome is already represented by an established reference database. A score close to 0 indicates the genome is not well captured by existing references, consistent with belonging to a novel, uncharacterized species. A score close to 1 suggests the species is already known. Novel species have significantly lower RRS values than known species, lending independent support to their novelty beyond taxonomic distance measures.",
+      "topic_tags": ["reference representation score", "RRS", "novel species", "GUNC", "genome novelty"]
+    },
+    {
+      "id": "gutrefmap_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "Why does combining two large but independently constructed genome reference sets sometimes improve total read alignment while simultaneously worsening unique read alignment?",
+      "options": {
+        "A": "The combined set has more genomes, which increases total mapping opportunities but also introduces redundant sequences that allow reads to map to multiple positions equally well",
+        "B": "Combining sets introduces conflicting taxonomic labels that confuse alignment software",
+        "C": "Larger reference sets require lower alignment score thresholds, reducing mapping stringency",
+        "D": "The two sets were built from the same samples, so combining them doesn't add new species"
+      },
+      "correct_answer": "A",
+      "explanation": "When two reference sets are merged, the additional genomes from the second set help capture reads from species not covered by the first (improving total alignment). However, the overlap and redundancy between the sets — similar genomes representing the same or closely related species — means many reads now align equally well to multiple locations, reducing the proportion of uniquely mapped reads. Unique alignment requires that one position in the reference is clearly the best match, which degrades when near-duplicate sequences are present.",
+      "topic_tags": ["combined reference set", "read alignment", "unique alignment", "genome redundancy", "reference benchmarking"]
+    },
+    {
+      "id": "gutrefmap_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "What is the significance of discovering a novel gut microbial species that encodes a metalloprotease toxin such as Fragilysin?",
+      "options": {
+        "A": "It suggests the species may serve as a probiotic by degrading dietary proteins in the gut",
+        "B": "It implies the species may directly damage the intestinal epithelium, alter gut permeability, and potentially contribute to disease pathology",
+        "C": "It indicates the species is involved in antibiotic resistance gene transfer between gut commensals",
+        "D": "It confirms the species is a member of the Bacteroidota phylum, which is known for encoding proteolytic enzymes"
+      },
+      "correct_answer": "B",
+      "explanation": "Fragilysin is a metalloprotease toxin known to be cytopathic to intestinal epithelial cells and to induce fluid secretion and tissue damage. Its presence in a previously unknown gut microbe suggests potential relevance to intestinal disease. Identifying such gene products in novel species underlines the medical importance of expanding the gut microbiome reference, as these organisms and their virulence factors would be entirely invisible to conventional analyses.",
+      "topic_tags": ["Fragilysin", "metalloprotease", "gut pathogen", "intestinal epithelium", "novel species function", "virulence genes"]
+    },
+    {
+      "id": "gutrefmap_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "How does the iterative clustering approach used in some reference sets potentially lead to redundancy among representative genomes?",
+      "options": {
+        "A": "Iterative clustering re-uses the same genomes across multiple rounds, increasing their frequency in the final set",
+        "B": "Iterative merging of clusters can result in representatives being chosen from overlapping genetic neighborhoods, producing a set where the closest pairs of representatives are too genomically similar, reducing the specificity of read alignment",
+        "C": "Iterative clustering always prioritizes isolate genomes over MAGs, introducing a cultural bias toward well-studied organisms",
+        "D": "The iterative method ignores contamination thresholds, allowing lower-quality genomes to be included as representatives"
+      },
+      "correct_answer": "B",
+      "explanation": "When a clustering process is iterative, early-stage decisions about cluster boundaries can result in very similar genomes being retained as separate representatives in the final set. This is evidenced by cases where the minimum MASH distance between representative genomes is very small, indicating near-identical representatives. This redundancy undermines unique read alignment since reads cannot confidently be assigned to a single representative, reducing the discriminatory power of the reference for species-level microbiome profiling.",
+      "topic_tags": ["iterative clustering", "representative genome selection", "MASH distance", "genome redundancy", "reference set design"]
+    },
+    {
+      "id": "gutrefmap_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What does the prevalence of novel microbial species in both internal and external validation cohorts tell us about the biological relevance of these newly discovered organisms?",
+      "options": {
+        "A": "High cross-cohort prevalence suggests these species were likely sequencing artifacts that appear repeatedly due to technical biases",
+        "B": "Prevalence in independent cohorts confirms that these novel species represent real, recurring biological entities that exist across different human populations and are not specific to the discovery cohort",
+        "C": "Cross-cohort prevalence indicates that these species are dominant members of the gut microbiome that should have been discovered earlier",
+        "D": "It indicates that these organisms are pathogens, since pathogens tend to be widely distributed across populations"
+      },
+      "correct_answer": "B",
+      "explanation": "When a novel species — assembled from one cohort's data — is detected at appreciable prevalence in an entirely separate, geographically distinct cohort, this strongly supports that it is a genuine biological entity rather than an assembly artifact or cohort-specific signal. The most prevalent novel species being detected in both internal (Israeli) and external (Dutch) validation cohorts independently confirms that these organisms genuinely inhabit human guts across populations.",
+      "topic_tags": ["novel species prevalence", "validation cohort", "biological relevance", "cross-population", "metagenomic validation"]
+    },
+
+    {
+      "id": "gutrefmap_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "Why might the advantage of a larger, higher-quality reference set be reduced or absent when applied to cohorts from non-western or underrepresented populations?",
+      "options": {
+        "A": "Non-western populations have simpler gut microbiomes with fewer species, reducing the need for extensive reference sets",
+        "B": "Non-western cohorts typically use different sequencing platforms that are incompatible with western-derived reference alignments",
+        "C": "If the discovery cohort underrepresents certain non-western populations, the novel species unique to those populations may not be captured in the new reference, while older sets that happened to include more samples from those populations may perform comparably or better for those cohorts",
+        "D": "Non-western populations have higher rates of dysbiosis, making their microbiomes too variable for any standardized reference to work effectively"
+      },
+      "correct_answer": "C",
+      "explanation": "Reference set performance is directly tied to how well its constituent genomes represent the microbial communities being sequenced. A reference built predominantly from one demographic will fail to capture the distinct microbial diversity of populations not included in its construction. If a competing reference set happened to include more samples from a particular non-western population — even if the overall set was older or smaller — it may align reads from that cohort better. This illustrates that scale cannot substitute for demographic breadth in reference set design.",
+      "topic_tags": ["non-western populations", "reference set generalizability", "cohort representation", "population-specific microbiome", "global microbiome diversity"]
+    },
+    {
+      "id": "gutrefmap_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "What does the enrichment of novel gut microbial species' genes in specific COG functional categories suggest, and what caveat must be applied to this interpretation?",
+      "options": {
+        "A": "Novel species are metabolically specialized and fill ecological niches not covered by known species; this interpretation is robust because novel genomes are fully annotated",
+        "B": "Novel species likely encode functionally distinct capabilities compared to known species, but because their genomes are less completely annotated than those of known species, the apparent functional enrichment may partly reflect annotation bias rather than true biological specialization",
+        "C": "The COG enrichment confirms that novel species are closely related to known species and share most of their core metabolic functions",
+        "D": "The enrichment is purely an artifact of using a single annotation tool and would disappear with a different functional classification scheme"
+      },
+      "correct_answer": "B",
+      "explanation": "While novel species genomes show statistically significant enrichment for certain COG functional categories, a critical caveat is that these genomes are less completely annotated overall — a lower proportion of their genes receive functional annotations. This means that observed enrichments may partly reflect which gene families are well-enough characterized to be recognized in partially assembled, poorly-annotated genomes, rather than truly reflecting that novel species are disproportionately enriched for those functions. Both the biological signal and the annotation artifact must be considered when interpreting such results.",
+      "topic_tags": ["COG functional categories", "novel species function", "annotation bias", "functional enrichment", "genome annotation completeness"]
+    }
+  ]
+}

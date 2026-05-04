@@ -1,0 +1,249 @@
+{
+  "file_name": "72-Enterosignatures define common bacterial guilds in the human gut microbiome.json",
+  "metadata": {
+    "source_paper": "Enterosignatures define common bacterial guilds in the human gut microbiome",
+    "dataset_description": "RAG evaluation dataset designed for multi-document retrieval. Questions focus on mechanisms, concepts, and functional insights rather than paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+  "qa_pairs": [
+    {
+      "id": "ESIG_E_001",
+      "difficulty": "easy",
+      "question": "What are enterosignatures in the context of the gut microbiome?",
+      "answer": "Enterosignatures are groups of co-occurring bacterial guilds identified using computational decomposition methods. They represent ecological assemblies of microbes that together describe the composition of the gut microbiome more effectively than discrete clustering approaches.",
+      "topic_tags": ["enterosignatures", "microbial guilds", "definition"]
+    },
+    {
+      "id": "ESIG_E_002",
+      "difficulty": "easy",
+      "question": "How many major enterosignatures are typically used to describe the human gut microbiome?",
+      "answer": "Five major enterosignatures are used to describe the human gut microbiome, each dominated by characteristic bacterial groups such as Bacteroides, Firmicutes, Prevotella, Bifidobacterium, and Escherichia.",
+      "topic_tags": ["enterosignatures", "classification"]
+    },
+    {
+      "id": "ESIG_E_003",
+      "difficulty": "easy",
+      "question": "What distinguishes enterosignatures from traditional enterotype models?",
+      "answer": "Unlike enterotype models that assign each microbiome to a single discrete cluster, enterosignatures represent microbiomes as combinations of multiple co-existing bacterial guilds, capturing continuous variation and ecological complexity.",
+      "topic_tags": ["enterotypes", "comparison", "microbiome modeling"]
+    },
+    {
+      "id": "ESIG_E_004",
+      "difficulty": "easy",
+      "question": "What does it indicate when a gut microbiome deviates strongly from the enterosignature model?",
+      "answer": "A strong deviation from the enterosignature model may indicate a dysbiotic or perturbed microbiome, often associated with reduced diversity, dominance of certain species, or presence of pathobionts.",
+      "topic_tags": ["dysbiosis", "microbiome health"]
+    },
+    {
+      "id": "ESIG_E_005",
+      "difficulty": "easy",
+      "question": "How does the composition of enterosignatures change over a person's lifetime?",
+      "answer": "Enterosignature composition changes dynamically with age, with infant microbiomes often dominated by Bifidobacterium or Escherichia-related signatures, while adult microbiomes are more commonly characterized by combinations involving Bacteroides, Firmicutes, and Prevotella.",
+      "topic_tags": ["age", "microbiome development"]
+    },
+    {
+      "id": "ESIG_M_001",
+      "difficulty": "medium",
+      "question": "How are enterosignatures computationally derived from microbiome data?",
+      "answer": "Enterosignatures are derived using non-negative matrix factorization (NMF), which decomposes microbial abundance data into continuous latent components representing co-occurring bacterial guilds that explain variation in microbiome composition.",
+      "topic_tags": ["NMF", "data modeling", "microbiome analysis"]
+    },
+    {
+      "id": "ESIG_M_002",
+      "difficulty": "medium",
+      "question": "Why are combinations of enterosignatures more common than single-signature microbiomes?",
+      "answer": "Combinations are more common because different enterosignatures provide complementary metabolic functions, allowing microbial communities to achieve broader functional capabilities and ecological stability.",
+      "topic_tags": ["metabolic complementarity", "microbial ecology"]
+    },
+    {
+      "id": "ESIG_M_003",
+      "difficulty": "medium",
+      "question": "What role does the Bacteroides-associated enterosignature play in the gut ecosystem?",
+      "answer": "The Bacteroides-associated enterosignature plays a central role in maintaining core gut functionality, particularly in nutrient degradation and supporting metabolic interactions with other microbial guilds.",
+      "topic_tags": ["Bacteroides", "metabolism"]
+    },
+    {
+      "id": "ESIG_M_004",
+      "difficulty": "medium",
+      "question": "How do enterosignatures reflect microbial metabolic specialization?",
+      "answer": "Each enterosignature is associated with distinct metabolic functions, such as carbohydrate degradation, energy metabolism, or amino acid processing, reflecting specialization among bacterial guilds.",
+      "topic_tags": ["metabolism", "functional specialization"]
+    },
+    {
+      "id": "ESIG_M_005",
+      "difficulty": "medium",
+      "question": "How do antibiotic treatments influence enterosignature composition?",
+      "answer": "Antibiotic treatments disrupt microbiome composition, often increasing the dominance of certain enterosignatures like Bacteroides while reducing others, and can temporarily push the microbiome into atypical or dysbiotic states.",
+      "topic_tags": ["antibiotics", "microbiome perturbation"]
+    },
+    {
+      "id": "ESIG_M_006",
+      "difficulty": "medium",
+      "question": "Why is metabolic complementarity important among enterosignatures?",
+      "answer": "Metabolic complementarity allows different microbial guilds to collectively perform a wider range of biochemical functions, enhancing ecosystem resilience and efficiency in nutrient utilization.",
+      "topic_tags": ["complementarity", "ecosystem resilience"]
+    },
+    {
+      "id": "ESIG_H_001",
+      "difficulty": "hard",
+      "question": "How does the enterosignature model improve interpretation of microbiome variation compared to taxonomic summaries?",
+      "answer": "The enterosignature model captures ecological relationships and co-occurrence patterns among microbes, providing a functional and continuous representation of microbiome variation, unlike taxonomic summaries which ignore interactions and ecosystem structure.",
+      "topic_tags": ["model comparison", "ecology"]
+    },
+    {
+      "id": "ESIG_H_002",
+      "difficulty": "hard",
+      "question": "What mechanisms explain why combinations of enterosignatures increase metabolic potential?",
+      "answer": "Different enterosignatures contribute unique metabolic pathways, and when combined, they enable cross-feeding, resource sharing, and expanded metabolite production, leading to increased overall metabolic diversity.",
+      "topic_tags": ["cross-feeding", "metabolic networks"]
+    },
+    {
+      "id": "ESIG_H_003",
+      "difficulty": "hard",
+      "question": "Why are microbiomes dominated by a single enterosignature often considered atypical?",
+      "answer": "Single-signature dominance reduces functional diversity and may indicate ecological imbalance, often associated with pathogen overgrowth or environmental perturbations such as antibiotic exposure.",
+      "topic_tags": ["dysbiosis", "ecological imbalance"]
+    },
+    {
+      "id": "ESIG_H_004",
+      "difficulty": "hard",
+      "question": "How can enterosignatures be used to detect microbiome-related health conditions?",
+      "answer": "By identifying deviations from typical combinations and proportions of enterosignatures, researchers can detect abnormal microbial states associated with disease, inflammation, or external disturbances such as antibiotics or diet changes.",
+      "topic_tags": ["clinical application", "biomarkers"]
+    }
+  ],
+  "mcq_questions": [
+    {
+      "id": "ESIG_MC_E_001",
+      "difficulty": "easy",
+      "question": "What do enterosignatures primarily represent?",
+      "options": {
+        "A": "Individual bacterial species",
+        "B": "Microbial guilds of co-occurring bacteria",
+        "C": "Genetic mutations",
+        "D": "Host immune responses"
+      },
+      "correct_answer": "B",
+      "explanation": "Enterosignatures represent microbial guilds, meaning groups of bacteria that co-occur and function together."
+    },
+    {
+      "id": "ESIG_MC_E_002",
+      "difficulty": "easy",
+      "question": "Which method is used to derive enterosignatures?",
+      "options": {
+        "A": "PCR",
+        "B": "NMF",
+        "C": "ELISA",
+        "D": "Western blot"
+      },
+      "correct_answer": "B",
+      "explanation": "Non-negative matrix factorization (NMF) is used to identify enterosignatures."
+    },
+    {
+      "id": "ESIG_MC_E_003",
+      "difficulty": "easy",
+      "question": "How many main enterosignatures are typically identified?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "5",
+        "D": "10"
+      },
+      "correct_answer": "C",
+      "explanation": "Five enterosignatures provide an optimal balance of interpretability and explanatory power."
+    },
+    {
+      "id": "ESIG_MC_M_001",
+      "difficulty": "medium",
+      "question": "Why do multiple enterosignatures often coexist in a microbiome?",
+      "options": {
+        "A": "They compete for identical functions",
+        "B": "They provide complementary metabolic functions",
+        "C": "They are randomly distributed",
+        "D": "They eliminate each other"
+      },
+      "correct_answer": "B",
+      "explanation": "Enterosignatures coexist because they complement each other metabolically."
+    },
+    {
+      "id": "ESIG_MC_M_002",
+      "difficulty": "medium",
+      "question": "What is a key feature of the enterosignature model compared to enterotypes?",
+      "options": {
+        "A": "Discrete clustering",
+        "B": "Continuous composition representation",
+        "C": "Single species focus",
+        "D": "Host-only analysis"
+      },
+      "correct_answer": "B",
+      "explanation": "Enterosignatures represent microbiomes as continuous mixtures rather than discrete clusters."
+    },
+    {
+      "id": "ESIG_MC_M_003",
+      "difficulty": "medium",
+      "question": "What happens to microbiome composition after antibiotic use?",
+      "options": {
+        "A": "It becomes more stable",
+        "B": "It remains unchanged",
+        "C": "It becomes disrupted and may shift signatures",
+        "D": "It eliminates all bacteria"
+      },
+      "correct_answer": "C",
+      "explanation": "Antibiotics disrupt microbiome composition, causing shifts in enterosignatures."
+    },
+    {
+      "id": "ESIG_MC_M_004",
+      "difficulty": "medium",
+      "question": "Which enterosignature is considered central to gut functionality?",
+      "options": {
+        "A": "Escherichia",
+        "B": "Bacteroides",
+        "C": "Bifidobacterium",
+        "D": "Prevotella"
+      },
+      "correct_answer": "B",
+      "explanation": "The Bacteroides-associated enterosignature plays a central functional role."
+    },
+    {
+      "id": "ESIG_MC_M_005",
+      "difficulty": "medium",
+      "question": "What does a low model fit in enterosignatures suggest?",
+      "options": {
+        "A": "Healthy microbiome",
+        "B": "Stable microbiome",
+        "C": "Atypical or dysbiotic microbiome",
+        "D": "High diversity"
+      },
+      "correct_answer": "C",
+      "explanation": "Low fit indicates deviation from normal patterns, often linked to dysbiosis."
+    },
+    {
+      "id": "ESIG_MC_H_001",
+      "difficulty": "hard",
+      "question": "Why does metabolic diversity plateau after combining multiple enterosignatures?",
+      "options": {
+        "A": "Lack of nutrients",
+        "B": "Functional redundancy limits additional gains",
+        "C": "Microbes stop interacting",
+        "D": "Host immunity blocks metabolism"
+      },
+      "correct_answer": "B",
+      "explanation": "After a certain point, additional signatures provide overlapping functions, limiting further gains."
+    },
+    {
+      "id": "ESIG_MC_H_002",
+      "difficulty": "hard",
+      "question": "Why is enterosignature-based modeling more useful for large-scale RAG systems?",
+      "options": {
+        "A": "It focuses on metadata",
+        "B": "It reduces biological complexity into interpretable patterns",
+        "C": "It ignores microbial interactions",
+        "D": "It only works for small datasets"
+      },
+      "correct_answer": "B",
+      "explanation": "Enterosignatures simplify complex microbiome data into interpretable, generalizable patterns useful for retrieval."
+    }
+  ],
+  "source_reference": ":contentReference[oaicite:0]{index=0}"
+}

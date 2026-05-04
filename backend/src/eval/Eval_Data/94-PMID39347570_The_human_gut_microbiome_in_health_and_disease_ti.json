@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "The human gut microbiome in health and disease: time for a new chapter?",
+    "authors": ["Jee-Yon Lee", "Derek J. Bays", "Hannah P. Savage", "Andreas J. Bäumler"],
+    "journal": "Infection and Immunity",
+    "year": 2024,
+    "doi": "10.1128/iai.00302-24",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "gutredox_easy_001",
+      "difficulty": "easy",
+      "question": "What is the ecological guild concept and why is it useful for studying the gut microbiota?",
+      "answer": "An ecological guild is a group of microorganisms that exploit environmental resources in a similar way, grouped without regard to their taxonomic position. In the gut microbiome context, the concept is useful because the human colonic microbiota lacks abundant core species shared across individuals, making species-level comparisons across people impossible. By sorting microbes into guilds based on their energy metabolism and trophic strategies, researchers can compare microbial communities that differ entirely in species composition but share functional organisation. This framework allows gut homeostasis and dysbiosis to be defined in ecological rather than taxonomic terms.",
+      "topic_tags": ["ecological guilds", "gut microbiota", "homeostasis", "dysbiosis", "taxonomy"]
+    },
+    {
+      "id": "gutredox_easy_002",
+      "difficulty": "easy",
+      "question": "What ecological guild dominates the colonic microbiota during gut homeostasis, and why?",
+      "answer": "During gut homeostasis, the colonic microbiota is dominated by primary fermenters — microorganisms that break down organic compounds into fermentation products using endogenous electron acceptors. This dominance occurs because the host actively maintains anaerobic conditions in the colonic lumen through high mitochondrial oxygen consumption in the intestinal epithelium, which renders the mucosal surface hypoxic. This anoxic environment is thermodynamically favourable for primary fermenters and unfavourable for aerobic or facultatively anaerobic microbes. Primary fermenters, in turn, break down unabsorbed dietary components into fermentation products such as short-chain fatty acids that support host nutrition.",
+      "topic_tags": ["primary fermenters", "gut homeostasis", "anaerobiosis", "epithelial hypoxia", "SCFA"]
+    },
+    {
+      "id": "gutredox_easy_003",
+      "difficulty": "easy",
+      "question": "What is the microbial redox tower and what principle underlies it?",
+      "answer": "The microbial redox tower is a microbiological theorem stating that a thermodynamic hierarchy of electron acceptors governs the abundance of ecological guilds in microbial communities. The underlying principle is that microorganisms producing the most energy — through redox reactions transferring electrons from a carbon-based donor to an electron acceptor — have the shortest generation times and come to dominate communities. Oxygen has the highest redox potential among electron acceptors, so microbes that use oxygen outcompete others under oxic conditions. Nitrate has the second-highest redox potential. In nutrient-rich anoxic environments, where neither oxygen nor nitrate is available, primary fermenters dominate instead.",
+      "topic_tags": ["microbial redox tower", "electron acceptors", "ecological guilds", "thermodynamics", "oxygen"]
+    },
+    {
+      "id": "gutredox_easy_004",
+      "difficulty": "easy",
+      "question": "Why did the early vision of defining gut homeostasis through abundant core microbial species fail?",
+      "answer": "The early vision failed because analysis of fecal microbiota from human volunteers revealed marked interpersonal differences in bacterial species content, with individuals from different households sharing only 2–3% overlap at the species level. This contrasted sharply with invertebrate models, where the same bacterial species are associated with hosts from different geographical locations. Without abundant core species shared across humans, it became impossible to define gut homeostasis by species composition — and, consequently, impossible to define gut dysbiosis as a departure from those species either.",
+      "topic_tags": ["core microbiome", "interpersonal variation", "gut homeostasis", "species composition", "dysbiosis"]
+    },
+    {
+      "id": "gutredox_easy_005",
+      "difficulty": "easy",
+      "question": "What consistent ecological pattern is observed in the fecal microbiota of patients with a broad range of chronic human diseases?",
+      "answer": "Across a wide range of chronic human diseases — including cardiovascular disease, colorectal cancer, type 1 and type 2 diabetes, chronic kidney disease, chronic liver disease, inflammatory bowel disease, Alzheimer's disease, and others — an elevated relative abundance of facultatively anaerobic bacteria is one of the most consistent and robust ecological patterns observed. In contrast, facultatively anaerobic bacteria represent less than 1% of the fecal microbiota during healthy homeostasis. This shift from a primary fermenter-dominated community toward one with elevated facultative anaerobes is the hallmark compositional change linking gut dysbiosis to chronic illness.",
+      "topic_tags": ["facultatively anaerobic bacteria", "dysbiosis", "chronic disease", "fecal microbiota", "ecological pattern"]
+    },
+
+    {
+      "id": "gutredox_medium_001",
+      "difficulty": "medium",
+      "question": "How does epithelial metabolism maintain anaerobic conditions in the colonic lumen, and what disrupts this process?",
+      "answer": "Under homeostatic conditions, high mitochondrial oxygen consumption in the epithelium of the large intestine renders the mucosal surface hypoxic (below 1% O₂), thereby limiting the diffusion of oxygen into the intestinal lumen. This epithelial hypoxia is promoted by butyrate-derived activation of peroxisome proliferator-activated receptor gamma (PPAR-γ) signalling, which sustains high mitochondrial activity in colonocytes. Disruption occurs when epithelial cells shift from mitochondrial oxidative phosphorylation to aerobic glycolysis — converting glucose to lactate instead of consuming it via the mitochondria. This metabolic reprogramming elevates epithelial oxygenation and increases oxygen diffusion into the lumen. It has been observed in conditions including high-fat diet feeding, infectious colitis, chemical-induced colitis, colorectal cancer mouse models, graft-versus-host disease, and after antibiotic treatment.",
+      "topic_tags": ["epithelial hypoxia", "PPAR-γ", "aerobic glycolysis", "mitochondrial oxygen consumption", "dysbiosis"]
+    },
+    {
+      "id": "gutredox_medium_002",
+      "difficulty": "medium",
+      "question": "What role does host-derived nitrate play in driving gut dysbiosis during inflammation?",
+      "answer": "During intestinal inflammation, the host enzyme inducible nitric oxide synthase (iNOS) produces nitric oxide (NO), which reacts with superoxide radicals generated by NADPH oxidases to form nitrate in the intestinal lumen. Elevated luminal nitrate concentrations then increase the abundance of facultatively anaerobic bacteria through anaerobic nitrate respiration, since nitrate has the second-highest redox potential after oxygen. This mechanism has been demonstrated in mouse models of infectious colitis, ulcerative colitis, high-fat diet, antibiotic treatment, cancer-associated cachexia, and colorectal cancer. Nitrate can also stimulate harmful metabolic pathways — for example, it promotes choline catabolism by E. coli, increasing production of trimethylamine and its derivative TMAO, which has been implicated in cardiovascular and kidney disease.",
+      "topic_tags": ["nitrate", "iNOS", "dysbiosis", "facultative anaerobes", "inflammation", "TMAO"]
+    },
+    {
+      "id": "gutredox_medium_003",
+      "difficulty": "medium",
+      "question": "How does an ecological definition of dysbiosis differ from a species composition-based definition, and what are the advantages of the ecological approach?",
+      "answer": "A species composition-based definition of dysbiosis characterises it as a change in microbial species richness or taxonomic identity — typically a decrease in diversity, absence of beneficial microbes, or presence of harmful ones. This approach is problematic because the human gut lacks abundant core species, making it impossible to define a normal compositional baseline. An ecological definition instead defines dysbiosis as a state of weakened host control over the microbial environment, in which host functions that limit the luminal availability of oxygen and nitrate are compromised. Under this view, changes in microbiota composition are secondary biomarkers of an underlying environmental shift, not the primary cause. The ecological definition is not subject to the limitations of taxonomic approaches, is potentially measurable through luminal concentrations of electron acceptors, and provides clear therapeutic targets — either restoring host functions that control the environment or blocking microbial respiratory pathways that exploit it.",
+      "topic_tags": ["dysbiosis", "ecological definition", "host environment", "taxonomic composition", "therapeutic strategies"]
+    },
+    {
+      "id": "gutredox_medium_004",
+      "difficulty": "medium",
+      "question": "What is metabolism-based editing of the gut microbiota, and how has it been applied to reduce disease in preclinical models?",
+      "answer": "Metabolism-based editing refers to therapeutic interventions that selectively blunt the growth of dysbiotic microbes by targeting their respiratory metabolism rather than killing them broadly with antibiotics. The approach exploits the fact that the respiratory pathways driving the dominance of facultatively anaerobic bacteria during dysbiosis rely on molybdenum-containing cofactors (molybdopterin). Tungsten can replace molybdenum in these cofactors, inactivating them specifically in Gammaproteobacteria. In mouse models, sodium tungstate administration has been used to selectively blunt Gammaproteobacteria expansion, reducing intestinal inflammation in ulcerative colitis models and blocking a bloom of colibactin-producing E. coli in colorectal cancer models — thereby reducing polyp formation. This precision editing approach avoids broad microbiota disruption and targets the metabolic basis of dysbiosis.",
+      "topic_tags": ["metabolism-based editing", "sodium tungstate", "Gammaproteobacteria", "ulcerative colitis", "colorectal cancer", "molybdopterin"]
+    },
+    {
+      "id": "gutredox_medium_005",
+      "difficulty": "medium",
+      "question": "How does high-fat diet intake contribute to gut dysbiosis through effects on the colonic epithelium?",
+      "answer": "High-fat diet intake impairs colonocyte mitochondrial bioenergetics, reducing PPAR-γ signalling in the intestinal epithelium. Since PPAR-γ activation by butyrate normally sustains high mitochondrial oxygen consumption — which maintains epithelial hypoxia and thereby colonic anaerobiosis — its reduction causes a shift toward aerobic glycolysis. This elevates epithelial oxygenation and increases oxygen diffusion into the colonic lumen, creating conditions that favour facultatively anaerobic bacteria. High-fat diet also reduces the abundance of butyrate-producing Clostridia, which further impairs PPAR-γ activation and microbiota recovery after antibiotic treatment. Additionally, high-fat diet induces low-grade mucosal inflammation that elevates luminal nitrate, stimulating further expansion of facultatively anaerobic species such as E. coli that produce harmful metabolites including TMAO.",
+      "topic_tags": ["high-fat diet", "PPAR-γ", "epithelial oxygenation", "dysbiosis", "butyrate", "Clostridia"]
+    },
+    {
+      "id": "gutredox_medium_006",
+      "difficulty": "medium",
+      "question": "What is the mechanism by which Candida albicans can bloom in the gut following antibiotic treatment, and how can it be prevented?",
+      "answer": "Antibiotic treatment disrupts the resident bacterial microbiota and impairs butyrate production. The resulting loss of butyrate reduces PPAR-γ signalling in colonocytes, causing a shift from mitochondrial oxidative phosphorylation toward aerobic glycolysis. This metabolic reprogramming elevates epithelial oxygenation, which increases oxygen diffusion into the colonic lumen. Since Candida albicans is a facultatively anaerobic fungus, the increased luminal oxygen availability enables it to bloom through aerobic respiration — representing the most common cause of invasive candidemia in immunocompromised patients with haematologic malignancies. Prevention in mouse models has been achieved by treatment with 5-aminosalicylic acid (5-ASA), a PPAR-γ agonist that restores epithelial hypoxia during antibiotic treatment, thereby limiting luminal oxygen and suppressing the Candida bloom.",
+      "topic_tags": ["Candida albicans", "antibiotic treatment", "epithelial oxygenation", "PPAR-γ", "5-ASA", "candidemia"]
+    },
+
+    {
+      "id": "gutredox_hard_001",
+      "difficulty": "hard",
+      "question": "How does reactive oxygen species detoxification by phagocytes paradoxically contribute to the expansion of facultatively anaerobic bacteria during intestinal inflammation?",
+      "answer": "During intestinal inflammation, phagocytes migrate into the intestinal lumen and generate reactive oxygen species (ROS) via the NADPH oxidase enzyme, which initially depletes oxygen to produce superoxide radicals (O₂ + NADPH → O₂⁻ + NADP⁺). This creates microenvironmental hypoxia at sites of inflammation. However, the subsequent detoxification steps paradoxically release oxygen back into the lumen: superoxide dismutase converts superoxide to hydrogen peroxide (2O₂⁻ + 2H⁺ → H₂O₂ + O₂), and catalase then converts hydrogen peroxide to water and oxygen (2H₂O₂ → O₂ + 2H₂O). The liberated oxygen drives aerobic respiration in facultatively anaerobic bacteria, fuelling their expansion. Thus, the host's own antimicrobial ROS response, through its detoxification pathway, inadvertently generates an oxic niche that selects for the very facultative anaerobes associated with disease. This is separate from — but additive to — the oxygen made available through the iNOS-nitrate pathway, meaning two independent inflammatory processes converge to promote dysbiotic blooms.",
+      "topic_tags": ["reactive oxygen species", "NADPH oxidase", "superoxide dismutase", "catalase", "facultative anaerobes", "inflammation", "dysbiosis"]
+    },
+    {
+      "id": "gutredox_hard_002",
+      "difficulty": "hard",
+      "question": "How does the depletion of butyrate-producing Clostridia create a self-reinforcing cycle of dysbiosis, and what are the downstream metabolic consequences?",
+      "answer": "Butyrate-producing Clostridia are critical for maintaining colonocyte PPAR-γ signalling. When these bacteria are depleted — for example, by antibiotic treatment, particularly in the context of high-fat diet — the loss of butyrate reduces mitochondrial oxygen consumption in colonocytes, elevating epithelial oxygenation. This increased oxygen diffusion into the lumen then thermodynamically favours facultatively anaerobic bacteria over the primary fermenters (including Clostridia) needed for recovery, creating a self-reinforcing cycle that prevents microbiota reconstitution. The metabolic consequences are multiple: first, sorbitol accumulates in the intestinal lumen because Clostridia are the main colonic source of sorbitol dehydrogenase, the enzyme that initiates sorbitol catabolism — this causes osmotic diarrhoea and sorbitol intolerance. Second, the facultatively anaerobic bacteria that expand in this environment produce harmful metabolites: in the presence of host-derived nitrate (elevated by low-grade inflammation from high-fat diet), E. coli produces trimethylamine from dietary choline, which is oxidised in the liver to TMAO — a uremic toxin linked to cardiovascular disease, chronic kidney disease, and type 2 diabetes.",
+      "topic_tags": ["Clostridia", "butyrate", "PPAR-γ", "sorbitol intolerance", "TMAO", "dysbiosis cycle", "high-fat diet"]
+    },
+    {
+      "id": "gutredox_hard_003",
+      "difficulty": "hard",
+      "question": "Why does the broadened ecological definition of the microbiome — encompassing both microbiota and their host environment — fundamentally change how dysbiosis should be understood and treated?",
+      "answer": "The traditional microbe-centric microbiome definition focused solely on the collection of microbes and their genes, restricting dysbiosis definitions to microbial features such as species composition, diversity, or presence of specific organisms. This approach was undermined by the absence of core species, the presence of functional redundancy, and the impossibility of establishing a compositional baseline for health. Broadening the microbiome definition to include the host environment — consistent with ecological definitions — introduces a crucial conceptual shift: a microbiome imbalance may be triggered not by changes in the microbiota, but by an underlying change in the host environment. Specifically, weakening of host functions that limit luminal availability of oxygen and nitrate creates an oxic shift that thermodynamically selects for facultatively anaerobic bacteria — meaning the microbiota changes are secondary biomarkers of the underlying host dysfunction, not the primary cause. This reframing has direct therapeutic implications: instead of targeting species composition through probiotics or broad antimicrobials, interventions can either block microbial respiratory pathways (metabolism-based editing with tungstate) or strengthen host functions that maintain anaerobiosis (PPAR-γ agonists like 5-ASA, iNOS inhibitors like aminoguanidine). The ecological definition also enables measurable diagnostic criteria — luminal oxygen and nitrate concentrations — that do not depend on establishing an elusive normal species composition.",
+      "topic_tags": ["microbiome definition", "host environment", "dysbiosis", "PPAR-γ", "metabolism-based editing", "therapeutic strategies", "oxygen", "nitrate"]
+    },
+    {
+      "id": "gutredox_hard_004",
+      "difficulty": "hard",
+      "question": "How does the concept of thermodynamic filtering by respiratory electron acceptors explain the ecological guild shift seen in multiple distinct disease contexts?",
+      "answer": "Thermodynamic filtering describes the process by which the availability of electron acceptors with high redox potential — principally oxygen and nitrate — selectively enriches microbial species capable of using them for respiration, because those species generate more ATP per substrate and thus grow faster. During homeostasis, host functions prevent oxygen and nitrate from accumulating in the colonic lumen, favouring primary fermenters. When host control is weakened by various triggers — high-fat diet (reducing PPAR-γ and mitochondrial activity), infectious or chemical colitis (triggering both epithelial aerobic glycolysis and iNOS-mediated nitrate production), antibiotic treatment (depleting butyrate producers and reducing PPAR-γ), or phagocyte ROS detoxification (releasing oxygen during inflammation) — oxygen and nitrate enter the lumen and thermodynamically select for facultatively anaerobic bacteria regardless of the specific disease context. This explains why elevated Gammaproteobacteria and other facultative anaerobes appear as a common ecological signature across cardiovascular disease, colorectal cancer, IBD, diabetes, kidney disease, liver disease, Alzheimer's disease, and more — even though the initiating conditions differ. The final common pathway is always an oxic shift in the colonic environment that the redox tower predicts will enrich facultative anaerobes. This framework therefore unifies mechanistically what had previously appeared as disparate disease-specific microbiota patterns.",
+      "topic_tags": ["thermodynamic filtering", "electron acceptors", "oxygen", "nitrate", "facultative anaerobes", "redox tower", "common disease mechanism"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "gutredox_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which ecological guild dominates the healthy adult colonic microbiota, and what distinguishes it metabolically?",
+      "options": {
+        "A": "Facultatively anaerobic microbes that use oxygen when available and fermentation when not",
+        "B": "Primary fermenters that break down organic compounds using endogenous electron acceptors such as pyruvate",
+        "C": "Sulfate-reducing bacteria that use sulfate as a terminal electron acceptor",
+        "D": "Secondary fermenters that break down products of primary fermentation into acetate and hydrogen"
+      },
+      "correct_answer": "B",
+      "explanation": "During gut homeostasis, the colonic microbiota is dominated by primary fermenters. These microorganisms break down organic compounds into fermentation products using endogenous electron acceptors (such as pyruvate or phosphoenolpyruvate), thriving in the anoxic environment maintained by epithelial hypoxia. Facultatively anaerobic microbes represent less than 1% of the fecal microbiota during homeostasis.",
+      "topic_tags": ["primary fermenters", "ecological guilds", "gut homeostasis", "anaerobiosis"]
+    },
+    {
+      "id": "gutredox_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "Why is it not possible to define gut homeostasis based on the presence of specific abundant microbial species?",
+      "options": {
+        "A": "Because gut bacteria evolve too rapidly for any species to remain stable across time",
+        "B": "Because fecal microbiota of individuals from different households share only 2–3% overlap at the species level, making it impossible to identify universal core species",
+        "C": "Because sequencing technologies are not yet sensitive enough to detect low-abundance core species reliably",
+        "D": "Because the gut microbiota is dominated by viruses rather than bacteria in most healthy individuals"
+      },
+      "correct_answer": "B",
+      "explanation": "Unlike invertebrate hosts that harbour the same core bacterial species across geographies, humans show only 2–3% species-level overlap in fecal microbiota between households. This extreme interpersonal variability makes it impossible to identify abundant core species common to the healthy human colonic microbiota, which undermines species-based definitions of both homeostasis and dysbiosis.",
+      "topic_tags": ["core microbiome", "interpersonal variation", "species composition", "homeostasis"]
+    },
+    {
+      "id": "gutredox_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "What is the primary mechanism by which the healthy host maintains an anoxic environment in the colonic lumen?",
+      "options": {
+        "A": "Mucus secretion by goblet cells forms a physical oxygen barrier",
+        "B": "Primary fermenters consume all luminal oxygen through high-speed fermentation",
+        "C": "High mitochondrial oxygen consumption in the colonic epithelium renders the mucosal surface hypoxic, limiting oxygen diffusion into the lumen",
+        "D": "Peristalsis rapidly expels oxygen-containing material before diffusion can occur"
+      },
+      "correct_answer": "C",
+      "explanation": "Anaerobiosis in the colon is maintained by the host independently of the microbiota. High mitochondrial oxygen consumption in the epithelium of the large intestine keeps the mucosal surface at below 1% O₂, creating a steep oxygen gradient that limits diffusion into the intestinal lumen. This host-generated hypoxia is the primary mechanism sheltering primary fermenters from atmospheric oxygen.",
+      "topic_tags": ["epithelial hypoxia", "mitochondrial oxygen consumption", "anaerobiosis", "colonic lumen"]
+    },
+
+    {
+      "id": "gutredox_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "What molecular pathway connects the loss of butyrate-producing bacteria to increased luminal oxygen availability in the colon?",
+      "options": {
+        "A": "Loss of butyrate reduces PPAR-γ signalling in colonocytes, which decreases mitochondrial oxygen consumption and raises epithelial oxygenation, enabling more oxygen to diffuse into the lumen",
+        "B": "Butyrate directly scavenges luminal oxygen, so its absence allows oxygen to accumulate",
+        "C": "Without butyrate, goblet cells reduce mucin secretion, thinning the oxygen-impermeable mucus barrier",
+        "D": "Butyrate stimulates iNOS expression, and its loss reduces nitric oxide that would otherwise consume luminal oxygen"
+      },
+      "correct_answer": "A",
+      "explanation": "Butyrate from primary-fermenter Clostridia activates PPAR-γ signalling in the colonic epithelium. PPAR-γ signalling promotes high mitochondrial oxygen consumption, which keeps the epithelial surface hypoxic. When butyrate-producing bacteria are depleted, PPAR-γ signalling falls, colonocytes shift toward aerobic glycolysis, mitochondrial oxygen consumption decreases, and more oxygen diffuses into the lumen — thermodynamically selecting for facultatively anaerobic microbes.",
+      "topic_tags": ["butyrate", "PPAR-γ", "mitochondrial oxygen consumption", "epithelial oxygenation", "Clostridia"]
+    },
+    {
+      "id": "gutredox_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "How does sodium tungstate exert a selective effect on dysbiotic microbes without causing broad microbiota disruption like antibiotics?",
+      "options": {
+        "A": "It acidifies the intestinal lumen, selectively killing acid-sensitive Gammaproteobacteria",
+        "B": "It competes with iron for bacterial uptake, starving iron-dependent pathogens",
+        "C": "It substitutes for molybdenum in molybdopterin-containing cofactors, inactivating the respiratory enzymes that facultatively anaerobic Gammaproteobacteria rely on for dysbiotic expansion",
+        "D": "It activates Toll-like receptors on colonocytes to increase antimicrobial peptide production targeting Gammaproteobacteria"
+      },
+      "correct_answer": "C",
+      "explanation": "The respiratory pathways that enable facultatively anaerobic Gammaproteobacteria to dominate during dysbiosis require molybdenum-containing cofactors (molybdopterin). Tungsten can replace molybdenum in molybdopterin, inactivating these cofactors specifically in Gammaproteobacteria. Sodium tungstate administration therefore selectively blunts the expansion of this dysbiotic guild without the broad microbiota disruption caused by antibiotics.",
+      "topic_tags": ["sodium tungstate", "molybdopterin", "Gammaproteobacteria", "metabolism-based editing", "precision microbiota editing"]
+    },
+    {
+      "id": "gutredox_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "What distinguishes the microbiota composition of breast-fed infants from that of healthy adults at the guild level, even though the two differ substantially in taxonomy?",
+      "options": {
+        "A": "Breast-fed infants are dominated by secondary fermenters while adults are dominated by methanogens",
+        "B": "Both are dominated by the same ecological guild — primary fermenters — despite a class-level taxonomic shift from Actinomycetia (dominated by Bifidobacterium) in infants to Bacteroidia and Clostridia in adults",
+        "C": "Breast-fed infants have a microbiota dominated by facultative anaerobes because breast milk contains high levels of oxygen",
+        "D": "Both life stages show equivalent guild compositions because the microbiota is primarily determined by host genetics"
+      },
+      "correct_answer": "B",
+      "explanation": "Although there is a dramatic taxonomic shift at the class level — from Actinomycetia (dominated by Bifidobacterium infantis that ferments human milk oligosaccharides) in breast-fed infants to Bacteroidia and Clostridia in adults — both communities are homeostatic because both are dominated by primary fermenters. After weaning, Clostridia preferentially ferment FODMAPs while Bacteroidia specialise in complex carbohydrates. The guild composition, and thus the ecological character of homeostasis, is preserved despite taxonomic change.",
+      "topic_tags": ["ecological guilds", "infant microbiota", "Bifidobacterium infantis", "Bacteroidia", "Clostridia", "weaning"]
+    },
+    {
+      "id": "gutredox_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "Through what mechanism can 5-aminosalicylic acid (5-ASA) prevent colorectal cancer-associated bacterial blooms in preclinical models?",
+      "options": {
+        "A": "5-ASA acts as a direct bactericide that kills colibactin-producing E. coli in the colon",
+        "B": "5-ASA activates PPAR-γ in colonocytes, restoring mitochondrial oxygen consumption and epithelial hypoxia, which reduces luminal oxygen availability and suppresses facultatively anaerobic bacteria including colibactin-producing E. coli",
+        "C": "5-ASA inhibits iNOS to prevent nitrate production, directly blocking E. coli nitrate respiration",
+        "D": "5-ASA promotes mucus secretion, physically excluding bacteria from the epithelium and preventing colibactin-induced DNA damage"
+      },
+      "correct_answer": "B",
+      "explanation": "5-ASA is a PPAR-γ agonist that is poorly absorbed in the small intestine and acts on the colonic epithelium. By activating PPAR-γ signalling, it restores high mitochondrial oxygen consumption, reducing the diffusion of oxygen into the lumen. In mouse models of colorectal cancer, this reduction in luminal oxygen bioavailability blocks the bloom of colibactin-producing E. coli that drives polyp formation. The same mechanism has been shown to prevent C. albicans blooms during antibiotic treatment.",
+      "topic_tags": ["5-ASA", "PPAR-γ", "colibactin", "E. coli", "colorectal cancer", "epithelial hypoxia"]
+    },
+    {
+      "id": "gutredox_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What is the proposed therapeutic significance of blocking iNOS activity in the context of gut dysbiosis and metabolic disease?",
+      "options": {
+        "A": "iNOS inhibition prevents mucosal inflammation entirely by blocking all macrophage activation in the gut",
+        "B": "Blocking iNOS reduces luminal nitrate, which prevents E. coli from stimulating choline catabolism and thereby reduces production of trimethylamine and subsequently TMAO — a uremic toxin linked to cardiovascular and kidney disease",
+        "C": "iNOS inhibition increases butyrate production by promoting Clostridia growth in the absence of toxic nitric oxide",
+        "D": "Blocking iNOS prevents sialic acid release from mucins, reducing pathogen expansion after antibiotic treatment"
+      },
+      "correct_answer": "B",
+      "explanation": "On a high-fat diet, low-grade mucosal inflammation elevates iNOS, producing nitric oxide that reacts with phagocyte-derived superoxide to generate nitrate in the lumen. Elevated nitrate stimulates E. coli choline catabolism, increasing trimethylamine (TMA) production. TMA is oxidised in the liver to TMAO, a uremic toxin elevated in patients with cardiovascular disease and chronic kidney disease. Blocking iNOS with aminoguanidine (a chemical iNOS inhibitor) prevents this cascade and reduces serum TMAO levels in mouse models, demonstrating that targeting nitrate availability can prevent harmful metabolite production.",
+      "topic_tags": ["iNOS", "nitrate", "TMAO", "trimethylamine", "cardiovascular disease", "chronic kidney disease", "aminoguanidine"]
+    },
+
+    {
+      "id": "gutredox_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "According to the ecological guild framework, what is the most accurate interpretation of elevated facultatively anaerobic bacteria in the fecal microbiota of patients with diverse chronic diseases?",
+      "options": {
+        "A": "Elevated facultative anaerobes are the primary cause of chronic disease, since they produce inflammatory toxins that damage host tissues across multiple organ systems",
+        "B": "Elevated facultative anaerobes are a secondary biomarker of weakened host functions that limit luminal electron acceptor availability — the compositional change reflects an underlying oxic shift in the host environment, not the root cause",
+        "C": "Elevated facultative anaerobes indicate antibiotic overuse in modern medicine, which has systematically depleted primary fermenters from the human population",
+        "D": "Elevated facultative anaerobes represent a beneficial adaptation by the host microbiome to support increased ATP demands during systemic illness"
+      },
+      "correct_answer": "B",
+      "explanation": "The ecological guild framework argues that changes in microbiota composition during dysbiosis are secondary to an underlying change in the host environment. When host functions that limit the luminal availability of oxygen and nitrate become weakened — due to impaired epithelial PPAR-γ signalling, inflammation, high-fat diet, or other triggers — thermodynamic filtering by these electron acceptors drives the transition from primary fermenter dominance to elevated facultative anaerobes. The compositional change is therefore a biomarker for weakened host control over the microbial environment, not the initiating cause of disease. This reframing directs therapeutic strategies toward restoring host environmental control.",
+      "topic_tags": ["ecological guilds", "facultative anaerobes", "dysbiosis", "host environment", "biomarker", "causality"]
+    },
+    {
+      "id": "gutredox_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "How do two independent host-derived sources of luminal oxygen converge to reinforce dysbiosis during intestinal inflammation, and why does this complicate therapeutic targeting?",
+      "options": {
+        "A": "Oxygen enters the lumen only through dietary sources, and blocking a single enzyme can eliminate it entirely",
+        "B": "Oxygen is released both by the epithelial shift to aerobic glycolysis (reducing mitochondrial consumption) and by phagocyte ROS detoxification (superoxide dismutase and catalase releasing O₂) — two independent mechanisms that each expand luminal oxygen and can compensate for one another if only one is targeted",
+        "C": "Both oxygen sources originate from the same NADPH oxidase pathway, so a single NOX2 inhibitor would block all relevant luminal oxygen",
+        "D": "Dietary fat and inflammation both primarily increase nitrate rather than oxygen, making luminal oxygen therapeutically irrelevant"
+      },
+      "correct_answer": "B",
+      "explanation": "During intestinal inflammation, luminal oxygen becomes available through two distinct mechanisms: (1) the colonic epithelium shifts from high-consumption oxidative phosphorylation to aerobic glycolysis, reducing oxygen uptake and increasing diffusion into the lumen; and (2) phagocytes generating ROS via NADPH oxidase deplete local oxygen initially, but detoxification of superoxide by superoxide dismutase and of hydrogen peroxide by catalase liberates oxygen that drives aerobic respiration in facultative anaerobes. Since these are independent pathways — one epithelial-metabolic and one immune-mediated — therapeutic interventions targeting only one (e.g., PPAR-γ activation) may be insufficient if the other remains active. Additionally, nitrate from iNOS provides a third electron acceptor pathway. This mechanistic complexity means that full restoration of anaerobiosis may require addressing multiple convergent sources simultaneously.",
+      "topic_tags": ["luminal oxygen", "aerobic glycolysis", "NADPH oxidase", "superoxide dismutase", "catalase", "ROS", "dysbiosis", "therapeutic targeting"]
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Gastrointestinal microbiota composition predicts peripheral inflammatory state during treatment of human tuberculosis",
+    "authors": ["Matthew F. Wipperman", "Shakti K. Bhattarai", "Charles Kyriakos Vorkas", "Venkata Suhas Maringati", "Ying Taur", "Laurent Mathurin", "Katherine McAulay", "Stalz Charles Vilbrun", "Daphie Francois", "James Bean", "Kathleen F. Walsh", "Carl Nathan", "Daniel W. Fitzgerald", "Michael S. Glickman", "Vanni Bucci"],
+    "journal": "Nature Communications",
+    "year": 2021,
+    "doi": "10.1038/s41467-021-21475-y",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings from a study examining gut microbiome composition and peripheral immune responses during tuberculosis treatment. Questions are designed to be semantically meaningful without requiring knowledge of the specific paper.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "TBMB_EASY_8f2a1",
+      "difficulty": "easy",
+      "question": "What effect does standard tuberculosis antibiotic therapy have on the diversity of the gut microbiome?",
+      "answer": "Standard tuberculosis therapy (HRZE: isoniazid, rifampin, pyrazinamide, ethambutol) causes a significant and rapid reduction in gut microbiome alpha diversity within just two weeks of treatment initiation. This diversity loss is primarily driven by depletion of members of the order Clostridiales — obligate anaerobes with well-documented immunomodulatory roles. The diversity reduction persists for at least one month of treatment, though partial recovery is observed between two and six months. Even at six months post-treatment, microbiome diversity remains significantly lower than pre-treatment baseline levels.",
+      "topic_tags": ["tuberculosis treatment", "HRZE", "gut microbiome diversity", "Clostridiales", "antibiotic perturbation"]
+    },
+    {
+      "id": "TBMB_EASY_3c9d2",
+      "difficulty": "easy",
+      "question": "What peripheral blood transcriptomic changes are associated with active tuberculosis disease, and how do they shift during effective antibiotic therapy?",
+      "answer": "Active tuberculosis disease is characterized by markedly elevated expression of inflammatory pathways in peripheral blood, most notably the Type I and Type II interferon pathways (IFNα and IFNγ), TNFα signaling via NFκB, and IL-6/JAK/STAT3 signaling. Effective antibiotic therapy leads to significant renormalization of these signatures — meaning the expression of TB-associated inflammatory transcripts moves in the direction of healthy controls. Studies using validated TB transcriptomic signatures have shown that the majority (over 90%) of significantly affected TB-signature genes are renormalized — rather than exacerbated — by standard antibiotic treatment, consistent with resolution of the inflammatory response as pathogen burden is reduced.",
+      "topic_tags": ["tuberculosis", "peripheral blood transcriptomics", "interferon signaling", "inflammatory pathways", "antibiotic therapy"]
+    },
+    {
+      "id": "TBMB_EASY_7e4b3",
+      "difficulty": "easy",
+      "question": "Which class of gut bacteria is most consistently depleted by tuberculosis antibiotic therapy, and what is its functional significance for host immunity?",
+      "answer": "Bacteria belonging to the class Clostridia — particularly members of phylogenetic Clusters IV and XIVa — are most consistently depleted by tuberculosis antibiotic therapy, especially by rifampin and pyrazinamide. Clostridia are immunologically important components of the gut microbiota: they produce short-chain fatty acids (SCFAs) and other metabolites that promote anti-inflammatory states, including induction of regulatory T cells (Tregs). Their depletion has been associated with dysbiosis and exacerbation of systemic inflammatory responses, while their higher abundance correlates with reduced expression of pro-inflammatory pathways including IFNγ, IFNα, and IL-6/JAK/STAT3 signaling in peripheral blood.",
+      "topic_tags": ["Clostridia", "Cluster IV", "Cluster XIVa", "SCFA", "regulatory T cells", "immune modulation", "tuberculosis treatment"]
+    },
+    {
+      "id": "TBMB_EASY_1a5f4",
+      "difficulty": "easy",
+      "question": "What are oxygen-tolerant pathobionts in the context of gut microbiome dysbiosis, and how are they relevant to antibiotic treatment?",
+      "answer": "Oxygen-tolerant pathobionts are bacteria — primarily from the orders Bacilli and Enterobacteriaceae, such as Klebsiella pneumoniae, Escherichia coli, Citrobacter freundii, Streptococcus alactolyticus, and Enterococcus faecium — that are positively selected during antibiotic treatment as a result of increased intestinal oxygenation and altered redox potential caused by the depletion of butyrate-producing anaerobes. These organisms are considered hallmarks of gastrointestinal dysbiosis and are associated with inflammatory exacerbation. Their expansion during antibiotic treatment is linked to worsening peripheral inflammatory gene expression and adverse clinical outcomes in multiple disease contexts.",
+      "topic_tags": ["oxygen-tolerant pathobionts", "dysbiosis", "Enterobacteriaceae", "Bacilli", "antibiotic treatment", "gut inflammation"]
+    },
+    {
+      "id": "TBMB_EASY_6b2c5",
+      "difficulty": "easy",
+      "question": "How can gut microbiome composition in healthy individuals provide insight into host systemic inflammation?",
+      "answer": "Even in the absence of active disease, the relative abundance of specific gut microbiota members correlates with the expression of immune-related gene signatures in peripheral blood. Studies in healthy individuals have found that higher abundance of health-associated Clostridia — including species such as Faecalibacterium prausnitzii and Ruminococcus spp. — is negatively associated with expression of pro-inflammatory pathways including IFNα and IFNγ in peripheral blood transcriptomics. Conversely, higher abundance of pathobionts such as E. coli is associated with elevated inflammatory pathway expression. This suggests that gut microbiome composition actively sets the baseline tone of systemic inflammation even in homeostatic conditions.",
+      "topic_tags": ["healthy microbiome", "systemic inflammation", "peripheral gene expression", "Clostridia", "Faecalibacterium prausnitzii", "homeostasis"]
+    },
+
+    {
+      "id": "TBMB_MED_2d8e6",
+      "difficulty": "medium",
+      "question": "How can researchers decouple the immunological effects of pathogen killing from antibiotic-induced microbiome perturbation during infection treatment studies?",
+      "answer": "Decoupling the effects of pathogen killing from microbiome perturbation requires a study design that separates these two outcomes. One approach is to use a control treatment arm that perturbs the microbiome without effectively reducing pathogen burden. In tuberculosis research, the antiparasitic drug nitazoxanide (NTZ) provided such a natural experimental control: it disrupted the gut microbiome in a manner overlapping with standard TB therapy, but failed to reduce Mycobacterium tuberculosis sputum burden. By comparing peripheral immune responses in standard therapy recipients (pathogen killing + microbiome perturbation) versus NTZ recipients (microbiome perturbation only), researchers could infer the independent contributions of each factor. When NTZ perturbed the microbiome without clearing pathogens, it was associated with inflammatory exacerbation rather than resolution, consistent with a pro-inflammatory effect of microbiome dysbiosis independent of pathogen clearance.",
+      "topic_tags": ["causal inference", "pathogen killing", "microbiome perturbation", "experimental design", "tuberculosis", "nitazoxanide"]
+    },
+    {
+      "id": "TBMB_MED_9g3h7",
+      "difficulty": "medium",
+      "question": "What is the relationship between Clostridia depletion and the expansion of pathobionts during antibiotic treatment, and what underlying mechanism drives this shift?",
+      "answer": "When antibiotics deplete butyrate-producing Clostridia from the gut, the resulting loss of short-chain fatty acids — particularly butyrate — reduces colonocyte energy metabolism and impairs the maintenance of a hypoxic epithelial environment. This leads to increased intestinal epithelial oxygenation and elevated luminal redox potential. Oxygen-tolerant bacteria such as Enterobacteriaceae and Bacilli (which are relatively resistant to many antibiotics targeting anaerobes) are then positively selected in this altered environment. The depletion of Clostridia therefore creates a permissive niche for pathobionts to expand. This dual change — loss of immunomodulatory anaerobes and gain of pro-inflammatory pathobionts — may compound the detrimental immune effects of antibiotic-induced microbiome dysbiosis.",
+      "topic_tags": ["Clostridia depletion", "pathobiont expansion", "butyrate", "intestinal oxygenation", "redox potential", "Enterobacteriaceae", "dysbiosis"]
+    },
+    {
+      "id": "TBMB_MED_4k7l8",
+      "difficulty": "medium",
+      "question": "How does the gut microbiome change longitudinally over the full course of a six-month antibiotic treatment regimen for tuberculosis?",
+      "answer": "The gut microbiome undergoes distinct phases of change during a six-month tuberculosis antibiotic course. In the first week, alpha diversity drops significantly and Clostridiales ASVs are depleted. This depletion deepens over the first month, with progressively more ASVs reduced relative to pre-treatment baseline. However, a recovery trajectory emerges from month two onward: at two months, many ASVs begin returning to baseline levels, and by six months, the majority of treatment-depleted ASVs have recovered to levels not significantly different from baseline. Notably, some Clostridia ASVs that were undetected before treatment appear newly enriched at later timepoints, suggesting potential replacement of community members by phylogenetically related ASVs. Despite this broad recovery, microbiome diversity at six months remains significantly lower than at baseline, indicating incomplete restoration.",
+      "topic_tags": ["longitudinal microbiome", "tuberculosis treatment", "Clostridiales", "diversity recovery", "ASV dynamics", "six-month therapy"]
+    },
+    {
+      "id": "TBMB_MED_5m1n9",
+      "difficulty": "medium",
+      "question": "What is the role of IBD-associated gene expression signatures in studies of antibiotic-induced microbiome changes during infectious disease treatment?",
+      "answer": "Inflammatory bowel disease (IBD)-associated gene expression signatures in peripheral blood can serve as a proxy readout for microbiome-dependent systemic immune perturbations. Because IBD has a well-established link to gut microbiome dysbiosis, changes in IBD-associated transcriptomic signatures during antibiotic treatment of infections may reflect microbiome-driven immune effects rather than direct pathogen-host interactions. In tuberculosis treatment studies, both standard therapy and experimental microbiome-perturbing agents altered the expression of IBD-associated genes in peripheral blood, with some genes renormalizing and others exacerbating. This approach allows researchers to identify a broader immunological footprint of microbiome perturbation beyond the disease-specific transcriptomic signatures.",
+      "topic_tags": ["IBD gene signatures", "microbiome dysbiosis", "peripheral blood transcriptomics", "antibiotic treatment", "tuberculosis", "systemic immunity"]
+    },
+    {
+      "id": "TBMB_MED_8p4q10",
+      "difficulty": "medium",
+      "question": "What advantages does Random Forest Regression offer over traditional linear regression for analyzing microbiome-immune relationships in clinical research datasets?",
+      "answer": "Random Forest Regression (RFR) is particularly well-suited for the 'large p, small n' structure of multi-omics clinical datasets, where the number of features (microbiome ASVs, gene expression profiles) greatly exceeds the number of study participants. Unlike traditional multilinear regression, RFR is nonparametric — it does not require assumptions about data distribution, linearity, or homoscedasticity. It intrinsically performs ranked feature selection across all predictors simultaneously and can capture nonlinear relationships between microbiome components and immune outcomes. Additionally, downstream tools like Permutation Importance analysis and Accumulated Local Effects (ALE) plots allow researchers to quantify predictor significance and estimate the direction (positive or negative) of predictor-outcome relationships, providing interpretable results despite the complexity of the model.",
+      "topic_tags": ["Random Forest Regression", "multi-omics", "machine learning", "microbiome analysis", "feature selection", "large p small n"]
+    },
+    {
+      "id": "TBMB_MED_3r6s11",
+      "difficulty": "medium",
+      "question": "Why is it important to include pre-treatment baseline microbiome samples in longitudinal antibiotic treatment studies, and what limitations arise without them?",
+      "answer": "Pre-treatment baseline microbiome samples are essential for accurately characterizing antibiotic-induced changes in microbiome composition because they allow assessment of individual-level microbiome dynamics rather than relying solely on cross-sectional comparisons between different individuals. Without pretreatment samples, studies cannot determine the direction, magnitude, or rapidity of microbiome alterations at the individual level, nor can they account for substantial inter-individual variation in baseline microbiome composition. Cross-sectional designs comparing treated to untreated individuals conflate treatment effects with pre-existing differences in community composition. Longitudinal designs with baseline sampling also enable use of individual subjects as their own controls — a critical approach in clinical settings with heterogeneous populations — and allow detection of recovery trajectories that would be invisible in a single-timepoint design.",
+      "topic_tags": ["study design", "longitudinal microbiome", "baseline samples", "individual variability", "antibiotic treatment", "methodological limitations"]
+    },
+
+    {
+      "id": "TBMB_HARD_1t9u12",
+      "difficulty": "hard",
+      "question": "How do the gut microbiome perturbations and peripheral immune effects of standard tuberculosis therapy compare mechanistically to those of an antibiotic that disrupts the microbiome without achieving pathogen clearance?",
+      "answer": "Standard HRZE therapy and nitazoxanide (NTZ) cause overlapping but distinct patterns of gut microbiome disruption with divergent immune consequences. Both treatments significantly deplete microbiome alpha diversity and reduce Clostridiales ASVs. However, NTZ causes substantially more extensive disruption: it depletes approximately 387 ASVs compared to 82 for HRZE, including a broader range of Firmicutes beyond Clostridiales, and additionally promotes expansion of oxygen-tolerant pathobionts (E. coli, E. faecium, K. pneumoniae, S. alactolyticus, C. freundii) which HRZE does not. The immune consequences diverge markedly: HRZE — by both killing Mtb and perturbing the microbiome — renormalizes the TB-associated peripheral inflammatory state, with over 90% of affected TB-signature transcripts moving toward the healthy control state. NTZ, by contrast, exacerbates inflammatory pathway expression across IFNγ, TNFα, type I interferon, hypoxia, ROS, and apoptosis pathways — all of which HRZE reduces. This comparison suggests that microbiome perturbation without pathogen clearance worsens systemic inflammation, while effective pathogen killing partially counteracts the pro-inflammatory microbiome effects, and that the balance of these two forces shapes the net immunological outcome of treatment.",
+      "topic_tags": ["HRZE", "nitazoxanide", "microbiome perturbation", "pathogen clearance", "peripheral inflammation", "TB treatment", "pathobionts", "Clostridia"]
+    },
+    {
+      "id": "TBMB_HARD_6v2w13",
+      "difficulty": "hard",
+      "question": "What is the proposed two-module model linking microbiome changes during antibiotic treatment to systemic inflammatory responses, and what clinical implications does this have for infectious disease treatment?",
+      "answer": "The proposed two-module model posits that antibiotic-induced changes in the gut microbiome contribute to the peripheral inflammatory state through two independent but potentially additive mechanisms. The first module is the exacerbation of TB-associated inflammation resulting from depletion of immunomodulatory Clostridia (especially Cluster IV and XIVa), which is a common effect of all antibiotics studied. Because these bacteria produce SCFAs and other anti-inflammatory mediators and promote Treg induction, their loss may amplify or sustain systemic inflammatory signaling. The second module is the additional inflammatory exacerbation caused by expansion of oxygen-tolerant pathobionts (E. faecium, S. alactolyticus, E. coli), which occurs specifically with broad-spectrum microbiome-disruptive agents like NTZ. The clinical implication is that antibiotic efficacy may be partly countered by microbiome-mediated inflammatory effects: the net treatment outcome is a combined function of pathogen killing (which reduces inflammation) and microbiome perturbation (which may increase it). Drugs that preferentially preserve Clostridia while targeting the pathogen could theoretically achieve faster inflammatory resolution. Monitoring microbiome composition — particularly Clostridia abundance — could serve as a predictor of treatment response rapidity and potentially guide microbiome-targeted adjunctive strategies to improve outcomes.",
+      "topic_tags": ["two-module model", "Clostridia depletion", "pathobiont expansion", "tuberculosis treatment outcome", "microbiome-targeted therapy", "inflammatory resolution", "clinical implications"]
+    },
+    {
+      "id": "TBMB_HARD_7x5y14",
+      "difficulty": "hard",
+      "question": "How does validation of microbiome-immune associations in healthy individuals strengthen causal inference about gut microbiome effects on systemic inflammation, and what limitations remain?",
+      "answer": "Validating microbiome-immune associations in healthy individuals provides important evidence that the relationships observed during disease treatment reflect genuine, generalizable biological phenomena rather than artifacts of pathogen presence, disease state, or treatment-specific drug effects. When the same associations — higher Clostridia abundance correlating with lower IFNα, IFNγ, and inflammatory pathway expression in peripheral blood — are reproduced in healthy people with no active infection, it suggests that microbiome composition sets a baseline immune tone that operates independently of any pathogen. This strengthens the inference that microbiome composition is not merely a consequence of the inflammatory state but may causally influence it. However, important limitations persist: (1) Correlation in both treated patients and healthy controls does not establish causality — both microbiome composition and peripheral inflammation could be driven by an unmeasured shared variable. (2) Applying signatures derived from diseased populations to healthy controls may generate false positives, as the physiological range of immune variation differs between groups. (3) The healthy control cohort comes from the same geographic and demographic context as the patient cohorts; validation in independent, geographically diverse TB treatment populations is needed to confirm generalizability. (4) Cellular immune readouts (T cell populations, macrophage phenotypes) were not captured, leaving mechanistic gaps.",
+      "topic_tags": ["causal inference", "healthy controls", "microbiome-immune axis", "validation", "Clostridia", "interferon", "limitations", "systemic inflammation"]
+    },
+    {
+      "id": "TBMB_HARD_2z8a15",
+      "difficulty": "hard",
+      "question": "What is the relationship between early versus late phases of tuberculosis antibiotic therapy in terms of the relative contributions of pathogen killing and microbiome modulation to inflammatory resolution?",
+      "answer": "The relative contributions of pathogen killing and microbiome modulation to inflammatory resolution shift dynamically across the treatment course. In the first two weeks of therapy, pathogen killing is the dominant driver of inflammatory renormalization: sputum bacterial load drops steeply, and the most significant reduction in TB-associated inflammatory transcripts corresponds to this period of rapid Mtb sterilization. The microbiome disruption during this early phase may actually counteract resolution — NTZ data shows that microbiome perturbation without pathogen killing can worsen inflammation. However, as treatment continues past one month, the rate of additional pathogen sterilization slows, yet further reductions in inflammatory gene signatures are still observed between days 14 and 56. This continued renormalization at a time when incremental pathogen killing is modest may reflect a growing contribution of microbiome recovery: many Clostridia ASVs that were initially depleted begin to return between months two and six. The emerging picture is a temporal handoff — early resolution dominated by pathogen clearance, later resolution potentially augmented by microbiome recovery. This has implications for the design of treatment duration studies and microbiome intervention trials: adjunctive strategies to preserve Clostridia may be most impactful during the prolonged maintenance phase when direct antibacterial activity is reduced.",
+      "topic_tags": ["early tuberculosis treatment", "late tuberculosis treatment", "pathogen killing", "microbiome recovery", "Clostridia", "inflammatory resolution", "treatment phases"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "TBMB_MCQ_EASY_4b1c1",
+      "difficulty": "easy",
+      "question": "Which gut bacterial class is most specifically targeted and depleted by tuberculosis antibiotic therapy, despite the therapy not directly targeting gut bacteria?",
+      "options": {
+        "A": "Bacteroidia",
+        "B": "Gammaproteobacteria",
+        "C": "Clostridia",
+        "D": "Bacilli"
+      },
+      "correct_answer": "C",
+      "explanation": "Tuberculosis antibiotic therapy — specifically rifampin and pyrazinamide — preferentially depletes Clostridia from the gut microbiota. This is notable because Mycobacterium tuberculosis belongs to the Actinobacteria phylum, yet the antibiotics used against it disproportionately affect Clostridia, obligate anaerobes in the Firmicutes phylum with critical immunomodulatory roles.",
+      "topic_tags": ["Clostridia", "HRZE", "microbiome", "tuberculosis treatment", "antibiotic specificity"]
+    },
+    {
+      "id": "TBMB_MCQ_EASY_9d2e2",
+      "difficulty": "easy",
+      "question": "What is the primary measure used to quantify Mycobacterium tuberculosis burden in sputum during treatment studies?",
+      "options": {
+        "A": "Colony forming units per milliliter",
+        "B": "Time to positivity (TTP) in liquid culture",
+        "C": "16S rDNA sequencing read counts",
+        "D": "Serum interferon-gamma levels"
+      },
+      "correct_answer": "B",
+      "explanation": "Time to positivity (TTP) in a BACTEC liquid culture system is used as a quantitative microbiologic measure of Mtb disease burden in sputum. A longer TTP corresponds to reduced bacterial load, as samples with fewer viable bacteria take longer to produce a detectable growth signal. This method has been validated as comparable to direct CFU counting.",
+      "topic_tags": ["tuberculosis", "bacterial load", "time to positivity", "sputum", "BACTEC"]
+    },
+    {
+      "id": "TBMB_MCQ_EASY_5f3g3",
+      "difficulty": "easy",
+      "question": "Which of the following peripheral immune pathways is most prominently elevated in active tuberculosis disease compared to healthy controls or latent infection?",
+      "options": {
+        "A": "WNT/beta-catenin signaling",
+        "B": "Androgen response",
+        "C": "Type I and Type II interferon signaling",
+        "D": "Hedgehog signaling"
+      },
+      "correct_answer": "C",
+      "explanation": "Active tuberculosis disease is characterized by heightened expression of Type I (IFNα) and Type II (IFNγ) interferon pathways in peripheral blood, along with other inflammatory pathways including TNFα signaling and IL-6/JAK/STAT3. These signatures distinguish active TB from latent infection or healthy controls and resolve with effective antibiotic treatment.",
+      "topic_tags": ["tuberculosis", "interferon", "peripheral blood transcriptomics", "active TB", "inflammatory signature"]
+    },
+
+    {
+      "id": "TBMB_MCQ_MED_3h5i4",
+      "difficulty": "medium",
+      "question": "When an antibiotic perturbs the gut microbiome but fails to reduce pathogen burden, what is the expected effect on systemic inflammatory gene expression?",
+      "options": {
+        "A": "No change in inflammatory gene expression, since inflammation is driven solely by the pathogen",
+        "B": "Renormalization of inflammatory pathways toward the healthy control state",
+        "C": "Exacerbation of inflammatory pathways, including increased IFNγ, TNFα, and Type I interferon signaling",
+        "D": "Selective reduction in metabolic pathways only, with immune pathways unaffected"
+      },
+      "correct_answer": "C",
+      "explanation": "When nitazoxanide perturbed the microbiome without reducing Mtb bacterial load, it produced the opposite effect to standard TB therapy on peripheral gene expression: inflammatory pathways including IFNγ, TNFα signaling, and Type I interferon signaling were all significantly enriched rather than reduced. This suggests that microbiome dysbiosis without concurrent pathogen clearance worsens systemic inflammation, and that microbiome integrity actively suppresses inflammatory tone.",
+      "topic_tags": ["microbiome perturbation", "pathogen burden", "peripheral inflammation", "interferon", "dysbiosis"]
+    },
+    {
+      "id": "TBMB_MCQ_MED_7j2k5",
+      "difficulty": "medium",
+      "question": "How does butyrate-producing Clostridia depletion lead to expansion of oxygen-tolerant pathobionts like Enterobacteriaceae in the gut?",
+      "options": {
+        "A": "Depletion of Clostridia releases nutrient-rich mucins that preferentially support Enterobacteriaceae growth",
+        "B": "Depletion of Clostridia reduces butyrate production, impairing colonocyte hypoxia maintenance and increasing intestinal oxygen levels, which favours aerotolerant bacteria",
+        "C": "Clostridia normally produce bacteriocins that kill Enterobacteriaceae; their depletion removes this direct inhibition",
+        "D": "Clostridia compete with Enterobacteriaceae for IgA binding sites; their loss frees pathobionts from immune suppression"
+      },
+      "correct_answer": "B",
+      "explanation": "Butyrate produced by Clostridia is the primary energy source for colonocytes and plays a key role in maintaining a hypoxic epithelial microenvironment through activation of HIF pathways. When Clostridia are depleted by antibiotics, butyrate production drops, colonocyte respiration changes, and luminal oxygen levels rise. Elevated gut redox potential selectively favours oxygen-tolerant bacteria such as Enterobacteriaceae and Bacilli, allowing their expansion in the resulting dysbiotic niche.",
+      "topic_tags": ["butyrate", "Clostridia", "Enterobacteriaceae", "intestinal oxygenation", "redox potential", "pathobiont expansion"]
+    },
+    {
+      "id": "TBMB_MCQ_MED_1l8m6",
+      "difficulty": "medium",
+      "question": "What does it mean for a TB-associated inflammatory gene transcript to be 'renormalized' during antibiotic treatment?",
+      "options": {
+        "A": "The transcript returns to the exact expression level measured at day 0 of treatment",
+        "B": "The transcript is completely silenced by the antibiotic",
+        "C": "The pre-to-post treatment fold change occurs in the same direction as the fold change previously reported between active TB and healthy control individuals",
+        "D": "The transcript is upregulated beyond normal healthy control levels, compensating for prior disease-driven suppression"
+      },
+      "correct_answer": "C",
+      "explanation": "Renormalization is defined as a post-treatment gene expression change that moves in the same direction as the fold change reported between active TB and healthy controls in prior literature. If a gene is elevated in active TB compared to controls, renormalization means it decreases with treatment. This operational definition allows researchers to track whether treatment is steering the immune state toward health, without requiring samples from the same individual at a healthy baseline.",
+      "topic_tags": ["gene expression renormalization", "tuberculosis", "transcriptomics", "active TB", "treatment response"]
+    },
+    {
+      "id": "TBMB_MCQ_MED_4n6o7",
+      "difficulty": "medium",
+      "question": "What is the significance of using Accumulated Local Effects (ALE) plots and Permutation Importance in microbiome-immune multi-omics analyses?",
+      "options": {
+        "A": "They correct for sequencing batch effects in 16S rDNA data by normalizing read counts across samples",
+        "B": "They provide a means to estimate the significance of individual microbiome members or clinical variables as predictors, and to determine whether their relationship with immune outcomes is positive or negative",
+        "C": "They identify horizontal gene transfer events between microbiome ASVs and host immune genes",
+        "D": "They cluster samples by enterotype to stratify individuals before statistical modeling"
+      },
+      "correct_answer": "B",
+      "explanation": "In Random Forest Regression applied to microbiome-immune data, Permutation Importance analysis quantifies how much predictive accuracy is lost when a given feature (e.g., an ASV or TTP) is randomly shuffled — the higher the importance, the stronger the association with the outcome. ALE plots estimate the marginal effect of each predictor on the outcome across its distribution, and the slope of the ALE curve reveals whether the relationship is positive (higher abundance → higher inflammation) or negative (higher abundance → lower inflammation). Together, these tools make the Random Forest model interpretable in a clinically meaningful way.",
+      "topic_tags": ["ALE plots", "permutation importance", "Random Forest", "microbiome", "feature selection", "multi-omics"]
+    },
+    {
+      "id": "TBMB_MCQ_MED_9p3q8",
+      "difficulty": "medium",
+      "question": "Why is it methodologically important to control for sequencing batch when modeling microbiome composition changes in multi-timepoint clinical studies?",
+      "options": {
+        "A": "Different sequencing batches amplify different V-regions of 16S rDNA, requiring re-annotation of all ASVs",
+        "B": "Sequencing batch effects can introduce artificial variation in community structure that may confound or mimic true treatment-induced microbiome differences",
+        "C": "Batch correction is only necessary for host transcriptomics data, not for microbiome sequencing",
+        "D": "Sequencing batch determines which bacteria can be detected above the noise floor, so batch-specific sensitivity thresholds must be applied"
+      },
+      "correct_answer": "B",
+      "explanation": "When microbiome samples from different timepoints or treatment groups are processed in different sequencing batches, systematic technical variation can produce apparent differences in community composition that reflect batch effects rather than biological treatment effects. In Principal Coordinate Analysis of this dataset, a second axis of variation was found to correlate with sequencing batch rather than treatment. By including sequencing batch as a fixed effect in linear mixed-effects models, researchers controlled for this technical confounder, ensuring that identified ASV differences reflect true biological changes.",
+      "topic_tags": ["sequencing batch", "microbiome methodology", "confounding", "16S rDNA", "PCoA", "batch correction"]
+    },
+
+    {
+      "id": "TBMB_MCQ_HARD_5r1s9",
+      "difficulty": "hard",
+      "question": "In a study where one antibiotic (Drug A) reduces pathogen burden and modestly perturbs the microbiome, while another (Drug B) does not reduce pathogen burden but severely disrupts the microbiome — how would their expected effects on TB-specific peripheral inflammatory signatures differ, and what does this reveal about the drivers of inflammatory resolution?",
+      "options": {
+        "A": "Both drugs would show similar renormalization of inflammatory signatures, confirming that microbiome perturbation is the dominant driver of inflammatory resolution in TB",
+        "B": "Drug A renormalizes TB-associated inflammatory signatures while Drug B exacerbates them, indicating that pathogen clearance is necessary for inflammatory resolution and microbiome disruption alone worsens inflammation",
+        "C": "Drug B would show greater renormalization of inflammatory signatures due to its stronger microbiome perturbation, consistent with dysbiosis driving anti-inflammatory tolerance",
+        "D": "Neither drug would affect TB-specific inflammatory signatures, as these are driven by fixed host genetic programs unresponsive to either pathogen load or microbiome status"
+      },
+      "correct_answer": "B",
+      "explanation": "This scenario directly describes the HRZE vs. NTZ comparison. Standard HRZE therapy both cleared Mtb and modestly perturbed the microbiome, resulting in renormalization of over 90% of affected TB-signature transcripts. NTZ, despite its more extensive microbiome perturbation, failed to reduce Mtb burden and caused exacerbation of all four TB-associated genes it significantly affected. This reveals two independent contributors to inflammatory state: pathogen burden reduction is necessary to drive true renormalization, while microbiome disruption without pathogen clearance can worsen systemic inflammation. The net outcome of treatment is a combined function of these opposing forces.",
+      "topic_tags": ["HRZE", "nitazoxanide", "pathogen clearance", "microbiome perturbation", "TB inflammation", "treatment outcome", "mechanistic inference"]
+    },
+    {
+      "id": "TBMB_MCQ_HARD_8t7v10",
+      "difficulty": "hard",
+      "question": "Why does validating gut microbiome-peripheral immune associations in healthy individuals — rather than in a second diseased cohort — provide stronger evidence for the generalizability of these associations, and what is a key limitation of this approach?",
+      "options": {
+        "A": "Healthy individuals have more stable microbiomes than diseased individuals, so associations observed in health are necessarily stronger and more causally interpretable; the main limitation is insufficient statistical power due to low immune pathway variance",
+        "B": "Validation in healthy individuals confirms that the associations are not artifacts of the disease state or treatment drug effects, since the same microbiome-immune relationships hold in the absence of active infection; the limitation is that signatures derived from a diseased population may produce false positives when applied to healthy controls with a different physiological baseline",
+        "C": "Healthy individuals represent the causal reference state since all inflammatory associations ultimately normalize to health; the limitation is that healthy control cohorts typically lack sufficient microbiome diversity to detect the relevant associations",
+        "D": "Using healthy controls eliminates confounding by antibiotic co-treatment, which is the dominant confounder in diseased cohorts; the limitation is that the healthy control gut microbiome is compositionally too different from the diseased microbiome to allow direct comparison of ASV-immune associations"
+      },
+      "correct_answer": "B",
+      "explanation": "Reproducing microbiome-immune associations in healthy individuals — without active TB, without antibiotics, and without pathogen-driven inflammation — confirms that the associations are not merely reflecting the disease or treatment context. If Clostridia abundance negatively associates with IFNα and IFNγ expression in both TB patients undergoing treatment and in fully healthy people, this strongly suggests a context-independent biological relationship. However, a key limitation acknowledged by the authors is that applying inflammatory signatures defined in the context of active TB to healthy individuals may generate false positives: the immune baseline and range of variation differ between groups, potentially creating spurious associations. Independent validation in a new TB treatment cohort would address this.",
+      "topic_tags": ["validation", "healthy controls", "microbiome-immune axis", "generalizability", "false positives", "Clostridia", "causal inference"]
+    }
+  ]
+}

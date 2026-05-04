@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Gut microbiome modulates the effects of a personalised postprandial-targeting (PPT) diet on cardiometabolic markers: a diet intervention in prediabetes",
+    "authors": ["Orly Ben-Yacov", "Anastasia Godneva", "Michal Rein", "Smadar Shilo", "Maya Lotan-Pompan", "Adina Weinberger", "Eran Segal"],
+    "journal": "Gut",
+    "year": 2023,
+    "doi": "10.1136/gutjnl-2022-329201",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "ppt_mg_easy_001",
+      "difficulty": "easy",
+      "question": "What is a personalised postprandial-targeting (PPT) diet and how does it differ from a standard Mediterranean diet?",
+      "answer": "A personalised postprandial-targeting (PPT) diet is a dietary approach based on a machine-learning algorithm that predicts individual postprandial glucose responses (PPGR) to specific meals. Unlike a Mediterranean (MED) diet — which follows a fixed set of population-level guidelines emphasising whole grains, legumes, low-fat dairy, fish, olive oil, fruits and vegetables with prescribed macronutrient ratios — the PPT diet dynamically tailors meal recommendations to minimise each individual's blood glucose spikes after eating. The PPT diet has no predetermined macronutrient targets; food choices are guided entirely by personalised algorithm predictions integrating clinical, lifestyle, and gut microbiome features.",
+      "topic_tags": ["personalised nutrition", "postprandial glucose", "Mediterranean diet", "PPT diet", "machine learning"]
+    },
+    {
+      "id": "ppt_mg_easy_002",
+      "difficulty": "easy",
+      "question": "What is microbiome alpha-diversity and why is its change clinically relevant in dietary interventions?",
+      "answer": "Microbiome alpha-diversity refers to the richness and evenness of microbial species within a single individual's gut community, often measured using indices such as Shannon's diversity index or species richness counts. Higher alpha-diversity is generally associated with a healthier, more resilient gut microbiome capable of providing a broader range of metabolic functions. In the context of dietary interventions, an increase in alpha-diversity suggests that the diet is fostering a more varied microbial ecosystem, which is linked to improved metabolic health, better protection against pathogens, and more robust immune regulation. Conversely, reduced diversity has been associated with dysbiosis and conditions like obesity, type 2 diabetes, and cardiovascular disease.",
+      "topic_tags": ["alpha-diversity", "Shannon index", "gut microbiome", "dietary intervention", "metabolic health"]
+    },
+    {
+      "id": "ppt_mg_easy_003",
+      "difficulty": "easy",
+      "question": "How does personalised nutrition address the limitations of population-average dietary guidelines?",
+      "answer": "Standard dietary guidelines are based on average population responses to foods or dietary patterns, which may not account for the high interpersonal variability in metabolic responses that individuals exhibit even when consuming identical diets. Personalised nutrition addresses this by integrating individual-specific data — such as gut microbiome composition, baseline clinical measurements (blood glucose, HbA1c), anthropometrics, and continuous glucose monitoring — to tailor dietary recommendations that optimise metabolic outcomes for each person. This approach recognises that the same food can elicit very different glycaemic, lipid, and weight responses in different people, and that more effective clinical outcomes can be achieved by moving from population-average to individual-specific guidance.",
+      "topic_tags": ["personalised nutrition", "interpersonal variability", "dietary guidelines", "precision medicine", "glycaemic response"]
+    },
+    {
+      "id": "ppt_mg_easy_004",
+      "difficulty": "easy",
+      "question": "What role does the gut microbiome play in mediating the effects of diet on cardiometabolic health?",
+      "answer": "The gut microbiome occupies a central role in the diet–cardiometabolic health axis through a bidirectional relationship with the host. On one hand, gut microbial composition is shaped by dietary intake — different foods and nutrients selectively promote or suppress specific bacterial species. On the other hand, the microbiome modulates host metabolism by producing bioactive metabolites such as short-chain fatty acids, influencing glucose regulation, lipid metabolism, and inflammatory pathways. This means that a given dietary change may exert its beneficial or harmful effects on markers like HbA1c, HDL-cholesterol, and triglycerides partly through the specific microbial species it enriches or depletes, making the microbiome an important intermediary — or mediator — in the causal chain from diet to cardiometabolic outcomes.",
+      "topic_tags": ["gut microbiome", "diet", "cardiometabolic health", "mediation", "metabolic outcomes"]
+    },
+    {
+      "id": "ppt_mg_easy_005",
+      "difficulty": "easy",
+      "question": "What is causal mediation analysis and how is it applied to understand microbiome-diet-health relationships?",
+      "answer": "Causal mediation analysis is a statistical framework used to determine whether and to what extent a third variable (the mediator) transmits the effect of an independent variable (the exposure) on a dependent variable (the outcome). In the context of microbiome-diet-health research, this approach treats dietary changes as the independent variable, clinical outcomes (such as HbA1c or triglycerides) as the dependent variable, and changes in specific microbial species abundances as potential mediators. By quantifying the 'average causal mediation effect' (ACME), researchers can estimate what proportion of the observed clinical improvement from a dietary intervention is attributable to microbiome changes rather than direct dietary effects. This method helps move beyond correlational observations toward inferring mechanistic, causal roles for specific microbes in metabolic health.",
+      "topic_tags": ["causal mediation analysis", "ACME", "microbiome", "dietary intervention", "clinical outcomes"]
+    },
+
+    {
+      "id": "ppt_mg_medium_001",
+      "difficulty": "medium",
+      "question": "How does adherence to a personalised postprandial-glucose-targeting diet influence gut microbiome diversity and species composition compared to a Mediterranean diet?",
+      "answer": "Adherence to a personalised postprandial-targeting diet induces greater and broader changes in the gut microbiome compared to a Mediterranean diet, consistent with the larger overall dietary modifications that the personalised approach requires. Specifically, microbiome alpha-diversity (Shannon index) and richness (number of species) both increase significantly in individuals following the PPT approach, while the Mediterranean diet produces a smaller and statistically non-significant increase in alpha-diversity. At the species level, the PPT diet drives significant changes in approximately twice as many bacterial species as the Mediterranean diet. These differential effects reflect the distinct dietary patterns adopted — particularly the PPT diet's shift toward lower carbohydrate and higher fat intake, increased consumption of nuts, seeds, eggs, and dairy — versus the Mediterranean diet's increase in whole grains and dietary fibre, which instead enriches fibre-associated species like Bifidobacterium adolescentis.",
+      "topic_tags": ["PPT diet", "Mediterranean diet", "alpha-diversity", "microbiome composition", "species richness"]
+    },
+    {
+      "id": "ppt_mg_medium_002",
+      "difficulty": "medium",
+      "question": "What macronutrient shifts characterise a personalised low-postprandial-response diet versus a standard Mediterranean diet, and what are their downstream implications for the microbiome?",
+      "answer": "A personalised postprandial-targeting diet typically produces a marked reduction in carbohydrate intake and a corresponding increase in total dietary fat (including saturated, monounsaturated, and polyunsaturated subtypes), along with lower dietary fibre intake. In contrast, a Mediterranean diet generally increases carbohydrate consumption (particularly from whole grains) and dietary fibre while reducing fat. These macronutrient shifts have divergent downstream effects on microbiome composition: the higher fibre intake in the Mediterranean arm promotes bacteria consistently linked to fibre fermentation, such as Bifidobacterium adolescentis, while the PPT arm's increased consumption of polyphenol-rich foods like nuts and dark chocolate is associated with enrichment of bacteria involved in flavonoid metabolism, such as Flavonifractor plautii. The overall greater dietary departure from a baseline typical diet in the PPT approach is mirrored by broader and more pronounced microbiome changes.",
+      "topic_tags": ["macronutrients", "dietary fibre", "carbohydrate", "fat intake", "microbiome", "Bifidobacterium", "Flavonifractor plautii"]
+    },
+    {
+      "id": "ppt_mg_medium_003",
+      "difficulty": "medium",
+      "question": "How do specific gut microbial species mediate the association between dietary polyphenol intake and cardiometabolic outcomes?",
+      "answer": "Dietary polyphenols, particularly flavonoids such as catechins found in nuts, dark chocolate, and certain fruits, are not directly absorbed in their native form but are instead metabolised by specific gut bacteria. Flavonifractor plautii is a key bacterial species involved in catechin metabolism in the gut. When diets rich in catechin-containing foods are consumed, F. plautii becomes enriched in the microbiome. This species has been shown experimentally to attenuate obesity-induced chronic inflammation in animal models, suggesting a mechanistic link between polyphenol-rich dietary patterns, the microbiome, and downstream cardiometabolic benefits. Additionally, a Lachnospiraceae family species has been linked to urolithin production — secondary polyphenol metabolites derived from gut microbial action on ellagitannin-rich foods — which are negatively associated with markers of metabolic dysfunction including triglycerides, body fat mass, and inflammatory markers. Together, these examples illustrate how the microbiome converts dietary polyphenols into bioactive compounds with downstream metabolic effects.",
+      "topic_tags": ["polyphenols", "catechins", "Flavonifractor plautii", "Lachnospiraceae", "urolithins", "cardiometabolic health"]
+    },
+    {
+      "id": "ppt_mg_medium_004",
+      "difficulty": "medium",
+      "question": "What features drive interpersonal variability in metabolic responses to dietary interventions, and how can machine-learning models help address this?",
+      "answer": "Even when individuals adopt similar dietary modifications in terms of macronutrient composition or adherence to a specific diet, they can exhibit vastly different clinical outcomes in glycaemic control, blood lipids, and body weight. Key drivers of this interpersonal variability include baseline clinical features (such as fasting blood glucose, HbA1c, and continuous glucose monitoring metrics), individual gut microbiome composition at baseline, and specific dietary changes adopted (particularly consumption of refined grains and fat subtypes). Machine-learning models — specifically gradient-boosted decision tree models — trained on combinations of dietary change data and baseline clinical features can predict personalised 6-month changes in cardiometabolic outcomes. Feature attribution analyses (SHAP) reveal that baseline mean glucose levels and changes in refined-grain bread intake are among the most predictive features for BMI and basal metabolic rate outcomes. Furthermore, baseline levels of specific bacterial species (e.g., from Lachnospiraceae) further modulate prediction accuracy, highlighting the microbiome as an additional layer of personalisation beyond diet and clinical variables.",
+      "topic_tags": ["interpersonal variability", "machine learning", "GBDT", "SHAP", "precision nutrition", "baseline microbiome"]
+    },
+    {
+      "id": "ppt_mg_medium_005",
+      "difficulty": "medium",
+      "question": "How does the gut microbiome connect dietary fat consumption with glycaemic control outcomes such as HbA1c?",
+      "answer": "The association between dietary fat intake (particularly Mediterranean-style oils and fats) and glycaemic control outcomes like HbA1c is not entirely direct — it is partly mediated by gut microbiome changes. Causal mediation analysis reveals that specific bacterial species, such as a member of the Bacteroidales order (UBA11471 sp000434215), are enriched when Mediterranean-style oil and fat consumption increases. This bacterial species change in turn partially mediates the reduction in HbA1c, accounting for approximately 38% of the total association between dietary fat change and the glycaemic outcome. This finding suggests that gut microbiota modulation is a mechanistic pathway through which dietary fat composition influences long-term glycaemic control, rather than dietary fat acting solely through direct host metabolic mechanisms.",
+      "topic_tags": ["dietary fat", "HbA1c", "Bacteroidales", "causal mediation", "glycaemic control", "gut microbiome"]
+    },
+    {
+      "id": "ppt_mg_medium_006",
+      "difficulty": "medium",
+      "question": "What evidence supports a role for Lachnospiraceae family bacteria in metabolic health and body weight regulation?",
+      "answer": "Multiple lines of evidence support a metabolically beneficial role for certain Lachnospiraceae species. In dietary intervention research, one Lachnospiraceae species (KLE1615 Unknown) has been found to correlate positively with nut consumption and urinary urolithin levels — secondary polyphenol metabolites associated with lower triglycerides, body fat mass, body weight, BMI, and inflammation. Baseline abundance of this species is also inversely correlated with measured BMR outcomes, meaning individuals with higher baseline levels of this bacterium tend to achieve greater metabolic improvements than predicted by diet and clinical features alone. Validation in a large independent observational cohort (n=7,000 healthy adults) confirms that this species is negatively associated with BMI, body weight, hip and waist circumference, and triglycerides, and positively associated with HDL-cholesterol, further supporting its potential role as a beneficial metabolic actor at the intersection between diet and body weight.",
+      "topic_tags": ["Lachnospiraceae", "KLE1615", "body weight", "BMI", "HDL-cholesterol", "urolithins", "metabolic health"]
+    },
+
+    {
+      "id": "ppt_mg_hard_001",
+      "difficulty": "hard",
+      "question": "How does causal mediation analysis bridge the gap between observational microbiome associations and causal inference in dietary intervention studies, and what are its methodological strengths and limitations in this context?",
+      "answer": "Causal mediation analysis advances beyond simple correlational microbiome studies by formally partitioning the total effect of a dietary change on a clinical outcome into a direct effect (diet → outcome) and an indirect effect transmitted through the microbiome (diet → microbiome → outcome). This is achieved by constructing correlation matrices of dietary features versus clinical markers and dietary features versus microbial species changes, then feeding the significantly correlated triples into a mediation pipeline that estimates the average causal mediation effect (ACME) via bootstrapping. Confounders such as age, gender, and BMI change are included as covariates to reduce spurious mediator–outcome associations. The framework provides quantitative estimates of the proportion of clinical benefit mediated by each bacterial species (e.g., 38% for a Bacteroidales species mediating the diet–HbA1c link), giving mechanistic specificity. However, important limitations remain: the analysis is conducted in the context of a single RCT with a relatively small sample size, limiting statistical power. The approach identifies 'partial mediation' — meaning direct dietary effects also persist — and cannot establish molecular mechanisms. Additionally, microbiome composition data alone (without functional/metabolomic layers) may miss the actual effector molecules. Validation in independent cohorts is essential before inferring true causality.",
+      "topic_tags": ["causal mediation analysis", "ACME", "indirect effect", "direct effect", "RCT", "microbiome causality", "limitations"]
+    },
+    {
+      "id": "ppt_mg_hard_002",
+      "difficulty": "hard",
+      "question": "Why might certain microbial species exhibit opposing associations with metabolic markers in different cohorts or dietary contexts, and what does this imply for microbiome-targeted therapeutic strategies?",
+      "answer": "The functional role of a microbial species in host metabolism is not static — it depends on the ecological context of the surrounding microbial community, the metabolic state of the host, and the dietary substrates available. A key example is a Lachnospiraceae species (CAG-81 sp000435795) identified as a mediator of glycaemic control improvements in a dietary intervention cohort, but found to be positively associated with adverse metabolic markers (triglycerides, blood glucose, HbA1c, BMI) in a large independent observational cohort, and linked to fatty liver index and elevated TMAO levels in other studies. This discordance could arise from differences in co-occurring microbiota, host genetics, baseline metabolic state, or diet composition that alter the metabolic outputs of the same bacterium in different environments. These findings have important implications for microbiome-targeted therapies: a species that appears beneficial in one dietary intervention context may not be universally beneficial across populations or metabolic conditions. This underscores the need for mechanistic in vitro and animal studies to characterise the context-dependent functions of candidate microbes before translating them into probiotic or therapeutic strategies.",
+      "topic_tags": ["microbial context-dependence", "Lachnospiraceae", "CAG-81", "TMAO", "therapeutic microbiome", "ecological context", "discordant associations"]
+    },
+    {
+      "id": "ppt_mg_hard_003",
+      "difficulty": "hard",
+      "question": "How do machine-learning models that integrate dietary changes, baseline clinical features, and gut microbiome data advance the concept of precision nutrition, and what are the remaining gaps for clinical translation?",
+      "answer": "Machine-learning models — specifically gradient-boosted decision trees trained on combinations of baseline clinical features (anthropometrics, CGM, blood biomarkers) and dietary change data — can predict personalised 6-month improvements in multiple cardiometabolic outcomes (including HDL-C, triglycerides-to-HDL ratio, fructosamine, glycaemic control metrics, and body composition measures) with statistically significant accuracy. Feature attribution (SHAP) analyses provide interpretability by ranking the contribution of individual dietary and clinical variables, revealing clinically actionable insights such as baseline glucose levels and reduced refined-grain bread intake being particularly predictive for BMI improvement. The further discovery that baseline gut microbiome species partially account for residual prediction error suggests that adding microbiome data as an input layer could further improve prediction accuracy. However, several gaps remain for clinical translation: (1) models are trained on relatively small RCT datasets, limiting generalisability; (2) only compositional microbiome data were used, whereas functional metagenomics and metabolomics data may capture mechanistically relevant information; (3) these are ad hoc exploratory models not pre-registered as primary outcomes; and (4) the personalised algorithm itself relies on baseline microbiome profiling, creating logistical barriers for routine clinical implementation.",
+      "topic_tags": ["machine learning", "GBDT", "precision nutrition", "SHAP", "microbiome prediction", "clinical translation", "limitations"]
+    },
+    {
+      "id": "ppt_mg_hard_004",
+      "difficulty": "hard",
+      "question": "What is the conceptual and methodological significance of computing a diet adherence score across all participants regardless of diet arm assignment, and how does this enhance the statistical analysis of microbiome-diet-health interactions?",
+      "answer": "Computing a personalised postprandial-targeting adherence score as a continuous, cohort-wide metric — rather than treating diet arm (PPT vs Mediterranean) as a binary variable — represents a significant methodological advancement for several reasons. First, it captures the actual degree to which each participant adopted the algorithm-based dietary principles, irrespective of their randomised assignment. This is important because some Mediterranean diet participants may incidentally adhere to PPT-compatible eating patterns and vice versa, meaning that binary arm assignment is an imperfect proxy for dietary behaviour. Second, using a continuous adherence score greatly increases statistical power by expanding the analysis from arm-level comparisons to a cohort-wide gradient, enabling detection of dose–response relationships between PPT adherence and both microbiome species changes and clinical outcomes. Third, this approach allows causal mediation analyses to test whether microbiome species mediate the PPT adherence → clinical outcome relationship across the full spectrum of adherence, producing more robust estimates of mediator effect sizes. The key trade-off is that this is a post hoc analysis not pre-specified in the original trial protocol, so results require careful interpretation and replication in future studies designed specifically to test these questions.",
+      "topic_tags": ["adherence score", "post hoc analysis", "PPT score", "statistical power", "mediation analysis", "methodological design"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "ppt_mg_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which of the following best describes the primary mechanism by which a personalised postprandial-targeting diet constructs its meal recommendations?",
+      "options": {
+        "A": "Fixed macronutrient ratios derived from population-level Mediterranean dietary guidelines",
+        "B": "A machine-learning algorithm that predicts individual postprandial glucose responses to specific meals using clinical, lifestyle, and microbiome features",
+        "C": "Caloric restriction based on total daily energy expenditure estimated from body weight",
+        "D": "A glycaemic index database that ranks foods by their average glucose-raising potential across a reference population"
+      },
+      "correct_answer": "B",
+      "explanation": "The PPT diet is built around a machine-learning algorithm that integrates individual-level features — including anthropometrics, blood tests, continuous glucose monitoring data, lifestyle questionnaires, and gut microbiome abundances — to predict postprandial glucose responses and recommend meals accordingly. Unlike the Mediterranean diet, no fixed macronutrient targets are predetermined for the PPT arm.",
+      "topic_tags": ["PPT diet", "machine learning", "postprandial glucose", "personalised nutrition"]
+    },
+    {
+      "id": "ppt_mg_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What does an increase in gut microbiome alpha-diversity following a dietary intervention most directly indicate?",
+      "options": {
+        "A": "An increase in the absolute number of bacterial cells in the gut",
+        "B": "A shift in the ratio of Firmicutes to Bacteroidetes",
+        "C": "Greater richness and evenness of microbial species within an individual's gut community",
+        "D": "Increased production of short-chain fatty acids by colonic bacteria"
+      },
+      "correct_answer": "C",
+      "explanation": "Alpha-diversity specifically refers to the richness (number of species) and evenness (relative distribution of species) within a single individual's gut microbial community. It is a summary measure of within-individual ecological diversity and is not a direct measure of cell count, SCFA production, or phylum-level ratios.",
+      "topic_tags": ["alpha-diversity", "microbiome diversity", "richness", "dietary intervention"]
+    },
+    {
+      "id": "ppt_mg_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "Which bacterial species is consistently associated with increased dietary fibre intake in multiple studies and was enriched following a Mediterranean diet intervention but not a low-carbohydrate personalised diet?",
+      "options": {
+        "A": "Flavonifractor plautii",
+        "B": "Alistipes onderdonkii",
+        "C": "Bifidobacterium adolescentis",
+        "D": "Negativibacillus sp000435195"
+      },
+      "correct_answer": "C",
+      "explanation": "Bifidobacterium adolescentis has been consistently linked in the literature to dietary fibre intake, including various prebiotic fibres. In this intervention, it was significantly enriched in the Mediterranean diet arm — which increased total dietary fibre — but not in the PPT arm, which reduced dietary fibre. This is consistent with its known fibre-dependent ecology.",
+      "topic_tags": ["Bifidobacterium adolescentis", "dietary fibre", "Mediterranean diet", "microbiome enrichment"]
+    },
+
+    {
+      "id": "ppt_mg_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "A causal mediation analysis identifies a bacterial species that accounts for 38% of the association between increased Mediterranean-style oil and fat consumption and a reduction in HbA1c. What does this finding imply?",
+      "options": {
+        "A": "Dietary fat directly lowers HbA1c through insulin sensitisation, and the bacterial change is an unrelated epiphenomenon",
+        "B": "The bacterium fully mediates the effect, meaning all HbA1c benefit depends on the microbiome change",
+        "C": "The bacterium partially mediates the diet–HbA1c relationship, meaning part of the HbA1c benefit from dietary fat changes is transmitted through changes in that species' abundance",
+        "D": "HbA1c changes cause the dietary fat increase, with the bacterium confounding the direction of causality"
+      },
+      "correct_answer": "C",
+      "explanation": "A 38% proportion mediated indicates partial mediation: approximately 38% of the total clinical effect of dietary fat change on HbA1c is transmitted through the change in this bacterial species, while the remaining 62% represents a direct dietary effect or effects through other pathways. Full mediation would require the entire effect to pass through the bacterium; the bacterium being an epiphenomenon would imply 0% mediation.",
+      "topic_tags": ["causal mediation", "partial mediation", "dietary fat", "HbA1c", "Bacteroidales"]
+    },
+    {
+      "id": "ppt_mg_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "Why does a personalised postprandial-targeting diet induce greater gut microbiome changes than a Mediterranean diet when both are administered in the same clinical intervention?",
+      "options": {
+        "A": "The PPT diet explicitly prescribes prebiotic fibre supplements that directly alter bacterial composition",
+        "B": "The PPT diet produces larger overall dietary modifications from participants' baseline eating habits because the Mediterranean diet already closely resembles the local typical diet",
+        "C": "The PPT diet selectively eliminates pathogenic bacteria through antimicrobial dietary compounds",
+        "D": "The Mediterranean diet suppresses microbiome changes through anti-inflammatory polyphenols that stabilise existing species"
+      },
+      "correct_answer": "B",
+      "explanation": "The Mediterranean diet represents the standard-of-care dietary recommendation in Israel and broadly resembles the local typical dietary pattern, meaning participants in that arm make smaller departures from their baseline eating habits. The PPT diet, being algorithm-driven and highly personalised, requires more substantial dietary shifts, which in turn produce more pronounced microbiome compositional changes — consistent with the principle that microbiome composition is responsive to dietary change.",
+      "topic_tags": ["PPT diet", "Mediterranean diet", "microbiome changes", "dietary shift", "baseline diet"]
+    },
+    {
+      "id": "ppt_mg_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "Which of the following best explains why individuals with similar dietary changes in a controlled intervention can exhibit vastly different cardiometabolic outcomes?",
+      "options": {
+        "A": "Measurement error in dietary logging creates apparent variation that does not reflect true dietary differences",
+        "B": "Interpersonal variability in baseline clinical features, gut microbiome composition, and metabolic state means the same dietary changes produce different biological responses in different individuals",
+        "C": "Differences in physical activity levels override the metabolic effects of diet, making dietary changes irrelevant",
+        "D": "The Mediterranean diet and PPT diet have equivalent effects on all individuals when macronutrient intake is matched"
+      },
+      "correct_answer": "B",
+      "explanation": "High interpersonal variability in metabolic responses to diet is a well-established phenomenon driven by individual differences in gut microbiome composition, baseline glycaemic status, insulin sensitivity, genetics, and other clinical features. Even when participants adopt similar PPT adherence levels or macronutrient compositions, outcomes in HbA1c, blood lipids, and BMI can differ substantially — motivating personalised, rather than population-average, dietary recommendations.",
+      "topic_tags": ["interpersonal variability", "metabolic response", "personalised nutrition", "gut microbiome", "baseline features"]
+    },
+    {
+      "id": "ppt_mg_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "In a dietary intervention comparing low-carbohydrate and Mediterranean diets, which dietary feature was identified as among the most predictive for improvement in both BMI and basal metabolic rate using feature attribution analysis?",
+      "options": {
+        "A": "Increase in dietary protein percentage",
+        "B": "Reduction in saturated fat intake",
+        "C": "Reduction in refined-grain bread consumption",
+        "D": "Increase in total dietary fibre intake"
+      },
+      "correct_answer": "C",
+      "explanation": "SHAP (SHapley Additive exPlanations) feature attribution analysis of machine-learning models predicting BMI and basal metabolic rate (BMR) changes identified change in 'Refined-grains Bread' intake as one of the top dietary predictors of improvement in both outcomes. This aligns with established evidence linking refined carbohydrate consumption to adiposity and metabolic dysfunction.",
+      "topic_tags": ["SHAP", "refined grains", "BMI", "BMR", "feature importance", "machine learning"]
+    },
+    {
+      "id": "ppt_mg_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What is the significance of validating microbiome-clinical associations found in a dietary intervention RCT against a large independent observational cohort?",
+      "options": {
+        "A": "It allows the RCT findings to be dismissed in favour of the larger observational data",
+        "B": "It confirms that associations found in the smaller intervention context are also present in real-world conditions, strengthening evidence for a generalised biological role of the identified species",
+        "C": "It is required by regulatory agencies before any dietary supplement containing the species can be commercialised",
+        "D": "It eliminates the need for future mechanistic studies because the association is now statistically robust"
+      },
+      "correct_answer": "B",
+      "explanation": "Validating RCT-derived microbiome findings in a large independent cohort increases confidence that the observed associations are not specific to the controlled trial setting, the study population, or chance findings inflated by the small RCT sample size. When species identified as mediators in the intervention also associate with the same clinical markers (e.g., HDL-C, triglycerides, BMI) in thousands of healthy adults, this cross-context replication supports a generalised biological relevance of those species.",
+      "topic_tags": ["external validation", "independent cohort", "replication", "microbiome associations", "causal inference"]
+    },
+
+    {
+      "id": "ppt_mg_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "Why does focusing solely on gut microbiome compositional changes, without analysing functional metagenomics or metabolomics, limit mechanistic interpretation of dietary intervention outcomes?",
+      "options": {
+        "A": "Compositional data (relative abundances) are inherently less statistically reliable than functional data and therefore cannot support any inference",
+        "B": "Functional redundancy in the microbiome means that different species can perform the same metabolic functions, so compositional shifts may not reflect changes in the actual bioactive molecules mediating health effects",
+        "C": "Compositional changes cannot be detected by shotgun metagenomic sequencing, which only captures functional gene content",
+        "D": "Metabolomic data are always sufficient on their own to explain clinical outcomes, making compositional data redundant"
+      },
+      "correct_answer": "B",
+      "explanation": "Functional redundancy is a key property of the gut microbiome: taxonomically distinct bacterial communities can encode overlapping metabolic capabilities and produce similar metabolite profiles. This means that a change in a specific bacterial species' abundance does not necessarily translate to a proportional change in the metabolites that mediate clinical effects. Analysing functional metagenomics (gene content and pathways) and metabolomics (actual metabolite levels) provides a more direct mechanistic link between microbiome changes and host metabolic outcomes, which compositional data alone cannot supply.",
+      "topic_tags": ["functional redundancy", "metagenomics", "metabolomics", "microbiome composition", "mechanistic interpretation"]
+    },
+    {
+      "id": "ppt_mg_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "A bacterial species is identified as a mediator of PPT diet adherence → HDL-cholesterol improvement in a dietary RCT but shows positive associations with triglycerides and adverse liver markers in an independent large cohort. What is the most methodologically sound interpretation of this discordance?",
+      "options": {
+        "A": "The RCT finding is definitively correct because it is from a controlled experimental design, and the observational cohort association is confounded",
+        "B": "The observational cohort is more reliable due to larger sample size, so the species should be considered harmful and excluded from therapeutic consideration",
+        "C": "The species may function differently depending on the surrounding microbial ecology, host metabolic state, or dietary context, and further mechanistic investigation is needed before therapeutic conclusions are drawn",
+        "D": "The discordance is most likely due to taxonomic misidentification and can be resolved by sequencing the 16S rRNA gene at higher resolution"
+      },
+      "correct_answer": "C",
+      "explanation": "Context-dependent microbial function is a biologically plausible explanation for such discordance. A bacterium's metabolic outputs depend on available substrates, co-occurring microbial partners, host immune status, and dietary background — all of which can differ between a controlled dietary intervention and a heterogeneous observational cohort. Neither the RCT nor the observational finding should be dismissed outright; instead, the discordance signals the need for mechanistic experiments (e.g., germ-free animal colonisation, in vitro metabolomics) to characterise the species' functional role across different contexts before it can be considered a therapeutic target.",
+      "topic_tags": ["context-dependent microbial function", "discordant associations", "ecological context", "therapeutic targets", "mechanistic studies"]
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "A human gut metagenome-assembled genome catalogue spanning 41 countries supports genome-scale metabolic models",
+    "authors": ["Junyeong Ma", "Nayeon Kim", "Jun Hyung Cha", "Wonjong Kim", "Chan Yeong Kim", "Yong-ho Lee", "Han Sang Kim", "Yoon Dae Han", "Dongeun Yong", "Eugene Han", "Sunmo Yang", "Samuel Beck", "Insuk Lee"],
+    "journal": "Nature Microbiology",
+    "year": 2026,
+    "doi": "10.1038/s41564-025-02206-1",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "hrgm2_easy_001",
+      "difficulty": "easy",
+      "question": "What is a metagenome-assembled genome (MAG) and why is genome quality important in gut microbiome catalogues?",
+      "answer": "A metagenome-assembled genome (MAG) is a genome reconstructed from shotgun metagenomic sequencing data of environmental or host-associated samples, enabling the study of uncultured microorganisms. Genome quality is critical because incomplete or contaminated MAGs — categorized as medium-quality (MQ; ≥50% completeness, ≤5% contamination) — can miss up to 50% of genomic regions, leading to distorted functional insights, incorrect phylogenetic distances, and unreliable pangenome analyses. Near-complete (NC) genomes (≥90% completeness, ≤5% contamination) provide substantially more reliable ecological and functional inferences.",
+      "topic_tags": ["MAG", "metagenomics", "genome quality", "near-complete genomes", "gut microbiome"]
+    },
+    {
+      "id": "hrgm2_easy_002",
+      "difficulty": "easy",
+      "question": "What are carbohydrate-active enzymes (CAZymes) and what roles do they play in the gut microbiome?",
+      "answer": "Carbohydrate-active enzymes (CAZymes) are a diverse class of enzymes that break down, modify, or synthesize carbohydrates. In the gut microbiome, CAZymes play a crucial role in degrading dietary fibre, starches, and polysaccharides into short-chain fatty acids that influence host health. They are categorized into families including glycoside hydrolases (GH), glycosyl transferases (GT), carbohydrate esterases (CE), carbohydrate binding modules (CBM), polysaccharide lyases (PL), and auxiliary activities (AA). Some CAZymes can also degrade mucin, which protects the intestinal epithelium from pathogens.",
+      "topic_tags": ["CAZymes", "carbohydrate metabolism", "glycoside hydrolases", "dietary fibre", "gut microbiome"]
+    },
+    {
+      "id": "hrgm2_easy_003",
+      "difficulty": "easy",
+      "question": "What is metabolic independence in the context of gut microbial species, and how are high and low metabolic independence species distinguished?",
+      "answer": "Metabolic independence refers to a microbial species' capacity to synthesize essential metabolites on its own, assessed using a defined set of KEGG modules mostly related to essential metabolite biosynthesis. Species possessing the majority of these modules are classified as having high metabolic independence (HMI), meaning they can largely sustain themselves without depending on metabolites from other community members. Conversely, species lacking most of these modules are termed low metabolic independence (LMI) species, which likely depend on external metabolite provision from other microbes or the host. This distinction has relevance for predicting which species successfully colonize after interventions such as faecal microbiota transplantation.",
+      "topic_tags": ["metabolic independence", "HMI", "LMI", "KEGG modules", "gut colonization"]
+    },
+    {
+      "id": "hrgm2_easy_004",
+      "difficulty": "easy",
+      "question": "What are genome-scale metabolic models (GEMs) and why does genome completeness matter for their construction?",
+      "answer": "Genome-scale metabolic models (GEMs) are computational representations of an organism's full metabolic network, built from annotated genome sequences to map all possible metabolic reactions and their associated genes. Genome completeness is critical for GEM quality because missing genes in incomplete genomes result in fewer reactions and metabolites captured in the model. GEMs derived from near-complete genomes contain substantially more genes, reactions, and metabolites than those from medium-quality MAGs, and lower completeness also increases the proportion of gap-filled reactions — computationally inferred rather than genome-supported steps — which reduces model reliability for downstream analyses.",
+      "topic_tags": ["GEMs", "genome-scale metabolic models", "genome completeness", "metabolic reconstruction", "CarveMe"]
+    },
+    {
+      "id": "hrgm2_easy_005",
+      "difficulty": "easy",
+      "question": "What is the gut resistome and why is genome quality important for characterizing it?",
+      "answer": "The gut resistome refers to the collection of antibiotic resistance genes present across all microbial species in the gut microbiome. These genes can be located in either core genomes — suggesting vertical inheritance and stable presence across the species — or in accessory genomes, indicating horizontal gene transfer. Accurate resistome characterization requires high-quality, near-complete genomes because incomplete genomes can produce false negatives, missing resistance genes that are present in the genomic regions not recovered. Using only near-complete genomes enables reliable distinction between core and accessory resistance genes and prevents overestimation or underestimation of resistance potential.",
+      "topic_tags": ["resistome", "antibiotic resistance", "core genome", "accessory genome", "horizontal gene transfer"]
+    },
+
+    {
+      "id": "hrgm2_medium_001",
+      "difficulty": "medium",
+      "question": "Why does geographic diversity in metagenomic sampling improve the resolution of gut microbiome composition, and what specific patterns can be missed without it?",
+      "answer": "Geographic diversity in sampling is essential because many microbial taxa show population-specific distributions that only become detectable when samples from those regions are included. Without diverse sampling, genomic catalogues become biased toward well-studied populations, rendering certain taxa invisible or mischaracterized. For example, the phyla Elusimicrobiota and Spirochaetota are enriched in samples from African populations and correlate with specific principal coordinate axes of African microbiota composition. These phyla were substantially underrepresented in previous catalogues that lacked sufficient African samples. Similarly, strain-level differences in carbohydrate-degrading enzyme repertoires between Western and non-Western populations — reflecting dietary influences — would not be detectable without broad geographic coverage.",
+      "topic_tags": ["geographic diversity", "sampling bias", "Elusimicrobiota", "Spirochaetota", "Africa microbiome", "population-specific microbiota"]
+    },
+    {
+      "id": "hrgm2_medium_002",
+      "difficulty": "medium",
+      "question": "How do medium-quality MAGs distort functional profiling of gut microbial species, particularly in metabolic capacity assessment?",
+      "answer": "Medium-quality MAGs, which may be missing up to 50% of genomic regions, cause systematic false negatives in functional profiling. When conspecific medium-quality and near-complete genomes are compared, a significant fraction of near-complete genome content is absent from the corresponding medium-quality genome — both at the nucleotide and protein level. Core biosynthesis pathways for amino acids, co-factors, vitamins, and nucleotide metabolism are frequently absent in medium-quality genomes, leading to incorrect classification of metabolically capable species as low metabolic independence (LMI). Furthermore, functional distances among medium-quality genomes within a species are significantly higher and more variable than among near-complete genomes, indicating that the apparent functional diversity in MQ-based analyses largely reflects technical incompleteness rather than true biological strain variation.",
+      "topic_tags": ["MQ MAGs", "functional profiling", "metabolic capacity", "false negatives", "genome completeness"]
+    },
+    {
+      "id": "hrgm2_medium_003",
+      "difficulty": "medium",
+      "question": "What is the difference between DNA-based and marker-based metagenomic taxonomic profiling, and under what conditions does each approach perform better?",
+      "answer": "DNA-based profiling classifies metagenomic reads by aligning them to full genome sequences using fast k-mer aligners, providing near-perfect recall across species complexity levels but potentially lower precision without careful configuration. Marker-based profiling uses species-specific marker genes to classify reads, achieving high precision but suffering reduced recall in complex communities because marker genes cannot be defined for all species — particularly fast-evolving genera. DNA-based profiling (e.g., using Kraken2 with concatenated species pangenomes, a confidence threshold, and genome-size normalization) outperforms marker-based approaches in samples with high species complexity (over 600 species), which represents the overwhelming majority of healthy adult gut samples. Marker-based approaches may be marginally more precise in simpler communities with fewer than 150 species.",
+      "topic_tags": ["taxonomic profiling", "Kraken2", "MetaPhlAn", "DNA-based profiling", "marker genes", "species complexity"]
+    },
+    {
+      "id": "hrgm2_medium_004",
+      "difficulty": "medium",
+      "question": "What are metabolic resource overlap (MRO) and metabolic interaction potential (MIP) scores, and what ecological patterns do they reveal in gut microbial communities?",
+      "answer": "Metabolic resource overlap (MRO) is a score estimating competition potential between two microbial species based on the overlap in their nutrient requirements — higher MRO indicates greater competitive pressure. Metabolic interaction potential (MIP) measures cooperation potential based on the metabolites each species can exchange with the other — higher MIP indicates more cooperative relationships. In gut microbial communities, these scores exhibit a significant negative correlation: species pairs with high MRO tend to have low MIP and vice versa. Taxonomically related species tend to be predominantly competitive (sharing similar metabolic requirements), while distantly related species are more often cooperative. Low metabolic independence species, which lack biosynthetic capacity for essential metabolites, tend to be predominantly cooperative with species from other clades that can supply those metabolites.",
+      "topic_tags": ["MRO", "MIP", "metabolic interactions", "competition", "cooperation", "SMETANA"]
+    },
+    {
+      "id": "hrgm2_medium_005",
+      "difficulty": "medium",
+      "question": "How does the CAZyme repertoire of gut microbial species vary between populations with different dietary habits, and what ecological implications does this carry?",
+      "answer": "The CAZyme repertoire — the collection of carbohydrate-degrading enzymes encoded by a microbial species — shows within-species variation linked to host dietary habits. Strains of the same species isolated from non-Western populations (characterized by higher dietary fibre intake) tend to be enriched in specific glycoside hydrolase families associated with fibre degradation compared to strains from Western populations. This diet-associated divergence within species suggests that the gut microbiome undergoes adaptive changes at the strain level in response to long-term dietary pressures. Such variation has implications for understanding population-specific microbiome function and could influence the interpretation of functional microbiome studies conducted in a single geographic context.",
+      "topic_tags": ["CAZymes", "diet", "strain variation", "Western vs non-Western", "glycoside hydrolases", "fibre degradation"]
+    },
+    {
+      "id": "hrgm2_medium_006",
+      "difficulty": "medium",
+      "question": "How do cooperative versus competitive metabolic interactions differ between disease-associated microbial communities in Crohn's disease and colorectal cancer, and what therapeutic implications does this suggest?",
+      "answer": "In Crohn's disease (CD)-associated microbial communities, cooperative metabolic interactions are significantly enriched compared to random communities, with key donor species supplying amino acids and other metabolites to support the growth of other community members. In contrast, colorectal cancer (CRC)-associated microbial communities are dominated by competitive interactions, with species competing mainly for amino acids and inorganic ions. This competitive dynamic leads to dominance by the most competitive species across samples. The cooperative structure of CD-associated communities suggests that disrupting key metabolite donor species — such as those supplying amino acids to dependent receivers — could destabilize the pathogenic community, offering potential therapeutic targets. In CRC, the competitive landscape may sustain selective pressure that amplifies the fittest pathogen.",
+      "topic_tags": ["Crohn's disease", "colorectal cancer", "metabolic interactions", "cooperation", "competition", "SMETANA", "disease-associated microbiota"]
+    },
+
+    {
+      "id": "hrgm2_hard_001",
+      "difficulty": "hard",
+      "question": "Why do marker-based profiling methods fail for certain microbial genera, and what does this reveal about the relationship between evolutionary rate and genome-level versus gene-level divergence?",
+      "answer": "Marker-based profiling relies on the identification of species-specific marker genes — genes present in a high proportion of conspecific genomes but absent or rare in other species. This approach fails for genera with rapid speciation rates, such as Collinsella, where a high density of single nucleotide variants (SNVs) accumulates but limited gene-level divergence occurs. Because the species within such genera share highly similar gene repertoires, it becomes impossible to define unique marker genes that distinguish them. This reveals a key evolutionary decoupling: SNV accumulation (detectable at the sequence level) can outpace the acquisition or loss of distinct gene families (detectable at the gene presence/absence level), meaning that conventional gene-based markers are blind to divergence that is real at the nucleotide level. Whole-genome DNA-based approaches, which capture SNV-level differences, are thus more appropriate for such rapidly evolving clades.",
+      "topic_tags": ["marker genes", "Collinsella", "rapid speciation", "SNVs", "gene-level divergence", "taxonomic profiling limitations"]
+    },
+    {
+      "id": "hrgm2_hard_002",
+      "difficulty": "hard",
+      "question": "How does the concept of metabolic independence connect to the ecological lifestyle, culturability, and geographic distribution of gut microbial species?",
+      "answer": "Metabolic independence reflects an organism's capacity to self-sufficiently synthesize the metabolites required for growth, and this property shapes multiple aspects of microbial ecology. Species with high metabolic independence (HMI) tend to have larger genomes, are found across more geographic regions (suggesting broad adaptation to diverse gut environments), and are more likely to have isolated genomes — meaning they have been successfully cultured. In contrast, species with low metabolic independence (LMI) are almost entirely uncultured, have small genomes, and are restricted to narrower geographic distributions. LMI species appear to rely on partner species for essential metabolites, likely adopting a parasitic or commensal lifestyle within microbial consortia. This dependency probably contributes to their resistance to single-species cultivation and suggests that co-culturing approaches — pairing LMI species with their predicted metabolite donors — might enable their isolation.",
+      "topic_tags": ["metabolic independence", "HMI", "LMI", "culturability", "geographic distribution", "genome size", "parasitic lifestyle"]
+    },
+    {
+      "id": "hrgm2_hard_003",
+      "difficulty": "hard",
+      "question": "What are the compounding methodological biases introduced by using medium-quality MAGs in gut microbiome research, and how do they cascade across different analytical levels from taxonomy to metabolic modelling?",
+      "answer": "Medium-quality MAGs introduce biases that cascade across multiple analytical levels. At the taxonomic level, missing genomic regions reduce classification accuracy in k-mer-based aligners and prevent the definition of species-specific marker genes, lowering both recall and precision in profiling. At the phylogenetic level, missing genes distort phylogenetic distances, affecting species clustering and tree construction. At the pangenome level, artificially incomplete accessory genome content inflates apparent functional diversity within species, making it difficult to distinguish true biological strain variation from technical noise. At the functional annotation level, core biosynthesis pathways are frequently absent in MQ genomes, leading to systematic underestimation of metabolic capacities and misclassification of metabolically capable species as low metabolic independence. Finally, at the metabolic modelling level, GEMs derived from MQ genomes contain fewer genes, reactions, and metabolites, and have a higher proportion of gap-filled reactions, reducing their reliability for predicting metabolic interactions relevant to health and disease.",
+      "topic_tags": ["MQ MAGs", "methodological bias", "cascading errors", "taxonomy", "functional annotation", "metabolic modelling", "genome quality"]
+    },
+    {
+      "id": "hrgm2_hard_004",
+      "difficulty": "hard",
+      "question": "What are the limitations of current near-complete MAG-based gut microbiome catalogues, and what technological and sampling advances are needed to overcome them?",
+      "answer": "Current near-complete MAG-based catalogues face several limitations. First, while near-complete criteria ensure ≥90% completeness, many genomes still fail to meet high-quality standards requiring complete ribosomal RNA sequences and a full tRNA complement — a shortfall particularly acute for MAGs assembled from short-read sequencing. Long-read, high-accuracy sequencing platforms such as PacBio HiFi substantially improve recovery of rRNA regions and achieve high-quality status for the majority of assembled genomes. Second, geographic and population biases persist: despite expanded sampling, regions such as West Asia, North Africa, and parts of Central and South America remain underrepresented, potentially obscuring population-specific taxa and functional variants. Third, current catalogues are restricted to prokaryotic genomes, excluding gut-associated viruses and fungi, which are increasingly recognized as important components of the gut ecosystem. Addressing these gaps will require targeted sampling campaigns in underrepresented regions, widespread adoption of long-read sequencing for metagenomic assembly, and integration of eukaryotic and viral genomic sequences into future catalogue versions.",
+      "topic_tags": ["MAG limitations", "high-quality genomes", "long-read sequencing", "geographic bias", "viruses", "fungi", "catalogue completeness"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "hrgm2_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which criterion defines a near-complete (NC) metagenome-assembled genome as distinct from a medium-quality (MQ) genome?",
+      "options": {
+        "A": "NC genomes must have ≥50% completeness and ≤10% contamination",
+        "B": "NC genomes must have ≥90% completeness and ≤5% contamination",
+        "C": "NC genomes must contain full 16S rRNA and tRNA sequences",
+        "D": "NC genomes must be derived exclusively from cultured isolates"
+      },
+      "correct_answer": "B",
+      "explanation": "Near-complete (NC) genomes are defined by ≥90% completeness and ≤5% contamination, whereas medium-quality (MQ) genomes need only ≥50% completeness at the same contamination threshold. High-quality genomes additionally require rRNA and tRNA completeness, which is a stricter standard.",
+      "topic_tags": ["genome quality", "NC MAGs", "MQ MAGs", "completeness", "contamination"]
+    },
+    {
+      "id": "hrgm2_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "Which two phyla were found to be specifically enriched in samples from African populations and were underdetected in catalogues lacking sufficient African representation?",
+      "options": {
+        "A": "Firmicutes and Bacteroidota",
+        "B": "Actinobacteriota and Proteobacteria",
+        "C": "Elusimicrobiota and Spirochaetota",
+        "D": "Verrucomicrobiota and Patescibacteria"
+      },
+      "correct_answer": "C",
+      "explanation": "Elusimicrobiota and Spirochaetota were identified as phyla enriched with microbial genomes from African samples. Their presence was confirmed through abundance analysis showing higher prevalence and abundance in African compared to non-African datasets, and their detection improved substantially with the inclusion of previously undersampled African metagenomes.",
+      "topic_tags": ["Elusimicrobiota", "Spirochaetota", "African microbiome", "geographic diversity"]
+    },
+    {
+      "id": "hrgm2_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "What does 'coreness' refer to in the context of gut microbial pangenomes and antibiotic resistance gene analysis?",
+      "options": {
+        "A": "The fraction of a genome that encodes metabolic pathways essential for survival",
+        "B": "The percentage of conspecific genomes within a species that carry a given gene or resistance element",
+        "C": "The proportion of a species' genome that is shared with its closest phylogenetic relatives",
+        "D": "The degree of conservation of 16S rRNA sequences across a species cluster"
+      },
+      "correct_answer": "B",
+      "explanation": "Coreness is defined as the percentage of conspecific genomes within a species that possess a given gene family or resistance element. Genes in core genomes (high coreness) suggest vertical inheritance, while those in accessory genomes (low coreness) indicate horizontal gene transfer. This concept is applied to assess both marker gene identification and antibiotic resistance gene distribution.",
+      "topic_tags": ["coreness", "pangenome", "antibiotic resistance", "core genome", "accessory genome"]
+    },
+
+    {
+      "id": "hrgm2_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "When benchmarking taxonomic profiling methods with increasing community complexity, what tradeoff is observed between DNA-based and marker-based approaches?",
+      "options": {
+        "A": "Marker-based methods achieve higher recall than DNA-based methods at all complexity levels",
+        "B": "DNA-based methods achieve near-perfect recall but require careful configuration for precision; marker-based methods show higher precision but declining recall in complex communities",
+        "C": "DNA-based methods are computationally faster and more memory-efficient than marker-based methods",
+        "D": "Both methods perform equivalently in terms of F1 score across all complexity levels"
+      },
+      "correct_answer": "B",
+      "explanation": "DNA-based (Kraken2) pipelines consistently achieve near-perfect recall across all complexity levels, but precision can be low without configuration improvements such as using concatenated pangenomes and a confidence threshold. Marker-based (MetaPhlAn4) methods show high precision but recall declines significantly in complex communities because marker genes cannot be defined for all species, especially in fast-evolving genera.",
+      "topic_tags": ["taxonomic profiling", "Kraken2", "MetaPhlAn", "recall", "precision", "F1 score", "community complexity"]
+    },
+    {
+      "id": "hrgm2_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "What best explains why low metabolic independence (LMI) microbial species in the gut are almost exclusively found as uncultured metagenome-assembled genomes rather than isolated strains?",
+      "options": {
+        "A": "LMI species grow too rapidly in mixed culture conditions to be isolated individually",
+        "B": "LMI species are too small to be recovered by standard filtration and plating methods",
+        "C": "LMI species depend on metabolites provided by other community members, making growth in isolation without supplementation unlikely to succeed",
+        "D": "LMI species produce biofilms that prevent their separation from other microorganisms"
+      },
+      "correct_answer": "C",
+      "explanation": "LMI species lack the biosynthetic capacity for essential metabolites, meaning they cannot produce what they need to grow and are dependent on other species or the environment for these molecules. In standard single-species culture conditions, this metabolic dependency leads to growth failure, explaining why virtually all LMI species remain uncultured. Co-culturing with metabolite-supplying partners may be required for their isolation.",
+      "topic_tags": ["LMI", "metabolic independence", "culturability", "uncultured microbes", "metabolic dependency"]
+    },
+    {
+      "id": "hrgm2_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "How does the use of pangenome-concatenated genome databases improve species-level profiling accuracy in DNA-based metagenomic classification?",
+      "options": {
+        "A": "It reduces memory requirements by compressing redundant sequences across species clusters",
+        "B": "It captures intraspecies genomic diversity, reducing false positive misclassification of reads from related strains as a different species",
+        "C": "It enables classification at the genus level without requiring species-level resolution",
+        "D": "It improves detection of rare species by amplifying underrepresented genomic signals"
+      },
+      "correct_answer": "B",
+      "explanation": "Using concatenated pangenomes (all non-redundant genomes per species cluster) rather than only representative genomes ensures that the genomic diversity within each species is represented in the database. This reduces false positives because reads from genomic regions that differ between strains of the same species are no longer misclassified as belonging to a different species, thereby improving precision — particularly in complex communities with closely related species.",
+      "topic_tags": ["pangenome", "Kraken2", "taxonomic profiling", "precision", "species diversity", "false positives"]
+    },
+    {
+      "id": "hrgm2_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "In the analysis of metabolic interactions among gut microbial species, which pattern was consistently observed regarding interactions within versus across taxonomic clades?",
+      "options": {
+        "A": "Pairs within the same clade tend to be cooperative, while pairs across different clades tend to be competitive",
+        "B": "Pairs within the same clade tend to be competitive, while pairs across different clades have a higher proportion of cooperative relationships",
+        "C": "Cooperative and competitive pairs are randomly distributed with no relationship to taxonomic clade membership",
+        "D": "HMI species always cooperate with LMI species regardless of clade membership"
+      },
+      "correct_answer": "B",
+      "explanation": "Species within the same taxonomic clade share similar metabolic capabilities and nutritional requirements, leading to competitive interactions for the same resources. Species from different clades are more likely to occupy distinct metabolic niches and can exchange complementary metabolites, resulting in cooperative interactions. This pattern intensifies at finer taxonomic levels, consistent with increased metabolic similarity among closely related species.",
+      "topic_tags": ["metabolic interactions", "clade", "competition", "cooperation", "taxonomic relatedness", "SMETANA"]
+    },
+    {
+      "id": "hrgm2_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What functional consequence was observed when comparing KEGG module predictions between medium-quality and near-complete genomes from the same species?",
+      "options": {
+        "A": "Medium-quality genomes consistently predicted more KEGG modules due to increased gap-filling during annotation",
+        "B": "Core biosynthesis modules for amino acids, cofactors, vitamins, and nucleotide metabolism were frequently detected only in near-complete genomes and absent from medium-quality counterparts",
+        "C": "No significant difference was found in KEGG module predictions between the two genome quality categories",
+        "D": "Medium-quality genomes showed enrichment for carbohydrate metabolism modules not found in near-complete genomes"
+      },
+      "correct_answer": "B",
+      "explanation": "Analysis of conspecific genome pairs revealed that core biosynthesis modules — including pathways for amino acid, cofactor, vitamin, and nucleotide metabolism — were disproportionately found only in near-complete genomes and absent from the corresponding medium-quality genomes. This demonstrates that incomplete genomes generate false negatives specifically for central metabolic functions, leading to systematic underestimation of metabolic capacity.",
+      "topic_tags": ["KEGG modules", "MQ vs NC genomes", "functional profiling", "biosynthesis pathways", "false negatives"]
+    },
+
+    {
+      "id": "hrgm2_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "Why does using a gut-specific genome database with a strict Kraken2 confidence threshold outperform a broad genome database with no threshold in species-level metagenomic profiling?",
+      "options": {
+        "A": "A broader database contains more genomes and should therefore always yield higher recall and precision simultaneously",
+        "B": "A gut-specific database reduces the reference space to gut-relevant species, minimizing false positives from environmental or pathogenic organisms, while the confidence threshold removes ambiguously classified reads that inflate false positive calls",
+        "C": "A gut-specific database improves sensitivity by increasing k-mer overlap between reads and reference sequences",
+        "D": "The confidence threshold corrects for technical biases introduced by Illumina sequencing adapters"
+      },
+      "correct_answer": "B",
+      "explanation": "A gut-specific database restricts classification to gut-relevant reference genomes, preventing reads from being incorrectly assigned to environmental or pathogenic species not present in the gut. The confidence threshold (e.g., 0.2) filters out reads that map ambiguously across multiple taxa — a common source of false positive species calls — particularly important in highly complex communities where closely related species co-occur. The combination of these two refinements substantially improves precision without sacrificing meaningful recall.",
+      "topic_tags": ["Kraken2", "confidence threshold", "gut-specific database", "false positives", "taxonomic profiling accuracy"]
+    },
+    {
+      "id": "hrgm2_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "Based on the metabolic interaction patterns observed in disease-associated communities, what does a dominance of cooperative interactions suggest about the ecological role of key species in Crohn's disease-associated microbiota?",
+      "options": {
+        "A": "Cooperative interactions indicate that CD-associated species are all mutualists with the host, directly benefiting host immune function",
+        "B": "Cooperative interactions among CD-associated species suggest that key donor species are metabolic hubs that sustain the entire pathogenic community, making them potential therapeutic targets",
+        "C": "Cooperative interactions indicate that CD-associated species compete for the same ecological niche and are metabolically redundant",
+        "D": "Cooperative interactions are evidence of a healthy microbial community structure that protects the host from further inflammation"
+      },
+      "correct_answer": "B",
+      "explanation": "In CD-associated communities, cooperative metabolic interactions are enriched relative to random communities, with specific donor species supplying essential amino acids and other metabolites to support the growth of receiver species. Validation against CD patient microbiota showed that higher abundance of donor species corresponds to higher abundance of their receiver partners, confirming these predicted interactions manifest in vivo. This architecture identifies key donor species as metabolic hubs; disrupting their supply of metabolites to dependent community members could destabilize the entire pathogenic consortium, representing a therapeutic opportunity.",
+      "topic_tags": ["Crohn's disease", "cooperative interactions", "metabolic hubs", "donor species", "therapeutic targets", "SMETANA"]
+    }
+  ]
+}

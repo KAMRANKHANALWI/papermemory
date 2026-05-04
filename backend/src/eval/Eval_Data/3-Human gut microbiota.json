@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Human gut microbiota in health and disease: Unveiling the relationship",
+    "authors": ["Muhammad Afzaal", "Farhan Saeed", "Yasir Abbas Shah", "Muzzamal Hussain", "Roshina Rabail", "Claudia Terezia Socol", "Abdo Hassoun", "Mirian Pateiro", "José M. Lorenzo", "Alexandru Vasile Rusu", "Rana Muhammad Aadil"],
+    "journal": "Frontiers in Microbiology",
+    "year": 2022,
+    "doi": "10.3389/fmicb.2022.999001",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "gutmb22_easy_e1f3a",
+      "difficulty": "easy",
+      "question": "What is the gut microbiota and why has it been described as a 'vital organ'?",
+      "answer": "The gut microbiota refers to the complex ecological community of over a thousand microbial species — including bacteria, viruses, archaea, and unicellular eukaryotes — that inhabit the gastrointestinal tract. It has been classified as a 'vital organ' because it forms multidirectional connections with other organs through neural, endocrine, humoral, immunological, and metabolic pathways. It plays a central role in metabolism, barrier homeostasis, inflammation, hematopoiesis, and host immunity, making it functionally inseparable from overall physiology.",
+      "topic_tags": ["gut microbiota", "definition", "vital organ", "host-microbe interaction", "physiology"]
+    },
+    {
+      "id": "gutmb22_easy_b2c9d",
+      "difficulty": "easy",
+      "question": "What is dysbiosis and which major human diseases has it been linked to?",
+      "answer": "Dysbiosis refers to an imbalance or disruption in the normal composition of the gut microbial community. It has been associated with a wide range of diseases including anxiety, depression, hypertension, cardiovascular diseases, obesity, diabetes, inflammatory bowel disease (IBD), and cancer. The disruption of normal microbial balance impairs host immunity and metabolic function, creating conditions that favour disease pathogenesis.",
+      "topic_tags": ["dysbiosis", "disease", "inflammation", "obesity", "IBD", "microbiota disruption"]
+    },
+    {
+      "id": "gutmb22_easy_h7k4m",
+      "difficulty": "easy",
+      "question": "What are the major bacterial phyla that constitute the healthy human gut microbiome?",
+      "answer": "The major bacterial phyla in the healthy human gut are Firmicutes, Bacteroidetes, Actinobacteria, Proteobacteria, and Verrucomicrobia. Among these, Firmicutes and Bacteroidetes are typically the most dominant. The ratio and relative abundance of these phyla can shift significantly in disease states, making them important markers of gut health.",
+      "topic_tags": ["bacterial phyla", "Firmicutes", "Bacteroidetes", "Actinobacteria", "Proteobacteria", "gut composition"]
+    },
+    {
+      "id": "gutmb22_easy_p9r2s",
+      "difficulty": "easy",
+      "question": "What are short-chain fatty acids (SCFAs), which are the predominant ones in the human gut, and what is their primary significance?",
+      "answer": "Short-chain fatty acids (SCFAs) are metabolites produced when colonic bacteria ferment indigestible carbohydrates (dietary fiber). The three predominant SCFAs in human feces are acetate, propionate, and butyrate, typically found in molar ratios ranging from 3:1:1 to 10:2:1. They perform several essential functions: butyrate is the primary energy source for colonocytes and has anti-carcinogenic properties; propionate plays a role in gluconeogenesis in the liver; and acetate supports the growth of other bacteria. Together, SCFAs regulate food intake, insulin secretion, and help maintain body weight.",
+      "topic_tags": ["SCFAs", "short-chain fatty acids", "butyrate", "propionate", "acetate", "fermentation", "colonocytes"]
+    },
+    {
+      "id": "gutmb22_easy_d4t6v",
+      "difficulty": "easy",
+      "question": "How does diet influence the composition of the gut microbiota, and how rapidly can dietary changes affect microbial communities?",
+      "answer": "Diet is considered one of the most significant factors in modulating gut microbiota composition. The gut microbiome reacts efficiently to major dietary shifts, with changes detectable within 1–2 days following dietary changes such as switching between plant-based and meat-based diets, increasing dietary fiber intake, or shifting between high-fiber/low-fat and low-fiber/high-fat regimens. This rapid responsiveness reflects the competitive nature of microbial communities and the dependency of gut bacteria on dietary substrates for survival and fermentation.",
+      "topic_tags": ["diet", "gut microbiota modulation", "dietary fiber", "fermentation", "microbiome composition"]
+    },
+
+    {
+      "id": "gutmb22_med_c3n8w",
+      "difficulty": "medium",
+      "question": "What is the role of butyrate in host health, particularly regarding colonocytes and cancer prevention?",
+      "answer": "Butyrate is the most important SCFA for human health and serves as the primary energy source for colonocytes. Its health-promoting roles include: acting as an anti-carcinogen by inducing apoptosis in colon cancer cells; regulating gene expression through inhibition of histone deacetylase (HDAC), which affects chromatin structure and transcriptional activity; and supporting gut barrier integrity. These properties make butyrate-producing bacteria, predominantly from the Firmicutes phylum, critical components of a healthy gut microbiome. A reduction in butyrate-producing bacteria is consistently observed in diseases like IBD and type 2 diabetes.",
+      "topic_tags": ["butyrate", "colonocytes", "cancer prevention", "HDAC inhibition", "apoptosis", "gut barrier", "Firmicutes"]
+    },
+    {
+      "id": "gutmb22_med_f5q7a",
+      "difficulty": "medium",
+      "question": "How does the gut microbiota contribute to immune system maturation and homeostasis?",
+      "answer": "The gut microbiota is essential for the maturation of both innate and adaptive immune responses. After bacterial colonisation of the intestinal tract, the mucosal immune system undergoes significant changes that are largely independent of the systemic immune system. Commensal bacteria teach the immune system to distinguish between beneficial and pathogenic microbes. The microbiota modulates neutrophil movement and drives differentiation of T-cell populations into Th1, Th2, Th17, and regulatory T-cell subsets, which govern immune homeostasis. Antigen-presenting cells (APCs), which co-evolved with gut microbiota, play a dual role in defending against infection while maintaining tolerance to commensals. Disruption of this process — such as by excessive antibiotic use — can impair immune development and increase susceptibility to autoimmune and inflammatory diseases.",
+      "topic_tags": ["immune homeostasis", "T cells", "Th17", "APCs", "innate immunity", "adaptive immunity", "commensal bacteria"]
+    },
+    {
+      "id": "gutmb22_med_r2b1x",
+      "difficulty": "medium",
+      "question": "What mechanisms link gut microbiota dysbiosis to the development of obesity?",
+      "answer": "Several mechanisms have been proposed. First, the gut microbiota can suppress adenosine monophosphate kinase (AMPk), an enzyme in muscle and liver that acts as a cellular energy sensor — its suppression reduces fatty acid oxidation and promotes fat accumulation. Second, fermentation of dietary polysaccharides by gut bacteria produces SCFAs, which can stimulate lipogenesis and suppress fasting-induced adipocyte factor (FIAF), thereby inhibiting lipoprotein lipase (LPL) and leading to triglyceride accumulation in adipocytes. Third, obesity-associated microbiota can induce systemic low-grade inflammation through metabolites, which promotes metabolic disturbances. Specific genera such as Firmicutes, Bacteroidetes, Rhizobium, Lactococcus, and Clostridium have been implicated as 'obesogenic gut microbiota'.",
+      "topic_tags": ["obesity", "AMPk", "FIAF", "lipogenesis", "SCFAs", "dysbiosis", "adipocytes", "triglycerides"]
+    },
+    {
+      "id": "gutmb22_med_k9l5z",
+      "difficulty": "medium",
+      "question": "How is gut microbiota dysbiosis connected to the pathogenesis of type 2 diabetes, and what metabolic pathways are involved?",
+      "answer": "Gut microbiota dysbiosis in type 2 diabetes is characterised by a moderate decrease in butyrate-producing bacteria and an increase in opportunistic pathogens. The mechanisms involve disruption of insulin signalling, impaired glucose homeostasis, and altered incretin secretion. Butyrate and propionate normally stimulate GLP-1 and PYY secretion from enteroendocrine cells via G-protein-coupled receptors (GPR41/GPR43), which regulate insulin secretion and appetite. In type 2 diabetes, the loss of these SCFA-producing bacteria reduces these signalling inputs. Additionally, microbiota metabolites influence beta-cell function and systemic inflammation, further driving insulin resistance. Rapid shifts to high-fat, high-sugar diets have been shown to alter microbiome composition in a way that promotes diabetogenic pathways.",
+      "topic_tags": ["type 2 diabetes", "insulin resistance", "butyrate", "incretin", "GLP-1", "GPR", "dysbiosis", "glucose homeostasis"]
+    },
+    {
+      "id": "gutmb22_med_t7m3c",
+      "difficulty": "medium",
+      "question": "What is the role of trimethylamine N-oxide (TMAO) in cardiovascular disease and how is it produced by the gut microbiota?",
+      "answer": "TMAO is a gut microbiota-derived metabolite that plays a significant role in the development of atherosclerotic cardiovascular disease. It is produced through a two-step process: gut bacteria enzymatically convert dietary choline and betaine into trimethylamine (TMA) using TMA lyase; TMA is then absorbed and oxidised in the liver to form TMAO. Elevated TMAO levels contribute to atherosclerosis and serve as a predictive biomarker for cardiovascular risk. This metabolite is now considered a primary functional link between the gut microbiome and CVD pathophysiology, with the abundance of bacterial genes encoding TMA lyase correlating with disease burden.",
+      "topic_tags": ["TMAO", "cardiovascular disease", "atherosclerosis", "TMA lyase", "choline", "metabolites", "gut-heart axis"]
+    },
+    {
+      "id": "gutmb22_med_s6n4p",
+      "difficulty": "medium",
+      "question": "How does gut microbiota interact with and contribute to inflammatory bowel disease (IBD)?",
+      "answer": "IBD is strongly associated with reduced intestinal microbiota diversity, particularly a significant decrease in Firmicutes — especially the Clostridium leptum group and Faecalibacterium prausnitzii. Conversely, the phylum Proteobacteria, which harbours many pathogenic bacteria, shows increased abundance and appears to play an active role in initiating and sustaining chronic intestinal inflammation. Ruminococcus gnavus is also found at higher abundances in IBD patients. Alterations in gut microbiota in genetically susceptible hosts trigger aberrant mucosal immune responses, leading to intestinal and extraintestinal disorders. Restoring immunological homeostasis by modulating the gut microbiota — through dietary changes, probiotics, or targeted therapies — is considered a promising therapeutic approach for IBD.",
+      "topic_tags": ["IBD", "inflammatory bowel disease", "Firmicutes", "Proteobacteria", "Faecalibacterium prausnitzii", "Ruminococcus gnavus", "mucosal immunity"]
+    },
+
+    {
+      "id": "gutmb22_hard_w1q9v",
+      "difficulty": "hard",
+      "question": "How do Bacteroidetes and Firmicutes differ in their metabolic contributions to SCFA production, and how do these differences affect host physiology?",
+      "answer": "Bacteroidetes and Firmicutes both ferment indigestible carbohydrates but produce distinct SCFA profiles. Bacteroidetes are generalist carbohydrate degraders that primarily produce propionate and acetate, while Firmicutes — through specialist species such as Eubacterium rectale, E. hallii, and Faecalibacterium prausnitzii — are the dominant butyrate producers. This division of metabolic labour has distinct physiological consequences: propionate (from Bacteroidetes) is primarily absorbed by the liver and plays a key role in gluconeogenesis and lipid metabolism; butyrate (from Firmicutes) is the principal energy source for colonocytes, has anti-carcinogenic properties, and functions as a histone deacetylase inhibitor with epigenetic regulatory effects. Shifts in the Firmicutes-to-Bacteroidetes ratio — as observed in obesity, IBD, and metabolic diseases — therefore alter not just microbiota composition but the downstream metabolic signals reaching the host epithelium, liver, and immune system.",
+      "topic_tags": ["Bacteroidetes", "Firmicutes", "SCFA production", "butyrate", "propionate", "colonocytes", "metabolic disease", "carbohydrate fermentation"]
+    },
+    {
+      "id": "gutmb22_hard_x4j6r",
+      "difficulty": "hard",
+      "question": "What is the gut-organ axis concept, and through what molecular and physiological pathways does the microbiota exert its influence on distant organs?",
+      "answer": "The gut-organ axis describes the bidirectional communicational network between the gut microbiota and peripheral organs including the brain, heart, liver, pancreas, lungs, kidneys, skin, muscles, bones, and reproductive system. The microbiota communicates with these organs through multiple overlapping pathways: (1) Neural pathways — metabolites and microbial signals activate the enteric nervous system and vagal nerve inputs to modulate the gut-brain axis, influencing stress, anxiety, depression, and cognitive function; (2) Endocrine and humoral pathways — SCFAs and other metabolites act on G-protein-coupled receptors (GPCRs) on enteroendocrine cells to regulate hormone secretion (GLP-1, PYY, renin), affecting appetite, blood pressure, and glucose homeostasis; (3) Immunological pathways — microbial metabolites and cell-wall components like LPS modulate innate and adaptive immune cells, affecting systemic inflammation; (4) Metabolic pathways — microbially-produced metabolites such as TMAO, bile acid derivatives, indole derivatives, and polyamines enter systemic circulation and directly influence organ-specific function. Disruption of this axis through dysbiosis is linked to diseases across all connected organ systems.",
+      "topic_tags": ["gut-organ axis", "gut-brain axis", "SCFA", "TMAO", "GPCRs", "enteroendocrine", "immune signaling", "metabolites", "dysbiosis"]
+    },
+    {
+      "id": "gutmb22_hard_m2k7t",
+      "difficulty": "hard",
+      "question": "What are the major challenges in establishing causal relationships between gut microbiota composition and disease, and how do proposed therapeutic strategies attempt to address these gaps?",
+      "answer": "Several critical challenges complicate causal interpretation. First, high inter-individual variation in microbiome composition makes it difficult to define a 'healthy' baseline. Second, the functional redundancy of microbiota means that compositionally distinct communities can produce similar metabolic outputs, so taxonomic changes do not necessarily reflect functional disruption. Third, bidirectional causality is hard to disentangle — dysbiosis may be a cause or consequence of disease, and both scenarios require different interventions. Fourth, translational limitations exist due to differences between animal models and human microbiome ecology. Proposed therapeutic strategies fall into several categories: (1) Microbiome modulators — antibiotics, prebiotics, probiotics, and dietary fiber aimed at restoring microbial balance; (2) Specific commensal strain supplementation — e.g., Akkermansia muciniphila for metabolic disease, Lactobacillus strains for hypertension; (3) Fecal microbiota transplantation (FMT) — to restore mature microbiota in cases of persistent immaturity (e.g., severe malnutrition); (4) Metabolite-targeted therapy — supplementing or blocking specific microbial metabolites (e.g., TMAO inhibitors, butyrate supplements). Success depends on advancing mechanistic understanding of host-microbe interactions at molecular resolution.",
+      "topic_tags": ["causality", "therapeutic strategies", "probiotics", "prebiotics", "FMT", "functional redundancy", "dysbiosis", "host-microbe interaction"]
+    },
+    {
+      "id": "gutmb22_hard_h5y8b",
+      "difficulty": "hard",
+      "question": "How does the gut microbiota contribute to cancer development, and what evidence supports both pro-carcinogenic and anti-carcinogenic roles of specific microbial species?",
+      "answer": "The gut microbiota plays a dual role in cancer. On the pro-carcinogenic side: Fusobacterium nucleatum has been identified as a significant driver of colorectal cancer — it can suppress host immune responses and upregulate cellular proliferation; Bacteroides fragilis produces a toxin that coordinates a pro-inflammatory cascade targeting colonic epithelial cells; Peptostreptococcus anaerobic and Bacteroides massiliensis have been associated with colorectal and prostate cancers, respectively; and F. nucleatum along with Clostridium colicanis have been proposed as markers in gastric cancer carcinogenesis. Dysbiosis has also been shown in animal models to promote intestinal inflammation that drives tumorigenesis. On the anti-carcinogenic side: butyrate produced by species such as F. prausnitzii induces apoptosis in colon cancer cells and regulates gene expression through HDAC inhibition; a diet rich in whole grains and dietary fiber is associated with lower risk of F. nucleatum-positive colorectal cancer, suggesting that a microbiota enriched by fiber intake may be protective. This dual role makes the microbiome both a therapeutic target and a potential diagnostic tool in oncology.",
+      "topic_tags": ["cancer", "colorectal cancer", "Fusobacterium nucleatum", "Bacteroides fragilis", "butyrate", "HDAC", "pro-carcinogenic", "anti-carcinogenic", "gut microbiota"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "gutmb22_mcq_easy_a3f1k",
+      "difficulty": "easy",
+      "question": "Which short-chain fatty acid is considered the most important for human health and serves as the primary energy source for colonocytes?",
+      "options": {
+        "A": "Acetate",
+        "B": "Propionate",
+        "C": "Butyrate",
+        "D": "Valerate"
+      },
+      "correct_answer": "C",
+      "explanation": "Butyrate is identified as perhaps the most essential SCFA for human health. It is the primary energy source for colonocytes, has anti-carcinogenic properties by inducing apoptosis in colon cancer cells, and regulates gene expression through inhibition of histone deacetylase (HDAC). Propionate plays a role in liver gluconeogenesis, while acetate supports other bacteria as a co-factor.",
+      "topic_tags": ["butyrate", "colonocytes", "SCFA", "energy metabolism"]
+    },
+    {
+      "id": "gutmb22_mcq_easy_b9m4n",
+      "difficulty": "easy",
+      "question": "The gut microbiota has been described as carrying approximately how many more genes compared to the entire human genome?",
+      "options": {
+        "A": "10 times more",
+        "B": "50 times more",
+        "C": "150 times more",
+        "D": "500 times more"
+      },
+      "correct_answer": "C",
+      "explanation": "The human gut microbiota carries approximately 150 times more genes compared to the entire human genome. This vast genetic reservoir encodes a remarkable diversity of metabolic and functional capabilities that supplement human physiology in areas including digestion, immunity, and xenobiotic metabolism.",
+      "topic_tags": ["gut microbiota", "genetics", "genomic capacity", "microbial genes"]
+    },
+    {
+      "id": "gutmb22_mcq_easy_c6p7q",
+      "difficulty": "easy",
+      "question": "Which gut microbiota metabolite is primarily produced by gut bacteria from choline and betaine and is strongly linked to cardiovascular disease risk?",
+      "options": {
+        "A": "Butyrate",
+        "B": "Hydrogen sulfide (H₂S)",
+        "C": "Trimethylamine N-oxide (TMAO)",
+        "D": "Indole-3-propionic acid (IPA)"
+      },
+      "correct_answer": "C",
+      "explanation": "TMAO (trimethylamine N-oxide) is derived from gut microbial metabolism of dietary choline and betaine. Gut bacteria convert these substrates to trimethylamine (TMA) via TMA lyase, which is then oxidised to TMAO in the liver. TMAO contributes to atherosclerotic cardiovascular disease and is a predictive biomarker for cardiovascular risk.",
+      "topic_tags": ["TMAO", "cardiovascular disease", "atherosclerosis", "choline", "metabolites"]
+    },
+
+    {
+      "id": "gutmb22_mcq_med_d2r5s",
+      "difficulty": "medium",
+      "question": "In type 1 diabetes, what was observed about the role of mucin-forming bacteria versus non-butyrate-producing lactate-utilizing bacteria?",
+      "options": {
+        "A": "Both types of bacteria were equally reduced, leading to generalised microbiota collapse",
+        "B": "Lactate and butyrate-producing bacteria sustained gut integrity through mucin formation in healthy controls, while non-butyrate-producing lactate-utilizing bacteria inhibited mucin synthesis and contributed to autoimmunity in diabetic subjects",
+        "C": "Non-butyrate-producing bacteria were beneficial in diabetic patients by reducing gut inflammation",
+        "D": "Mucin-producing bacteria directly attack pancreatic beta cells in genetically predisposed individuals"
+      },
+      "correct_answer": "B",
+      "explanation": "In healthy controls, lactate and butyrate-producing bacteria supported gut integrity by sustaining mucin formation. In contrast, in type 1 diabetes subjects, non-butyrate-producing lactate-utilizing bacteria inhibited mucin synthesis, which contributed to increased intestinal permeability and autoimmunity against beta-cells. This highlights the indirect gut-pancreas connection mediated by microbial metabolite profiles.",
+      "topic_tags": ["type 1 diabetes", "mucin", "butyrate", "lactate", "beta-cells", "autoimmunity", "gut integrity"]
+    },
+    {
+      "id": "gutmb22_mcq_med_e8v1w",
+      "difficulty": "medium",
+      "question": "How does gut microbiota dysbiosis contribute to hypertension at the level of blood pressure regulation?",
+      "options": {
+        "A": "Dysbiosis triggers excess serotonin production which constricts blood vessels directly",
+        "B": "SCFAs produced by gut microbiota stimulate G-protein-coupled receptor (GPR) pathways that affect renin secretion and regulate blood pressure",
+        "C": "Altered Firmicutes levels increase dietary sodium absorption, raising blood pressure",
+        "D": "Dysbiosis reduces vitamin K production, impairing coagulation and indirectly elevating vascular pressure"
+      },
+      "correct_answer": "B",
+      "explanation": "SCFAs produced by gut microbiota have the potential to stimulate host G-protein-coupled receptor (GPR) pathways that affect renin secretion and modulate blood pressure. The ratio of Bacteroidetes and Firmicutes has been specifically associated with hypertension. Additionally, microbially-derived lyxose (a fermentation by-product) has been found at higher levels in newly diagnosed hypertensive patients, further supporting a metabolite-mediated mechanism.",
+      "topic_tags": ["hypertension", "SCFAs", "GPR", "renin", "blood pressure", "Firmicutes", "Bacteroidetes"]
+    },
+    {
+      "id": "gutmb22_mcq_med_f4j9t",
+      "difficulty": "medium",
+      "question": "Which of the following best explains why excessive antibiotic use is harmful to gut health and immune homeostasis?",
+      "options": {
+        "A": "Antibiotics directly suppress white blood cell production in the bone marrow",
+        "B": "Antibiotics kill only pathogenic bacteria, leaving behind a microbial vacuum that cannot sustain immune training",
+        "C": "Antibiotics disrupt microbial balance (dysbiosis), impairing T-cell differentiation, reducing SCFA production, and increasing susceptibility to opportunistic pathogens",
+        "D": "Antibiotic use triggers mucus hypersecretion that drowns commensal bacteria"
+      },
+      "correct_answer": "C",
+      "explanation": "High intake of antibiotics causes an imbalance in gut microbiota (dysbiosis), which disrupts immune homeostasis. The microbiota is essential for proper T-cell differentiation (including Th1, Th2, Th17, and regulatory T cells) and immune maturation. Antibiotic-induced dysbiosis reduces SCFA-producing bacteria, weakens colonisation resistance, and allows opportunistic pathogens to expand. Studies using antibiotic treatment models have confirmed the critical role of microbiota in maintaining immune balance.",
+      "topic_tags": ["antibiotics", "dysbiosis", "T cells", "immune homeostasis", "SCFAs", "colonisation resistance"]
+    },
+    {
+      "id": "gutmb22_mcq_med_g7c3u",
+      "difficulty": "medium",
+      "question": "What is the significance of Akkermansia muciniphila in the context of metabolic disease?",
+      "options": {
+        "A": "It is a major butyrate producer that prevents colon cancer by inducing apoptosis",
+        "B": "It belongs to Verrucomicrobia, is inversely associated with type 1 diabetes risk, and shows protective effects against obesity and gut barrier dysfunction",
+        "C": "It is a pathogenic species whose overabundance is linked to Crohn's disease and IBD flares",
+        "D": "It primarily modulates the gut-brain axis by producing serotonin precursors"
+      },
+      "correct_answer": "B",
+      "explanation": "Akkermansia muciniphila is the only known representative of Verrucomicrobia in the human intestine. An increase in its occurrence is inversely related to the probability of developing type 1 diabetes, and it may function as a potential probiotic in its treatment. Consistent with findings from related research, its presence is associated with protection against high-fat diet-induced obesity and gut barrier improvement, making it a promising therapeutic target.",
+      "topic_tags": ["Akkermansia muciniphila", "Verrucomicrobia", "type 1 diabetes", "obesity", "gut barrier", "probiotic"]
+    },
+    {
+      "id": "gutmb22_mcq_med_h1d8e",
+      "difficulty": "medium",
+      "question": "How do microbiota-accessible carbohydrates (MACs) support gut microbial diversity and host health?",
+      "options": {
+        "A": "MACs are directly absorbed by colonocytes and converted into energy without microbial involvement",
+        "B": "MACs suppress the growth of Bacteroidetes, allowing more beneficial Firmicutes to dominate",
+        "C": "MACs serve as fermentable substrates for commensal bacteria, increasing SCFA production and maintaining microbiota diversity; their absence leads to microbiota shift toward mucin degradation and barrier erosion",
+        "D": "MACs function as prebiotics exclusively for bifidobacteria and have no effect on other microbial groups"
+      },
+      "correct_answer": "C",
+      "explanation": "Microbiota-accessible carbohydrates (MACs), including resistant starch, oligosaccharides, and dietary fiber, are fermented by commensal bacteria to produce SCFAs and other beneficial metabolites, promoting microbial diversity. When MACs are scarce, bacteria shift to utilising mucins as a nutrient source, eroding the colonic mucus barrier. This leads to increased microbial proximity to the epithelium, elevated inflammation markers, and greater pathogen susceptibility — outcomes that align with low-fiber dietary patterns.",
+      "topic_tags": ["MACs", "dietary fiber", "microbial diversity", "SCFA", "mucus barrier", "fermentation"]
+    },
+
+    {
+      "id": "gutmb22_mcq_hard_i5g2f",
+      "difficulty": "hard",
+      "question": "What mechanism best explains how Fusobacterium nucleatum promotes colorectal cancer, and how does diet modulate this risk?",
+      "options": {
+        "A": "F. nucleatum produces butyrate analogs that competitively block HDAC inhibition, removing the anti-carcinogenic effect of normal butyrate",
+        "B": "F. nucleatum suppresses host immune surveillance and upregulates cellular proliferation; diets rich in whole grains and dietary fiber are associated with lower risk of F. nucleatum-positive colorectal cancer, suggesting a microbiota-mediated dietary protection mechanism",
+        "C": "F. nucleatum exclusively thrives on red meat metabolites, so its carcinogenic effects are confined to high-meat diets with no relationship to fiber intake",
+        "D": "F. nucleatum activates the NF-κB pathway in pancreatic beta cells, leading to systemic inflammation that indirectly promotes colorectal tumorigenesis"
+      },
+      "correct_answer": "B",
+      "explanation": "F. nucleatum can suppress the host's immune response and upregulate cellular proliferation, driving colorectal carcinogenesis. Critically, a diet rich in whole grains and dietary fiber has been associated with a lower risk of F. nucleatum-positive colorectal cancer. This indicates that dietary fiber shapes a gut microbial environment that is less permissive to F. nucleatum colonisation and pro-carcinogenic activity, positioning the microbiome as a key mediator between diet and colorectal cancer risk.",
+      "topic_tags": ["Fusobacterium nucleatum", "colorectal cancer", "immune suppression", "dietary fiber", "microbiome-cancer axis"]
+    },
+    {
+      "id": "gutmb22_mcq_hard_j9h4g",
+      "difficulty": "hard",
+      "question": "Which of the following most accurately captures the multi-layered relationship between gut microbiota, metabolites, and cardiovascular disease progression?",
+      "options": {
+        "A": "Gut microbiota causes CVD solely by breaching the intestinal barrier, releasing LPS into systemic circulation that triggers inflammatory plaque formation",
+        "B": "CVD risk from gut microbiota is mediated exclusively through TMAO, with all other microbiota-CVD interactions being secondary or indirect",
+        "C": "Gut dysbiosis contributes to CVD through multiple converging mechanisms: disruption of intestinal endothelial barrier function, systemic metabolite production (e.g., TMAO from choline, bile acid dysregulation), altered gut microbiota composition (decreased Bacteroidetes, increased Firmicutes and Streptococcus/Enterobacteriaceae), and elevated inflammatory markers in peripheral blood linked to bacterial DNA translocation",
+        "D": "Gut microbiota promotes CVD only in individuals with pre-existing genetic susceptibility, with no independent contribution in otherwise healthy populations"
+      },
+      "correct_answer": "C",
+      "explanation": "The relationship between gut microbiota and CVD is multi-mechanistic. Evidence supports: (1) intestinal barrier dysfunction caused by dysbiosis allowing bacterial products to enter systemic circulation; (2) microbial production of TMAO (from choline/betaine metabolism via TMA lyase); (3) compositional shifts — decreased Bacteroidetes, increased Firmicutes, and elevated Streptococcus/Enterobacteriaceae — in coronary artery disease patients; (4) detection of bacterial DNA in peripheral blood correlating with elevated C-reactive protein and interleukin-6; and (5) gut microbiota involvement in angiotensin II-induced vascular dysfunction. This multi-pathway model is consistent with the gut-heart axis concept.",
+      "topic_tags": ["cardiovascular disease", "TMAO", "gut barrier", "Bacteroidetes", "Firmicutes", "inflammatory markers", "gut-heart axis", "dysbiosis"]
+    }
+  ]
+}

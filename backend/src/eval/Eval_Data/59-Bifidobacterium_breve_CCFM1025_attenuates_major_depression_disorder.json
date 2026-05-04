@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Bifidobacterium breve CCFM1025 attenuates major depression disorder via regulating gut microbiome and tryptophan metabolism: A randomized clinical trial",
+    "authors": ["Peijun Tian", "Ying Chen", "Huiyue Zhu", "Luyao Wang", "Xin Qian", "Renying Zou", "Jianxin Zhao", "Hao Zhang", "Long Qian", "Qun Wang", "Gang Wang", "Wei Chen"],
+    "journal": "Brain, Behavior, and Immunity",
+    "year": 2022,
+    "doi": "10.1016/j.bbi.2021.11.023",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings from this psychobiotics/MDD clinical trial — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "ccfm1025_mdd_easy_001",
+      "difficulty": "easy",
+      "question": "What are psychobiotics, and how do they differ from conventional antidepressant treatments?",
+      "answer": "Psychobiotics are a class of probiotics that specifically benefit patients suffering from psychiatric illnesses by acting primarily on the gut-brain axis. Unlike conventional antidepressants such as SSRIs, psychobiotics are characterized by their edibility and validated safety profile, and they target psychiatric problems through multiple physiological systems simultaneously — including the immune system, enteric nervous system (ENS), and neuroendocrine system. Conventional psychotropic drugs are often reported to be ineffective in some patients and can cause endocrine and gastrointestinal side effects, whereas psychobiotics exert a less aggressive effect on the body and address the internal micro-ecological balance of the gut.",
+      "topic_tags": ["psychobiotics", "gut-brain axis", "probiotics", "antidepressants", "MDD", "SSRIs"]
+    },
+    {
+      "id": "ccfm1025_mdd_easy_002",
+      "difficulty": "easy",
+      "question": "What is the relationship between tryptophan and serotonin synthesis in the gut?",
+      "answer": "Tryptophan is an essential amino acid that serves as the sole dietary precursor for serotonin (5-hydroxytryptamine, 5-HT) biosynthesis in the body. Over 90% of the body's serotonin is synthesized in the gut, making tryptophan availability in the gastrointestinal tract critical for both peripheral and central serotonin levels. The conversion pathway proceeds from tryptophan to 5-hydroxytryptophan (5-HTP), and then to 5-HT. Unlike serotonin itself, peripheral tryptophan and its intermediate 5-HTP can cross the blood-brain barrier (BBB) and contribute to serotonin biosynthesis in the brain.",
+      "topic_tags": ["tryptophan", "serotonin", "5-HT", "gut", "BBB", "enterochromaffin cells"]
+    },
+    {
+      "id": "ccfm1025_mdd_easy_003",
+      "difficulty": "easy",
+      "question": "What physiological processes does serotonin regulate in both the gut and the brain?",
+      "answer": "Serotonin (5-HT) is a well-studied neurotransmitter distributed across both the nervous system and the gastrointestinal tract. It regulates multiple physiological processes including emotion, sleep, gut motility, and vasoconstriction. In the gut specifically, serotonin plays a role in gastrointestinal motility, hemostasis, and ossification. The gut microbiota has been shown to be essential in regulating colonic serotonin biosynthesis, and the resulting blood serotonin levels have downstream consequences for both gastrointestinal function and brain function.",
+      "topic_tags": ["serotonin", "5-HT", "gut motility", "emotion", "sleep", "neurotransmitter", "microbiota"]
+    },
+    {
+      "id": "ccfm1025_mdd_easy_004",
+      "difficulty": "easy",
+      "question": "What is serotonin turnover and what does it indicate about serotonergic system activity?",
+      "answer": "Serotonin turnover is defined as the ratio of 5-hydroxyindoleacetic acid (5-HIAA) to serotonin (5-HT) in circulation. 5-HIAA is the primary metabolic breakdown product of serotonin, so the 5-HIAA:5-HT ratio reflects the rate at which serotonin is being metabolized or degraded. A higher turnover ratio suggests more rapid serotonin degradation relative to its availability, while a reduced turnover indicates better serotonin retention in the system. Changes in serotonin turnover are considered an indicator of serotonergic system activity and have been associated with emotional states and gastrointestinal conditions.",
+      "topic_tags": ["serotonin turnover", "5-HIAA", "5-HT", "serotonergic system", "biomarker", "depression"]
+    },
+    {
+      "id": "ccfm1025_mdd_easy_005",
+      "difficulty": "easy",
+      "question": "How does the gut microbiota influence serotonin biosynthesis, and which types of bacteria have been shown to play a role?",
+      "answer": "The gut microbiota plays a direct and indirect role in regulating colonic serotonin biosynthesis through interactions with enterochromaffin cells, which are the primary producers of circulating serotonin. Both commensal host bacteria and orally administered exogenous strains can directly enhance serotonin biosynthesis from these cells. Specific bacterial groups implicated include spore-forming bacteria, Clostridium species, Bifidobacterium dentium, and Bifidobacterium breve strains. Additionally, some bacteria such as Turicibacter sanguinis can re-uptake intestinal serotonin, indirectly affecting its circulating levels. The presence or absence of gut microbiota altogether has been demonstrated in germ-free animal studies to influence anxiety- and depression-like behaviors alongside neurochemical changes in the brain.",
+      "topic_tags": ["gut microbiota", "serotonin", "enterochromaffin cells", "Bifidobacterium", "germ-free animals", "biosynthesis"]
+    },
+
+    {
+      "id": "ccfm1025_mdd_medium_001",
+      "difficulty": "medium",
+      "question": "How does probiotic supplementation with a Bifidobacterium strain influence tryptophan metabolism in depressed patients, and which metabolites show the most clinically relevant changes?",
+      "answer": "Probiotic supplementation with Bifidobacterium breve increases gut tryptophan levels and upregulates multiple downstream metabolites in the tryptophan pathway, in contrast to placebo which tends to downregulate these metabolites. The metabolites most markedly elevated by probiotic treatment include tryptophan itself, 5-hydroxytryptophan (5-HTP), serotonin (5-HT), 5-HIAA, indole-3-acetamide, indole-3-lactic acid, indole-3-acetic acid, and indole-3-propionic acid (IPA). Among these, indole-3-propionic acid changes were positively correlated with depression score improvements (HDRS-24 reduction), and indole-3-acetamide changes were positively correlated with improvements in gastrointestinal symptoms. These indole derivatives are direct products of tryptophan transformation by gut microorganisms and act as ligands of the aryl hydrocarbon receptor (AHR), which influences immune and metabolic function.",
+      "topic_tags": ["tryptophan metabolism", "indole derivatives", "indole-3-propionic acid", "5-HTP", "Bifidobacterium", "psychobiotics", "depression"]
+    },
+    {
+      "id": "ccfm1025_mdd_medium_002",
+      "difficulty": "medium",
+      "question": "What is the gut-brain axis mechanism through which gut microbiota modulates emotional states, and what role does peripheral serotonin play?",
+      "answer": "The gut-brain axis is a bidirectional communication network linking the gastrointestinal tract and the central nervous system, involving the immune system, enteric nervous system (ENS), and neuroendocrine pathways. Gut microbiota influence emotional states through several routes: by regulating tryptophan availability and its conversion to serotonin in enterochromaffin cells; by producing metabolites such as short-chain fatty acids and secondary bile acids that trigger local and systemic responses; and by modulating the biosynthesis of neuroactive molecules. Peripheral serotonin, while unable to directly cross the blood-brain barrier, influences brain function through signaling via the vagus nerve and enteroendocrine pathways. Crucially, the precursor 5-HTP and tryptophan itself can cross the BBB and participate in central serotonin synthesis. Evidence from germ-free animal studies confirms that the presence or absence of gut microbiota influences anxiety- and depression-like behaviors and is accompanied by changes in brain serotonin levels and gene expression in second messenger pathways.",
+      "topic_tags": ["gut-brain axis", "peripheral serotonin", "ENS", "neuroendocrine", "BBB", "germ-free animals", "emotion"]
+    },
+    {
+      "id": "ccfm1025_mdd_medium_003",
+      "difficulty": "medium",
+      "question": "How does probiotic treatment affect gut microbial alpha diversity and beta diversity, and what do these changes indicate about the mechanism of action?",
+      "answer": "Probiotic treatment with Bifidobacterium breve increases alpha diversity as measured by the Chao 1 index and observed operational taxonomic units (OTUs), indicating a modest increase in microbial richness. However, beta diversity — which measures overall community structure and composition across subjects — does not change significantly under probiotic treatment, as shown by PCA analysis of Aitchison distances and PERMANOVA testing. The core microbiome taxa (those present in over 50% of subjects) likewise remain largely unperturbed. This pattern suggests that the probiotic exerts its antidepressant effects not primarily by restructuring the entire gut ecosystem, but rather through more targeted mechanisms such as altering tryptophan metabolism and modulating specific metabolic pathways. The disconnect between limited microbiome restructuring and significant clinical benefits highlights that metabolite-level effects — rather than broad compositional shifts — may be central to psychobiotic action.",
+      "topic_tags": ["alpha diversity", "beta diversity", "Chao 1", "gut microbiome", "psychobiotics", "mechanism of action", "OTUs"]
+    },
+    {
+      "id": "ccfm1025_mdd_medium_004",
+      "difficulty": "medium",
+      "question": "What is the clinical significance of comorbid gastrointestinal dysfunction in major depression, and how does serotonin link these two conditions?",
+      "answer": "Gastrointestinal dysfunction is one of the most common comorbid symptoms of major depression disorder (MDD), and both conditions are linked mechanistically through the serotonergic system. Serotonin regulates gut motility, secretion, and the enteric nervous system, so dysregulation of serotonin signaling affects both emotional state and gastrointestinal function. This connection is reinforced by the fact that SSRI medications used to treat depression — which modulate serotonin reuptake — themselves cause gastrointestinal side effects, further entangling the two symptom domains. In clinical assessments, factor analysis of psychiatric and gastrointestinal rating scales suggests that patients' emotional problems and bowel complaints are both influenced by the serotonergic system. Psychobiotic treatment that reduces serotonin turnover can therefore simultaneously improve both depressive symptoms and bowel dysfunction, with bowel dysfunction syndrome showing particularly significant improvement.",
+      "topic_tags": ["gastrointestinal comorbidity", "MDD", "serotonin", "SSRIs", "bowel dysfunction", "gut-brain axis"]
+    },
+    {
+      "id": "ccfm1025_mdd_medium_005",
+      "difficulty": "medium",
+      "question": "What is the clinical utility of measuring 5-HTP as a biomarker in depression research, and what therapeutic implications arise from its gut-brain relationship?",
+      "answer": "5-Hydroxytryptophan (5-HTP) is the immediate biosynthetic precursor of serotonin and can, unlike serotonin itself, cross the blood-brain barrier to contribute to central serotonin synthesis. Its gut-derived levels are regulated by the microbiota and tryptophan hydroxylase activity. As a biomarker, elevated gut 5-HTP levels following psychobiotic treatment correlate with improved depression outcomes, suggesting it may serve as a mechanistic link between gut microbiota activity and brain serotonin levels. Therapeutically, oral administration of 5-HTP has demonstrated clinically positive antidepressant effects, and adjunctive slow-release 5-HTP can synergistically augment the serotonin-elevating effects of SSRIs in the synaptic cleft. Therefore, interventions that increase gut 5-HTP production — such as psychobiotics — may represent a complementary approach to existing pharmacotherapies, potentially enhancing their efficacy or reducing required doses.",
+      "topic_tags": ["5-HTP", "biomarker", "blood-brain barrier", "serotonin", "SSRIs", "adjunctive therapy", "tryptophan"]
+    },
+    {
+      "id": "ccfm1025_mdd_medium_006",
+      "difficulty": "medium",
+      "question": "How do indole derivatives produced by gut bacteria contribute to depression remission, and what receptor pathways are involved?",
+      "answer": "Indole and its derivatives — including indole-3-propionic acid (IPA), indole-3-acetic acid, and indole-3-acetamide — are direct products of tryptophan transformation by gut microorganisms and have emerged as novel metabolic biomarkers involved in depression remission. These compounds are ligands of the aryl hydrocarbon receptor (AHR), a transcription factor that exerts potent effects on immune and metabolic function. AHR activation by indole derivatives can modulate inflammatory responses and immune cell behavior, providing a potential anti-inflammatory mechanism for their mood-related effects. In clinical observations, increases in IPA following probiotic treatment are positively correlated with reductions in depression severity scores, while indole-3-acetamide increases are associated with gastrointestinal symptom improvement. These findings suggest indole derivatives may contribute to depression remission through both neuroimmune modulation and direct metabolic signaling rather than purely through serotonergic pathways.",
+      "topic_tags": ["indole derivatives", "indole-3-propionic acid", "AHR", "aryl hydrocarbon receptor", "depression", "tryptophan", "gut bacteria"]
+    },
+
+    {
+      "id": "ccfm1025_mdd_hard_001",
+      "difficulty": "hard",
+      "question": "How do psychobiotics address limitations of conventional antidepressant pharmacotherapy from a mechanistic standpoint, and what evidence supports a multi-system rather than single-target approach to treating depression?",
+      "answer": "Conventional antidepressants such as SSRIs operate on a single-site mechanism, primarily inhibiting serotonin reuptake at the synaptic cleft to increase serotonin bioavailability in the central nervous system. While effective for some patients, this approach often fails a significant portion of patients, and the drugs carry endocrine and gastrointestinal side effects. Psychobiotics, by contrast, interact with the gut ecosystem to produce effects across multiple physiological systems simultaneously: they modulate the immune system by altering inflammatory cytokine environments; engage the enteric nervous system (ENS) through gut microbial metabolites; influence the neuroendocrine system via tryptophan pathway modulation; and directly affect the serotonergic system by enhancing enterochromaffin cell production of serotonin precursors. The evidence for a multi-system approach is reinforced by the finding that psychobiotic-induced tryptophan metabolites — particularly 5-HTP and indole derivatives — act through both serotonergic and AHR-mediated pathways, that gut microbiota changes correlate with both psychiatric and gastrointestinal symptom improvements simultaneously, and that improvement in depression occurs even without dramatic restructuring of the core gut microbiome, suggesting metabolic reprogramming is sufficient. The parallel improvement in emotional and gastrointestinal symptoms under a single psychobiotic intervention further underscores the integrative, multi-target nature of this therapeutic approach.",
+      "topic_tags": ["psychobiotics", "SSRIs", "multi-target therapy", "gut-brain axis", "ENS", "neuroendocrine", "tryptophan", "serotonin"]
+    },
+    {
+      "id": "ccfm1025_mdd_hard_002",
+      "difficulty": "hard",
+      "question": "What are the key methodological challenges in psychobiotic clinical trials that may limit the interpretability of results, and how should future studies address them?",
+      "answer": "Several methodological challenges limit the interpretability of psychobiotic clinical trial results. First, uncontrolled diet is a major confound because the gut microbiome is primarily shaped by dietary intake; without strict dietary control, probiotic-induced microbiome changes may be obscured or exaggerated by dietary variation, making it difficult to attribute microbiome effects specifically to the probiotic intervention. Second, medication heterogeneity complicates outcomes, as participants using various antidepressants (SSRIs, SNRIs, anxiolytics) in addition to the probiotic introduce significant pharmacological variability that cannot be fully controlled statistically. Third, adherence verification is problematic — relying on text-message reminders without a strain-specific molecular quantification method (such as a strain-specific qPCR primer) means actual probiotic consumption cannot be confirmed, and adherence rates remain unknown. Fourth, small sample sizes limit statistical power for subgroup analyses such as sex differences in treatment response. Fifth, some secondary outcome measures (such as fecal tryptophan metabolites and TNF-α) were not pre-registered in the trial protocol, which introduces exploratory analysis limitations. Future studies should apply strictly controlled dietary protocols, use shotgun metagenomics for higher-resolution microbiome characterization, develop strain-specific primers for adherence quantification, pre-register all outcome measures, and use larger, more demographically homogeneous cohorts to resolve sex-dependent and dose-dependent effects.",
+      "topic_tags": ["clinical trial methodology", "confounders", "diet", "adherence", "metagenomics", "psychobiotics", "RCT limitations"]
+    },
+    {
+      "id": "ccfm1025_mdd_hard_003",
+      "difficulty": "hard",
+      "question": "How does tryptophan metabolism represent a mechanistic bridge between gut microbiota activity and both peripheral and central serotonergic function in the context of depression?",
+      "answer": "Tryptophan metabolism operates as a central hub connecting gut microbial activity with serotonergic function at both the peripheral and central levels. In the gut, microbial communities influence the availability of dietary tryptophan and determine the enzymatic pathways through which it is metabolized. Gut bacteria can produce tryptophan hydroxylase-activating signals that increase 5-HTP synthesis in enterochromaffin cells, boosting peripheral serotonin production. Additionally, gut microbes directly convert tryptophan into indole derivatives — including IPA, indole-3-acetic acid, and indole-3-acetamide — that act on AHR receptors with immunological and metabolic consequences relevant to mood regulation. At the central level, while serotonin cannot cross the blood-brain barrier, its precursors tryptophan and 5-HTP can, meaning that gut-microbiota-driven increases in these precursors translate into increased brain serotonin synthesis. This dual peripheral-central pathway means that the microbiome modulates brain chemistry without direct neural connections, instead using tryptophan and its metabolites as systemic messengers. Psychobiotic intervention that upregulates gut tryptophan, 5-HTP, and indole pathways simultaneously elevates peripheral serotonin availability and brain serotonin synthesis capacity, while also reducing serotonin turnover — creating a sustained increase in effective serotonin activity that parallels but mechanistically extends beyond the single-target action of SSRIs.",
+      "topic_tags": ["tryptophan", "serotonin", "5-HTP", "blood-brain barrier", "indole derivatives", "gut microbiota", "enterochromaffin cells", "depression mechanism"]
+    },
+    {
+      "id": "ccfm1025_mdd_hard_004",
+      "difficulty": "hard",
+      "question": "What does the pattern of gut microbiota changes — modest alpha diversity gains without significant beta diversity shifts or core microbiome perturbation — reveal about the mechanism by which psychobiotics exert antidepressant effects?",
+      "answer": "The observed pattern of microbiome changes under psychobiotic treatment — increased alpha diversity (species richness) but unchanged beta diversity (community structure) and unperturbed core microbiome composition — is mechanistically informative. It indicates that the psychobiotic does not act primarily by replacing or restructuring the dominant resident microbial community, but instead influences a subset of taxa and their metabolic outputs without broadly reshaping the ecosystem. This is consistent with a metabolite-mediated rather than ecosystem-replacement mechanism of action. The specific taxa whose abundance increases under probiotic treatment (Desulfovibrio and Faecalibaculum) represent differential rather than dominant community members, suggesting targeted ecological interactions rather than competitive displacement of core taxa. Furthermore, the dissociation between modest microbiome compositional changes and significant improvements in tryptophan metabolite profiles and clinical symptoms implies that psychobiotics can reprogram the metabolic activity of the gut ecosystem — particularly tryptophan pathway flux — without fundamentally altering which organisms dominate it. This metabolic reprogramming hypothesis is further supported by the significant correlations between changes in specific tryptophan metabolites (IPA, indole-3-acetamide) and clinical outcomes, while no core microbiome taxa showed significant perturbation. This has important implications for psychobiotic drug development: efficacy may be better predicted by metabolomics than by microbiome compositional profiling.",
+      "topic_tags": ["alpha diversity", "beta diversity", "core microbiome", "metabolite-mediated mechanism", "psychobiotics", "tryptophan", "metabolomics", "Faecalibaculum", "Desulfovibrio"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "ccfm1025_mdd_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "In what year was the term 'psychobiotics' first defined, and what was the original definition?",
+      "options": {
+        "A": "2010 — prebiotics that improve gut motility in healthy individuals",
+        "B": "2013 — probiotics that benefit the health of patients suffering from psychiatric illnesses",
+        "C": "2017 — bacteria that produce neurotransmitters capable of crossing the blood-brain barrier",
+        "D": "2019 — dietary supplements that regulate the hypothalamic-pituitary-adrenal axis"
+      },
+      "correct_answer": "B",
+      "explanation": "The term 'psychobiotics' was first defined in 2013 as probiotics that benefit the health of patients suffering from psychiatric illnesses. The concept highlights the gut-brain axis as the primary pathway through which these organisms exert their effects.",
+      "topic_tags": ["psychobiotics", "definition", "gut-brain axis", "probiotics"]
+    },
+    {
+      "id": "ccfm1025_mdd_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What percentage of the body's total serotonin is synthesized in the gut?",
+      "options": {
+        "A": "Approximately 10%",
+        "B": "Approximately 50%",
+        "C": "Over 90%",
+        "D": "Over 99%"
+      },
+      "correct_answer": "C",
+      "explanation": "Over 90% of the body's serotonin is synthesized in the gut, primarily by enterochromaffin cells. This makes the gut the dominant site of serotonin production and underscores the importance of gut microbiota in regulating systemic serotonin levels.",
+      "topic_tags": ["serotonin", "gut synthesis", "enterochromaffin cells", "tryptophan"]
+    },
+    {
+      "id": "ccfm1025_mdd_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "Which cellular model is commonly used to screen probiotics for their ability to enhance gut-derived serotonin production?",
+      "options": {
+        "A": "HeLa cells, due to their stable expression of serotonin transporter genes",
+        "B": "RIN14B cells, because they express key markers of enterochromaffin cells including TPH1 and VMAT1",
+        "C": "Caco-2 cells, because they form a monolayer mimicking the intestinal epithelial barrier",
+        "D": "PC12 cells, which are the standard model for peripheral serotonin research"
+      },
+      "correct_answer": "B",
+      "explanation": "RIN14B cells are derived from rat islet tumor cells and are used as a putative enterochromaffin cell model due to their high expression of key enterochromaffin markers including chromogranin A, synaptophysin, VMAT1, TPH1, and TRPA1 — all critical for serotonin biosynthesis and secretion.",
+      "topic_tags": ["RIN14B", "enterochromaffin cells", "serotonin", "probiotic screening", "TPH1"]
+    },
+
+    {
+      "id": "ccfm1025_mdd_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "Why can tryptophan and 5-hydroxytryptophan (5-HTP) contribute to brain serotonin levels, while serotonin itself cannot?",
+      "options": {
+        "A": "Serotonin is fully degraded by liver enzymes before it can reach the brain, unlike tryptophan",
+        "B": "Tryptophan and 5-HTP are small neutral amino acids with blood-brain barrier transport proteins, while serotonin is a charged monoamine that cannot cross the BBB",
+        "C": "Serotonin is actively pumped out of the CNS by efflux transporters, whereas tryptophan has no such mechanism",
+        "D": "Tryptophan and 5-HTP are more lipid-soluble than serotonin and therefore diffuse passively across the BBB"
+      },
+      "correct_answer": "B",
+      "explanation": "Unlike serotonin, peripheral tryptophan and 5-HTP can cross the blood-brain barrier. This distinction is critical because it means gut microbiota-driven production of these precursors can directly influence central serotonin synthesis, establishing the mechanistic link between gut metabolic activity and brain neurochemistry.",
+      "topic_tags": ["blood-brain barrier", "tryptophan", "5-HTP", "serotonin", "gut-brain axis"]
+    },
+    {
+      "id": "ccfm1025_mdd_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "What mechanism explains the co-occurrence of gastrointestinal and emotional symptoms in depression, and why might a single psychobiotic intervention address both simultaneously?",
+      "options": {
+        "A": "Both conditions share genetic risk loci, so probiotics can correct a common genetic deficiency",
+        "B": "The serotonergic system regulates both gut motility and emotional state, and psychobiotics that reduce serotonin turnover improve signaling in both domains",
+        "C": "Probiotics reduce systemic inflammation, which independently resolves GI inflammation and lifts depression",
+        "D": "Gut microbiota directly produce GABA and dopamine, which correct both depressive and GI symptoms"
+      },
+      "correct_answer": "B",
+      "explanation": "Serotonin is the key shared mediator: it regulates gut motility, secretion, and the enteric nervous system while also influencing mood and emotion. Factor analysis of psychiatric and gastrointestinal symptom scales confirms that both domains are influenced by serotonergic activity. Psychobiotics that reduce serotonin turnover (improve serotonin retention) therefore address both symptom clusters through a single mechanistic target.",
+      "topic_tags": ["serotonin", "gastrointestinal", "depression", "gut-brain axis", "psychobiotics", "comorbidity"]
+    },
+    {
+      "id": "ccfm1025_mdd_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "Which gut bacteria were identified as positively correlated with both psychiatric and gastrointestinal improvements following psychobiotic treatment?",
+      "options": {
+        "A": "Desulfovibrio, Faecalibaculum, and Akkermansia",
+        "B": "Blautia, Bifidobacterium, and Lachnospiraceae FCS020 group",
+        "C": "Bacteroides, Faecalibacterium, and Ruminococcus",
+        "D": "Prevotella, Clostridium, and Eubacterium"
+      },
+      "correct_answer": "B",
+      "explanation": "Network analysis in the probiotic-treated group identified Blautia, Bifidobacterium, and the Lachnospiraceae FCS020 group as positively correlated with both psychometric and gastrointestinal improvements. These taxa were not the dominant core microbiome members but showed functional associations with clinical outcome measures.",
+      "topic_tags": ["Blautia", "Bifidobacterium", "Lachnospiraceae", "gut microbiota", "depression", "clinical outcomes"]
+    },
+    {
+      "id": "ccfm1025_mdd_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "What is the role of the aryl hydrocarbon receptor (AHR) in the context of gut-derived tryptophan metabolites and depression?",
+      "options": {
+        "A": "AHR detects luminal bacterial antigens and activates IgA secretion to maintain mucosal immunity",
+        "B": "AHR is a transcription factor activated by indole tryptophan derivatives that modulates immune and metabolic functions relevant to mood regulation",
+        "C": "AHR mediates serotonin reuptake in the enteric nervous system and is the primary target of SSRIs",
+        "D": "AHR promotes degradation of tryptophan via the kynurenine pathway, reducing serotonin precursor availability"
+      },
+      "correct_answer": "B",
+      "explanation": "Indole derivatives (such as IPA, indole-3-acetic acid, indole-3-acetamide) produced by gut bacteria from tryptophan are ligands of the aryl hydrocarbon receptor (AHR). AHR is a transcription factor that exerts potent effects on immune and metabolic function, and its activation by these microbial metabolites is proposed as one mechanism through which gut bacteria influence mood disorders including depression.",
+      "topic_tags": ["AHR", "aryl hydrocarbon receptor", "indole derivatives", "tryptophan", "immune function", "depression"]
+    },
+    {
+      "id": "ccfm1025_mdd_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "Why does the absence of significant changes in serum cortisol and inflammatory cytokines (TNF-α, IL-1β) under psychobiotic treatment complicate the mechanistic interpretation of antidepressant effects?",
+      "options": {
+        "A": "It proves that psychobiotics work purely through serotonergic mechanisms with no immune involvement",
+        "B": "It suggests the anti-inflammatory and HPA axis-modulating effects observed in animal models may not translate directly to human clinical settings, leaving serotonin/tryptophan pathways as the primary mechanism",
+        "C": "It indicates the probiotic dose was insufficient and would only show cortisol effects at higher concentrations",
+        "D": "It confirms that depression in humans is not inflammatory in nature, unlike rodent models"
+      },
+      "correct_answer": "B",
+      "explanation": "Despite animal model evidence suggesting psychobiotics can alleviate cortisol resistance and aseptic inflammation, no significant changes in serum cortisol, TNF-α, or IL-1β were observed in the clinical trial. This suggests that the neuroimmune and HPA axis-modulating mechanisms well-demonstrated in rodents may not be the primary drivers of antidepressant effects in humans, pointing instead to tryptophan/serotonin pathway changes as the dominant mechanism.",
+      "topic_tags": ["cortisol", "TNF-α", "IL-1β", "HPA axis", "inflammation", "psychobiotics", "mechanism", "translational gap"]
+    },
+
+    {
+      "id": "ccfm1025_mdd_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "A psychobiotic clinical trial finds significant improvements in depression and GI symptoms, upregulation of fecal tryptophan metabolites, and reduced serum serotonin turnover, but no significant change in gut microbiome beta diversity or core microbiome composition. What is the most mechanistically consistent interpretation of these findings?",
+      "options": {
+        "A": "The probiotic failed to engraft in the gut and all effects were due to immune stimulation by dead bacterial cells during transit",
+        "B": "The probiotic exerts its effects by metabolically reprogramming tryptophan pathway flux within the existing microbial ecosystem rather than by restructuring the community composition",
+        "C": "The improvements were placebo effects because no meaningful microbiome changes were detected to account for the clinical outcomes",
+        "D": "The microbiome compositional changes were present but too small to detect with 16S rRNA sequencing, and only shotgun metagenomics would reveal the true mechanism"
+      },
+      "correct_answer": "B",
+      "explanation": "The dissociation between minimal microbiome compositional change and significant metabolic and clinical improvements is most consistent with a metabolic reprogramming mechanism. The probiotic shifts the metabolic output of the existing ecosystem — specifically tryptophan pathway flux toward serotonin precursors and indole derivatives — without displacing dominant community members. This is consistent with increased alpha diversity (niche expansion) without beta diversity shifts, and explains why metabolomics (tryptophan metabolites) better predicts clinical outcomes than microbiome composition does.",
+      "topic_tags": ["beta diversity", "tryptophan metabolism", "metabolic reprogramming", "psychobiotics", "mechanism interpretation", "microbiome"]
+    },
+    {
+      "id": "ccfm1025_mdd_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "How does adjunctive 5-HTP supplementation and psychobiotic-induced 5-HTP elevation both converge on a common therapeutic outcome in depression, and what does this reveal about the limitations of SSRI monotherapy?",
+      "options": {
+        "A": "Both 5-HTP approaches reduce neuroinflammation directly, which SSRIs cannot do, highlighting inflammation as the true cause of depression",
+        "B": "Both approaches increase serotonin precursor availability to the brain via BBB-permeable molecules, augmenting serotonin synthesis at its source rather than only blocking reuptake — thereby addressing the upstream supply that SSRIs do not affect",
+        "C": "Both increase synaptic dopamine levels as a secondary effect, and dopamine — not serotonin — is the actual mediator of their antidepressant effects",
+        "D": "Both work by colonizing the gut with serotonin-producing bacteria, whereas SSRIs only act centrally and have no gut effects"
+      },
+      "correct_answer": "B",
+      "explanation": "SSRIs increase serotonin bioavailability in the synaptic cleft by blocking its reuptake, but they do not increase the upstream synthesis of serotonin. Both oral 5-HTP supplementation and gut-microbiota-mediated 5-HTP production increase brain serotonin precursor availability, augmenting central serotonin synthesis at its source. Adjunctive 5-HTP can synergistically amplify SSRI effects by combining upstream supply increase with downstream reuptake blockade. This reveals that SSRI monotherapy is limited to preventing serotonin degradation without addressing precursor deficiencies that may be present in depression — a gap that psychobiotics can potentially fill.",
+      "topic_tags": ["5-HTP", "SSRIs", "serotonin synthesis", "adjunctive therapy", "psychobiotics", "BBB", "depression mechanism"]
+    }
+  ]
+}

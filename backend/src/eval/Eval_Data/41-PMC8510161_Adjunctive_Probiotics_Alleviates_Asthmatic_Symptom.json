@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Adjunctive Probiotics Alleviates Asthmatic Symptoms via Modulating the Gut Microbiome and Serum Metabolome",
+    "authors": ["Ailing Liu", "Teng Ma", "Ning Xu", "Hao Jin", "Feiyan Zhao", "Lai-Yu Kwok", "Heping Zhang", "Shukun Zhang", "Zhihong Sun"],
+    "journal": "Microbiology Spectrum",
+    "year": 2021,
+    "doi": "10.1128/Spectrum.00859-21",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "ASTHMA_PROB_easy_001",
+      "difficulty": "easy",
+      "question": "What is the gut-lung axis and why is it relevant to asthma pathogenesis?",
+      "answer": "The gut-lung axis refers to the bidirectional communication and regulatory relationship between the gastrointestinal tract and the respiratory system. It is mediated in large part by the resident gut microbiota. Dysbiosis in the gut can directly affect not only the gut compartment but also distant organs including the lungs, influencing respiratory health and diseases. In asthma, gut microbial communities affect immune function development and susceptibility to airway inflammation. Evidence from germ-free animal models shows that absence of gut microbiota leads to stronger allergic airway responses, confirming the functional importance of this axis.",
+      "topic_tags": ["gut-lung axis", "asthma", "dysbiosis", "microbiota", "respiratory immunity"]
+    },
+    {
+      "id": "ASTHMA_PROB_easy_002",
+      "difficulty": "easy",
+      "question": "How are probiotics defined, and which bacterial genera are most commonly used to manage allergic and respiratory conditions?",
+      "answer": "Probiotics are defined as live microorganisms which, when administered in adequate amounts, confer a health benefit on the host. Members of the Lactobacillus and Bifidobacterium genera are the most commonly used probiotic bacteria for preventing and improving allergies and respiratory diseases. These bacteria can colonize stably in the intestinal tract, modulate gut microbial composition, enhance microbial metabolite levels (mainly short-chain fatty acids), and modulate host immunity.",
+      "topic_tags": ["probiotics", "Lactobacillus", "Bifidobacterium", "definition", "respiratory allergy"]
+    },
+    {
+      "id": "ASTHMA_PROB_easy_003",
+      "difficulty": "easy",
+      "question": "What effect does decreased gut microbiota diversity have on asthma risk and respiratory health?",
+      "answer": "A decrease in gut microbiota diversity is considered a less healthy state because it indicates disruption of gut homeostasis. Reduced bacterial diversity due to treatment or other external factors is often associated with important clinical features of chronic lung diseases including asthma. Studies have shown that a prior decrease in gut microbiome diversity predisposes children to the development of allergic asthma. Such disruptions perturb normal energy metabolism and immunity and can trigger or worsen medical conditions. Maintaining baseline gut microbiota diversity is therefore protective for respiratory health.",
+      "topic_tags": ["gut microbiota diversity", "asthma risk", "dysbiosis", "alpha diversity", "respiratory disease"]
+    },
+    {
+      "id": "ASTHMA_PROB_easy_004",
+      "difficulty": "easy",
+      "question": "What are short-chain fatty acids (SCFAs), and how are they linked to asthma protection?",
+      "answer": "Short-chain fatty acids (SCFAs), including butyrate, propionate, and acetate, are produced by intestinal microbes through fermentation of dietary fiber. They have been implicated in protection against asthma through multiple mechanisms. SCFAs can inhibit pro-inflammatory responses in the lungs, and butyrate specifically can induce the production of T regulatory cells in lung tissue. Feeding mice with SCFAs during pregnancy and weaning protected offspring from allergic lung inflammation. In human observational studies, reductions in fecal SCFAs during infancy were associated with development of asthma later in life, while children with higher fecal butyrate and propionate showed significantly less atopic sensitization.",
+      "topic_tags": ["SCFAs", "butyrate", "propionate", "asthma protection", "T regulatory cells", "atopic sensitization"]
+    },
+    {
+      "id": "ASTHMA_PROB_easy_005",
+      "difficulty": "easy",
+      "question": "Why do clinical trial results for probiotic treatment of asthma vary, and what factors are considered important for improving consistency?",
+      "answer": "Clinical trial results for probiotics in asthma management are inconsistent because probiotic effects are strain-specific — a strain that is effective in one trial may show no effect in another. Study design also plays a major role, including differences in patient selection, intervention duration, and follow-up periods. Additionally, the mechanisms by which specific strains modulate asthmatic symptoms via the gut microbiome and metabolome are still not well characterized. To improve consistency, future trials should incorporate careful strain selection, high-quality randomized controlled trial procedures, longer follow-up periods, and advanced reproducible microbiota analysis methods.",
+      "topic_tags": ["probiotics", "clinical trial variability", "strain specificity", "asthma management", "RCT design"]
+    },
+
+    {
+      "id": "ASTHMA_PROB_medium_001",
+      "difficulty": "medium",
+      "question": "How does probiotic administration maintain gut microbiome stability in patients receiving inhaled corticosteroid-based therapy?",
+      "answer": "Inhaled corticosteroid-based inhalers have been shown to reduce gut microbiota alpha diversity over time, suggesting that standard drug regimens disrupt gut homeostasis as a side effect. When probiotics are co-administered with such treatments, they can increase the resilience of the gut microbiome, reflected by stable alpha diversity throughout the treatment period. The probiotic group maintains baseline diversity levels, while the placebo group experiences significant diversity reduction. This protective effect on microbiome stability is thought to help counteract the dysbiotic impact of pharmacological therapy, thereby preserving the immune-modulatory functions of the gut microbiota relevant to asthma control.",
+      "topic_tags": ["gut microbiome resilience", "alpha diversity", "inhaled corticosteroids", "probiotic protection", "Symbicort"]
+    },
+    {
+      "id": "ASTHMA_PROB_medium_002",
+      "difficulty": "medium",
+      "question": "What is the role of tryptophan metabolism in asthma, and how do gut microbes mediate its protective effects?",
+      "answer": "Gut microbes are the major participants in tryptophan metabolism, which can protect the host from developing asthma through the indoleamine 2,3-dioxygenase-1 (IDO-1) pathway and activation of the aryl hydrocarbon receptor (AHR). In murine asthma models, AHR activation reduces airway inflammation and hyperresponsiveness. Tryptophan metabolites interact with AHR to promote immune homeostasis, enhance Th17 and T regulatory cell differentiation, maintain homeostasis of innate lymphoid cells, and exert anti-inflammatory and antioxidant effects in systemic circulation. Probiotic administration increases the diversity of microbial species with tryptophan degradation pathways, boosting serum tryptophan levels and potentially amplifying these protective immunological effects.",
+      "topic_tags": ["tryptophan metabolism", "aryl hydrocarbon receptor", "IDO-1 pathway", "asthma", "T regulatory cells", "gut microbiome"]
+    },
+    {
+      "id": "ASTHMA_PROB_medium_003",
+      "difficulty": "medium",
+      "question": "How does butyrate production by gut bacteria modulate lung immune responses, particularly in the context of allergy and asthma?",
+      "answer": "Butyrate produced by gut bacteria through dietary fiber fermentation can inhibit pro-inflammatory responses in the lungs. Unmetabolized butyrate enters peripheral circulation after serving as an energy source for colonocytes and reaches distal body sites such as the lungs, where it modulates the activity of T regulatory lymphocytes and various regulatory cytokines. Experimental feeding of SCFAs including butyrate during pregnancy and weaning protected offspring from allergic lung inflammation by inducing T regulatory cell production in lung tissue. Butyrate also reduces airway hyperresponsiveness and peripheral eosinophil counts. Specific gut bacteria such as Roseburia hominis and Ruminococcus callidus are important butyrate producers linked to these protective effects.",
+      "topic_tags": ["butyrate", "lung immunity", "T regulatory cells", "airway hyperresponsiveness", "eosinophils", "gut-lung axis"]
+    },
+    {
+      "id": "ASTHMA_PROB_medium_004",
+      "difficulty": "medium",
+      "question": "What is the relationship between the gut virome and the gut bacterial microbiota, and how does probiotic therapy affect this relationship?",
+      "answer": "The gut virome (primarily bacteriophages) shows a strong positive correlation with gut bacterial microbiota diversity, suggesting they are co-regulated. This relationship reflects the high infectious specificity of gut viruses for their bacterial hosts. Probiotic co-administration helps maintain the alpha diversity of bacteriophages, which decreases significantly in patients receiving drug therapy alone. Procrustes analysis confirms a strong cooperative relationship between the gut bacterial microbiota and the virome. The interactive microbial network between gut bacteria and bacteriophages is more robust in probiotic recipients than in placebo recipients. This tripartite relationship among gut bacteria, bacteriophages, and the host immune system represents an emerging area of understanding in respiratory disease management.",
+      "topic_tags": ["gut virome", "bacteriophage", "microbiota diversity", "probiotics", "virome-bacteriome relationship"]
+    },
+    {
+      "id": "ASTHMA_PROB_medium_005",
+      "difficulty": "medium",
+      "question": "What is the significance of sphingomyelin and linoleoyl ethanolamide as biomarkers in asthma, and how does probiotic treatment affect their levels?",
+      "answer": "Sphingomyelin is a sphingolipid found in animal cell membranes, and lower levels in the blood have been associated with asthma in children. Studies have also shown that reduced fecal sphingolipids in early life are related to food allergies, suggesting that sphingolipid metabolites may protect against atopic conditions including asthma. Linoleoyl ethanolamide is a bioactive fatty acid ethanolamide that exerts anti-inflammatory effects by inhibiting NF-κB signaling. Probiotic administration increases the predicted gut levels of linoleoyl ethanolamide and sphingomyelin, as well as measurable serum sphingomyelin concentrations. These metabolic changes suggest that probiotics may modulate asthma pathophysiology through lipid-mediated anti-inflammatory pathways, though further research is needed to confirm the precise mechanisms.",
+      "topic_tags": ["sphingomyelin", "linoleoyl ethanolamide", "NF-kB", "asthma biomarkers", "anti-inflammatory", "metabolomics"]
+    },
+    {
+      "id": "ASTHMA_PROB_medium_006",
+      "difficulty": "medium",
+      "question": "How do changes in species-level genome bins (SGBs) reflect the mechanism by which probiotic administration alleviates asthmatic inflammation?",
+      "answer": "Probiotic administration results in significant increases in specific beneficial and anti-inflammatory microbial species, including Bifidobacterium animalis, Bifidobacterium longum, Prevotella sp. CAG, Roseburia hominis, and Ruminococcus callidus, while decreasing potentially pro-inflammatory species such as Clostridiales bacterium and Parabacteroides distasonis. These shifts are linked to known anti-asthmatic functions: Bifidobacterium animalis reduces symptoms of viral respiratory infections, Bifidobacterium longum increases acetate and alleviates allergic airway inflammation, and Roseburia hominis and Ruminococcus callidus produce butyrate which reduces airway hyperresponsiveness. The effect size analysis confirms that these SGB changes explain a substantial proportion of variance in clinical indices and predicted metabolite profiles, linking microbiome composition to symptom improvement.",
+      "topic_tags": ["species-level genome bins", "SGBs", "Bifidobacterium", "Prevotella", "butyrate producers", "asthma inflammation"]
+    },
+
+    {
+      "id": "ASTHMA_PROB_hard_001",
+      "difficulty": "hard",
+      "question": "How do gut metabolic module (GMM) profiles differ between probiotic-treated and untreated asthmatic patients, and what are the downstream immunological consequences?",
+      "answer": "Genome-centric metabolic reconstruction reveals that probiotic treatment shifts the distribution of gut metabolic modules (GMMs) in a direction consistent with reduced airway inflammation. In probiotic recipients, GMMs related to butyrate synthesis I and tryptophan degradation are dominant, while acetate degradation is disproportionately represented in placebo recipients. This metabolic divergence has downstream immunological consequences: elevated butyrate promotes T regulatory cell activity in lung tissue, reduces airway hyperresponsiveness, and inhibits pro-inflammatory cytokines. Tryptophan degradation enhances AHR-mediated pathways that suppress Th2-skewed allergic immune responses and maintain innate lymphoid cell homeostasis. Additionally, Procrustes analysis confirms a strong cooperativity (correlation = 0.351, P = 0.001) between GMM profiles and the actual predicted metabolome, validating that the metabolic shifts are functionally coherent and not merely compositional. These GMM changes also predict increases in bioactive metabolites such as adrenic acid, erythronic acid, and linoleoyl ethanolamide, which act through complementary anti-inflammatory pathways including NF-κB inhibition.",
+      "topic_tags": ["gut metabolic modules", "butyrate synthesis", "tryptophan degradation", "immunomodulation", "Procrustes analysis", "anti-inflammatory pathways", "metabolomics"]
+    },
+    {
+      "id": "ASTHMA_PROB_hard_002",
+      "difficulty": "hard",
+      "question": "What is the mechanistic framework linking gut microbial metabolites to clinical asthma outcomes via the gut-lung axis, and what evidence supports the multi-pathway nature of this relationship?",
+      "answer": "The gut-lung axis operates through multiple overlapping metabolic and immune pathways, as supported by multi-omics evidence. First, SCFAs — particularly butyrate — are produced by gut bacteria via fiber fermentation, enter circulation, and modulate pulmonary T regulatory cell activity and cytokine production, thereby reducing airway inflammation. Second, tryptophan metabolites from gut microbes activate AHR and the IDO-1 pathway, promoting Th17/Treg balance, innate lymphoid cell homeostasis, and antioxidant responses in systemic circulation. Third, sphingolipid metabolites and fatty acid ethanolamides such as linoleoyl ethanolamide inhibit NF-κB signaling, reducing inflammatory tone. Fourth, maintaining gut microbiota diversity stabilizes the virome, which in turn modulates bacterial communities and directly stimulates mammalian immune responses via bacteriophage components. Clinical evidence of these pathways operating together includes: significantly reduced alveolar and fractional exhaled nitric oxide (inflammatory markers), improved asthma control test scores, stabilized IgE levels (which rose in the placebo group), and metabolomic shifts in serum including elevated tryptophan and sphingomyelin. The PERMANOVA-based effect size analysis showing that gut microbiota changes explain over 50% of clinical and metabolomic variance underscores the centrality of the gut microbiome as the mechanistic driver of these outcomes.",
+      "topic_tags": ["gut-lung axis", "SCFAs", "tryptophan", "sphingolipids", "NF-kB", "airway inflammation", "multi-omics", "IgE", "nitric oxide"]
+    },
+    {
+      "id": "ASTHMA_PROB_hard_003",
+      "difficulty": "hard",
+      "question": "Why might probiotic interventions reduce inflammatory markers in asthma without significantly altering standard lung function metrics, and what does this suggest about the mechanisms of action?",
+      "answer": "Probiotics in asthma trials can improve inflammatory biomarkers such as fractional exhaled nitric oxide and alveolar nitric oxide, and improve symptom-based clinical scores (e.g., asthma control test), without improving structural lung function indices such as peak expiratory flow, FEV1, or FVC. This dissociation suggests that the probiotic mechanism of action operates primarily through immune and inflammatory modulation rather than bronchial structural remodeling. The gut-lung axis influences the activity of immune cells — dendritic cells, T regulatory cells, ILC3s, NKT cells — and regulatory metabolites, all of which reduce mucosal and systemic inflammatory burden. However, established structural changes or bronchospastic physiology that underlie fixed spirometric abnormalities may not be reversible on the timescale of probiotic administration or through immune modulation alone. This finding implies that probiotics are adjunctive anti-inflammatory agents that complement pharmacological bronchodilators and corticosteroids rather than replacing them, and that their clinical benefit is best captured through inflammatory biomarkers and quality-of-life metrics rather than spirometry alone.",
+      "topic_tags": ["lung function", "nitric oxide", "asthma control test", "anti-inflammatory", "immune modulation", "adjunctive therapy", "FEV1", "clinical outcomes"]
+    },
+    {
+      "id": "ASTHMA_PROB_hard_004",
+      "difficulty": "hard",
+      "question": "How does the concept of functional microbial redundancy complicate the interpretation of probiotic-induced microbiome changes, and how can metabolomics help resolve this challenge?",
+      "answer": "Functional microbial redundancy means that compositionally distinct gut microbiotas can yield similar functional profiles because different bacterial species encode overlapping metabolic capabilities. This poses a challenge in probiotic research: a probiotic strain may not produce large shifts in overall community composition or diversity (as seen in PCoA and alpha diversity analyses), yet still exert meaningful health effects by introducing specific functional capabilities or enhancing particular metabolic modules. In this context, taxonomic analysis alone would underestimate the probiotic's impact. Metabolomics, both predicted (via MelonnPan using metagenomic data) and measured (serum LC-MS), provides a functional readout that bridges microbial composition and host physiology. When Procrustes analysis shows strong cooperativity between the microbiome and metabolome, it confirms that compositional changes — even subtle ones at the SGB level — translate into coherent metabolic shifts. Serum metabolomics can detect these downstream functional changes even when taxonomic diversity metrics show no significant difference, thereby capturing the mechanistic impact of specific microbial species on host metabolism and immune regulation.",
+      "topic_tags": ["functional redundancy", "metabolomics", "metagenomics", "Procrustes analysis", "MelonnPan", "probiotic mechanisms", "multi-omics integration"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "ASTHMA_PROB_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which microbial metabolites produced through fermentation of dietary fiber are most directly associated with protection against asthma development?",
+      "options": {
+        "A": "Bile acids and indoles",
+        "B": "Short-chain fatty acids, particularly butyrate and propionate",
+        "C": "Lipopolysaccharides and peptidoglycans",
+        "D": "Histamine and serotonin"
+      },
+      "correct_answer": "B",
+      "explanation": "Short-chain fatty acids — including butyrate, propionate, and acetate — are produced by gut bacteria through dietary fiber fermentation. High fecal butyrate and propionate in early life are associated with significantly less atopic sensitization, and feeding SCFAs during pregnancy protected offspring from allergic lung inflammation. They modulate T regulatory cell activity and inhibit pro-inflammatory responses in the lungs.",
+      "topic_tags": ["SCFAs", "butyrate", "propionate", "asthma protection", "dietary fiber"]
+    },
+    {
+      "id": "ASTHMA_PROB_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What does a decrease in gut microbiota alpha diversity during asthma treatment indicate, and how can it be counteracted?",
+      "options": {
+        "A": "Successful pathogen elimination; no counteraction needed",
+        "B": "Disruption of gut homeostasis; may be counteracted by co-administering probiotics",
+        "C": "Improved immune tolerance; should be maintained",
+        "D": "Reduction in allergen exposure; enhanced by dietary restriction"
+      },
+      "correct_answer": "B",
+      "explanation": "A decrease in gut microbiota alpha diversity indicates disruption of gut homeostasis, which can perturb energy metabolism, immunity, and disease control. Probiotic co-administration has been shown to increase microbiome resilience and maintain baseline diversity levels, counteracting the diversity-reducing effects of pharmacological therapies.",
+      "topic_tags": ["alpha diversity", "gut homeostasis", "probiotics", "dysbiosis", "resilience"]
+    },
+    {
+      "id": "ASTHMA_PROB_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "Which Bifidobacterium species showed increased abundance following probiotic intervention and is associated with alleviation of allergic airway inflammation?",
+      "options": {
+        "A": "Bifidobacterium breve",
+        "B": "Bifidobacterium adolescentis",
+        "C": "Bifidobacterium longum",
+        "D": "Bifidobacterium bifidum"
+      },
+      "correct_answer": "C",
+      "explanation": "Bifidobacterium longum increased significantly in the probiotic group and is supported by other studies showing that prophylactic supplementation with this species increases fecal acetate and alleviates allergic airway inflammation and airway hyperresponsiveness caused by T lymphocytes.",
+      "topic_tags": ["Bifidobacterium longum", "allergic airway inflammation", "probiotics", "SGBs"]
+    },
+
+    {
+      "id": "ASTHMA_PROB_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "What is the proposed mechanism by which tryptophan metabolism in gut microbes contributes to asthma protection?",
+      "options": {
+        "A": "Tryptophan metabolites activate the NF-κB pathway, promoting anti-inflammatory cytokine production",
+        "B": "Tryptophan degradation by gut microbes generates metabolites that activate the aryl hydrocarbon receptor and IDO-1 pathway, promoting Th17/Treg balance and reducing airway inflammation",
+        "C": "Tryptophan is converted to serotonin by gut bacteria, which directly relaxes bronchial smooth muscle",
+        "D": "Tryptophan metabolism increases IgE class switching, desensitizing the host to allergens"
+      },
+      "correct_answer": "B",
+      "explanation": "Gut microbial tryptophan degradation generates metabolites that activate the aryl hydrocarbon receptor (AHR) and the IDO-1 pathway. In murine asthma models, AHR activation reduces airway inflammation and hyperresponsiveness. These metabolites promote Th17/Treg differentiation, maintain innate lymphoid cell homeostasis, and exert anti-inflammatory and antioxidant effects systemically.",
+      "topic_tags": ["tryptophan", "aryl hydrocarbon receptor", "IDO-1", "Treg", "asthma", "immune homeostasis"]
+    },
+    {
+      "id": "ASTHMA_PROB_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "How does the strong correlation between gut bacterial microbiota diversity and gut virome diversity affect our understanding of probiotic therapy?",
+      "options": {
+        "A": "It suggests that bacteriophages are irrelevant to clinical outcomes and can be excluded from analysis",
+        "B": "It implies that probiotics stabilize bacterial microbiota, which in turn helps maintain bacteriophage diversity, pointing to a tripartite gut bacteria-virome-immune system relationship",
+        "C": "It indicates that viral infections are the primary cause of gut dysbiosis in asthma patients",
+        "D": "It shows that antiviral therapy should be prioritized over probiotic treatment in asthma management"
+      },
+      "correct_answer": "B",
+      "explanation": "The strong positive correlation (R=0.895) between bacterial and viral diversity suggests they are co-regulated. Probiotic co-administration maintains bacteriophage diversity that otherwise decreases with drug treatment alone. Bacteriophages can directly stimulate mammalian immune responses and shape the gut microbiota, implicating a tripartite bacteria-virome-immune relationship relevant to asthma.",
+      "topic_tags": ["gut virome", "bacteriophage diversity", "probiotics", "tripartite relationship", "immune system"]
+    },
+    {
+      "id": "ASTHMA_PROB_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "Why do sphingolipid metabolites such as sphingomyelin have clinical relevance in asthma, and what is the evidence linking them to atopic disease?",
+      "options": {
+        "A": "Sphingomyelin promotes bronchial smooth muscle contraction and its elevation worsens asthma symptoms",
+        "B": "Lower sphingomyelin levels are found in asthmatic patients, and low fecal sphingolipids in early life are associated with food allergy, suggesting these metabolites may protect against atopy",
+        "C": "Sphingomyelin is exclusively produced by lung epithelial cells and serves as a marker of airway remodeling",
+        "D": "High sphingomyelin levels trigger IgE-mediated mast cell degranulation"
+      },
+      "correct_answer": "B",
+      "explanation": "Asthmatic patients have been found to have significantly lower sphingomyelin levels compared to age-matched controls, and low fecal sphingolipids in early life are associated with food allergy. Probiotic administration increases predicted gut and serum sphingomyelin levels, suggesting that restoration of sphingolipid metabolism may be one pathway through which probiotics attenuate asthmatic pathophysiology.",
+      "topic_tags": ["sphingomyelin", "sphingolipids", "asthma", "atopy", "early life", "metabolomics"]
+    },
+    {
+      "id": "ASTHMA_PROB_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "What is the role of Roseburia hominis and Ruminococcus callidus in gut-mediated asthma modulation?",
+      "options": {
+        "A": "They are mucin-degrading bacteria that reinforce the intestinal barrier and reduce systemic allergen exposure",
+        "B": "They are butyrate-producing bacteria that increase cecal butyrate levels and subsequently reduce airway hyperresponsiveness and peripheral eosinophil counts",
+        "C": "They produce IgA-stimulating antigens that enhance mucosal immunity against airway pathogens",
+        "D": "They secrete anti-inflammatory proteins that directly inhibit Th2 cytokine production in dendritic cells"
+      },
+      "correct_answer": "B",
+      "explanation": "Roseburia hominis and Ruminococcus callidus are important butyrate-producing bacteria. Studies have shown they can significantly increase cecal butyrate levels, which subsequently reduces airway hyperresponsiveness and the peripheral eosinophil count — two key measures of asthmatic inflammation. Their increased prevalence following probiotic treatment reflects enhanced butyrate-mediated gut-lung axis modulation.",
+      "topic_tags": ["Roseburia hominis", "Ruminococcus callidus", "butyrate", "airway hyperresponsiveness", "eosinophils", "gut-lung axis"]
+    },
+    {
+      "id": "ASTHMA_PROB_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What is the significance of Procrustes analysis in the context of microbiome-metabolome integration in asthma research?",
+      "options": {
+        "A": "It identifies individual bacterial species responsible for producing specific metabolites",
+        "B": "It confirms cooperativity between microbiome and metabolome datasets, validating that compositional microbial changes translate into coherent functional metabolic shifts",
+        "C": "It measures the statistical significance of alpha diversity differences between groups",
+        "D": "It predicts clinical outcomes based solely on host genetic variation"
+      },
+      "correct_answer": "B",
+      "explanation": "Procrustes analysis is a statistical method that compares two multivariate datasets in low-dimensional space. In this study, it confirmed a significant positive cooperativity between gut microbiome (SGBs) and metabolome profiles (correlation=0.351; P=0.001), demonstrating that changes in microbial community composition are coherently linked to changes in predicted metabolites. This validates the functional relevance of SGB-level shifts and supports the metabolic mechanisms proposed for probiotic-driven asthma improvement.",
+      "topic_tags": ["Procrustes analysis", "multi-omics", "microbiome-metabolome", "cooperativity", "functional validation"]
+    },
+
+    {
+      "id": "ASTHMA_PROB_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "How does the differential distribution of gut metabolic modules (GMMs) between probiotic and placebo groups help explain divergent clinical outcomes, and what specific metabolic pathways are most mechanistically relevant?",
+      "options": {
+        "A": "Probiotic recipients show increased acetate degradation and histamine synthesis, which reduce mast cell activation in the lung",
+        "B": "Probiotic recipients show enrichment of butyrate synthesis I and tryptophan degradation GMMs, which respectively support T regulatory cell activity in the lung and AHR-mediated anti-inflammatory signaling, while placebo recipients are dominated by acetate degradation",
+        "C": "Placebo recipients show enhanced propionate synthesis and secondary bile acid biosynthesis, which drive more potent bronchodilation",
+        "D": "Both groups share equivalent SCFA synthesis capacity, and outcomes differ solely due to differences in bacteriophage composition"
+      },
+      "correct_answer": "B",
+      "explanation": "Probiotic recipients show dominance of butyrate synthesis I and tryptophan degradation GMMs, which are mechanistically tied to T regulatory cell induction in lung tissue and AHR/IDO-1-mediated suppression of airway inflammation respectively. Acetate degradation, dominant in the placebo group, does not confer these specific anti-asthmatic benefits. These GMM shifts, validated by Procrustes analysis, explain how probiotic-driven microbial changes translate into anti-inflammatory metabolic outputs and ultimately to improved clinical indices such as reduced nitric oxide levels and better asthma control scores.",
+      "topic_tags": ["GMMs", "butyrate synthesis", "tryptophan degradation", "acetate degradation", "asthma outcomes", "T regulatory cells", "AHR"]
+    },
+    {
+      "id": "ASTHMA_PROB_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "Why might IgE levels remain stable in probiotic-treated asthmatic patients while placebo-treated patients show rising IgE levels, and what does this reveal about the mechanism of action?",
+      "options": {
+        "A": "Probiotics directly bind and neutralize free IgE in serum, preventing its accumulation",
+        "B": "Probiotic-induced upregulation of Th1 responses competitively inhibits class switching to IgE production by offsetting the Th2 skewing that drives IgE elevation",
+        "C": "Probiotic bacteria produce IgE-cleaving proteases that degrade antibodies before they can cause airway inflammation",
+        "D": "Probiotic treatment reduces exposure to gut-derived allergens by thickening the intestinal mucus layer, thereby eliminating the antigen trigger for IgE production"
+      },
+      "correct_answer": "B",
+      "explanation": "IgE elevation in the placebo group reflects ongoing Th2-skewed allergic immune activation, a hallmark of asthma progression. Probiotic-induced changes in the gut microbiome — particularly through SCFAs, tryptophan metabolites, and sphingolipids — modulate immune cell differentiation toward T regulatory and Th1-dominant profiles. This counteracts the Th2 bias that drives IgE class switching. Stable IgE levels in probiotic recipients alongside improved clinical indices suggest that the probiotic mechanism operates through immune regulation rather than direct antibody neutralization, consistent with the broader gut-lung axis immunomodulatory framework described in the study.",
+      "topic_tags": ["IgE", "Th2 skewing", "immune modulation", "probiotic mechanism", "asthma progression", "SCFAs", "T regulatory cells"]
+    }
+  ]
+}

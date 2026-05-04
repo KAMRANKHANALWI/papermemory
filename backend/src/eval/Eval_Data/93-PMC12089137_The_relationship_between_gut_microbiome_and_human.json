@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "The relationship between gut microbiome and human diseases: mechanisms, predisposing factors and potential intervention",
+    "authors": ["Mohammad Shabani", "Ali Ghoshehy", "Amir Mohammad Mottaghi", "Zahra Chegini", "Azam Kerami", "Aref Shariati", "Majid Taati Moghadam"],
+    "journal": "Frontiers in Cellular and Infection Microbiology",
+    "year": 2025,
+    "doi": "10.3389/fcimb.2025.1516010",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "gutdis_easy_e1a2b3",
+      "difficulty": "easy",
+      "question": "What are the dominant bacterial phyla in the human gut microbiota, and approximately what proportion of gut species do they account for?",
+      "answer": "The primary phyla of the human gut microbiota are Firmicutes, Bacteroidetes, Proteobacteria, Actinobacteria, Verrucomicrobia, and Fusobacteria. Among these, Firmicutes and Bacteroidetes together account for approximately 90% of gut microbiota species. The human gut overall harbors around 50 bacterial phyla, but microbial diversity is dominated by these two principal phyla.",
+      "topic_tags": ["gut microbiota", "bacterial phyla", "Firmicutes", "Bacteroidetes", "composition"]
+    },
+    {
+      "id": "gutdis_easy_c4d5e6",
+      "difficulty": "easy",
+      "question": "What is dysbiosis and which major disease categories has it been linked to?",
+      "answer": "Dysbiosis refers to an imbalance in the abundance of microbial species in the gut, often associated with dysfunction of the intestinal barrier and activation of inflammatory cells. Insufficient regulation of microbial diversity is implicated in initiating and perpetuating numerous diseases including irritable bowel syndrome (IBS), inflammatory bowel disease (IBD), diabetes, cancer, and obesity. It has also been linked to neurological conditions such as Alzheimer's and Parkinson's disease, as well as immune-related conditions including allergies and autoimmune disorders.",
+      "topic_tags": ["dysbiosis", "disease", "IBD", "metabolic disorders", "neurological disorders"]
+    },
+    {
+      "id": "gutdis_easy_f7g8h9",
+      "difficulty": "easy",
+      "question": "How does the mode of birth delivery shape the initial composition of an infant's gut microbiota?",
+      "answer": "Following vaginal delivery, infants acquire a microbiota that closely resembles their mother's vaginal microbiota, dominated by groups such as Bifidobacterium catenulatum and Bifidobacterium longum. In contrast, infants delivered by caesarean section are primarily exposed to environmental and maternal skin bacteria, including Staphylococcus spp., Propionibacterium spp., and Corynebacterium spp. This difference in initial colonization is significant because the first gut colonizers play a crucial role in determining the long-term composition of the adult gut microbiota.",
+      "topic_tags": ["birth mode", "caesarean section", "vaginal delivery", "infant microbiota", "colonization"]
+    },
+    {
+      "id": "gutdis_easy_i1j2k3",
+      "difficulty": "easy",
+      "question": "What roles do short-chain fatty acids (SCFAs) play in gut health and host metabolism?",
+      "answer": "SCFAs are byproducts of carbohydrate fermentation by gut microflora bacteria. They serve multiple important functions: they can endogenously stimulate secretion of hunger-regulating peptides such as glucagon-like peptide-1 (GLP-1) and peptide YY (PYY), which regulate satiety and insulin sensitivity. SCFAs also promote the integrity of intestinal epithelial cells, support polarization of anti-inflammatory M2 macrophages, reduce intestinal inflammation, and serve as signaling molecules that modulate immune responses. Butyrate in particular is key for maintaining CD326+ intestinal epithelial cell integrity.",
+      "topic_tags": ["SCFAs", "short-chain fatty acids", "butyrate", "GLP-1", "PYY", "gut immunity"]
+    },
+    {
+      "id": "gutdis_easy_l4m5n6",
+      "difficulty": "easy",
+      "question": "What are probiotics and prebiotics, and how do they differ in their approach to modulating gut health?",
+      "answer": "Probiotics are living microorganisms that confer health advantages when administered appropriately. They work by impeding invasion of mucosal cells, enhancing intestinal barrier integrity, diminishing microbial translocation, restoring mucosal immunological function, and mitigating inflammation. Bifidobacterium and Lactobacillus species are the predominant probiotics used in food applications. Prebiotics, by contrast, are chemicals that undergo selective digestion to promote the growth or proliferation of beneficial microorganisms already present in the gut. Together they represent complementary strategies: probiotics introduce beneficial microbes directly, while prebiotics nourish existing beneficial communities.",
+      "topic_tags": ["probiotics", "prebiotics", "Bifidobacterium", "Lactobacillus", "gut modulation"]
+    },
+
+    {
+      "id": "gutdis_medium_o7p8q9",
+      "difficulty": "medium",
+      "question": "What molecular mechanisms link gut microbiota dysbiosis to increased intestinal permeability and systemic inflammation?",
+      "answer": "Dysregulated microbial metabolites, including lipopolysaccharide (LPS) and ATP, can activate NLRP3 inflammasomes, which diminish trans-epithelial resistance and reduce expression of tight junction proteins ZO-1, occludin, and claudin-1. This compromises barrier integrity and increases intestinal permeability. Pathogenic bacteria and their byproducts also provoke the intestinal mucosal immune system to secrete TNF-α and IFN-γ, which affect myosin light chain kinase activity, leading to redistribution of tight junctions and further increased transcellular and paracellular permeability. This allows pro-inflammatory agents to penetrate the submucosa, triggering inflammatory cascades and enabling LPS translocation into the bloodstream, contributing to systemic inflammation and metabolic endotoxemia.",
+      "topic_tags": ["intestinal permeability", "tight junctions", "NLRP3", "LPS", "TNF-α", "IFN-γ", "inflammation"]
+    },
+    {
+      "id": "gutdis_medium_r1s2t3",
+      "difficulty": "medium",
+      "question": "Through what mechanisms does the gut microbiota influence energy balance and appetite regulation, and how does this relate to obesity?",
+      "answer": "The gut microbiota modulates energy intake through multiple mechanisms. First, it adjusts digestion of complex macronutrients and produces SCFAs as byproducts of carbohydrate fermentation. These SCFAs activate G protein-coupled receptors GPR-41 and GPR-43 on enteroendocrine cells, stimulating production of satiety-inducing hormones PYY and GLP-1. Second, in obesity, the Firmicutes/Bacteroidetes ratio shifts toward Firmicutes, which confers an enhanced capacity for energy harvesting from dietary sources. Third, imidazole propionate, a microbial histidine metabolite, inhibits insulin signaling through AMPK and mTOR pathways, contributing to glucose dysregulation. Decreased microbial diversity and dysbiosis also reduce SCFA production, impairing anti-inflammatory responses and exacerbating metabolic dysfunction.",
+      "topic_tags": ["obesity", "energy harvesting", "SCFAs", "GPR-41", "GPR-43", "GLP-1", "PYY", "appetite"]
+    },
+    {
+      "id": "gutdis_medium_u4v5w6",
+      "difficulty": "medium",
+      "question": "How does gut microbiota dysbiosis contribute to the pathogenesis of Parkinson's disease via the gut-brain axis?",
+      "answer": "Gut dysbiosis in Parkinson's disease leads to increased intestinal permeability and subsequent neurological dysfunction. The altered microbiome composition impacts the gut-brain axis — a bidirectional communication link between the gastrointestinal tract and CNS — resulting in systemic and neuroinflammation. A key mechanism involves alpha-synuclein aggregation: these aggregates are believed to initially form within the enteric nervous system of the gastrointestinal tract and then spread to the brain via the vagus nerve, supporting a gut-origin theory for Parkinson's disease. Additionally, PD patients exhibit reduced populations of SCFA-producing bacteria, resulting in diminished neuroprotective SCFA levels, which worsens neuroinflammation and neurodegeneration, including loss of dopaminergic neurons in the substantia nigra.",
+      "topic_tags": ["Parkinson's disease", "gut-brain axis", "alpha-synuclein", "vagus nerve", "neuroinflammation", "SCFAs"]
+    },
+    {
+      "id": "gutdis_medium_x7y8z9",
+      "difficulty": "medium",
+      "question": "What immunological mechanisms underlie the relationship between early-life gut microbiota composition and the development of allergic diseases?",
+      "answer": "Early-life microbial exposure is critical in shaping immune system development and preventing allergic sensitization. Reduced colonization by Bifidobacterium or Lactobacillus early in life is correlated with subsequent allergy development, while early colonization by Clostridium difficile represents a risk factor. Children born by caesarean section, who are exposed to fewer maternal vaginal and intestinal microbes, have higher allergy risk. The gut microbiota promotes immune tolerance through production of microbial metabolites including SCFAs, which modulate immune responses and induce regulatory T cells (Tregs). Tregs are essential for preserving immunological tolerance toward self-antigens and benign environmental antigens, thereby mitigating allergic responses. Reduced Bacteroidetes diversity and diminished LPS exposure (from Proteobacteria) during infancy have also been linked to increased susceptibility to atopic eczema.",
+      "topic_tags": ["allergies", "immune tolerance", "Tregs", "SCFAs", "early colonization", "caesarean section", "atopic eczema"]
+    },
+    {
+      "id": "gutdis_medium_a2b3c4",
+      "difficulty": "medium",
+      "question": "How do antibiotics disrupt the gut microbiota, and what are the downstream consequences for host susceptibility to infection?",
+      "answer": "Antibiotics target not only pathogenic microorganisms but also commensal microbial populations in the gastrointestinal tract, resulting in persistent adverse effects on gut microbial diversity even after treatment cessation. While most microbiota reverts to pretreatment levels, certain compositions are permanently eliminated. This disruption creates a metabolic environment that promotes the proliferation of pathogens such as Clostridioides difficile — the altered nutritional landscape following antibiotic treatment facilitates CDI and infectious diarrhea. Additionally, metronidazole decreases mucus layer structural integrity and increases mucosal adhesion by pathogens. Antibiotics also increase the proportion of potentially dangerous Enterobacteriaceae in neonates and have been linked to elevated childhood asthma risk, since early-life antibiotic use alters Actinobacteria levels and Bacteroidetes/Proteobacteria ratios.",
+      "topic_tags": ["antibiotics", "C. difficile", "microbial diversity", "infection susceptibility", "CDI", "dysbiosis"]
+    },
+    {
+      "id": "gutdis_medium_d5e6f7",
+      "difficulty": "medium",
+      "question": "What is fecal microbiota transplantation (FMT) and through what mechanisms does it exert therapeutic effects?",
+      "answer": "Fecal microbiota transplantation (FMT) is a method that involves the complete transfer of feces from a healthy donor to a recipient to restore the gut with a balanced microbiota. The mechanisms of FMT include introducing bacteria from healthy donors that restore microbial balance, leading to improved intestinal barrier function, reduced mucosal inflammation, and regulated interactions between innate and adaptive immune cells that help suppress autoimmune responses. FMT has demonstrated clinical efficacy in treating recurrent Clostridioides difficile infection and has shown superiority over placebo for producing clinical and endoscopic remission in ulcerative colitis. However, challenges include identifying suitable donors, donor-specific microbiota dynamics, specialized technical requirements, and the potential risk of transmitting non-communicable diseases including metabolic problems and cancer.",
+      "topic_tags": ["FMT", "fecal microbiota transplantation", "ulcerative colitis", "C. difficile", "intestinal barrier", "immune regulation"]
+    },
+
+    {
+      "id": "gutdis_hard_g8h9i1",
+      "difficulty": "hard",
+      "question": "How do bile acid metabolism and gut microbiota dysbiosis create a feedback loop contributing to inflammatory bowel disease and metabolic disorders?",
+      "answer": "Gut microbiota, primarily from Firmicutes, Bacteroidetes, and Actinobacteria phyla, produce bile salt hydrolase (BSH) that metabolizes bile salts into free bile acids. A dysbiotic microbiome characterized by reduction in these dominant genera disrupts this bile acid metabolism. Bile acids are not merely digestive agents — they are critical signaling molecules that activate nuclear receptors including FXR, PXR, VDR, and G protein-coupled bile acid receptor 1. FXR activation promotes expression of genes maintaining intestinal integrity, suppressing bacterial growth, and preventing mucosal damage. However, LPS released by a dysbiotic microbiome activates NF-κB, and overexpression of NF-κB components p65 and p50 directly inhibits FXR function — diminishing its ability to suppress intestinal inflammation and leading to chronic intestinal inflammation. This creates a pathological cycle: dysbiosis impairs bile acid metabolism, which compromises FXR signaling, which amplifies NF-κB-driven inflammation, which further disrupts microbial balance. Bile acids also influence glucose and lipid metabolism, energy expenditure, and triglyceride regulation through cellular signaling pathways, making bile acid disruption a convergence point for both inflammatory and metabolic disease.",
+      "topic_tags": ["bile acid metabolism", "FXR", "NF-κB", "BSH", "IBD", "metabolic disorders", "dysbiosis feedback"]
+    },
+    {
+      "id": "gutdis_hard_j2k3l4",
+      "difficulty": "hard",
+      "question": "What are the multi-layered mechanisms by which the gut microbiome regulates the central nervous system, and how does disruption of this axis manifest in neurological disease?",
+      "answer": "The gut microbiome modulates CNS activity through at least four interconnected pathways. First, neuronal activation occurs directly via microbiome-derived signals. Second, endocrine signaling operates through secretion of 5-hydroxytryptamine (serotonin) by enteroendocrine cells. Third, immune pathways involve immune cell infiltration and systemic inflammation driven by microbial products — germ-free mice show immature microglial phenotypes that fail to respond effectively to bacterial molecular patterns like LPS, and exhibit enhanced blood-brain barrier penetration. Fourth, metabolic pathways involve neuroactive molecules produced by microbiota, including SCFAs, tryptophan metabolites (indole, tryptamine), and imidazole propionate, which interact with receptors like the aryl hydrocarbon receptor (AHR). Disruption of these pathways manifests as neurological disorders through multiple mechanisms: reduced SCFAs increase neuroinflammation; altered microbiota composition affects hippocampal volume, myelination, anxiety-like behavior, and sociability; and in Alzheimer's disease specifically, loss of microbial diversity exacerbates cognitive decline while SCFA imbalance contributes to neuroinflammatory pathway dysregulation. The gut-origin hypothesis for Parkinson's disease further implicates enteric nervous system alpha-synuclein aggregation as an upstream trigger transmitted via the vagus nerve.",
+      "topic_tags": ["gut-brain axis", "serotonin", "microglia", "blood-brain barrier", "SCFAs", "Alzheimer's", "Parkinson's", "neuroactive molecules"]
+    },
+    {
+      "id": "gutdis_hard_m5n6o7",
+      "difficulty": "hard",
+      "question": "How do physical activity, diet quality, and stress produce opposing effects on gut microbial diversity through distinct mechanisms, and what are the implications for clinical intervention?",
+      "answer": "Physical activity and diet quality increase gut microbial diversity through distinct but complementary mechanisms, while stress decreases it. Exercise restores the Bacteroidetes/Firmicutes ratio that is diminished in obesity, increases relative abundance of butyrate-producing bacteria (Clostridiales, Roseburia, Lachnospiraceae, Erysipelotrichaceae), and raises intestinal butyrate concentrations — effects that are more pronounced when initiated during juvenile periods. High-fiber, vegetable-rich diets enrich Bifidobacterium and SCFA-producing taxa, lower gut pH to impede harmful bacteria, and reduce the Firmicutes/Bacteroidetes ratio. Conversely, severe physical and psychological stress increases intestinal permeability, alters microbiota composition, and decreases Bacteroidetes and Firmicutes abundance while elevating Clostridium levels — with stress-related neurochemical mediators directly influencing enteric bacteria. The clinical implication is that microbiota-directed strategies must address all three factors simultaneously: exercise and dietary fiber intake build diversity, while stress mitigation (or pre-stress microbiota optimization with higher Actinobacteria and lower Proteobacteria) preserves intestinal barrier integrity. The impact of early-life physical activity on microbiome development also suggests that pediatric lifestyle interventions may have disproportionate long-term benefits for gut and systemic health.",
+      "topic_tags": ["physical activity", "diet", "stress", "microbial diversity", "Firmicutes/Bacteroidetes", "butyrate", "intestinal permeability", "intervention"]
+    },
+    {
+      "id": "gutdis_hard_p8q9r1",
+      "difficulty": "hard",
+      "question": "What are the shared and distinct microbial mechanisms linking type 2 diabetes and obesity, and how do SCFA imbalances create opposing physiological outcomes?",
+      "answer": "Both type 2 diabetes and obesity are characterized by dysbiosis, but through overlapping yet distinct microbial mechanisms. In obesity, the Firmicutes/Bacteroidetes ratio shifts toward Firmicutes, conferring enhanced capacity for energy harvesting from diet. In type 2 diabetes, the primary finding is a decrease in butyrate-producing bacteria alongside significant elevations in opportunistic pathogens; metabolic endotoxemia arises when LPS translocates from the gut to the bloodstream, directly causing insulin resistance via TLR4-mediated NF-κB activation and pro-inflammatory cascades. SCFAs create a paradox in this context: at appropriate levels, they activate GPR-41 and GPR-43 to suppress appetite and improve insulin sensitivity by stimulating GLP-1 and PYY. However, excessive propionate paradoxically elevates plasma norepinephrine, glucagon, and FABP4, stimulating hyperglycemia and glycogenolysis that can lead to compensatory hyperinsulinemia and insulin resistance. Additionally, the microbial metabolite imidazole propionate — produced from histidine — inhibits insulin signaling through AMPK and mTOR pathways independently of the SCFA mechanism. This means that microbiome-based interventions targeting metabolic disease must account for dose-dependent and metabolite-specific effects, as restoring SCFA production may not uniformly benefit both obese and diabetic phenotypes.",
+      "topic_tags": ["type 2 diabetes", "obesity", "SCFAs", "propionate paradox", "LPS", "insulin resistance", "imidazole propionate", "Firmicutes/Bacteroidetes"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "gutdis_mcq_easy_s2t3u4",
+      "difficulty": "easy",
+      "question": "Which bacterial phyla together account for the largest proportion of the human gut microbiota?",
+      "options": {
+        "A": "Proteobacteria and Actinobacteria",
+        "B": "Firmicutes and Bacteroidetes",
+        "C": "Verrucomicrobia and Fusobacteria",
+        "D": "Actinobacteria and Firmicutes"
+      },
+      "correct_answer": "B",
+      "explanation": "Firmicutes and Bacteroidetes together account for approximately 90% of gut microbiota species. While the gut harbors around 50 bacterial phyla, these two dominate in relative abundance across healthy adults.",
+      "topic_tags": ["gut microbiota", "Firmicutes", "Bacteroidetes", "composition"]
+    },
+    {
+      "id": "gutdis_mcq_easy_v5w6x7",
+      "difficulty": "easy",
+      "question": "Which of the following best describes the role of Faecalibacterium prausnitzii in gut health?",
+      "options": {
+        "A": "It is a pro-inflammatory bacterium elevated in healthy individuals",
+        "B": "It is an anti-inflammatory butyrate-producing bacterium that is reduced in IBD patients",
+        "C": "It is a mucin-degrading species associated with metabolic syndrome",
+        "D": "It is an opportunistic pathogen that expands after antibiotic treatment"
+      },
+      "correct_answer": "B",
+      "explanation": "F. prausnitzii is among the beneficial anti-inflammatory species more prevalent in healthy individuals. It is a prominent producer of butyrate, and a decline in its abundance — as seen in IBD patients — may disrupt mucosal homeostasis. Its anti-inflammatory protein inhibits the NF-κB pathway in intestinal epithelial cells.",
+      "topic_tags": ["Faecalibacterium prausnitzii", "IBD", "butyrate", "anti-inflammatory"]
+    },
+    {
+      "id": "gutdis_mcq_easy_y8z9a1",
+      "difficulty": "easy",
+      "question": "How does prolonged alcohol consumption affect gut microbial composition?",
+      "options": {
+        "A": "It increases Bacteroidetes and Firmicutes while reducing Proteobacteria",
+        "B": "It has no significant effect on gut microbiota in humans",
+        "C": "It reduces Bacteroidetes and Firmicutes while enhancing Actinobacteria and Proteobacteria",
+        "D": "It exclusively reduces Verrucomicrobia species"
+      },
+      "correct_answer": "C",
+      "explanation": "Prolonged ethanol use induces dysbiosis characterized by reduced abundances of Bacteroidetes and Firmicutes while enhancing Actinobacteria and Proteobacteria. This is associated with bacterial overgrowth, compromised intestinal permeability, and increased translocation of Gram-negative bacterial products including endotoxins into the circulation.",
+      "topic_tags": ["alcohol", "dysbiosis", "Bacteroidetes", "Firmicutes", "Proteobacteria"]
+    },
+
+    {
+      "id": "gutdis_mcq_medium_b2c3d4",
+      "difficulty": "medium",
+      "question": "What is the primary mechanism by which the gut microbiota influences energy harvesting and contributes to obesity?",
+      "options": {
+        "A": "Obese individuals have higher Bacteroidetes populations that over-ferment dietary fiber",
+        "B": "A shift toward Firmicutes increases the gut's capacity to extract energy from dietary sources, contributing to weight gain",
+        "C": "Gut bacteria in obese individuals suppress GLP-1 secretion, reducing energy expenditure",
+        "D": "The microbiota in obese individuals produces excess bile acids that accumulate as fat"
+      },
+      "correct_answer": "B",
+      "explanation": "In obese individuals and animal models, a shift in the Firmicutes/Bacteroidetes ratio toward Firmicutes confers enhanced capacity for energy harvesting from dietary sources, contributing to weight gain and adipose tissue accumulation. This altered microbiota demonstrated an independent ability to increase energy extraction even when diet was controlled.",
+      "topic_tags": ["obesity", "Firmicutes", "energy harvesting", "Bacteroidetes ratio"]
+    },
+    {
+      "id": "gutdis_mcq_medium_e5f6g7",
+      "difficulty": "medium",
+      "question": "Through which mechanism does imidazole propionate contribute to the pathogenesis of type 2 diabetes?",
+      "options": {
+        "A": "It promotes Firmicutes overgrowth, reducing butyrate availability and impairing gut barrier integrity",
+        "B": "It activates TLR4, causing LPS-mediated inflammation that disrupts pancreatic beta cells",
+        "C": "It inhibits insulin signaling through the AMPK and mTOR pathways",
+        "D": "It competitively inhibits GLP-1 receptor binding, reducing insulin secretion"
+      },
+      "correct_answer": "C",
+      "explanation": "Imidazole propionate is a microbial metabolite derived from histidine whose producing bacteria are enriched in type 2 diabetes. It has been shown to inhibit insulin signaling through the AMPK and mTOR pathways, providing a direct mechanistic link between gut microbial metabolism and systemic glucose homeostasis.",
+      "topic_tags": ["imidazole propionate", "type 2 diabetes", "insulin signaling", "AMPK", "mTOR"]
+    },
+    {
+      "id": "gutdis_mcq_medium_h8i9j1",
+      "difficulty": "medium",
+      "question": "What role do regulatory T cells (Tregs) play in mediating the gut microbiota's influence on immune homeostasis?",
+      "options": {
+        "A": "Tregs directly kill pathogenic bacteria in the gut lumen via antimicrobial peptide secretion",
+        "B": "Tregs suppress effector T cell proliferation; their development depends on Clostridia-derived SCFAs including butyrate",
+        "C": "Tregs produce SIgA to neutralize luminal antigens and prevent bacterial translocation",
+        "D": "Tregs convert into Th17 cells when SCFA levels drop, promoting protective gut inflammation"
+      },
+      "correct_answer": "B",
+      "explanation": "Tregs are specialized T cells that suppress proliferation and activation of effector T cells, mitigating autoimmune diseases and preserving self-tolerance. Clostridium species are potent inducers of Tregs through butyrate production. In germ-free mice, lower luminal SCFA concentrations correspond with impaired development of intestinal Tregs, illustrating their dependence on microbiota-derived butyrate.",
+      "topic_tags": ["Tregs", "Clostridia", "butyrate", "immune homeostasis", "SCFAs"]
+    },
+    {
+      "id": "gutdis_mcq_medium_k2l3m4",
+      "difficulty": "medium",
+      "question": "How do omega-3 polyunsaturated fatty acids (PUFAs) influence gut microbiota composition?",
+      "options": {
+        "A": "Omega-3 PUFAs selectively eliminate Firmicutes, creating more space for pathogen colonization",
+        "B": "Omega-3 PUFAs increase microbial diversity, promote Bifidobacterium, and maintain a balanced Firmicutes/Bacteroidetes ratio while inhibiting LPS-producing Enterobacteria",
+        "C": "Omega-3 PUFAs reduce gut pH, which primarily benefits Clostridium species",
+        "D": "Omega-3 PUFAs have no direct effect on microbiota but reduce systemic inflammation independently"
+      },
+      "correct_answer": "B",
+      "explanation": "Omega-3 PUFAs can directly influence microbial diversity and richness, enhance populations of beneficial microorganisms such as Bifidobacterium, contribute to a balanced Firmicutes/Bacteroidetes ratio, and promote growth of Lachnospiraceae and Bifidobacteria families while simultaneously inhibiting Enterobacteria that produce LPS. These effects collectively enhance the anti-inflammatory properties of the gut microbiota.",
+      "topic_tags": ["omega-3 PUFAs", "gut microbiota", "Bifidobacterium", "Firmicutes/Bacteroidetes", "LPS"]
+    },
+    {
+      "id": "gutdis_mcq_medium_n5o6p7",
+      "difficulty": "medium",
+      "question": "Which characteristic microbiota change is commonly observed in patients with irritable bowel syndrome (IBS)?",
+      "options": {
+        "A": "Markedly increased Faecalibacterium prausnitzii and reduced Proteobacteria",
+        "B": "A twofold increase in the Firmicutes/Bacteroidetes ratio with reduced beneficial bacteria such as Bifidobacterium and Lactobacillus",
+        "C": "Exclusive elevation of Verrucomicrobia species with intact overall diversity",
+        "D": "Increased Bacteroidetes abundance with stable total microbial diversity"
+      },
+      "correct_answer": "B",
+      "explanation": "IBS patients frequently exhibit diminished microbial diversity and modified gut microbiota composition. A substantial twofold rise in the Firmicutes to Bacteroidetes ratio has been documented in IBS individuals, alongside a decline in beneficial bacteria such as Bifidobacterium and Lactobacillus and an elevation in potentially detrimental bacteria such as Escherichia coli and Clostridium species.",
+      "topic_tags": ["IBS", "Firmicutes/Bacteroidetes", "Bifidobacterium", "Lactobacillus", "microbial diversity"]
+    },
+
+    {
+      "id": "gutdis_mcq_hard_q8r9s1",
+      "difficulty": "hard",
+      "question": "How does the gut microbiota's influence on FXR signaling create a convergence point between intestinal inflammation and metabolic disease?",
+      "options": {
+        "A": "FXR activation by bile acids promotes Th17 differentiation, and dysbiosis reduces FXR activity, shifting the immune balance toward anti-inflammatory Tregs",
+        "B": "Dysbiosis-released LPS activates NF-κB, whose components p65 and p50 directly inhibit FXR, impeding FXR's ability to suppress intestinal inflammation and regulate lipid/glucose metabolism simultaneously",
+        "C": "FXR directly controls Firmicutes abundance; when dysbiosis reduces FXR expression, Firmicutes overgrow and increase energy harvesting from the diet",
+        "D": "FXR activation by dysbiotic microbiota upregulates NLRP3 inflammasomes, linking bile acid signaling to tight junction disruption"
+      },
+      "correct_answer": "B",
+      "explanation": "A dysbiotic microbiome releases LPS that activates NF-κB, and overexpression of NF-κB components p65 and p50 directly inhibits FXR function. Since FXR regulates genes maintaining intestinal integrity, suppresses bacterial growth, prevents mucosal damage, and influences glucose and lipid metabolism, its inhibition simultaneously promotes chronic intestinal inflammation and metabolic dysfunction — creating a convergence point that explains comorbidity of IBD and metabolic disorders.",
+      "topic_tags": ["FXR", "NF-κB", "bile acids", "dysbiosis", "IBD", "metabolic disease", "LPS"]
+    },
+    {
+      "id": "gutdis_mcq_hard_t2u3v4",
+      "difficulty": "hard",
+      "question": "What best explains why germ-free mice exhibit both neurological and immunological abnormalities, and what does this reveal about the mechanistic scope of the gut-brain axis?",
+      "options": {
+        "A": "Germ-free mice lack intestinal flora that physically block bacterial translocation to the brain, so pathogens directly cause neurological damage",
+        "B": "The absence of microbiota in germ-free mice impairs multiple interconnected systems: microglial maturation, blood-brain barrier integrity, myelination, hippocampal development, and ILC subset balance — demonstrating that the gut microbiome exerts broad neurodevelopmental and neuroimmunological regulation through metabolic, endocrine, and immune pathways simultaneously",
+        "C": "Germ-free mice produce excess serotonin due to absent gut bacteria, causing hyperactivation of CNS serotonergic circuits and subsequent neurological dysfunction",
+        "D": "The absence of commensal bacteria leads to expansion of Th17 cells that cross the blood-brain barrier and induce neuroinflammation"
+      },
+      "correct_answer": "B",
+      "explanation": "Germ-free mice exhibit a constellation of neurological and immunological deficits: abnormal brain development, reduced myelination, decreased hippocampal volume, immature microglial phenotypes unable to respond to LPS, enhanced blood-brain barrier penetration, altered ILC subset ratios (expansion of ILC2/ILC3, reduction of ILC1), and reduced IL-17a expression across all ILC subgroups. This multi-system phenotype reveals that the gut microbiome regulates CNS homeostasis through simultaneously operating neuronal, endocrine (5-HT), immune, and metabolic (SCFA, tryptophan metabolite) pathways — not through any single mechanism.",
+      "topic_tags": ["germ-free mice", "gut-brain axis", "microglia", "blood-brain barrier", "ILCs", "myelination", "hippocampus", "neurological development"]
+    }
+  ]
+}

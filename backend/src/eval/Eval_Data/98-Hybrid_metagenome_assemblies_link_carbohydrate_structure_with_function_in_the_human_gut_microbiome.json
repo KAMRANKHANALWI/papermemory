@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Hybrid metagenome assemblies link carbohydrate structure with function in the human gut microbiome",
+    "authors": ["Anuradha Ravi", "Perla Troncoso-Rey", "Jennifer Ahn-Jarvis", "Kendall R. Corbin", "Suzanne Harris", "Hannah Harris", "Alp Aydin", "Gemma L. Kay", "Thanh Le Viet", "Rachel Gilroy", "Mark J. Pallen", "Andrew J. Page", "Justin O'Grady", "Frederick J. Warren"],
+    "journal": "Communications Biology",
+    "year": 2022,
+    "doi": "10.1038/s42003-022-03865-0",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "hybridmag_easy_001",
+      "difficulty": "easy",
+      "question": "What are carbohydrate-active enzymes (CAZymes) and why are they important in the context of gut microbiome function?",
+      "answer": "CAZymes are a large repertoire of enzymes encoded by gut microbiome members that can degrade diverse carbohydrate structures. They are important because they enable microbial breakdown of complex carbohydrates that escape small intestinal digestion, allowing fermentation in the large intestine. The products of this fermentation — principally short-chain fatty acids — influence host health and are exploited by other microbes in cross-feeding relationships. Without CAZymes, much of the structural diversity in dietary polysaccharides would remain inaccessible to the microbiome.",
+      "topic_tags": ["CAZymes", "carbohydrate-active enzymes", "gut microbiome", "polysaccharide degradation", "fermentation"]
+    },
+    {
+      "id": "hybridmag_easy_002",
+      "difficulty": "easy",
+      "question": "What is a metagenome-assembled genome (MAG) and why is it useful for studying gut microbial communities?",
+      "answer": "A metagenome-assembled genome (MAG) is a draft genome sequence reconstructed from metagenomic sequencing data without the need to culture individual organisms. MAGs are useful for studying gut microbial communities because many gut bacteria are difficult or impossible to culture in the laboratory. By assembling MAGs directly from environmental samples, researchers can obtain genome-level information — including functional gene content such as CAZyme profiles — for previously uncultured and uncharacterised species, thereby extending knowledge of which organisms participate in key metabolic processes like carbohydrate degradation.",
+      "topic_tags": ["MAG", "metagenome-assembled genome", "uncultured bacteria", "metagenomics", "gut microbiome"]
+    },
+    {
+      "id": "hybridmag_easy_003",
+      "difficulty": "easy",
+      "question": "What is a Polysaccharide Utilisation Locus (PUL) and which bacterial phylum is primarily associated with encoding them?",
+      "answer": "A Polysaccharide Utilisation Locus (PUL) is a genomically co-localised cluster of genes encoding the machinery needed for the sensing, binding, import, and degradation of specific polysaccharides. PULs are primarily associated with the phylum Bacteroidetes. They typically include outer membrane SusC/SusD-like transport proteins alongside glycoside hydrolases and carbohydrate-binding modules, providing a coordinated and substrate-specific degradation system. The presence of PULs reflects the high degree of specialisation that Bacteroidetes have evolved for exploiting complex glycan structures.",
+      "topic_tags": ["PUL", "polysaccharide utilisation loci", "Bacteroidetes", "carbohydrate degradation", "genome organisation"]
+    },
+    {
+      "id": "hybridmag_easy_004",
+      "difficulty": "easy",
+      "question": "How does the crystallinity or recalcitrance of a starch affect its fermentability by gut bacteria?",
+      "answer": "Highly crystalline or recalcitrant starches resist enzymatic degradation more effectively than accessible (amorphous or gelatinised) starches, because their tightly packed, ordered crystalline structure limits enzyme access to glycosidic bonds. As a result, recalcitrant starches pass further into the large intestine before fermentation, where they selectively enrich specialist degrader species equipped with specific enzymatic machinery — such as starch-binding modules and multiple copies of amylolytic enzymes — that can attack these resistant structures. More accessible starches, by contrast, support a broader range of bacterial species because their less ordered structure is easier for a wider variety of enzymes to degrade.",
+      "topic_tags": ["starch recalcitrance", "crystallinity", "fermentability", "resistant starch", "gut microbiota"]
+    },
+    {
+      "id": "hybridmag_easy_005",
+      "difficulty": "easy",
+      "question": "What is the role of Ruminococcus bromii in the degradation of resistant starch in the human colon?",
+      "answer": "Ruminococcus bromii is a specialist bacterium highly adapted to degrading recalcitrant resistant starches in the human colon. It possesses specialised starch-degrading machinery known as the 'amylosome' and encodes a large number of GH13 (alpha-amylase family) genes — fourteen to fifteen copies have been identified in its genome. R. bromii consistently increases in abundance in response to highly recalcitrant starch substrates such as high-amylose maize starch and potato starch, and is regarded as a keystone primary degrader whose activity can facilitate cross-feeding by other species that benefit from the breakdown products.",
+      "topic_tags": ["Ruminococcus bromii", "resistant starch", "amylosome", "GH13", "primary degrader"]
+    },
+
+    {
+      "id": "hybridmag_medium_001",
+      "difficulty": "medium",
+      "question": "How does hybrid metagenomic sequencing improve upon short-read-only assembly for recovering microbial genomes from complex communities?",
+      "answer": "Hybrid metagenomic sequencing combines short-read (Illumina) and long-read (nanopore) data to overcome the individual limitations of each technology. Short-read assemblies suffer from poor contiguity because short reads (~150–300 bp) cannot bridge repetitive genomic regions, resulting in fragmented assemblies with many short contigs and low N50 values. Long-read sequencing provides reads of several kilobase pairs or more, which can span repetitive regions and bridge assembly gaps, but long reads have higher per-base error rates that compromise genome accuracy. The hybrid approach uses Illumina reads for high-accuracy base calling and nanopore long reads to scaffold and extend contigs, yielding assemblies with larger N50s, fewer scaffolds per genome, and higher overall quality than either technology alone — enabling recovery of near-complete, high-quality MAGs from diverse microbial mixtures.",
+      "topic_tags": ["hybrid metagenomics", "long-read sequencing", "short-read sequencing", "MAG quality", "nanopore", "Illumina"]
+    },
+    {
+      "id": "hybridmag_medium_002",
+      "difficulty": "medium",
+      "question": "What is the ecological significance of distinguishing between early and late carbohydrate degraders in a gut fermentation community?",
+      "answer": "Distinguishing early and late degraders reveals the successional dynamics and metabolic interdependencies within gut microbial communities during carbohydrate fermentation. Early degraders (primary degraders) are typically species that directly attack intact polysaccharide substrates, possessing the enzymatic repertoire — such as extracellular secretory CAZymes — needed to initiate breakdown of large, insoluble polymers. Late degraders (secondary degraders) increase in abundance later in fermentation, often benefiting from oligosaccharide or monosaccharide breakdown products released by primary degraders, a phenomenon known as cross-feeding. Mapping this succession at species resolution identifies which organisms drive the initial substrate utilisation and which exploit downstream metabolites, informing understanding of microbial community structure and the functional consequences of introducing specific dietary carbohydrates.",
+      "topic_tags": ["primary degraders", "secondary degraders", "cross-feeding", "fermentation succession", "gut microbiota dynamics"]
+    },
+    {
+      "id": "hybridmag_medium_003",
+      "difficulty": "medium",
+      "question": "How do carbohydrate-binding modules (CBMs) complement glycoside hydrolases in the degradation of complex polysaccharides?",
+      "answer": "Carbohydrate-binding modules (CBMs) are non-catalytic domains that are typically appended to glycoside hydrolases (GHs) and function by targeting and concentrating the catalytic domain onto its substrate, thereby enhancing degradation efficiency. CBMs recognise specific carbohydrate structures — for example, CBM48 binds starch and is commonly appended to GH13 alpha-amylases, while CBM74 is associated with raw granular starch-degrading amylases and appears to facilitate access to highly recalcitrant starch structures. By anchoring the enzyme to the polysaccharide surface, CBMs increase the local concentration of the catalytic domain at the substrate and can disrupt substrate structure, making glycosidic bonds more accessible. Different CBM families therefore confer substrate specificity and are key determinants of which bacterial species can degrade particular carbohydrate structures.",
+      "topic_tags": ["carbohydrate-binding modules", "CBM", "glycoside hydrolases", "substrate specificity", "starch degradation"]
+    },
+    {
+      "id": "hybridmag_medium_004",
+      "difficulty": "medium",
+      "question": "Why do accessible and recalcitrant starches of similar chemical composition (both being alpha-glucans) result in different microbial community responses?",
+      "answer": "Although all starches share an alpha-1,4-linked glucose backbone with alpha-1,6-linked branch points, their physicochemical properties — particularly crystallinity, granule structure, and degree of retrogradation — vary substantially depending on botanical origin and processing. These mesoscale structural differences determine how readily microbial enzymes can access glycosidic bonds. Accessible starches (e.g. normal maize, retrograded maize) present more disordered or gelatinised structures that a broader range of amylolytic bacteria can degrade, supporting greater species diversity. Highly recalcitrant starches (e.g. high-amylose maize, native potato) form tightly ordered crystalline granules that resist most amylolytic enzymes, selectively enriching specialist degraders with specific binding modules (e.g. CBM74) and larger GH13 gene repertoires. This structure-driven selectivity explains why chemically identical but structurally diverse starches can produce distinct shifts in microbial community composition.",
+      "topic_tags": ["starch structure", "crystallinity", "microbiota composition", "substrate specificity", "physicochemical properties"]
+    },
+    {
+      "id": "hybridmag_medium_005",
+      "difficulty": "medium",
+      "question": "What is the significance of identifying extracellular secretory CAZymes specifically, rather than all CAZymes, when studying microbial degradation of insoluble substrates?",
+      "answer": "Insoluble polysaccharides such as crystalline starch granules and cellulose cannot be transported inside the bacterial cell for intracellular processing; their degradation must be initiated extracellularly. Enzymes that are secreted outside the cell — identified by the presence of a signal peptide cleavage site directing them through the extracellular secretory pathway — are therefore the ones most directly responsible for the initial attack on these large, insoluble polymers. Filtering CAZymes to include only those with signal peptides provides a more mechanistically accurate picture of which enzymes are relevant to substrate degradation in the extracellular environment. This approach reveals substrate-specific patterns of enzyme deployment that would be obscured if intracellular CAZymes (involved in processing already-imported oligosaccharides) were included, and helps identify the key enzymatic capabilities driving primary degradation.",
+      "topic_tags": ["extracellular CAZymes", "signal peptide", "secretory pathway", "insoluble substrates", "primary degradation"]
+    },
+    {
+      "id": "hybridmag_medium_006",
+      "difficulty": "medium",
+      "question": "How can genome-resolved metagenomics link functional potential to specific microbial species, and why is this important compared to community-level functional profiling?",
+      "answer": "Genome-resolved metagenomics assigns functional genes — such as CAZymes — to individual MAGs, allowing researchers to attribute metabolic capabilities to specific species rather than to an anonymous community gene pool. This species-level linkage is critical because community-level functional profiling (e.g. using tools like HUMAnN) sums gene abundances across all organisms, obscuring which species carry which functions. With genome-resolved data, researchers can identify that a particular uncultured organism encodes multiple copies of a specific glycoside hydrolase, that this species increases in abundance during fermentation of a specific substrate, and that its encoded CAZymes include substrate-specific binding modules. This integration of taxonomy and function at the genome level enables mechanistic hypotheses about the ecological roles of individual species, identifies candidates for future cultivation and functional characterisation, and provides a basis for understanding how changes in species composition translate to changes in community metabolic output.",
+      "topic_tags": ["genome-resolved metagenomics", "functional annotation", "species-level resolution", "CAZyme attribution", "microbiome function"]
+    },
+
+    {
+      "id": "hybridmag_hard_001",
+      "difficulty": "hard",
+      "question": "How does the presence of CBM74 help explain differential microbial community responses to recalcitrant versus accessible starch substrates, and what does its distribution across MAGs reveal about specialisation in the human gut?",
+      "answer": "CBM74 is a carbohydrate-binding module specifically associated with raw granular starch-degrading amylases. Unlike CBM48, which is broadly appended to GH13 enzymes across all starch types, CBM74 was found exclusively in MAGs that increased in abundance in response to the two most recalcitrant substrates — high-amylose maize starch and native potato starch — but not in MAGs enriched by accessible starch substrates. This substrate-specific enrichment pattern suggests that CBM74 confers a functional advantage specifically for accessing the tightly packed crystalline structure of raw granular starches, which present a fundamentally different surface and porosity compared to gelatinised or retrograded starch. The species carrying CBM74 — including R. bromii, Candidatus Blautia hennigii, Candidatus Ruminococcus anthropi, and Candidatus Colihabitans norwichensis — represent a functionally coherent guild of recalcitrant-starch specialists. The fact that several are previously uncharacterised species highlights how genome-resolved metagenomics can identify ecologically important functional guilds that would be invisible to cultivation-based approaches and reveals that specialisation for recalcitrant starch degradation in the human gut extends beyond the well-known R. bromii to encompass a broader assemblage of species sharing this binding domain.",
+      "topic_tags": ["CBM74", "recalcitrant starch", "functional specialisation", "raw granular starch", "microbial guilds", "MAG", "uncultured species"]
+    },
+    {
+      "id": "hybridmag_hard_002",
+      "difficulty": "hard",
+      "question": "What are the methodological challenges in extracting high-quality, high-molecular-weight DNA from stool samples for long-read metagenomics, and how do different extraction approaches affect community representation?",
+      "answer": "Long-read sequencing platforms perform best with high-molecular-weight DNA, as longer input DNA molecules yield longer sequencing reads, which in turn improve hybrid assembly contiguity. The main methodological challenge is that aggressive mechanical lysis methods (bead beating) tend to shear DNA into shorter fragments, potentially reducing read lengths, while gentler lysis methods (enzymatic lysis followed by phenol-chloroform purification) preserve DNA integrity but may fail to lyse mechanically resistant cell walls efficiently. Evidence suggests that phenol-chloroform extraction, despite yielding higher molecular weights on average, can underrepresent Gram-positive species such as Bifidobacterium that require physical disruption for efficient lysis. Bead beating, while it may produce somewhat shorter reads, ensures more complete and unbiased community representation by lysing both Gram-positive and Gram-negative organisms effectively. Studies using bead beating have successfully recovered near-complete MAGs from Bifidobacterium species that were absent from PromethION datasets generated using enzyme and phenol-chloroform extraction from the same samples. The choice of extraction method therefore involves a trade-off between read length maximisation and community coverage, with community representation being the more critical consideration for accurate microbiome characterisation.",
+      "topic_tags": ["DNA extraction", "bead beating", "phenol-chloroform", "long-read sequencing", "Gram-positive bacteria", "Bifidobacterium", "community representation"]
+    },
+    {
+      "id": "hybridmag_hard_003",
+      "difficulty": "hard",
+      "question": "How do PUL organisation and the co-localisation of multiple CAZyme-encoding genes provide evidence for substrate specificity in microbial polysaccharide utilisation, and what does this reveal about the evolution of carbohydrate-degrading capacity in gut Bacteroidetes?",
+      "answer": "Polysaccharide Utilisation Loci (PULs) are genomic clusters in which all the genes required for sensing, binding, importing, and catabolising a specific polysaccharide are co-localised and typically co-regulated. The organisation of CAZymes into PULs is strong evidence for substrate-specific function because the co-occurrence of enzymatic, binding, and transport components targeting the same substrate in a single locus suggests co-evolution and functional integration. For example, the identification of a Bacteroides uniformis MAG carrying three GH32 (inulinase) copies and a CBM38 inulin-binding domain organised into a single PUL with the arrangement GH32-GH32;CBM38-unk-GH32-GH32-susD-susC provides compelling evidence that this locus is dedicated to inulin utilisation. The exclusive localisation of PULs within Bacteroidetes MAGs in this study reflects the broader pattern observed across the phylum, where extensive PUL repertoires — some genomes harbouring dozens — underlie generalist capacity to exploit a wide range of glycan structures. The high number of PULs in a single MAG (up to 79 in Butyricimonas faecihominis) suggests that PUL duplication and diversification, likely driven by horizontal gene transfer and positive selection under the constant dietary carbohydrate pressure in the gut, is a major evolutionary mechanism by which Bacteroidetes have expanded their ecological niche to become dominant carbohydrate generalists in the human colon.",
+      "topic_tags": ["PUL", "polysaccharide utilisation loci", "Bacteroidetes", "substrate specificity", "genome organisation", "GH32", "inulin", "evolution"]
+    },
+    {
+      "id": "hybridmag_hard_004",
+      "difficulty": "hard",
+      "question": "How does microbial community succession during in vitro carbohydrate fermentation reflect the concepts of primary and secondary degradation, and what implications does this have for interpreting microbiome shifts in dietary intervention studies?",
+      "answer": "During in vitro fermentation of complex carbohydrates, microbial communities undergo predictable successional dynamics where species that increase in abundance at early time points (0–6 h) are likely primary degraders capable of directly attacking the intact substrate, while species enriched at later time points (12–24 h) are more likely secondary degraders benefiting from oligosaccharide or monosaccharide intermediates produced by earlier-acting species. This temporal stratification is mechanistically supported by the CAZyme profiles of enriched MAGs — early degraders tend to carry more extracellular secretory CAZymes with substrate-specific binding modules, while later-enriched species may carry fewer primary degradation enzymes but benefit metabolically from cross-fed substrates. For dietary intervention studies, this has important implications: observed microbiome shifts at a single post-intervention time point may conflate primary and secondary responders, making it difficult to identify which species are directly utilising the dietary substrate versus responding to downstream metabolites. Furthermore, the succession pattern may be substrate-structure-dependent — different starch structures select for different early degraders — meaning that the timing and identity of community shifts provide mechanistic information about the functional roles of enriched species. Genome-resolved approaches that track species abundance over time and link it to CAZyme content are therefore more informative than single time-point amplicon surveys for understanding the causal chain from dietary substrate structure to microbial response.",
+      "topic_tags": ["fermentation succession", "primary degraders", "secondary degraders", "cross-feeding", "dietary intervention", "microbiota dynamics", "CAZyme"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "hybridmag_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which enzyme family is most strongly associated with starch (alpha-glucan) degradation in gut microbiome CAZyme analyses?",
+      "options": {
+        "A": "GH32 (inulinase family)",
+        "B": "GH13 (alpha-amylase family)",
+        "C": "GH3 (beta-glucosidase family)",
+        "D": "GH43 (arabinofuranosidase family)"
+      },
+      "correct_answer": "B",
+      "explanation": "GH13 is the alpha-amylase family and is the primary glycoside hydrolase associated with starch degradation. It was consistently enriched in MAGs that increased in abundance during starch fermentation, while GH32 is an inulinase active on fructans, and GH3/GH43 target other carbohydrate linkages.",
+      "topic_tags": ["GH13", "alpha-amylase", "starch degradation", "CAZyme", "glycoside hydrolase"]
+    },
+    {
+      "id": "hybridmag_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What distinguishes 'high-quality' metagenome-assembled genomes (MAGs) from medium-quality ones according to MIMAG standards?",
+      "options": {
+        "A": "High-quality MAGs have completeness >70% and contamination <10%",
+        "B": "High-quality MAGs have completeness >90% and contamination <5%",
+        "C": "High-quality MAGs are assembled into fewer than 10 contigs regardless of completeness",
+        "D": "High-quality MAGs must be fully closed circular chromosomes"
+      },
+      "correct_answer": "B",
+      "explanation": "According to MIMAG (Minimum Information about a Metagenome-Assembled Genome) standards, high-quality MAGs are defined by greater than 90% completeness and less than 5% contamination as assessed by CheckM. Closure into a single circular contig is an aspirational standard but not required for the high-quality designation.",
+      "topic_tags": ["MAG quality", "MIMAG", "CheckM", "completeness", "contamination"]
+    },
+    {
+      "id": "hybridmag_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "What is the primary metabolic product of complex carbohydrate fermentation by gut bacteria, and what is its significance to host health?",
+      "options": {
+        "A": "Bile acids, which facilitate fat absorption in the small intestine",
+        "B": "Branched-chain amino acids, which serve as signals for satiety",
+        "C": "Short-chain fatty acids, which provide systemic health benefits through effects on host metabolism",
+        "D": "Polyphenol metabolites, which have antioxidant effects in the bloodstream"
+      },
+      "correct_answer": "C",
+      "explanation": "Short-chain fatty acids (SCFAs) are the main products of carbohydrate fermentation by gut microbiota. They provide a range of health benefits through systemic effects on host metabolism, including effects on energy homeostasis, immune regulation, and gut barrier integrity. The other options describe products or metabolites with different origins or mechanisms.",
+      "topic_tags": ["short-chain fatty acids", "SCFA", "carbohydrate fermentation", "host health", "gut microbiota"]
+    },
+
+    {
+      "id": "hybridmag_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "Why is it advantageous to use in vitro batch fermentation systems to study carbohydrate-microbiome interactions compared to in vivo human dietary interventions?",
+      "options": {
+        "A": "In vitro systems better replicate host immune interactions with the microbiome",
+        "B": "Fermentation systems allow controlled manipulation of a single variable (carbohydrate substrate) and enable collection of time-resolved samples at multiple time points from a defined community",
+        "C": "In vitro fermentation produces identical SCFA profiles to those observed in the human colon",
+        "D": "Batch fermentation eliminates all inter-individual variation by using pooled faecal samples from many donors"
+      },
+      "correct_answer": "B",
+      "explanation": "In vitro fermentation systems allow tightly controlled experimental conditions in which substrate, pH, temperature, and inoculum are defined, making it possible to isolate the effect of carbohydrate structure on microbiome composition. Multiple time-point sampling enables tracking of community succession. Human dietary interventions involve numerous confounding variables (diet, host genetics, lifestyle) and provide limited sampling access to gut contents. However, in vitro systems do not replicate immune interactions or transit dynamics, and results may not fully translate in vivo.",
+      "topic_tags": ["in vitro fermentation", "colon model", "experimental design", "carbohydrate-microbiome interaction", "controlled experiment"]
+    },
+    {
+      "id": "hybridmag_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "What does an increase in alpha-amylase gene abundance observed via metabolic pathway profiling during starch fermentation indicate at a functional level?",
+      "options": {
+        "A": "The host is upregulating pancreatic amylase secretion in response to dietary starch",
+        "B": "The microbial community is shifting toward species carrying more alpha-amylase genes, reflecting selection for starch-degrading capacity",
+        "C": "Alpha-amylase genes are being horizontally transferred between microbial species in real time",
+        "D": "The pH of the fermentation vessel is rising, which activates latent amylase expression"
+      },
+      "correct_answer": "B",
+      "explanation": "In a metagenomic context, an increase in alpha-amylase gene abundance in community-level pathway profiling reflects a shift in the relative abundance of organisms carrying these genes — i.e. starch-degrading species are becoming more abundant relative to the total community. This is a community-compositional signal, not a measure of individual gene expression or horizontal transfer.",
+      "topic_tags": ["alpha-amylase", "gene abundance", "HUMAnN", "community profiling", "starch degradation", "metagenomics"]
+    },
+    {
+      "id": "hybridmag_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "How does the pattern of Bifidobacterium species enrichment across different maize starch substrates reveal information about species-level niche specialisation?",
+      "options": {
+        "A": "All Bifidobacterium species respond equally to all maize starch substrates, confirming genus-level functional redundancy",
+        "B": "Bifidobacterium species increase only in response to inulin, confirming they are exclusively fructan-degrading organisms",
+        "C": "B. adolescentis selectively increases with highly recalcitrant starch, while a broader range of species respond to more accessible starches, suggesting differential adaptation to substrate accessibility",
+        "D": "Bifidobacterium species are suppressed by all starch substrates because they prefer simpler sugars"
+      },
+      "correct_answer": "C",
+      "explanation": "B. adolescentis is known to utilise hard-to-digest high-amylose starch better than other Bifidobacterium species, and this specificity was confirmed by its selective increase during high-amylose starch fermentation. More accessible starches (retrograded and normal maize) enriched a broader range of Bifidobacterium species, suggesting these are better adapted to degrading more structurally accessible substrates — evidence of species-level niche differentiation within a genus.",
+      "topic_tags": ["Bifidobacterium", "niche specialisation", "resistant starch", "species-level resolution", "B. adolescentis"]
+    },
+    {
+      "id": "hybridmag_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "Why does Avicel (microcrystalline cellulose) serve as a useful negative control in a study of starch fermentation by gut microbiota?",
+      "options": {
+        "A": "Avicel is chemically identical to starch and allows baseline enzyme activity to be measured",
+        "B": "Avicel is a highly fermentable soluble fibre that enriches a distinct set of cross-feeding organisms",
+        "C": "Avicel is an insoluble crystalline cellulose highly resistant to microbial fermentation, so minimal community changes are expected, providing a baseline for distinguishing substrate-driven shifts",
+        "D": "Avicel contains inulin-type fructans that specifically enrich bifidobacteria, making it a positive control for probiotic enrichment"
+      },
+      "correct_answer": "C",
+      "explanation": "Avicel (microcrystalline cellulose) has very limited fermentability because the human gut microbiota has minimal capacity to degrade highly crystalline cellulose. As expected, the Avicel treatment showed the smallest change in microbial community composition and the fewest changes in metabolic gene abundances, making it an appropriate insoluble fibre negative control against which substrate-driven microbiome changes can be evaluated.",
+      "topic_tags": ["Avicel", "microcrystalline cellulose", "negative control", "fermentability", "experimental design"]
+    },
+    {
+      "id": "hybridmag_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What information does Average Nucleotide Identity (ANI)-based dereplication of MAGs provide that is important for comparative genomics and species-level analysis?",
+      "options": {
+        "A": "It identifies which MAGs encode the most CAZymes and should be prioritised for functional analysis",
+        "B": "It groups MAGs from different samples into species-level clusters based on genome sequence similarity, producing a non-redundant set of representative genomes and avoiding overcounting of the same species",
+        "C": "It measures the quality of each assembly by comparing contig lengths to reference genomes in a database",
+        "D": "It assigns all MAGs to known taxa in curated databases by exact sequence matching"
+      },
+      "correct_answer": "B",
+      "explanation": "ANI-based dereplication clusters MAGs at defined identity thresholds (e.g. 97% for primary, 99% for secondary clusters) to produce a non-redundant set where each cluster represents a unique species or strain. This prevents the same organism assembled multiple times from different samples from being treated as distinct species, ensuring accurate counts of unique community members and enabling valid cross-sample comparisons.",
+      "topic_tags": ["ANI", "dereplication", "species-level clustering", "MAG", "comparative genomics"]
+    },
+
+    {
+      "id": "hybridmag_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "What does the finding that several cellulose-associated MAGs lack characteristic cellulose-active CAZy genes (while still increasing in abundance in the Avicel treatment) reveal about community-level carbohydrate utilisation?",
+      "options": {
+        "A": "It confirms that cellulose degradation in the gut is mediated by host enzymes rather than microbial ones",
+        "B": "It indicates that the Avicel treatment was contaminated with more easily fermentable substrates",
+        "C": "It suggests these organisms are cross-feeders that benefit indirectly from limited cellulose degradation by primary degraders, highlighting that abundance changes alone cannot confirm primary substrate utilisation",
+        "D": "It demonstrates that all bacteria can degrade cellulose through novel enzyme families not yet catalogued in CAZy databases"
+      },
+      "correct_answer": "C",
+      "explanation": "The six genomes associated with the Avicel treatment that lacked characteristic cellulose-active CAZy genes are likely cross-feeders benefiting from metabolites (e.g. hydrogen, acetate) produced by the limited primary cellulose degradation occurring in the system. This highlights a key interpretive challenge in community-level metagenomics: an increase in species abundance during fermentation of a substrate does not necessarily mean that species directly degrades that substrate — it may be responding to downstream metabolic products. Linking abundance changes to specific CAZyme profiles is therefore essential for attributing function.",
+      "topic_tags": ["cross-feeding", "cellulose degradation", "CAZy", "abundance interpretation", "Avicel", "functional attribution"]
+    },
+    {
+      "id": "hybridmag_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "How does the use of genome taxonomy databases (GTDB) combined with the provision of novel Candidatus names for uncharacterised MAGs address a fundamental limitation of current microbiome databases, and what are the implications for interpreting community-level diversity?",
+      "options": {
+        "A": "It eliminates the need for further cultivation studies by providing definitive species descriptions from sequence data alone",
+        "B": "It reveals that uncharacterised and unnamed species — lacking representative cultures in databases — are functionally active community members, demonstrating that database-dependent analyses underestimate both taxonomic and functional diversity",
+        "C": "It confirms that all bacteria in the human gut have already been catalogued in existing databases and no further genome sequencing is needed",
+        "D": "It shows that alphanumeric placeholder names in existing databases accurately represent the true phylogenetic relationships among gut bacteria"
+      },
+      "correct_answer": "B",
+      "explanation": "A substantial proportion of MAGs recovered in the study had only alphanumeric genus or species designations in GTDB, indicating they had no cultured representatives or formal Latin names in existing databases. By providing Candidatus names to previously unnamed genomes and demonstrating that many carry relevant CAZyme profiles and increase in abundance during specific substrate fermentations, the study shows that these 'dark matter' organisms are functionally important participants in carbohydrate metabolism. Analyses relying solely on reference databases would miss these species entirely, meaning both taxonomic diversity and functional gene content are systematically underestimated when uncultured organisms are excluded.",
+      "topic_tags": ["GTDB", "Candidatus names", "uncultured bacteria", "database completeness", "taxonomic dark matter", "functional diversity"]
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "The gut microbiome is associated with brain structure and function in schizophrenia",
+    "authors": ["Shijia Li", "Jie Song", "Pengfei Ke", "Lingyin Kong", "Bingye Lei", "Jing Zhou", "Yuanyuan Huang", "Hehua Li", "Guixiang Li", "Jun Chen", "Xiaobo Li", "Zhiming Xiang", "Yuping Ning", "Fengchun Wu", "Kai Wu"],
+    "journal": "Scientific Reports",
+    "year": 2021,
+    "doi": "10.1038/s41598-021-89166-8",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "sz_mgb_easy_001",
+      "difficulty": "easy",
+      "question": "What is the microbiome-gut-brain (MGB) axis and why is it relevant to neuropsychiatric disorders?",
+      "answer": "The microbiome-gut-brain (MGB) axis refers to the bidirectional communication pathway between the gut microbiota and the central nervous system. It is relevant to neuropsychiatric disorders because a dysregulated MGB axis has been implicated in a range of conditions including schizophrenia, depression, bipolar disorder, autism, Alzheimer's disease, and Parkinson's disease. The gut microbiota can influence brain function through multiple routes, including the production of neuroactive metabolites such as short-chain fatty acids (SCFAs) that can cross the blood-brain barrier, and the regulation of neurotrophic factors such as brain-derived neurotrophic factor (BDNF) and glial cell line-derived neurotrophic factor (GDNF), which affect neural development and brain plasticity.",
+      "topic_tags": ["MGB axis", "gut-brain communication", "neuropsychiatric disorders", "schizophrenia", "neurotrophic factors"]
+    },
+    {
+      "id": "sz_mgb_easy_002",
+      "difficulty": "easy",
+      "question": "What bacterial genera are most commonly depleted in schizophrenia patients compared to healthy individuals, and what metabolic function do they share?",
+      "answer": "In schizophrenia, the genera Roseburia and Ruminococcus are consistently found at lower relative abundances compared to healthy controls. Both are representative bacteria that produce short-chain fatty acids (SCFAs), particularly butyrate and propionate, which are considered beneficial to health. Roseburia produces butyrate and propionate via the butyrate kinase route and the 1,2-propanediol pathway. Ruminococcus, while unable to produce butyrate directly from carbohydrates, contributes to propionate metabolism via the succinate pathway, producing succinate as an end product that can be further converted to propionate by other colonic bacteria.",
+      "topic_tags": ["Roseburia", "Ruminococcus", "SCFA production", "schizophrenia microbiota", "butyrate", "propionate"]
+    },
+    {
+      "id": "sz_mgb_easy_003",
+      "difficulty": "easy",
+      "question": "What is regional homogeneity (ReHo) as a neuroimaging measure and what does it reflect about brain function?",
+      "answer": "Regional homogeneity (ReHo) is a resting-state functional MRI measure used to assess local resting functional connectivity and synchronization in the brain. It is calculated using Kendall's coefficient of concordance (KCC) of the time series of a given voxel with its nearest neighbors, based on the assumption that a voxel is temporally similar to its surrounding voxels. ReHo represents an efficient and reliable index of local functional connectivity. It reflects the degree of synchronization of spontaneous brain activity in local regions, and alterations in ReHo have been widely used to characterize functional brain abnormalities in psychiatric disorders including schizophrenia.",
+      "topic_tags": ["regional homogeneity", "ReHo", "resting-state fMRI", "brain function", "functional connectivity"]
+    },
+    {
+      "id": "sz_mgb_easy_004",
+      "difficulty": "easy",
+      "question": "How do gut microbiota-derived short-chain fatty acids (SCFAs) relate to brain function and mood-related behaviors?",
+      "answer": "Microbial-derived short-chain fatty acids (SCFAs) can cross the blood-brain barrier (BBB) and activate specific receptors in brain regions pertinent to depression and anxiety-related behaviors. Beyond direct receptor activation, SCFAs influence mood indirectly through metabolic pathways: a decrease in SCFA-producing bacteria such as Roseburia may impair insulin sensitivity, leading to elevated branched-chain amino acids (BCAAs) in circulation. Because BCAAs share brain transporters with tryptophan, excess BCAAs reduce tryptophan transport into the brain, lowering serotonin precursor availability and thus decreasing cerebral 5-hydroxytryptamine concentrations. This cascade links gut microbial SCFA production to mood regulation and mental health.",
+      "topic_tags": ["SCFAs", "blood-brain barrier", "serotonin", "tryptophan", "BCAAs", "mood", "depression"]
+    },
+    {
+      "id": "sz_mgb_easy_005",
+      "difficulty": "easy",
+      "question": "What is the amplitude of low-frequency fluctuation (ALFF) and what does it measure in resting-state neuroimaging?",
+      "answer": "The amplitude of low-frequency fluctuation (ALFF) is a resting-state fMRI neuroimaging biomarker used to explore regional brain activity. It is computed by converting each voxel's time series to the frequency domain via fast Fourier transformation, calculating the square root of the power spectrum, and averaging this across a predefined low-frequency range. ALFF reflects the absolute intensity of spontaneous brain activity in a given region. It is widely used in psychiatric research because alterations in ALFF indicate disruptions in the local amplitude of spontaneous neural fluctuations, which have been consistently observed in conditions such as schizophrenia.",
+      "topic_tags": ["ALFF", "amplitude of low-frequency fluctuation", "resting-state fMRI", "spontaneous brain activity", "neuroimaging"]
+    },
+
+    {
+      "id": "sz_mgb_med_001",
+      "difficulty": "medium",
+      "question": "How does the depletion of Roseburia in schizophrenia potentially contribute to the neurological symptoms observed in the disorder?",
+      "answer": "Roseburia depletion in schizophrenia may contribute to neurological symptoms through two interconnected mechanisms. First, reduced Roseburia lowers production of butyrate and propionate — SCFAs that cross the blood-brain barrier and modulate receptor activity in regions relevant to mood and behavior. Second, decreased Roseburia is associated with impaired insulin sensitivity, leading to elevated circulating branched-chain amino acids (BCAAs). Since BCAAs compete with tryptophan for shared brain transporters, elevated BCAAs reduce tryptophan entry into the brain, thereby decreasing serotonin synthesis. The resulting reduction in cerebral 5-hydroxytryptamine can affect mood, cognition, and behavior. Additionally, Roseburia abundance has been linked to cognitive performance, and its depletion has been negatively correlated with regional homogeneity (ReHo) in temporal brain regions associated with auditory verbal hallucinations and thought disturbances in schizophrenia.",
+      "topic_tags": ["Roseburia", "schizophrenia", "BCAAs", "tryptophan", "serotonin", "hallucinations", "cognition", "ReHo"]
+    },
+    {
+      "id": "sz_mgb_med_002",
+      "difficulty": "medium",
+      "question": "What is the relationship between gut microbial alpha diversity and gray matter volume (GMV) in schizophrenia, and what does this suggest neurologically?",
+      "answer": "In schizophrenia patients, measures of gut microbial alpha diversity — specifically Faith's phylogenetic diversity (Faith_PD) and observed species — show significant positive correlations with gray matter volume (GMV) in several brain regions, including the bilateral insula and right postcentral gyrus. Faith_PD also positively correlates with GMV in the left inferior operculum frontal cortex. This means that greater microbial diversity is associated with greater GMV in these regions. Since reduced GMV in areas like the insula, frontal and temporal cortices is linked to cognitive impairments in schizophrenia, and because larger cortical volume is associated with better computational efficacy, these findings suggest that gut microbial diversity may be mechanistically linked to the structural integrity and cognitive functions of the brain. This relationship may be mediated by microbial production of neuroactive metabolites and neurotrophic factors.",
+      "topic_tags": ["alpha diversity", "gray matter volume", "GMV", "insula", "schizophrenia", "neurological implications", "Faith_PD"]
+    },
+    {
+      "id": "sz_mgb_med_003",
+      "difficulty": "medium",
+      "question": "How does Veillonella contribute to propionate metabolism in the gut, and why is its elevated abundance in schizophrenia potentially significant?",
+      "answer": "Veillonella produces propionate from lactate via the succinate pathway — specifically, it converts lactate to propionate through this route. In the context of schizophrenia, Veillonella abundance is significantly elevated compared to healthy controls. This is potentially significant because while Veillonella can generate propionate, the concurrent depletion of Roseburia and Ruminococcus means that overall SCFA balance is disrupted. Roseburia and Ruminococcus produce butyrate and other SCFAs through different pathways, and their absence cannot be fully compensated by Veillonella's lactate-to-propionate conversion. The net shift in microbial community composition — lower butyrate producers, higher Veillonella — may alter the profile of metabolites reaching the brain, potentially impacting neurological function and contributing to the psychopathology of schizophrenia.",
+      "topic_tags": ["Veillonella", "propionate", "succinate pathway", "schizophrenia microbiota", "SCFA imbalance"]
+    },
+    {
+      "id": "sz_mgb_med_004",
+      "difficulty": "medium",
+      "question": "What brain regions show altered ReHo in schizophrenia, and how are these changes related to clinical symptoms?",
+      "answer": "In schizophrenia, multiple brain regions show significantly lower ReHo compared to healthy controls, particularly in temporal and frontal areas such as the bilateral superior temporal cortex (STC), middle temporal cortex (MTC), and the superior frontal gyrus (SFG). One brain region also shows increased ALFF (the right caudate), reflecting disrupted spontaneous activity. Brain regions with altered ReHo — particularly the STC and MTC — are associated with auditory verbal hallucinations, abnormal language processing, and thought disorders. The frontal regions, also showing altered ReHo, mediate executive function, working memory, abstract reasoning, social behavior, empathy, and impulse control. These patterns collectively explain cardinal symptoms of schizophrenia such as auditory hallucinations and cognitive disorganization, suggesting that widespread disruption of local functional synchronization underlies the disorder's psychopathology.",
+      "topic_tags": ["ReHo", "superior temporal cortex", "frontal lobe", "hallucinations", "schizophrenia symptoms", "functional brain activity"]
+    },
+    {
+      "id": "sz_mgb_med_005",
+      "difficulty": "medium",
+      "question": "How do environmental factors such as alcohol consumption and smoking affect gut microbiota composition, and why does this matter for schizophrenia research?",
+      "answer": "Alcohol consumption and smoking are two key environmental confounders for gut microbiota research. Chronic alcohol exposure leads to bacterial overgrowth and disruption of mucosal barrier function, increasing Proteobacteria, decreasing Bacteroidetes, and elevating intestinal permeability — which promotes translocation of lipopolysaccharide (LPS) and endotoxins into the bloodstream, contributing to systemic and hepatic inflammation. Smoking cessation, conversely, induces significant microbiome shifts including increased microbial diversity, a rise in Firmicutes and Actinobacteria, and a decline in Bacteroidetes and Proteobacteria; smoking also increases susceptibility to Clostridioides difficile infection. In schizophrenia research, these confounders are important because schizophrenia patients and healthy controls often differ in rates of smoking and alcohol use, which can independently alter microbiota composition and make it difficult to attribute microbiota differences specifically to the psychiatric condition.",
+      "topic_tags": ["alcohol", "smoking", "gut microbiota confounders", "Proteobacteria", "Bacteroidetes", "schizophrenia research methodology"]
+    },
+    {
+      "id": "sz_mgb_med_006",
+      "difficulty": "medium",
+      "question": "How does gut microbial alpha diversity relate to resting-state functional brain activity, and what sensory or cognitive domains may be implicated?",
+      "answer": "In schizophrenia, gut microbial alpha diversity measures — specifically evenness and the Shannon index — show significant positive correlations with ReHo indexes in multiple brain regions including the bilateral calcarine cortex, bilateral lingual gyrus, left superior occipital cortex, and right superior parietal cortex. Evenness additionally correlates with ReHo in the right cuneus lobe, bilateral fusiform gyrus, left postcentral gyrus, and left superior parietal cortex. These brain regions are predominantly involved in visual processing and sensory integration. This pattern suggests that reduced microbial diversity may be associated with impaired sensory and cognitive processing — for instance, altered functional activity in the calcarine cortex could be linked to visual hallucinations, a symptom reported in some schizophrenia patients. Thus, gut microbial diversity may be a systemic biomarker that mirrors the degree of sensory and perceptual impairment in psychiatric illness.",
+      "topic_tags": ["alpha diversity", "ReHo", "calcarine cortex", "visual hallucinations", "sensory processing", "cognition", "schizophrenia"]
+    },
+
+    {
+      "id": "sz_mgb_hard_001",
+      "difficulty": "hard",
+      "question": "What is the mechanistic chain linking reduced Roseburia abundance to decreased brain serotonin, and how does this connect gut microbiology to psychiatric symptoms?",
+      "answer": "The chain from Roseburia depletion to reduced brain serotonin unfolds across several steps. Roseburia is a major producer of butyrate (via the butyrate kinase pathway) and propionate (via the 1,2-propanediol pathway). A decrease in Roseburia reduces SCFA production, which is detrimental to insulin sensitivity — SCFAs, particularly butyrate and propionate, enhance beta-cell function and facilitate glucose homeostasis. Impaired insulin sensitivity leads to metabolic dysregulation that elevates circulating branched-chain amino acids (BCAAs: leucine, isoleucine, valine). Critically, BCAAs and tryptophan compete for the same large neutral amino acid (LNAA) transporters to cross the blood-brain barrier. When BCAAs are elevated, they outcompete tryptophan for transport, reducing cerebral tryptophan availability. Since tryptophan is the sole precursor of serotonin (5-hydroxytryptamine), reduced tryptophan entry into the brain decreases serotonin synthesis. Because serotonin regulates mood, cognition, and perception, its depletion can contribute to psychiatric symptoms including depression, cognitive dysfunction, and potentially the affective and negative symptoms of schizophrenia. This full mechanistic chain connects a microbial compositional change in the gut to a neurochemical deficit with clinical consequences.",
+      "topic_tags": ["Roseburia", "butyrate", "insulin sensitivity", "BCAAs", "tryptophan", "serotonin", "blood-brain barrier", "schizophrenia mechanism"]
+    },
+    {
+      "id": "sz_mgb_hard_002",
+      "difficulty": "hard",
+      "question": "What are the key methodological limitations in establishing causal relationships between gut microbiota and brain structure or function in psychiatric research, and how might they be addressed?",
+      "answer": "Several methodological challenges complicate causal inference in gut-brain research in psychiatry. First, medication confounding is substantial: most patients are on antipsychotic drugs, which are known to affect both microbiota composition and brain activity, making it difficult to distinguish disease-related microbiome changes from treatment-related ones. Second, correlation-based designs (cross-sectional observational studies) cannot establish whether microbiota alterations precede or follow brain changes — the direction of the association remains unknown. A longitudinal design tracking microbiota and brain indices before, during, and after illness onset would be necessary to resolve directionality. Third, lifestyle confounders such as smoking rates and alcohol consumption differ between schizophrenia patients and healthy controls and independently modulate microbiota composition, but detailed information is often not collected. Fourth, sample sizes are typically moderate, limiting statistical power and reproducibility. Fifth, medication type and duration vary substantially across patients, introducing heterogeneity. To address these limitations, future research should employ longitudinal designs, include drug-naive first-episode patients, rigorously collect and control for lifestyle data, and replicate findings in larger independent cohorts.",
+      "topic_tags": ["causality", "methodology", "confounders", "medication", "longitudinal study", "schizophrenia research limitations"]
+    },
+    {
+      "id": "sz_mgb_hard_003",
+      "difficulty": "hard",
+      "question": "How do the brain structural and functional abnormalities in schizophrenia — particularly gray matter volume reductions and ReHo changes — relate to specific cognitive and perceptual symptom domains of the disorder?",
+      "answer": "Gray matter volume (GMV) reductions and ReHo alterations in schizophrenia map onto distinct but overlapping cognitive and perceptual symptom domains. GMV reductions in the bilateral insula are associated with disrupted interoception, emotional processing, and social cognition; the insula also plays a role in auditory processing. Reductions in frontal cortex GMV impair executive function, working memory, abstract reasoning, and impulse control — facets of the cognitive deficits that are cardinal features of schizophrenia. Temporal lobe GMV atrophy relates specifically to auditory verbal hallucinations, abnormal language processing, and thought disorders. On the functional side, reduced ReHo in the superior temporal cortex (STC) and middle temporal cortex (MTC) — regions involved in auditory and language processing — correlates specifically with Roseburia abundance, suggesting that the microbiome may modulate the functional integrity of circuits vulnerable to hallucinations. The positive correlation between microbial diversity and ReHo in visual-processing areas (calcarine cortex, lingual gyrus, cuneus) further suggests that microbial dysbiosis may exacerbate visual perceptual disturbances. Together, the patterns of structural atrophy and functional desynchronization trace the psychopathological signature of schizophrenia across hallucinations, thought disorder, and cognitive impairment — and the gut microbiome may be a systemic modulator of these brain systems.",
+      "topic_tags": ["gray matter volume", "ReHo", "insula", "temporal cortex", "hallucinations", "executive function", "schizophrenia symptoms", "microbiome-brain link"]
+    },
+    {
+      "id": "sz_mgb_hard_004",
+      "difficulty": "hard",
+      "question": "How does the gut microbiota regulate neurotrophic factor expression, and what are the potential implications for neural development and brain structure in the context of psychiatric disorders?",
+      "answer": "The gut microbiota exerts regulatory control over neurotrophic factors — proteins critical for neural survival, development, and plasticity — through molecular signaling along the MGB axis. Key neurotrophic factors influenced by the microbiota include brain-derived neurotrophic factor (BDNF) and glial cell line-derived neurotrophic factor (GDNF). Microbial metabolites, including SCFAs, serotonin precursors, and immune-modulating molecules, can reach the brain via the circulation or vagal nerve pathways, where they influence the expression of these factors in critical regions. BDNF in particular supports synaptic plasticity, neurogenesis, and the structural integrity of gray matter; GDNF maintains dopaminergic neurons relevant to schizophrenia pathophysiology. When the microbiota is disrupted — as in schizophrenia, where butyrate-producing Roseburia and Ruminococcus are depleted — BDNF and GDNF expression may decline, impairing neuroplasticity and potentially contributing to the gray matter volume reductions and structural abnormalities observed in the disorder. This provides a plausible mechanistic bridge between microbial dysbiosis and the neuropathological substrate of psychiatric illness, including altered cortical thickness, GMV reduction, and functional desynchronization.",
+      "topic_tags": ["BDNF", "GDNF", "neurotrophic factors", "neural plasticity", "gray matter", "schizophrenia", "gut-brain mechanism", "MGB axis"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "sz_mgb_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which bacterial genus shows significantly elevated relative abundance in schizophrenia patients compared to healthy controls?",
+      "options": {
+        "A": "Roseburia",
+        "B": "Ruminococcus",
+        "C": "Veillonella",
+        "D": "Faecalibacterium"
+      },
+      "correct_answer": "C",
+      "explanation": "Veillonella is the genus found at significantly higher relative abundance in schizophrenia patients. Roseburia and Ruminococcus are depleted in schizophrenia, while Faecalibacterium is the most abundant genus in both groups without a significant between-group difference.",
+      "topic_tags": ["Veillonella", "schizophrenia", "gut microbiota composition"]
+    },
+    {
+      "id": "sz_mgb_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What does the amplitude of low-frequency fluctuation (ALFF) measure in resting-state fMRI?",
+      "options": {
+        "A": "The structural volume of gray matter in specific brain regions",
+        "B": "The temporal similarity between a brain voxel and its neighbors",
+        "C": "The absolute intensity of spontaneous low-frequency brain activity",
+        "D": "The long-range functional connectivity between brain networks"
+      },
+      "correct_answer": "C",
+      "explanation": "ALFF measures the absolute intensity of spontaneous brain activity by averaging the square root of the power spectrum across a predefined low-frequency range. It differs from ReHo, which measures local temporal synchrony between neighboring voxels, and from GMV, which is a structural index.",
+      "topic_tags": ["ALFF", "resting-state fMRI", "brain activity measurement"]
+    },
+    {
+      "id": "sz_mgb_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "Through which pathway does Veillonella primarily produce propionate?",
+      "options": {
+        "A": "The butyrate kinase pathway",
+        "B": "The 1,2-propanediol pathway",
+        "C": "The succinate pathway from lactate",
+        "D": "Direct fermentation of dietary fiber"
+      },
+      "correct_answer": "C",
+      "explanation": "Veillonella produces propionate by converting lactate to propionate via the succinate pathway. This is distinct from Roseburia, which uses the butyrate kinase and 1,2-propanediol pathways, and from Ruminococcus, which produces succinate (a precursor) rather than propionate directly.",
+      "topic_tags": ["Veillonella", "propionate", "succinate pathway", "microbial metabolism"]
+    },
+
+    {
+      "id": "sz_mgb_mcq_med_001",
+      "difficulty": "medium",
+      "question": "What is the proposed mechanism by which depletion of Roseburia may reduce cerebral serotonin concentrations in schizophrenia?",
+      "options": {
+        "A": "Roseburia directly synthesizes serotonin precursors that are absorbed through the gut wall",
+        "B": "Reduced Roseburia lowers SCFA-mediated insulin sensitivity, raising plasma BCAAs, which compete with tryptophan for brain transport and reduce serotonin synthesis",
+        "C": "Roseburia produces indole compounds that are converted to serotonin in the brain stem",
+        "D": "Roseburia prevents gut inflammation that would otherwise degrade serotonin transporters in the colon"
+      },
+      "correct_answer": "B",
+      "explanation": "Roseburia depletion reduces SCFA production, impairing insulin sensitivity and elevating BCAAs. Because BCAAs share brain transporters with tryptophan, elevated BCAAs competitively reduce tryptophan entry into the brain. Since tryptophan is the serotonin precursor, less tryptophan means lower brain serotonin, which can contribute to mood and psychiatric symptoms.",
+      "topic_tags": ["Roseburia", "BCAAs", "tryptophan", "serotonin", "insulin sensitivity", "schizophrenia mechanism"]
+    },
+    {
+      "id": "sz_mgb_mcq_med_002",
+      "difficulty": "medium",
+      "question": "In the context of gut-brain research in schizophrenia, why does the positive correlation between gut microbial alpha diversity and ReHo in visual cortex regions have clinical relevance?",
+      "options": {
+        "A": "It suggests that the gut microbiome regulates color perception through direct neural connections to the occipital lobe",
+        "B": "It implies that reduced microbial diversity may be associated with impaired functional activity in visual processing areas, which could be linked to visual hallucinations in schizophrenia",
+        "C": "It indicates that gut bacteria colonize the visual cortex through bloodstream migration during dysbiosis",
+        "D": "It demonstrates that visual acuity is directly controlled by butyrate concentration in cerebrospinal fluid"
+      },
+      "correct_answer": "B",
+      "explanation": "The positive correlation between alpha diversity and ReHo in the calcarine cortex, lingual gyrus, and related visual areas suggests that lower microbial diversity may correspond to reduced functional synchrony in visual processing regions. This could mechanistically contribute to visual hallucinations, a recognized symptom in some schizophrenia patients, linking microbiome disruption to perceptual disturbances.",
+      "topic_tags": ["alpha diversity", "ReHo", "calcarine cortex", "visual hallucinations", "schizophrenia"]
+    },
+    {
+      "id": "sz_mgb_mcq_med_003",
+      "difficulty": "medium",
+      "question": "Why are temporal lobe abnormalities in schizophrenia particularly clinically important?",
+      "options": {
+        "A": "The temporal lobe controls voluntary motor movements, and its dysfunction explains the movement disorders seen in some schizophrenia patients",
+        "B": "Temporal lobe abnormalities are associated with auditory verbal hallucinations, abnormal language processing, and thought disorders, which are core symptoms of schizophrenia",
+        "C": "Temporal lobe atrophy exclusively drives the negative symptoms of schizophrenia such as social withdrawal and flat affect",
+        "D": "The temporal lobe regulates the hypothalamic-pituitary-adrenal axis and is therefore responsible for the stress dysregulation seen in schizophrenia"
+      },
+      "correct_answer": "B",
+      "explanation": "Temporal lobe abnormalities — including reduced GMV and altered ReHo in the STC and MTC — are strongly linked to auditory verbal hallucinations and language processing disruptions, which are hallmark positive symptoms of schizophrenia. Studies have also connected temporal lobe dysfunction to thought disorders, making this region central to understanding the psychopathology of schizophrenia.",
+      "topic_tags": ["temporal lobe", "hallucinations", "language processing", "thought disorder", "schizophrenia"]
+    },
+    {
+      "id": "sz_mgb_mcq_med_004",
+      "difficulty": "medium",
+      "question": "How does Ruminococcus contribute to propionate metabolism, and how does this differ from the role of Roseburia?",
+      "options": {
+        "A": "Ruminococcus directly produces propionate via the 1,2-propanediol pathway, while Roseburia uses the succinate pathway",
+        "B": "Ruminococcus produces succinate via the succinate pathway, which other bacteria can convert to propionate, while Roseburia directly produces both butyrate and propionate",
+        "C": "Ruminococcus and Roseburia both produce propionate via the butyrate kinase pathway with no meaningful differences",
+        "D": "Ruminococcus produces propionate by fermenting mucins, while Roseburia ferments dietary fiber exclusively"
+      },
+      "correct_answer": "B",
+      "explanation": "Ruminococcus lacks the ability to form butyrate from carbohydrates and uses the succinate pathway to produce succinate rather than propionate as the final product; other colonic Firmicutes (Negativicutes class) convert that succinate to propionate. Roseburia, by contrast, directly produces both butyrate (via butyrate kinase) and propionate (via the 1,2-propanediol pathway), making it a more direct and versatile SCFA contributor.",
+      "topic_tags": ["Ruminococcus", "Roseburia", "propionate", "succinate pathway", "SCFA metabolism"]
+    },
+    {
+      "id": "sz_mgb_mcq_med_005",
+      "difficulty": "medium",
+      "question": "Which brain imaging approach was used to assess structural brain abnormalities, and what specific index was computed from it?",
+      "options": {
+        "A": "Diffusion tensor imaging (DTI) was used to compute fractional anisotropy (FA) of white matter tracts",
+        "B": "Voxel-based morphometry (VBM) of T1-weighted structural MRI was used to compute gray matter volume (GMV)",
+        "C": "Positron emission tomography (PET) was used to compute cerebral metabolic rate of glucose (CMRglu)",
+        "D": "Functional MRI with a task paradigm was used to compute blood-oxygen-level-dependent (BOLD) response amplitude"
+      },
+      "correct_answer": "B",
+      "explanation": "Voxel-based morphometry (VBM) was applied to T1-weighted structural MRI data. Gray matter images were segmented, warped to a standard template using DARTEL, spatially normalized, and smoothed to extract gray matter volume (GMV) across 90 cerebral regions defined by the AAL atlas. This allowed comparison of regional brain structure between schizophrenia patients and controls.",
+      "topic_tags": ["VBM", "gray matter volume", "GMV", "structural MRI", "neuroimaging methodology"]
+    },
+
+    {
+      "id": "sz_mgb_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "What makes establishing microbiota-brain causality in schizophrenia particularly challenging, and which study design would best address this limitation?",
+      "options": {
+        "A": "The main challenge is that 16S rRNA sequencing cannot identify bacteria at the species level; shotgun metagenomics would solve this entirely",
+        "B": "Cross-sectional designs cannot determine whether microbiota changes precede or follow brain alterations; a longitudinal design tracking drug-naive patients from illness onset would best address directionality",
+        "C": "The challenge is purely technical — fMRI resolution is insufficient to detect microbiome-related changes, and 7T MRI scanners would resolve this",
+        "D": "The primary challenge is that the blood-brain barrier prevents microbiota metabolites from reaching the brain, so causality cannot exist and alternative pathways must be explored"
+      },
+      "correct_answer": "B",
+      "explanation": "In cross-sectional studies, the temporal relationship between microbiota changes and brain structural/functional changes is unknown — either could precede the other, or both could be driven by a third variable. A longitudinal study, especially one enrolling drug-naive patients at first episode and tracking them prospectively, would allow researchers to determine whether microbial dysbiosis precedes or follows brain changes, and whether treatment modifies this relationship.",
+      "topic_tags": ["causality", "longitudinal study", "cross-sectional limitation", "methodology", "schizophrenia research"]
+    },
+    {
+      "id": "sz_mgb_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "How does the combined depletion of Roseburia and Ruminococcus, alongside elevated Veillonella, create a net metabolic imbalance relevant to central nervous system function in schizophrenia?",
+      "options": {
+        "A": "The loss of Roseburia and Ruminococcus reduces mucus barrier degradation, while elevated Veillonella overproduces acetate, creating systemic acidosis that impairs neuronal firing",
+        "B": "Roseburia and Ruminococcus collectively reduce butyrate supply to colonocytes and lower propionate precursor flux, while elevated Veillonella cannot compensate because it lacks the enzymatic routes to produce butyrate; net SCFA-mediated neuroprotection is therefore diminished",
+        "C": "Roseburia and Ruminococcus primarily regulate bile acid metabolism, and their depletion leads to excess bile acids crossing the BBB and directly neurotoxic effects",
+        "D": "Elevated Veillonella produces excess lactate that competitively inhibits tryptophan hydroxylase, directly blocking serotonin synthesis independent of BCAA levels"
+      },
+      "correct_answer": "B",
+      "explanation": "Roseburia is a primary butyrate and propionate producer; Ruminococcus contributes succinate that feeds propionate synthesis by downstream bacteria. Their depletion in schizophrenia substantially reduces butyrate availability — critical for colonocyte health, gut barrier integrity, and brain SCFA receptor signaling. Veillonella converts lactate to propionate but cannot produce butyrate by any route, so the net butyrate supply remains severely reduced. This imbalance diminishes SCFA-mediated effects on insulin sensitivity, BDNF expression, blood-brain barrier integrity, and neuroactive receptor activation, collectively impairing neuroprotective mechanisms relevant to psychiatric health.",
+      "topic_tags": ["Roseburia", "Ruminococcus", "Veillonella", "butyrate", "propionate", "SCFA imbalance", "schizophrenia mechanism"]
+    }
+  ]
+}

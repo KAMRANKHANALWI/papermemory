@@ -1,0 +1,269 @@
+{
+  "metadata": {
+    "source_paper": "Microbiota in inflammatory bowel disease: mechanisms of disease and therapeutic opportunities",
+    "authors": ["Iliyan D. Iliev", "Ashwin N. Ananthakrishnan", "Chun-Jun Guo"],
+    "journal": "Nature Reviews Microbiology",
+    "year": 2025,
+    "volume": 23,
+    "pages": "509-524",
+    "doi": "10.1038/s41579-025-01163-0",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "IBD_MICRO_easy_f3a1",
+      "difficulty": "easy",
+      "question": "What are the two major forms of inflammatory bowel disease, and how do they differ anatomically?",
+      "answer": "Inflammatory bowel disease is broadly divided into Crohn's disease and ulcerative colitis. Crohn's disease involves inflammation that can affect the entire gastrointestinal tract, whereas ulcerative colitis is limited to inflammation of the colon. Both conditions share a multifactorial aetiology involving genetic, environmental, dietary, immune, and neuronal factors, all interlinked by the gut microbiome.",
+      "topic_tags": ["IBD", "Crohn's disease", "ulcerative colitis", "classification", "anatomy"]
+    },
+    {
+      "id": "IBD_MICRO_easy_b7c2",
+      "difficulty": "easy",
+      "question": "Which bacterial phyla dominate the gut microbiome, and what key metabolites do they collectively produce?",
+      "answer": "Firmicutes and Bacteroides are the most dominant bacterial groups in the gut, together constituting approximately 90% of gut microbiota. These two phyla are key producers of short-chain fatty acids (SCFAs), which play critical roles in intestinal homeostasis, immune regulation, and anti-inflammatory signalling. The balance and functional output of these dominant groups is central to maintaining gut health.",
+      "topic_tags": ["Firmicutes", "Bacteroides", "gut microbiota", "SCFAs", "dominant bacteria"]
+    },
+    {
+      "id": "IBD_MICRO_easy_p9d3",
+      "difficulty": "easy",
+      "question": "What is the general paradigm shift occurring in microbiome research with respect to IBD?",
+      "answer": "The focus of microbiome research is shifting away from characterizing microbial composition alone toward understanding the functional characteristics of specific bacterial species and strains. Comprehensive multiomics investigations — integrating metagenomics, metatranscriptomics, and metabolomics — are now used to more accurately identify alterations in bacterial ecology that coincide with disease initiation and progression, moving beyond simple taxonomic descriptions of 'dysbiosis.'",
+      "topic_tags": ["microbiome research", "multiomics", "functional characterization", "dysbiosis", "paradigm shift"]
+    },
+    {
+      "id": "IBD_MICRO_easy_k2e4",
+      "difficulty": "easy",
+      "question": "What role does Candida albicans play in the context of intestinal inflammation, and what is the key toxin involved?",
+      "answer": "Candida albicans is a fungal species found in the gut mycobiome that is increased in IBD, particularly in ulcerative colitis. Highly damaging strains of C. albicans produce a toxin called candidalysin, which induces intestinal inflammation by damaging epithelial membranes and activating the MAPK pathway. This leads to recruitment of T helper 17 cells, neutrophils, and pro-inflammatory cytokines. Candidalysin-producing strains have been specifically identified in the gut of individuals with UC, highlighting the strain-specific nature of fungal pathogenicity in IBD.",
+      "topic_tags": ["Candida albicans", "candidalysin", "mycobiome", "IBD", "fungal toxin", "inflammation"]
+    },
+    {
+      "id": "IBD_MICRO_easy_r5t5",
+      "difficulty": "easy",
+      "question": "How is fecal microbiota transplantation used in IBD therapy, and what outcomes have randomized trials shown?",
+      "answer": "Fecal microbiota transplantation (FMT) involves introducing a healthy microbiota from a donor into patients with IBD in order to address IBD-associated dysbiosis. While FMT has well-documented efficacy in treating Clostridioides difficile infection, its results in IBD are more modest. Randomized controlled trials in ulcerative colitis have shown varied efficacy, with four of five trials demonstrating a statistically significant benefit and remission rates ranging from 24–53%. Both donor characteristics and recipient-specific factors, including engraftment success, contribute to treatment outcomes.",
+      "topic_tags": ["FMT", "fecal microbiota transplantation", "ulcerative colitis", "remission", "clinical trials"]
+    },
+
+    {
+      "id": "IBD_MICRO_med_h4m1",
+      "difficulty": "medium",
+      "question": "How do secondary bile acids regulate T helper 17 and regulatory T cell balance in the context of intestinal inflammation?",
+      "answer": "Secondary bile acids act as potent signalling molecules that modulate the balance between pro-inflammatory T helper 17 cells and anti-inflammatory regulatory T cells. The secondary bile acid 3-oxolithocholic acid (3-oxoLCA), derived from lithocholic acid, inhibits intestinal TH17 cell differentiation by binding to the nuclear receptor RORγ. IsoalloLCA enhances regulatory T cell differentiation by binding to nuclear receptor 4A1, with the induced Treg cells capable of suppressing inflammation in colitis models. In patients with Crohn's disease, levels of 3-oxoLCA and isoLCA are decreased, and genes associated with TH17 cells and IL-17 show negative correlation with these bile acids. This suggests that diminished secondary bile acid production in IBD contributes to disease by disrupting the TH17–IL-17 signalling axis.",
+      "topic_tags": ["secondary bile acids", "3-oxoLCA", "TH17 cells", "Treg cells", "RORγ", "IBD", "bile acid metabolism"]
+    },
+    {
+      "id": "IBD_MICRO_med_v6n2",
+      "difficulty": "medium",
+      "question": "What mechanisms link SCFA-producing bacteria to the maintenance of intestinal homeostasis and prevention of pathogen expansion?",
+      "answer": "SCFAs such as butyrate and propionate produced by gut bacteria maintain intestinal homeostasis through multiple interconnected mechanisms. Butyrate promotes differentiation of colonic regulatory T cells via an extrathymic pathway and activates the intracellular butyrate sensor PPARγ, which prevents dysbiotic expansion of potentially pathogenic Escherichia and Salmonella species. Loss of GPR43 signalling by SCFAs impairs inflammation resolution, as demonstrated in murine colitis models. Additionally, several SCFAs have direct antibacterial and antifungal properties through intracellular acidification of microbial cells. Depletion of SCFA-producing species like Faecalibacterium prausnitzii and Roseburia hominis, as seen in IBD, coincides with increased abundance of adherent-invasive E. coli and other inflammatory bacteria.",
+      "topic_tags": ["SCFAs", "butyrate", "PPARγ", "colonization resistance", "Treg cells", "IBD dysbiosis", "GPR43"]
+    },
+    {
+      "id": "IBD_MICRO_med_w8p3",
+      "difficulty": "medium",
+      "question": "How does the gut microbiome modulate the enteric nervous system and gut motility, and how is this disrupted in IBD?",
+      "answer": "The intestinal microbiota regulates the enteric nervous system (ENS) through multiple pathways. Microbial communities in the colon drive expression of aryl hydrocarbon receptors (AHRs) by enteric-associated neurons (EANs), which increases intestinal peristaltic activity. SCFAs produced by the microbiota reduce neuronal activation markers, and other microbiota-associated factors such as glucagon-like peptide-1 and peptide YY also modulate sympathetic neuronal activity. In IBD, pathobionts and disrupted microbial metabolites can disrupt neuroimmune interactions, causing loss of intestinal EANs and reduced motility, as seen following Salmonella infection via NLRP6 and caspase 11 pathways. The density of EANs in the gut has been shown to correlate with the severity of colitis, and pain — a common IBD symptom — is regulated partly through TRPV1 nociceptors that are themselves influenced by microbiota composition.",
+      "topic_tags": ["enteric nervous system", "gut motility", "AHR", "SCFAs", "IBD", "nociception", "EANs"]
+    },
+    {
+      "id": "IBD_MICRO_med_j3q4",
+      "difficulty": "medium",
+      "question": "What is the role of CARD9 and autophagy-related genes in the immune response to gut fungi in IBD?",
+      "answer": "CARD9 is a critical mediator of systemic antifungal immune responses in the gut. A risk variant of CARD9 promotes greater TNF and IL-6 production by dendritic cells in response to fungal stimuli, while a protective variant attenuates pro-inflammatory signalling through impaired interaction with the ubiquitin ligase TRIM62. Gut commensal fungi tune the human antibody repertoire in a CARD9-dependent manner. Autophagy-related genes including ATG16L1, XBP1, and LRRK2 are strongly associated with both UC and CD, and are directly linked to antibacterial, antifungal, and antiviral immunity. Defects in autophagy affect the antimicrobial activity of Paneth cells and impair regulatory T cell responses to outer membrane vesicles delivered by Bacteroides fragilis, compromising protection from colitis.",
+      "topic_tags": ["CARD9", "ATG16L1", "autophagy", "Paneth cells", "antifungal immunity", "IBD genetics"]
+    },
+    {
+      "id": "IBD_MICRO_med_z1b5",
+      "difficulty": "medium",
+      "question": "How can gut microbiota composition and functional markers predict response to biologic therapies in IBD?",
+      "answer": "Gut microbiota composition and function have emerged as predictors of therapeutic response to biologic therapies in IBD. Microbial richness has been shown to correlate with response to anti-TNF, anti-IL-12/23, and anti-integrin therapies, alongside the abundance of bacterial species involved in dehydroxylation of primary to secondary bile acids. Specific serum immunoprofiling signatures linked to bacterial diversity are indicative of remission likelihood upon anti-cytokine therapy. The relative abundance of certain bacteria like Roseburia inulinivorans and Burkholderiales sp. predicted response to anti-integrin therapy. In paediatric IBD, increased microbial diversity and enrichment of particular bacterial clades predicted response to anti-TNF therapy. Additionally, microbiota-based markers may serve as predictors of disease relapse, opening avenues for precision medicine approaches.",
+      "topic_tags": ["biologic therapy", "anti-TNF", "microbiome biomarkers", "IBD prognosis", "microbial diversity", "precision medicine"]
+    },
+    {
+      "id": "IBD_MICRO_med_c9u6",
+      "difficulty": "medium",
+      "question": "What are tryptophan-derived microbial metabolites, and how do they differentially contribute to or protect against intestinal inflammation?",
+      "answer": "The gut microbiota metabolizes tryptophan into various indole metabolites with opposing effects on intestinal inflammation. Indole 3-acetic acid and indole pyruvic acid ameliorate colonic inflammation by activating the aryl hydrocarbon receptor (AHR) signalling pathway. In contrast, a newly discovered class of genotoxic tryptophan-derived metabolites called indolimines can induce DNA damage; the bacterium Morganella morganii produces these metabolites and colonization with such bacteria has been linked to increased intestinal permeability — a phenotype correlated with exacerbated colon inflammation in IBD. Multiple bacterial species, including Clostridium perfringens and C. ramosum, produce small molecules capable of inducing DNA damage through mechanisms independent of colibactin-mediated E. coli genotoxicity, suggesting the presence of multiple parallel genotoxic pathways in the IBD gut.",
+      "topic_tags": ["tryptophan metabolism", "indolimines", "AHR", "genotoxic metabolites", "Morganella morganii", "intestinal permeability", "IBD"]
+    },
+
+    {
+      "id": "IBD_MICRO_hard_x2v1",
+      "difficulty": "hard",
+      "question": "How do bacteria, fungi, and viruses each contribute distinctly to IBD pathogenesis, and what are the key methodological challenges in studying each kingdom?",
+      "answer": "Each microbial kingdom contributes to IBD through distinct mechanisms. Bacteria — comprising over 99% of the gut microbiome — drive IBD primarily through shifts in SCFA-producing versus pro-inflammatory species, altered bile acid metabolism, and direct immune activation via innate and adaptive pathways. Fungi contribute through strain-specific virulence factors such as candidalysin from C. albicans, wound-healing impairment by Debaryomyces hansenii, inflammation driven by Malassezia restricta via CARD9, and cross-reactive T cell responses against S. cerevisiae antigens in CD. Viruses modulate IBD through phage-mediated bacterial ecology changes and direct immunomodulation by eukaryotic viruses. Methodologically, bacterial studies are aided by deep metagenomics but are confounded by high inter-individual variation and functional redundancy. Fungal studies face challenges in low abundance, difficulty distinguishing symbionts from transient environmental fungi, and reliance on ITS sequencing and culture methods. Viral studies require particle enrichment and deep-sequencing of both DNA and RNA to distinguish phage families, and viral-IBD interactions remain among the least characterized. Across all kingdoms, strain-level resolution is increasingly recognized as essential, as strain-specific functional traits — not just species composition — govern pathogenic or protective outcomes.",
+      "topic_tags": ["bacteria", "fungi", "viruses", "multi-kingdom", "IBD pathogenesis", "mycobiome", "virome", "methodological challenges"]
+    },
+    {
+      "id": "IBD_MICRO_hard_l5k2",
+      "difficulty": "hard",
+      "question": "What is the relationship between microbiota-mediated metabolic competition and colonization resistance against pathobionts, and what therapeutic implications arise from this?",
+      "answer": "Metabolic competition represents a key mechanism by which the gut microbiota confers colonization resistance against pathobionts. A consortium of 18 commensal bacterial strains isolated from healthy human stool was demonstrated to suppress intestinal Enterobacteriaceae — including Klebsiella pneumoniae — by competitively depleting gluconate through a conversion pathway involving gluconate dehydratase. This pathway is absent in Enterobacteriaceae species commonly found in IBD patients, creating a metabolic vulnerability that commensals exploit to prevent pathobiont expansion. In IBD, gluconate-utilizing Enterobacteriaceae are associated with disease, whereas gluconate-metabolizing commensals correlate with gastrointestinal health. Therapeutically, this illustrates the principle of ecological control: rather than targeting pathogens directly, rationally designed commensal consortia can deprive pathobionts of essential nutrients. This concept is being extended to phage-based approaches targeting K. pneumoniae and to SCFA-mediated mechanisms, where butyrate-driven PPARγ signalling prevents Enterobacteriaceae expansion, collectively suggesting that metabolic niche competition is a viable and precision-amenable therapeutic target in IBD.",
+      "topic_tags": ["metabolic competition", "gluconate", "Enterobacteriaceae", "colonization resistance", "commensal consortia", "ecological control", "IBD therapy"]
+    },
+    {
+      "id": "IBD_MICRO_hard_q7r3",
+      "difficulty": "hard",
+      "question": "How does the gut mycobiome interact with the bacterial microbiome and host immunity to influence IBD outcomes, particularly in the context of FMT responsiveness?",
+      "answer": "The gut mycobiome shapes IBD through bidirectional interactions with bacterial communities and the host immune system. Fungi respond to and modulate bacterial ecology: active inflammation, bacterial community changes, and dietary factors all affect mycobiota composition, and fungi in turn influence bacterial engraftment during FMT. Notably, high C. albicans abundance pre-FMT was associated with greater subsequent bacterial diversity and improved clinical response in UC, suggesting fungal ecology regulates bacterial engraftment. Conversely, low C. albicans abundance correlated with positive FMT outcomes in C. difficile infection, highlighting context-dependent fungal roles. At the immune level, gut fungi calibrate systemic TH17 responses, induce IgA class switch recombination and systemic antibody responses through CARD9-dependent pathways, and generate anti-fungal IgG antibodies. Strain-specific C. albicans drive pro-inflammatory immunity via candidalysin-dependent IL-1β and NLRP3 inflammasome activation. Secretory IgA can target fungal hyphae with high affinity, and impaired IgA responses in IBD may compromise fungal containment. These findings collectively argue that mycobiome-directed interventions — such as targeting specific damaging fungal strains — represent a rational, precision-based therapeutic strategy in IBD, distinct from broad antifungal approaches.",
+      "topic_tags": ["mycobiome", "FMT", "bacterial engraftment", "C. albicans", "IgA", "CARD9", "TH17", "IBD therapy", "cross-kingdom interactions"]
+    },
+    {
+      "id": "IBD_MICRO_hard_n8s4",
+      "difficulty": "hard",
+      "question": "How does the neuroimmune axis integrate microbiota-derived signals to regulate both gut protection and pain in IBD, and what are the bidirectional nature of these interactions?",
+      "answer": "The neuroimmune axis in IBD integrates microbial signals bidirectionally. In the afferent direction, microbial metabolites — including SCFAs, bile acids, glucagon-like peptide-1, and peptide YY — modulate sympathetic neuronal activity via gut-extrinsic enteric-associated neurons (EANs), including activation of brainstem sensory nuclei. The microbiota drives AHR expression in EANs, regulating intestinal peristalsis. Specific bacteria stimulate serotonin biosynthesis from colonic enterochromaffin cells, with R. gnavus promoting serotonin production through tryptophan catabolism, linking microbial changes to gut dysmotility and pain sensitization. In IBD, pathobiont overgrowth and barrier disruption cause neuronal loss and aberrant EAN density, which correlates with colitis severity. In the efferent direction, nociceptors — particularly TRPV1-expressing neurons — release neuropeptides including calcitonin gene-related peptide and substance P that regulate microbiota composition and restrict bacterial invasion. Disruption of TRPV1 nociceptors alters microbiota composition (decreased Bacteroides, increased Firmicutes) and promotes severe intestinal inflammation. Additionally, adaptive immunity-microbiota crosstalk can stimulate neuronal repair: S. aureus-induced TH17 cells release IL-17A to signal via IL-17 receptors on sensory neurons, initiating transcriptional programs for nerve regeneration. This bidirectional circuitry means that targeting either the microbial or neuronal arm in IBD may have reciprocal effects on the other.",
+      "topic_tags": ["neuroimmune axis", "EANs", "TRPV1", "serotonin", "neuropeptides", "gut-brain axis", "IBD pain", "gut motility", "bidirectional regulation"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "IBD_MICRO_mcq_easy_t1a1",
+      "difficulty": "easy",
+      "question": "Which fungal toxin produced by Candida albicans has been specifically identified in the gut of individuals with ulcerative colitis and drives epithelial membrane damage?",
+      "options": {
+        "A": "Aflatoxin",
+        "B": "Gliotoxin",
+        "C": "Candidalysin",
+        "D": "Ergotamine"
+      },
+      "correct_answer": "C",
+      "explanation": "Candidalysin is a peptide toxin produced by highly damaging strains of C. albicans identified in individuals with UC. It induces intestinal inflammation by damaging epithelial membranes, activating the MAPK pathway, and recruiting TH17 cells and neutrophils. Genetic ablation of candidalysin prevents cell damage, confirming its central role.",
+      "topic_tags": ["candidalysin", "Candida albicans", "UC", "fungal toxin", "epithelial damage"]
+    },
+    {
+      "id": "IBD_MICRO_mcq_easy_h4b2",
+      "difficulty": "easy",
+      "question": "Which bacterium is one of the most abundant species in the healthy human gut and serves as a key producer of the anti-inflammatory SCFA butyrate, with consistently reduced levels in IBD?",
+      "options": {
+        "A": "Ruminococcus gnavus",
+        "B": "Bacteroides fragilis",
+        "C": "Faecalibacterium prausnitzii",
+        "D": "Escherichia coli"
+      },
+      "correct_answer": "C",
+      "explanation": "Faecalibacterium prausnitzii is one of the most abundant species in the healthy human gut and is a key producer of butyrate, a SCFA with anti-inflammatory properties. Its reduction is consistently observed in both CD and UC, and early studies found that its decrease is associated with higher risk of ileal CD recurrence. Multiple anti-inflammatory peptides produced by this bacterium have been identified.",
+      "topic_tags": ["Faecalibacterium prausnitzii", "butyrate", "IBD", "SCFA", "anti-inflammatory"]
+    },
+    {
+      "id": "IBD_MICRO_mcq_easy_w7c3",
+      "difficulty": "easy",
+      "question": "What type of nutritional intervention has shown up to 80% remission rates in paediatric patients with Crohn's disease and is associated with alterations in gut microbiome composition?",
+      "options": {
+        "A": "Low-residue diet",
+        "B": "Exclusive enteral nutrition",
+        "C": "Specific carbohydrate diet",
+        "D": "Mediterranean diet"
+      },
+      "correct_answer": "B",
+      "explanation": "Exclusive enteral nutrition (EEN) involves exclusive intake of a nutritionally complete liquid formula for approximately 8 weeks. It has demonstrated efficacy in paediatric patients with Crohn's disease, with up to 80% going into remission. EEN induces changes in the microbiome and associated metabolome, with responders showing reductions in metabolites associated with IBD pathogenesis.",
+      "topic_tags": ["EEN", "exclusive enteral nutrition", "Crohn's disease", "paediatric", "remission"]
+    },
+
+    {
+      "id": "IBD_MICRO_mcq_med_f2d1",
+      "difficulty": "medium",
+      "question": "How does butyrate prevent dysbiotic expansion of potentially pathogenic Enterobacteriaceae in the gut?",
+      "options": {
+        "A": "Butyrate directly kills Enterobacteriaceae through membrane disruption",
+        "B": "Butyrate activates the intracellular sensor PPARγ in colonocytes, which suppresses conditions that favour Enterobacteriaceae growth",
+        "C": "Butyrate upregulates secretory IgA production, which targets Enterobacteriaceae specifically",
+        "D": "Butyrate stimulates Paneth cell production of defensins selective for gram-negative bacteria"
+      },
+      "correct_answer": "B",
+      "explanation": "Butyrate activates the intracellular butyrate sensor peroxisome proliferator-activated receptor-γ (PPARγ) in colonocytes. This microbiota-activated PPARγ signalling prevents dysbiotic expansion of potentially pathogenic Escherichia and Salmonella species. Antibiotic-mediated depletion of butyrate-producing species reduces PPARγ signalling, demonstrating the mechanistic link between commensal butyrate production and colonization resistance.",
+      "topic_tags": ["butyrate", "PPARγ", "Enterobacteriaceae", "colonization resistance", "dysbiosis prevention"]
+    },
+    {
+      "id": "IBD_MICRO_mcq_med_k9e2",
+      "difficulty": "medium",
+      "question": "Which of the following correctly describes how isodeoxycholic acid, a secondary bile acid, modulates immune responses relevant to intestinal inflammation?",
+      "options": {
+        "A": "It promotes TH17 cell differentiation by binding to RORγ and upregulating IL-17 production",
+        "B": "It promotes generation of immunosuppressive CD4+ regulatory T cells through interaction with the FXR receptor in dendritic cells",
+        "C": "It activates NLRP3 inflammasome signalling in macrophages, driving IL-1β production",
+        "D": "It directly kills commensal bacteria by disrupting their lipid membranes"
+      },
+      "correct_answer": "B",
+      "explanation": "Isodeoxycholic acid promotes the generation of immunosuppressive CD4+ Treg cells through interaction with the farnesoid X receptor (FXR) in dendritic cells. This immunomodulatory mechanism is one of several secondary bile acid-mediated pathways that regulate the balance between pro-inflammatory TH17 and anti-inflammatory Treg cells in the gut, with therapeutic implications for IBD.",
+      "topic_tags": ["isodeoxycholic acid", "secondary bile acids", "Treg cells", "FXR", "dendritic cells", "IBD immunity"]
+    },
+    {
+      "id": "IBD_MICRO_mcq_med_p4r3",
+      "difficulty": "medium",
+      "question": "What mechanism allows a consortium of commensal bacteria to suppress pathogenic Enterobacteriaceae such as Klebsiella pneumoniae in the IBD gut?",
+      "options": {
+        "A": "Producing bacteriocins that selectively kill gram-negative Enterobacteriaceae",
+        "B": "Competitively depleting gluconate, a key carbon source that Enterobacteriaceae exploit but the commensal consortium can metabolize",
+        "C": "Increasing luminal oxygen tension that is toxic to facultative anaerobic Enterobacteriaceae",
+        "D": "Stimulating IgA coating that opsonizes Enterobacteriaceae for phagocytic clearance"
+      },
+      "correct_answer": "B",
+      "explanation": "A defined consortium of 18 commensal bacterial strains from healthy human stool was shown to suppress Enterobacteriaceae by competitively depleting gluconate through an enzymatic pathway involving gluconate dehydratase. This metabolic pathway is absent in Enterobacteriaceae species common in IBD, creating a competitive disadvantage. In IBD, gluconate-utilizing Enterobacteriaceae are associated with disease, while gluconate-metabolizing commensals correlate with gastrointestinal health.",
+      "topic_tags": ["gluconate", "Enterobacteriaceae", "Klebsiella pneumoniae", "metabolic competition", "commensal consortia", "IBD"]
+    },
+    {
+      "id": "IBD_MICRO_mcq_med_v6m4",
+      "difficulty": "medium",
+      "question": "What has research shown about the influence of Debaryomyces hansenii on intestinal healing in the context of Crohn's disease?",
+      "options": {
+        "A": "D. hansenii produces butyrate that promotes mucosal healing in CD",
+        "B": "D. hansenii recovered from mucosal samples of CD patients impairs colonic wound healing via chemokine ligand 5",
+        "C": "D. hansenii competes with C. albicans, indirectly protecting the gut from candidalysin-mediated damage",
+        "D": "D. hansenii upregulates IL-22 production, strengthening the epithelial barrier in CD"
+      },
+      "correct_answer": "B",
+      "explanation": "Debaryomyces hansenii, a fungal species enriched in intestinal tissue of patients with Crohn's disease, impairs colonic wound healing in mouse models through a mechanism involving chemokine ligand 5. This finding highlights how specific fungal species, beyond simply causing inflammation, can interfere with tissue repair processes — thereby contributing to the chronicity of IBD pathophysiology.",
+      "topic_tags": ["Debaryomyces hansenii", "wound healing", "Crohn's disease", "mycobiome", "chemokine ligand 5"]
+    },
+    {
+      "id": "IBD_MICRO_mcq_med_b8n5",
+      "difficulty": "medium",
+      "question": "How does the gut microbiome influence response to sulfasalazine therapy for IBD-associated spondyloarthritis?",
+      "options": {
+        "A": "Gut bacteria inactivate sulfasalazine before it reaches systemic circulation, reducing its efficacy universally",
+        "B": "Patients who respond to sulfasalazine have gut microbiomes enriched in F. prausnitzii and elevated butyrate, and microbiota from responders enables the drug to increase butyrate and limit colitis in mice",
+        "C": "Sulfasalazine responders have higher Proteobacteria abundance, which activates the prodrug through bacterial enzymes",
+        "D": "Sulfasalazine modulates microbiome composition by selectively depleting Bacteroides species, which then improves spondyloarthritis outcomes"
+      },
+      "correct_answer": "B",
+      "explanation": "Patients who clinically responded to sulfasalazine had gut microbiomes enriched in F. prausnitzii with elevated gut butyrate levels. Mice colonized with microbiota from responders showed increased faecal butyrate and limited colitis upon sulfasalazine treatment, while microbiota from non-responders lacked this effect. This demonstrates that the gut microbiome determines therapeutic response to sulfasalazine through butyrate-mediated mechanisms.",
+      "topic_tags": ["sulfasalazine", "IBD therapy", "microbiome", "F. prausnitzii", "butyrate", "drug response"]
+    },
+
+    {
+      "id": "IBD_MICRO_mcq_hard_g3w1",
+      "difficulty": "hard",
+      "question": "An engineered S. cerevisiae probiotic was bioengineered to suppress intestinal inflammation in mouse models of IBD. What is the mechanism of its self-regulating feedback loop?",
+      "options": {
+        "A": "The yeast is engineered to sense luminal TNF and secrete an IL-10 analogue, creating a negative feedback loop against inflammation",
+        "B": "The yeast senses elevated butyrate concentrations as an inflammatory signal and upregulates SCFA production in response",
+        "C": "The yeast is engineered to sense extracellular ATP — which promotes inflammation via the P2Y2 receptor — and activation of P2Y2 triggers expression of apyrase, which degrades ATP",
+        "D": "The yeast monitors luminal pH and, under acidic inflammatory conditions, secretes antimicrobial peptides targeting pathobionts"
+      },
+      "correct_answer": "C",
+      "explanation": "An S. cerevisiae strain was bioengineered to sense extracellular ATP, which can promote intestinal inflammation via the P2Y2 purinergic receptor. In this engineered strain, activation of P2Y2 was linked to apyrase — an enzyme that degrades ATP — generating a self-regulating feedback loop. When inflammation increases ATP, the yeast detects it and breaks it down, dampening the inflammatory signal. This system suppressed intestinal inflammation and reduced fibrosis and dysbiosis in mouse IBD models.",
+      "topic_tags": ["engineered probiotics", "S. cerevisiae", "ATP", "P2Y2", "apyrase", "self-regulating", "IBD therapy"]
+    },
+    {
+      "id": "IBD_MICRO_mcq_hard_m5f2",
+      "difficulty": "hard",
+      "question": "What best explains why microbiome studies in IBD frequently struggle to establish causal relationships, and which experimental approach is considered most important for addressing this limitation?",
+      "options": {
+        "A": "The gut microbiome is too diverse to analyse using current sequencing technologies, so compositional data lacks sufficient resolution for causal inference",
+        "B": "High inter-individual variation, functional redundancy, limitations of mouse model translatability, and the difficulty of distinguishing cause from consequence in human cohorts require the use of rationally humanized microbiota models and longitudinal multiomics profiling of well-phenotyped cohorts",
+        "C": "Causality can only be established through germ-free mouse experiments, but germ-free mice have fundamentally different immune systems that prevent generalisation to humans",
+        "D": "IBD microbiome alterations are entirely secondary to immune activation, meaning the microbiota cannot be causal and only surrogate biomarkers are relevant"
+      },
+      "correct_answer": "B",
+      "explanation": "The paper identifies multiple overlapping challenges to causal inference in IBD microbiome research: high inter-individual variation, functional redundancy (different compositions producing similar functional outputs), difficulty distinguishing whether dysbiosis precedes or follows disease, small and heterogeneous human cohort sizes, and limited translatability of standard mouse models. The recommended solutions include models with rationally humanized microbiota to avoid exaggerated causal claims, models with evolutionarily adapted wild-type rodent microbiota, and longitudinal multiomics profiling of large, well-phenotyped human cohorts with careful adjustment for confounders such as diet.",
+      "topic_tags": ["causality", "IBD research", "functional redundancy", "humanized microbiota", "mouse models", "multiomics", "confounders"]
+    }
+  ]
+}

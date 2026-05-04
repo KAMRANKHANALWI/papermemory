@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Antibiotic perturbations to the gut microbiome",
+    "authors": ["Skye R. S. Fishbein", "Bejan Mahmud", "Gautam Dantas"],
+    "journal": "Nature Reviews Microbiology",
+    "year": 2023,
+    "doi": "10.1038/s41579-023-00933-y",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "abxmb_easy_7f2a",
+      "difficulty": "easy",
+      "question": "What is the gut resistome and why is it clinically relevant?",
+      "answer": "The gut resistome refers to the full suite of antibiotic resistance genes (ARGs) encoded by the microbiome. It is clinically relevant because antibiotic treatment commonly enriches the resistome — increasing the relative abundance of ARGs, including those that confer resistance to drugs unrelated to the administered agent. The presence of ARG-encoding pathobionts in the gut is a recognized risk factor for recurrent resistant infections after treatment. Additionally, ARGs encoded on mobile genetic elements (MGEs) can spread between bacteria via horizontal gene transfer, amplifying resistance beyond the original host strain.",
+      "topic_tags": ["resistome", "antibiotic resistance genes", "ARGs", "mobile genetic elements", "clinical risk"]
+    },
+    {
+      "id": "abxmb_easy_3c8b",
+      "difficulty": "easy",
+      "question": "What are pathobionts and how does antibiotic treatment promote their expansion?",
+      "answer": "Pathobionts are opportunistic microorganisms that are normally present at low abundances in the gut but proliferate and cause disease when the microbiome is disturbed. Antibiotic treatment disrupts the resident commensal community — reducing Firmicutes, Bacteroidetes, and Actinobacteria taxa — which opens an ecological niche for pathobiont expansion. The loss of commensal metabolic functions such as bile acid transformation and SCFA production removes competitive barriers, enabling pathobionts like Clostridioides difficile, Enterococcus spp., vancomycin-resistant Enterococcus, and carbapenem-resistant Enterobacteriaceae to colonize and bloom.",
+      "topic_tags": ["pathobionts", "dysbiosis", "colonization resistance", "opportunistic infection", "C. difficile"]
+    },
+    {
+      "id": "abxmb_easy_9d41",
+      "difficulty": "easy",
+      "question": "How do antibiotics affect microbial diversity metrics in the gut, and how long does recovery take?",
+      "answer": "Antibiotics typically cause an acute decline in alpha diversity within the first few days of treatment, reflecting a rapid reduction in species richness within the community. Recovery is often incomplete: beta diversity comparisons between baseline and post-treatment states commonly remain altered for up to six months after treatment cessation. These persistent shifts reflect the inability of the community to fully restore its pre-treatment taxonomic and functional architecture, particularly when key SCFA-producing Firmicutes and Bacteroidetes species are lost.",
+      "topic_tags": ["alpha diversity", "beta diversity", "microbiome recovery", "antibiotic exposure", "dysbiosis"]
+    },
+    {
+      "id": "abxmb_easy_1e5c",
+      "difficulty": "easy",
+      "question": "Why do antibiotic molecular targets not allow for selective killing of pathogens without collateral damage to the gut microbiome?",
+      "answer": "Although antibiotics were developed to target pathogens, their molecular targets — such as the bacterial cell wall, ribosome, and RNA polymerase — are highly conserved across the bacterial kingdom. This means that when antibiotics reach the gut, they indiscriminately affect both pathogenic and commensal bacteria alike. The result is a disruption of ecological niches that are responsible for myriad metabolic transformations in the gut, altering the taxonomic and functional landscape of the microbiome in ways that can promote disease.",
+      "topic_tags": ["antibiotic mechanism", "molecular targets", "off-target effects", "gut microbiome disruption", "collateral damage"]
+    },
+    {
+      "id": "abxmb_easy_b62e",
+      "difficulty": "easy",
+      "question": "What metabolic functions are lost from the gut microbiome following antibiotic treatment?",
+      "answer": "Antibiotic administration is commonly associated with two major categories of metabolic loss: decreased bile acid transformation capacity (resulting in increased levels of primary bile acids) and reduced carbohydrate fermentation (resulting in decreased short-chain fatty acid (SCFA) production, particularly butyrate and acetate). Additionally, metabolomic studies have documented increased levels of simple carbohydrates and amino acids in the gut following antibiotic treatment, likely reflecting reduced species diversity and the loss of taxa that would otherwise consume these substrates. These metabolic shifts collectively impair the colonization resistance capacity of the gut.",
+      "topic_tags": ["metabolic capacity", "bile acids", "SCFAs", "carbohydrate fermentation", "colonization resistance"]
+    },
+
+    {
+      "id": "abxmb_med_4a7f",
+      "difficulty": "medium",
+      "question": "How does diet — specifically dietary fibre intake — modulate the impact of antibiotic treatment on the gut microbiome?",
+      "answer": "Dietary fibre plays a significant role in determining how the microbiome responds to and recovers from antibiotic treatment. Without fibre, gut microbiome alpha diversity recovery after antibiotic exposure is delayed in both conventional and humanized mouse models. In human clinical studies, volunteers consuming fibre-containing diets (omnivore or vegan) during combination antibiotic treatment showed expedited microbiome recovery — measured by alpha and beta diversity — compared to those on a fibre-free liquid diet. Specifically, fibre-containing diets encouraged rapid restoration of stool butyrate levels and a return of Firmicutes taxa with distinct amino acid metabolism. This is because dietary fibre provides microbiota-accessible carbohydrates (MACs) that support the regrowth of commensal, fibre-fermenting species that are depleted during antibiotic treatment.",
+      "topic_tags": ["dietary fibre", "microbiome recovery", "MACs", "butyrate", "Firmicutes", "antibiotic treatment outcomes"]
+    },
+    {
+      "id": "abxmb_med_c93d",
+      "difficulty": "medium",
+      "question": "What mechanisms allow some gut bacteria to persist through antibiotic treatment?",
+      "answer": "Several intrinsic properties enable subsets of gut bacteria to survive antibiotic exposure. First, members of the Clostridium and Peptostreptococcus genera (among other Firmicutes) can form endospores — dormant, non-replicating cellular forms that are intrinsically resistant to antibiotics, heat, and oxygen. Pathobionts such as C. difficile sporulate in response to population density and nutrient availability, surviving antibiotic exposure and later germinating when free nutrients and primary bile acids signal a hospitable environment. Second, many gut microorganisms can tolerate antibiotics through persister cell formation, where a subpopulation enters a metabolically quiescent state. Third, bacteria sheltered within mucin-embedded biofilms or deeper tissue niches can resist antibiotic penetration. Finally, the surrounding nutrient milieu itself can modulate antibiotic susceptibility, with certain carbon sources conferring tolerance or sensitization to specific drugs.",
+      "topic_tags": ["endospores", "persister cells", "biofilm", "antibiotic tolerance", "C. difficile", "nutrient milieu"]
+    },
+    {
+      "id": "abxmb_med_5b2a",
+      "difficulty": "medium",
+      "question": "How does horizontal gene transfer (HGT) contribute to the expansion of the gut resistome after antibiotic exposure?",
+      "answer": "HGT allows ARGs to spread beyond their original bacterial hosts, driving resistome expansion independent of simple clonal selection. In the short term after antibiotic treatment, increased resistome burden is primarily driven by chromosomally encoded ARGs expanding via clonal growth of resistant lineages. However, these chromosomal ARG carriers decline sharply after about one month. MGE-encoded ARGs persist for longer periods due to the parasitic nature of MGEs, which propagate among bacterial populations even without antibiotic pressure. Antibiotics can facilitate all three classical HGT mechanisms — transformation, transduction, and conjugation — with conjugation (direct plasmid transfer between cells) being the best-studied. Importantly, the apparent increase in HGT rates after antibiotic treatment is confounded by antibiotic-mediated selection of transconjugants, meaning that the enrichment of MGE-encoded ARGs may reflect growth advantage conferred on transconjugants rather than elevated transfer rates per se.",
+      "topic_tags": ["horizontal gene transfer", "HGT", "mobile genetic elements", "conjugation", "resistome", "transconjugants"]
+    },
+    {
+      "id": "abxmb_med_d17c",
+      "difficulty": "medium",
+      "question": "Why does the in vitro spectrum of activity of an antibiotic not reliably predict its in vivo effects on the gut microbiome?",
+      "answer": "The in vitro spectrum of activity reflects an antibiotic's killing capability against isolated bacterial strains under controlled conditions, but in vivo, gut bacteria exist in complex ecological networks of mutualistic and competitive relationships that fundamentally alter antibiotic outcomes. A key example is vancomycin, which is Gram-positive-specific in vitro, yet its oral administration results in distinct loss of several Gram-negative gut commensals, including Bacteroides, Prevotella, and Alistipes spp. This occurs because community metabolic networks mean that killing one organism can collapse dependent species that were not directly susceptible. Conversely, bioavailability, administration route, and gut concentrations all modulate actual drug exposure, meaning a narrower in vitro spectrum can paradoxically cause greater in vivo disruption (as vancomycin does versus amoxicillin).",
+      "topic_tags": ["in vitro vs in vivo", "antibiotic spectrum", "vancomycin", "Bacteroidetes", "community ecology", "microbiome perturbation"]
+    },
+    {
+      "id": "abxmb_med_8e4b",
+      "difficulty": "medium",
+      "question": "What strategies involving enzymatic degradation or physical sequestration of antibiotics have been explored to minimize gut microbiome damage during systemic antibiotic treatment?",
+      "answer": "Two main approaches have been studied. First, enzymatic degradation: oral co-administration of beta-lactamase enzymes (such as ribaxamase/SYN-004) alongside systemic beta-lactam antibiotics can degrade drug that reaches the gut, maintaining the taxonomic structure of the gut community and colonization resistance against C. difficile — without affecting serum drug concentrations required for the systemic infection. Engineered probiotics (e.g., Lactococcus lactis expressing a split TEM1 beta-lactamase) have extended this approach, with the split design minimizing HGT risk. Second, physical sequestration: DAV132, an activated charcoal-based adsorbent, reduces faecal concentrations of fluoroquinolones without altering serum levels. It protects bacterial richness and diversity, prevents pathobiont spread, and maintains C. difficile colonization resistance. It can also be coated in a pH-dependent polymer for colon-specific release, preserving antibiotic activity in the small intestine.",
+      "topic_tags": ["beta-lactamase", "ribaxamase", "DAV132", "activated charcoal", "colonization resistance", "microbiome protection"]
+    },
+    {
+      "id": "abxmb_med_2f9e",
+      "difficulty": "medium",
+      "question": "What role do secondary bile acids play in protecting against C. difficile infection, and how does antibiotic treatment disrupt this protection?",
+      "answer": "Secondary bile acids are metabolites produced by gut commensal bacteria through the transformation of primary bile acids. They play a key role in colonization resistance against C. difficile by suppressing spore germination and inhibiting outgrowth of the pathogen. Antibiotic treatment depletes the commensal bacteria responsible for this bile acid transformation, leading to an accumulation of primary bile acids. Primary bile acids, in contrast to secondary bile acids, provide molecular signals that promote C. difficile spore germination and subsequent pathogenesis. This is one reason why antibiotic-treated individuals are highly susceptible to C. difficile infection. Restoration of secondary bile acid production by defined bacterial communities (such as SER-109 and VE303) is a therapeutic strategy under development for recurrent C. difficile infection.",
+      "topic_tags": ["secondary bile acids", "primary bile acids", "C. difficile", "spore germination", "colonization resistance", "FMT", "SER-109"]
+    },
+
+    {
+      "id": "abxmb_hard_a3d8",
+      "difficulty": "hard",
+      "question": "What are the key challenges in developing predictive models of gut microbiome dynamics following antibiotic exposure, and what variables have demonstrated the greatest predictive value?",
+      "answer": "Developing accurate generalized predictive models is challenging because the post-antibiotic community trajectory is shaped by a multitude of interacting variables at the treatment, microbial, host, and environmental levels. These include antibiotic class and spectrum, administration route, dose, duration, baseline microbiome composition, host age, sex, genetics, immune status, diet, organ function, and concurrent medications — all of which confound cross-study comparisons. The immense inter-individual variation of the baseline gut microbiome further limits generalizability. Early predictive modeling efforts have demonstrated partial success within tightly controlled cohort-specific settings. In one infant cohort, a model using only six predictors (postmenstrual age, breast milk consumption, clinical risk score, and specific antibiotic exposures) explained 33% of species richness variance. Another model using age and antibiotic treatment information alone explained 57% of Shannon diversity variability. These results show that deterministic factors can yield useful predictions within narrow populations, but cross-cohort validation and broader metadata integration are required before such models can generalize. An additional structural limitation is that most microbiome studies have focused on industrialized Western populations, severely limiting the generalizability of existing models.",
+      "topic_tags": ["predictive models", "microbiome dynamics", "inter-individual variation", "model generalizability", "metadata variables", "antibiotic stewardship"]
+    },
+    {
+      "id": "abxmb_hard_6c1f",
+      "difficulty": "hard",
+      "question": "How do metabolite–microorganism–antibiotic dynamics complicate the interpretation of antibiotic susceptibility in the gut microbiome context?",
+      "answer": "Antibiotic susceptibility in the gut is not a fixed property of individual species but is dynamically shaped by the surrounding metabolic environment. Host-derived and microbially-produced metabolites can bidirectionally modulate susceptibility. For example, in Bacteroides thetaiotaomicron, the presence of the polysaccharide pullulan increases tolerance to amoxicillin, while glucose consumption renders the same organism more susceptible. Human milk oligosaccharides perturb membrane permeability in Streptococcus agalactiae, sensitizing it to trimethoprim. In contrast, indole — a tryptophan metabolite produced by Enterobacteriaceae — can induce antibiotic tolerance in nearby Enterobacteriaceae, including Salmonella enterica, acting as an intercellular tolerance signal. Meanwhile, indole-3-acetic acid, another microbial tryptophan derivative, sensitizes Staphylococcus aureus persisters to ciprofloxacin. These examples illustrate that the gut metabolic milieu creates a dynamic antibiotic susceptibility landscape that cannot be predicted from in vitro minimum inhibitory concentration data alone, and that community-level nutrient networks critically alter antibiotic killing across the microbiome.",
+      "topic_tags": ["metabolite-antibiotic interactions", "antibiotic susceptibility", "indole", "nutrient milieu", "B. thetaiotaomicron", "persister cells", "community dynamics"]
+    },
+    {
+      "id": "abxmb_hard_e5b2",
+      "difficulty": "hard",
+      "question": "Compare and contrast the therapeutic strategies of faecal microbiota transplants (FMTs) and engineered probiotics in restoring post-antibiotic gut community structure, including their respective risks and limitations.",
+      "answer": "FMTs involve whole-community replacement from a healthy donor and are the most established post-antibiotic microbiome restoration strategy. They have demonstrated faster microbiome recovery than probiotic cocktails following antibiotic treatment and have been particularly successful in treating recurrent C. difficile infection. However, FMTs carry a significant risk of transferring donor pathogens and ARGs into the recipient — including drug-resistant Escherichia coli and Shiga toxin-producing organisms — which has in rare cases caused severe opportunistic infections. Defined microbial communities (such as SER-109, composed of purified Firmicutes spores, and VE303, a defined low-member consortium) aim to reduce these risks by using characterized organisms. Engineered probiotics offer an alternative with high precision: they can be designed to target specific pathogens, degrade intestinal antibiotics, sense dysbiosis biomarkers, and release antimicrobials only in appropriate contexts — substantially reducing off-target effects. However, engineered probiotics may underperform compared to whole-community approaches in broad microbiome restoration and could expand the resistome in an antibiotic-pretreated gut. Both strategies have limitations: FMTs risk pathogen and ARG transmission; engineered probiotics have narrow activity and may be outpaced by community evolution. Future therapies are likely to combine approaches, pairing immune or metabolic interventions with microbiome-directed strategies.",
+      "topic_tags": ["FMT", "engineered probiotics", "SER-109", "VE303", "microbiome restoration", "ARG transfer", "C. difficile", "therapeutic comparison"]
+    },
+    {
+      "id": "abxmb_hard_7d3a",
+      "difficulty": "hard",
+      "question": "How do the temporal dynamics of chromosomally encoded versus MGE-encoded antibiotic resistance genes differ after antibiotic treatment, and what are the implications for long-term resistome evolution?",
+      "answer": "The temporal trajectory of resistome expansion after antibiotic treatment differs fundamentally between chromosomally encoded ARGs and those carried on mobile genetic elements (MGEs). In the short term, the increase in total resistome burden is driven primarily by clonal expansion of bacteria with chromosomal ARGs — these resistant lineages proliferate under antibiotic selection pressure. However, chromosomal ARG-carrying organisms decline sharply approximately one month after therapy cessation, as the selective advantage diminishes. MGE-encoded ARGs, in contrast, persist for substantially longer periods after treatment ends. This persistence is attributed to the parasitic nature of MGEs: they maintain themselves within bacterial populations even when they confer no growth advantage, and even when they impose a mild fitness cost on the host bacterium. Importantly, antibiotics enrich MGEs and can broaden the taxa involved in ARG dissemination. With prolonged treatment, organisms tend toward more specialized adaptation — retaining ARGs conferring direct growth advantages while shedding unrelated resistance genes over time (likely due to fitness costs). The implication is that a single antibiotic course can leave a long-lasting resistome signature in the gut that is maintained not by persistent resistant clones but by the autonomous replication and transfer of resistance-encoding MGEs.",
+      "topic_tags": ["chromosomal ARGs", "MGEs", "plasmids", "resistome dynamics", "fitness cost", "long-term persistence", "antibiotic selection"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "abxmb_mcq_easy_f1a3",
+      "difficulty": "easy",
+      "question": "Which bacterial phyla are most commonly depleted from the gut microbiome following broad-spectrum antibiotic treatment?",
+      "options": {
+        "A": "Proteobacteria, Verrucomicrobia, and Spirochaetes",
+        "B": "Firmicutes, Bacteroidetes, and Actinobacteria",
+        "C": "Fusobacteria, Cyanobacteria, and Tenericutes",
+        "D": "Firmicutes and Proteobacteria only"
+      },
+      "correct_answer": "B",
+      "explanation": "Foundational studies in healthy adults have shown that antibiotic exposure is associated with significant decreases in the relative abundance of members of Firmicutes, Bacteroidetes, and Actinobacteria — particularly taxa such as Faecalibacterium prausnitzii, Eubacterium spp., Bifidobacterium spp., and Ruminococcus spp. These are the commensals responsible for key metabolic functions like SCFA production.",
+      "topic_tags": ["bacterial phyla", "antibiotic depletion", "Firmicutes", "Bacteroidetes", "Actinobacteria"]
+    },
+    {
+      "id": "abxmb_mcq_easy_b8d2",
+      "difficulty": "easy",
+      "question": "What is antimicrobial resistance (AMR) and where does enrichment for it commonly begin in the context of antibiotic treatment?",
+      "options": {
+        "A": "AMR arises only in hospital-acquired pathogens and begins in the bloodstream",
+        "B": "AMR is the ability of pathogens to evade the immune system and begins in lymphoid tissue",
+        "C": "AMR is the capacity of bacteria to survive antibiotic treatment, and enrichment commonly begins within the gut microbiome of the patient",
+        "D": "AMR is exclusively encoded in plasmids and only emerges after years of chronic antibiotic exposure"
+      },
+      "correct_answer": "C",
+      "explanation": "Antimicrobial resistance compromises the treatment of bacterial infections. Enrichment for AMR often begins within the gut microbiome, where antibiotics increase the abundance of resident bacteria carrying ARGs and alter the total ARG content of the microbial community — the resistome. ARGs encoded within mobile genetic elements can subsequently spread to other bacteria, including pathobionts.",
+      "topic_tags": ["antimicrobial resistance", "AMR", "resistome", "gut microbiome", "ARGs"]
+    },
+    {
+      "id": "abxmb_mcq_easy_3c9e",
+      "difficulty": "easy",
+      "question": "Why are spore-forming bacteria like Clostridioides difficile particularly adept at surviving antibiotic exposure in the gut?",
+      "options": {
+        "A": "They encode beta-lactamases on their chromosomes that degrade most classes of antibiotics",
+        "B": "They form biofilms in the lumen that prevent antibiotic penetration",
+        "C": "They form endospores — non-replicating, metabolically dormant cellular forms that are intrinsically resistant to antibiotics, heat, and oxygen",
+        "D": "They switch to anaerobic respiration pathways that make them insensitive to cell-wall targeting drugs"
+      },
+      "correct_answer": "C",
+      "explanation": "Members of Clostridium and Peptostreptococcus genera among other Firmicutes have the capacity to form endospores — non-replicating cellular forms intrinsically resistant to antibiotics, heat, and oxygen. C. difficile sporulates in response to population density and nutrient availability; these spores survive antibiotic exposure and later germinate when free nutrients and primary bile acids signal a favorable environment for outgrowth.",
+      "topic_tags": ["endospores", "C. difficile", "antibiotic resistance", "sporulation", "spore germination"]
+    },
+
+    {
+      "id": "abxmb_mcq_med_9a4f",
+      "difficulty": "medium",
+      "question": "How does administration route influence the magnitude of gut microbiome perturbation by antibiotics?",
+      "options": {
+        "A": "Intravenous administration causes greater gut microbiome disruption because higher systemic concentrations reach the gut via the bloodstream",
+        "B": "Oral administration causes greater and faster increases in gut ARG relative abundance compared to intravenous administration of equivalent doses",
+        "C": "Route of administration has no significant effect; only drug class determines microbiome perturbation magnitude",
+        "D": "Topical administration causes the greatest gut disruption due to skin-gut immune axis dysregulation"
+      },
+      "correct_answer": "B",
+      "explanation": "In animal studies using tetracycline and ampicillin, oral administration of the same doses resulted in faster and higher increases in relative abundance of ARGs compared to intravenous injection. Oral administration leads to higher drug bioaccumulation in the gastrointestinal tract, which undoubtedly has a role in determining the magnitude of microbiome perturbation. This is also illustrated by oral vancomycin's superior ability to perturb the microbiome, potentially due to its poor absorption in mammals and higher luminal concentrations.",
+      "topic_tags": ["administration route", "oral vs intravenous", "ARGs", "vancomycin", "bioavailability"]
+    },
+    {
+      "id": "abxmb_mcq_med_e2b7",
+      "difficulty": "medium",
+      "question": "What is the primary reason that ARG databases currently used to characterize the gut resistome may underestimate resistance diversity in commensal bacteria?",
+      "options": {
+        "A": "ARG databases only catalog resistance to beta-lactam antibiotics and miss other drug classes",
+        "B": "ARG databases are primarily curated from the existing biomedical literature, creating a bias towards ARGs from human pathogens and underrepresentation of ARGs from commensals and environmental organisms",
+        "C": "ARG databases rely exclusively on phenotypic resistance data and cannot detect genotypic resistance",
+        "D": "ARG databases are too large to be computationally processed for metagenomic analysis"
+      },
+      "correct_answer": "B",
+      "explanation": "ARG databases are typically curated from the existing biomedical literature, which suggests a strong bias toward ARGs from human pathogens and underrepresentation of ARGs from commensals and environmental organisms. This means the resistome of commensal species is systematically undercounted. Functional metagenomic screens, which identify novel ARGs in a sequence-agnostic, function-centric manner, offer a partial solution to this bias.",
+      "topic_tags": ["ARG databases", "resistome characterization", "commensal bacteria", "functional metagenomics", "bias"]
+    },
+    {
+      "id": "abxmb_mcq_med_4d6c",
+      "difficulty": "medium",
+      "question": "Which of the following best describes the relationship between antibiotic spectrum of activity and microbiome perturbation in vivo?",
+      "options": {
+        "A": "Broader-spectrum antibiotics always cause greater microbiome disruption than narrow-spectrum agents",
+        "B": "Narrower in vitro spectrum reliably predicts lower in vivo gut microbiome perturbation",
+        "C": "In vitro spectrum does not always predict in vivo perturbation magnitude; agents with narrower in vitro spectra can paradoxically cause greater gut disruption",
+        "D": "Spectrum of activity is irrelevant; only duration of treatment determines the extent of microbiome damage"
+      },
+      "correct_answer": "C",
+      "explanation": "A striking example is vancomycin, which has a narrower in vitro spectrum than amoxicillin (Gram-positive specific) yet causes significantly greater reductions in alpha diversity, greater increases in primary bile acids, and greater decreases in SCFAs in comparative studies. Bioavailability, administration route, and community-level metabolic network effects all mean that in vitro spectrum is an insufficient predictor of in vivo gut microbiome perturbation.",
+      "topic_tags": ["antibiotic spectrum", "in vitro vs in vivo", "vancomycin", "microbiome perturbation", "paradox"]
+    },
+    {
+      "id": "abxmb_mcq_med_7f1d",
+      "difficulty": "medium",
+      "question": "What is the proposed mechanism by which prebiotic polysaccharides help maintain colonization resistance against C. difficile during antibiotic treatment?",
+      "options": {
+        "A": "Polysaccharides bind directly to C. difficile surface proteins, preventing epithelial adhesion",
+        "B": "Polysaccharides stimulate host IgA production, which neutralizes C. difficile toxins",
+        "C": "Polysaccharide-rich diets restore SCFA production by supporting commensal microbiota, maintain commensal community structure, and may act as physical barriers to pathogen epithelial adherence",
+        "D": "Polysaccharides chelate bile acids in the colon, preventing C. difficile spore germination signals"
+      },
+      "correct_answer": "C",
+      "explanation": "Polysaccharide-rich diets can restore SCFA production in the antibiotic-disrupted gut, which is largely associated with colonization resistance against pathogens including C. difficile. Defined polysaccharides (including mucin glycans and dietary xanthan gum) have been shown to maintain commensal microbiota during antibiotic treatment and prevent C. difficile colonization. Additionally, soluble non-starch polysaccharides may act as physical barriers against pathogen adherence to the epithelial surface.",
+      "topic_tags": ["prebiotics", "polysaccharides", "C. difficile", "colonization resistance", "SCFAs", "commensal restoration"]
+    },
+    {
+      "id": "abxmb_mcq_med_c5a9",
+      "difficulty": "medium",
+      "question": "How does the co-administration of non-antibiotic medications potentially complicate the interpretation of antibiotic–microbiome studies?",
+      "options": {
+        "A": "Non-antibiotic medications directly compete for binding to bacterial ribosomes, reducing antibiotic efficacy",
+        "B": "Many xenobiotic compounds have the capacity to affect growth promotion or inhibition in a species-specific manner, and some pharmaceuticals can antagonize or synergize with antibiotics against specific microorganisms",
+        "C": "Non-antibiotic medications exclusively protect the microbiome by inhibiting antibiotic absorption in the gut",
+        "D": "Co-administered medications increase antibiotic bioavailability, amplifying gut microbiome disruption uniformly"
+      },
+      "correct_answer": "B",
+      "explanation": "Many non-antibiotic medications — including proton-pump inhibitors, metformin, and laxatives — have strong associations with taxonomic and metabolic pathway changes in the gut microbiome. Xenobiotic compounds can affect bacterial growth in a species-specific manner. Some drugs can antagonize or synergize with antibiotics against specific organisms; for example, the anticoagulant dicumarol was shown to antagonize erythromycin-mediated killing of Bacteroides vulgatus while allowing killing of Enterococcus faecalis, highlighting the complexity of coadministration effects.",
+      "topic_tags": ["coadministration", "non-antibiotic medications", "xenobiotics", "drug interactions", "microbiome confounders"]
+    },
+
+    {
+      "id": "abxmb_mcq_hard_2b8f",
+      "difficulty": "hard",
+      "question": "Why is it methodologically difficult to determine whether antibiotics directly increase horizontal gene transfer (HGT) rates versus simply selecting for transconjugants that carry resistance plasmids?",
+      "options": {
+        "A": "HGT can only be measured by culturing bacteria on selective plates, which itself kills the organisms involved in transfer",
+        "B": "Both increased conjugation rates and antibiotic-mediated growth selection of transconjugants result in a higher fraction of transconjugants in the community, making it inherently difficult to disentangle the two effects without experimental designs that control for differential growth",
+        "C": "Short-read sequencing cannot detect plasmid sequences at all, so HGT events are entirely invisible to current metagenomic approaches",
+        "D": "Antibiotics completely suppress HGT at therapeutic concentrations, so any observed ARG spread is exclusively due to clonal expansion"
+      },
+      "correct_answer": "B",
+      "explanation": "When antibiotics are present, either increased conjugation rates OR selective growth advantage for plasmid-containing transconjugants (or both concurrently) would result in an elevated fraction of transconjugants relative to the total community. These two outcomes are experimentally indistinguishable without precise measurement of transfer frequency while controlling for growth rate effects. This confounding has led to conflicting reports in the literature, with some studies showing highest plasmid transfer rates in the absence of antibiotics. Careful experimental design decoupling HGT rates from selection effects is needed.",
+      "topic_tags": ["HGT", "conjugation", "transconjugants", "selection pressure", "experimental design", "confounding"]
+    },
+    {
+      "id": "abxmb_mcq_hard_8e3c",
+      "difficulty": "hard",
+      "question": "Which combination of approaches would best achieve species-specific antibiotic activity — maximizing killing of a target pathogen while minimizing collateral damage to commensals?",
+      "options": {
+        "A": "High-dose broad-spectrum antibiotics combined with probiotics administered simultaneously to replace killed commensals",
+        "B": "Drug combinations that are synergistic against the target pathogen and antagonistic against commensal microorganisms, potentially guided by species-specific activity profiling",
+        "C": "Intravenous delivery of all antibiotics to avoid gut exposure entirely, regardless of infection site",
+        "D": "Selecting antibiotics solely based on narrowest in vitro spectrum, since this reliably predicts narrowest in vivo spectrum"
+      },
+      "correct_answer": "B",
+      "explanation": "Research has demonstrated that the combined activity of antibiotic combinations is commonly species-specific and strain-specific. This opens the possibility of designing narrow-spectrum therapies using drug combinations: pairs that are synergistic against the target pathogen but antagonistic (or neutral) against commensal microorganisms. This represents a more sophisticated precision approach than simply selecting for narrow in vitro spectrum, which does not reliably translate to narrow in vivo gut impact, as demonstrated by the paradoxical case of vancomycin.",
+      "topic_tags": ["drug combinations", "species-specific activity", "antibiotic synergy", "antibiotic antagonism", "precision treatment", "narrow spectrum"]
+    }
+  ]
+}

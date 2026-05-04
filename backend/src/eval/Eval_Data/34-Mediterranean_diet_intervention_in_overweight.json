@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Mediterranean Diet Intervention in Overweight and Obese Subjects Lowers Plasma Cholesterol and Causes Changes in the Gut Microbiome and Metabolome Independently of Energy Intake",
+    "authors": ["Victoria Meslier", "Manolo Laiola", "Henrik Munch Roager", "Francesca De Filippis", "Hugo Roume", "Benoit Quinquis", "Rosalba Giacco", "Ilario Mennella", "Rosalia Ferracane", "Nicolas Pons", "Edoardo Pasolli", "Angela Rivellese", "Lars Ove Dragsted", "Paola Vitaglione", "Stanislav Dusko Ehrlich", "Danilo Ercolini"],
+    "journal": "Gut",
+    "year": 2020,
+    "doi": "10.1136/gutjnl-2019-320438",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "medDiet_easy_001",
+      "difficulty": "easy",
+      "question": "What is the Mediterranean diet and what types of foods does it emphasise over a Western dietary pattern?",
+      "answer": "The Mediterranean diet (MD) is a recommended nutritional pattern characterised by high intake of plant-based foods including fruits, vegetables, wholegrain cereal products, legumes, nuts, and fish, with reduced intake of refined cereals, dairy, and meat products. It contrasts with a Western diet, which is rich in energy-dense foods high in fats, sugars, and animal proteins, and low in fruits and vegetables. The MD has been associated with prevention of cardiovascular disease, type 2 diabetes, obesity, inflammatory diseases, degenerative diseases, and cancer.",
+      "topic_tags": ["Mediterranean diet", "dietary pattern", "plant-based foods", "Western diet", "cardiovascular health"]
+    },
+    {
+      "id": "medDiet_easy_002",
+      "difficulty": "easy",
+      "question": "How does adherence to a Mediterranean diet relate to changes in plasma cholesterol levels?",
+      "answer": "There is a linear, dose-dependent relationship between Mediterranean diet adherence and plasma cholesterol reduction. Each unit increase in the Mediterranean diet adherence index corresponds to approximately a 2% reduction in total plasma cholesterol, a 2% reduction in LDL-cholesterol, and a 1% reduction in HDL-cholesterol, after adjustment for age, sex, BMI, and energy intake. This highlights that the quality and completeness of dietary adherence — rather than simply switching to any modified diet — drives the cholesterol-lowering effect.",
+      "topic_tags": ["Mediterranean diet adherence", "plasma cholesterol", "LDL", "HDL", "dose-response"]
+    },
+    {
+      "id": "medDiet_easy_003",
+      "difficulty": "easy",
+      "question": "What is carnitine and why is it used as a biomarker of dietary change when switching from an animal-based to a plant-based diet?",
+      "answer": "Carnitine is a compound found predominantly in meat and animal-derived products. It serves as a reliable urinary and plasma biomarker of meat intake because its concentration in the body reflects recent consumption of animal-based foods. When individuals shift toward a plant-based dietary pattern such as the Mediterranean diet, with reduced meat consumption, plasma and urinary carnitine levels fall measurably and proportionally, making it a useful objective marker to confirm dietary compliance independent of self-reported food diaries.",
+      "topic_tags": ["carnitine", "dietary biomarker", "meat intake", "Mediterranean diet", "compliance"]
+    },
+    {
+      "id": "medDiet_easy_004",
+      "difficulty": "easy",
+      "question": "What are urolithins, what are their dietary precursors, and what are their proposed health benefits?",
+      "answer": "Urolithins are gut microbial metabolites produced from the fermentation of ellagitannins, polyphenols found in foods such as berries, pomegranate, and walnuts. In the context of a Mediterranean diet enriched with nuts, increased urinary urolithin glucuronides reflect the conversion of walnut-derived ellagitannins by the gut microbiota. Urolithin A has been associated with improved intestinal barrier function, reduced cardiometabolic risk, and potential anticancer effects in vitro against prostate, endometrial, and breast cancer. Urolithin levels are negatively correlated with cardiometabolic risk factors including triglycerides and BMI.",
+      "topic_tags": ["urolithins", "ellagitannins", "gut microbiota metabolites", "nuts", "cardiometabolic risk"]
+    },
+    {
+      "id": "medDiet_easy_005",
+      "difficulty": "easy",
+      "question": "What role does Faecalibacterium prausnitzii play in gut health, and how is it influenced by dietary changes?",
+      "answer": "Faecalibacterium prausnitzii is a fibre-degrading commensal bacterium with well-documented anti-inflammatory properties and a role in supporting intestinal barrier development. Its abundance is reduced in patients with inflammatory bowel diseases such as Crohn's disease. Dietary interventions that increase fibre intake — such as shifting to a Mediterranean diet — enrich F. prausnitzii in the gut. Higher levels of F. prausnitzii are also associated with increased faecal butyrate production and with butyrate precursor metabolic pathways, reinforcing its role as a beneficial microbial species linking diet, gut microbiota, and metabolic health.",
+      "topic_tags": ["Faecalibacterium prausnitzii", "fibre", "anti-inflammatory", "gut barrier", "butyrate"]
+    },
+
+    {
+      "id": "medDiet_medium_001",
+      "difficulty": "medium",
+      "question": "How does switching from an animal-protein-rich diet to a Mediterranean diet affect faecal bile acid concentrations, and what are the mechanisms and health implications of this change?",
+      "answer": "Shifting to a Mediterranean diet, which involves replacing meat and animal-based products with plant-based foods, leads to significant reductions in faecal concentrations of both primary and secondary bile acids, including deoxycholic acid, lithocholic acid, and chenodeoxycholic acid. This occurs because bile acid production is tightly linked to dietary fat and protein intake from animal sources. Secondary bile acids are formed from primary bile acids by gut bacteria such as Bilophila wadsworthia; when animal fat and protein intake decreases, this bacterial species and the bile acid pool it influences are also reduced. Because elevated bile acids have been implicated in atherosclerosis, type 2 diabetes, and other cardiometabolic diseases, their reduction represents a clinically meaningful benefit of the Mediterranean diet beyond cholesterol lowering.",
+      "topic_tags": ["bile acids", "Mediterranean diet", "Bilophila wadsworthia", "cardiometabolic disease", "dietary fat"]
+    },
+    {
+      "id": "medDiet_medium_002",
+      "difficulty": "medium",
+      "question": "What is the relationship between gut microbiome gene richness and systemic inflammation, and how does diet modulate this relationship?",
+      "answer": "Gut microbiome gene richness — a measure of microbial diversity at the functional gene level — is inversely correlated with systemic inflammation as measured by serum high-sensitivity C-reactive protein (hs-CRP). Individuals who experience an increase in gut microbiome gene richness during a dietary intervention show significantly lower inflammatory markers, while those whose gene richness decreases show elevated inflammation. A Mediterranean diet intervention supports this inverse relationship by promoting a more diverse microbial community through increased fibre and plant food intake, suggesting that diet-induced improvements in microbial diversity may be a mechanism through which the Mediterranean diet reduces chronic low-grade inflammation.",
+      "topic_tags": ["gut microbiome gene richness", "inflammation", "hs-CRP", "Mediterranean diet", "microbial diversity"]
+    },
+    {
+      "id": "medDiet_medium_003",
+      "difficulty": "medium",
+      "question": "How does a Mediterranean diet affect branched-chain fatty acids in the gut, and what does this reveal about colonic fermentation patterns?",
+      "answer": "Mediterranean diet adherence leads to significant reductions in faecal branched-chain fatty acids (BCFAs) including valerate, isovalerate, isobutyrate, and 2-methylbutyrate. BCFAs are produced by colonic proteolytic fermentation — the bacterial breakdown of amino acids from dietary proteins, particularly those from animal sources. Their reduction following a shift toward a plant-based Mediterranean diet reflects a decrease in colonic proteolytic fermentation, paralleled by decreased microbial-derived proteolysis products in urine. This metabolic shift indicates that replacing animal proteins with plant-based proteins changes the dominant substrate available to colonic bacteria, favouring saccharolytic (carbohydrate) fermentation over proteolytic fermentation.",
+      "topic_tags": ["branched-chain fatty acids", "proteolytic fermentation", "saccharolytic fermentation", "Mediterranean diet", "colonic metabolism"]
+    },
+    {
+      "id": "medDiet_medium_004",
+      "difficulty": "medium",
+      "question": "Why might faecal short-chain fatty acid concentrations remain unchanged despite a doubling of dietary fibre intake on a Mediterranean diet?",
+      "answer": "Despite a twofold increase in dietary fibre intake, faecal concentrations of the main SCFAs — acetate, butyrate, and propionate — do not significantly increase. This apparent paradox can be explained by the distinction between SCFA production and SCFA excretion: faecal SCFA levels represent the difference between what is produced by microbial fermentation and what is absorbed or utilised by colonocytes. A Mediterranean diet may improve gut epithelial function, increasing SCFA uptake and utilisation in the colon and rectum, such that more of the SCFAs produced from increased fibre are consumed locally rather than appearing in the faeces. This interpretation is supported by evidence that dysbiosis is associated with increased faecal SCFA excretion.",
+      "topic_tags": ["SCFA", "dietary fibre", "colonocyte absorption", "gut epithelial function", "faecal excretion"]
+    },
+    {
+      "id": "medDiet_medium_005",
+      "difficulty": "medium",
+      "question": "How does the gut microbiome influence whether an individual responds to a Mediterranean diet with improved insulin sensitivity?",
+      "answer": "Insulin sensitivity improvements in response to a Mediterranean diet are linked to baseline gut microbiome composition rather than to a uniform effect of the diet itself. Individuals who exhibit reduced insulin resistance on the diet tend to have higher baseline abundance of several Bacteroides species (such as B. uniformis and B. vulgatus) and lower baseline levels of Prevotella copri. Prevotella copri baseline abundance positively correlates with insulin resistance variation over the intervention — higher P. copri at baseline is associated with worsening or maintenance of insulin resistance. P. copri's link to insulin resistance is strain-dependent and has been connected to increased capacity for branched-chain amino acid biosynthesis, which can impair insulin signalling.",
+      "topic_tags": ["insulin resistance", "Prevotella copri", "Bacteroides", "gut microbiome", "personalised nutrition"]
+    },
+    {
+      "id": "medDiet_medium_006",
+      "difficulty": "medium",
+      "question": "What is the functional significance of the increase in gut metabolic modules related to carbohydrate degradation and butyrate precursor pathways following Mediterranean diet adherence?",
+      "answer": "Increased Mediterranean diet adherence is associated with an enrichment of gut metabolic modules (GMMs) related to amino acid and carbohydrate degradation, triglyceride and glycoprotein degradation, and conversion of acetyl-CoA and glutamate degradation pathways that lead to crotonyl-CoA — a key intermediate in butyrate biosynthesis. This functional reprogramming of the microbiome indicates that the high-fibre, plant-rich Mediterranean diet promotes a microbial metabolic environment that is better equipped to produce butyrate, an SCFA with anti-inflammatory and gut barrier-protective properties. The enrichment of these pathways is strongly linked to the abundance of F. prausnitzii, connecting taxonomic and functional microbiome changes to dietary adherence.",
+      "topic_tags": ["gut metabolic modules", "carbohydrate degradation", "butyrate biosynthesis", "crotonyl-CoA", "Mediterranean diet microbiome"]
+    },
+
+    {
+      "id": "medDiet_hard_001",
+      "difficulty": "hard",
+      "question": "How does the isocaloric design of a Mediterranean diet intervention resolve confounding issues present in most observational diet-microbiome studies, and what mechanistic conclusions does this allow?",
+      "answer": "Most prior knowledge about Mediterranean diet effects on the microbiome derives from observational studies where confounding factors — including differences in total energy intake, macronutrient ratios, physical activity, and baseline health status — make it difficult to attribute changes specifically to diet quality. An isocaloric design, where each participant's total daily energy and macronutrient intake is matched to their habitual intake while only the food sources are changed to Mediterranean diet-typical ones, isolates the effect of dietary pattern from the effect of caloric restriction or changes in total macronutrient composition. This design allows the conclusion that observed reductions in plasma cholesterol, changes in gut microbiome composition, and metabolome shifts are caused specifically by the qualitative change in food choices — the replacement of animal-based and refined foods with plant-based foods — rather than by weight loss, reduced caloric intake, or altered physical activity. This causal inference is not possible in observational studies.",
+      "topic_tags": ["isocaloric design", "causal inference", "confounding", "observational studies", "Mediterranean diet mechanism"]
+    },
+    {
+      "id": "medDiet_hard_002",
+      "difficulty": "hard",
+      "question": "What is the significance of Ruminococcus gnavus as a proinflammatory species, and how does the Mediterranean diet affect it and its role in gut inflammation?",
+      "answer": "Ruminococcus gnavus is a mucin-degrading gut bacterium that has been recently characterised as proinflammatory due to its secretion of a specific polysaccharide that induces tumour necrosis factor alpha (TNF-α) production in dendritic cells. It is enriched in inflammatory conditions and in individuals with Crohn's disease. In metabolomics terms, R. gnavus also possesses a unique intramolecular trans-sialidase that can release sialic acid from mucins in a modified form, potentially giving it a competitive nutritional advantage in an inflamed mucosal environment. A Mediterranean diet intervention, by increasing fibre and reducing refined and animal-based foods, significantly reduces the relative abundance of R. gnavus while simultaneously increasing the anti-inflammatory species F. prausnitzii. This reciprocal shift — decrease in a proinflammatory mucin-degrader alongside increase in an anti-inflammatory fibre-fermenter — represents a mechanistically coherent explanation for how dietary pattern modulates gut inflammation through microbiome remodelling.",
+      "topic_tags": ["Ruminococcus gnavus", "proinflammatory", "TNF-alpha", "Mediterranean diet", "gut inflammation", "F. prausnitzii"]
+    },
+    {
+      "id": "medDiet_hard_003",
+      "difficulty": "hard",
+      "question": "How do urinary acylcarnitines serve as mechanistic metabolic indicators of diet-induced shifts in energy substrate utilisation, and what are the cardiovascular implications?",
+      "answer": "Acylcarnitines are intermediates in fatty acid beta-oxidation: carnitine transports fatty acids into the mitochondria for oxidation, and short- and medium-chain acylcarnitines accumulate in urine when beta-oxidation is the dominant pathway for mitochondrial energy production. A Mediterranean diet, by substantially increasing dietary fibre intake, provides a sustained and steady release of glucose from complex carbohydrate fermentation. This extended carbohydrate availability shifts mitochondrial substrate preference from fatty acid beta-oxidation toward glycolysis. The resulting reduction in urine short- and medium-chain acylcarnitines serves as a functional biomarker of this metabolic shift. This is clinically meaningful because plasma acylcarnitines have been independently associated with increased cardiovascular disease risk; their reduction following Mediterranean diet adherence thus suggests a diet-induced metabolic improvement relevant to cardiovascular health, operating through a mechanism distinct from cholesterol lowering.",
+      "topic_tags": ["acylcarnitines", "beta-oxidation", "glycolysis", "cardiovascular risk", "energy metabolism", "dietary fibre"]
+    },
+    {
+      "id": "medDiet_hard_004",
+      "difficulty": "hard",
+      "question": "What does the concept of personalised microbiome responses to diet imply for the design of future nutritional interventions targeting metabolic health?",
+      "answer": "Personalised microbiome responses to diet reveal that identical dietary interventions can produce heterogeneous clinical outcomes depending on baseline gut microbiome composition. Specific microbial signatures — such as high Prevotella copri predicting resistance to insulin sensitivity improvement, or high Bacteroides species predicting favourable glycaemic responses — indicate that the microbiome acts as a mediating layer between diet and metabolic outcomes. Moreover, urolithin production from ellagitannins varies dramatically across individuals depending on which urolithin-producing taxa they harbour, meaning some individuals extract more cardiometabolic benefit from nut consumption than others. This personalised response concept implies that effective dietary interventions for metabolic disease may need to begin with baseline microbiome profiling to stratify individuals into metabotypes, predict likely responders, and tailor dietary prescriptions — or microbiome-targeted adjunct therapies — accordingly. This positions the gut microbiome as a precision medicine target in nutritional intervention design.",
+      "topic_tags": ["personalised nutrition", "precision medicine", "microbiome stratification", "metabotypes", "diet response heterogeneity"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "medDiet_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which microbial species is enriched following adherence to a Mediterranean diet and is associated with fibre degradation and anti-inflammatory properties?",
+      "options": {
+        "A": "Ruminococcus gnavus",
+        "B": "Bilophila wadsworthia",
+        "C": "Faecalibacterium prausnitzii",
+        "D": "Prevotella copri"
+      },
+      "correct_answer": "C",
+      "explanation": "Faecalibacterium prausnitzii is a fibre-degrading, anti-inflammatory bacterium that increases with Mediterranean diet adherence. Ruminococcus gnavus is a proinflammatory species that decreases, Bilophila wadsworthia is linked to high-fat and animal-based diets, and Prevotella copri is associated with insulin resistance.",
+      "topic_tags": ["Faecalibacterium prausnitzii", "Mediterranean diet", "fibre", "anti-inflammatory"]
+    },
+    {
+      "id": "medDiet_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What dietary source is primarily responsible for the increase in urinary urolithin glucuronides observed with Mediterranean diet adherence?",
+      "options": {
+        "A": "Wholegrain cereals",
+        "B": "Leafy green vegetables",
+        "C": "Fish and seafood",
+        "D": "Nuts (walnuts)"
+      },
+      "correct_answer": "D",
+      "explanation": "Urolithins are produced by gut microbial fermentation of ellagitannins, which are polyphenols found in berries, pomegranate, and walnuts. In this study, nut consumption was the only ellagitannin-containing food that significantly increased during the intervention, making walnut intake the primary driver of elevated urinary urolithin glucuronides.",
+      "topic_tags": ["urolithins", "ellagitannins", "nuts", "walnuts", "Mediterranean diet"]
+    },
+    {
+      "id": "medDiet_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "Which of the following best describes branched-chain fatty acids (BCFAs) and their association with dietary pattern?",
+      "options": {
+        "A": "BCFAs are produced by fermentation of dietary fibre and increase with plant-based diets",
+        "B": "BCFAs are produced by colonic proteolytic fermentation of amino acids and are linked to animal protein intake",
+        "C": "BCFAs are absorbed from plant oils and serve as energy substrates for colonocytes",
+        "D": "BCFAs are produced exclusively by Faecalibacterium prausnitzii and signal gut barrier integrity"
+      },
+      "correct_answer": "B",
+      "explanation": "BCFAs such as valerate, isovalerate, isobutyrate, and 2-methylbutyrate are produced by bacterial proteolytic fermentation of amino acids, particularly from animal-derived proteins. They decrease in the gut when animal-based foods are replaced by plant-based foods, as occurs in a Mediterranean diet intervention.",
+      "topic_tags": ["branched-chain fatty acids", "proteolytic fermentation", "animal protein", "colonic metabolism"]
+    },
+
+    {
+      "id": "medDiet_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "What is the primary explanation for why faecal SCFA concentrations may not increase despite a doubling of dietary fibre intake on a Mediterranean diet?",
+      "options": {
+        "A": "Fibre fermentation is inhibited by the simultaneous increase in plant polyphenols",
+        "B": "The microbiome lacks sufficient diversity to ferment the increased fibre load",
+        "C": "Improved gut epithelial function leads to greater colonic absorption and utilisation of SCFAs, reducing faecal excretion",
+        "D": "The Mediterranean diet decreases the abundance of butyrate-producing bacteria"
+      },
+      "correct_answer": "C",
+      "explanation": "Faecal SCFA levels reflect the balance between microbial production and host absorption/utilisation. A Mediterranean diet may enhance gut epithelial function, increasing SCFA uptake by colonocytes. This is supported by evidence that dysbiosis — in which epithelial function is compromised — is paradoxically associated with elevated faecal SCFA excretion.",
+      "topic_tags": ["SCFAs", "dietary fibre", "colonocyte absorption", "gut barrier", "faecal excretion"]
+    },
+    {
+      "id": "medDiet_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "How does the gut microbiome composition modulate individual responses to a Mediterranean diet with respect to insulin sensitivity?",
+      "options": {
+        "A": "Individuals with high baseline Ruminococcus gnavus consistently show improved insulin sensitivity",
+        "B": "Higher baseline Prevotella copri levels are associated with greater insulin resistance that does not improve on the Mediterranean diet, while higher Bacteroides species predict improvement",
+        "C": "Microbiome composition has no predictive value for insulin sensitivity responses; only total fibre intake matters",
+        "D": "Participants with low gut gene richness at baseline show the greatest insulin sensitivity improvements"
+      },
+      "correct_answer": "B",
+      "explanation": "Individuals who improved insulin resistance on the Mediterranean diet had higher baseline Bacteroides species (including B. uniformis and B. vulgatus) and lower Prevotella copri at baseline. P. copri levels positively correlated with insulin resistance variation, meaning higher baseline P. copri predicted less favourable glycaemic outcomes. This demonstrates that baseline microbiome composition can stratify metabolic responders.",
+      "topic_tags": ["Prevotella copri", "Bacteroides", "insulin resistance", "personalised nutrition", "microbiome stratification"]
+    },
+    {
+      "id": "medDiet_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "What mechanistic link connects Bilophila wadsworthia to faecal bile acid levels, and how does the Mediterranean diet affect this relationship?",
+      "options": {
+        "A": "Bilophila wadsworthia produces primary bile acids directly from cholesterol in the liver",
+        "B": "Bilophila wadsworthia is enriched by animal fat and protein intake and is associated with higher bile acid levels; Mediterranean diet adherence reduces both this species and faecal bile acid concentrations",
+        "C": "Bilophila wadsworthia degrades secondary bile acids into harmless products, and its reduction worsens bile acid accumulation",
+        "D": "Bilophila wadsworthia competes with F. prausnitzii for fibre substrates and is enriched only when fibre intake is low"
+      },
+      "correct_answer": "B",
+      "explanation": "Bilophila wadsworthia thrives on high-fat and animal-protein-rich diets and has been previously linked to elevated bile acid levels and irritable bowel disease. In this study, individuals with the greatest reductions in faecal bile acid concentrations following Mediterranean diet adherence also exhibited the largest decreases in Bilophila wadsworthia abundance, demonstrating a coherent diet-microbe-metabolite axis.",
+      "topic_tags": ["Bilophila wadsworthia", "bile acids", "Mediterranean diet", "animal fat", "cardiometabolic disease"]
+    },
+    {
+      "id": "medDiet_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "What do increases in gut metabolic modules related to glutamate degradation and crotonyl-CoA biosynthesis indicate about the microbiome's functional response to a Mediterranean diet?",
+      "options": {
+        "A": "They indicate enhanced microbial capacity for gluconeogenesis, supporting host blood glucose stability",
+        "B": "They reflect increased potential for butyrate production, since crotonyl-CoA is a biosynthetic precursor to butyrate",
+        "C": "They signal increased protein catabolism caused by the higher plant protein intake of the Mediterranean diet",
+        "D": "They indicate upregulated mucin degradation pathways that protect the gut epithelium"
+      },
+      "correct_answer": "B",
+      "explanation": "Crotonyl-CoA is an intermediate in the butyrate biosynthesis pathway. Enrichment of gut metabolic modules involving glutamate degradation and acetyl-CoA conversion, both leading to crotonyl-CoA, indicates that the microbiome has increased functional potential for butyrate production in response to Mediterranean diet adherence. This pathway enrichment is strongly correlated with F. prausnitzii abundance.",
+      "topic_tags": ["gut metabolic modules", "crotonyl-CoA", "butyrate biosynthesis", "Mediterranean diet", "F. prausnitzii"]
+    },
+    {
+      "id": "medDiet_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "Why does the Mediterranean diet reduce urine and plasma acylcarnitine levels, and what is the cardiovascular relevance of this change?",
+      "options": {
+        "A": "The Mediterranean diet reduces dietary carnitine from meat, directly lowering systemic carnitine and acylcarnitine pools",
+        "B": "High fibre intake extends carbohydrate availability and shifts mitochondrial energy production from beta-oxidation toward glycolysis, reducing acylcarnitine generation and urinary excretion",
+        "C": "Increased fish intake introduces omega-3 fatty acids that competitively inhibit acylcarnitine formation in the liver",
+        "D": "Plant polyphenols directly inhibit carnitine acyltransferase enzymes responsible for acylcarnitine synthesis"
+      },
+      "correct_answer": "B",
+      "explanation": "Acylcarnitines are produced during fatty acid beta-oxidation. Sustained carbohydrate availability from fibre fermentation shifts mitochondrial substrate preference toward glucose oxidation (glycolysis), reducing reliance on beta-oxidation and thereby lowering acylcarnitine generation. Since plasma acylcarnitines have been independently associated with increased cardiovascular disease risk, their reduction is a clinically meaningful Mediterranean diet benefit.",
+      "topic_tags": ["acylcarnitines", "beta-oxidation", "glycolysis", "cardiovascular risk", "dietary fibre", "mitochondria"]
+    },
+
+    {
+      "id": "medDiet_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "An isocaloric Mediterranean diet intervention is found to lower plasma LDL-cholesterol. What is the proposed primary dietary mechanism, and why does this finding have specific scientific value compared to prior evidence?",
+      "options": {
+        "A": "The cholesterol lowering is driven by increased omega-3 intake from fish, which activates PPAR-alpha in the liver; prior trials established this mechanism clearly in normal-weight populations",
+        "B": "Reduced dietary cholesterol and saturated fat intake — achieved by replacing animal-based with plant-based foods — are the primary drivers; the isocaloric design uniquely isolates these qualitative dietary changes from energy restriction or macronutrient ratio changes that confound most prior studies",
+        "C": "Gut microbiome production of propionate inhibits hepatic cholesterol synthesis; this mechanism was first demonstrated in observational cross-sectional studies with identical statistical power",
+        "D": "The cholesterol lowering is mediated entirely by increased soluble fibre, which binds bile acids in the gut; this was already definitively proven in isocaloric randomised trials of comparable design"
+      },
+      "correct_answer": "B",
+      "explanation": "The study attributes cholesterol lowering primarily to reduced dietary cholesterol and saturated fat intake resulting from replacing animal-based foods with plant-based ones. The isocaloric design is scientifically valuable because it controls for energy intake and physical activity, enabling causal attribution of the cholesterol effect to qualitative dietary change alone — something observational studies and non-isocaloric trials cannot establish.",
+      "topic_tags": ["LDL cholesterol", "isocaloric design", "dietary cholesterol", "saturated fat", "causal inference", "Mediterranean diet"]
+    },
+    {
+      "id": "medDiet_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "What does the reciprocal shift in relative abundance of Ruminococcus gnavus and Faecalibacterium prausnitzii following Mediterranean diet adherence reveal about the microbiome-inflammation axis?",
+      "options": {
+        "A": "It shows that these two species compete directly for identical fibre substrates, so enriching one necessarily depletes the other regardless of dietary context",
+        "B": "The reciprocal shift suggests that Mediterranean diet remodelling moves the microbiome away from a proinflammatory configuration (high R. gnavus, which secretes TNF-alpha-inducing polysaccharide) toward an anti-inflammatory one (high F. prausnitzii, which produces anti-inflammatory compounds inhibiting NF-κB), indicating microbiome-mediated modulation of host inflammatory tone",
+        "C": "Both species are primarily regulated by plasma bile acid concentrations rather than dietary fibre intake, so the dietary shift affects them indirectly through reduced bile acids alone",
+        "D": "The change reflects only a transient dysbiosis where Mediterranean diet increases F. prausnitzii temporarily, but long-term colonisation by R. gnavus is restored regardless of dietary pattern"
+      },
+      "correct_answer": "B",
+      "explanation": "R. gnavus produces a polysaccharide that induces TNF-α in dendritic cells, making it a mechanistically proinflammatory species. F. prausnitzii produces anti-inflammatory compounds that inhibit the NF-κB pathway. Their reciprocal shift with Mediterranean diet adherence — R. gnavus decreasing as F. prausnitzii increases — represents a coherent microbiome-level anti-inflammatory mechanism that may partly explain the broader health benefits of the Mediterranean diet, including observed improvements in gene richness and inflammatory markers.",
+      "topic_tags": ["Ruminococcus gnavus", "Faecalibacterium prausnitzii", "inflammation", "TNF-alpha", "NF-κB", "Mediterranean diet microbiome"]
+    }
+  ]
+}

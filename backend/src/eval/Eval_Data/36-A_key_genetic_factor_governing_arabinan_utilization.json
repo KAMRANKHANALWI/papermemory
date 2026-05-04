@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "A key genetic factor governing arabinan utilization in the gut microbiome alleviates constipation",
+    "authors": ["Chengcheng Zhang", "Leilei Yu", "Chenchen Ma", "Shuaiming Jiang", "Yufeng Zhang", "Shunhe Wang", "Fengwei Tian", "Yuzheng Xue", "Jianxin Zhao", "Hao Zhang", "Liming Liu", "Wei Chen", "Shi Huang", "Jiachao Zhang", "Qixiao Zhai"],
+    "journal": "Cell Host & Microbe",
+    "year": 2023,
+    "doi": "10.1016/j.chom.2023.10.011",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "arabinan_FC_easy_001",
+      "difficulty": "easy",
+      "question": "What is functional constipation and what gut microbial changes are associated with it?",
+      "answer": "Functional constipation (FC) is a globally prevalent bowel disorder characterized by recurrent infrequent stools, difficult stool passage, or incomplete defecation. It is associated with impaired gastrointestinal motility and gut microbial dysbiosis, specifically featuring a significant decrease in the abundance of beneficial microorganisms such as Bifidobacteria, Lacticaseibacillus, and Lactiplantibacillus. FC has also been linked to cardiovascular disease, Parkinson disease, mental disorders, infantile autism, and colorectal cancer.",
+      "topic_tags": ["functional constipation", "gut dysbiosis", "Bifidobacteria", "gastrointestinal motility"]
+    },
+    {
+      "id": "arabinan_FC_easy_002",
+      "difficulty": "easy",
+      "question": "What is arabinan and why is it relevant to gut microbial metabolism?",
+      "answer": "Arabinan is an indigestible dietary fiber that forms a significant portion of pectic polysaccharides found in various plant tissues. It is considered a poorly accessible source of nutrients for normal gut microbiota, meaning most gut bacteria cannot efficiently utilize it. Certain bacterial strains possessing specific arabinan-degrading gene clusters can break down arabinan into metabolically useful products such as arabinose, which can then be fermented to produce short-chain fatty acids including acetate. This unique ability to exploit arabinan as a carbon source provides metabolic advantages in the distal colon where glucose supply is typically exhausted.",
+      "topic_tags": ["arabinan", "dietary fiber", "pectic polysaccharides", "gut fermentation", "short-chain fatty acids"]
+    },
+    {
+      "id": "arabinan_FC_easy_003",
+      "difficulty": "easy",
+      "question": "What is the abfA cluster and what enzymatic function does it encode?",
+      "answer": "The abfA cluster is a gene cluster found in certain bacterial strains, most notably some Bifidobacterium longum strains, that governs arabinan utilization. It contains four linked genes all functionally annotated as alpha-L-arabinofuranosidase (abfA), a glycoside hydrolase responsible for breaking down bonds between sugars in arabinan. The cluster enables bacteria that possess it to efficiently degrade arabinan, grow robustly on arabinan as a carbon source, and produce substantial quantities of acetate as a fermentation end product. Strains lacking this cluster show minimal growth and negligible acetate production when arabinan is the primary carbon source.",
+      "topic_tags": ["abfA cluster", "alpha-L-arabinofuranosidase", "arabinan utilization", "glycoside hydrolase", "Bifidobacterium longum"]
+    },
+    {
+      "id": "arabinan_FC_easy_004",
+      "difficulty": "easy",
+      "question": "How do short-chain fatty acids such as acetate and butyrate influence gastrointestinal motility?",
+      "answer": "Short-chain fatty acids (SCFAs) like acetate and butyrate are well-known end products of carbohydrate metabolism produced by gut bacteria including Bifidobacteria and Bacteroides. They improve intestinal motility through multiple mechanisms: they interact with G-protein-coupled receptors GPR41 and GPR43 on the gut epithelium, and can directly act on colonic smooth muscle to stimulate contractility. SCFAs also interact with the enteric nervous system and host immune system to promote gastrointestinal transit. This makes SCFA production a key mechanism by which probiotics can alleviate functional constipation.",
+      "topic_tags": ["short-chain fatty acids", "acetate", "butyrate", "GPR41", "GPR43", "gastrointestinal motility", "probiotics"]
+    },
+    {
+      "id": "arabinan_FC_easy_005",
+      "difficulty": "easy",
+      "question": "Why does probiotic efficacy often vary significantly between strains of the same bacterial species?",
+      "answer": "Probiotic efficacy varies substantially across strains within the same species because subtle genomic variations often lead to distinct probiotic functional traits in vivo. Even strains with very high genomic similarity — as low as 1% genetic difference — can exhibit entirely different functional properties. Specific gene clusters or individual genes that are present in some strains but absent in others can determine whether a strain is therapeutically effective. For example, possession of the abfA cluster, which governs arabinan utilization, distinguishes effective from non-effective Bifidobacterium longum strains in treating functional constipation, despite the strains being taxonomically nearly identical.",
+      "topic_tags": ["strain specificity", "probiotic efficacy", "genomic variation", "gene cluster", "Bifidobacterium longum"]
+    },
+
+    {
+      "id": "arabinan_FC_medium_001",
+      "difficulty": "medium",
+      "question": "How does the abfA cluster enable colonization and functional modulation of the gut microbiome by ingested probiotics?",
+      "answer": "The abfA cluster confers bacteria a unique ability to utilize arabinan, an otherwise poorly accessible dietary fiber in the gut. This creates a distinct metabolic niche: in the distal colon, glucose supplies are typically exhausted, but arabinan remains available. Bacteria equipped with the abfA cluster can stably proliferate in this environment by using arabinan as a carbon source, while strains lacking this cluster cannot. This metabolic advantage, known as the 'priority effect,' allows abfA-carrying probiotics to establish stable colonization in the gut ecosystem. Once engrafted, these probiotics can further enrich the abundance of resident gut microbes that share similar arabinan-utilization capabilities, amplifying the production of beneficial metabolites such as SCFAs, chenodeoxycholic acid, and uracil that collectively improve gastrointestinal motility.",
+      "topic_tags": ["abfA cluster", "colonization", "metabolic niche", "gut engraftment", "cross-feeding", "functional constipation"]
+    },
+    {
+      "id": "arabinan_FC_medium_002",
+      "difficulty": "medium",
+      "question": "What is the synergistic relationship between dietary arabinan and abfA-cluster-carrying bacteria in alleviating constipation?",
+      "answer": "The alleviation of functional constipation by abfA-cluster-carrying bacteria is dependent on the availability of dietary arabinan as a substrate. Arabinan alone does not improve constipation symptoms, nor does an abfA-deficient strain even when arabinan is supplemented. However, the combination of abfA-cluster-carrying bacteria and dietary arabinan significantly enhances constipation relief compared to the probiotic alone. This is because the abfA cluster specifically enables bacteria to degrade and ferment arabinan, producing arabinose and then acetate as key metabolic end products. The synergy also further increases gut acetate production beyond what the probiotic alone achieves. Conversely, when mice are maintained on an arabinan-free diet, even abfA-cluster-carrying bacteria fail to ameliorate constipation, confirming the obligatory role of dietary arabinan as the substrate.",
+      "topic_tags": ["arabinan", "abfA cluster", "synergy", "dietary fiber", "acetate", "constipation relief"]
+    },
+    {
+      "id": "arabinan_FC_medium_003",
+      "difficulty": "medium",
+      "question": "How does administering abfA-cluster-carrying probiotics alter the composition of native gut microbiota at different taxonomic levels?",
+      "answer": "Administration of abfA-cluster-carrying probiotics produces compositional changes in the gut microbiota that are detectable only at the strain level, not at the genus or species level. At the genus and species levels, no significant within-host differences in gut microbiota are observed based on Bray-Curtis dissimilarity. However, at the strain level (using metagenome-assembled genomes), marked compositional alterations occur: specific resident strains become enriched following probiotic administration, and these responsive strains predominantly harbor the abfA cluster in their own genomes. The temporal change in abfA-cluster abundance correlates positively with strain-level community dissimilarity but not with genus- or species-level dissimilarity. This highlights that functionally meaningful microbiota modulation by probiotics can be invisible to conventional taxonomic profiling and requires strain-level resolution.",
+      "topic_tags": ["gut microbiota composition", "strain-level analysis", "metagenome-assembled genomes", "Bray-Curtis dissimilarity", "probiotic engraftment"]
+    },
+    {
+      "id": "arabinan_FC_medium_004",
+      "difficulty": "medium",
+      "question": "What role does chenodeoxycholic acid play in the mechanism by which abfA-cluster enrichment alleviates constipation?",
+      "answer": "Chenodeoxycholic acid is a bile acid whose fecal concentration increases following administration of abfA-cluster-carrying probiotics, and its temporal abundance change positively correlates with both abfA-cluster abundance and improvements in defecation frequency and constipation scores. The mechanism involves the enrichment of gut bacteria including Bifidobacteria and Bacteroides by probiotic engraftment, which are associated with bile acid metabolism. Specifically, the elevated expression of choloylglycine hydrolase (K01442) contributes to enrichment of the bile acid metabolic pathway. Chenodeoxycholic acid is thought to act via the membrane-bound G protein-coupled bile acid receptor TGR5 on enterocytes, which stimulates intestinal motility. Clinical evidence supports that chenodeoxycholic acid can increase stool frequency, decrease stool consistency, and improve ease of stool passage, particularly in constipation-predominant bowel conditions.",
+      "topic_tags": ["chenodeoxycholic acid", "bile acid", "TGR5", "gut motility", "abfA cluster", "choloylglycine hydrolase"]
+    },
+    {
+      "id": "arabinan_FC_medium_005",
+      "difficulty": "medium",
+      "question": "How does the abfA-cluster abundance in fecal metagenomes serve as a biomarker for functional constipation?",
+      "answer": "The abfA-cluster abundance in fecal metagenomes is consistently and significantly lower in individuals with functional constipation compared to healthy controls across multiple independent cohorts. This reduction is not seen for other arabinan-related gene clusters such as the hypBA cluster, making abfA cluster a specific signal. Using normalized abfA-cluster abundance from metagenomic sequencing data, a classification model can distinguish functional constipation from health with high accuracy, achieving an area under the receiver operating characteristic curve (AUC) around 83–89% in both discovery and external validation cohorts. Furthermore, the temporal change in abfA-cluster abundance during probiotic treatment correlates positively with improvements in defecation frequency and negatively with constipation severity scores, supporting its utility both as a diagnostic biomarker and as a predictor of therapeutic response.",
+      "topic_tags": ["abfA cluster", "fecal metagenomics", "biomarker", "functional constipation", "ROC analysis", "diagnostic tool"]
+    },
+    {
+      "id": "arabinan_FC_medium_006",
+      "difficulty": "medium",
+      "question": "How does microbial cross-feeding between abfA-cluster-carrying probiotics and resident gut bacteria amplify arabinan utilization?",
+      "answer": "Abfā-cluster-carrying bacteria such as Bifidobacterium longum degrade arabinan into L-arabinose and other breakdown products. These degradation products serve as growth substrates for other resident gut bacteria that lack their own mucolytic or polysaccharide-degrading capabilities but can utilize the released monosaccharides. In vitro co-culture experiments confirm that abfA-carrying B. longum significantly promotes the growth of multiple other gut bacterial isolates — including Bacteroides caccae, Phocaeicola dorei, Enterococcus casseliflavus, Bacteroides cellulosilyticus, and Bifidobacterium adolescentis — when arabinan is the sole carbon source, whereas abfA-deficient strains fail to do so. In vivo, the metagenomics data show that after probiotic engraftment, the strains that increase in abundance are predominantly those also carrying abfA clusters, suggesting a community-level enrichment of arabinan-utilizing capacity driven by the initial probiotic cross-feeding.",
+      "topic_tags": ["cross-feeding", "arabinan degradation", "microbial cooperation", "Bifidobacterium longum", "resident microbiota", "gut community"]
+    },
+
+    {
+      "id": "arabinan_FC_hard_001",
+      "difficulty": "hard",
+      "question": "Why is the abfA cluster a better predictor and therapeutic target for functional constipation than the abundance of Bifidobacterium species overall, and what does this imply for microbiome-based clinical practice?",
+      "answer": "The abfA cluster is a more precise predictor and target than overall Bifidobacterium abundance for several reasons. First, the probiotic effect on constipation is entirely strain-dependent: strains of B. longum that are taxonomically identical but lack the abfA cluster produce no therapeutic benefit, while abfA-carrying strains do. Second, the abundance of B. longum at the species level does not correlate with improvements in defecation frequency or constipation scores after probiotic treatment, whereas abfA-cluster abundance does. Third, probiotic administration does not significantly alter gut microbiota composition at the genus or species level, so conventional microbiome profiling methods would miss the therapeutically relevant changes. Fourth, the hypBA cluster — another arabinan-related gene cluster — shows no significant association with constipation status or treatment outcomes, further demonstrating that specificity matters at the gene cluster level rather than the functional category level. For clinical practice, this implies that selecting probiotics based on the presence of key functional gene clusters (genomics-directed probiotic therapy) is more rational than species-level selection, and that functional metagenomics should complement or replace taxonomic profiling for diagnosing gut functional disorders and monitoring treatment response.",
+      "topic_tags": ["abfA cluster", "strain specificity", "Bifidobacterium", "metagenomics", "genomics-directed therapy", "clinical biomarker", "functional constipation"]
+    },
+    {
+      "id": "arabinan_FC_hard_002",
+      "difficulty": "hard",
+      "question": "How does the arabinan-acetate metabolic axis in the distal colon mechanistically differ from the fructose-acetate axis, and why is this distinction important for understanding probiotic effects on gut motility?",
+      "answer": "The fructose-acetate axis refers to the well-documented process where microbial fermentation of fructose in the distal colon produces large amounts of acetate. In contrast, the arabinan-acetate axis involves the sequential degradation of arabinan by abfA-cluster-carrying bacteria into arabinose, which is then fermented to generate acetate through the pentose phosphate pathway and glycolysis. Critically, these two axes are functionally distinct and non-redundant: the abfA-carrying probiotic B. lon_8 does not significantly affect the gut microbiota's capacity to utilize fructose for acetate production, but does substantially increase the community's ability to catabolize arabinan for acetate production. Fecal fructose concentrations remain stable regardless of constipation induction or probiotic supplementation, whereas fecal arabinose concentrations rise and fall in direct concordance with the administration and withdrawal of the abfA-carrying probiotic. This temporal concordance between arabinose production, acetate levels, and constipation symptom changes provides causal evidence that the arabinan-acetate axis, not the fructose-acetate axis, mediates the probiotic benefit. This distinction is important because it explains why not all acetate-producing probiotics alleviate constipation — only those that can exploit arabinan as a substrate in the fiber-depleted distal colon environment are effective.",
+      "topic_tags": ["arabinan-acetate axis", "fructose-acetate axis", "distal colon", "arabinose", "acetate production", "abfA cluster", "causal mechanism"]
+    },
+    {
+      "id": "arabinan_FC_hard_003",
+      "difficulty": "hard",
+      "question": "What is the multi-layered evidence establishing that the abfA cluster is causally responsible for constipation alleviation, rather than being merely a correlate?",
+      "answer": "The causal role of the abfA cluster is established through converging evidence from multiple complementary experimental approaches. First, comparative genomics across effective and non-effective probiotic strains identifies the abfA cluster as specifically and consistently present in effective strains and absent from non-effective strains, with no other gene cluster showing the same pattern. Second, in vitro growth assays confirm that abfA-carrying strains outgrow non-carrying strains specifically on arabinan (not glucose), and produce substantially more acetate from arabinan, directly linking the gene cluster to the metabolic difference. Third, a loss-of-function knockout experiment — deleting the two key abfA genes in an otherwise effective strain — abolishes both arabinan-dependent growth, arabinan-dependent acetate production, and in vivo constipation relief, while the knockout strain remains functionally identical on glucose medium, ruling out pleiotropic effects. Fourth, a longitudinal in vivo experiment shows that constipation symptoms, arabinose production, and acetate levels fluctuate in temporal lockstep with the presence and absence of abfA-cluster-carrying bacteria across repeated treatment cycles, while fructose levels remain unaffected. Fifth, wild strains from multiple other species (Bifidobacterium breve, Pediococcus pentosaceus, Bacteroides nordii) with and without the abfA cluster show the same abfA-dependent efficacy, confirming the finding is not species-specific. Finally, fecal microbiota transplantation from human donors with high versus low abfA-cluster abundance into germ-free mice transfers the constipation-protective phenotype, establishing causality in a human-to-mouse model.",
+      "topic_tags": ["causal evidence", "abfA cluster", "gene knockout", "loss-of-function", "fecal microbiota transplantation", "functional constipation", "multi-omics"]
+    },
+    {
+      "id": "arabinan_FC_hard_004",
+      "difficulty": "hard",
+      "question": "How do the metabolic outcomes differ between abfA-cluster-carrying and abfA-deficient probiotic strains in human clinical settings, and how do these metabolic differences translate to changes in clinical constipation endpoints?",
+      "answer": "In human clinical settings, administration of abfA-cluster-carrying strains produces a distinct and coordinated metabolic signature that is entirely absent with abfA-deficient strains. The effective strains significantly increase fecal concentrations of acetate, butyrate, chenodeoxycholic acid, citric acid, uracil, and D-lysopine, while depleting agmatine. The abfA-deficient strain produces none of these changes. At the functional gene level, effective strains enrich genes involved in arabinan metabolism, acetate production via acetate kinase, L-arabinose metabolism, and bile acid modification. The magnitude of change in abfA-cluster abundance correlates positively with gains in defecation frequency and negatively with constipation severity scores, establishing a dose-response relationship between microbiome-level changes and clinical benefit. Multiple SCFAs act through GPR41/GPR43 receptors and direct smooth muscle effects; chenodeoxycholic acid acts through TGR5 on enterocytes; and elevated uracil has been linked to reduced constipation-related disease activity. The convergence of these pathways — all downstream of abfA-driven arabinan utilization — mechanistically explains why effective strains improve stool frequency, reduce constipation scores (CCCS), and improve quality of life measures (PAC-SYM, PAC-QoL), with benefits persisting even after probiotic discontinuation, likely due to the lasting enrichment of abfA-carrying resident bacteria.",
+      "topic_tags": ["metabolomics", "abfA cluster", "clinical outcomes", "CCCS", "SCFAs", "chenodeoxycholic acid", "uracil", "constipation scores"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "arabinan_FC_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which primary metabolic end product do abfA-cluster-carrying Bifidobacterium strains produce when fermenting arabinan?",
+      "options": {
+        "A": "Butyrate",
+        "B": "Propionate",
+        "C": "Acetate",
+        "D": "Lactate"
+      },
+      "correct_answer": "C",
+      "explanation": "Abfā-cluster-carrying Bifidobacterium strains produce acetic acid (acetate) as the key end product when fermenting arabinan. Effective strains produce over 20 μmol/mL of acetate in arabinan-containing media, whereas non-effective strains lacking the abfA cluster produce negligible amounts. Acetate is characteristic of Bifidobacterium carbohydrate metabolism and is a major driver of the anti-constipation effect.",
+      "topic_tags": ["abfA cluster", "arabinan fermentation", "acetate", "Bifidobacterium metabolism"]
+    },
+    {
+      "id": "arabinan_FC_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What determines whether a Bifidobacterium longum strain is effective in treating functional constipation?",
+      "options": {
+        "A": "The total abundance of the strain in the gut after administration",
+        "B": "The presence of the abfA gene cluster encoding alpha-L-arabinofuranosidases",
+        "C": "The species identity (B. longum) of the probiotic",
+        "D": "The presence of the hypBA gene cluster encoding beta-L-arabinobiosidase"
+      },
+      "correct_answer": "B",
+      "explanation": "The presence of the abfA cluster — containing genes encoding alpha-L-arabinofuranosidases — is the key determinant of therapeutic efficacy. Strains without the abfA cluster fail to alleviate constipation even if they are taxonomically identical to effective strains. The abundance of the probiotic in the gut after administration is comparable between effective and non-effective strains, so abundance is not the differentiating factor. The hypBA cluster shows no independent effect on constipation outcomes.",
+      "topic_tags": ["abfA cluster", "strain specificity", "functional constipation", "Bifidobacterium longum"]
+    },
+    {
+      "id": "arabinan_FC_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "Besides Bifidobacterium longum, which other bacterial groups are known to carry the abfA cluster and show abfA-dependent effects on constipation?",
+      "options": {
+        "A": "Only species within the genus Bifidobacterium",
+        "B": "Only lactic acid bacteria in the order Lactobacillales",
+        "C": "Species spanning multiple genera including Bacteroides, Bifidobacterium, Enterococcus, and Pediococcus",
+        "D": "Exclusively anaerobic Firmicutes from the order Clostridiales"
+      },
+      "correct_answer": "C",
+      "explanation": "The abfA cluster is broadly distributed across 189 bacterial genomes spanning 50 species and 22 genera, prominently including Bacteroides, Bifidobacterium, Enterococcus, and Pediococcus. Strains of Bifidobacterium breve, Pediococcus pentosaceus, and Bacteroides nordii with the abfA cluster all showed constipation-alleviating effects, while their abfA-deficient counterparts did not, demonstrating that the abfA-dependent effect extends well beyond B. longum.",
+      "topic_tags": ["abfA cluster", "bacterial diversity", "Bacteroides", "Pediococcus", "gut residents"]
+    },
+
+    {
+      "id": "arabinan_FC_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "Why does dietary arabinan alone fail to alleviate functional constipation, even though it is the substrate used by effective probiotic strains?",
+      "options": {
+        "A": "Arabinan is rapidly absorbed in the small intestine before reaching the colon",
+        "B": "The native gut microbiota in constipated individuals lacks sufficient abfA-cluster-carrying bacteria to ferment arabinan into beneficial metabolites",
+        "C": "Arabinan directly suppresses gastrointestinal motility through receptor-mediated signaling",
+        "D": "Arabinan is converted into inhibitory metabolites by abundant Firmicutes in constipated individuals"
+      },
+      "correct_answer": "B",
+      "explanation": "Arabinan alone does not improve constipation because its beneficial effects depend on the presence of bacteria equipped with the abfA cluster to ferment it. The fecal metagenomes of constipated individuals show significantly lower abfA-cluster abundance compared to healthy subjects, meaning the resident microbiota lacks adequate arabinan-fermenting capacity. Even supplementing arabinan to mice treated with an abfA-deficient probiotic has no beneficial effect, confirming that the fiber substrate alone is insufficient without the appropriate microbial machinery.",
+      "topic_tags": ["arabinan", "abfA cluster", "microbial capacity", "dietary fiber", "functional constipation"]
+    },
+    {
+      "id": "arabinan_FC_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "At what taxonomic level do conventional microbiome profiling methods fail to detect the functionally meaningful changes caused by abfA-cluster-carrying probiotic administration?",
+      "options": {
+        "A": "At the phylum level only",
+        "B": "At both genus and species levels, but changes are detectable at the strain level",
+        "C": "At all taxonomic levels including strain level",
+        "D": "Only at the species level; genus-level changes are readily detected"
+      },
+      "correct_answer": "B",
+      "explanation": "No significant within-host differences in gut microbiota composition are observed at either the genus or species level after effective probiotic administration, based on Bray-Curtis dissimilarity metrics. However, significant compositional changes are detected at the strain level using metagenome-assembled genomes (MAGs). The temporal change in abfA-cluster abundance correlates with strain-level community shifts but not with genus- or species-level shifts. This demonstrates that functional differences may be invisible to genus- and species-level analyses, highlighting the need for strain-level and functional metagenomic approaches.",
+      "topic_tags": ["microbiome profiling", "taxonomic resolution", "strain level", "metagenome-assembled genomes", "Bray-Curtis dissimilarity"]
+    },
+    {
+      "id": "arabinan_FC_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "What is the causal evidence that arabinose — not fructose — is the key sugar moiety through which the abfA cluster drives acetate production and constipation relief?",
+      "options": {
+        "A": "Fructose levels in feces increase when abfA-cluster-carrying bacteria are administered",
+        "B": "Fecal arabinose levels fluctuate in temporal lockstep with abfA probiotic administration and withdrawal, while fecal fructose remains stable throughout",
+        "C": "Inhibiting fructose metabolism blocks the anti-constipation effect of abfA-carrying bacteria",
+        "D": "Abfā-carrying bacteria express fructose transporters that are upregulated by arabinan"
+      },
+      "correct_answer": "B",
+      "explanation": "A longitudinal experiment cycling probiotic on and off across multiple treatment periods shows that fecal arabinose concentrations rise and fall in direct concordance with abfA-carrying probiotic administration, and these fluctuations match the temporal changes in acetate and constipation symptom markers. Fecal fructose, in contrast, remains entirely stable regardless of constipation induction or probiotic presence. Additionally, the abfA-carrying probiotic does not affect the gut microbiota's capacity to use fructose for acetate production in vitro, confirming that the arabinan-arabinose-acetate axis, not the fructose-acetate axis, is the operative mechanism.",
+      "topic_tags": ["arabinose", "fructose", "acetate", "abfA cluster", "causal mechanism", "temporal dynamics"]
+    },
+    {
+      "id": "arabinan_FC_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "How does abfA-cluster-carrying probiotic administration affect uracil metabolism in the gut, and why might elevated uracil benefit constipated patients?",
+      "options": {
+        "A": "Uracil is a direct fermentation product of arabinan metabolism by abfA-carrying bacteria",
+        "B": "Elevated uracil abundance follows increased enrichment of specific uracil-metabolizing strains (carrying the rihB gene) responsive to probiotic engraftment, and uracil has been linked to reduced constipation-related disease activity",
+        "C": "Uracil activates the GPR41 receptor on colonocytes to stimulate smooth muscle contraction",
+        "D": "Abfā-cluster genes directly encode enzymes in the uracil biosynthesis pathway"
+      },
+      "correct_answer": "B",
+      "explanation": "Uracil abundance in feces increases following administration of abfA-cluster-carrying probiotics, and this increase correlates with abfA-cluster abundance and improvements in constipation endpoints. The mechanism involves enrichment of specific resident strains — notably Phocaeicola dorei — that carry rihB (K10213), a gene involved in uracil metabolism, and which become more abundant after probiotic engraftment. A prior study also reported that microbiota-induced elevated uracil levels are associated with decreased constipation-related disease activity. Uracil production is thus an indirect metabolic consequence of the abfA-driven microbiome community remodeling.",
+      "topic_tags": ["uracil", "rihB", "Phocaeicola dorei", "abfA cluster", "constipation", "gut metabolites"]
+    },
+    {
+      "id": "arabinan_FC_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What explains why clinical improvements in constipation symptoms persist even after probiotic supplementation is discontinued?",
+      "options": {
+        "A": "The probiotic bacteria permanently alter the host's enteric nervous system wiring",
+        "B": "The administered probiotics permanently colonize the colon and continue producing beneficial metabolites indefinitely",
+        "C": "Probiotic engraftment enriches resident abfA-cluster-carrying gut bacteria that persist after probiotic withdrawal, maintaining elevated arabinan-utilization capacity and beneficial metabolite production",
+        "D": "Probiotic administration induces epigenetic changes in colonocytes that permanently improve motility"
+      },
+      "correct_answer": "C",
+      "explanation": "The persistent benefit after probiotic withdrawal is attributed to the lasting enrichment of native gut resident bacteria that carry the abfA cluster. During the supplementation period, the exogenous probiotic creates a favorable environment for arabinan-utilizing resident microbes — including Bifidobacterium adolescentis, Bacteroides caccae, and others — which become stably enriched in the gut community. These enriched residents continue to ferment arabinan and produce beneficial metabolites after the exogenous probiotic is no longer consumed. Follow-up assessments showing reduced PAC-SYM and PAC-QoL scores after the intervention period ends support this mechanism.",
+      "topic_tags": ["persistent effect", "probiotic withdrawal", "resident microbiota", "abfA cluster", "gut community remodeling"]
+    },
+
+    {
+      "id": "arabinan_FC_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "Why is the hypBA cluster, despite encoding enzymes functionally related to arabinan degradation, not a reliable predictor of constipation or an effective therapeutic target?",
+      "options": {
+        "A": "The hypBA cluster is only expressed in aerobic conditions, making it irrelevant in the anaerobic colon",
+        "B": "Unlike the abfA cluster, hypBA-cluster abundance does not differ significantly between healthy individuals and those with functional constipation, does not change with effective probiotic treatment, and strains carrying only hypBA but not abfA cluster do not ameliorate constipation",
+        "C": "The hypBA cluster encodes enzymes that degrade arabinose into inhibitory byproducts that worsen constipation",
+        "D": "The hypBA cluster is present in all B. longum strains regardless of efficacy, so it cannot differentiate effective from non-effective strains"
+      },
+      "correct_answer": "B",
+      "explanation": "Despite encoding beta-galactosidase, beta-L-arabinobiosidase, and beta-L-arabinofuranosidase — all functionally related to arabinan — the hypBA cluster does not replicate the functional importance of the abfA cluster. In vivo testing of strains with only hypBA (without abfA) shows no improvement in constipation, while strains with abfA (regardless of hypBA status) are consistently effective. HypBA-cluster abundance shows no significant difference between FC and healthy subjects across cohorts, and its temporal changes during probiotic treatment do not correlate with clinical endpoints. In vitro transcriptional activity of hypBA locus genes under arabinan is markedly lower than that of abfA locus genes. Collectively, although the hypBA cluster encodes related enzymatic activities, it lacks both the expression level and the functional magnitude to drive meaningful arabinan utilization for constipation relief.",
+      "topic_tags": ["hypBA cluster", "abfA cluster", "arabinan", "functional comparison", "constipation biomarker", "probiotic efficacy"]
+    },
+    {
+      "id": "arabinan_FC_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "What do the fecal microbiota transplantation experiments from human donors to germ-free mice demonstrate about the relationship between abfA-cluster abundance and constipation, and what scientific principle does this approach establish?",
+      "options": {
+        "A": "It shows that constipation is entirely host-genetic in origin and cannot be transferred via microbiota",
+        "B": "It demonstrates that abfA-cluster-enriched human microbiota is sufficient to transfer constipation protection to a naive host in the absence of confounding host factors, establishing microbiota causality and validating abfA-cluster abundance as a functional rather than merely associative biomarker",
+        "C": "It shows that any human microbiota, regardless of composition, can alleviate experimentally induced constipation when transplanted into germ-free mice",
+        "D": "It demonstrates that the anti-constipation effect of abfA-carrying bacteria requires the specific immune environment of the original human host"
+      },
+      "correct_answer": "B",
+      "explanation": "The FMT experiment transplants microbiota from human donors with high versus low abfA-cluster abundance into germ-free mice with experimentally induced constipation. Mice receiving high-abfA microbiota show significant reductions in whole gut transit time and increases in fecal output, while those receiving low-abfA microbiota show no improvement. The metabolite profiles of the two groups also diverge in a manner consistent with human findings — high-abfA mice show elevated acetate, butyrate, chenodeoxycholic acid, uracil, and D-lysopine. This experiment establishes causality by demonstrating that the human microbiota's abfA-cluster content is sufficient to transfer constipation protection into a germ-free host lacking any native microbiota, removing confounding host factors. This validates the abfA cluster as a functional causal determinant, not merely a correlate, and supports its development as a therapeutic target.",
+      "topic_tags": ["fecal microbiota transplantation", "germ-free mice", "abfA cluster", "causality", "human microbiota", "constipation", "metabolomics"]
+    }
+  ]
+}

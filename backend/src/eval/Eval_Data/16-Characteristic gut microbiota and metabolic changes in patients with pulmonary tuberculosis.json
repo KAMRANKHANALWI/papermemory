@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Characteristic gut microbiota and metabolic changes in patients with pulmonary tuberculosis",
+    "authors": ["Shuting Wang", "Liya Yang", "Haiyang Hu", "Longxian Lv", "Zhongkang Ji", "Yanming Zhao", "Hua Zhang", "Min Xu", "Rongfeng Fang", "Lin Zheng", "Cheng Ding", "Meifan Yang", "Kaijin Xu", "Lanjuan Li"],
+    "journal": "Microbial Biotechnology",
+    "year": 2022,
+    "doi": "10.1111/1751-7915.13761",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "ptb_gm_easy_001",
+      "difficulty": "easy",
+      "question": "What is the gut–lung axis and why is it relevant to pulmonary infections?",
+      "answer": "The gut–lung axis refers to the bidirectional cross-talk between intestinal bacteria and the lung. Dysbiosis of the intestinal microbiota has been linked to a range of lung diseases, including chronic obstructive pulmonary disease, asthma, viral pneumonias, and bacterial pneumonias. Gut bacteria can influence lung immunity indirectly — for example, by modulating macrophage-inducible C-type lectin (Mincle) signalling, which regulates dendritic cell-dependent immune responses to pulmonary pathogens. This axis means that disruptions in gut microbial balance can reduce host resistance to respiratory infections.",
+      "topic_tags": ["gut-lung axis", "dysbiosis", "pulmonary infection", "lung immunity", "Mincle"]
+    },
+    {
+      "id": "ptb_gm_easy_002",
+      "difficulty": "easy",
+      "question": "How does active tuberculosis infection affect gut microbial diversity?",
+      "answer": "Active pulmonary tuberculosis infection is associated with a significant reduction in gut microbial alpha diversity across multiple richness and diversity indexes. The number of observed microbial species is markedly lower in infected individuals compared to healthy controls, and the overall community composition shifts substantially — healthy and infected individuals form distinct clusters in beta diversity analyses. These changes reflect a disrupted gut microbial community characterized by loss of beneficial commensal species.",
+      "topic_tags": ["tuberculosis", "alpha diversity", "beta diversity", "gut dysbiosis", "Mycobacterium tuberculosis"]
+    },
+    {
+      "id": "ptb_gm_easy_003",
+      "difficulty": "easy",
+      "question": "Which major bacterial phyla shift in relative abundance during pulmonary tuberculosis, and in which direction?",
+      "answer": "During active pulmonary tuberculosis, the relative abundance of Firmicutes decreases substantially while Bacteroidetes increases compared to healthy individuals. Additionally, changes are observed in Actinobacteria, Fusobacteria, and Verrucomicrobia. The net effect is a shift away from the Firmicutes-dominant profile typically seen in healthy gut microbiota toward a Bacteroidetes-dominant profile, reflecting broad dysbiosis at the phylum level.",
+      "topic_tags": ["Firmicutes", "Bacteroidetes", "phylum-level dysbiosis", "tuberculosis", "gut microbiota composition"]
+    },
+    {
+      "id": "ptb_gm_easy_004",
+      "difficulty": "easy",
+      "question": "What role do short-chain fatty acids (SCFAs) play in intestinal immunity and barrier integrity?",
+      "answer": "Short-chain fatty acids, particularly butyrate, inhibit inflammation through multiple mechanisms including the induction of regulatory T cells (Tregs), maintenance of intestinal epithelial barrier integrity, and provision of energy to intestinal epithelial cells. SCFAs such as acetic and butyric acids are also involved in cholesterol synthesis, fatty acid storage, and glucose production. Their reduction in disease states can therefore compromise both local gut immunity and systemic metabolic homeostasis.",
+      "topic_tags": ["SCFAs", "butyrate", "Tregs", "intestinal barrier", "gut immunity"]
+    },
+    {
+      "id": "ptb_gm_easy_005",
+      "difficulty": "easy",
+      "question": "What is indole propionic acid and what is its significance in the context of mycobacterial infection?",
+      "answer": "Indole propionic acid is a metabolite produced by intestinal bacteria that has demonstrated activity against Mycobacterium tuberculosis both in vitro and in vivo. It targets tryptophan biosynthesis in the pathogen. This positions gut-derived metabolites as a potential mechanism through which the intestinal microbiota can influence host resistance to pulmonary tuberculosis, and suggests that microbiota-mediated metabolic output may have direct anti-pathogenic effects beyond immune modulation.",
+      "topic_tags": ["indole propionic acid", "gut metabolites", "Mycobacterium tuberculosis", "tryptophan", "anti-tuberculosis activity"]
+    },
+
+    {
+      "id": "ptb_gm_medium_001",
+      "difficulty": "medium",
+      "question": "How does gut microbial dysbiosis in tuberculosis connect to altered SCFA production, and what are the downstream consequences?",
+      "answer": "In tuberculosis, the reduction in Firmicutes-associated genera — particularly those known to produce SCFAs such as Bifidobacterium, Blautia, Butyricimonas, Ruminococcus, Roseburia, and Dorea — leads to a marked decrease in fecal SCFA levels including propionic, butyric, isobutyric, 2-methylbutyric, and valeric acids. Since butyrate is a primary energy source for colonocytes, induces anti-inflammatory Tregs, and maintains epithelial barrier integrity, its reduction compromises intestinal immune defence. The loss of propionate affects hepatic metabolism and immune cell signalling. Together, these SCFA deficits create a permissive environment for sustained infection by weakening mucosal defences and dampening immune resolution.",
+      "topic_tags": ["SCFA reduction", "Firmicutes", "Blautia", "butyrate", "tuberculosis immunity", "gut dysbiosis"]
+    },
+    {
+      "id": "ptb_gm_medium_002",
+      "difficulty": "medium",
+      "question": "What mechanisms link reduced cholesterol levels observed in tuberculosis patients to gut microbiota changes?",
+      "answer": "Active tuberculosis is associated with significantly lower serum levels of total cholesterol, HDL, LDL, and VLDL. Gut microbiota analysis shows that cholesterol-related parameters are positively correlated with the abundances of genera such as Romboutsia and Gordonibacter, and negatively correlated with genera like Cetobacterium, Weissella, and Campylobacter. Additionally, reduced SCFA-producing bacteria — particularly those involved in butyric and acetic acid synthesis — contribute to impaired cholesterol synthesis, since acetic and butyric acids mediate cholesterol synthesis and fatty acid storage. The metabolite squalene, an intermediate in cholesterol biosynthesis with anti-inflammatory properties, was also significantly lower in tuberculosis patients and positively correlated with Blautia abundance, further linking microbiota shifts to lipid metabolism disruption.",
+      "topic_tags": ["cholesterol", "VLDL", "LDL", "squalene", "Blautia", "lipid metabolism", "tuberculosis"]
+    },
+    {
+      "id": "ptb_gm_medium_003",
+      "difficulty": "medium",
+      "question": "How do aromatic amino acid metabolism and indole sulfate production connect gut bacteria to tuberculosis pathophysiology?",
+      "answer": "Aromatic amino acids — tyrosine, phenylalanine, and tryptophan — are metabolised by intestinal bacteria of the order Clostridiales, which is markedly reduced in tuberculosis patients, into indoles such as indoxyl sulfate (IS) and phenols such as hydrocinnamic acid. IS is a bacteria-generated metabolite of tryptophan and its levels are significantly altered in tuberculosis patients, partly because appetite loss reduces dietary protein intake, which in turn limits IS production. The reduction of Clostridiales and consequently IS may affect tryptophan pathway signalling, including the capacity for indole propionic acid production, which has direct antimycobacterial activity.",
+      "topic_tags": ["aromatic amino acids", "indoxyl sulfate", "Clostridiales", "tryptophan metabolism", "gut bacteria", "tuberculosis"]
+    },
+    {
+      "id": "ptb_gm_medium_004",
+      "difficulty": "medium",
+      "question": "What is the diagnostic potential of fecal microbiome and metabolome profiles for tuberculosis, and how was it evaluated?",
+      "answer": "Fecal microbiome and metabolome profiles can discriminate tuberculosis patients from healthy individuals with high accuracy. Random forest classification models built on genus-level microbiome data achieved an AUC of approximately 0.85 on independent test sets, identifying genera such as Fusobacterium, Fusicatenibacter, Tyzzerella, and Anaerotruncus as key discriminating features. Metabolome-based models performed even better, achieving an AUC near 1.0 on test sets, with metabolites including 1-tetracosanol, 3-hydroxypicolinic acid, behenic acid, pyrophosphate, and tromethamine as the top discriminating features. These results position non-invasive fecal profiling as a potential alternative or supplement to sputum-based diagnosis, particularly valuable for patients unable to produce sputum.",
+      "topic_tags": ["random forest", "diagnostic biomarkers", "fecal microbiome", "metabolomics", "AUC", "tuberculosis diagnosis"]
+    },
+    {
+      "id": "ptb_gm_medium_005",
+      "difficulty": "medium",
+      "question": "How does antibiotic-mediated gut dysbiosis relate to susceptibility to Mycobacterium tuberculosis infection?",
+      "answer": "Antibiotic-mediated disruption of the gut microbiota creates conditions that promote susceptibility to tuberculosis by depleting SCFA-producing and immunomodulatory bacterial communities. This dysbiosis is associated with decreases in IFN-γ- and TNF-α-releasing CD4+ T cells and an increase in regulatory T cells (Tregs) in animal models, shifting the immune balance away from effective antimycobacterial responses. The resulting immune suppression and altered metabolic landscape reduce the host's capacity to contain and eliminate Mycobacterium tuberculosis, demonstrating that gut microbial health is a determinant of resistance to pulmonary infection.",
+      "topic_tags": ["antibiotic dysbiosis", "CD4 T cells", "Tregs", "IFN-γ", "tuberculosis susceptibility", "gut immunity"]
+    },
+    {
+      "id": "ptb_gm_medium_006",
+      "difficulty": "medium",
+      "question": "What fecal metabolic pathways are disrupted in pulmonary tuberculosis, and what does this reveal about the host-microbiota interface?",
+      "answer": "Tuberculosis is associated with significant alterations in multiple fecal metabolic pathways, including phenylalanine metabolism, taurine and hypotaurine metabolism, primary bile acid biosynthesis, steroid biosynthesis, glycine/serine/threonine metabolism, cysteine and methionine metabolism, tyrosine metabolism, and carbon metabolism, among others. These changes reflect the combined metabolic output of disrupted intestinal bacteria, altered host cell function, and modified dietary intake due to appetite loss. Integrative analysis connecting specific bacterial genera to altered metabolite levels reveals that the reduction of SCFA-producing and tryptophan-metabolising bacteria is a primary driver of the observed metabolic profile, confirming that the gut microbiota is a major determinant of the fecal metabolome in the context of active tuberculosis.",
+      "topic_tags": ["fecal metabolomics", "bile acid biosynthesis", "amino acid metabolism", "GC-MS", "gut-host interface", "tuberculosis metabolome"]
+    },
+
+    {
+      "id": "ptb_gm_hard_001",
+      "difficulty": "hard",
+      "question": "How does the reduction of Lachnospiraceae and Ruminococcaceae in tuberculosis converge with SCFA and immune dysregulation to sustain infection?",
+      "answer": "Lachnospiraceae and Ruminococcaceae are two of the dominant SCFA-producing families in the healthy gut. In tuberculosis, both are significantly depleted. Lachnospiraceae includes genera such as Blautia, Roseburia, and Fusicatenibacter, which are key producers of butyrate and propionate through cross-feeding relationships with primary fermenters. Ruminococcaceae includes Ruminococcus and related genera that ferment resistant starches and complex polysaccharides, providing acetate and lactate as substrates for downstream butyrate producers. Their depletion in tuberculosis creates a compounding deficit: primary fermentation capacity is reduced, cross-feeding to butyrate producers is curtailed, and the overall SCFA pool shrinks. Since butyrate promotes Treg induction and epithelial barrier integrity while inhibiting NF-κB-driven inflammation, and since propionate has roles in gluconeogenesis and immune cell signalling, the loss of these families impairs both the metabolic and immunological homeostasis of the gut. This facilitates a systemic immune environment — characterised by reduced IFN-γ/TNF-α T cell activity and elevated Tregs — that is permissive to mycobacterial persistence and dissemination.",
+      "topic_tags": ["Lachnospiraceae", "Ruminococcaceae", "butyrate", "cross-feeding", "Tregs", "NF-κB", "tuberculosis immunity", "SCFA deficit"]
+    },
+    {
+      "id": "ptb_gm_hard_002",
+      "difficulty": "hard",
+      "question": "What are the limitations of 16S rRNA gene sequencing in characterising the gut microbiome during tuberculosis, and how would alternative multi-omics approaches overcome them?",
+      "answer": "16S rRNA gene sequencing, while effective for bacterial community profiling, has important limitations in the tuberculosis context. It targets only bacteria and excludes other microbial kingdoms — fungi, viruses, and parasites — that may also contribute to dysbiosis and fecal metabolite alterations. The V3-V4 region approach provides only genus-level resolution in many cases, lacking the species and strain-level precision needed to distinguish functional variants within a genus. It provides compositional data but not direct functional gene content, meaning it cannot resolve which metabolic pathways are actively expressed. Shotgun metagenomic sequencing addresses these gaps by providing species and strain resolution across all microbial kingdoms, functional gene catalogues, and the capacity to identify antibiotic resistance determinants — important for drug-resistant tuberculosis. On the metabolomics side, GC-MS, while powerful, has technical shortcomings including incomplete coverage of the metabolome, especially polar or high-molecular-weight compounds. Integration with liquid chromatography–mass spectrometry (LC-MS) and nuclear magnetic resonance (NMR) spectroscopy would provide a more comprehensive metabolic phenotype. Longitudinal multi-omics studies combining metagenomics, metabolomics, and immunological profiling would also be needed to resolve cause-and-effect relationships between microbiota and disease progression.",
+      "topic_tags": ["16S rRNA limitations", "shotgun metagenomics", "GC-MS", "LC-MS", "NMR", "multi-omics", "tuberculosis research methodology"]
+    },
+    {
+      "id": "ptb_gm_hard_003",
+      "difficulty": "hard",
+      "question": "How do the correlations between specific gut microbial genera and both serum lipid parameters and fecal metabolites reveal the integrated role of the microbiome in tuberculosis metabolism?",
+      "answer": "Spearman correlation analysis in tuberculosis studies reveals tight links between microbial genera and host metabolic readouts. Genera enriched in healthy individuals — including Blautia, Megasphaera, Rhodococcus, and Bilophila — are positively correlated with triglyceride levels, while Rhodococcus, Romboutsia, Gordonibacter, and Fusicatenibacter are positively correlated with total cholesterol, LDL, and VLDL. Conversely, genera enriched in tuberculosis patients, such as Cetobacterium, Weissella, Dorea, and Campylobacter, are negatively associated with these lipid parameters. At the metabolite level, healthy-associated genera including Fusicatenibacter, Barnesiella, unidentified Ruminococcaceae, and Roseburia are positively correlated with protective metabolites such as indoxyl sulfate, resorcinol, inositol, and o-phosphoserine. Meanwhile, the upregulated tuberculosis metabolites — including taurine, aconitic acid, 3-hydroxymethylglutaric acid, and hydrocinnamic acid — are negatively correlated with butyrate-producing genera like Blautia, Agathobacter, and Roseburia. This integrated pattern reveals that the microbiome simultaneously shapes lipid metabolism, amino acid catabolism, and SCFA production, and that tuberculosis disrupts all of these axes in concert through a reduction of functionally beneficial genera.",
+      "topic_tags": ["Spearman correlation", "lipid metabolism", "fecal metabolites", "Blautia", "Fusicatenibacter", "integrated microbiome function", "tuberculosis"]
+    },
+    {
+      "id": "ptb_gm_hard_004",
+      "difficulty": "hard",
+      "question": "What are the challenges in establishing causality between gut microbiota dysbiosis and tuberculosis, and what study designs would be required to resolve the direction of the relationship?",
+      "answer": "A central challenge is distinguishing whether gut dysbiosis in tuberculosis is a cause that facilitates infection and immune suppression, a consequence of Mycobacterium tuberculosis infection and its effects on host physiology and appetite, or a combination of both. Cross-sectional designs, which sample patients at a single time point prior to treatment, cannot differentiate these possibilities. Several confounders further complicate interpretation: patients with tuberculosis typically have reduced appetite leading to altered dietary intake, which independently modifies gut microbiota composition; differences in geographic region, ethnicity, and baseline health influence microbiome baselines; and the study of only pre-treatment patients means antibiotic effects are excluded but nutritional effects are not. To resolve causality, longitudinal study designs tracking individuals from tuberculosis diagnosis through treatment completion and cure would be required, enabling assessment of whether dysbiosis precedes, accompanies, or resolves with infection. Pre-clinical germ-free or gnotobiotic animal models colonised with tuberculosis-associated versus healthy microbiota would allow direct testing of whether specific community profiles alter susceptibility to or severity of Mycobacterium tuberculosis infection. Multicentre studies across diverse populations would also be needed to disentangle geographic and dietary confounders from disease-specific microbiome signals.",
+      "topic_tags": ["causality", "cross-sectional limitations", "longitudinal study", "gnotobiotic models", "tuberculosis dysbiosis", "confounders", "study design"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "ptb_gm_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which gut bacterial genera are consistently enriched in healthy individuals compared to those with active pulmonary tuberculosis?",
+      "options": {
+        "A": "Bacteroides, Parabacteroides, and Fusobacterium",
+        "B": "Blautia, Bifidobacterium, and Roseburia",
+        "C": "Prevotella, Lachnoclostridium, and Tannerella",
+        "D": "Cetobacterium, Campylobacter, and Weissella"
+      },
+      "correct_answer": "B",
+      "explanation": "Blautia, Bifidobacterium, Roseburia, and related genera within the Firmicutes phylum are enriched in healthy controls. These genera are important SCFA producers. Bacteroides and Fusobacterium are enriched in the tuberculosis group, while Cetobacterium and Campylobacter are also more abundant in tuberculosis patients.",
+      "topic_tags": ["gut microbiota composition", "tuberculosis", "Blautia", "Bifidobacterium", "Roseburia"]
+    },
+    {
+      "id": "ptb_gm_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "Why is squalene considered a biologically significant metabolite in the context of tuberculosis?",
+      "options": {
+        "A": "Squalene is a major SCFA produced exclusively by Ruminococcaceae and is reduced in tuberculosis",
+        "B": "Squalene is an intermediate in cholesterol synthesis with antioxidant, anti-inflammatory, and drug carrier properties, and has demonstrated antituberculosis activity in vitro",
+        "C": "Squalene is a mucosal barrier component secreted by goblet cells that is degraded by Mycobacterium tuberculosis",
+        "D": "Squalene is a bile acid precursor whose reduction in tuberculosis impairs lipid digestion and immune activation"
+      },
+      "correct_answer": "B",
+      "explanation": "Squalene is an intermediate in the cholesterol biosynthesis pathway with pleiotropic biological activities including antioxidant, anti-inflammatory, and drug carrier functions. It has been shown to have antituberculosis activity in vitro and is significantly reduced in tuberculosis patients, where it is positively correlated with the abundance of Blautia.",
+      "topic_tags": ["squalene", "cholesterol biosynthesis", "antituberculosis", "Blautia", "metabolomics"]
+    },
+    {
+      "id": "ptb_gm_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "What is the primary advantage of fecal-based diagnostic approaches for tuberculosis over sputum-based methods?",
+      "options": {
+        "A": "Fecal tests have higher bacterial culture sensitivity and shorter turnaround time than sputum culture",
+        "B": "Fecal tests can directly detect drug resistance mutations using PCR-based gene analysis",
+        "C": "Fecal microbiome and metabolome profiling can potentially diagnose tuberculosis in patients who are unable to produce sputum",
+        "D": "Fecal analysis is cheaper and more widely available in low-resource settings than any sputum-based test"
+      },
+      "correct_answer": "C",
+      "explanation": "A key practical limitation of sputum-based tuberculosis diagnostics — including smear microscopy, culture, and molecular tests like GeneXpert — is that they require sputum, which some patients cannot produce. Fecal microbiome and metabolome-based classifiers offer a non-invasive alternative route to diagnosis for these patients.",
+      "topic_tags": ["fecal diagnosis", "tuberculosis diagnostics", "sputum limitations", "random forest classifier", "non-invasive biomarkers"]
+    },
+
+    {
+      "id": "ptb_gm_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "What mechanism best explains why the reduction in Bifidobacterium and Blautia abundance in tuberculosis leads to decreased butyrate production?",
+      "options": {
+        "A": "Bifidobacterium and Blautia are the sole producers of butyrate via the acetyl-CoA pathway, and their direct loss abolishes butyrate synthesis",
+        "B": "Bifidobacterium produces acetate and lactate through fermentation, which serve as cross-feeding substrates for butyrate-producing bacteria such as Blautia and Roseburia; their depletion removes the upstream substrate supply for butyrate synthesis",
+        "C": "Bifidobacterium encodes butyrate kinase enzymes that are transferred to other bacteria via horizontal gene transfer, and their reduction removes the genetic capacity for butyrate production across the community",
+        "D": "Bifidobacterium and Blautia produce bacteriocins that protect butyrate-producing Firmicutes from Bacteroidetes competition; their loss allows Bacteroidetes overgrowth that consumes butyrate precursors"
+      },
+      "correct_answer": "B",
+      "explanation": "Bifidobacterium produces acetate and lactate as primary fermentation products, which are used as substrates by downstream butyrate producers such as Roseburia and Blautia through cross-feeding. Depletion of Bifidobacterium therefore reduces the availability of upstream fermentation products, indirectly curtailing butyrate synthesis even if the downstream butyrate producers are partially retained.",
+      "topic_tags": ["Bifidobacterium", "Blautia", "cross-feeding", "butyrate synthesis", "SCFA pathway", "tuberculosis"]
+    },
+    {
+      "id": "ptb_gm_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "How does the increase in Bacteroidetes relative abundance during tuberculosis affect SCFA metabolism?",
+      "options": {
+        "A": "Bacteroidetes primarily produce butyrate, so their increase partially compensates for the loss of Firmicutes-derived butyrate",
+        "B": "Bacteroidetes increase propionate production, which directly replaces butyrate as the main colonocyte energy source",
+        "C": "Bacteroidetes are primarily propionate producers, not butyrate producers; their increase does not compensate for the loss of Firmicutes-associated butyrate-producing genera",
+        "D": "The increase in Bacteroidetes shifts carbohydrate fermentation entirely toward acetate, suppressing both propionate and butyrate production"
+      },
+      "correct_answer": "C",
+      "explanation": "Bacteroidetes are predominantly propionate producers, not butyrate producers. In tuberculosis, the increase in Bacteroidetes occurs simultaneously with a decrease in Firmicutes — the phylum responsible for most butyrate production through genera such as Roseburia, Blautia, and Ruminococcus. The Bacteroidetes expansion therefore does not functionally compensate for the lost butyrate-producing capacity.",
+      "topic_tags": ["Bacteroidetes", "propionate", "butyrate", "SCFA", "Firmicutes", "tuberculosis microbiome"]
+    },
+    {
+      "id": "ptb_gm_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "What does the significant reduction in serum cholesterol fractions in tuberculosis patients suggest about the relationship between gut microbiota and host lipid metabolism?",
+      "options": {
+        "A": "Tuberculosis bacteria directly catabolise circulating lipoproteins to fuel their own replication inside macrophages",
+        "B": "The reduction reflects purely the anorexia and reduced fat intake associated with tuberculosis, with no microbiota contribution",
+        "C": "Gut bacteria that are depleted in tuberculosis — particularly SCFA producers and specific genera positively correlated with lipid levels — contribute to cholesterol synthesis and regulation; their loss is mechanistically linked to the observed dyslipidaemia",
+        "D": "Increased Bacteroidetes in tuberculosis upregulate host cholesterol excretion via bile acid overproduction, causing systemic hypocholesterolaemia"
+      },
+      "correct_answer": "C",
+      "explanation": "Serum cholesterol parameters (total cholesterol, HDL, LDL, VLDL) are positively correlated with the abundances of genera such as Romboutsia, Gordonibacter, and Fusicatenibacter, which are depleted in tuberculosis. Additionally, acetic and butyric acids — which are reduced in tuberculosis — mediate cholesterol synthesis and fatty acid storage. This indicates a microbiota-mediated contribution to the dyslipidaemia observed in tuberculosis.",
+      "topic_tags": ["cholesterol", "dyslipidaemia", "gut microbiota", "SCFA", "Romboutsia", "tuberculosis lipid metabolism"]
+    },
+    {
+      "id": "ptb_gm_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "What does the integrated metabolomics and microbiome analysis reveal about the relationship between Blautia depletion and the tuberculosis fecal metabolome?",
+      "options": {
+        "A": "Blautia depletion is positively correlated with elevated indoxyl sulfate and squalene levels, which are the primary drivers of tuberculosis metabolome divergence",
+        "B": "Blautia depletion is negatively correlated with elevated tuberculosis-associated metabolites such as taurine, aconitic acid, and 3-hydroxymethylglutaric acid, and positively correlated with squalene reduction",
+        "C": "Blautia depletion directly causes overproduction of bile acids including taurocholate, which drives the systemic metabolic phenotype of tuberculosis",
+        "D": "Blautia is negatively correlated with all metabolites in tuberculosis patients, indicating that its depletion is the single master regulator of the entire metabolic phenotype"
+      },
+      "correct_answer": "B",
+      "explanation": "Spearman correlation analysis shows that Blautia and related SCFA-producing genera are negatively correlated with the upregulated tuberculosis metabolites including taurine, aconitic acid, 3-hydroxymethylglutaric acid, and hydrocinnamic acid. Simultaneously, squalene — a metabolite reduced in tuberculosis — is positively correlated with Blautia abundance, linking its depletion to reduced squalene production and altered lipid and anti-inflammatory defence.",
+      "topic_tags": ["Blautia", "fecal metabolomics", "squalene", "taurine", "Spearman correlation", "tuberculosis metabolome"]
+    },
+    {
+      "id": "ptb_gm_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "How does the modulation of Mincle signalling by gut bacteria connect intestinal microbiota to pulmonary immunity against Mycobacterium tuberculosis?",
+      "options": {
+        "A": "Gut bacteria translocate systemically and directly activate Mincle receptors on alveolar macrophages in the lung",
+        "B": "Gut bacteria produce metabolites that upregulate Mincle expression on intestinal dendritic cells, which then migrate to the lung to fight infection",
+        "C": "Gut bacteria modulate macrophage-inducible C-type lectin (Mincle) activity, which regulates dendritic cell-dependent immune responses to Mycobacterium tuberculosis in the lung",
+        "D": "Mincle is a mucosal adhesin expressed by gut Firmicutes that cross-reacts with Mycobacterium tuberculosis antigens, providing cross-protective humoral immunity"
+      },
+      "correct_answer": "C",
+      "explanation": "Mincle (macrophage-inducible C-type lectin) is modulated by gut bacteria and plays important roles in regulating the immune response to Mycobacterium tuberculosis in a dendritic cell-dependent manner in the lung. This represents a mechanistic pathway through which the gut microbiota communicates along the gut–lung axis to shape pulmonary antimycobacterial immunity.",
+      "topic_tags": ["Mincle", "dendritic cells", "gut-lung axis", "Mycobacterium tuberculosis", "innate immunity", "gut bacteria"]
+    },
+
+    {
+      "id": "ptb_gm_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "When comparing the diagnostic performance of microbiome-based versus metabolome-based random forest classifiers for tuberculosis, what does the substantial difference in AUC values indicate about the nature of these two biological layers?",
+      "options": {
+        "A": "Metabolome classifiers outperform microbiome classifiers because metabolites are more directly reflective of host immune status than bacterial taxa, suggesting that host-derived metabolites rather than microbial composition drive the diagnostic signal",
+        "B": "The higher AUC of metabolome-based classifiers reflects that fecal metabolites integrate signals from gut bacteria, host cells, and diet simultaneously, making them a more direct and sensitive functional readout than compositional microbiome data alone",
+        "C": "The difference in AUC values is an artifact of the larger number of metabolite features available compared to genera, meaning the metabolome model is simply overfitting to more variables",
+        "D": "Microbiome classifiers have lower AUC values because 16S rRNA sequencing has technical noise that metabolomics does not; the biological information content of both layers is equivalent"
+      },
+      "correct_answer": "B",
+      "explanation": "Fecal metabolites represent the integrated functional output of gut bacteria, host epithelial cells, and dietary inputs, making them a richer and more direct readout of disease-related metabolic disruption than taxonomic composition alone. The substantially higher AUC of metabolome-based classifiers reflects this integrative nature — metabolites capture not just which bacteria are present but what they are collectively doing and how host metabolism is responding, producing a more discriminative biomarker set.",
+      "topic_tags": ["random forest", "AUC", "diagnostic classifiers", "metabolomics vs microbiomics", "fecal metabolome", "functional readout"]
+    },
+    {
+      "id": "ptb_gm_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "Given the simultaneous reduction of Firmicutes, SCFA levels, squalene, and indoxyl sulfate in tuberculosis patients, what overarching hypothesis does this convergence of findings best support?",
+      "options": {
+        "A": "Tuberculosis primarily damages the gut epithelium directly, causing secondary dysbiosis and metabolic collapse independent of the immune system",
+        "B": "Gut dysbiosis in tuberculosis represents a multidimensional collapse of beneficial microbiota-derived functions — energy provision to colonocytes, immune regulation via SCFAs, anti-inflammatory lipid metabolism, and antimycobacterial metabolite production — creating a systemic environment that simultaneously impairs gut barrier integrity, suppresses effective pulmonary immunity, and potentially facilitates mycobacterial persistence",
+        "C": "The metabolic and microbiome changes in tuberculosis are entirely explained by appetite loss and nutritional deficiency, with no independent contribution of the infection to gut dysbiosis",
+        "D": "The reduction in Bacteroidetes is the primary driver of all observed metabolic and immune changes, since Bacteroidetes are the sole producers of both SCFAs and immune-modulating metabolites in the colon"
+      },
+      "correct_answer": "B",
+      "explanation": "The convergence of reduced SCFA-producing Firmicutes, decreased SCFA levels (especially butyrate), lower squalene (anti-inflammatory), reduced indoxyl sulfate (reflecting tryptophan metabolism disruption and potential loss of antimycobacterial indole propionic acid), and altered lipid parameters together supports the hypothesis that tuberculosis is associated with a broad functional collapse of the gut microbiota. This multi-axis failure impairs mucosal barrier integrity, reduces Treg-mediated anti-inflammatory signalling, compromises lipid homeostasis, and diminishes the capacity to produce metabolites with direct or indirect antimycobacterial activity — creating a systemic environment permissive to disease.",
+      "topic_tags": ["gut dysbiosis mechanisms", "SCFA", "squalene", "indoxyl sulfate", "mucosal immunity", "tuberculosis pathophysiology", "multi-omics integration"]
+    }
+  ]
+}

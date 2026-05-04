@@ -1,0 +1,263 @@
+{
+  "metadata": {
+    "source_paper": "A catalogue of 1,167 genomes from the human gut archaeome",
+    "authors": ["Cynthia Maria Chibani", "Alexander Mahnert", "Guillaume Borrel", "Alexandre Almeida", "Almut Werner", "Jean-François Brugère", "Simonetta Gribaldo", "Robert D. Finn", "Ruth A. Schmitz", "Christine Moissl-Eichinger"],
+    "journal": "Nature Microbiology",
+    "year": 2022,
+    "doi": "10.1038/s41564-021-01020-9",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "archaea_gut_easy_001",
+      "difficulty": "easy",
+      "question": "What is the archaeome, and why has it been largely overlooked compared to the bacterial component of the gut microbiome?",
+      "answer": "The archaeome refers to the archaeal community of the human gut microbiome. Despite being a significant domain of life, archaea have been largely overlooked primarily due to methodological challenges — including difficulties with cell lysis, DNA extraction, and the fact that most sequencing studies were designed for bacterial microbiome analysis. Archaea are prokaryotes like bacteria but differ in cell structure, metabolism, and molecular machinery. Their study has lagged because most reference databases and analytical pipelines were developed for bacterial genomes.",
+      "topic_tags": ["archaeome", "archaea", "gut microbiome", "methodology", "overview"]
+    },
+    {
+      "id": "archaea_gut_easy_002",
+      "difficulty": "easy",
+      "question": "What is methanogenesis, and why is it considered a syntrophic metabolic process?",
+      "answer": "Methanogenesis is a unique metabolic process performed by methanogenic archaea, during which C1 or C2 carbon compounds — such as CO2, CO, formate, acetate, or methyl compounds — serve as substrates for the production of methane. It is considered highly syntrophic because it consumes end-products of bacterial fermentation. This creates a metabolic dependency between methanogens and fermentative bacteria: the archaea remove fermentation byproducts that would otherwise inhibit bacterial fermentation, thereby benefiting both organisms.",
+      "topic_tags": ["methanogenesis", "syntrophy", "methane", "fermentation", "archaea metabolism"]
+    },
+    {
+      "id": "archaea_gut_easy_003",
+      "difficulty": "easy",
+      "question": "Which archaeal orders are most prevalent in the human gut, and what are their key representative species?",
+      "answer": "The most prevalent archaeal orders in the human gut are Methanobacteriales and Methanomassiliicoccales. Methanobacteriales are primarily represented by Methanobrevibacter smithii, which has a prevalence of up to 97.5%, and Methanosphaera stadtmanae with prevalence up to 23%. Methanomassiliicoccales, more recently discovered in the gut, include Methanomassiliicoccus luminyensis, Candidatus Methanomassiliicoccus intestinalis, Ca. Methanomethylophilus alvus, and strains Mx02, Mx03, and Mx06, with some reaching prevalence of up to 80% in certain populations.",
+      "topic_tags": ["Methanobacteriales", "Methanomassiliicoccales", "Methanobrevibacter smithii", "prevalence", "gut archaea"]
+    },
+    {
+      "id": "archaea_gut_easy_004",
+      "difficulty": "easy",
+      "question": "What adaptive traits do some gut-associated archaea possess that help them colonize the gastrointestinal environment?",
+      "answer": "Some archaea have evolved specific adaptive traits for colonization of the human gut. These include bile salt hydrolases (choloylglycine hydrolase, CGH), which help them tolerate the bile acid environment of the intestine, and adhesin-like proteins, which likely facilitate attachment to gut surfaces. Some species can also degrade potentially harmful bacterial metabolites such as trimethylamine (TMA), which is implicated in cardiovascular disease. Additionally, certain archaea can induce specific host immune responses, suggesting a degree of host-microbe interaction that supports long-term colonization.",
+      "topic_tags": ["bile salt hydrolase", "adhesins", "TMA", "host adaptation", "gut colonization"]
+    },
+    {
+      "id": "archaea_gut_easy_005",
+      "difficulty": "easy",
+      "question": "What distinguishes methane emitters from non-emitters among humans, and why is this physiologically relevant?",
+      "answer": "Methane emitters are individuals who exhale significant amounts of methane (above 5 ppm in breath), comprising approximately 20% of the western population and carrying roughly 2% archaeal signatures in their overall gut microbial community. Non-emitters, by contrast, have only about 0.002% archaeal signatures and exhale negligible methane. This distinction is physiologically relevant because the effects of these striking differences in archaeal abundance on host health remain largely unclear, yet are considered potentially significant — high methane production may affect gut motility, energy metabolism, and has been associated with various conditions including constipation and obesity.",
+      "topic_tags": ["methane emitters", "breath methane", "archaeal abundance", "host physiology", "health"]
+    },
+    {
+      "id": "archaea_gut_medium_001",
+      "difficulty": "medium",
+      "question": "How do Methanobacteriales and Methanomassiliicoccales differ in their methanogenic pathways, and what is the significance of methanol utilization for gut archaea?",
+      "answer": "Methanobacteriales and Methanomassiliicoccales possess distinct methanogenesis pathways. Methanobacteriales (including all human gut Methanobrevibacter spp.) have the genetic potential to utilize formate and H2/CO2 as methanogenic substrates — a capacity absent in Methanomassiliicoccales. In contrast, the majority of Methanomassiliicoccales encode MttBC methyltransferase for TMA utilization, which Methanobrevibacter typically lacks. Both orders, however, share the mtaABC genes for methanol utilization — found in 83% of all methanogenic MAGs. The prevalence of mtaABC in the two dominant Methanobrevibacter species but its absence in rarer species strongly suggests methanol utilization confers a selective advantage in the gut environment, though whether methanol serves as a methanogenic substrate or feeds an anabolic pathway remains to be determined.",
+      "topic_tags": ["methanogenic pathways", "Methanobacteriales", "Methanomassiliicoccales", "methanol", "formate", "TMA"]
+    },
+    {
+      "id": "archaea_gut_medium_002",
+      "difficulty": "medium",
+      "question": "What genomic and functional features justify splitting the Methanobrevibacter smithii group into two distinct species?",
+      "answer": "The M. smithii group is justified as two separate species based on multiple lines of evidence. First, average nucleotide identity (ANI) between the two representative genomes is only 93.95%, falling below the accepted species boundary threshold of 95%. Second, protein catalogue analysis reveals clear separation in their functional profiles. Notably, all M. smithii strains carry the modA gene (involved in molybdate transport and substrate binding), while this gene is absent from all smithii_A genomes. Additionally, molybdate ABC transporter components (permease and ATP-binding protein) are found in 94% of M. smithii genomes but none of the smithii_A genomes, indicating different pathways for molybdate acquisition. The smithii_A genomes also carry unique membrane and cell-wall-associated proteins including adhesin-like proteins and uncharacterized transporters. Furthermore, the mcrA gene shows a consistent average amino acid sequence difference of 2.15% between clades. The new species was named 'Candidatus Methanobrevibacter intestini'.",
+      "topic_tags": ["Methanobrevibacter smithii", "Ca. M. intestini", "species boundary", "ANI", "molybdate", "genomic differentiation"]
+    },
+    {
+      "id": "archaea_gut_medium_003",
+      "difficulty": "medium",
+      "question": "How does the archaeal protein profile reflect sociodemographic characteristics such as lifestyle and geographic origin, and what does this suggest about the gut archaeome?",
+      "answer": "The archaeal protein catalogue demonstrates strong predictive power for several sociodemographic characteristics. The highest prediction accuracy was achieved for lifestyle (urban vs. rural), reaching 100% accuracy. Predictions exceeding 70% accuracy were also obtained for continent, country, health status, age group, and sex. BMI group was less predictable from protein presence/absence, though accuracy improved when using actual numerical BMI values. For some categories — including lifestyle, sex, and country of origin — predictions improved when based on protein abundance (mapped protein matrix) rather than simple presence/absence data. This indicates that the composition and relative abundance of archaeal proteins are strongly shaped by sociodemographic and environmental factors, implying that host lifestyle, geography, and demographics profoundly influence archaeal community structure and function.",
+      "topic_tags": ["protein catalogue", "supervised learning", "lifestyle", "geography", "archaeome diversity", "sociodemographics"]
+    },
+    {
+      "id": "archaea_gut_medium_004",
+      "difficulty": "medium",
+      "question": "How does the geographic distribution of TMA-metabolizing Methanomassiliicoccales vary across continents, and what might explain this variation?",
+      "answer": "The presence of mttBC genes — encoding MttBC methyltransferase needed for trimethylamine (TMA) utilization — was found at higher proportions in Methanomassiliicoccales MAGs from Europe and North America (~60%) compared to those from Africa and Asia (~40%) and Oceania (~17%). This geographic variation likely reflects differences in TMA-production capacity by gut bacteria across these populations, which is in turn linked to dietary habits. Populations in Europe and North America may consume more TMA-precursor-rich foods (such as red meat and certain fish), leading to higher bacterial TMA production and thereby creating selective pressure for Methanomassiliicoccales strains capable of degrading TMA. The capacity to metabolize TMA is of clinical interest because TMA is implicated in trimethylaminuria and is suspected to contribute to cardiometabolic, cardiovascular, and renal diseases.",
+      "topic_tags": ["TMA", "mttBC", "Methanomassiliicoccales", "geographic variation", "diet", "cardiovascular disease"]
+    },
+    {
+      "id": "archaea_gut_medium_005",
+      "difficulty": "medium",
+      "question": "What does the identification of a complex archaeal virome reveal about the ecological role of archaeal viruses in the human gut, and what challenges exist in characterizing them?",
+      "answer": "The identification of 94 viral populations from the archaeal genome dataset — the vast majority (91 species) specific to Methanobrevibacter A — reveals that archaeal viruses in the human gut are far more diverse than previously recognized, indicating they likely have an underestimated ecological importance in the gut microbiome. This was the first identification of viruses or proviruses infecting Methanomassiliicoccales and Methanobacteriales members from the human gut. However, characterization faces significant challenges: when compared against comprehensive human gut virome and viral RefSeq databases, none of the discovered viral sequences clustered with any known sequences, highlighting the absence of reference genomes. The lack of closely related archaeal viral genomes in existing databases makes taxonomic classification and functional characterization through metagenomic approaches difficult, pointing to a major knowledge gap in gut virome biology.",
+      "topic_tags": ["archaeal virome", "proviruses", "Methanobrevibacter", "viral diversity", "classification challenges"]
+    },
+    {
+      "id": "archaea_gut_medium_006",
+      "difficulty": "medium",
+      "question": "What evidence suggests that Candidatus Methanoprimaticola hominis is strongly associated with non-westernized human populations, and what metabolic capacity distinguishes it?",
+      "answer": "Ca. Methanoprimaticola hominis (formerly Methanomassiliicoccales Mx06) shows strong association with non-westernized populations through several lines of evidence. Representatives of this species were predominantly found in young adults (average age 32 years) from rural areas (80%) in Oceania, Asia, and Africa (65%, 13%, and 7% respectively). Furthermore, this species has a prevalence of 80% in a population of uncontacted Amerindians aged 7 to 48 years, a distinctly non-westernized group. The young average age of hosts harboring this species contrasts with the generally reported positive correlation between age and methanogen prevalence. Metabolically, several representatives have the genetic potential to metabolize TMA, a bacterial metabolite involved in trimethylaminuria and cardiovascular disease, distinguishing it from many other Methanomethylophilaceae genera.",
+      "topic_tags": ["Ca. Methanoprimaticola hominis", "Mx06", "non-westernized populations", "TMA", "rural", "Amerindians"]
+    },
+    {
+      "id": "archaea_gut_hard_001",
+      "difficulty": "hard",
+      "question": "Why do human-associated methanogens carry a significantly lower proportion of bacterial-origin genes compared to their animal-associated counterparts, and what does this imply about host-specific archaeal adaptation?",
+      "answer": "Human-associated Methanobrevibacter spp. carry approximately 2.84% genes of probable non-archaeal (bacterial) origin on average, significantly lower than the ~6.09% found in animal-associated counterparts. Similarly, human-associated Methanosphaera spp. carry ~1.45% bacterial-annotated genes versus ~6.74% in animal-associated species. The elevated bacterial gene content in animal-associated archaea is primarily driven by an increased contribution of Clostridia-derived genes — specifically from Lachnospiraceae (mainly specialized in plant degradation) — in Methanobrevibacter, and from Bacilli and Erysipelotrichia in Methanosphaera. These observations imply that horizontal gene transfer (HGT) events from co-resident bacteria may reflect dietary and environmental exposures: animal gut bacteria have different fermentation specializations and may create more HGT opportunities related to plant polymer degradation. Crucially, the lower proportion of bacterial-origin genes in human-gut archaea suggests that adaptation to the human gastrointestinal tract is not driven primarily by acquisition of bacterial genes — rather, other mechanisms such as metabolic pathway tuning, protein surface modification, and loss of oxidative stress genes may be more central to human gut specialization.",
+      "topic_tags": ["horizontal gene transfer", "HGT", "bacterial genes", "host adaptation", "Lachnospiraceae", "Methanobrevibacter", "Methanosphaera"]
+    },
+    {
+      "id": "archaea_gut_hard_002",
+      "difficulty": "hard",
+      "question": "How do choloylglycine hydrolase (CGH) genes in gut archaea differ from their bacterial counterparts in terms of evolutionary origin, and what does their distribution across archaeal species reveal about specialization to the human gut?",
+      "answer": "CGH homologues (bile salt hydrolases) were detected in 11 of 27 archaeal species, including all five most prevalent species: M. smithii, Ca. M. intestini, M. stadtmanae, M. alvus, and Ca. M. hominis. Notably, CGH genes were absent from all Methanomassiliicoccus genomes and from Haloferaceae, suggesting bile salt hydrolase activity is not universal among gut archaea but is specifically enriched in those that are most adapted to the human gastrointestinal environment — where bile acids are abundant. Phylogenetically, the archaeal CGH genes detected in Methanomassiliicoccales, Methanomicrobiales, and Methanobacteriales formed separate, distinct clusters within the broader bacterial bile salt hydrolase gene tree, rather than clustering together. This pattern of clustering indicates that these genes were acquired through multiple independent horizontal gene transfer events from different bacterial donors, rather than from a single common archaeal ancestor or a single HGT event. This convergent acquisition across multiple archaeal lineages further underscores the adaptive value of bile acid tolerance for colonization of the bile-rich human intestinal environment.",
+      "topic_tags": ["bile salt hydrolase", "CGH", "horizontal gene transfer", "convergent evolution", "gut specialization", "Methanobacteriales"]
+    },
+    {
+      "id": "archaea_gut_hard_003",
+      "difficulty": "hard",
+      "question": "How do oxygen resistance gene profiles differ across host-associated versus environmental archaeal lineages, and what does this pattern reveal about evolutionary adaptation to the anaerobic gut niche?",
+      "answer": "The analysis of oxygen resistance genes (catalase, superoxide dismutase, peroxiredoxin, rubredoxin, and thioredoxin) reveals clear patterns linked to host versus environmental lifestyles. Catalase was detected only in some Methanomassiliicoccales (mainly Methanomassiliicoccus), Haloarchaea, Methanobrevibacter arboriphilus, and Methanobacterium — many of which have environmental or non-strictly-human-gut niches. Superoxide dismutase was rarely detected and only in Haloferax and Halorubrum, which are more environmentally distributed. Strikingly, none of the Methanobrevibacter representatives — except M. arboriphilus, which has environmental distribution — carry the peroxiredoxin gene. In contrast, thioredoxin and rubredoxin, which provide basic redox buffering rather than active ROS detoxification, were detected in most genomes across orders. This pattern is interpreted as follows: loss of elaborate enzymatic oxygen detoxification systems (catalase, superoxide dismutase, peroxiredoxin) represents a trait of host adaptation because the gastrointestinal tract maintains permanently strict anaerobic conditions, removing the selective pressure to maintain these energetically costly systems. Environmental archaea, by contrast, encounter fluctuating oxygen levels and must retain active detoxification capacity. The selective retention of thioredoxin and rubredoxin across host-associated species likely reflects their broader roles in redox homeostasis beyond just oxygen stress.",
+      "topic_tags": ["oxygen resistance", "catalase", "superoxide dismutase", "peroxiredoxin", "host adaptation", "anaerobic", "thioredoxin", "rubredoxin"]
+    },
+    {
+      "id": "archaea_gut_hard_004",
+      "difficulty": "hard",
+      "question": "What is the pan-genome status of the gut archaeome, and how does undersampling affect our understanding of archaeal diversity in the human gastrointestinal tract?",
+      "answer": "Pan-genome analyses indicate that the gut archaeome still remains largely undersampled, with an open pan-genome suggesting that new genomic content continues to be discovered with each additional genome analyzed. This has several important implications. First, the current collection is based on publicly available datasets processed primarily for bacterial microbiome analysis, meaning a large number of archaeal species requiring specialized cell lysis and DNA extraction methods may be systematically absent from existing datasets. Second, stool sampling is not fully representative of complete intestinal archaeal diversity because some archaea form biofilms and adhere to the epithelium — these mucosal populations would be missed or underrepresented in fecal metagenomics. Third, many taxa in the collection are represented by only single genome representatives, which is insufficient for robust comparative genomic analysis. Fourth, only 9 of 27 archaeal species detected in human gut metagenomes have a cultured representative, limiting experimental validation of genomic predictions. Together, these gaps suggest that current genomic catalogues substantially underestimate true archaeal diversity, and that culturomics, specialized extraction protocols, and mucosal sampling will be needed to capture the full breadth of the human gut archaeome.",
+      "topic_tags": ["pan-genome", "open pan-genome", "undersampling", "culturomics", "archaeal diversity", "biofilm", "mucosal sampling"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "archaea_gut_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which of the following best describes why methanogenesis in the gut is considered metabolically syntrophic?",
+      "options": {
+        "A": "Methanogens compete with bacteria for the same carbon substrates, increasing overall microbial diversity",
+        "B": "Methanogens produce short-chain fatty acids that feed colonic epithelial cells",
+        "C": "Methanogens consume bacterial fermentation end-products, thereby relieving feedback inhibition of bacterial fermentation",
+        "D": "Methanogens encode bacterial-derived glycoside hydrolases that help degrade complex dietary fibers"
+      },
+      "correct_answer": "C",
+      "explanation": "Methanogenesis is syntrophic because methanogens consume the end-products of bacterial fermentation — such as H2, CO2, formate, and acetate — which would otherwise accumulate and inhibit the fermentation process itself. This creates a mutually beneficial dependency between fermentative bacteria and methanogenic archaea.",
+      "topic_tags": ["methanogenesis", "syntrophy", "fermentation", "archaea-bacteria interaction"]
+    },
+    {
+      "id": "archaea_gut_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What is the primary reason that 16S rRNA gene sequencing failed to distinguish Methanobrevibacter smithii from the newly proposed species Ca. Methanobrevibacter intestini?",
+      "options": {
+        "A": "The 16S rRNA gene is too short to provide reliable taxonomic resolution for Methanobrevibacter",
+        "B": "The two species have identical 16S rRNA gene sequences and cannot be differentiated using this marker",
+        "C": "16S rRNA gene amplification preferentially amplifies M. smithii, masking the presence of Ca. M. intestini",
+        "D": "Ca. M. intestini lacks a functional ribosomal RNA gene and cannot be detected by standard amplicon sequencing"
+      },
+      "correct_answer": "B",
+      "explanation": "The two species — M. smithii and Ca. M. intestini (formerly M. smithii_A) — cannot be distinguished by 16S rRNA gene sequence analysis because their 16S sequences are identical. This is most likely the reason the clade separation was not identified previously. Only genome-level analyses (ANI, protein profiles) and the mcrA gene revealed a consistent difference between them.",
+      "topic_tags": ["16S rRNA", "Methanobrevibacter smithii", "Ca. M. intestini", "species delineation", "mcrA"]
+    },
+    {
+      "id": "archaea_gut_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "Which adaptive feature is present in the five most prevalent human gut archaeal species but absent from Methanomassiliicoccus and Haloferaceae?",
+      "options": {
+        "A": "Adhesin-like surface proteins",
+        "B": "Bile salt hydrolase (choloylglycine hydrolase) genes",
+        "C": "Trimethylamine-metabolizing methyltransferases",
+        "D": "Catalase and superoxide dismutase for oxidative stress resistance"
+      },
+      "correct_answer": "B",
+      "explanation": "Bile salt hydrolase (choloylglycine hydrolase, CGH) homologues were detected in 11 of 27 archaeal species, including all five most prevalent ones (M. smithii, Ca. M. intestini, M. stadtmanae, M. alvus, and Ca. M. hominis). CGH genes were notably absent from all Methanomassiliicoccus genomes and Haloferaceae, indicating their importance for specialization toward the human gut.",
+      "topic_tags": ["bile salt hydrolase", "CGH", "gut adaptation", "Methanomassiliicoccus", "prevalent archaea"]
+    },
+    {
+      "id": "archaea_gut_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "How does the genomic content of M. smithii_A (Ca. M. intestini) differ from M. smithii in terms of molybdate metabolism?",
+      "options": {
+        "A": "M. smithii_A has more copies of molybdate transporter genes, indicating enhanced molybdate acquisition",
+        "B": "All M. smithii genomes lack modA, whereas Ca. M. intestini encodes multiple molybdate-binding proteins",
+        "C": "All M. smithii strains carry modA and molybdate ABC transporter components, which are entirely absent from Ca. M. intestini genomes, suggesting a different molybdate acquisition pathway",
+        "D": "Both species encode identical molybdate transporters, and the difference lies exclusively in surface protein composition"
+      },
+      "correct_answer": "C",
+      "explanation": "All M. smithii strains carry the modA gene (involved in molybdate transport and substrate binding), which is absent from Ca. M. intestini genomes. Additionally, molybdate ABC transporter permease and ATP-binding protein components were identified in 94% of M. smithii genomes but in none of the Ca. M. intestini genomes. This indicates that Ca. M. intestini uses a different pathway for molybdate acquisition.",
+      "topic_tags": ["modA", "molybdate", "Ca. M. intestini", "M. smithii", "ABC transporter", "metabolic differentiation"]
+    },
+    {
+      "id": "archaea_gut_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "What pattern was observed in the proportion of archaeal genomes carrying TMA-metabolizing (mttBC) genes across different geographic regions, and what is the most plausible explanation?",
+      "options": {
+        "A": "Higher prevalence in African and Asian populations, reflecting greater consumption of TMA-precursor-rich plant foods",
+        "B": "Higher prevalence in European and North American populations (~60%) compared to Africa and Asia (~40%) and Oceania (~17%), likely reflecting dietary differences in TMA precursor intake",
+        "C": "Uniform distribution across all continents, indicating mttBC is a core metabolic gene in all Methanomassiliicoccales",
+        "D": "Higher prevalence in Oceanian populations due to marine diet-associated TMA exposure"
+      },
+      "correct_answer": "B",
+      "explanation": "The mttBC genes were detected in a higher proportion of Methanomassiliicoccales MAGs from Europe and North America (~60%) compared to Africa and Asia (~40%) or Oceania (~17%). These variations likely reflect different TMA-production capacities of gut bacteria across populations, which in turn reflects dietary habits — Western diets tend to be higher in TMA-precursor-rich foods such as red meat and certain fish.",
+      "topic_tags": ["mttBC", "TMA", "geographic variation", "diet", "Methanomassiliicoccales", "cardiometabolic disease"]
+    },
+    {
+      "id": "archaea_gut_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "Which observation best supports the conclusion that archaeal viruses in the human gut represent a previously unexplored, highly novel viral diversity?",
+      "options": {
+        "A": "The archaeal viruses identified cluster closely with known bacteriophages in the Gut Virome Database, suggesting shared evolutionary origins",
+        "B": "None of the identified archaeal viral sequences clustered with any sequences in either the human Gut Virome Database or the Viral RefSeq Database, indicating entirely novel viral taxa",
+        "C": "Archaeal viruses were found exclusively in Methanomassiliicoccales, which had already been reported to harbor diverse viruses in environmental samples",
+        "D": "The identified proviruses were structurally indistinguishable from known bacterial prophages, suggesting horizontal viral transfer between domains"
+      },
+      "correct_answer": "B",
+      "explanation": "When compared using vConTACT2 against both the comprehensive human Gut Virome Database and the Viral RefSeq Database, none of the discovered archaeal viruses clustered with any known sequences. This confirms they represent entirely novel viral taxa with no close relatives in existing databases, highlighting the significant gap in archaeal virome knowledge.",
+      "topic_tags": ["archaeal virome", "proviruses", "novel viruses", "Gut Virome Database", "vConTACT2"]
+    },
+    {
+      "id": "archaea_gut_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "What does the strong predictive accuracy of the archaeal protein catalogue for lifestyle (urban vs. rural) indicate about the gut archaeome?",
+      "options": {
+        "A": "Urban and rural individuals harbor entirely different archaeal species with no overlap in protein repertoire",
+        "B": "The compositional and functional characteristics of the gut archaeome are strongly shaped by host lifestyle, enabling near-perfect classification based on archaeal protein profiles alone",
+        "C": "Lifestyle-specific differences are driven entirely by host genetics rather than environmental or dietary factors",
+        "D": "The accuracy reflects overfitting in the random forest model, and results are unlikely to generalize to new populations"
+      },
+      "correct_answer": "B",
+      "explanation": "The archaeal protein catalogue achieved 100% prediction accuracy for lifestyle (urban/rural) classification using supervised machine learning. This indicates that the archaeal community composition and function is profoundly shaped by lifestyle-related factors — likely including diet, antibiotic exposure, sanitation, and host-microbe interactions — such that the archaeal protein profile alone is sufficient to classify an individual's urban or rural lifestyle.",
+      "topic_tags": ["protein catalogue", "lifestyle", "supervised learning", "urban rural", "archaeome diversity"]
+    },
+    {
+      "id": "archaea_gut_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "Based on growth rate index (GRiD) analyses, what conclusion can be drawn about archaeal replication in the human gut?",
+      "options": {
+        "A": "Most gut archaea show negligible replication activity, suggesting they are primarily transient colonizers derived from environmental sources",
+        "B": "Good evidence was obtained that major archaeal species are actively replicating within their gut habitat, supporting their status as genuine residents",
+        "C": "Growth rates were uniformly low across all archaeal species, suggesting strong metabolic dormancy in the gut environment",
+        "D": "Only Methanobrevibacter species showed active replication; Methanomassiliicoccales were found to be non-replicating"
+      },
+      "correct_answer": "B",
+      "explanation": "Growth rate index (GRiD) analyses provided good evidence that major archaeal species are indeed actively replicating within their gut habitat. This supports their classification as genuine, resident members of the gut microbiome rather than transient or environmental contaminants.",
+      "topic_tags": ["growth rate index", "GRiD", "archaeal replication", "gut residents", "active colonization"]
+    },
+    {
+      "id": "archaea_gut_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "What does the phylogenetic and genomic evidence indicate about the relationship between host-associated archaea and their environmental relatives, and how can gut archaeal strains be classified by their ecological niche?",
+      "options": {
+        "A": "Host-associated archaea are closely related to environmental counterparts with high ANI values, suggesting frequent exchange between gut and environment niches",
+        "B": "Based on 16S rRNA and ANI analyses, host-associated archaea can be classified into three groups: exclusively human-gut, host-associated (human, animal, plant), and environmentally widespread — with the first two groups representing the majority",
+        "C": "All gut archaeal species belong to a single host-specific clade entirely separate from all environmental archaea, with no overlap at genus level",
+        "D": "Most gut archaeal species are derived from environmental soil archaea that were recently transferred to the human gut through food consumption"
+      },
+      "correct_answer": "B",
+      "explanation": "Based on 16S rRNA gene analyses and ANI-based comparisons, gut archaeal strains can be classified into three groups: (1) exclusively human gut-associated species (including H. massiliensis, M. oralis, M. smithii, Ca. M. intestini, M. stadtmanae, M. intestinalis, and M. alvus); (2) host (human, animal, plant)-associated species (M. woesei and M. cuniculi); and (3) environmentally widespread species (H. lipolyticum, M. arboriphilus, and M. luminyensis). The first two groups — host-associated — represent the highest proportion among gut archaea.",
+      "topic_tags": ["phylogenetics", "host association", "environmental archaea", "ANI", "ecological niche", "classification"]
+    },
+    {
+      "id": "archaea_gut_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "Why does Candidatus Methanarcanum hacksteinii (Mx02) represent a scientifically puzzling methanogen, and what does its genomic profile suggest about unknown aspects of archaeal metabolism?",
+      "options": {
+        "A": "Ca. Methanarcanum hacksteinii lacks all core methanogenesis enzymes including MCR, suggesting it is a non-methanogenic archaeon misclassified within Methanomassiliicoccales",
+        "B": "Ca. Methanarcanum hacksteinii lacks all known methyl-compound methyltransferases as well as any other known methanogenesis pathway genes, suggesting the existence of unknown methanogenesis pathways based on uncharacterized methyltransferases or an entirely novel metabolic route",
+        "C": "Ca. Methanarcanum hacksteinii encodes a full set of both H2/CO2 and methylamine methanogenesis pathways, making its metabolic niche redundant with M. smithii",
+        "D": "Ca. Methanarcanum hacksteinii can only metabolize dimethylsulfide, a substrate unique among Methanomassiliicoccales, which explains its puzzling phenotype"
+      },
+      "correct_answer": "B",
+      "explanation": "Ca. Methanarcanum hacksteinii (Mx02) lacks all detected methylamine methyltransferases (MttBC, MtmBC, MtbBC for TMA, monomethylamine, and dimethylamine) as well as any other known genes involved in methyl-compound utilization or alternative methanogenesis pathways. This absence in all Mx02 MAGs and in related previously obtained MAGs strongly supports the hypothesis that unknown methanogenesis pathways exist — potentially based on uncharacterized methyltransferases or a fundamentally different metabolic route. This is why the genus was named 'Methanarcanum' (arcanus = silent, secret) to reflect its enigmatic methane-forming capacity.",
+      "topic_tags": ["Ca. Methanarcanum hacksteinii", "Mx02", "unknown methanogenesis", "methyltransferase", "novel metabolism", "Methanomassiliicoccales"]
+    }
+  ]
+}

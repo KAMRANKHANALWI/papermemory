@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Combined metabolomic and metagenomic analysis reveals inflammatory bowel disease diversity in pediatric and adult patients",
+    "authors": ["Natalya B Zakharzhevskaya", "Svetlana I Erdes", "Elena A Belousova", "et al."],
+    "journal": "World Journal of Gastroenterology",
+    "year": 2025,
+    "doi": "10.3748/wjg.v31.i48.112653",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "ibdmeta_easy_q01",
+      "difficulty": "easy",
+      "question": "What is functional metabolomics and why is it particularly valuable for studying inflammatory bowel disease?",
+      "answer": "Functional metabolomics is an integrative analytical approach that simultaneously characterizes microbial community dynamics (diversity) and bacterial metabolic output profiling (secretory activity). It is particularly valuable for IBD research because it links changes in microbial community structure directly to functional consequences — specifically the altered secretion of volatile organic compounds and short-chain fatty acids. This dual capability allows researchers to capture not just who is present in the gut microbiome, but what those microbes are doing metabolically, enabling more biologically meaningful diagnostic signatures. In IBD, where the altered secretory profile is a functional consequence of microbial community restructuring, this integrated approach yields clinically actionable information that compositional analysis alone cannot provide.",
+      "topic_tags": ["functional metabolomics", "IBD", "microbiome", "metabolic profiling", "diagnostic biomarkers"]
+    },
+    {
+      "id": "ibdmeta_easy_q02",
+      "difficulty": "easy",
+      "question": "What is headspace-gas chromatography-mass spectrometry (HS-GC-MS) and what makes it suitable for analyzing biological samples like feces?",
+      "answer": "Headspace-gas chromatography-mass spectrometry (HS-GC-MS) is a vapor-phase extraction method coupled with mass spectrometric detection. In this technique, volatile organic compounds (VOCs) are extracted into the vapor (headspace) above a biological sample, then separated and identified by gas chromatography and mass spectrometry. Its key advantage for biological samples such as feces is that the ratios of components in an equilibrium vapor do not depend on the amount of water contained in the samples, making it possible to reliably compare samples with variable water content. It enables analysis of short-chain fatty acids, medium- and long-chain fatty acids, acids with a phenyl radical, aldehydes, and heterocycles. The method investigates VOCs transferred into the vapor phase, representing a promising non-invasive approach for studying low-molecular-weight metabolic compounds.",
+      "topic_tags": ["HS-GC-MS", "headspace extraction", "volatile organic compounds", "fecal analysis", "analytical methods"]
+    },
+    {
+      "id": "ibdmeta_easy_q03",
+      "difficulty": "easy",
+      "question": "Why is early and accurate diagnosis of inflammatory bowel disease in children particularly challenging compared to adults?",
+      "answer": "Early diagnosis of IBD in children is challenging for several interrelated reasons. First, IBD can be asymptomatic for a long time, meaning that by the time clinical symptoms like diarrhea, weight loss, nausea, and blood in stool become apparent, the disease may already be progressing. Second, in children, Crohn's disease can cause delays in physical development and sexual maturation, complicating the clinical picture. Third, in up to 10% of pediatric cases, distinguishing between CD and UC is difficult, and patients may be monitored for prolonged periods with a diagnosis of IBD-unclassified — some of which later evolve into either CD or UC. Finally, the gut microbiota of children differs significantly from that of adults, meaning adult-derived diagnostic benchmarks may not apply directly, and dedicated pediatric diagnostic approaches are needed.",
+      "topic_tags": ["pediatric IBD", "early diagnosis", "Crohn's disease", "ulcerative colitis", "IBD-unclassified"]
+    },
+    {
+      "id": "ibdmeta_easy_q04",
+      "difficulty": "easy",
+      "question": "What are the main microbial metabolite classes produced by intestinal bacteria that are relevant to gut health and IBD pathogenesis?",
+      "answer": "Intestinal bacteria actively produce a wide range of metabolites relevant to gut health and IBD pathogenesis. These include short-chain fatty acids (SCFAs) such as acetate, propionate, and butyrate, which play key roles in regulating immune responses and promoting tissue repair. Beyond SCFAs, bacteria also produce vitamins, essential amino acids, components involved in the biotransformation and conjugation of bile acid salts, substances that promote intestinal motility, and compounds that stimulate intestinal angiogenesis. In the context of IBD diagnostics, volatile organic compounds (VOCs) including indole derivatives, phenolic compounds, aldehydes, and medium- and long-chain fatty acids have also been identified as potentially informative metabolic signatures. The gut microbial metabolome undergoes profound compositional shifts between homeostasis and IBD, yielding diagnostic information.",
+      "topic_tags": ["SCFAs", "microbial metabolites", "gut health", "IBD", "volatile organic compounds"]
+    },
+    {
+      "id": "ibdmeta_easy_q05",
+      "difficulty": "easy",
+      "question": "How does alpha diversity differ between IBD patients and healthy controls, and between pediatric and adult IBD patients?",
+      "answer": "In IBD patients compared to healthy controls, microbiome analysis reveals significant reductions in alpha diversity, meaning IBD is associated with a less diverse gut microbial community. This is consistent with the concept of dysbiosis, where microbial community diversity and stability are disrupted during disease. When comparing pediatric and adult IBD patients with each other, children show significantly greater microbial diversity across multiple taxonomic levels compared to adults with IBD. Additionally, Shannon's alpha diversity index is significantly lower in children compared to adults overall, but this pattern of reduced diversity during disease holds across both age groups. The differences in community composition between healthy and diseased children, as measured by both Shannon coefficient and Bray-Curtis dissimilarity, indicate that clinical disease status is a major determinant of gut microbiome structure in children.",
+      "topic_tags": ["alpha diversity", "Shannon index", "IBD", "dysbiosis", "pediatric vs adult microbiome"]
+    },
+
+    {
+      "id": "ibdmeta_med_q01",
+      "difficulty": "medium",
+      "question": "How do the metabolomic profiles of pediatric IBD patients differ paradoxically from what would be expected based on the principle of reduced microbial diversity in IBD?",
+      "answer": "A counterintuitive finding in pediatric IBD is that despite the well-established principle that IBD is associated with reduced microbial diversity — which would predict a reduction in the number and variety of identified metabolites — the control group of healthy children actually showed a smaller number of diversely represented volatile metabolites than the IBD group. This is in contrast to the pattern seen in adults with chronic IBD, who demonstrate a more stable and constrained metabolomic profile reflecting long-term adaptation to disease. In pediatric IBD patients, the unexpectedly wide variety of metabolic components is thought to be associated with the effects of ongoing therapy as well as the presence of excessive bacterial growth, which provokes the secretion of a range of volatile compounds. This paradox highlights that early-stage pediatric IBD involves active microbial and metabolic dysregulation rather than simple depletion.",
+      "topic_tags": ["metabolomic profiling", "pediatric IBD", "microbial diversity", "dysbiosis", "volatile organic compounds"]
+    },
+    {
+      "id": "ibdmeta_med_q02",
+      "difficulty": "medium",
+      "question": "What is the role of indole and its derivatives in IBD, and why is their reduction significant as a diagnostic marker?",
+      "answer": "Indole and its derivatives are tryptophan metabolites produced by gut bacteria that play a crucial role in maintaining intestinal health and modulating immune responses. The gut microbiome regulates tryptophan metabolism, producing various indole derivatives that influence the host immune response. In IBD, indole levels are significantly reduced across the entire disease group and in individual analyses of both CD and UC patients — a finding consistent across multiple studies and interpreted as indicating a diminished presence of bacteria that actively produce and secrete indole, reflecting the microbial alterations associated with disease. One specific derivative, 1H-indole-3-methyl (skatole/3-methylindole), is especially notable because it can enhance promoter activity of pro-inflammatory cytokines such as IL-6 and TNF-α, potentially influencing IBD progression. Crucially, 1H-indole-3-methyl shows differential variation between CD and UC, making it a marker not only for IBD diagnosis but also for differential diagnosis between the two subtypes in children.",
+      "topic_tags": ["indole", "tryptophan metabolism", "1H-indole-3-methyl", "IBD biomarker", "cytokines", "differential diagnosis"]
+    },
+    {
+      "id": "ibdmeta_med_q03",
+      "difficulty": "medium",
+      "question": "How is the IBD risk coefficient calculated in pediatric patients, and how are its thresholds interpreted clinically?",
+      "answer": "The IBD risk coefficient (Kr) for pediatric patients is a metabolomics-derived formula designed to translate relative metabolomic data into a clinically actionable score. It is calculated as: Kr = log10(1 / (Pentanoic acid × Phenol,4-methyl × 1H-Indole)). The metabolites included in the formula were selected by calculating biserial correlation with IBD status, applying FDR correction, and retaining only those with an absolute correlation coefficient |r| > 0.3. Positively correlated metabolites were placed in the numerator and negatively correlated ones in the denominator. Threshold values were determined through receiver operating characteristic analysis: a Kr value below 4.01 indicates no IBD risk; values between 4.01 and 4.79 suggest low risk, requiring additional clinical markers; and values above 4.79 indicate high IBD risk, strongly recommending further examination and capable of detecting asymptomatic cases. For high-risk cases, 1H-indole-3-methyl levels can further be used to assess the specific risk of CD, while pentanoic acid, phenol 4-methyl, and acetate levels support differential diagnosis toward UC.",
+      "topic_tags": ["IBD risk coefficient", "metabolomic algorithm", "diagnostic threshold", "pediatric IBD", "ROC analysis"]
+    },
+    {
+      "id": "ibdmeta_med_q04",
+      "difficulty": "medium",
+      "question": "What is the significance of Akkermansia muciniphila depletion in pediatric IBD, and how does this connect to known mechanisms of its protective function?",
+      "answer": "A significant decrease in Akkermansia representatives was observed in both UC and CD pediatric patients compared to controls. This is biologically significant because Akkermansia spp. are known to restrain autoimmune reactions and reduce pro-inflammatory cytokines, making them an important protective component of the gut microbiome. Akkermansia muciniphila, the primary species of this genus found in the human intestine, specializes in mucin degradation and is a key propionate producer. Its loss in IBD is consistent with broader mechanistic evidence showing that A. muciniphila helps maintain gut barrier integrity through increased mucin secretion and tight-junction protein expression, reduces metabolic endotoxemia-induced inflammation, and modulates the immune environment in ways that counteract excessive inflammatory responses. Its depletion in IBD patients of both subtypes suggests that loss of this organism may be a common feature of intestinal dysbiosis in pediatric IBD, contributing to barrier dysfunction and heightened inflammation.",
+      "topic_tags": ["Akkermansia muciniphila", "IBD", "gut barrier", "autoimmune regulation", "dysbiosis", "propionate"]
+    },
+    {
+      "id": "ibdmeta_med_q05",
+      "difficulty": "medium",
+      "question": "How does pentanoic acid relate to ulcerative colitis pathogenesis, and why is its reduction considered a disease-specific marker?",
+      "answer": "Pentanoic acid is a short-chain fatty acid produced by gut bacteria as a byproduct of dietary fiber fermentation. Its changes in UC are considered a disease-specific feature distinguishing it from Crohn's disease. In IBD, alterations in gut microbiota composition disrupt SCFA production, and pentanoic acid levels decrease with disease development — with this decrease being more characteristic of UC than CD. Mechanistically, pentanoic acid, along with other SCFAs, may play a role in regulating intestinal inflammation and influencing disease severity; increased levels have been associated with a reduction in UC symptoms. The reduction in pentanoic acid thus reflects both the dysbiotic state of the microbiome and the loss of its anti-inflammatory regulatory function. Because the decrease is more pronounced in UC than CD, pentanoic acid serves as one of the key metabolic biomarkers incorporated into the UC risk prediction model, alongside elevated acetate levels and altered p-cresol (4-methylphenol) excretion.",
+      "topic_tags": ["pentanoic acid", "SCFA", "ulcerative colitis", "dysbiosis", "biomarker", "differential diagnosis"]
+    },
+    {
+      "id": "ibdmeta_med_q06",
+      "difficulty": "medium",
+      "question": "What microbial markers characterize pediatric Crohn's disease, and what are the proposed mechanisms linking these bacteria to disease pathogenesis?",
+      "answer": "Several bacterial species show significant differential abundance in pediatric Crohn's disease. Increased species include Ralstonia insidiosa, Stenotrophomonas maltophilia, and Erysipelatoclostridium ramosum, while decreased species include Blautia spp. and Coprococcus comes. Ralstonia insidiosa is an opportunistic pathogen associated with infections in immunocompromised patients; although its direct role in CD remains unclear, both Ralstonia insidiosa and CD patients share vulnerability to opportunistic infections due to compromised immune defenses. Stenotrophomonas maltophilia is also an opportunistic pathogen resistant to many antibiotics; colonization can worsen IBD symptoms through increased inflammation and malabsorption. Erysipelatoclostridium ramosum produces an enzyme capable of degrading immunoglobulin A, potentially impairing mucosal immunity and worsening inflammation. In contrast, Blautia species reduction is relevant because some strains produce SCFAs with anti-inflammatory effects and can modulate immune responses, while Coprococcus comes is an SCFA producer — particularly acetate — with anti-inflammatory properties, and elevated antibodies against it have been found in CD patients, suggesting an immune-mediated mechanism.",
+      "topic_tags": ["Crohn's disease", "microbial markers", "Ralstonia insidiosa", "Blautia", "Coprococcus comes", "opportunistic pathogens"]
+    },
+
+    {
+      "id": "ibdmeta_hard_q01",
+      "difficulty": "hard",
+      "question": "How do the metabolomic and metagenomic profiles of pediatric Crohn's disease compare to adult Crohn's disease, and what do these differences imply about the pathogenic mechanisms operative at disease onset versus established disease?",
+      "answer": "Pediatric and adult Crohn's disease show distinct metabolomic and metagenomic profiles that illuminate differences in pathogenic mechanisms at different disease stages. Metabolomically, pediatric CD patients show a more homogeneous and consolidated metabolome spectrum — meaning that children with CD cluster more tightly together metabolically — while adult CD patients display a broader, more heterogeneous metabolomic distribution. This suggests that pediatric CD may reflect a more stereotyped early mechanism of disease initiation, whereas adult CD may be shaped by both endogenous and exogenous factors accumulated over time. Metagenomically, Shannon's alpha diversity index is lower in children overall, but pediatric CD patients harbor distinctly higher microbial diversity compared to adults with IBD. Specific age-related differences include the presence of pediatric-enriched markers such as Streptococcus salivarius and Escherichia coli, which are prominent in children but not in adult CD patients. Metabolites like n-hexadecanoic acid and benzeneacetic acid significantly distinguish pediatric from adult CD. Importantly, in adults, propionate and acetate levels show evident correlations with SCFA-producing bacteria, indicating a decline in that functional capacity, while in children such correlations are absent — suggesting that SCFA-producing bacterial activity has not yet been suppressed to the same degree. These differences may be exploited to identify familial IBD cases and to understand primary versus secondary disease mechanisms.",
+      "topic_tags": ["pediatric vs adult CD", "metabolomic comparison", "disease onset", "SCFA production", "metagenomics", "pathogenesis"]
+    },
+    {
+      "id": "ibdmeta_hard_q02",
+      "difficulty": "hard",
+      "question": "Why does UC exhibit greater metabolomic variability than CD, and what does this imply about the underlying heterogeneity of pathogenic factors driving each disease?",
+      "answer": "Correlation analysis reveals that there is considerably greater variability in the Shannon diversity index for SCFAs in UC compared to CD. This finding has important mechanistic implications. The extensive microbiota alterations observed at the metabolomic level in UC — reflected in its wider, more variable SCFA and volatile metabolite profiles — suggest that UC's onset and progression may be influenced by a broader and more heterogeneous range of pathogenic factors, including both microbial and host-side contributors. In contrast, CD — both in childhood and in adulthood — is characterized by a more limited spectrum of metabolic and metagenomic changes. This narrower, more consistent signature in CD may actually be advantageous for diagnostic purposes, as it enhances the prospect of identifying specific pathognomonic factors responsible for disease development. The comparative analysis of metabolomic diversity also connects with clinical observations: UC in children is associated with a wider range of differentially abundant bacteria (including multiple Streptococcus species and Bacteroides ovatus), while CD shows more focused bacterial changes. Together, these data suggest that CD — particularly in children — may have a more defined primary mechanism, while UC represents a convergent endpoint for multiple distinct upstream pathogenic processes.",
+      "topic_tags": ["UC vs CD", "metabolomic diversity", "Shannon index", "SCFA variability", "pathogenesis heterogeneity"]
+    },
+    {
+      "id": "ibdmeta_hard_q03",
+      "difficulty": "hard",
+      "question": "How does Streptococcus salivarius function as a universal metagenomic marker for pediatric IBD, and what is the apparent paradox in interpreting its role given its known functional properties?",
+      "answer": "Streptococcus salivarius emerges as a universal metagenomic marker for pediatric IBD, showing significant increases in abundance across both UC (log2FoldChange = 3.31, FDR < 0.0001 per species-level analysis) and CD groups compared to controls. This contrasts with adult IBD patients, where a comparable universal increase is not observed. What makes this finding complex is the apparent paradox in Streptococcus salivarius's functional profile: it possesses anti-inflammatory properties in various experimental contexts. It can inhibit the NF-κB pathway in human intestinal epithelial cells in vitro, demonstrate protective effects in mouse models of colitis, modulate cytokine production, and regulate PPARγ transcriptional activity in intestinal epithelial cells. Certain strains even show specific protective effects. Yet in IBD patients, particularly those with oral manifestations like orofacial granulomatosis, elevated S. salivarius has been observed in saliva. The correlation analysis further reveals that Streptococcus salivarius content is inversely proportional to heptanoic acid levels — and most Streptococcus members show an inverse relationship with this SCFA — suggesting that while S. salivarius may possess intrinsic anti-inflammatory capabilities, its expansion in the dysbiotic IBD environment is associated with SCFA depletion, potentially reflecting a compensatory response to inflammation or an opportunistic colonization pattern rather than a direct pathogenic role.",
+      "topic_tags": ["Streptococcus salivarius", "universal biomarker", "pediatric IBD", "NF-κB", "heptanoic acid", "paradox"]
+    },
+    {
+      "id": "ibdmeta_hard_q04",
+      "difficulty": "hard",
+      "question": "How does the combined metabolomic-metagenomic approach overcome the limitations of using either methodology alone for IBD diagnostics, particularly for pediatric patients?",
+      "answer": "Using metabolomics or metagenomics in isolation each has distinct limitations for IBD diagnostics. Metagenomics alone identifies which bacteria are present and their relative abundances, but cannot directly measure what those bacteria are doing metabolically — i.e., their secretory activity. Whole-metagenome sequencing is also resource-intensive and not suited for routine clinical application. Metabolomics alone captures the functional output of the microbiome (and host metabolism), but cannot attribute metabolic changes to specific bacterial taxa or distinguish primary microbial changes from secondary host responses. The combined approach overcomes these limitations through Spearman correlation analysis linking specific metabolite levels to specific bacterial species abundances, enabling identification of integrated biomarker signatures. This integration reveals, for example, that Escherichia coli — a metagenomic CD risk marker — correlates inversely with benzoic acid levels, or that Blautia species correlate positively with propionate derivatives, or that Streptococcus salivarius abundance inversely correlates with heptanoic acid. For pediatric patients specifically, the combination is especially powerful because it identifies signatures that may represent primary alterations occurring early in disease — before adult-type equilibrium patterns are established — providing insights into disease initiation mechanisms. Furthermore, the approach allows development of practical risk coefficients from stable metabolites that can be assessed non-invasively and repeatedly, while targeted PCR-based tests for key species identified by metagenomics can serve as complementary tools, making the combined framework translatable to clinical settings without requiring full metagenome sequencing.",
+      "topic_tags": ["multi-omics integration", "metabolomics", "metagenomics", "IBD diagnostics", "biomarker discovery", "functional metabolomics"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "ibdmeta_mcq_easy_01",
+      "difficulty": "easy",
+      "question": "Which metabolite is identified as a key differential diagnostic marker distinguishing Crohn's disease from ulcerative colitis in pediatric patients?",
+      "options": {
+        "A": "Acetic acid",
+        "B": "1H-indole-3-methyl (skatole)",
+        "C": "n-Hexadecanoic acid",
+        "D": "Benzaldehyde"
+      },
+      "correct_answer": "B",
+      "explanation": "1H-indole-3-methyl (3-methylindole/skatole) shows significant differential variation specifically between CD and UC groups in pediatric patients, making it a CD-specific marker within the IBD context. While indole itself decreases across the whole IBD group, 1H-indole-3-methyl is the compound that enables differentiation between the two subtypes and is incorporated into the CD risk stratification model.",
+      "topic_tags": ["1H-indole-3-methyl", "CD vs UC", "differential diagnosis", "pediatric IBD", "metabolic biomarker"]
+    },
+    {
+      "id": "ibdmeta_mcq_easy_02",
+      "difficulty": "easy",
+      "question": "Which phylum consistently shows depletion across all IBD groups in quantitative microbiome analysis?",
+      "options": {
+        "A": "Proteobacteria",
+        "B": "Bacteroidetes",
+        "C": "Firmicutes",
+        "D": "Actinobacteria"
+      },
+      "correct_answer": "C",
+      "explanation": "Quantitative microbiome analysis demonstrates consistent Firmicutes depletion across all IBD groups. This aligns with established knowledge that Firmicutes, which include many SCFA-producing bacteria such as butyrate producers, are reduced in IBD, contributing to the loss of anti-inflammatory metabolite production and impaired gut barrier function.",
+      "topic_tags": ["Firmicutes", "IBD", "microbial dysbiosis", "phylum-level changes"]
+    },
+    {
+      "id": "ibdmeta_mcq_easy_03",
+      "difficulty": "easy",
+      "question": "What advantage does headspace-GC-MS offer over conventional metabolomics methods when analyzing fecal samples with variable water content?",
+      "options": {
+        "A": "It requires smaller sample volumes than other methods",
+        "B": "The ratios of components in equilibrium vapor are independent of water content in the sample",
+        "C": "It can detect non-volatile metabolites that other methods miss",
+        "D": "It provides absolute rather than relative concentrations of metabolites"
+      },
+      "correct_answer": "B",
+      "explanation": "The vapor-phase extraction principle underlying HS-GC-MS means that the ratios of components in an equilibrium vapor do not depend on the amount of water contained in the samples. This is particularly advantageous for fecal samples, which can vary substantially in water content between patients and timepoints, making direct volume-based comparisons unreliable with conventional liquid-phase methods.",
+      "topic_tags": ["HS-GC-MS", "headspace extraction", "fecal metabolomics", "analytical methodology"]
+    },
+
+    {
+      "id": "ibdmeta_mcq_med_01",
+      "difficulty": "medium",
+      "question": "In pediatric ulcerative colitis, Streptococcus salivarius abundance is inversely correlated with levels of which short-chain fatty acid, suggesting a link between its expansion and SCFA depletion?",
+      "options": {
+        "A": "Butyric acid",
+        "B": "Propionic acid",
+        "C": "Heptanoic acid",
+        "D": "Acetic acid"
+      },
+      "correct_answer": "C",
+      "explanation": "Correlation analysis reveals that the content of Streptococcus salivarius is inversely proportional to the level of heptanoic acid, and most members of the Streptococcus genus show an inverse relationship with heptanoic acid levels. Heptanoic acid has been found to be reduced in IBD patients, reflecting alterations in gut microbiota composition and decreased fermentation of dietary fibers. SCFAs including heptanoic acid play crucial roles in regulating immune responses and promoting tissue repair.",
+      "topic_tags": ["Streptococcus salivarius", "heptanoic acid", "SCFA", "UC", "Spearman correlation"]
+    },
+    {
+      "id": "ibdmeta_mcq_med_02",
+      "difficulty": "medium",
+      "question": "What is the proposed pathogenic mechanism by which Erysipelatoclostridium ramosum may worsen inflammation in inflammatory bowel disease?",
+      "options": {
+        "A": "It produces large amounts of pro-inflammatory LPS that activates TLR4 signaling",
+        "B": "It produces an enzyme that degrades immunoglobulin A, impairing mucosal immunity",
+        "C": "It competitively excludes Akkermansia muciniphila from the mucosal niche",
+        "D": "It converts butyrate precursors into pro-inflammatory branched-chain fatty acids"
+      },
+      "correct_answer": "B",
+      "explanation": "Erysipelatoclostridium ramosum (formerly Eubacterium ramosum) produces an enzyme capable of degrading immunoglobulin A, a crucial antibody in the mucosal lining of the gut. This IgA-degrading activity may impair the immune system's ability to combat harmful bacteria or pathogens, thereby potentially worsening inflammation in IBD. It has been detected in both fecal and biopsy samples from IBD patients, particularly those with UC.",
+      "topic_tags": ["Erysipelatoclostridium ramosum", "IgA degradation", "mucosal immunity", "IBD pathogenesis"]
+    },
+    {
+      "id": "ibdmeta_mcq_med_03",
+      "difficulty": "medium",
+      "question": "In the UC risk prediction model, which combination of metabolic features is indicative of increased disease risk in pediatric patients?",
+      "options": {
+        "A": "Reduced indole, increased 1H-indole-3-methyl, and elevated pentanoic acid",
+        "B": "Elevated risk coefficient score, increased acetate levels, decreased pentanoic acid, and altered p-cresol excretion",
+        "C": "Reduced Firmicutes abundance, increased Proteobacteria, and decreased butyric acid",
+        "D": "Elevated n-hexadecanoic acid, reduced benzaldehyde, and increased propanoic acid"
+      },
+      "correct_answer": "B",
+      "explanation": "The UC risk prediction model incorporates three metabolic biomarkers indicative of increased disease risk: an elevated IBD risk coefficient score, increased acetate levels, decreased pentanoic acid, and altered excretion of p-cresol (4-methylphenol). This constellation reflects the distinct metabolic disruption in UC, where pentanoic acid depletion (a loss of anti-inflammatory SCFA signaling) and p-cresol dysregulation are more characteristic than in CD.",
+      "topic_tags": ["UC risk model", "pentanoic acid", "acetate", "p-cresol", "pediatric biomarkers"]
+    },
+    {
+      "id": "ibdmeta_mcq_med_04",
+      "difficulty": "medium",
+      "question": "Why do the authors suggest that the metabolome difference between children and adults with Crohn's disease could be used for a specific clinical application beyond routine diagnosis?",
+      "options": {
+        "A": "To monitor the response to biologic therapy over time",
+        "B": "To identify familial IBD cases",
+        "C": "To screen for extraintestinal manifestations of CD",
+        "D": "To distinguish CD from colorectal cancer"
+      },
+      "correct_answer": "B",
+      "explanation": "The authors explicitly note that the metabolome difference between adult and pediatric CD patients may be used for identifying familial cases. Since CD often has a genetic component and can cluster in families, and since pediatric CD (representing early onset) and adult CD (representing later onset potentially influenced by additional exogenous factors) show distinct metabolomic profiles, these differences could serve as a diagnostic tool to flag familial disease patterns.",
+      "topic_tags": ["CD metabolome", "familial IBD", "pediatric vs adult CD", "clinical application"]
+    },
+    {
+      "id": "ibdmeta_mcq_med_05",
+      "difficulty": "medium",
+      "question": "What do Blautia species produce that gives them a potential protective role in IBD, and what complicates the interpretation of their role in disease?",
+      "options": {
+        "A": "They produce butyrate exclusively, and their role is complicated because butyrate can also fuel tumor growth",
+        "B": "They produce SCFAs that benefit gut health and can modulate immune responses, but some studies show complex or even opposing relationships with IBD",
+        "C": "They produce indole derivatives that reduce inflammation, but their depletion is paradoxically associated with increased indole levels",
+        "D": "They produce mucin-degrading enzymes with anti-inflammatory effects that are suppressed by antibiotic treatment"
+      },
+      "correct_answer": "B",
+      "explanation": "Some Blautia species produce SCFAs, which are beneficial for gut health and can modulate immune responses — specific Blautia strains have been shown to alleviate colitis in animal models by reducing inflammation and enhancing gut barrier integrity. However, the relationship with IBD is complex: while multiple studies report decreased Blautia abundance in IBD patients suggesting a protective role, other research indicates that some Blautia species may actually have more nuanced effects. In the correlation analysis, Blautia species (Blautia faecis, B. glucerasea, B. obeum, B. luti) positively correlate with propionate derivatives, suggesting a functional link to SCFA production.",
+      "topic_tags": ["Blautia", "SCFA", "IBD", "protective bacteria", "gut barrier"]
+    },
+
+    {
+      "id": "ibdmeta_mcq_hard_01",
+      "difficulty": "hard",
+      "question": "The study identifies that Escherichia coli serves as a universal pediatric IBD marker but shows a different pattern in adult CD patients. What is the most likely explanation for this age-dependent discrepancy in E. coli abundance?",
+      "options": {
+        "A": "Adult patients take more antibiotics that selectively suppress E. coli, masking its increase",
+        "B": "E. coli requires the specific gut environment of a developing microbiome to expand; adult gut communities are too competitive",
+        "C": "In adults with established CD, the long-standing disease-associated microbiome equilibrium may have adapted to suppress E. coli overgrowth, whereas in children the microbiome is less buffered against early pathobiont expansion",
+        "D": "E. coli strains pathogenic in children are different species than those in adults and are detected only by pediatric-specific primers"
+      },
+      "correct_answer": "C",
+      "explanation": "The most mechanistically coherent explanation is that adult CD patients have experienced years of chronic inflammation and microbial community reorganization, resulting in a different equilibrium state where E. coli expansion may be modulated by the established community structure or by treatments. In contrast, pediatric IBD represents an early-stage microbiome disruption where E. coli, as a well-known opportunistic pathobiont and CD risk factor (particularly adherent-invasive strains), can more readily expand in a developing gut that lacks the buffering capacity of an adult microbiome. The authors themselves note that studying children is especially crucial precisely because it reveals early-stage mechanisms, not yet obscured by long-term adaptation.",
+      "topic_tags": ["Escherichia coli", "pediatric vs adult IBD", "pathobiont", "microbiome buffering", "CD risk factor"]
+    },
+    {
+      "id": "ibdmeta_mcq_hard_02",
+      "difficulty": "hard",
+      "question": "The authors argue that pediatric CD has a more 'consolidated' metabolomic profile compared to adult CD. Which of the following best explains the theoretical implication of this finding for understanding disease etiology?",
+      "options": {
+        "A": "Pediatric CD patients are more treatment-compliant, reducing variability in treatment-derived xenobiotic metabolites",
+        "B": "A homogeneous metabolomic profile in pediatric CD suggests that a specific, convergent mechanism drives disease onset in children, while in adults CD may represent a final common pathway reached through more diverse pathogenic routes including environmental exposures",
+        "C": "Children have simpler diets than adults, resulting in less dietary-derived metabolite variability masking the disease signal",
+        "D": "The smaller sample size of pediatric CD patients creates an artifact of reduced variance that does not reflect true biological homogeneity"
+      },
+      "correct_answer": "B",
+      "explanation": "The authors specifically reason that the more homogeneous pediatric CD metabolome 'may indicate that there is a special mechanism of CD development compared to the UC that determines its early onset,' while 'CD in adult patients may be caused not only by endogenous but also by exogenous factors, which dramatically change microbiota.' This reasoning implies that pediatric CD captures a more 'primary' or stereotyped disease initiation mechanism, whereas adult CD has been shaped by decades of cumulative environmental, dietary, and microbial perturbations converging on a disease phenotype through multiple pathogenic routes — explaining the broader metabolomic heterogeneity in adults.",
+      "topic_tags": ["pediatric CD", "metabolomic consolidation", "disease etiology", "endogenous vs exogenous factors", "pathogenesis"]
+    }
+  ]
+}

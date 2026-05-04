@@ -1,328 +1,267 @@
 {
-  "source_document": "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf",
-  "test_cases": [
+  "metadata": {
+    "source_paper": "Using gut microbiome metagenomic hypervariable features for diabetes screening and typing through supervised machine learning",
+    "authors": ["Xavier Chavarria", "Hyun Seo Park", "Singeun Oh", "Dongjun Kang", "Jun Ho Choi", "Myungjun Kim", "Yoon Hee Cho", "Myunghee Yi", "Ju Yeong Kim"],
+    "journal": "Microbial Genomics",
+    "year": 2025,
+    "doi": "10.1099/mgen.0.001365",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
     {
-      "id": "diabetes_ml_001",
-      "query": "What were the sample sizes used in this study for type 1 diabetes, type 2 diabetes, and healthy control subjects?",
-      "ground_truth_answer": "The study used 76 samples from subjects with type 1 diabetes (T1DM), 366 samples from subjects with type 2 diabetes (T2DM), and 250 samples from subjects without diabetes (healthy individuals)",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
+      "id": "DMML_easy_001",
       "difficulty": "easy",
-      "category": "factual"
+      "question": "What is the relationship between gut microbiota dysbiosis and the development of diabetes mellitus?",
+      "answer": "Dysbiosis — an imbalance in the normal microbial community — either results from or contributes to the development and progression of both type 1 and type 2 diabetes mellitus. The gut microbiome composition of healthy individuals differs significantly in both functional and taxonomic aspects from that of diabetic patients. These microbial interactions influence glucose metabolism, insulin resistance, and inflammation, making the gut microbiome a key factor in the pathophysiology of diabetes.",
+      "topic_tags": ["dysbiosis", "diabetes", "gut microbiome", "insulin resistance", "glucose metabolism"]
     },
     {
-      "id": "diabetes_ml_002",
-      "query": "What machine learning algorithms were trained and tested in this study?",
-      "ground_truth_answer": "Four supervised machine learning algorithms were trained: decision tree (DT), elastic net (EN), random forest (RF), and support vector machine with radial kernel (SVMRK). These included both interpretable models (DT and EN) and black-box models (RF and SVMRK)",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
+      "id": "DMML_easy_002",
       "difficulty": "easy",
-      "category": "factual"
+      "question": "Why are high-variance sub-operational taxonomic unit (sOTU) features preferred over standard taxonomic features for training machine learning models on microbiome data?",
+      "answer": "High-variance sOTU features are preferred because operational taxonomic units may represent finer and more specific levels of microbial diversity than broader taxonomic classifications. Using variable high-variance sOTU features reduces the dimensionality of the training dataset and improves model performance in the testing stage. Selecting features with the highest variance across samples also reduces underfitting, since sOTUs with higher variance are more likely to carry informative signal for classification.",
+      "topic_tags": ["sOTUs", "feature selection", "machine learning", "dimensionality reduction", "microbiome"]
     },
     {
-      "id": "diabetes_ml_003",
-      "query": "What is the projected global prevalence of diabetes by 2045 according to the IDF Diabetes Atlas?",
-      "ground_truth_answer": "According to the 10th edition of the IDF Diabetes Atlas, the global prevalence of diabetes is projected to reach 800 million people aged 20-79 years by 2045, up from over half a billion in current estimates",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
+      "id": "DMML_easy_003",
       "difficulty": "easy",
-      "category": "factual"
+      "question": "How do type 1 and type 2 diabetes mellitus differ in their underlying pathophysiology?",
+      "answer": "Type 1 diabetes mellitus is characterized by the autoimmune destruction of beta-cells within the pancreatic islets of Langerhans, resulting in insulin deficiency. Type 2 diabetes mellitus, in contrast, involves peripheral multi-organ insulin resistance, pancreatic beta-cell dysfunction, and chronic inflammation in the pancreas. While both diseases are phenotypically and aetiologically heterogeneous, type 2 diabetes is more strongly associated with lifestyle factors such as sedentary behaviour, dietary patterns, and obesity, whereas type 1 is primarily immune-mediated.",
+      "topic_tags": ["T1DM", "T2DM", "pathophysiology", "beta-cells", "insulin resistance", "autoimmune"]
     },
     {
-      "id": "diabetes_ml_004",
-      "query": "What bacterial genus was enriched in both the diabetes positive group and found to be important in machine learning models?",
-      "ground_truth_answer": "Prevotella was enriched in the diabetes positive group, with Prevotella copri being significantly enriched. It was also among the most important features in the machine learning models, particularly appearing in the elastic net and random forest models for diabetes status classification",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
+      "id": "DMML_easy_004",
       "difficulty": "easy",
-      "category": "factual"
+      "question": "What microbial taxa have been found to be enriched in individuals without diabetes compared to those with diabetes?",
+      "answer": "In non-diabetic individuals, enriched taxa include Gemmiger formicilis, Roseburia faecis, Faecalibacterium prausnitzii, and Lachnospira at the genus and species levels. At higher taxonomic levels, the phyla Firmicutes and Tenericutes, the class Alphaproteobacteria, the orders Pseudomonadales and Actinomycetales, and the families Pasteurellaceae, Clostridiaceae, and Ruminococcaceae were also enriched. These taxa are largely short-chain fatty acid producers and are associated with gut health and anti-inflammatory function.",
+      "topic_tags": ["non-diabetic microbiome", "Faecalibacterium prausnitzii", "Lachnospira", "Roseburia", "microbial markers"]
     },
     {
-      "id": "diabetes_ml_005",
-      "query": "What sequencing context was used to obtain the metagenomic data from the American Gut Project?",
-      "ground_truth_answer": "The metagenomic data was obtained using the Deblur_2021.09-Illumina-16S-V4-150nt-ac8c0b context from the Qiita platform, which used 16S rRNA sequencing data processed through the Deblur pipeline",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
+      "id": "DMML_easy_005",
       "difficulty": "easy",
-      "category": "factual"
+      "question": "What is the clinical motivation for applying machine learning to gut microbiome data for diabetes prediction?",
+      "answer": "While diabetes can be easily diagnosed through biochemical tests, the rapidly increasing prevalence of diabetes creates urgency to develop tools for early prediction before disease onset. Machine learning applied to gut microbiome profiles has the potential to identify individuals at risk before clinical symptoms emerge, enabling early intervention, personalised healthcare strategies, and lifestyle changes. By identifying bacterial profiles characteristic of diabetic patients, future models could flag at-risk individuals in a proactive rather than reactive manner.",
+      "topic_tags": ["early prediction", "machine learning", "diabetes screening", "personalised medicine", "clinical application"]
     },
+
     {
-      "id": "diabetes_ml_006",
-      "query": "How did reducing the feature set from 1000 to 500 sOTUs affect the sensitivity of the random forest model for diabetes status screening?",
-      "ground_truth_answer": "Reducing the dataset from 1000 to 500 features dramatically improved sensitivity for the RF model, increasing it by 74% from 0.46 to 0.80. The AUC also slightly improved from 0.76 to 0.77. This reduction mitigated overfitting by eliminating irrelevant or redundant features, reducing multicollinearity, and addressing data sparsity",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
+      "id": "DMML_medium_001",
       "difficulty": "medium",
-      "category": "mechanism"
+      "question": "How does reducing the number of features used to train machine learning models affect their performance in classifying diabetes status?",
+      "answer": "Reducing the feature set from 1000 to 500 sOTUs improved model performance by mitigating overfitting, reducing multicollinearity, and addressing data sparsity. The random forest model trained on 500 features achieved a higher AUC and substantially improved sensitivity compared to the 1000-feature model. The improvement was attributed to eliminating irrelevant or redundant features, which led to better-fitted models. Further reduction to 100 features showed diminishing returns, with lower AUC than the 500-feature set, suggesting an optimal middle ground exists for feature count in microbiome-based classifiers.",
+      "topic_tags": ["feature selection", "overfitting", "random forest", "model performance", "dimensionality reduction"]
     },
     {
-      "id": "diabetes_ml_007",
-      "query": "What cross-validation strategy was employed during the training stage and why?",
-      "ground_truth_answer": "Repeated k-fold cross-validation was performed with five repeats of fivefold cross-validation at the training stage. This approach was used for training performance evaluation, ensuring robust model assessment by repeatedly partitioning the data into training and validation sets, which helps reduce variance in performance estimates and provides more reliable model evaluation",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
+      "id": "DMML_medium_002",
       "difficulty": "medium",
-      "category": "mechanism"
+      "question": "What is the biological significance of Faecalibacterium prausnitzii being consistently identified as a key contributing feature in diabetes classification models?",
+      "answer": "Faecalibacterium prausnitzii was enriched in the non-diabetic group and consistently appeared as a high-contributing feature across decision tree, elastic net, and random forest models. Its biological significance lies in its well-documented anti-inflammatory properties — it produces an anti-inflammatory protein that inhibits the NF-kB signalling pathway and has shown protective effects against colitis. Reduced abundance of Faecalibacterium in diabetic patients compared to healthy controls has been confirmed in multiple independent studies, aligning with the known role of gut inflammation in the progression of type 2 diabetes. Its consistent appearance across models suggests it is a reliable microbiome-based biomarker.",
+      "topic_tags": ["Faecalibacterium prausnitzii", "biomarker", "anti-inflammatory", "T2DM", "model features"]
     },
     {
-      "id": "diabetes_ml_008",
-      "query": "Explain the relationship between Faecalibacterium prausnitzii and diabetes status as found in this study",
-      "ground_truth_answer": "Faecalibacterium prausnitzii was consistently enriched in the negative-status (healthy) group and was found to be one of the most important features across all machine learning models. The abundance of Faecalibacterium was reduced in diabetes patients, aligning with previous studies showing reduction in Clostridiales order, particularly Roseburia species and F. prausnitzii, in patients with T2DM. F. prausnitzii appeared as a key feature in DT, EN, and RF models for diabetes classification",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
+      "id": "DMML_medium_003",
       "difficulty": "medium",
-      "category": "mechanism"
+      "question": "Why does adjusting the classification probability threshold improve sensitivity in microbiome-based diabetes screening models, and what are the trade-offs involved?",
+      "answer": "Machine learning models trained on imbalanced or noisy microbiome data tend to default toward the majority class (non-diabetic), resulting in high specificity but low sensitivity — meaning a high number of diabetic cases are missed (false negatives). Lowering the probability threshold for a positive classification (e.g., from 0.5 to 0.65 in this context, where lowering to 0.35-0.40 range could further shift the curve) increases the rate at which true positives are correctly identified. However, this comes at the cost of reduced specificity, meaning more non-diabetic individuals may be incorrectly flagged as positive. The optimal threshold therefore depends on the clinical context — for screening purposes, higher sensitivity is preferable to reduce missed diagnoses.",
+      "topic_tags": ["classification threshold", "sensitivity", "specificity", "false negatives", "screening"]
     },
     {
-      "id": "diabetes_ml_009",
-      "query": "What specific alterations were made to model hyperparameters to accommodate the complexity of metagenomic data?",
-      "ground_truth_answer": "Several hyperparameter adjustments were made: the iteration maxits of EN and SVMRK models were set to 10,000 iterations to accommodate varying complexity; the maximum depth of the DT model was set to 30 to account for data complexity while avoiding excessive overfitting; and the number of trees in RF analyses was set to 1,000 to ensure model stability and capture intricate relationships in the sOTU data, as RF is less prone to overfitting",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
+      "id": "DMML_medium_004",
       "difficulty": "medium",
-      "category": "mechanism"
+      "question": "How does the gut microbiome of type 2 diabetes patients differ from that of type 1 diabetes patients at the microbial family and genus level?",
+      "answer": "Type 1 diabetes subjects showed enrichment of families Brucellaceae, Ruminococcaceae, Clostridiaceae, Micrococcaceae, Barnesiellaceae, and Fusobacteriaceae, with prominent genera including Faecalibacterium, Blautia obeum, Rothia mucilaginosa, Acinetobacter lwoffii, Lachnospira, and Anaerostipes. In contrast, type 2 diabetes subjects were enriched in Ruminococcus torques, Ruminococcus gnavus, Streptococcus, the families Veillonellaceae and Streptococcaceae, and the order Gammaproteobacteria. These patterns reflect distinct immunological and metabolic environments — type 1 being more autoimmune-driven with a distinct flora, and type 2 more associated with lifestyle-related inflammatory dysbiosis.",
+      "topic_tags": ["T1DM microbiome", "T2DM microbiome", "Ruminococcus", "Veillonellaceae", "differential microbiome"]
     },
     {
-      "id": "diabetes_ml_010",
-      "query": "How did the study address the issue of low sensitivity and high specificity in the initial models?",
-      "ground_truth_answer": "The study addressed low sensitivity through multiple approaches: first, reducing features from 1000 to 500; second, adjusting the classification threshold from the default 0.5 to various levels (0.30, 0.35, 0.40, 0.60, 0.65, 0.70) to explore trade-offs between true positives and false positives; third, using log10 normalization to reduce outlier importance and improve data interpretability; and fourth, increasing maximum iterations. A threshold of 0.65 ultimately resulted in significantly increased sensitivity values for diabetes status screening",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
+      "id": "DMML_medium_005",
       "difficulty": "medium",
-      "category": "mechanism"
+      "question": "What role do short-chain fatty acid (SCFA)-producing bacteria play in diabetes status, and which specific taxa are implicated?",
+      "answer": "SCFA-producing bacteria are key indicators of gut metabolic health. A decrease in the abundance of Gram-positive SCFA-producing bacteria is characteristic of type 2 diabetes subjects, while an increase in Gram-negative endotoxin-producing bacteria is observed. Specific SCFA producers enriched in the non-diabetic group include Lachnospira, Roseburia, Clostridium, and Faecalibacterium prausnitzii. Lachnospira and certain Clostridiaceae members were found to act as commensals in healthy subjects and were significantly reduced in diabetic individuals. The dysbiosis of Roseburia in particular has been proposed to contribute to progression from normoglycaemia to prediabetes through its role in glucose homeostasis modulation.",
+      "topic_tags": ["SCFA", "Roseburia", "Lachnospira", "T2DM", "glucose homeostasis", "dysbiosis"]
     },
     {
-      "id": "diabetes_ml_011",
-      "query": "Describe the diversity differences observed between subjects with and without diabetes",
-      "ground_truth_answer": "Shannon index did not vary significantly between diabetes positive and negative groups (P=0.160), but richness was significantly higher in the negative-status group (P=0.003). Beta diversity measured by unweighted UniFrac distances differed significantly between groups (P=0.006). When comparing negative-status with T2DM subjects specifically, the negative-status group had higher Shannon index (P=0.028), higher feature richness (P<0.001), and different beta diversity (P=0.01), indicating reduced microbial diversity in diabetic subjects",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
+      "id": "DMML_medium_006",
       "difficulty": "medium",
-      "category": "comparison"
+      "question": "Why does training a diabetes screening model exclusively on type 2 diabetes subjects yield better performance than training on both diabetes types combined?",
+      "answer": "Type 2 diabetes is closely associated with lifestyle factors such as diet, sedentary behaviour, and age, which manifest in more consistent and predictable microbiome signatures. When type 1 and type 2 samples are combined, the distinct and divergent microbial profiles of the two types introduce noise and heterogeneity that reduces the model's ability to identify coherent patterns. Restricting training to type 2 subjects reduces within-class variance, enabling the model to learn more specific and consistent microbial features. This leads to significantly higher AUC, sensitivity, and specificity when compared to combined-type models, confirming that disease-type stratification is an important preprocessing step for microbiome-based classifiers.",
+      "topic_tags": ["T2DM", "model stratification", "dataset composition", "AUC", "classification performance"]
     },
+
     {
-      "id": "diabetes_ml_012",
-      "query": "Compare the performance of models when classifying negative-status versus T2DM only versus negative-status versus all positive diabetes cases",
-      "ground_truth_answer": "Models performed significantly better when classifying negative-status versus T2DM only compared to negative-status versus all positive cases. For EN models: AUC increased from 0.77 to 0.82 (P<0.001), sensitivity increased from 0.77 to 0.85 (P<0.001), and specificity increased from 0.64 to 0.63. For RF models: AUC increased from 0.75 to 0.80 (P<0.001), sensitivity increased from 0.80 to 0.87 (P<0.001), and specificity increased from 0.59 to 0.57 (P=0.009). This improved performance suggests T2DM has more distinct microbial signatures compared to the mixed diabetes group",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
+      "id": "DMML_hard_001",
       "difficulty": "hard",
-      "category": "comparison"
+      "question": "What are the key methodological limitations of using citizen science microbiome datasets for supervised machine learning in disease classification, and how do they affect model generalizability?",
+      "answer": "Citizen science datasets like the American Gut Project introduce several limitations. First, the dataset is inherently unbalanced — type 1 diabetes subjects are significantly underrepresented compared to type 2 and non-diabetic subjects — which biases models toward majority-class predictions and suppresses sensitivity for minority classes. Second, random sampling without controlling for demographic variables (age, sex, ethnicity, medication use) allows underlying demographic biases from the original dataset to persist. Third, no external validation on independent metagenomic datasets was performed, limiting assessment of model robustness across diverse populations and data collection pipelines. Fourth, large genomic datasets introduce batch and bloom effects that require complex normalization strategies. Together, these factors mean that while models may demonstrate reasonable AUC values, their clinical applicability and generalizability remain uncertain and require validation in controlled clinical settings.",
+      "topic_tags": ["citizen science", "dataset limitations", "generalizability", "external validation", "class imbalance", "batch effects"]
     },
     {
-      "id": "diabetes_ml_013",
-      "query": "What were the differential microbial signatures between T1DM and T2DM, and what do these differences suggest about the pathophysiology?",
-      "ground_truth_answer": "T1DM subjects showed enrichment of families Brucellaceae, Ruminococcaceae, Clostridiaceae, Micrococcaceae, Barnesiellaceae, and Fusobacteriaceae, along with species like F. prausnitzii, B. uniformis, R. faecis, and B. obeum. T2DM subjects showed enrichment of R. torques, R. gnavus, Streptococcus, families Veillonellaceae and Streptococcaceae, and the order Gammaproteobacteria. Both groups varied in Shannon index (P=0.046), richness (P=0.047), and beta diversity (P=0.001). These differences suggest distinct microbial dysbiosis patterns between autoimmune-driven T1DM and metabolic-driven T2DM, though the study notes that T2DM is more closely related to lifestyle factors and age",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
+      "id": "DMML_hard_002",
       "difficulty": "hard",
-      "category": "mechanism"
+      "question": "How do the performance trade-offs between tree-based models (decision tree, random forest) and regularization-based models (elastic net) differ for microbiome-based diabetes classification, and what does this reveal about the nature of the microbial signal?",
+      "answer": "Tree-based models, particularly random forest, achieved the best AUC for diabetes status screening, reflecting their ability to capture non-linear interactions and complex hierarchical relationships in high-dimensional, sparse microbiome data. However, they suffered from low sensitivity, suggesting conservative decision boundaries biased toward negative classification. The elastic net model, which combines L1 and L2 regularization, performed poorly in initial iterations but achieved higher AUC than random forest when the classification threshold and iteration limits were optimised — notably outperforming random forest on the type 2-only classification task in AUC. This pattern suggests that the microbiome signal for diabetes is partially linear and partially complex: elastic net captures the interpretable linear component well, while random forest better models non-linear co-occurrence patterns. The poor performance of the support vector machine with radial kernel suggests that kernel-based methods may not be well-suited to sparse, high-dimensional microbiome count data without extensive feature engineering.",
+      "topic_tags": ["random forest", "elastic net", "decision tree", "SVMRK", "model comparison", "microbiome signal"]
     },
     {
-      "id": "diabetes_ml_014",
-      "query": "Why did the diabetes typing models perform poorly compared to screening models, and what are the implications for future research?",
-      "ground_truth_answer": "Diabetes typing models performed poorly across all iterations, with EN and RF achieving best AUC values of only 0.66 and 0.64 respectively for 500 features, but with consistently low sensitivity. The main limitation was the unbalanced dataset (76 T1DM vs 366 T2DM samples), which contributed to bias toward negative classification. The study suggests future improvements require: more balanced datasets, controlled clinical settings, external validation using independent metagenomic datasets, inclusion of demographic and clinical variables as additional predictors, and larger sample sizes. The poor performance highlights the complexity of distinguishing diabetes types based solely on microbiome profiles",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
+      "id": "DMML_hard_003",
       "difficulty": "hard",
-      "category": "mechanism"
+      "question": "What mechanistic links connect gut microbiome changes in type 2 diabetes to host metabolic dysfunction, as supported by experimental evidence beyond observational studies?",
+      "answer": "Several experimental lines of evidence support a causal or bidirectional relationship. Microbiota transfers from lean human donors into recipients with metabolic syndrome have been shown to reduce insulin resistance, confirming that a healthy microbial community can modulate host metabolism. Germ-free mice receiving microbiota transplants from obese or lean human twins adopt the corresponding donor phenotype — including fat accumulation and metabolic profiles — indicating that microbiome composition causally influences metabolic status. The reduction of SCFA-producing bacteria (Roseburia, Lachnospira, Faecalibacterium) in type 2 diabetic patients is mechanistically significant because SCFAs such as propionate and butyrate regulate gluconeogenesis, beta-cell function, and intestinal barrier integrity. An increase in Gram-negative endotoxin-producing bacteria meanwhile promotes systemic low-grade inflammation, which contributes to insulin resistance. Ruminococcus torques enrichment in obese phenotype microbiome transplant experiments was correlated with elevated butyrate and acetate, linking specific microbial taxa to metabolite-driven metabolic changes.",
+      "topic_tags": ["causal mechanisms", "microbiota transfer", "insulin resistance", "SCFA", "metabolic endotoxemia", "germ-free mice"]
     },
     {
-      "id": "diabetes_ml_015",
-      "query": "How do the findings regarding Roseburia species relate to the progression from normoglycemia to prediabetes and T2DM?",
-      "ground_truth_answer": "The study found complex relationships with Roseburia: R. faecis was enriched in both the negative-status group and T1DM subjects, marking healthy controls, while general Roseburia sOTU was found enriched in positive-status subjects. The paper notes that Roseburia has been negatively correlated with obesity and T2DM, and due to its role in modulating glucose homeostasis, its dysbiosis has been proposed to play a role in progression from normoglycemia to prediabetes. Zhang et al. found that Lachnospira, along with SCFA-producing bacteria like Roseburia and Clostridium, are significantly reduced in T2DM subjects. This suggests different Roseburia species may have varying roles in diabetes pathogenesis",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
+      "id": "DMML_hard_004",
       "difficulty": "hard",
-      "category": "mechanism"
+      "question": "How does alpha and beta diversity analysis contribute to understanding microbiome differences between diabetes types, and what are the implications of their divergent patterns?",
+      "answer": "Alpha diversity (Shannon index and observed features) and beta diversity (unweighted UniFrac distances) serve complementary roles in characterising microbiome differences. In the comparison between diabetic and non-diabetic subjects, the Shannon index did not differ significantly, but richness (number of observed features) was higher in the non-diabetic group, suggesting that diabetes is associated with loss of low-abundance taxa rather than an overall reduction in evenness. Beta diversity, however, was significantly different between groups, indicating that community composition is distinct even when total diversity appears similar — pointing to qualitative rather than purely quantitative shifts. When comparing diabetes types, both alpha diversity metrics and beta diversity were significantly different, with type 1 and type 2 subjects harbouring distinct microbial communities. This is clinically meaningful because it suggests that typing based on microbiome alone may be feasible in principle, but the overlap in community structure challenges model sensitivity — as confirmed by poor typing model performance. The divergence in beta diversity also indicates that different ecological niches or immune environments shape the communities of the two types distinctly.",
+      "topic_tags": ["alpha diversity", "beta diversity", "Shannon index", "UniFrac", "community structure", "diabetes typing"]
     }
   ],
-  
+
   "mcq_questions": [
     {
-      "id": "diabetes_ml_mcq_001",
-      "question": "What data source did the study use for obtaining gut microbiome metagenomic data?",
-      "options": [
-        "A) Human Microbiome Project",
-        "B) American Gut Project (Qiita study ID 10317)",
-        "C) European Microbiome Collection",
-        "D) Asian Gut Microbiome Database"
-      ],
-      "correct_answer": "B",
-      "explanation": "The study utilized 16S rRNA metagenomic data from the American Gut Project, specifically from Qiita study ID 10317, which is a volunteer citizen science initiative",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
+      "id": "DMML_mcq_easy_001",
       "difficulty": "easy",
-      "category": "factual"
+      "question": "Which of the following best describes the primary mechanism by which gut microbiota composition is linked to type 2 diabetes mellitus?",
+      "options": {
+        "A": "Gut bacteria directly synthesize insulin in response to dietary glucose",
+        "B": "Microbial interactions influence glucose metabolism, insulin resistance, and systemic inflammation",
+        "C": "Gut bacteria degrade oral antidiabetic medications, reducing their efficacy",
+        "D": "Increased gut motility caused by dysbiosis accelerates glucose absorption"
+      },
+      "correct_answer": "B",
+      "explanation": "The gut microbiota influences T2DM through its effects on glucose metabolism, insulin resistance, and inflammation. Dysbiosis — including loss of SCFA-producing bacteria and increases in endotoxin-producing bacteria — drives systemic low-grade inflammation and metabolic dysfunction.",
+      "topic_tags": ["T2DM", "gut microbiome", "insulin resistance", "glucose metabolism"]
     },
     {
-      "id": "diabetes_ml_mcq_002",
-      "question": "What percentage split was used for training and testing the machine learning models?",
-      "options": [
-        "A) 60% training, 40% testing",
-        "B) 70% training, 30% testing",
-        "C) 80% training, 20% testing",
-        "D) 75% training, 25% testing"
-      ],
-      "correct_answer": "B",
-      "explanation": "The study used 70% of the dataset for training the ML models and the remaining 30% for testing, with this process repeated across 50 independent iterations",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
+      "id": "DMML_mcq_easy_002",
       "difficulty": "easy",
-      "category": "factual"
+      "question": "What experimental evidence most directly supports a causal role for the gut microbiome in shaping metabolic phenotypes?",
+      "options": {
+        "A": "Observational studies showing correlation between microbiome diversity and BMI",
+        "B": "Microbiota transplants from lean donors reducing insulin resistance in metabolic syndrome recipients",
+        "C": "16S rRNA sequencing identifying enriched taxa in diabetic patients",
+        "D": "Machine learning models achieving high AUC values on microbiome classification tasks"
+      },
+      "correct_answer": "B",
+      "explanation": "Microbiota transfers from lean human donors to recipients with metabolic syndrome have been shown to reduce insulin resistance, providing direct experimental evidence of a causal relationship. Additionally, germ-free mice receiving transplants from obese or lean human twins adopt the corresponding donor phenotype.",
+      "topic_tags": ["microbiota transplant", "causality", "insulin resistance", "metabolic phenotype"]
     },
     {
-      "id": "diabetes_ml_mcq_003",
-      "question": "What tool was used for taxonomic classification of sOTU features?",
-      "options": [
-        "A) BLAST with NCBI database",
-        "B) Naïve Bayes classifier with Greengenes v13.8 at 99% similarity",
-        "C) RDP classifier with SILVA database",
-        "D) VSEARCH with custom database"
-      ],
-      "correct_answer": "B",
-      "explanation": "Taxonomic identity of sOTU features was assigned using the Naïve Bayes classifier trained on the Greengenes v13.8 OTU reference tree clustered at 99% sequence similarity, implemented in QIIME2",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
+      "id": "DMML_mcq_easy_003",
       "difficulty": "easy",
-      "category": "factual"
-    },
-    {
-      "id": "diabetes_ml_mcq_004",
-      "question": "Which machine learning model achieved the highest AUC for diabetes status screening with 500 features and adjusted threshold?",
-      "options": [
-        "A) Decision Tree (0.63)",
-        "B) Support Vector Machine with Radial Kernel (0.62)",
-        "C) Elastic Net (0.77)",
-        "D) Random Forest (0.80)"
-      ],
+      "question": "Which supervised machine learning algorithm consistently achieved the highest AUC for diabetes status screening based on gut microbiome profiles?",
+      "options": {
+        "A": "Support vector machine with radial kernel (SVMRK)",
+        "B": "Elastic net (EN)",
+        "C": "Random forest (RF)",
+        "D": "Decision tree (DT)"
+      },
       "correct_answer": "C",
-      "explanation": "With 500 features and a classification threshold of 0.65, the Elastic Net model achieved the highest AUC of 0.77±0.02 for diabetes status screening, though Random Forest had slightly higher sensitivity (0.80) with AUC of 0.75",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
-      "difficulty": "medium",
-      "category": "factual"
+      "explanation": "Random forest consistently achieved the highest AUC for diabetes status screening across model iterations. It is well-suited to high-dimensional, sparse microbiome data due to its ability to capture non-linear relationships and its robustness to overfitting when using many trees.",
+      "topic_tags": ["random forest", "AUC", "diabetes screening", "machine learning"]
     },
+
     {
-      "id": "diabetes_ml_mcq_005",
-      "question": "What statistical method was used to identify enriched bacterial taxa between groups?",
-      "options": [
-        "A) Mann-Whitney U test with Bonferroni correction",
-        "B) Linear Discriminant Analysis Effect Size (LEfSe)",
-        "C) ANOVA with Tukey's post-hoc test",
-        "D) Kruskal-Wallis test with Dunn's correction"
-      ],
+      "id": "DMML_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "Why do microbiome-based machine learning models for diabetes classification often display high specificity but low sensitivity in initial training configurations?",
+      "options": {
+        "A": "The microbiome features selected are more predictive of healthy status than disease status",
+        "B": "Models develop a conservative threshold biased toward negative classification due to class imbalance, producing many false negatives",
+        "C": "Specificity and sensitivity are inversely correlated in all supervised classifiers regardless of dataset",
+        "D": "High dimensionality of microbiome data inherently penalizes sensitivity in all algorithms"
+      },
       "correct_answer": "B",
-      "explanation": "LEfSe (Linear Discriminant Analysis Effect Size) was performed using the microeco package in R to characterize representative bacterial taxa from disease status groups and diabetes types. Taxa were considered enriched with FDR-adjusted P-value<0.05 and LDA score≥2.0",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
-      "difficulty": "medium",
-      "category": "factual"
+      "explanation": "In imbalanced datasets where non-diabetic subjects outnumber diabetic ones, models bias toward negative classification because it minimizes overall error. This produces high specificity (correct non-diabetic classification) but low sensitivity (many diabetic cases misclassified as negative). Adjusting the classification threshold addresses this imbalance.",
+      "topic_tags": ["sensitivity", "specificity", "class imbalance", "classification threshold", "false negatives"]
     },
     {
-      "id": "diabetes_ml_mcq_006",
-      "question": "Why did the study use high-variance sOTU features rather than enriched taxa for training ML models?",
-      "options": [
-        "A) High-variance features are easier to compute",
-        "B) Enriched taxa are not statistically significant",
-        "C) sOTUs represent finer microbial diversity levels and reduce dimensionality while improving model performance",
-        "D) The software only supports sOTU-based analysis"
-      ],
-      "correct_answer": "C",
-      "explanation": "The study used high-variance sOTU features because operational taxonomic units represent finer and more specific levels of microbial diversity than taxonomic features. Using variable high-variance sOTU features allows reduction of training dataset dimensionality and improves model performance in the testing stage",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
+      "id": "DMML_mcq_medium_002",
       "difficulty": "medium",
-      "category": "mechanism"
-    },
-    {
-      "id": "diabetes_ml_mcq_007",
-      "question": "What is the primary advantage of using repeated k-fold cross-validation over simple train-test split?",
-      "options": [
-        "A) It requires less computational power",
-        "B) It reduces variance in performance estimates by repeatedly partitioning data into training and validation sets",
-        "C) It eliminates the need for a separate test set",
-        "D) It automatically selects the best features"
-      ],
+      "question": "What does the consistent enrichment of Ruminococcus torques in type 2 diabetes subjects suggest about its metabolic role?",
+      "options": {
+        "A": "It produces anti-inflammatory compounds that protect against beta-cell destruction",
+        "B": "Its enrichment is linked to metabolic contexts associated with butyrate and acetate production in obese-phenotype microbiomes",
+        "C": "It degrades intestinal mucus and increases intestinal permeability to glucose",
+        "D": "It inhibits Faecalibacterium prausnitzii growth, indirectly worsening inflammation"
+      },
       "correct_answer": "B",
-      "explanation": "Repeated k-fold cross-validation (five repeats of fivefold in this study) reduces variance in performance estimates and provides more reliable model evaluation by repeatedly partitioning the data, ensuring robust model assessment rather than relying on a single train-test split",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
-      "difficulty": "medium",
-      "category": "mechanism"
+      "explanation": "Ruminococcus torques has been found enriched in mice colonized with obese-phenotype microbiome cultures, where it was correlated with increased butyrate, acetate, and other metabolites. This context links its enrichment in T2DM to the metabolic milieu associated with obesity and insulin resistance rather than direct anti-diabetic function.",
+      "topic_tags": ["Ruminococcus torques", "T2DM", "butyrate", "obese phenotype", "metabolic markers"]
     },
     {
-      "id": "diabetes_ml_mcq_008",
-      "question": "According to the study, what is a key limitation in applying gut microbiome-based ML models for diabetes screening in real clinical settings?",
-      "options": [
-        "A) Microbiome sequencing is too expensive",
-        "B) Variability in microbiome composition among healthy individuals and potential alterations from medication challenge applicability",
-        "C) Machine learning algorithms are not accurate enough",
-        "D) Diabetes can only be diagnosed through blood tests"
-      ],
+      "id": "DMML_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "Which of the following correctly explains why beta diversity but not alpha diversity (Shannon index) differed significantly between diabetic and non-diabetic subjects?",
+      "options": {
+        "A": "Beta diversity measures phylogenetic relationships while alpha diversity is purely species count-based",
+        "B": "Diabetes is associated with qualitative shifts in community composition rather than overall loss of richness or evenness",
+        "C": "The Shannon index is insensitive to low-abundance taxa, which are the primary microbiome indicators of diabetes",
+        "D": "Beta diversity calculations are more statistically powerful and will always yield significant results with sufficient samples"
+      },
       "correct_answer": "B",
-      "explanation": "The study identifies that variability in microbiome composition among healthy individuals challenges the microbiome's applicability as a screening tool. Additionally, changes in physiology of diabetics/prediabetics and medication intake can alter gut microflora, which must be considered when implementing such approaches",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
-      "difficulty": "medium",
-      "category": "mechanism"
+      "explanation": "Beta diversity (unweighted UniFrac distances) captures differences in community composition between groups. Its significance despite a non-significant Shannon index suggests that diabetes is associated with qualitative compositional changes — certain taxa disappear or appear — rather than a broad loss of overall microbial evenness, which is what the Shannon index primarily captures.",
+      "topic_tags": ["beta diversity", "alpha diversity", "Shannon index", "UniFrac", "community composition"]
     },
     {
-      "id": "diabetes_ml_mcq_009",
-      "question": "What phenomenon explains why models trained with 1000 features showed high specificity but low sensitivity?",
-      "options": [
-        "A) Underfitting due to insufficient training data",
-        "B) Data leakage from training to test sets",
-        "C) Overfitting with bias toward negative classification, producing many false negatives",
-        "D) Class imbalance favoring positive cases"
-      ],
-      "correct_answer": "C",
-      "explanation": "The high specificity but low sensitivity indicated overfitting with a conservative threshold biased toward negative classification. The bigger 1000-feature dataset produced overfitted models that could only classify about half of positive cases correctly. High specificity didn't indicate good negative classification but rather bias producing high false negatives, which was addressed by reducing features and adjusting thresholds",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
+      "id": "DMML_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "What is the rationale for using log10 normalization of relative abundances in microbiome-based machine learning pipelines?",
+      "options": {
+        "A": "Log10 normalization converts relative abundances to absolute counts, improving comparability across samples",
+        "B": "It reduces skewness in the distribution of microbial abundances and downweights the influence of outliers, making relationships more interpretable to models",
+        "C": "It standardizes sequencing depth across samples, replacing rarefaction",
+        "D": "Log10 transformation eliminates the need for feature selection by compressing high-variance features"
+      },
+      "correct_answer": "B",
+      "explanation": "Microbiome abundance data are highly skewed, with a few taxa dominating and many taxa at low abundance. Log10 normalization compresses this skewness, reduces the disproportionate influence of dominant outliers, and makes the relationships within the data more linearly interpretable to algorithms such as elastic net and support vector machines.",
+      "topic_tags": ["normalization", "log10", "relative abundance", "skewness", "preprocessing"]
+    },
+    {
+      "id": "DMML_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "How does including IBD exclusion criteria improve the validity of microbiome-based diabetes classification studies?",
+      "options": {
+        "A": "IBD is caused by the same microbial imbalances as diabetes, so its exclusion prevents duplicate case counting",
+        "B": "IBD causes distinct gut microbiome alterations that would confound the diabetic vs. non-diabetic microbiome signal if included",
+        "C": "IBD patients are more likely to be misdiagnosed as diabetic due to overlapping metabolic symptoms",
+        "D": "IBD medications are known to eliminate the gut microbiome entirely, producing uniformly low diversity samples"
+      },
+      "correct_answer": "B",
+      "explanation": "IBD causes significant and distinctive gut microbiome alterations. Including IBD subjects in a diabetes classification dataset would introduce confounding microbial signatures that are disease-specific to IBD rather than diabetes. Excluding IBD ensures that the microbial signals captured by the models are attributable specifically to diabetes status rather than inflammatory bowel pathology.",
+      "topic_tags": ["IBD", "exclusion criteria", "confounding", "study design", "microbiome"]
+    },
+
+    {
+      "id": "DMML_mcq_hard_001",
       "difficulty": "hard",
-      "category": "mechanism"
+      "question": "When comparing elastic net and random forest performance for classifying non-diabetic vs. type 2 diabetes status, which statement most accurately describes their comparative strengths?",
+      "options": {
+        "A": "Random forest achieves higher AUC due to ensemble averaging, while elastic net achieves higher sensitivity by penalizing irrelevant features more aggressively",
+        "B": "Elastic net achieves higher AUC and higher specificity, while random forest achieves comparable sensitivity without significant difference, suggesting both capture complementary aspects of the microbial signal",
+        "C": "Elastic net outperforms random forest across all metrics because linear regularization is always superior for sparse genomic data",
+        "D": "Random forest achieves higher sensitivity while elastic net has higher specificity, and both have equivalent AUC, indicating interchangeability for screening purposes"
+      },
+      "correct_answer": "B",
+      "explanation": "For non-diabetic vs. T2DM classification, elastic net outperformed random forest in AUC and specificity, while the two models showed no statistically significant difference in sensitivity. This indicates that elastic net better captures the linear discriminative features for T2DM while both models achieve comparable true positive rates, suggesting they are complementary rather than redundant classifiers.",
+      "topic_tags": ["elastic net", "random forest", "T2DM", "AUC", "model comparison"]
     },
     {
-      "id": "diabetes_ml_mcq_010",
-      "question": "Based on the study's findings, what would be the most critical improvement needed for developing clinically applicable diabetes typing models?",
-      "options": [
-        "A) Using deeper neural networks instead of traditional ML",
-        "B) Increasing sequencing depth to capture rare species",
-        "C) Obtaining balanced datasets with similar sample sizes for T1DM and T2DM, plus external validation with independent datasets",
-        "D) Focusing only on genus-level taxonomic features"
-      ],
-      "correct_answer": "C",
-      "explanation": "The study identifies the unbalanced dataset (76 T1DM vs 366 T2DM) as a main limitation causing poor typing model performance. Future studies would benefit most from balanced datasets, controlled clinical settings, external validation with independent metagenomic datasets (which wasn't performed), and inclusion of demographic/clinical variables. The imbalanced data contributed to low sensitivity and poor generalizability",
-      "expected_documents": [
-        "30-Using_gut_microbiome_metagenomic_hypervariable_features_for_diabetes_screening_and_typing_through_supervised_machine_learning.pdf"
-      ],
+      "id": "DMML_mcq_hard_002",
       "difficulty": "hard",
-      "category": "mechanism"
+      "question": "What does the poor performance of all models on diabetes typing (T1DM vs. T2DM) classification — despite strong differential microbial signatures identified by LEfSe — reveal about the relationship between statistical biomarker discovery and machine learning classification?",
+      "options": {
+        "A": "LEfSe and machine learning methods analyse different biological compartments, so their results are inherently incompatible",
+        "B": "Statistical enrichment of taxa at the population level does not guarantee that these features provide sufficient discriminative power at the individual level for classification, particularly with unbalanced sample sizes",
+        "C": "Typing models always perform worse than screening models because typing is a harder biological problem regardless of feature availability",
+        "D": "LEfSe identified the wrong biomarkers because it uses linear discriminant analysis, which is not appropriate for microbiome data"
+      },
+      "correct_answer": "B",
+      "explanation": "LEfSe identifies taxa that are statistically enriched in one group versus another at the population level, but enrichment at the group level does not necessarily translate to consistent individual-level discriminability. Machine learning classification requires features that are reliably and consistently different across individuals in each class. With a severely unbalanced dataset (far fewer T1DM than T2DM subjects), models are prone to biased learning that suppresses sensitivity for the minority class, explaining why population-level biomarkers fail to translate to robust individual classification.",
+      "topic_tags": ["LEfSe", "machine learning", "diabetes typing", "biomarker discovery", "class imbalance", "T1DM vs T2DM"]
     }
   ]
 }
