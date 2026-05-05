@@ -7,6 +7,7 @@ import Button from "../UI/Button";
 import Input from "../UI/Input";
 import { useToast } from "@/hooks/useToast";
 import { collectionsApi } from "@/lib/api/collections";
+import { DocumentTextIcon } from "@heroicons/react/24/outline";
 
 interface SimpleUploadModalProps {
   isOpen: boolean;
@@ -102,8 +103,14 @@ export default function SimpleUploadModal({
     >
       <div className="space-y-4">
         {/* Info */}
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
-          <p className="text-sm text-blue-800">
+        <div
+          className="rounded-lg p-3"
+          style={{
+            background: "var(--accent-light)",
+            border: "0.5px solid var(--accent)",
+          }}
+        >
+          <p className="text-sm" style={{ color: "var(--text-accent)" }}>
             Enter a name for your collection. This will help you organize and
             find your documents later.
           </p>
@@ -111,22 +118,29 @@ export default function SimpleUploadModal({
 
         {/* Selected Files */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
+          <label
+            className="block text-sm font-medium mb-2"
+            style={{ color: "var(--text-secondary)" }}
+          >
             Selected Files ({files.length})
           </label>
-          <div className="bg-gray-50 rounded-lg p-3 max-h-32 overflow-y-auto border border-gray-200">
+          <div
+            className="rounded-lg p-3 max-h-32 overflow-y-auto border"
+            style={{
+              background: "var(--bg-surface)",
+              borderColor: "var(--border-soft)",
+            }}
+          >
             {files.map((file, idx) => (
               <div
                 key={idx}
-                className="text-sm text-gray-600 py-1 flex items-center"
+                className="text-sm py-1 flex items-center"
+                style={{ color: "var(--text-secondary)" }}
               >
-                <svg
-                  className="w-4 h-4 mr-2 text-red-500"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" />
-                </svg>
+                <DocumentTextIcon
+                  className="w-4 h-4 mr-2 flex-shrink-0"
+                  style={{ color: "var(--text-accent)" }}
+                />
                 {file.name}
               </div>
             ))}
@@ -154,28 +168,66 @@ export default function SimpleUploadModal({
 
         {/* Examples */}
         <div className="text-xs text-gray-500">
-          <p className="font-medium mb-1">Examples:</p>
+          <p
+            className="font-medium mb-1"
+            style={{ color: "var(--text-secondary)" }}
+          >
+            Examples:
+          </p>
           <div className="flex flex-wrap gap-2">
             <button
               onClick={() => handleNameChange("research-papers")}
-              className="px-2 py-1 bg-gray-100 hover:bg-gray-200 rounded text-gray-700 transition-colors"
+              className="px-2 py-1 rounded text-[12px] transition-colors border"
+              style={{
+                background: "var(--bg-surface)",
+                color: "var(--text-secondary)",
+                borderColor: "var(--border-soft)",
+              }}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.background = "var(--bg-base)")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.background = "var(--bg-surface)")
+              }
               disabled={isUploading}
             >
               research-papers
             </button>
             <button
               onClick={() => handleNameChange("aws-documentation")}
-              className="px-2 py-1 bg-gray-100 hover:bg-gray-200 rounded text-gray-700 transition-colors"
+              className="px-2 py-1 rounded text-[12px] transition-colors border"
+              style={{
+                background: "var(--bg-surface)",
+                color: "var(--text-secondary)",
+                borderColor: "var(--border-soft)",
+              }}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.background = "var(--bg-base)")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.background = "var(--bg-surface)")
+              }
               disabled={isUploading}
             >
               aws-documentation
             </button>
             <button
-              onClick={() => handleNameChange("my-notes-2024")}
-              className="px-2 py-1 bg-gray-100 hover:bg-gray-200 rounded text-gray-700 transition-colors"
+              onClick={() => handleNameChange("my-notes")}
+              className="px-2 py-1 rounded text-[12px] transition-colors border"
+              style={{
+                background: "var(--bg-surface)",
+                color: "var(--text-secondary)",
+                borderColor: "var(--border-soft)",
+              }}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.background = "var(--bg-base)")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.background = "var(--bg-surface)")
+              }
               disabled={isUploading}
             >
-              my-notes-2024
+              my-notes
             </button>
           </div>
         </div>

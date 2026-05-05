@@ -22,49 +22,45 @@ export default function CollectionItem({
 
   return (
     <div
-      className={`
-        group relative px-3 py-2.5 rounded-lg cursor-pointer transition-all duration-150 active:bg-stone-300
-        ${
-          isSelected
-            // ? "bg-[#BC6D51] hover:text-black"
-            ? "bg-stone-200 hover:text-black"
-            : "hover:text-black hover:bg-stone-200"
-        }
-      `}
+      className="group relative px-2 py-2 rounded-lg cursor-pointer transition-all duration-150"
+      style={{
+        background: isSelected ? "var(--bg-surface)" : "transparent",
+      }}
+      onMouseEnter={e => {
+        if (!isSelected) e.currentTarget.style.background = "var(--bg-surface)";
+      }}
+      onMouseLeave={e => {
+        if (!isSelected) e.currentTarget.style.background = "transparent";
+      }}
       onClick={onSelect}
     >
-      <div className="flex items-center gap-3">
-        {/* Folder Icon - Properly aligned */}
-        <FolderIcon 
-          className={`h-5 w-5 flex-shrink-0 transition-colors ${
-            isSelected ? "text-black" : "text-gray-400 group-hover:text-black"
-          }`}
+      <div className="flex items-center gap-2.5">
+        <FolderIcon
+          className="h-4 w-4 flex-shrink-0 transition-colors"
+          style={{ color: isSelected ? "var(--text-accent)" : "var(--text-muted)" }}
         />
-        
-        {/* Collection Name - Centered with icon */}
-        <div className="flex-1 min-w-0 flex items-center">
-          <span className={`text-[14px] leading-5 truncate font-normal ${
-            isSelected ? "text-black font-medium" : "text-gray-700"
-          }`}>
-            {collection.name}
-          </span>
-        </div>
 
-        {/* Manage Button - Shows on hover */}
+        <span
+          className="flex-1 text-[13.5px] truncate"
+          style={{
+            color: isSelected ? "var(--text-primary)" : "var(--text-secondary)",
+            fontWeight: isSelected ? 500 : 400,
+          }}
+        >
+          {collection.name}
+        </span>
+
+        {/* Manage button */}
         <button
           ref={buttonRef}
-          onClick={(e) => {
+          onClick={e => {
             e.stopPropagation();
             onManage(buttonRef as any);
           }}
-          className={`
-            flex-shrink-0 p-1 rounded transition-all duration-150 cursor-pointer
-            ${
-              isSelected 
-                ? "hover:bg-stone-300 text-black" 
-                : "opacity-0 group-hover:opacity-100 text-gray-400 hover:text-gray-600"
-            }
-          `}
+          className="flex-shrink-0 p-1 rounded transition-all duration-150 opacity-0 group-hover:opacity-100"
+          style={{ color: "var(--text-muted)" }}
+          onMouseEnter={e => (e.currentTarget.style.color = "var(--text-secondary)")}
+          onMouseLeave={e => (e.currentTarget.style.color = "var(--text-muted)")}
           title="Manage collection"
         >
           <EllipsisHorizontalIcon className="h-4 w-4" />

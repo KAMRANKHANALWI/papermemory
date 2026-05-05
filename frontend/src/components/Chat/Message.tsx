@@ -7,87 +7,109 @@ import remarkGfm from "remark-gfm";
 import rehypeHighlight from "rehype-highlight";
 import rehypeRaw from "rehype-raw";
 import SourcesDisplay from "./SourcesDisplay";
-import "highlight.js/styles/github-dark.css";
+import "highlight.js/styles/github.css";
 
 interface MessageProps {
   message: MessageType;
 }
 
 export default function Message({ message }: MessageProps) {
+  const isUser = message.type === "user";
+
   return (
-    <div className={`flex ${message.type === "user" ? "justify-end" : "justify-start"}`}>
+    <div className={`flex ${isUser ? "justify-end" : "justify-start"}`}>
       <div
-        className={`max-w-[80%] rounded-lg p-4 ${
-          message.type === "user"
-            ? "bg-amber-100 text-gray-900"
-            : "bg-white border border-gray-200 shadow-sm text-gray-900"
-        }`}
+        className="max-w-[80%] rounded-2xl px-5 py-4 text-[14px] leading-relaxed"
+        style={
+          isUser
+            ? {
+                background: "var(--bg-surface)",
+                color: "var(--text-primary)",
+                borderBottomRightRadius: 4,
+              }
+            : {
+                background: "var(--bg-card)",
+                color: "var(--text-primary)",
+                border: "0.5px solid var(--border-soft)",
+                borderBottomLeftRadius: 4,
+              }
+        }
       >
         {message.isLoading ? (
-          <div className="flex items-center text-gray-600">
-            <div className="animate-pulse">Thinking...</div>
+          <div className="flex items-center gap-2" style={{ color: "var(--text-muted)" }}>
+            <span
+              className="inline-block w-1.5 h-1.5 rounded-full animate-bounce"
+              style={{ background: "var(--text-muted)", animationDelay: "0ms" }}
+            />
+            <span
+              className="inline-block w-1.5 h-1.5 rounded-full animate-bounce"
+              style={{ background: "var(--text-muted)", animationDelay: "150ms" }}
+            />
+            <span
+              className="inline-block w-1.5 h-1.5 rounded-full animate-bounce"
+              style={{ background: "var(--text-muted)", animationDelay: "300ms" }}
+            />
           </div>
-        ) : message.type === "user" ? (
+        ) : isUser ? (
           <div className="whitespace-pre-wrap">{message.content}</div>
         ) : (
           <>
-            <div className="prose prose-gray prose-sm max-w-none">
+            <div className="prose-parchment prose prose-sm max-w-none">
               <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
                 rehypePlugins={[rehypeHighlight, rehypeRaw]}
                 components={{
                   h1: ({ node, ...props }) => (
-                    <h1 className="text-2xl font-bold mt-4 mb-2 text-gray-900" {...props} />
+                    <h1 style={{ fontFamily: "var(--font-serif)", color: "var(--text-primary)", fontSize: "1.4rem", fontWeight: 600, marginTop: "1rem", marginBottom: "0.5rem" }} {...props} />
                   ),
                   h2: ({ node, ...props }) => (
-                    <h2 className="text-xl font-bold mt-3 mb-2 text-gray-900" {...props} />
+                    <h2 style={{ fontFamily: "var(--font-serif)", color: "var(--text-primary)", fontSize: "1.2rem", fontWeight: 600, marginTop: "0.8rem", marginBottom: "0.4rem" }} {...props} />
                   ),
                   h3: ({ node, ...props }) => (
-                    <h3 className="text-lg font-bold mt-2 mb-1 text-gray-900" {...props} />
+                    <h3 style={{ fontFamily: "var(--font-serif)", color: "var(--text-primary)", fontSize: "1.05rem", fontWeight: 600 }} {...props} />
                   ),
                   p: ({ node, ...props }) => (
-                    <p className="mb-2 leading-relaxed text-gray-800" {...props} />
+                    <p style={{ marginBottom: "0.6rem", lineHeight: 1.7, color: "var(--text-primary)" }} {...props} />
                   ),
                   ul: ({ node, ...props }) => (
-                    <ul className="list-disc list-inside mb-2 space-y-1 text-gray-800" {...props} />
+                    <ul style={{ listStyleType: "disc", paddingLeft: "1.2rem", marginBottom: "0.6rem", color: "var(--text-primary)" }} {...props} />
                   ),
                   ol: ({ node, ...props }) => (
-                    <ol className="list-decimal list-inside mb-2 space-y-1 text-gray-800" {...props} />
+                    <ol style={{ listStyleType: "decimal", paddingLeft: "1.2rem", marginBottom: "0.6rem", color: "var(--text-primary)" }} {...props} />
                   ),
-                  li: ({ node, ...props }) => <li className="ml-2" {...props} />,
+                  li: ({ node, ...props }) => <li style={{ marginBottom: "0.2rem" }} {...props} />,
                   code: ({ node, inline, ...props }: any) =>
                     inline ? (
-                      <code
-                        className="bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono text-gray-800"
-                        {...props}
-                      />
+                      <code style={{ background: "var(--bg-surface)", borderRadius: 4, padding: "1px 5px", fontSize: "0.85em", fontFamily: "var(--font-mono)", color: "var(--text-primary)" }} {...props} />
                     ) : (
-                      <code
-                        className="block bg-gray-100 p-3 rounded my-2 overflow-x-auto text-sm"
-                        {...props}
-                      />
+                      <code style={{ display: "block", background: "var(--bg-surface)", padding: "0.75rem", borderRadius: 8, overflowX: "auto", fontSize: "0.875em" }} {...props} />
                     ),
                   pre: ({ node, ...props }) => (
-                    <pre className="bg-gray-100 rounded my-2 overflow-x-auto" {...props} />
+                    <pre style={{ background: "var(--bg-surface)", borderRadius: 8, marginBottom: "0.6rem", overflowX: "auto" }} {...props} />
                   ),
                   blockquote: ({ node, ...props }) => (
-                    <blockquote
-                      className="border-l-4 border-gray-300 pl-4 italic my-2 text-gray-700"
-                      {...props}
-                    />
+                    <blockquote style={{ borderLeft: "3px solid var(--border-soft)", paddingLeft: "1rem", color: "var(--text-secondary)", fontStyle: "italic", margin: "0.5rem 0" }} {...props} />
                   ),
                   a: ({ node, ...props }) => (
-                    <a className="text-amber-600 hover:underline" {...props} />
+                    <a style={{ color: "var(--text-accent)", textDecoration: "underline" }} {...props} />
                   ),
                   strong: ({ node, ...props }) => (
-                    <strong className="font-bold text-gray-900" {...props} />
+                    <strong style={{ fontWeight: 600, color: "var(--text-primary)" }} {...props} />
+                  ),
+                  table: ({ node, ...props }) => (
+                    <table style={{ width: "100%", borderCollapse: "collapse", marginBottom: "0.6rem", fontSize: "0.875em" }} {...props} />
+                  ),
+                  th: ({ node, ...props }) => (
+                    <th style={{ borderBottom: "1px solid var(--border-soft)", padding: "6px 10px", textAlign: "left", fontWeight: 600, color: "var(--text-secondary)", background: "var(--bg-surface)" }} {...props} />
+                  ),
+                  td: ({ node, ...props }) => (
+                    <td style={{ borderBottom: "0.5px solid var(--border-muted)", padding: "6px 10px", color: "var(--text-primary)" }} {...props} />
                   ),
                 }}
               >
                 {message.content}
               </ReactMarkdown>
             </div>
-
             {message.sources && <SourcesDisplay sources={message.sources} />}
           </>
         )}

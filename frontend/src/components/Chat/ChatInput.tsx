@@ -22,76 +22,61 @@ export default function ChatInput({
   const [input, setInput] = useState("");
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
-  const resetTextareaHeight = () => {
-    if (textareaRef.current) {
-      textareaRef.current.style.height = "3rem";
-    }
+  const resetHeight = () => {
+    if (textareaRef.current) textareaRef.current.style.height = "3rem";
   };
 
-  const adjustTextareaHeight = () => {
+  const adjustHeight = () => {
     if (textareaRef.current) {
       textareaRef.current.style.height = "3rem";
       textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`;
     }
   };
 
-  useEffect(() => {
-    if (input === "") {
-      resetTextareaHeight();
-    }
-  }, [input]);
+  useEffect(() => { if (!input) resetHeight(); }, [input]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (input.trim() && !disabled && !isLoading) {
       onSend(input);
-      setInput(""); // Height will be reset by useEffect when input becomes ""
+      setInput("");
     }
-  };
-
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === "Enter" && !e.shiftKey) {
-      e.preventDefault();
-      handleSubmit(e);
-    }
-  };
-
-  const handleStopClick = () => {
-    if (onStop) {
-      onStop();
-    }
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    setInput(e.target.value);
-    adjustTextareaHeight();
   };
 
   return (
-    <div className="bg-white border-t border-gray-200 p-4">
+    <div
+      className="flex-shrink-0 px-6 py-4 border-t"
+      style={{ background: "var(--bg-card)", borderColor: "var(--border-muted)" }}
+    >
       <form onSubmit={handleSubmit} className="flex gap-3 items-end">
         <textarea
           ref={textareaRef}
           value={input}
-          onChange={handleChange}
-          onKeyDown={handleKeyDown}
+          onChange={e => { setInput(e.target.value); adjustHeight(); }}
+          onKeyDown={e => {
+            if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); handleSubmit(e); }
+          }}
           placeholder={placeholder}
           disabled={disabled}
           rows={1}
-          className="flex-1 bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 disabled:opacity-50 disabled:bg-gray-50 resize-none overflow-hidden"
+          className="flex-1 rounded-xl px-4 py-3 text-[14px] outline-none resize-none overflow-hidden border transition-all"
           style={{
+            background: "var(--bg-input)",
+            borderColor: "var(--border-soft)",
+            color: "var(--text-primary)",
             minHeight: "3rem",
             maxHeight: "12.5rem",
           }}
+          onFocus={e => (e.target.style.borderColor = "var(--accent)")}
+          onBlur={e => (e.target.style.borderColor = "var(--border-soft)")}
         />
-        
-        {/* Conditional Button - Send or Stop */}
+
         {isLoading ? (
           <button
             type="button"
-            onClick={handleStopClick}
-            className="bg-gray-700 hover:bg-gray-800 px-4 py-3 rounded-lg font-medium transition-colors flex items-center justify-center text-white min-w-[3.5rem] h-12"
-            title="Stop generating"
+            onClick={onStop}
+            className="rounded-xl px-4 h-12 flex items-center justify-center transition-colors"
+            style={{ background: "var(--text-secondary)", color: "#fff" }}
           >
             <StopCircleIcon className="h-5 w-5" />
           </button>
@@ -99,14 +84,17 @@ export default function ChatInput({
           <button
             type="submit"
             disabled={!input.trim() || disabled}
-            className="bg-amber-600 hover:bg-amber-700 disabled:bg-gray-300 disabled:cursor-not-allowed px-4 py-3 rounded-lg font-medium transition-colors flex items-center justify-center text-white min-w-[3.5rem] h-12"
-            title="Send message"
+            className="rounded-xl px-4 h-12 flex items-center justify-center transition-colors disabled:cursor-not-allowed"
+            style={{
+              background: !input.trim() || disabled ? "var(--border-soft)" : "var(--accent)",
+              color: !input.trim() || disabled ? "var(--text-muted)" : "#fff",
+            }}
           >
             <PaperAirplaneIcon className="h-5 w-5" />
           </button>
         )}
       </form>
-      <p className="text-xs text-gray-500 mt-2">
+      <p className="text-[11px] mt-2" style={{ color: "var(--text-muted)" }}>
         Press Enter to send, Shift+Enter for new line
       </p>
     </div>
