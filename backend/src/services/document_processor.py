@@ -4,6 +4,7 @@ Document processor with rich metadata extraction + pages_store saving for parent
 
 import os
 import json
+import shutil
 import tempfile
 import chromadb
 from pathlib import Path
@@ -83,7 +84,7 @@ class DocumentProcessor:
         }
 
     # ------------------------------------------------------------------ #
-    #  Pages store                                                         #
+    #  Pages store                                                       #
     # ------------------------------------------------------------------ #
 
     def _save_pages_store(
@@ -134,7 +135,57 @@ class DocumentProcessor:
 
         with open(store_path, "r", encoding="utf-8") as f:
             return json.load(f)
+        
+    def delete_pdf_pages_store(self, collection_name: str, filename: str) -> bool:
+        """Delete the pages_store JSON for a specific PDF."""
+        json_name = Path(filename).stem + ".json"
+        store_path = self.pages_store_base / collection_name / json_name
+        
+        if store_path.exists():
+            store_path.unlink()
+            print(f"Deleted pages_store: {store_path}")
+            return True
+        
+        print(f"pages_store not found for deletion: {store_path}")
+        return False
 
+    def delete_collection_pages_store(self, collection_name: str) -> bool:
+        """Delete all pages_store JSONs for an entire collection."""
+        collection_dir = self.pages_store_base / collection_name
+        
+        if collection_dir.exists():
+            shutil.rmtree(collection_dir)
+            print(f"Deleted pages_store collection dir: {collection_dir}")
+            return True
+        
+        return False
+
+    def rename_pdf_pages_store(
+        self, collection_name: str, old_filename: str, new_filename: str
+    ) -> bool:
+        """Rename the pages_store JSON when a PDF is renamed."""
+        old_json = Path(old_filename).stem + ".json"
+        new_json = Path(new_filename).stem + ".json"
+        old_path = self.pages_store_base / collection_name / old_json
+        new_path = self.pages_store_base / collection_name / new_json
+        
+        if old_path.exists():
+            old_path.rename(new_path)
+            print(f"Renamed pages_store: {old_json} → {new_json}")
+            return True
+        
+        print(f"pages_store not found for rename: {old_path}")
+        return False
+
+    def rename_collection_pages_store(self, old_name: str, new_name: str) -> bool:
+        old_dir = self.pages_store_base / old_name
+        new_dir = self.pages_store_base / new_name
+        if old_dir.exists():
+            old_dir.rename(new_dir)
+            print(f"Renamed pages_store collection dir: {old_name} → {new_name}")
+            return True
+        return False
+    
     # ------------------------------------------------------------------ #
     #  PDF processing                                                      #
     # ------------------------------------------------------------------ #

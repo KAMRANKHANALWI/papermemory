@@ -1,0 +1,263 @@
+{
+  "metadata": {
+    "source_paper": "Microbiota in Health and Diseases",
+    "authors": ["Kaijian Hou", "Zhuo-Xun Wu", "Xuan-Yu Chen", "Jing-Quan Wang", "Dongya Zhang", "Chuanxing Xiao", "Dan Zhu", "Jagadish B. Koya", "Liuya Wei", "Jilin Li", "Zhe-Sheng Chen"],
+    "journal": "Signal Transduction and Targeted Therapy",
+    "year": 2022,
+    "doi": "10.1038/s41392-022-00974-4",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "MHDB_easy_6f2a",
+      "difficulty": "easy",
+      "question": "What is the distinction between the terms 'microbiota' and 'microbiome', and why does it matter?",
+      "answer": "Microbiota refers specifically to the living microorganisms found in a defined environment, such as the oral cavity or gut. Microbiome, by contrast, encompasses a broader spectrum: the entire collection of genomes from all microorganisms in that environment, including not just the microbial community itself but also microbial structural elements, metabolites, and environmental conditions. The distinction matters because microbiome research captures functional and genetic dimensions beyond mere species composition, making it more informative for understanding host-microbial interactions.",
+      "topic_tags": ["microbiota definition", "microbiome", "terminology", "microbial communities"]
+    },
+    {
+      "id": "MHDB_easy_3c8d",
+      "difficulty": "easy",
+      "question": "What are the major bacterial phyla that constitute the gut microbiota, and which two are considered dominant?",
+      "answer": "The gut microbiota is generally composed of six phyla: Firmicutes, Bacteroidetes, Actinobacteria, Proteobacteria, Fusobacteria, and Verrucomicrobia. Among these, Firmicutes and Bacteroidetes are considered the two dominant phyla. In addition to bacteria, the gut microbiota also contains fungi (mycobiota), viruses, phages, and archaea.",
+      "topic_tags": ["gut microbiota composition", "bacterial phyla", "Firmicutes", "Bacteroidetes"]
+    },
+    {
+      "id": "MHDB_easy_9b1e",
+      "difficulty": "easy",
+      "question": "What is colonization resistance, and what are the main mechanisms through which the gut microbiota achieves it?",
+      "answer": "Colonization resistance refers to the ability of a stable resident microbial community to prevent the establishment of invading pathogenic microorganisms. The gut microbiota achieves this through several mechanisms: nutrient competition (competing with pathogens for the same substrates), production of antimicrobial substances such as bacteriocins, and bacteriophage deployment. For example, indigenous E. coli strains compete with pathogenic E. coli O157:H7 for the amino acid proline. Contact-dependent killing systems (type 6 and type 7 secretion systems) also play roles in intraspecies and interspecies competition.",
+      "topic_tags": ["colonization resistance", "gut microbiota", "antimicrobial", "nutrient competition", "bacteriocins"]
+    },
+    {
+      "id": "MHDB_easy_2d7f",
+      "difficulty": "easy",
+      "question": "How does gut microbiota composition change with age, from infancy through old age?",
+      "answer": "In early childhood, the gut microbiota is dominated by organisms such as Akkermansia muciniphila, Bacteroides, Veillonella, and Clostridium species. By approximately age 3, the microbiota becomes comparable to that of adults, with Firmicutes, Bacteroidetes, and Actinobacteria as the dominant phyla. Microbial diversity generally increases from childhood to adulthood. At older ages (over 70), diversity declines; specifically, there tends to be decreased Bifidobacterium and increased Clostridium and Proteobacteria, changes thought to be associated with increased inflammatory status.",
+      "topic_tags": ["gut microbiota development", "age-related changes", "Bifidobacterium", "infant microbiota", "elderly microbiota"]
+    },
+    {
+      "id": "MHDB_easy_7a3c",
+      "difficulty": "easy",
+      "question": "What defining characteristics distinguish a healthy gut microbiota community?",
+      "answer": "A healthy gut microbiota community is generally characterized by high taxonomic diversity, high microbial gene richness, and a stable core microbiota. It also exhibits stability, resilience, and symbiotic interaction with the host. In healthy conditions, the microbiota supports functions such as nutrient extraction, biosynthesis of vitamins, amino acids and lipids, protection from external pathogens, and immune system regulation. It should be noted that the relative distribution of microorganisms is unique between individuals and may vary within the same individual due to age, medication, and environmental factors.",
+      "topic_tags": ["healthy microbiota", "microbial diversity", "core microbiota", "symbiosis", "gut homeostasis"]
+    },
+    {
+      "id": "MHDB_medium_4e9b",
+      "difficulty": "medium",
+      "question": "How does the gut microbiota influence the gut-brain axis, and what specific signaling pathways mediate this communication?",
+      "answer": "The gut microbiota regulates the gut-brain axis through multiple bidirectional pathways. Microbes produce neuromodulatory metabolites including tryptophan, serotonin, GABA, and catecholamines that influence neural signaling. The autonomic nervous system (ANS) integrates gut-brain communication and mediates interactions between gut microbiota and the enteric nervous system (ENS). Specific metabolites like indole activate the vagus nerve; gut bacteria such as Lactobacillus rhamnosus can induce information transmission in vagal afferents, an effect abolished by vagotomy. The gut microbiota also communicates with the hypothalamic-pituitary-adrenal (HPA) axis, which coordinates stress responses. Germ-free mice exhibit hyperresponsive HPA axis activity (elevated plasma corticosterone), indicating the regulatory role of the microbiota. Gut microbial metabolite 4-ethylphenylsulfate has been shown to induce anxiety-like behavior in animal models, further demonstrating microbiota influence on neuropsychology.",
+      "topic_tags": ["gut-brain axis", "neuromodulatory metabolites", "vagus nerve", "HPA axis", "serotonin", "GABA"]
+    },
+    {
+      "id": "MHDB_medium_8f1a",
+      "difficulty": "medium",
+      "question": "What are the mechanisms by which gut microbiota dysbiosis contributes to the development of cardiovascular diseases?",
+      "answer": "Gut microbiota contributes to cardiovascular disease (CVD) through several interconnected mechanisms. First, gut bacteria metabolize dietary choline, phosphatidylcholine, and carnitine into trimethylamine-N-oxide (TMAO), which is associated with early atherosclerosis and elevated CVD mortality risk. Mechanistically, TMAO activates MAPK and NF-κB signaling pathways in endothelial and smooth muscle cells, promoting monocyte recruitment and vascular inflammation. Second, microbial lipopolysaccharide (LPS) from gram-negative bacteria can induce vascular oxidative stress via TLR4 pathway activation, leading to endothelial dysfunction. Third, short-chain fatty acids (SCFAs) — particularly propionate and butyrate — play protective roles: propionate regulates effector/regulatory T cell balance critical in hypertension, while butyrate modulates blood pressure by inhibiting renal prorenin receptors. SCFAs also act on G-protein-coupled receptors (Gpr41, Gpr43, Olfr78) to mediate blood pressure regulation.",
+      "topic_tags": ["cardiovascular disease", "TMAO", "LPS", "NF-κB", "SCFAs", "atherosclerosis", "blood pressure"]
+    },
+    {
+      "id": "MHDB_medium_2c5d",
+      "difficulty": "medium",
+      "question": "How does gut microbiota dysbiosis contribute to type 2 diabetes mellitus, and what metabolic pathways are involved?",
+      "answer": "Gut microbiota contributes to T2DM through multiple mechanisms. Microbial dysbiosis promotes low-grade inflammation primarily via LPS, which binds to TLR4, activates macrophage aggregation and the NF-κB signaling pathway, and leads to release of inflammatory factors that inhibit insulin secretion. Altered bile acid metabolism by dysbiotic gut bacteria disrupts normal bile acid conversion to secondary forms, impairing fibroblast growth factor (FGF19/15) signaling that normally promotes insulin sensitivity and glucose tolerance. Reduced abundance of SCFA-producing bacteria (such as Faecalibacterium and Roseburia) diminishes SCFA-mediated glucose metabolism regulation: SCFAs stimulate GLP-1 and peptide YY release from intestinal L cells via FFAR2/FFAR3 receptors, promoting insulin secretion and reducing glucagon. Additionally, butyrate deficiency impairs intestinal barrier integrity, and reduced SCFA-mediated regulatory T cell production allows autoimmune responses to persist.",
+      "topic_tags": ["type 2 diabetes", "LPS", "NF-κB", "SCFAs", "bile acids", "insulin resistance", "gut permeability"]
+    },
+    {
+      "id": "MHDB_medium_5b7e",
+      "difficulty": "medium",
+      "question": "What is the gut-lung axis, and how does early-life gut microbiota influence susceptibility to respiratory diseases later in life?",
+      "answer": "The gut-lung axis refers to the bidirectional communication between gut microbiota and pulmonary immune responses. Early-life gut microbiota plays a critical role in immune cell maturation and pathogen resistance, and its dysbiosis during this period has been linked to increased risk of asthma and other respiratory diseases later in life. Specifically, decreased abundance of gut bacteria such as Veillonella, Faecalibacterium, and Lachnospira in early infancy has been associated with elevated asthma risk. SCFAs produced by gut bacteria promote peripheral regulatory T-cell generation and have been shown to ameliorate allergic lung inflammation. Additionally, intestinal lymphocytes with altered homing properties may migrate from the gut to the lungs under inflammatory signals, contributing to respiratory inflammation. The gut-lung axis is bidirectional: pneumonia can also induce intestinal epithelial apoptosis and decreased intestinal epithelial proliferation.",
+      "topic_tags": ["gut-lung axis", "asthma", "COPD", "SCFAs", "early-life microbiota", "respiratory disease", "regulatory T cells"]
+    },
+    {
+      "id": "MHDB_medium_1a9f",
+      "difficulty": "medium",
+      "question": "How does the innate immune system interact with gut microbiota to maintain homeostasis, and what happens when this interaction is disrupted?",
+      "answer": "The innate immune system maintains gut homeostasis through several mechanisms involving microbiota. Secretory IgA (sIgA) binds to commensal bacteria and selectively presents bacterial components to tolerogenic dendritic cells; as an anti-inflammatory molecule, sIgA reduces the inflammatory response from the massive bacterial load in organs. TLR5, expressed on B-cells and CD4+ T-cells, recognizes flagellin from bacterial flagella, triggering IgA production that neutralizes pathogens. Paneth cells and other innate immune components produce antimicrobial peptides that help regulate microbial populations. The maturation of the immune system depends on commensal microorganism presence — gut microbiota mediates neutrophil migration and T cell differentiation into helper subsets (Th1, Th2, Th17) and regulatory T cells. When disrupted (dysbiosis), sIgA response is altered, leading to unregulated bacterial growth; microbiota-derived heterogeneous molecules may induce inflammatory responses and chronic tissue damage; and immunological tolerance can deteriorate, increasing susceptibility to autoimmune diseases.",
+      "topic_tags": ["innate immunity", "sIgA", "TLR5", "antimicrobial peptides", "T cell differentiation", "immune homeostasis"]
+    },
+    {
+      "id": "MHDB_medium_3d6b",
+      "difficulty": "medium",
+      "question": "What clinical approaches exist for treating diseases by manipulating gut microbiota, and what are the key challenges and limitations?",
+      "answer": "The main clinical approaches for microbiota-based disease treatment include: (1) Probiotics — live microorganisms that restore microbial balance by occupying host tissue and preventing pathogenic colonization, though clinical data remain insufficient and there are risks of probiotic translocation in immunocompromised patients; (2) Prebiotics — selectively fermented substrates (e.g., inulin, FOS, lactulose, GOS) that stimulate beneficial Bifidobacterium and Lactobacillus strains, though clinical applicability is debatable; (3) Fecal Microbiota Transplantation (FMT) — introducing donor fecal matter into recipients, most effective for recurrent C. difficile infection (~90% cure rate), with growing applications in IBD, cancer, diabetes, and neurological disorders; (4) Antibiotic-based modulation — targeting specific pathogenic bacteria, with the caveat that broad-spectrum antibiotics may also harm beneficial commensals; (5) Engineered bacteria — using genetic engineering to produce therapeutic molecules in situ. Key challenges include establishing causality between dysbiosis and disease, lack of standardization in donor screening for FMT, high inter-individual variation, and insufficient safety data for many interventions.",
+      "topic_tags": ["FMT", "probiotics", "prebiotics", "engineered bacteria", "clinical treatment", "C. difficile", "disease therapy"]
+    },
+    {
+      "id": "MHDB_hard_9a2c",
+      "difficulty": "hard",
+      "question": "How do gut microbiota influence cancer development through multiple mechanisms, and what distinguishes the roles of oral, respiratory, and gut microbiota in carcinogenesis?",
+      "answer": "Gut microbiota contributes to cancer through three main mechanisms: (1) influencing host cell proliferation and death, (2) altering immune system activity, and (3) affecting host metabolism. Oral microbiota (particularly P. gingivalis) promotes carcinogenesis by activating NF-κB and JAK1/STAT3 pathways (inhibiting apoptosis), interfering with cell cycle regulation via cyclins, PI3K, and p53, activating Wnt/β-catenin oncogenic signaling, inducing chronic inflammation via IL-8, TGF-β1, TNF-α, and producing genotoxic oncometabolites like acetaldehydes. F. nucleatum (a periodontal pathogen) drives colorectal cancer (CRC) by increasing tumor multiplicity and recruiting tumor-infiltrating myeloid cells. Respiratory/lung microbiota promotes lung cancer via γδ T cell-mediated inflammation and upregulation of PI3K/AKT and ERK/MAPK pathways. Gut microbiota promotes CRC through epithelial barrier deterioration, triggering tumor-elicited inflammation, and producing genotoxic metabolites (colibactin, B. fragilis toxin). Key bacteria implicated in CRC include E. faecalis, E. coli, B. fragilis, F. nucleatum, and H. pylori. The common thread is that microbial dysbiosis induces chronic inflammation and immune dysregulation as core carcinogenic drivers across all tissue sites.",
+      "topic_tags": ["cancer", "colorectal cancer", "lung cancer", "P. gingivalis", "F. nucleatum", "NF-κB", "Wnt/β-catenin", "carcinogenesis", "chronic inflammation"]
+    },
+    {
+      "id": "MHDB_hard_4f8d",
+      "difficulty": "hard",
+      "question": "What are the complex mechanisms linking gut microbiota dysbiosis to chronic kidney disease progression, and how do uremic toxins mediate these effects?",
+      "answer": "Gut microbiota dysbiosis contributes to chronic kidney disease (CKD) progression through multiple interconnected mechanisms. The gut-kidney axis operates via metabolic and immune pathways: dysbiotic bacteria produce uremic toxins — including indoxyl sulfate, p-cresyl sulfate (PCS), p-cresyl glucuronide (PCG), and TMAO — that accumulate due to impaired renal clearance and exacerbate kidney damage. Indoxyl sulfate induces inflammatory and profibrotic responses in renal tubular cells. PCS causes renal tubular cell damage through NADPH oxidase-mediated oxidative stress and affects activity of MRP4 and BCRP transporters. TMAO is associated with elevated CVD risk and systemic inflammation in CKD patients. CKD patients typically show altered gut microbiota — reduced Actinobacteria and Akkermansia (important for IL-10 regulation and systemic inflammation control), alongside increased uremic toxin-producing bacteria. Contributing factors include reduced dietary fiber intake, increased protein absorption, slower intestinal transit, and frequent antibiotic or iron supplement use. Impaired intestinal permeability allows translocation of bacteria and bacterial products into the bloodstream, sustaining persistent systemic inflammation. This creates a vicious cycle where CKD alters gut microbiota, and the altered microbiota further accelerates CKD through inflammation, oxidative stress, and uremic toxin accumulation.",
+      "topic_tags": ["chronic kidney disease", "uremic toxins", "indoxyl sulfate", "p-cresyl sulfate", "TMAO", "gut-kidney axis", "intestinal permeability", "systemic inflammation"]
+    },
+    {
+      "id": "MHDB_hard_7c3e",
+      "difficulty": "hard",
+      "question": "How do gut microbiota modulate drug pharmacokinetics and pharmacodynamics, and what are the clinical implications of these microbiota-drug interactions?",
+      "answer": "Gut microbiota can substantially alter drug pharmacokinetics (PK) and pharmacodynamics (PD) through multiple mechanisms. Over thirty drugs are known substrates of bacterial enzymes in the distal gut. Mechanisms include: (1) Direct biotransformation — bacterial β-glucuronidases from E. coli can convert irinotecan to its active toxic metabolite SN-38 in the intestinal lumen, causing intestinal epithelial damage; Eubacterium lentum converts the cardiac glycoside digoxin to reduced derivatives, and antibiotic treatment can increase serum digoxin levels up to twofold by disrupting this bacterial metabolism; (2) Bioaccumulation — bacteria can store drugs without chemical modification, as shown with antidepressant duloxetine being bioaccumulated by S. salivarius, attenuating its behavioral effect; (3) Altered absorption — changes in microbiota composition due to hypoxia or co-administered probiotics can affect drug absorption profiles; (4) Enzyme modulation — microbiota affects host metabolism by modulating cytochrome P450 enzymes and UDP-glucuronosyltransferase. Clinical implications include highly variable drug efficacy between individuals with different microbiota compositions, potential drug-microbiota interactions that alter therapeutic outcomes (e.g., metformin's antihyperglycemic effect is reduced by over 40% in microbiota-depleted conditions), and the need for personalized approaches to drug dosing that account for microbiome composition.",
+      "topic_tags": ["drug pharmacokinetics", "microbiota-drug interactions", "β-glucuronidases", "digoxin", "irinotecan", "bioaccumulation", "cytochrome P450", "metformin"]
+    },
+    {
+      "id": "MHDB_hard_1b5a",
+      "difficulty": "hard",
+      "question": "How does gut microbiota contribute to the pathogenesis of neurodegenerative disorders such as Parkinson's disease and Alzheimer's disease, and what is the current state of evidence linking microbial changes to neuroinflammation?",
+      "answer": "Gut microbiota contributes to neurodegenerative disorders through the gut-brain axis by modulating host innate immunity and neuroinflammatory processes. In Parkinson's disease (PD), α-synuclein-mediated Lewy body pathology appears first in the enteric nervous system (ENS) and dorsal motor nucleus of the vagus nerve during presymptomatic stages. Microbiota transplantation from PD patients into mouse models induces enhanced physical impairments compared with healthy-donor microbiota, establishing a causal link. Specific taxa implicated include increased Escherichia-Shigella, Streptococcus, Proteus, and Enterococcus, and decreased Blautia, Faecalibacterium, and Ruminococcus in PD patients. Some studies identify increased Prevotella and Akkermansia in PD, with increased Akkermansia associated with greater intestinal permeability and pathogen entry, and increased Prevotella linked to mucin synthesis and SCFA production that can mediate neuroinflammation. In Alzheimer's disease (AD), decreased microbial diversity is observed with reduced Firmicutes and Bifidobacterium, and increased Bacteroidetes and Proteobacteria. Inflammatory intestinal bacterial taxa correlate with elevated IL-6, TNF-α, CXCL2, NLRP3, and brain amyloidosis. The mechanisms proposed include stress-induced intestinal permeability allowing endotoxins to enter circulation, triggering peripheral inflammation that influences mental health by promoting neurotoxin entry into the brain and obstructing neurotransmitter systems. Importantly, causality remains difficult to establish, and conflicting findings across studies highlight the need for larger, standardized investigations.",
+      "topic_tags": ["Parkinson's disease", "Alzheimer's disease", "neuroinflammation", "gut-brain axis", "α-synuclein", "amyloid-β", "HPA axis", "neurodegeneration"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "MHDB_mcq_easy_3f7a",
+      "difficulty": "easy",
+      "question": "Which of the following is the second largest microbial community in the human body after the gut microbiota?",
+      "options": {
+        "A": "Skin microbiota",
+        "B": "Oral microbiota",
+        "C": "Lung microbiota",
+        "D": "Vaginal microbiota"
+      },
+      "correct_answer": "B",
+      "explanation": "The oral microbiota is considered the second largest microbial community in humans. The oral cavity contains multiple distinct habitats — saliva, tongue, tooth surfaces, gums, buccal mucosa, palate, and subgingival/supragingival plaque — harboring approximately 50 species with ~1000 sub-species.",
+      "topic_tags": ["oral microbiota", "microbial communities", "body sites"]
+    },
+    {
+      "id": "MHDB_mcq_easy_8c2b",
+      "difficulty": "easy",
+      "question": "What is the primary mechanism by which breastfeeding contributes to the development of the infant immune system through microbiota?",
+      "options": {
+        "A": "Breast milk directly inoculates the infant gut with large quantities of Bifidobacterium and Lactobacillus",
+        "B": "Breast milk provides maternal sIgA shaped by maternal microbiota, protecting the newborn and reinforcing the seeding of the infant's microbiota",
+        "C": "Breastfeeding alters the infant's intestinal pH to favor colonization by Firmicutes over Proteobacteria",
+        "D": "Breast milk contains prebiotics that selectively expand Akkermansia muciniphila in the infant gut"
+      },
+      "correct_answer": "B",
+      "explanation": "Besides required nutrients and antimicrobial proteins, breast milk provides sIgA that is specifically shaped by the maternal microbiota. This maternal-derived sIgA protects the newborn against pathogens before the infant's own immune system solidifies, reinforcing the microbiota seeded from the mother's epidermal or vaginal origin at birth.",
+      "topic_tags": ["breastfeeding", "infant immunity", "sIgA", "maternal microbiota", "neonatal immune system"]
+    },
+    {
+      "id": "MHDB_mcq_easy_5d1e",
+      "difficulty": "easy",
+      "question": "What is the primary distinction in gut microbiota composition between the small intestine and the colon?",
+      "options": {
+        "A": "The small intestine harbors strictly anaerobic communities while the colon contains predominantly aerobic bacteria",
+        "B": "Proteobacteria like Enterobacteriaceae are found in the small intestine, while Bacteroidetes like Bacteroidaceae and Prevotellaceae predominate in the colon",
+        "C": "The colon microbiota is dominated by Firmicutes while the small intestine is dominated by Actinobacteria",
+        "D": "Fungi are exclusively found in the small intestine while bacteria dominate the colon"
+      },
+      "correct_answer": "B",
+      "explanation": "Proteobacteria such as Enterobacteriaceae are found in the small intestine but not the colon, largely due to the short transit time and high bile concentration there. In contrast, Bacteroidetes such as Bacteroidaceae, Prevotellaceae, and Rikenellaceae are commonly found in the colon, which has slower flow rates, milder pH, and harbors larger and predominantly anaerobic microbial communities.",
+      "topic_tags": ["small intestine microbiota", "colon microbiota", "biogeography", "Proteobacteria", "Bacteroidetes"]
+    },
+    {
+      "id": "MHDB_mcq_medium_2a4f",
+      "difficulty": "medium",
+      "question": "Through which mechanism does Porphyromonas gingivalis uniquely manipulate the host immune system to sustain its own survival in the oral cavity?",
+      "options": {
+        "A": "It produces bacteriocins that selectively eliminate competing commensal bacteria while avoiding immune detection",
+        "B": "It triggers host immune responses that cause tissue destruction (providing nutrients) while separating bactericidal activity from the inflammatory response via C5aR1-TLR2 signaling",
+        "C": "It encodes a trans-sialidase that modifies mucin glycoproteins to create a preferential colonization niche",
+        "D": "It downregulates TLR4 expression on epithelial cells to reduce antimicrobial peptide production in the gingival tissues"
+      },
+      "correct_answer": "B",
+      "explanation": "P. gingivalis exploits a paradox: inflammation provides it with nutrients from tissue destruction, but bactericidal immune activity would eliminate it. It resolves this by initiating a C5aR1-TLR2 signal in neutrophils that separates a TLR2-MyD88 inflammatory pathway from a TLR2-MyD88-Mal-PI3K bactericidal pathway — allowing inflammation without coupled killing. This enables P. gingivalis to intervene in host-microbiota homeostasis and drive periodontitis progression.",
+      "topic_tags": ["P. gingivalis", "oral microbiota", "C5aR1-TLR2", "immune evasion", "periodontitis"]
+    },
+    {
+      "id": "MHDB_mcq_medium_6e9c",
+      "difficulty": "medium",
+      "question": "What is the proposed mechanism by which gut microbiota depletion could enhance anti-tumor immune responses and why might antibiotics serve as adjuvant cancer therapies?",
+      "options": {
+        "A": "Gut microbiota depletion increases intestinal permeability, allowing tumor antigens to enter circulation and stimulate systemic immune responses",
+        "B": "Gut microbiota depletion increases IFN-γ-producing T cells, decreases IL-17A/IL-10-producing T cells, and promotes effector-T cell infiltration into tumors, enhancing anti-tumor immunity",
+        "C": "Antibiotics directly target DNA repair enzymes in tumor cells, sensitizing them to conventional chemotherapy",
+        "D": "Gut microbiota depletion promotes regulatory T cell expansion, which paradoxically increases anti-tumor cytotoxicity at tumor sites"
+      },
+      "correct_answer": "B",
+      "explanation": "Studies in tumor mouse models showed that gut microbiota depletion via oral antibiotics significantly reduced tumor growth. The mechanistic study revealed this was accompanied by increased IFN-γ-producing T cells, decreased IL-17A/IL-10-producing T cells, and infiltration of effector-T cells into pancreatic tumors. The effect was not observed in Rag-1 KO mice lacking mature B and T cells, confirming host immunity dependency. This makes antibiotic treatment a potential adjuvant to overcome the poor effector-T cell infiltration that limits immunotherapy in certain cancers.",
+      "topic_tags": ["cancer immunotherapy", "gut microbiota depletion", "antibiotics", "IFN-γ", "effector T cells", "tumor microenvironment"]
+    },
+    {
+      "id": "MHDB_mcq_medium_9b3d",
+      "difficulty": "medium",
+      "question": "How does vaginal microbiota contribute to colonization resistance against sexually transmitted infections?",
+      "options": {
+        "A": "Vaginal Lactobacillus species produce lactic acid and bacteriocins that create a hostile environment for pathogenic microorganisms, acting as a protective barrier",
+        "B": "Vaginal microbiota activates NF-κB signaling in epithelial cells to produce high levels of proinflammatory cytokines that directly kill pathogens",
+        "C": "The polymicrobial flora of the vagina creates competitive exclusion purely through nutrient competition without requiring antimicrobial substances",
+        "D": "Vaginal commensal bacteria express surface receptors that physically block viral attachment to epithelial cells"
+      },
+      "correct_answer": "A",
+      "explanation": "Lactobacillus species are key members of the vaginal microbiota that provide protective functions by generating bactericidal and virucidal agents, including lactic acid and bacteriocins. These agents create an inhospitable environment for pathogens. Disruption of the Lactobacillus-dominated state (as in bacterial vaginosis) is associated with elevated risk of sexually transmitted infections including HIV, HPV, and herpes simplex virus, underscoring the protective role of vaginal Lactobacilli.",
+      "topic_tags": ["vaginal microbiota", "Lactobacillus", "colonization resistance", "sexually transmitted infections", "lactic acid"]
+    },
+    {
+      "id": "MHDB_mcq_medium_4c8a",
+      "difficulty": "medium",
+      "question": "Which metabolic pathway links gut microbiota to the development of nonalcoholic fatty liver disease (NAFLD), and what molecular mechanisms are involved?",
+      "options": {
+        "A": "Gut bacteria produce excess bile acids that accumulate in the liver and activate farnesoid X receptor-mediated hepatocyte apoptosis",
+        "B": "Gut microbiota impairs choline metabolism, with deficiency causing hepatic steatosis, and dysbiosis elevates portal vein LPS that activates TLR4/NF-κB-dependent fibrosis pathways",
+        "C": "Dysbiotic gut bacteria overproduce SCFAs that overwhelm hepatic mitochondrial capacity, leading to lipid accumulation",
+        "D": "Microbiota alterations reduce tryptophan absorption, limiting serotonin synthesis and impairing hepatic lipid export"
+      },
+      "correct_answer": "B",
+      "explanation": "Two key mechanisms link gut microbiota to NAFLD: (1) Gut microbiota is involved in choline metabolism, and deficiency causes hepatic steatosis through DNA damage accumulation, overproduction of free radicals, and hepatocyte death-induced inflammation. Specific bacterial taxa (Gammaproteobacteria and Erysipelotrichi) are associated with choline deficiency-induced fatty liver. (2) Impaired intestinal permeability from dysbiosis allows LPS translocation to the portal vein, where it activates TLR4, which upregulates chemokine secretion and enhances TGF-β signaling via the MyD88-NF-κB pathway, promoting hepatic fibrosis.",
+      "topic_tags": ["NAFLD", "choline metabolism", "LPS", "TLR4", "NF-κB", "gut-liver axis", "hepatic fibrosis"]
+    },
+    {
+      "id": "MHDB_mcq_medium_7f2e",
+      "difficulty": "medium",
+      "question": "What explains the observation that germ-free mice show hyperresponsive HPA axis activity, and what does this reveal about the microbiota-stress relationship?",
+      "options": {
+        "A": "Without gut microbiota, the intestinal wall cannot synthesize cortisol precursors, forcing the adrenal glands to compensate by overproducing corticosterone",
+        "B": "Gut microbiota normally suppresses HPA axis activity; its absence leads to elevated plasma corticosterone, indicating that microbiota is a critical modulator of the stress response system",
+        "C": "Germ-free mice lack the intestinal flora needed to metabolize corticosterone, so the hormone accumulates to abnormally high levels",
+        "D": "Without microbiota-derived serotonin precursors, the HPA axis upregulates corticotropin-releasing factor to compensate for impaired mood regulation"
+      },
+      "correct_answer": "B",
+      "explanation": "Studies in germ-free mice revealed elevated plasma corticosterone, indicating a hyperresponsive HPA axis. This demonstrates that normally functioning gut microbiota exerts a regulatory (suppressive) effect on HPA axis activity. Human bowel syndrome patients with gut microbiota changes also show exaggerated adrenocorticotrophic hormone responses, paralleling the germ-free mouse findings. Together, these data establish gut microbiota as a critical modulator of the physiological stress response system.",
+      "topic_tags": ["HPA axis", "germ-free mice", "corticosterone", "stress response", "gut-brain axis"]
+    },
+    {
+      "id": "MHDB_mcq_hard_3a6b",
+      "difficulty": "hard",
+      "question": "Considering the multiple mechanisms by which gut microbiota influence host immunity, what best explains why disruption of microbiota during early life maturation of the immune system can lead to lasting immunological consequences?",
+      "options": {
+        "A": "Early microbiota exposure permanently reprograms Paneth cell populations; without this programming, intestinal crypts cannot produce defensins throughout life",
+        "B": "During maturation, gut microbiota establishes neutrophil migration patterns, T cell differentiation into Th1/Th2/Th17 and regulatory subsets, and immune tolerance to intestinal antigens; disruption of these processes results in deteriorated tolerance and autoimmune susceptibility",
+        "C": "Early microbial colonization is required only for B cell development; T cell education occurs in the thymus independent of microbiota and is therefore resistant to dysbiosis",
+        "D": "Microbial disruption in early life depletes the pool of memory T cells before they can recognize self-antigens, causing unrestrained future inflammatory responses"
+      },
+      "correct_answer": "B",
+      "explanation": "One critical mechanism of gut microbiota affecting the immune system is mediating neutrophil migration, which subsequently impacts T cell differentiation into Th1, Th2, Th17, and regulatory T cells. The adaptive immune response is educated by differentiation and maturation of B and T cells with establishment of immune tolerance to microbiota. Disorders in microbiota development during immune system maturation can lead to deteriorated immunological tolerance and autoimmune diseases. Additionally, infants born by Cesarean section — who receive different initial microbiota — show higher risks of developing allergies and asthma, illustrating real-world consequences of early microbiota disruption.",
+      "topic_tags": ["immune maturation", "T cell differentiation", "immune tolerance", "autoimmune disease", "early-life microbiota", "neutrophil migration"]
+    },
+    {
+      "id": "MHDB_mcq_hard_8e4c",
+      "difficulty": "hard",
+      "question": "Fecal microbiota transplantation (FMT) achieves therapeutic effects through multiple mechanisms. Which combination of mechanisms best explains its high efficacy (~90%) in treating recurrent C. difficile infection specifically, and why are results more variable in other diseases?",
+      "options": {
+        "A": "FMT works in C. difficile by directly introducing donor antibodies against C. difficile toxins; variability in other diseases reflects differences in donor IgG levels",
+        "B": "FMT decolonizes C. difficile through direct ecological competition from donor flora, restores colonization resistance, immune function, and essential metabolites; variability in other diseases reflects their more complex, multifactorial pathogenesis where single microbiome restoration is insufficient",
+        "C": "FMT resolves C. difficile by altering intestinal pH through donor SCFA production, which is uniquely toxic to C. difficile spores; other diseases involve different pathogens insensitive to pH changes",
+        "D": "FMT works exclusively through bacteriophage deployment from donor flora, which specifically targets C. difficile; other diseases lack equivalent phage-sensitive pathobionts"
+      },
+      "correct_answer": "B",
+      "explanation": "FMT's proposed mechanisms include: (1) stimulating decolonization of pathogenic microbes and enhancing colonization resistance through direct ecological competition; (2) repopulating gut microbiota to restore immune function and reduce abnormal microbial colonization damage; (3) restoring essential metabolites including SCFAs, antimicrobial peptides, bacteriocins, and bile acids. In C. difficile, these mechanisms act collectively against a single pathogen in a clearly dysbiotic environment, yielding ~90% cure rates vs. ~31% for vancomycin. In complex diseases like IBD, cancer, or diabetes, pathogenesis involves genetic factors, immune dysregulation, and environmental drivers beyond dysbiosis alone, making microbiota restoration less singularly curative and explaining the variable and often incomplete responses observed in clinical trials.",
+      "topic_tags": ["FMT", "C. difficile", "colonization resistance", "ecological competition", "SCFAs", "bile acids", "IBD", "clinical efficacy"]
+    }
+  ]
+}

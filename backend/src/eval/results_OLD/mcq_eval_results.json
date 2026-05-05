@@ -1,0 +1,9 @@
+{
+  "dataset": "mcq_eval_results.csv",
+  "total_rows": 1007,
+  "attempted_questions": 1007,
+  "skipped_questions": 0,
+  "true_count": 874,
+  "false_count": 133,
+  "accuracy_percent": 86.79
+}

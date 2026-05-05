@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "source_paper": "Host-Diet-Gut Microbiome Interactions Influence Human Energy Balance: a Randomized Clinical Trial",
+    "authors": ["Karen D. Corbin", "Elvis A. Carnero", "Blake Dirks", "Daria Igudesman", "Fanchao Yi", "Andrew Marcus", "Taylor L. Davis", "Richard E. Pratley", "Bruce E. Rittmann", "Rosa Krajmalnik-Brown", "Steven R. Smith"],
+    "journal": "Nature Metabolism",
+    "doi": "10.1038/s42255-023-00791-1",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings from a controlled inpatient crossover feeding study comparing a Western Diet (WD) to a Microbiome Enhancer Diet (MBD) on gut microbiome composition and host energy balance.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "hd_gut_eb_easy_001",
+      "difficulty": "easy",
+      "question": "What are the defining dietary characteristics that distinguish a microbiome-enhancing diet from a Western diet?",
+      "answer": "A microbiome-enhancing diet is characterized by high fiber content (approximately 23–30 g per 1000 kcal), high resistant starch (greater than 8 g per 1000 kcal), minimal processed foods, and large food particles. In contrast, a Western diet features low fiber (approximately 6–10 g per 1000 kcal), low resistant starch (less than 2 g per 1000 kcal), processed foods, and small food particles. Both diets are matched for total macronutrient proportions of carbohydrate, fat, and protein, so fiber and resistant starch are the key differentiating nutritional variables.",
+      "topic_tags": ["microbiome enhancer diet", "Western diet", "dietary fiber", "resistant starch", "diet composition"]
+    },
+    {
+      "id": "hd_gut_eb_easy_002",
+      "difficulty": "easy",
+      "question": "How does a high-fiber, high-resistant-starch diet affect fecal biomass production compared to a low-fiber diet?",
+      "answer": "A high-fiber, high-resistant-starch diet substantially increases fecal biomass production. In controlled inpatient feeding studies, participants consuming a microbiome-enhancing diet produce approximately twice the daily fecal weight compared to those on a Western diet. This increase in fecal biomass reflects greater microbial proliferation and fermentative activity driven by the additional fermentable substrates provided by dietary fiber and resistant starch.",
+      "topic_tags": ["fecal biomass", "fecal weight", "dietary fiber", "microbiome enhancer diet", "fermentation"]
+    },
+    {
+      "id": "hd_gut_eb_easy_003",
+      "difficulty": "easy",
+      "question": "What types of bacterial species tend to increase in relative abundance in response to a high-fiber, high-resistant-starch diet?",
+      "answer": "A high-fiber, high-resistant-starch diet selectively enriches butyrate-producing bacteria and fiber-degrading species. Key taxa that increase include Oscillibacter species, Eubacterium eligens, Prevotella copri, Roseburia hominis, Eubacterium rectale, Ruminococcus bromii, Akkermansia muciniphila, Faecalibacterium prausnitzii, Lachnospira pectinoschiza, Bacteroides stercoris, and Parabacteroides distasonis. These microorganisms are functionally specialized to ferment complex carbohydrates and produce short-chain fatty acids.",
+      "topic_tags": ["butyrate producers", "fiber degraders", "microbiome remodeling", "Ruminococcus bromii", "Prevotella copri", "Eubacterium rectale"]
+    },
+    {
+      "id": "hd_gut_eb_easy_004",
+      "difficulty": "easy",
+      "question": "What effect does a microbiome-enhancing diet have on satiety hormones such as GLP-1 and pancreatic polypeptide compared to a Western diet?",
+      "answer": "A microbiome-enhancing diet increases circulating levels of satiety-promoting hormones, specifically total GLP-1 (glucagon-like peptide-1) and pancreatic polypeptide, while simultaneously reducing leptin levels. In contrast, a Western diet is associated with lower GLP-1 and pancreatic polypeptide but higher leptin. This hormonal profile under the microbiome-enhancing diet suggests enhanced gut-derived satiety signaling, which may have implications for appetite regulation and metabolic health.",
+      "topic_tags": ["GLP-1", "pancreatic polypeptide", "leptin", "satiety hormones", "diet", "energy balance"]
+    },
+    {
+      "id": "hd_gut_eb_easy_005",
+      "difficulty": "easy",
+      "question": "How does diet-driven microbiome remodeling affect fecal short-chain fatty acid levels and what is the implication for host energy balance?",
+      "answer": "A microbiome-enhancing diet high in fiber and resistant starch increases fecal short-chain fatty acid (SCFA) concentrations, reflecting heightened microbial fermentation activity. This increase in fecal SCFAs is associated with greater fecal energy loss, meaning that more calories are excreted rather than absorbed by the host. As a result, host metabolizable energy — the proportion of ingested energy available for physiological use — is reduced under the microbiome-enhancing diet. This coordinated host–microbial response represents a mechanism by which diet composition, acting through the gut microbiome, can influence overall human energy balance.",
+      "topic_tags": ["short-chain fatty acids", "fecal energy loss", "host metabolizable energy", "energy balance", "fermentation", "microbiome"]
+    },
+
+    {
+      "id": "hd_gut_eb_medium_001",
+      "difficulty": "medium",
+      "question": "What is the mechanistic relationship between dietary resistant starch, microbial fermentation, and host metabolizable energy?",
+      "answer": "Resistant starch is a fermentable substrate that escapes small intestinal digestion and reaches the colon, where it is metabolized by specialist bacteria such as Ruminococcus bromii that initiate primary degradation. Fermentation of resistant starch generates short-chain fatty acids (SCFAs) and supports microbial biomass expansion. The calories sequestered in undigested starch, microbial biomass, and fecal SCFAs represent energy that is lost rather than absorbed by the host. This reduction in absorbed calories lowers host metabolizable energy — the proportion of ingested energy that the host can actually use. Colonic transit time also modulates this process: longer transit allows more complete fermentation, potentially recapturing energy from SCFAs as they are absorbed by colonocytes, while shorter transit increases fecal energy excretion.",
+      "topic_tags": ["resistant starch", "fermentation", "host metabolizable energy", "fecal energy loss", "colonic transit time", "SCFAs"]
+    },
+    {
+      "id": "hd_gut_eb_medium_002",
+      "difficulty": "medium",
+      "question": "How does a high-fiber diet alter the beta-diversity of the gut microbiome, and what does this imply about community-level responses to diet?",
+      "answer": "A high-fiber, high-resistant-starch diet shifts the overall community composition of the gut microbiome in a statistically significant manner, as measured by beta-diversity metrics such as Jaccard similarity. Despite this shift in species composition between dietary conditions, alpha-diversity measures of species richness and evenness remain comparable between diets. This dissociation indicates that diet-driven microbiome remodeling operates primarily by changing the relative representation of taxa — enriching fiber degraders and butyrate producers while reducing others — rather than by increasing overall species number or homogeneity. The community-level divergence in response to contrasting diets demonstrates that diet is a potent driver of microbiome structure even over short inpatient periods.",
+      "topic_tags": ["beta-diversity", "alpha-diversity", "Jaccard similarity", "microbiome remodeling", "community composition", "diet"]
+    },
+    {
+      "id": "hd_gut_eb_medium_003",
+      "difficulty": "medium",
+      "question": "What bacterial species are associated with higher host metabolizable energy, and what does this suggest about their functional role in energy extraction?",
+      "answer": "Several bacterial species show positive associations with host metabolizable energy, meaning higher abundance of these organisms correlates with more efficient host energy extraction. These include species such as Clostridium bolteae, Erysipelatoclostridium ramosum, Hungatella hathewayi, Streptococcus australis, and Clostridium sp. CAG_58, among others enriched under microbiome-enhancing conditions. Their association with higher metabolizable energy suggests these organisms may facilitate conversion of dietary substrates into forms more readily absorbed by the host, or produce fermentation products that are efficiently metabolized, thereby increasing the fraction of ingested energy available to the host rather than being lost in feces.",
+      "topic_tags": ["host metabolizable energy", "energy extraction", "microbial species", "Clostridium bolteae", "microbiome", "fermentation"]
+    },
+    {
+      "id": "hd_gut_eb_medium_004",
+      "difficulty": "medium",
+      "question": "How does the composition of the gut microbial community differ between a Western diet and a microbiome-enhancing diet at the species level?",
+      "answer": "The two diets drive divergent microbial communities. The microbiome-enhancing diet enriches fiber-degrading and butyrate-producing taxa such as Oscillibacter species, Prevotella copri, Eubacterium eligens, Roseburia hominis, Eubacterium rectale, Ruminococcus bromii, Akkermansia muciniphila, and Lachnospira pectinoschiza. The Western diet, by contrast, is associated with higher relative abundance of simple sugar fermenters and species including Bifidobacterium longum, Bifidobacterium pseudocatenulatum, Collinsella aerofaciens, Adlercreutzia equolifaciens, Dorea longicatena, Coprococcus comes, Anaerostipes hadrus, and various Actinomyces species. This divergence reflects how fiber availability shapes niche availability in the colon: complex carbohydrates selectively favor taxa equipped with polysaccharide-degrading machinery.",
+      "topic_tags": ["microbiome composition", "species-level differences", "Western diet", "microbiome enhancer diet", "fiber degraders", "simple sugar fermenters"]
+    },
+    {
+      "id": "hd_gut_eb_medium_005",
+      "difficulty": "medium",
+      "question": "Why does a high-fiber diet increase fecal energy loss, and what are the competing mechanisms that determine how much energy ultimately reaches the host?",
+      "answer": "A high-fiber diet increases fecal energy loss through multiple pathways: undigested fiber and resistant starch resist absorption in the small intestine and pass to the colon, where they are only partially fermented; microbial biomass expansion sequesters energy in cellular material excreted in feces; and SCFAs produced during fermentation may be excreted rather than absorbed if colonic transit is rapid. However, not all fecal energy is truly 'lost' to the host — SCFAs produced in the colon are efficiently absorbed by colonocytes and the liver, providing usable energy. The net effect on host metabolizable energy therefore depends on the balance between fecal energy excretion and SCFA absorption, which is modulated by colonic transit time, microbial community composition, and the physicochemical properties of dietary substrates.",
+      "topic_tags": ["fecal energy loss", "host metabolizable energy", "SCFA absorption", "colonic transit time", "dietary fiber", "energy balance"]
+    },
+    {
+      "id": "hd_gut_eb_medium_006",
+      "difficulty": "medium",
+      "question": "How does colonic transit time interact with diet-driven microbiome changes to influence human energy balance?",
+      "answer": "Colonic transit time is a critical modulator of how diet-microbiome interactions shape host energy balance. Longer transit time allows greater contact between microbial communities and fermentable substrates, promoting more complete degradation of fiber and resistant starch and enabling more SCFA absorption by the host. Shorter transit time — potentially induced by high fiber intake, which accelerates gut motility — results in incomplete fermentation and greater fecal energy loss. Studies using computational modeling of host metabolizable energy have shown that accounting for individually measured colonic transit time improves prediction accuracy compared to models using a fixed transit time, underlining that this parameter is not constant across individuals or dietary conditions and meaningfully interacts with microbial fermentation capacity to determine energy outcomes.",
+      "topic_tags": ["colonic transit time", "energy balance", "fermentation", "fecal energy loss", "individual variation", "modeling"]
+    },
+
+    {
+      "id": "hd_gut_eb_hard_001",
+      "difficulty": "hard",
+      "question": "How do coordinated host and microbial responses to diet collectively determine metabolizable energy, and how does this challenge traditional assessments of dietary energy availability?",
+      "answer": "Traditional dietary energy assessment uses fixed Atwater factors that assign standardized caloric values to macronutrients regardless of individual variation or gut microbiome composition. However, the true metabolizable energy available to the host is determined by a coordinated interplay between diet, the gut microbiome, and host physiology. When dietary fiber and resistant starch are high, the microbiome expands in biomass and fermentative output, increasing fecal energy loss through undigested substrates, microbial cells, and excreted SCFAs. Simultaneously, certain microbial taxa with greater carbohydrate-degrading capacity can harvest energy that might otherwise be lost, partially returning it to the host as absorbed SCFAs. Host factors such as colonic transit time, epithelial SCFA uptake efficiency, and enteroendocrine hormone responses (e.g., GLP-1, pancreatic polypeptide) further modulate net energy extraction. This means that two individuals consuming identical diets can have meaningfully different net metabolizable energy depending on their microbiome composition and gut physiology, challenging the assumption that dietary caloric content is a fixed determinant of energy availability.",
+      "topic_tags": ["metabolizable energy", "Atwater factors", "fecal energy loss", "microbiome", "energy balance", "individual variation", "SCFAs", "enteroendocrine"]
+    },
+    {
+      "id": "hd_gut_eb_hard_002",
+      "difficulty": "hard",
+      "question": "What is the mechanistic basis for divergent microbial community structures between high-fiber and low-fiber diets, and why does this divergence occur rapidly even in controlled short-term feeding studies?",
+      "answer": "Gut microbial community structure is strongly shaped by substrate availability, which in the colon is primarily determined by the quantity and type of fermentable carbohydrates reaching the large intestine. High-fiber and high-resistant-starch diets dramatically increase the flux of microbiota-accessible carbohydrates (MACs), selectively enriching taxa that encode polysaccharide-degrading enzyme machinery — including Ruminococcus bromii for resistant starch and various Bacteroidetes and Lachnospiraceae for diverse plant polysaccharides. These substrate specialists gain competitive advantages through faster growth rates on preferred substrates. Conversely, under a Western diet with low MAC availability, taxa adapted to simpler fermentable sugars, host-derived glycans, or cross-fed metabolites become relatively more abundant. Because gut microbiota generation times are short (hours), microbial community shifts can occur within days of dietary change, making even brief inpatient interventions sufficient to reveal divergent community structures. The rapidity of this response reflects the principle that community composition is dynamically maintained by ecological selection pressure from the nutrient environment.",
+      "topic_tags": ["microbiota-accessible carbohydrates", "competitive advantage", "fiber degraders", "substrate availability", "microbiome remodeling", "ecological selection"]
+    },
+    {
+      "id": "hd_gut_eb_hard_003",
+      "difficulty": "hard",
+      "question": "How do microbial species that are enriched under contrasting dietary conditions differentially contribute to host energy balance, and what does this suggest about the role of microbiome composition in metabolic disease risk?",
+      "answer": "Microbial species enriched under a microbiome-enhancing diet — such as Oscillibacter species, Prevotella copri, Eubacterium rectale, and Ruminococcus bromii — are associated with increased fecal energy loss and reduced host metabolizable energy. These organisms specialize in fermenting complex carbohydrates, generating fermentation byproducts that are partially excreted, thus acting as an energy-dissipating community. In contrast, certain species enriched under microbiome-enhancing conditions but linked to higher host metabolizable energy (e.g., Clostridium bolteae, Erysipelatoclostridium ramosum) may enhance host energy recovery from fermentable substrates. The species that dominate under a Western diet — simple sugar fermenters and Actinobacteria such as Bifidobacterium and Collinsella species — may support more efficient extraction of energy from a low-fiber substrate. These findings suggest that microbiome composition is not merely a biomarker of dietary intake but an active determinant of how efficiently calories are absorbed. Individuals harboring communities that maximize energy extraction may be at higher risk for positive energy balance and obesity, while those with fiber-fermenting communities may be partially protected through increased fecal energy loss — a mechanism potentially modifiable through dietary intervention.",
+      "topic_tags": ["microbial energy harvesting", "metabolic disease", "obesity risk", "energy extraction", "fecal energy loss", "microbiome composition", "fermentation"]
+    },
+    {
+      "id": "hd_gut_eb_hard_004",
+      "difficulty": "hard",
+      "question": "Why do subjective appetite measures and ad libitum food intake remain similar between high-fiber and low-fiber diets despite significant differences in satiety hormone profiles, and what does this suggest about diet–hormone–behavior relationships?",
+      "answer": "Despite a microbiome-enhancing diet producing significantly higher levels of satiety-promoting hormones (GLP-1 and pancreatic polypeptide) and lower leptin compared to a Western diet, subjective appetite ratings — including fullness, hunger, prospective food consumption, and satiety assessed by visual analog scales — do not differ significantly between diets. Similarly, ad libitum energy intake when given free access to food is comparable between dietary conditions. This dissociation between hormonal signals and behavioral outcomes may arise from several mechanisms: (1) the fixed inpatient meal structure in controlled feeding studies attenuates variability in subjective appetite; (2) satiety hormones influence long-term metabolic regulation and gut motility rather than immediate meal-to-meal hunger perception; (3) the macronutrient equivalence of the two diets may override hormonal cues in determining short-term satiation; and (4) individual variation in hormone sensitivity may dilute group-level effects. This finding highlights that measuring hormones alone is insufficient to predict behavioral feeding responses, and that the relationship between gut-derived hormonal signals and energy intake behavior is complex and context-dependent.",
+      "topic_tags": ["satiety hormones", "appetite", "GLP-1", "ad libitum food intake", "diet behavior relationship", "pancreatic polypeptide", "leptin"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "hd_gut_eb_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which dietary component is the primary driver of divergent microbial community composition between a Western diet and a microbiome-enhancing diet when total macronutrient ratios are held constant?",
+      "options": {
+        "A": "Total protein content",
+        "B": "Total fat percentage",
+        "C": "Fiber and resistant starch content",
+        "D": "Total caloric density"
+      },
+      "correct_answer": "C",
+      "explanation": "When total energy, carbohydrate, fat, and protein percentages are matched between diets, the differentiating variables are fiber (6–10 g vs. 23–30 g per 1000 kcal) and resistant starch (<2 g vs. >8 g per 1000 kcal). These fermentable substrates drive divergent community remodeling by selectively enriching microorganisms with polysaccharide-degrading capabilities.",
+      "topic_tags": ["dietary fiber", "resistant starch", "microbiome remodeling", "diet composition"]
+    },
+    {
+      "id": "hd_gut_eb_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "Which of the following best describes the effect of a microbiome-enhancing diet on fecal weight compared to a Western diet?",
+      "options": {
+        "A": "Fecal weight decreases due to more efficient nutrient absorption",
+        "B": "Fecal weight is unchanged because total caloric intake is equivalent",
+        "C": "Fecal weight approximately doubles, reflecting increased microbial biomass and undigested substrate",
+        "D": "Fecal weight increases only modestly and is not statistically significant"
+      },
+      "correct_answer": "C",
+      "explanation": "A microbiome-enhancing diet produces approximately twice the daily fecal weight compared to a Western diet (approximately 204 g/day vs. 99 g/day). This increase reflects greater microbial biomass production and incomplete fermentation of dietary fiber, which passes as fecal material rather than being absorbed.",
+      "topic_tags": ["fecal weight", "fecal biomass", "microbiome enhancer diet", "dietary fiber"]
+    },
+    {
+      "id": "hd_gut_eb_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "Under a microbiome-enhancing diet, which satiety hormone decreases while GLP-1 and pancreatic polypeptide increase?",
+      "options": {
+        "A": "Insulin",
+        "B": "Ghrelin",
+        "C": "Leptin",
+        "D": "Peptide YY"
+      },
+      "correct_answer": "C",
+      "explanation": "The microbiome-enhancing diet increases GLP-1 (total) and pancreatic polypeptide while decreasing leptin. Leptin is an adipokine that typically signals long-term energy sufficiency; its reduction under the high-fiber diet contrasts with the elevation of gut-derived satiety hormones, suggesting a shift in the hormonal profile toward gut-mediated satiety signaling.",
+      "topic_tags": ["leptin", "satiety hormones", "GLP-1", "microbiome enhancer diet"]
+    },
+
+    {
+      "id": "hd_gut_eb_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "What is the most likely reason that host metabolizable energy is lower when consuming a high-fiber, high-resistant-starch diet compared to a low-fiber diet with equivalent caloric content?",
+      "options": {
+        "A": "Reduced gastric emptying slows absorption of all macronutrients",
+        "B": "Higher fecal energy loss due to undigested substrates and expanded microbial biomass excreted in feces",
+        "C": "Increased energy expenditure from thermogenesis triggered by microbial fermentation products",
+        "D": "Reduced intestinal transit time prevents SCFA absorption by colonocytes"
+      },
+      "correct_answer": "B",
+      "explanation": "The primary mechanism is increased fecal energy loss. Dietary fiber and resistant starch resist small intestinal digestion, reach the colon, and are only partially fermented. Undigested substrate, expanded microbial biomass, and excreted short-chain fatty acids collectively represent calories lost in feces that are unavailable to the host, thereby reducing host metabolizable energy.",
+      "topic_tags": ["host metabolizable energy", "fecal energy loss", "dietary fiber", "resistant starch", "energy balance"]
+    },
+    {
+      "id": "hd_gut_eb_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "Why does beta-diversity differ significantly between dietary conditions while alpha-diversity metrics such as richness and evenness remain unchanged?",
+      "options": {
+        "A": "Diet preferentially eliminates rare taxa, reducing richness equally across conditions",
+        "B": "Diet shifts the relative representation of species without changing total species count or evenness",
+        "C": "Beta-diversity is driven by host genetics, not diet, while alpha-diversity reflects dietary effects",
+        "D": "Alpha-diversity increases under Western diet because simple sugars support more bacterial species"
+      },
+      "correct_answer": "B",
+      "explanation": "Beta-diversity measures compositional differences between samples — which species are present and at what relative abundance. Diet remodels community composition by enriching fiber-degrading and butyrate-producing species while reducing simple-sugar fermenters (or vice versa), shifting community identity. However, the total number of species (richness) and distribution of abundances (evenness) remain similar, suggesting that diet redistributes ecological dominance without changing the overall diversity landscape.",
+      "topic_tags": ["beta-diversity", "alpha-diversity", "microbiome composition", "ecological dominance"]
+    },
+    {
+      "id": "hd_gut_eb_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "How does Akkermansia muciniphila respond to a microbiome-enhancing diet, and what is its functional significance in the gut?",
+      "options": {
+        "A": "It decreases under high-fiber conditions because it relies on simple sugars unavailable in a high-fiber diet",
+        "B": "It increases under high-fiber conditions; it degrades mucin, produces propionate, and is linked to improved metabolic health",
+        "C": "It is unaffected by dietary fiber because it colonises the outer mucus layer and feeds exclusively on host glycans",
+        "D": "It increases under Western diet conditions due to its adaptation to processed food substrates"
+      },
+      "correct_answer": "B",
+      "explanation": "Akkermansia muciniphila is enriched under the microbiome-enhancing diet. It is a specialist mucin-degrading bacterium and a key propionate producer associated with improved gut barrier function and protection against metabolic disorders such as obesity. Its enrichment under high-fiber conditions may reflect indirect effects of fiber fermentation reshaping the mucosal niche.",
+      "topic_tags": ["Akkermansia muciniphila", "propionate", "metabolic health", "gut barrier", "microbiome enhancer diet"]
+    },
+    {
+      "id": "hd_gut_eb_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "Why is colonic transit time an important variable when modeling the relationship between diet, microbiome activity, and host metabolizable energy?",
+      "options": {
+        "A": "Faster transit increases SCFA absorption because SCFAs spend more time in contact with the epithelium",
+        "B": "Transit time is fixed at 48 hours for all individuals, simplifying energy balance calculations",
+        "C": "Measured colonic transit time improves the accuracy of metabolizable energy models compared to a fixed assumed transit time",
+        "D": "Transit time determines which bacterial phyla colonise the colon and is therefore the primary driver of microbiome composition"
+      },
+      "correct_answer": "C",
+      "explanation": "Individual variation in colonic transit time modulates how completely dietary substrates are fermented and how much SCFA is absorbed before excretion. Computational models using individually measured transit time more accurately predict host metabolizable energy than models assuming a fixed 48-hour transit time, underscoring that transit time is a key source of inter-individual variability in diet–microbiome–energy balance relationships.",
+      "topic_tags": ["colonic transit time", "host metabolizable energy", "energy balance modeling", "individual variation"]
+    },
+    {
+      "id": "hd_gut_eb_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What is the significance of Ruminococcus bromii being enriched under a microbiome-enhancing diet?",
+      "options": {
+        "A": "It is primarily a mucin-degrading organism that protects the mucosal barrier under high-fiber conditions",
+        "B": "It is a keystone resistant starch degrader that initiates primary fermentation, enabling cross-feeding by butyrate-producing bacteria",
+        "C": "It is a simple sugar fermenter that thrives on the glucose released from cooked starch in processed foods",
+        "D": "It produces acetate exclusively and its enrichment reflects increased acetate availability for colonocytes"
+      },
+      "correct_answer": "B",
+      "explanation": "Ruminococcus bromii is a specialist resistant starch-degrading organism and a keystone species in the colonic fermentation of resistant starch. By performing primary degradation, it releases fermentation intermediates such as acetate and lactate that other bacteria — including butyrate producers like Eubacterium hallii and Anaerostipes species — can utilize for cross-feeding, enabling butyrate production from resistant starch substrates.",
+      "topic_tags": ["Ruminococcus bromii", "resistant starch", "cross-feeding", "butyrate producers", "keystone species"]
+    },
+
+    {
+      "id": "hd_gut_eb_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "What does the divergence in microbial communities between two matched-calorie diets differing only in fiber content reveal about the ecological determinants of microbiome composition in the human gut?",
+      "options": {
+        "A": "Host immune factors rather than diet are the primary determinants of microbiome composition under controlled conditions",
+        "B": "Fiber and resistant starch — not total energy or macronutrient ratios — are the dominant dietary ecological forces shaping community structure through substrate-mediated competitive selection",
+        "C": "Microbiome composition reflects total energy availability, meaning high-calorie diets universally enrich similar taxa regardless of fiber content",
+        "D": "The diversity of food particle size is the key ecological determinant, overriding the effects of substrate fermentability"
+      },
+      "correct_answer": "B",
+      "explanation": "When total energy, protein, fat, and carbohydrate ratios are matched between diets, the only nutritional variables that differ are fiber and resistant starch content. Yet these differences produce statistically significant and ecologically distinct microbial communities (different beta-diversity) with divergent functional profiles. This demonstrates that fermentable fiber — not caloric density or total macronutrient composition — is the primary ecological driver of gut microbiome community structure, operating through substrate-mediated competitive selection for fiber-degrading taxa.",
+      "topic_tags": ["ecological determinants", "microbiome composition", "fiber", "substrate competition", "beta-diversity", "community ecology"]
+    },
+    {
+      "id": "hd_gut_eb_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "How does the finding that certain microbial species are simultaneously enriched by a microbiome-enhancing diet AND positively associated with host metabolizable energy challenge simple narratives about 'beneficial' microbiomes and dietary advice?",
+      "options": {
+        "A": "It confirms that all fiber-enriched species reduce host energy absorption, validating dietary fiber as a straightforward anti-obesity tool",
+        "B": "It reveals that some species enriched by high-fiber diets may actually enhance host energy harvest, meaning the net effect of the microbiome on energy balance under high-fiber conditions is the product of competing pro- and anti-harvest species",
+        "C": "It shows that microbiome changes are irrelevant to energy balance and that only macronutrient absorption in the small intestine determines host metabolizable energy",
+        "D": "It suggests that Western diet species are uniformly associated with lower metabolizable energy because they fail to extract energy from complex carbohydrates"
+      },
+      "correct_answer": "B",
+      "explanation": "The study identifies species enriched under the microbiome-enhancing diet (e.g., Clostridium bolteae, Erysipelatoclostridium ramosum) that are positively associated with host metabolizable energy. This means a high-fiber diet simultaneously enriches species that increase fecal energy loss AND species that recover energy for the host. The net effect on host metabolizable energy is therefore a dynamic balance between competing microbial functional guilds, rather than a simple unidirectional outcome. This nuance complicates the assumption that promoting fiber-degrading communities uniformly reduces host energy absorption.",
+      "topic_tags": ["host metabolizable energy", "microbial energy harvesting", "microbiome-enhancing diet", "energy balance complexity", "Clostridium bolteae"]
+    }
+  ]
+}

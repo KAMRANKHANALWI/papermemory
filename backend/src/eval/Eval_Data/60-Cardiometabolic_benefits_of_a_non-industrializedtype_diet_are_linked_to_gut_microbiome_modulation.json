@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Cardiometabolic benefits of a non-industrialized-type diet are linked to gut microbiome modulation",
+    "authors": ["Fuyong Li", "Anissa M. Armet", "Katri Korpela", "Jens Walter"],
+    "journal": "Cell",
+    "year": 2025,
+    "doi": "10.1016/j.cell.2024.12.034",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "nime_diet_easy_001",
+      "difficulty": "easy",
+      "question": "What are the defining dietary characteristics of a non-industrialized-type diet as used in microbiome restoration research?",
+      "answer": "A non-industrialized-type diet is primarily plant-based, devoid of dairy and wheat, limited in highly processed foods, low in glycemic index and energy density, and high in dietary fiber (exceeding standard recommendations). It draws on foods regularly consumed in non-industrialized rural populations — such as beans, sweet potato, rice, cucumber, cabbage, Jerusalem artichokes, peas, and onions — and provides substantial amounts of carbohydrates, particularly from fermentable sources like raffinose and stachyose.",
+      "topic_tags": ["non-industrialized diet", "dietary patterns", "fiber", "plant-based", "microbiome restoration"]
+    },
+    {
+      "id": "nime_diet_easy_002",
+      "difficulty": "easy",
+      "question": "Why is Limosilactobacillus reuteri considered a relevant candidate for gut microbiome restoration strategies in industrialized populations?",
+      "answer": "L. reuteri is considered relevant because it is rarely detected in industrialized gut microbiomes but is present at substantially higher prevalence in non-industrialized and hunter-gatherer populations. It has well-established health-promoting effects, is generally recognized as safe, and its low prevalence in industrialized settings makes it a representative 'lost microbe' whose reintroduction could help restore aspects of the ancestral gut microbiome.",
+      "topic_tags": ["L. reuteri", "lost microbes", "VANISH taxa", "industrialization", "microbiome restoration"]
+    },
+    {
+      "id": "nime_diet_easy_003",
+      "difficulty": "easy",
+      "question": "What cardiometabolic markers are typically improved by plant-rich, high-fiber dietary interventions?",
+      "answer": "Plant-rich, high-fiber dietary interventions are associated with reductions in fasting plasma total cholesterol, LDL cholesterol, non-HDL cholesterol, fasting plasma glucose, and inflammatory markers such as C-reactive protein (CRP). They also improve insulin sensitivity indices such as QUICKI and HOMA-IR, and can reduce body weight and BMI even when total caloric intake is controlled. Fecal calprotectin, a marker of gut inflammation, may also decrease.",
+      "topic_tags": ["cardiometabolic health", "LDL cholesterol", "fasting glucose", "CRP", "plant-based diet", "fiber"]
+    },
+    {
+      "id": "nime_diet_easy_004",
+      "difficulty": "easy",
+      "question": "What are carbohydrate-active enzymes (CAZymes), and why are they relevant to gut microbiome function?",
+      "answer": "Carbohydrate-active enzymes (CAZymes) are microbially encoded enzymes that break down complex carbohydrates. They are relevant to gut microbiome function because they determine the community's capacity to ferment dietary and host-derived glycans. CAZymes can be classified by the substrate they target — plant carbohydrates, animal carbohydrates, or mucin glycans — and their relative abundances reflect whether the microbiome is oriented toward saccharolytic fermentation of dietary fiber or toward potentially harmful degradation of the host's mucus barrier.",
+      "topic_tags": ["CAZymes", "carbohydrate metabolism", "fiber fermentation", "mucus degradation", "microbiome function"]
+    },
+    {
+      "id": "nime_diet_easy_005",
+      "difficulty": "easy",
+      "question": "How does industrialization alter the composition and function of the human gut microbiome?",
+      "answer": "Industrialization leads to decreased gut microbiome diversity, loss of fiber-degrading and immunomodulatory microbes, increased abundance of pro-inflammatory taxa such as Bilophila, reduced fiber fermentation capacity, and diminished enzymatic capacity for plant-carbohydrate utilization. It also enriches mucus-degrading organisms and enzymes. These changes are driven by lifestyle factors such as antibiotic use, cesarean deliveries, formula feeding, and refined western diets — all of which either impede symbiont transmission or reduce nutrient supply to the microbiome.",
+      "topic_tags": ["industrialization", "microbiome diversity", "Bilophila", "fiber fermentation", "westernization", "dysbiosis"]
+    },
+
+    {
+      "id": "nime_diet_medium_001",
+      "difficulty": "medium",
+      "question": "How does a high-fiber, non-industrialized-type diet modulate the balance between saccharolytic and proteolytic fermentation in the gut, and what are the health implications of this shift?",
+      "answer": "A non-industrialized-type diet increases saccharolytic fermentation — the microbial breakdown of dietary fiber — at the expense of proteolytic metabolism of proteins. This is evidenced by increased total short-chain fatty acids (SCFAs) and acetate concentrations, decreased total branched-chain fatty acids (BCFAs), and a reduced BCFA-to-SCFA ratio in fecal samples. Reduced fecal pH accompanies this shift, reflecting greater acid production from carbohydrate fermentation. Health implications are significant: SCFAs have anti-inflammatory, barrier-protective, and metabolic benefits, while BCFAs — products of protein fermentation — are associated with unfavorable metabolic outcomes. Higher saccharolytic activity is thus linked to improved cardiometabolic profiles.",
+      "topic_tags": ["saccharolytic fermentation", "proteolytic fermentation", "SCFAs", "BCFAs", "fecal pH", "fiber fermentation"]
+    },
+    {
+      "id": "nime_diet_medium_002",
+      "difficulty": "medium",
+      "question": "What is the relationship between baseline gut microbiome diversity and the magnitude of diet-induced microbiome changes?",
+      "answer": "There is an inverse relationship between baseline gut microbiome diversity and the magnitude of diet-induced changes: individuals with a more diverse baseline microbiota show smaller shifts in community composition in response to dietary intervention. This aligns with the diversity-stability hypothesis, wherein more diverse microbial communities are more resistant to perturbation. The implication is that baseline microbiome richness functions as a buffer against dietary restructuring, and individuals with depleted microbiomes may experience larger compositional shifts when exposed to fiber-rich interventions.",
+      "topic_tags": ["microbiome diversity", "diversity-stability hypothesis", "dietary intervention", "beta diversity", "resilience"]
+    },
+    {
+      "id": "nime_diet_medium_003",
+      "difficulty": "medium",
+      "question": "Through what mechanisms does a non-industrialized-type diet reduce pro-inflammatory microbial taxa such as Bilophila?",
+      "answer": "The reduction in pro-inflammatory taxa like Bilophila after adopting a non-industrialized-type diet is mediated by several interacting mechanisms. First, the diet drastically reduces saturated fat intake, and Bilophila blooms specifically in response to high saturated fat consumption via bile acid-mediated pathways. Second, the diet shifts fermentation toward saccharolytic metabolism, lowering fecal pH; Bilophila and related taxa have competitive advantages in higher-pH environments. Third, reduced inflammation resulting from improved diet diminishes the selective pressure that favors bile-resistant, pro-inflammatory taxa. The resulting decrease in Bilophila abundance is associated with reductions in LDL cholesterol, suggesting a mechanistic link between microbial modulation and cardiometabolic benefit.",
+      "topic_tags": ["Bilophila", "pro-inflammatory bacteria", "saturated fat", "fecal pH", "LDL cholesterol", "bile acids"]
+    },
+    {
+      "id": "nime_diet_medium_004",
+      "difficulty": "medium",
+      "question": "Why might a diet designed to restore the gut microbiome reduce overall microbial diversity rather than increase it, and what broader ecological changes compensate for this reduction?",
+      "answer": "A non-industrialized-type diet may paradoxically reduce alpha diversity because it dramatically alters the gut environment in ways that are selective for certain microbes. The elevated SCFA production and lowered pH from fiber fermentation are inhibitive to acid-sensitive taxa like Bacteroides and Parabacteroides. The removal of dairy- and meat-derived glycoproteins also deprives microbes reliant on those substrates of their competitive niche. While raw diversity metrics decline, the ecological quality of the microbiome improves: community interconnectedness increases (more positive syntrophic interactions), stability rises (smaller compositional shifts between successive timepoints), and compositional changes favor putatively health-promoting taxa such as Bifidobacterium, Faecalibacterium, and Lachnospiraceae. These functional improvements can coexist with — and even be caused by — reduced diversity.",
+      "topic_tags": ["alpha diversity", "microbial ecology", "community stability", "syntrophic interactions", "Bifidobacterium", "Faecalibacterium"]
+    },
+    {
+      "id": "nime_diet_medium_005",
+      "difficulty": "medium",
+      "question": "How do microbiota-derived plasma metabolites link dietary patterns to chronic non-communicable disease risk?",
+      "answer": "A non-industrialized-type diet alters microbiota-derived plasma metabolites in directions that reduce chronic disease risk. Beneficial metabolites that increase include indole-3-propionic acid (a neuroprotective antioxidant linked to lower risk of type 2 diabetes and atherosclerosis), biotin, pipecolic acid, coniferyl aldehyde (antioxidant and anti-inflammatory), and glycocholic acid. Harmful metabolites that decrease include secondary bile acids deoxycholic acid and ursodeoxycholic acid (established carcinogens) and 8-hydroxyguanine (a marker of mutagenesis). Because more than 90% of the affected metabolites are produced or modified by the gut microbiome, these shifts directly implicate microbial modulation as a mechanism through which diet exerts its effects on disease risk.",
+      "topic_tags": ["plasma metabolites", "indole-3-propionic acid", "secondary bile acids", "chronic disease", "microbiome-host crosstalk"]
+    },
+    {
+      "id": "nime_diet_medium_006",
+      "difficulty": "medium",
+      "question": "What predicts an individual's cardiometabolic response to a high-fiber, non-industrialized-type diet, and why does this matter for personalized nutrition?",
+      "answer": "Cardiometabolic responses to a non-industrialized-type diet are predicted by baseline microbiome features and metabolic status. For glucose responses, individuals with elevated baseline inflammation (higher CRP) and glycemia (higher fasting glucose) show greater reductions — suggesting that those with the most dysregulated immunometabolic baseline benefit most. Baseline microbiome composition at the ASV level predicts glucose responses with high accuracy. For LDL cholesterol reduction, baseline microbiome composition at the family level and baseline microbiome diversity metrics are top predictors. For CRP reduction, baseline fecal SCFA profiles — particularly individuals with more proteolytic and less saccharolytic fermentation — predict greater anti-inflammatory responses. Despite this high individual variability in microbiome responses, clinical outcomes such as cholesterol and inflammatory markers show considerably more consistent responses, suggesting plant-rich diets provide population-wide benefits that may not require personalization.",
+      "topic_tags": ["personalized nutrition", "glucose response", "LDL prediction", "CRP", "microbiome predictors", "inter-individual variation"]
+    },
+
+    {
+      "id": "nime_diet_hard_001",
+      "difficulty": "hard",
+      "question": "How does the shift in CAZyme profiles induced by a non-industrialized-type diet reflect a functional realignment of the gut microbiome away from industrialization-associated patterns, and what are the clinical implications?",
+      "answer": "In industrialized microbiomes, CAZyme profiles are enriched in enzymes targeting mucin glycans and animal-derived carbohydrates, reflecting a microbiome that has shifted from dietary fiber fermentation toward host mucus degradation — a pattern linked to gut inflammation and barrier dysfunction. A non-industrialized-type diet reverses several aspects of this profile: it increases the total abundance of CAZymes and specifically enriches plant-carbohydrate-targeting CAZymes, including sub-families of GH43 (involved in hemicellulose breakdown), while tending to reduce mucin-targeted CAZymes like the alpha-fucosidase family GH29. The ratio of plant- to animal-carbohydrate CAZymes shifts toward plant substrates. Critically, diet-induced reductions in the abundances of mucin-glycan- and animal-carbohydrate-targeted CAZymes are among the best predictors of CRP reduction, establishing a mechanistic link between microbiome functional reorientation and systemic inflammation. This suggests that functional, not merely compositional, restoration of the microbiome underlies the cardiometabolic benefits of plant-rich diets.",
+      "topic_tags": ["CAZymes", "GH43", "GH29", "mucus degradation", "plant fiber", "CRP", "microbiome function", "industrialization"]
+    },
+    {
+      "id": "nime_diet_hard_002",
+      "difficulty": "hard",
+      "question": "What does the reversibility and resilience of diet-induced microbiome changes imply for long-term strategies aimed at restoring the industrialized gut microbiome?",
+      "answer": "The finding that diet-induced microbiome changes — including alpha diversity shifts, beta diversity changes, and taxon-level abundances — fully reverse to baseline levels within a washout period reveals that the gut microbiome of industrialized individuals is highly resilient: it returns to its prior state once the dietary stimulus is removed. This has several important implications for microbiome restoration strategies. First, dietary interventions alone are unlikely to achieve permanent microbiome restructuring; sustained dietary change would be required for durable effects. Second, the resilience likely reflects structural characteristics of the industrialized microbiome — including absence of VANISH (volatile and negatively associated with industrialized settings) species — that create a strong ecological attractor state. Third, increasing diversity beyond baseline may be impossible with dietary fiber alone without co-administering lost microbial species, since the microbial taxa needed to occupy newly available niches are absent. Fourth, even transient beneficial changes can have meaningful clinical effects, suggesting that periodic adherence to non-industrialized dietary patterns could still yield health benefits. The resilience finding also validates the crossover study design by confirming sufficient washout between diet periods.",
+      "topic_tags": ["microbiome resilience", "reversibility", "VANISH species", "dietary intervention", "ecological stability", "washout"]
+    },
+    {
+      "id": "nime_diet_hard_003",
+      "difficulty": "hard",
+      "question": "How does functional redundancy within the gut microbiome reconcile the finding that highly individualized microbiome compositional responses can produce consistent clinical outcomes across participants?",
+      "answer": "Functional redundancy — the property whereby different microbial species encode overlapping metabolic capabilities — explains how individuals with very different compositional microbiome responses to the same diet can nonetheless show consistent clinical outcomes. When one taxon that performs a particular function (e.g., SCFA production, bile acid modification) decreases in one individual but a functionally equivalent taxon increases, the net functional output may be similar. Evidence for this in the study: the modified coefficient of variation (mCV) for compositional changes (ASVs and genera) was very high (0.66–5.05), while mCV for microbiome functional features (CAZymes, pathways) was considerably lower (0.60–1.16), and mCV for clinical outcomes was lower still (0.36–1.30). The diet's complex array of fermentable substrates simultaneously influenced a wide variety of microbial taxa, and microbiome-independent effects of the diet (direct effects on host physiology) also contributed to consistent clinical outcomes. This pattern supports the view that functional, rather than compositional, characterization of the microbiome is more predictive of clinical responses, and that population-wide dietary recommendations based on plant-rich diets are justified even without microbiome personalization.",
+      "topic_tags": ["functional redundancy", "inter-individual variation", "microbiome composition", "clinical outcomes", "personalized nutrition", "coefficient of variation"]
+    },
+    {
+      "id": "nime_diet_hard_004",
+      "difficulty": "hard",
+      "question": "What ecological and mechanistic factors determine whether a non-industrialized-derived probiotic strain can persist in the industrialized gut after oral administration, and what does this reveal about the limits of microbiome restoration?",
+      "answer": "Several ecological and mechanistic factors govern probiotic persistence in the industrialized gut. Strain-specific ecological performance matters: a strain derived from a non-industrialized population (PB-W1) achieves substantially higher peak population sizes and displays better survival — measured as the ratio of live bacteria to total DNA — compared to a laboratory-adapted type strain (DSM 20016T), indicating that PB-W1 retains adaptations better suited to the human gut environment. Diet is a critical enabler: a non-industrialized-type diet containing growth substrates (raffinose and stachyose) for L. reuteri significantly enhances the persistence and survival of the non-industrialized strain but not the type strain, confirming that ecological performance is co-determined by substrate availability. However, even under optimal dietary conditions, the strain remains allochthonous — disappearing from most individuals within two weeks. Phylogenomic evidence suggests L. reuteri does not share a long-term evolutionary history with humans and typically requires zoonotic transmission from animals, explaining why single-dose administration does not achieve stable colonization. This reveals a fundamental limit of microbiome restoration: without repeated doses, co-administration of compatible growth substrates, and potentially fecal exposure to diverse microbial sources, truly stable re-establishment of lost microbes in industrialized gut environments is extremely difficult.",
+      "topic_tags": ["L. reuteri", "probiotic persistence", "allochthonous bacteria", "microbiome restoration", "ecological performance", "VANISH species", "diet-microbe interaction"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "nime_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which microbial genus was most prominently enriched by a non-industrialized-type diet and showed the greatest variability in response magnitude across individuals?",
+      "options": {
+        "A": "Bacteroides",
+        "B": "Bifidobacterium",
+        "C": "Bilophila",
+        "D": "Akkermansia"
+      },
+      "correct_answer": "B",
+      "explanation": "Bifidobacterium was among the most prominently enriched genera during the non-industrialized diet period, with multiple species (B. adolescentis, B. longum, B. pseudocatenulatum) increasing significantly. Its relative abundance changes varied enormously across individuals — from modest increases to greater than 750% — making it both the top responder and the most variable genus.",
+      "topic_tags": ["Bifidobacterium", "diet-responsive taxa", "inter-individual variation", "fiber fermentation"]
+    },
+    {
+      "id": "nime_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What is the primary reason that fermented food or high-fiber dietary interventions may fail to increase gut microbiome diversity in industrialized populations?",
+      "options": {
+        "A": "Dietary fiber suppresses all bacterial growth indiscriminately through antimicrobial compounds",
+        "B": "The immune system of industrialized individuals actively clears newly introduced fiber-degrading bacteria",
+        "C": "The microbial taxa that would occupy newly available fiber-derived niches have been lost from industrialized microbiomes and cannot be sourced from the environment due to modern sanitation",
+        "D": "Industrialized microbiomes are intrinsically more diverse than non-industrialized ones and cannot be further diversified"
+      },
+      "correct_answer": "C",
+      "explanation": "A fundamental barrier to restoring microbiome diversity through diet alone is that the microbial taxa capable of utilizing fiber-derived niches are absent from industrialized microbiomes. Low microbial dispersal due to sanitation, and the absence of VANISH species, means that without co-administration of lost microbes, increasing diversity beyond baseline is extremely difficult even with high-fiber diets.",
+      "topic_tags": ["microbiome diversity", "fiber fermentation", "VANISH species", "sanitation", "microbiome restoration"]
+    },
+    {
+      "id": "nime_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "Which of the following best describes how a non-industrialized-type diet affects the ratio of saccharolytic to proteolytic fermentation?",
+      "options": {
+        "A": "It increases proteolytic fermentation by providing more amino acid substrates from plant proteins",
+        "B": "It reduces both saccharolytic and proteolytic fermentation equally by lowering total caloric intake",
+        "C": "It increases saccharolytic fermentation and decreases proteolytic fermentation, evidenced by higher SCFAs and lower BCFAs",
+        "D": "It has no effect on fermentation balance but increases gas production from undigested fiber"
+      },
+      "correct_answer": "C",
+      "explanation": "A non-industrialized-type diet shifts gut fermentation toward saccharolysis at the expense of proteolysis. This is demonstrated by increased total fecal SCFAs (particularly acetate), reduced branched-chain fatty acids (BCFAs — products of protein fermentation), a decreased BCFA:SCFA ratio, and lower fecal pH — all consistent with increased microbial fiber fermentation.",
+      "topic_tags": ["saccharolytic fermentation", "proteolytic fermentation", "SCFAs", "BCFAs", "fecal pH"]
+    },
+
+    {
+      "id": "nime_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "Which microbiome-derived plasma metabolite increased with a non-industrialized-type diet and has been associated with reduced risk of type 2 diabetes and atherosclerosis?",
+      "options": {
+        "A": "Deoxycholic acid",
+        "B": "8-Hydroxyguanine",
+        "C": "Ursodeoxycholic acid",
+        "D": "Indole-3-propionic acid"
+      },
+      "correct_answer": "D",
+      "explanation": "Indole-3-propionic acid is a neuroprotective antioxidant produced by the gut microbiome — including through a pathway involving Bifidobacterium-derived indole-3-lactic acid. It was significantly elevated by the non-industrialized diet and is associated in epidemiological research with reduced risk of type 2 diabetes and atherosclerosis. The other options are harmful metabolites that were reduced by the diet.",
+      "topic_tags": ["indole-3-propionic acid", "plasma metabolites", "type 2 diabetes", "atherosclerosis", "Bifidobacterium"]
+    },
+    {
+      "id": "nime_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "In studies of gut microbiome response to dietary intervention, what does the concept of 'individuality' explain in terms of variance, and how does it compare to the effect of diet?",
+      "options": {
+        "A": "Individuality explains less than 5% of microbiome variation, while diet explains over 50% — indicating that diet is the dominant driver",
+        "B": "Individuality explains the majority (~77%) of overall microbiome compositional variation across the cohort, while diet explains a comparatively small fraction (~1–2%)",
+        "C": "Individuality and diet contribute equally to microbiome variation, each explaining approximately 30–40%",
+        "D": "Individuality only affects functional microbiome features like enzyme profiles, while compositional variation is primarily diet-driven"
+      },
+      "correct_answer": "B",
+      "explanation": "PERMANOVA analyses show that individual identity explains approximately 77% of overall microbiome compositional variation across participants, while diet explains only about 1.5%. However, within each individual, diet can explain 22–58% of temporal variation — highlighting that although the microbiome remains highly individualized even under dietary standardization, diet still exerts a strong and personalized effect.",
+      "topic_tags": ["microbiome individuality", "PERMANOVA", "dietary variation", "beta diversity", "inter-individual variation"]
+    },
+    {
+      "id": "nime_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "What is the most likely mechanism by which a non-industrialized-type diet reduces the abundance of acid-sensitive taxa like Bacteroides and Parabacteroides?",
+      "options": {
+        "A": "Direct antimicrobial compounds in plant foods selectively kill Bacteroidetes",
+        "B": "The diet reduces available mucin substrates that Bacteroides species rely on exclusively",
+        "C": "Increased fiber fermentation raises SCFA production, lowering fecal pH, which disadvantages acid-sensitive taxa",
+        "D": "Reduced protein intake starves Bacteroides of essential amino acids needed for growth"
+      },
+      "correct_answer": "C",
+      "explanation": "Regression analyses confirm that reductions in Bacteroides and Parabacteroides during the non-industrialized diet were associated with changes in fecal pH, consistent with their known sensitivity to acidic environments. The diet drives higher SCFA production from fiber fermentation, reducing fecal pH from approximately 6.8 to 6.6, thereby creating an environment that disfavors these acid-sensitive genera.",
+      "topic_tags": ["Bacteroides", "Parabacteroides", "fecal pH", "SCFA", "acid-sensitive bacteria", "CAZymes"]
+    },
+    {
+      "id": "nime_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "How does baseline fermentation profile predict the magnitude of anti-inflammatory response to a non-industrialized-type diet?",
+      "options": {
+        "A": "Individuals with higher baseline SCFAs and lower BCFAs respond most strongly to the diet's anti-inflammatory effects",
+        "B": "Individuals with a more proteolytic baseline fermentation profile (higher BCFA:SCFA ratio, lower propionate) show greater CRP reductions in response to the diet",
+        "C": "Baseline fermentation profile does not predict CRP response; only genetic factors determine anti-inflammatory responsiveness",
+        "D": "Individuals with balanced saccharolytic and proteolytic fermentation at baseline show the most consistent CRP reductions"
+      },
+      "correct_answer": "B",
+      "explanation": "Random forest and multiple linear regression models identified baseline fecal SCFA levels as the best predictors of CRP changes. Specifically, having a higher BCFA:SCFA ratio (more proteolytic fermentation) and lower baseline propionate and total SCFAs at baseline were associated with greater reductions in CRP after the dietary intervention. This suggests that individuals whose microbiomes are more metabolically 'misaligned' benefit most from the anti-inflammatory effects of the diet.",
+      "topic_tags": ["CRP", "fermentation profile", "BCFAs", "SCFAs", "propionate", "anti-inflammatory", "predictive biomarkers"]
+    },
+    {
+      "id": "nime_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What does an increase in positive microbial interaction networks during a high-fiber diet indicate about community ecology, and what measurable property does this confer?",
+      "options": {
+        "A": "More positive interactions indicate competitive exclusion, reducing diversity further",
+        "B": "An increase in positive, likely syntrophic interactions reflects greater metabolic cooperation within the community, which correlates with higher temporal stability of the microbiome",
+        "C": "Positive interactions primarily reflect horizontal gene transfer events rather than metabolic cooperation",
+        "D": "More positive interactions indicate the microbiome is in a state of transition, making it less resistant to further perturbation"
+      },
+      "correct_answer": "B",
+      "explanation": "Analysis of interaction networks during the non-industrialized diet period revealed a higher number of positive and likely syntrophic interactions compared to the usual diet, with families like Lachnospiraceae, Christensenellaceae, and Ruminococcaceae acting as putative keystone taxa. This greater network interconnectedness was associated with increased temporal stability — smaller Bray-Curtis distances between successive timepoints — consistent with the ecological principle that positive microbial interactions buffer communities against fluctuations.",
+      "topic_tags": ["microbial interaction networks", "syntrophic interactions", "Lachnospiraceae", "Ruminococcaceae", "community stability", "keystone taxa"]
+    },
+
+    {
+      "id": "nime_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "Why did a non-industrialized-type diet enhance the ecological performance of a non-industrialized-derived L. reuteri strain but not a laboratory-adapted type strain, and what does this reveal about diet-microbe co-adaptation?",
+      "options": {
+        "A": "The non-industrialized diet suppressed immune clearance of PB-W1 specifically due to cross-reactive antigens shared with gut commensals",
+        "B": "The diet provided growth substrates (raffinose and stachyose) that PB-W1 — adapted to a non-industrialized dietary environment — is better equipped to metabolize, while the laboratory-adapted strain lacked these adaptations",
+        "C": "PB-W1 produces bacteriocins that are only active in the high-SCFA, low-pH environment created by the non-industrialized diet",
+        "D": "The laboratory-adapted strain is genetically closer to industrialized microbiome residents and therefore competes more directly with them, while PB-W1 occupies a distinct niche regardless of diet"
+      },
+      "correct_answer": "B",
+      "explanation": "The non-industrialized diet was specifically designed to include high amounts of raffinose and stachyose — known growth substrates of L. reuteri — mirroring the nutritional environment in which PB-W1 evolved. The diet-enhanced persistence of PB-W1 (but not DSM 20016T) in terms of both abundance and survival (live cell ratio) suggests that PB-W1 retains metabolic adaptations to utilize these substrates more effectively, reflecting a co-adaptation between the strain and its dietary environment of origin. The two strains belong to distinct phylogenetic lineages with only 96.2% average nucleotide identity, supporting that their ecological performances in human hosts are genuinely distinct.",
+      "topic_tags": ["L. reuteri", "diet-microbe co-adaptation", "raffinose", "stachyose", "PB-W1", "probiotic persistence", "ecological performance"]
+    },
+    {
+      "id": "nime_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "What does the observation that reductions in mucin-glycan- and animal-carbohydrate-targeted CAZymes predict CRP reduction imply about the mechanistic pathway from diet to systemic inflammation?",
+      "options": {
+        "A": "It implies that dietary fiber directly inhibits inflammatory signaling pathways in the liver, bypassing the microbiome entirely",
+        "B": "It implies that diet-induced shifts away from mucus degradation reduce intestinal inflammation and barrier disruption, which in turn decreases systemic inflammatory burden measured by CRP",
+        "C": "It implies that CRP is produced directly by gut bacteria and its levels are governed only by bacterial load, not by barrier function",
+        "D": "It implies that animal-derived foods contain pro-inflammatory compounds that directly elevate CRP, independent of microbiome changes"
+      },
+      "correct_answer": "B",
+      "explanation": "The mechanistic pathway runs from diet → microbiome function → gut barrier integrity → systemic inflammation. Mucus degradation by microbially encoded CAZymes is a well-established driver of gut inflammation and barrier dysfunction. When the non-industrialized diet reduces the abundance of mucin-targeting CAZymes, it protects the mucosal barrier, reducing bacterial translocation and inflammatory signaling that drives systemic CRP elevation. The stepwise linear regression analysis confirmed that reductions in total cholesterol, CRP, and BMI were mostly driven by microbiome responses rather than direct diet effects — placing the microbiome as a critical intermediary in the inflammatory pathway.",
+      "topic_tags": ["CAZymes", "mucus degradation", "CRP", "gut barrier", "systemic inflammation", "microbiome-host crosstalk"]
+    }
+  ]
+}

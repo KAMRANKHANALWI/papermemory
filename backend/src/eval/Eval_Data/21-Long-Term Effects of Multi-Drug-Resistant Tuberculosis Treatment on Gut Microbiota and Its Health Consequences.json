@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Long-Term Effects of Multi-Drug-Resistant Tuberculosis Treatment on Gut Microbiota and Its Health Consequences",
+    "authors": ["Jinyu Wang", "Ke Xiong", "Shanliang Zhao", "Chao Zhang", "Jianwen Zhang", "Lei Xu", "Aiguo Ma"],
+    "journal": "Frontiers in Microbiology",
+    "year": 2020,
+    "doi": "10.3389/fmicb.2020.00053",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "mdrtb_gut_easy_001",
+      "difficulty": "easy",
+      "question": "What is multi-drug-resistant tuberculosis (MDR-TB) and how does its treatment differ from standard tuberculosis treatment in terms of antibiotic exposure?",
+      "answer": "MDR-TB is a form of tuberculosis caused by Mycobacterium tuberculosis that is resistant to both isoniazid and rifampicin, the two most important first-line anti-TB drugs. Unlike standard TB treatment, MDR-TB treatment requires a combination of narrow-spectrum and broad-spectrum antibiotics lasting at least 20 months. This typically involves an intensive 8-month phase with an injectable drug (kanamycin, amikacin, or capreomycin) plus four oral drugs from fluoroquinolones and second-line bacteriostatic agents, followed by 12 more months of oral antibiotic therapy. This duration and drug variety make MDR-TB treatment far more disruptive to the gut microbiota than most other antibiotic regimens.",
+      "topic_tags": ["MDR-TB", "tuberculosis", "antibiotic treatment", "drug resistance", "treatment duration"]
+    },
+    {
+      "id": "mdrtb_gut_easy_002",
+      "difficulty": "easy",
+      "question": "What is gut microbiota dysbiosis and what broad categories of health consequences have been linked to antibiotic-induced dysbiosis?",
+      "answer": "Gut microbiota dysbiosis refers to an altered or disrupted composition and structure of the microbial community in the gastrointestinal tract. Antibiotic-induced dysbiosis has been associated with a range of adverse health outcomes including metabolic disorders (such as obesity and diabetes), allergy and autoimmune diseases, inflammatory bowel disease, and increased susceptibility to infectious diseases. Epidemiological evidence links antibiotic exposure to elevated risk of obesity and diabetes, while animal studies demonstrate increased adiposity and lipogenesis following antibiotic treatment. Loss of microbial diversity after antibiotic exposure also facilitates opportunistic infections by pathogens such as Clostridium difficile, Salmonella enterica, and Escherichia coli.",
+      "topic_tags": ["dysbiosis", "antibiotics", "metabolic disorders", "infectious disease", "health consequences"]
+    },
+    {
+      "id": "mdrtb_gut_easy_003",
+      "difficulty": "easy",
+      "question": "How does broad-spectrum antibiotic use affect the overall structure and diversity of the gut microbiota?",
+      "answer": "Broad-spectrum antibiotic use causes substantial disruption to the gut microbial community. It can alter the abundance of approximately 30% of gut bacteria and leads to decreased richness, diversity, and evenness of the whole gut bacterial community. After antibiotic discontinuation, the gut microbiota may either return to its original composition or settle into a new equilibrium. The outcome depends on the strength of the disturbance and the inherent stability of the microbiota. The recovery process is driven by both external factors (host-controlled environmental and physiochemical properties of the GI tract) and internal factors (cooperation or competition among microorganisms for limited resources).",
+      "topic_tags": ["antibiotics", "gut microbiota", "diversity", "richness", "dysbiosis", "recovery"]
+    },
+    {
+      "id": "mdrtb_gut_easy_004",
+      "difficulty": "easy",
+      "question": "What are the key roles of the gut microbiota in maintaining human health?",
+      "answer": "The gut microbiota performs a wide range of physiological functions essential to human health. It contributes to the development and regulation of the immune system, assists in metabolic regulation including energy harvesting, provides protection against pathogen overgrowth through colonisation resistance, regulates intestinal endocrine hormones, participates in the biosynthesis of vitamins, and provides energy to host cells through fermentation products such as short-chain fatty acids. The gut microbiota has co-evolved with the human host and maintains a mutually beneficial relationship that is essential for normal physiological functioning.",
+      "topic_tags": ["gut microbiota", "immune system", "metabolism", "colonisation resistance", "vitamins", "health"]
+    },
+    {
+      "id": "mdrtb_gut_easy_005",
+      "difficulty": "easy",
+      "question": "What is the difference between alpha diversity and beta diversity in the context of gut microbiota studies, and what does a decrease in richness indicate?",
+      "answer": "Alpha diversity refers to the diversity within a single sample or community and includes measures such as species richness (the number of distinct taxa present, measured by indices like ACE), evenness (how uniformly individuals are distributed across species, measured by Shannon evenness), and overall diversity (measured by the Shannon index, which combines richness and evenness). A decrease in richness specifically indicates that fewer distinct microbial species or OTUs are present in a community, suggesting that antibiotic treatment or another disturbance has eliminated certain taxa. Beta diversity, assessed using methods like PCoA based on UniFrac distance or Bray-Curtis dissimilarity, measures differences in microbial community composition between samples, allowing researchers to determine whether distinct groups harbour significantly different microbiota communities.",
+      "topic_tags": ["alpha diversity", "beta diversity", "richness", "Shannon index", "ACE", "PCoA", "microbiota analysis"]
+    },
+
+    {
+      "id": "mdrtb_gut_medium_001",
+      "difficulty": "medium",
+      "question": "How does prolonged multi-antibiotic treatment affect gut microbiota richness and taxonomic composition differently from short-course single-antibiotic regimens?",
+      "answer": "Short-course single-antibiotic treatments, such as a 5-day course of ciprofloxacin, cause transient changes to specific taxa and resistance genes, and the taxonomic composition of the gut microbiota becomes indistinguishable from pre-treatment levels after approximately 4 weeks of recovery. Microbiota richness also typically rebounds to baseline levels. In contrast, prolonged exposure to multiple antibiotics — as occurs in MDR-TB treatment lasting over 20 months — causes far more severe and lasting damage. Even years after treatment cessation, the gut microbiota in recovered patients exhibits a significantly altered taxonomic composition and substantially reduced richness compared to untreated controls. This irreversibility suggests that the disturbance exceeds the microbiota's resilience capacity, pushing it into a permanently altered equilibrium rather than allowing full recovery.",
+      "topic_tags": ["antibiotic duration", "microbiota recovery", "resilience", "richness", "MDR-TB", "ciprofloxacin comparison"]
+    },
+    {
+      "id": "mdrtb_gut_medium_002",
+      "difficulty": "medium",
+      "question": "What mechanisms explain why gut microbiota dysbiosis persists long after antibiotic treatment is discontinued?",
+      "answer": "The persistence of gut microbiota dysbiosis after antibiotic cessation can be explained by both direct and indirect effects of antibiotic treatment. Direct effects include the permanent elimination of certain bacterial species that are unable to recolonise, particularly those with slow growth rates or highly specific ecological niches. Indirect effects arise from the disruption of microbial networks: autotrophic bacteria that depend on fermentation products from eliminated species lose their substrate supply, and competitive bacteria that previously kept certain taxa in check may expand in their absence. Network analysis of gut bacteria reveals close interdependencies among genera, meaning the loss of one taxon can cascade through the community. According to resilience theory, the degree of recovery depends on both the strength of the disturbance and the stability of the original microbiota — when the disturbance is severe enough, the microbiota reaches a new equilibrium rather than returning to its original state.",
+      "topic_tags": ["microbiota resilience", "dysbiosis persistence", "indirect effects", "microbial networks", "ecological niche", "antibiotic cessation"]
+    },
+    {
+      "id": "mdrtb_gut_medium_003",
+      "difficulty": "medium",
+      "question": "How does gut microbiota dysbiosis contribute to adverse changes in lipid metabolism, particularly elevated LDL cholesterol and total cholesterol?",
+      "answer": "Gut microbiota dysbiosis can alter lipid metabolism through at least three interconnected mechanisms. First, certain gut bacteria convert primary bile acids to secondary bile acids (such as deoxycholic acid and lithocholic acid), which are reabsorbed into the bloodstream and function as signalling molecules that regulate liver function and metabolic homeostasis. Firmicutes in particular are involved in bile acid metabolism, and their reduction is correlated with elevated total cholesterol. Second, short-chain fatty acids (acetate, propionate, and butyrate) produced by gut bacteria modulate lipid metabolism in peripheral tissues; reduced abundance of butyrate-producing genera such as Coprococcus is associated with increased total cholesterol. Third, certain gut bacteria produce trimethylamine (TMA) from dietary choline and L-carnitine, which is further metabolised to trimethylamine N-oxide (TMAO). TMAO inhibits reverse cholesterol transport and raises LDL cholesterol levels, and Prevotellaceae have been implicated in TMA production through their correlation with blood TMA levels.",
+      "topic_tags": ["lipid metabolism", "LDL cholesterol", "bile acids", "SCFA", "TMAO", "Firmicutes", "Coprococcus", "Prevotellaceae"]
+    },
+    {
+      "id": "mdrtb_gut_medium_004",
+      "difficulty": "medium",
+      "question": "What is the role of Akkermansia muciniphila in lipid metabolism and how does its depletion relate to adverse cardiometabolic outcomes?",
+      "answer": "Akkermansia muciniphila, a specialist mucin-degrading bacterium and the sole representative of the Verrucomicrobia phylum in the human gut, plays a protective role in metabolic health. Its abundance is inversely associated with LDL cholesterol levels — meaning reduced Akkermansia is correlated with higher LDL cholesterol. In animal models, administration of A. muciniphila prevents high-fat diet-induced obesity and metabolic endotoxemia-associated inflammation, and it restores gut barrier integrity through enhanced mucin secretion and tight-junction protein expression. In the context of prolonged antibiotic treatment, depletion of Akkermansia contributes to the observed adverse lipid profile, with both Verrucomicrobia at the phylum level and Akkermansia at the genus level showing significant negative correlations with LDL cholesterol levels in recovered patients.",
+      "topic_tags": ["Akkermansia muciniphila", "Verrucomicrobia", "LDL cholesterol", "metabolic health", "gut barrier", "antibiotic depletion"]
+    },
+    {
+      "id": "mdrtb_gut_medium_005",
+      "difficulty": "medium",
+      "question": "How do changes in Firmicutes and Bacteroidetes abundance during and after prolonged antibiotic treatment differ, and what are the functional implications of these changes?",
+      "answer": "During MDR-TB treatment, Firmicutes abundance significantly decreases, reflecting the sensitivity of many Firmicutes species to the broad-spectrum antibiotics used. After treatment discontinuation and recovery, Firmicutes levels rebound to approximately the pre-treatment level, suggesting some capacity for recovery within this phylum. Bacteroidetes, in contrast, increase in relative abundance during MDR-TB treatment and do not return to pre-treatment levels even years after recovery, indicating a lasting compositional shift. Functionally, the reduction in Firmicutes — which are key producers of butyrate and are involved in bile acid metabolism — is correlated with elevated total cholesterol. The persistent relative elevation of Bacteroidetes may reflect competitive release following Firmicutes suppression. This divergence between phyla highlights that antibiotic effects are not uniform across the microbial community and that recovery trajectories vary significantly between taxa.",
+      "topic_tags": ["Firmicutes", "Bacteroidetes", "antibiotic treatment", "recovery", "butyrate", "bile acid", "cholesterol"]
+    },
+    {
+      "id": "mdrtb_gut_medium_006",
+      "difficulty": "medium",
+      "question": "What is the significance of the absence of gastrointestinal symptoms in patients with persistent gut microbiota dysbiosis following antibiotic treatment?",
+      "answer": "The absence of gastrointestinal symptoms (such as abdominal pain, diarrhea, nausea, flatulence, and constipation) in patients with documented, extensive gut microbiota dysbiosis highlights an important concept in microbiome research: compositional disruption does not necessarily produce immediate or overt gastrointestinal clinical symptoms. This dissociation suggests that the gut microbiota has sufficient functional redundancy or plasticity to maintain basic digestive function even when substantially altered in composition. However, the absence of GI symptoms does not mean the dysbiosis is clinically benign — persistent dysbiosis can manifest through other, more subtle systemic effects such as adverse changes in lipid metabolism (elevated LDL cholesterol and total cholesterol), which may predispose patients to long-term chronic diseases including cardiovascular disease, even in the absence of gut-specific complaints.",
+      "topic_tags": ["gastrointestinal symptoms", "dysbiosis", "functional redundancy", "lipid profile", "subclinical effects", "chronic disease"]
+    },
+
+    {
+      "id": "mdrtb_gut_hard_001",
+      "difficulty": "hard",
+      "question": "How do the concepts of microbiota resilience and new equilibrium explain the irreversible nature of gut microbiota changes following prolonged multi-antibiotic exposure, and what ecological mechanisms underpin this?",
+      "answer": "Resilience theory applied to the gut microbiota predicts that after a disturbance, the ecosystem can either return to its original stable state or shift to a new equilibrium, depending on the magnitude of the disturbance and the intrinsic stability of the community. For mild disturbances such as short-course single antibiotics, the microbiota recovers to its original state because the perturbation falls within the system's resilience capacity. However, prolonged multi-antibiotic regimens cause disturbances exceeding this threshold, pushing the community into an alternative stable state — a new equilibrium characterised by permanently altered taxonomic composition and reduced richness. Ecologically, this persistence is underpinned by several mechanisms: (1) permanent extinction of certain species with narrow ecological niches that cannot recolonise from residual populations or the environment; (2) disruption of syntrophic cross-feeding networks, where autotrophic bacteria reliant on fermentation products of eliminated species cannot recover their substrate supply; (3) competitive release, where taxa that were previously suppressed by now-eliminated competitors expand and occupy ecological space, potentially blocking re-establishment of the original community; and (4) altered mucus and epithelial environments that may no longer support the niche requirements of depleted commensals. Network analyses confirming tight correlations among bacterial genera support the view that the gut microbiota is a highly interconnected ecological system where the loss of key nodes has cascading effects.",
+      "topic_tags": ["resilience theory", "new equilibrium", "ecological stability", "cross-feeding", "competitive release", "extinction", "multi-antibiotic"]
+    },
+    {
+      "id": "mdrtb_gut_hard_002",
+      "difficulty": "hard",
+      "question": "How do multiple mechanistic pathways — bile acid metabolism, short-chain fatty acid signalling, and trimethylamine N-oxide production — converge to link gut microbiota dysbiosis with dyslipidaemia?",
+      "answer": "Gut microbiota dysbiosis can promote dyslipidaemia through at least three partially overlapping mechanistic pathways that converge on lipid regulation. First, bile acid pathway: commensal bacteria (particularly Firmicutes) express bile salt hydrolases that convert primary bile acids into secondary bile acids such as deoxycholic acid and lithocholic acid in the large intestine. These secondary bile acids are reabsorbed enterohepathically, act as ligands for nuclear receptors (FXR, TGR5) and G-protein-coupled receptors, and regulate hepatic lipid metabolism and metabolic homeostasis. When Firmicutes are depleted by antibiotics, this bile acid transformation is diminished, impairing the signalling axis that supports metabolic homeostasis and correlating with elevated total cholesterol. Second, SCFA pathway: butyrate and propionate produced by specific Firmicutes genera (e.g., Coprococcus, Eubacterium) activate GPR43 and related receptors in peripheral tissues, suppressing insulin-mediated fat accumulation and modulating lipogenesis. Depletion of butyrate producers such as Coprococcus by prolonged antibiotics reduces this regulatory brake on lipid synthesis, correlating with increased total cholesterol. Third, TMAO pathway: gut bacteria metabolise dietary choline and L-carnitine to trimethylamine (TMA), which is further hepatically oxidised to trimethylamine N-oxide (TMAO). TMAO inhibits reverse cholesterol transport from peripheral tissues to the liver and has been shown to promote atherosclerosis and raise LDL cholesterol. Dysbiosis-induced shifts in microbial community composition, including altered Prevotellaceae abundance, can modify TMAO production and thereby LDL cholesterol levels. These three pathways act in concert rather than in isolation, meaning that the multispecies dysbiosis induced by prolonged antibiotic treatment simultaneously disrupts all three axes, creating a compounded proatherogenic lipid environment.",
+      "topic_tags": ["bile acids", "SCFA", "TMAO", "dyslipidaemia", "Firmicutes", "Coprococcus", "FXR", "GPR43", "reverse cholesterol transport", "LDL cholesterol"]
+    },
+    {
+      "id": "mdrtb_gut_hard_003",
+      "difficulty": "hard",
+      "question": "What are the critical methodological limitations in using LEfSe analysis and PICRUSt functional prediction in gut microbiota studies, and how do they affect the interpretation of dysbiosis findings?",
+      "answer": "Linear Discriminant Analysis Effect Size (LEfSe) is used to identify biomarker taxa that discriminate between clinical groups based on 16S rRNA sequencing data. A key limitation is that LEfSe identifies statistical associations between specific taxa and group membership, but does not establish mechanistic or causal relationships — a taxon identified as a biomarker may simply co-vary with the true driver due to ecological co-dependencies. Additionally, LEfSe results are sensitive to the composition of the comparison groups and to sequencing depth and normalisation choices. The significance threshold (LDA score >2) is relatively liberal and may yield false positives, particularly when sample sizes are small, as acknowledged by the treated group in this study context. PICRUSt (Phylogenetic Investigation of Communities by Reconstruction of Unobserved States) predicts microbial community functional profiles by mapping 16S rRNA OTUs to reference genomes and inferring gene functions. Its core limitation is that functional predictions are only as accurate as the representation of the queried taxa in the reference database — under-represented or novel taxa will receive poor functional annotations. Furthermore, presence of a gene in a genome does not guarantee its expression, and environmental regulation of gene expression is entirely ignored. The finding that no significant functional differences were detected between dysbiotic and control communities despite dramatic compositional differences may therefore reflect either true functional redundancy (different taxa encoding overlapping metabolic functions) or the insensitivity of PICRUSt to detect real functional differences, particularly for under-characterised lineages. This ambiguity underscores the need for metatranscriptomic, metaproteomic, or metabolomic approaches to validate functional conclusions drawn from 16S-based studies.",
+      "topic_tags": ["LEfSe", "PICRUSt", "16S rRNA", "methodological limitations", "functional prediction", "functional redundancy", "biomarker discovery"]
+    },
+    {
+      "id": "mdrtb_gut_hard_004",
+      "difficulty": "hard",
+      "question": "Why might fecal microbiome transplantation (FMT) or probiotic supplementation be considered as interventions for post-antibiotic gut microbiota dysbiosis, and what scientific principles support or challenge their effectiveness in this context?",
+      "answer": "The rationale for FMT and probiotic supplementation following antibiotic-induced dysbiosis is grounded in the observation that the altered microbiota reaches a new stable equilibrium resistant to spontaneous recovery. FMT provides a diverse donor-derived microbial inoculum capable of recolonising the gut and potentially displacing the aberrant community, re-establishing a community that resembles the pre-dysbiotic state. Its efficacy in Clostridioides difficile infection — another antibiotic-associated dysbiosis — provides conceptual support for its use in post-MDR-TB settings. Probiotic supplementation, while more targeted, aims to introduce specific beneficial strains (e.g., butyrate producers, Akkermansia muciniphila) whose depletion drives adverse metabolic outcomes. Scientifically, several principles support these interventions: the causal link between specific depleted taxa and elevated LDL cholesterol and total cholesterol suggests that restoring those taxa could normalise lipid profiles; the absence of spontaneous recovery years post-treatment demonstrates that internal reseeding is insufficient; and animal transplantation studies confirm that microbiota composition drives metabolic phenotype. However, challenges include the ecological stability of the new dysbiotic equilibrium, which may resist engraftment of transplanted communities; the lack of clear evidence that FMT efficacy generalises from C. difficile to post-antibiotic metabolic dysbiosis; the difficulty of identifying safe, characterised donor microbiomes; and uncertainty about whether restoring taxonomic composition will also restore functional outputs given the complexity of host-microbe metabolic networks. Further studies are needed to establish safety and efficacy before widespread clinical application.",
+      "topic_tags": ["FMT", "probiotics", "microbiota reconstruction", "post-antibiotic dysbiosis", "ecological stability", "clinical intervention", "Clostridioides difficile"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "mdrtb_gut_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which of the following correctly describes why MDR-TB treatment is particularly disruptive to the gut microbiota compared to most other antibiotic therapies?",
+      "options": {
+        "A": "MDR-TB antibiotics are specifically designed to target gut bacteria rather than pulmonary pathogens",
+        "B": "MDR-TB treatment uses a combination of multiple antibiotics for an extended period of at least 20 months",
+        "C": "MDR-TB treatment requires intravenous administration which bypasses the gut entirely",
+        "D": "MDR-TB antibiotics produce toxic metabolites that permanently damage gut epithelial cells"
+      },
+      "correct_answer": "B",
+      "explanation": "MDR-TB treatment is uniquely disruptive because it requires multiple narrow- and broad-spectrum antibiotics administered in combination for a minimum of 20 months — far longer and more complex than most antibiotic regimens. This prolonged multi-drug exposure causes a greater and more lasting perturbation to the gut microbiota than shorter or single-drug treatments.",
+      "topic_tags": ["MDR-TB", "antibiotic exposure", "treatment duration", "dysbiosis"]
+    },
+    {
+      "id": "mdrtb_gut_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "Which gut microbial phylum is the sole representative of Verrucomicrobia in the human intestine, and what is its primary functional role?",
+      "options": {
+        "A": "Faecalibacterium prausnitzii — a major producer of propionate and anti-inflammatory metabolites",
+        "B": "Akkermansia muciniphila — a specialist mucin-degrading bacterium and key propionate producer",
+        "C": "Ruminococcus bromii — a primary degrader of resistant starch and cross-feeding hub",
+        "D": "Eubacterium hallii — a secondary butyrate producer relying on lactate cross-feeding"
+      },
+      "correct_answer": "B",
+      "explanation": "Akkermansia muciniphila is the only known representative of the Verrucomicrobia phylum in the human gut. It specialises in degrading mucin glycoproteins and is a key producer of propionate. It plays a protective role in metabolic health and is inversely associated with obesity and elevated LDL cholesterol.",
+      "topic_tags": ["Akkermansia muciniphila", "Verrucomicrobia", "mucin", "propionate"]
+    },
+    {
+      "id": "mdrtb_gut_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "What metabolic consequence is observed in patients who have recovered from MDR-TB treatment years after stopping the antibiotics, despite the absence of gastrointestinal symptoms?",
+      "options": {
+        "A": "Elevated fasting plasma glucose indicating impaired glucose metabolism",
+        "B": "Elevated low-density lipoprotein cholesterol and total cholesterol levels",
+        "C": "Reduced high-density lipoprotein cholesterol indicating impaired reverse cholesterol transport",
+        "D": "Elevated liver enzymes indicating chronic hepatic inflammation"
+      },
+      "correct_answer": "B",
+      "explanation": "Despite the absence of GI symptoms, recovered MDR-TB patients show significantly elevated LDL cholesterol and total cholesterol levels compared to matched untreated controls. Liver enzymes, HDL cholesterol, triglycerides, and fasting plasma glucose showed no significant difference, suggesting the lipid changes are driven by gut microbiota dysbiosis rather than direct organ damage.",
+      "topic_tags": ["LDL cholesterol", "total cholesterol", "metabolic consequence", "MDR-TB recovery", "dyslipidaemia"]
+    },
+
+    {
+      "id": "mdrtb_gut_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "According to resilience theory applied to the gut microbiota, what determines whether the microbiota returns to its original state or settles into a new equilibrium after antibiotic treatment?",
+      "options": {
+        "A": "The species composition of the antibiotic drug used — narrow-spectrum antibiotics always allow full recovery while broad-spectrum antibiotics always cause permanent change",
+        "B": "The host's age at the time of treatment — younger patients recover fully while older patients develop permanent dysbiosis",
+        "C": "The strength of the disturbance relative to the inherent stability of the microbiota — severe disturbances push the community beyond its resilience threshold into a new equilibrium",
+        "D": "The presence of probiotic supplementation during treatment — probiotics prevent permanent dysbiosis in all cases"
+      },
+      "correct_answer": "C",
+      "explanation": "Resilience theory applied to gut microbiota predicts that recovery depends on both the magnitude of the disturbance and the stability of the microbial community. Mild perturbations (e.g., short-course ciprofloxacin) fall within the microbiota's resilience capacity and allow full recovery, while severe, prolonged disturbances (e.g., MDR-TB treatment) push the microbiota into an alternative stable state — a new equilibrium — from which it cannot spontaneously recover.",
+      "topic_tags": ["resilience theory", "new equilibrium", "disturbance", "microbiota recovery", "stability"]
+    },
+    {
+      "id": "mdrtb_gut_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "How does the reduction of Firmicutes following prolonged antibiotic treatment contribute to elevated total cholesterol levels?",
+      "options": {
+        "A": "Firmicutes produce cholesterol-lowering bile salt hydrolases; their depletion reduces secondary bile acid formation and impairs cholesterol regulation via hepatic receptor signalling",
+        "B": "Firmicutes compete with Bacteroidetes for colonisation sites; their depletion allows Bacteroidetes to produce pro-cholesterogenic metabolites",
+        "C": "Firmicutes directly absorb dietary cholesterol in the small intestine; their depletion increases the bioavailability of dietary cholesterol",
+        "D": "Firmicutes produce enzymes that break down LDL particles in the bloodstream; their depletion raises circulating cholesterol levels"
+      },
+      "correct_answer": "A",
+      "explanation": "Firmicutes play a central role in bile acid metabolism by converting primary bile acids into secondary bile acids. These secondary bile acids are reabsorbed and act as signalling molecules that regulate hepatic lipid metabolism and metabolic homeostasis. Reduced Firmicutes abundance — as observed after prolonged antibiotic treatment — diminishes this bile acid conversion and is correlated with elevated total cholesterol levels.",
+      "topic_tags": ["Firmicutes", "bile acids", "total cholesterol", "bile salt hydrolase", "hepatic regulation"]
+    },
+    {
+      "id": "mdrtb_gut_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "What is the relationship between Coprococcus abundance and total cholesterol, and what mechanism is proposed to explain this association?",
+      "options": {
+        "A": "Coprococcus is positively associated with total cholesterol because it produces trimethylamine (TMA), a precursor of the pro-atherogenic molecule TMAO",
+        "B": "Coprococcus is negatively associated with total cholesterol because it is a major butyrate producer, and butyrate modulates lipid metabolism in peripheral tissues",
+        "C": "Coprococcus is positively associated with total cholesterol because it degrades mucin glycoproteins, releasing substrates that promote hepatic cholesterol synthesis",
+        "D": "Coprococcus is negatively associated with total cholesterol because it directly binds and sequesters dietary cholesterol in the colon, preventing its absorption"
+      },
+      "correct_answer": "B",
+      "explanation": "Coprococcus is a major producer of butyrate in the gut. Butyrate and other short-chain fatty acids are proposed to modulate lipid metabolism in peripheral tissues, in part through activation of receptors such as GPR43 that suppress insulin-mediated fat accumulation. Decreased Coprococcus abundance is correlated with elevated total cholesterol, consistent with the loss of this regulatory butyrate-mediated metabolic function.",
+      "topic_tags": ["Coprococcus", "butyrate", "total cholesterol", "SCFA", "lipid metabolism"]
+    },
+    {
+      "id": "mdrtb_gut_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "Why does loss of gut microbial diversity following antibiotic treatment increase susceptibility to opportunistic pathogens such as Clostridioides difficile?",
+      "options": {
+        "A": "Reduced diversity leads to overproduction of mucin, which provides a nutritional substrate specifically exploited by C. difficile",
+        "B": "Antibiotic-depleted microbiota produce excess secondary bile acids that directly activate C. difficile spore germination",
+        "C": "Antibiotic treatment suppresses SIgA production, removing the primary mucosal defence against C. difficile",
+        "D": "Reduced microbial diversity impairs colonisation resistance, and disrupted commensal communities release mucosal sugars that favour pathogen expansion and growth"
+      },
+      "correct_answer": "D",
+      "explanation": "A diverse gut microbiota provides colonisation resistance by competing for resources and attachment sites, and by producing antimicrobial substances. Following antibiotic-induced dysbiosis, this resistance is lost. Additionally, disruption of mucin-degrading commensals releases mucosal sugars (such as sialic acid and fucose) that pathogens like C. difficile can utilise for growth. Recurrent C. difficile infection is closely associated with decreased gut microbiota diversity during antibiotic exposure.",
+      "topic_tags": ["colonisation resistance", "C. difficile", "diversity", "mucosal sugars", "sialic acid", "antibiotic susceptibility"]
+    },
+    {
+      "id": "mdrtb_gut_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What does principal coordinate analysis (PCoA) using unweighted UniFrac distance reveal about microbiota community structure that Bray-Curtis dissimilarity-based PCoA does not, and why is this distinction important?",
+      "options": {
+        "A": "Unweighted UniFrac captures differences in species abundance, while Bray-Curtis captures only presence/absence of taxa — making UniFrac more sensitive to dominant species shifts",
+        "B": "Unweighted UniFrac accounts for phylogenetic relatedness between taxa and is based on presence/absence of OTUs, while Bray-Curtis is based on relative abundance — making UniFrac more sensitive to the gain or loss of rare lineages",
+        "C": "Bray-Curtis is phylogenetically informed while UniFrac is purely taxonomic, making Bray-Curtis more useful for detecting evolutionary divergence between communities",
+        "D": "Both metrics capture identical information about community structure; the choice between them is purely a matter of convention in different research fields"
+      },
+      "correct_answer": "B",
+      "explanation": "Unweighted UniFrac measures community dissimilarity based on the presence or absence of phylogenetic lineages — it asks whether communities share phylogenetic branches, making it sensitive to the gain or loss of even rare taxa. Bray-Curtis dissimilarity uses relative abundance data, making it more sensitive to shifts in dominant taxa. This distinction matters because dysbiosis may involve loss of rare but functionally important taxa (best detected by UniFrac) as well as shifts in dominant phyla (better captured by Bray-Curtis).",
+      "topic_tags": ["UniFrac", "Bray-Curtis", "PCoA", "beta diversity", "phylogenetic", "abundance", "OTU"]
+    },
+
+    {
+      "id": "mdrtb_gut_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "What is the most likely explanation for why Shannon diversity (evenness and richness combined) increased in post-MDR-TB recovered patients relative to matched controls, even though absolute species richness (ACE) decreased?",
+      "options": {
+        "A": "The recovered microbiota accumulated more antibiotic-resistant species with uniformly high abundance, increasing evenness while richness dropped, producing a paradoxical diversity increase",
+        "B": "After MDR-TB treatment, the surviving community settled into a new equilibrium where the remaining species were more evenly distributed in abundance, raising Shannon evenness sufficiently to increase the Shannon index despite having fewer distinct taxa",
+        "C": "Post-treatment patients consumed a higher-fibre diet that enriched specific abundant taxa, raising Shannon diversity but not total taxon count",
+        "D": "The matched untreated control group harboured a highly uneven microbiota dominated by a few abundant taxa, making their Shannon index artificially low, which inflated the apparent increase in recovered patients"
+      },
+      "correct_answer": "B",
+      "explanation": "Shannon diversity incorporates both species richness and evenness. A microbiota with fewer species (lower ACE) can still have a higher Shannon index if the remaining species are distributed more uniformly in abundance. Following prolonged antibiotic treatment and recovery, the gut microbiota may settle into a new equilibrium in which the surviving — and potentially antibiotic-tolerant — taxa co-exist with greater evenness. This creates the paradox of reduced richness (fewer distinct taxa) alongside increased Shannon diversity and evenness, reflecting a compositionally altered but internally more balanced community.",
+      "topic_tags": ["Shannon diversity", "evenness", "ACE", "richness paradox", "new equilibrium", "alpha diversity"]
+    },
+    {
+      "id": "mdrtb_gut_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "Why might functional profiling using PICRUSt show no significant differences between severely dysbiotic and control gut microbiota communities, and what are the broader implications of this finding for understanding disease risk?",
+      "options": {
+        "A": "No functional differences implies no disease risk — PICRUSt is highly sensitive and a negative result conclusively rules out clinically meaningful metabolic dysregulation",
+        "B": "Functional redundancy among gut taxa means compositionally distinct communities can encode overlapping metabolic functions; PICRUSt non-significance may reflect genuine redundancy or methodological insensitivity, but the observed metabolic markers (elevated lipids) confirm that functional dysregulation occurs at the downstream metabolite level",
+        "C": "PICRUSt is the gold standard for functional characterisation; its lack of differences confirms that the observed lipid changes are caused by the antibiotics themselves rather than by altered gut microbiota",
+        "D": "The absence of PICRUSt-detected functional differences means the microbiota composition changes are clinically irrelevant and spontaneous normalisation will restore metabolic health without intervention"
+      },
+      "correct_answer": "B",
+      "explanation": "PICRUSt predicts community function by mapping 16S OTUs to reference genomes, but it cannot detect expression-level changes and performs poorly for under-characterised taxa. Functional redundancy — where different bacterial species encode overlapping metabolic pathways — means compositionally distinct communities can appear functionally similar at the genome level. However, the observation of elevated LDL cholesterol and total cholesterol in recovered patients despite PICRUSt non-significance suggests that real metabolic dysregulation is occurring. This highlights that 16S-inferred functional prediction is insufficient to capture clinically relevant microbiome-host metabolic interactions, and that downstream metabolic and metabolomic measurements are necessary to fully characterise disease risk.",
+      "topic_tags": ["PICRUSt", "functional redundancy", "16S rRNA", "metabolic markers", "dysbiosis", "methodological limitation", "LDL cholesterol"]
+    }
+  ]
+}

@@ -1,9 +1,0 @@
-{
-  "dataset": "mcq_eval_results_70B.csv",
-  "total_rows": 300,
-  "attempted_questions": 300,
-  "skipped_questions": 0,
-  "true_count": 277,
-  "false_count": 23,
-  "accuracy_percent": 92.33
-}

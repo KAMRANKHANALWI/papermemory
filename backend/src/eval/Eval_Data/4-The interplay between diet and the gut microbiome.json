@@ -1,0 +1,289 @@
+{
+  "metadata": {
+    "source_paper": "The Interplay Between Diet and the Gut Microbiome: Implications for Health and Disease",
+    "authors": ["Fiona C. Ross", "Dhrati Patangia", "Ghjuvan Grimaud", "Aonghus Lavelle", "Eugene M. Dempsey", "R. Paul Ross", "Catherine Stanton"],
+    "journal": "Nature Reviews Microbiology",
+    "year": 2024,
+    "doi": "10.1038/s41579-024-01068-4",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+
+    {
+      "id": "dietmb_easy_a1f2",
+      "difficulty": "easy",
+      "question": "What role does dietary fibre play in short-chain fatty acid production by the gut microbiota?",
+      "answer": "Dietary fibre, particularly complex carbohydrates, cannot be digested by human enzymes alone — humans produce only about 17 carbohydrate-active enzymes (CAZymes). Instead, the gut microbiota ferments these fibres in the colon, producing short-chain fatty acids (SCFAs) such as acetate, propionate, and butyrate. A diet low in fibre is associated with a reduced CAZyme reservoir within the gut microbiota, leading to diminished SCFA production. Conversely, high-fibre diets substantially increase beneficial SCFA-producing bacteria and overall SCFA output.",
+      "topic_tags": ["dietary fibre", "SCFAs", "fermentation", "CAZymes", "gut microbiota"]
+    },
+
+    {
+      "id": "dietmb_easy_b3c7",
+      "difficulty": "easy",
+      "question": "How do SCFAs influence appetite regulation and host energy metabolism beyond the gut?",
+      "answer": "SCFAs signal through G protein-coupled receptors (GPCR41 and GPCR43), stimulating enteroendocrine cells to secrete satiety hormones glucagon-like peptide 1 (GLP1) and peptide YY (PYY). This modulates appetite and slows gastric emptying. Unmetabolized SCFAs enter portal circulation and reach the liver, where they influence fatty acid oxidation, insulin sensitivity, and inflammation. A small fraction reaches systemic circulation, where SCFAs exert immunomodulatory effects on peripheral tissues, organs, and immune cells, highlighting that their influence extends well beyond the intestinal lumen.",
+      "topic_tags": ["SCFAs", "appetite regulation", "GPCR", "GLP1", "PYY", "energy metabolism"]
+    },
+
+    {
+      "id": "dietmb_easy_d9e4",
+      "difficulty": "easy",
+      "question": "What distinguishes the gut microbiome composition of populations following traditional non-Western diets from those following Western diets?",
+      "answer": "Populations following traditional non-Western diets — including hunter-gatherers, rural Africans, and agrarian communities — consistently show greater bacterial diversity and microbial richness compared to Western populations. Non-Western microbiomes are dominated by Prevotella spp. and Firmicutes, whereas Western microbiomes are characterized by Bacteroides spp. dominance alongside Firmicutes. Western diets, rich in low-fibre, ultra-processed foods and saturated fats, are associated with reduced microbial diversity, loss of specific fibre-degrading taxa, and diminished capacity for carbohydrate catabolism.",
+      "topic_tags": ["Western diet", "non-Western populations", "microbial diversity", "Prevotella", "Bacteroides", "global microbiome"]
+    },
+
+    {
+      "id": "dietmb_easy_f5h8",
+      "difficulty": "easy",
+      "question": "What are the key features of the Mediterranean diet and how is it broadly associated with the gut microbiome?",
+      "answer": "The Mediterranean diet emphasizes high intake of unprocessed whole-plant foods, olive oil, and dairy products, with moderate consumption of poultry and fish and low amounts of red meat. It has been associated with increased abundance of health-promoting bacteria such as Faecalibacterium prausnitzii and Roseburia spp., and reduced abundance of pro-inflammatory taxa such as Ruminococcus gnavus, Collinsella aerofaciens, and Ruminococcus torques. These microbial shifts are linked to enhanced SCFA production and reduced production of metabolic by-products like ethanol and para-cresols. The diet is broadly associated with enriched microbial functions for SCFA fermentation and dietary fibre degradation.",
+      "topic_tags": ["Mediterranean diet", "Faecalibacterium prausnitzii", "Roseburia", "SCFA", "microbial diversity"]
+    },
+
+    {
+      "id": "dietmb_easy_k2m6",
+      "difficulty": "easy",
+      "question": "How does the Western diet affect gut microbiome diversity and what metabolic consequences result from this?",
+      "answer": "The Western diet, characterized by high caloric content, animal protein, saturated fats, simple sugars, and ultra-processed foods with inadequate fibre, is associated with a marked reduction in gut microbiome diversity. The microbiome shifts toward an enterosignature dominated by Bacteroides species along with Ruminococcus, Blautia, and Bilophila genera. Due to lower fibre intake, the microbiome produces less SCFA. Compounds in red meat such as choline and carnitine are converted by gut bacteria into trimethylamine (TMA), which the liver then converts to TMAO — a metabolite linked to cardiovascular disease, arteriosclerosis, and platelet aggregation. The Western diet is broadly linked to chronic inflammation and non-communicable diseases.",
+      "topic_tags": ["Western diet", "microbial diversity", "TMAO", "cardiovascular disease", "chronic inflammation"]
+    },
+
+    {
+      "id": "dietmb_medium_p4q9",
+      "difficulty": "medium",
+      "question": "Through what mechanisms do polyphenols from plant-based diets modulate gut microbiota composition and host health?",
+      "answer": "Polyphenols are plant secondary metabolites found in fruits, vegetables, cereals, wine, tea, and coffee. Only 5–10% are absorbed in the small intestine; the majority (90–95%) interact with gut microorganisms in the ileum and colon. They promote the abundance of Bifidobacterium, Akkermansia, and Lactobacillus species. Polyphenols exert antimicrobial effects against foodborne pathogens by binding to and altering cell membranes, and act as quorum-sensing inhibitors in a dose-dependent manner. The gut microbiota bidirectionally metabolizes polyphenols into more bioactive microbial metabolites, such as urolithin A (improving cellular and mitochondrial health) and S-equol (improving bone and cardiovascular health). Polyphenols also regulate gut microbial metabolites including SCFAs, TMAO, dopamine, and bile acids, and support homeostasis in lung, central nervous system, and intestinal barrier function.",
+      "topic_tags": ["polyphenols", "plant-based diet", "Akkermansia", "Bifidobacterium", "antimicrobial", "bioactive metabolites"]
+    },
+
+    {
+      "id": "dietmb_medium_r7s1",
+      "difficulty": "medium",
+      "question": "How does a high-protein diet influence the gut microbiota and what potentially harmful metabolites can result from microbial protein fermentation?",
+      "answer": "Dietary proteins are mostly broken down by host proteases, but up to 12–18 g can reach the large intestine daily and be metabolized by the microbiome. This enriches proteolytic bacteria such as Bacteroides, Bacillus, Clostridium, Fusobacterium, and Streptococcus. These bacteria use external peptidases and proteases to release short peptides and free amino acids. Most amino acids are fermented into SCFAs and branched-chain fatty acids (BCFAs) such as isobutyrate and isovalerate. However, fermentation of aromatic amino acids like tryptophan also produces indoles and phenolic compounds; indoles reaching the liver are transformed into indoxyl sulfate — a toxic metabolite deleterious to kidneys and involved in endothelial dysfunction. Fermentation of sulfur-containing amino acids produces hydrogen sulfide, which is potentially mutagenic and may increase colon cancer risk.",
+      "topic_tags": ["high-protein diet", "proteolysis", "BCFAs", "indoxyl sulfate", "hydrogen sulfide", "colon cancer"]
+    },
+
+    {
+      "id": "dietmb_medium_t3u5",
+      "difficulty": "medium",
+      "question": "What are the mechanisms by which the ketogenic diet alters gut microbiota composition and immune function?",
+      "answer": "The ketogenic diet is a very low-carbohydrate, moderate-protein, high-fat dietary pattern that elevates circulating ketone bodies such as beta-hydroxybutyrate (βHB). It has been shown to substantially reduce Actinobacteria and Firmicutes phyla — including beneficial Bifidobacterium species — while increasing Bacteroidetes. These alterations are partly driven by the host's production of ketone bodies, which establish a causal inverse correlation with Bifidobacterium spp. Since Bifidobacterium robustly induces intestinal T helper 17 (TH17) cells, their depletion leads to a reduction in pro-inflammatory TH17 cells in both the gut and adipose tissues. Fecal microbiota transplant experiments confirmed these immune effects are microbiota-mediated. The ketogenic diet also increases Akkermansia muciniphila, Lactobacillus, Roseburia, and Parabacteroides in preclinical models while reducing Turicibacter, Desulfovibrio, and Escherichia species.",
+      "topic_tags": ["ketogenic diet", "Bifidobacterium", "beta-hydroxybutyrate", "TH17 cells", "immune response", "Akkermansia"]
+    },
+
+    {
+      "id": "dietmb_medium_v6w2",
+      "difficulty": "medium",
+      "question": "How does immigration and adoption of a Western diet affect gut microbiome composition and metabolic function?",
+      "answer": "Immigration to Western countries and adoption of a Western diet leads to rapid and substantial changes in gut microbiome composition. Studies in immigrant communities show reduced gut microbial diversity and a shift from Prevotella to Bacteroides species dominance. This transition results in the loss of key fibre-degrading strains and a diminished capacity for carbohydrate catabolism, including loss of specific glycoside hydrolases (e.g., GH17, GH64, GH87 for glycosaminoglycans, and GH5/GH26 for cellulose and β-mannan degradation). These functional losses are associated with increased metabolic disease risk among immigrant populations. The changes occur in both short-term and long-term immigrants, demonstrating how rapidly Western dietary exposure reshapes the microbiome.",
+      "topic_tags": ["immigration", "Western diet", "microbial diversity", "glycoside hydrolases", "metabolic disease", "Prevotella to Bacteroides"]
+    },
+
+    {
+      "id": "dietmb_medium_x8y4",
+      "difficulty": "medium",
+      "question": "What is the relationship between early-life diet, human milk oligosaccharides, and infant gut microbiota development?",
+      "answer": "Breast milk contains bioactive compounds including human milk oligosaccharides (HMOs) — non-digestible prebiotic sugars that function as a selective carbon source for specific bacterial species. HMOs are preferentially utilized by Bifidobacterium species (including B. breve, B. bifidum, B. longum, B. infantis) and Bacteroides spp., driving their dominance in the gut of breastfed infants. HMOs promote brain development, mucus barrier integrity, reduced intestinal permeability, and immunomodulatory effects, providing long-term protection against allergy, atopic dermatitis, and obesity. SCFAs formed from HMO fermentation serve as an energy source for the host. In contrast, formula-fed infants harbour higher levels of Streptococcus, Enterococcus, Veillonella, and Clostridioides species, with different functional metabolic profiles.",
+      "topic_tags": ["HMOs", "breastfeeding", "Bifidobacterium", "infant microbiota", "prebiotic", "formula feeding"]
+    },
+
+    {
+      "id": "dietmb_medium_z9a3",
+      "difficulty": "medium",
+      "question": "How does diet influence the development and progression of inflammatory bowel disease through gut microbiota modulation?",
+      "answer": "Diet contributes to inflammatory bowel disease (IBD) pathogenesis via several gut microbiota-mediated mechanisms. A low-fibre diet reduces Treg cells and increases TH17 cells, diminishing SCFA production and promoting chronic intestinal inflammation. Increased animal protein intake can lead to amino acid and haem malabsorption in the small intestine, producing harmful by-products such as phenol and hydrogen that inhibit butyrate production and reduce disulfide bridges in the intestinal barrier. Diets rich in fat can disrupt binding protein functionality among enterocytes, altering mucous layer composition and intestinal microbiota. Food additives like carrageenan favour gut inflammation and disrupt the mucus layer. Persistent Western diet-driven inflammation also significantly increases colitis-associated colorectal cancer risk by affecting immune response and intestinal tissue balance.",
+      "topic_tags": ["IBD", "inflammatory bowel disease", "dietary fibre", "TH17", "butyrate", "intestinal barrier", "colorectal cancer"]
+    },
+
+    {
+      "id": "dietmb_hard_c1d8",
+      "difficulty": "hard",
+      "question": "How do different whole dietary regimes differentially modulate bacterial taxa and metabolite production, and what are the contrasting physiological consequences of plant-based versus high-protein diets?",
+      "answer": "Plant-based and high-protein diets produce markedly different microbial and metabolic profiles. Plant-based diets are enriched in polyphenols and indigestible carbohydrates, promoting Prevotella, Bifidobacterium, Akkermansia, Lactobacillus, and Bacteroides species. These diets stimulate SCFA production and generate bioactive polyphenol metabolites with anti-inflammatory, anti-pathogenic, and cardiovascular-protective properties. Vegetarians also exhibit low carnitine degradation, reducing TMAO precursor production. High-protein diets, conversely, enrich proteolytic bacteria (Bacteroides, Fusobacterium, Clostridium) and produce a distinct metabolite profile: BCFAs from BCAA fermentation, indoles and phenolic compounds from aromatic amino acids, and hydrogen sulfide from sulfur-containing amino acids. While some metabolites like BCFAs can activate GPCR41/43 and increase satiety, the by-products indoxyl sulfate (kidney toxicity, endothelial dysfunction) and hydrogen sulfide (potential mutagenicity, colon cancer risk) represent negative consequences absent in predominantly plant-based diets.",
+      "topic_tags": ["plant-based diet", "high-protein diet", "SCFA", "BCFA", "indoxyl sulfate", "polyphenols", "carnitine", "TMAO"]
+    },
+
+    {
+      "id": "dietmb_hard_e2f6",
+      "difficulty": "hard",
+      "question": "What are the key challenges in establishing causal relationships between diet, gut microbiota, and metabolic disease, and how does the concept of precision nutrition attempt to address them?",
+      "answer": "Several intertwined challenges complicate causal inference in diet–microbiome–disease research. First, the same diet consumed by two different individuals produces differing metabolic health effects and personalized microbial responses due to unique baseline microbiome compositions and host genetics. Second, high inter-individual variation, functional redundancy, and geographic/ethnic confounding make it difficult to isolate dietary effects from other lifestyle factors. Third, many studies have been underpowered to detect meaningful changes in microbial diversity. Fourth, complex real-world diets contain many simultaneous variables, and most evidence derives from animal models with poor human reproducibility. Finally, determining whether dysbiosis is causal or consequential in disease remains unresolved. Precision nutrition addresses these challenges by analyzing individual microbiome composition and function to identify personalized dietary gaps, select optimal probiotics/prebiotics, and tailor interventions. It also acknowledges the need for integrating multi-omics data (metagenomics, metabolomics, metatranscriptomics), large-scale diverse cohort studies spanning geography, sex, ethnicity and age, and continuous dietary metadata tracking to build predictive models that capture individualized diet–microbiome–health relationships.",
+      "topic_tags": ["precision nutrition", "causal relationships", "functional redundancy", "inter-individual variation", "multi-omics", "microbiome-targeted therapies"]
+    },
+
+    {
+      "id": "dietmb_hard_g4h0",
+      "difficulty": "hard",
+      "question": "How does the gut microbiome mediate the link between dietary fat intake, bile acid metabolism, and cardiovascular disease risk?",
+      "answer": "Dietary fats — particularly saturated fats in the Western diet — influence cardiovascular disease risk through gut microbiota-mediated bile acid and TMAO pathways. The gut microbiota converts primary bile acids (produced by the liver from cholesterol) into secondary bile acids via bacterial enzymes. These secondary bile acids activate nuclear receptors such as the farnesoid X receptor (FXR) and Takeda G protein-coupled receptor 5 (TGR5), which have critical roles in lipid and glucose metabolism; dysregulation of these receptor pathways contributes to cardiovascular disease development. In parallel, animal-derived compounds such as choline and carnitine are transformed by gut bacteria into trimethylamine (TMA), which is then hepatically converted to TMAO. Elevated TMAO promotes atherosclerosis through aortic plaque formation, arterial cholesterol deposition, platelet aggregation, and inflammation, and is associated with higher mortality in patients with heart failure. The Western diet's enrichment in Bilophila — a bile-tolerant, hydrogen sulfide-producing genus — further amplifies a pro-inflammatory intestinal environment.",
+      "topic_tags": ["dietary fat", "bile acids", "FXR", "TGR5", "TMAO", "cardiovascular disease", "atherosclerosis", "choline", "carnitine"]
+    },
+
+    {
+      "id": "dietmb_hard_i5j9",
+      "difficulty": "hard",
+      "question": "What is the evidence that maternal diet during pregnancy and lactation shapes infant immune development and long-term health outcomes through the gut microbiome?",
+      "answer": "Maternal dietary patterns during pregnancy and lactation exert lasting effects on infant gut microbiota and immune development through multiple pathways. A maternal low-fibre diet during pregnancy has been shown to delay plasmacytoid dendritic cell development and perturb regulatory T cell expansion in offspring, leading to enhanced severity of respiratory infections. Mice on a no-fibre maternal diet exhibit lower proportions of Akkermansia muciniphila, innate lymphoid cells, and TH17 cells in pups. Conversely, a maternal diet rich in fermented foods affected neonatal gut microbiota development and reduced colonic inflammation via specific kinase signalling cascades. Maternal dietary fat and sugar intake has been shown in some studies to alter infant gut microbiome functionality. HMOs in breast milk modulate infant gut microbiota and provide long-term protection from allergy, atopic dermatitis, and obesity, as well as enhanced intestinal barrier function. The association between infant gut microbial composition and maternal seafood consumption, high-fibre, and high-fat diets during pregnancy has also been documented, though results across studies are sometimes inconsistent.",
+      "topic_tags": ["maternal diet", "pregnancy", "infant immune development", "Akkermansia muciniphila", "HMOs", "regulatory T cells", "TH17", "breastfeeding"]
+    }
+  ],
+
+  "mcq_questions": [
+
+    {
+      "id": "dietmb_mcq_easy_n3p1",
+      "difficulty": "easy",
+      "question": "Which dietary pattern is most strongly associated with enriched microbial functions for SCFA fermentation and dietary fibre degradation, and has been described as the 'gold standard' in preventative medicine?",
+      "options": {
+        "A": "Ketogenic diet",
+        "B": "High-protein diet",
+        "C": "Mediterranean diet",
+        "D": "Western diet"
+      },
+      "correct_answer": "C",
+      "explanation": "The Mediterranean diet has emerged as the gold standard in preventative medicine and health promotion. It is associated with 36 functional microbial pathways mostly resembling a plant-based diet, with enriched functions for SCFA fermentation and dietary fibre degradation, and increased abundance of health-promoting taxa such as Faecalibacterium prausnitzii.",
+      "topic_tags": ["Mediterranean diet", "SCFA", "fibre degradation", "Faecalibacterium prausnitzii"]
+    },
+
+    {
+      "id": "dietmb_mcq_easy_q6r2",
+      "difficulty": "easy",
+      "question": "What is the primary reason humans rely on gut microbiota to metabolize many dietary fibres?",
+      "options": {
+        "A": "Dietary fibre is absorbed directly in the stomach before reaching the colon",
+        "B": "Humans produce only a very limited number of carbohydrate-active enzymes (CAZymes) for carbohydrate degradation",
+        "C": "Gut bacteria competitively inhibit human digestive enzymes from functioning in the colon",
+        "D": "Dietary fibre is toxic to intestinal epithelial cells and must be neutralized by bacteria first"
+      },
+      "correct_answer": "B",
+      "explanation": "Humans produce only about 17 CAZymes, which is insufficient for the degradation of many complex carbohydrates. As a result, humans depend on the gut microbiota — which encodes a far larger repertoire of CAZymes — to ferment dietary fibres in the colon and produce SCFAs and other metabolites.",
+      "topic_tags": ["dietary fibre", "CAZymes", "gut microbiota", "carbohydrate metabolism"]
+    },
+
+    {
+      "id": "dietmb_mcq_easy_s8t4",
+      "difficulty": "easy",
+      "question": "Which of the following best describes the microbiome composition difference between breastfed and formula-fed infants?",
+      "options": {
+        "A": "Breastfed infants have higher levels of Clostridioides and Veillonella, which produce more SCFAs",
+        "B": "Formula-fed infants have a more mature and adult-like microbial diversity earlier in life",
+        "C": "Breastfed infants have higher Bifidobacterium species abundance driven by human milk oligosaccharide (HMO) utilization",
+        "D": "Both groups have identical microbiome profiles because diet has no effect during infancy"
+      },
+      "correct_answer": "C",
+      "explanation": "HMOs in breast milk act as selective prebiotics, preferentially utilized by Bifidobacterium species (B. breve, B. bifidum, B. longum, B. infantis) and Bacteroides spp., driving their dominance in breastfed infants. Formula-fed infants instead harbour higher Streptococcus, Enterococcus, Veillonella, and Clostridioides species with different functional profiles.",
+      "topic_tags": ["breastfeeding", "HMOs", "Bifidobacterium", "infant microbiota", "formula feeding"]
+    },
+
+    {
+      "id": "dietmb_mcq_medium_u1v7",
+      "difficulty": "medium",
+      "question": "What mechanism best explains why adherence to a Mediterranean diet was more beneficial for cardiovascular health in individuals with lower levels of a specific gut bacterium?",
+      "options": {
+        "A": "Lower levels of Fusobacterium nucleatum reduce colorectal cancer risk, which is co-morbid with cardiovascular disease",
+        "B": "Lower levels of Prevotella copri are associated with more pronounced cardiovascular benefits from the Mediterranean diet, likely due to strain-level functional differences linked to BCAA biosynthesis",
+        "C": "Lower levels of Akkermansia muciniphila reduce gut permeability, which independently protects against cardiovascular events",
+        "D": "Lower levels of Bifidobacterium spp. reduce TH17 cell activity, directly preventing arterial inflammation"
+      },
+      "correct_answer": "B",
+      "explanation": "Mediterranean dietary adherence and reduced cardiovascular disease risk were notably more pronounced in individuals with lower levels of Prevotella copri. This is mechanistically relevant because P. copri strains in Western populations exhibit upregulation of the leuB gene associated with BCAA biosynthesis — a risk factor for glucose intolerance and type 2 diabetes — whereas strains from high-fibre diet populations have enhanced carbohydrate catabolism potential.",
+      "topic_tags": ["Mediterranean diet", "Prevotella copri", "BCAA", "cardiovascular disease", "microbiome strain variation"]
+    },
+
+    {
+      "id": "dietmb_mcq_medium_w3x5",
+      "difficulty": "medium",
+      "question": "How does the ketogenic diet differ from a typical high-fat diet in terms of its effect on gut microbiota phylum-level composition?",
+      "options": {
+        "A": "Both a ketogenic diet and a high-fat diet consistently increase Firmicutes and decrease Bacteroidetes",
+        "B": "A high-fat diet elevates Firmicutes and reduces Bacteroidetes, while a ketogenic diet reduces Actinobacteria and Firmicutes and increases Bacteroidetes",
+        "C": "A ketogenic diet uniquely elevates Proteobacteria while reducing Bacteroidetes, unlike a high-fat diet",
+        "D": "A ketogenic diet and a high-fat diet produce identical microbiome changes because fat content is the primary driver"
+      },
+      "correct_answer": "B",
+      "explanation": "A typical high-fat diet consistently elevates Firmicutes and reduces Bacteroidetes. However, the ketogenic diet has a notably different effect: it causes substantial reductions in Actinobacteria and Firmicutes — including beneficial Bifidobacterium species — while increasing Bacteroidetes. These alterations are partly driven by the host production of ketone bodies such as beta-hydroxybutyrate (βHB), which has a causal inverse correlation with Bifidobacterium.",
+      "topic_tags": ["ketogenic diet", "high-fat diet", "Firmicutes", "Bacteroidetes", "Actinobacteria", "Bifidobacterium"]
+    },
+
+    {
+      "id": "dietmb_mcq_medium_y6z9",
+      "difficulty": "medium",
+      "question": "What is the proposed mechanism by which low-fibre diets increase susceptibility to intestinal inflammation and infection?",
+      "options": {
+        "A": "Low-fibre diets directly activate innate immune receptors in the gut epithelium, triggering inflammation independently of the microbiota",
+        "B": "Fibre deficiency reduces bile acid production, which normally neutralizes pathogens in the intestinal lumen",
+        "C": "When microbiota-accessible carbohydrates are scarce, the gut microbiota shifts to utilizing host-secreted mucins as a nutrient source, eroding the mucus barrier and increasing proximity of microbes to the epithelium",
+        "D": "Low-fibre diets reduce colonocyte proliferation, thinning the epithelial layer and directly exposing the lamina propria to luminal antigens"
+      },
+      "correct_answer": "C",
+      "explanation": "When dietary fibre is absent, microbiota-accessible carbohydrates (MACs) become scarce. The gut microbiota then shifts to using host-secreted mucins as an alternative energy source, degrading the colonic mucus barrier. This results in a thinner mucus layer, increased microbial proximity to the epithelium, elevated inflammatory markers, and greater susceptibility to pathogenic infection and lethal colitis.",
+      "topic_tags": ["dietary fibre", "mucus barrier", "MACs", "intestinal inflammation", "pathogen susceptibility"]
+    },
+
+    {
+      "id": "dietmb_mcq_medium_b2c4",
+      "difficulty": "medium",
+      "question": "What is the significance of geographic variation in gut microbiome composition, and what evidence demonstrates that diet — rather than host genetics alone — is a primary driver?",
+      "options": {
+        "A": "Genetic studies show that host genome explains >80% of microbiome variation, confirming genetics as the primary driver over diet",
+        "B": "Traditional populations like the Hadza harbour more bacterial species than urban Western populations, and communities that adopt farming show microbiomes more similar to industrialized populations, demonstrating diet's role",
+        "C": "Geographic variation is entirely explained by differences in antibiotic usage, not diet",
+        "D": "The gut microbiomes of all human populations are functionally equivalent despite compositional differences"
+      },
+      "correct_answer": "B",
+      "explanation": "Hunter-gatherer communities such as the Hadza harbour far greater bacterial diversity than Western populations. Crucially, agricultural communities and those that adopt farming show microbiomes transitionally similar to industrialized populations, suggesting diet drives compositional shifts. Similarly, children in Burkina Faso harbouring Prevotella and Xylanibacter species absent in European children reflect co-evolution with polysaccharide-rich diets, and immigration studies demonstrate rapid dietary-driven microbiome westernization.",
+      "topic_tags": ["geographic variation", "Hadza", "global microbiome", "diet vs genetics", "microbial diversity"]
+    },
+
+    {
+      "id": "dietmb_mcq_medium_d0e3",
+      "difficulty": "medium",
+      "question": "Which dietary intervention has demonstrated the highest clinical response rate in treating irritable bowel syndrome symptoms and what microbiota mechanism is proposed?",
+      "options": {
+        "A": "Mediterranean diet; it increases Faecalibacterium prausnitzii which suppresses intestinal inflammation",
+        "B": "Gluten-free diet; it restores normal epithelial permeability by eliminating gluten-driven immune activation",
+        "C": "Low-FODMAP diet; it produces a compositional and functional shift from a pathogenic IBS-like microbiome toward a health-associated microbiome, partly mediated by reducing Bifidobacterium adolescentis",
+        "D": "High-fibre diet; it increases SCFA production which strengthens tight junctions and resolves visceral hypersensitivity"
+      },
+      "correct_answer": "C",
+      "explanation": "The low-FODMAP diet has a positive clinical response in 50–80% of irritable bowel syndrome patients. Studies show it produces a compositional and functional shift from a pathogenic IBS microbiome toward a health-associated one. It substantially reduces Bifidobacterium adolescentis — a species that disrupts gut barrier function and alters tight junction integrity — suggesting the positive effects are microbiota-mediated.",
+      "topic_tags": ["low-FODMAP diet", "irritable bowel syndrome", "Bifidobacterium adolescentis", "gut barrier", "tight junctions"]
+    },
+
+    {
+      "id": "dietmb_mcq_hard_f7g1",
+      "difficulty": "hard",
+      "question": "What multi-step mechanism connects red meat consumption, gut microbiota activity, and cardiovascular disease risk, and why do results across studies remain inconsistent?",
+      "options": {
+        "A": "Red meat increases Faecalibacterium prausnitzii, which directly promotes arterial calcification; inconsistency arises because some populations have F. prausnitzii-free microbiomes",
+        "B": "Choline and carnitine in red meat are converted by gut microbiota to trimethylamine (TMA), then hepatically to TMAO, which promotes atherosclerosis; inconsistency arises because some dietary components like l-carnitine and TMAO-rich foods may paradoxically reduce atherosclerosis, and diet–microbiome–host genetics interactions are complex",
+        "C": "Red meat's saturated fat content directly activates FXR receptors in the gut lining, increasing secondary bile acid production; inconsistency arises from different cholesterol baselines across populations",
+        "D": "Red meat depletes butyrate-producing bacteria, increasing intestinal permeability and systemic LPS exposure; inconsistency arises from variable probiotic use across study populations"
+      },
+      "correct_answer": "B",
+      "explanation": "Choline and carnitine found in red meat are metabolized by gut microbiota into TMA, which is converted in the liver by flavin monooxygenases to TMAO. TMAO promotes atherosclerosis via aortic plaque formation, inflammation, and platelet aggregation, and elevated levels are associated with higher heart failure mortality. However, results are inconsistent because some studies suggest potential benefits of l-carnitine and TMAO-rich foods in preventing atherosclerosis, and the complex interplay of diet, microbiome, and host genetics in arteriosclerosis development is not yet fully resolved.",
+      "topic_tags": ["red meat", "TMAO", "TMA", "choline", "carnitine", "atherosclerosis", "cardiovascular disease"]
+    },
+
+    {
+      "id": "dietmb_mcq_hard_h4i8",
+      "difficulty": "hard",
+      "question": "Why might two individuals following the exact same dietary pattern exhibit substantially different gut microbiome compositions and health outcomes, and how does this challenge the concept of universal dietary recommendations?",
+      "options": {
+        "A": "Individual differences are entirely explained by genetic polymorphisms in immune genes, meaning diet cannot be meaningfully standardized across populations",
+        "B": "Personalized microbial responses arise because the same diet produces different metabolic health effects in different individuals due to unique baseline microbiome compositions, functional redundancy, host genetics, and environmental history; this necessitates precision nutrition approaches tailored to individual microbiome signatures",
+        "C": "Individual variation is purely a methodological artifact caused by inconsistent dietary compliance and self-reporting bias in intervention studies",
+        "D": "Differing outcomes are fully explained by enterotype classification — individuals in different enterotypes respond to diets in entirely predictable, enterotype-specific ways"
+      },
+      "correct_answer": "B",
+      "explanation": "The same diet consumed by two individuals can result in different metabolic health effects and personalized microbial responses. This occurs because unique baseline microbiome compositions, functional redundancy (where different taxa encode overlapping functions), individual host genetics, and historical environmental exposures all modulate how dietary components are processed. A healthy microbiome cannot be defined by a single configuration — multiple configurations may be linked to well-being. This complexity necessitates precision nutrition: tailoring dietary recommendations based on individual microbiome composition, function, and metabolic signatures, and selecting appropriate probiotics or prebiotics for each person.",
+      "topic_tags": ["personalized nutrition", "precision nutrition", "functional redundancy", "individual variation", "microbiome composition", "host genetics"]
+    }
+
+  ]
+}

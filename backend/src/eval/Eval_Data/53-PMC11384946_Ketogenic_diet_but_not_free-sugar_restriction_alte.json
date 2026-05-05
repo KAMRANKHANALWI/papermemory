@@ -1,0 +1,274 @@
+{
+  "metadata": {
+    "source_paper": "Ketogenic diet but not free-sugar restriction alters glucose tolerance, lipid metabolism, peripheral tissue phenotype, and gut microbiome: RCT",
+    "authors": [
+      "Aaron Hengist", "Russell G. Davies", "Jean-Philippe Walhin", "Jariya Buniam",
+      "Lucy H. Merrell", "Lucy Rogers", "Louise Bradshaw", "Alfonso Moreno-Cabañas",
+      "Peter J. Rogers", "Jeff M. Brunstrom", "Leanne Hodson", "Luc J.C. van Loon",
+      "Wiley Barton", "Ciara O'Donovan", "Fiona Crispie", "Orla O'Sullivan",
+      "Paul D. Cotter", "Kathryn Proctor", "James A. Betts", "Françoise Koumanov",
+      "Dylan Thompson", "Javier T. Gonzalez"
+    ],
+    "journal": "Cell Reports Medicine",
+    "year": 2024,
+    "doi": "10.1016/j.xcrm.2024.101667",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "KETO_RCT_easy_001",
+      "difficulty": "easy",
+      "question": "What are free sugars and why are dietary guidelines focused on restricting them?",
+      "answer": "Free sugars are monosaccharides and disaccharides added to foods by manufacturers, cooks, or consumers, plus sugars naturally present in honey, syrups, and unsweetened fruit juices. This also encompasses sugars in fruit and vegetable juices, concentrates, smoothies, purées, pastes, powders, and extruded products. Dietary guidelines advocate restricting free sugars almost entirely because of their association with increased self-reported energy intake, with reduction to below 5% of energy intake theorized to reduce energy intake by approximately 100 kcal per day.",
+      "topic_tags": ["free sugars", "dietary guidelines", "energy intake", "sugar restriction"]
+    },
+    {
+      "id": "KETO_RCT_easy_002",
+      "difficulty": "easy",
+      "question": "What is a ketogenic diet and what metabolic state does it induce?",
+      "answer": "A ketogenic diet is one that severely restricts total carbohydrate intake — typically to below 8% of total energy intake or under 50 g per day — in order to deplete glycogen stores and induce a state of ketosis. With low carbohydrate availability, the liver produces ketone bodies (such as beta-hydroxybutyrate) which serve as an alternative fuel to carbohydrates for organs including the brain and skeletal muscle. This metabolic shift away from glucose oxidation is reflected by a substantially lower respiratory exchange ratio (RER) both at rest and during exercise.",
+      "topic_tags": ["ketogenic diet", "ketosis", "ketone bodies", "beta-hydroxybutyrate", "carbohydrate restriction"]
+    },
+    {
+      "id": "KETO_RCT_easy_003",
+      "difficulty": "easy",
+      "question": "How does carbohydrate restriction affect substrate oxidation as measured by the respiratory exchange ratio?",
+      "answer": "Carbohydrate restriction substantially lowers the respiratory exchange ratio (RER) — the ratio of carbon dioxide produced to oxygen consumed — indicating a metabolic shift from carbohydrate toward fat oxidation. This reduction in RER is observed in the fasted state, postprandial state, and during exercise. The effect is consistent and persists across the full duration of ketogenic carbohydrate restriction, confirming sustained reliance on fat as the primary fuel substrate rather than glucose.",
+      "topic_tags": ["respiratory exchange ratio", "substrate oxidation", "fat oxidation", "carbohydrate restriction", "ketosis"]
+    },
+    {
+      "id": "KETO_RCT_easy_004",
+      "difficulty": "easy",
+      "question": "Do dietary carbohydrate or free-sugar restriction alter physical activity energy expenditure in healthy adults?",
+      "answer": "No. Both free-sugar restriction and ketogenic carbohydrate restriction failed to produce meaningful changes in free-living physical activity energy expenditure (PAEE) compared with a control diet. This held true both in the short term (4 weeks) and longer term (12 weeks), and was consistent across analyses that accounted for dropouts and changes in body mass. Consequently, the reductions in body mass and fat mass observed with both diets were attributed entirely to reduced energy intake rather than compensation through altered energy expenditure.",
+      "topic_tags": ["physical activity energy expenditure", "PAEE", "energy balance", "carbohydrate restriction", "sugar restriction"]
+    },
+    {
+      "id": "KETO_RCT_easy_005",
+      "difficulty": "easy",
+      "question": "What effect does free-sugar restriction have on LDL cholesterol concentrations?",
+      "answer": "Free-sugar restriction reduces LDL cholesterol (LDL-C) concentrations. This reduction is detectable by week 4 and persists through week 12. The decrease in LDL-C accounts for nearly all of the total cholesterol reduction observed with sugar restriction. However, the reduction in LDL-C does not appear to be driven by a lower number of LDL particles, since apolipoprotein B concentrations are not meaningfully altered. Instead, the effect likely reflects reduced cholesterol enrichment of individual LDL particles, probably as a consequence of the energy deficit achieved through sugar restriction.",
+      "topic_tags": ["LDL cholesterol", "LDL-C", "free-sugar restriction", "lipid metabolism", "apolipoprotein B"]
+    },
+
+    {
+      "id": "KETO_RCT_medium_001",
+      "difficulty": "medium",
+      "question": "How does a ketogenic diet affect glucose tolerance and what skeletal muscle mechanisms explain this effect?",
+      "answer": "A ketogenic diet impairs glucose tolerance, evidenced by an exaggerated postprandial glucose response upon reintroduction of carbohydrates during a mixed meal test. Several skeletal muscle mechanisms contribute. First, PDK4 (pyruvate dehydrogenase kinase 4) levels are elevated, suppressing pyruvate dehydrogenase complex activity — a rate-limiting step in glucose metabolism — which shifts metabolism away from glycolysis under conditions of high fatty acid availability. Second, GLUT4, the insulin-sensitive glucose transporter responsible for insulin-stimulated glucose uptake in muscle, is reduced. Third, the insulin receptor and AMPK are also reduced. Together, these changes reduce the capacity for insulin-stimulated postprandial glucose uptake and glycolysis, explaining the observed glucose intolerance. Reduced postprandial lactate concentrations further corroborate diminished glycolytic flux.",
+      "topic_tags": ["glucose tolerance", "insulin resistance", "GLUT4", "PDK4", "AMPK", "skeletal muscle", "ketogenic diet"]
+    },
+    {
+      "id": "KETO_RCT_medium_002",
+      "difficulty": "medium",
+      "question": "What are the divergent effects of a ketogenic diet versus free-sugar restriction on atherogenic lipoprotein profiles?",
+      "answer": "The two diets produce markedly different effects on atherogenic lipoproteins. A ketogenic diet increases apolipoprotein B (apoB) concentrations and fasting triacylglycerol concentrations, alongside increases in particle concentration of all LDL sizes and lipid content across medium VLDLs to small LDLs. Since apoB-containing lipoproteins are considered the causal factor linking lipoproteins to atherosclerotic cardiovascular disease, this suggests the ketogenic diet can increase atherogenic risk despite inducing weight loss. In contrast, free-sugar restriction reduces LDL-C without altering apoB concentrations or LDL particle number, suggesting the reduction is due to reduced cholesterol per particle rather than fewer atherogenic particles. Notably, many of the ketogenic diet's adverse effects on lipoproteins are transient and not apparent by week 12, possibly reflecting metabolic adaptation once energy balance is re-established.",
+      "topic_tags": ["apolipoprotein B", "LDL", "VLDL", "atherogenic lipoproteins", "cardiovascular risk", "ketogenic diet", "sugar restriction"]
+    },
+    {
+      "id": "KETO_RCT_medium_003",
+      "difficulty": "medium",
+      "question": "How does a ketogenic diet alter gut microbiome composition and which bacterial genus shows the most notable change?",
+      "answer": "A ketogenic diet alters gut microbial beta diversity (the between-sample variation in species composition) after 12 weeks, as assessed by nonmetric multidimensional scaling of robust Aitchison distances. The most notable genus-level change is a significant and sustained reduction in the relative abundance of Bifidobacterium, detectable by week 4 and persisting through week 12. Within Bifidobacterium, the species adolescentis shows the largest reduction. The genus Planococcus is also reduced by week 12. These changes are consistent with the substantial reduction in dietary fiber intake on a ketogenic diet (approximately 40% lower than control), since dietary fiber is a key substrate that supports Bifidobacterium survival and activity. In contrast, free-sugar restriction produces no significant changes in gut microbial beta diversity.",
+      "topic_tags": ["gut microbiome", "beta diversity", "Bifidobacterium", "ketogenic diet", "dietary fiber", "microbial composition"]
+    },
+    {
+      "id": "KETO_RCT_medium_004",
+      "difficulty": "medium",
+      "question": "What are the adipose tissue and skeletal muscle adaptations to ketogenic carbohydrate restriction and what do they suggest about fat metabolism?",
+      "answer": "Ketogenic carbohydrate restriction induces coordinated changes in both adipose tissue and skeletal muscle that favor fat mobilization and oxidation. In adipose tissue, lipoprotein lipase (LPL) mRNA increases, suggesting enhanced capacity to clear circulating triglycerides, and adiponectin mRNA decreases. In skeletal muscle, PDK4 protein increases (suppressing glucose oxidation), while AMPK, GLUT4, and PLIN (perilipin 1) all decrease after 12 weeks. Elevated PDK4 under conditions of high fatty acid availability indicates a metabolic shift away from glucose metabolism. The reduction in PLIN may reflect altered lipid droplet regulation in muscle. Collectively, these adaptations indicate that the ketogenic diet remodels peripheral tissue phenotype to prioritize fat as a fuel substrate, while simultaneously reducing the machinery for glucose uptake and utilization.",
+      "topic_tags": ["adipose tissue", "skeletal muscle", "LPL", "PDK4", "GLUT4", "PLIN", "AMPK", "fat oxidation", "ketogenic diet"]
+    },
+    {
+      "id": "KETO_RCT_medium_005",
+      "difficulty": "medium",
+      "question": "How does the time course of cardiometabolic effects of a ketogenic diet differ between early (4-week) and later (12-week) responses, and what accounts for this pattern?",
+      "answer": "Many adverse cardiometabolic effects of a ketogenic diet are prominent at week 4 but diminish or disappear by week 12. At week 4, fasting glucose is reduced, apoB and fasting triacylglycerol are elevated, CRP is increased, and postprandial glycerol and NEFA concentrations are higher. By week 12, differences in fasting glucose, apoB, CRP, and fasting glycerol are no longer meaningful compared with the control group. The pattern reflects a temporal shift in energy balance: during the first 4 weeks, the ketogenic diet creates an energy deficit with active fat loss, increasing lipolysis and fatty acid availability, which elevates hepatic lipid handling and CRP. As energy balance is re-established and weight loss plateaus by weeks 8–12, the lipolytic stimulus diminishes and several markers normalize. Changes in gut microbial beta diversity, altered skeletal muscle proteins, and impaired glucose tolerance, however, persist to week 12.",
+      "topic_tags": ["time course", "energy balance", "cardiometabolic health", "CRP", "apoB", "adaptation", "ketogenic diet"]
+    },
+    {
+      "id": "KETO_RCT_medium_006",
+      "difficulty": "medium",
+      "question": "What role do hormonal and appetite-related signals play in the waning energy deficit observed with carbohydrate and sugar restriction over time?",
+      "answer": "Both free-sugar restriction and the ketogenic diet initially create an energy deficit and reduce fat mass, triggering physiological feedback mechanisms that counter continued weight loss. Leptin concentrations fall with both diets, indicating reduced adipose tissue signaling that would normally promote satiety. The ketogenic diet additionally reduces fasting FGF21 by week 12, a hormone that influences sugar intake and has roles in energy homeostasis. These hormonal changes are consistent with appetite feedback stimulating increased energy intake over time, which reduces the magnitude of the energy deficit. Correspondingly, desire for sweet foods increases with both diets by week 12, suggesting that FGF21 and leptin influence sweet taste sensitivity and cravings. This appetite feedback — rather than any change in energy expenditure — explains why the energy deficit and rate of weight loss diminish after the first 4 weeks of dietary restriction.",
+      "topic_tags": ["leptin", "FGF21", "appetite", "energy balance", "sweet food preference", "weight loss plateau", "homeostasis"]
+    },
+
+    {
+      "id": "KETO_RCT_hard_001",
+      "difficulty": "hard",
+      "question": "Why do the glucose-lowering effects of a ketogenic diet during fasting dissociate from impaired glucose tolerance during postprandial challenges, and what mechanisms account for this paradox?",
+      "answer": "The paradox arises because the mechanisms underlying fasting glycemia reduction and postprandial glucose disposal are distinct and respond differently to ketogenic adaptation. Fasting glucose reduction in early ketogenic dieting may reflect improved hepatic insulin sensitivity and a direct suppressive effect of beta-hydroxybutyrate (bOHB) on endogenous glucose production. However, upon carbohydrate reintroduction at a mixed meal, skeletal muscle fails to adequately clear circulating glucose, resulting in impaired postprandial glucose tolerance. The mechanistic basis includes: elevated PDK4 which suppresses the pyruvate dehydrogenase complex, reducing glycolytic capacity; downregulation of GLUT4, limiting insulin-stimulated glucose uptake; reduced insulin receptor and AMPK levels, impairing insulin signaling; reduced postprandial lactate rise, confirming diminished glycolysis; and reduced muscle glycogen synthesis, suggesting impaired glucose storage. Additionally, fasting glucose normalization by week 12 (despite ongoing ketosis) suggests that hepatic adaptation eventually offsets the initial improvement. This dissociation has important clinical implications: reductions in fasting glucose on a ketogenic diet may mask underlying impairments in whole-body glucose disposal capacity.",
+      "topic_tags": ["glucose tolerance", "fasting glucose", "postprandial glycemia", "hepatic insulin sensitivity", "GLUT4", "PDK4", "bOHB", "glycolysis", "paradox"]
+    },
+    {
+      "id": "KETO_RCT_hard_002",
+      "difficulty": "hard",
+      "question": "How does the relationship between dietary fiber, gut microbiome, and circulating short-chain fatty acids change with ketogenic carbohydrate restriction, and what are the limitations in interpreting causal relationships?",
+      "answer": "Ketogenic carbohydrate restriction reduces dietary fiber intake by approximately 40% compared with control. Dietary fiber is the primary substrate for colonic fermentation by microorganisms including Bifidobacterium. Consistently, the ketogenic diet significantly reduces Bifidobacterium abundance by week 4, sustained at week 12, alongside alterations in gut microbial beta diversity. Despite these compositional changes, circulating plasma SCFA concentrations (acetate, butyrate) are not meaningfully altered, with only a transient reduction in propionate at week 4. Microbial metabolic pathway abundances also show altered beta diversity, with some biosynthetic pathways increased and degradation pathways decreased, but no single pathway reaches significance with correction. Several limitations complicate causal interpretation: the study cannot establish whether changes in SCFA production were absorbed or metabolized before reaching systemic circulation, since hepatic and splanchnic uptake of SCFAs could mask production changes; the biological significance of reduced Bifidobacterium (including potential contributions to the altered lipoprotein profile) cannot be definitively established from microbiome composition data alone; and it cannot be determined whether microbiome changes drive metabolic adaptations or vice versa.",
+      "topic_tags": ["dietary fiber", "Bifidobacterium", "short-chain fatty acids", "SCFA", "gut microbiome", "propionate", "hepatic uptake", "causality"]
+    },
+    {
+      "id": "KETO_RCT_hard_003",
+      "difficulty": "hard",
+      "question": "How does the objective intake-balance method for estimating energy intake compare with self-report methods for detecting the effect of carbohydrate and sugar restriction, and what are the methodological implications?",
+      "answer": "The objective intake-balance method (which rearranges the energy balance equation using DXA-derived changes in fat mass and fat-free mass, combined with measured energy expenditure) improves both the magnitude and sensitivity of detecting dietary effects on energy intake compared with self-report food diaries. For free-sugar restriction, the objective method estimated a reduction in energy intake equivalent to approximately 17 kcal per day per 1% energy reduction in free sugars — slightly larger than the 14 kcal per day figure derived from meta-regression of self-report data. This suggests that self-report methods systematically underestimate the relationship between free sugar intake and total energy intake, possibly due to reporting fatigue and increasing diary error over time. This has important policy implications: current targets for free-sugar intake may be more beneficial than population-level self-report data suggest. Methodological limitations include: the objective method relies on DXA accurately capturing changes in body energy stores; fluid shifts and liver glycogen changes can affect short-term FFM estimates from DXA; and over the time frames studied (>21 days), these errors are minimized. The directional agreement between self-report and objective methods supports overall study validity despite differences in sensitivity.",
+      "topic_tags": ["energy intake measurement", "self-report bias", "intake-balance method", "DXA", "sugar restriction policy", "dietary assessment methodology"]
+    },
+    {
+      "id": "KETO_RCT_hard_004",
+      "difficulty": "hard",
+      "question": "What do the divergent cardiometabolic outcomes between ketogenic carbohydrate restriction and free-sugar restriction — despite both achieving comparable fat mass loss — reveal about the relationship between weight loss and metabolic health?",
+      "answer": "The comparison reveals that fat mass loss per se does not guarantee equivalent cardiometabolic benefit, and that the macronutrient composition of the diet independently modulates metabolic outcomes beyond what weight loss alone would predict. Both diets achieve comparable reductions in fat mass over 12 weeks through reduced energy intake, yet their cardiometabolic signatures diverge markedly. Free-sugar restriction produces a metabolically favorable profile: reduced LDL-C, reduced fasting glucose, increased muscle glycogen, reduced glycoprotein acetyls (a marker of systemic inflammation and cardiovascular risk), and no meaningful disruption of the gut microbiome or peripheral tissue insulin sensitivity. The ketogenic diet, despite equivalent fat loss, transiently increases atherogenic lipoproteins (elevated apoB, LDL particle number, small LDL lipid content), impairs glucose tolerance through skeletal muscle adaptations (reduced GLUT4, INSR, AMPK; elevated PDK4), alters gut microbial composition, and decreases muscle glycogen. These findings challenge the assumption that body composition improvement is sufficient to assess dietary quality for cardiometabolic health. The data suggest that free-sugar restriction may be a more appropriate dietary strategy for overall cardiometabolic health for most healthy adults, whereas the ketogenic diet's benefits may not outweigh its metabolic trade-offs in this population.",
+      "topic_tags": ["fat mass loss", "cardiometabolic health", "insulin resistance", "LDL", "muscle glycogen", "ketogenic diet", "dietary quality", "weight loss paradox"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "KETO_RCT_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "What is the primary mechanism by which both free-sugar restriction and ketogenic carbohydrate restriction reduce body fat mass?",
+      "options": {
+        "A": "Increased physical activity energy expenditure due to altered substrate availability",
+        "B": "Reduced resting metabolic rate leading to greater fat utilization",
+        "C": "Reduced energy intake without meaningful changes in energy expenditure",
+        "D": "Increased fat oxidation independent of energy balance"
+      },
+      "correct_answer": "C",
+      "explanation": "Neither diet meaningfully alters physical activity energy expenditure or resting metabolic rate. Fat mass loss is explained entirely by reduced energy intake — confirmed by both self-report and objective intake-balance methods — in the absence of any compensatory decrease in energy expenditure.",
+      "topic_tags": ["energy balance", "fat mass", "energy intake", "energy expenditure"]
+    },
+    {
+      "id": "KETO_RCT_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "Which dietary intervention is associated with a significant reduction in gut microbial beta diversity in healthy adults over 12 weeks?",
+      "options": {
+        "A": "Free-sugar restriction only",
+        "B": "Both free-sugar restriction and ketogenic carbohydrate restriction",
+        "C": "Ketogenic carbohydrate restriction only",
+        "D": "Neither dietary intervention"
+      },
+      "correct_answer": "C",
+      "explanation": "Only the ketogenic diet (LOWCHO) alters gut microbial beta diversity, detected at week 12. Free-sugar restriction produces no significant changes in microbial beta diversity at either week 4 or week 12.",
+      "topic_tags": ["gut microbiome", "beta diversity", "ketogenic diet", "sugar restriction"]
+    },
+    {
+      "id": "KETO_RCT_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "How does muscle glycogen respond differently between free-sugar restriction and ketogenic carbohydrate restriction?",
+      "options": {
+        "A": "Both diets reduce muscle glycogen due to reduced carbohydrate availability",
+        "B": "Free-sugar restriction increases muscle glycogen, while the ketogenic diet does not meaningfully alter it",
+        "C": "The ketogenic diet increases muscle glycogen through enhanced fat oxidation",
+        "D": "Free-sugar restriction has no effect on muscle glycogen; the ketogenic diet reduces it"
+      },
+      "correct_answer": "B",
+      "explanation": "Free-sugar restriction increases skeletal muscle glycogen concentrations at both week 4 and week 12, likely reflecting improved insulin sensitivity and glucose storage with weight loss. In contrast, ketogenic carbohydrate restriction does not meaningfully alter muscle glycogen at either time point.",
+      "topic_tags": ["muscle glycogen", "ketogenic diet", "sugar restriction", "carbohydrate metabolism"]
+    },
+
+    {
+      "id": "KETO_RCT_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "What is the best mechanistic explanation for why the ketogenic diet increases postprandial glucose concentrations despite reducing fasting glucose?",
+      "options": {
+        "A": "The ketogenic diet increases hepatic glucose production postprandially via gluconeogenesis from ketone bodies",
+        "B": "Ketogenic adaptation reduces skeletal muscle GLUT4, insulin receptor, and AMPK while elevating PDK4, impairing insulin-stimulated glucose uptake and glycolysis",
+        "C": "Beta-hydroxybutyrate competitively inhibits glucose transport across intestinal epithelium, reducing absorption rates",
+        "D": "Reduced insulin secretion on a ketogenic diet limits postprandial glucose clearance"
+      },
+      "correct_answer": "B",
+      "explanation": "Skeletal muscle adaptations to the ketogenic diet — elevated PDK4 (suppressing pyruvate dehydrogenase and glycolysis), reduced GLUT4 (limiting glucose uptake), reduced insulin receptor and AMPK — collectively impair insulin-stimulated postprandial glucose disposal. This is consistent with reduced postprandial lactate, indicating less glycolysis, and explains why postprandial but not fasting glycemia is impaired.",
+      "topic_tags": ["glucose tolerance", "GLUT4", "PDK4", "AMPK", "skeletal muscle", "insulin resistance"]
+    },
+    {
+      "id": "KETO_RCT_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "Why does apolipoprotein B (apoB) serve as a more important cardiovascular risk marker than LDL cholesterol concentration in evaluating a ketogenic diet?",
+      "options": {
+        "A": "ApoB reflects HDL particle clearance capacity, which is more predictive of plaque formation",
+        "B": "ApoB directly measures cholesterol oxidation rates in arterial endothelium",
+        "C": "ApoB quantifies the number of atherogenic lipoprotein particles, which is the causal factor in atherosclerotic cardiovascular disease rather than the cholesterol content per particle",
+        "D": "ApoB is a more stable biomarker than LDL-C because it is unaffected by energy intake"
+      },
+      "correct_answer": "C",
+      "explanation": "The number of apoB-containing lipoprotein particles is considered the causal link to atherosclerotic cardiovascular disease. A ketogenic diet increases apoB concentrations (indicating more atherogenic particles) even when total LDL-C is not significantly elevated, making apoB the more informative marker for cardiovascular risk in this dietary context.",
+      "topic_tags": ["apolipoprotein B", "LDL cholesterol", "cardiovascular risk", "atherogenic lipoproteins"]
+    },
+    {
+      "id": "KETO_RCT_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "What is the likely reason that Bifidobacterium abundance declines with a ketogenic diet?",
+      "options": {
+        "A": "Ketone bodies directly inhibit Bifidobacterium growth through antimicrobial effects",
+        "B": "Reduced dietary fiber intake on the ketogenic diet deprives Bifidobacterium of its primary fermentation substrate",
+        "C": "Increased fat intake alters colonic pH, creating an unfavorable environment for Bifidobacterium",
+        "D": "Elevated beta-hydroxybutyrate suppresses mucosal IgA, removing immune support for Bifidobacterium colonization"
+      },
+      "correct_answer": "B",
+      "explanation": "Dietary fiber is a key substrate supporting the survival and activity of Bifidobacterium in the gut. The ketogenic diet reduces fiber intake by approximately 40% compared with a moderate-sugar control diet. This deprivation of fermentable fiber substrates explains the significant reduction in Bifidobacterium abundance observed from week 4 onward.",
+      "topic_tags": ["Bifidobacterium", "dietary fiber", "gut microbiome", "ketogenic diet"]
+    },
+    {
+      "id": "KETO_RCT_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "What explains the transient nature of early ketogenic diet-induced increases in CRP and apoB, which diminish by week 12?",
+      "options": {
+        "A": "The gut microbiome adapts by reducing endotoxin production, lowering hepatic inflammatory signaling",
+        "B": "Re-establishment of energy balance by weeks 8–12 reduces lipolytic drive and fatty acid availability to the liver, removing the stimulus for elevated hepatic lipid handling and inflammatory protein production",
+        "C": "Skeletal muscle becomes the primary lipid sink by week 12, diverting fatty acids away from hepatic processing",
+        "D": "Ketone body production inhibits NF-κB signaling in hepatocytes after 8 weeks, suppressing CRP synthesis"
+      },
+      "correct_answer": "B",
+      "explanation": "CRP is primarily produced by the liver and linked to hepatic fatty acid status. During the initial weeks of the ketogenic diet, the combined energy deficit and high fat intake elevate lipolysis and fatty acid availability, increasing hepatic lipid handling and CRP production. As weight loss plateaus and energy balance is re-established, fasting and postprandial glycerol concentrations normalize, reducing the hepatic lipid load and thus CRP.",
+      "topic_tags": ["CRP", "apoB", "energy balance", "hepatic fatty acid", "lipolysis", "time course"]
+    },
+    {
+      "id": "KETO_RCT_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What does the finding that serum short-chain fatty acid concentrations are largely unchanged despite significant gut microbial compositional changes on a ketogenic diet suggest?",
+      "options": {
+        "A": "Gut microbial composition changes on a ketogenic diet are not biologically meaningful",
+        "B": "Systemic SCFA levels are regulated primarily by diet rather than microbial production",
+        "C": "Hepatic and splanchnic extraction of SCFAs may mask production changes, and circulating concentrations do not reliably reflect colonic production",
+        "D": "Bifidobacterium is not a significant SCFA producer, so its reduction would not affect circulating levels"
+      },
+      "correct_answer": "C",
+      "explanation": "SCFAs produced in the colon are largely absorbed and extracted by the portal circulation before reaching systemic blood. Hepatic and splanchnic uptake can substantially attenuate circulating SCFA concentrations even if production is altered. Therefore, unchanged circulating SCFAs do not rule out altered colonic production and do not allow conclusions about the functional significance of microbiome compositional changes.",
+      "topic_tags": ["SCFA", "short-chain fatty acids", "gut microbiome", "hepatic extraction", "circulating biomarkers"]
+    },
+
+    {
+      "id": "KETO_RCT_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "A patient loses the same amount of body fat over 12 weeks on either a free-sugar-restricted diet or a ketogenic diet. Based on the metabolic evidence, which profile would most clearly distinguish a patient on the ketogenic diet from one on the sugar-restricted diet?",
+      "options": {
+        "A": "Lower fasting LDL cholesterol, reduced appetite for sweet foods, and higher muscle glycogen",
+        "B": "Higher apolipoprotein B, impaired postprandial glucose tolerance, reduced Bifidobacterium abundance, and lower skeletal muscle GLUT4 content",
+        "C": "Greater reduction in CRP and glycoprotein acetyls at 12 weeks, alongside higher circulating beta-hydroxybutyrate",
+        "D": "Higher resting metabolic rate, preserved insulin secretion, and increased postprandial GLP-1 response"
+      },
+      "correct_answer": "B",
+      "explanation": "Despite equivalent fat mass loss, the ketogenic diet uniquely produces higher apoB (atherogenic lipoprotein particles), impaired postprandial glucose tolerance (exaggerated glucose response), significant reduction in Bifidobacterium, and reduced skeletal muscle GLUT4, INSR, and AMPK — none of which are seen with sugar restriction. CRP elevation is transient and not apparent at 12 weeks, and bOHB would be elevated during ketosis but does not distinguish sustained metabolic risk. The combination of atherogenic lipoprotein and glucose intolerance markers uniquely characterizes the ketogenic profile.",
+      "topic_tags": ["clinical differentiation", "apolipoprotein B", "glucose tolerance", "GLUT4", "Bifidobacterium", "ketogenic vs sugar restriction"]
+    },
+    {
+      "id": "KETO_RCT_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "Why does the reduction in self-reported energy intake with free-sugar restriction underestimate the true reduction in energy intake compared with the objective intake-balance method, and what are the broader implications for dietary policy?",
+      "options": {
+        "A": "Self-report diaries overcount energy from fiber and protein, inflating total estimates and masking the true reduction",
+        "B": "Participants increase compensatory snacking that is not captured in structured food diaries, artificially raising reported intake relative to objective calculations",
+        "C": "Reporting fatigue and increasing error in self-report measures over time lead to underestimation of the relationship between sugar restriction and energy reduction, meaning the true dose-response effect per percentage energy of free sugars reduced is larger than currently assumed in dietary guidelines",
+        "D": "The objective method fails to account for changes in metabolic efficiency under sugar restriction, underestimating energy expenditure and therefore overestimating the dietary-induced deficit"
+      },
+      "correct_answer": "C",
+      "explanation": "The objective intake-balance method estimated a reduction of approximately 17 kcal per day per 1% energy reduction in free sugars, compared with the 14 kcal per day figure from self-report meta-regression. This discrepancy likely reflects increasing reporting error and fatigue over time in food diaries. The implication is that the true energy-reducing effect of free-sugar restriction may be larger than current policy evidence suggests, potentially supporting more ambitious public health targets for free-sugar reduction.",
+      "topic_tags": ["self-report bias", "energy intake measurement", "dietary assessment", "sugar policy", "intake-balance method"]
+    }
+  ]
+}

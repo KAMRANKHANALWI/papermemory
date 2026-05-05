@@ -1,0 +1,263 @@
+{
+  "metadata": {
+    "source_paper": "Integration of 168,000 samples reveals global patterns of the human gut microbiome",
+    "authors": ["Richard J. Abdill", "Samantha P. Graham", "Vincent Rubinetti", "Mansooreh Ahmadian", "Parker Hicks", "Ashwin Chetty", "Daniel McDonald", "Pamela Ferretti", "Elizabeth Gibbons", "Marco Rossi", "Arjun Krishnan", "Frank W. Albert", "Casey S. Greene", "Sean Davis", "Ran Blekhman"],
+    "journal": "Cell",
+    "year": 2025,
+    "doi": "10.1016/j.cell.2024.12.017",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "gutcomp78_easy_001",
+      "difficulty": "easy",
+      "question": "What is a microbiome compendium and why is it useful for gut microbiome research?",
+      "answer": "A microbiome compendium is a large, uniformly processed collection of publicly available microbiome sequencing samples integrated from many independent studies into a single dataset. It is useful because important biological patterns in complex environments like the human gut may only become apparent after analyzing thousands of samples — far beyond what any single study can provide. By reprocessing all samples with a uniform pipeline, a compendium eliminates inconsistencies introduced by different analytical workflows, enabling researchers to make valid cross-study comparisons, apply machine learning tools, quantify global variation, and identify gaps in current knowledge.",
+      "topic_tags": ["microbiome compendium", "large-scale integration", "uniform pipeline", "16S rRNA", "gut microbiome research"]
+    },
+    {
+      "id": "gutcomp78_easy_002",
+      "difficulty": "easy",
+      "question": "What is 16S rRNA gene amplicon sequencing and why is it commonly used to study gut microbiome composition?",
+      "answer": "16S rRNA gene amplicon sequencing is a method that targets and amplifies specific hypervariable regions of the 16S ribosomal RNA gene — a gene present in all bacteria and archaea. Because this gene contains both highly conserved regions (used for primer binding) and variable regions (used for taxonomic identification), it allows researchers to identify which microbial taxa are present in a sample without needing to sequence the entire genomes of all organisms. It is widely used to study gut microbiome composition because it is cost-effective, scalable, and generates taxonomic profiles at relatively high throughput. In many world regions, it is the only type of human gut microbiome sequencing available at any practical scale.",
+      "topic_tags": ["16S rRNA", "amplicon sequencing", "hypervariable regions", "taxonomic profiling", "microbiome methodology"]
+    },
+    {
+      "id": "gutcomp78_easy_003",
+      "difficulty": "easy",
+      "question": "What does alpha diversity measure in microbiome studies, and how is it quantified?",
+      "answer": "Alpha diversity measures the taxonomic richness or diversity within a single microbiome sample — that is, how many different microbial taxa are present and how evenly they are distributed within that one community. It is a within-sample measure. A commonly used metric is the Shannon diversity index, which accounts for both species richness (number of distinct taxa) and evenness (how uniformly reads are distributed across taxa). Higher Shannon index values indicate a more diverse and even community. Another metric is Faith's Phylogenetic Diversity, which measures the total branch length of the phylogenetic tree spanned by the taxa found in a sample, capturing evolutionary breadth rather than just species counts.",
+      "topic_tags": ["alpha diversity", "Shannon diversity", "Faith's Phylogenetic Diversity", "species richness", "microbiome metrics"]
+    },
+    {
+      "id": "gutcomp78_easy_004",
+      "difficulty": "easy",
+      "question": "Which bacterial phylum is the most prevalent in the human gut microbiome, and what general pattern do the top phyla follow?",
+      "answer": "The Bacillota phylum (formerly known as Firmicutes) is by far the most prevalent in the human gut microbiome, found in the vast majority of samples across global datasets. It is followed by Pseudomonadota (formerly Proteobacteria), Actinomycetota (formerly Actinobacteria), and Bacteroidota (formerly Bacteroidetes). After these top four phyla, there is a sharp drop-off in prevalence for others such as Desulfobacterota and Verrucomicrobiota. The Bacillota phylum is dominant not only at the phylum level but also contains the majority of the most prevalent classes and orders detected in gut microbiome samples globally.",
+      "topic_tags": ["Bacillota", "Firmicutes", "dominant phyla", "gut microbiome composition", "Bacteroidota"]
+    },
+    {
+      "id": "gutcomp78_easy_005",
+      "difficulty": "easy",
+      "question": "What is beta diversity in microbiome research, and how is it used to compare microbiomes between groups?",
+      "answer": "Beta diversity is a measure of the difference or dissimilarity in microbial community composition between two or more samples. Unlike alpha diversity, which characterizes a single sample, beta diversity is a between-sample measure. It is used to compare microbiomes across groups such as different geographic regions, disease states, or treatment conditions. A common approach is to calculate a pairwise distance matrix using metrics such as the robust Aitchison distance and then visualize the results using principal coordinates analysis (PCoA) or multidimensional scaling (MDS). Samples that cluster closely in these plots share similar community compositions, while those far apart differ substantially. Statistical methods such as PERMANOVA can then test whether group membership significantly explains the observed variation in beta diversity.",
+      "topic_tags": ["beta diversity", "Aitchison distance", "PCoA", "PERMANOVA", "microbiome comparison"]
+    },
+    {
+      "id": "gutcomp78_medium_001",
+      "difficulty": "medium",
+      "question": "How do technical factors such as DNA extraction method and primer choice affect observed gut microbiome composition, and why does this complicate cross-study comparisons?",
+      "answer": "Technical factors can substantially alter the observed microbiome composition independently of true biological differences. DNA extraction method matters because kits that include a bead-beating (mechanical lysis) step — in which small beads physically disrupt bacterial cells — can significantly increase the observed number of taxa and the relative abundance of gram-positive microbes such as Bifidobacterium and Blautia compared to purely enzymatic extraction methods. Primer (amplicon) choice also affects results because different hypervariable regions of the 16S rRNA gene are amplified with different efficiencies across taxa: for example, Akkermansia shows higher relative abundance when the V4 region is used, and Enterobacter abundance differs depending on whether V3-V4 or V4 amplicons are used. These technical biases can masquerade as biological signals, making it difficult to distinguish genuine biological differences between studies from artifacts of methodology. Large compendia can partially address this by including technical factors as covariates in statistical models, but a broad amount of variation remains unexplained even after controlling for known technical effects.",
+      "topic_tags": ["bead-beating", "DNA extraction", "amplicon choice", "hypervariable regions", "batch effects", "technical bias"]
+    },
+    {
+      "id": "gutcomp78_medium_002",
+      "difficulty": "medium",
+      "question": "How does geographic region shape human gut microbiome composition, and what are the key differences observed between western and non-western populations?",
+      "answer": "Geographic region is one of the strongest drivers of gut microbiome variation, reflecting differences in diet, antibiotic use, lifestyle, and cultural practices. Western populations (Europe and Northern America) tend to harbor much higher relative abundances of Bacteroides, with more than 20% of samples containing at least 30% Bacteroides by relative abundance. In contrast, Sub-Saharan Africa, Latin America and the Caribbean, and Central and Southern Asia show far lower Bacteroides prevalence. Conversely, Prevotella — commonly associated with non-western microbiomes and positive health outcomes — is significantly more abundant outside of Europe and Northern America: over 59% of Sub-Saharan African samples contain more than 1% Prevotella, compared to only 17.5% of European and North American samples. Central and Southern Asia is notable for higher relative abundances of Actinomycetota and correspondingly lower Bacteroides. Each world region also occupies a statistically distinct position in ordination space, and machine learning classifiers can predict a sample's region of origin from its microbiome composition alone.",
+      "topic_tags": ["geographic variation", "Bacteroides", "Prevotella", "western microbiome", "regional differences", "beta diversity"]
+    },
+    {
+      "id": "gutcomp78_medium_003",
+      "difficulty": "medium",
+      "question": "What is rarefaction analysis and how is it used to assess the completeness of microbiome sampling in a given region or dataset?",
+      "answer": "Rarefaction analysis is a method for estimating how many unique taxa (species or higher-level groups) would be discovered as more samples are collected, by repeatedly subsampling the dataset at increasing sizes and recording the number of unique taxa identified at each step. The resulting rarefaction curve plots sample count against unique taxa observed. A curve that flattens — approaching a plateau — suggests that most taxa present in that community have already been detected and that additional sampling would yield few new discoveries. Conversely, a curve that continues to rise steeply indicates that sampling is incomplete and many taxa remain undiscovered. In large-scale compendium analyses, this approach reveals that well-sampled regions like Europe and Northern America show near-saturation (fewer than one new genus per several thousand samples), while understudied regions like Northern Africa and Western Asia or Latin America continue to yield many new taxa per million reads even after all available samples are exhausted — indicating significant gaps in global microbiome coverage.",
+      "topic_tags": ["rarefaction analysis", "taxon discovery rate", "sampling completeness", "global microbiome gaps", "species richness estimation"]
+    },
+    {
+      "id": "gutcomp78_medium_004",
+      "difficulty": "medium",
+      "question": "What are the implications of reference database bias for microbiome research conducted outside of Europe and North America?",
+      "answer": "Reference databases used for taxonomic assignment in 16S rRNA sequencing studies are known to be biased toward taxa found in western, high-income populations. This creates several problems for research conducted in understudied regions. First, sequences from novel or regionally specific taxa may not match any entry in the reference database, causing those reads to be classified as 'unassigned' at one or more taxonomic levels. This inflates the number of unidentified taxa and artificially deflates diversity estimates in samples from those regions — Latin America and the Caribbean, for instance, shows the highest number of unidentified taxa at every taxonomic level. Second, because diversity estimates are underestimated, health associations derived from studies in one region may not translate accurately to other populations. In regions where samples show high alpha diversity alongside many unidentified taxa, the true biological complexity of the microbiome is systematically underrepresented, limiting the generalizability of microbiome-based disease biomarkers or clinical thresholds established in western cohorts.",
+      "topic_tags": ["reference database bias", "taxonomic assignment", "unidentified taxa", "global diversity", "health equity", "microbiome generalizability"]
+    },
+    {
+      "id": "gutcomp78_medium_005",
+      "difficulty": "medium",
+      "question": "How can machine learning classifiers be trained on microbiome composition data to predict geographic origin, and what does their success reveal about gut microbiome structure?",
+      "answer": "Random forest classifiers can be trained on the relative abundances of microbial taxa from labeled microbiome samples to predict which geographic region a given sample originated from. In a one-versus-all classification framework, each model is trained to distinguish samples from one region against all others. The success of these classifiers — reflected in high area under the receiver operating characteristic (AUC) curve values — demonstrates that geographic regions harbor compositionally distinct microbiome signatures that are strong enough to be detectable from a single sample's taxonomic profile alone. The best-performing classifier in large compendium analyses achieves AUC values near 0.94 (for Australia/New Zealand), while the lowest is still well above chance (0.80 for Europe and Northern America). These classifiers rely on fewer than 100 taxa per model, and the taxa with the greatest predictive importance overlap substantially with those identified as differentially abundant between regions, confirming a biological basis for the classification. This success also underscores that world regions contain unique microbial signatures shaped by diet, lifestyle, genetics, and environment.",
+      "topic_tags": ["random forest", "machine learning classification", "geographic prediction", "AUC", "region-specific signatures", "differential abundance"]
+    },
+    {
+      "id": "gutcomp78_medium_006",
+      "difficulty": "medium",
+      "question": "What are core taxa in the context of global gut microbiome variation, and which genera have been identified as most universally informative across world regions?",
+      "answer": "Core taxa in the context of global gut microbiome variation refer not necessarily to the most prevalent or abundant genera, but to those whose relative abundances vary most widely and most consistently across all world regions — making them the taxa most useful for explaining global compositional differences. These taxa appear in the top variance-explaining genera for every world region when principal component analysis is applied region by region. Six genera have been identified as universally informative across all studied regions: Bifidobacterium, Bacteroides, Prevotella, Streptococcus, Veillonella, and Escherichia/Shigella. These genera also correspond to the core taxa of the 'enterosignatures' — functional guilds that together describe healthy human microbiomes across diverse populations. In contrast, some genera are regionally specific: for instance, Megamonas is a top-variance taxon only in Eastern and South-Eastern Asia, and Dialister only in Northern Africa and Western Asia.",
+      "topic_tags": ["core taxa", "global variation", "variance score", "enterosignatures", "Prevotella", "Bacteroides", "Bifidobacterium"]
+    },
+    {
+      "id": "gutcomp78_hard_001",
+      "difficulty": "hard",
+      "question": "How does the interplay between geographic region, amplicon choice, and bead-beating interact to influence microbiome composition, and why is disentangling these effects methodologically challenging?",
+      "answer": "Geographic region, amplicon choice, and bead-beating are three distinct sources of variation in gut microbiome studies, but they interact in ways that make it difficult to isolate their individual contributions. PERMANOVA analysis demonstrates that world region has a stronger independent effect on microbiome composition (R² = 0.026) than amplicon choice (R² = 0.009) or bead-beating (R² = 0.004). However, the interaction term between world region and amplicon choice (R² = 0.010) exceeds the effect of amplicon choice alone — meaning that the same amplicon can produce systematically different compositional biases depending on which regional microbiota it is applied to. Bead-beating, while a technical factor, has an effect size on alpha diversity (estimated Cohen's f ≈ 0.218) that rivals the effect of world region (Cohen's f = 0.237), making it one of the largest known technical confounders. Critically, all evaluated factors together explain far less than 1.0 of the total variance, indicating that even after accounting for geography and methodology, most microbiome variation remains unexplained. Disentangling these effects requires large multi-project compendia where each factor is independently varied across many batches, since in smaller single-study datasets technical and biological variation are confounded within the same project.",
+      "topic_tags": ["PERMANOVA", "amplicon-region interaction", "bead-beating effect size", "confounding factors", "microbiome variance", "methodological challenge"]
+    },
+    {
+      "id": "gutcomp78_hard_002",
+      "difficulty": "hard",
+      "question": "What does the differential distribution of microbial co-abundance networks between western and non-western populations suggest about the generalizability of microbiome findings, and how should this inform study design?",
+      "answer": "Microbial co-abundance networks — which map statistically significant pairwise correlations between taxa — differ markedly between samples from Europe and Northern America and those from the rest of the world. Sixteen significant pairwise correlations are unique to the western population, while 22 significant correlations (involving 23 taxa) are found only outside of Europe and Northern America. This means that associations between specific microbial genera — whether positive or negative — do not consistently generalize across populations. For example, a correlation between two taxa observed in a European cohort may be absent or even reversed in a South Asian or Sub-Saharan African cohort. This has direct implications for microbiome-based biomarker development and clinical translation: a bacterial interaction or co-exclusion pattern used to predict disease in one region may be uninformative or misleading in another. Study designs that recruit participants only from well-sampled western populations therefore risk producing false generalizations about universal gut microbiome ecology. To address this, researchers should prioritize multi-regional datasets, validate findings in diverse cohorts, and recognize that taxa with strong variance scores in one region — such as Lactobacillus in Europe and Northern America — may have near-zero variance scores in others, rendering region-specific models incompatible.",
+      "topic_tags": ["co-abundance networks", "SparCC", "generalizability", "population diversity", "biomarker translation", "study design"]
+    },
+    {
+      "id": "gutcomp78_hard_003",
+      "difficulty": "hard",
+      "question": "How does the uneven global distribution of microbiome sampling affect our understanding of gut microbiome diversity, and what are the quantitative consequences of this sampling bias?",
+      "answer": "The vast majority of publicly available gut microbiome samples come from Europe and Northern America, leaving the rest of the world dramatically undersampled relative to population size. This sampling imbalance has several quantitative consequences. First, the taxon discovery rate in over-sampled regions approaches zero rapidly, meaning that additional samples from those regions provide diminishing returns: Europe and Northern America falls below one new taxon per million reads after approximately 30,000 samples. In contrast, understudied regions continue to yield many new taxa even when all available samples have been exhausted — Northern Africa and Western Asia still averages over 8 new taxa per million reads, and Latin America averages over 3. Second, Eastern and South-Eastern Asia contains more unique taxa (3,662 of 4,018 detected) than any other region despite having far fewer samples than Europe and Northern America, suggesting that microbiome diversity there remains substantially undercaptured. Third, when phylogenetic diversity is considered, adding Eastern and South-Eastern Asian taxa to the European baseline increases total phylogenetic branch length by 68.6%, revealing that even regions with apparently similar alpha diversity may harbor taxa from entirely different evolutionary clades. These patterns collectively mean that health associations, disease models, and reference ranges established from predominantly western cohorts may systematically fail to represent the majority of the world's population.",
+      "topic_tags": ["sampling bias", "taxon discovery rate", "phylogenetic diversity", "Faith's PD", "global underrepresentation", "data equity"]
+    },
+    {
+      "id": "gutcomp78_hard_004",
+      "difficulty": "hard",
+      "question": "What are the methodological trade-offs involved in applying a uniform pipeline to integrate gut microbiome samples collected across hundreds of independent studies, and how do large-scale compendia handle batch effects?",
+      "answer": "Integrating hundreds of independent microbiome studies into a single compendium introduces several methodological trade-offs. On the benefit side, uniform reprocessing — applying the same bioinformatics pipeline (e.g., DADA2 with a consistent reference like SILVA v138) to all raw sequencing data — removes variability introduced by different software versions, parameter choices, and taxonomic reference databases, enabling valid cross-study comparisons. However, batch effects — systematic technical differences between studies arising from sample collection, preservation, extraction kit, sequencing platform, and amplicon choice — cannot be fully eliminated by uniform reprocessing alone. In large compendia, the standard approach is to treat BioProject (study) as a random effect in statistical models rather than applying explicit batch correction. The rationale is that when the number of batches is very large (hundreds of studies), the legitimate biological signal, which is consistent across studies, becomes statistically dominant over the study-specific technical noise, which is random and inconsistent. Studies using 12 or fewer batches find that batch correction is often necessary, but with 482 projects, the disparate project-level effects are effectively diluted. An additional challenge is that some confounders (host health status, diet, ethnicity) are inconsistently recorded in public databases, making it impossible to fully separate compositional variation due to technical artifacts from that reflecting true biological differences. This is why large compendium analyses are better suited to identifying broad population-level patterns than to precise clinical inference.",
+      "topic_tags": ["batch effects", "uniform pipeline", "DADA2", "random effects model", "meta-analysis methodology", "technical confounders"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "gutcomp78_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which of the following best describes the purpose of processing all samples with a uniform bioinformatics pipeline in a large microbiome compendium?",
+      "options": {
+        "A": "To reduce sequencing costs by reusing existing computational infrastructure",
+        "B": "To remove variability introduced by different analytical workflows and enable valid cross-study comparisons",
+        "C": "To increase the total number of reads per sample by merging data from multiple projects",
+        "D": "To ensure that only samples from high-income countries are included in downstream analyses"
+      },
+      "correct_answer": "B",
+      "explanation": "A uniform pipeline ensures all samples are processed with the same software, parameters, and reference database, eliminating analytical inconsistencies that would otherwise make cross-study comparisons invalid. Without uniform processing, observed differences between studies might reflect methodological variation rather than true biological differences.",
+      "topic_tags": ["uniform pipeline", "bioinformatics", "cross-study comparison", "compendium methodology"]
+    },
+    {
+      "id": "gutcomp78_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What does a sample-based rarefaction curve that approaches a plateau indicate about the microbiome sampling of that population?",
+      "options": {
+        "A": "The population harbors very low microbial diversity",
+        "B": "Most taxa present in the community have already been detected and additional sampling would add few new discoveries",
+        "C": "The reference database is too small to classify remaining sequences",
+        "D": "The sequencing depth per sample is insufficient for reliable taxonomic assignment"
+      },
+      "correct_answer": "B",
+      "explanation": "A rarefaction curve plateau indicates that the taxon discovery rate has approached zero — nearly all taxa present in the sampled community are already represented in the dataset. This is observed for well-sampled regions where further sampling provides minimal new information about community composition.",
+      "topic_tags": ["rarefaction", "sampling saturation", "taxon discovery", "species richness"]
+    },
+    {
+      "id": "gutcomp78_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "Which world region consistently shows the highest relative abundance of Prevotella compared to Europe and Northern America?",
+      "options": {
+        "A": "Australia and New Zealand",
+        "B": "Central and Southern Asia",
+        "C": "Sub-Saharan Africa",
+        "D": "Northern Africa and Western Asia"
+      },
+      "correct_answer": "C",
+      "explanation": "Sub-Saharan Africa shows significantly higher Prevotella abundance than Europe and Northern America — 63% of Sub-Saharan African samples contain more than 1% Prevotella, compared to only 17.5% of samples from Europe and Northern America. Prevotella is commonly associated with non-western, plant-rich dietary patterns.",
+      "topic_tags": ["Prevotella", "Sub-Saharan Africa", "regional microbiome", "differential abundance"]
+    },
+    {
+      "id": "gutcomp78_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "In PERMANOVA analysis of microbiome variation, the interaction term between world region and amplicon choice has a larger R² than amplicon choice evaluated alone. What does this finding imply?",
+      "options": {
+        "A": "World region and amplicon choice have no meaningful biological interaction",
+        "B": "Amplicon choice has no effect on microbiome composition",
+        "C": "The influence of amplicon choice on observed composition varies depending on which region's microbiota is being studied",
+        "D": "Amplicon choice is a stronger predictor of microbiome composition than geographic region"
+      },
+      "correct_answer": "C",
+      "explanation": "An interaction term exceeding the main effect of amplicon choice indicates that the bias introduced by different amplicons is not uniform — it depends on which regional microbiota the primers are applied to. Certain taxa that are more common in specific regions may be differentially amplified by different primer sets, meaning regional microbiota and primer choice jointly determine the compositional bias observed.",
+      "topic_tags": ["PERMANOVA", "amplicon-region interaction", "statistical interaction", "technical bias"]
+    },
+    {
+      "id": "gutcomp78_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "Why might alpha diversity estimates from gut microbiome studies conducted in Latin America and the Caribbean be systematically underestimated?",
+      "options": {
+        "A": "Samples from that region tend to have far fewer sequencing reads than other regions",
+        "B": "Reference databases are biased toward western taxa, causing more sequences from that region to be classified as unidentified, thereby deflating diversity counts",
+        "C": "The gut microbiota in that region is intrinsically less diverse due to dietary uniformity",
+        "D": "The V4 amplicon, most commonly used globally, does not amplify taxa prevalent in that region"
+      },
+      "correct_answer": "B",
+      "explanation": "Latin America and the Caribbean has the highest number of unidentified taxa at every taxonomic level, and reference databases are known to have less coverage of taxa more common outside Europe and North America. When sequences cannot be assigned to known taxa, they are excluded from diversity calculations, systematically underestimating the true richness of those communities.",
+      "topic_tags": ["reference database bias", "alpha diversity underestimation", "unidentified taxa", "Latin America"]
+    },
+    {
+      "id": "gutcomp78_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "How does the inclusion of a bead-beating step in DNA extraction affect observed gut microbiome composition, and which types of organisms are most affected?",
+      "options": {
+        "A": "Bead-beating decreases the observed number of taxa by shearing DNA into fragments too small for sequencing",
+        "B": "Bead-beating preferentially enriches gram-negative bacteria such as Bacteroides because it disrupts their outer membranes more effectively",
+        "C": "Bead-beating increases observed taxa and raises the relative abundance of gram-positive organisms such as Bifidobacterium and Blautia, which have thicker cell walls requiring mechanical disruption",
+        "D": "Bead-beating has a negligible effect on composition but substantially increases sequencing read depth"
+      },
+      "correct_answer": "C",
+      "explanation": "Gram-positive bacteria have thicker peptidoglycan cell walls that resist enzymatic lysis. Mechanical disruption through bead-beating breaks these walls more effectively, increasing yields from gram-positive genera like Bifidobacterium and Blautia. Studies consistently report that bead-beating increases observed taxa counts and shifts relative abundances toward gram-positive organisms.",
+      "topic_tags": ["bead-beating", "DNA extraction", "gram-positive bacteria", "Bifidobacterium", "cell wall disruption"]
+    },
+    {
+      "id": "gutcomp78_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "What characteristic of microbial co-abundance network structure differs between western and non-western populations, and what is the primary implication for disease biomarker research?",
+      "options": {
+        "A": "Western populations show more positive correlations between taxa overall, suggesting a more cooperative microbiome",
+        "B": "Significant pairwise correlations between specific taxa are largely non-overlapping between western and non-western populations, meaning associations observed in one region may not hold in another",
+        "C": "Non-western populations have a less connected network, indicating lower ecological complexity",
+        "D": "The same core taxa drive co-abundance patterns in all regions, validating universal biomarker development"
+      },
+      "correct_answer": "B",
+      "explanation": "A substantial number of significant co-abundance correlations are unique to either western or non-western populations. This means that taxon-taxon associations — often the basis for microbiome biomarkers — may be population-specific rather than universal, cautioning against applying disease biomarkers developed in one regional population to another without validation.",
+      "topic_tags": ["co-abundance networks", "biomarker generalizability", "population specificity", "FastSpar", "SparCC"]
+    },
+    {
+      "id": "gutcomp78_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What does phylogenetic diversity gain analysis reveal when the microbiome of Eastern and South-Eastern Asia is added to that of Europe and Northern America as a baseline?",
+      "options": {
+        "A": "There is minimal phylogenetic gain, suggesting the two regions harbor mostly the same microbial lineages",
+        "B": "Eastern and South-Eastern Asian taxa increase the total phylogenetic branch length of the European baseline by approximately 68.6%, indicating that many taxa from that region belong to entirely different evolutionary clades",
+        "C": "The gain is primarily driven by archaeal diversity not captured by 16S rRNA gene sequencing",
+        "D": "Eastern and South-Eastern Asian taxa add phylogenetic breadth only at the genus level, not at higher taxonomic ranks"
+      },
+      "correct_answer": "B",
+      "explanation": "Faith's Phylogenetic Diversity gain analysis shows that adding Eastern and South-Eastern Asian taxa to the European reference tree increases total branch length by 68.6%. This indicates that even regions with apparently comparable Shannon diversity may harbor taxa from very different evolutionary lineages — regions that appear similar in species count can differ fundamentally in evolutionary breadth.",
+      "topic_tags": ["Faith's PD", "phylogenetic diversity", "Eastern Asia", "evolutionary diversity", "phylogenetic gain"]
+    },
+    {
+      "id": "gutcomp78_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "Why does having 482 BioProjects in a compendium reduce the need for explicit batch correction, and what assumption does this approach rely on?",
+      "options": {
+        "A": "With many studies, batch effects cancel out algebraically because each project's technical artifacts have opposite signs",
+        "B": "Larger compendia have higher sequencing depth, which dilutes project-level noise",
+        "C": "When the number of batches is very large, consistent biological signals across studies dominate over project-specific technical noise, which is random and inconsistent — but this assumes true biological variation is present and larger than individual batch effects",
+        "D": "Batch correction is unnecessary in amplicon sequencing because all primers produce identical taxonomic profiles regardless of study conditions"
+      },
+      "correct_answer": "C",
+      "explanation": "The rationale for not applying explicit batch correction in large compendia is that project-level technical artifacts are inconsistent across hundreds of diverse studies, while legitimate biological signal (e.g., geographic differences in microbiome composition) is consistent. This overshadowing effect requires the assumption that true biological variation is present and sufficiently strong to be detectable above the noise — an assumption that may not hold for subtle phenotypic associations.",
+      "topic_tags": ["batch effects", "batch correction", "large-scale integration", "compendium methodology", "statistical assumptions"]
+    },
+    {
+      "id": "gutcomp78_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "When training one-versus-all random forest classifiers to predict a sample's geographic region from its microbiome composition, which region achieves the highest classification accuracy and which achieves the lowest, and what does this contrast reveal?",
+      "options": {
+        "A": "Sub-Saharan Africa is easiest (most distinct) and Latin America is hardest (most similar to others); this reflects extremes of dietary diversity",
+        "B": "Australia/New Zealand is easiest to classify (AUC ≈ 0.944) and Europe/Northern America is hardest (AUC ≈ 0.797); the contrast reveals that the most heavily sampled region is actually the least compositionally distinctive relative to the overall dataset distribution",
+        "C": "Central and Southern Asia is easiest to classify due to its uniquely high Actinomycetota abundance, while Eastern Asia is hardest due to shared taxa with Europe",
+        "D": "Europe and Northern America achieves the highest AUC because it has the most training samples, giving the model more statistical power"
+      },
+      "correct_answer": "B",
+      "explanation": "Australia/New Zealand achieves the highest one-versus-all AUC (0.944), while Europe and Northern America has the lowest (0.797). This counterintuitive result reflects that Europe and Northern America, despite having the most samples, is the most compositionally heterogeneous and overlaps most with global variation — partly because the ordination space is defined by its own variance. The most data-rich region is paradoxically the hardest to distinguish as a unique category, while smaller but compositionally distinctive regions like Australia/New Zealand are easiest to separate.",
+      "topic_tags": ["random forest classifier", "AUC", "geographic classification", "Australia/New Zealand", "Europe North America", "classification accuracy"]
+    }
+  ]
+}

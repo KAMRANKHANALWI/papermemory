@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "source_paper": "Microbiome and metabolome features in inflammatory bowel disease via multi-omics integration analyses across cohorts",
+    "journal": "Nature Communications",
+    "year": 2023,
+    "doi": "10.1038/s41467-023-42788-0",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata. Designed for use in a vector database spanning hundreds of research papers.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "ibd_mome_easy_7f3a1",
+      "difficulty": "easy",
+      "question": "What is the rationale for combining metagenomics and metabolomics when studying inflammatory bowel disease?",
+      "answer": "Fecal shotgun metagenomics enables the identification of disease-associated microbial species and provides insight into host-microbiota co-metabolism at high taxonomic resolution. Metabolomics, in turn, reveals changes in gut metabolites that serve as messengers of information exchange between the gut microbiota and the host. Combining both approaches offers a more complete picture of IBD-related gut environment alterations and provides a basis for developing non-invasive fecal biomarkers for diagnosis.",
+      "topic_tags": ["metagenomics", "metabolomics", "multi-omics", "IBD", "non-invasive biomarkers"]
+    },
+    {
+      "id": "ibd_mome_easy_2c8b4",
+      "difficulty": "easy",
+      "question": "What general pattern of microbial diversity is consistently observed in the gut of patients with inflammatory bowel disease compared to healthy individuals?",
+      "answer": "IBD patients consistently exhibit reduced microbial alpha diversity compared to healthy controls, as measured by indices such as the Shannon and Simpson indices. This reduction in diversity may disrupt the balance of the gut ecosystem and is considered a potential contributing factor to IBD development. Beta diversity analyses also confirm that microbial community composition differs significantly between IBD patients and healthy individuals.",
+      "topic_tags": ["microbial diversity", "alpha diversity", "beta diversity", "IBD", "gut dysbiosis"]
+    },
+    {
+      "id": "ibd_mome_easy_9d0e6",
+      "difficulty": "easy",
+      "question": "What are cross-cohort integrative analysis (CCIA) methods and why are they important for microbiome research?",
+      "answer": "Cross-cohort integrative analysis (CCIA) is an approach that assesses the robustness of disease-microbiome associations by comparing findings across multiple independent case-control studies. Its goal is to identify consistent associations that hold across diverse cohorts, thereby minimizing the confounding effects of biological variability, technical differences, diet, and population genetics. CCIA is important because individual microbiome studies often produce inconsistent findings, and cross-cohort validation is necessary to establish reliable and generalizable diagnostic or mechanistic signatures.",
+      "topic_tags": ["CCIA", "cross-cohort analysis", "microbiome", "confounders", "reproducibility"]
+    },
+    {
+      "id": "ibd_mome_easy_4b1f2",
+      "difficulty": "easy",
+      "question": "Which categories of gut bacteria are consistently depleted in patients with inflammatory bowel disease, and what metabolic functions do they serve?",
+      "answer": "IBD patients show consistent depletion of commensal bacteria, particularly butyrate-producing species such as Faecalibacterium prausnitzii, Roseburia intestinalis, Eubacterium hallii, Eubacterium rectale, Ruminococcus bromii, and Gemmiger formicilis. Other depleted bacteria include those involved in mineral metabolism (e.g., iron metabolism), bile acid metabolism, and urea cycle metabolism, as well as bacteria that antagonize pro-inflammatory microorganisms. The loss of these commensals impairs gut homeostasis, reduces protective metabolite production, and may exacerbate intestinal inflammation.",
+      "topic_tags": ["butyrate-producing bacteria", "commensal depletion", "IBD", "Faecalibacterium prausnitzii", "gut homeostasis"]
+    },
+    {
+      "id": "ibd_mome_easy_0a5c8",
+      "difficulty": "easy",
+      "question": "What classes of fecal metabolites are most prominently altered in patients with inflammatory bowel disease?",
+      "answer": "The majority of differential fecal metabolites in IBD belong to three major nutrient metabolism categories: amino acids, carbohydrates, and fatty acids. Amino acids such as tryptophan, glutamine, arginine, 5-hydroxytryptophan, and histidine are found at elevated levels in IBD patients. Organic acids related to the tricarboxylic acid (TCA) cycle — including pyruvic acid, fumaric acid, malonic acid, and oxoglutaric acid — are also enriched, suggesting abnormal energy metabolism of intestinal microbiota. Carnitine compounds, linked to meat consumption, are among the metabolites uniquely elevated in IBD gut environments.",
+      "topic_tags": ["fecal metabolites", "amino acids", "TCA cycle", "IBD", "metabolomics"]
+    },
+
+    {
+      "id": "ibd_mome_med_3e7d9",
+      "difficulty": "medium",
+      "question": "How does impairment in the gut microbial Two-component system pathway contribute to intestinal inflammation?",
+      "answer": "The Two-component system (TCS) pathway, composed of sensor histidine kinases and response regulator proteins, plays a critical role in bacterial signal transduction, including the regulation of virulence factors. In IBD, genes encoding TCS components are upregulated in the gut microbiome. A key transcriptional regulatory gene enriched in this pathway is crp (Cyclic AMP Receptor Protein / CRP-FNR family transcriptional regulator), which is activated by cAMP and regulates processes including osmoregulation, stringent response, and biofilm formation. The relative abundance of crp is positively correlated with fecal calprotectin — a marker of intestinal inflammation — suggesting that dysregulated TCS-mediated signaling, particularly via crp, may act as a critical factor driving gut inflammation in IBD.",
+      "topic_tags": ["Two-component system", "crp", "fecal calprotectin", "bacterial signaling", "IBD", "virulence factors"]
+    },
+    {
+      "id": "ibd_mome_med_7c2a0",
+      "difficulty": "medium",
+      "question": "How does reduced microbial N-acetylglutamate synthesis contribute to gastrointestinal symptoms in inflammatory bowel disease?",
+      "answer": "The enzyme encoded by the gene argO (K22477), known as N-acetylglutamate synthase, converts glutamate and acetyl-CoA into N-acetylglutamate (NAG). In IBD, gut microbial communities show reduced levels of this enzyme. The resulting deficit means that excess L-glutamate accumulates, which can cause gastrointestinal symptoms such as abdominal pain and diarrhea that are characteristic of IBD. This reflects how disruption of normal gut microbial metabolic biotransformation — stemming from commensal depletion — can directly produce or worsen disease symptoms.",
+      "topic_tags": ["N-acetylglutamate synthase", "argO", "glutamate", "IBD symptoms", "microbial biotransformation"]
+    },
+    {
+      "id": "ibd_mome_med_1f9b5",
+      "difficulty": "medium",
+      "question": "What role do aminoacyl-tRNA synthetases from gut bacteria play in host immune regulation, and why are they relevant to IBD?",
+      "answer": "Aminoacyl-tRNA synthetases (ARSs) are enzymes traditionally known for catalyzing the attachment of amino acids to their cognate tRNA molecules during protein synthesis. However, accumulating evidence shows that microbial ARSs possess non-classical functions extending beyond translation. In the context of gut-host interactions, certain ARSs secreted by gut bacteria can modulate immune homeostasis. For example, Akkermansia muciniphila secretes a seryl-tRNA synthetase (AmTARS) that facilitates production of the anti-inflammatory cytokine IL-10. In IBD, enrichment of aminoacyl-tRNA biosynthesis pathway genes in the gut microbiome — including those encoding aspartyl-, isoleucyl-, histidyl-, and valyl-tRNA synthetases — suggests significant alterations in this system, making microbial ARSs promising but underexplored therapeutic targets for IBD.",
+      "topic_tags": ["aminoacyl-tRNA synthetases", "ARSs", "Akkermansia muciniphila", "IL-10", "immune homeostasis", "IBD"]
+    },
+    {
+      "id": "ibd_mome_med_5d3c7",
+      "difficulty": "medium",
+      "question": "How does disruption of lactate racemase activity in gut bacteria contribute to intestinal inflammation and disease progression?",
+      "answer": "Lactate racemase, encoded by the gene larA (K22373), is responsible for converting (S)-lactate into (R)-lactate within gut bacteria. In IBD patients, the microbial gene encoding this enzyme is found at reduced levels, meaning this conversion is impaired. The failure to interconvert lactate enantiomers may contribute to the development of intestinal inflammation and, over time, to malignant transformation of intestinal tissue. This finding highlights how specific microbial enzymatic deficiencies — arising from the overall loss of commensal bacterial communities in IBD — can have direct consequences on gut mucosal health beyond just metabolite availability.",
+      "topic_tags": ["lactate racemase", "larA", "lactate metabolism", "intestinal inflammation", "IBD"]
+    },
+    {
+      "id": "ibd_mome_med_8e6f3",
+      "difficulty": "medium",
+      "question": "Why do certain gut bacteria enriched in IBD, such as Ruminococcus gnavus, promote intestinal mucosal barrier disruption and inflammation?",
+      "answer": "Ruminococcus gnavus is consistently enriched in the gut microbiome of IBD patients and exerts several pro-inflammatory effects. It produces pro-inflammatory polysaccharides, including capsular polysaccharides that stimulate immune responses. Additionally, R. gnavus produces a mucin-degrading trans-sialidase enzyme that cleaves sialic acid residues from mucins in the intestinal mucosal lining. This enzymatic activity degrades the protective mucus barrier, increases microbial proximity to the intestinal epithelium, and promotes inflammation. The combination of immunostimulatory polysaccharide production and mucus degradation makes R. gnavus a dual driver of barrier disruption and inflammatory signaling in IBD.",
+      "topic_tags": ["Ruminococcus gnavus", "trans-sialidase", "mucin degradation", "mucosal barrier", "IBD", "pro-inflammatory polysaccharides"]
+    },
+    {
+      "id": "ibd_mome_med_2b0d1",
+      "difficulty": "medium",
+      "question": "How does impaired urea cycle metabolism in the gut, driven by microbial dysbiosis, contribute to intestinal mucosal damage?",
+      "answer": "Under healthy conditions, symbiotic gut bacteria participate in urea metabolism by expressing arginase (encoded by rocF, K01476), which facilitates conversion of arginine to urea and ornithine as part of normal nitrogen handling. In IBD, the loss of commensal bacteria leads to downregulation of microbial arginase activity, resulting in urea accumulation. Elevated urea levels are associated with disruption of the intestinal mucosal barrier and exacerbation of inflammation. This illustrates how gut microbial dysbiosis can create cascading metabolic imbalances — specifically in nitrogen/urea metabolism — that directly damage the gut lining and perpetuate the inflammatory environment characteristic of IBD.",
+      "topic_tags": ["urea cycle", "arginase", "rocF", "IBD", "mucosal barrier", "nitrogen metabolism"]
+    },
+
+    {
+      "id": "ibd_mome_hard_6a4e2",
+      "difficulty": "hard",
+      "question": "How does integrating metagenomic species, functional gene, and metabolomic data into a unified diagnostic model improve IBD detection compared to using each data type alone, and what does this imply about the biological complexity of the disease?",
+      "answer": "When used independently, bacterial species profiles, functional gene (KO) profiles, and metabolomics each achieve meaningful but distinct diagnostic performance for IBD — with metabolomics generally outperforming metagenomics in distinguishing IBD from healthy controls. However, when these data types are combined in an integrated multi-omics model, diagnostic accuracy improves substantially over any individual panel. This additive improvement occurs because each omics layer captures a different dimension of gut dysbiosis: species composition reflects which organisms are present or absent; functional gene profiles capture the metabolic potential and regulatory capacity of the microbiome; and metabolomics reflects the actual biochemical output of the host-microbiome ecosystem. The fact that integration of all three layers yields the highest performance implies that IBD is characterized by disruptions spanning multiple biological levels simultaneously — taxonomic, functional, and biochemical — none of which alone fully captures disease state. This also underscores the principle of functional redundancy: different bacterial compositions can produce similar functional and metabolic outputs, meaning that taxonomic data alone may miss disease-relevant dysbiosis that is better captured by functional or metabolomic profiling.",
+      "topic_tags": ["multi-omics integration", "IBD diagnosis", "random forest", "metabolomics", "metagenomics", "functional redundancy", "AUROC"]
+    },
+    {
+      "id": "ibd_mome_hard_3c9f7",
+      "difficulty": "hard",
+      "question": "What is the multi-omics biological correlation (MOBC) map framework, and how does it reveal the mechanistic link between gut microbial gene loss and specific metabolic imbalances in IBD?",
+      "answer": "The multi-omics biological correlation (MOBC) map framework is an integrative analytical approach that connects differential fecal metabolites to the microbial genes encoding the enzymes responsible for their metabolic processing, using curated pathway databases such as KEGG. The process begins by identifying metabolites that differ significantly between IBD patients and healthy controls, then querying which KO genes encode enzymes that directly catalyze reactions involving those metabolites. These metabolic-related genes are intersected with genes identified as differentially abundant in metagenomics analyses, yielding a subset of genes that are simultaneously linked to specific metabolite changes and IBD disease phenotype. This framework revealed eight KO genes connecting microbial gene loss to specific biochemical deficiencies: for example, the loss of N-acetylglutamate synthase (argO) links to glutamate accumulation and symptoms; the loss of lactate racemase (larA) links to impaired lactate interconversion; the loss of arginase (rocF) leads to urea accumulation and mucosal damage; and reduced saccharopine dehydrogenase (LYS1) contributes to oxidative stress. The MOBC approach thus transforms correlative associations between microbiota and metabolites into mechanistically interpretable gene-metabolite causal chains, elucidating how commensal depletion leads to specific gut biotransformation deficiencies in IBD.",
+      "topic_tags": ["MOBC maps", "multi-omics", "KO genes", "metabolites", "microbial biotransformation", "IBD mechanisms", "KEGG"]
+    },
+    {
+      "id": "ibd_mome_hard_0f5b8",
+      "difficulty": "hard",
+      "question": "How do elevated carnitine compounds and certain amino acids in the gut of IBD patients reflect the interplay between dietary risk factors and gut microbiota dysbiosis?",
+      "answer": "The fecal metabolome in IBD patients is enriched with carnitine compounds and certain amino acids such as 1-methylhistidine, acetylglycine, N-acetylglutamine, and various others. Carnitines and 1-methylhistidine are established biomarkers of meat consumption, particularly red and processed meats, which are well-recognized dietary risk factors for IBD development. Their elevation in the IBD gut suggests that dietary inputs — specifically the consumption of animal-derived products — directly shape the gut metabolome in IBD patients. However, this elevation is not merely a passive dietary reflection: the dysbiotic gut microbiome in IBD is characterized by depleted commensal bacteria capable of processing and transforming dietary metabolites into less harmful or protective byproducts. Without these commensals, dietary metabolites derived from meat may accumulate in the gut and potentially act as substrates that exacerbate intestinal inflammation or disrupt epithelial integrity. This illustrates a bidirectional relationship: IBD-associated dietary patterns generate a gut metabolic environment that, in the absence of a healthy commensal community, becomes biologically inflammatory, and the dysbiotic microbiome further impairs the processing of these dietary signals, creating a self-reinforcing cycle of mucosal damage.",
+      "topic_tags": ["carnitines", "1-methylhistidine", "dietary risk factors", "meat consumption", "IBD", "metabolomics", "gut dysbiosis"]
+    },
+    {
+      "id": "ibd_mome_hard_9e2d4",
+      "difficulty": "hard",
+      "question": "How does the enrichment of pathobionts like Clostridium innocuum and Escherichia coli in the IBD gut contribute to disease pathogenesis, and what clinical challenges do they pose?",
+      "answer": "In IBD, certain bacteria are consistently enriched across multiple independent patient cohorts, suggesting they play an active role in disease pathogenesis rather than being incidental colonizers. Escherichia coli strains enriched in IBD are well-known for their pro-inflammatory potential, contributing to mucosal immune activation and epithelial barrier disruption. Clostridium innocuum presents a particularly challenging clinical problem: it has been associated with creeping fat and intestinal strictures in Crohn's disease, and it is inherently resistant to vancomycin, one of the antibiotics commonly used to manage Clostridioides difficile infections in IBD settings. This intrinsic antibiotic resistance means that standard treatment protocols may inadvertently select for C. innocuum expansion by eliminating competing susceptible organisms. The convergence of structural complications, antibiotic resistance, and pro-inflammatory activity in these enriched pathobionts highlights that the gut microbiome shift in IBD is not merely a passive loss of commensals but also involves an active gain of organisms with the capacity to drive tissue damage, structural complications, and treatment-resistant infections — adding layers of clinical complexity to IBD management.",
+      "topic_tags": ["Clostridium innocuum", "Escherichia coli", "pathobionts", "antibiotic resistance", "IBD", "Crohn's disease", "intestinal strictures"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "ibd_mome_mcq_easy_4d7c1",
+      "difficulty": "easy",
+      "question": "Which metabolic function is primarily served by commensal bacteria that are consistently depleted in the gut of IBD patients, such as Faecalibacterium prausnitzii and Eubacterium hallii?",
+      "options": {
+        "A": "Bile acid primary synthesis",
+        "B": "Butyrate production through fermentation",
+        "C": "Mucin glycosylation remodeling",
+        "D": "Urease-mediated nitrogen recycling"
+      },
+      "correct_answer": "B",
+      "explanation": "Faecalibacterium prausnitzii, Eubacterium hallii, Roseburia intestinalis, and related species are all well-characterized butyrate producers that are consistently depleted in IBD. Butyrate is a critical short-chain fatty acid for colonocyte health and anti-inflammatory gut homeostasis.",
+      "topic_tags": ["butyrate", "commensal bacteria", "IBD", "Faecalibacterium prausnitzii", "Eubacterium hallii"]
+    },
+    {
+      "id": "ibd_mome_mcq_easy_7a1e9",
+      "difficulty": "easy",
+      "question": "What is the primary advantage of using fecal metagenomics and metabolomics as diagnostic tools for IBD compared to the conventional clinical gold standard?",
+      "options": {
+        "A": "They detect genetic mutations in host epithelial cells that cause IBD",
+        "B": "They provide a non-invasive alternative to colonoscopic examination",
+        "C": "They measure serum cytokine levels with higher sensitivity than blood tests",
+        "D": "They identify IBD-specific autoantibodies not detectable by other methods"
+      },
+      "correct_answer": "B",
+      "explanation": "Colonoscopy is the invasive gold standard for IBD diagnosis. Fecal metagenomics and metabolomics offer non-invasive alternatives by analyzing stool samples, enabling earlier detection and monitoring with fewer procedural risks and burdens to the patient.",
+      "topic_tags": ["IBD diagnosis", "non-invasive biomarkers", "colonoscopy", "fecal metagenomics", "metabolomics"]
+    },
+    {
+      "id": "ibd_mome_mcq_easy_2f8b0",
+      "difficulty": "easy",
+      "question": "In the context of gut microbiome research, what does a low false positive rate (FPR) of a diagnostic classifier on non-target disease datasets indicate?",
+      "options": {
+        "A": "The classifier has high sensitivity for detecting the target disease",
+        "B": "The classifier reliably distinguishes the target disease from other unrelated conditions, demonstrating disease specificity",
+        "C": "The classifier was trained on a sufficiently large and diverse dataset",
+        "D": "The classifier's features are present at high abundance in all patients"
+      },
+      "correct_answer": "B",
+      "explanation": "A low FPR when tested against non-target diseases (e.g., colorectal cancer, type 2 diabetes, adenoma) means the model does not incorrectly classify patients with other conditions as having IBD. This demonstrates that the identified microbial and metabolic signatures are disease-specific rather than reflecting generic gut dysbiosis.",
+      "topic_tags": ["disease specificity", "false positive rate", "diagnostic classifier", "IBD biomarkers", "specificity"]
+    },
+
+    {
+      "id": "ibd_mome_mcq_med_5c3a7",
+      "difficulty": "medium",
+      "question": "What is the key mechanistic link between the enrichment of the crp (CRP/FNR family transcriptional regulator) gene in the gut microbiome and the development of intestinal inflammation?",
+      "options": {
+        "A": "crp encodes an enzyme that degrades the colonic mucus layer, increasing microbial contact with the epithelium",
+        "B": "crp is a DNA-binding transcriptional regulator activated by cAMP that is part of the Two-component system pathway and is positively correlated with fecal calprotectin levels",
+        "C": "crp produces reactive oxygen species that damage colonocytes and trigger an inflammatory cascade",
+        "D": "crp encodes a surface adhesin that facilitates bacterial invasion of intestinal epithelial cells"
+      },
+      "correct_answer": "B",
+      "explanation": "The crp gene encodes a CRP-FNR family transcriptional regulator that is activated when it binds its allosteric effector cAMP, functioning as part of the Two-component system signaling pathway. Its enrichment in IBD gut microbiomes is positively correlated with fecal calprotectin, a validated marker of gut inflammation, suggesting a role in regulating virulence, biofilm formation, and bacterial responses to the inflammatory gut environment.",
+      "topic_tags": ["crp", "Two-component system", "fecal calprotectin", "cAMP", "IBD", "transcriptional regulation"]
+    },
+    {
+      "id": "ibd_mome_mcq_med_9b6d3",
+      "difficulty": "medium",
+      "question": "How does the loss of saccharopine dehydrogenase (LYS1, encoded by K00290) activity in the IBD gut microbiome worsen disease?",
+      "options": {
+        "A": "It blocks the synthesis of lysine, causing amino acid deficiencies in the host",
+        "B": "It reduces the microbial community's ability to buffer oxidative stress, promoting an inflammatory gut environment that further depletes healthy commensals",
+        "C": "It causes accumulation of saccharopine, a metabolite that directly activates immune cells to produce pro-inflammatory cytokines",
+        "D": "It prevents the conversion of sialic acid from mucins, increasing pathogen colonization"
+      },
+      "correct_answer": "B",
+      "explanation": "LYS1 (saccharopine dehydrogenase) activity reduces oxidative stress — a hallmark of IBD gut inflammation. In IBD, diminished levels of this enzyme mean the microbiota cannot adequately suppress oxidative stress, creating a more inflammatory microenvironment that in turn is hostile to the commensal bacteria that maintain gut homeostasis, perpetuating a vicious cycle.",
+      "topic_tags": ["saccharopine dehydrogenase", "LYS1", "oxidative stress", "IBD", "gut inflammation"]
+    },
+    {
+      "id": "ibd_mome_mcq_med_1e0f5",
+      "difficulty": "medium",
+      "question": "Why do metabolomic classifiers generally demonstrate higher diagnostic performance for IBD than metagenomic species classifiers in cross-cohort analyses?",
+      "options": {
+        "A": "Metabolomics uses more advanced sequencing technology with lower error rates",
+        "B": "Metabolite profiles more directly reflect the biochemical state of the gut environment, capturing both microbial output and host responses, while species composition varies more between populations and is more confounded by geography and diet",
+        "C": "Metagenomic classifiers require much larger sample sizes to achieve comparable accuracy",
+        "D": "Metabolomics exclusively measures host-derived compounds, making it free of microbial variability"
+      },
+      "correct_answer": "B",
+      "explanation": "Metabolomics captures the functional biochemical output of the gut ecosystem — the net result of microbial metabolism, host metabolism, and diet — rather than just which organisms are present. Because gut microbiome species composition varies substantially across geographic populations while metabolic outputs of dysbiosis may converge on similar patterns, metabolite profiles tend to be more consistent and powerful diagnostic markers across diverse cohorts.",
+      "topic_tags": ["metabolomics", "metagenomics", "IBD diagnosis", "cross-cohort", "diagnostic performance"]
+    },
+    {
+      "id": "ibd_mome_mcq_med_4g2h6",
+      "difficulty": "medium",
+      "question": "What does the enrichment of organic acids related to the tricarboxylic acid (TCA) cycle in the feces of IBD patients indicate about gut microbial metabolism?",
+      "options": {
+        "A": "IBD patients have increased host mitochondrial activity, releasing TCA intermediates into the gut lumen",
+        "B": "Elevated TCA cycle intermediates reflect abnormal energy metabolism within the gut microbial community, suggesting disrupted microbial oxidative metabolism in the IBD environment",
+        "C": "The enrichment of TCA metabolites indicates enhanced butyrate production by Firmicutes bacteria",
+        "D": "TCA intermediates accumulate because of impaired intestinal absorption of these metabolites in IBD"
+      },
+      "correct_answer": "B",
+      "explanation": "The enrichment of TCA cycle intermediates such as pyruvic acid, fumaric acid, malonic acid, and oxoglutaric acid in IBD feces indicates abnormal energy metabolism by the gut microbial community. In a dysbiotic gut, altered microbial populations process energy substrates differently, leading to the accumulation of these intermediary metabolites rather than their complete processing.",
+      "topic_tags": ["TCA cycle", "energy metabolism", "fecal metabolites", "IBD", "gut dysbiosis"]
+    },
+    {
+      "id": "ibd_mome_mcq_med_7j3k8",
+      "difficulty": "medium",
+      "question": "How does the leave-one-cohort-out (LOCO) validation strategy improve upon single cohort-to-cohort transfer validation for evaluating multi-omics IBD classifiers?",
+      "options": {
+        "A": "LOCO uses a larger number of features, making the model more complex and accurate",
+        "B": "LOCO validation trains the model on pooled data from all available cohorts except one, testing on that withheld cohort, thereby using more diverse training data and improving generalizability compared to training on a single cohort",
+        "C": "LOCO removes outlier samples from each cohort before validation, reducing noise",
+        "D": "LOCO validation re-weights samples by geographic region to correct for population bias"
+      },
+      "correct_answer": "B",
+      "explanation": "In LOCO validation, the classifier is trained on data from all cohorts except the one being tested, which maximizes the diversity and size of the training set. This consistently yields better AUROC values than cohort-to-cohort transfer — where only one cohort is used for training — because the pooled training data better represents the full range of biological and technical variability, improving the model's ability to generalize to unseen populations.",
+      "topic_tags": ["LOCO validation", "cross-cohort validation", "machine learning", "IBD diagnosis", "generalizability"]
+    },
+
+    {
+      "id": "ibd_mome_mcq_hard_3p7q2",
+      "difficulty": "hard",
+      "question": "Asaccharobacter celatus is identified as depleted across multiple IBD cohorts. Based on its known metabolic capability, what broader immunological implication does its depletion carry for IBD patients?",
+      "options": {
+        "A": "Its depletion reduces butyrate availability, directly impairing colonocyte tight-junction integrity and increasing intestinal permeability",
+        "B": "Its depletion reduces equol production — a metabolite with potential autoimmune-modulating properties — suggesting that loss of this bacterium may impair a protective regulatory axis relevant to the inflammatory pathogenesis of IBD",
+        "C": "Its depletion leads to enrichment of Ruminococcus gnavus, which fills the vacant ecological niche and accelerates mucin degradation",
+        "D": "Its depletion prevents bile acid deconjugation, causing accumulation of primary bile acids that directly activate mucosal immune cells"
+      },
+      "correct_answer": "B",
+      "explanation": "Asaccharobacter celatus produces equol from dietary isoflavones. Equol has been shown to ameliorate experimental autoimmune encephalomyelitis in animal models, suggesting immunomodulatory potential. Its consistent depletion across IBD cohorts implies that reduced equol production may remove a protective anti-inflammatory or immune-regulatory signal, potentially contributing to the aberrant immune activation that characterizes IBD pathogenesis.",
+      "topic_tags": ["Asaccharobacter celatus", "equol", "autoimmune regulation", "IBD", "commensal depletion", "immunomodulation"]
+    },
+    {
+      "id": "ibd_mome_mcq_hard_6r1s4",
+      "difficulty": "hard",
+      "question": "Considering that gut microbiome composition varies significantly between geographic populations, yet multi-omics classifiers trained in one population can still diagnose IBD in another, what biological principle best explains this cross-population transferability?",
+      "options": {
+        "A": "IBD is caused by a single universal pathobiont that is present at high abundance in all patients regardless of geography",
+        "B": "Despite compositional variation across populations, IBD disrupts conserved gut microbial functional pathways and metabolic outputs — such as commensal depletion, butyrate deficiency, and specific metabolite imbalances — that transcend geographic microbiome variation",
+        "C": "The immune response to IBD is genetically identical across all human populations, making disease signatures universally applicable",
+        "D": "Cross-population transferability is primarily an artifact of the machine learning algorithm's ability to overfit on shared technical biases in sequencing platforms"
+      },
+      "correct_answer": "B",
+      "explanation": "Although gut microbiome species composition differs across populations due to diet, genetics, and environment, IBD consistently disrupts conserved functional roles — such as the depletion of butyrate-producing commensals, impairment of microbial biotransformation pathways, and characteristic metabolite shifts. These functional convergences, rather than specific species, underlie the cross-population transferability of IBD classifiers and reflect the concept of functional disease signatures that are independent of taxonomic variability.",
+      "topic_tags": ["cross-population transferability", "functional microbiome", "IBD biomarkers", "geographic variation", "functional redundancy", "multi-omics"]
+    }
+  ]
+}

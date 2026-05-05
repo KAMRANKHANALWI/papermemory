@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "The Human Gut Microbiome as a Potential Factor in Autism Spectrum Disorder",
+    "authors": ["Amani Alharthi", "Safiah Alhazmi", "Najla Alburae", "Ahmed Bahieldin"],
+    "journal": "International Journal of Molecular Sciences",
+    "year": 2022,
+    "doi": "10.3390/ijms23031363",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "ASD_GUT_easy_001",
+      "difficulty": "easy",
+      "question": "What is autism spectrum disorder (ASD) and what are its core behavioral characteristics?",
+      "answer": "Autism spectrum disorder (ASD) is a complex neurodevelopmental disorder characterized by decreased verbal and social interactions, limited interests and repetitive behaviors. Beyond these core features, ASD frequently co-occurs with gastrointestinal disturbances (up to 70%), motor deficits, sleep problems, and intellectual disability. Its prevalence has risen dramatically worldwide, and the condition imposes significant social and financial burdens on families.",
+      "topic_tags": ["autism spectrum disorder", "neurodevelopmental disorder", "ASD definition", "behavioral symptoms"]
+    },
+    {
+      "id": "ASD_GUT_easy_002",
+      "difficulty": "easy",
+      "question": "What is the microbiota–gut–brain axis and how does it facilitate communication between the gut and brain?",
+      "answer": "The microbiota–gut–brain axis refers to a bidirectional communication system linking the gut microbiota, the gastrointestinal tract, and the central nervous system. It involves both afferent signals — traveling from the gut to the brain via the enteroendocrine system, cytokines, metabolites, and neuroactive molecules — and efferent signals going from the brain to the gut via neuroendocrine and autonomic regulation. Notably, 90% of vagal fibers between the brain and gut are afferent, suggesting the gut acts more as a transmitter than a receiver in this pathway.",
+      "topic_tags": ["gut-brain axis", "microbiota", "bidirectional communication", "vagus nerve", "afferent signals"]
+    },
+    {
+      "id": "ASD_GUT_easy_003",
+      "difficulty": "easy",
+      "question": "How does early colonization of the infant gut differ between vaginally born and cesarean-section born babies, and what are the downstream implications?",
+      "answer": "Vaginally born infants are colonized by the mother's vaginal microbes at birth, and approximately 75% of their fecal microbiota is related to their mothers' fecal microbiota. In contrast, cesarean-delivered infants are primarily colonized by skin microbes, and only about 41% of their fecal microbiota resembles their mothers'. These early colonization differences can affect microbiota diversity and composition during a critical developmental period when the brain is also maturing, potentially influencing neurodevelopmental outcomes.",
+      "topic_tags": ["birth mode", "infant microbiota", "cesarean section", "vaginal delivery", "gut colonization"]
+    },
+    {
+      "id": "ASD_GUT_easy_004",
+      "difficulty": "easy",
+      "question": "What microbial phyla dominate the human gut, and what alteration in their balance has been frequently observed in ASD patients?",
+      "answer": "The human gut microbiota is predominantly composed of Firmicutes, Bacteroidetes, Actinobacteria, and Proteobacteria, which together account for up to 90% of total bacteria. In ASD patients, a consistently observed alteration is a decreased Bacteroidetes/Firmicutes ratio, likely reflecting a relative reduction in Bacteroidetes abundance. Since Bacteroidetes are primarily responsible for polysaccharide digestion, this imbalance is thought to contribute to abnormal carbohydrate digestion and mucosal dysbiosis in autistic individuals.",
+      "topic_tags": ["gut microbiota", "Bacteroidetes", "Firmicutes", "dysbiosis", "ASD", "phyla ratio"]
+    },
+    {
+      "id": "ASD_GUT_easy_005",
+      "difficulty": "easy",
+      "question": "What are short-chain fatty acids (SCFAs), and how are they relevant to autism spectrum disorder?",
+      "answer": "Short-chain fatty acids (SCFAs) — primarily acetate, propionate (propionic acid/PAA), and butyrate — are metabolites produced by anaerobic fermentation of indigestible carbohydrates in the gut. They regulate energy homeostasis, glucose metabolism, immune responses, and can also act as neuroactive compounds. In the context of ASD, acetate and propionate are found to be elevated while butyrate is decreased. Elevated propionate can act as a neurotoxin, impair mitochondrial function, trigger immune responses, and alter gene expression. Butyrate, conversely, has protective effects on brain barrier integrity and mitochondrial function.",
+      "topic_tags": ["SCFAs", "short-chain fatty acids", "propionate", "butyrate", "ASD", "neuroactive metabolites"]
+    },
+
+    {
+      "id": "ASD_GUT_medium_001",
+      "difficulty": "medium",
+      "question": "How does gut barrier dysfunction ('leaky gut') contribute to neuroinflammation and ASD-related symptoms?",
+      "answer": "Disruptions in gut microbial diversity can impair the integrity of the gut epithelial barrier, leading to 'leaky gut.' In this condition, microbial components such as lipopolysaccharide (LPS) enter systemic circulation, triggering the hypothalamic–pituitary–adrenal (HPA) axis and stimulating immune responses that produce pro-inflammatory cytokines including IFN-γ, TNF-α, IL-1β, and IL-4. These cytokines can cross the blood–brain barrier (BBB), inducing neuroinflammation via activation of the NF-kB signaling pathway and microglial stimulation. Elevated serum LPS has been found in ASD individuals and is associated with worse social communication scores. Conversely, reducing gut permeability — for example through a gluten-free, casein-free diet — has been shown to reduce intestinal permeability in some ASD patients.",
+      "topic_tags": ["leaky gut", "gut permeability", "LPS", "neuroinflammation", "ASD", "blood-brain barrier", "NF-kB"]
+    },
+    {
+      "id": "ASD_GUT_medium_002",
+      "difficulty": "medium",
+      "question": "How does propionic acid (PAA) exert neurotoxic effects and what is its connection to ASD severity?",
+      "answer": "Propionic acid (PAA) is a gut-derived SCFA metabolite that can act as a neurotoxin through several mechanisms. It inhibits the formation of NADH, the primary substrate of the mitochondrial electron transport chain, thereby impairing cellular energy production. PAA also triggers immune activation, alters gene expression, and modifies brain and plasma phospholipid molecular species — changes in brain phospholipid composition during development may have severe effects on CNS function. Elevated PAA has been associated with increased ASD severity; experimental models show that PAA treatment induces hyperactivity, stereotypic movements, and ASD-related behavioral changes. PAA is primarily produced by gut bacteria, including Clostridium species, so gut dysbiosis in ASD may directly elevate PAA levels and worsen neurological symptoms.",
+      "topic_tags": ["propionic acid", "PAA", "neurotoxicity", "NADH", "phospholipids", "ASD severity", "mitochondrial dysfunction"]
+    },
+    {
+      "id": "ASD_GUT_medium_003",
+      "difficulty": "medium",
+      "question": "What role does serotonin (5-HT) play in the gut-brain axis, and how does gut microbiota dysbiosis affect serotonin homeostasis in ASD?",
+      "answer": "Serotonin (5-HT) is a critical neurotransmitter regulating mood and GI activity, with approximately 95% of total body serotonin produced by enterochromaffin cells in the GI tract. Gut microbes including Escherichia spp., Enterococcus spp., Streptococcus spp., and Candida spp. contribute to serotonin production. Clostridia spp. can stimulate tryptophan-to-5-HT conversion by upregulating tryptophan hydroxylase 1 mRNA in enterochromaffin cells. Dysbiosis in ASD may therefore disrupt serotonin production and homeostasis. A positive association between blood 5-HT levels and gastrointestinal symptom severity in ASD has been observed. Antibiotic-induced microbiota depletion in animal models reduces CNS 5-HT levels and impairs learning, with elevated depression-like behaviors.",
+      "topic_tags": ["serotonin", "5-HT", "tryptophan", "enterochromaffin cells", "ASD", "gut-brain axis", "Clostridia"]
+    },
+    {
+      "id": "ASD_GUT_medium_004",
+      "difficulty": "medium",
+      "question": "How can gut microbiota modulate the hypothalamic–pituitary–adrenal (HPA) axis, and what are the implications for stress response in ASD?",
+      "answer": "The HPA axis governs stress response via a cascade in which the hypothalamus releases corticotrophin-releasing hormone (CRH), triggering pituitary secretion of adrenocorticotropic hormone (ACTH), which stimulates adrenal production of cortisol and glucocorticoids. Gut microbiota can directly regulate this axis. Germ-free (GF) mice exposed to restraint stress show markedly elevated ACTH and CRH levels, and their colonization with Bifidobacterium infantis reverses these hormonal abnormalities. The gut microbiota also influences brain-derived neurotrophic factor (BDNF) and NMDA receptor expression in the cerebral cortex and hippocampus, both of which affect HPA axis activity. In ASD individuals, altered mRNA levels of the glucocorticoid receptor and CRH receptor 1 have been found, suggesting microbiota-mediated dysregulation of the stress response pathway.",
+      "topic_tags": ["HPA axis", "stress response", "CRH", "ACTH", "cortisol", "BDNF", "ASD", "Bifidobacterium infantis"]
+    },
+    {
+      "id": "ASD_GUT_medium_005",
+      "difficulty": "medium",
+      "question": "What is the role of the gut microbiota in epigenetic regulation, and how might microbial dysbiosis contribute to ASD through epigenetic mechanisms?",
+      "answer": "Gut microbiota can drive epigenetic modifications through multiple mechanisms. Commensal bacteria synthesize folate, vitamin B12, and choline, which are essential for producing methyl group donors used in DNA methylation — the primary epigenetic mechanism. Bifidobacteria and Lactobacillus species are particularly known for folate synthesis. Butyrate, produced by gut bacteria, is a potent histone deacetylase (HDAC) inhibitor; by blocking HDAC it prevents deacetylation of histones, maintaining chromatin in an open, transcriptionally active state. Additionally, some endosymbiotic bacteria produce small non-coding RNAs that influence host processes. In ASD, gut dysbiosis — especially antibiotic-driven disruption early in life — could reduce beneficial bacteria, alter methyl donor availability and HDAC inhibition, and consequently switch ASD-related genes on or off during critical developmental windows.",
+      "topic_tags": ["epigenetics", "DNA methylation", "histone deacetylase", "butyrate", "folate", "ASD", "Bifidobacteria", "Lactobacillus"]
+    },
+    {
+      "id": "ASD_GUT_medium_006",
+      "difficulty": "medium",
+      "question": "What is the mechanism by which the microbial metabolite p-Cresol contributes to ASD-like behavioral deficits?",
+      "answer": "p-Cresol is a gut microbial metabolite produced primarily by Clostridium difficile, which induces the p-hydroxyphenylacetate (pHPA) enzyme to ferment tyrosine into p-Cresol. It has been found elevated in urinary samples of children with ASD. p-Cresol aggravates ASD severity by disrupting multiple metabolic and neurological processes: it raises brain lipid peroxidation, reduces Na(+)-K+ ATPase function, and inhibits noradrenaline formation. In animal models, p-Cresol exposure alters gut microbiota composition, induces stereotypies and abnormal social behavior, and decreases the excitability of dopamine neurons in the ventral tegmental area — a circuit central to the social reward system. Microbiota transplantation experiments confirmed that these behavioral effects are transferable via the microbiome, and conversely, transplanting a normal microbiome into p-Cresol-treated mice restored normal social interaction.",
+      "topic_tags": ["p-Cresol", "Clostridium difficile", "tyrosine metabolism", "dopamine", "social behavior", "ASD", "gut metabolites"]
+    },
+
+    {
+      "id": "ASD_GUT_hard_001",
+      "difficulty": "hard",
+      "question": "How do immune signaling pathways mediate the connection between gut microbiota dysbiosis and neuroinflammation in ASD, and what experimental evidence supports this link?",
+      "answer": "Gut microbial dysbiosis in ASD compromises the immune axis linking gut and brain through several converging mechanisms. Altered microbial composition reduces microbial SCFA production, impairing microglia maturation in the CNS — germ-free mice show higher microglia density and defective function in multiple brain regions, which is rescued by supplementing with microbial SCFAs. In maternal immune activation (MIA) animal models, elevated IL-6 levels coincide with increased gut barrier permeability, and treatment with Bacteroides fragilis restores gut barrier integrity, normalizes IL-6, and reduces ASD-like behaviors. IL-6 itself modulates tight junction transcript levels (CLDN 8 and 15), directly connecting cytokine signaling to gut permeability. In human ASD, elevated TNF, IFN, IL-1b, IL-6, IL-8, and IL-12p4 have been found in brain tissue, alongside evidence of microglial activation. LPS from dysbiotic bacteria enters circulation through a leaky gut, activates the NF-kB pathway, and drives microglial stimulation and neuronal cell loss — providing a mechanistic bridge from gut bacterial imbalance to CNS inflammation.",
+      "topic_tags": ["neuroinflammation", "microglia", "IL-6", "NF-kB", "LPS", "Bacteroides fragilis", "MIA model", "gut permeability", "SCFAs", "ASD immune pathway"]
+    },
+    {
+      "id": "ASD_GUT_hard_002",
+      "difficulty": "hard",
+      "question": "What are the relative strengths and limitations of probiotics, prebiotics, fecal microbiota transplantation (FMT), and microbiota transfer therapy (MTT) as therapeutic strategies targeting gut dysbiosis in ASD?",
+      "answer": "Each microbiota-targeted therapy for ASD has distinct mechanisms, benefits, and limitations. Probiotics introduce live beneficial microorganisms (Lactobacillus, Bifidobacterium, Streptococcus strains) and can normalize the Bacteroidetes/Firmicutes ratio, reduce Desulfovibrio abundance, lower TNF-α levels, and alleviate both GI and behavioral ASD symptoms. However, they carry risks in immunocompromised individuals (possible bacterial/fungal infections), and the mechanistic basis for behavioral improvement remains poorly understood. Prebiotics (e.g., galactooligosaccharides) feed beneficial bacteria and elevate Bifidobacterium and SCFA levels, but clinical data in ASD are limited. Dietary interventions (gluten-free/casein-free, ketogenic, omega-3 supplementation) show potential benefits but carry nutritional risks including calcium and essential amino acid deficiency, reduced bone density, and need for vitamin D supplementation. FMT transplants entire fecal microbiota from healthy donors to patients, restoring metabolic and immune function with promising outcomes, but carries risks of introducing unknown or pathogenic bacteria and requires strict donor screening. MTT extends FMT with prior antibiotic treatment and bowel cleansing for a more thorough microbiota replacement, and has demonstrated reductions in both GI symptoms and core ASD symptoms with improvements persisting post-treatment. Overall, no single therapy is reliable or well-established, and large-scale randomized trials are still needed.",
+      "topic_tags": ["probiotics", "prebiotics", "FMT", "MTT", "ASD therapy", "gut microbiota", "therapeutic limitations"]
+    },
+    {
+      "id": "ASD_GUT_hard_003",
+      "difficulty": "hard",
+      "question": "How does the interplay between gut fungal dysbiosis and bacterial dysbiosis in ASD implicate immune and metabolic pathways in disease severity?",
+      "answer": "ASD is associated not only with bacterial dysbiosis but also with gut fungal imbalances, suggesting a more complex microbial environment contributing to disease pathology. Candida albicans, found more frequently in ASD children, produces ammonia and other toxins that may contribute to autism-related behavioral symptoms. Elevated Saccharomyces cerevisiae in ASD activates TLR ligands and increases TNF-α and IL-6 production — pro-inflammatory cytokines already implicated in ASD neuroinflammation. Conversely, Aspergillus versicolor, which is decreased in ASD, has anti-inflammatory metabolite-producing capacity, suggesting that its loss may tip the gut immune environment toward a pro-inflammatory state. Together with bacterial dysbiosis (elevated Clostridium, altered Firmicutes/Bacteroidetes ratio, reduced Bifidobacterium), fungal imbalances may amplify immune dysregulation through overlapping cytokine and metabolite pathways. These findings highlight that ASD gut dysbiosis is polymicrobial in nature, yet current research has focused overwhelmingly on bacteria while fungal, protozoal, viral, and archaeal contributions remain largely unexplored — representing a critical gap in understanding the full scope of ASD-associated microbial pathophysiology.",
+      "topic_tags": ["fungal dysbiosis", "Candida albicans", "Saccharomyces cerevisiae", "TNF-alpha", "IL-6", "Aspergillus versicolor", "immune modulation", "ASD", "polymicrobial dysbiosis"]
+    },
+    {
+      "id": "ASD_GUT_hard_004",
+      "difficulty": "hard",
+      "question": "What challenges complicate the interpretation of causal relationships between gut microbiota changes and ASD, and how do these challenges limit the identification of a hallmark ASD microbiome?",
+      "answer": "Establishing causality between gut microbiota dysbiosis and ASD is complicated by several intersecting methodological and biological challenges. First, confounding variables — including diet, age, sex, autism severity, geographic population, and antibiotic use history — vary widely across studies and directly shape microbiota composition, making cross-study comparisons unreliable. The overuse of antibiotics by autistic children may itself cause microbiota changes that appear disease-specific but are actually treatment-induced. Second, no single microbial species has been consistently altered across all ASD microbiota studies, making it impossible to define a single hallmark taxon. Third, most studies use small, non-representative samples. Fourth, current ASD microbiota research has focused almost exclusively on bacteria, neglecting fungi, archaea, viruses, and protozoa that also contribute to gut ecology and host physiology. Fifth, distinguishing whether microbiota changes cause ASD symptoms or result from the behavioral and dietary patterns of ASD individuals (e.g., restricted food preferences, reduced vegetable and fiber intake) remains unresolved. Animal models such as germ-free colonization with ASD-derived microbiota offer mechanistic evidence of causality, but translating these findings to human clinical contexts requires much larger, well-controlled trials using multi-omics approaches to capture both compositional and functional dimensions of the microbiome.",
+      "topic_tags": ["causality", "ASD microbiome", "methodology", "confounders", "antibiotics", "multi-omics", "fungal microbiome", "study limitations"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "ASD_GUT_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which class of gut microbial metabolites has been found to be dysregulated in ASD, with propionate elevated and butyrate decreased?",
+      "options": {
+        "A": "Bile acids",
+        "B": "Short-chain fatty acids (SCFAs)",
+        "C": "Branched-chain amino acids",
+        "D": "Polyunsaturated fatty acids"
+      },
+      "correct_answer": "B",
+      "explanation": "Short-chain fatty acids (SCFAs), particularly propionic acid (PAA) and butyrate, are centrally implicated in ASD gut–brain signaling. Acetate and propionate are found elevated in ASD individuals while butyrate — which has neuroprotective and barrier-protective functions — is decreased.",
+      "topic_tags": ["SCFAs", "propionic acid", "butyrate", "ASD metabolites"]
+    },
+    {
+      "id": "ASD_GUT_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What is the primary direction of vagal nerve signal flow between the gut and the brain in the gut–brain axis?",
+      "options": {
+        "A": "Predominantly efferent — from brain to gut",
+        "B": "Equally bidirectional with no dominant direction",
+        "C": "Predominantly afferent — from gut to brain",
+        "D": "Exclusively efferent during stress"
+      },
+      "correct_answer": "C",
+      "explanation": "Approximately 90% of vagal fibers between the brain and gut are afferent — traveling from gut to brain — indicating that the gut functions more as a transmitter of information than as a receiver in this communication pathway.",
+      "topic_tags": ["vagus nerve", "afferent signals", "gut-brain axis", "signal direction"]
+    },
+    {
+      "id": "ASD_GUT_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "Which gut microbe is most prominently associated with elevated p-Cresol production, and what is the significance of p-Cresol in ASD?",
+      "options": {
+        "A": "Lactobacillus rhamnosus; it elevates GABA production",
+        "B": "Clostridium difficile; it ferments tyrosine to produce p-Cresol, a metabolite elevated in ASD urinary samples linked to behavioral deficits",
+        "C": "Bifidobacterium infantis; it triggers HPA axis dysregulation via p-Cresol",
+        "D": "Bacteroides thetaiotaomicron; it produces p-Cresol via acetate metabolism"
+      },
+      "correct_answer": "B",
+      "explanation": "Clostridium difficile induces the p-hydroxyphenylacetate (pHPA) enzyme to ferment tyrosine into p-Cresol. p-Cresol is elevated in urine samples of ASD children, disrupts dopamine neuron excitability in the social reward circuit, and has been shown in animal models to induce ASD-like social behavioral deficits.",
+      "topic_tags": ["p-Cresol", "Clostridium difficile", "tyrosine", "ASD urinary biomarker", "social behavior"]
+    },
+
+    {
+      "id": "ASD_GUT_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "How does gut microbiota dysbiosis contribute to neuroinflammation in ASD through the leaky gut mechanism?",
+      "options": {
+        "A": "Dysbiosis decreases mucus production, exposing the epithelium to dietary antigens that cross-react with brain proteins",
+        "B": "Dysbiosis increases gut permeability, allowing LPS to enter circulation and trigger NF-kB signaling, microglial activation, and pro-inflammatory cytokine production that crosses the blood–brain barrier",
+        "C": "Dysbiosis reduces SCFA production, directly lowering BBB integrity without involving systemic immune activation",
+        "D": "Dysbiosis activates enteric neurons that release substance P, which travels via the vagus nerve to trigger central inflammation"
+      },
+      "correct_answer": "B",
+      "explanation": "Gut dysbiosis impairs epithelial barrier integrity, enabling bacterial LPS to enter systemic circulation. LPS can enter the brain via lipoprotein transport, where it activates the NF-kB signaling pathway — stimulating microglia and producing pro-inflammatory cytokines (TNF-α, IFN-γ, IL-1β, IL-4) that further propagate neuroinflammation in ASD.",
+      "topic_tags": ["leaky gut", "LPS", "NF-kB", "neuroinflammation", "ASD", "gut permeability", "microglia"]
+    },
+    {
+      "id": "ASD_GUT_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "What mechanism explains the protective role of Bacteroides fragilis supplementation in reducing ASD-like behavioral symptoms in maternal immune activation (MIA) animal models?",
+      "options": {
+        "A": "B. fragilis directly inhibits neuroinflammatory gene transcription in the brain via SCFA-mediated epigenetic regulation",
+        "B": "B. fragilis restores gut microbiota composition, reduces elevated IL-6 levels, and repairs intestinal permeability — mechanisms that collectively reduce ASD-like behavioral deficits",
+        "C": "B. fragilis converts tryptophan to serotonin in the gut, normalizing the enteroendocrine signaling deficit seen in MIA offspring",
+        "D": "B. fragilis produces p-Cresol antagonists that competitively block dopamine neurotoxicity in the ventral tegmental area"
+      },
+      "correct_answer": "B",
+      "explanation": "In MIA mouse models with ASD-like behaviors, oral supplementation with Bacteroides fragilis NCTC 9343 restored microbial composition, normalized elevated IL-6 levels, and repaired intestinal barrier integrity. IL-6 is known to modulate tight junction expression (CLDN 8 and 15), and its normalization is thought to underpin the restoration of gut permeability and behavioral improvements.",
+      "topic_tags": ["Bacteroides fragilis", "MIA model", "IL-6", "gut permeability", "tight junctions", "ASD therapy"]
+    },
+    {
+      "id": "ASD_GUT_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "By what mechanism does butyrate counteract some of the neurotoxic effects of propionic acid (PAA) in ASD models?",
+      "options": {
+        "A": "Butyrate competitively inhibits PAA uptake in the colon, reducing its systemic concentration",
+        "B": "Butyrate acts as a histone deacetylase inhibitor, reprogramming gene expression to suppress PAA-induced inflammatory pathways",
+        "C": "Butyrate enhances blood–brain barrier integrity by promoting expression of tight-junction proteins (occludins), countering PAA-induced BBB permeability increases and mitochondrial dysfunction",
+        "D": "Butyrate activates the HPA axis to produce cortisol, which non-specifically suppresses PAA-mediated neuroinflammation"
+      },
+      "correct_answer": "C",
+      "explanation": "Butyrate has been found to restore ASD deficiencies introduced by PAA by enhancing BBB permeability. GF mice colonized with butyrate-producing bacteria show upregulated expression of tight-junction proteins occludin and claudin-5, which reduce BBB permeability. Butyrate also protects against oxidative stress and improves mitochondrial function, directly countering PAA's inhibition of the electron transport chain.",
+      "topic_tags": ["butyrate", "PAA", "BBB", "tight junctions", "occludin", "mitochondrial function", "ASD"]
+    },
+    {
+      "id": "ASD_GUT_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "How does the gut microbiota contribute to GABA homeostasis, and what is the significance of GABAergic dysregulation in ASD?",
+      "options": {
+        "A": "Gut bacteria convert tryptophan to GABA via monoamine oxidase, and GABA deficiency results in gut dysmotility in ASD",
+        "B": "Bifidobacterium and Lactobacillus species produce GABA; colonization of mice with Lactobacillus rhamnosus increases vagal GABA receptor expression and reduces stress behavior, while altered GABAergic transmission in ASD disrupts excitation/inhibition balance",
+        "C": "GABA is synthesized exclusively in Paneth cells under microbiota stimulation, and its systemic reduction drives autistic behavior via HPA axis dysregulation",
+        "D": "Enteric microbes degrade dietary glutamate into GABA via probiotic strains, and GABA excess in ASD leads to social withdrawal"
+      },
+      "correct_answer": "B",
+      "explanation": "Bifidobacterium spp. and Lactobacillus spp. are capable of producing GABA in the gut. In animal studies, colonization with Lactobacillus rhamnosus JB-1 increases GABA receptor expression in vagal nerve fibers and reduces stress and depressive behaviors. In ASD, altered GABAergic inhibitory transmission disrupts the brain's excitation/inhibition balance, impairing neural communication and behavioral responses.",
+      "topic_tags": ["GABA", "Lactobacillus", "Bifidobacterium", "vagus nerve", "ASD", "excitation-inhibition balance", "neurotransmitter"]
+    },
+    {
+      "id": "ASD_GUT_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What is the significance of the observation that germ-free mice transplanted with gut microbiota from ASD donors display altered splicing of ASD-related brain genes?",
+      "options": {
+        "A": "It shows that the genetic mutations causing ASD can be transmitted horizontally through the microbiome",
+        "B": "It provides causal evidence that gut microbiota from ASD individuals can induce ASD-like behaviors and molecular brain changes in otherwise healthy hosts, supporting the gut microbiota as a driver — not merely a correlate — of ASD pathology",
+        "C": "It demonstrates that epigenetic silencing of ASD genes is the primary mechanism, unrelated to microbial metabolites",
+        "D": "It proves that germ-free conditions inherently produce autism, regardless of the donor microbiota source"
+      },
+      "correct_answer": "B",
+      "explanation": "When germ-free mice were colonized with gut microbiota from ASD donors (versus typically developing donors), they exhibited more autistic-like behaviors and showed alternative splicing of ASD-related genes in the brain. This experimental design provides functional, mechanistic evidence suggesting the gut microbiota can causally influence neurodevelopmental gene regulation and behavior — supporting the microbiome as an active contributor to ASD pathogenesis rather than a passive bystander.",
+      "topic_tags": ["germ-free mice", "ASD microbiota transplant", "gene splicing", "causality", "ASD pathogenesis", "behavioral model"]
+    },
+
+    {
+      "id": "ASD_GUT_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "Considering the multiple signaling pathways linking gut dysbiosis to ASD, which integrative mechanism best explains why a single microbiome-targeted intervention is unlikely to fully resolve ASD symptoms?",
+      "options": {
+        "A": "Because ASD is exclusively genetic in origin, microbiome interventions can only address secondary GI symptoms without affecting the core neurodevelopmental disorder",
+        "B": "Because the gut–brain axis operates through simultaneously active and interacting pathways — gut permeability, immune cytokines, metabolic SCFAs, neurotransmitter biosynthesis, HPA axis regulation, and epigenetic modifications — and each pathway may be differentially disrupted in individual ASD patients, making single-target interventions insufficient for the full heterogeneous symptom spectrum",
+        "C": "Because probiotics and prebiotics cannot survive intestinal transit and thus never reach the distal colon where dysbiosis is most severe",
+        "D": "Because the blood–brain barrier in ASD is constitutively impermeable to all gut-derived signals, limiting any therapeutic effect to peripheral GI symptoms"
+      },
+      "correct_answer": "B",
+      "explanation": "The gut–brain axis in ASD is mediated by at least five distinct but interacting pathways: gut permeability/LPS-driven neuroinflammation, immune cytokine signaling, metabolic SCFA production (with butyrate deficit and PAA excess), neurotransmitter biosynthesis (serotonin, GABA), HPA axis dysregulation, and epigenetic reprogramming by microbial metabolites. ASD is itself heterogeneous in severity and genetic background. Since each pathway may be differentially disrupted across patients, a single intervention targeting one pathway is unlikely to restore the full functional balance across all affected axes simultaneously.",
+      "topic_tags": ["gut-brain axis", "ASD heterogeneity", "therapeutic complexity", "multiple signaling pathways", "personalized therapy"]
+    },
+    {
+      "id": "ASD_GUT_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "How do epigenetic mechanisms connect early-life gut microbiota disruption to the long-term neurodevelopmental trajectory in ASD, and which microbial metabolite plays a dual role in both gene expression regulation and gut barrier maintenance?",
+      "options": {
+        "A": "Propionate serves as the dual-function metabolite: it is both a histone acetyltransferase activator and a tight-junction synthesis promoter, and early antibiotic exposure reduces propionate levels, driving both epigenetic ASD gene activation and gut barrier breakdown",
+        "B": "Butyrate is the dual-function metabolite: as a potent HDAC inhibitor it regulates gene transcription epigenetically, and it also promotes tight-junction protein expression and BBB integrity; early microbiota disruption reducing butyrate production may therefore simultaneously deregulate neurodevelopmental gene expression and weaken gut and brain barriers",
+        "C": "LPS functions as both an epigenetic modifier via methyltransferase inhibition and a tight-junction disruptor, and its increase due to dysbiosis is the primary driver of ASD epigenetic changes",
+        "D": "Folate synthesized by Clostridium species is both the main DNA methylation donor and a mucosal barrier reinforcing agent, and its reduction explains the epigenetic and permeability changes in ASD"
+      },
+      "correct_answer": "B",
+      "explanation": "Butyrate occupies a unique dual role in ASD-related biology. As a histone deacetylase (HDAC) inhibitor, it prevents the removal of acetyl groups from histones, maintaining chromatin in a transcriptionally accessible state and regulating expression of neurodevelopmental genes. Simultaneously, butyrate promotes occludin and claudin expression, strengthening both gut epithelial and blood–brain barrier tight junctions. Early-life gut dysbiosis (e.g., from antibiotics or cesarean delivery) reduces butyrate-producing bacteria, potentially triggering epigenetic mis-regulation of ASD-linked genes during the brain's critical developmental window and concurrently weakening barrier integrity that permits neurotoxic metabolites to reach the CNS.",
+      "topic_tags": ["butyrate", "HDAC inhibitor", "epigenetics", "tight junctions", "BBB", "early-life dysbiosis", "neurodevelopment", "ASD dual mechanism"]
+    }
+  ]
+}

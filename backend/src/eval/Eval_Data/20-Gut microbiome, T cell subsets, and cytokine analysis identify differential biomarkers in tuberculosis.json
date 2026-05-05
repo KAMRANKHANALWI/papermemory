@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Gut microbiome, T cell subsets, and cytokine analysis identify differential biomarkers in tuberculosis",
+    "authors": ["Yinghui Chai", "Xin Liu", "Guangliang Bai", "Nannan Zhou", "Danfeng Liu", "Xiaomeng Zhang", "Min Li", "Kang Li", "Hong Lei"],
+    "journal": "Frontiers in Immunology",
+    "year": 2024,
+    "doi": "10.3389/fimmu.2024.1323723",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings from a study on gut microbiome, T cell subsets, and cytokines in tuberculosis. Questions are designed to make semantic sense across a large multi-paper vector database.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "TB_GUT_easy_001",
+      "difficulty": "easy",
+      "question": "What is the gut-lung axis and why is it relevant to tuberculosis?",
+      "answer": "The gut-lung axis refers to the bidirectional communication between the intestinal microecology and the lungs. It is relevant to tuberculosis because a balanced intestinal microecology can strengthen the body's resistance to acute and chronic respiratory infections, including TB. Conversely, disruptions in gut microbial communities have been shown to impair immune function and increase susceptibility to Mycobacterium tuberculosis infection, establishing that the gut microbiome plays a systemic role in modulating pulmonary immune defense.",
+      "topic_tags": ["gut-lung axis", "tuberculosis", "intestinal microecology", "respiratory immunity"]
+    },
+    {
+      "id": "TB_GUT_easy_002",
+      "difficulty": "easy",
+      "question": "How do CD4+ and CD8+ T cells each contribute to the immune response against Mycobacterium tuberculosis?",
+      "answer": "CD4+ T cells are the primary effectors of cellular immunity against Mycobacterium tuberculosis. After activation, they secrete a range of cytokines that regulate the host response to infection; a decrease in CD4+ cells can activate latent MTB and accelerate disease progression. CD8+ T cells are cytotoxic lymphocytes that produce granzyme and perforin, enabling them to directly kill pathogen-infected cells. Together, these T cell subsets are essential components of the adaptive immune response to TB, and their ratio (CD4/CD8) is used as a marker of overall immune balance.",
+      "topic_tags": ["CD4+ T cells", "CD8+ T cells", "tuberculosis immunity", "cellular immunity", "T cell subsets"]
+    },
+    {
+      "id": "TB_GUT_easy_003",
+      "difficulty": "easy",
+      "question": "What roles do NKT cells play in connecting innate and adaptive immunity during infection?",
+      "answer": "NKT cells bear surface markers characteristic of both T cells and natural killer (NK) cells, positioning them at the interface of innate and adaptive immunity. This dual identity allows them to respond rapidly to infection in an innate-like manner while also participating in antigen-specific adaptive responses. In the context of Mycobacterium tuberculosis infection, NKT cells can recognize infected macrophages, produce interferon-gamma, and kill intracellular bacteria, making them important early responders in the immune defense against TB.",
+      "topic_tags": ["NKT cells", "innate immunity", "adaptive immunity", "tuberculosis", "interferon-gamma"]
+    },
+    {
+      "id": "TB_GUT_easy_004",
+      "difficulty": "easy",
+      "question": "What is the significance of alpha diversity in the gut microbiome and what indices are used to measure it?",
+      "answer": "Alpha diversity refers to the richness and diversity of bacterial species within a single sample, serving as a measure of the overall complexity and health of the gut microbial community. A reduction in alpha diversity is commonly associated with dysbiosis and disease. Common indices used to quantify alpha diversity include Chao1 (estimating species richness), Shannon (measuring both richness and evenness), Simpson (weighting evenness of species distribution), Faith_pd (phylogenetic diversity), Pielou_e (measuring evenness), and Observed species (raw count of detected taxa). Significant decreases in these indices can reflect disease-related disruptions to the gut microbiome.",
+      "topic_tags": ["alpha diversity", "gut microbiome", "Chao1", "Shannon index", "microbial richness", "dysbiosis"]
+    },
+    {
+      "id": "TB_GUT_easy_005",
+      "difficulty": "easy",
+      "question": "What are the general consequences of intestinal microbial imbalance (dysbiosis) for systemic human health?",
+      "answer": "Intestinal microbial imbalance, or dysbiosis, can lead to a wide range of systemic diseases beyond the gut. These include cancer, cardiovascular disease, obesity, non-alcoholic fatty liver disease, autoimmune diseases, and hepatitis B progression. Dysbiosis is typically characterized by a downregulation of short-chain fatty acid-producing beneficial bacteria and a concurrent increase in opportunistic pathogens. It can also impair immune regulation, weakening the body's resistance to infectious diseases including respiratory infections such as tuberculosis.",
+      "topic_tags": ["dysbiosis", "intestinal imbalance", "systemic disease", "immune regulation", "opportunistic pathogens"]
+    },
+
+    {
+      "id": "TB_GUT_medium_001",
+      "difficulty": "medium",
+      "question": "How does the gut microbiome regulate the differentiation of T cell subsets relevant to tuberculosis pathogenesis?",
+      "answer": "The gut microbiome actively shapes T cell differentiation along multiple lineages relevant to TB. Bacteroides and Clostridium species can induce differentiation of regulatory T (Treg) cells, which dampen immune responses. Bordetella pertussis promotes the maturation of Th1 cells, which are critical for intracellular pathogen clearance. Segmented filamentous bacteria, Citrobacter rodentium, and E. coli can drive Th17 cell differentiation. Crucially, the infiltration of Th1 and Th17 cells into the lung is considered a key contributor to the immunopathogenesis of pulmonary tuberculosis, as these cells regulate and activate macrophages and natural killer cells through cytokines such as IFN-γ, TNF-α, and IL-17, which are essential for combating mycobacterial infection.",
+      "topic_tags": ["gut microbiome", "T cell differentiation", "Th1", "Th17", "Treg", "tuberculosis immunopathogenesis"]
+    },
+    {
+      "id": "TB_GUT_medium_002",
+      "difficulty": "medium",
+      "question": "How does IL-6 contribute to tuberculosis progression, and what does its elevated expression suggest about disease severity?",
+      "answer": "IL-6 is a pro-inflammatory cytokine that is induced and maintained during the inflammatory response in tuberculosis. Its levels are directly associated with disease severity: higher concentrations of IL-6 are consistently found in more advanced or recurrent TB cases compared to initial infection or healthy controls. Overexpression of IL-6 has been linked to the development and adverse outcomes of pulmonary TB. The mechanism involves IL-6's role in sustaining systemic inflammation and potentially amplifying the immune response in a way that contributes to tissue damage, suggesting that its measurement can serve as an indicator of disease progression and treatment response.",
+      "topic_tags": ["IL-6", "tuberculosis", "pro-inflammatory", "disease severity", "cytokine", "inflammation"]
+    },
+    {
+      "id": "TB_GUT_medium_003",
+      "difficulty": "medium",
+      "question": "What is the immunological role of IL-2 in tuberculosis, and what does reduced IL-2 production imply for disease outcome?",
+      "answer": "IL-2 is a cytokine that promotes the proliferation and cytotoxic activity of T cells. In the context of tuberculosis, IL-2 levels are typically lower in patients with active pulmonary TB compared to healthy individuals, regardless of whether the infection is newly acquired or a relapse. This insufficient IL-2 secretion impairs the body's ability to mount an adequate cytotoxic T cell response, making it unable to completely clear Mycobacterium tuberculosis. As a result, low IL-2 facilitates the evolution of latent TB into active disease or the relapse of previously treated infection, highlighting its importance as both a marker of immune impairment and a potential therapeutic target.",
+      "topic_tags": ["IL-2", "tuberculosis", "cytotoxic T cells", "disease relapse", "immune impairment", "cytokine"]
+    },
+    {
+      "id": "TB_GUT_medium_004",
+      "difficulty": "medium",
+      "question": "How does Prevotella in the gut and respiratory tract contribute to inflammatory signaling and Th17-driven immune responses?",
+      "answer": "Prevotella is a Gram-negative anaerobe that is prominently found in both the gut microbiota and the lower respiratory tract. Its increased abundance at mucosal sites has been linked to local and systemic inflammation. The key mechanism involves Prevotella-driven activation of Toll-like receptor 2 (TLR2) on antigen-presenting cells, which triggers secretion of cytokines including IL-1β, IL-6, and IL-23. These cytokines promote the differentiation of CD4+ T cells into Th17 cells. Additionally, Prevotella stimulates epithelial cells to produce IL-6 and IL-8, further amplifying mucosal Th17 immune responses and neutrophil aggregation. In vitro studies have confirmed that Prevotella can stimulate bone marrow-derived dendritic cells to generate Th17 cells from naive T cell precursors.",
+      "topic_tags": ["Prevotella", "Th17 cells", "TLR2", "gut microbiome", "respiratory inflammation", "cytokines"]
+    },
+    {
+      "id": "TB_GUT_medium_005",
+      "difficulty": "medium",
+      "question": "What are the contrasting immunological roles of IL-4 in tuberculosis, and how do these opposing effects complicate its use as a biomarker?",
+      "answer": "IL-4 plays a paradoxical role in tuberculosis immunity. It is produced primarily by Th2 cells and facilitates differentiation of Th0 cells into Th2 cells. On one hand, IL-4 can positively regulate anti-TB responses under certain conditions. On the other hand, as an anti-inflammatory cytokine, IL-4 can inhibit antigen presentation and Th1 cell function, maintain Th2 cell proliferation, induce macrophage apoptosis when disease is severe, and ultimately promote immune damage including the formation of cavitary TB lesions. Evidence from patient studies supports the latter, harmful role, where reduced IL-4 levels in TB patients may reflect either altered Th2 activity or the overall shift toward Th1/Th17 immunity. This dual functionality makes IL-4 a complex and context-dependent marker in TB immunology.",
+      "topic_tags": ["IL-4", "tuberculosis", "Th2 immunity", "anti-inflammatory", "immune damage", "cavitary lesions"]
+    },
+    {
+      "id": "TB_GUT_medium_006",
+      "difficulty": "medium",
+      "question": "How do short-chain fatty acids produced by gut bacteria influence pulmonary immune responses and lung disease?",
+      "answer": "Short-chain fatty acids (SCFAs) such as propionate and butyrate, produced by gut bacteria through fermentation, can influence pulmonary immunity through systemic circulation. In lung disease models, elevated concentrations of propionate and butyrate in the intestine and blood stimulate the production of chemokine ligand 20 (CCL20) in lung endothelial cells. CCL20 subsequently promotes the influx of Th17 cells into the lungs via its receptor (CCR6). This gut-to-lung axis mechanism illustrates how microbially derived metabolites from the intestine can modulate the composition and activity of immune cell populations in the lung, with implications for diseases including tuberculosis and lung cancer.",
+      "topic_tags": ["short-chain fatty acids", "butyrate", "propionate", "CCL20", "Th17", "gut-lung axis", "pulmonary immunity"]
+    },
+
+    {
+      "id": "TB_GUT_hard_001",
+      "difficulty": "hard",
+      "question": "How do changes in the CD4/CD8 ratio and the abundance of specific gut microbes together reflect immune dysfunction in tuberculosis, and what are the clinical implications?",
+      "answer": "The CD4/CD8 ratio serves as a composite measure of immune balance, reflecting the equilibrium between helper T cell-driven immune activation and cytotoxic T cell-mediated killing. In tuberculosis, particularly in recurrent disease, the CD4/CD8 ratio is substantially reduced due to declining CD4+ T cell counts and elevated CD8+ percentages. This imbalance indicates progressive immune dysfunction, where the loss of CD4+ effector function diminishes the ability to orchestrate anti-mycobacterial responses, while increased CD8+ activity may reflect a compensatory or chronic activation state. Concurrently, specific gut bacterial genera — including Bacteroides, Bifidobacterium, Faecalibacterium, Collinsella, and Clostridium — show the strongest correlations with the CD4/CD8 ratio, suggesting that shifts in these commensal populations contribute to the immunological imbalance. Clinically, this intersection implies that gut microbiome profiling could augment immune monitoring in TB, and that microbial interventions targeting these genera might be explored as adjunctive strategies to restore immune competence, particularly in patients with recurrent or treatment-resistant disease.",
+      "topic_tags": ["CD4/CD8 ratio", "gut microbiome", "immune dysfunction", "tuberculosis recurrence", "Faecalibacterium", "Bacteroides", "clinical biomarkers"]
+    },
+    {
+      "id": "TB_GUT_hard_002",
+      "difficulty": "hard",
+      "question": "What multi-layered mechanisms link gut microbial dysbiosis to impaired host defense against Mycobacterium tuberculosis, from microbial composition to cytokine signaling?",
+      "answer": "The pathway from gut dysbiosis to impaired TB defense operates at multiple interacting levels. First, dysbiosis reduces populations of beneficial bacteria such as Faecalibacterium and Bifidobacterium that help sustain immune homeostasis, while increasing opportunistic taxa. Second, reduced SCFA-producing bacteria diminish propionate and butyrate output, blunting their anti-inflammatory and immune-modulatory effects on systemic and pulmonary immune cells. Third, shifts in microbial composition alter T cell differentiation patterns in the gut: reduced Clostridium and Bacteroides impair Treg induction, potentially disturbing tolerance and inflammatory balance. Fourth, dysbiosis-associated increases in Prevotella and related taxa drive excessive Th17 polarization and IL-17A production via TLR2-mediated signaling, which contributes to immunopathology in the lung. Fifth, the resulting cytokine imbalance — characterized by lower IL-2 (impairing cytotoxic T cell activity), elevated IL-6 (driving inflammation), and dysregulated IL-4 (modulating Th1/Th2 balance) — collectively impairs the host's ability to contain MTB replication and clear the pathogen. This chain of events reveals the gut-lung axis as a tractable target for therapeutic intervention in TB.",
+      "topic_tags": ["dysbiosis", "Mycobacterium tuberculosis", "gut-lung axis", "cytokines", "T cell differentiation", "SCFA", "multi-mechanism"]
+    },
+    {
+      "id": "TB_GUT_hard_003",
+      "difficulty": "hard",
+      "question": "How does the IL-10 response differ between initial and recurrent tuberculosis, and what does this temporal variation reveal about the immunological progression of the disease?",
+      "answer": "IL-10 is an anti-inflammatory cytokine with a context-dependent role in tuberculosis. In initial TB infection, IL-10 concentrations are markedly elevated compared to both healthy controls and recurrent TB patients. This early rise in IL-10 appears to serve a protective function: by dampening the inflammatory response, it limits the immunopathological damage that could result from an overactive immune reaction during the acute phase, and simultaneously slows the rapid replication of MTB. However, in recurrent TB, IL-10 levels are no longer elevated above control levels, while IL-2 rises significantly. This temporal shift suggests a fundamental change in immune regulation between primary and relapsed disease: the initial infection triggers an adaptive immunosuppressive response to balance pathogen control with host protection, whereas recurrent TB is characterized by a loss of this regulatory balance — with persistent immune activation (reflected by higher IL-2) but diminished tolerance-promoting signaling. This evolution may reflect progressive immune exhaustion and offers potential utility in distinguishing disease stages through cytokine profiling.",
+      "topic_tags": ["IL-10", "tuberculosis recurrence", "initial TB", "immune regulation", "disease progression", "cytokine profiling", "immune exhaustion"]
+    },
+    {
+      "id": "TB_GUT_hard_004",
+      "difficulty": "hard",
+      "question": "How can random forest classification and ROC curve analysis be combined to identify gut microbiome biomarkers for tuberculosis staging, and what are the strengths and limitations of this approach?",
+      "answer": "Random forest classification is an ensemble machine learning method that uses the relative abundance of bacterial taxa as input features to construct a predictive model for disease classification. By training on microbiome profiles across disease groups, the model ranks bacterial taxa by their contribution to classification accuracy (measured via mean decrease in the Gini index), identifying the most informative genera. ROC curve analysis then evaluates the diagnostic performance of the top-ranked taxa panel: the area under the ROC curve (AUC) quantifies the model's ability to discriminate between groups across varying classification thresholds. Combined with 10-fold cross-validation, this approach guards against overfitting and provides an estimate of generalizability. Strengths include the ability to capture complex non-linear relationships between many bacterial taxa and disease status simultaneously, and the generation of interpretable importance rankings. However, limitations include the observational and cross-sectional nature of microbiome studies (which precludes causal inference), potential confounding by diet, medication, or host genetics, limited generalizability across populations with different TB burdens, and the absence of validation in animal models or independent cohorts. Furthermore, this approach identifies correlational biomarkers rather than mechanistic drivers, requiring functional studies to establish biological relevance.",
+      "topic_tags": ["random forest", "ROC curve", "biomarker discovery", "gut microbiome", "tuberculosis staging", "machine learning", "limitations"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "TB_GUT_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which gut bacterial genera are most closely associated with the CD4/CD8 T cell ratio in tuberculosis patients?",
+      "options": {
+        "A": "Prevotella, Ruminococcus, and Eubacterium",
+        "B": "Bacteroides, Bifidobacterium, Faecalibacterium, Collinsella, and Clostridium",
+        "C": "Lachnospiraceae, Gemmiger, and Actinomyces",
+        "D": "Enterobacteriaceae, Gammaproteobacteria, and Acidaminococcus"
+      },
+      "correct_answer": "B",
+      "explanation": "Spearman correlation analysis in this study identified five bacterial taxa — Bacteroides, Bifidobacterium, Faecalibacterium, Collinsella, and Clostridium — as most closely associated with the CD4/CD8 ratio, reflecting the link between gut microbiome composition and systemic T cell balance in tuberculosis.",
+      "topic_tags": ["CD4/CD8 ratio", "gut microbiome", "tuberculosis biomarkers", "Faecalibacterium", "Bacteroides"]
+    },
+    {
+      "id": "TB_GUT_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "Which T cell subset shows a particularly marked decline in recurrent tuberculosis compared to initial TB and healthy controls?",
+      "options": {
+        "A": "CD8+ T cells",
+        "B": "NKT cells",
+        "C": "CD4+ T cells",
+        "D": "Total CD3+ T cells"
+      },
+      "correct_answer": "C",
+      "explanation": "CD4+ T cells, which are the primary effectors of cellular immunity against Mycobacterium tuberculosis, show a marked reduction in recurrent TB patients compared to both initial treatment groups and healthy controls, indicating worsening immune dysfunction with disease recurrence.",
+      "topic_tags": ["CD4+ T cells", "recurrent tuberculosis", "immune dysfunction", "T cell subsets"]
+    },
+    {
+      "id": "TB_GUT_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "What method was used to sequence gut microbial communities in tuberculosis research comparing patients and healthy controls?",
+      "options": {
+        "A": "Whole metagenome shotgun sequencing",
+        "B": "16S rRNA gene sequencing of the V3-V4 region on an Illumina MiSeq platform",
+        "C": "RNA-seq transcriptomic profiling of stool samples",
+        "D": "Targeted quantitative PCR of known bacterial species"
+      },
+      "correct_answer": "B",
+      "explanation": "The study employed 16S rDNA amplicon sequencing targeting the V3–V4 variable region using primers 338F/806R, sequenced on the Illumina MiSeq PE300 platform, and processed through the QIIME2 pipeline with DADA2 denoising to identify amplicon sequence variants (ASVs).",
+      "topic_tags": ["16S rRNA sequencing", "QIIME2", "gut microbiome methodology", "Illumina MiSeq"]
+    },
+
+    {
+      "id": "TB_GUT_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "How does IL-10 function differently in initial versus recurrent tuberculosis, and what does this suggest about immune regulation across disease stages?",
+      "options": {
+        "A": "IL-10 is elevated in both initial and recurrent TB, indicating persistent immune suppression throughout disease",
+        "B": "IL-10 is elevated in initial TB, possibly limiting early immunopathology, but is not significantly elevated in recurrent TB, suggesting altered regulation with disease progression",
+        "C": "IL-10 is suppressed in initial TB to allow effective bacterial killing, then rises in recurrent TB to prevent tissue damage",
+        "D": "IL-10 levels do not change across TB stages and are not useful for disease stratification"
+      },
+      "correct_answer": "B",
+      "explanation": "IL-10 is significantly elevated in initial TB patients compared to healthy controls, likely playing a protective role by limiting MTB replication and reducing immunopathological damage. In recurrent TB, IL-10 is no longer significantly elevated, suggesting this regulatory mechanism is no longer operative, which may contribute to persistent disease and immune exhaustion.",
+      "topic_tags": ["IL-10", "tuberculosis stages", "immune regulation", "initial TB", "recurrent TB"]
+    },
+    {
+      "id": "TB_GUT_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "What is the proposed mechanism by which Prevotella promotes Th17 cell differentiation in mucosal tissues?",
+      "options": {
+        "A": "Prevotella produces butyrate that directly activates Th17 transcription factors in naive T cells",
+        "B": "Prevotella activates TLR2 on antigen-presenting cells to secrete IL-1β, IL-6, and IL-23, which drive CD4+ T cell differentiation into Th17 cells",
+        "C": "Prevotella suppresses Treg cell activity through SCFA depletion, allowing Th17 cells to expand unopposed",
+        "D": "Prevotella directly binds and activates Th17 cell surface receptors, bypassing antigen-presenting cells"
+      },
+      "correct_answer": "B",
+      "explanation": "Prevotella activates TLR2 on antigen-presenting cells, triggering secretion of IL-1β, IL-6, and IL-23. These cytokines are classical drivers of Th17 cell differentiation from CD4+ T cell precursors. This mechanism links Prevotella abundance to elevated Th17-driven mucosal inflammation observed in respiratory diseases including tuberculosis.",
+      "topic_tags": ["Prevotella", "TLR2", "Th17 differentiation", "IL-6", "IL-23", "gut-lung axis"]
+    },
+    {
+      "id": "TB_GUT_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "Which bacterial genera show the strongest correlation with IL-4 levels in tuberculosis patients?",
+      "options": {
+        "A": "Bacteroides, Bifidobacterium, and Collinsella",
+        "B": "Clostridium, Eubacterium, and Actinomyces",
+        "C": "Faecalibacterium, Ruminococcus, and Dorea",
+        "D": "Prevotella, Lachnospiraceae, and Gemmiger"
+      },
+      "correct_answer": "C",
+      "explanation": "Spearman correlation analysis identified Faecalibacterium, Ruminococcus, and Dorea as the three bacterial taxa most closely associated with IL-4 levels. Additionally, Ruminococcus was independently associated with IL-2 and IL-10, suggesting it may play a broader role in modulating the cytokine environment during tuberculosis.",
+      "topic_tags": ["IL-4", "Faecalibacterium", "Ruminococcus", "Dorea", "tuberculosis", "cytokine correlations"]
+    },
+    {
+      "id": "TB_GUT_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "What distinguishes the gut microbiota of initial TB patients from that of recurrent TB patients at the genus level?",
+      "options": {
+        "A": "Initial TB patients harbor more Proteobacteria, Clostridium, and Acidaminococcus, while recurrent TB patients harbor more Lachnospiraceae and Gemmiger",
+        "B": "Initial TB patients show higher abundance of Lachnospiraceae, Gemmiger, Eubacterium, Actinomyces, and Bulleidia, while recurrent patients show enrichment of Proteobacteria, Clostridium, and Enterobacteriaceae",
+        "C": "Both groups share identical microbiota composition, differing only in overall alpha diversity",
+        "D": "Recurrent TB patients have more Faecalibacterium and Bifidobacterium compared to initial TB patients"
+      },
+      "correct_answer": "B",
+      "explanation": "LEfSe analysis revealed group-specific microbial signatures: initial TB patients had higher abundances of Lachnospiraceae, Gemmiger, Eubacterium, Actinomyces, Bulleidia, Comamonas, and Gaiella, while recurrent TB patients were characterized by enrichment of Proteobacteria, Gammaproteobacteria, Enterobacteriaceae, Clostridium, and Acidaminococcus, suggesting different microbiome disruption patterns across disease stages.",
+      "topic_tags": ["gut microbiota", "initial TB", "recurrent TB", "LEfSe", "differential microbiome"]
+    },
+    {
+      "id": "TB_GUT_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "Why is the CD4/CD8 ratio used as an indicator of immune status, and what does a decreased ratio signify in tuberculosis?",
+      "options": {
+        "A": "The CD4/CD8 ratio measures the balance between innate and adaptive immunity; a decrease indicates insufficient innate defense",
+        "B": "The CD4/CD8 ratio reflects the balance between T helper and cytotoxic T cell activity; a decreased ratio in TB indicates immune dysfunction and impaired helper T cell-mediated immune orchestration",
+        "C": "The CD4/CD8 ratio quantifies B cell-to-T cell proportions; a decrease indicates humoral immune suppression",
+        "D": "The CD4/CD8 ratio estimates gut microbial diversity; a decrease in TB reflects reduced microbial richness"
+      },
+      "correct_answer": "B",
+      "explanation": "Because CD4+ T cells serve as immune helpers and CD8+ T cells are cytotoxic effectors, their ratio reflects the functional balance between helper and suppressor/cytotoxic activities. A decreased CD4/CD8 ratio in TB patients — particularly in recurrent disease — indicates disruption of this balance, immune dysfunction, and reduced resistance to MTB, making it a useful clinical indicator of disease severity.",
+      "topic_tags": ["CD4/CD8 ratio", "immune dysfunction", "tuberculosis severity", "T cell subsets", "immune balance"]
+    },
+
+    {
+      "id": "TB_GUT_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "What does the finding that certain gut bacteria (e.g., Faecalibacterium, Collinsella, Clostridium) correlate with both CD4+ T cell counts and the CD4/CD8 ratio suggest about the mechanistic relationship between the gut microbiome and systemic T cell immunity in tuberculosis?",
+      "options": {
+        "A": "These bacteria directly migrate from the gut to secondary lymphoid organs where they stimulate T cell production",
+        "B": "These bacteria modulate systemic T cell subsets through indirect mechanisms likely involving immune-active metabolites and cytokine signaling along the gut-lung axis, rather than direct bacterial translocation",
+        "C": "These bacteria act as antigens that cross-react with MTB epitopes, generating cross-reactive T cell populations",
+        "D": "These bacteria competitively exclude MTB from the gut, reducing the overall pathogen burden and indirectly preserving T cell counts"
+      },
+      "correct_answer": "B",
+      "explanation": "The correlations between specific gut taxa and peripheral T cell subsets (CD4, CD4/CD8) suggest an indirect modulatory relationship. Known mechanisms include production of immunomodulatory metabolites such as SCFAs, regulation of gut-associated lymphoid tissue responses, and cytokine signaling along the gut-lung axis — all of which can influence systemic T cell differentiation and numbers without requiring direct bacterial translocation. This is consistent with the broader concept of the gut-immune axis operating through soluble mediators.",
+      "topic_tags": ["Faecalibacterium", "CD4+ T cells", "gut-immune axis", "SCFA", "tuberculosis mechanism", "systemic immunity"]
+    },
+    {
+      "id": "TB_GUT_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "Given the opposing immunological roles of IL-4 in tuberculosis — positive regulation of anti-TB responses versus anti-inflammatory suppression of Th1 function — which interpretation is better supported by clinical observations, and what is its mechanistic basis?",
+      "options": {
+        "A": "The positive regulatory role is better supported; IL-4 drives macrophage activation and enhanced MTB killing in active disease",
+        "B": "The anti-inflammatory, immunosuppressive role is better supported; IL-4 selectively inhibits antigen presentation, suppresses Th1 cell function, promotes Th2 proliferation, and induces macrophage apoptosis, collectively impairing the host's ability to control MTB and potentially leading to cavitary lesions",
+        "C": "Neither role is well supported because IL-4 has no significant correlation with any clinical outcome in tuberculosis",
+        "D": "The positive regulatory role is supported only in early infection; once cavitation occurs, IL-4 becomes irrelevant to disease outcomes"
+      },
+      "correct_answer": "B",
+      "explanation": "Clinical evidence in the study and supporting literature favors the immunosuppressive interpretation: IL-4 levels are significantly lower in TB patients compared to controls, and IL-4's mechanism involves inhibiting antigen presentation to Th1 cells (which are critical for MTB clearance), maintaining Th2 proliferation (which is less effective against intracellular pathogens), and inducing macrophage apoptosis in severe disease. These effects collectively impair the cellular immune response required to contain MTB, and may facilitate cavitary lesion formation — a hallmark of severe pulmonary TB.",
+      "topic_tags": ["IL-4", "Th1 suppression", "Th2 immunity", "tuberculosis cavitation", "macrophage apoptosis", "immunopathogenesis"]
+    }
+  ]
+}

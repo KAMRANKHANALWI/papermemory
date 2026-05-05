@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Gut microbiome-targeted therapies for Alzheimer's disease",
+    "authors": ["Tao Zhang", "Guangqi Gao", "Lai-Yu Kwok", "Zhihong Sun"],
+    "journal": "Gut Microbes",
+    "year": 2023,
+    "doi": "10.1080/19490976.2023.2271613",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "ADGUT-easy-001",
+      "difficulty": "easy",
+      "question": "What is the gut-brain axis and how does it facilitate communication between the gastrointestinal tract and the central nervous system?",
+      "answer": "The gut-brain axis refers to the bidirectional communication network that connects the gastrointestinal tract and the central nervous system. This communication occurs through immune, endocrine/systemic, and neuronal pathways. The axis allows gut microbiota-derived signals — including metabolites, lipopolysaccharides, and short-chain fatty acids — to influence brain function, neuroinflammation, and neurodegeneration, while the brain can also regulate gut physiology and microbial composition.",
+      "topic_tags": ["gut-brain axis", "bidirectional communication", "immune pathway", "neuronal pathway", "Alzheimer's disease"]
+    },
+    {
+      "id": "ADGUT-easy-002",
+      "difficulty": "easy",
+      "question": "What is fecal microbiota transplantation (FMT) and what is its primary clinical application?",
+      "answer": "Fecal microbiota transplantation (FMT) is the transfer of feces from a healthy donor to a recipient patient with the goal of treating a specific disease associated with the gut microbiota. Its primary established clinical application is the treatment of recurrent Clostridioides difficile infection (CDI). In 2022, the first FDA-approved fecal microbiota product, Rebyota, was approved specifically to prevent CDI recurrence. FMT works by rapidly restoring a balanced gut microbiota and has since been explored for a range of other conditions linked to gut dysbiosis, including Alzheimer's disease.",
+      "topic_tags": ["FMT", "fecal microbiota transplantation", "C. difficile", "gut dysbiosis", "gut microbiota restoration"]
+    },
+    {
+      "id": "ADGUT-easy-003",
+      "difficulty": "easy",
+      "question": "How are probiotics, prebiotics, synbiotics, and postbiotics defined, and what distinguishes them from one another?",
+      "answer": "Probiotics are live microorganisms that, when administered in adequate amounts, confer a health benefit on the host. Prebiotics are substrates selectively utilized by host microorganisms to confer a health benefit. Synbiotics are mixtures comprising live microorganisms and substrates selectively utilized by those microorganisms, conferring a health benefit — they can be complementary (a probiotic plus any prebiotic) or synergistic (where the substrate is designed specifically for the co-administered microorganism). Postbiotics are preparations of inanimate microorganisms and/or their components that confer a health benefit on the host. The key distinction is that probiotics are live organisms, prebiotics are substrates, synbiotics combine both, and postbiotics use non-living microbial material.",
+      "topic_tags": ["probiotics", "prebiotics", "synbiotics", "postbiotics", "definitions", "microbiome therapeutics"]
+    },
+    {
+      "id": "ADGUT-easy-004",
+      "difficulty": "easy",
+      "question": "What are the neuropathological hallmarks of Alzheimer's disease at the cellular and molecular level?",
+      "answer": "Alzheimer's disease is characterized by two primary neuropathological hallmarks: the accumulation of beta-amyloid (Aβ) in extracellular plaques, and the formation of tau-containing intracellular neurofibrillary tangles. These pathological features drive progressive neurodegeneration, cognitive decline, and ultimately incapacitation. Multiple risk factors contribute to the development of these pathologies, including age, genetics (particularly the APOE4 allele), family history, and modifiable lifestyle factors such as smoking, air pollution, and lack of education.",
+      "topic_tags": ["Alzheimer's disease", "amyloid beta", "tau", "neurofibrillary tangles", "neurodegeneration", "APOE4"]
+    },
+    {
+      "id": "ADGUT-easy-005",
+      "difficulty": "easy",
+      "question": "What general pattern of gut microbiota alteration has been consistently observed in Alzheimer's disease patients compared to healthy individuals?",
+      "answer": "Patients with Alzheimer's disease generally show a distinct intestinal microbial landscape compared to healthy individuals, characterized by substantial heterogeneity across studies. Broadly, there is an increase in certain pro-inflammatory bacteria and a decrease in potentially beneficial taxa. Consistently increased genera include Akkermansia, Anaerotruncus, Collinsella, and Lactobacillus, while consistently decreased genera include Roseburia, Anaerostipes, Butyricicoccus, Coprococcus, and Ruminococcus. At the family level, Lachnospiraceae and Clostridiaceae are recurrently decreased, while Enterobacteriaceae, Erysipelotrichaceae, and Gemellaceae are recurrently increased in AD patients.",
+      "topic_tags": ["gut dysbiosis", "Alzheimer's disease", "microbial taxa", "Lachnospiraceae", "Akkermansia", "Ruminococcus"]
+    },
+
+    {
+      "id": "ADGUT-medium-001",
+      "difficulty": "medium",
+      "question": "How do gut microbiota regulate microglial function, and why is this relationship relevant to Alzheimer's disease pathogenesis?",
+      "answer": "Microglia are the resident macrophages of the central nervous system and are critical for brain homeostasis. Research has demonstrated that gut microbiota constantly control microglial maturation and function. Germ-free mice show global defects in microglia, and antibiotic-treated mice display severely altered microglial properties that can be partially reversed by co-housing with colonized animals. The gut microbiota exert temporal- and sex-specific effects on microglia. In the context of Alzheimer's disease, microglia are required for gut microbiota-driven brain amyloid-beta plaque deposition — meaning that dysbiotic microbial signals can worsen AD pathology through microglial activation. Additionally, gut-derived metabolite N6-carboxymethyllysine can translocate into the brain and trigger oxidative stress and mitochondrial dysfunction specifically in microglia.",
+      "topic_tags": ["microglia", "gut-brain axis", "amyloid beta", "neuroinflammation", "germ-free mice", "Alzheimer's disease"]
+    },
+    {
+      "id": "ADGUT-medium-002",
+      "difficulty": "medium",
+      "question": "Through what mechanisms do short-chain fatty acids (SCFAs) influence Alzheimer's disease progression, and is their overall effect clearly beneficial or detrimental?",
+      "answer": "The relationship between SCFAs and Alzheimer's disease is complex and not definitively resolved. SCFAs produced by gut Firmicutes and Bacteroidetes can cross the intestinal barrier into systemic circulation and access the brain. On one hand, mouse studies showed that SCFA supplementation in germ-free AD models led to increased amyloid-beta plaque deposition by modulating plaque-associated microglial functions, suggesting a detrimental role. Analogously, SCFA supplementation worsened neuroinflammation in a Parkinson's disease model. On the other hand, SCFAs such as butyrate have been shown to be neuroprotective in vitro and in vivo, reducing brain amyloid-beta levels and improving synaptic plasticity. The dual nature of SCFA effects likely depends on dose, route, disease stage, and microglial activation state, making their net impact context-dependent.",
+      "topic_tags": ["SCFAs", "short-chain fatty acids", "amyloid beta", "microglia", "butyrate", "neuroinflammation", "Alzheimer's disease"]
+    },
+    {
+      "id": "ADGUT-medium-003",
+      "difficulty": "medium",
+      "question": "How does gut dysbiosis contribute to T cell-mediated neuroinflammation in Alzheimer's disease?",
+      "answer": "Gut dysbiosis during Alzheimer's disease progression leads to peripheral accumulation of the amino acids phenylalanine and isoleucine. These accumulated amino acids stimulate the differentiation and proliferation of pro-inflammatory T helper 1 (Th1) cells in the periphery. These Th1 cells then crosstalk with M1-polarized microglial cells in the brain, driving AD-associated neuroinflammation and cognitive impairment. Experimental evidence supports this causal pathway: healthy mice exposed to AD-model fecal bacteria via co-housing or FMT showed increased Th1 cell infiltration and M1 microglia activation, while transferring wild-type feces into AD mice reduced Th1 cell populations in recipients.",
+      "topic_tags": ["T cells", "Th1 cells", "gut dysbiosis", "neuroinflammation", "M1 microglia", "phenylalanine", "Alzheimer's disease"]
+    },
+    {
+      "id": "ADGUT-medium-004",
+      "difficulty": "medium",
+      "question": "What factors contribute to the heterogeneity of probiotic intervention outcomes observed across Alzheimer's disease animal studies?",
+      "answer": "Several key factors contribute to inconsistent outcomes in probiotic studies for Alzheimer's disease. First, strain specificity is critical — different strains of even the same species (e.g., Lactobacillus plantarum) can have vastly different therapeutic effects depending on their unique physiological characteristics such as conjugated linoleic acid synthesizing capacity. Second, the animal model used significantly affects outcomes, since benefits observed in one transgenic model may not replicate in another. Third, sexual dimorphism plays a role — some probiotics show protective effects exclusively in female mice, not males, pointing to sex-dependent mechanisms. Fourth, variation in probiotic dose and treatment duration across studies adds further heterogeneity. Finally, the baseline gut microbiota composition of the host is an important determinant of how effectively a probiotic can modulate the microbiome.",
+      "topic_tags": ["probiotics", "strain specificity", "sexual dimorphism", "animal models", "Alzheimer's disease", "heterogeneity"]
+    },
+    {
+      "id": "ADGUT-medium-005",
+      "difficulty": "medium",
+      "question": "What is the evidence that gut microbiota causally drive Alzheimer's disease pathology, as opposed to merely being associated with it?",
+      "answer": "Two generations of studies have built a causal case for the gut microbiome in AD. The first approach involved depleting gut microbiota in transgenic AD mouse models using broad-spectrum antibiotic cocktails, which consistently led to decreased amyloid-beta plaque deposition and attenuated glial reactivity — an effect that could not be reproduced with individual antibiotics, suggesting cooperative microbial action is needed. The second and more direct approach involves FMT experiments: transferring feces from AD patients or aged AD model mice to antibiotic-pretreated or germ-free healthy recipient mice induced AD-like pathology including cognitive deficits, increased amyloid-beta deposition, tau phosphorylation, and neuroinflammation. Conversely, transplanting healthy microbiota into AD mice ameliorated pathology. These converging lines of evidence support that the gut microbiome is a major determinant — not just a correlate — of AD pathology.",
+      "topic_tags": ["causality", "FMT", "germ-free mice", "antibiotics", "amyloid beta", "gut dysbiosis", "Alzheimer's disease"]
+    },
+    {
+      "id": "ADGUT-medium-006",
+      "difficulty": "medium",
+      "question": "What is the proposed role of lipopolysaccharide (LPS) in connecting gut microbial dysbiosis to Alzheimer's disease brain pathology?",
+      "answer": "Lipopolysaccharide (LPS) is a pro-inflammatory compound derived from the outer membranes of gram-negative bacteria. In the context of Alzheimer's disease, gut dysbiosis can compromise intestinal barrier integrity, allowing LPS to translocate into the systemic circulation. Once in circulation, LPS can reach the brain and trigger neuroinflammatory cascades. Experimental animal models have demonstrated that LPS can directly cause amyloid-beta accumulation and tau pathology. LPS-induced neuroinflammation increases intracellular accumulation of amyloid precursor protein and Aβ peptide, and can exacerbate tau pathology through cyclin-dependent kinase 5-mediated pathways. These findings position LPS as a key molecular mediator linking gut dysbiosis to the neuropathological hallmarks of AD.",
+      "topic_tags": ["LPS", "lipopolysaccharide", "gram-negative bacteria", "intestinal barrier", "neuroinflammation", "amyloid beta", "tau", "Alzheimer's disease"]
+    },
+
+    {
+      "id": "ADGUT-hard-001",
+      "difficulty": "hard",
+      "question": "Why do differential microbial taxa identified in human Alzheimer's disease studies largely not overlap with those found in AD animal models, and what are the implications of this discordance for translational research?",
+      "answer": "The non-overlap of AD-associated microbial taxa between human patients and animal models is attributable to several converging factors. First, there are substantial intrinsic differences between mouse and human gut microbiome configurations — the microbial ecosystems are compositionally distinct across species. Second, among humans, 77.8% of the most frequently reported differentially abundant taxa in AD showed inconsistent results across human studies, and similarly 75% of those in animal studies showed internal inconsistencies, indicating that variability exists not only between species but also within them. Third, methodological differences — including fecal sample preservation methods, sequencing platforms, and bioinformatic pipelines — generate noise that masks true biological signal. Fourth, confounders like diet and lifestyle are difficult to control in clinical studies. The translational implication is that animal model data must be interpreted cautiously and not directly generalized to humans. Future research should develop humanized gnotobiotic animal models that better recapitulate the human gut microbiome, and should standardize experimental methodologies to improve reproducibility and inter-laboratory comparability.",
+      "topic_tags": ["translational research", "animal models", "human microbiome", "mouse microbiome", "methodological heterogeneity", "Alzheimer's disease"]
+    },
+    {
+      "id": "ADGUT-hard-002",
+      "difficulty": "hard",
+      "question": "How do astrocytes interact with the gut microbiota in Alzheimer's disease, and how does this compare mechanistically to gut microbiota-microglia interactions?",
+      "answer": "Compared to the well-characterized gut microbiota-microglia axis, astrocyte-gut microbiota connections in Alzheimer's disease are far less explored. Astrocytes are the predominant glial cell type in the CNS and are known to play important roles in the cellular phase of AD. Evidence suggests the gut microbiota can modulate astrocyte function: transfer of aged AD model mouse feces to younger AD mice increased amyloid-beta deposition partly by inhibiting the activation of astrocytes around Aβ plaques. In non-AD nervous system disease models, gut-derived tryptophan metabolites combined with type I interferons activated aryl hydrocarbon receptor signaling in astrocytes to suppress neuroinflammation. In contrast, the microglia-gut microbiota connection is mechanistically more detailed: microglia are globally defective in germ-free animals, gut microbiota regulate microglial maturation in a sex- and time-specific manner, and microglia are specifically required for gut microbiota-driven brain amyloid-beta plaque deposition. Overall, while both cell types can be regulated by gut signals, microglia appear to be more direct and more extensively characterized downstream effectors of gut dysbiosis in AD pathogenesis.",
+      "topic_tags": ["astrocytes", "microglia", "gut microbiota", "neuroinflammation", "gut-brain axis", "Alzheimer's disease", "aryl hydrocarbon receptor"]
+    },
+    {
+      "id": "ADGUT-hard-003",
+      "difficulty": "hard",
+      "question": "What are the key limitations of current clinical probiotic trials for Alzheimer's disease, and what criteria would a well-designed future trial need to meet to generate conclusive evidence?",
+      "answer": "Current clinical probiotic trials for AD have multiple limitations. First, sample sizes in several trials have been small, reducing statistical power and limiting generalizability. Second, some trials did not adhere to core principles of randomization, blinding, or placebo control, introducing bias. Third, very few trials have incorporated definitive neuropathological outcome measures — such as quantification of extracellular amyloid-beta deposition or hyperphosphorylated tau burden — relying instead on cognitive testing scores. Fourth, disease stage heterogeneity is a confound: severe AD patients appear insensitive to probiotic supplementation, suggesting that stage-specific trial design is necessary. Fifth, the wide range of probiotic doses and treatment durations across studies makes cross-study comparison difficult. A well-designed future trial would require: large sample sizes with adequate statistical power, rigorous randomization and double-blind placebo control, inclusion of validated AD biomarkers (e.g., CSF or PET amyloid/tau measures), stratification by disease stage, sex, and APOE genotype, standardized probiotic strain and dosage, and assessment of gut microbiota composition at baseline and follow-up to account for inter-individual microbiome variability.",
+      "topic_tags": ["clinical trials", "probiotics", "Alzheimer's disease", "study design", "biomarkers", "APOE", "disease stage", "limitations"]
+    },
+    {
+      "id": "ADGUT-hard-004",
+      "difficulty": "hard",
+      "question": "Why does the effectiveness of gut microbiome-targeted therapies in Alzheimer's disease depend not only on the therapeutic product but also on the recipient's native gut microbiota, and what are the implications for personalized medicine?",
+      "answer": "The efficacy of gut microbiome-targeting strategies in AD is not determined solely by the agent administered but is fundamentally shaped by the recipient's pre-existing endogenous gut microbiota. Research has shown that inter-individual variability in baseline gut microbiota composition is a key determinant of how effectively a probiotic or FMT modulates the microbiome and produces therapeutic outcomes. For FMT specifically, success in treating recurrent CDI has been principally associated with recipient microbiota composition — not just donor microbiota quality. This means that a patient with a highly dysbiotic baseline microbiome may respond differently to the same therapeutic intervention than one with near-normal composition. The implications for precision medicine are substantial: future therapeutic strategies should incorporate pre-treatment gut microbiome profiling to stratify patients, match donor FMT material to recipient microbiome characteristics, personalize probiotic strain selection based on the patient's existing microbial ecology, and design complementary strategies (e.g., dietary or antibiotic pre-conditioning) to optimize the gut environment for therapeutic engraftment. Multi-omics profiling — including metagenomics, metabolomics, and metatranscriptomics — will be essential for characterizing these host-microbiome interactions at sufficient depth.",
+      "topic_tags": ["personalized medicine", "gut microbiota", "FMT", "probiotics", "inter-individual variability", "multi-omics", "Alzheimer's disease", "engraftment"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "ADGUT-mcq-easy-001",
+      "difficulty": "easy",
+      "question": "Which cell type in the central nervous system has been identified as a critical mediator of gut microbiota-driven amyloid-beta plaque deposition in Alzheimer's disease models?",
+      "options": {
+        "A": "Astrocytes",
+        "B": "Oligodendrocytes",
+        "C": "Microglia",
+        "D": "Schwann cells"
+      },
+      "correct_answer": "C",
+      "explanation": "Microglia are the resident macrophages of the CNS and have been shown to be required for gut microbiota-driven brain amyloid-beta plaque deposition. Germ-free mice display global microglial defects, and experimental studies confirm that microglia mediate the pathway from gut dysbiosis to amyloid pathology in AD.",
+      "topic_tags": ["microglia", "amyloid beta", "gut microbiota", "Alzheimer's disease"]
+    },
+    {
+      "id": "ADGUT-mcq-easy-002",
+      "difficulty": "easy",
+      "question": "Which of the following best describes a synbiotic?",
+      "options": {
+        "A": "A preparation of inanimate microorganisms conferring health benefits",
+        "B": "A mixture of live microorganisms and substrates selectively utilized by those microorganisms that confers a health benefit",
+        "C": "A substrate selectively utilized by host microorganisms to confer a health benefit",
+        "D": "Live microorganisms that confer a health benefit when administered in adequate amounts"
+      },
+      "correct_answer": "B",
+      "explanation": "A synbiotic is defined as a mixture comprising live microorganisms and substrate(s) selectively utilized by host microorganisms that confers a health benefit. This distinguishes it from probiotics (live organisms alone), prebiotics (substrates alone), and postbiotics (inanimate microbial preparations).",
+      "topic_tags": ["synbiotics", "definitions", "microbiome therapeutics"]
+    },
+    {
+      "id": "ADGUT-mcq-easy-003",
+      "difficulty": "easy",
+      "question": "Among polyunsaturated fatty acids investigated as prebiotics in Alzheimer's disease, which compound has been the most extensively studied in preclinical models?",
+      "options": {
+        "A": "Eicosapentaenoic acid (EPA)",
+        "B": "Arachidonic acid (ARA)",
+        "C": "Linoleic acid",
+        "D": "Docosahexaenoic acid (DHA)"
+      },
+      "correct_answer": "D",
+      "explanation": "Docosahexaenoic acid (DHA) is a PUFA that has been explored most extensively as a potential therapeutic prebiotic option for AD in preclinical studies, with numerous studies examining its effects on amyloid pathology, cognitive function, and neuronal integrity in transgenic AD mouse models.",
+      "topic_tags": ["DHA", "prebiotics", "PUFA", "Alzheimer's disease", "preclinical"]
+    },
+
+    {
+      "id": "ADGUT-mcq-medium-001",
+      "difficulty": "medium",
+      "question": "What is the mechanistic basis by which gut microbiota alteration during Alzheimer's disease progression leads to T cell-mediated neuroinflammation?",
+      "options": {
+        "A": "Dysbiosis reduces secretory IgA production, enabling bacteria to cross the gut barrier and trigger adaptive immune responses in the brain",
+        "B": "Dysbiosis leads to peripheral accumulation of phenylalanine and isoleucine, which stimulate Th1 cell differentiation that subsequently activates M1 microglia",
+        "C": "Gut bacteria directly produce cytokines that cross the blood-brain barrier and activate resident T cells in the brain parenchyma",
+        "D": "Dysbiosis impairs short-chain fatty acid production, reducing regulatory T cell development and allowing uncontrolled neuroinflammation"
+      },
+      "correct_answer": "B",
+      "explanation": "Gut microbiota shifts in AD lead to peripheral accumulation of the amino acids phenylalanine and isoleucine, which stimulate differentiation and proliferation of pro-inflammatory Th1 cells. These Th1 cells then crosstalk with M1 microglia in the brain, driving neuroinflammation and cognitive impairment.",
+      "topic_tags": ["Th1 cells", "neuroinflammation", "phenylalanine", "isoleucine", "M1 microglia", "gut dysbiosis"]
+    },
+    {
+      "id": "ADGUT-mcq-medium-002",
+      "difficulty": "medium",
+      "question": "Why is probiotic strain specificity considered a critical factor in the therapeutic heterogeneity observed across Alzheimer's disease intervention studies?",
+      "options": {
+        "A": "Different strains belong to different bacterial phyla with fundamentally different metabolic pathways",
+        "B": "The concentration of live bacteria in probiotic formulations varies so widely between strains that dose differences alone explain the outcomes",
+        "C": "Individual strains possess unique physiological characteristics — such as specific enzymatic capacities — that determine their ability to modulate the host microbiome and disease outcomes",
+        "D": "Strain specificity only matters for single-strain probiotics; multi-strain formulations always outperform single strains"
+      },
+      "correct_answer": "C",
+      "explanation": "Probiotic strain specificity is an important driver of therapeutic outcomes because individual strains possess unique physiological properties. For example, conjugated linoleic acid synthesizing capacity has been identified as a key characteristic linking specific Lactobacillus plantarum strains to ulcerative colitis alleviation. The same principle applies in AD: different strains produce markedly different outcomes even at identical doses.",
+      "topic_tags": ["probiotics", "strain specificity", "Lactobacillus plantarum", "therapeutic heterogeneity", "Alzheimer's disease"]
+    },
+    {
+      "id": "ADGUT-mcq-medium-003",
+      "difficulty": "medium",
+      "question": "What does research on sex-dependent probiotic effects in Alzheimer's disease models reveal about clinical trial design?",
+      "options": {
+        "A": "Female patients respond better to all probiotics due to hormonal influences on the gut microbiota",
+        "B": "Sex-dependent effects are limited to animal models and do not translate to human clinical outcomes",
+        "C": "Some probiotics show protective effects in female but not male subjects, underscoring the need for sex-stratified analysis in clinical trials",
+        "D": "Male subjects require higher probiotic doses to achieve the same therapeutic effect as females"
+      },
+      "correct_answer": "C",
+      "explanation": "Studies have found that some probiotic formulations (e.g., VSL#3) reduced amyloid-beta plaque load and improved memory in female but not male AD mice. This sex-dependent probiotic effect highlights the importance of incorporating sex as a stratification variable in clinical trial design to accurately assess therapeutic efficacy.",
+      "topic_tags": ["sex differences", "probiotics", "clinical trial design", "Alzheimer's disease", "VSL#3"]
+    },
+    {
+      "id": "ADGUT-mcq-medium-004",
+      "difficulty": "medium",
+      "question": "Which of the following best explains why clinical outcomes in prebiotic PUFA supplementation trials for Alzheimer's disease have been heterogeneous, particularly regarding APOE genotype?",
+      "options": {
+        "A": "PUFA absorption is impaired in all AD patients regardless of genotype due to gut barrier dysfunction",
+        "B": "The APOE4 allele reduces brain uptake and transport of DHA in cerebral tissues, potentially limiting the neuroprotective effects of PUFA supplementation in carriers",
+        "C": "APOE4 carriers produce more endogenous DHA, making supplementation redundant",
+        "D": "PUFAs exacerbate neuroinflammation in APOE4 carriers by activating microglia"
+      },
+      "correct_answer": "B",
+      "explanation": "Transgenic mice expressing human APOE4 showed lower brain DHA uptake compared to APOE2-expressing mice due to limited biodistribution and transport in cerebral tissues. This suggests that the APOE4 genotype may limit how effectively dietary DHA reaches the brain, contributing to variable outcomes in clinical PUFA trials where APOE4 status was not controlled.",
+      "topic_tags": ["APOE4", "DHA", "PUFA", "prebiotics", "personalized medicine", "Alzheimer's disease"]
+    },
+    {
+      "id": "ADGUT-mcq-medium-005",
+      "difficulty": "medium",
+      "question": "What key advantage do postbiotics offer over traditional probiotics, and what remains the main limitation of their use in Alzheimer's disease?",
+      "options": {
+        "A": "Postbiotics are more effective than probiotics because they contain active live cells; their limitation is high cost",
+        "B": "Postbiotics offer greater stability and safety compared to live organisms; however, they remain little studied and the evidence base supporting their effects in AD specifically is still limited",
+        "C": "Postbiotics provide targeted delivery to the colon, but they are not absorbed systemically, limiting their brain access",
+        "D": "Postbiotics do not interact with host microbiota, making them safe but unable to influence gut ecology"
+      },
+      "correct_answer": "B",
+      "explanation": "Among the most important advantages of postbiotics — preparations of inanimate microorganisms — are their high stability, ease of storage, and favorable safety profile compared to live probiotics, which carry rare risks of infection or antibiotic resistance gene transfer. However, the available evidence for postbiotic effects in AD is extremely limited, and high-quality animal and human studies are still needed.",
+      "topic_tags": ["postbiotics", "probiotics", "stability", "safety", "Alzheimer's disease", "limitations"]
+    },
+
+    {
+      "id": "ADGUT-mcq-hard-001",
+      "difficulty": "hard",
+      "question": "Why is it insufficient to deplete the gut microbiota using individual antibiotics to demonstrate a causal role of gut microbiota in Alzheimer's amyloid pathology, and what does this reveal about the nature of the microbiota's influence?",
+      "options": {
+        "A": "Individual antibiotics do not adequately penetrate the gut lumen and therefore fail to reduce bacterial load sufficiently",
+        "B": "Individual antibiotics selectively eliminate beneficial taxa, worsening dysbiosis and confounding results",
+        "C": "Synergistic depletion of multiple microbial consortia — not any individual antibiotic — is required to reduce amyloid pathology, suggesting that the pro-amyloidogenic effect is a cooperative property of multiple interacting microbial taxa",
+        "D": "Individual antibiotics are effective, but only at doses too toxic for chronic use in AD model animals"
+      },
+      "correct_answer": "C",
+      "explanation": "Studies have shown that disrupting the gut microbiota with individual antibiotics was insufficient to reproduce the decreases in amyloid-beta plaque deposition seen with broad-spectrum antibiotic cocktails. This finding indicates that the microbiota's influence on AD pathology is not attributable to any single taxon but rather emerges from the cooperative interactions of multiple microbial consortia — consistent with the concept of functional redundancy and community-level microbial effects.",
+      "topic_tags": ["antibiotics", "amyloid pathology", "causality", "microbial consortia", "functional redundancy", "Alzheimer's disease"]
+    },
+    {
+      "id": "ADGUT-mcq-hard-002",
+      "difficulty": "hard",
+      "question": "What is the central methodological limitation in many prebiotic animal studies for Alzheimer's disease that renders comparisons between intervention and control groups invalid, and how could this be corrected?",
+      "options": {
+        "A": "Prebiotic studies use transgenic mice that overexpress amyloid, making results difficult to generalize; this could be corrected by using non-transgenic models",
+        "B": "A common design error is that both the standard diet given to control animals and the so-called prebiotic-enriched intervention diet already contain carbohydrate- or lipid-based prebiotics as basic feed components, meaning the groups do not truly differ in prebiotic intake",
+        "C": "Control animals are not properly age-matched to intervention animals, introducing developmental confounders in Aβ accumulation rates",
+        "D": "Studies rarely measure actual blood or brain levels of the prebiotic, making it impossible to confirm target engagement"
+      },
+      "correct_answer": "B",
+      "explanation": "A critical flaw identified in many prebiotic AD animal studies is that the standard diet provided to control animals already contains carbohydrate- and/or lipid-based prebiotics as components of basic feed, meaning the dietary comparison is not truly prebiotic versus no-prebiotic. The correct approach would be to use a normal equivalent base diet for both groups and add supplemental prebiotics only to the intervention group, ensuring a genuine between-group difference in prebiotic exposure.",
+      "topic_tags": ["prebiotics", "experimental design", "methodology", "control group", "Alzheimer's disease", "animal studies"]
+    }
+  ]
+}

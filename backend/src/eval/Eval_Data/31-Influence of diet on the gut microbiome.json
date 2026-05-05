@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Influence of diet on the gut microbiome and implications for human health",
+    "authors": ["Rasnik K. Singh", "Hsin-Wen Chang", "Di Yan", "Kristina M. Lee", "Derya Ucmak", "Kirsten Wong", "Michael Abrouk", "Benjamin Farahnik", "Mio Nakamura", "Tian Hao Zhu", "Tina Bhutani", "Wilson Liao"],
+    "journal": "Journal of Translational Medicine",
+    "year": 2017,
+    "doi": "10.1186/s12967-017-1175-y",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "dietmb_easy_7f3a",
+      "difficulty": "easy",
+      "question": "How quickly can dietary changes alter gut microbial composition, and how long do these changes persist after the diet is stopped?",
+      "answer": "Dietary changes can alter microbial composition within just 24 hours of initiation. However, these shifts are largely temporary — after stopping the diet, the microbiota reverts to baseline within approximately 48 hours of discontinuation. This rapid responsiveness highlights both the sensitivity of the gut microbiome to dietary inputs and the challenge of sustaining microbial changes through short-term dietary interventions.",
+      "topic_tags": ["diet", "microbiome plasticity", "dietary intervention", "reversibility"]
+    },
+    {
+      "id": "dietmb_easy_b2c9",
+      "difficulty": "easy",
+      "question": "What are the dominant bacterial phyla in the human gut microbiome, and what metabolic functions do they broadly support?",
+      "answer": "The predominant bacterial groups in the human gut microbiome are gram-positive Firmicutes and gram-negative Bacteroidetes. Together with other commensal microorganisms, they contribute to host health through biosynthesis of vitamins and essential amino acids, production of short-chain fatty acids (SCFAs) from dietary components undigested in the small intestine, promotion of local intestinal immunity, and support of the mucosal barrier. SCFAs such as butyrate, propionate, and acetate serve as major energy sources for intestinal epithelial cells.",
+      "topic_tags": ["Firmicutes", "Bacteroidetes", "gut microbiome", "SCFAs", "microbiome function"]
+    },
+    {
+      "id": "dietmb_easy_d14e",
+      "difficulty": "easy",
+      "question": "What distinguishes prebiotics from other dietary components, and what food sources are commonly rich in them?",
+      "answer": "Prebiotics are defined as non-digestible dietary components that benefit host health by selectively stimulating the growth and/or activity of certain microorganisms. Unlike digestible carbohydrates that are broken down in the small intestine, prebiotics travel intact to the large intestine where they are fermented by resident microorganisms. Common prebiotic sources include soybeans, inulins, unrefined wheat and barley, raw oats, and non-digestible oligosaccharides such as fructooligosaccharides (FOS), galactooligosaccharides (GOS), xylooligosaccharides (XOS), and arabinooligosaccharides (AOS).",
+      "topic_tags": ["prebiotics", "non-digestible carbohydrates", "fermentation", "dietary fiber"]
+    },
+    {
+      "id": "dietmb_easy_c88b",
+      "difficulty": "easy",
+      "question": "What is the general relationship between obesity and the Firmicutes-to-Bacteroidetes ratio in the gut?",
+      "answer": "Obesity is characterized by an altered intestinal Firmicutes-to-Bacteroidetes ratio, with greater relative abundance of Firmicutes. Studies have demonstrated that caloric restriction in obese subjects lowers this ratio. Importantly, the obese phenotype appears transmissible through microbiota transplantation — transferring gut microbiota from obese to lean mice confers an increased capacity to harvest energy from the diet, promoting the obese phenotype in recipient animals.",
+      "topic_tags": ["obesity", "Firmicutes", "Bacteroidetes", "microbiota transplantation", "metabolic disease"]
+    },
+    {
+      "id": "dietmb_easy_9a21",
+      "difficulty": "easy",
+      "question": "How do probiotics influence the gut microbiome, and what are some consistently reported microbial effects of their consumption?",
+      "answer": "Probiotics are foods enriched with live microorganisms — such as those found in fermented milks and yogurt — that beneficially regulate intestinal health. Their consumption has been consistently associated with increased total bacterial load, notable increases in beneficial gut Bifidobacteria and/or Lactobacilli, reductions in total coliforms and pathogenic Escherichia coli, and suppression of the enteropathogen Helicobacter pylori. Beyond microbial shifts, probiotic consumption has been reported to improve lipid profiles (reduced LDL cholesterol, triglycerides), enhance insulin sensitivity, increase serum IgA, and reduce inflammatory markers such as C-reactive protein.",
+      "topic_tags": ["probiotics", "Bifidobacteria", "Lactobacilli", "fermented foods", "immune modulation"]
+    },
+
+    {
+      "id": "dietmb_med_3f77",
+      "difficulty": "medium",
+      "question": "How does a high animal protein diet affect the gut microbiome differently from a plant-based protein diet, and what are the respective health implications?",
+      "answer": "A high animal protein diet increases counts of bile-tolerant anaerobes such as Bacteroides, Alistipes, and Bilophila, while reducing butyrate-producing bacteria like Roseburia and Eubacterium rectale, leading to decreased fecal butyrate. It is also associated with elevated trimethylamine-N-oxide (TMAO), a proatherogenic compound linked to cardiovascular disease risk. In contrast, plant-based protein sources such as whey and pea protein increase gut-commensal Bifidobacterium and Lactobacillus, while pea protein also increases intestinal SCFA levels. The higher SCFA production associated with plant protein diets supports the mucosal barrier and anti-inflammatory pathways, whereas high animal protein intake has been associated with increased IBD risk in large prospective studies.",
+      "topic_tags": ["animal protein", "plant protein", "TMAO", "butyrate", "Bacteroides", "IBD risk"]
+    },
+    {
+      "id": "dietmb_med_5b40",
+      "difficulty": "medium",
+      "question": "What mechanisms link dietary fat composition to gut microbiota changes and downstream metabolic inflammation?",
+      "answer": "Different dietary fat types produce distinct microbial shifts with distinct downstream effects. High saturated fat diets increase Bacteroides, Bilophila, and total anaerobic microflora. Lard-based diets elevate Bacteroides and Bilophila, while fish oil-based diets promote Bifidobacterium, Lactobacillus, Streptococcus, and Akkermansia muciniphila. Mechanistically, lard-fed animals show increased systemic TLR activation, white adipose tissue inflammation, and impaired insulin sensitivity compared to fish-oil-fed animals. Microbiota transplantation experiments between these two groups replicate the donor's inflammatory and metabolic phenotype in the recipient, demonstrating that the gut microbiota mediates metabolic inflammation through TLR signaling in response to saturated lipids.",
+      "topic_tags": ["dietary fat", "saturated fat", "TLR signaling", "Akkermansia", "metabolic inflammation", "microbiota transplantation"]
+    },
+    {
+      "id": "dietmb_med_e6b3",
+      "difficulty": "medium",
+      "question": "How do artificial sweeteners affect the gut microbiome differently from natural sugars, and what are the metabolic consequences of this difference?",
+      "answer": "Natural sugars such as glucose, fructose, sucrose, and lactose consistently increase Bifidobacteria while reducing Bacteroides and Clostridia — shifts associated with beneficial microbial activity. Artificial sweeteners, by contrast, cause intestinal dysbiosis with increased Bacteroides and reduced Lactobacillus reuteri — microbial shifts directly opposing those induced by natural sugars. These dysbiotic changes induced by artificial sweeteners are linked to glucose intolerance, a paradoxical finding given that sweeteners were originally developed as a lower-risk alternative to sugar. This suggests that contrary to popular belief, artificial sweeteners may actually pose metabolic risks mediated through adverse microbiota alterations.",
+      "topic_tags": ["artificial sweeteners", "saccharin", "glucose intolerance", "dysbiosis", "natural sugars", "Lactobacillus"]
+    },
+    {
+      "id": "dietmb_med_1c55",
+      "difficulty": "medium",
+      "question": "What specific microbial and immune mechanisms explain why non-digestible carbohydrates and fiber have anti-inflammatory effects?",
+      "answer": "Non-digestible carbohydrates (NDCs) travel to the large intestine where fermentation by resident microbiota generates SCFAs and modifies the intestinal environment. Diets rich in NDCs consistently increase Bifidobacteria, Lactobacilli, Ruminococcus, Eubacterium rectale, and Roseburia while reducing Clostridium and Enterococcus. The anti-inflammatory effects operate through multiple pathways: increased SCFA production stimulates T regulatory cell abundance and inhibits the transcription factor NF-κB, reducing pro-inflammatory cytokines; butyrate specifically inhibits histone deacetylases 6 and 9, upregulating FOXP3 gene expression and regulatory T cell proliferation; and fiber fermentation strengthens gastrointestinal-associated lymphoid tissue (GALT). Studies also report reductions in pro-inflammatory IL-6, insulin resistance, and post-prandial glucose with whole grain NDC intake.",
+      "topic_tags": ["dietary fiber", "SCFAs", "NF-κB", "T regulatory cells", "GALT", "epigenetics", "anti-inflammatory"]
+    },
+    {
+      "id": "dietmb_med_a2de",
+      "difficulty": "medium",
+      "question": "How do dietary polyphenols influence the composition of the gut microbiota and what health benefits are associated with these microbial shifts?",
+      "answer": "Dietary polyphenols — including catechins, flavonols, flavones, anthocyanins, proanthocyanidins, and phenolic acids from fruits, seeds, vegetables, tea, cocoa, and wine — consistently enrich Bifidobacterium and Lactobacillus while reducing pathogenic Clostridium (C. perfringens, C. histolyticum), Salmonella typhimurium, and Staphylococcus aureus. Red wine polyphenols additionally increase Bacteroides abundance. These microbial changes contribute to health benefits including immune-modulation, cancer prevention, and IBD management. Cocoa-derived polyphenols are associated with increased plasma HDL and reductions in triacylglycerol and C-reactive protein. Fruit polyphenols exhibit direct antibacterial activity against several enteropathogens, adding a further layer of protection beyond microbiota modulation.",
+      "topic_tags": ["polyphenols", "Bifidobacteria", "Lactobacillus", "antimicrobial", "CRP", "HDL", "Clostridium"]
+    },
+    {
+      "id": "dietmb_med_8fc1",
+      "difficulty": "medium",
+      "question": "What microbial and metabolic features characterize the gut microbiome of patients with type 2 diabetes, and how do these differ from healthy individuals?",
+      "answer": "The gut microbiota of patients with type 2 diabetes is functionally characterized by diabetes-associated markers including enriched membrane transport of sugars and branched-chain amino acids, xenobiotic metabolism, and sulfate reduction. Concurrently, there is decreased bacterial chemotaxis, reduced butyrate synthesis, and impaired metabolism of cofactors and vitamins compared to healthy individuals. Epigenetic evidence further supports this connection: reduced methylation in the promoters of pro-inflammatory genes TLR2 and FFAR3 is correlated with reduced abundance of Faecalibacterium prausnitzii — a key butyrate-producing bacterium — in type 2 diabetes patients, suggesting that microbiota-driven epigenetic regulation may contribute to the sustained inflammatory state of metabolic disease.",
+      "topic_tags": ["type 2 diabetes", "butyrate", "Faecalibacterium prausnitzii", "epigenetics", "TLR", "metabolic dysbiosis"]
+    },
+
+    {
+      "id": "dietmb_hard_2b9c",
+      "difficulty": "hard",
+      "question": "How does the Mediterranean diet compare to Western and gluten-free diets in terms of its impact on gut microbial composition and downstream cardiometabolic risk markers?",
+      "answer": "The Mediterranean diet — rich in dietary fiber, antioxidants, monounsaturated and polyunsaturated fatty acids, and relatively low in red meat — produces the most favorable microbial profile of the three. It is associated with increases in total bacteria, Bifidobacteria, Lactobacilli, Prevotella, Eubacteria, Roseburia, and Bacteroides, along with higher fecal SCFAs. These shifts mediate improvements in obesity, lipid profiles, and inflammation markers. High Mediterranean diet adherence correlates inversely with urinary TMAO, a proatherogenic compound, reducing cardiovascular risk. In contrast, the Western diet (high in animal fat/protein, low in fiber) markedly decreases total bacteria, Bifidobacterium, Eubacterium, and Lactobacilli while increasing Bacteroides and Enterobacteria, and is associated with production of cancer-promoting nitrosamines and elevated cardiovascular disease risk. A gluten-free diet reduces beneficial bacteria (Bifidobacterium, Lactobacillus, Prevotella, Eubacteria, Roseburia) and elevates potentially pathogenic Enterobacteria and Clostridiaceae, partly due to reduced polysaccharide intake — despite often being perceived as health-promoting.",
+      "topic_tags": ["Mediterranean diet", "Western diet", "gluten-free diet", "TMAO", "SCFA", "cardiovascular risk", "microbiome comparison"]
+    },
+    {
+      "id": "dietmb_hard_4d7f",
+      "difficulty": "hard",
+      "question": "What is the multi-step mechanism by which butyrate produced from gut microbial fermentation exerts epigenetic and immune regulatory effects on the host?",
+      "answer": "Butyrate, a short-chain fatty acid produced primarily by Firmicutes through fermentation of non-digestible carbohydrates, acts via several convergent mechanisms. First, it serves as the primary energy source for colonocytes and directly strengthens gut barrier integrity. Second, butyrate acts as a histone deacetylase (HDAC) inhibitor — specifically inhibiting HDACs 6 and 9 — leading to increased acetylation at the promoter of the FOXP3 gene. This epigenetic modification drives higher regulatory T cell (Treg) proliferation, which suppresses effector T cell-mediated inflammation. Third, intestinal SCFAs including butyrate directly increase the abundance of Tregs in the gut and protect against allergic airway inflammation. Fourth, by inhibiting the transcription factor NF-κB, butyrate decreases secretion of several pro-inflammatory cytokines. Fifth, microbial-derived butyrate may act through G-protein-coupled receptors to further modulate immune responses. Together, these pathways create a diet-microbiome-epigenome axis through which high-fiber diets translate into systemic anti-inflammatory outcomes.",
+      "topic_tags": ["butyrate", "histone deacetylase", "FOXP3", "T regulatory cells", "NF-κB", "epigenetics", "immunoregulation"]
+    },
+    {
+      "id": "dietmb_hard_0e6b",
+      "difficulty": "hard",
+      "question": "How does the gut microbiome serve as a mechanistic link between red meat consumption and increased cardiovascular disease risk, and which specific bacterial metabolic pathways are involved?",
+      "answer": "Red meat consumption drives cardiovascular disease risk through a microbiota-mediated pathway centered on the production of trimethylamine-N-oxide (TMAO). Dietary red meat is rich in choline, phosphatidylcholine, and L-carnitine. Specific intestinal bacteria metabolize these compounds to produce trimethylamine (TMA), which is then oxidized in the liver to TMAO — a proatherogenic compound that promotes atherosclerosis. Several microbial genera elevated by animal protein intake — including Bacteroides, Alistipes, and Bilophila — are associated with increased TMAO production. Additionally, high animal protein intake with low carbohydrate reduces butyrate-producing bacteria like Roseburia and Eubacterium rectale, lowering fecal butyrate. The resulting deficiency in butyrate and other SCFAs reduces anti-inflammatory protection, while elevated TMAO simultaneously promotes atherogenesis. Mouse studies also reveal that high protein intake increases IGF-1 levels, associated with increased cancer and overall mortality risk — further compounding the systemic metabolic hazard.",
+      "topic_tags": ["TMAO", "red meat", "atherosclerosis", "choline", "L-carnitine", "butyrate", "cardiovascular risk", "microbiota metabolism"]
+    },
+    {
+      "id": "dietmb_hard_c3a4",
+      "difficulty": "hard",
+      "question": "What are the limitations of 16S rRNA amplicon sequencing for gut microbiome research, and how does shotgun metagenomics overcome them? What do these methodological differences mean for interpreting diet-microbiome studies?",
+      "answer": "16S rRNA amplicon sequencing identifies bacteria by targeting hypervariable regions of the 16S rRNA gene. While it is cost-effective and workflows are relatively simple, this approach provides information only about microbial identity and taxonomy — not function. It cannot determine what metabolic activities the identified bacteria are performing or which genes they express. This is a major limitation in the context of diet-microbiome research because functional redundancy means that compositionally different microbiotas can produce similar metabolite profiles, and conversely, compositionally similar microbiotas may differ functionally based on which genes are expressed. Shotgun metagenomics sequences the entire bacterial genome, providing information about both microbial identity and gene composition. This reveals which metabolic pathways are encoded and inferred to be active, offering a more mechanistic view of how diet shapes microbial function and downstream host physiology. For diet-microbiome studies, this distinction matters: identifying that a diet changes microbial abundance (16S) is less informative than knowing whether it changes the capacity to produce SCFAs, TMAO, or immune-modulating metabolites (metagenomics). Future diet research should integrate functional data, host transcriptomics, and immunophenotyping with microbiome profiling to establish meaningful causal links.",
+      "topic_tags": ["16S rRNA sequencing", "shotgun metagenomics", "functional redundancy", "methodology", "dietary research limitations", "microbiome function"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "dietmb_mcq_easy_f5b2",
+      "difficulty": "easy",
+      "question": "Which dietary component most consistently increases intestinal Bifidobacteria and lactic acid bacteria across multiple studies?",
+      "options": {
+        "A": "High animal protein",
+        "B": "Non-digestible carbohydrates and fiber",
+        "C": "High saturated fat",
+        "D": "Artificial sweeteners"
+      },
+      "correct_answer": "B",
+      "explanation": "Non-digestible carbohydrates (fiber, resistant starch, prebiotics) most consistently enrich Bifidobacteria and lactic acid bacteria (Lactobacilli) across the majority of studies. Animal protein increases bile-tolerant anaerobes, saturated fat increases Bacteroides and Bilophila, and artificial sweeteners cause dysbiosis with reduced Lactobacillus.",
+      "topic_tags": ["dietary fiber", "Bifidobacteria", "Lactobacilli", "prebiotics"]
+    },
+    {
+      "id": "dietmb_mcq_easy_b3c7",
+      "difficulty": "easy",
+      "question": "Which dietary pattern is associated with increased production of SCFA-producing bacteria such as Prevotella, Bifidobacteria, and Roseburia, along with reduced cardiovascular risk markers?",
+      "options": {
+        "A": "Western diet",
+        "B": "High-protein low-carbohydrate diet",
+        "C": "Gluten-free diet",
+        "D": "Mediterranean diet"
+      },
+      "correct_answer": "D",
+      "explanation": "The Mediterranean diet is distinguished by high fiber, antioxidants, and unsaturated fats, and is consistently associated with increases in Prevotella, Bifidobacteria, Lactobacilli, Roseburia, and Eubacteria, higher fecal SCFAs, and reduced urinary TMAO — a proatherogenic compound linked to cardiovascular risk.",
+      "topic_tags": ["Mediterranean diet", "SCFA", "Prevotella", "TMAO", "cardiovascular risk"]
+    },
+    {
+      "id": "dietmb_mcq_easy_7e1d",
+      "difficulty": "easy",
+      "question": "What is the primary route by which dietary red meat contributes to cardiovascular disease risk via the gut microbiome?",
+      "options": {
+        "A": "By reducing Lactobacillus abundance and weakening the gut barrier",
+        "B": "By enriching bile-tolerant bacteria that increase LDL cholesterol directly",
+        "C": "By promoting microbial metabolism of choline and phosphatidylcholine to produce the proatherogenic compound TMAO",
+        "D": "By suppressing Bifidobacteria, which normally block cholesterol absorption"
+      },
+      "correct_answer": "C",
+      "explanation": "Gut bacteria metabolize choline and phosphatidylcholine — abundant in red meat — to produce trimethylamine (TMA), which is then oxidized by the liver to TMAO (trimethylamine-N-oxide), a proatherogenic compound that increases cardiovascular disease risk.",
+      "topic_tags": ["red meat", "TMAO", "choline", "cardiovascular disease", "microbiome"]
+    },
+
+    {
+      "id": "dietmb_mcq_med_9a3f",
+      "difficulty": "medium",
+      "question": "What happens to the gut microbiome when people consume a gluten-free diet, and why might this be counterintuitive?",
+      "options": {
+        "A": "Beneficial bacteria increase because gluten is pro-inflammatory and its removal reduces gut irritation",
+        "B": "Bifidobacterium and Lactobacillus decrease, while potentially pathogenic Enterobacteriaceae and Clostridiaceae increase, due to reduced polysaccharide intake",
+        "C": "Microbial diversity increases substantially due to greater availability of fermentable plant-based substrates",
+        "D": "No significant changes occur because gluten itself is not a direct substrate for gut fermentation"
+      },
+      "correct_answer": "B",
+      "explanation": "A gluten-free diet reduces beneficial bacteria including Bifidobacterium, Lactobacillus, Ruminococcus bromii, and Roseburia faecis, while increasing potentially pathogenic Enterobacteriaceae and Clostridiaceae. This is counterintuitive because the diet is widely perceived as health-promoting, but the reduction in gluten-containing grains also reduces fermentable polysaccharide intake that feeds beneficial microbes.",
+      "topic_tags": ["gluten-free diet", "Bifidobacterium", "Enterobacteriaceae", "polysaccharides", "dysbiosis"]
+    },
+    {
+      "id": "dietmb_mcq_med_4d8b",
+      "difficulty": "medium",
+      "question": "Through which primary mechanism does dietary fiber intake reduce pro-inflammatory cytokine production and support gut immune homeostasis?",
+      "options": {
+        "A": "Fiber directly binds and neutralizes bacterial lipopolysaccharide (LPS) in the gut lumen",
+        "B": "Fiber increases stomach acid, killing pro-inflammatory bacteria before they reach the colon",
+        "C": "Microbial fermentation of fiber produces SCFAs that inhibit NF-κB, promote T regulatory cell proliferation via HDAC inhibition, and strengthen GALT",
+        "D": "Fiber elevates IgA secretion by directly stimulating Peyer's patches in the small intestine"
+      },
+      "correct_answer": "C",
+      "explanation": "The primary immune mechanism of dietary fiber operates through SCFA production. SCFAs — especially butyrate — inhibit the transcription factor NF-κB (reducing pro-inflammatory cytokines), inhibit histone deacetylases to upregulate FOXP3 and T regulatory cell proliferation, and strengthen gastrointestinal-associated lymphoid tissue (GALT) through fermentation-derived signaling.",
+      "topic_tags": ["dietary fiber", "SCFAs", "NF-κB", "T regulatory cells", "HDAC inhibition", "GALT"]
+    },
+    {
+      "id": "dietmb_mcq_med_2c6e",
+      "difficulty": "medium",
+      "question": "How does consumption of a high-fat diet rich in saturated lipids (e.g., lard) influence gut microbiota and systemic metabolic outcomes compared to a diet rich in unsaturated fats (e.g., fish oil)?",
+      "options": {
+        "A": "Both diets produce similar microbial profiles; metabolic differences arise exclusively from caloric density",
+        "B": "Lard promotes Akkermansia muciniphila and Bifidobacterium, whereas fish oil promotes Bacteroides — driving opposing immune profiles",
+        "C": "Lard increases Bacteroides and Bilophila and drives TLR-mediated adipose tissue inflammation and insulin resistance, while fish oil promotes Akkermansia, Bifidobacterium, and lactic acid bacteria with reduced inflammation",
+        "D": "Fish oil exclusively increases Clostridiales, which are the primary butyrate producers that explain its anti-inflammatory effect"
+      },
+      "correct_answer": "C",
+      "explanation": "Lard-fed animals show increased Bacteroides and Bilophila, heightened systemic TLR activation, white adipose tissue inflammation, and impaired insulin sensitivity. Fish oil-fed animals show increased Akkermansia muciniphila, Bifidobacterium, Lactobacillus, and Streptococcus, with reduced inflammatory markers. Microbiota transplantation between groups replicates these phenotypes, confirming the gut microbiota as the mediating mechanism.",
+      "topic_tags": ["saturated fat", "unsaturated fat", "Akkermansia", "TLR", "insulin sensitivity", "Bilophila"]
+    },
+    {
+      "id": "dietmb_mcq_med_8f0a",
+      "difficulty": "medium",
+      "question": "What is the significance of Akkermansia muciniphila in the context of obesity and dietary intervention?",
+      "options": {
+        "A": "A. muciniphila degrades dietary fiber to produce TMAO, which paradoxically improves insulin sensitivity",
+        "B": "A. muciniphila is reduced by high-fat diets and its higher baseline abundance is associated with greater improvements in metabolic parameters such as insulin tolerance, plasma triglycerides, and body fat distribution after dietary intervention",
+        "C": "A. muciniphila promotes weight gain by increasing energy harvest from the colonic mucosa",
+        "D": "A. muciniphila has no direct metabolic role but is a biomarker for Firmicutes dominance in obese individuals"
+      },
+      "correct_answer": "B",
+      "explanation": "A. muciniphila is reduced by high-fat diets and is linked to healthy metabolic states. Obese individuals with higher baseline A. muciniphila abundance show greater improvements in obesity-associated metabolic parameters — including insulin tolerance, plasma triglycerides, and body fat distribution — following dietary intervention, suggesting its abundance is predictive of therapeutic response.",
+      "topic_tags": ["Akkermansia muciniphila", "obesity", "insulin tolerance", "dietary intervention", "metabolic health"]
+    },
+    {
+      "id": "dietmb_mcq_med_5a9c",
+      "difficulty": "medium",
+      "question": "Which of the following most accurately describes the effect of a high protein, low carbohydrate diet on fecal SCFA profiles and associated gut bacteria?",
+      "options": {
+        "A": "It increases butyrate and Roseburia while decreasing Bacteroides",
+        "B": "It raises all SCFAs uniformly by providing amino acid substrates for fermentation",
+        "C": "It reduces Roseburia and Eubacterium rectale and decreases the proportion of butyrate in feces",
+        "D": "It has no effect on SCFA composition but increases mucin-derived propionate production"
+      },
+      "correct_answer": "C",
+      "explanation": "High protein, low carbohydrate diets reduce butyrate-producing bacteria — particularly Roseburia and Eubacterium rectale — leading to a decreased proportion of butyrate in feces. This is metabolically unfavorable since butyrate supports colonocyte health, gut barrier integrity, and anti-inflammatory immune regulation.",
+      "topic_tags": ["high protein diet", "low carbohydrate", "Roseburia", "Eubacterium rectale", "butyrate", "SCFA"]
+    },
+
+    {
+      "id": "dietmb_mcq_hard_1b3d",
+      "difficulty": "hard",
+      "question": "A research group observes that two individuals eating identical diets have markedly different fecal SCFA profiles and gut inflammatory markers, despite highly similar microbiota taxonomic compositions by 16S rRNA sequencing. Which explanation best accounts for this finding?",
+      "options": {
+        "A": "One individual must have consumed a different diet on a previous day, shifting metabolite production temporarily",
+        "B": "Functional redundancy in the gut microbiota means compositionally similar communities may differ in which metabolic genes are actually expressed, leading to different SCFA and immune profiles",
+        "C": "16S rRNA sequencing is only accurate for phylum-level classification; species-level variation explains all the metabolic differences",
+        "D": "The inflammatory marker discrepancy is entirely explained by host immune genetics unrelated to the microbiome"
+      },
+      "correct_answer": "B",
+      "explanation": "This scenario illustrates functional redundancy and the limitations of 16S rRNA sequencing. Even if two individuals have similar taxonomic composition, the metabolic genes encoded or expressed by their bacteria may differ, producing different SCFA outputs and immune outcomes. Shotgun metagenomics — which captures gene composition — would be needed to explain these discrepancies, underscoring why composition alone is insufficient for predicting microbiome function.",
+      "topic_tags": ["functional redundancy", "16S rRNA", "shotgun metagenomics", "SCFA", "microbiome methodology"]
+    },
+    {
+      "id": "dietmb_mcq_hard_7c5e",
+      "difficulty": "hard",
+      "question": "A clinician is designing a dietary intervention to simultaneously reduce cardiovascular risk, improve insulin sensitivity, and support a healthy gut microbiome in an obese patient with low microbial diversity. Based on the mechanistic evidence, which combined dietary strategy would be most rationally supported?",
+      "options": {
+        "A": "High animal protein with moderate saturated fat, as this increases microbial diversity and drives weight loss through IGF-1 elevation",
+        "B": "A Mediterranean-style diet high in fiber, unsaturated fats, and polyphenols, combined with probiotic-containing fermented foods to enrich SCFA-producing bacteria, reduce TMAO, and attenuate TLR-mediated inflammation",
+        "C": "A gluten-free high-fat diet, because removing gluten reduces gut inflammation while fat provides substrates for Akkermansia muciniphila",
+        "D": "Artificial sweetener substitution for natural sugars with increased animal protein to lower caloric intake while maintaining microbial stability"
+      },
+      "correct_answer": "B",
+      "explanation": "The Mediterranean diet supports the most favorable microbial shifts — increasing Prevotella, Bifidobacteria, Lactobacilli, and SCFA-producing Roseburia — while reducing TMAO (cardiovascular risk), inflammatory markers, and insulin resistance. Adding fermented probiotic foods further enriches Bifidobacteria and Lactobacilli. High fiber supports Akkermansia abundance. This approach addresses all three clinical goals through documented microbial and metabolic mechanisms. The other options either increase TMAO and reduce butyrate (A), deplete beneficial bacteria (C), or cause dysbiosis (D).",
+      "topic_tags": ["Mediterranean diet", "cardiovascular risk", "insulin sensitivity", "TMAO", "probiotics", "SCFAs", "Akkermansia", "clinical application"]
+    }
+  ]
+}

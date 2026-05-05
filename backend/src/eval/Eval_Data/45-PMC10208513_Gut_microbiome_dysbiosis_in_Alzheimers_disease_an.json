@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Gut microbiome dysbiosis in Alzheimer's disease and mild cognitive impairment: A systematic review and meta-analysis",
+    "authors": ["Sherlyn Jemimah", "Chahd Maher Musthafa Chabib", "Leontios Hadjileontiadis", "Aamna AlShehhi"],
+    "journal": "PLOS ONE",
+    "year": 2023,
+    "doi": "10.1371/journal.pone.0285346",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "ADGM_easy_001",
+      "difficulty": "easy",
+      "question": "What is the gut-brain axis, and how does it link gut microbiome dysbiosis to neurodegeneration?",
+      "answer": "The gut-brain axis is a bidirectional communication channel between the brain and abdominal organs, operating through the nervous system and neuromodulator production. When gut microbiome composition is disturbed — a state called dysbiosis — the pathway to neurodegeneration involves immune activation through a defective gut barrier, induction of a systemic inflammatory response, impairment of the blood-brain barrier, and ultimately neuroinflammation. These cascading events suggest that perturbations in gut microbial ecology can contribute to the onset or worsening of neurodegenerative disorders including Alzheimer's disease.",
+      "topic_tags": ["gut-brain axis", "dysbiosis", "neurodegeneration", "neuroinflammation", "blood-brain barrier"]
+    },
+    {
+      "id": "ADGM_easy_002",
+      "difficulty": "easy",
+      "question": "What is mild cognitive impairment (MCI) and what is its relationship to Alzheimer's disease?",
+      "answer": "Mild cognitive impairment (MCI) is regarded as the prodromal or early stage that precedes Alzheimer's disease. Patients with MCI experience subjective decreases in cognition and memory — often corroborated by a caregiver — without yet meeting full diagnostic criteria for Alzheimer's disease. Because MCI represents the transition zone before full disease onset, it is an important window for early diagnosis and intervention, including non-drug approaches that may be particularly effective at this stage.",
+      "topic_tags": ["mild cognitive impairment", "MCI", "Alzheimer's disease", "prodromal stage", "early diagnosis"]
+    },
+    {
+      "id": "ADGM_easy_003",
+      "difficulty": "easy",
+      "question": "What are alpha-diversity (α-diversity) and beta-diversity (β-diversity) in the context of gut microbiome studies, and what does each measure?",
+      "answer": "Alpha-diversity refers to the variety (richness) and abundance (evenness) of microbial species within a single sample or individual. Common α-diversity indices include Shannon, Simpson, Chao, ACE, and number of species observed (Sobs). Beta-diversity, by contrast, measures compositional differences between microbial communities across samples or groups — for example, between Alzheimer's patients and cognitively normal controls — typically expressed through distance matrices (e.g., Bray-Curtis, UniFrac) and visualized using ordination methods such as PCoA or PCA.",
+      "topic_tags": ["alpha-diversity", "beta-diversity", "species richness", "Shannon index", "microbiome methodology"]
+    },
+    {
+      "id": "ADGM_easy_004",
+      "difficulty": "easy",
+      "question": "What role do short-chain fatty acids (SCFAs) play in the context of gut health and neurological disease?",
+      "answer": "SCFAs, produced by gut bacteria through fermentation, are important for gut health and immune regulation. Butyrate in particular has been shown to reduce inflammation and regulate the host immune system. In the context of neurological disease, treatment with sodium butyrate in germ-free mice has been shown to decrease blood-brain barrier permeability, suggesting a protective role. However, SCFA supplementation has also been linked in some studies to increased amyloid-β burden, indicating a complex and potentially dual role in Alzheimer's pathophysiology. The balance and source of SCFA producers in the gut may therefore be critical to brain health outcomes.",
+      "topic_tags": ["SCFAs", "butyrate", "gut-brain axis", "blood-brain barrier", "amyloid-beta", "Alzheimer's disease"]
+    },
+    {
+      "id": "ADGM_easy_005",
+      "difficulty": "easy",
+      "question": "Why is polypharmacy considered a potential confounding factor in gut microbiome studies involving elderly patients?",
+      "answer": "Polypharmacy — defined as the concurrent use of five or more daily medications — is common in elderly populations and is known to be detrimental to gut microbiome composition. Because many studies of Alzheimer's disease involve older patients who are likely to use multiple medications, polypharmacy can alter microbial communities independently of disease status, potentially obscuring or confounding true biological signals related to neurodegeneration. This represents a source of bias in interpreting microbiome findings from elderly cohorts, particularly when most studies document medications but do not specifically address or control for polypharmacy.",
+      "topic_tags": ["polypharmacy", "confounding factors", "elderly", "gut microbiome", "bias", "Alzheimer's disease"]
+    },
+
+    {
+      "id": "ADGM_medium_001",
+      "difficulty": "medium",
+      "question": "How does gut dysbiosis initiate during the prodromal stage of Alzheimer's disease, and what microbial markers suggest early-stage changes?",
+      "answer": "Evidence suggests that gut microbiome dysbiosis begins during the MCI (prodromal) stage rather than only manifesting at full Alzheimer's disease. Key markers of early-stage dysbiosis include a significant, moderate increase in the genus Phascolarctobacterium during MCI, which was also seen — though without statistical significance — in Alzheimer's disease patients. Additionally, moderate, insignificant decreases in both the Firmicutes phylum and the Bacteroides genus have been observed in MCI. These compositional shifts, combined with the fact that changes in Bacteroides are more pronounced in the AD stage than the MCI stage, collectively underscore the importance of early microbiome monitoring as a potential avenue for prodromal diagnosis and timely non-drug intervention.",
+      "topic_tags": ["prodromal Alzheimer's", "MCI", "dysbiosis", "Phascolarctobacterium", "early diagnosis", "Bacteroides"]
+    },
+    {
+      "id": "ADGM_medium_002",
+      "difficulty": "medium",
+      "question": "What is the metabolic significance of Bacteroides in the gut, and how does its altered abundance in Alzheimer's disease relate to SCFA metabolism?",
+      "answer": "Bacteroides are among the most abundant genera in the human gut and play a central role in carbohydrate metabolism, utilizing polysaccharides to produce acetate and propionate — two key short-chain fatty acids. In the context of Alzheimer's disease, meta-analyses reveal that Bacteroides abundance is significantly reduced in Chinese cohorts but notably increased in US-based AD cohorts. This regional divergence suggests that factors such as diet, lifestyle, and geographic background strongly modulate Bacteroides levels and therefore SCFA production profiles. Because propionate and acetate influence systemic inflammation and gut barrier integrity, shifts in Bacteroides abundance may have downstream consequences for gut-brain axis signaling in Alzheimer's pathophysiology.",
+      "topic_tags": ["Bacteroides", "propionate", "acetate", "SCFA metabolism", "regional differences", "Alzheimer's disease"]
+    },
+    {
+      "id": "ADGM_medium_003",
+      "difficulty": "medium",
+      "question": "How do pro-inflammatory and anti-inflammatory bacterial genera shift in Alzheimer's disease, and what are the implications for neuroinflammation?",
+      "answer": "In Alzheimer's disease, case-control studies consistently identify an increased abundance of pro-inflammatory genera such as Escherichia-Shigella alongside a decrease in anti-inflammatory species such as Eubacterium rectale. LEfSe analyses further reveal increased Enterobacteriaceae and Lactobacillaceae, and decreased Bacteroidaceae, Lachnospiraceae, Anaerostipes, and Lachnospira. Pro-inflammatory bacterial genera can contribute to immune activation through a defective gut barrier, triggering systemic inflammatory responses that impair the blood-brain barrier and promote neuroinflammation. This inflammatory cascade is considered a mechanistic bridge linking gut dysbiosis to the onset and progression of neurodegeneration in Alzheimer's disease.",
+      "topic_tags": ["pro-inflammatory bacteria", "anti-inflammatory bacteria", "neuroinflammation", "Escherichia-Shigella", "Eubacterium rectale", "gut barrier"]
+    },
+    {
+      "id": "ADGM_medium_004",
+      "difficulty": "medium",
+      "question": "What is the role of region, diet, and lifestyle in shaping gut microbiome composition in Alzheimer's disease, and why is this significant for clinical research?",
+      "answer": "Regional differences in gut microbiome composition are evident in Alzheimer's disease research. Notably, the Bacteroides genus is significantly reduced in Chinese AD cohorts but increased in US-based cohorts — a striking divergence in the same disease context. This regional heterogeneity points to the powerful influence of diet and lifestyle on microbiome composition, which in turn affects the gut-brain axis and potentially AD pathophysiology. From a clinical research perspective, this underscores the importance of designing region-stratified, longitudinal studies in aging populations. It also suggests that microbiome-based biomarkers and interventions may need to be tailored to regional dietary contexts rather than applied universally, and that patient cohorts may need stratification based on microbiome profiles before initiating any microbiome-targeted therapy.",
+      "topic_tags": ["regional differences", "diet", "lifestyle", "Bacteroides", "Alzheimer's disease", "gut-brain axis", "clinical stratification"]
+    },
+    {
+      "id": "ADGM_medium_005",
+      "difficulty": "medium",
+      "question": "How does Phascolarctobacterium contribute to gut metabolite production, and what is notable about its abundance pattern across disease stages in Alzheimer's?",
+      "answer": "Phascolarctobacterium utilizes succinate as a substrate to produce propionate and acetate, two short-chain fatty acids with important roles in gut health and immune regulation. In the context of Alzheimer's disease progression, meta-analysis shows a moderate, significant increase in Phascolarctobacterium specifically during the MCI (prodromal) stage, while the increase observed in full Alzheimer's disease does not reach statistical significance. This stage-specific elevation makes Phascolarctobacterium a potentially relevant early microbiome marker. Its ability to produce propionate and acetate may also alter the metabolic environment of the gut in ways that interact with the gut-brain axis, though the precise functional implications for neurodegeneration are not yet fully established.",
+      "topic_tags": ["Phascolarctobacterium", "propionate", "acetate", "succinate fermentation", "MCI", "disease staging"]
+    },
+    {
+      "id": "ADGM_medium_006",
+      "difficulty": "medium",
+      "question": "What methodological considerations arise when interpreting 16S rRNA-based gut microbiome studies in Alzheimer's disease research?",
+      "answer": "Several methodological factors must be considered when interpreting 16S rRNA-based microbiome studies in Alzheimer's research. First, the choice of variable region sequenced (e.g., V3-V4 vs. V1-V9 vs. V4 alone) introduces technical heterogeneity across studies. Second, despite variation in bioinformatic pipelines, the widespread adoption of tools like QIIME has provided a degree of analytical standardization. Third, 16S sequencing provides taxonomic resolution typically limited to genus or family level, whereas species-level profiling and metabolomics would yield more granular mechanistic insights. Fourth, significant inter-study heterogeneity in microbial abundance findings — reflected in high I² values — limits pooled effect estimates. Finally, confounding factors such as polypharmacy, comorbidities, and regional dietary patterns can all distort biological signals, making controlled study design and subgroup analyses essential.",
+      "topic_tags": ["16S rRNA", "methodology", "QIIME", "bioinformatics", "heterogeneity", "microbiome research"]
+    },
+
+    {
+      "id": "ADGM_hard_001",
+      "difficulty": "hard",
+      "question": "How do alpha-diversity changes differ between Alzheimer's disease and MCI, and what do these differences reveal about disease progression at the microbiome level?",
+      "answer": "Alpha-diversity findings differ substantially between MCI and full Alzheimer's disease. In Alzheimer's disease patients, multiple indices of species richness are significantly reduced — including the number of species observed (Sobs), ACE, and the Chao index — alongside a small but significant decrease in Shannon diversity. These findings indicate a meaningful loss of microbial species richness as disease progresses. In contrast, MCI patients show a small, non-significant increase in Shannon diversity and a non-significant decrease in Chao index, suggesting that evenness is relatively preserved and species richness is not yet substantially depleted at the prodromal stage. This pattern implies that dysbiosis in the AD gut is primarily characterized by loss of species richness rather than disrupted evenness, and that the most pronounced diversity losses emerge at the advanced disease stage rather than during early cognitive impairment — a finding distinct from alpha-diversity patterns observed in Parkinson's disease.",
+      "topic_tags": ["alpha-diversity", "species richness", "Shannon index", "Chao index", "disease progression", "MCI vs AD"]
+    },
+    {
+      "id": "ADGM_hard_002",
+      "difficulty": "hard",
+      "question": "What is the dual and contradictory evidence surrounding SCFA producers in Alzheimer's disease, and how should this complexity be interpreted in the context of microbiome-targeted therapies?",
+      "answer": "The role of SCFAs in Alzheimer's disease is complex and contradictory. On one hand, butyrate has anti-inflammatory properties, regulates immune responses, and treatment with sodium butyrate in germ-free mice has been shown to reduce blood-brain barrier permeability — suggesting neuroprotective potential. On the other hand, SCFA supplementation has been linked to increased amyloid-β plaque deposition via microglial activation, indicating a potential pathogenic role. Further complicating matters, LEfSe analyses reveal increased abundance of acetate, lactate, and propionate producers — including Akkermansia, Lactobacillus, and Bifidobacterium — in Alzheimer's disease patients, and these organisms have been shown to correlate negatively with clinical indicators of cognitive function. This bidirectionality suggests that SCFA-producing microbes may have context-dependent effects, and any microbiome-targeted intervention aimed at modulating SCFA production must carefully account for the type of SCFA, the source bacterial species, disease stage, and regional dietary context — underscoring the need for metabolomics and species-level microbiome profiling before translating findings to therapeutics.",
+      "topic_tags": ["SCFAs", "butyrate", "amyloid-beta", "Akkermansia", "Lactobacillus", "Bifidobacterium", "microbiome therapy", "neurodegeneration"]
+    },
+    {
+      "id": "ADGM_hard_003",
+      "difficulty": "hard",
+      "question": "How do Lachnospiraceae and Ruminococcaceae relate to Alzheimer's disease dysbiosis, and what does their decreased abundance imply for metabolic function in the gut?",
+      "answer": "Lachnospiraceae and Ruminococcaceae are butyrate-producing bacterial families associated with gut homeostasis and SCFA metabolism. Meta-analyses reveal large and moderate — though statistically insignificant — decreases in both families in Alzheimer's disease patients, with high inter-study heterogeneity (I² > 97% for both). This consistent directional trend toward reduced abundance is further supported by LEfSe analyses showing Lachnospiraceae to be consistently lower in multiple AD cohorts. Because both families are among the primary producers of butyrate in the gut, their decline in Alzheimer's disease implies reduced production of this anti-inflammatory SCFA, potentially weakening gut barrier integrity, heightening systemic inflammation, and impairing neuroprotective signaling via the gut-brain axis. The high heterogeneity in these findings also points to the substantial influence of regional, dietary, and demographic variability — reinforcing the need for larger, geographically diverse cohorts to establish more definitive effect sizes.",
+      "topic_tags": ["Lachnospiraceae", "Ruminococcaceae", "butyrate production", "Alzheimer's disease", "gut barrier", "SCFA metabolism"]
+    },
+    {
+      "id": "ADGM_hard_004",
+      "difficulty": "hard",
+      "question": "What does the divergence in Bacteroides abundance between Chinese and US Alzheimer's disease cohorts reveal about the limitations of cross-population microbiome generalizations?",
+      "answer": "The striking divergence in Bacteroides abundance — significantly decreased in Chinese AD cohorts but significantly increased in US cohorts — illustrates a fundamental limitation of treating gut microbiome findings as universally applicable across populations. Bacteroides is a major constituent of the human gut microbiome and a key producer of acetate and propionate, making its directional shift clinically meaningful. However, because its abundance in AD patients moves in opposite directions across regions, pooled global meta-analyses that do not account for geography may produce near-zero net effects that mask real, region-specific biology. This heterogeneity is likely driven by dietary patterns, cultural food practices, and lifestyle differences — factors known to profoundly shape microbiome composition. The implication is that microbiome biomarkers must be validated within specific population contexts before clinical deployment, and that region-stratified subgroup analyses are essential in meta-analytic designs. Furthermore, any microbiome-based intervention targeting Bacteroides would need to account for baseline compositional differences across populations to be effective.",
+      "topic_tags": ["Bacteroides", "regional heterogeneity", "China", "USA", "population differences", "meta-analysis limitations", "microbiome biomarkers"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "ADGM_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which bacterial genus is specifically elevated during the MCI (prodromal) stage of Alzheimer's disease but shows only a non-significant increase in full Alzheimer's disease?",
+      "options": {
+        "A": "Bacteroides",
+        "B": "Lactobacillus",
+        "C": "Phascolarctobacterium",
+        "D": "Bifidobacterium"
+      },
+      "correct_answer": "C",
+      "explanation": "Meta-analysis shows a moderate, significant increase in Phascolarctobacterium during MCI (SMD 0.43, p = 0.02) with low heterogeneity, while its increase in AD does not reach statistical significance. This makes it a notable early-stage microbiome marker.",
+      "topic_tags": ["Phascolarctobacterium", "MCI", "disease staging", "relative abundance"]
+    },
+    {
+      "id": "ADGM_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What is the primary mechanism by which gut dysbiosis is proposed to contribute to Alzheimer's disease neurodegeneration?",
+      "options": {
+        "A": "Direct invasion of gut bacteria into the central nervous system via the vagus nerve",
+        "B": "Immune activation from a defective gut barrier, systemic inflammation, blood-brain barrier impairment, and neuroinflammation",
+        "C": "Microbial production of amyloid-beta peptides that travel to the brain via the bloodstream",
+        "D": "Depletion of tryptophan by gut bacteria, reducing serotonin availability in the brain"
+      },
+      "correct_answer": "B",
+      "explanation": "The paper describes the pathway from gut dysbiosis to neurodegeneration as: immune activation through a defective gut barrier → systemic inflammatory response → blood-brain barrier impairment → neuroinflammation. This is the mechanistic link between gut dysbiosis and Alzheimer's pathophysiology.",
+      "topic_tags": ["gut-brain axis", "neurodegeneration", "blood-brain barrier", "neuroinflammation", "dysbiosis"]
+    },
+    {
+      "id": "ADGM_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "What does the alpha-diversity pattern in Alzheimer's disease primarily reflect compared to mild cognitive impairment?",
+      "options": {
+        "A": "Greater loss of species evenness in AD, with richness preserved in MCI",
+        "B": "Greater loss of species richness in AD, while MCI shows no significant reduction in any diversity index",
+        "C": "Higher species richness in AD due to overgrowth of pathogenic taxa",
+        "D": "No difference in alpha-diversity between AD and MCI"
+      },
+      "correct_answer": "B",
+      "explanation": "In AD, significant decreases are seen in multiple species richness indices (Sobs, ACE, Chao) and a small significant decrease in Shannon diversity. In MCI, there is a small non-significant increase in Shannon diversity and a non-significant decrease in Chao. The dominant signal in AD is therefore a loss of species richness rather than evenness, while MCI shows no significant alpha-diversity reduction.",
+      "topic_tags": ["alpha-diversity", "species richness", "AD vs MCI", "Shannon index", "Chao index"]
+    },
+
+    {
+      "id": "ADGM_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "Why is interpreting pooled Bacteroidetes abundance changes in Alzheimer's disease across studies particularly problematic?",
+      "options": {
+        "A": "Bacteroidetes is not abundant enough in the gut to be reliably detected by 16S rRNA sequencing",
+        "B": "Changes in Bacteroidetes have not been reported in any published study of AD gut microbiome",
+        "C": "Studies show extremely high heterogeneity in Bacteroidetes abundance changes (I² ≈ 96%), making pooled estimates unreliable",
+        "D": "Bacteroidetes is consistently and significantly increased in all AD cohorts, making pooling unnecessary"
+      },
+      "correct_answer": "C",
+      "explanation": "Meta-analysis of Bacteroidetes relative abundance in AD shows a small, non-significant overall decrease (SMD -0.17) with substantial, significant heterogeneity (I² = 96%). This extreme heterogeneity means the pooled estimate cannot reliably represent the true effect, and regional subgroup analysis is essential to interpret the data meaningfully.",
+      "topic_tags": ["Bacteroidetes", "heterogeneity", "meta-analysis", "relative abundance", "statistical methods"]
+    },
+    {
+      "id": "ADGM_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "How does the abundance of Lactobacillaceae and Enterobacteriaceae change in Alzheimer's disease gut microbiome according to LEfSe analyses, and what is the significance?",
+      "options": {
+        "A": "Both are consistently reduced, reflecting overall loss of beneficial bacteria",
+        "B": "Both are consistently increased, which may indicate a shift toward pro-inflammatory microbial states",
+        "C": "Lactobacillaceae decreases while Enterobacteriaceae increases, with no consistent interpretation",
+        "D": "Neither shows consistent directional change across studies"
+      },
+      "correct_answer": "B",
+      "explanation": "LEfSe analyses from multiple studies consistently show increased Enterobacteriaceae and Lactobacillaceae in AD patients compared to cognitively normal controls. Although Lactobacillus is often considered beneficial, elevated abundance in AD has been shown to correlate negatively with cognitive function indicators, and Lactobacillus species have recognized pathogenic potential. Enterobacteriaceae includes pro-inflammatory gram-negative bacteria. Both elevations may therefore contribute to an inflammatory gut environment.",
+      "topic_tags": ["LEfSe", "Lactobacillaceae", "Enterobacteriaceae", "Alzheimer's disease", "pro-inflammatory"]
+    },
+    {
+      "id": "ADGM_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "What distinguishes the alpha-diversity changes in Alzheimer's disease from those typically observed in Parkinson's disease?",
+      "options": {
+        "A": "Parkinson's disease shows significant reductions in Shannon diversity, while Alzheimer's does not",
+        "B": "Alpha-diversity decreases in AD (particularly species richness), which is inconsistent with meta-analyses in Parkinson's where alpha-diversity is not a consistent marker",
+        "C": "Parkinson's disease is characterized by increased species richness, unlike AD",
+        "D": "Both diseases show identical alpha-diversity patterns, confirming a shared dysbiosis mechanism"
+      },
+      "correct_answer": "B",
+      "explanation": "The paper notes that the slight, significant decrease in Shannon diversity observed in AD is inconsistent with meta-analyses of alpha-diversity in Parkinson's disease, where alpha-diversity has not been established as a reliable marker. Similarly, reductions in Bacteroidaceae observed in AD Chinese cohorts contrast with metagenomic analyses in Parkinson's disease which found no significant Bacteroidaceae differences, highlighting disease-specific microbiome profiles.",
+      "topic_tags": ["alpha-diversity", "Alzheimer's disease", "Parkinson's disease", "comparison", "disease specificity"]
+    },
+    {
+      "id": "ADGM_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "What role does Actinobacteria — mainly represented by Bifidobacteriaceae — play in the gut, and how is its abundance pattern described in Alzheimer's disease?",
+      "options": {
+        "A": "Actinobacteria is a dominant gut phylum that decreases significantly in AD, confirming dysbiosis",
+        "B": "Actinobacteria, representing about 10% of the gut microbiome, shows a moderate but non-significant increase in AD and may have antidepressant effects via tryptophan production; it typically decreases with aging",
+        "C": "Actinobacteria is increased significantly in both AD and MCI, making it a reliable biomarker",
+        "D": "Actinobacteria has no known functional role and shows no change in AD"
+      },
+      "correct_answer": "B",
+      "explanation": "Actinobacteria, along with Proteobacteria, represents about 10% of the gut microbiome. The paper notes that aging guts typically have lower Actinobacteria, and that it may have antidepressant effects through tryptophan production. In AD, meta-analysis shows a moderate but non-significant increase (SMD 0.63, p = 0.32) with very high heterogeneity (I² = 97%), consistent with the high inter-individual variability in this phylum's trajectory.",
+      "topic_tags": ["Actinobacteria", "Bifidobacteriaceae", "tryptophan", "aging gut", "Alzheimer's disease"]
+    },
+    {
+      "id": "ADGM_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What is the significance of non-drug interventions such as fecal microbiota transplantation (FMT) and probiotics in Alzheimer's disease management?",
+      "options": {
+        "A": "FMT and probiotics have been proven ineffective in all clinical trials of AD to date",
+        "B": "Non-drug interventions have shown promise in improving cognition, particularly at early disease stages, and support the therapeutic relevance of the gut microbiome in AD",
+        "C": "FMT is only relevant for late-stage AD and has no effect during MCI",
+        "D": "Probiotics have been shown to worsen cognitive outcomes by increasing SCFA producers in the gut"
+      },
+      "correct_answer": "B",
+      "explanation": "Several studies have reported success in improving cognition through non-drug interventions including fecal microbiota transplants (FMT) in animal models and probiotics in early disease stages. The paper highlights that such interventions may be particularly impactful during the MCI stage, supporting the potential of targeting the gut microbiome as a therapeutic avenue in Alzheimer's disease before significant neurodegeneration has occurred.",
+      "topic_tags": ["fecal microbiota transplantation", "probiotics", "MCI treatment", "non-drug intervention", "Alzheimer's disease"]
+    },
+
+    {
+      "id": "ADGM_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "What does the simultaneous increase in Bifidobacterium, Lactobacillus, and Akkermansia in Alzheimer's disease microbiome studies suggest about gut metabolite dynamics and their potential pathological relevance?",
+      "options": {
+        "A": "These genera collectively produce more butyrate, which is universally protective and suggests a compensatory mechanism in AD",
+        "B": "These genera are elevated as producers of acetate, lactate, and propionate, and their increase correlates negatively with cognitive function indicators; they may also have independent pathogenic relevance",
+        "C": "These genera are uniquely anti-inflammatory and their increase represents a protective host response to neurodegeneration",
+        "D": "Their elevation is an artifact of sequencing platform differences and should be disregarded"
+      },
+      "correct_answer": "B",
+      "explanation": "LEfSe synthesis shows increased abundance of Akkermansia, Lactobacillus, and Bifidobacterium — organisms that produce acetate, lactate, and propionate. These have been shown to correlate negatively with clinical indicators of cognitive function in AD patients. Furthermore, Bifidobacterium has recognized pathogenic potential (e.g., metronidazole-resistant anaerobe in mixed infections) and Lactobacillus species have pathogenic potential in certain contexts. This suggests that elevated SCFA producers in AD may contribute to — rather than protect against — disease pathology.",
+      "topic_tags": ["Akkermansia", "Lactobacillus", "Bifidobacterium", "acetate", "propionate", "cognitive function", "pathogenic potential"]
+    },
+    {
+      "id": "ADGM_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "Why is the consistent reduction of Bacteroidaceae observed in Alzheimer's disease (particularly in Chinese cohorts) noteworthy when compared to findings in other neurodegenerative conditions, and what does this imply for disease-specific microbiome profiling?",
+      "options": {
+        "A": "Bacteroidaceae reduction in AD mirrors identical reductions seen in Parkinson's disease, suggesting a shared dysbiosis pathway across all neurodegenerative disorders",
+        "B": "Bacteroidaceae reduction is a universal aging phenomenon with no disease-specific relevance",
+        "C": "Unlike Parkinson's disease where meta-analyses show no significant Bacteroidaceae differences, its consistent reduction in AD Chinese cohorts suggests disease-specific microbiome alterations that cannot be generalized across neurodegenerative conditions",
+        "D": "Bacteroidaceae reduction occurs only in MCI and not in full Alzheimer's disease"
+      },
+      "correct_answer": "C",
+      "explanation": "The paper explicitly notes that the reduction in Bacteroidaceae in AD (particularly in Chinese cohorts) contrasts with meta-analyses of metagenomic studies in Parkinson's disease, which revealed no significant Bacteroidaceae differences. This highlights that gut microbiome alterations in neurodegenerative diseases are not uniformly shared — each disorder may have distinct microbial signatures. This has important implications for disease-specific microbiome profiling and discourages treating all neurodegenerative gut dysbiosis as a single entity for research or therapeutic purposes.",
+      "topic_tags": ["Bacteroidaceae", "Alzheimer's disease", "Parkinson's disease", "disease-specific dysbiosis", "neurodegenerative disorders", "comparative microbiome"]
+    }
+  ]
+}

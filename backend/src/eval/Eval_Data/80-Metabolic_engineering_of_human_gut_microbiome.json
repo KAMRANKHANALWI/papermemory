@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Metabolic Engineering of Human Gut Microbiome: Recent Developments and Future Perspectives",
+    "authors": ["Peishun Li", "Stefan Roos", "Hao Luo", "Boyang Ji", "Jens Nielsen"],
+    "journal": "Metabolic Engineering",
+    "year": 2023,
+    "doi": "10.1016/j.ymben.2023.06.006",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "meteng_gut_easy_001",
+      "difficulty": "easy",
+      "question": "What is metabolic engineering and how is it being applied to the gut microbiome?",
+      "answer": "Metabolic engineering is a field that uses engineering strategies, including computational models and genetic tools, to investigate and manipulate microorganisms. In the context of the gut microbiome, it is being applied to develop microbiota-targeted diagnostics and therapeutics for human diseases — specifically by constructing genetically modified probiotics (next-generation probiotics) and synthetic microbial consortia with desired characteristics and functions.",
+      "topic_tags": ["metabolic engineering", "gut microbiome", "probiotics", "synthetic consortia", "definition"]
+    },
+    {
+      "id": "meteng_gut_easy_002",
+      "difficulty": "easy",
+      "question": "What are the main limitations of traditional probiotics and fecal microbiota transplantation as therapeutic strategies?",
+      "answer": "Traditional probiotics such as lactic acid bacteria and bifidobacteria often result in conflicting clinical outcomes, have limited therapeutic efficacy for human diseases, and can even cause side effects. Fecal microbiota transplantation (FMT) suffers from unclear underlying mechanisms and a range of side effects including abdominal pain, bloating, diarrhea, stuffy nose, fever, and vomiting.",
+      "topic_tags": ["probiotics", "FMT", "therapeutic limitations", "side effects", "clinical efficacy"]
+    },
+    {
+      "id": "meteng_gut_easy_003",
+      "difficulty": "easy",
+      "question": "What is the Learn-Design-Build-Test (LDBT) cycle and how does it differ from the traditional engineering cycle?",
+      "answer": "The LDBT cycle is an adapted iterative framework for metabolic engineering of the gut microbiome. Unlike the traditional Design-Build-Test-Learn (DBTL) cycle used in metabolic engineering, the LDBT cycle places the learning phase first — before the design phase. This modification emphasizes the importance of first determining causality between human diseases and the gut microbiota, using that knowledge to guide subsequent design, construction, and testing of engineered microbes or consortia.",
+      "topic_tags": ["LDBT", "DBTL", "iterative cycle", "metabolic engineering", "workflow"]
+    },
+    {
+      "id": "meteng_gut_easy_004",
+      "difficulty": "easy",
+      "question": "What are genome-scale metabolic models (GEMs) and what are they used for in gut microbiota research?",
+      "answer": "Genome-scale metabolic models (GEMs) are computational representations comprising the complete set of biochemical reactions catalyzed by corresponding enzymes in an organism. In gut microbiota research, GEMs are used to study the detailed metabolic capabilities of key microbial species, investigate interspecies interactions such as cross-feeding and competition, and guide the rational engineering of probiotics or the design of optimal synthetic microbial consortia for disease diagnostics and therapeutics.",
+      "topic_tags": ["GEM", "genome-scale metabolic model", "metabolic modeling", "cross-feeding", "gut microbiota"]
+    },
+    {
+      "id": "meteng_gut_easy_005",
+      "difficulty": "easy",
+      "question": "What sequencing approaches are used to characterize the composition and function of gut microbial communities?",
+      "answer": "Next-generation sequencing techniques are primarily used, including amplicon-based sequencing and metagenome shotgun sequencing. These enable rapid and large-scale quantification of microbial community composition and function. Beyond these, high-throughput multi-omics approaches such as metatranscriptomics, metabolomics, and metaproteomics are increasingly applied to provide a more complete picture of gut microbial metabolism and its influence on human health.",
+      "topic_tags": ["next-generation sequencing", "amplicon sequencing", "metagenomics", "metatranscriptomics", "multi-omics"]
+    },
+
+    {
+      "id": "meteng_gut_medium_001",
+      "difficulty": "medium",
+      "question": "How is a genome-scale metabolic model (GEM) reconstructed and refined for a microbial organism of interest?",
+      "answer": "GEM reconstruction begins by extracting gene-protein-reaction (GPR) associations from the organism's genome, mapped against biochemical reaction databases such as MetaCyc, KEGG, and BIGG to generate an initial draft model. This draft is then manually curated to address missing annotations, incorrect biomass synthesis reactions, and thermodynamically infeasible reactions. Refinement steps include parameter optimization for the biomass reaction, addition of exchange or transport reactions, and gap filling. Once finalized, the GEM can be used for flux balance analysis (FBA) to simulate reaction fluxes at steady state and predict metabolic capabilities such as growth rate and product synthesis.",
+      "topic_tags": ["GEM reconstruction", "GPR", "flux balance analysis", "gap filling", "metabolic modeling"]
+    },
+    {
+      "id": "meteng_gut_medium_002",
+      "difficulty": "medium",
+      "question": "What are the key differences between mixed-bag and compartmentalized community metabolic models?",
+      "answer": "A mixed-bag model merges all metabolic reactions from individual community members into a single cytosolic compartment and one extracellular compartment, effectively treating the entire community as a single superorganism. This approach ignores species boundaries, making it computationally efficient and easy to scale but unable to capture interspecies metabolic exchanges. A compartmentalized model, by contrast, assigns dedicated cytosolic compartments to each species while sharing a common extracellular environment compartment, enabling species to exchange metabolites through this shared space. Compartmentalized models can therefore investigate interspecies interactions in detail and provide more accurate predictions of community metabolic capabilities, but require more intensive manual curation and computational resources.",
+      "topic_tags": ["mixed-bag model", "compartmentalized model", "community metabolic model", "interspecies interactions", "FBA"]
+    },
+    {
+      "id": "meteng_gut_medium_003",
+      "difficulty": "medium",
+      "question": "How can genetically engineered probiotics be used as biosensors for disease detection and treatment?",
+      "answer": "Engineered probiotics can be equipped with synthetic gene regulatory circuits that detect specific disease biomarkers in the gut environment and respond by producing diagnostic or therapeutic outputs. For example, E. coli has been engineered to sense the inflammatory signal nitric oxide and respond to it in vitro. In mouse models, probiotic E. coli has been incorporated with thiosulfate or tetrathionate sensors that detect colitis. For combined detection and treatment, E. coli has been engineered to sense Pseudomonas aeruginosa infection via its quorum-sensing molecule and then produce a chimeric bacteriocin or pyocin that specifically kills the pathogen. These metabolite-inducible systems enable targeted, non-invasive disease diagnostics and therapeutics.",
+      "topic_tags": ["biosensor", "engineered probiotics", "synthetic circuit", "disease detection", "gene regulatory circuit"]
+    },
+    {
+      "id": "meteng_gut_medium_004",
+      "difficulty": "medium",
+      "question": "What strategies have been used to engineer probiotics to reduce toxic metabolites in the gut?",
+      "answer": "Metabolic engineering has been applied to express relevant metabolite-degrading enzymes in probiotic strains. To treat phenylketonuria, E. coli was engineered to express phenylalanine-metabolizing enzymes in the mammalian gut, efficiently degrading the toxic amino acid in affected patients. For hyperammonemia, E. coli was genetically modified to convert systemic ammonia into arginine by upregulating arginine biosynthesis, thereby reducing circulating ammonia levels. These approaches have been validated in mouse, monkey, and human clinical settings, demonstrating the feasibility of using engineered probiotics as targeted enzyme delivery platforms to eliminate toxic metabolites.",
+      "topic_tags": ["phenylketonuria", "hyperammonemia", "toxic metabolites", "enzyme expression", "engineered probiotics"]
+    },
+    {
+      "id": "meteng_gut_medium_005",
+      "difficulty": "medium",
+      "question": "How do synthetic microbial consortia differ from single-strain engineered probiotics in their therapeutic applications?",
+      "answer": "While single-strain engineered probiotics express specific genes or circuits to perform a defined function, synthetic microbial consortia consist of multiple defined microbial species working collectively. Consortia extend genetic modifications to the community level, enabling complex functions that no single strain can achieve alone — such as regulating the overall gut microbiota composition, producing multiple beneficial metabolites simultaneously, or reconstituting a balanced community. Therapeutic applications include treatment of Clostridioides difficile infection by safely transplanting defined consortia, cancer immunotherapy by inducing CD8 T cell responses, restoration of antibiotic-induced dysbiosis via propionate-producing communities, and managing hyperammonemia through consortia with minimal urease gene content.",
+      "topic_tags": ["synthetic microbial consortia", "probiotics", "CDI", "dysbiosis", "immunotherapy"]
+    },
+    {
+      "id": "meteng_gut_medium_006",
+      "difficulty": "medium",
+      "question": "What are the main challenges in establishing causality between gut microbiota and human diseases, and why does this matter for metabolic engineering?",
+      "answer": "Establishing causality between gut microbiota composition or function and human diseases is complicated by multiple confounding factors, including drug intake, diet, ethnicity, geography, age, and lifestyle, which can all independently alter microbiota composition. Associations between the microbiota and specific diseases are often inconsistent across studies for these reasons. An additional challenge is that the vast majority of studies rely on fecal samples, whereas important microbial metabolisms and interactions occur in the proximal colon or ileum. For metabolic engineering, this is critical because accurate causal knowledge must precede rational design of engineered probiotics or consortia — the LDBT framework specifically places learning (including causality determination) as the first step before any design or construction.",
+      "topic_tags": ["causality", "dysbiosis", "confounders", "LDBT", "fecal samples", "metabolic engineering"]
+    },
+
+    {
+      "id": "meteng_gut_hard_001",
+      "difficulty": "hard",
+      "question": "What are the key algorithmic differences between OptCom, CASINO, and MICOM for community metabolic modeling, and what trade-offs does each involve?",
+      "answer": "OptCom employs a bi-level optimization framework that simultaneously maximizes growth rates of individual species (inner objective) and optimizes community-level growth (outer objective). This more accurately reflects the metabolic interdependence within communities but is computationally limited to small microbial communities. CASINO integrates network properties into the community objective function and iteratively optimizes at both species and community levels, enabling simulation of larger communities than OptCom. MICOM was developed using the AGORA model database and efficiently scales metabolic modeling to the whole microbial community by leveraging pre-built GEMs. The general trade-off across all three is between biological accuracy (capturing species-specific and interspecies dynamics) and computational feasibility: more biologically realistic models require greater curation, higher computational cost, and are harder to scale to the hundreds of species present in the human gut microbiota.",
+      "topic_tags": ["OptCom", "CASINO", "MICOM", "community metabolic modeling", "FBA", "bi-level optimization"]
+    },
+    {
+      "id": "meteng_gut_hard_002",
+      "difficulty": "hard",
+      "question": "How can metabolic modeling and metabolic engineering be combined in an iterative cycle to develop next-generation therapeutics targeting the gut microbiome?",
+      "answer": "The iterative LDBT cycle integrates metabolic modeling and engineering as complementary steps. In the Learn phase, next-generation sequencing identifies key microbial species and their associations with disease. In the Design phase, GEMs and community metabolic models (CMMs) are built to analyze metabolic capabilities of key species, simulate interspecies interactions such as cross-feeding and competition, and rationally design modifications. In the Build phase, metabolic engineering tools — including CRISPR/Cas-based genome editing and synthetic gene circuits — are used to engineer probiotics or assemble synthetic consortia with desired functions. In the Test phase, engineered systems are validated in vitro, in animal models, and ultimately in human clinical trials. Lessons from testing feed back into the Learn phase, refining models and designs. This cycle has been exemplified by projects such as engineering L. reuteri based on GEM-identified metabolic pathways, and designing vitamin C-producing consortia using CMM simulations.",
+      "topic_tags": ["LDBT", "GEM", "CMM", "next-generation probiotics", "CRISPR", "iterative engineering"]
+    },
+    {
+      "id": "meteng_gut_hard_003",
+      "difficulty": "hard",
+      "question": "What are the biosafety, regulatory, and personalization challenges that currently limit the clinical translation of engineered probiotics and synthetic microbial consortia?",
+      "answer": "Engineered probiotics and synthetic consortia face several interconnected challenges for clinical translation. From a biosafety perspective, genetically modified microbes introduced into the human body can produce unexpected effects and raise concerns about horizontal gene transfer and ecological disruption. Regulatorily, genetically modified probiotics are likely to be classified as drugs rather than dietary supplements, which entails rigorous safety testing, higher development costs, and longer timelines to market — though this also raises the threshold for acceptable side effects relative to clinical benefit. A further limitation is inter-individual variability in response to probiotics or consortia, potentially limiting the efficacy of uniform treatment strategies. Addressing this requires metabolic engineering studies to identify key factors driving differential responses, pointing toward personalized interventions as a future goal. Currently, only a limited number of model microorganisms have efficient gene editing tools, limiting the range of gut microbes that can be precisely modified.",
+      "topic_tags": ["biosafety", "regulatory", "clinical translation", "personalized medicine", "CRISPR", "horizontal gene transfer"]
+    },
+    {
+      "id": "meteng_gut_hard_004",
+      "difficulty": "hard",
+      "question": "What are the limitations of current community metabolic models (CMMs) and what technical advances are needed to improve their predictive power?",
+      "answer": "Current CMMs face several significant limitations. Compartmentalized CMMs require substantial manual curation of individual species GEMs — a time-consuming bottleneck that is difficult to automate. Many species included in CMMs have incomplete gene annotations, limited physiological knowledge, or sparse experimental data, leading to poor predictive performance. Integrating gut microbial relative abundances as constraints and defining appropriate community-level objective functions involves complex trade-offs between species that are difficult to model accurately. Additionally, steady-state CMMs provide only a snapshot of metabolic interactions at one condition; dynamic metabolic modeling algorithms, while proposed, are currently restricted to small microbial communities due to computational and parameter requirements. Solutions proposed include building standardized gut microbiota-specific model databases with unified metabolite and reaction identifiers, expanding high-throughput microbial culturomics to generate mechanistic data for poorly characterized species, and incorporating enzyme-constrained models to improve phenotypic predictions.",
+      "topic_tags": ["community metabolic model", "CMM limitations", "dynamic modeling", "manual curation", "culturomics", "enzyme-constrained models"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "meteng_gut_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "What is the primary purpose of flux balance analysis (FBA) in the context of genome-scale metabolic models?",
+      "options": {
+        "A": "To sequence the genome of a microbial species and annotate its genes",
+        "B": "To predict reaction fluxes at steady state by maximizing an objective function subject to stoichiometric and thermodynamic constraints",
+        "C": "To measure the actual metabolite concentrations in a living cell in real time",
+        "D": "To perform CRISPR-based gene editing guided by metabolic network information"
+      },
+      "correct_answer": "B",
+      "explanation": "FBA formulates all biochemical reactions in a GEM as a stoichiometric coefficient matrix and solves for reaction fluxes at steady state when maximizing an objective function (e.g., biomass synthesis) under given constraints. It is a computational simulation technique, not an experimental measurement method.",
+      "topic_tags": ["FBA", "flux balance analysis", "GEM", "steady state", "metabolic modeling"]
+    },
+    {
+      "id": "meteng_gut_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "Which of the following best describes a 'next-generation probiotic' in the context of gut microbiome therapeutics?",
+      "options": {
+        "A": "A high-dose formulation of traditional lactic acid bacteria optimized for shelf stability",
+        "B": "A naturally occurring commensal bacterium selected for its correlation with healthy gut microbiota",
+        "C": "A genetically modified microorganism engineered to perform specific therapeutic functions in the gut",
+        "D": "A freeze-dried fecal microbiota preparation used for transplantation"
+      },
+      "correct_answer": "C",
+      "explanation": "Next-generation probiotics are genetically modified microorganisms engineered using metabolic engineering approaches to perform defined therapeutic functions — such as producing beneficial proteins, sensing disease biomarkers, or eliminating toxic metabolites — overcoming the limitations of traditional probiotics.",
+      "topic_tags": ["next-generation probiotics", "genetically modified", "therapeutics", "metabolic engineering"]
+    },
+    {
+      "id": "meteng_gut_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "What distinguishes the Learn-Design-Build-Test (LDBT) cycle from the conventional Design-Build-Test-Learn (DBTL) cycle in metabolic engineering?",
+      "options": {
+        "A": "LDBT eliminates the design phase and relies entirely on random mutagenesis",
+        "B": "LDBT places the learning phase first to establish causality between microbiota and disease before designing interventions",
+        "C": "LDBT is used only for single-species engineering while DBTL applies to microbial consortia",
+        "D": "LDBT replaces computational modeling with purely experimental approaches"
+      },
+      "correct_answer": "B",
+      "explanation": "The LDBT cycle was adapted specifically for gut microbiome engineering to emphasize that understanding causal relationships between gut microbiota and human diseases must come first. This learning phase provides the knowledge base for rational downstream design, unlike the DBTL cycle which starts directly from design.",
+      "topic_tags": ["LDBT", "DBTL", "causality", "iterative cycle", "gut microbiome engineering"]
+    },
+
+    {
+      "id": "meteng_gut_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "Which of the following correctly describes the key structural difference between a mixed-bag community metabolic model and a compartmentalized community metabolic model?",
+      "options": {
+        "A": "The mixed-bag model uses flux variability analysis while the compartmentalized model uses FBA",
+        "B": "The mixed-bag model merges all species' reactions into a single cytosolic compartment, ignoring species boundaries, while the compartmentalized model maintains species-specific compartments connected by a shared extracellular environment",
+        "C": "The mixed-bag model can only model two species at a time, whereas the compartmentalized model scales to hundreds of species",
+        "D": "The mixed-bag model requires experimental data from each species while the compartmentalized model is constructed entirely from genome sequences"
+      },
+      "correct_answer": "B",
+      "explanation": "The fundamental architectural difference is that the mixed-bag model collapses all species into one compartment (treating the community as a superorganism), while the compartmentalized model maintains individual cytosolic compartments per species connected via a common extracellular space, enabling investigation of metabolite exchange and interspecies interactions.",
+      "topic_tags": ["mixed-bag model", "compartmentalized model", "CMM", "community metabolic modeling"]
+    },
+    {
+      "id": "meteng_gut_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "What was demonstrated by engineering Saccharomyces boulardii to produce a tetra-specific antibody in the context of gut disease treatment?",
+      "options": {
+        "A": "That yeast can be used as a vehicle for biosensing gut inflammation signals",
+        "B": "That S. boulardii can colonize the gut long-term and stably express therapeutic proteins",
+        "C": "The potential of yeast-based immunotherapy, as the engineered strain could neutralize toxins associated with Clostridioides difficile infection in mouse models",
+        "D": "That S. boulardii outperforms bacteria as a drug delivery platform because it resists antibiotic treatment"
+      },
+      "correct_answer": "C",
+      "explanation": "S. boulardii was engineered to produce a tetra-specific antibody capable of neutralizing toxins related to C. difficile infection, and this was demonstrated in mouse models. This study highlighted the potential of engineered yeast as an immunotherapy platform for gut pathogens.",
+      "topic_tags": ["Saccharomyces boulardii", "C. difficile", "yeast immunotherapy", "antibody", "engineered probiotics"]
+    },
+    {
+      "id": "meteng_gut_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "In reconstructing a genome-scale metabolic model, why do draft models typically require manual curation before they can be reliably used for simulations?",
+      "options": {
+        "A": "Because automated tools generate models in a format incompatible with FBA solvers",
+        "B": "Because draft models contain missing gene annotations, incorrect biomass synthesis reactions, and thermodynamically infeasible reactions that lead to inaccurate phenotypic predictions",
+        "C": "Because draft models do not include any gene-protein-reaction associations and must be built entirely from scratch during curation",
+        "D": "Because metabolic databases like KEGG and BIGG contain only eukaryotic reactions and cannot be directly applied to bacteria"
+      },
+      "correct_answer": "B",
+      "explanation": "Automated GEM reconstruction pipelines often produce draft models with missing annotations, incorrect biomass compositions, and thermodynamically infeasible reactions, resulting in poor phenotypic predictions. Manual curation — including biomass reaction optimization, addition of exchange/transport reactions, and gap filling — is therefore necessary to obtain a reliable model.",
+      "topic_tags": ["GEM", "draft model", "manual curation", "gap filling", "biomass reaction"]
+    },
+    {
+      "id": "meteng_gut_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "How was community metabolic modeling used to advance the production of vitamin C by a synthetic microbial co-culture?",
+      "options": {
+        "A": "A CMM was used to delete competing pathways in Ketogulonicigenium vulgare using CRISPR/Cas editing",
+        "B": "A CMM simulated the co-culture of Ketogulonicigenium vulgare and Bacillus megaterium, predicting that B. megaterium boosts K. vulgare growth by supplying essential nutrients — a finding subsequently validated experimentally",
+        "C": "A mixed-bag model of 100 commensal bacteria was screened computationally to identify the optimal vitamin C-producing species",
+        "D": "A compartmentalized CMM was used to engineer E. coli to secrete precursors that K. vulgare could convert into vitamin C"
+      },
+      "correct_answer": "B",
+      "explanation": "A CMM of the K. vulgare and B. megaterium co-culture predicted that B. megaterium boosts K. vulgare growth and biosynthesis of the vitamin C precursor 2-KLG by supplying essential growth factors and nutrients. This was confirmed experimentally when co-culture showed increased K. vulgare growth and 2-KLG production compared to mono-culture.",
+      "topic_tags": ["synthetic consortia", "vitamin C", "CMM", "Ketogulonicigenium vulgare", "Bacillus megaterium"]
+    },
+    {
+      "id": "meteng_gut_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What is the significance of using Lactococcus lactis as a vehicle for therapeutic protein delivery in the gut?",
+      "options": {
+        "A": "L. lactis is the only bacterium capable of surviving transit through the stomach and colonizing the colon long-term",
+        "B": "L. lactis has been genetically engineered to produce various human-derived therapeutic proteins — including cytokines and antibodies — to treat inflammatory and metabolic diseases, demonstrating its utility as a non-invasive drug delivery platform",
+        "C": "L. lactis can spontaneously produce anti-inflammatory cytokines without genetic modification, making it an ideal natural probiotic",
+        "D": "L. lactis is used exclusively as a biosensor strain and does not produce therapeutic proteins itself"
+      },
+      "correct_answer": "B",
+      "explanation": "L. lactis has been extensively engineered to secrete human-derived proteins such as IL-10, IL-22, elafin, proinsulin autoantigens, GAD65, and glucagon-like peptide-1 for treating diseases including Crohn's disease, IBD, food allergy, and diabetes. These studies establish it as a versatile non-invasive drug delivery vehicle for intestinal therapeutics.",
+      "topic_tags": ["Lactococcus lactis", "protein delivery", "IL-10", "inflammatory disease", "probiotic engineering"]
+    },
+
+    {
+      "id": "meteng_gut_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "Which combination of factors best explains why compartmentalized community metabolic models currently cannot scale efficiently to represent the full complexity of the human gut microbiota?",
+      "options": {
+        "A": "Compartmentalized models require sequencing technologies that are not yet available for most gut species, and their output is incompatible with clinical data formats",
+        "B": "They require extensive manual curation of individual species GEMs, many species have incomplete gene annotations and sparse experimental data, integrating abundance constraints into objective functions is complex, and computational demands grow prohibitively with community size",
+        "C": "Compartmentalized models can only simulate anaerobic environments, whereas the human gut contains both aerobic and anaerobic zones that require different model architectures",
+        "D": "They rely on thermodynamic data that is only available for a small number of model organisms, making extension to novel gut commensals impossible"
+      },
+      "correct_answer": "B",
+      "explanation": "The paper identifies multiple compounding challenges: manual curation of hundreds of individual GEMs is time-consuming; many gut species lack sufficient annotations or experimental data; defining appropriate community objective functions incorporating species-level abundance constraints involves difficult trade-offs; and computational costs scale poorly with community size. Dynamic modeling adds further parameter requirements. No single factor but all together limit practical scalability.",
+      "topic_tags": ["CMM", "scalability", "manual curation", "computational cost", "objective function", "dynamic modeling"]
+    },
+    {
+      "id": "meteng_gut_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "How do the three main categories of engineered probiotic applications — beneficial protein production, biosensing, and synthetic microbial consortia — collectively address the limitations of traditional probiotic and FMT therapies?",
+      "options": {
+        "A": "They each target a different organ system; protein production targets the liver, biosensing targets the colon, and consortia target the small intestine",
+        "B": "Together they provide precision, specificity, and multi-functionality that traditional probiotics and FMT lack: protein producers deliver defined therapeutic molecules, biosensors enable disease-specific conditional responses rather than constitutive activity, and consortia restore or modulate entire community dynamics rather than relying on single strains or undefined transplants",
+        "C": "They replace the need for metabolic modeling entirely, as genetic engineering obviates the need to understand microbial metabolism",
+        "D": "They are all currently in advanced phase III clinical trials and have been approved as standard-of-care treatments in multiple countries"
+      },
+      "correct_answer": "B",
+      "explanation": "The three strategies are complementary and together address the core limitations of traditional approaches. Engineered protein producers offer predictable therapeutic mechanisms; biosensor-equipped strains enable conditional, disease-specific action avoiding off-target effects; and synthetic consortia can restore community-level functions that single-strain probiotics or poorly defined FMT preparations cannot achieve. This precision and specificity is precisely what traditional probiotics and FMT lack.",
+      "topic_tags": ["engineered probiotics", "biosensors", "synthetic consortia", "FMT limitations", "next-generation therapeutics"]
+    }
+  ]
+}

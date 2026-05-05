@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Gut microbiome and serum amino acid metabolome alterations in autism spectrum disorder",
+    "authors": ["Xuening Chang", "Yuchen Zhang", "Xue Chen", "Shihan Li", "Hong Mei", "Han Xiao", "Xinyu Ma", "Zhisheng Liu", "Ruizhen Li"],
+    "journal": "Scientific Reports",
+    "year": 2024,
+    "doi": "10.1038/s41598-024-54717-2",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "ASD_GUT_easy_001",
+      "difficulty": "easy",
+      "question": "What is the gut-brain axis and through which major pathways does it mediate communication between intestinal microbiota and the central nervous system?",
+      "answer": "The gut-brain axis is an information exchange system between the gut and the brain. It operates through three major pathways: immune, vagus nerve, and neuroendocrine pathways. Through these routes, intestinal microorganisms and their metabolic products — including neurotransmitters such as 5-hydroxytryptamine, catecholamines, gamma-aminobutyric acid (GABA), short-chain fatty acids, and amino acid metabolites — can activate afferent nerves of the intestinal nervous system and influence central nervous function via surface receptors on intestinal epithelial cells and enterochromaffin cells.",
+      "topic_tags": ["gut-brain axis", "microbiota", "neurotransmitters", "CNS communication", "autism spectrum disorder"]
+    },
+    {
+      "id": "ASD_GUT_easy_002",
+      "difficulty": "easy",
+      "question": "How is microbial alpha diversity typically characterised, and what do reduced richness versus increased evenness indicate about a gut microbial community?",
+      "answer": "Alpha diversity captures the variety and distribution of species within a single sample. Richness (commonly estimated by the Chao1 index) reflects the total number of distinct species or operational taxonomic units present — lower richness means fewer distinct taxa. Evenness (measured by the Simpson index) reflects how uniformly abundant those taxa are across the community. Reduced richness with simultaneously increased evenness suggests a state in which fewer microbial species are present overall, but those that remain are more equally represented, pointing to a loss of dominant specialist taxa and a flattening of the community hierarchy — a pattern associated with gut dysbiosis in conditions such as autism spectrum disorder.",
+      "topic_tags": ["alpha diversity", "Chao1 index", "Simpson index", "species richness", "evenness", "dysbiosis"]
+    },
+    {
+      "id": "ASD_GUT_easy_003",
+      "difficulty": "easy",
+      "question": "What are branched-chain amino acids (BCAAs), which specific ones are most implicated in neurodevelopmental conditions, and why are elevated BCAA levels considered potentially harmful?",
+      "answer": "Branched-chain amino acids (BCAAs) are a group of essential amino acids with an aliphatic side chain that branches at the beta carbon. The three main BCAAs are leucine, isoleucine, and valine. Elevated BCAA levels are considered potentially harmful because they can cause catabolic abnormalities that may lead to mitochondrial dysfunction. In the context of neurodevelopmental disorders, leucine and isoleucine are particularly relevant: impaired expression of SLC7A5, an amino acid transporter on the blood-brain barrier, leads to significant decreases in leucine and isoleucine levels in the brain, and this transporter insufficiency has been linked to the emergence of autism spectrum disorders.",
+      "topic_tags": ["branched-chain amino acids", "BCAA", "leucine", "isoleucine", "valine", "mitochondrial dysfunction", "SLC7A5", "autism"]
+    },
+    {
+      "id": "ASD_GUT_easy_004",
+      "difficulty": "easy",
+      "question": "What is metagenomic sequencing and how does it differ from traditional 16S rRNA amplicon sequencing in characterising gut microbial communities?",
+      "answer": "Metagenomic sequencing (also called shotgun metagenomics) involves sequencing the total DNA extracted from a microbial community without targeting any specific gene. This provides information on both taxonomic composition and the functional gene content of the entire community, enabling characterisation of metabolic pathways, virulence factors, and antibiotic resistance genes. Traditional 16S rRNA amplicon sequencing, by contrast, targets only the hypervariable regions of the bacterial 16S ribosomal RNA gene, providing taxonomic classification but not functional information. Metagenomics therefore offers higher resolution at the species and strain level and allows simultaneous functional profiling, which is particularly valuable for linking specific microbial taxa to metabolic pathway alterations in conditions like autism spectrum disorder.",
+      "topic_tags": ["metagenomics", "shotgun sequencing", "16S rRNA", "functional profiling", "gut microbiome characterisation"]
+    },
+    {
+      "id": "ASD_GUT_easy_005",
+      "difficulty": "easy",
+      "question": "What role does propionic acid play in autism spectrum disorder, and how does it differ from butyric acid in terms of its reported effects on ASD-relevant behaviours?",
+      "answer": "Propionic acid and butyric acid are both short-chain fatty acids produced by gut bacteria through fermentation, but they have divergent associations in autism spectrum disorder. Propionic acid concentrations in fecal samples of children with ASD are reported to be significantly elevated compared to neurotypical controls, and this excess is thought to contribute to the pathophysiology of ASD. Butyric acid, by contrast, has been shown to have beneficial effects: it increases social behaviour in mice by modulating the excitatory/inhibitory balance in the brain. This contrasting relationship — elevated propionic acid as a potential risk factor and butyric acid as potentially protective — highlights that specific short-chain fatty acid species have distinct, sometimes opposing, roles in neurodevelopmental health.",
+      "topic_tags": ["propionic acid", "butyric acid", "short-chain fatty acids", "autism", "social behaviour", "gut metabolites"]
+    },
+
+    {
+      "id": "ASD_GUT_medium_001",
+      "difficulty": "medium",
+      "question": "How does the peptides/nickel transport system relate to autism spectrum disorder risk, and what metabolic evidence links it to specific amino acid imbalances?",
+      "answer": "The peptides/nickel transport system is a KEGG-annotated metabolic module that represents the predominant metabolic pathway enriched among species differentially abundant in individuals with autism spectrum disorder. This system is the specific nickel transport mechanism of Helicobacter pylori, and H. pylori infection has been associated with increased risk of neurodegenerative disease. Correlation analysis between this pathway module and serum amino acid metabolomics reveals a statistically significant positive correlation with valine levels and a negative correlation with ornithine levels. This pattern suggests that elevated valine and decreased ornithine may increase the risk of ASD via the nickel transport system pathway, establishing a mechanistic link between specific gut microbial taxa, their dominant metabolic activity, and a distinctive serum amino acid imbalance observed in ASD.",
+      "topic_tags": ["nickel transport system", "KEGG pathway", "valine", "ornithine", "Helicobacter pylori", "autism risk", "metabolomics"]
+    },
+    {
+      "id": "ASD_GUT_medium_002",
+      "difficulty": "medium",
+      "question": "What is the proposed mechanism by which decreased Prevotella bacteria in the gut could contribute to immune dysfunction in autism spectrum disorder?",
+      "answer": "Prevotella copri can utilise dietary polysaccharides to produce succinic acid. Succinic acid has been shown to enhance the immune response of antigen-specific T cells by binding to the succinic acid receptor GPR91 on the surface of dendritic cells, thereby helping protect host health. In autism spectrum disorder, the relative abundance of Prevotella copri is significantly reduced compared to neurotypical controls. This reduction is proposed to diminish succinic acid production, impairing GPR91-mediated dendritic cell activation and weakening antigen-specific T cell responses. Because many children with ASD display immune dysfunction characterised by elevated plasma cytokines, the decrease in Prevotella and the consequent disruption of the succinate-GPR91 signalling axis in the gut may be a contributing mechanism underlying the immune dysregulation observed in ASD.",
+      "topic_tags": ["Prevotella copri", "succinic acid", "GPR91", "dendritic cells", "immune dysfunction", "autism", "T cell response"]
+    },
+    {
+      "id": "ASD_GUT_medium_003",
+      "difficulty": "medium",
+      "question": "How does microbial fecal transplantation from individuals with autism spectrum disorder affect behaviour in animal models, and what does this imply about causality?",
+      "answer": "Animal experiments have demonstrated that transplanting fecal microbiota from individuals with ASD into the intestines of germ-free (sterile) mice produces behavioural deficits in the offspring of those mice. Specifically, the offspring show more repetitive behaviours and decreased social and motor ability compared to control animals that received microbiota from neurotypical donors. This finding is significant because germ-free mice have no pre-existing microbiome that could confound the results, making it possible to attribute the behavioural phenotype specifically to the transplanted microbial community. The result strongly implies that the intestinal flora of ASD patients has the capacity to induce ASD-like behaviour, suggesting a potential causal role for specific gut microbial compositions in neurodevelopmental outcomes rather than merely an associative relationship.",
+      "topic_tags": ["fecal microbiota transplant", "germ-free mice", "behavioural phenotype", "autism", "causality", "gut-brain axis"]
+    },
+    {
+      "id": "ASD_GUT_medium_004",
+      "difficulty": "medium",
+      "question": "What functional metabolic pathways are enriched in the gut microbiome of children with autism spectrum disorder compared to neurotypical controls, and what are the neurological implications of these differences?",
+      "answer": "In children with autism spectrum disorder, thirteen functional pathways are overrepresented in the gut microbiome compared to neurotypical controls, including phenylalanine metabolism, streptomycin biosynthesis, ascorbate and aldarate metabolism, flagellar assembly, methane metabolism, galactose metabolism, and microbial metabolism in diverse environments. The neurological implications are considerable: arginine metabolism is known to relate to cognitive brain development, and argininemia can impair brain development. Phenylalanine metabolism and amino acid biosynthesis pathways have been linked to neurodegeneration, suggesting that altered gut microbial functional capacity may influence CNS function through these metabolic routes. The enrichment of these pathways collectively indicates that the ASD gut microbiome may produce a metabolic environment that perturbs neurotransmitter precursor availability and promotes neuroinflammatory or neurodegenerative processes.",
+      "topic_tags": ["KEGG pathway", "phenylalanine metabolism", "arginine metabolism", "neurodegeneration", "gut-brain axis", "autism", "functional metagenomics"]
+    },
+    {
+      "id": "ASD_GUT_medium_005",
+      "difficulty": "medium",
+      "question": "How do serum tryptophan and tyrosine levels differ in autism spectrum disorder, and why are these amino acid alterations neurologically significant?",
+      "answer": "Studies have reported that both tryptophan and tyrosine levels in the serum of children with autism spectrum disorder are lower than in neurotypical controls. These reductions are neurologically significant because both amino acids are direct precursors to major neurotransmitters. Tryptophan is the sole dietary precursor for serotonin (5-hydroxytryptamine), a monoamine neurotransmitter with critical roles in mood regulation, social behaviour, and gastrointestinal function; it also feeds into the kynurenine pathway which produces neuroactive metabolites. Tyrosine is a precursor for catecholamines including dopamine, norepinephrine, and epinephrine, which regulate motivation, reward, attention, and stress responses. Reduced availability of these precursors may contribute to the neurotransmitter imbalances underlying core ASD symptoms such as impaired social communication, restricted interests, and repetitive behaviour.",
+      "topic_tags": ["tryptophan", "tyrosine", "serotonin", "catecholamines", "neurotransmitter precursors", "autism", "amino acid metabolomics"]
+    },
+    {
+      "id": "ASD_GUT_medium_006",
+      "difficulty": "medium",
+      "question": "What does Canonical Correspondence Analysis (CCA) reveal about the relationship between differential gut microbial species and serum amino acid metabolites in autism spectrum disorder?",
+      "answer": "Canonical Correspondence Analysis (CCA) is a multivariate ordination method that explores constrained relationships between two data matrices — in this case, the abundance profiles of differentially represented microbial species and the concentrations of serum amino acid metabolites. In the context of autism spectrum disorder research, CCA reveals that the majority of differentially abundant amino acid metabolites are closely associated with shifts in differential microbial species composition. The amino acids most strongly associated with changes in microbial community structure include citrulline, tryptophan, leucine, valine, tyrosine, asparagine, and ornithine. The arrow length in the CCA biplot represents the degree of correlation between a given metabolite cluster and the overall microbial composition — longer arrows indicate stronger associations. This analysis establishes that specific microbial community shifts in ASD are not random but are tightly linked to particular amino acid metabolic signatures in the host serum.",
+      "topic_tags": ["canonical correspondence analysis", "CCA", "amino acid metabolites", "microbial species", "multivariate analysis", "autism", "metabolomics"]
+    },
+
+    {
+      "id": "ASD_GUT_hard_001",
+      "difficulty": "hard",
+      "question": "Compare and contrast the dominant metabolic pathway modules enriched in the gut microbiomes of children with autism spectrum disorder versus neurotypical controls, and explain the broader significance of eukaryotic versus bacterial ribosome enrichment in each group.",
+      "answer": "In children with autism spectrum disorder, the peptides/nickel transport system (KEGG module M00239) is the dominant pathway module enriched among differentially abundant species. This system is the specific nickel import mechanism associated with Helicobacter pylori, and its enrichment suggests that ASD-associated microbial communities harbour taxa with greater capacity for nickel-dependent metabolic processes linked to H. pylori-like pathogenicity; H. pylori infection itself has been implicated in elevated risk of neurodegenerative disease. In neurotypical controls, the dominant enriched pathway module is eukaryotic ribosomes (M00177). Eukaryotic ribosomes are more accurate at decoding mRNA than bacterial ribosomes — this precision is critical because altered decoding fidelity in humans has been linked to neurodegenerative diseases and represents a potential therapeutic intervention point. The contrast is therefore meaningful at multiple levels: in ASD, the microbial metabolic dominance of a prokaryotic pathogenicity-associated transport system suggests a microbiome skewed toward potentially harmful functional capacity, while in neurotypical individuals the prevalence of eukaryotic ribosome-associated modules may reflect a healthier host-microbiome equilibrium in which host cellular machinery operates with high fidelity. Together, these findings suggest that the functional signature of the gut microbiome in ASD extends beyond simple compositional differences to encompass qualitatively distinct metabolic strategies with direct implications for neurological health.",
+      "topic_tags": ["KEGG module", "nickel transport system", "eukaryotic ribosomes", "Helicobacter pylori", "mRNA decoding fidelity", "neurodegeneration", "autism", "functional metagenomics"]
+    },
+    {
+      "id": "ASD_GUT_hard_002",
+      "difficulty": "hard",
+      "question": "Explain the multi-step mechanistic pathway linking Faecalibacterium prausnitzii abundance, inflammatory bowel disease, and autism spectrum disorder, including the role of this species in NF-κB signalling.",
+      "answer": "Faecalibacterium prausnitzii is a butyrate-producing Firmicute that has been identified as a major anti-inflammatory commensal of the human gut. An anti-inflammatory protein produced by F. prausnitzii directly inhibits the NF-κB signalling pathway in intestinal epithelial cells; since NF-κB is a master transcription factor driving pro-inflammatory cytokine production, its inhibition dampens intestinal inflammation and has been shown to prevent colitis in animal models. In individuals with Crohn's disease (a form of inflammatory bowel disease), mucosal dysbiosis is characterised by reduced diversity and a marked reduction in F. prausnitzii abundance, leading to disinhibition of NF-κB and a pro-inflammatory mucosal state. The connection to ASD is mechanistically relevant because children with ASD also exhibit reduced F. prausnitzii abundance (as identified by LDA-based differential species analysis). Additionally, many ASD children display immune dysfunction with elevated plasma cytokines. The convergence suggests a pathway: reduced F. prausnitzii → insufficient NF-κB inhibition → heightened intestinal inflammation → systemic immune activation → neuroinflammatory signalling through the gut-brain axis → exacerbation of ASD behavioural symptoms. This links microbiome composition to neuroinflammation via a defined molecular mechanism.",
+      "topic_tags": ["Faecalibacterium prausnitzii", "NF-κB", "anti-inflammatory", "Crohn's disease", "IBD", "autism", "neuroinflammation", "gut-brain axis", "butyrate"]
+    },
+    {
+      "id": "ASD_GUT_hard_003",
+      "difficulty": "hard",
+      "question": "Critically analyse the challenges in establishing causal relationships between gut microbiome alterations and autism spectrum disorder, drawing on the types of evidence available and the key confounders that must be accounted for.",
+      "answer": "Establishing causality between gut microbiome alterations and autism spectrum disorder involves several major challenges. First, the fundamental directionality problem: it remains unclear whether gut dysbiosis causes ASD or whether ASD-associated behaviours (e.g., restricted dietary habits, altered gastrointestinal motility, medication use) drive the microbial changes. Children with ASD more frequently have single/restricted dietary patterns, which could independently alter microbial composition. Second, confounding by host and environmental factors: parameters such as birth length, habitation (urban vs. rural), delivery mode, and feeding patterns all influence microbial composition and may differ between ASD and neurotypical populations, necessitating careful matching and adjustment. Third, the study design constraint: non-randomised controlled designs can identify associations but cannot resolve temporal precedence; large-scale prospective longitudinal studies are needed to determine whether specific microbial shifts precede behavioural symptom onset. Fourth, functional versus compositional interpretation: two children may share similar ASD severity but harbour compositionally distinct microbiomes that produce similar metabolite profiles due to functional redundancy — meaning taxonomic differences alone may mislead causal inference without parallel metabolomic data. Fifth, the fecal transplant animal evidence, while compelling (germ-free mice receiving ASD donor microbiota display repetitive and antisocial behaviours), cannot be straightforwardly extrapolated to humans given developmental and immunological differences. Together, these challenges underscore that available evidence supports a plausible and mechanistically grounded role for the gut microbiome in ASD pathogenesis, but definitive causal proof requires prospective designs, functional multi-omics integration, and careful confounder control.",
+      "topic_tags": ["causality", "gut-brain axis", "autism", "confounders", "study design", "functional redundancy", "prospective studies", "fecal transplant", "dysbiosis"]
+    },
+    {
+      "id": "ASD_GUT_hard_004",
+      "difficulty": "hard",
+      "question": "How do the correlations between Phascolarctobacterium succinatutens and microbial metabolism in diverse environments inform our understanding of stable versus disrupted microbiome communities in autism spectrum disorder?",
+      "answer": "Spearman correlation analysis between differentially enriched metabolic pathway modules and individual microbial species reveals a significant negative correlation between the pathway 'microbial metabolism in diverse environments' (KEGG map01120) and the abundance of Phascolarctobacterium succinatutens. This is a novel finding with several interpretive layers. Phascolarctobacterium is known to be a component of a stable microbiota community in children with ASD, and the genus as a whole is more abundant in ASD children than in neurotypical participants. The pathway 'microbial metabolism in diverse environments' encompasses broad metabolic flexibility — the capacity of microbial communities to operate across varied ecological niches. A negative correlation between this pathway and P. succinatutens suggests that as this pathway's activity increases within the community, P. succinatutens abundance decreases, and vice versa. One interpretation is that the conditions favouring P. succinatutens proliferation (a relatively specialised succinate-utilising organism) are incompatible with the broader metabolic flexibility represented by this pathway — that is, a microbiome dominated by P. succinatutens may be metabolically restricted rather than diverse. Since P. succinatutens thrives in the ASD gut, and microbial metabolism in diverse environments is reduced in the ASD group, this inverse relationship may reflect a functionally constrained microbiome state in ASD — fewer metabolic strategies being deployed overall, despite compositional evenness. This adds nuance to the understanding of ASD gut dysbiosis: the problem is not just which species are present but what metabolic range they collectively exercise.",
+      "topic_tags": ["Phascolarctobacterium succinatutens", "microbial metabolism in diverse environments", "KEGG", "stable microbiota", "autism", "functional diversity", "dysbiosis", "Spearman correlation"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "ASD_GUT_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which gut bacterial genus was identified as being at significantly higher relative abundance in autism spectrum disorder compared to neurotypical controls using linear discriminant analysis (LDA score > 2.0)?",
+      "options": {
+        "A": "Prevotella",
+        "B": "Bacteroides",
+        "C": "Subdoligranulum",
+        "D": "Azospirillum"
+      },
+      "correct_answer": "C",
+      "explanation": "LDA-based analysis identified Subdoligranulum, along with Faecalibacterium_prausnitzii, Faecalibacterium, Veillonellaceae, and Ruminococcaceae, as having significantly higher relative abundance in the ASD group. Prevotella, Bacteroides thetaiotaomicron, and Azospirillum were all decreased in ASD compared to neurotypical controls.",
+      "topic_tags": ["LDA analysis", "Subdoligranulum", "gut dysbiosis", "autism", "LEfSe"]
+    },
+    {
+      "id": "ASD_GUT_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "Which of the following best describes the pattern of microbial alpha diversity observed in autism spectrum disorder compared to neurotypical controls?",
+      "options": {
+        "A": "Higher richness and lower evenness, indicating a more diverse and dominated community",
+        "B": "Lower richness and higher evenness, indicating fewer species distributed more uniformly",
+        "C": "Lower richness and lower evenness, indicating a collapsed and dominated community",
+        "D": "Higher richness and higher evenness, indicating a broader and more balanced community"
+      },
+      "correct_answer": "B",
+      "explanation": "Children with ASD showed lower species richness (as measured by Chao1 index) and higher evenness (as measured by Simpson index) at the kingdom level compared to neurotypical controls. This pattern suggests fewer total microbial taxa that are more uniformly abundant, consistent with gut dysbiosis.",
+      "topic_tags": ["alpha diversity", "Chao1", "Simpson index", "autism", "dysbiosis"]
+    },
+    {
+      "id": "ASD_GUT_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "Through which mechanism does the intestinal microbiota most directly influence brain function via the gut-brain axis?",
+      "options": {
+        "A": "Direct translocation of bacteria across the blood-brain barrier",
+        "B": "Production of neurotransmitters and metabolites that activate the intestinal nervous system and signal via immune, vagal, and neuroendocrine pathways",
+        "C": "Secretion of antibodies that cross-react with neuronal surface antigens",
+        "D": "Modulation of cerebrospinal fluid composition through meningeal lymphatics"
+      },
+      "correct_answer": "B",
+      "explanation": "The gut microbiota produces neurotransmitters (serotonin, catecholamines, GABA), short-chain fatty acids, and amino acid metabolites that activate afferent nerves of the intestinal nervous system and affect the central nervous system through surface receptors on intestinal epithelial cells and enterochromaffin cells. These signals propagate via immune, vagus nerve, and neuroendocrine pathways.",
+      "topic_tags": ["gut-brain axis", "neurotransmitters", "vagus nerve", "immune pathway", "neuroendocrine"]
+    },
+
+    {
+      "id": "ASD_GUT_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "What is the most likely explanation for why decreased ornithine levels and elevated valine levels are considered potentially relevant to autism spectrum disorder risk?",
+      "options": {
+        "A": "Ornithine is a direct precursor to serotonin, and its deficiency reduces social behaviour-promoting neurotransmission",
+        "B": "Both metabolites are correlated with the peptides/nickel transport system, which is the dominant metabolic pathway of ASD-associated differential species and is linked to Helicobacter pylori pathogenicity and neurodegenerative disease risk",
+        "C": "Ornithine deficiency and valine excess both activate the mTOR pathway, promoting excessive synaptic pruning",
+        "D": "Valine is metabolised exclusively by gut bacteria, so its elevation indicates microbial overgrowth that competes with host amino acid absorption"
+      },
+      "correct_answer": "B",
+      "explanation": "Correlation analysis between KEGG modules and differential metabolites shows that the peptide/nickel transport system is positively correlated with valine and negatively correlated with ornithine. The nickel transport system is the specific transport mechanism of H. pylori, and H. pylori infection has been associated with elevated neurodegenerative disease risk. This metabolite-pathway correlation establishes the proposed mechanism linking these amino acid imbalances to ASD risk.",
+      "topic_tags": ["ornithine", "valine", "nickel transport system", "Helicobacter pylori", "autism risk", "KEGG module"]
+    },
+    {
+      "id": "ASD_GUT_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "How does impaired expression of the SLC7A5 amino acid transporter at the blood-brain barrier contribute to autism spectrum disorder?",
+      "options": {
+        "A": "SLC7A5 deficiency blocks glutamate reuptake, leading to excitotoxic neuronal damage",
+        "B": "SLC7A5 deficiency reduces transport of branched-chain amino acids especially leucine and isoleucine into the brain, which has been linked to the emergence of ASD",
+        "C": "SLC7A5 transports tryptophan exclusively, so its deficiency reduces serotonin synthesis in the gut",
+        "D": "SLC7A5 deficiency increases blood-brain barrier permeability, enabling microbial metabolites to enter the CNS"
+      },
+      "correct_answer": "B",
+      "explanation": "SLC7A5 is an amino acid transporter at the blood-brain barrier. Its impaired expression leads to significantly decreased levels of branched-chain amino acids, particularly leucine and isoleucine, in the brain. This deficiency of critical BCAAs at the CNS level has been identified as a cause of autism spectrum disorder.",
+      "topic_tags": ["SLC7A5", "blood-brain barrier", "branched-chain amino acids", "leucine", "isoleucine", "autism"]
+    },
+    {
+      "id": "ASD_GUT_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "What does beta diversity analysis reveal when comparing gut microbiome profiles between two distinct groups, and what does a significant difference in beta diversity indicate?",
+      "options": {
+        "A": "Beta diversity measures total species count within each group; a significant difference means one group has more species than the other",
+        "B": "Beta diversity measures differences in community composition between groups; a significant difference indicates that the overall microbial community structures are distinct between the two groups",
+        "C": "Beta diversity measures the ratio of beneficial to harmful bacteria; significance indicates a clinical dysbiosis threshold has been crossed",
+        "D": "Beta diversity measures gene expression diversity in microbial communities; significance indicates differing metabolic activity levels"
+      },
+      "correct_answer": "B",
+      "explanation": "Beta diversity quantifies differences in microbial community composition between samples or groups, calculated using metrics such as Bray-Curtis dissimilarity and Jensen-Shannon Divergence (JSD) distance. A statistically significant difference in beta diversity between ASD and neurotypical groups indicates that the overall microbial community structures are fundamentally distinct — meaning the groups do not simply differ in the abundance of a few taxa, but their entire community profiles diverge.",
+      "topic_tags": ["beta diversity", "Bray-Curtis", "JSD", "microbial community structure", "autism", "dysbiosis"]
+    },
+    {
+      "id": "ASD_GUT_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "Microbial transfer therapy (MTT) for autism spectrum disorder has shown improvements in gastrointestinal and behavioural symptoms. What is the most plausible mechanism by which gut microbiome remodelling could improve core ASD behavioural symptoms?",
+      "options": {
+        "A": "MTT directly replaces dysfunctional neurons with microbiome-derived stem cells",
+        "B": "Introducing a healthier microbial community restores production of neurotransmitter precursors, short-chain fatty acids, and other metabolites that regulate gut-brain axis signalling, reducing neuroinflammation and normalising behavioural circuits",
+        "C": "MTT increases intestinal pH, which inactivates pathogenic proteins that cross the blood-brain barrier",
+        "D": "Transferred microbiota produce antibodies that neutralise brain-reactive autoantibodies present in ASD"
+      },
+      "correct_answer": "B",
+      "explanation": "The gut-brain axis operates through metabolic, immune, vagal, and neuroendocrine channels. A healthier microbiome introduced via MTT can restore appropriate levels of serotonin precursors (tryptophan), GABA, short-chain fatty acids like butyrate (which increases social behaviour in mice via the excitatory/inhibitory system), and reduce propionic acid overproduction — collectively normalising gut-brain signalling and potentially improving both gastrointestinal and core behavioural symptoms of ASD.",
+      "topic_tags": ["microbial transfer therapy", "MTT", "gut-brain axis", "neurotransmitter", "butyrate", "autism treatment"]
+    },
+    {
+      "id": "ASD_GUT_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "Why is Phascolarctobacterium succinatutens considered of particular interest in the context of autism spectrum disorder gut microbiome research?",
+      "options": {
+        "A": "It is the only known species that can produce serotonin directly in the gut, and its absence in ASD reduces CNS serotonin levels",
+        "B": "It is a component of a stable microbiota community in ASD and is more abundant in ASD children, and its abundance is negatively correlated with a broad microbial metabolic flexibility pathway",
+        "C": "It degrades propionic acid, so its elevation in ASD paradoxically increases propionic acid accumulation through competitive inhibition of other degraders",
+        "D": "It produces a cell-wall component that activates TLR4 on intestinal epithelial cells, promoting neuroinflammation via the gut-brain axis"
+      },
+      "correct_answer": "B",
+      "explanation": "Phascolarctobacterium is a stable component of the ASD gut microbiota and is more abundant in ASD children than in neurotypical participants. A novel finding is its significant negative correlation with the pathway 'microbial metabolism in diverse environments,' suggesting an inverse relationship between this organism's prevalence and broad microbial metabolic flexibility. This correlation offers new clues about the functional constraints of the ASD microbiome.",
+      "topic_tags": ["Phascolarctobacterium succinatutens", "ASD microbiota", "microbial metabolism", "stable community", "negative correlation"]
+    },
+
+    {
+      "id": "ASD_GUT_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "Given that the gut microbiome of ASD children shows both reduced richness and altered functional pathway enrichment (including galactose metabolism), what is the most sophisticated interpretation of how functional pathway analysis adds value beyond simple taxonomic composition comparison?",
+      "options": {
+        "A": "Functional pathway analysis simply confirms taxonomic findings with more specificity — it adds no independent value because function is entirely determined by which species are present",
+        "B": "Functional pathway analysis captures the collective metabolic capacity of the community regardless of which specific taxa encode those functions, revealing whether critical metabolic processes are intact or disrupted even when compositionally similar communities are compared; it can detect relevant disruptions that are invisible to purely taxonomic approaches due to functional redundancy",
+        "C": "Functional pathway analysis is only useful in cases where taxonomic resolution is poor, serving as a proxy for taxonomy when 16S data is insufficient",
+        "D": "Functional pathway analysis measures individual species gene expression levels, providing a transcriptomic rather than genomic view of community metabolism"
+      },
+      "correct_answer": "B",
+      "explanation": "Functional redundancy means that different microbial species can encode the same metabolic pathways, so two communities with different taxa may perform similar functions, and vice versa. Functional pathway analysis (e.g., via KEGG ReporterScore) captures the collective metabolic capacity of the community — revealing, for example, that galactose metabolism, arginine metabolism, phenylalanine metabolism, and the nickel transport system are significantly altered in ASD. These functional differences have direct mechanistic relevance to CNS function and ASD pathogenesis in ways that species lists alone cannot predict, making functional metagenomics an essential complement to taxonomic profiling.",
+      "topic_tags": ["functional metagenomics", "KEGG pathway", "functional redundancy", "galactose metabolism", "taxonomic vs functional", "autism", "ReporterScore"]
+    },
+    {
+      "id": "ASD_GUT_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "The study identifies both Ruminococcaceae family enrichment in ASD and a negative correlation between Phascolarctobacterium succinatutens and 'microbial metabolism in diverse environments'. How do these two findings together suggest a model for the gut ecosystem state in autism spectrum disorder?",
+      "options": {
+        "A": "They suggest a hyperdiverse, functionally flexible microbiome that overproduces short-chain fatty acids, overwhelming the gut-brain axis with competing signals",
+        "B": "They suggest a dysbiotic state characterised by enrichment of certain Firmicutes families alongside reduced broad metabolic flexibility, where the microbiome becomes compositionally uniform but functionally constrained — producing a stable but aberrant metabolic niche that may sustain ASD-relevant neurochemical imbalances",
+        "C": "They suggest that Ruminococcaceae and Phascolarctobacterium form a syntrophic cross-feeding pair that co-dominates the ASD gut, making the microbiome more metabolically active than in neurotypical controls",
+        "D": "They indicate that the ASD gut microbiome is in a transient disturbed state similar to antibiotic-associated dysbiosis, likely to resolve spontaneously without intervention"
+      },
+      "correct_answer": "B",
+      "explanation": "Ruminococcaceae enrichment in ASD (along with Veillonellaceae) alongside reduced species richness and higher evenness points toward a compositionally restructured microbiome. The negative correlation between P. succinatutens (which is more abundant in ASD) and 'microbial metabolism in diverse environments' suggests that as ASD-associated taxa dominate, the community's capacity for metabolic versatility decreases. Together, these findings portray a stable but functionally restricted microbial ecosystem in ASD — fewer taxa, more evenly distributed, but with narrowed metabolic repertoire — a state that could maintain chronically altered amino acid and neurotransmitter metabolite profiles relevant to ASD pathophysiology.",
+      "topic_tags": ["Ruminococcaceae", "Phascolarctobacterium", "functional constraint", "ecosystem state", "autism dysbiosis", "microbial stability", "metabolic flexibility"]
+    }
+  ]
+}

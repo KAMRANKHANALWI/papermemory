@@ -1,0 +1,273 @@
+{
+  "metadata": {
+    "source_paper": "Microbiota Transfer Therapy alters gut ecosystem and improves gastrointestinal and autism symptoms: an open-label study",
+    "authors": [
+      "Dae-Wook Kang", "James B. Adams", "Ann C. Gregory", "Thomas Borody",
+      "Lauren Chittick", "Alessio Fasano", "Alexander Khoruts", "Elizabeth Geis",
+      "Juan Maldonado", "Sharon McDonough-Means", "Elena L. Pollard", "Simon Roux",
+      "Michael J. Sadowsky", "Karen Schwarzberg Lipson", "Matthew B. Sullivan",
+      "J. Gregory Caporaso", "Rosa Krajmalnik-Brown"
+    ],
+    "journal": "Microbiome",
+    "year": 2017,
+    "doi": "10.1186/s40168-016-0225-7",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "mtt_asd_easy_001",
+      "difficulty": "easy",
+      "question": "What is Microbiota Transfer Therapy (MTT) and how does it differ from a standard single-dose fecal microbiota transplant?",
+      "answer": "Microbiota Transfer Therapy (MTT) is an extended fecal microbiota transplant protocol designed to achieve lasting gut microbiome rebalancing. Unlike a standard single-dose FMT — which is typically sufficient for conditions such as recurrent Clostridioides difficile infection — MTT involves a preparatory phase of oral antibiotic treatment to suppress pathogenic bacteria, followed by a bowel cleanse, and then an extended daily dosing regimen using a high initial dose of standardized human gut microbiota (SHGM) succeeded by lower maintenance doses over several weeks. The rationale for the prolonged, multi-dose approach is that conditions other than C. difficile infection require multiple infusions of donor microbiota to achieve measurable and durable clinical benefits.",
+      "topic_tags": ["MTT", "FMT", "fecal microbiota transplant", "protocol", "gut microbiome rebalancing"]
+    },
+    {
+      "id": "mtt_asd_easy_002",
+      "difficulty": "easy",
+      "question": "What is the proposed gut-brain connection in autism spectrum disorder as it relates to the gut microbiota?",
+      "answer": "Children with autism spectrum disorder (ASD) frequently experience gastrointestinal symptoms such as constipation and diarrhea, and the severity of these GI symptoms correlates with ASD severity. Dysbiotic gut microbiota in ASD is hypothesized to disrupt the production of metabolites — including compounds such as 4-ethylphenylsulfate, indolepyruvate, and corticosterone — that influence both GI function and neurobiological conditions. Evidence from mouse models demonstrates that augmentation with specific bacterial strains can alter gut microbiota, normalize blood metabolite profiles, correct gut permeability, and improve ASD-associated behaviors, providing a mechanistic basis for the microbiome-ASD connection.",
+      "topic_tags": ["ASD", "gut-brain axis", "dysbiosis", "metabolites", "GI symptoms", "microbiome"]
+    },
+    {
+      "id": "mtt_asd_easy_003",
+      "difficulty": "easy",
+      "question": "Why was a stomach acid suppressant included as part of the Microbiota Transfer Therapy protocol?",
+      "answer": "A stomach acid suppressant (proton pump inhibitor) was administered as part of the MTT protocol to reduce gastric acidity and thereby increase the survival rate of the transplanted standardized human gut microbiota (SHGM) as it passed through the stomach. Without acid suppression, the highly acidic stomach environment would kill a significant proportion of the donor bacterial cells before they could reach and colonize the lower gastrointestinal tract. The suppressant was started a few days before SHGM administration and continued through the end of the lower maintenance dosing period.",
+      "topic_tags": ["MTT protocol", "proton pump inhibitor", "stomach acid", "SHGM survival", "FMT"]
+    },
+    {
+      "id": "mtt_asd_easy_004",
+      "difficulty": "easy",
+      "question": "What microbial diversity changes are observed in children with autism spectrum disorder compared to neurotypical children, and what are the implications?",
+      "answer": "Children with ASD have significantly lower gut bacterial diversity compared to neurotypical peers, as well as reduced abundances of fermentative bacteria such as Prevotella copri and lower overall species richness. This reduced diversity is thought to impair neurological health and is consistent with the hypothesis that a less diverse microbiota fails to provide the full complement of beneficial metabolites and functional outputs to the host. Because higher gut bacterial diversity is generally associated with healthy status — presumably due to the greater functional redundancy and resilience it confers — restoring diversity is considered a key therapeutic target in microbiome-based interventions for ASD.",
+      "topic_tags": ["bacterial diversity", "ASD", "dysbiosis", "Prevotella", "functional redundancy", "neurotypical"]
+    },
+    {
+      "id": "mtt_asd_easy_005",
+      "difficulty": "easy",
+      "question": "What is a Standardized Human Gut Microbiota (SHGM) preparation and how does it differ from conventional stool used in fecal transplants?",
+      "answer": "Standardized Human Gut Microbiota (SHGM) is a rigorously processed preparation derived from healthy donor stool that undergoes extensive filtering and standardization under anaerobic, GMP-compliant conditions, resulting in a product that is greater than 99% microbiota by composition. Unlike raw or minimally processed donor stool used in many conventional FMT procedures, SHGM excludes debris, pathogens, and other non-microbial material. Donors are screened through medical history review, physical examinations, serologic testing for infectious diseases, metabolic assessments, and autoimmunity screening — any single abnormality disqualifies a donor. The final liquid product can be frozen, stored, and shipped, enabling consistent and standardized dosing.",
+      "topic_tags": ["SHGM", "FMT", "donor screening", "standardization", "gut microbiota preparation"]
+    },
+
+    {
+      "id": "mtt_asd_medium_001",
+      "difficulty": "medium",
+      "question": "How does antibiotic pretreatment function mechanistically within the MTT protocol, and why might it be necessary prior to microbiota transplantation?",
+      "answer": "In the MTT protocol, a course of oral vancomycin — a non-absorbable broad-spectrum antibiotic that acts exclusively within the GI tract — is used to profoundly suppress existing pathogenic and dysbiotic gut bacteria before transplantation. This pretreatment phase is mechanistically critical because the resident dysbiotic microbiota in ASD can exert colonization resistance, preventing donor bacteria from establishing themselves. By depleting the incumbent bacterial community, antibiotic pretreatment resets the competitive landscape of the gut and creates ecological niches that the transplanted donor microbiota can occupy. A subsequent bowel cleanse further removes residual bacteria and the antibiotic itself, preparing the gut for repopulation. Without this preparatory suppression, donor microbiota would likely fail to engraft effectively against an established resident community.",
+      "topic_tags": ["vancomycin", "colonization resistance", "antibiotic pretreatment", "MTT", "engraftment", "dysbiosis"]
+    },
+    {
+      "id": "mtt_asd_medium_002",
+      "difficulty": "medium",
+      "question": "What evidence supports the conclusion that donor microbiota successfully engrafted in recipients following microbiota transplantation therapy?",
+      "answer": "Engraftment was supported by multiple converging lines of evidence. First, the dissimilarity between the recipient's gut microbiota and their donor's microbiota (measured by unweighted UniFrac distance) decreased significantly and progressively over the treatment period, and remained reduced even after treatment stopped. By the end of treatment, recipients were more similar to their donors than the normal interpersonal variation observed between healthy controls. Second, specific bacterial genera known to be underrepresented in ASD — including Bifidobacterium — increased substantially in relative abundance and converged toward levels seen in neurotypical children. Third, at the virome level, bacteriophage populations originating from the donor were detectable in recipients after treatment, while pre-treatment phage populations were largely eliminated or reduced. Together, these observations indicate partial but durable engraftment of both bacterial and phage communities.",
+      "topic_tags": ["engraftment", "UniFrac", "Bifidobacterium", "donor microbiota", "virome", "colonization resistance"]
+    },
+    {
+      "id": "mtt_asd_medium_003",
+      "difficulty": "medium",
+      "question": "What is the relationship between gastrointestinal symptom severity and behavioral ASD symptom severity, and what does a microbiome intervention reveal about this relationship?",
+      "answer": "Gastrointestinal symptom severity and behavioral ASD symptom severity are significantly positively correlated — that is, worsening GI symptoms track with worsening ASD behaviors and vice versa. This is consistent with the gut-brain axis hypothesis. A key finding from MTT intervention is that improvements in GI symptoms coincided with significant improvements in behavioral ASD symptoms, and the magnitude of GI symptom change was negatively correlated with the PGI-III behavioral score change (Spearman's r = −0.59). Critically, behavioral improvements persisted well after the treatment period ended, paralleling the durability of GI improvements and the persistence of microbiome changes. This parallel trajectory supports the interpretation that gut microbiota dysbiosis contributes causally — not merely correlatively — to both GI and behavioral symptom dimensions in ASD.",
+      "topic_tags": ["gut-brain axis", "GI symptoms", "ASD behavior", "correlation", "MTT", "dysbiosis causality"]
+    },
+    {
+      "id": "mtt_asd_medium_004",
+      "difficulty": "medium",
+      "question": "How do bacteriophages interact with bacterial gut communities, and what role might phage community alterations play in gut disease states?",
+      "answer": "Bacteriophages (phages) are viruses that infect and kill specific bacterial hosts, making them key modulators of bacterial community composition and evolutionary trajectories in the gut. In healthy individuals, the gut virome is highly stable over time, and a subset of phages found consistently across healthy individuals is hypothesized to provide a non-host-derived protective barrier against invading bacterial pathogens. In disease states such as inflammatory bowel disease, this 'healthy' phage population represents a disproportionately small fraction of the total phage community. Perturbations to the healthy phage community can lead to phage-mediated dysbiosis, whereby shifts in phage predation patterns result in the selective reduction of certain bacterial species and enable potentially harmful bacteria to proliferate. Because phage communities depend on their bacterial hosts, changes in the bacterial community can trigger delayed but corresponding changes in the phage community.",
+      "topic_tags": ["bacteriophages", "virome", "phage-mediated dysbiosis", "gut health", "IBD", "bacterial community"]
+    },
+    {
+      "id": "mtt_asd_medium_005",
+      "difficulty": "medium",
+      "question": "Why might extended, repeated-dose fecal microbiota transplantation be more effective than single-dose FMT for conditions beyond Clostridioides difficile infection?",
+      "answer": "Single-dose FMT is highly effective for recurrent C. difficile infection because that pathogen is susceptible to competitive exclusion by a newly restored microbial community in a relatively short timeframe. For other GI and systemic conditions — including inflammatory bowel disease, insulin resistance, and potentially ASD — the underlying dysbiosis is more deeply entrenched and complex, involving multiple microbial community imbalances that cannot be fully corrected by a single introduction of donor microbiota. Extended multi-dose protocols maintain a prolonged supply of donor bacteria, giving them repeated opportunities to overcome colonization resistance, expand, and stably engraft. Evidence for this comes from observations that GI and behavioral improvements in ASD accrued gradually over the entire treatment period, in stark contrast to the rapid resolution seen in C. difficile-treated patients. Single-dose vancomycin treatment alone produced only temporary benefits that reversed after stopping, whereas extended MTT produced lasting improvements.",
+      "topic_tags": ["FMT dosing", "C. difficile", "colonization resistance", "engraftment", "extended treatment", "IBD"]
+    },
+    {
+      "id": "mtt_asd_medium_006",
+      "difficulty": "medium",
+      "question": "What dietary and early-life factors distinguish children with autism spectrum disorder from neurotypical children in terms of factors that influence gut microbiota composition?",
+      "answer": "Several early-life and dietary factors that are known to shape gut microbiota composition differ between children with ASD and neurotypical peers. Children with ASD in studied cohorts were more frequently delivered by cesarean section (which impairs initial colonization by maternal vaginal microbiota), used non-standard formula during infancy (affecting early microbial seeding), and were breastfed for significantly shorter durations (reducing the transfer of maternal milk microbiota and prebiotics). Their dietary fiber intake was marginally lower than neurotypical children's, and their mothers' fiber consumption was also significantly lower — relevant because the maternal microbiome is partially inherited and dietary fiber sustains a diverse, SCFA-producing microbial community. These cumulative early-life exposures likely contribute to the lower bacterial diversity and altered microbial composition consistently observed in ASD.",
+      "topic_tags": ["early-life microbiome", "cesarean section", "breastfeeding", "dietary fiber", "ASD", "maternal microbiome"]
+    },
+
+    {
+      "id": "mtt_asd_hard_001",
+      "difficulty": "hard",
+      "question": "How does colonization resistance complicate microbiota transplantation, and what multi-step mechanisms does an extended MTT protocol employ to overcome it?",
+      "answer": "Colonization resistance is the phenomenon whereby an established resident microbial community prevents invasion and colonization by foreign microorganisms — including transplanted donor bacteria — through competitive exclusion for nutrients and attachment sites, production of antimicrobial compounds, and stimulation of host immune defenses. In ASD, even a dysbiotic gut microbiota can mount effective colonization resistance, making simple FMT unlikely to succeed. The MTT protocol addresses this via a staged, multi-mechanism approach: (1) oral vancomycin treatment profoundly suppresses existing bacteria over two weeks, dismantling the competitive microbial landscape; (2) a bowel cleanse with MoviPrep, combined with a fasting period, physically removes residual bacteria and the antibiotic; (3) a high initial dose of SHGM exploits the temporary ecological vacancy created, flooding the gut with donor bacteria at a concentration (2.5 × 10¹² cells) far exceeding what would be achievable in a post-antibiotic environment without cleansing; (4) acid suppression maximizes the survival of donor bacteria through the stomach; and (5) sustained daily maintenance doses over 7–8 additional weeks provide repeated colonization opportunities, allowing donor strains to progressively expand before the host microbiota can reassert resistance. The result is partial but durable engraftment that outlasts the treatment period by at least 8 weeks.",
+      "topic_tags": ["colonization resistance", "MTT protocol", "engraftment", "vancomycin", "bowel cleanse", "SHGM", "FMT mechanisms"]
+    },
+    {
+      "id": "mtt_asd_hard_002",
+      "difficulty": "hard",
+      "question": "What are the key limitations of open-label, uncontrolled intervention studies in assessing microbiota-based therapies, and how do these limitations affect the interpretation of clinical and microbiological outcomes?",
+      "answer": "Open-label, uncontrolled trials introduce several intertwined sources of bias and interpretive uncertainty. First, without blinding or placebo controls, reported symptom improvements — particularly for subjective outcomes assessed by parents — are highly susceptible to placebo effects and expectation bias, making it impossible to distinguish true therapeutic benefit from the psychological impact of participating in a treatment study. Second, the absence of arms that isolate individual treatment components (antibiotic alone, bowel cleanse alone, SHGM alone, acid suppressant alone) means that observed microbiome and clinical changes cannot be attributed to any single element of the protocol. Third, small, heterogeneous cohorts with variable GI presentations and ASD etiologies make it difficult to identify consistent subgroup responder profiles or tease apart inter-individual microbiome variability from treatment effects. Fourth, the phage community analyses were limited to a subset of samples at select timepoints, constraining the temporal resolution of virome insights. Fifth, reliance on parent-reported behavioral assessments introduces reporter bias. The cumulative effect of these limitations is that while the findings are hypothesis-generating and suggest a plausible microbiome-ASD mechanism, they cannot establish causality or therapeutic efficacy — necessitating randomized, double-blind, placebo-controlled trials with larger, more homogeneous cohorts and longer observation windows.",
+      "topic_tags": ["open-label study", "placebo effect", "study design limitations", "clinical trial", "causality", "microbiome intervention", "bias"]
+    },
+    {
+      "id": "mtt_asd_hard_003",
+      "difficulty": "hard",
+      "question": "How does phage community dynamics differ from bacterial community dynamics in response to microbiota transplantation, and what biological principles explain this discrepancy?",
+      "answer": "Following MTT, bacterial communities showed significant increases in alpha diversity (phylogenetic diversity) by the end of treatment and sustained these gains 8 weeks post-treatment, alongside clear shifts in community composition toward donor profiles. In contrast, phage richness and evenness did not show statistically significant changes across the same timeframe. This discrepancy is explained by the fundamental dependency of phage communities on their bacterial hosts: phages replicate only when their bacterial hosts are sufficiently abundant, so large-scale shifts in the phage community cannot precede or occur simultaneously with bacterial community changes — they necessarily lag behind. The antibiotic pretreatment likely reduced phage populations by eliminating host bacteria, temporarily collapsing phage diversity before bacterial recovery drove a secondary phage community rebound. Consistent with this, longitudinal tracking of individual subjects showed that phage diversity initially declined, then rebounded only in clinical responders. At the composition level, however, phage engraftment was detectable: donor-derived phage populations were found across recipients at week 10, while pre-treatment phage populations were largely displaced. This dissociation between diversity metrics and composition metrics illustrates that phage community restructuring operates on a delayed timescale relative to bacterial community restructuring after FMT.",
+      "topic_tags": ["phageome", "virome", "phage dynamics", "bacterial diversity", "FMT", "phage-bacteria coevolution", "temporal dynamics"]
+    },
+    {
+      "id": "mtt_asd_hard_004",
+      "difficulty": "hard",
+      "question": "What does the persistence of microbiome changes and clinical improvements after cessation of treatment imply about the mechanisms by which gut microbiota influences ASD-associated symptoms?",
+      "answer": "The observation that both microbiome changes and clinical improvements (GI and behavioral) persisted for at least 8 weeks after the end of treatment — rather than reverting as seen after short-course antibiotic treatment alone — carries several important mechanistic implications. First, it suggests that the transplanted donor microbiota achieved a degree of stable colonization sufficient to self-sustain in the gut environment beyond the period of active dosing, implying genuine ecological establishment rather than transient occupancy. Second, it implies that the beneficial effects on ASD-associated symptoms are not dependent on continuous exposure to any pharmacological agent (the antibiotic, acid suppressant, or bowel cleanse) but rather on the persistent altered microbial ecosystem itself. Third, the durability of behavioral improvements in parallel with microbiome durability is consistent with the hypothesis that gut microbiota influences neurobiological function through ongoing production of neuroactive metabolites or modulation of the gut-brain axis — effects that are maintained as long as the beneficial microbial community persists. Fourth, the gradual nature of both clinical improvement (accumulating over the full treatment and observation period) and microbiome normalization suggests that the mechanism involves progressive remodeling of the gut ecosystem rather than a single acute intervention, which has direct implications for the design of future therapeutic protocols requiring extended dosing regimens.",
+      "topic_tags": ["treatment durability", "microbiome persistence", "gut-brain axis", "ASD mechanisms", "stable colonization", "metabolites", "therapeutic implications"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "mtt_asd_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "What is the primary purpose of the bowel cleanse step in the Microbiota Transfer Therapy protocol?",
+      "options": {
+        "A": "To reduce stomach acidity and improve survival of transplanted bacteria",
+        "B": "To remove residual gut bacteria and the antibiotic after the pretreatment phase, creating space for donor microbiota colonization",
+        "C": "To stimulate the host immune system to tolerate incoming donor microbiota",
+        "D": "To increase intestinal transit time and allow more contact between donor bacteria and the epithelium"
+      },
+      "correct_answer": "B",
+      "explanation": "The bowel cleanse (MoviPrep) is administered after the antibiotic pretreatment phase to physically flush out remaining bacteria and the antibiotic from the gut. Combined with a fasting period, this creates the ecological vacancy needed for donor SHGM to colonize effectively. Acid suppression serves the separate purpose of protecting bacteria through the stomach.",
+      "topic_tags": ["MTT protocol", "bowel cleanse", "MoviPrep", "colonization", "FMT"]
+    },
+    {
+      "id": "mtt_asd_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "Which bacterial genera are reported to increase in relative abundance following Microbiota Transfer Therapy in children with ASD, among those previously underrepresented?",
+      "options": {
+        "A": "Clostridium, Sutterella, and Ruminococcus",
+        "B": "Bifidobacterium, Prevotella, and Desulfovibrio",
+        "C": "Bacteroides, Lactobacillus, and Faecalibacterium",
+        "D": "Akkermansia, Eubacterium, and Coprococcus"
+      },
+      "correct_answer": "B",
+      "explanation": "Following MTT, the relative abundances of Bifidobacterium, Prevotella, and Desulfovibrio all significantly increased from baseline. Bifidobacterium in particular increased approximately fourfold and converged toward levels seen in neurotypical controls, consistent with strong engraftment. These taxa were among those monitored as markers of microbiome normalization.",
+      "topic_tags": ["Bifidobacterium", "Prevotella", "Desulfovibrio", "MTT", "bacterial engraftment"]
+    },
+    {
+      "id": "mtt_asd_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "How is a Standardized Human Gut Microbiota (SHGM) preparation different from raw stool used in conventional fecal transplants?",
+      "options": {
+        "A": "SHGM contains only a single bacterial species cultured from donor stool",
+        "B": "SHGM is produced from the stool of a single elite donor rather than pooled donors",
+        "C": "SHGM is extensively filtered and standardized under anaerobic GMP conditions, resulting in a product that is greater than 99% microbiota, with rigorous donor screening and pathogen testing",
+        "D": "SHGM is administered only rectally, whereas conventional FMT can be given orally"
+      },
+      "correct_answer": "C",
+      "explanation": "SHGM undergoes extensive filtering, standardization under anaerobic conditions following FDA GMP processes, resulting in a product that is >99% bacteria. Donors undergo comprehensive screening including serologic testing for infectious diseases, metabolic assessments, and autoimmunity screening. This distinguishes it from minimally processed raw stool used in many conventional FMT applications.",
+      "topic_tags": ["SHGM", "FMT", "donor screening", "standardization", "GMP"]
+    },
+
+    {
+      "id": "mtt_asd_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "What does the progressive decrease in UniFrac distance between recipient and donor gut microbiota over the MTT treatment period indicate?",
+      "options": {
+        "A": "The recipient's gut became less hospitable to donor bacteria over time",
+        "B": "The recipient's gut bacterial community progressively became more compositionally similar to the donor's, consistent with successful engraftment",
+        "C": "The donor's microbiota became less diverse as a result of repeated sampling",
+        "D": "The recipient's gut bacteria were systematically replaced by environmental bacteria rather than donor bacteria"
+      },
+      "correct_answer": "B",
+      "explanation": "UniFrac distance is a phylogenetic measure of dissimilarity between microbial communities. A decreasing distance between recipient and donor communities over time means their microbial compositions are converging — that is, the recipient's gut is becoming more similar to the donor's gut. By the end of treatment, recipient-donor distances fell below the normal interpersonal variation between healthy controls, providing strong evidence of engraftment.",
+      "topic_tags": ["UniFrac", "engraftment", "microbiome similarity", "FMT", "beta diversity"]
+    },
+    {
+      "id": "mtt_asd_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "Why did the MTT protocol include a prolonged daily maintenance dosing phase lasting 7–8 weeks rather than relying solely on the high initial dose?",
+      "options": {
+        "A": "Because the high initial dose cannot be administered safely without tapering, requiring a gradual dose reduction schedule",
+        "B": "Because the maintenance doses were needed to suppress the antibiotic-resistant bacteria that survived vancomycin treatment",
+        "C": "Because conditions other than C. difficile infection require multiple sustained doses of donor microbiota to overcome colonization resistance and achieve durable engraftment",
+        "D": "Because the bowel cleanse permanently damages the intestinal epithelium, requiring extended microbial support for repair"
+      },
+      "correct_answer": "C",
+      "explanation": "The rationale for extended multi-dose therapy was based on clinical experience showing that C. difficile is uniquely responsive to one or two FMT infusions, while other GI conditions require multiple infusions to achieve lasting benefits. The maintenance phase provides repeated colonization opportunities, allowing donor microbiota to progressively establish against any residual host microbiota and colonization resistance mechanisms.",
+      "topic_tags": ["maintenance dosing", "FMT protocol", "colonization resistance", "C. difficile", "durable engraftment"]
+    },
+    {
+      "id": "mtt_asd_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "What does the significant negative correlation between changes in GI symptom scores and behavioral ASD symptom scores suggest about the gut-brain relationship in autism?",
+      "options": {
+        "A": "GI symptoms are a side effect of ASD behavioral therapies and unrelated to microbial changes",
+        "B": "Improving GI symptoms leads to worsening behavioral ASD symptoms, indicating a compensatory relationship",
+        "C": "GI symptoms and ASD behaviors are interlinked — as GI symptoms improve, behavioral symptoms tend to improve in parallel, suggesting a shared underlying mechanism that can be altered via gut microbiota intervention",
+        "D": "The correlation indicates that behavioral improvements drive GI improvements through reduced stress and anxiety, not vice versa"
+      },
+      "correct_answer": "C",
+      "explanation": "A significant negative correlation (r = −0.59) between the change in GSRS (GI symptom scale, where lower is better) and PGI-III (behavioral scale, where higher is better) means that participants with greater GI improvement also tended to show greater behavioral improvement. This bidirectional co-improvement, driven by a gut microbiota intervention, supports the hypothesis that gut dysbiosis contributes to both GI and behavioral symptom dimensions in ASD through shared mechanisms such as metabolite dysregulation or gut-brain axis signaling.",
+      "topic_tags": ["gut-brain axis", "GSRS", "PGI-III", "GI-ASD correlation", "dysbiosis", "behavioral symptoms"]
+    },
+    {
+      "id": "mtt_asd_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "Why is the interpretation of open-label clinical trial results for behavioral outcomes in autism particularly vulnerable to placebo effects?",
+      "options": {
+        "A": "Because ASD behavioral symptoms fluctuate randomly, making any intervention appear effective",
+        "B": "Because the primary behavioral assessments were made by clinicians who were blinded to treatment allocation",
+        "C": "Because most behavioral outcome measures rely on parent or guardian reports, who are not blinded and may perceive improvement due to expectation bias rather than true symptom change",
+        "D": "Because antibiotic treatment directly affects brain chemistry, confounding behavioral measures regardless of microbiome changes"
+      },
+      "correct_answer": "C",
+      "explanation": "In this open-label study, behavioral measures including the PGI-III, ABC, and SRS were completed by parents and guardians who knew their child was receiving active treatment. Without blinding, parents' expectations and hopes for improvement can unconsciously bias their ratings upward, artificially inflating apparent behavioral benefit. This is a recognized limitation acknowledged by the authors, who call for randomized, double-blind, placebo-controlled follow-up trials to confirm efficacy.",
+      "topic_tags": ["open-label", "placebo effect", "behavioral outcomes", "parent-reported", "study design", "blinding"]
+    },
+    {
+      "id": "mtt_asd_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What does the finding that Prevotella and Desulfovibrio increased to abundances above donor levels in MTT recipients tell us about how transplanted microbiota changes the gut environment?",
+      "options": {
+        "A": "It indicates that the donor microbiota simply multiplied proportionally after engraftment without altering the ecosystem",
+        "B": "It suggests that the transplanted microbiota altered the gut environment in ways that make it more hospitable to recruit additional commensal bacteria beyond what was originally transferred",
+        "C": "It demonstrates that donor bacteria overgrew and outcompeted both recipient and donor microbiota",
+        "D": "It reflects contamination of recipient samples with post-transfer environmental bacteria"
+      },
+      "correct_answer": "B",
+      "explanation": "The fact that Prevotella and Desulfovibrio reached higher relative abundances in recipients after treatment than in the donor samples themselves suggests that MTT did not merely transplant the donor community unchanged. Instead, the incoming microbiota reorganized the gut ecosystem — through metabolic cross-feeding, niche creation, immune modulation, or mucus remodeling — generating an environment more favorable for the recruitment and expansion of commensal bacteria, including some that were not abundantly present in the donor.",
+      "topic_tags": ["Prevotella", "Desulfovibrio", "gut ecosystem remodeling", "engraftment", "commensal recruitment", "FMT"]
+    },
+
+    {
+      "id": "mtt_asd_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "Why did phage richness and evenness not significantly change following MTT despite clear bacterial community shifts, and what does this reveal about phage-bacteria temporal dynamics?",
+      "options": {
+        "A": "Phage communities are immune to FMT because the gut mucosal barrier prevents phage penetration from donor stool",
+        "B": "Because phage communities depend on their bacterial host populations for replication, phage diversity changes lag behind bacterial community changes — the timeframe of this study was insufficient to detect significant phage diversity shifts at the population level, even as phage composition shifted toward donor profiles",
+        "C": "Phage sequences were excluded from the diversity analysis due to sequencing errors, explaining the lack of detected change",
+        "D": "Phage richness and evenness are determined solely by host genetics and are unresponsive to microbiome interventions"
+      },
+      "correct_answer": "B",
+      "explanation": "Phages are obligate intracellular parasites of bacteria and cannot replicate independently. When bacterial host abundances are disrupted — as during antibiotic treatment — phage populations collapse. Recovery of phage diversity requires first rebuilding sufficient bacterial host populations. This creates a temporal lag: bacterial community shifts occur first, and phage community diversity changes follow later. The study's timeframe captured compositional phage shifts (donor phage engraftment, displacement of pre-MTT phages) but may have been too short to observe significant diversity metric changes at the population level.",
+      "topic_tags": ["phage dynamics", "phage-bacteria coevolution", "virome", "temporal lag", "FMT", "diversity metrics"]
+    },
+    {
+      "id": "mtt_asd_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "Which combination of study design features would most effectively address the primary limitations of the current MTT open-label trial when designing a follow-up study?",
+      "options": {
+        "A": "Increasing sample size, using the same open-label design but with more frequent symptom assessments, and comparing oral versus rectal administration only",
+        "B": "Randomized allocation to active MTT versus placebo arms, double-blinding of participants and assessors, including control arms that isolate individual treatment components (e.g., antibiotic-only arm), using longer observation periods, and employing clinician-based alongside parent-based behavioral assessments",
+        "C": "Restricting the study to children under 5 years old to target the most developmentally sensitive period and increasing the SHGM dose",
+        "D": "Comparing MTT to probiotic supplementation using the same endpoint measures, without a placebo arm, since probiotics are the established standard of care"
+      },
+      "correct_answer": "B",
+      "explanation": "The primary limitations of the open-label trial are placebo effects, inability to attribute effects to specific protocol components, small heterogeneous cohort, reliance on parent-reported outcomes, and short observation period. A rigorous follow-up would require: (1) randomization and blinding to eliminate placebo/expectation bias; (2) isolated component arms (antibiotic-only, bowel cleanse-only, SHGM-only) to identify which elements drive benefits; (3) independent clinician assessments to complement parent reporting; and (4) extended follow-up to assess long-term safety and durability. These design features directly address each major identified limitation.",
+      "topic_tags": ["clinical trial design", "randomization", "blinding", "placebo control", "study limitations", "FMT follow-up study"]
+    }
+  ]
+}

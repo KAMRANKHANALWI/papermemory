@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Effects of healthy low-carbohydrate diet and time-restricted eating on weight and gut microbiome in adults with overweight or obesity: Feeding RCT",
+    "authors": ["Lin Li", "Rui Li", "Qingying Tian", "Yaogan Luo", "Ruyi Li", "Xiaoyu Lin", "Yunjing Ou", "Tianyu Guo", "Xue Chen", "An Pan", "JoAnn E. Manson", "Gang Liu"],
+    "journal": "Cell Reports Medicine",
+    "year": 2024,
+    "doi": "10.1016/j.xcrm.2024.101801",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings from a 12-week isocaloric-restricted feeding RCT comparing HLCD and TRE interventions on body weight and gut microbiome.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "hlcd_tre_easy_001",
+      "difficulty": "easy",
+      "question": "What is a healthy low-carbohydrate diet (HLCD) and how does it differ from a conventional low-carbohydrate diet?",
+      "answer": "A healthy low-carbohydrate diet (HLCD) is a moderately carbohydrate-restricted dietary pattern that derives approximately 30% of total energy from carbohydrates, 50% from fats, and 20% from proteins. Unlike conventional low-carbohydrate diets that focus solely on reducing carbohydrate quantity, HLCD emphasizes the quality of macronutrients — specifically, high-quality carbohydrates such as whole grains, vegetables, and fruits; unsaturated fatty acids (approximately 71% of total fat); and plant-based proteins (approximately 50% of total protein). This dual focus on quantity and quality distinguishes it from standard LCD approaches.",
+      "topic_tags": ["HLCD", "low-carbohydrate diet", "macronutrient quality", "dietary pattern", "unsaturated fats"]
+    },
+    {
+      "id": "hlcd_tre_easy_002",
+      "difficulty": "easy",
+      "question": "What is time-restricted eating (TRE) and what is its proposed mechanism for improving metabolic health?",
+      "answer": "Time-restricted eating (TRE) is a dietary strategy that limits food intake to a defined window of hours each day — typically 8 to 10 hours — while the remaining hours are spent fasting. The metabolic rationale is that consuming food over an extended period can disturb circadian rhythms, contributing to metabolic diseases. By aligning eating patterns with natural circadian biology, TRE is thought to improve glucose metabolism, lipid profiles, blood pressure, and gut microbiome composition. A 10-hour eating window is considered especially practical for workers with regular daytime schedules, potentially improving long-term adherence compared to more restrictive windows.",
+      "topic_tags": ["TRE", "time-restricted eating", "circadian rhythm", "metabolic health", "eating window", "intermittent fasting"]
+    },
+    {
+      "id": "hlcd_tre_easy_003",
+      "difficulty": "easy",
+      "question": "How do HLCD and TRE differ in their effects on body composition, specifically regarding fat mass versus lean mass?",
+      "answer": "HLCD and TRE both reduce body mass index beyond caloric restriction alone, but they exert distinct effects on body composition. HLCD leads to greater fat mass loss, including reductions in body fat percentage, without significantly affecting lean mass. In contrast, TRE produces more reduction in soft lean mass and skeletal muscle mass compared to caloric restriction alone, in addition to its fat-reducing effects. This differential impact on body composition has clinical significance, since lean mass loss can lead to muscle weakness and may be positively associated with subsequent weight regain.",
+      "topic_tags": ["body composition", "fat mass", "lean mass", "HLCD", "TRE", "weight loss", "body mass index"]
+    },
+    {
+      "id": "hlcd_tre_easy_004",
+      "difficulty": "easy",
+      "question": "What are branched-chain amino acids (BCAAs) and why are elevated fecal levels considered a metabolic concern in obesity?",
+      "answer": "Branched-chain amino acids (BCAAs) are essential amino acids — specifically leucine, isoleucine, and valine — that are obtained through diet and play roles in protein synthesis, energy metabolism, and signaling. Elevated circulating or fecal concentrations of BCAAs are widely considered a metabolic hallmark of obesity, insulin resistance, and type 2 diabetes. Mechanistically, disturbed BCAA metabolism contributes to disease pathogenesis through stimulation of insulin secretion, modulation of energy homeostasis, and dysregulation of appetite control. Reductions in BCAAs following dietary intervention have been associated with improvements in body weight and fat mass.",
+      "topic_tags": ["BCAAs", "branched-chain amino acids", "obesity", "insulin resistance", "metabolic hallmark", "fecal metabolomics"]
+    },
+    {
+      "id": "hlcd_tre_easy_005",
+      "difficulty": "easy",
+      "question": "What is the Firmicutes/Bacteroidetes (F/B) ratio and what does a change in this ratio indicate about gut health?",
+      "answer": "The Firmicutes/Bacteroidetes (F/B) ratio is a commonly used index of gut microbiome composition reflecting the relative abundance of these two dominant bacterial phyla. An elevated F/B ratio has been associated with obesity, as individuals with excess adiposity tend to have proportionally more Firmicutes than Bacteroidetes compared to lean individuals. A reduction in the F/B ratio following a dietary intervention is generally interpreted as a shift toward a microbiome composition more typical of metabolically healthy individuals. In the context of HLCD intervention, a significant decrease in the F/B ratio was observed, consistent with findings from previous low-carbohydrate dietary studies.",
+      "topic_tags": ["Firmicutes/Bacteroidetes ratio", "gut microbiome", "obesity", "dietary intervention", "beta diversity"]
+    },
+
+    {
+      "id": "hlcd_tre_medium_001",
+      "difficulty": "medium",
+      "question": "How does HLCD alter fecal amino acid and fatty acid profiles, and how do these changes relate to weight and fat mass outcomes?",
+      "answer": "HLCD significantly decreases fecal concentrations of amino acids — particularly the three BCAAs (valine, isoleucine, leucine) and aromatic amino acids (phenylalanine, tyrosine) — compared to an isocaloric control diet. Despite HLCD providing higher total dietary protein (approximately 19% of calories) than the control diet (approximately 16%), fecal BCAAs are lower in the HLCD group. This is thought to reflect increased reliance on protein for energy-yielding purposes under carbohydrate restriction, thereby reducing residual BCAA concentrations. Fecal BCAAs are positively correlated with body weight, BMI, and fat mass, suggesting they serve as intermediary biomarkers linking HLCD's macronutrient composition to its fat mass-reducing effect. Simultaneously, HLCD significantly increases fecal unsaturated fatty acids — including oleic acid, alpha-linolenic acid, and palmitoleic acid — reflecting the emphasis on unsaturated fat sources in the diet, which is associated with improved lipid status and reduced insulin resistance.",
+      "topic_tags": ["fecal metabolomics", "BCAAs", "unsaturated fatty acids", "HLCD", "fat mass", "protein metabolism", "metabolomics"]
+    },
+    {
+      "id": "hlcd_tre_medium_002",
+      "difficulty": "medium",
+      "question": "What gut microbiome changes are specifically associated with TRE compared to caloric restriction alone, and what is their proposed functional significance?",
+      "answer": "TRE leads to increased abundance of several probiotic species relative to caloric restriction alone, including Parabacteroides distasonis, Bacteroides intestinalis, Parabacteroides goldsteinii, and Escherichia coli. Notably, TRE enriches bacteria involved in the synthesis of short-chain fatty acids such as butyrate and propionic acid. Despite this microbial enrichment, fecal SCFA concentrations do not significantly increase, likely because caloric restriction and reduced carbohydrate intake limit substrate availability for fermentation. TRE also significantly affects functional pathways including amino acid biosynthesis, carbohydrate degradation, lipid biosynthesis, and energy metabolism. Additionally, TRE elevates fecal deoxycholic acid (DCA) and indoleacetic acid (IAA), metabolites implicated in maintaining gut homeostasis and regulating immunity, with potential roles in modulating the development of obesity, metabolic syndrome, and cardiovascular disease.",
+      "topic_tags": ["TRE", "gut microbiome", "probiotic species", "short-chain fatty acids", "Parabacteroides", "deoxycholic acid", "indoleacetic acid"]
+    },
+    {
+      "id": "hlcd_tre_medium_003",
+      "difficulty": "medium",
+      "question": "Why does adding TRE to caloric restriction produce more lean mass loss, and what are the clinical implications of this finding?",
+      "answer": "TRE combined with caloric restriction produces significantly greater reductions in soft lean mass (including skeletal muscle mass) and hip circumference compared to caloric restriction alone. This pattern of lean mass loss has been reported in other TRE trials, particularly those using 8- to 10-hour eating windows. The mechanism likely involves metabolic adaptations related to the extended fasting period, such as altered protein turnover and increased protein oxidation. The clinical implication is significant: lean mass loss can lead to physical weakness and is positively correlated with subsequent weight regain, since muscle tissue contributes to resting metabolic rate. These findings suggest that while TRE offers additional weight reduction beyond caloric restriction, its broader implementation should take into account the risk of muscle loss — particularly in older adults or those with pre-existing sarcopenia — and that future recommendations may need to incorporate resistance exercise or protein supplementation alongside TRE.",
+      "topic_tags": ["TRE", "lean mass", "muscle loss", "caloric restriction", "weight regain", "body composition", "clinical implications"]
+    },
+    {
+      "id": "hlcd_tre_medium_004",
+      "difficulty": "medium",
+      "question": "How do dietary interventions affect gut microbial functional profiles, and which specific metabolic pathways are differentially altered by HLCD versus TRE?",
+      "answer": "Both HLCD and TRE induce significant shifts in gut microbial functional profiles from baseline to the end of the 12-week intervention, though the patterns differ. For HLCD, the most prominent functional changes include downregulation of carbohydrate degradation pathways (e.g., GLUCUROCATPWY and UDPNAGSYN-PWY) and amino acid biosynthesis pathways, consistent with reduced dietary carbohydrate intake, alongside upregulation of lipid biosynthesis pathways reflecting increased fat consumption. Top loadings in the HLCD group are related to purine metabolism and fatty acid biosynthesis. For TRE, altered pathways are primarily related to polyamine metabolism, in addition to shifts in amino acid biosynthesis, carbohydrate degradation, lipid biosynthesis, and energy metabolism. These functional divergences indicate that HLCD and TRE act through distinct but complementary microbial mechanisms, and that their functional gut microbiome effects can be distinguished even when compositional differences between groups are not statistically significant after correction.",
+      "topic_tags": ["gut microbiome function", "metabolic pathways", "HLCD", "TRE", "carbohydrate metabolism", "amino acid biosynthesis", "metagenomics"]
+    },
+    {
+      "id": "hlcd_tre_medium_005",
+      "difficulty": "medium",
+      "question": "What mechanisms may explain weight regain after stopping dietary interventions, and what evidence suggests the gut microbiome plays a role?",
+      "answer": "Weight regain following initial weight loss is a well-known challenge and involves multiple converging mechanisms, including rebound increases in appetite-regulating hormones, metabolic adaptation to lower energy expenditure, and restoration of pre-diet eating behaviors. A growing body of evidence implicates the gut microbiome in energy metabolism and weight regulation. Fecal transplant studies have demonstrated that individuals who consumed capsules containing fecal material collected during the weight-loss diet period showed reduced weight regain after stopping intervention, suggesting the gut microbiome retains a metabolic 'memory' of diet that influences subsequent energy balance. In the context of this research, significant alterations in gut microbial function persist beyond the intervention period, particularly in pathways related to L-arginine biosynthesis and central intestinal metabolites, and fecal levels of p-hydroxyphenylacetic acid — associated with small intestinal bacteria and obesity remission — remain elevated in the HLCD group after the intervention ends.",
+      "topic_tags": ["weight regain", "gut microbiome", "fecal transplant", "energy metabolism", "post-intervention", "adipose tissue"]
+    },
+    {
+      "id": "hlcd_tre_medium_006",
+      "difficulty": "medium",
+      "question": "How does caloric restriction alone affect cardiometabolic biomarkers, and what additional benefits do HLCD and TRE provide beyond this baseline effect?",
+      "answer": "Caloric restriction alone at 25% below estimated energy requirements produces significant improvements in blood pressure, total cholesterol, and liver and kidney function indicators across all groups. It also leads to meaningful reductions in continuous glucose monitoring metrics, including all-day and daytime mean glucose levels, even though fasting glucose does not significantly change. Beyond these shared effects, HLCD provides additional reductions in BMI and fat mass compared to caloric restriction using a standard control diet, with a significant difference in fat mass loss (approximately 0.93 kg more). TRE provides additional reductions in BMI, soft lean mass, and hip circumference compared to caloric restriction alone. Neither intervention produces significant between-group differences in cardiometabolic blood markers at the intervention's end — the most prominent differential effects are on body composition and the gut microbiome, rather than standard lipid or glucose panels.",
+      "topic_tags": ["caloric restriction", "cardiometabolic biomarkers", "blood pressure", "cholesterol", "BMI", "HLCD", "TRE", "differential effects"]
+    },
+
+    {
+      "id": "hlcd_tre_hard_001",
+      "difficulty": "hard",
+      "question": "What is the long-term sustainability of the metabolic and microbiome benefits from HLCD versus TRE after the intervention period ends, and what does this reveal about their respective mechanisms of action?",
+      "answer": "The sustainability of benefits diverges substantially between HLCD and TRE after the dietary period ends. For HLCD, the reduction in body fat mass and fat percentage persists 28 weeks post-intervention despite significant weight regain, indicating that HLCD-induced changes in adipose tissue distribution are durable even when total body weight rebounds. Additionally, certain gut microbial functional shifts (notably decreased L-arginine biosynthesis and increased lipid IVA biosynthesis pathway), as well as the decrease in fecal phthalic acid, are sustained, pointing to semi-permanent microbial reprogramming. In contrast, the benefits from TRE — including its favorable effects on lean mass and other cardiometabolic markers — are not sustained at 28 weeks post-intervention, with full relapse across measured outcomes. This divergence suggests that HLCD may induce more durable structural changes in adipose tissue biology and gut microbiome function, potentially through sustained alterations in BCAA metabolism, lipid handling, and microbial community composition. TRE's benefits, in contrast, appear to be acutely dependent on the active maintenance of the restricted eating window, implying they are driven by real-time circadian and metabolic signals that cease when the eating window widens again. The implication is that HLCD may confer lasting metabolic benefit even when used as a time-limited intervention, whereas TRE requires ongoing adherence to remain effective.",
+      "topic_tags": ["long-term sustainability", "post-intervention follow-up", "fat mass", "weight regain", "gut microbiome", "HLCD durability", "TRE relapse"]
+    },
+    {
+      "id": "hlcd_tre_hard_002",
+      "difficulty": "hard",
+      "question": "How do HLCD and TRE interact with the gut microbiome to affect host fecal metabolomics, and what multi-omics connections link microbial taxa to clinical outcomes?",
+      "answer": "HLCD and TRE each produce distinct fecal metabolomic signatures that reflect their specific macronutrient and temporal feeding modifications. HLCD significantly decreases fecal concentrations of BCAAs, aromatic amino acids, indoles, and carbohydrates, while increasing unsaturated fatty acids. The reduction in BCAAs in the HLCD group is inversely associated with the relative abundance of Oscillibacter, a genus linked to metabolic pathways, while BCAAs themselves positively correlate with BMI, body fat mass, and serum triglycerides — establishing a chain from microbial composition to metabolite to clinical outcome. TRE is associated with decreased alpha-hydroxybutyric acid (a microbial product of valine degradation linked to obesity) and increased fecal DCA and IAA, which modulate immune homeostasis and potentially affect cardiovascular and metabolic disease risk. Multi-omics integration using the DIABLO framework reveals widespread correlations among microbial taxa (e.g., Allisonella, Butyricimonas, Lachnospiraceae, Oscillibacter, Romboutsia, Vellonella), key metabolites (BCAAs, oleic acid, N-acetylserine), and clinical parameters (BMI, FAT%, FM, total cholesterol, triglycerides). These interconnections demonstrate that the clinical effects of dietary intervention are not simply direct but are substantially mediated through coordinated microbial-metabolite axes, supporting the gut microbiome as a functional intermediary in diet-induced metabolic change.",
+      "topic_tags": ["multi-omics", "fecal metabolomics", "HLCD", "TRE", "Oscillibacter", "BCAAs", "deoxycholic acid", "indoleacetic acid", "gut-metabolite-clinical axis"]
+    },
+    {
+      "id": "hlcd_tre_hard_003",
+      "difficulty": "hard",
+      "question": "What are the methodological limitations in interpreting gut microbiome differences between dietary intervention groups in isocaloric-restricted feeding trials, and how do these affect the conclusions that can be drawn?",
+      "answer": "Several interrelated methodological constraints limit interpretation of between-group microbiome differences in isocaloric-restricted feeding trials. First, the universal application of caloric restriction across all groups — including the control — creates a shared metabolic and nutritional 'background' that may obscure differential microbiome effects attributable to specific dietary patterns. Because caloric restriction independently alters the gut environment by reducing substrate availability and shifting gut transit time, separating its effects from those of HLCD or TRE composition requires large sample sizes and high statistical power. Second, the inherent heterogeneity of the human gut microbiome — high inter-individual variation in baseline composition — introduces noise that reduces the ability to detect modest between-group differences. This means that while significant within-group shifts (baseline to endpoint) are detected for HLCD and TRE, between-group species-level differences that survive FDR correction are limited, likely due to insufficient statistical power. Third, metagenomic sequencing of fecal samples captures luminal microbiome composition, which may differ from mucosal or small intestinal communities that interact more directly with host metabolic tissue. Fourth, the 12-week duration may be insufficient to observe the full trajectory of microbiome adaptation. Collectively, these factors mean that the absence of significant between-group microbiome differences should not be interpreted as true equivalence; instead, larger and longer trials with stratified randomization are needed to characterize the full dietary-pattern-specific effects on the microbiome.",
+      "topic_tags": ["methodological limitations", "isocaloric restriction", "microbiome heterogeneity", "statistical power", "FDR correction", "between-group differences", "feeding trial design"]
+    },
+    {
+      "id": "hlcd_tre_hard_004",
+      "difficulty": "hard",
+      "question": "How does Ruminococcus callidus respond to HLCD intervention, and what does this reveal about the relationship between dietary carbohydrate restriction and obesity-associated gut microbiota?",
+      "answer": "Ruminococcus callidus is significantly decreased in abundance following HLCD compared to an isocaloric control diet. This is clinically meaningful because Ruminococcus as a genus has been identified as an obesity-associated taxon in Western populations, and increased Ruminococcus abundance has also been observed in individuals with prediabetes. The reduction of R. callidus under HLCD aligns with the known dependency of certain Ruminococcus species on fermentable carbohydrates as their primary substrate — restricting dietary carbohydrates reduces the ecological niche supporting their growth. This finding illustrates a mechanistic connection between macronutrient composition and the abundance of metabolically relevant microbial taxa: carbohydrate restriction via HLCD selectively diminishes bacteria whose proliferation is linked to insulin resistance and obesity. Furthermore, this microbiome change occurs in the context of broader functional shifts in carbohydrate degradation pathways, suggesting that the reduction in R. callidus is part of a coordinated remodeling of the carbohydrate-fermenting microbial community rather than an isolated effect. This has implications for the design of dietary interventions targeting the microbiome — food quality and macronutrient source may matter as much as caloric restriction alone in reshaping obesity-associated microbiota.",
+      "topic_tags": ["Ruminococcus callidus", "HLCD", "obesity microbiota", "carbohydrate restriction", "prediabetes", "gut microbiome", "dietary carbohydrate"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "hlcd_tre_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which dietary intervention is primarily associated with greater fat mass loss beyond caloric restriction, according to isocaloric-restricted feeding evidence?",
+      "options": {
+        "A": "Time-restricted eating (TRE)",
+        "B": "Healthy low-carbohydrate diet (HLCD)",
+        "C": "Combination of HLCD and TRE equally",
+        "D": "Control diet with 25% caloric restriction"
+      },
+      "correct_answer": "B",
+      "explanation": "HLCD results in additional fat mass loss beyond caloric restriction, whereas TRE is associated with more soft lean mass loss. The differential effects on body composition are distinct between the two interventions.",
+      "topic_tags": ["fat mass", "HLCD", "TRE", "body composition"]
+    },
+    {
+      "id": "hlcd_tre_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What does a 10-hour time-restricted eating window require of participants during the intervention period?",
+      "options": {
+        "A": "Consuming all daily meals within a 10-hour period and fasting for the remaining 14 hours, with only water and non-caloric beverages allowed outside the eating window",
+        "B": "Skipping breakfast entirely and eating only between noon and 10 PM",
+        "C": "Reducing total caloric intake by 50% while eating at any time of the day",
+        "D": "Alternating full fasting days with normal eating days across a 10-day cycle"
+      },
+      "correct_answer": "A",
+      "explanation": "10-hour TRE requires consuming all provided meals within a 10-hour eating window each day, with only water and non-caloric beverages permitted outside the window. This creates a 14-hour daily fasting period aligned with circadian biology.",
+      "topic_tags": ["TRE", "eating window", "fasting", "protocol"]
+    },
+    {
+      "id": "hlcd_tre_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "What is the primary reason the Firmicutes/Bacteroidetes (F/B) ratio is monitored as a gut microbiome health indicator in obesity-related research?",
+      "options": {
+        "A": "A higher Firmicutes proportion is associated with greater fiber fermentation capacity and reduced disease risk",
+        "B": "An elevated F/B ratio has been associated with obesity and metabolic dysfunction, and reductions are considered a favorable microbiome shift",
+        "C": "Bacteroidetes are the sole producers of short-chain fatty acids, so their relative abundance predicts SCFA levels",
+        "D": "Firmicutes are exclusively pathogenic bacteria whose reduction directly improves immune function"
+      },
+      "correct_answer": "B",
+      "explanation": "The F/B ratio is monitored because elevated Firmicutes relative to Bacteroidetes has been consistently associated with obesity. A reduction in the F/B ratio following intervention is interpreted as a shift toward a healthier microbiome composition, consistent with findings from HLCD studies.",
+      "topic_tags": ["Firmicutes/Bacteroidetes ratio", "obesity", "gut microbiome", "dietary intervention"]
+    },
+
+    {
+      "id": "hlcd_tre_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "Why does HLCD lower fecal BCAA concentrations even though total protein intake is higher in HLCD than in the isocaloric control diet?",
+      "options": {
+        "A": "HLCD reduces intestinal absorption of BCAAs by increasing gut permeability",
+        "B": "Plant proteins in HLCD have lower BCAA content compared to the animal proteins dominant in the control diet",
+        "C": "Carbohydrate restriction under HLCD increases reliance on protein for energy-yielding purposes, reducing residual BCAA concentrations in feces",
+        "D": "HLCD promotes specific gut bacteria that convert BCAAs directly into short-chain fatty acids"
+      },
+      "correct_answer": "C",
+      "explanation": "Despite providing more total dietary protein, HLCD produces lower fecal BCAAs because carbohydrate restriction leads to increased use of amino acids — including BCAAs — as energy substrates through gluconeogenesis and oxidation, leaving fewer BCAAs available in the gut lumen.",
+      "topic_tags": ["BCAAs", "HLCD", "protein metabolism", "carbohydrate restriction", "energy metabolism"]
+    },
+    {
+      "id": "hlcd_tre_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "Which fecal metabolites are specifically elevated by TRE intervention and what are their proposed roles?",
+      "options": {
+        "A": "Branched-chain amino acids (BCAAs) and aromatic amino acids, which serve as energy substrates during the fasting window",
+        "B": "Deoxycholic acid (DCA) and indoleacetic acid (IAA), which are implicated in maintaining gut homeostasis and regulating immunity",
+        "C": "Oleic acid and palmitoleic acid, which reflect increased fatty acid biosynthesis during fasting",
+        "D": "Phthalic acid and alpha-hydroxybutyric acid, which are markers of gut microbial fermentation activity"
+      },
+      "correct_answer": "B",
+      "explanation": "TRE specifically enriches fecal deoxycholic acid (DCA) and indoleacetic acid (IAA). These metabolites are thought to play key roles in maintaining gut homeostasis and regulating the immune system, with potential implications for metabolic syndrome and cardiovascular disease risk.",
+      "topic_tags": ["TRE", "fecal metabolomics", "deoxycholic acid", "indoleacetic acid", "gut homeostasis"]
+    },
+    {
+      "id": "hlcd_tre_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "Why do the between-group differences in gut microbiome species abundance between dietary groups not reach significance after false discovery rate (FDR) correction, despite clear within-group shifts?",
+      "options": {
+        "A": "All participants in all groups consumed the same foods, eliminating any dietary signal in the microbiome",
+        "B": "Metagenomic sequencing cannot distinguish between dietary groups because it only captures DNA from dead bacteria",
+        "C": "Limited statistical power combined with the shared caloric restriction across all groups likely obscures dietary-pattern-specific microbiome effects",
+        "D": "FDR correction is only appropriate for blood biomarker data, not for microbiome species-level analyses"
+      },
+      "correct_answer": "C",
+      "explanation": "All groups undergo isocaloric restriction, which itself alters the gut microbiome and creates a shared background that may obscure differential effects. Combined with the inherent inter-individual heterogeneity of the microbiome, the sample size provides limited power to detect species-level between-group differences that survive FDR correction.",
+      "topic_tags": ["FDR", "statistical power", "microbiome", "isocaloric restriction", "between-group differences"]
+    },
+    {
+      "id": "hlcd_tre_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "What distinguishes the long-term (post-intervention) effects of HLCD from those of TRE on fat mass and cardiometabolic health?",
+      "options": {
+        "A": "TRE sustains improvements in lean mass and cardiovascular markers 28 weeks post-intervention, while HLCD effects fully rebound",
+        "B": "HLCD sustains reductions in body fat mass and percentage 28 weeks post-intervention despite weight regain, while TRE benefits fully relapse",
+        "C": "Both HLCD and TRE maintain equivalent reductions in fat mass and metabolic markers long after the intervention ends",
+        "D": "Only the combination of HLCD and TRE produces sustained effects, while neither intervention alone maintains benefits"
+      },
+      "correct_answer": "B",
+      "explanation": "HLCD produces a uniquely durable reduction in body fat mass and fat percentage that persists at 28 weeks post-intervention, despite overall weight regain. TRE benefits, including favorable body composition changes and cardiometabolic improvements, are not sustained at the same post-intervention timepoint, indicating full relapse.",
+      "topic_tags": ["post-intervention", "sustainability", "fat mass", "HLCD", "TRE", "weight regain"]
+    },
+    {
+      "id": "hlcd_tre_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "What are the key microbial species increased in abundance by TRE compared to caloric restriction alone, and what functional role do they share?",
+      "options": {
+        "A": "Ruminococcus callidus and Dorea longicatena, which specialize in mucin degradation",
+        "B": "Parabacteroides distasonis, Bacteroides intestinalis, and Parabacteroides goldsteinii, which are probiotic species associated with short-chain fatty acid synthesis",
+        "C": "Klebsiella pneumoniae and Enterobacter hormaechei, which improve carbohydrate fermentation efficiency",
+        "D": "Eubacterium ramulus and Coprococcus comes, which are primary producers of bile acids"
+      },
+      "correct_answer": "B",
+      "explanation": "TRE increases the abundance of Parabacteroides distasonis, Bacteroides intestinalis, Parabacteroides goldsteinii, and E. coli compared to caloric restriction alone. These species are classified as probiotic and are involved in the synthesis of short-chain fatty acids including butyrate and propionic acid, though actual fecal SCFA levels do not significantly increase due to reduced dietary carbohydrate substrate availability.",
+      "topic_tags": ["TRE", "Parabacteroides distasonis", "probiotic species", "short-chain fatty acids", "gut microbiome"]
+    },
+
+    {
+      "id": "hlcd_tre_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "Based on multi-omics integration findings, which gut microbial genera are negatively correlated with fecal BCAA concentrations in the context of HLCD intervention, and what does this suggest about the microbiome's role in BCAA metabolism?",
+      "options": {
+        "A": "Akkermansia and Faecalibacterium are inversely correlated with BCAAs, suggesting they directly catabolize BCAAs through known enzymatic pathways",
+        "B": "Oscillibacter abundance is inversely correlated with fecal BCAAs, suggesting that Oscillibacter-mediated microbial activity may contribute to BCAA clearance or utilization under HLCD",
+        "C": "Ruminococcus is directly proportional to fecal BCAA levels, indicating that its reduction under HLCD is the primary driver of BCAA decrease",
+        "D": "Lachnospiraceae members are positively correlated with BCAAs, confirming their role as the main biosynthetic source of gut BCAAs"
+      },
+      "correct_answer": "B",
+      "explanation": "Multi-omics correlation analysis reveals that fecal BCAA concentrations are inversely associated with the relative abundance of Oscillibacter. This suggests that higher Oscillibacter presence may reflect or contribute to reduced BCAA availability in the gut lumen under HLCD, implicating this taxon in the microbial processing of amino acids as an intermediary between diet, microbiome, and metabolic outcomes.",
+      "topic_tags": ["Oscillibacter", "BCAAs", "multi-omics", "HLCD", "microbial BCAA metabolism", "correlation analysis"]
+    },
+    {
+      "id": "hlcd_tre_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "What does the differential response of alpha-diversity versus beta-diversity to HLCD and TRE reveal about how these interventions remodel the gut microbiome?",
+      "options": {
+        "A": "Alpha-diversity increases significantly in both groups while beta-diversity remains unchanged, indicating that both interventions add new species without altering community structure",
+        "B": "Both alpha- and beta-diversity change significantly only in intervention groups, confirming a complete remodeling of the microbiome composition and richness",
+        "C": "Beta-diversity shifts significantly in HLCD and TRE groups (indicating community composition changes), while alpha-diversity (Shannon index) shows no significant change, suggesting that interventions alter which species predominate rather than overall species richness",
+        "D": "Neither alpha- nor beta-diversity change significantly in any group, indicating that caloric restriction prevents microbiome adaptation to dietary patterns"
+      },
+      "correct_answer": "C",
+      "explanation": "HLCD and TRE produce significant changes in beta-diversity (community composition) as measured by PERMANOVA (p < 0.05), indicating that the overall microbial community structure shifts. However, alpha-diversity (Shannon index) does not significantly change in either group. This pattern suggests the interventions alter the relative dominance and functional profile of taxa already present rather than adding or eliminating species to change overall richness — a qualitative rather than quantitative microbiome remodeling.",
+      "topic_tags": ["alpha diversity", "beta diversity", "Shannon index", "PERMANOVA", "gut microbiome", "HLCD", "TRE", "community composition"]
+    }
+  ]
+}

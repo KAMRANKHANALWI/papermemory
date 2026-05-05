@@ -1,0 +1,269 @@
+{
+  "metadata": {
+    "source_paper": "Human gut microbiome, diet, and mental disorders",
+    "authors": ["Alejandro Borrego-Ruiz", "Juan J. Borrego"],
+    "journal": "International Microbiology",
+    "year": 2025,
+    "volume": 28,
+    "pages": "1-15",
+    "doi": "10.1007/s10123-024-00518-6",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "gutmind_easy_001",
+      "difficulty": "easy",
+      "question": "What is the gut-brain axis and which communication pathways does it involve?",
+      "answer": "The gut-brain axis is a bidirectional communication network that connects the central nervous system (CNS), autonomic nervous system (ANS), and enteric nervous system (ENS), as well as the hypothalamic-pituitary-adrenal (HPA) axis, with the intestine. This communication occurs via vagal, neuroimmune, and neuroendocrine pathways. Intermediate metabolites of the gut microbiome, such as short-chain fatty acids (SCFAs) and tryptophan catabolites, along with cytokines and neurotransmitters, are all involved in modulating various brain functions through this axis.",
+      "topic_tags": ["gut-brain axis", "CNS", "ENS", "HPA axis", "vagal pathways", "neuroendocrine"]
+    },
+    {
+      "id": "gutmind_easy_002",
+      "difficulty": "easy",
+      "question": "How is the Western diet characterized and what metabolic disorders has it been associated with?",
+      "answer": "The Western diet (WD) is characterized by a high content of refined sugars, salt, saturated fats (especially omega-6 fatty acids), and proteins of animal origin. It has been associated with metabolic and pathological disorders including type 2 diabetes, obesity, certain cancers, and cardiovascular disease. The WD is also linked to chronic inflammation and metabolic syndrome due to the production of high levels of lipopolysaccharide (LPS) and trimethylamine N-oxide (TMAO) by the altered gut microbiota, along with a decrease in short-chain fatty acids.",
+      "topic_tags": ["Western diet", "metabolic syndrome", "obesity", "LPS", "TMAO", "inflammation"]
+    },
+    {
+      "id": "gutmind_easy_003",
+      "difficulty": "easy",
+      "question": "What distinguishes the terms 'microbiome' and 'microbiota' in the context of gut research?",
+      "answer": "Although the two terms are often used interchangeably, there are meaningful differences. The term 'microbiome' encompasses the entire range of microorganisms (bacteria, archaea, viruses, fungi), the collection of all their genomes, microbial structural elements, metabolites, and environmental conditions within a given niche. The term 'microbiota' is more restricted and refers specifically to the group of commensalist, symbiotic, and pathogenic microorganisms found in a given environment — without including the broader genomic or metabolite components.",
+      "topic_tags": ["microbiome", "microbiota", "terminology", "definitions", "gut ecology"]
+    },
+    {
+      "id": "gutmind_easy_004",
+      "difficulty": "easy",
+      "question": "What are the key features of the Mediterranean diet and how does it differ from the Western diet in terms of gut microbiota outcomes?",
+      "answer": "The Mediterranean diet (MD) consists mainly of high-fiber foods (cereals, nuts, legumes, vegetables, fruits), unsaturated fatty acids, and antioxidant compounds (vitamins, flavonoids, polyphenols), with moderate consumption of eggs, white meat, and fish, and low consumption of red meat and sweets. In contrast to the Western diet, MD adherence leads to reshaped gut microbiota with higher microbial diversity, increased populations of beneficial genera such as Bacteroides, Bifidobacterium, Faecalibacterium, Lactobacillus, and Roseburia, and decreased levels of phyla Pseudomonadota and Bacillota. MD is associated with beneficial health outcomes including reduced cardiovascular disease, cancer, and obesity risk.",
+      "topic_tags": ["Mediterranean diet", "microbial diversity", "Bifidobacterium", "Faecalibacterium", "polyphenols"]
+    },
+    {
+      "id": "gutmind_easy_005",
+      "difficulty": "easy",
+      "question": "What is the ketogenic diet and how does it induce its physiological effects?",
+      "answer": "The ketogenic diet (KD) is a normocaloric, high-fat, very low-carbohydrate diet that induces a state of ketosis. KD feeding results in increased amounts of ketone bodies — acetoacetate, β-hydroxybutyrate, and acetone — in the blood and urine. These metabolic changes lead to inhibition of apoptotic proteins, improvement of mitochondrial activity, attenuation of oxidative stress, expression of antioxidant proteins, and modulation of neurotransmitter levels including gamma-aminobutyric acid (GABA), glutamate, and monoamines. These mechanisms underlie KD's reported health benefits in conditions such as epilepsy, autism, depression, and diabetes.",
+      "topic_tags": ["ketogenic diet", "ketosis", "ketone bodies", "β-hydroxybutyrate", "GABA", "neurotransmitters"]
+    },
+
+    {
+      "id": "gutmind_medium_001",
+      "difficulty": "medium",
+      "question": "Through what mechanisms does the Western diet contribute to neuroinflammation and cognitive impairment?",
+      "answer": "The Western diet promotes neuroinflammation and cognitive impairment through several interconnected mechanisms. High-fat components of the WD increase the proliferation of adipose tissue phagocytic cells, which release pro-inflammatory cytokines, causing neuroinflammation associated with depression, anxiety, and impaired cognitive function. High levels of endotoxins (LPS) and reduced levels of anti-inflammatory gut bacterial species further drive neuroinflammation. The WD also induces neurochemical changes in specific brain regions — particularly the hippocampus — impairing intake control and memory tasks. Long-term WD exposure can produce addictive eating behaviors through dopamine release in the mesocorticolimbic system, and dysregulates the HPA axis through corticosterone release, provoking chronic stress, anxiety, and depression.",
+      "topic_tags": ["neuroinflammation", "cognitive impairment", "hippocampus", "HPA axis", "pro-inflammatory cytokines", "LPS"]
+    },
+    {
+      "id": "gutmind_medium_002",
+      "difficulty": "medium",
+      "question": "How does the mode of infant delivery and feeding method shape early gut microbiome composition?",
+      "answer": "The mode of delivery has a significant effect on initial gut microbiome composition. Vaginally delivered neonates acquire microbiota dominated by Bifidobacterium, Lactobacillus, and Bacteroides — reflecting the mother's vaginal and fecal flora. In contrast, infants born by C-section acquire microbial communities associated with human skin and healthcare environments, with dominant genera such as Corynebacterium, Propionibacterium, Staphylococcus, and Enterobacter. Feeding method further differentiates the microbiome: breastfed infants show enrichment of Bifidobacterium, Lactobacillus, and Streptococcus, while formula-fed infants carry higher abundances of Clostridium, Escherichia, and Bilophila. Human milk oligosaccharides in breast milk act as prebiotics and promote beneficial microorganism growth, whereas formula feeding is associated with a more diverse and opportunistic community.",
+      "topic_tags": ["infant microbiome", "C-section", "vaginal birth", "breastfeeding", "formula feeding", "Bifidobacterium"]
+    },
+    {
+      "id": "gutmind_medium_003",
+      "difficulty": "medium",
+      "question": "What role do short-chain fatty acids play in gut-brain communication and mental health?",
+      "answer": "Short-chain fatty acids (SCFAs) — primarily butyrate, acetate, and propionate — are quantitatively the most important microbial metabolites produced by the degradation of indigestible dietary fibers, proteins, and glycoproteins. They act as signaling molecules that locally modulate gut function from the duodenum to the colon, and through enteroendocrine cells they can control liver, muscle, and brain metabolism, thereby influencing host energy homeostasis. SCFAs also possess neuroactive properties through the induction of neuroinflammatory responses. A reduction in SCFAs (as seen in Western diet patterns) is associated with increased neuroinflammation, while higher SCFA production (as promoted by Mediterranean and vegetarian diets) is linked to reductions in anxiety, depression, and cognitive impairment.",
+      "topic_tags": ["SCFAs", "butyrate", "propionate", "acetate", "gut-brain communication", "neuroinflammation", "mental health"]
+    },
+    {
+      "id": "gutmind_medium_004",
+      "difficulty": "medium",
+      "question": "How does adherence to the Mediterranean diet influence risk and severity of depression and cognitive decline?",
+      "answer": "Adherence to the Mediterranean diet has been associated with a lower risk of depression across numerous studies. The anti-depressant effects are attributed to the abundance of oleic acid, polyphenols, and unsaturated fatty acids in this diet. Polyphenols may reverse neurodegenerative and neurocognitive pathologies, though direct links are still being established. MD adherence is also associated with lower perceived stress and improved stress resilience. Regarding cognition, the MD is linked to better memory, lower risk of cognitive impairment, delayed cognitive decline, and reduced development of neurodegenerative diseases. These cognitive benefits are thought to be mediated through the diet's anti-inflammatory effects and increased SCFA production, which together modulate neuroinflammation and brain function.",
+      "topic_tags": ["Mediterranean diet", "depression", "cognitive decline", "polyphenols", "neurodegeneration", "stress resilience"]
+    },
+    {
+      "id": "gutmind_medium_005",
+      "difficulty": "medium",
+      "question": "What microbial and metabolic changes does the ketogenic diet induce in the gut, and how do these relate to neurological outcomes?",
+      "answer": "The ketogenic diet induces significant changes in gut microbiota composition. It generally decreases members of the Bacillota phylum and increases Bacteroidota, while also decreasing beneficial genera such as Bifidobacterium, Eubacterium, Dialister, Faecalibacterium, and Roseburia. KD also reduces Lactobacillus and Bifidobacterium species, which are positively associated with human health. On the other hand, it can increase Akkermansia, Slackia, and members of the Christensenellaceae family, as well as Bilophila wadsworthia. Metabolically, KD promotes synthesis of ketone bodies while suppressing SCFA and 5-hydroxytryptamine production. Neurologically, the increased Bilophila wadsworthia disrupts hippocampal synaptic plasticity, neurogenesis, and gene expression. KD has demonstrated benefits in reducing epileptic seizures, bipolar disorder symptoms, and depression in some patients, though its effects on cognitive function are mixed.",
+      "topic_tags": ["ketogenic diet", "gut microbiota", "Bifidobacterium", "ketone bodies", "SCFAs", "epilepsy", "hippocampus"]
+    },
+    {
+      "id": "gutmind_medium_006",
+      "difficulty": "medium",
+      "question": "What are the proposed mechanisms linking tryptophan metabolism, the gut microbiome, and brain health?",
+      "answer": "Tryptophan metabolism is a key pathway connecting the gut microbiome to brain health. Within the gut, tryptophan is metabolized into two important bioactive compounds: indole and 5-hydroxytryptamine (serotonin). Indole and its derivatives can serve as intercellular signaling molecules for communication between microorganisms and host cells. 5-hydroxytryptamine regulates the secretion of both serotonin and melatonin, influencing mood, sleep, and circadian rhythms. Changes in diet — such as vegetarian diets lacking sufficient methionine, tryptophan, and tyrosine — may reduce precursor availability for dopamine and serotonin synthesis, potentially contributing to depression. Through the gut-brain axis, these microbially modulated tryptophan catabolites reach the brain and influence neuropsychiatric function.",
+      "topic_tags": ["tryptophan", "serotonin", "melatonin", "indole", "gut-brain axis", "depression", "5-hydroxytryptamine"]
+    },
+
+    {
+      "id": "gutmind_hard_001",
+      "difficulty": "hard",
+      "question": "How do the Western and Mediterranean diets differ in their effects on gut microbiome composition, microbial metabolites, and neuropsychiatric outcomes, and what are the key mechanistic pathways involved?",
+      "answer": "The Western diet and Mediterranean diet produce opposing effects on the gut-brain axis. The WD increases genera such as Escherichia, Klebsiella, Alistipes, Bacteroides, and Bilophila while decreasing Bacillus, Enterococcus, Eubacterium, Lactobacillus, Roseburia, and Prevotella. This dysbiotic shift promotes the production of pro-inflammatory cytokines, TMAO, and LPS, while reducing SCFAs. Mechanistically, LPS triggers neuroinflammation via TLR4 signaling, high-fat components increase adipose tissue phagocyte proliferation leading to pro-inflammatory cytokine release, and corticosterone dysregulation through the HPA axis leads to chronic stress and depression. Dopamine dysregulation in the mesocorticolimbic system also drives addictive eating behaviors. These combine to produce cognitive impairment, dementia symptoms, schizophrenia symptoms, stress, depression, and anxiety. In contrast, the Mediterranean diet increases Clostridium, Faecalibacterium, Lactobacillus, Oscillospira, Roseburia, Bacteroides, Prevotella, and Bifidobacterium while reducing Coprococcus, Ruminococcus, and Escherichia. This promotes increased SCFA production, anti-inflammatory interleukin-10, and GABA, while reducing p-cresol sulfate and indoxyl sulfate. Mechanistically, SCFAs modulate neuroinflammation, polyphenols may reverse neurodegenerative pathology, and the anti-inflammatory milieu reduces HPA axis dysregulation — collectively reducing anxiety, depression, bipolar disorder symptoms, and improving stress resilience.",
+      "topic_tags": ["Western diet", "Mediterranean diet", "neuropsychiatric outcomes", "LPS", "SCFAs", "TMAO", "TLR4", "HPA axis", "neuroinflammation"]
+    },
+    {
+      "id": "gutmind_hard_002",
+      "difficulty": "hard",
+      "question": "What are the conflicting effects of vegetarian diets on mental health, and what metabolic and microbial mechanisms can explain these contradictions?",
+      "answer": "Vegetarian diets produce contradictory effects on mental health that can be explained by the dual nature of their microbial and metabolic outputs. On the beneficial side, VD increases genera including Clostridium, Eubacterium, Faecalibacterium, Lactobacillus, Roseburia, Ruminococcus, Veillonella, Aggregatibacter, Haemophilus, Neisseria, and Prevotella, while decreasing Bacteroides and Bifidobacterium. These changes promote production of polyamines, retinoic acids, and SCFAs — which support dopamine synthesis, melatonin synthesis, serotonin synthesis, and reduction of Alzheimer's symptoms, anxiety, depression, and cognitive impairment. However, VD also reduces 5-hydroxytryptamine, TMAO, LPS, and GABA, and increased production of these intermediates in some individuals can increase affective disorders and depression. A key nutritional mechanism driving pro-depressant effects is deficiency in essential amino acids — methionine, tryptophan, and tyrosine — which are present at very low concentrations in plant-based diets. These amino acids are precursors for dopamine and serotonin synthesis, so their depletion may reduce neurotransmitter availability and worsen depression. This duality explains why some studies find positive associations between VD and depression while others do not.",
+      "topic_tags": ["vegetarian diet", "depression", "polyamines", "tryptophan deficiency", "serotonin", "dopamine", "affective disorders"]
+    },
+    {
+      "id": "gutmind_hard_003",
+      "difficulty": "hard",
+      "question": "What are the proposed future directions for nutritional psychiatry and how might advances in microbiome science and metabolomics transform personalized mental health treatment?",
+      "answer": "Nutritional psychiatry is an emerging field that links dietary patterns, gut microbial function, and brain health. Future directions center on several converging advances. First, new sequencing technologies will deepen understanding of microbiota composition and its associations with neuropsychiatric disorders, while metabolomics will provide tools to characterize individual dietary phenotypes and elucidate mechanisms linking diet and mental function. Development of nutrient biomarker patterns (NBP) has already revealed nutrient patterns influencing cognitive impairment; the food metabolome is expected to serve as a window into dietary exposure. Second, clinical translation will require randomized controlled trials testing dietary changes, prebiotics, probiotics, and fecal microbiota transplantation to assess their effects on psychological outcomes. Third, two intervention types — probiotic and dietary — will link microbiota, behavioral changes, and diet. Psychobiotics (dietary probiotic supplements) may improve brain functioning and serve as therapeutic tools for neuropsychiatric disorders. New probiotic strategies, synbiotics (combinations of prebiotics and probiotics), and personalized nutritional interventions will emerge. Finally, diagnostic testing of the gut microbiome will identify personalized targets for psychiatric treatments, and integrative approaches combining dietary interventions, pharmacotherapy, and cognitive-behavioral treatments will be developed.",
+      "topic_tags": ["nutritional psychiatry", "psychobiotics", "synbiotics", "personalized nutrition", "metabolomics", "fecal microbiota transplantation", "NBP"]
+    },
+    {
+      "id": "gutmind_hard_004",
+      "difficulty": "hard",
+      "question": "How does the gut microbiome composition transition from infancy through early childhood, and what dietary drivers govern these shifts and their downstream effects on brain development?",
+      "answer": "Gut microbiome development follows a characteristic trajectory shaped by dietary transitions. At birth, the microbiome is governed by delivery mode: vaginal birth establishes Bifidobacterium, Lactobacillus, and Bacteroides; C-section introduces skin-associated and healthcare-environment organisms. During the first 3 months, breastfeeding enriches Bifidobacterium, Corynebacterium, Lactobacillus, and Streptococcus while reducing Bacteroides and Staphylococcus, through the combined action of prebiotics (human milk oligosaccharides), secreted-IgA (promoting regulatory immunity), and antimicrobial agents. Formula feeding produces a different profile dominated by Atopobium, Clostridium, Escherichia, and Bilophila. During weaning, introduction of solid foods drives a marked increase in microbial α-diversity and gut pH, causing Bacillota and Bacteroidota to replace Actinomycetota and Pseudomonadota as dominant phyla. Between 9 and 18 months, dietary protein increases drive Lachnospiraceae expansion, dietary fiber increases drive Prevotellaceae, and mucin production increases drive Akkermansia. By 2–3 years old, the microbiota reaches an adult-like composition capable of degrading complex carbohydrates and xenobiotics and producing vitamins. These microbiome shifts have direct consequences on mental development through secretion of SCFAs, tryptophan catabolites, polyamines, and histamine, which collectively modulate the gut-brain axis during critical neurodevelopmental windows.",
+      "topic_tags": ["infant microbiome", "weaning", "solid foods", "microbial succession", "neurodevelopment", "gut-brain axis", "Bifidobacterium", "Akkermansia"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "gutmind_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which dietary pattern is characterized by high-fiber foods, unsaturated fatty acids, polyphenols, and antioxidant compounds, and has been associated with increased gut microbial diversity?",
+      "options": {
+        "A": "Western diet",
+        "B": "Ketogenic diet",
+        "C": "Mediterranean diet",
+        "D": "Vegan diet"
+      },
+      "correct_answer": "C",
+      "explanation": "The Mediterranean diet is rich in fiber, unsaturated fatty acids, and antioxidant compounds like flavonoids and polyphenols. It promotes higher microbial diversity and increased populations of beneficial genera such as Bacteroides, Bifidobacterium, Faecalibacterium, and Lactobacillus.",
+      "topic_tags": ["Mediterranean diet", "microbial diversity", "fiber", "polyphenols"]
+    },
+    {
+      "id": "gutmind_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What is the primary effect of a high-fat Western diet on the ratio of major bacterial phyla in the gut?",
+      "options": {
+        "A": "Increased Bacteroidota, decreased Bacillota",
+        "B": "Decreased Bacteroidota, increased Pseudomonadota and Bacillota",
+        "C": "Increased Actinomycetota, decreased Bacteroidota",
+        "D": "No significant change in phylum-level composition"
+      },
+      "correct_answer": "B",
+      "explanation": "A high-fat diet, particularly one rich in saturated fats as found in the Western diet, induces a decrease in Bacteroidota levels and an increase in members of both Pseudomonadota and Bacillota phyla. This dysbiotic shift mirrors the microbiota profile found in obese individuals.",
+      "topic_tags": ["Western diet", "Bacteroidota", "Bacillota", "Pseudomonadota", "dysbiosis"]
+    },
+    {
+      "id": "gutmind_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "Which of the following metabolites produced by the ketogenic diet suppresses the release of both SCFAs and 5-hydroxytryptamine, and is associated with reduced epileptic seizures but increased depression risk?",
+      "options": {
+        "A": "Lipopolysaccharide (LPS)",
+        "B": "Trimethylamine N-oxide (TMAO)",
+        "C": "Ketone bodies",
+        "D": "Polyamines"
+      },
+      "correct_answer": "C",
+      "explanation": "The ketogenic diet induces synthesis of ketone bodies (acetoacetate, β-hydroxybutyrate, acetone) while suppressing the release of SCFAs and 5-hydroxytryptamine. These intermediates increase depression risk but reduce epileptic seizure symptoms, amyloid plaque deposition, and autism symptoms.",
+      "topic_tags": ["ketogenic diet", "ketone bodies", "SCFAs", "5-hydroxytryptamine", "epilepsy", "depression"]
+    },
+
+    {
+      "id": "gutmind_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "Which mechanism best explains how long-term Western diet consumption can lead to addictive eating behaviors and HPA axis dysregulation?",
+      "options": {
+        "A": "Increased SCFA production activates reward circuits and suppresses stress hormones",
+        "B": "Dopamine release in the mesocorticolimbic system and corticosterone-driven HPA axis dysregulation",
+        "C": "Polyphenol deficiency impairs serotonin synthesis and cortisol regulation",
+        "D": "Reduced Bifidobacterium abundance leads to decreased GABA production"
+      },
+      "correct_answer": "B",
+      "explanation": "Long-term Western diet exposure produces addictive eating behaviors through dopamine release in the mesocorticolimbic system. It also dysregulates the HPA axis through excessive corticosterone release, provoking chronic stress, anxiety, and depression. These effects are independent of but compounded by the accompanying gut dysbiosis.",
+      "topic_tags": ["Western diet", "dopamine", "HPA axis", "corticosterone", "addictive eating", "mesocorticolimbic"]
+    },
+    {
+      "id": "gutmind_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "How does the vegetarian diet affect gut microbial diversity at different levels of ecological measurement?",
+      "options": {
+        "A": "It increases both α-diversity and β-diversity equally",
+        "B": "It decreases α-diversity but increases β-diversity",
+        "C": "It reduces β-diversity but does not significantly reduce α-diversity",
+        "D": "It has no measurable effect on gut microbial diversity"
+      },
+      "correct_answer": "C",
+      "explanation": "Adopting a vegetarian diet reduces β-diversity (the amount of differentiation between species communities across different environments) but does not reduce the individual diversity at the local scale (α-diversity). This means vegetarian diets homogenize microbial communities across individuals while maintaining local species richness.",
+      "topic_tags": ["vegetarian diet", "alpha diversity", "beta diversity", "gut microbiome ecology"]
+    },
+    {
+      "id": "gutmind_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "Through which pathway does a high-fat diet primarily induce neuroinflammation, leading to depression, anxiety, and cognitive impairment?",
+      "options": {
+        "A": "Suppression of vagal nerve signaling, reducing gut-brain communication",
+        "B": "Reduction of GABA production by gut bacteria, increasing neuronal excitability",
+        "C": "Increased proliferation of adipose tissue phagocytic cells, releasing pro-inflammatory cytokines",
+        "D": "Direct binding of saturated fatty acids to central dopamine receptors"
+      },
+      "correct_answer": "C",
+      "explanation": "High-fat diets increase the proliferation of adipose tissue phagocytic cells, which leads to the release of pro-inflammatory cytokines. This cascade of neuroinflammation is associated with depression, anxiety, and impaired cognitive function. High levels of gut-derived endotoxins and reduced levels of anti-inflammatory gut bacterial species compound this effect.",
+      "topic_tags": ["high-fat diet", "neuroinflammation", "adipose tissue", "pro-inflammatory cytokines", "cognitive impairment"]
+    },
+    {
+      "id": "gutmind_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "What specific amino acid deficiencies in plant-based diets are proposed to explain their potential link to depression, and why?",
+      "options": {
+        "A": "Deficiencies of branched-chain amino acids (leucine, isoleucine, valine) impairing mTOR signaling",
+        "B": "Deficiencies of methionine, tryptophan, and tyrosine, reducing dopamine and serotonin synthesis",
+        "C": "Deficiencies of glutamine and asparagine impairing enteric neurotransmission",
+        "D": "Deficiencies of glycine and proline reducing intestinal mucin production"
+      },
+      "correct_answer": "B",
+      "explanation": "Plant-based diets are relatively low in the essential amino acids methionine, tryptophan, and tyrosine. These are critical precursors for neurotransmitter synthesis — tryptophan and tyrosine are precursors of serotonin and dopamine respectively, and their reduced availability may explain the relationship between plant-based diets and depressive symptoms observed in some studies.",
+      "topic_tags": ["vegetarian diet", "tryptophan", "tyrosine", "methionine", "dopamine", "serotonin", "depression"]
+    },
+    {
+      "id": "gutmind_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "Which of the following best describes the proposed protective mechanism of Mediterranean diet adherence against cognitive impairment and neurodegenerative disease?",
+      "options": {
+        "A": "Ketone body production replacing glucose as the primary brain fuel, preserving neuronal mitochondria",
+        "B": "Anti-inflammatory effects and increased SCFA production modulating neuroinflammation and brain function",
+        "C": "Direct binding of omega-6 fatty acids to neuronal receptors, enhancing synaptic plasticity",
+        "D": "Increased production of TMAO from dietary choline, protecting the blood-brain barrier"
+      },
+      "correct_answer": "B",
+      "explanation": "The Mediterranean diet's beneficial effects on cognition are attributed primarily to its anti-inflammatory properties and its ability to increase SCFA production through promoting beneficial gut bacteria. Together, these mechanisms reduce neuroinflammation, oxidative stress, and support healthy brain metabolism, thereby delaying cognitive decline and reducing neurodegenerative disease risk.",
+      "topic_tags": ["Mediterranean diet", "cognitive protection", "SCFAs", "neuroinflammation", "neurodegeneration"]
+    },
+
+    {
+      "id": "gutmind_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "Comparing the gut microbiota changes induced by the ketogenic versus the vegetarian diet, which genera show opposing trajectories between the two diets, and what are the functional implications?",
+      "options": {
+        "A": "Both diets increase Bifidobacterium and Faecalibacterium, with divergent effects only at the phylum level",
+        "B": "KD decreases Bifidobacterium, Faecalibacterium, and Eubacterium while VD increases them; KD suppresses SCFAs and serotonin while VD promotes them",
+        "C": "VD uniquely increases Bilophila wadsworthia and Bacteroides while KD uniquely increases Akkermansia, driving divergent hippocampal effects",
+        "D": "KD increases Lactobacillus and Prevotella while VD decreases both, leading to opposite GABA production profiles"
+      },
+      "correct_answer": "B",
+      "explanation": "The ketogenic diet decreases Bifidobacterium, Eubacterium, Faecalibacterium, Lachnobacterium, Roseburia, Ruminococcus, and Turicibacter, while the vegetarian diet increases Clostridium, Eubacterium, Faecalibacterium, Lactobacillus, Roseburia, Ruminococcus, and Veillonella. Functionally, KD suppresses SCFAs and 5-hydroxytryptamine production while inducing ketone bodies, whereas VD promotes SCFAs, polyamines, and retinoic acids. These opposing metabolite profiles translate to divergent mental health outcomes: VD can reduce anxiety and cognitive impairment while KD reduces seizures and may improve depression in certain conditions.",
+      "topic_tags": ["ketogenic diet", "vegetarian diet", "Faecalibacterium", "Bifidobacterium", "SCFAs", "ketone bodies", "mental health comparison"]
+    },
+    {
+      "id": "gutmind_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "What is the most accurate description of how the gut microbiome-brain network functions as a system, and what are the key bidirectional communication mechanisms?",
+      "options": {
+        "A": "A linear signaling cascade where gut bacteria produce neurotransmitters that travel unidirectionally via the vagus nerve to the prefrontal cortex",
+        "B": "A non-linear system with multiple feedback loops in which diet, gut, and brain are linked by bidirectional connections — dietary components can directly affect gut and reach the brain after absorption, while brain neuroactive substances modulate microbial gene expression",
+        "C": "A one-directional hormonal axis where the HPA axis solely controls the gut microbiome composition via glucocorticoid-mediated antimicrobial peptide production",
+        "D": "A paracrine signaling system confined to the enteric nervous system, with no systemic or central nervous system involvement"
+      },
+      "correct_answer": "B",
+      "explanation": "The gut microbiome-brain network is explicitly described as a non-linear system with multiple feedback loops connecting three compartments: the brain, the gut, and the microbiome. Dietary components can directly affect the gut and reach the brain after small intestinal absorption, or indirectly by shaping gut microbiota composition and metabolism. Microbial-derived molecules reach the brain via systemic circulation and/or the vagus nerve. Critically, the brain can also modulate the microbiome directly through neuroactive substances released into the gut lumen that affect microbial gene expression, or indirectly by altering the gut environment.",
+      "topic_tags": ["gut-brain axis", "bidirectional communication", "vagus nerve", "systemic circulation", "neuroactive substances", "feedback loops"]
+    }
+  ]
+}

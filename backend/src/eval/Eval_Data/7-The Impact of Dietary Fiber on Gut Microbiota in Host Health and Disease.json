@@ -1,0 +1,268 @@
+{
+  "metadata": {
+    "source_paper": "The Impact of Dietary Fiber on Gut Microbiota in Host Health and Disease",
+    "authors": ["Kassem Makki", "Edward C. Deehan", "Jens Walter", "Fredrik Bäckhed"],
+    "journal": "Cell Host & Microbe",
+    "year": 2018,
+    "doi": "10.1016/j.chom.2018.05.012",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "DFGM_qa_easy_4a1b",
+      "difficulty": "easy",
+      "question": "How is dietary fiber formally defined, and what categories of edible carbohydrates does it encompass?",
+      "answer": "Dietary fiber is defined as edible carbohydrate polymers with three or more monomeric units that resist endogenous digestive enzymes and are therefore neither hydrolyzed nor absorbed in the small intestine. It encompasses three categories: (1) carbohydrate polymers naturally occurring in foods such as fruits, vegetables, legumes, and cereals; (2) edible carbohydrate polymers obtained from raw food materials by physical, enzymatic, or chemical means that have a proven physiological benefit; and (3) synthetic carbohydrate polymers with a proven physiological benefit. Dietary fibers are further classified by food source, chemical structure, water solubility and viscosity, and fermentability.",
+      "topic_tags": ["dietary fiber", "definition", "classification", "Codex Alimentarius"]
+    },
+    {
+      "id": "DFGM_qa_easy_7c3e",
+      "difficulty": "easy",
+      "question": "What distinguishes soluble from insoluble dietary fiber in terms of gut function and bacterial fermentation?",
+      "answer": "Insoluble fibers such as cellulose and hemi-cellulose primarily contribute to fecal bulking because they reach the colon largely undigested by gut bacteria. Most soluble fibers, by contrast, do not contribute to fecal bulking but are readily fermented by gut bacteria, producing metabolites such as short-chain fatty acids (SCFAs). Some high-molecular-weight soluble non-starch polysaccharides — including guar gum, certain pectins, beta-glucans, and psyllium — are also viscous, meaning they form a gel in the intestinal tract that can delay post-prandial absorption of glucose and lipids.",
+      "topic_tags": ["soluble fiber", "insoluble fiber", "fermentation", "SCFAs", "fecal bulking", "viscosity"]
+    },
+    {
+      "id": "DFGM_qa_easy_2f9d",
+      "difficulty": "easy",
+      "question": "How does long-term low dietary fiber intake affect gut microbial diversity, and can this effect be reversed?",
+      "answer": "Long-term low intake of microbiota-accessible carbohydrates (MACs) dramatically reduces microbial diversity and can lead to the irreversible disappearance of specific bacterial species. Evidence from mouse studies shows that a low-MAC diet led to dramatically reduced microbial diversity within just three generations, and this diversity could not be fully restored even when normal MAC intake was resumed. In contrast, periodic or short-term reductions in fiber intake — as observed seasonally in hunter-gatherer populations — do not appear to have lasting effects on the microbiome, suggesting that the permanence of diversity loss depends on the duration and generational extent of fiber deprivation.",
+      "topic_tags": ["dietary fiber", "microbial diversity", "MACs", "dysbiosis", "Western diet", "reversibility"]
+    },
+    {
+      "id": "DFGM_qa_easy_8b5f",
+      "difficulty": "easy",
+      "question": "What are short-chain fatty acids (SCFAs), and what are their primary roles in host physiology?",
+      "answer": "Short-chain fatty acids (SCFAs) — predominantly acetate, propionate, and butyrate — are organic metabolites produced by colonic bacteria through anaerobic fermentation of dietary fibers. They are present at high concentrations in the cecum and proximal colon, where they serve as energy sources for colonocytes. SCFAs can also be transported via the portal vein to act on the liver and peripheral tissues. They function as signaling molecules that regulate key biological processes including host metabolism, immune system function, and cell proliferation. Butyrate in particular fuels colonocytes and maintains gut barrier integrity, while propionate is primarily metabolized in the liver.",
+      "topic_tags": ["SCFAs", "short-chain fatty acids", "butyrate", "propionate", "acetate", "colonocytes", "host physiology"]
+    },
+    {
+      "id": "DFGM_qa_easy_1d6c",
+      "difficulty": "easy",
+      "question": "How do long-term dietary patterns shape the dominant bacterial communities in the gut, and what two broad community types reflect this?",
+      "answer": "Long-term dietary patterns significantly shape the composition of gut microbial communities, particularly the ratio of Prevotella to Bacteroides, which forms the basis of so-called enterotypes. High intake of animal protein and fat tends to drive Bacteroides dominance, as seen in Western industrialized populations, while high carbohydrate and dietary fiber intake tends to drive Prevotella dominance, as seen in non-Westernized populations. These differences are independent of host ethnicity — when individuals from fiber-rich dietary environments move to urban settings and adopt Westernized diets, their microbiota shifts toward a Bacteroides-dominated profile comparable to urban Western populations.",
+      "topic_tags": ["dietary patterns", "enterotypes", "Prevotella", "Bacteroides", "Western diet", "fiber intake"]
+    },
+
+    {
+      "id": "DFGM_qa_medium_3a7g",
+      "difficulty": "medium",
+      "question": "How does dietary fiber deprivation damage the intestinal mucus barrier, and what are the downstream consequences for infection susceptibility?",
+      "answer": "When dietary fiber is absent, gut bacteria are deprived of fermentable substrates and shift their metabolism to degrade host-secreted mucins as an alternative nutrient source. Mucin-degrading bacteria such as Akkermansia muciniphila increase in abundance and induce expression of mucin-degrading enzymes. This leads to erosion of the colonic mucus layer, increasing the penetrability of the inner mucus layer and allowing microbes to come into closer proximity to the epithelium. A compromised mucus barrier reduces the host's ability to prevent pathogen invasion, increasing susceptibility to enteric infections and the development of chronic inflammatory diseases such as IBD. Restoration requires both reintroduction of dietary fiber and the bacterial populations that were lost.",
+      "topic_tags": ["dietary fiber deprivation", "mucus barrier", "Akkermansia muciniphila", "mucin degradation", "pathogen susceptibility", "IBD"]
+    },
+    {
+      "id": "DFGM_qa_medium_5e2h",
+      "difficulty": "medium",
+      "question": "What is the role of keystone microbial species in the degradation of dietary fiber, and how does this create cooperative food webs in the gut?",
+      "answer": "Keystone species are primary fiber degraders that initiate the breakdown of complex substrates for an entire guild of bacteria. For example, Ruminococcus bromii functions as a keystone species for resistant starch degradation, enabling other bacteria to access breakdown products — yet R. bromii itself does not produce butyrate. Secondary fiber degraders and cross-feeding species then utilize these products; for instance, bacteria such as Eubacterium rectale and Parabacteroides distasonis expand following resistant starch supplementation by capitalizing on R. bromii's primary degradation. This guild structure allows the microbiota to switch efficiently between different energy substrates depending on availability, and explains why individuals lacking keystone species may fail to respond to specific fiber interventions.",
+      "topic_tags": ["keystone species", "Ruminococcus bromii", "resistant starch", "fiber food webs", "cross-feeding", "microbial guilds"]
+    },
+    {
+      "id": "DFGM_qa_medium_9k4j",
+      "difficulty": "medium",
+      "question": "Through what mechanism does butyrate oxidation by colonocytes maintain gut anaerobiosis, and why is this important for microbial community stability?",
+      "answer": "When butyrate-producing bacteria ferment dietary fiber, colonocytes take up and beta-oxidize the resulting butyrate. This metabolic process consumes oxygen, establishing and maintaining an anaerobic milieu in the gut lumen. Because obligate anaerobes such as butyrate-producing Firmicutes are sensitive to oxygen, the resulting low-oxygen environment supports their survival and activity, reinforcing their abundance and continued butyrate output — a beneficial feedforward loop. Conversely, when dietary fiber intake is low, butyrate production declines, colonocyte beta-oxidation decreases, luminal oxygen levels rise, and facultative anaerobes belonging to Proteobacteria (such as Escherichia coli and Salmonella Typhimurium) are able to bloom. This mechanistic cascade explains the reduced microbial diversity and increased pathobiont expansion seen in low-fiber diets.",
+      "topic_tags": ["butyrate", "colonocytes", "beta-oxidation", "anaerobiosis", "Proteobacteria", "oxygen", "microbial stability"]
+    },
+    {
+      "id": "DFGM_qa_medium_6m8n",
+      "difficulty": "medium",
+      "question": "How do SCFAs regulate immune function, and what evidence links maternal fiber intake to immune development in offspring?",
+      "answer": "SCFAs — particularly butyrate — promote the generation of colonic regulatory T cells (Tregs) through GPR43-dependent signaling and by inducing histone H3 acetylation, supporting immune tolerance and reducing inflammation. Maternal dietary fiber intake during pregnancy and lactation elevates butyrate levels in offspring blood and enhances both peripheral and thymic Treg counts in a GPR41-dependent manner. Maternal high-fiber feeding also modulates the thymic microenvironment and increases expression of autoimmune regulator (Aire), a transcription factor essential for T cell maturation. In contrast, high-fat diets induce premature thymic involution, reduce thymocyte counts, and increase apoptosis of developing T cells, demonstrating that dietary fiber — through SCFA-mediated immune signaling — plays a foundational role in both immediate and intergenerational immune development.",
+      "topic_tags": ["SCFAs", "regulatory T cells", "Tregs", "GPR43", "maternal diet", "thymus", "immune development", "butyrate"]
+    },
+    {
+      "id": "DFGM_qa_medium_2p1r",
+      "difficulty": "medium",
+      "question": "How does a high-protein, low-fiber diet shift gut microbial metabolism, and what metabolites does this produce that are harmful to the host?",
+      "answer": "When dietary fiber intake is low and protein intake is high, gut bacteria shift from saccharolytic fermentation (of carbohydrates) to proteolytic fermentation (of amino acids). This metabolic shift significantly reduces total SCFA and butyrate production and generates a range of potentially toxic metabolites including branched-chain fatty acids, ammonia, amines, N-nitroso compounds, phenolic compounds such as p-Cresol, sulphides, indolic compounds, and hydrogen sulfide. These metabolites are cytotoxic and pro-inflammatory and are associated with increased risk of chronic diseases, particularly colorectal cancer. A high-fiber diet counteracts this by competitively favoring saccharolytic fermentation, thereby reducing protein fermentation and limiting the accumulation of these harmful byproducts.",
+      "topic_tags": ["proteolytic fermentation", "saccharolytic fermentation", "toxic metabolites", "p-Cresol", "branched-chain fatty acids", "colorectal cancer", "high-protein diet"]
+    },
+    {
+      "id": "DFGM_qa_medium_7q5s",
+      "difficulty": "medium",
+      "question": "What mechanisms explain the beneficial effects of dietary fiber on colorectal cancer (CRC) risk?",
+      "answer": "Dietary fiber reduces CRC risk through several converging mechanisms. First, it promotes butyrate production, and butyrate-producing bacteria are reduced in CRC patients; butyrate has established anti-inflammatory and antiproliferative effects in colonocytes. Second, high fiber intake suppresses proteolytic fermentation and the production of cytotoxic and pro-inflammatory metabolites such as N-nitroso compounds and hydrogen sulfide that promote CRC. Third, dietary fibers bind secondary bile acids — which are positively associated with CRC — and may prevent their toxic accumulation in the colon. Fourth, fiber fermentation acidifies the colonic environment, reducing the activity of carcinogenic compounds. Dietary intervention studies have shown that increased fiber intake shifts microbial metabolism toward butyrogenesis and reduces established biomarkers of cancer risk.",
+      "topic_tags": ["colorectal cancer", "CRC", "butyrate", "bile acids", "protective mechanisms", "fiber intervention"]
+    },
+
+    {
+      "id": "DFGM_qa_hard_4t2u",
+      "difficulty": "hard",
+      "question": "Why do human intervention trials with dietary fiber often show inconsistent results, and what biological and methodological factors contribute to this variability?",
+      "answer": "Inconsistencies in fiber intervention trials stem from several interacting factors. First, the gut microbiota's response to dietary fiber is highly individualized — some individuals lack keystone species (such as Ruminococcus bromii for resistant starch) or the functional guilds necessary to ferment specific fiber substrates, producing non-response profiles. Second, fiber doses used in human trials are typically far below the levels consumed by non-industrialized populations (often 50+ g/day vs. the recommended 30 g/day), and may be physiologically insufficient to achieve microbiota-mediated health benefits. Third, the Prevotella/Bacteroides ratio of an individual's baseline microbiota modulates their metabolic response — Prevotella-dominated microbiota produce higher SCFA levels from the same fiber compared to Bacteroides-dominated microbiota. Fourth, rapid but transient shifts in microbial communities occur only while the substrate is consumed, requiring sustained fiber intake for sustained effects. These factors collectively argue for personalized fiber prescription matched to an individual's microbial profile.",
+      "topic_tags": ["fiber intervention", "personalized nutrition", "keystone species", "Prevotella", "dose", "microbiota individuality", "inconsistency"]
+    },
+    {
+      "id": "DFGM_qa_hard_8v3w",
+      "difficulty": "hard",
+      "question": "How does dietary fiber interact with bile acid metabolism in the colon, and what are the dual — potentially protective and potentially harmful — physiological consequences?",
+      "answer": "Dietary fibers serve as physical platforms that bind conjugated primary bile acids in the small intestine. Bacteria possessing bile salt hydrolase (BSH) — such as Bacteroides and Lactobacillus species — co-bind to the same fiber, enabling efficient deconjugation of these bile acids into their unconjugated primary forms. The fiber then facilitates further transformation: low-abundance bacteria with 7-alpha-dehydroxylation activity, such as Clostridium scindens, convert these into secondary bile acids. This platform mechanism allows even rare bacterial species to act as efficient biotransformers. The physiological consequences are dual: secondary bile acids such as deoxycholic acid are positively associated with CRC risk, suggesting that excessive accumulation is harmful. However, secondary bile acids are also physiologically important metabolic regulators — they activate the TGR5 receptor, which stimulates glucagon-like peptide-1 (GLP-1) secretion, improving glucose metabolism. Dietary fibers may modulate which outcome predominates by controlling the colonic concentration and flux of these bile acid species.",
+      "topic_tags": ["bile acids", "BSH", "7-alpha-dehydroxylation", "secondary bile acids", "CRC", "TGR5", "GLP-1", "fiber platform"]
+    },
+    {
+      "id": "DFGM_qa_hard_5x6y",
+      "difficulty": "hard",
+      "question": "What is the concept of 'fiber personalization', and what mechanistic evidence supports matching specific fiber types to individual microbiota profiles for therapeutic benefit?",
+      "answer": "Fiber personalization refers to the concept of tailoring dietary fiber recommendations to an individual's gut microbiota composition rather than applying universal guidelines. The mechanistic rationale rests on several observations. First, individuals with a higher Prevotella/Bacteroides ratio — particularly those enriched with Prevotella copri — showed improved metabolic outcomes in response to barley kernel-based bread consumption, while non-responders lacked this community feature. This indicates that the ability to degrade and ferment complex carbohydrates is microbiome-dependent. Second, post-prandial glucose responses vary enormously between individuals consuming identical meals, and these responses correlate with specific microbiota features, demonstrating that diet-microbiota interaction shapes host metabolic outcomes. Third, individuals lacking keystone species for specific fiber substrates will not generate the expected fermentation products, leading to non-response or adverse effects. For future applications, slower-fermenting fibers (e.g., resistant starch, arabinoxylan, acacia gum) are better tolerated at higher doses than fast-fermenting oligosaccharides, and pairing fiber type to microbiota profile could optimize SCFA production while minimizing side effects.",
+      "topic_tags": ["personalized nutrition", "fiber personalization", "Prevotella", "barley kernel bread", "post-prandial glucose", "microbiota matching", "keystone species"]
+    },
+    {
+      "id": "DFGM_qa_hard_1z9a",
+      "difficulty": "hard",
+      "question": "How does the SCFA-independent metabolism of dietary fiber contribute to host health, and what are the proposed roles of ferulic acid and mineral transport in this context?",
+      "answer": "Beyond SCFA production, dietary fiber metabolism yields additional bioactive compounds with important health effects. Ferulic acid (FA), a phenolic compound found in cereal plant cell walls, is released when gut bacteria ferment cereal-derived fibers. FA can act locally in the gut to modulate physiology or be absorbed into the bloodstream to exert systemic effects. It has demonstrated antioxidant and anti-inflammatory properties, and has shown potential in preventing diet-induced obesity, reducing pro-inflammatory cytokines in colitis models, improving insulin signaling in diabetic models, and stimulating neurogenesis. Separately, dietary fibers bind micronutrient ions including calcium, copper, and zinc and transport them to the distal colon, where bacterial fermentation releases them. SCFA-mediated acidification further enhances colonic mineral solubility and absorption. This supports a healthy gut ecology by providing bacteria with essential micronutrients — zinc supplementation, for example, has been shown to promote metabolic activity and SCFA production in the gut — though excessive mineral binding could also create deficiencies if not balanced appropriately.",
+      "topic_tags": ["ferulic acid", "SCFA-independent", "mineral transport", "zinc", "antioxidant", "phenolic compounds", "neurogenesis"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "DFGM_mcq_easy_b3c1",
+      "difficulty": "easy",
+      "question": "Which of the following dietary fibers is exclusively found in starchy foods such as cereals, legumes, tubers, and unripe fruits?",
+      "options": {
+        "A": "Pectin",
+        "B": "Beta-glucan",
+        "C": "Resistant starch",
+        "D": "Arabinoxylan"
+      },
+      "correct_answer": "C",
+      "explanation": "Resistant starch (RS) can only be found in starchy foods such as cereals, legumes, tubers, and non-mature fruits like green bananas. Pectins are more enriched in fruits and some vegetables, while beta-glucans and arabinoxylans are characteristically found in cereals.",
+      "topic_tags": ["resistant starch", "fiber sources", "dietary fiber classification"]
+    },
+    {
+      "id": "DFGM_mcq_easy_d4e2",
+      "difficulty": "easy",
+      "question": "What is the primary microbial response when humans rapidly switch to a plant-based, high-fiber diet?",
+      "options": {
+        "A": "A stable microbiota that does not change for at least a week",
+        "B": "An increase in taxa with fiber-degrading capacity within 24 hours",
+        "C": "A reduction in Prevotella as it is outcompeted by Bacteroides",
+        "D": "An initial decrease in SCFA production followed by a later recovery"
+      },
+      "correct_answer": "B",
+      "explanation": "Gut microbial communities respond within 24 hours to dramatic changes in macronutrient composition. In particular, taxa with fiber-degrading capacity increase rapidly when humans are fed a plant-based diet, reflecting the microbiota's capacity for rapid compositional adjustment in response to substrate availability.",
+      "topic_tags": ["microbiota dynamics", "plant-based diet", "fiber response", "rapid adaptation"]
+    },
+    {
+      "id": "DFGM_mcq_easy_f5g3",
+      "difficulty": "easy",
+      "question": "What is 'eubiosis' in the context of gut microbiota?",
+      "options": {
+        "A": "A state of complete absence of pathogenic bacteria in the gut",
+        "B": "A healthy, balanced equilibrium of microbial communities in the gut",
+        "C": "The exclusive dominance of Firmicutes and Bacteroidetes over other phyla",
+        "D": "The condition in which gut bacteria produce the maximum possible quantity of SCFAs"
+      },
+      "correct_answer": "B",
+      "explanation": "Eubiosis refers to a healthy balance of the microbes in the gut. Although the human-microbiota relationship is fundamentally mutualistic, eubiosis can be disrupted — leading to dysbiosis — which is associated with the development of various chronic diseases that have an underlying inflammatory condition.",
+      "topic_tags": ["eubiosis", "dysbiosis", "gut homeostasis", "microbiota balance"]
+    },
+
+    {
+      "id": "DFGM_mcq_medium_h6i4",
+      "difficulty": "medium",
+      "question": "How does Bacteroides thetaiotaomicron and Faecalibacterium prausnitzii cooperate to regulate intestinal mucus homeostasis?",
+      "options": {
+        "A": "Both bacteria independently produce the same mucins, collectively thickening the mucus layer",
+        "B": "B. thetaiotaomicron promotes goblet cell differentiation and mucin gene expression via acetate, while F. prausnitzii consumes acetate and produces butyrate that prevents mucus overproduction",
+        "C": "F. prausnitzii produces a signal that triggers B. thetaiotaomicron to degrade excess mucin and maintain an appropriate layer thickness",
+        "D": "Both bacteria compete for the same mucosal binding sites, and this competition regulates the rate of mucin turnover"
+      },
+      "correct_answer": "B",
+      "explanation": "B. thetaiotaomicron is an acetate and propionate producer that promotes goblet cell differentiation and expression of mucin-related genes, stimulating mucus secretion. F. prausnitzii consumes acetate and produces butyrate, which reduces the pro-mucinogenic effect of acetate and prevents overproduction of mucus. This functional interplay between the two species maintains appropriate mucus structure and composition.",
+      "topic_tags": ["Bacteroides thetaiotaomicron", "Faecalibacterium prausnitzii", "mucus regulation", "acetate", "butyrate", "goblet cells"]
+    },
+    {
+      "id": "DFGM_mcq_medium_j7k5",
+      "difficulty": "medium",
+      "question": "What characterizes the microbial response to dietary fiber supplementation in human subjects, based on consistent findings across multiple fiber types?",
+      "options": {
+        "A": "Fiber supplementation broadly and uniformly increases all bacterial taxa in the colon",
+        "B": "Fiber-induced changes are restricted to a limited number of taxa, can be substantial in magnitude, but are only maintained while the substrate is consumed and are highly individualized",
+        "C": "Fiber supplementation primarily reduces pathogenic bacteria without affecting commensal populations",
+        "D": "Fiber-induced microbiota changes are permanent as long as the supplementation period exceeds two weeks"
+      },
+      "correct_answer": "B",
+      "explanation": "Three consistent characteristics emerge from fiber intervention studies: (1) compositional shifts are restricted to a limited number of taxa rather than being broadly distributed; (2) changes can be substantial, with specific species constituting more than 30% of total sequences in some cases; and (3) these changes are only maintained as long as the substrate is consumed. Additionally, the microbial response is highly individualized, reflecting differences in baseline microbiota composition, keystone species availability, and strain-level enzymatic capacity.",
+      "topic_tags": ["fiber intervention", "microbiota response", "specificity", "individuality", "sustained consumption"]
+    },
+    {
+      "id": "DFGM_mcq_medium_l8m6",
+      "difficulty": "medium",
+      "question": "What is the proposed mechanism by which dietary fiber intake may protect against asthma and chronic obstructive pulmonary disease (COPD)?",
+      "options": {
+        "A": "Fiber physically absorbs airborne allergens in the nasal passage before they reach the lungs",
+        "B": "Fiber fermentation by gut bacteria produces SCFAs — particularly propionate — that exert systemic anti-inflammatory effects extending to the lungs and airways",
+        "C": "High fiber intake shifts the gut microbiota toward Bacteroides, which produces compounds that directly suppress airway inflammation",
+        "D": "Fiber reduces intestinal permeability so that fewer dietary allergens enter systemic circulation and sensitize the immune system"
+      },
+      "correct_answer": "B",
+      "explanation": "The systemic effects of dietary fiber on lung physiology are mediated primarily through SCFAs produced during fermentation. Prolonged low-fiber feeding aggravates allergic airway disease in animal models, and this effect can be corrected by administering the SCFA propionate. This suggests that microbial fermentation of dietary fibers generates SCFAs that exert distal anti-inflammatory effects on the respiratory system, providing a mechanistic link between gut fiber intake and lung disease outcomes.",
+      "topic_tags": ["asthma", "COPD", "fiber", "propionate", "gut-lung axis", "SCFAs", "airway disease"]
+    },
+    {
+      "id": "DFGM_mcq_medium_n9o7",
+      "difficulty": "medium",
+      "question": "In the context of type 2 diabetes (T2D), how does the gut microbiota differ from that observed in obesity, and what does this suggest about fiber's role?",
+      "answer": "This is a Q&A format question — see MCQ structure below.",
+      "options": {
+        "A": "Both obesity and T2D show identical microbiota changes, with increased fiber-degrading bacteria and Firmicutes",
+        "B": "Obesity is associated with reduced microbial diversity (possibly due to low fiber intake), while T2D specifically shows reduced abundance of fiber-degrading bacteria, suggesting that lack of fiber-degrading activity may predispose to diabetes independent of obesity",
+        "C": "T2D patients have excess fiber-degrading bacteria that over-produce SCFAs, causing systemic inflammation and insulin resistance",
+        "D": "Obesity and T2D both show elevated Prevotella, suggesting fiber-rich diets are the direct cause of both conditions"
+      },
+      "correct_answer": "B",
+      "explanation": "While obesity is broadly associated with reduced microbial diversity (potentially reflecting reduced fiber intake), T2D is more specifically associated with reduced abundance of fiber-degrading bacteria. This distinction suggests that whereas low fiber intake may drive diversity loss in obesity, the selective depletion of fiber-degrading and butyrate-producing bacteria may be a specific predisposing factor for T2D. Administration of soluble fibers has corrected gut dysbiosis, reduced body weight gain and inflammation, and improved glucose metabolism in relevant models.",
+      "topic_tags": ["type 2 diabetes", "obesity", "fiber-degrading bacteria", "butyrate", "microbial diversity", "metabolic disease"]
+    },
+    {
+      "id": "DFGM_mcq_medium_p1q8",
+      "difficulty": "medium",
+      "question": "What finding from studies on non-industrialized hunter-gatherer populations best supports the hypothesis that dietary fiber is the dominant driver of high gut microbial diversity — rather than host genetics or antibiotic use?",
+      "options": {
+        "A": "Hunter-gatherers were found to carry completely different bacterial phyla that do not exist in Western populations",
+        "B": "Even in non-industrialized populations with access to antibiotics, diversity is higher than in the West, and children who urbanize and adopt Westernized diets show microbiota shifts independent of ethnicity",
+        "C": "Antibiotic-naive indigenous populations were found to have universally identical microbiota compositions, proving a single ancestral baseline",
+        "D": "Genetic sequencing confirmed that hunter-gatherers carry fiber-metabolizing genes in their own genome that are absent in Westerners"
+      },
+      "correct_answer": "B",
+      "explanation": "The strongest evidence comes from two observations: (1) rural populations with antibiotic access — such as rural Papua New Guineans — still have higher microbial diversity than Western populations, implicating diet rather than antibiotic exposure as the primary driver; and (2) children from fiber-rich rural communities who urbanize and adopt Westernized diets acquire microbiota comparable to urban Western children regardless of ethnicity, directly demonstrating that dietary environment — not host genetics — is the primary determinant of diversity.",
+      "topic_tags": ["hunter-gatherer", "microbial diversity", "dietary fiber", "industrialization", "genetics vs diet", "urbanization"]
+    },
+
+    {
+      "id": "DFGM_mcq_hard_r2s9",
+      "difficulty": "hard",
+      "question": "Which of the following best explains why the prebiotic concept has been challenged and why a broader, ecologically-framed perspective on fiber may be more physiologically relevant?",
+      "options": {
+        "A": "Prebiotics have been shown to be harmful when consumed at doses above 10 g/day, making the concept clinically irrelevant",
+        "B": "Virtually all dietary fibers induce shifts in microbiota composition through competitive interactions, and health benefits arise primarily from metabolic outputs such as SCFAs and pH changes — not from selective stimulation of specific 'beneficial' bacterial taxa, making the selectivity criterion of the prebiotic definition scientifically weak",
+        "C": "Modern sequencing technologies have proven that all dietary fibers produce identical microbiota compositions, negating the premise of species-selective enrichment",
+        "D": "The prebiotic concept only applies to fibers derived from animal sources, and its extension to plant-based carbohydrates has no scientific basis"
+      },
+      "correct_answer": "B",
+      "explanation": "The prebiotic concept designates only certain fibers as prebiotics based on their selective stimulation of beneficial bacteria. However, virtually all fibers induce specific compositional shifts through competitive interactions, and whether these shifts are functionally relevant is not yet established. More importantly, demonstrated health mechanisms do not rely on selective bacterial enrichment but rather on metabolic products (SCFAs), physiological changes (luminal pH lowering), or protection of the mucus layer — all outcomes of fiber fermentation broadly. This argues for refocusing from selectivity toward ecological and functional consequences of fermentation.",
+      "topic_tags": ["prebiotics", "prebiotic concept", "selectivity", "SCFAs", "fiber ecology", "health mechanisms"]
+    },
+    {
+      "id": "DFGM_mcq_hard_t3u0",
+      "difficulty": "hard",
+      "question": "In the context of Ruminococcus bromii as a keystone species for resistant starch degradation, what best explains why some individuals do not respond metabolically to resistant starch supplementation?",
+      "options": {
+        "A": "Resistant starch directly inhibits R. bromii growth in those individuals due to a genetic variant in the bacterial genome",
+        "B": "Non-responders absorb resistant starch in the small intestine before it reaches the colon, preventing microbial fermentation entirely",
+        "C": "Non-responders may lack R. bromii or strains with the enzymatic capacity to initiate resistant starch degradation, making the downstream guild of cross-feeding bacteria inactive and preventing SCFA production from that substrate",
+        "D": "High fat intake in non-responders competitively inhibits R. bromii by occupying colonic substrate-binding sites"
+      },
+      "correct_answer": "C",
+      "explanation": "R. bromii is considered a keystone species for resistant starch because it initiates the breakdown of this complex substrate, enabling other bacteria in a cooperative guild to access fermentation products. Individuals who lack R. bromii or strains with the specific enzymatic machinery to degrade resistant starch cannot initiate this cascade. Without the keystone species, the downstream guild of butyrate-producing secondary degraders has no substrate available, resulting in a non-response profile. This is supported by evidence that missing keystone species — not just substrate availability — can explain segregation in intervention response profiles.",
+      "topic_tags": ["Ruminococcus bromii", "keystone species", "resistant starch", "non-responders", "microbial guilds", "enzymatic capacity"]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "dataset": "high_correctness_0.4_to_1.csv",
+  "total_samples": 1065,
+  "samples_with_metrics": 1065,
+  "samples_without_metrics": 0,
+  "coverage": 1.0,
+  "metrics_mean": {
+    "faithfulness": 0.883041094372008,
+    "answer_relevancy": 0.8210107536255907,
+    "answer_correctness": 0.6264049643607339,
+    "context_precision": 0.8152616310566286,
+    "context_recall": 0.8971640956852223
+  },
+  "metrics_std": {
+    "faithfulness": 0.19372854736949546,
+    "answer_relevancy": 0.18372672285512728,
+    "answer_correctness": 0.15051724895304808,
+    "context_precision": 0.21223333169841435,
+    "context_recall": 0.20267913319851688
+  }
+}

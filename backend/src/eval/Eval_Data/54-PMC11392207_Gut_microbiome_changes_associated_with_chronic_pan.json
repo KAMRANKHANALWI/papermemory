@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Gut microbiome changes associated with chronic pancreatitis and pancreatic cancer: a systematic review and meta-analysis",
+    "authors": ["Jiaze Hong", "Yufan Fu", "Xiaoqian Chen", "Yurui Zhang", "Xinyi Li", "Tianhang Li", "Yilin Liu", "Mengke Fan", "Rong Lin"],
+    "journal": "International Journal of Surgery",
+    "year": 2024,
+    "doi": "10.1097/JS9.0000000000001724",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings from a systematic review and meta-analysis of gut microbiome changes in chronic pancreatitis and pancreatic ductal adenocarcinoma.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "GUTPANC_easy_001",
+      "difficulty": "easy",
+      "question": "What general pattern of gut microbiota change is consistently observed in pancreatic diseases such as chronic pancreatitis and pancreatic ductal adenocarcinoma?",
+      "answer": "In both chronic pancreatitis and pancreatic ductal adenocarcinoma, gut microbiota changes are consistently characterised by a reduction in beneficial commensal species and a corresponding increase in pathogenic species. This dysbiosis is also reflected by a slight but significant decrease in alpha-diversity (particularly the Shannon Index), indicating reduced microbial richness and evenness, alongside statistically significant differences in beta-diversity compared to healthy controls.",
+      "topic_tags": ["gut dysbiosis", "pancreatic disease", "alpha-diversity", "beta-diversity", "beneficial bacteria", "pathogenic bacteria"]
+    },
+    {
+      "id": "GUTPANC_easy_002",
+      "difficulty": "easy",
+      "question": "How does the abundance of Firmicutes differ between patients with pancreatic disease and healthy individuals, and why is this clinically relevant?",
+      "answer": "The proportion of Firmicutes is significantly lower in both chronic pancreatitis and pancreatic ductal adenocarcinoma patients compared to healthy controls. This is clinically relevant because Firmicutes encompass a large number of core gut bacteria responsible for producing short-chain fatty acids (SCFAs), particularly butyrate, which normalises intestinal permeability and supports gut homeostasis. A decrease in Firmicutes is associated with reduced butyrate production, impaired tight junction proteins, increased intestinal mucosal permeability, and the release of intestinal pathogens into systemic circulation, potentially promoting pancreatic inflammation.",
+      "topic_tags": ["Firmicutes", "SCFA", "butyrate", "intestinal permeability", "gut barrier", "pancreatic inflammation"]
+    },
+    {
+      "id": "GUTPANC_easy_003",
+      "difficulty": "easy",
+      "question": "What role does Escherichia-Shigella play in the context of pancreatic disease, and why is its elevated abundance concerning?",
+      "answer": "Escherichia-Shigella is significantly elevated in the intestines of both chronic pancreatitis and pancreatic ductal adenocarcinoma patients compared to healthy controls. It is the most common pathogen of bacterial dysentery in humans and produces endotoxins and exotoxins that can damage the intestinal mucosa. Its elevated abundance is associated with bacterial invasion of intestinal epithelial cells, which has been reported in pancreatitis and is highly correlated with Escherichia-Shigella abundance. This suggests a role in worsening mucosal barrier dysfunction and promoting disease progression.",
+      "topic_tags": ["Escherichia-Shigella", "endotoxin", "epithelial invasion", "intestinal mucosa", "pancreatitis", "pathogen"]
+    },
+    {
+      "id": "GUTPANC_easy_004",
+      "difficulty": "easy",
+      "question": "What is the significance of Bifidobacterium in gut health, and how does its abundance change in pancreatic diseases?",
+      "answer": "Bifidobacterium are anaerobic bacteria considered important beneficial microbes in the gut, often used alongside Lactobacillus to treat chronic diarrhea, constipation, and endotoxemia caused by microbial imbalance. In the context of pancreatic disease, Bifidobacterium abundance is decreased in chronic pancreatitis patients compared to healthy controls. Its reduction is noteworthy because fecal Bifidobacteria abundance has been found to be inversely correlated with systemic inflammation in pancreatitis patients, and Bifidobacteria alongside its metabolite lactate have been shown to prevent pancreatitis in animal models by alleviating macrophage-associated inflammatory responses.",
+      "topic_tags": ["Bifidobacterium", "beneficial microbe", "chronic pancreatitis", "inflammation", "lactate", "gut health"]
+    },
+    {
+      "id": "GUTPANC_easy_005",
+      "difficulty": "easy",
+      "question": "What functional and metabolic pathway alterations are observed in the gut microbiome of patients with chronic pancreatitis?",
+      "answer": "In chronic pancreatitis, the gut microbiome shows enrichment of lipopolysaccharide (LPS) synthesis pathways and bacterial invasion of epithelial cell pathways, leading to increased plasma endotoxin levels. The phosphotransferase system is enriched while ribosomal activity is reduced. Metabolic pathways for chlorophyll and porphyrin metabolism, sucrose and starch metabolism, arginine and proline metabolism, as well as glycolysis and gluconeogenesis are severely depleted. These alterations collectively indicate a shift toward a pro-inflammatory and metabolically impaired gut environment.",
+      "topic_tags": ["LPS biosynthesis", "chronic pancreatitis", "metabolic pathways", "KEGG", "endotoxin", "glycolysis"]
+    },
+
+    {
+      "id": "GUTPANC_medium_001",
+      "difficulty": "medium",
+      "question": "How does the decrease in butyrate-producing bacteria mechanistically contribute to the progression of pancreatitis?",
+      "answer": "Multiple butyrate-producing bacterial genera — including Faecalibacterium, Coprococcus, Roseburia, and Fusicatenibacter — are consistently reduced in chronic pancreatitis patients. These bacteria are key members of the Firmicutes phylum and primary sources of butyrate in the gut. Decreased abundance of these genera leads to reduced levels of butyrate and other SCFAs. Butyrate is essential for maintaining tight junction protein expression and intestinal epithelial integrity. Its depletion increases the permeability of the intestinal mucosa, disrupts mucosal barrier function, and permits release of intestinal pathogens into systemic circulation via the damaged mucosa, thereby promoting and perpetuating pancreatic inflammation.",
+      "topic_tags": ["butyrate", "tight junction", "mucosal barrier", "Faecalibacterium", "Coprococcus", "Roseburia", "intestinal permeability", "pancreatitis"]
+    },
+    {
+      "id": "GUTPANC_medium_002",
+      "difficulty": "medium",
+      "question": "What is the proposed mechanism by which Klebsiella contributes to pancreatic pathology, and what evidence supports an intestinal origin for pancreatic infection?",
+      "answer": "Klebsiella is elevated in the intestines of chronic pancreatitis patients compared to healthy controls. Evidence suggests the intestine serves as a pathway for Klebsiella to invade the pancreas: Klebsiella has been found significantly elevated in pancreatic cysts and pancreatitis fluid, implying bacterial translocation from the gut lumen to pancreatic tissue. This is consistent with the broader mechanism of bacterial translocation in pancreatitis, where impaired gut barrier function — driven by dysbiosis and mucosal damage — allows pathogenic bacteria to migrate from the intestinal lumen into systemic circulation and ultimately into the pancreas.",
+      "topic_tags": ["Klebsiella", "bacterial translocation", "pancreatic infection", "gut barrier", "pancreatic cysts", "chronic pancreatitis"]
+    },
+    {
+      "id": "GUTPANC_medium_003",
+      "difficulty": "medium",
+      "question": "How does gut microbiota dysbiosis relate to LPS accumulation, and what are the downstream immunological consequences in pancreatic disease?",
+      "answer": "In both chronic pancreatitis and pancreatic ductal adenocarcinoma, gut microbiome functional analyses reveal enrichment of LPS biosynthesis pathways, accompanied by elevated plasma endotoxin levels. LPS, derived primarily from gram-negative bacteria such as Proteobacteria — which are increased in pancreatic disease — is a potent immunostimulatory molecule. Its accumulation in systemic circulation is associated with activation of inflammatory pathways and decreased cell motility. In chronic pancreatitis, the enriched bacterial invasion of epithelial cell pathways alongside elevated LPS signalling promotes sustained mucosal inflammation and can contribute to systemic immune activation, potentially linking intestinal dysbiosis to pancreatic inflammation and carcinogenesis.",
+      "topic_tags": ["LPS", "endotoxin", "Proteobacteria", "immune activation", "inflammatory pathway", "gut permeability", "PDAC", "chronic pancreatitis"]
+    },
+    {
+      "id": "GUTPANC_medium_004",
+      "difficulty": "medium",
+      "question": "What is the relationship between alpha-diversity reduction and disease severity in chronic pancreatitis, and what does this imply about microbial community function?",
+      "answer": "Alpha-diversity, as measured by the Shannon Index and species richness, is significantly lower in chronic pancreatitis patients compared to healthy controls. Multiple studies have linked greater CP disease severity to more significant changes in gut microbiome composition and reduced relative abundance of commensal organisms. A lower Shannon Index reflects both fewer species and less equitable distribution of those species. Reduced alpha-diversity implies a less functionally redundant and less resilient microbial community, with diminished capacity to produce beneficial metabolites such as SCFAs, maintain mucosal barrier integrity, and resist pathogen colonisation — all of which are relevant to the inflammatory milieu of pancreatitis.",
+      "topic_tags": ["alpha-diversity", "Shannon Index", "species richness", "chronic pancreatitis", "disease severity", "functional redundancy", "commensals"]
+    },
+    {
+      "id": "GUTPANC_medium_005",
+      "difficulty": "medium",
+      "question": "How does the metabolic functional profile of the gut microbiome in pancreatic ductal adenocarcinoma differ from that in healthy individuals, particularly with respect to short-chain fatty acid metabolism?",
+      "answer": "In pancreatic ductal adenocarcinoma, the gut microbiome exhibits a significantly lower metabolic capacity to synthesise short-chain fatty acids, especially acetate and butyrate. Conversely, there is a higher potential for degrading fatty acids and greater capacity for putrescine and spermidine transport. Specific metabolomics studies also reveal a significant decrease in propionic acid and deoxycholic acid levels, alongside reductions in amino acid biosynthesis, secondary metabolite biosynthesis, and porphyrin and chlorophyll metabolism. These changes indicate a microbiome shifted away from fermentative and immunoprotective functions toward potentially pro-tumorigenic metabolic states.",
+      "topic_tags": ["SCFA synthesis", "PDAC", "butyrate", "acetate", "metabolomics", "fatty acid degradation", "propionic acid", "polyamines"]
+    },
+    {
+      "id": "GUTPANC_medium_006",
+      "difficulty": "medium",
+      "question": "What is the dual and conflicting role of Bifidobacterium in pancreatic cancer, and how should this complexity be interpreted clinically?",
+      "answer": "Bifidobacterium presents a paradoxical picture in pancreatic ductal adenocarcinoma. On one hand, studies have found lower abundance of Bifidobacterium in PDAC patients compared to healthy controls, suggesting a loss of beneficial function. On the other hand, animal studies have shown that repopulation with certain Bifidobacterium strains can accelerate pancreatic tumorigenesis. Conversely, multiple recent studies demonstrate that Bifidobacterium strains enhance the efficacy of anti-PD-L1 immunotherapy and can reduce tumor burden by inducing antitumor immune responses synergistically. This complexity implies that the clinical interpretation of Bifidobacterium abundance must account for the specific strain, host immune context, and disease stage, and that generalised probiotic supplementation without strain-level precision may yield unpredictable outcomes.",
+      "topic_tags": ["Bifidobacterium", "PDAC", "immunotherapy", "anti-PD-L1", "tumorigenesis", "probiotics", "pancreatic cancer"]
+    },
+
+    {
+      "id": "GUTPANC_hard_001",
+      "difficulty": "hard",
+      "question": "Comparing gut microbiota changes in chronic pancreatitis versus pancreatic ductal adenocarcinoma, what do the overlapping and divergent microbial signatures suggest about the relationship between these two diseases?",
+      "answer": "Both chronic pancreatitis and pancreatic ductal adenocarcinoma share several microbial signatures: reduced Firmicutes at the phylum level, elevated Escherichia-Shigella and Veillonella, and decreased Faecalibacterium prausnitzii. This overlap is consistent with the known epidemiological link between CP and PDAC — patients with CP have a substantially increased risk of developing PDAC over time. However, meta-analysis reveals no statistically significant differences in gut microbiota composition between CP and PDAC at phylum or genus level when directly compared, suggesting their microbial environments are more similar than different. This could indicate that gut dysbiosis in CP represents a shared pathophysiological substrate that may contribute to cancer progression, rather than PDAC driving a uniquely distinct microbial signature. It also raises the important interpretive challenge of whether dysbiosis precedes and promotes PDAC development or whether both conditions produce similar dysbiotic responses as an effect of shared inflammatory pathology.",
+      "topic_tags": ["CP vs PDAC", "shared microbiota", "pancreatic cancer risk", "Firmicutes", "Escherichia-Shigella", "causal relationship", "dysbiosis", "disease progression"]
+    },
+    {
+      "id": "GUTPANC_hard_002",
+      "difficulty": "hard",
+      "question": "What are the core methodological challenges in interpreting gut microbiome studies across pancreatic disease populations, and how might these challenges affect the reliability of pooled meta-analytic findings?",
+      "answer": "Interpreting gut microbiome studies in pancreatic disease is complicated by several interrelated methodological challenges. First, the populations studied are heterogeneous — including patients with autoimmune pancreatitis, alcoholic pancreatitis, pediatric pancreatitis, and CP with diabetes — where age, alcohol intake, metabolism, and immune status all independently modulate microbiota composition. Second, different studies employ varying genetic analysis platforms (16S rRNA with different variable regions, metagenomics), DNA extraction kits, pipeline software (QIIME, Mothur), and reference databases (RDP, SILVA, Greengenes), introducing systematic technical variability. Third, geographic and dietary differences across study populations from Asia, Europe, and the United States produce conspicuous baseline microbiota variation. Fourth, different sampling sources (stool vs. duodenal fluid) capture different microbial compartments, introducing sampling bias. In the meta-analysis, while I² values of 0% indicate low statistical heterogeneity for phylum-level composition, the biological and methodological diversity described above means the pooled estimates, while statistically stable, may still mask clinically meaningful subgroup differences. Funnel plots could not be constructed due to insufficient study numbers per indicator, limiting formal assessment of publication bias.",
+      "topic_tags": ["methodological heterogeneity", "16S rRNA", "metagenomics", "meta-analysis limitations", "sampling bias", "geographic variation", "QIIME", "publication bias"]
+    },
+    {
+      "id": "GUTPANC_hard_003",
+      "difficulty": "hard",
+      "question": "How do changes in SCFA-producing bacteria and LPS-producing bacteria in pancreatic disease jointly alter intestinal barrier function, and what is the proposed cascade linking gut dysbiosis to pancreatic inflammation?",
+      "answer": "In pancreatic disease, gut dysbiosis simultaneously depletes SCFA-producing bacteria (Faecalibacterium, Coprococcus, Roseburia, Fusicatenibacter) while enriching gram-negative LPS-associated bacteria (Proteobacteria, Escherichia-Shigella, Klebsiella). These changes act synergistically to compromise intestinal barrier integrity via two complementary mechanisms. First, reduced butyrate production decreases tight junction protein expression and mucosal SCFA availability, directly increasing epithelial permeability. Second, expanded gram-negative bacteria elevate luminal LPS, which is now more readily translocated through the compromised epithelium into systemic circulation — a process termed metabolic endotoxemia. Elevated plasma endotoxin activates LPS-sensing pathways (TLR4), triggering sustained innate immune activation and pro-inflammatory cytokine release. Simultaneously, bacterial translocation — including organisms such as Klebsiella and Escherichia-Shigella — through the damaged mucosa allows direct microbial invasion of the pancreas via the portal circulation or retrograde duodenal-pancreatic duct migration. This combined cascade of reduced barrier protection, endotoxemia, and direct bacterial translocation is proposed to promote and sustain pancreatic inflammation, potentially driving both chronic pancreatitis severity and the transition toward malignancy.",
+      "topic_tags": ["SCFA", "LPS", "tight junction", "bacterial translocation", "endotoxemia", "TLR4", "intestinal barrier", "pancreatic inflammation", "Proteobacteria"]
+    },
+    {
+      "id": "GUTPANC_hard_004",
+      "difficulty": "hard",
+      "question": "What causal inference challenges arise when interpreting microbiome-disease associations in pancreatic conditions, and what emerging methodological approaches are being employed to address the directionality question?",
+      "answer": "A central interpretive challenge in pancreatic microbiome research is determining whether gut dysbiosis is a cause or consequence of disease. In chronic pancreatitis, similar dysbiotic patterns have been documented regardless of the underlying etiology (alcoholic, autoimmune, idiopathic), which some investigators interpret as evidence that microbial changes are a reactive effect of the disease rather than a primary driver. Observational and cross-sectional study designs cannot resolve this directionality by definition. To address this, Mendelian Randomization (MR) studies have been applied — leveraging genetic variants associated with microbial taxa as instruments to infer causal effects independent of confounding. Two-sample MR analyses have identified specific taxa (e.g., Streptococcus, Odoribacter, and certain Ruminococcaceae) as potential causative factors for pancreatic ductal adenocarcinoma, while others (e.g., Senegalimassilia) show protective associations. Bidirectional MR designs have also been used to explore causal links between gut microbiota and multiple pancreatitis subtypes. Additionally, fecal microbiome transplantation (FMT) experiments in animal models provide mechanistic evidence that microbiome composition can directly influence tumor immunity and disease natural history. Despite these advances, the causal architecture remains incompletely defined, and prospective longitudinal studies in humans are needed.",
+      "topic_tags": ["causal inference", "Mendelian Randomization", "dysbiosis causality", "FMT", "GWAS", "Streptococcus", "pancreatic cancer", "directionality", "observational bias"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "GUTPANC_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which bacterial phylum is consistently reduced at the phylum level in both chronic pancreatitis and pancreatic ductal adenocarcinoma compared to healthy controls?",
+      "options": {
+        "A": "Proteobacteria",
+        "B": "Bacteroidetes",
+        "C": "Firmicutes",
+        "D": "Actinobacteria"
+      },
+      "correct_answer": "C",
+      "explanation": "Meta-analysis results consistently show a significantly lower proportion of Firmicutes in both chronic pancreatitis and PDAC patients compared to healthy controls. Proteobacteria is typically elevated, while differences in Bacteroidetes and Actinobacteria did not reach pooled statistical significance.",
+      "topic_tags": ["Firmicutes", "phylum level", "pancreatic disease", "gut dysbiosis"]
+    },
+    {
+      "id": "GUTPANC_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "Which alpha-diversity metric most consistently shows a statistically significant reduction in both chronic pancreatitis and pancreatic ductal adenocarcinoma compared to healthy controls?",
+      "options": {
+        "A": "Simpson Index",
+        "B": "Evenness",
+        "C": "Shannon Index",
+        "D": "Richness"
+      },
+      "correct_answer": "C",
+      "explanation": "The Shannon Index was significantly lower in both PDAC and CP groups compared to healthy controls in pooled meta-analysis results. The Simpson Index and Evenness did not reach statistical significance in both conditions, while Richness was significant in CP only.",
+      "topic_tags": ["Shannon Index", "alpha-diversity", "chronic pancreatitis", "PDAC"]
+    },
+    {
+      "id": "GUTPANC_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "What is the proposed protective mechanism of Bifidobacteria and its metabolite lactate in the context of pancreatitis?",
+      "options": {
+        "A": "Inhibiting pancreatic enzyme secretion via vagal nerve signalling",
+        "B": "Preventing pancreatitis by alleviating macrophage-associated inflammation through TLR4/MyD88 and NLRP3/Caspase1 pathways",
+        "C": "Producing butyrate to reinforce tight junction proteins in the pancreatic duct",
+        "D": "Competing with Klebsiella for colonisation of the duodenal mucosa"
+      },
+      "correct_answer": "B",
+      "explanation": "Bifidobacteria and their metabolite lactate have been shown in animal models to prevent pancreatitis by alleviating both pancreatic and systemic macrophage-associated inflammation through the combined action of TLR4/MyD88 and NLRP3/Caspase1 signalling pathways.",
+      "topic_tags": ["Bifidobacterium", "lactate", "TLR4", "NLRP3", "pancreatitis prevention", "macrophage"]
+    },
+
+    {
+      "id": "GUTPANC_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "Which of the following best explains the clinical significance of a decrease in butyrate-producing bacteria in chronic pancreatitis?",
+      "options": {
+        "A": "Reduced butyrate leads to decreased bile acid synthesis, impairing fat digestion",
+        "B": "Loss of butyrate production reduces tight junction protein expression, increases mucosal permeability, and allows intestinal pathogens to enter the bloodstream and promote pancreatic inflammation",
+        "C": "Butyrate deficiency stimulates excessive mucin production, leading to pancreatic duct obstruction",
+        "D": "Decreased butyrate impairs hepatic gluconeogenesis, causing systemic hypoglycaemia"
+      },
+      "correct_answer": "B",
+      "explanation": "Butyrate is essential for maintaining tight junction proteins and intestinal epithelial barrier integrity. Its depletion in CP — due to reduced Faecalibacterium, Coprococcus, Roseburia, and Fusicatenibacter — increases intestinal permeability, allows bacterial and endotoxin translocation, and is proposed to promote pancreatic inflammation.",
+      "topic_tags": ["butyrate", "tight junction", "mucosal barrier", "intestinal permeability", "chronic pancreatitis", "bacterial translocation"]
+    },
+    {
+      "id": "GUTPANC_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "In pancreatic ductal adenocarcinoma, what direction of change is observed in LPS biosynthesis pathways and SCFA synthesis capacity compared to healthy controls?",
+      "options": {
+        "A": "Both LPS biosynthesis and SCFA synthesis are increased",
+        "B": "LPS biosynthesis is decreased while SCFA synthesis is increased",
+        "C": "LPS biosynthesis is increased while SCFA synthesis capacity is decreased",
+        "D": "Both LPS biosynthesis and SCFA synthesis are decreased"
+      },
+      "correct_answer": "C",
+      "explanation": "Functional analyses in PDAC show enrichment of LPS biosynthesis pathways (promoting endotoxemia and inflammation) alongside a significantly lower metabolic capacity to synthesise SCFAs, especially acetate and butyrate. This bidirectional shift reflects a pro-inflammatory, barrier-compromising microbiome state.",
+      "topic_tags": ["LPS", "SCFA", "PDAC", "functional microbiome", "endotoxin", "butyrate"]
+    },
+    {
+      "id": "GUTPANC_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "How does the comparison of gut microbiota between chronic pancreatitis and pancreatic ductal adenocarcinoma patients affect the potential use of gut microbiota as a diagnostic biomarker for distinguishing these two conditions?",
+      "options": {
+        "A": "Significant phylum-level differences make gut microbiota highly useful for distinguishing CP from PDAC",
+        "B": "The absence of significant differences in gut microbiota between CP and PDAC limits its utility for distinguishing these diseases, though differences have been observed in beta-diversity",
+        "C": "Genus-level markers such as Veillonella are exclusive to PDAC and can serve as reliable diagnostic markers",
+        "D": "Alpha-diversity measures reliably distinguish CP from PDAC as PDAC shows significantly lower Shannon Index than CP"
+      },
+      "correct_answer": "B",
+      "explanation": "Meta-analysis found no significant differences in Bacteroidetes, Firmicutes, or Proteobacteria proportions between CP and PDAC, and alpha-diversity indices (Shannon, Simpson, Evenness, Richness) also showed no significant differences between the two groups. While individual studies report significant beta-diversity differences, gut microbiota alone does not reliably distinguish CP from PDAC at present.",
+      "topic_tags": ["biomarker", "CP vs PDAC", "diagnostic utility", "alpha-diversity", "phylum level", "clinical application"]
+    },
+    {
+      "id": "GUTPANC_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "Why is the causal relationship between gut dysbiosis and chronic pancreatitis considered difficult to establish, and what observation supports the hypothesis that dysbiosis may be a consequence rather than a cause?",
+      "options": {
+        "A": "Animal models have failed to demonstrate any gut microbiome changes following experimental pancreatitis induction",
+        "B": "Because all included studies used 16S rRNA sequencing, which cannot detect functional changes that would indicate causality",
+        "C": "Similar dysbiotic patterns are documented regardless of the underlying etiology of CP, suggesting microbial changes may be a reactive effect of disease rather than a driver",
+        "D": "Firmicutes abundance is not different between CP patients and healthy controls, undermining the case for microbiome involvement"
+      },
+      "correct_answer": "C",
+      "explanation": "Regardless of whether CP is caused by alcohol, autoimmune processes, or other factors, similar microbiome changes have been documented. This convergence across etiologically distinct forms of CP suggests that dysbiosis may be a common reactive response to pancreatic inflammation rather than the initiating cause — though the observational nature of existing studies prevents definitive conclusions.",
+      "topic_tags": ["causality", "dysbiosis", "chronic pancreatitis etiology", "observational study", "reactive dysbiosis"]
+    },
+    {
+      "id": "GUTPANC_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "Which genus is significantly elevated in chronic pancreatitis patients and has been identified as a potential route of bacterial invasion into the pancreas?",
+      "options": {
+        "A": "Faecalibacterium",
+        "B": "Bifidobacterium",
+        "C": "Klebsiella",
+        "D": "Akkermansia"
+      },
+      "correct_answer": "C",
+      "explanation": "Klebsiella is elevated in the intestines of chronic pancreatitis patients and has been found significantly elevated in pancreatic cysts and pancreatitis fluid, suggesting the intestine is likely a route through which Klebsiella invades the pancreas via bacterial translocation.",
+      "topic_tags": ["Klebsiella", "chronic pancreatitis", "bacterial translocation", "pancreatic invasion", "pathogen"]
+    },
+
+    {
+      "id": "GUTPANC_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "Based on gut microbiome functional analyses across both chronic pancreatitis and pancreatic ductal adenocarcinoma, which combination of pathway changes most accurately reflects the shared pro-inflammatory microbiome state in these diseases?",
+      "options": {
+        "A": "Increased SCFA synthesis + decreased LPS biosynthesis + enriched amino acid biosynthesis",
+        "B": "Decreased LPS biosynthesis + enriched porphyrin metabolism + increased butyrate production",
+        "C": "Enriched LPS biosynthesis + enriched phosphotransferase system + depleted SCFA synthesis capacity",
+        "D": "Decreased Proteobacteria + enriched starch and sucrose metabolism + increased propionate production"
+      },
+      "correct_answer": "C",
+      "explanation": "Across both PDAC and CP, functional analyses consistently show enrichment of LPS biosynthesis pathways and phosphotransferase systems, combined with significantly reduced capacity for SCFA synthesis (particularly acetate and butyrate in PDAC, and reduced butyrate producers in CP). Together these changes create a pro-inflammatory, barrier-compromising microbiome state. Pathways like porphyrin metabolism, amino acid biosynthesis, and starch metabolism are depleted rather than enriched.",
+      "topic_tags": ["LPS", "phosphotransferase system", "SCFA", "functional pathway", "PDAC", "chronic pancreatitis", "pro-inflammatory"]
+    },
+    {
+      "id": "GUTPANC_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "What does the finding of significant beta-diversity differences between PDAC and CP groups, despite no significant differences in alpha-diversity or phylum-level composition between them, most likely indicate about the nature of microbial changes in these two diseases?",
+      "options": {
+        "A": "Beta-diversity differences confirm that PDAC and CP have completely unrelated gut microbiome profiles that arise through independent pathways",
+        "B": "The overall richness and dominant phyla are similar between PDAC and CP, but the specific species-level composition and community structure differ, potentially reflecting disease-specific microbial signatures below phylum resolution",
+        "C": "The beta-diversity findings are artefactual, caused by differences in sequencing depth between studies rather than true biological differences",
+        "D": "Beta-diversity differences indicate that CP patients have already transitioned to a PDAC-like microbiome, confirming the causal role of microbiota in malignant transformation"
+      },
+      "correct_answer": "B",
+      "explanation": "When alpha-diversity and phylum-level composition are statistically similar between PDAC and CP, but beta-diversity (community structure/composition) differs significantly, it implies that the overall abundance and diversity of microbial communities are comparable, but the specific species identities and their relative proportions differ. This is consistent with disease-specific patterns at finer taxonomic levels that are averaged out or undetectable at the phylum scale, highlighting the need for species-level or metagenomic analyses to identify disease-discriminating signatures.",
+      "topic_tags": ["beta-diversity", "alpha-diversity", "CP vs PDAC", "species composition", "taxonomic resolution", "community structure"]
+    }
+  ]
+}

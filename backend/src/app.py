@@ -55,6 +55,7 @@ from src.models import (
 )
 
 import logging
+
 logging.basicConfig(level=logging.INFO)
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -87,7 +88,6 @@ memory_service = MemoryService()
 query_classifier = QueryClassifier(chat_service.llm)
 chat_service = ChatService()
 pdf_selection_service = PDFSelectionService()
-# PDF Storage Manager - for storing/serving original PDFs
 pdf_storage = PDFStorageService(base_path="data/pdfs")
 document_processor = DocumentProcessor(pdf_storage=pdf_storage)
 
@@ -155,16 +155,30 @@ async def delete_collection(collection_name: str):
     # Delete from vector database
     result = collection_manager.delete_collection(collection_name)
 
-    # Also delete all PDF files
+    # Delete all PDF files
     pdf_storage.delete_collection_pdfs(collection_name)
 
+    # Delete all JSON Pages
+    document_processor.delete_collection_pages_store(collection_name)
+
     return result
+
+
+# @app.put("/api/collections/rename", response_model=OperationResponse)
+# async def rename_collection(request: RenameCollectionRequest):
+#     """Rename a collection"""
+#     result = collection_manager.rename_collection(request.old_name, request.new_name)
+#     return OperationResponse(**result)
 
 
 @app.put("/api/collections/rename", response_model=OperationResponse)
 async def rename_collection(request: RenameCollectionRequest):
     """Rename a collection"""
     result = collection_manager.rename_collection(request.old_name, request.new_name)
+    pdf_storage.rename_collection_pdfs(request.old_name, request.new_name)  # ← ADD
+    document_processor.rename_collection_pages_store(
+        request.old_name, request.new_name
+    )  # ← ADD
     return OperationResponse(**result)
 
 
@@ -187,8 +201,11 @@ async def delete_pdf_from_collection(collection_name: str, filename: str):
     # Delete from vector database
     result = collection_manager.delete_pdf_from_collection(collection_name, filename)
 
-    # Also delete the stored PDF file
+    # Delete the stored PDF file
     pdf_deleted = pdf_storage.delete_pdf(collection_name, filename)
+
+    # Delete the stored JSON pages
+    document_processor.delete_pdf_pages_store(collection_name, filename)
 
     if result["status"] == "error":
         raise HTTPException(status_code=404, detail=result["message"])
@@ -205,8 +222,13 @@ async def rename_pdf_in_collection(request: RenamePDFRequest):
         request.collection_name, request.old_filename, request.new_filename
     )
 
-    # Also rename the stored PDF file
+    # Rename the stored PDF file
     pdf_renamed = pdf_storage.rename_pdf(
+        request.collection_name, request.old_filename, request.new_filename
+    )
+
+    # Rename the JSON pages
+    document_processor.rename_pdf_pages_store(
         request.collection_name, request.old_filename, request.new_filename
     )
 
@@ -348,6 +370,7 @@ async def get_all_pdfs():
 # ============================================================================
 # QUERY CLASSIFICATION ENDPOINTS
 # ============================================================================
+
 
 @app.post("/api/chat/classify", response_model=QueryClassificationResponse)
 async def classify_query(request: QueryClassificationRequest):
@@ -573,6 +596,7 @@ async def get_conversation_summary(chat_id: str):
 #         ),
 #         media_type="text/event-stream",
 #     )
+
 
 @app.post("/api/chat/single/{collection_name}")
 async def chat_single_collection(

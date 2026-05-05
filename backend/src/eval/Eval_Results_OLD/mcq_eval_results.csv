@@ -1,0 +1,1008 @@
+id,question,predicted_option,correct_option,is_correct,difficulty,category
+gut_intro_mcq_001,How many bacterial species have been isolated from human beings according to the MetaHit and Human Microbiome Project?,B,B,True,easy,factual
+gut_intro_mcq_002,"What percentage of the 2,172 human-associated bacterial species belong to Proteobacteria, Firmicutes, Actinobacteria and Bacteroidetes?",C,C,True,medium,factual
+gut_intro_mcq_003,Which bacterial species is the only known representative of the Verrucomicrobia phyla in the human gut?,C,C,True,medium,factual
+gut_intro_mcq_004,What is the typical ratio of propionate:butyrate:acetate in the GI tract?,B,B,True,medium,factual
+gut_intro_mcq_005,Which bacterial group is primarily responsible for butyrate production in the human gut?,C,C,True,medium,factual
+gut_intro_mcq_006,How many glycoside hydrolases does Bacteroides thetaiotaomicron encode compared to humans?,C,C,True,hard,factual
+gut_intro_mcq_007,What percentage of faecal microbiota of vaginally delivered infants resembles their mothers' faecal microbiota?,C,C,True,medium,factual
+gut_intro_mcq_008,Which of the following is NOT a benefit provided by gut microbiota mentioned in the paper?,C,C,True,easy,factual
+gut_intro_mcq_009,"In the elderly population, which metabolic change is observed in gut microbiota function?",D,D,True,hard,factual
+gut_intro_mcq_010,Which of the following correctly describes the colonic mucus structure?,B,B,True,medium,factual
+multiomics_ibd_mcq_001,How many common metabolites were identified across all four metabolomic cohorts after HMDB ID annotation?,B,B,True,easy,factual
+multiomics_ibd_mcq_002,Which bacterium enriched in IBD can produce pro-inflammatory polysaccharides and mucin-degrading trans-sialidase?,B,B,True,easy,factual
+multiomics_ibd_mcq_003,What was the primary method used for feature selection in machine learning models?,B,B,True,easy,factual
+multiomics_ibd_mcq_004,How many KO genes were identified in the intersection analysis between metabolic-related genes and differential KO genes?,C,C,True,medium,factual
+multiomics_ibd_mcq_005,What was the false positive rate (FPR) range for metagenomic classifiers on non-IBD disease datasets?,C,A,False,medium,factual
+multiomics_ibd_mcq_006,Which metabolite class showed carnitine compounds and 1-Methylhistidine as biomarkers in IBD?,B,B,True,medium,factual
+multiomics_ibd_mcq_007,"Which bacteria showed negative correlation with Candida albicans colonization, which is enriched in IBD?",C,C,True,medium,mechanism
+multiomics_ibd_mcq_008,What diagnostic approach achieved the highest AUROC in the Renji cohort for IBD detection?,D,D,True,hard,comparison
+multiomics_ibd_mcq_009,How many features were selected from the multi-omics panel to distinguish between UC and CD subtypes?,B,B,True,hard,factual
+multiomics_ibd_mcq_010,Which pathway was found to be downregulated in IBD and is related to Akkermansia-enhanced intestinal epithelium development?,C,C,True,hard,mechanism
+ibd_microbiota_mcq_001,What percentage of bacteria make up the gut microbiome according to the paper?,C,C,True,easy,factual
+ibd_microbiota_mcq_002,Which of the following is NOT mentioned as a fungal genus commonly found in the gut mycobiome of IBD patients?,D,D,True,easy,factual
+ibd_microbiota_mcq_003,What is the name of the antimicrobial peptide recently identified that demonstrates selective antifungal activity against C. albicans hyphae?,C,C,True,easy,factual
+ibd_microbiota_mcq_004,Which mechanism do adherent-invasive E. coli use in IBD-associated microbiota to promote inflammation?,B,B,True,medium,mechanism
+ibd_microbiota_mcq_005,What is the range of remission rates achieved in randomized controlled trials of FMT in patients with ulcerative colitis?,B,B,True,medium,factual
+ibd_microbiota_mcq_006,Which secondary bile acid inhibits intestinal TH17 cell differentiation by binding to RORγ?,C,C,True,medium,mechanism
+ibd_microbiota_mcq_007,"According to the paper, which bacterial species was found to produce TH17 cell-modulating bile acids including 3-oxoLCA?",B,B,True,medium,factual
+ibd_microbiota_mcq_008,What percentage of polyphenols interact with gut microorganisms in the ileum and colon rather than being absorbed in the small intestine?,D,D,True,medium,factual
+ibd_microbiota_mcq_009,Which mechanism is responsible for the protective effect of nociceptors in the gut according to the paper's discussion of TRPV1?,B,B,True,hard,mechanism
+ibd_microbiota_mcq_010,What is the primary mechanism by which the defined 18-member commensal bacterial consortium suppresses intestinal Enterobacteriaceae species?,B,B,True,hard,mechanism
+saudi_ibd_mcq_001,What was the minimum read count threshold used to retain samples for downstream analyses in this study?,B,B,True,easy,factual
+saudi_ibd_mcq_002,How many distinct OTUs remained after agglomerating reads at the genus level?,C,C,True,easy,factual
+saudi_ibd_mcq_003,What was the statistically significant difference in CRP levels between Crohn's Disease and Ulcerative Colitis patients?,B,B,True,easy,factual
+saudi_ibd_mcq_004,What percentage of variance in the microbiome data was explained by the first two principal components in the PCoA analysis?,A,B,False,medium,factual
+saudi_ibd_mcq_005,Which of the following genera was NOT mentioned as showing differential abundance between CD and UC?,D,D,True,medium,factual
+saudi_ibd_mcq_006,What was the total number of differentially abundant OTUs identified across all comparisons using DESeq2?,C,C,True,medium,factual
+saudi_ibd_mcq_007,What was the increase in annual incidence of Crohn's disease in Saudi Arabia from the 1983-1992 period to the 1993-2002 period?,A,A,True,medium,factual
+saudi_ibd_mcq_008,Which variable showed the strongest association with beta diversity according to the PERMANOVA analysis?,A,B,False,hard,mechanism
+saudi_ibd_mcq_009,"According to the study, what percentage of OTUs were uncharacterized at the species level, necessitating genus-level agglomeration?",C,C,True,hard,factual
+saudi_ibd_mcq_010,What was the key conclusion regarding the applicability of existing IBD classification algorithms to the Saudi Arabian population?,B,B,True,hard,comparison
+obesity_microbiota_mcq_001,How many subjects were enrolled in each group of this obesity gut microbiota study?,A,A,True,easy,factual
+obesity_microbiota_mcq_002,What was the percentage of correctly classified cases in the discriminant analysis after cross-validation?,D,D,True,easy,factual
+obesity_microbiota_mcq_003,Which bacterial phylum was the only significant taxon differentially describing the four groups after FDR correction?,A,C,False,easy,factual
+obesity_microbiota_mcq_004,What was the AUROC value for Barnesiellaceae in discriminating normal weight adolescents?,D,D,True,medium,factual
+obesity_microbiota_mcq_005,"In obese adults, which bacterial genus positively correlated with BMI?",B,B,True,medium,factual
+obesity_microbiota_mcq_006,Which metabolic pathway associated with obesity in adolescents is recognized to initiate inflammation-related processes?,B,B,True,medium,mechanism
+obesity_microbiota_mcq_007,How many KEGG pathways were upregulated in obese adolescents compared to normal weight adolescents?,C,C,True,medium,factual
+obesity_microbiota_mcq_008,What percentage of the intersample variance was explained by the first coordinate (PC1) in weighted UniFrac analysis comparing obese versus control groups?,C,C,True,medium,factual
+obesity_microbiota_mcq_009,"According to the study, what is the relationship between secondary bile acids and metabolic health?",B,B,True,hard,mechanism
+obesity_microbiota_mcq_010,Why did the researchers filter OTUs to reduce from 222 to 47 before statistical analysis?,B,B,True,hard,mechanism
+microbiome_richness_mcq_001,What was the total number of individuals in the study cohort from Denmark?,A,D,False,easy,factual
+microbiome_richness_mcq_002,What percentage of genes that differed significantly between LGC and HGC could be assigned to known bacterial genomes?,A,A,True,easy,factual
+microbiome_richness_mcq_003,How many bacterial species clusters were sufficient to achieve near-perfect discrimination between LGC and HGC individuals?,B,B,True,easy,factual
+microbiome_richness_mcq_004,"At what phylum level, what shift was observed in LGC versus HGC individuals?",B,B,True,medium,factual
+microbiome_richness_mcq_005,What was the average number of paired-end reads produced per sample and how many uniquely mapped to the gene catalogue?,A,A,True,medium,factual
+microbiome_richness_mcq_006,What Spearman correlation threshold was used for gene clustering to favor specificity?,C,C,True,medium,factual
+microbiome_richness_mcq_007,What was the ratio of average gene counts between LGC and HGC individuals?,B,C,False,medium,factual
+microbiome_richness_mcq_008,What were the median HOMA-IR values for LGC versus HGC individuals?,A,C,False,medium,factual
+microbiome_richness_mcq_009,"According to the study, what is the proposed relationship between gut microbiota and FIAF (fasting induced adipose factor)?",C,C,True,hard,mechanism
+microbiome_richness_mcq_010,What percentage of cluster genes showed physical linkage (presence on the same scaffold) for known and unknown species groups?,C,C,True,hard,mechanism
+tb_microbiome_mcq_001,What was the study period during which tuberculosis patients were recruited for this multi-center prospective cohort study?,C,C,True,easy,factual
+tb_microbiome_mcq_002,At what three time points were fecal samples collected from tuberculosis patients during the study?,B,B,True,easy,factual
+tb_microbiome_mcq_003,What percentage of the tuberculosis patient cohort had bacteriologically positive results?,D,B,False,easy,factual
+tb_microbiome_mcq_004,What was the Shannon diversity index value for tuberculosis patients at baseline compared to after 2 months of treatment?,B,B,True,medium,factual
+tb_microbiome_mcq_005,Which bacterial genus has been found to dominate gut microbiome dysbiosis in tuberculous meningitis patients?,C,C,True,medium,factual
+tb_microbiome_mcq_006,What happens to gut microbiota diversity between 2 months and 6 months of anti-tuberculosis treatment?,B,B,True,medium,mechanism
+tb_microbiome_mcq_007,How many operational taxonomic units (OTUs) were generated per sample in this study?,B,B,True,medium,factual
+tb_microbiome_mcq_008,Which interleukin (IL) is facilitated by Firmicutes cell wall glycoconjugates to activate macrophages and enhance defense against pulmonary inflammation?,C,C,True,hard,mechanism
+tb_microbiome_mcq_009,What was the primary finding regarding the recovery of gut microbiota after the intensive phase of anti-tuberculosis treatment?,C,C,True,hard,mechanism
+tb_microbiome_mcq_010,"According to the study, what is the significance of the gut microbiota comprising over 1000 species with a bacterial cell count ten times that of human body cells?",B,B,True,medium,mechanism
+ptb_microbiota_mcq_001,"According to the WHO 2019 report cited in the study, what is China's ranking in terms of multidrug-resistant tuberculosis (MDR-TB) burden?",B,B,True,easy,factual
+ptb_microbiota_mcq_002,What percentage of sequencing reads passed the quality screening in the 16S rRNA gene sequencing analysis?,B,C,False,easy,factual
+ptb_microbiota_mcq_003,Which sequencing platform was used for the V3-V4 16S rRNA gene analysis?,A,B,False,easy,factual
+ptb_microbiota_mcq_004,What was the NMDS stress value for the analysis based on unweighted UniFrac distance?,,C,False,medium,factual
+ptb_microbiota_mcq_005,Which dominant genus was notably enriched in PTB patients but NOT in healthy controls?,C,C,True,medium,factual
+ptb_microbiota_mcq_006,"In the OPLS-DA model of faecal metabolomic profiles, what were the R2X and Q2 values?",B,B,True,medium,factual
+ptb_microbiota_mcq_007,What ratio was used to split the dataset for the random forest classification model?,C,C,True,medium,factual
+ptb_microbiota_mcq_008,"According to the LEfSe analysis with LDA scores, which of the following was MORE abundant in healthy controls rather than PTB patients?",C,C,True,medium,factual
+ptb_microbiota_mcq_009,What is the proposed mechanism by which antibiotic-mediated gut dysbiosis promotes Mtb infection according to previous research cited in the study?,B,B,True,hard,mechanism
+ptb_microbiota_mcq_010,Which statement best describes the relationship between squalene and tuberculosis based on the study's findings?,B,B,True,hard,mechanism
+tb_fermentation_mcq_001,What was the total number of microbial taxa detected in the combined set of treatment-naive TB patients and healthy controls?,C,C,True,easy,factual
+tb_fermentation_mcq_002,Was gut community diversity (alpha-diversity) significantly reduced in treatment-naive TB patients?,B,B,True,easy,factual
+tb_fermentation_mcq_003,How many metabolic pathways showed differential enrichment between TB patients and controls?,B,B,True,easy,factual
+tb_fermentation_mcq_004,How many times faster does glycolysis generate biosynthetic precursors and ATP compared to other metabolic strategies?,C,C,True,medium,factual
+tb_fermentation_mcq_005,What is the normal pH range in the large intestine lumen and mucosal surface?,B,B,True,medium,factual
+tb_fermentation_mcq_006,Which bacterial species was described as the top TB-associated taxon but is poorly studied?,C,C,True,medium,factual
+tb_fermentation_mcq_007,Which immune cytokines does lactate markedly suppress in the context of TB infection?,B,B,True,medium,mechanism
+tb_fermentation_mcq_008,How many bacterial taxa (species and subclades) showed differential abundance between TB patients and controls according to LEfSe analysis?,C,C,True,hard,factual
+tb_fermentation_mcq_009,What is the primary mechanism by which higher glucose availability affects bacterial metabolism in TB patients' intestines?,C,C,True,hard,mechanism
+tb_fermentation_mcq_010,"According to the study, what is the proposed novel host-directed treatment target to augment traditional TB treatment?",B,B,True,hard,mechanism
+gi_microbiota_tb_mcq_001,What is tuberculosis ranked as in terms of causes of death globally?,C,C,True,easy,factual
+gi_microbiota_tb_mcq_002,What sequencing platform was used for 16S rDNA analysis in this study?,B,B,True,easy,factual
+gi_microbiota_tb_mcq_003,How many ASVs were depleted by HRZE treatment after 14 days?,B,C,False,easy,factual
+gi_microbiota_tb_mcq_004,How many trees were used in the Random Forest Regression models?,C,C,True,medium,factual
+gi_microbiota_tb_mcq_005,What was the PCoA component that accounted for the greatest variation in microbiome data after NTZ treatment?,B,B,True,medium,factual
+gi_microbiota_tb_mcq_006,How many TB-associated inflammatory genes renormalized with HRZE treatment?,C,C,True,medium,factual
+gi_microbiota_tb_mcq_007,At which timepoint during the 6-month longitudinal cohort did the most ASVs show increased abundance compared to baseline?,C,C,True,medium,factual
+gi_microbiota_tb_mcq_008,Which statistical method was used for differential analysis of microbial ASVs and host genes?,A,C,False,medium,factual
+gi_microbiota_tb_mcq_009,What is the significance of Clostridia Clusters IV and XIVa in the context of this study?,C,C,True,hard,mechanism
+gi_microbiota_tb_mcq_010,What was the main conclusion regarding the resolution of TB inflammatory state during treatment?,C,C,True,hard,mechanism
+tb_microbiome_mcq_001,What percentage of TB patients showed lung pathological symptoms by chest x-rays?,B,B,True,easy,factual
+tb_microbiome_mcq_002,Which sequencing platform was used for both bacterial 16S rRNA and fungal ITS analysis?,C,C,True,easy,factual
+tb_microbiome_mcq_003,What was the average number of bacterial ASVs (Amplicon Sequence Variants) per sample in TB patients?,D,D,True,easy,factual
+tb_microbiome_mcq_004,"In the trans-kingdom network of healthy controls, what was the ratio of fungi to bacteria nodes?",B,B,True,medium,factual
+tb_microbiome_mcq_005,What percentage of Ascomycota was found in TB patients versus healthy controls?,B,B,True,medium,factual
+tb_microbiome_mcq_006,What was the AUC (Area Under the Curve) for the combined bacterial and fungal biomarker set in diagnosing TB?,C,C,True,medium,factual
+tb_microbiome_mcq_007,Which metabolic pathway showed significantly increased levels in TB patients based on bacterial functional prediction?,C,C,True,medium,mechanism
+tb_microbiome_mcq_008,"According to the study, what is the primary mechanism by which Bacteroides may enhance TB susceptibility?",C,C,True,hard,mechanism
+tb_microbiome_mcq_009,What is the relationship between IL-17 levels and TB pathology according to the study?,C,C,True,hard,mechanism
+tb_microbiome_mcq_010,Which statement best describes the trans-kingdom interaction changes in TB patients?,C,C,True,hard,mechanism
+gut_mech_mcq_001,What is the approximate bacterial cell density in the colon?,D,D,True,easy,factual
+gut_mech_mcq_002,Which bacterial species was administered to metabolic syndrome subjects and increased duodenal expression of regenerating islet-protein 1B almost 10-fold?,C,C,True,medium,factual
+gut_mech_mcq_003,"Which bacterial phylum produces predominantly butyrate, while another produces mainly propionate?",A,A,True,medium,factual
+gut_mech_mcq_004,What are the two endogenous cannabinoid receptor types?,A,A,True,easy,factual
+gut_mech_mcq_005,Which two receptors are activated by bile acids and mediate their signaling effects?,C,C,True,medium,factual
+gut_mech_mcq_006,What is the adaptor protein essential for all Toll-like receptors except TLR3?,B,B,True,medium,factual
+gut_mech_mcq_007,How many times longer is colonic transit compared to small intestinal transit?,C,C,True,easy,factual
+gut_mech_mcq_008,Which bacterial metabolite from histidine impairs insulin signaling through the mTORC1-dependent pathway?,C,C,True,hard,factual
+gut_mech_mcq_009,What bioactive lipid was discovered to act on duodenal contractility through mu-opioid receptors and PPARγ to improve glucose metabolism?,C,C,True,hard,factual
+gut_mech_mcq_010,Which bacteria can convert trimethylamine (TMA) precursors into compounds that do NOT lead to TMAO?,B,B,True,hard,factual
+tb_microbiome_mcq_001,How many metabolic pathways showed differential enrichment between TB patients and healthy controls?,D,C,False,easy,factual
+tb_microbiome_mcq_002,What sequencing platform was used for 16S rDNA sequencing in this study?,B,B,True,easy,factual
+tb_microbiome_mcq_003,Approximately how many people die of tuberculosis globally each year according to the paper?,C,C,True,easy,factual
+tb_microbiome_mcq_004,Which bacterial genus is described as a Gram-negative anaerobe and one of the three dominant bacteria in the gut that is extensively found in the lower respiratory tract?,B,B,True,medium,factual
+tb_microbiome_mcq_005,What is the primary mechanism by which CD4+ T cells help regulate Mycobacterium tuberculosis?,C,C,True,medium,mechanism
+tb_microbiome_mcq_006,Which three bacterial taxa were most closely associated with IL-4 according to the correlation analysis?,B,B,True,medium,factual
+tb_microbiome_mcq_007,What does the CD4/CD8 ratio represent in terms of immune function?,B,B,True,medium,mechanism
+tb_microbiome_mcq_008,"How many ASVs (Amplicon Sequence Variants) were obtained after quality control filtering, and what percentage were classified according to their genus?",A,C,False,medium,factual
+tb_microbiome_mcq_009,"According to the paper, what is the relationship between decreased CD4+ T cell levels and tuberculosis progression?",C,C,True,hard,mechanism
+tb_microbiome_mcq_010,What complex mechanism links gut microbiome dysbiosis to increased susceptibility to respiratory infections like tuberculosis?,B,B,True,hard,mechanism
+mdr_tb_microbiome_mcq_001,What is the minimum duration for MDR-TB treatment according to the study?,C,C,True,easy,factual
+mdr_tb_microbiome_mcq_002,How long after discontinuing MDR-TB treatment were the recovered patients studied?,C,C,True,easy,factual
+mdr_tb_microbiome_mcq_003,What sequencing method was used to analyze gut microbiota in this study?,C,B,False,easy,factual
+mdr_tb_microbiome_mcq_004,What percentage of gut bacteria abundance can be altered by broad-spectrum antibiotic use according to the literature cited?,B,C,False,medium,factual
+mdr_tb_microbiome_mcq_005,Which phylum was identified as a biomarker in BOTH the treated and recovered groups?,B,B,True,medium,factual
+mdr_tb_microbiome_mcq_006,What was the p-value for the difference in Shannon evenness between the recovered group and its control?,A,C,False,medium,factual
+mdr_tb_microbiome_mcq_007,"According to the study, what percentage does gut microbiota contribute to the variation in blood lipids?",B,B,True,medium,factual
+mdr_tb_microbiome_mcq_008,Which bacterial genus is described as a major producer of butyrate that correlates with TC levels?,C,C,True,hard,mechanism
+mdr_tb_microbiome_mcq_009,What happens to gut microbiota after disturbance cessation according to resilience theory?,C,C,True,hard,mechanism
+mdr_tb_microbiome_mcq_010,What is the relationship between TMAO production and cholesterol metabolism?,B,B,True,hard,mechanism
+mali_tb_mcq_001,What sequencing platform was used for shotgun metagenomics of the gut microbiome in this study?,A,B,False,easy,factual
+mali_tb_mcq_002,How many deaths from TB were reported globally in 2022 according to the paper?,B,B,True,easy,factual
+mali_tb_mcq_003,What was the mean age of TB patients in this study?,C,C,True,easy,factual
+mali_tb_mcq_004,"How many taxa across taxonomic levels from phylum to species increased with time in TB patients, and how many decreased?",B,B,True,medium,factual
+mali_tb_mcq_005,How many metabolites were significantly different between TB_M0 and TB_M6?,C,C,True,medium,factual
+mali_tb_mcq_006,Which of the following best describes the study's findings about beta-diversity?,B,B,True,medium,mechanism
+mali_tb_mcq_007,What were the seven cytokines measured in this study using the Human Th1/Th2/Th17 kit?,B,B,True,medium,factual
+mali_tb_mcq_008,What was the average number of sequencing reads per sample obtained in this study?,C,C,True,medium,factual
+mali_tb_mcq_009,"According to the PERMANOVA test results, which time points showed significant differences from healthy controls in terms of gut microbiota composition?",B,C,False,hard,mechanism
+mali_tb_mcq_010,What is the significance of the study's findings regarding the persistence of gut microbiota alterations nine months after TB treatment completion?,B,B,True,hard,mechanism
+ptb_microbiome_mcq_001,How many high-quality reads were generated in total from the 16S rRNA gene sequencing?,B,B,True,easy,factual
+ptb_microbiome_mcq_002,What was the average albumin level in PTB patients compared to healthy controls?,B,B,True,easy,factual
+ptb_microbiome_mcq_003,Which database was used for taxonomic annotation of OTU representative sequences?,B,C,False,easy,factual
+ptb_microbiome_mcq_004,"At the family level, which of the following showed increased abundance in PTB patients?",B,B,True,medium,factual
+ptb_microbiome_mcq_005,How many unique OTUs were found exclusively in PTB patients versus healthy controls according to the Venn diagram?,B,A,False,medium,factual
+ptb_microbiome_mcq_006,"According to LEfSe analysis, which genus was enriched in healthy controls with the highest significance?",D,D,True,medium,factual
+ptb_microbiome_mcq_007,What correlation pattern was observed between glucose levels and gut microbiota?,A,B,False,medium,mechanism
+ptb_microbiome_mcq_008,Which biochemical parameter showed NO statistical difference between PTB patients and healthy controls?,C,C,True,medium,factual
+ptb_microbiome_mcq_009,What is the proposed mechanism connecting Erysipelatoclostridium enrichment to PTB pathology?,B,B,True,hard,mechanism
+ptb_microbiome_mcq_010,"Based on the study's findings, which intervention strategy is most supported for PTB management?",B,B,True,hard,mechanism
+tb_microbiome_mcq_001,Which database was used for metabolic pathway annotation in the functional profiling analysis?,B,B,True,easy,factual
+tb_microbiome_mcq_002,What was the NCBI accession number for the metagenomic sequencing data?,A,A,True,easy,factual
+tb_microbiome_mcq_003,How many differentially enriched species were found between TB patients and healthy controls (FDR<0.1)?,C,C,True,easy,factual
+tb_microbiome_mcq_004,What filtering criteria were used for metagenomic SNP calling regarding genome coverage and sequencing depth?,B,B,True,medium,factual
+tb_microbiome_mcq_005,Which three species were selected as optimal markers in the random forest model?,B,B,True,medium,factual
+tb_microbiome_mcq_006,How many metabolic pathways were enriched in healthy controls versus TB patients?,A,A,True,medium,factual
+tb_microbiome_mcq_007,What was the P-value for NMDS analysis at axis 2 distinguishing controls from patients?,B,B,True,medium,factual
+tb_microbiome_mcq_008,Which tool was used for metagenomic SNP calling and strain profiling?,C,C,True,medium,factual
+tb_microbiome_mcq_009,What is the proposed mechanism by which decreased SCFA-producing bacteria might affect TB pathogenesis?,C,C,True,hard,mechanism
+tb_microbiome_mcq_010,"Based on the B. vulgatus SNP analysis, what was the primary functional category affected by differentially distributed SNPs?",C,C,True,hard,mechanism
+crc_microbiome_mcq_001,How many countries were represented in the 18 cohorts analyzed in this study?,D,B,False,easy,factual
+crc_microbiome_mcq_002,What percentage of CRC-associated oral SGBs were found at the q < 0.05 threshold?,C,C,True,easy,factual
+crc_microbiome_mcq_003,Which metabolite was specifically associated with stage IV CRC and confirmed previous findings?,A,C,False,easy,factual
+crc_microbiome_mcq_004,What improvement in CRC prediction did the study achieve compared to previous meta-analyses using the LODO approach?,B,B,True,medium,factual
+crc_microbiome_mcq_005,How many species showed differential strain phylogenies associated with metastatic CRC?,C,C,True,medium,factual
+crc_microbiome_mcq_006,Which of the following best describes the relationship between adenoma and CRC microbiomes compared to controls?,C,C,True,medium,mechanism
+crc_microbiome_mcq_007,What was the key finding regarding colibactin and fragilysin genes in CRC?,B,B,True,medium,mechanism
+crc_microbiome_mcq_008,Which oral-typical species was significantly associated with late-stage CRC but NOT with early-stage CRC?,B,D,False,medium,factual
+crc_microbiome_mcq_009,What was the correlation between machine learning feature importance and meta-analysis effect sizes for the control vs CRC comparison?,B,B,True,hard,factual
+crc_microbiome_mcq_010,"Based on the carbon-nitrogen lyase gene carriage analysis, which species were identified as contributing to ammonia production in the CRC ecosystem?",B,B,True,hard,mechanism
+crc_microbiota_mcq_001,What percentage of patients with colorectal cancer have MSI-high disease that responds to immune checkpoint inhibitors?,B,B,True,easy,factual
+crc_microbiota_mcq_002,Which bacterial adhesin from Fusobacterium nucleatum binds to E-cadherin and activates β-catenin signalling?,B,B,True,easy,factual
+crc_microbiota_mcq_003,What is the primary mechanism by which butyrate exerts its anticancer effects?,B,B,True,easy,mechanism
+crc_microbiota_mcq_004,Which genotoxin produced by pks+ E. coli causes DNA damage through formation of DNA adducts and crosslinks?,B,B,True,medium,factual
+crc_microbiota_mcq_005,What is the mechanism by which secondary bile acids promote colorectal tumorigenesis?,C,C,True,medium,mechanism
+crc_microbiota_mcq_006,How does enterotoxigenic Bacteroides fragilis primarily promote colorectal tumorigenesis?,B,B,True,medium,mechanism
+crc_microbiota_mcq_007,What distinguishes the mycobiome profile in patients with CRC compared to healthy individuals?,B,B,True,medium,factual
+crc_microbiota_mcq_008,Which approach shows the LEAST promise for improving immune checkpoint inhibitor efficacy in colorectal cancer based on current evidence?,D,D,True,hard,comparison
+crc_microbiota_mcq_009,What is the most significant limitation in using faecal microbial markers for colorectal cancer screening compared to traditional methods?,C,C,True,hard,comparison
+crc_microbiota_mcq_010,Which mechanism BEST explains how the gut microbiota enhances oxaliplatin efficacy in colorectal cancer treatment?,B,B,True,hard,mechanism
+crc_biomarkers_mcq_001,What percentage of CRC patients in the Korean cohort had Prevotella detected in their gut microbiota?,C,C,True,easy,factual
+crc_biomarkers_mcq_002,Which variable region of the 16S rRNA gene was amplified for sequencing in this study?,C,C,True,easy,factual
+crc_biomarkers_mcq_003,What was the sampling size used for rarefaction to make library sizes even across samples?,D,B,False,easy,factual
+crc_biomarkers_mcq_004,"According to the study, which blood parameter levels were significantly elevated in enterotype 1 compared to enterotype 2?",C,B,False,medium,factual
+crc_biomarkers_mcq_005,What was the concordance index (C-index) of the M5 score when tested on 1000 random subsamples?,C,C,True,medium,factual
+crc_biomarkers_mcq_006,How many amplicon sequence variants (ASVs) were retrieved from the total read counts in this study?,B,B,True,medium,factual
+crc_biomarkers_mcq_007,"According to the REMARK criteria and the 'minimum events per predictor' rule, what was satisfied in this study for progression-free survival analysis?",B,B,True,medium,factual
+crc_biomarkers_mcq_008,Which phylogenetic/taxonomic tool was used to infer metagenomic capacity from 16S rRNA data?,B,B,True,medium,factual
+crc_biomarkers_mcq_009,What was the relationship between the two Alistipes species (A. dispar and A. senegalensis) that were assigned to Bacteroides sp. by the SILVA 138 database?,C,C,True,hard,mechanism
+crc_biomarkers_mcq_010,What was the primary advantage of using the M5 microbial hazard score in clinical practice according to the study's conclusions?,B,B,True,hard,mechanism
+t2d_microbiome_mcq_001,How many countries were represented in the 10 cohorts analyzed in this study?,A,D,False,easy,factual
+t2d_microbiome_mcq_002,What percentage of identified microbial species were present in all 10 included cohorts ('universal species')?,B,B,True,easy,factual
+t2d_microbiome_mcq_003,Which bacterial species was identified as enriched in T2D patients and produces immunogenic fragilysin?,B,B,True,easy,factual
+t2d_microbiome_mcq_004,How many species showed within-species phylogenetic divergence associated with inter-individual differences in T2D risk?,C,C,True,medium,factual
+t2d_microbiome_mcq_005,What was the Spearman correlation coefficient demonstrating the effectiveness of controlling for metformin confounding?,A,D,False,medium,factual
+t2d_microbiome_mcq_006,What is the relationship between Prevotella copri clade A dominance and BCAA biosynthesis capacity?,B,B,True,medium,mechanism
+t2d_microbiome_mcq_007,Which phylogenetic analysis approach was used to identify subspecies-level associations with T2D?,B,B,True,medium,factual
+t2d_microbiome_mcq_008,"According to PERMANOVA analysis, what explained the largest proportion of variation in microbiome composition among the tested factors?",A,D,False,medium,factual
+t2d_microbiome_mcq_009,What is the primary mechanism by which horizontal gene transfer (HGT) contributes to strain-level variation in T2D-associated microbes?,B,B,True,hard,mechanism
+t2d_microbiome_mcq_010,What is the significance of identifying both population-specific and population-agnostic strain associations with T2D?,B,B,True,hard,mechanism
+gut_diabetes_mcq_001,What is the approximate optimal sample size for replicable results in gut microbiome studies according to the large Israeli and US study?,A,C,False,easy,factual
+gut_diabetes_mcq_002,What percentage of patients with irritable bowel syndrome have a positive clinical response to a low-FODMAP diet?,B,B,True,easy,factual
+gut_diabetes_mcq_003,What percentage of colonic butyrate reaches the systemic circulation after hepatic metabolism?,A,A,True,easy,factual
+gut_diabetes_mcq_004,Which of the following mechanisms is NOT described as a way SCFAs contribute to glucose homeostasis?,C,C,True,medium,mechanism
+gut_diabetes_mcq_005,What is the mechanism by which bacterial DPP-4 homologues might affect the efficacy of glucose-lowering drugs?,B,B,True,medium,mechanism
+gut_diabetes_mcq_006,"According to the paper, which statement about bile acids in type 2 diabetes is correct?",B,B,True,medium,factual
+gut_diabetes_mcq_007,What is metabolic endotoxemia and how does it contribute to diabetes pathophysiology?,B,B,True,medium,mechanism
+gut_diabetes_mcq_008,Why is strain-level resolution important in microbiome research according to the paper?,B,B,True,hard,mechanism
+gut_diabetes_mcq_009,What are the key limitations and considerations for fecal microbiota transplantation (FMT) studies in diabetes according to the expert forum?,B,B,True,hard,comparison
+gut_diabetes_mcq_010,Which of the following represents the MOST significant knowledge gap in gut microbiota research for diabetes according to the expert forum?,B,B,True,hard,comparison
+gut_health_mcq_001,Approximately how many microbial species form the gut microbiota community?,C,C,True,easy,factual
+gut_health_mcq_002,What is the approximate number of microbes living on and inside the human body?,D,D,True,easy,factual
+gut_health_mcq_003,Which enzyme does gut microbiota suppress to promote obesity-related fat accumulation?,B,B,True,medium,factual
+gut_health_mcq_004,Which bacterial species has been found to have a beneficial role in regulating blood pressure?,B,B,True,medium,factual
+gut_health_mcq_005,What is the global prevalence of obesity as reported in the paper?,A,C,False,easy,factual
+gut_health_mcq_006,Which bacterial species was found in greater abundance in patients with prostate cancer?,C,C,True,medium,factual
+gut_health_mcq_007,What happens to gut microbiota diversity during intermittent fasting?,C,C,True,hard,factual
+gut_health_mcq_008,"According to the paper, by what year is the number of diabetic patients predicted to exceed 700 million globally?",D,D,True,medium,factual
+gut_health_mcq_009,Which of the following is NOT mentioned as a beneficial function of gut microbiota?,C,C,True,medium,factual
+gut_health_mcq_010,What type of diet has been shown to increase beneficial bacteria like Bifidobacterium and butyrate-producing bacteria?,C,C,True,hard,factual
+diabetes_ml_mcq_001,What data source did the study use for obtaining gut microbiome metagenomic data?,B,B,True,easy,factual
+diabetes_ml_mcq_002,What percentage split was used for training and testing the machine learning models?,C,B,False,easy,factual
+diabetes_ml_mcq_003,What tool was used for taxonomic classification of sOTU features?,B,B,True,easy,factual
+diabetes_ml_mcq_004,Which machine learning model achieved the highest AUC for diabetes status screening with 500 features and adjusted threshold?,C,C,True,medium,factual
+diabetes_ml_mcq_005,What statistical method was used to identify enriched bacterial taxa between groups?,B,B,True,medium,factual
+diabetes_ml_mcq_006,Why did the study use high-variance sOTU features rather than enriched taxa for training ML models?,C,C,True,medium,mechanism
+diabetes_ml_mcq_007,What is the primary advantage of using repeated k-fold cross-validation over simple train-test split?,B,B,True,medium,mechanism
+diabetes_ml_mcq_008,"According to the study, what is a key limitation in applying gut microbiome-based ML models for diabetes screening in real clinical settings?",B,B,True,medium,mechanism
+diabetes_ml_mcq_009,What phenomenon explains why models trained with 1000 features showed high specificity but low sensitivity?,C,C,True,hard,mechanism
+diabetes_ml_mcq_010,"Based on the study's findings, what would be the most critical improvement needed for developing clinically applicable diabetes typing models?",C,C,True,hard,mechanism
+diet_microbiome_mcq_001,What is the ratio of fat to the sum of protein and carbohydrates in a traditional long-chain triglyceride ketogenic diet?,C,C,True,easy,factual
+diet_microbiome_mcq_002,How many carbohydrate-active enzymes (CAZymes) do humans produce for carbohydrate degradation?,A,B,False,medium,factual
+diet_microbiome_mcq_003,How much dietary protein can reach the large intestine daily to be metabolized by the microbiome?,C,C,True,medium,factual
+diet_microbiome_mcq_004,What percentage of the world's population lives in Europe or North America according to the paper?,C,C,True,easy,factual
+diet_microbiome_mcq_005,What is the prevalence of P. copri in individuals with a Western lifestyle versus non-Western lifestyle?,A,A,True,medium,factual
+diet_microbiome_mcq_006,What percentage of patients with irritable bowel syndrome have a positive clinical response to a low-FODMAP diet?,C,C,True,medium,factual
+diet_microbiome_mcq_007,How many bacterial species were found in gut microbiomes of Hadza individuals using ultra-deep metagenomic sequencing?,D,D,True,hard,factual
+diet_microbiome_mcq_008,Which of the following is NOT a component of the Mediterranean diet emphasized in the paper?,C,C,True,easy,factual
+diet_microbiome_mcq_009,What is TMAO and how is it related to cardiovascular disease?,B,B,True,medium,mechanism
+diet_microbiome_mcq_010,"According to the paper, which bacterial species is associated with colorectal cancer development?",C,C,True,hard,factual
+microbiota_health_mcq_001,What is the approximate number of microorganisms that gather in the human gastrointestinal tract?,C,C,True,easy,factual
+microbiota_health_mcq_002,"Which bacterial species produces lugdunin, an inhibitor of nasal colonization with S. aureus?",B,B,True,easy,factual
+microbiota_health_mcq_003,What percentage of the genome sequences are conserved between human and mouse?,D,D,True,easy,factual
+microbiota_health_mcq_004,"In the METS-Microbiome study, what was the prevalence of Prevotella enterotype in Ghana compared to the United States?",B,A,False,medium,factual
+microbiota_health_mcq_005,What is the reported cure rate of fecal microbiota transplantation (FMT) for recurrent Clostridium difficile infection?,C,C,True,medium,factual
+microbiota_health_mcq_006,Which mechanism does NOT explain how gut microbiota contributes to Type 2 diabetes mellitus?,D,D,True,medium,mechanism
+microbiota_health_mcq_007,"According to the paper, how many bacterial species were found in Hadza individuals' gut microbiomes using ultra-deep metagenomic sequencing?",D,D,True,medium,factual
+microbiota_health_mcq_008,Which of the following best describes the relationship between periodontitis and cardiovascular disease risk?,B,B,True,medium,mechanism
+microbiota_health_mcq_009,"In chronic kidney disease patients, which gut-derived uremic toxin levels can reach approximately 200-fold higher than another related metabolite?",B,B,True,hard,factual
+microbiota_health_mcq_010,What is the primary mechanism by which Fusobacterium nucleatum promotes colorectal cancer progression?,B,B,True,hard,mechanism
+microbiome_health_mcq_001,What is the estimated number of bacterial genes in the human microbiome compared to human genes?,D,C,False,easy,factual
+microbiome_health_mcq_002,Which bacterial genus is most abundant on adult human skin at sebum-rich sites?,B,B,True,easy,factual
+microbiome_health_mcq_003,What is the dominant genus in the vaginal microbiome of healthy women?,C,C,True,easy,factual
+microbiome_health_mcq_004,What percentage of women in North America possess vaginal microbiomes that are NOT dominated by Lactobacillus?,B,B,True,medium,factual
+microbiome_health_mcq_005,Which bacteria is associated with the development of dental caries by creating a low pH environment through acid production?,B,B,True,medium,mechanism
+microbiome_health_mcq_006,What is the primary reason the small intestine has a lower bacterial population compared to the large intestine?,C,C,True,medium,mechanism
+microbiome_health_mcq_007,"In irritable bowel syndrome (IBS) patients, what changes in the Firmicutes to Bacteroidetes ratio are typically observed?",B,B,True,medium,factual
+microbiome_health_mcq_008,How do commensal bacteria prevent pathogenic colonization in the gut?,C,C,True,medium,mechanism
+microbiome_health_mcq_009,Which of the following statements BEST describes the relationship between skin microbiome stability and anatomical location?,A,A,True,hard,comparison
+microbiome_health_mcq_010,"Which mechanism explains why Propionibacterium acnes, present in almost all adults, only causes acne in a minority of people?",B,B,True,hard,mechanism
+fiber_microbiota_mcq_001,"According to the Codex Alimentarius commission, what is the minimum number of monomeric units required for a carbohydrate polymer to be classified as dietary fiber?",B,B,True,easy,factual
+fiber_microbiota_mcq_002,How quickly can gut microbiota composition change in response to dramatic changes in macronutrient composition?,C,B,False,easy,factual
+fiber_microbiota_mcq_003,What is the estimated amount of dietary fiber consumed daily by our ancestors before the advent of agriculture?,C,D,False,easy,factual
+fiber_microbiota_mcq_004,Which of the following best describes the relationship between fiber fermentation and protein fermentation in the gut?,C,C,True,medium,mechanism
+fiber_microbiota_mcq_005,What effect did 1% inulin supplementation have on mice fed a Western diet?,B,B,True,medium,mechanism
+fiber_microbiota_mcq_006,Which bacterial phyla are the main responders to dietary fiber?,C,B,False,medium,factual
+fiber_microbiota_mcq_007,What percentage of patients with irritable bowel syndrome have a positive clinical response to a low-fiber diet according to the paper?,D,D,True,medium,factual
+fiber_microbiota_mcq_008,What microbial functions were enriched in the gut microbiome of Malawian and Venezuelan infants compared to US infants?,B,B,True,medium,comparison
+fiber_microbiota_mcq_009,"How does ferulic acid (FA), released through microbial metabolism of dietary fibers, benefit health?",C,C,True,hard,mechanism
+fiber_microbiota_mcq_010,What was the result of moving African Americans to an 'African-style' diet with 55g fiber for 2 weeks in the O'Keefe study?,B,B,True,hard,factual
+antibiotic_microbiome_mcq_001,What is the typical timeframe for observing acute decline in alpha diversity after antibiotic treatment in healthy adults?,B,B,True,easy,factual
+antibiotic_microbiome_mcq_002,Which of the following is NOT listed as one of the most dangerous microbial threats by the CDC in 2019?,D,D,True,easy,factual
+antibiotic_microbiome_mcq_003,What percentage of the world's population lives in regions (USA and Europe) that produce over 70% of published human microbiome data?,C,C,True,easy,factual
+antibiotic_microbiome_mcq_004,"In the preterm infant study, how much of the variance in species richness could be explained by only six predictors?",B,B,True,medium,factual
+antibiotic_microbiome_mcq_005,Which mechanism of horizontal gene transfer is described as the best-studied form for ARG transfer?,C,C,True,medium,factual
+antibiotic_microbiome_mcq_006,How does oral versus intravenous administration of antibiotics affect the resistome in mice?,C,C,True,medium,comparison
+antibiotic_microbiome_mcq_007,What is SER-109 and what is it composed of?,B,B,True,medium,factual
+antibiotic_microbiome_mcq_008,"In comparative studies, which antibiotic was associated with delayed community recovery following treatment?",C,C,True,medium,comparison
+antibiotic_microbiome_mcq_009,What property of vancomycin may explain its superior ability to perturb the microbiome compared to other antibiotics?,B,B,True,hard,mechanism
+antibiotic_microbiome_mcq_010,"According to the paper, what is a critical consideration for developing narrow-spectrum therapies based on drug combinations?",B,B,True,hard,mechanism
+ibd_metabolomics_015,,A,NAN,False,hard,mechanism
+ibd_metabolomics_mcq_001,What was the total size of the study cohort including all groups?,B,B,True,easy,factual
+ibd_metabolomics_mcq_002,Which analytical software was used for mass spectral deconvolution and identification?,B,B,True,easy,factual
+ibd_metabolomics_mcq_003,What primers were used for 16S rRNA gene amplification in this study?,A,B,False,easy,factual
+ibd_metabolomics_mcq_004,Which bacterial phylum showed significant depletion across all IBD groups compared to controls?,C,C,True,medium,factual
+ibd_metabolomics_mcq_005,What was the key finding regarding Bacteroidota abundance in pediatric vs adult IBD patients?,B,B,True,medium,comparison
+ibd_metabolomics_mcq_006,Which metabolite showed an inverse correlation with Escherichia coli abundance in pediatric CD patients?,B,B,True,medium,mechanism
+ibd_metabolomics_mcq_007,What statistical method was used to identify differentially abundant microbial species?,B,B,True,medium,factual
+ibd_metabolomics_mcq_008,How did the study handle missing values in the metabolomic data?,C,C,True,medium,mechanism
+ibd_metabolomics_mcq_009,Which combination of genera showed significant enrichment specifically in the UC pediatric group?,C,B,False,hard,factual
+ibd_metabolomics_mcq_010,What was the key mechanistic finding regarding Akkermansia in IBD patients?,C,C,True,hard,mechanism
+ag1_mcq_001,"What percentage of US adults reported using non-food prebiotic, probiotic, or synbiotic products according to the cross-sectional data cited in this study?",B,B,True,easy,factual
+ag1_mcq_002,What was the Bristol stool chart score range considered to represent normal stools?,C,C,True,easy,factual
+ag1_mcq_003,"How many items does the Digestion-associated Quality of Life Questionnaire (DQLQ) contain, and what does a higher score indicate?",B,B,True,easy,factual
+ag1_mcq_004,What LDA score threshold was applied in the LEfSe analysis to report key biomarker taxa in this study?,D,C,False,medium,methodology
+ag1_mcq_005,Which taxon was significantly diminished in the AG1® group following 4 weeks of supplementation?,B,B,True,medium,factual
+ag1_mcq_006,What statistical method was used to visualize beta diversity in taxonomic abundances and functional pathways in this study?,B,B,True,medium,methodology
+ag1_mcq_007,Approximately what percentage of the microbiome community structure variation was explained by the individual donor effect in this study?,C,C,True,medium,factual
+ag1_mcq_008,What power level did the study achieve based on the observed effect size from the DQLQ outcome?,D,D,True,medium,methodology
+ag1_mcq_009,Which of the following best describes why the enrichment of L. acidophilus and B. bifidum in the AG1® group carries particular significance beyond simple taxonomic change?,B,B,True,hard,mechanism
+ag1_mcq_010,"Which of the following most accurately characterizes the difference between the AG1® and placebo groups in terms of functional pathway changes, and what is the best interpretation of this finding?",B,B,True,hard,comparison
+asd_microbiome_mcq_001,What is the human-to-bacterial cell ratio in the human body?,B,B,True,easy,factual
+asd_microbiome_mcq_002,At what rate do gastrointestinal symptoms occur in ASD children according to the paper?,B,B,True,easy,factual
+asd_microbiome_mcq_003,How many times higher is the number of gut microbial composition genes compared to the whole human genome?,C,C,True,easy,factual
+asd_microbiome_mcq_004,What percentage of vagal fibers between the brain and gut are afferent (transmitting signals from gut to brain)?,D,D,True,medium,factual
+asd_microbiome_mcq_005,Which microbial metabolite is a potent inhibitor of histone deacetylases and thus plays a key role in epigenetic regulation?,C,C,True,medium,mechanism
+asd_microbiome_mcq_006,"In the Hsiao et al. maternal immune activation (MIA) mouse study, which bacterial treatment restored gut permeability and reduced ASD-like defects in offspring?",C,C,True,medium,mechanism
+asd_microbiome_mcq_007,What characteristic phyla ratio imbalance has been most frequently observed in the gut microbiota of ASD patients?,B,B,True,medium,factual
+asd_microbiome_mcq_008,What percentage of ASD participants showed improvement in GI symptoms after Microbiota Transfer Therapy (MTT) in the clinical study referenced by the paper?,C,C,True,medium,factual
+asd_microbiome_mcq_009,Which of the following best describes the role of GABA in ASD pathophysiology?,B,B,True,medium,mechanism
+asd_microbiome_mcq_010,"In the probiotic intervention study by Tomova et al., which outcome was observed in ASD participants after supplementation with a mixture of Lactobacillus, Bifidumbacteria, and Streptococcus strains?",B,B,True,hard,mechanism
+asd_microbiome_mcq_011,Which fungal species found more frequently in ASD children's guts can regulate immune function by activating TLR ligands and increasing TNF-α and IL-6 production?,C,C,True,hard,mechanism
+bgm_asd_mcq_001,During which critical period of life is gut microbiota development considered most foundational for establishing a healthy and protective microbiome?,C,C,True,easy,factual
+bgm_asd_mcq_002,"Which gut bacterium, when administered orally to maternal immune activation (MIA) mouse offspring, corrected gut permeability and ameliorated atypical anxiety, communicative, repetitive, and sensorimotor behaviors?",C,C,True,easy,factual
+bgm_asd_mcq_003,"In Golubeva et al.'s study of BTBR mice (a validated ASD model), how many of the identified gut bacterial genera showed altered relative abundance levels?",D,B,False,easy,factual
+bgm_asd_mcq_004,What percentage of dietary tryptophan is oxidized and degraded along the kynurenine (KYN) pathway?,D,D,True,medium,factual
+bgm_asd_mcq_005,"In Bryn et al.'s study on the kynurenine pathway in ASD children, which of the following patterns was observed compared to typically developing children?",B,B,True,medium,factual
+bgm_asd_mcq_006,Where is the majority of the body's serotonin (>90%) synthesized?,B,B,True,medium,mechanism
+bgm_asd_mcq_007,"In Tillisch et al.'s study on healthy women, what structural brain finding was associated with greater Prevotella abundance in gut microbiota?",C,C,True,medium,mechanism
+bgm_asd_mcq_008,What did the Fernández-Real et al. study on obese and non-obese participants find regarding Actinobacteria abundance and brain structure?,B,B,True,medium,mechanism
+bgm_asd_mcq_009,Which of the following best explains why the lack of consensus in gut microbiota findings in ASD is difficult to resolve?,C,C,True,medium,factual
+bgm_asd_mcq_010,"In a PET study by Andersson et al., where was serotonin transporter availability found to be lower in adults with ASD compared to matched controls, and what behavioral correlate was identified?",B,B,True,hard,mechanism
+ccfm1025_mdd_mcq_001,What score threshold on the HDRS-24 was used to identify patients as having MDD in this study?,C,C,True,easy,factual
+ccfm1025_mdd_mcq_002,What was the study design of the CCFM1025 clinical trial?,B,B,True,easy,factual
+ccfm1025_mdd_mcq_003,What percentage of the body's serotonin is synthesized in the gut?,D,D,True,easy,factual
+ccfm1025_mdd_mcq_004,Which method was used for gut microbiome sequencing in this study?,B,B,True,medium,factual
+ccfm1025_mdd_mcq_005,"Which serum inflammatory markers were measured in this study, and what was the result?",B,B,True,medium,factual
+ccfm1025_mdd_mcq_006,What are the top three core taxa identified in the gut microbiome of the study cohort?,C,B,False,medium,factual
+ccfm1025_mdd_mcq_007,"In the CCFM1025 group, which tryptophan metabolite had the highest degree (most connections to other nodes) in the DSPC network analysis linking gut changes to psychiatric symptoms?",C,C,True,medium,mechanism
+ccfm1025_mdd_mcq_008,"What was the calculated sample size per group required for the study, and what assumption about dropout rate was made?",C,C,True,medium,factual
+ccfm1025_mdd_mcq_009,"Why can peripheral tryptophan and 5-HTP affect brain serotonin levels, while serotonin itself cannot? What is the implication for psychobiotic therapy?",B,B,True,hard,mechanism
+ccfm1025_mdd_mcq_010,"Regarding gut microbial beta diversity, what statistical method was used to assess group differences, and what was the conclusion?",B,B,True,hard,mechanism
+hrgm2_mcq_001,How many NC-genome species does HRGM2 add that are not found in UHGG?,C,C,True,easy,factual
+hrgm2_mcq_002,What percentage of healthy human gut samples analyzed in the benchmarking study contained more than 600 species?,C,D,False,easy,factual
+hrgm2_mcq_003,What percentage of short-read MAGs in HRGM2 met high-quality (HQ) criteria (requiring rRNAs and ≥18 of 20 amino acid tRNAs)?,A,A,True,easy,factual
+hrgm2_mcq_004,"In the metabolic independence framework used in HRGM2, a species is classified as High Metabolic Independence (HMI) if it possesses what proportion of the 33 KEGG modules?",D,D,True,medium,factual
+hrgm2_mcq_005,"Which of the following tools was used to reconstruct genome-scale metabolic models (GEMs) for the 4,824 representative species genomes in HRGM2?",C,C,True,medium,factual
+hrgm2_mcq_006,By how many fold did HRGM2 increase African genome representation compared to UHGG and HRGM1?,C,C,True,medium,factual
+hrgm2_mcq_007,What GUNC clade separation score (CSS) threshold was used to exclude chimeric genomes from HRGM2?,C,C,True,medium,factual
+hrgm2_mcq_008,"According to the species-specific marker gene analysis, for what proportion of HRGM2 species could markers NOT be identified?",C,B,False,medium,factual
+hrgm2_mcq_009,"In the analysis of 499,500 pairwise metabolic interactions among the top 1,000 prevalent gut species, what is the Pearson correlation coefficient between MRO (competition) and MIP (cooperation) scores?",C,C,True,hard,mechanism
+hrgm2_mcq_010,"When comparing conspecific MQ and NC representative genome pairs, what percentage of NC genome content was absent from the corresponding MQ genomes?",C,C,True,hard,mechanism
+ibd_meta_mcq_001,Which tool was used to identify biosynthetic gene clusters (BGCs) from assembled metagenomic scaffolds in this study?,B,B,True,easy,factual
+ibd_meta_mcq_002,How many BGCs were found to be significantly enriched in Crohn's disease (CD) compared to healthy controls in the meta-analysis?,C,C,True,easy,factual
+ibd_meta_mcq_003,What percentage of identified BGCs in this study mapped to known sequenced genomes in the NCBI RefSeq database?,C,B,False,easy,factual
+ibd_meta_mcq_004,What structural feature distinguishes N-Acetyl-Palmitoleoyl-Putrescine (NAPeP) from N-Acetyl-Palmitoyl-Putrescine (NAPP)?,C,C,True,medium,factual
+ibd_meta_mcq_005,"In the HMP2-IBDMDB metatranscriptomic analysis, what percentage of CD subjects showed active expression of ebf or ecf?",D,D,True,medium,factual
+ibd_meta_mcq_006,"What functional domain architecture does the ecf BGC encode, and what role does the adenylation (A) domain play?",B,B,True,medium,mechanism
+ibd_meta_mcq_007,What was the key finding regarding tight junction proteins in colonic tissues of ecf+ mice in both the DSS and IL-10-deficient colitis models?,D,D,True,medium,mechanism
+ibd_meta_mcq_008,What statistical method was primarily used to calculate the enrichment of BGCs across multiple independent cohorts while minimizing batch effects?,C,C,True,medium,mechanism
+ibd_meta_mcq_009,The ebf and ecf BGCs share 92% identity at the DNA level. What were the FDR-adjusted p-values and effect sizes reported for their enrichment in CD versus healthy controls in the overall meta-analysis?,B,B,True,hard,factual
+ibd_meta_mcq_010,Which of the following best explains why the authors argue that their approach is superior to purely taxonomic microbiome studies when studying disease associations?,B,B,True,hard,mechanism
+mim_mcq_001,How many dietary proteins with at least one unique peptide did MIM detect in feces of normal chow-fed naive SPF mice?,B,B,True,easy,factual
+mim_mcq_002,"In the step-up peanut consumption trial, MIM was able to detect peanut exposure through how many distinct peanut proteins?",C,C,True,easy,factual
+mim_mcq_003,What is the term coined by the authors for the integrated simultaneous proteo-genomic recording of host-microbiome-diet signals described in this study?,B,B,True,easy,factual
+mim_mcq_004,What sequence coverage threshold for protein sequences was applied in the MIM metagenomic filtration pipeline to retain proteins in the reference database?,C,C,True,medium,factual
+mim_mcq_005,"In the in silico validation using a synthetic community of 40 gut-residing bacterial species, what percentage of bacterial species and protein sequences did MIM correctly identify?",C,C,True,medium,factual
+mim_mcq_006,"In the HMP Cincinnati cohort, which CD patient subgroup showed significantly higher total fecal dietary protein abundance compared with healthy controls, and what does this implicate?",B,B,True,medium,mechanism
+mim_mcq_007,"Which bacterial species showed nicotinate and nicotinamide metabolism as significantly enriched in the GER-UC cohort, consistent with prior descriptions in ulcerative colitis?",B,C,False,medium,factual
+mim_mcq_008,What effect did supplementing the MIM protein database with random bacterial protein sequences from metagenomically undetected species have on analytical performance?,B,B,True,medium,mechanism
+mim_mcq_009,"In the DSS colitis mouse model, what specific pattern was observed for Eubacterium plexicaudatum that exemplifies 'functional dysbiosis'?",B,B,True,hard,mechanism
+mim_mcq_010,"When germ-free mice were colonized with microbiomes from GER-UC patients versus healthy controls, which best describes the outcome in naive GF recipients?",C,C,True,hard,mechanism
+meteng_mcq_001,Which of the following is NOT listed as a side effect of fecal microbiota transplantation (FMT) in the paper?,C,C,True,easy,factual
+meteng_mcq_002,"In the LDBT cycle for gut microbiome engineering, what step comes FIRST?",C,C,True,easy,factual
+meteng_mcq_003,What is the total number of prokaryotic genomes in the early-life gut genomes catalog (ELGG)?,D,D,True,easy,factual
+meteng_mcq_004,Which probiotic organism was engineered to produce a tetra-specific antibody to neutralize toxins from Clostridioides difficile infection?,B,C,False,medium,factual
+meteng_mcq_005,Which algorithm for community metabolic modeling uses a bi-level objective function to simultaneously maximize both individual species growth rates AND overall community growth?,B,B,True,medium,mechanism
+meteng_mcq_006,Which engineered E. coli application reached the stage of a human clinical trial according to the paper?,C,C,True,medium,factual
+meteng_mcq_007,The AGORA2 model set reconstructed genome-scale metabolic models for how many human microorganisms?,B,B,True,medium,factual
+meteng_mcq_008,What disease was treated using a consortium of 8 gut commensals selected specifically for their minimal urease gene content?,C,C,True,medium,factual
+meteng_mcq_009,"Why do compartmentalized community metabolic models (CMMs) have limited scalability compared to mixed-bag models, and which framework was specifically developed to address this scalability challenge?",B,B,True,hard,mechanism
+meteng_mcq_010,"When comparing the metaGEM pipeline to approaches that reconstruct GEMs from reference genomes, what key advantage does metaGEM provide and which framework does it integrate with to analyze interspecies interactions?",B,B,True,hard,mechanism
+ad_microbiome_mcq_001,What is the approximate expected number of people diagnosed with Alzheimer's disease by 2030?,A,B,False,easy,factual
+ad_microbiome_mcq_002,What was the primary statistical model used to pool alpha-diversity and relative abundance data in this meta-analysis?,C,C,True,easy,factual
+ad_microbiome_mcq_003,Which of the following best describes how controls were selected in the included studies?,B,B,True,easy,factual
+ad_microbiome_mcq_004,"What is the standardized mean difference (SMD) for Bacteroides abundance in Chinese AD cohorts, and what direction does it indicate?",B,B,True,medium,factual
+ad_microbiome_mcq_005,What proportion of the gut microbiome is comprised by Bacteroidetes and Firmicutes together?,D,D,True,medium,factual
+ad_microbiome_mcq_006,What was the result of meta-analysis for Phascolarctobacterium abundance in MCI patients?,C,C,True,medium,factual
+ad_microbiome_mcq_007,Which exclusion criterion was applied to participants in the included studies regarding antibiotic use?,A,B,False,medium,factual
+ad_microbiome_mcq_008,Which of the following correctly describes the change in Actinobacteria in Alzheimer's disease patients according to the meta-analysis?,B,B,True,medium,mechanism
+ad_microbiome_mcq_009,Which of the following best explains why the Bacteroidaceae reduction in AD is described as a feature of Chinese cohorts and is notable compared to Parkinson's disease research?,B,B,True,hard,comparison
+ad_microbiome_mcq_010,"The LEfSe analysis identified Lactobacillus as consistently elevated in AD patients across four studies. However, the authors also highlight a concern about elevated Lactobacillus. Which of the following best captures this nuance?",C,C,True,hard,mechanism
+host_diet_mcq_001,What was the mean daily fecal weight production on the Microbiome Enhancer Diet compared to the Western Diet?,B,B,True,easy,factual
+host_diet_mcq_002,What was the dietary adherence level for participants on the Western Diet?,A,C,False,easy,factual
+host_diet_mcq_003,How many total participants were assessed for eligibility in this randomized controlled trial?,B,C,False,easy,factual
+host_diet_mcq_004,What P-value was obtained for the beta-diversity (Jaccard Similarity) comparison between the Western Diet and Microbiome Enhancer Diet?,B,C,False,medium,factual
+host_diet_mcq_005,Which of the following species was enriched in the Microbiome Enhancer Diet group with the lowest Q-value (strongest statistical association)?,B,D,False,medium,factual
+host_diet_mcq_006,What statistical model was primarily used to assess differential species abundance between the two diets?,C,C,True,medium,mechanism
+host_diet_mcq_007,What was the treadmill protocol used during the whole-room calorimetry measurement days?,B,B,True,medium,factual
+host_diet_mcq_008,Which Bifidobacterium species were significantly enriched in the Western Diet group according to species-level differential abundance analysis?,D,C,False,medium,factual
+host_diet_mcq_009,"What was the estimated energy balance (intake minus expenditure) during the inpatient feeding trial across both diets, and was it significantly different between diets?",B,B,True,hard,mechanism
+host_diet_mcq_010,"In the microbial contributions to host energy balance analysis (Supplementary Figure 7), how were Bland-Altman plots used, and what two modeling approaches were compared?",B,B,True,hard,mechanism
+ppt_gut_mcq_001,How many participants completed the 6-month dietary intervention?,B,C,False,easy,factual
+ppt_gut_mcq_002,What is the primary dietary instrument used by participants to log their food intake during the study?,B,B,True,easy,factual
+ppt_gut_mcq_003,What was the total number of bacterial species retained for analysis after filtering the metagenomic sequencing data?,A,C,False,easy,factual
+ppt_gut_mcq_004,What was the significance threshold for alpha-diversity change in the PPT arm compared to the MED arm?,C,C,True,medium,factual
+ppt_gut_mcq_005,Which machine learning framework was used to build the clinical outcome prediction models in this study?,C,C,True,medium,factual
+ppt_gut_mcq_006,"How many bacterial species changed significantly within the PPT arm, and how does this compare to the MED arm?",C,C,True,medium,factual
+ppt_gut_mcq_007,"In the macronutrient analysis, which of the following best describes the direction of dietary fat change in the PPT arm versus the MED arm?",C,C,True,medium,comparison
+ppt_gut_mcq_008,Which of the following clinical outcomes had the highest prediction correlation (R value) in the 'Personalised+Diet' machine learning model?,C,C,True,medium,factual
+ppt_gut_mcq_009,What proportion of mediation effect was attributed to the bacterial species UBA11471 sp000434215 in the association between 'Med Oil and Fats' consumption and HbA1c outcome?,C,C,True,hard,mechanism
+ppt_gut_mcq_010,What does the finding of CAG-81 sp000435795 having opposite associations in this RCT versus the 10K cohort most directly support?,B,B,True,hard,mechanism
+crc_microbiome_mcq_001,What is the progression sequence of colorectal cancer development?,B,B,True,easy,factual
+crc_microbiome_mcq_002,"In the 2017 study by the authors, combining the abundance of F. nucleatum with FIT increased FIT sensitivity for CRC detection to what percentage?",C,C,True,easy,factual
+crc_microbiome_mcq_003,Which of the following bacteria was found to degrade aspirin and abolish its preventive effect against colorectal tumor development?,D,C,False,easy,factual
+crc_microbiome_mcq_004,"Through which surface protein does Peptostreptococcus anaerobius bind to intestinal epithelial cells, and what signaling pathway does it activate?",C,C,True,medium,mechanism
+crc_microbiome_mcq_005,"In a 2019 Japanese metagenomic study of 631 participants, which bacteria were significantly enriched in multiple polypoid adenomas and/or stage 0 CRC, making them useful for early-stage CRC diagnosis?",B,B,True,medium,factual
+crc_microbiome_mcq_006,What is the mechanism by which bacteria-derived lipopolysaccharide (LPS) promotes colorectal tumorigenesis through immune cells?,B,B,True,medium,mechanism
+crc_microbiome_mcq_007,"Which immune checkpoint inhibitors received regulatory approval in 2017 for treatment of metastatic CRC, and for which patient subgroup?",B,B,True,medium,factual
+crc_microbiome_mcq_008,"In the first human clinical trial of FMT for restoring immunotherapy sensitivity in melanoma patients, what was the treatment sequence and overall outcome?",B,B,True,medium,factual
+crc_microbiome_mcq_009,"What is the genetic content variation range between different strains within the same bacterial species, and why does this create a challenge for metagenomic-based CRC biomarkers?",B,B,True,hard,mechanism
+crc_microbiome_mcq_010,The anti-tumor effect of oxaliplatin is attenuated in antibiotic-treated or germ-free mice. Which of the following best explains the mechanism by which commensal bacteria contribute to oxaliplatin efficacy?,C,C,True,hard,mechanism
+ad_gut_mcq_001,What was the mortality count attributable to Alzheimer's disease in the United States in 2019?,C,C,True,easy,factual
+ad_gut_mcq_002,"According to the review, what is a synbiotic defined as?",C,C,True,easy,factual
+ad_gut_mcq_003,Which of the following is correctly described as a key advantage of postbiotics over traditional probiotics?,C,C,True,easy,factual
+ad_gut_mcq_004,What was the overall proportion of differentially abundant bacterial taxa that showed consistent changes across at least two independent human observational studies of Alzheimer's disease?,B,B,True,medium,factual
+ad_gut_mcq_005,"In the study by Kim et al. (2020), FMT from healthy wild-type donors into ADLPAPT (AD-like pathology) mice produced which of the following outcomes?",B,B,True,medium,factual
+ad_gut_mcq_006,"Which probiotic strain demonstrated sex-dependent therapeutic effects in the AppNL-G-F mouse model, improving outcomes only in female mice?",C,C,True,medium,factual
+ad_gut_mcq_007,What specific clinical finding was reported in the randomized controlled trial by Akbari et al. (2016) — considered one of the earliest clinical probiotic trials in AD — after 12 weeks of probiotic milk consumption?,B,B,True,medium,factual
+ad_gut_mcq_008,"In the OmegAD clinical trial (Freund-Levi et al., 2006), what was the key finding regarding DHA/EPA omega-3 fatty acid supplementation in Alzheimer's disease patients?",B,B,True,medium,factual
+ad_gut_mcq_009,"According to the review, which gut-derived metabolite — produced by Gram-negative bacterial membranes — has been shown to cause amyloid and tau pathology in animal models of Alzheimer's disease?",C,C,True,medium,mechanism
+ad_gut_mcq_010,The review highlights a key experimental design flaw found in many prebiotic intervention studies using transgenic AD rodent models. Which of the following correctly identifies this flaw?,B,B,True,hard,mechanism
+ad_gut_mcq_011,A 2023 study by Seo et al. examined germ-free or antibiotic-treated genetically engineered mice expressing human APOE isoforms in a tauopathy model. What was the key conclusion of this study regarding the gut microbiome in neurodegeneration?,C,C,True,hard,mechanism
+frailty_microbiome_mcq_001,"According to a recent systematic review cited in the paper, what is the combined prevalence of physical frailty in older adults globally?",C,C,True,easy,factual
+frailty_microbiome_mcq_002,How many genus-level gut microbes were analyzed in the MiBioGen GWAS meta-analysis used as the exposure data source in this study?,B,C,False,easy,factual
+frailty_microbiome_mcq_003,What is the estimated annual cost of frail care in Japan projected for the year 2043?,D,D,True,easy,factual
+frailty_microbiome_mcq_004,"In the LDSC genetic correlation analysis, what Bonferroni-corrected threshold was used to define statistically significant genetic correlation?",C,C,True,medium,methods
+frailty_microbiome_mcq_005,What threshold for the F-statistic was used to detect weak instrument variable bias in the MR analysis?,B,B,True,medium,methods
+frailty_microbiome_mcq_006,Which MR method is described in this study as the 'most accurate and powerful method for estimating causal effects when all selected SNPs are valid IVs'?,C,C,True,medium,methods
+frailty_microbiome_mcq_007,How many SNPs were selected as instrumental variables for the 119 genus-level gut microbes in the MR analysis?,C,C,True,medium,factual
+frailty_microbiome_mcq_008,The cross-sectional South Korean study cited in the introduction found which correlation pattern between gut bacteria and frailty score?,A,B,False,medium,factual
+frailty_microbiome_mcq_009,"Christensenellaceae R-7 is a butyrate-producing bacterium. Based on the MR and LDSC findings in this paper, which statement BEST describes its relationship with frailty and the proposed mechanism?",B,B,True,hard,mechanism
+frailty_microbiome_mcq_010,Linkage Disequilibrium Score Regression (LDSC) was used in this study for genetic correlation analysis. Which statement BEST captures an advantage of LDSC over traditional correlation methods in this context?,B,B,True,hard,methods
+asd_gut_mcq_001,"According to the study, what was the average CARS (Childhood Autism Rating Scale) test score in the ASD group?",B,B,True,easy,factual
+asd_gut_mcq_002,What percentage of ASD children in this study were male?,C,C,True,easy,factual
+asd_gut_mcq_003,Which phylum was significantly lower in children with ASD compared to typically developing children in this study?,C,C,True,easy,factual
+asd_gut_mcq_004,What is the correct interpretation of a higher Simpson index value in the ASD group at the kingdom level?,B,B,True,medium,mechanism
+asd_gut_mcq_005,Which of the following amino acid metabolites showed the STRONGEST correlation with differential microbial species according to the Canonical Correspondence Analysis (CCA) in this study?,B,B,True,medium,mechanism
+asd_gut_mcq_006,What was the sample preparation fragment size range used for metagenomic library preparation in this study?,B,B,True,medium,factual
+asd_gut_mcq_007,"In the bioinformatics pipeline, what similarity threshold was used to cluster sequences into the same group?",D,C,False,medium,factual
+asd_gut_mcq_008,Which tool was specifically used in this study for metagenomic assembly of high-quality short reads?,C,C,True,medium,factual
+asd_gut_mcq_009,"What was the main metabolic pathway enriched in the typically developing (control) group's differential species, in contrast to the peptides/nickel transport system enriched in the ASD group?",B,B,True,hard,comparison
+asd_gut_mcq_010,"Based on the Spearman correlation analysis, which of the following correctly describes the relationship between Phascolarctobacterium succinatutens and the microbial metabolism pathway in this study?",B,B,True,hard,mechanism
+ifp_cr_mcq_001,How many obese human participants were enrolled in the IF-P versus CR randomized controlled trial?,B,C,False,easy,factual
+ifp_cr_mcq_002,Over how many weeks did the dietary intervention in the IF-P vs. CR study last?,C,C,True,easy,factual
+ifp_cr_mcq_003,What was the approximate overall dietary compliance rate achieved by participants across both dietary intervention arms?,C,C,True,easy,factual
+ifp_cr_mcq_004,Which distance metric was used to measure gut microbiome beta-diversity (community composition) in the primary analysis?,D,D,True,medium,factual
+ifp_cr_mcq_005,How many metabolites showed statistically significant differences between IF-P and CR when controlling for relevant covariates in the plasma metabolome analysis?,C,C,True,medium,factual
+ifp_cr_mcq_006,Which statistical method was used to integrate bacterial 16S rRNA ASVs and plasma metabolites in the multi-omics analysis?,B,B,True,medium,mechanism
+ifp_cr_mcq_007,"What dietary fiber intake did the IF-P and CR groups achieve at the end of the 8-week intervention, respectively?",B,B,True,medium,factual
+ifp_cr_mcq_008,How long was the longitudinal follow-up tracking period for the high weight-loss responder case study in the IF-P group?,C,C,True,medium,factual
+ifp_cr_mcq_009,"According to the peer review discussion, what is the fundamental difference between Bray-Curtis distance and Canberra distance that justifies using them for different data types?",B,B,True,hard,mechanism
+ifp_cr_mcq_010,What was the key critique by Reviewer 3 about the IF-P dietary fiber that distinguished it from a conventional food-based fiber intervention and is most relevant when interpreting the microbiome results?,B,B,True,hard,mechanism
+meta_analysis_mcq_001,Which machine learning algorithm showed better overall performance across diseases in the Jin et al. meta-analysis?,B,B,True,easy,factual
+meta_analysis_mcq_002,Which database was ultimately selected for taxonomic classification in this meta-analysis?,C,C,True,easy,factual
+meta_analysis_mcq_003,Which disease pair showed the highest co-occurrence of case-associated microbes according to the differential abundance analysis?,C,C,True,easy,factual
+meta_analysis_mcq_004,What percentage of case-associated and control-associated microbes overlapped between Crohn's Disease and Colorectal Cancer in the differential abundance analysis?,A,B,False,medium,factual
+meta_analysis_mcq_005,How was disease similarity measured at the microbial gene level in this study?,B,B,True,medium,factual
+meta_analysis_mcq_006,Which microbe was found to be differentially increased in disease cases across the most diseases (seven diseases) in the meta-analysis?,B,C,False,medium,factual
+meta_analysis_mcq_007,"What was the Pearson R value at the gene level between Crohn's Disease and Ulcerative Colitis, representing the highest positive correlation across all disease pairs?",C,C,True,medium,factual
+meta_analysis_mcq_008,What split ratio was used to divide samples into training and testing sets when building binary disease classifiers for CD and CRC?,C,C,True,medium,factual
+meta_analysis_mcq_009,"Why is the finding that Akkermansia muciniphila is differentially increased in Parkinson's disease, schizophrenia, and T2D considered controversial, and what does the study conclude about its causal role?",B,B,True,hard,mechanism
+meta_analysis_mcq_010,The study identifies a key methodological challenge regarding differential abundance analysis without absolute quantification. Which of the following best describes this limitation and the approach used to mitigate it?,B,B,True,hard,mechanism
+keto_rct_mcq_001,What was the duration of the dietary interventions in this RCT?,C,C,True,easy,factual
+keto_rct_mcq_002,"In the LOWSUG diet group, what was the target maximum intake of free sugars as a percentage of total energy intake?",B,B,True,easy,factual
+keto_rct_mcq_003,By approximately how much did the LOWCHO group reduce fiber intake compared to the MODSUG group?,,C,False,easy,factual
+keto_rct_mcq_004,"What happened to the respiratory exchange ratio (RER) in the LOWCHO group compared to MODSUG during fasted, postprandial, and exercise states?",B,B,True,medium,mechanism
+keto_rct_mcq_005,Which skeletal muscle proteins were significantly reduced in the LOWCHO group at week 12 compared to MODSUG?,B,B,True,medium,mechanism
+keto_rct_mcq_006,What was the effect of free-sugar restriction on skeletal muscle glycogen concentrations?,B,B,True,medium,factual
+keto_rct_mcq_007,"What was observed with postprandial lactate concentrations in the LOWCHO group, and what metabolic process does this reflect?",B,B,True,medium,mechanism
+keto_rct_mcq_008,"Which metabolomics approach was used to profile fasting plasma lipoprotein and metabolite profiles, and at which time point was this analysis performed?",B,B,True,medium,factual
+keto_rct_mcq_009,"In the NMR-based amino acid profiling at week 4, what pattern was observed in the LOWCHO group regarding glucogenic and branched-chain amino acids (BCAAs)?",B,B,True,hard,mechanism
+keto_rct_mcq_010,Why did the authors use accelerometry with branched-equation modelling rather than the doubly labeled water (DLW) method to measure energy expenditure under ketogenic conditions?,B,B,True,hard,mechanism
+cp_pdac_mcq_001,What proportion of the gut bacteria in the digestive tract are accounted for by Firmicutes and Bacteroidetes combined?,C,C,True,easy,factual
+cp_pdac_mcq_002,"How many distinct resident bacterial species does the human gut harbor, as cited in the paper?",C,C,True,easy,factual
+cp_pdac_mcq_003,What quality score range on the Newcastle-Ottawa Scale (NOS) was used to indicate superior/high study quality in this meta-analysis?,D,D,True,easy,factual
+cp_pdac_mcq_004,What was the pooled Shannon Index SMD for the CP group versus healthy controls in this meta-analysis?,C,C,True,medium,factual
+cp_pdac_mcq_005,"According to the meta-analysis of Firmicutes at the phylum level, what was the odds ratio (OR) for its proportion in PDAC patients compared to healthy controls?",A,B,False,medium,factual
+cp_pdac_mcq_006,Which of the following Klebsiella-related findings was reported in this systematic review regarding chronic pancreatitis?,B,B,True,medium,mechanism
+cp_pdac_mcq_007,What was the total number of studies screened by title and abstract after removing duplicates from the initial systematic literature search?,A,C,False,medium,factual
+cp_pdac_mcq_008,"In the metagenomic study by Nagata et al. (2022) included in this review, which bacterial species were found to be DECREASED in PDAC patients compared to healthy controls?",B,B,True,medium,factual
+cp_pdac_mcq_009,A two-sample Mendelian Randomization (MR) study cited in this paper identified which bacterial genus as having a PROTECTIVE effect against PDAC?,C,C,True,hard,factual
+cp_pdac_mcq_010,"Based on the CP vs. HC comparison in this meta-analysis, which alpha-diversity metrics showed SIGNIFICANT differences (P<0.05), and which did NOT?",A,A,True,hard,analysis
+exercise_microbiome_mcq_001,"Which phylum of gut bacteria does exercise most consistently increase, and what functional role does it serve?",B,B,True,easy,factual
+exercise_microbiome_mcq_002,What effect does high-intensity exercise for a long duration have on gut integrity?,C,C,True,easy,factual
+exercise_microbiome_mcq_003,Which of the following correctly describes the role of Bifidobacterium's acetate production in gut health?,B,B,True,easy,factual
+exercise_microbiome_mcq_004,A 7-week HIIT program in swimmers produced which of the following gut microbiome outcomes?,C,C,True,medium,factual
+exercise_microbiome_mcq_005,Which Lachnospiraceae genus produces SCFA butyrate and has been found to reduce the severity of atopic conditions such as atopic dermatitis?,C,C,True,medium,factual
+exercise_microbiome_mcq_006,"What was the immunological finding in trained athletes who received a multi-strain probiotic combination including Bifidobacterium bifidum, Lactobacillus acidophilus, and Lactococcus lactis at 1×10¹⁰ CFU/day for 12 weeks?",B,B,True,medium,factual
+exercise_microbiome_mcq_007,Which of the following mechanisms best explains why antibiotic treatment in mice impairs skeletal muscle adaptation to exercise?,B,B,True,medium,mechanism
+exercise_microbiome_mcq_008,"According to the review, how does Bacteroides promote insulin resistance and what condition is associated with elevated Bacteroides levels?",B,B,True,medium,mechanism
+exercise_microbiome_mcq_009,Which combination of exercise modalities has been shown to exert the most pronounced effect on bacterial diversity compared to a single exercise type?,C,C,True,medium,factual
+exercise_microbiome_mcq_010,"Regarding the gut-muscle axis, what is the significance of IGF-1 in the context of gut microbiome and muscle metabolism?",B,B,True,hard,mechanism
+exercise_microbiome_mcq_011,"In the context of elite athletes stratified by sport intensity, which bacterial profile was found in participants in high-intensity sports such as field hockey and rowing versus those in moderately active sports such as fencing?",B,B,True,hard,comparison
+hlcd_tre_mcq_001,What was the daily caloric restriction level applied to all groups in the LEAN-TIME feeding trial?,C,C,True,easy,factual
+hlcd_tre_mcq_002,What was the mean BMI of participants enrolled in the LEAN-TIME study?,B,B,True,easy,factual
+hlcd_tre_mcq_003,How many total fecal samples were collected and subjected to high-quality whole-metagenomic sequencing in the LEAN-TIME study?,C,C,True,easy,factual
+hlcd_tre_mcq_004,What was the difference in fat mass loss between the HLCD and non-HLCD groups across the 12-week intervention?,B,B,True,medium,factual
+hlcd_tre_mcq_005,Which microbial species was significantly DECREASED in the HLCD group compared to the non-HLCD group during the 12-week trial?,C,C,True,medium,factual
+hlcd_tre_mcq_006,Which of the following correctly describes the relationship between fecal BCAAs and clinical outcomes in the HLCD group per Spearman correlation analyses?,B,B,True,medium,mechanism
+hlcd_tre_mcq_007,How many microbial species and functional pathways were included in the final downstream metagenomics analyses after quality filtering?,C,C,True,medium,factual
+hlcd_tre_mcq_008,Which fecal metabolite was significantly decreased in the HLCD group compared to the non-HLCD group AND remained significantly different at the 28-week post-intervention follow-up?,C,C,True,medium,factual
+hlcd_tre_mcq_009,"In the context of the LEAN-TIME study, why did HLCD lead to lower fecal BCAAs despite having a higher total dietary protein intake than the control diet?",C,C,True,hard,mechanism
+hlcd_tre_mcq_010,Which combination of findings best explains why the 28-week post-intervention follow-up results suggest fundamentally different mechanisms of action for HLCD versus TRE?,A,A,True,hard,comparison
+mental_microbiome_mcq_001,What proportion of the human gut microbial gene catalog is of bacterial origin?,D,D,True,easy,factual
+mental_microbiome_mcq_002,Which of the following is NOT listed as a bioactive molecule produced by food that has neuroactive properties modulating neural signaling within the enteric nervous system?,C,C,True,easy,factual
+mental_microbiome_mcq_003,"According to the paper, the gut microbiota profile of individuals fed a Western diet is similar to that found in which group?",B,B,True,easy,factual
+mental_microbiome_mcq_004,Which metabolic consequence is specifically attributed to ketogenic diet (KD) feeding that results in changes in gut microbiota composition?,B,B,True,medium,mechanism
+mental_microbiome_mcq_005,Which of the following neuropsychiatric conditions has a large body of literature supporting the ketogenic diet as a therapeutic tool?,C,C,True,medium,factual
+mental_microbiome_mcq_006,What are the three prominent enterotypes of the human microbiome identified by Arumugam et al. (2011)?,B,B,True,medium,factual
+mental_microbiome_mcq_007,"Which proposed mechanism explains the association between vegetarian diets and depression, according to the paper?",C,C,True,medium,mechanism
+mental_microbiome_mcq_008,"Which of the following best explains why high-fat diets are linked to neuroinflammation, depression, and anxiety?",B,B,True,medium,mechanism
+mental_microbiome_mcq_009,"According to the paper, by what age does the infant gut microbiota typically reach a composition similar to that of adults?",C,C,True,medium,factual
+mental_microbiome_mcq_010,Which combination of interventions does the paper propose as the most promising future strategies for treating cognitive impairment through the gut microbiome?,B,B,True,hard,synthesis
+mental_microbiome_mcq_011,"Considering the ketogenic diet's effect on the gut microbiome and mental health, which pairing of outcome and mechanism is MOST accurately described in the paper?",B,B,True,hard,mechanism
+gut_disease_mcq_001,"According to the paper, what percentage of gut microbiota is accounted for by Firmicutes and Bacteroidetes combined?",C,C,True,easy,factual
+gut_disease_mcq_002,Which of the following bacterial genera dominates the gut microbiota of vaginally delivered infants?,B,B,True,easy,factual
+gut_disease_mcq_003,What is the approximate number of species-level phylotypes that people are widely acknowledged to possess in their gut microbial community?,C,C,True,easy,factual
+gut_disease_mcq_004,Which G protein-coupled receptors do enteroendocrine cells specifically express to respond to short-chain fatty acids produced by gut microbiota?,B,B,True,medium,mechanism
+gut_disease_mcq_005,What gut microbiome shift has been consistently observed in obese mice compared to lean mice?,C,C,True,medium,factual
+gut_disease_mcq_006,What is the proposed mechanism by which alpha-synuclein aggregates spread from the gut to the brain in Parkinson's disease?,C,C,True,medium,mechanism
+gut_disease_mcq_007,"According to the paper, what microbiota change is specifically noted in patients with rheumatoid arthritis?",B,B,True,medium,factual
+gut_disease_mcq_008,What percentage of distance runners have been reported to experience gastrointestinal issues associated with physical activity according to the paper?,B,B,True,medium,factual
+gut_disease_mcq_009,"According to the paper, how does the overexpression of NF-kB components p65 and p50 contribute to intestinal disease in the context of bile acid signaling?",B,B,True,hard,mechanism
+gut_disease_mcq_010,Which of the following best explains the dual paradox of SCFAs in metabolic disorders—where both decreased and excessive SCFAs contribute to disease?,B,B,True,hard,mechanism
+mtt_asd_mcq_001,How many children with ASD were enrolled and completed the MTT study as reported in the supplementary figures?,C,C,True,easy,factual
+mtt_asd_mcq_002,What percentage of gut viral populations in the MTT study could NOT be assigned a familial-level taxonomy?,D,D,True,easy,factual
+mtt_asd_mcq_003,"On the PGI-III scale used in the MTT study, what does a score of +2 represent?",B,B,True,easy,factual
+mtt_asd_mcq_004,What correlation coefficient (Spearman) was found between % change in GSRS scores and overall PGI-III scores across the 18-week study?,C,C,True,medium,factual
+mtt_asd_mcq_005,What percentage of gut viral populations in the MTT study were related to the 23 core gut phages identified by Manrique et al. (2016)?,C,C,True,medium,factual
+mtt_asd_mcq_006,Which of the following statistical tests was used to compare Vineland Developmental Age subscale scores between baseline and end of observation?,C,C,True,medium,factual
+mtt_asd_mcq_007,"In the MTT study, a decrease in UniFrac distance to donor over time indicates which of the following?",C,C,True,medium,mechanism
+mtt_asd_mcq_008,"Among the ABC behavioral subscales measured in the MTT study, which domain showed the greatest statistical significance of improvement (*** p<0.001) at multiple timepoints including treatment end and post-treatment?",D,C,False,medium,factual
+mtt_asd_mcq_009,Which of the following best explains why the Kang et al. MTT study used BOTH weighted and unweighted UniFrac distance metrics to assess engraftment?,B,B,True,hard,mechanism
+mtt_asd_mcq_010,"Based on the supplementary data, which combination of factors best supports the conclusion that MTT-induced microbiome changes were biologically meaningful and not transient artifacts?",B,B,True,hard,mechanism
+singh2017_mcq_001,Where do the majority of gut microorganisms reside in the digestive tract?,C,C,True,easy,factual
+singh2017_mcq_002,Which dietary component most consistently increases Bifidobacteria and lactic acid bacteria in the gut?,C,C,True,easy,factual
+singh2017_mcq_003,"According to the paper, in what year were the effects of dietary protein on gut microbiota first described?",B,C,False,easy,factual
+singh2017_mcq_004,"A high saturated fat diet is specifically associated with increased relative abundance of which organism, compared to a high unsaturated fat diet?",B,B,True,medium,factual
+singh2017_mcq_005,What was the total number of articles selected for inclusion in this systematic literature review?,A,C,False,medium,factual
+singh2017_mcq_006,Which of the following correctly describes the effect of a 30-day gluten-free diet on gut microbiota in healthy subjects (Sanz et al.)?,C,C,True,medium,factual
+singh2017_mcq_007,"In the randomized placebo-controlled trial of 60 overweight adults using a probiotic containing three Bifidobacteria strains, four Lactobacilli strains, and one Streptococcus strain, which of the following metabolic outcomes was NOT observed?",B,D,False,medium,factual
+singh2017_mcq_008,What sequence of events correctly describes how segmented filamentous bacteria (SFB) contribute to autoimmune arthritis according to the paper?,B,B,True,medium,mechanism
+singh2017_mcq_009,Which combination of findings correctly characterizes the gut microbiome of type 2 diabetes patients according to functional metagenomic characterization?,B,B,True,hard,mechanism
+singh2017_mcq_010,"A researcher transplants microbiota from lard-fed mice into antibiotic-treated germ-free recipient mice that were previously fed fish oil. Which outcome is most likely, and what does it reveal mechanistically?",C,C,True,hard,mechanism
+apoe_microbiome_mcq_001,How many unique OTUs (operational taxonomic units) were identified in the human gut microbiota analysis at a 97% similarity threshold?,D,C,False,easy,factual
+apoe_microbiome_mcq_002,What was the most dominant phylum in the human gut microbiota samples from this study?,B,B,True,easy,factual
+apoe_microbiome_mcq_003,What was the rarefaction depth used to ensure even sampling in the human microbiota diversity analysis?,A,C,False,easy,factual
+apoe_microbiome_mcq_004,What was the P-value significance threshold found for Ruminococcaceae abundance differences between APOE2/E3 and APOE3/E3 genotypes in humans?,B,B,True,medium,factual
+apoe_microbiome_mcq_005,Which two biomarkers of intestinal integrity were measured in plasma to assess possible microbial translocation associated with APOE genotype?,B,B,True,medium,factual
+apoe_microbiome_mcq_006,"In APOE-TR mice, what was the PERMANOVA P-value finding for beta diversity differences between APOE3 and APOE4 genotypes within each age group?",B,C,False,medium,mechanism
+apoe_microbiome_mcq_007,"Which genus, abundant in APOE2/E3 individuals, is described as a strictly anaerobic bacterium that ferments carbohydrates to produce formic and N-butyric acids?",C,C,True,medium,factual
+apoe_microbiome_mcq_008,What was the RV coefficient found in the coinertia analysis (COIA) between the fecal metabolome and microbiota composition at OTU level in APOE-TR mice?,C,C,True,medium,mechanism
+apoe_microbiome_mcq_009,This was described as the first study to directly compare gut microbiota composition in humans and transgenic mice with different APOE genotypes. Which combination of findings best represents the novel contribution of this study?,B,B,True,hard,comparison
+apoe_microbiome_mcq_010,"In APOE4 old mice, which of the following best explains the lower concentrations of SCFAs observed in the metabolomic analysis, and what compensatory mechanism is noted in APOE3 old mice?",B,B,True,hard,mechanism
+med_diet_mcq_001,How long was the Mediterranean diet intervention in this randomised controlled trial?,B,B,True,easy,factual
+med_diet_mcq_002,By how much did each unit increase in the Mediterranean diet (MD) index correspond to a reduction in total plasma cholesterol?,B,B,True,easy,factual
+med_diet_mcq_003,Which of the following metabolites was used as a dietary biomarker for wholegrain consumption in the Mediterranean diet group?,C,C,True,easy,factual
+med_diet_mcq_004,What was the approximate LDL-cholesterol reduction observed after 4 weeks of Mediterranean diet intervention in the MedD subgroup?,B,B,True,medium,factual
+med_diet_mcq_005,Which of the following branched-chain fatty acids (BCFAs) was NOT reported as significantly reduced in faeces of the Mediterranean diet group?,C,C,True,medium,factual
+med_diet_mcq_006,Which of the following best describes why Ruminococcus gnavus is clinically relevant in the context of this study's findings?,B,B,True,medium,mechanism
+med_diet_mcq_007,"How many molecular features were approximately measured across all participants and sample types (faeces, blood, urine) in the untargeted metabolomics analysis?",B,C,False,medium,factual
+med_diet_mcq_008,What is the Spearman's rho correlation value linking the glutamate degradation to crotonyl-CoA pathway to F. prausnitzii msp_0388 abundance?,A,C,False,medium,mechanism
+med_diet_mcq_009,"What pattern of Prevotella copri baseline levels was associated with insulin resistance improvement on the Mediterranean diet, and what is the mechanistic explanation offered?",B,B,True,hard,mechanism
+med_diet_mcq_010,"What do the multi-omics integration results reveal about the overall effect of the Mediterranean diet, and what is the Hotelling T² statistic reported?",B,B,True,hard,factual
+premote_mcq_001,What was the duration of the main intervention period in the PREMOTE trial after the antibiotic run-in?,A,C,False,easy,factual
+premote_mcq_002,Which treatment group showed NO significant difference in HbA1c reduction compared to the placebo group in the PREMOTE trial?,C,C,True,easy,factual
+premote_mcq_003,How many bacterial species were identified as 'key BBR responsive taxa' whose relative abundances were significantly altered in BOTH BBR treatment groups (BBR and Prob+BBR) compared to both control groups?,B,B,True,easy,factual
+premote_mcq_004,What minimum concentration of BBR demonstrated significant growth inhibition of R. bromii in the in vitro culture experiment?,B,B,True,medium,factual
+premote_mcq_005,Which of the following secondary outcomes was significantly improved by Prob+BBR but NOT by BBR-alone?,C,C,True,medium,factual
+premote_mcq_006,Which gene in the bile acid-inducible (Bai) pathway was specifically identified as the rate-limiting enzyme for bacterial secondary BA metabolism and was inhibited by BBR treatment?,C,C,True,medium,mechanism
+premote_mcq_007,"According to the PREMOTE study, what happened to the gut microbiome composition in the placebo group after 13 weeks of intervention following the initial gentamycin pretreatment?",B,B,True,medium,mechanism
+premote_mcq_008,"Which specific Lactobacillus species showed significantly elevated relative abundances post-treatment ONLY in older participants (≥50 years) in the Prob+BBR arm, but not in younger participants?",B,B,True,medium,factual
+premote_mcq_009,"In the PREMOTE study, how many centres across China participated in the clinical trial, and what was the patient enrolment period?",C,C,True,medium,factual
+premote_mcq_010,"The PREMOTE study demonstrated that the hypoglycaemic effect of BBR is mediated by inhibition of DCA biotransformation through which specific bacterium, and through what key molecular mechanism does this impact glucose control?",C,C,True,hard,mechanism
+nns_mcq_001,What was the acceptable daily intake (ADI) of sucralose as defined by Health Canada in this study?,B,B,True,easy,factual
+nns_mcq_002,How many faecal samples were analysed in total across all 17 participants in this study?,A,C,False,easy,factual
+nns_mcq_003,"What were the two dominant bacterial phyla that together comprised approximately 90% of the adult gut microbiota, as described in this paper?",C,C,True,easy,factual
+nns_mcq_004,What was the mean bottle count adherence for the aspartame treatment group?,C,C,True,medium,factual
+nns_mcq_005,What was the PERMANOVA p-value for the 'Treatment' factor in the Adonis analysis of microbiota community structure?,D,D,True,medium,factual
+nns_mcq_006,Which molecular target region of the 16S rRNA gene was amplified for microbiome profiling in this study?,C,C,True,medium,factual
+nns_mcq_007,Which of the following correctly describes the Shannon diversity index results before and after NNS treatments?,C,C,True,medium,factual
+nns_mcq_008,What was the number of observed species in the study's OTU dataset?,C,C,True,medium,factual
+nns_mcq_009,"In the Suez et al. (2014) saccharin study cited in this paper, which experimental approach was used to confirm that gut microbiota dysbiosis caused glucose intolerance rather than the sweetener acting directly?",C,C,True,hard,mechanism
+nns_mcq_010,Which two bacterial taxa showed the most statistically significant differential abundance in the DESeq2 analysis performed in this study?,B,B,True,hard,factual
+vitamins_microbiome_mcq_001,What polymer coating was used to achieve colon-targeted delivery of vitamins in this study?,B,B,True,easy,factual
+vitamins_microbiome_mcq_002,Which diversity metric was significantly increased by vitamin C compared to both baseline and placebo in the clinical study?,C,C,True,easy,factual
+vitamins_microbiome_mcq_003,What was the placebo formulation used in this clinical trial?,B,C,False,easy,factual
+vitamins_microbiome_mcq_004,Which vitamin significantly increased Bifidobacterium longum and Coprococcus comes compared to both baseline and placebo in the clinical study?,C,C,True,medium,factual
+vitamins_microbiome_mcq_005,"In the in vitro batch fermentation study, which vitamin produced the highest total SCFA concentration at the 0.2x dose?",C,C,True,medium,factual
+vitamins_microbiome_mcq_006,Which combination of vitamin group changes was unique to the vitamin B2+C combination treatment compared to vitamin B2 or vitamin C alone at the phylum level?,B,B,True,medium,factual
+vitamins_microbiome_mcq_007,What was the observed effect of vitamin B2 on Faecalibacterium prausnitzii compared to baseline in the clinical study?,C,C,True,medium,mechanism
+vitamins_microbiome_mcq_008,In which cell line model was immune function assessed in the in vitro experiments?,C,C,True,medium,factual
+vitamins_microbiome_mcq_009,Which mechanism best explains how vitamin C may increase microbial diversity and alter Firmicutes/Bacteroidetes balance in the in vitro system?,B,B,True,hard,mechanism
+vitamins_microbiome_mcq_010,"What is the most accurate interpretation of the TEER findings with vitamins C and E post-fermentation, given that SCFAs were simultaneously reduced?",C,C,True,hard,mechanism
+abx_microbiome_mcq_001,How many studies in this systematic review measured microbiome species richness?,C,B,False,easy,factual
+abx_microbiome_mcq_002,In how many of the 8 studies reporting on species diversity did the authors find a significant association between antibiotic use and reduced species diversity?,C,C,True,easy,factual
+abx_microbiome_mcq_003,"According to Korpela et al., a single course of macrolide antibiotics was associated with reduced Bifidobacterium by what fold-change?",D,B,False,easy,factual
+abx_microbiome_mcq_004,"In Parker et al.'s RCT of azithromycin in infants in India, what was the approximate percentage reduction in OTU count (species richness) compared to placebo?",B,B,True,medium,factual
+abx_microbiome_mcq_005,Which of the following antibiotic combinations was associated with increased Clostridium levels in children within 6 months of exposure?,C,C,True,medium,factual
+abx_microbiome_mcq_006,What quality assessment tools were used to evaluate the included studies in this systematic review?,C,C,True,medium,factual
+abx_microbiome_mcq_007,"In Bai et al.'s cross-sectional study in China, what happened to the Firmicutes/Bacteroidetes (F/B) ratio following cephalosporin and penicillin exposure?",B,B,True,medium,factual
+abx_microbiome_mcq_008,"In the adult gut microbiome study cited for comparison (Palleja et al., 2018), for approximately how long did the majority of antibiotic-induced changes persist, and had the microbiome fully recovered by the study endpoint?",A,B,False,medium,factual
+abx_microbiome_mcq_009,Amoxicillin exposure in 1-2 year old children (Brunser et al.) and azithromycin exposure in 6-11 month old infants (Parker et al.) had opposite effects on E. coli levels. Which statement correctly describes this divergence?,B,B,True,hard,comparison
+abx_microbiome_mcq_010,"In the Doan et al. RCT in Niger, azithromycin's single oral dose affected which diversity measures, and which measure was notably unaffected?",B,B,True,hard,mechanism
+sz_microbiome_mcq_001,What was the result of beta diversity analysis (Bray-Curtis distance) between SZ patients and normal controls?,B,B,True,easy,factual
+sz_microbiome_mcq_002,How many brain regions showed significant differences in ReHo between SZ patients and normal controls?,C,C,True,easy,factual
+sz_microbiome_mcq_003,What demographic variable was significantly different between SZ patients and normal controls in this study?,C,C,True,easy,factual
+sz_microbiome_mcq_004,"In this study, which alpha diversity index showed a positive correlation with gray matter volume (GMV) of the left inferior operculum frontal cortex in SZ patients?",C,C,True,medium,factual
+sz_microbiome_mcq_005,"According to the study, which metabolic pathway does Ruminococcus primarily use related to SCFA production?",C,C,True,medium,mechanism
+sz_microbiome_mcq_006,"In SZ patients, the ReHo indexes of which three brain regions were negatively correlated with the relative abundance of the genus Roseburia?",B,B,True,medium,factual
+sz_microbiome_mcq_007,What software pipeline was used for preprocessing both structural and functional MRI data in this study?,B,B,True,medium,factual
+sz_microbiome_mcq_008,"What role does the genus Veillonella play in short-chain fatty acid metabolism, and why is its elevated abundance in SZ patients clinically relevant?",B,B,True,medium,mechanism
+sz_microbiome_mcq_009,"What is the biological basis for the proposed link between reduced Roseburia abundance, elevated BCAAs, and decreased cerebral serotonin in schizophrenia?",B,B,True,hard,mechanism
+sz_microbiome_mcq_010,How does this study's finding of a positive correlation between alpha diversity and GMV/ReHo in SZ patients challenge or support the broader understanding of the MGB axis in neuropsychiatric disease?,B,B,True,hard,mechanism
+asthma_probio_mcq_001,What was the duration of the randomized controlled trial investigating Probio-M8 in asthmatic patients?,C,C,True,easy,factual
+asthma_probio_mcq_002,"What percentage of the 13,078 nonredundant viral OTUs (vOTUs) could be assigned to a specific viral family?",B,B,True,easy,factual
+asthma_probio_mcq_003,Which of the following correctly describes the inclusion criteria for patients in this study?,B,B,True,easy,factual
+asthma_probio_mcq_004,Which clinical parameter showed the most statistically significant improvement in the Probio-M8 group over the 90-day trial?,C,C,True,medium,factual
+asthma_probio_mcq_005,What was the correlation value between the gut microbiome and serum metabolome profiles found by Procrustes analysis in this study?,C,B,False,medium,factual
+asthma_probio_mcq_006,Which gut metabolic module (GMM) was significantly dominant in the placebo group compared to the probiotic group?,C,C,True,medium,mechanism
+asthma_probio_mcq_007,"Which SGB (species-level genome bin) decreased significantly in the probiotic group during the trial, and what is its clinical relevance?",B,B,True,medium,mechanism
+asthma_probio_mcq_008,How was the presence and tracking of Probio-M8 in fecal samples confirmed during the trial?,B,B,True,medium,mechanism
+asthma_probio_mcq_009,Which of the following combinations of serum metabolites were significantly enriched in the probiotic group compared to placebo at day 90?,C,C,True,hard,factual
+asthma_probio_mcq_010,"Considering the PERMANOVA-based effect size analysis, which of the following statements best describes the differential impact of gut microbiota on monitored features between the probiotic and placebo groups?",D,B,False,hard,mechanism
+early_ab_mcq_001,What is the name of the statistical method used to test for differentially abundant OTUs across longitudinal time intervals in this study?,B,B,True,easy,methodology
+early_ab_mcq_002,Between which dates were the control cohort infants born?,B,B,True,easy,factual
+early_ab_mcq_003,What was the effect size (R²) of antibiotic initiation itself on microbiota composition?,D,D,True,easy,factual
+early_ab_mcq_004,"In the fitTimeSeries analysis of the amoxicillin + cefotaxime group versus controls (unadjusted for breastfeeding), what was the area and time interval for Bifidobacterium_1?",A,A,True,medium,factual
+early_ab_mcq_005,"How many additional antibiotic cases were discovered during data correction for the medication questionnaire error, and what was the outcome on statistical significance?",B,B,True,medium,factual
+early_ab_mcq_006,What effect does adjusting the fitTimeSeries analysis for breastfeeding have on the Bifidobacterium results in the amoxicillin + cefotaxime versus control comparison?,B,B,True,medium,mechanism
+early_ab_mcq_007,"In the SS-ANOVA results for the amoxicillin + cefotaxime group, Collinsella_24 shows an area of -1214.79 (unadjusted) from days 1–334. What does a negative area indicate in this context?",B,B,True,medium,methodology
+early_ab_mcq_008,Which of the following correctly describes the primary ethical and design challenge that prevented non-antibiotic infants from being included in the RCT arm of this study?,B,B,True,medium,mechanism
+early_ab_mcq_009,"Which two bacteria showed simultaneous and persistently increased abundance in the amoxicillin + cefotaxime group from early in the first year of life (days 1–100+), potentially indicating antibiotic-induced opportunistic colonization?",B,B,True,hard,mechanism
+early_ab_mcq_010,Fusicatenibacter saccharivorans showed a positive area (+727.045) in the unadjusted model from days 78–384 in the amoxicillin + cefotaxime group. Which of the following best interprets this finding in the context of antibiotic-induced microbiome succession?,B,B,True,hard,mechanism
+drug_meta_mcq_001,What percentage of drugs were metabolized by at least one bacterial strain in Zimmermann and coworkers' screen of 271 oral drugs against 76 intestinal bacteria?,B,B,True,easy,factual
+drug_meta_mcq_002,What is the approximate pH range in the colon of the human gastrointestinal tract?,C,C,True,easy,factual
+drug_meta_mcq_003,Which enzyme class accounts for the highest proportion of xenobiotic metabolism in the DrugBug database?,B,B,True,easy,factual
+drug_meta_mcq_004,"According to the paper, which drug was used to validate the gene bt4096 in Bacteroides thetaiotaomicron?",B,C,False,medium,factual
+drug_meta_mcq_005,What proportion of gut microbial sulfatases arise from Bacteroidetes?,D,D,True,medium,factual
+drug_meta_mcq_006,Which selective serotonin reuptake inhibitor (SSRI) association is correctly described in the paper?,C,C,True,medium,factual
+drug_meta_mcq_007,"What was the key finding regarding gut microbiota recovery after a 4-day cocktail of gentamicin, vancomycin, and meropenem in healthy subjects?",B,B,True,medium,mechanism
+drug_meta_mcq_008,"What percentage of non-antibiotic human-targeted drugs were found to repress the growth of at least one gut bacterial species, according to the study referenced in the paper?",C,C,True,medium,factual
+drug_meta_mcq_009,"Which three families were identified as the most frequent in Almeida and coworkers' metagenomic analysis of 13,133 human gut datasets?",A,B,False,medium,factual
+drug_meta_mcq_010,The bacterial enzyme Eggerthella lenta's cgr operon is specifically linked to which drug's inactivation?,A,C,False,hard,factual
+drug_meta_mcq_011,Which of the following correctly describes the SAM enzyme-mediated antibiotic resistance mechanism in gut bacteria?,B,B,True,hard,mechanism
+ehmd_mcq_001,How many infants were excluded from the trial due to not meeting inclusion criteria?,A,C,False,easy,factual
+ehmd_mcq_002,What was the primary cause of death for the control arm infant who survived the longest (133 days)?,D,D,True,easy,factual
+ehmd_mcq_003,What do the five time points (A–E) in the sample collection schematic (eFigure 2) represent?,B,B,True,easy,factual
+ehmd_mcq_004,Which covariate had the strongest statistical association (lowest p-value) with any genus in the MaAsLin2 analysis?,C,C,True,medium,factual
+ehmd_mcq_005,What was the Q value (FDR-adjusted p-value) for the association between probiotic unit and Bifidobacterium?,C,B,False,medium,factual
+ehmd_mcq_006,What was observed about Shannon diversity at study completion (time point E) in infants from non-probiotic units when comparing control vs. intervention arms?,B,B,True,medium,mechanism
+ehmd_mcq_007,What proportion of the variance in the Weighted UniFrac PCoA was explained by the first two principal coordinates (PC1 and PC2)?,D,B,False,medium,factual
+ehmd_mcq_008,Which genus showed a positive association with male sex in the MaAsLin2 analysis?,B,C,False,medium,factual
+ehmd_mcq_009,"Comparing the effect sizes of probiotic unit assignment and cumulative antibiotic use on Bifidobacterium, what does the MaAsLin2 analysis reveal?",A,B,False,hard,comparison
+ehmd_mcq_010,What does the association between MOM exposure at 34 weeks and Clostridium_sensu_stricto_1 suggest about the timing of diet-microbiome interactions in preterm infants?,B,B,True,hard,mechanism
+pan_microbiome_mcq_001,How many total subjects were included in the TwinsUK dataset?,C,C,True,easy,factual
+pan_microbiome_mcq_002,"What is the minimum sequence similarity threshold below which nucleotide alignments are generally considered to degrade, as used to set the lower bound in this study?",B,B,True,easy,factual
+pan_microbiome_mcq_003,How many core OTUs were detected at the 0.97 species-level similarity threshold in the Global dataset?,C,C,True,easy,factual
+pan_microbiome_mcq_004,What tool was used to map core OTU representative sequences against reference bacterial genomes to assess genome collection coverage?,C,C,True,medium,factual
+pan_microbiome_mcq_005,What was the total number of core OTUs (sequence clusters) found across all clustering thresholds in the Global dataset?,A,C,False,medium,factual
+pan_microbiome_mcq_006,Which two genera were identified as priority targets for future genome sequencing projects because their representative core OTUs lacked closely related sequenced genomes?,B,B,True,medium,factual
+pan_microbiome_mcq_007,"In the Global dataset, how many randomized matrices were generated for the permutation test used to assess statistical significance of core OTU detection?",C,C,True,medium,factual
+pan_microbiome_mcq_008,What happens to the shallowest detected core OTU in the LifeLines dataset when its cohort size is reduced to match that of the Global dataset?,B,B,True,medium,mechanism
+pan_microbiome_mcq_009,Which of the following best explains why Firmicutes-affiliated core groups showed far fewer predicted metabolic differences from the Global metagenome compared to Bacteroidetes-affiliated core groups?,C,C,True,hard,mechanism
+pan_microbiome_mcq_010,What does the concept of 'social and rival clubs' proposed for future research in this paper most directly refer to?,B,B,True,hard,mechanism
+gut_health_mcq_001,How much multi-omics data did the Human Microbiome Project generate by 2019?,C,C,True,easy,factual
+gut_health_mcq_002,What is the approximate oxygen level at the mucosal surface of the large intestine during homeostasis?,C,C,True,easy,factual
+gut_health_mcq_003,Which bacterium specializes in catabolizing human milk oligosaccharides and dominates the colonic microbiota of breastfed infants?,C,C,True,easy,factual
+gut_health_mcq_004,Which of the following is NOT listed as a condition in which an elevated relative abundance of facultatively anaerobic Bacillus and/or Gammaproteobacteria species is observed?,C,C,True,medium,factual
+gut_health_mcq_005,What metabolic shift in colonocytes drives increased luminal oxygen availability during dysbiosis?,B,B,True,medium,mechanism
+gut_health_mcq_006,What is the mechanism by which reactive oxygen species generated during intestinal inflammation ultimately contribute to increased abundance of facultatively anaerobic bacteria?,B,B,True,medium,mechanism
+gut_health_mcq_007,How does 5-aminosalicylic acid (5-ASA) exert its protective effect against dysbiosis?,B,B,True,medium,mechanism
+gut_health_mcq_008,"Which Candida species can bloom in the intestine following antibiotic-induced disruption of anaerobiosis, and why?",C,C,True,medium,mechanism
+gut_health_mcq_009,The paper argues that dysbiosis should be redefined ecologically. Which of the following best captures the proposed ecological definition of dysbiosis?,C,C,True,hard,conceptual
+gut_health_mcq_010,"In the colibactin-colorectal cancer mouse model, how do both 5-ASA treatment and sodium tungstate administration ultimately achieve similar endpoints, and what does this reveal about intervention strategy design?",B,B,True,hard,mechanism
+alpha13GT_mcq_001,"In which glycosyltransferase family is the α1,3-GalactosylTransferase enzyme classified according to the CAZy database?",C,C,True,easy,factual
+alpha13GT_mcq_002,"What percentage of subjects in the LifeLines-DEEP cohort exhibited α1,3GT sequences in their gut microbiome at an 85% identity cutoff?",D,D,True,easy,factual
+alpha13GT_mcq_003,"Which gene's loss-of-function mutation in humans results in the inability to express the α1,3-Galactose epitope?",B,B,True,easy,factual
+alpha13GT_mcq_004,"What was the mean number of α1,3GT gene sequences per subject in the Asian American cohort (individuals in Thailand) using an 85% identity cutoff?",C,C,True,medium,factual
+alpha13GT_mcq_005,"Which of the following is the correct substrate used as the galactose acceptor in the α1,3-GT activity ELISA assay performed in this study?",B,B,True,medium,factual
+alpha13GT_mcq_006,"Why did the authors opt for BURST DNA aligner rather than Kraken for quantifying α1,3GT gene homologs in shotgun metagenomics data?",B,B,True,medium,mechanism
+alpha13GT_mcq_007,"What statistical result was obtained when correlating the number of α1,3GT sequence hits in shotgun data with Gal antigen levels in stools of healthy volunteers?",C,C,True,medium,factual
+alpha13GT_mcq_008,"Which two genes were recently described as encoding bispecific transferases with α1,3GT activity, contributing to potential underestimation of α1,3GT-producing bacteria?",B,B,True,medium,factual
+alpha13GT_mcq_009,"What fundamental methodological advantage does the shotgun metagenomics approach used in this study have over 16S rRNA-based gut microbiota analysis for detecting α1,3GT gene sequences?",B,B,True,hard,mechanism
+alpha13GT_mcq_010,"Which of the following best explains why the study's estimate of α1,3GT-producing organisms in the gut is likely a minimum estimate?",C,C,True,hard,mechanism
+abx_vaccine_mcq_001,What was the timing of antibiotic administration relative to influenza vaccination in this study?,B,B,True,easy,factual
+abx_vaccine_mcq_002,"Which bacterial families were dominant in the gut of antibiotics-treated subjects on Days 0, 1, and 3 post-antibiotic initiation?",C,C,True,easy,factual
+abx_vaccine_mcq_003,"What is the correct description of the prior observation in mice (Oh et al., 2014) that motivated this human study?",C,C,True,easy,factual
+abx_vaccine_mcq_004,What metabolic analysis tool was used to identify significantly enriched metabolic pathways from the untargeted metabolomics data?,B,B,True,medium,factual
+abx_vaccine_mcq_005,Which of the following best describes the effect of antibiotics on the transcriptional response to TIV vaccination (vaccine-induced gene expression changes)?,C,C,True,medium,mechanism
+abx_vaccine_mcq_006,The study found evidence arguing against direct translocation of microbial products to the periphery as a mechanism for the observed inflammatory effects. What specific evidence supported this conclusion?,C,B,False,medium,mechanism
+abx_vaccine_mcq_007,Which metabolite cluster in the MMRN was uniquely associated with H1N1-specific IgG1 responses but NOT with LCA levels?,B,C,False,medium,mechanism
+abx_vaccine_mcq_008,"Two subjects in the Phase 1 antibiotics-treated group appeared to resist microbial disturbance. What was the suspected reason, and what provided corroborating metabolic evidence?",C,C,True,medium,mechanism
+abx_vaccine_mcq_009,"Based on this study's findings and the authors' discussion, which of the following populations would theoretically be MOST vulnerable to microbiome-mediated impairment of vaccine responses?",C,C,True,hard,comparison
+abx_vaccine_mcq_010,"What is the most accurate interpretation of the finding that antibiotic-treated subjects in Phase 1 showed no impairment in H1N1-specific MN titers, despite a 10,000-fold reduction in gut bacterial load?",C,C,True,hard,mechanism
+arabinan_fc_mcq_001,"Which commensal bacterial species, in addition to B. longum, were tested for abfA-cluster-dependent FC alleviation in this study?",B,B,True,easy,factual
+arabinan_fc_mcq_002,What was the primary model organism used to induce functional constipation in mouse experiments throughout this study?,C,C,True,easy,factual
+arabinan_fc_mcq_003,How many phylogenetic clades were identified when the 185 wild B. longum strains were analyzed using core gene maximum likelihood phylogenetics?,B,C,False,easy,factual
+arabinan_fc_mcq_004,"In the clinical trial, by how much did B. lon_8 supplementation increase stool frequency on average, and how much did it reduce the Cleveland Clinical Constipation Score (CCCS)?",B,B,True,medium,factual
+arabinan_fc_mcq_005,Which of the following metabolites was DEPLETED (not enriched) in fecal samples of FC patients after 28-day supplementation with abfA-cluster-carrying B. longum strains?,C,C,True,medium,factual
+arabinan_fc_mcq_006,"When the abfA cluster was identified across the NCBI database, how many bacterial genomes were found to harbor abfA homologs, spanning how many species and genera?",C,C,True,medium,factual
+arabinan_fc_mcq_007,What was the Spearman correlation between the temporal change in abfA-cluster abundance and the change in defecation frequency in the clinical trial?,C,C,True,medium,factual
+arabinan_fc_mcq_008,"In germ-free mice that received fecal microbiota transplantation from high-abfA-cluster human donors, by approximately how much did whole gut transit time decrease and fecal output increase compared to low-abfA recipients?",B,B,True,medium,factual
+arabinan_fc_mcq_009,The study explicitly ruled out one alternative hypothesis for how B. lon_8 relieves FC — the arabinose-sucrase inhibition pathway. Which of the following best describes why this mechanism was rejected?,B,B,True,hard,mechanism
+arabinan_fc_mcq_010,The multi-cohort meta-analysis in this study validated the predictive power of abfA-cluster abundance for FC by analyzing additional fecal metagenome samples. Which of the following best characterizes the breadth and finding of this validation?,B,B,True,hard,factual
+archaeome_mcq_001,What is the prevalence of Methanomassiliicoccales Mx06 (Ca. Methanoprimaticola hominis) among uncontacted Amerindians?,C,C,True,easy,factual
+archaeome_mcq_002,"How many novel genera, species, and strains were identified in the study?",B,C,False,easy,factual
+archaeome_mcq_003,Which of the following archaeal genera is represented by the most genomes in the catalogue?,D,D,True,easy,factual
+archaeome_mcq_004,What ANI (average nucleotide identity) value was used to define species-level boundaries in this study?,B,B,True,medium,factual
+archaeome_mcq_005,"What percentage of methane emitters (>5 ppm methane in breath) are present in the western population, and what fraction of the gut microbial community do they carry as archaeal signatures?",B,B,True,medium,factual
+archaeome_mcq_006,What was the median genome size difference between M. smithii and M. smithii_A (Ca. M. intestini)?,B,B,True,medium,factual
+archaeome_mcq_007,How many of the 27 archaeal species detected in human gut metagenomes had a cultured representative?,C,C,True,medium,factual
+archaeome_mcq_008,What percentage of all methanogenic MAGs (Methanobacteriales AND Methanomassiliicoccales combined) have the mtaABC genes for methanol utilization?,C,C,True,medium,mechanism
+archaeome_mcq_009,"The M. cuniculi MAGs recovered in this study were found in which host group, and why is this significant?",C,C,True,hard,factual
+archaeome_mcq_010,"What is the proposed name and rationale for the new genus encompassing Methanomassiliicoccales Mx02, and what makes its metabolism puzzling?",B,B,True,hard,mechanism
+cresci_2015_mcq_001,In which year did Eli Metchnikoff earn the Nobel Prize for his work in immunity related to gut bacteria?,C,C,True,easy,factual
+cresci_2015_mcq_002,How many reference strains from the human body has the Human Microbiome Project isolated and sequenced thus far?,D,D,True,easy,factual
+cresci_2015_mcq_003,What percentage of the sequences from African and European children's gut samples belonged to the four most populated bacterial phyla?,C,C,True,easy,factual
+cresci_2015_mcq_004,"According to Shimizu et al., compared to healthy controls, patients with severe SIRS had how many fewer logs of commensal Bifidobacterium and Lactobacillus?",B,B,True,medium,factual
+cresci_2015_mcq_005,"In the Cochrane review of probiotic supplementation in preterm neonates, how many randomized controlled trials (n = 5529) were included and what was the mean difference in days to achieve full enteral feeds?",B,B,True,medium,factual
+cresci_2015_mcq_006,What happens to the incidence of bacteremia when fecal pH is increased or decreased by 1 unit in critically ill patients?,B,B,True,medium,mechanism
+cresci_2015_mcq_007,"How quickly do alterations in the gut microbiome occur after a metabolic insult in critically ill patients, and do they normalize?",B,B,True,medium,mechanism
+cresci_2015_mcq_008,What proportion of distance runners have reportedly experienced intestinal problems related to high-intensity exercise?,C,C,True,medium,factual
+cresci_2015_mcq_009,"In the study by Lombardo et al. on proton pump inhibitor (PPI) use and small intestinal bacterial overgrowth (SIBO), what was the incidence of SIBO in long-term PPI users compared to healthy controls?",C,C,True,hard,factual
+cresci_2015_mcq_010,"In the geographic microbiome comparison study by Yatsunenko et al., how many enzymes were identified as significantly different between U.S. and Malawian/Amerindian breastfed babies, and what was the significance threshold?",C,C,True,hard,factual
+drug_mdm_mcq_001,How many times more genes does the human gut microbiome encode compared to the human genome?,C,C,True,easy,factual
+drug_mdm_mcq_002,What fraction of the 575 drugs screened with the PD microbiome were identified as MDM+?,B,B,True,easy,factual
+drug_mdm_mcq_003,"What concentration of drug was used in the MDM-Screen incubations with the PD microbiome, and why was this level chosen?",C,C,True,easy,factual
+drug_mdm_mcq_004,"In the multi-donor screen of 20 subjects, for which drug was inter-individual variability in MDM clinically known for decades before this study?",C,C,True,medium,factual
+drug_mdm_mcq_005,"When E. coli BW25113 uridine phosphorylase knockout (Δudp) was tested for capecitabine deglycosylation, what was the result compared to wild type?",B,B,True,medium,factual
+drug_mdm_mcq_006,"What is the Shannon variability entropy (HV) metric used for in the 20-donor MDM screen, and when is it maximal?",B,B,True,medium,mechanism
+drug_mdm_mcq_007,What was the prevalence of E. coli-derived deoA and udp genes (fluoropyrimidine deglycosylating enzymes) in Western versus non-Western metagenomic cohorts?,C,C,True,medium,factual
+drug_mdm_mcq_008,"In the functional metagenomic screening for the 20β-HSDH enzyme, from which bacterial genus did the positive metagenomic clone (Hyd-red-1) likely originate, and how was this established?",C,C,True,medium,mechanism
+drug_mdm_mcq_009,Spironolactone MDM by the PD microbiome produced 7α-thiospironolactone through thioester hydrolysis. Why is this clinically relevant?,B,B,True,hard,mechanism
+drug_mdm_mcq_010,The 20β-HSDH discovered from the PD microbiome (Bifidobacterium-derived) was found to be widespread in human populations. How did its prevalence compare to the previously known 20α-HSDH from Clostridium scindens?,C,C,True,hard,comparison
+drug_microbiome_mcq_001,"In the Dutch LifeLines-DEEP cohort study, how many out of 42 commonly used drugs were found to be associated with gut microbiome changes?",B,B,True,easy,factual
+drug_microbiome_mcq_002,What proportion of the 271 orally administered drugs tested in the Zimmermann et al. systematic study were metabolised by at least one bacterial strain?,D,C,False,easy,factual
+drug_microbiome_mcq_003,What percentage of the Dutch population currently uses either pantoprazole or omeprazole by prescription?,B,B,True,easy,factual
+drug_microbiome_mcq_004,"In the population-based Netherlands study, which drug category was most strongly associated with decreased gut microbiome diversity and taxonomical changes?",C,C,True,medium,factual
+drug_microbiome_mcq_005,"In the study of 1135 Dutch individuals that assessed gut microbiome diversity, what proportion of the 639 bacterial species identified were present in fewer than 10 individuals?",B,D,False,medium,factual
+drug_microbiome_mcq_006,"What was the earliest historical demonstration that gut microbes can impact drug efficacy, and when was it made?",B,B,True,medium,factual
+drug_microbiome_mcq_007,"What percentage of brivudine's hepatotoxicity was attributed to gut microbes in the study by Zimmermann et al., and which bacterial species were primarily responsible?",C,C,True,medium,mechanism
+drug_microbiome_mcq_008,Which bacterial species was identified as the dominant driver of levodopa metabolism via tyrosine decarboxylases (tyrDCs) in the gut?,C,C,True,medium,mechanism
+drug_microbiome_mcq_009,"In the context of cancer immunotherapy, which bacterial species were positively correlated with response to checkpoint inhibitors, according to the series of clinical studies described in the paper?",B,B,True,hard,factual
+drug_microbiome_mcq_010,"In a Phase 1/2 clinical trial described in the paper, an oral microbial product (VE800) containing 11 clonal commensal bacterial strains was developed. What was the therapeutic objective and what immune response did these strains induce?",B,B,True,hard,mechanism
+enterosig_mcq_001,How many enterosignatures were identified in the study?,A,C,False,easy,factual
+enterosig_mcq_002,Which method was used to derive enterosignatures?,B,B,True,easy,factual
+enterosig_mcq_003,Which enterosignature is commonly dominant in infants?,B,C,False,easy,factual
+enterosig_mcq_004,What is a key advantage of enterosignatures over enterotypes?,C,C,True,medium,comparison
+enterosig_mcq_005,Which enterosignature is associated with dysbiotic or pathological states?,C,C,True,medium,factual
+enterosig_mcq_006,Which enterosignature acts as a core component in western microbiomes?,B,B,True,medium,mechanism
+enterosig_mcq_007,What happens to ES diversity with age?,C,C,True,medium,mechanism
+enterosig_mcq_008,What type of relationship exists between ES-Bact and ES-Prev?,C,C,True,medium,comparison
+enterosig_mcq_009,Why does combining multiple enterosignatures increase metabolic potential?,C,C,True,hard,mechanism
+enterosig_mcq_010,Which condition is associated with low enterosignature model fit?,C,C,True,hard,mechanism
+fermented_foods_mcq_001,Who was one of the earliest proponents of the hypothesis that fermented foods promote health and longevity?,C,C,True,easy,factual
+fermented_foods_mcq_002,"What is the primary advantage that cheese production offered over raw milk consumption in early human history, beyond extended shelf life?",B,B,True,easy,factual
+fermented_foods_mcq_003,Which of the following bacterial groups is responsible for the characteristic holes ('eyes') and flavour of Swiss-type cheeses like Emmental?,C,C,True,easy,factual
+fermented_foods_mcq_004,"In the Wastyk et al. (2021) study comparing fermented food and high-fiber diets, what key microbiome outcome was uniquely observed in the fermented food group?",B,B,True,medium,factual
+fermented_foods_mcq_005,What mechanism do polyphenols use to selectively inhibit pathogenic bacteria while sparing beneficial commensal gut microbes?,C,C,True,medium,mechanism
+fermented_foods_mcq_006,What was the approximate log CFU/g population of Non-Starter Lactic Acid Bacteria (NSLAB) from Cheddar cheese that was found to survive simulated gastric transit in the Leeuwendaal et al. (2021) study?,B,C,False,medium,factual
+fermented_foods_mcq_007,"In the red wine polyphenol study by Moreno-Indias et al. (2016), which bacterial species increased alongside Bifidobacterium and Lactobacillaceae following consumption?",B,B,True,medium,factual
+fermented_foods_mcq_008,"In the Saxelin et al. (2010) study comparing probiotic survival across different delivery matrices (capsules, yogurt, cheese), what pattern was observed?",C,C,True,medium,mechanism
+fermented_foods_mcq_009,"In the Odamaki et al. probiotic yogurt study involving an animal-based diet protocol, the YAB group (yogurt given throughout) showed stabilized gut microbiome profiles compared to YB and CTR groups. What proposed mechanism explained this protective effect?",B,B,True,hard,mechanism
+fermented_foods_mcq_010,"The review identifies a critical gap in research regarding the site of fermented food impact on the gut microbiome. What specific limitation is highlighted, and what is the proposed likely reality?",B,B,True,hard,mechanism
+aging_microbiome_mcq_001,"According to the review, what type of organisms does the family Bacteroidaceae variation between c-section and vaginally delivered infants correlate with in terms of development?",B,B,True,easy,factual
+aging_microbiome_mcq_002,"In a large cross-sectional cohort study in China, how did the microbiome profiles of healthy young adults compare to healthy older adults extended to ages beyond 94 years?",B,B,True,easy,factual
+aging_microbiome_mcq_003,Which bacterial genus is thought to be involved in metabolizing fiber in Western diets and may determine if an individual will respond favorably to a high-fiber dietary intervention?,C,C,True,easy,factual
+aging_microbiome_mcq_004,"The 'Nu-Age' trial was a multi-center, one-year intervention based on the Mediterranean Diet in community-dwelling older adults. Which outcome did it fail to show a significant effect on?",D,D,True,medium,factual
+aging_microbiome_mcq_005,The study by Ghosh et al. examined fecal microbiomes across seven different datasets. How many total samples were analyzed?,A,C,False,medium,factual
+aging_microbiome_mcq_006,Which of the following correctly describes the relationship between immunosenescence and the gut microbiome in aging?,B,B,True,medium,mechanism
+aging_microbiome_mcq_007,"According to the review, what happens to the gut microbiome of adult immigrants from Asia to the USA over time?",C,C,True,medium,mechanism
+aging_microbiome_mcq_008,Which of the following is NOT a consistent finding across studies of centenarians and super-centenarians across geographic regions?,A,D,False,medium,comparison
+aging_microbiome_mcq_009,Which of the following best explains why antibiotic exposure in the first 2 years of life is associated with a broad range of diseases later in childhood?,B,B,True,hard,mechanism
+aging_microbiome_mcq_010,A proteomics-based study examining the microbiome's functional changes with age found a strong correlation between age and decreasing abundance of proteins involved in which biosynthetic pathways?,B,B,True,hard,mechanism
+hmc_mcq_001,"After applying quality control filters (minimum 10,000 reads, rare taxon removal), how many samples and unique taxa were retained in the final analysis dataset?",C,B,False,easy,factual
+hmc_mcq_002,Which world region had the highest alpha diversity (median Shannon index) in the compendium?,C,C,True,easy,factual
+hmc_mcq_003,What proportion of samples in the Human Microbiome Compendium came from Europe and Northern America?,C,C,True,easy,factual
+hmc_mcq_004,"In the differential abundance analysis comparing world regions to Europe and Northern America, which pair of regions showed the greatest number of differentially abundant taxa, and which pair showed the fewest?",B,B,True,medium,comparison
+hmc_mcq_005,"Which hypervariable region amplicon was the most popular across the compendium, and approximately how many samples used it?",B,B,True,medium,factual
+hmc_mcq_006,What was the effect of using the V4 hypervariable region on the relative abundance of Akkermansia compared to other amplicons?,C,C,True,medium,factual
+hmc_mcq_007,"How was amplicon choice (i.e., which hypervariable region was targeted) inferred from the processed DADA2 data for each BioProject?",B,B,True,medium,mechanism
+hmc_mcq_008,What did the phylogenetic gain analysis reveal when the taxa of Eastern and South-Eastern Asia were added to the baseline phylogenetic tree of Europe and Northern America?,B,B,True,medium,comparison
+hmc_mcq_009,The authors found that the interaction term between world region and amplicon choice (R² = 0.010) was larger than amplicon choice alone (R² = 0.009) in PERMANOVA. What is the most accurate interpretation of this finding?,B,B,True,hard,mechanism
+hmc_mcq_010,The authors argue that batch correction of large-scale compendia containing many studies is ineffective. Which of the following best describes the reasoning they provide for why regional biological signals can nevertheless be reliably detected?,C,C,True,hard,mechanism
+gut_dietary_mcq_001,Which of the following enzyme families does Prevotella spp. produce to degrade plant-based polysaccharides and xylans?,B,B,True,easy,factual
+gut_dietary_mcq_002,What is butyrate's primary physiological role for colonocytes?,C,C,True,easy,factual
+gut_dietary_mcq_003,"According to the paper, which diet formulation was found to specifically enhance the abundance of SCFA-producing microbes such as Bifidobacterium sp., Anaerostipes, and Lachnospiraceae?",B,B,True,easy,factual
+gut_dietary_mcq_004,How do Microbiota-Accessible Carbohydrates (MACs) influence gut microbiome behavior when absent from the diet?,B,B,True,medium,mechanism
+gut_dietary_mcq_005,"Which specific enzyme system does Bifidobacterium longum subsp. infantis deploy to metabolize HMOs, and how does it differ from Bifidobacterium bifidum's approach?",B,B,True,medium,mechanism
+gut_dietary_mcq_006,Through which transport mechanisms are SCFAs absorbed across the colonic epithelium into host circulation?,B,B,True,medium,mechanism
+gut_dietary_mcq_007,What microbial sequence of reactions converts dietary lignans (specifically secoisolariciresinol diglucoside) to enterolactone in the human colon?,B,B,True,medium,mechanism
+gut_dietary_mcq_008,What happens to hepatic Cyp7a1 gene expression when bile acids activate FXR in the distal ileum?,B,B,True,medium,mechanism
+gut_dietary_mcq_009,"Which of the following best explains why the authors used in silico analysis to study amino acid degradation pathways, and what was the key finding regarding shared genes between humans and gut microbiome?",B,B,True,hard,mechanism
+gut_dietary_mcq_010,"Considering the full metabolic trajectory described in the paper, which statement most accurately captures the relationship between dietary fat-soluble vitamins and the gut microbiome?",B,B,True,hard,mechanism
+eye_microbiome_mcq_001,Which of the following is NOT listed as a canonical role of gut bacteria in the human body?,C,C,True,easy,factual
+eye_microbiome_mcq_002,What happened when germ-free mice received a fecal transplant from a human donor in the studies cited by Shivaji (2019)?,C,C,True,easy,factual
+eye_microbiome_mcq_003,Which bacterial species was shown to control obesity when supplemented into fecal transplant experiments?,C,C,True,easy,factual
+eye_microbiome_mcq_004,How were retina-specific T cells shown to be involved in autoimmune uveitis in mice?,B,B,True,medium,mechanism
+eye_microbiome_mcq_005,Which ocular diseases have been associated with gut microbiome dysbiosis in a high-fat diet mouse model?,C,C,True,medium,factual
+eye_microbiome_mcq_006,What distinguishes fungal keratitis (FK) gut microbiome changes from bacterial keratitis (BK) gut microbiome changes as described in the review?,C,C,True,medium,comparison
+eye_microbiome_mcq_007,"According to the paper, how many bacterial genera were initially identified in the core ocular surface microbiome by Dong et al. (2011), and how many have subsequently been described?",B,B,True,medium,factual
+eye_microbiome_mcq_008,"What gut microbiome feature is shared between patients with fungal keratitis, stage 4 hepatitis C, myalgic encephalomyelitis, inflammatory bowel diseases, Sjögren syndrome, and Alzheimer's disease?",C,C,True,medium,comparison
+eye_microbiome_mcq_009,The gut microbiome is described as dynamic and influenced by multiple factors. Which of the following is NOT listed among those factors in the paper?,C,C,True,medium,factual
+eye_microbiome_mcq_010,Which of the following best explains why establishing a gut microbiome–uveitis connection is described as particularly challenging compared to gut microbiome–digestive disease connections?,B,B,True,hard,complex_reasoning
+func_matters_mcq_001,Which of the following is listed as an essential function conferred by the gut microbiome on the human host?,B,B,True,easy,factual
+func_matters_mcq_002,What is functional diversity in the context of the gut microbiome?,B,B,True,easy,factual
+func_matters_mcq_003,"According to the paper, what percentage of genes without predicted known functions in the integrated gene catalogue (IGC) were found to be expressed in the authors' own data?",C,C,True,easy,factual
+func_matters_mcq_004,Why do commonly applied normalization techniques in metagenomic analysis contribute to an underestimation of functional variability?,B,B,True,medium,mechanism
+func_matters_mcq_005,What key finding about inter-individual versus intra-individual variability applies to functional omics in the gut microbiome?,B,B,True,medium,mechanism
+func_matters_mcq_006,What does the paper say about the relationship between functional richness and human health?,C,C,True,medium,factual
+func_matters_mcq_007,What does the paper identify as a significant limitation of current metabolomic approaches for studying the gut microbiome?,C,C,True,medium,factual
+func_matters_mcq_008,"According to the paper's analysis of the integrated gene catalogue (IGC), what is true about the unique genes found in gut microbiome metagenomes?",B,B,True,medium,mechanism
+func_matters_mcq_009,Which combination of approaches does the paper recommend for rational intervention strategies leveraging the gut microbiome to alter host phenotype?,B,B,True,hard,mechanism
+func_matters_mcq_010,What does the paper conclude about the discriminatory power of metatranscriptomic versus metagenomic functional profiles for distinguishing between different individuals?,C,C,True,hard,mechanism
+gut_health_mcq_001,Approximately what percentage of the colon's microbial content do bacteria represent in terms of feces dry mass?,C,C,True,easy,factual
+gut_health_mcq_002,Which of the following short-chain fatty acids is NOT listed as a product of microbial fermentation of indigestible carbohydrates?,D,D,True,easy,factual
+gut_health_mcq_003,Which probiotic species is noted to prevent tooth decay?,,B,False,easy,factual
+gut_health_mcq_004,What is the primary mechanism by which clindamycin administration causes long-term gut microbiota disruption?,B,B,True,medium,factual
+gut_health_mcq_005,"In irritable bowel syndrome (IBS), which directional change in bacterial taxa is consistently reported compared to healthy controls?",B,B,True,medium,factual
+gut_health_mcq_006,How does a high-proportion of Firmicutes to Bacteroidetes/Prevotella in obese individuals contribute to increased energy harvest?,B,B,True,medium,mechanism
+gut_health_mcq_007,"Which neurochemical produced by gut microbiota is described as a significant inhibitory neurotransmitter in the brain, with its dysfunction connected to neuropsychiatric disorders?",C,C,True,medium,mechanism
+gut_health_mcq_008,Which of the following best describes the requirement for a substance to qualify as a prebiotic?,B,B,True,medium,factual
+gut_health_mcq_009,"In colorectal cancer (CRC), which of the following best describes the combined microbial and immunological mechanism driving tumor progression?",B,B,True,hard,mechanism
+gut_health_mcq_010,"Considering the evidence on host genetics versus environment in shaping gut microbiota, which study design and finding most strongly supports a genetic contribution?",B,B,True,hard,comparison
+gut_hormone_mcq_001,Which EEC subtype secretes ghrelin?,C,C,True,easy,factual
+gut_hormone_mcq_002,What is the primary energy source for colonocytes?,C,C,True,easy,factual
+gut_hormone_mcq_003,Which hormone is released postprandially by I cells in the proximal gut and relies primarily on vagal afferent stimulation to exert satiety effects on the brain?,D,D,True,easy,factual
+gut_hormone_mcq_004,FFAR3-mRFP reporter expression was found to be strongly expressed in which cell types and location?,B,B,True,medium,factual
+gut_hormone_mcq_005,"What proportion of total SCFAs do branched-chain fatty acids, such as isovalerate, comprise in the distal gut?",A,B,False,medium,factual
+gut_hormone_mcq_006,Which signaling cascade does isovalerate activate via Olfr588 in EC cells to ultimately trigger 5-HT release?,C,C,True,medium,mechanism
+gut_hormone_mcq_007,Which of the following best explains why vascularly administered TDCA was more effective than luminally administered TDCA in triggering GLP-1 secretion in a perfused rat model?,B,B,True,medium,mechanism
+gut_hormone_mcq_008,"In the context of indole-mediated GLP-1 secretion, what dual mechanism explains how prolonged indole exposure reduces GLP-1 secretion after an initial stimulatory effect?",B,B,True,medium,mechanism
+gut_hormone_mcq_009,"According to the paper, how does FXR deficiency protect against diet-induced obesity and insulin resistance at the molecular level?",B,B,True,hard,mechanism
+gut_hormone_mcq_010,"Which of the following best characterizes the difference in gut microbiota regulation of plasma GLP-1/PYY levels between germ-free and conventionally raised mice, and the underlying cellular mechanism?",B,B,True,hard,mechanism
+mci_microbiome_mcq_001,How long was the probiotic intervention period in this clinical trial?,C,C,True,easy,factual
+mci_microbiome_mcq_002,What sequencing technology was used for 16S rRNA amplicon sequencing in this study?,C,C,True,easy,factual
+mci_microbiome_mcq_003,How many participants had cognitive impairment at baseline in each treatment group?,B,B,True,easy,factual
+mci_microbiome_mcq_004,"Which bioinformatic pipeline was used for processing 16S rRNA amplicon sequencing data, including quality filtering and chimera detection?",B,B,True,medium,factual
+mci_microbiome_mcq_005,Which taxon was associated with cognitively INTACT individuals in the LEfSe analysis at the phylum level?,B,C,False,medium,factual
+mci_microbiome_mcq_006,What does the significant pairwise beta diversity difference (Bray Curtis P = 0.018) following LGG supplementation indicate about the nature of microbiome change?,B,B,True,medium,mechanism
+mci_microbiome_mcq_007,How many Prevotella species were identified in both cognitive groups by Bracken during WGS analysis?,C,C,True,medium,factual
+mci_microbiome_mcq_008,"According to a meta-analysis cited in this paper, what duration and type of probiotic intervention was found most effective for cognitive improvement in human studies?",B,B,True,medium,factual
+mci_microbiome_mcq_009,"What unexpected taxon showed increased differential abundance in the probiotic group at the aggregate level, and what was the most likely explanation for its presence?",C,C,True,hard,mechanism
+mci_microbiome_mcq_010,Which of the following best explains why the study selected only participants with the highest Prevotella relative abundance for WGS sequencing?,B,B,True,hard,mechanism
+weight_mgmt_mcq_001,"According to WHO estimates cited in the paper, what fraction of deaths among children under 5 years of age does undernutrition contribute to?",C,C,True,easy,factual
+weight_mgmt_mcq_002,"What percentage of initial body weight can most overweight people lose over a 6-month period using lifestyle interventions, according to the paper?",C,B,False,easy,factual
+weight_mgmt_mcq_003,What fraction of the colonic epithelium's energetic needs does butyrate supply?,C,C,True,easy,factual
+weight_mgmt_mcq_004,"In the meta-analysis of weight management interventions, what range of variation in gut microbiota composition could be attributed to intervention, and what range was explained by interindividual variation?",B,B,True,medium,factual
+weight_mgmt_mcq_005,What was the key finding about metformin's mechanism of action as established through gnotobiotic transplantation experiments?,B,B,True,medium,mechanism
+weight_mgmt_mcq_006,"Regarding dietary fibre supplementation and gut microbiome effects, which of the following correctly describes the findings on high-dose inulin administration?",B,B,True,medium,factual
+weight_mgmt_mcq_007,"In the machine learning analysis of diet-induced microbiome changes, which diets were most easily distinguished from general caloric restriction, and which were most difficult to distinguish?",A,A,True,medium,comparison
+weight_mgmt_mcq_008,"What percentage of metformin-treated patients experience gastrointestinal side effects, and what microbial factor has been correlated with these side effects?",C,C,True,medium,factual
+weight_mgmt_mcq_009,"In the exploratory human study of pasteurized Akkermansia muciniphila supplementation (n=40, 3 months), what were the confirmed statistically significant metabolic outcomes versus those that remained non-significant?",B,B,True,hard,factual
+weight_mgmt_mcq_010,"Which of the following best captures the concept of 'dynamic energetic buffering' described in the paper, and what is its significance for gut microbiome research?",B,B,True,hard,mechanism
+hma_causality_mcq_001,What is the full form of HMA as used in this paper?,B,B,True,easy,factual
+hma_causality_mcq_002,How many total studies were included in the authors' systematic review of HMA murine models?,C,C,True,easy,factual
+hma_causality_mcq_003,Which of the following is the correct definition of 'dysbiosis' as used by the authors in this paper?,B,B,True,easy,factual
+hma_causality_mcq_004,What percentage of the HMA studies in the systematic review tested for dysbiosis in the original human donor samples?,C,C,True,medium,factual
+hma_causality_mcq_005,"Which of the following mouse pathogens shares a type 3 secretion system with human pathogens EPEC and EHEC, but unlike them, actually causes disease in mice?",B,B,True,medium,factual
+hma_causality_mcq_006,What was the key finding of the Zhang et al. 2017 study cited by the authors regarding HMA rodent isolator experiments?,B,B,True,medium,mechanism
+hma_causality_mcq_007,"According to the authors, for which category of disease are HMA murine models LEAST reliable?",B,B,True,medium,mechanism
+hma_causality_mcq_008,"What was the mechanistic insight provided by the Feehley et al. 2019 allergy study, one of the few mechanistically rigorous HMA studies highlighted in the paper?",B,B,True,medium,mechanism
+hma_causality_mcq_009,The authors advocate a shift in mindset for microbiome science inspired by Karl Popper's philosophy of science. Which of the following best captures Popper's recommendation as cited in this paper?,B,B,True,hard,conceptual
+hma_causality_mcq_010,The two studies identified as 'exceptions' (not showing disease transfer based on donor disease state) in the systematic review were both focused on which disease? What did they find instead?,B,B,True,hard,analysis
+hybrid_mag_mcq_001,What tool was used to perform hybrid assembly by combining PromethION long reads with Illumina short-read assemblies?,C,C,True,easy,factual
+hybrid_mag_mcq_002,At what time points were samples collected from each fermentation vessel in the model colon experiment?,A,B,False,easy,factual
+hybrid_mag_mcq_003,Which Bifidobacterium species was the only one to increase in abundance specifically in response to Hylon starch?,C,C,True,easy,factual
+hybrid_mag_mcq_004,What percentage of reads were removed during quality trimming and filtering of PromethION data?,C,C,True,medium,factual
+hybrid_mag_mcq_005,"According to the CAZyme analysis, which three glycoside hydrolase families accounted for 34.1% of all GH and CBM counts in MAGs showing >2-log fold change in abundance?",B,B,True,medium,factual
+hybrid_mag_mcq_006,"How many GH13 genes were identified in the R. bromii MAG assembled in this study, and how does this compare to a previously sequenced isolate?",A,C,False,medium,factual
+hybrid_mag_mcq_007,What was the primary criterion used for dereplication of MAGs into secondary unique clusters?,B,B,True,medium,factual
+hybrid_mag_mcq_008,Which two previously uncharacterised species (not identified in NCBI) were found to harbour multiple copies of the GH32 (inulinase) gene and showed increased abundance during inulin fermentation?,B,B,True,medium,factual
+hybrid_mag_mcq_009,"How many total MAG secondary unique clusters exhibited a ≥2x log fold increase in relative abundance across all treatments, and which treatment had the highest count of such MAGs?",B,B,True,hard,factual
+hybrid_mag_mcq_010,Which of the following correctly describes why the Blautia hydrogenotrophica showed the largest abundance increase in the Avicel (cellulose) treatment despite Avicel being highly resistant to fermentation?,B,B,True,hard,mechanism
+inulin_mcq_001,What type of bond links the fructosyl units in inulin?,C,C,True,easy,factual
+inulin_mcq_002,What databases were searched in the systematic review's literature search strategy?,D,C,False,easy,factual
+inulin_mcq_003,"According to the Costabile et al. 2010 study, what was the source of inulin used?",C,C,True,easy,factual
+inulin_mcq_004,"In the Holscher et al. 2015 study, by approximately how much did Bifidobacterium increase with 7.5g/day of agave inulin?",C,C,True,medium,factual
+inulin_mcq_005,Which statement best describes the effect of inulin supplementation on beta diversity across the reviewed studies?,B,B,True,medium,mechanism
+inulin_mcq_006,What is the proposed reason for the decrease in Bacteroides abundance following inulin supplementation?,C,C,True,medium,mechanism
+inulin_mcq_007,"In the Dewulf et al. 2013 study in obese women, what were the baseline and post-intervention mean relative abundance values for Bifidobacterium?",A,B,False,medium,factual
+inulin_mcq_008,What was the duration and population of the Reimer et al. 2017 trial on inulin-type fructans?,B,C,False,medium,factual
+inulin_mcq_009,Why is the use of 16S rRNA sequencing alone considered insufficient for fully characterizing the effects of inulin supplementation on the gut microbiome?,C,C,True,hard,mechanism
+inulin_mcq_010,Which of the following best explains the paradox that inulin supplementation increases known butyrate-producing bacteria but does not consistently increase fecal butyrate levels in human studies?,B,B,True,hard,mechanism
+kombucha_mcq_001,What was the randomization ratio of kombucha to control participants in this trial?,B,B,True,easy,factual
+kombucha_mcq_002,How much kombucha did intervention participants consume daily during the four-week intervention period?,C,C,True,easy,factual
+kombucha_mcq_003,What was the most abundant phylum in the gut microbiota of all study participants?,C,C,True,easy,factual
+kombucha_mcq_004,What statistical method was used to identify differentially abundant microbial species between kombucha consumers and controls?,C,C,True,medium,factual
+kombucha_mcq_005,"Which genus was predominantly associated with the kombucha group in the relative abundance of top 20 species analysis, whereas which genus was characteristic of the control group?",B,B,True,medium,factual
+kombucha_mcq_006,"How many total MetaCyc pathways showed significant changes between the kombucha and control groups at the end of the intervention, and how many of these were enriched in kombucha participants?",C,C,True,medium,factual
+kombucha_mcq_007,What alpha diversity metric showed a statistically significant reduction in the kombucha group from time point 1 to time point 3 after multiple testing correction?,B,B,True,medium,factual
+kombucha_mcq_008,How was the sample size for this trial determined in the absence of prior kombucha-specific human microbiome intervention data?,B,B,True,medium,mechanism
+kombucha_mcq_009,"The finding of increased fasting insulin and HOMA-IR in the kombucha group is best interpreted as which of the following, based on the authors' own discussion?",B,B,True,hard,mechanism
+kombucha_mcq_010,Which combination of factors best explains why the finding of decreased Shannon diversity in the kombucha group paradoxically coexists with enrichment of SCFA-producing taxa — a typically health-associated finding?,B,B,True,hard,mechanism
+mancabelli_mcq_001,What minimum quality threshold criteria were applied to include metagenomic datasets in the WGMD?,A,B,False,easy,factual
+mancabelli_mcq_002,What is the average abundance of the Alistipes genus in industrialized populations compared to hunter-gatherer populations?,A,A,True,easy,factual
+mancabelli_mcq_003,"How many total bacterial genera constitute the pan-microbiome reconstructed from the WGMD, and of these, how many were present in more than 90% of samples in at least one population?",B,B,True,easy,factual
+mancabelli_mcq_004,What percentage of carbohydrate degradation pathway reads are found in the gut microbiomes of pre-agricultural communities versus developed country communities?,B,B,True,medium,factual
+mancabelli_mcq_005,Which bacterial taxa were found to be uniquely present in urbanized/industrialized populations but absent from pre-agricultural communities?,A,B,False,medium,factual
+mancabelli_mcq_006,What is the abundance of Euryarchaeota in the Matses gut microbiome and which genus primarily represents this phylum?,A,B,False,medium,factual
+mancabelli_mcq_007,Which demographic criteria were applied to select individual samples from the sequencing projects for inclusion in the WGMD?,B,B,True,medium,factual
+mancabelli_mcq_008,What is a key advantage of using shotgun metagenomic data over 16S rRNA gene-based amplicon sequencing for the type of cross-population comparison performed in this study?,B,B,True,medium,mechanism
+mancabelli_mcq_009,"In the genome reconstruction of Treponema succinifaciens and Barnesiella intestinihominis, which datasets were used respectively and what were the assembly outcomes?",B,B,True,hard,factual
+mancabelli_mcq_010,Which of the following best explains why the authors argue that urbanization/industrialization led to a selective pressure for microbiome expansion rather than simplification in terms of metabolic capabilities?,B,B,True,hard,mechanism
+maternal_microbiome_mcq_001,"According to the CHILD study, what is the correct ranking of infant gut microbiota richness and diversity at 4 months of age by feeding type?",B,B,True,easy,factual
+maternal_microbiome_mcq_002,What methodology was used by the majority of studies in this systematic review for assessing the infant microbiome?,C,C,True,easy,factual
+maternal_microbiome_mcq_003,What percentage of included studies in this review were classified as 'acceptable' methodological quality by the SIGN criteria?,C,C,True,easy,factual
+maternal_microbiome_mcq_004,What was the mean difference in infant gut microbiome alpha diversity associated with maternal intrapartum antibiotic prophylaxis (IAP) in the meta-analysis of five studies?,B,B,True,medium,factual
+maternal_microbiome_mcq_005,"In Stearns and colleagues' study, what was the quantified dose-response relationship between intrapartum antibiotic prophylaxis duration and infant Bifidobacteria?",C,C,True,medium,factual
+maternal_microbiome_mcq_006,"What is 'dysbiosis' as described in this review, and in what clinical context is the concept applied?",C,C,True,medium,mechanism
+maternal_microbiome_mcq_007,"In the study by Bisanz and colleagues, what microbiome change was observed in infants at 10–25 days of age whose mothers received Lactobacillus rhamnosus GR-1 probiotics?",B,B,True,medium,factual
+maternal_microbiome_mcq_008,"What is the 'holobiont' concept as used in this paper, and what does it encompass?",B,B,True,medium,mechanism
+maternal_microbiome_mcq_009,"In Azad and colleagues' large study, infants born via emergency caesarean-section who were exposed to IAP showed which of the following microbiome characteristics at 12 months compared to vaginally-delivered infants without IAP?",B,B,True,hard,mechanism
+maternal_microbiome_mcq_010,"What is the key reason why this systematic review could not perform meta-analyses for all maternal exposure groups, and what primary limitation does this reflect about the field?",B,B,True,hard,mechanism
+maternal_probiotic_mcq_001,"According to the PRISMA flow chart, how many articles were included in the final systematic review?",,B,False,easy,factual
+maternal_probiotic_mcq_002,What tool was used to assess the risk of bias across the included randomized controlled trials?,C,C,True,easy,factual
+maternal_probiotic_mcq_003,Which geographic region contributed the most studies to this systematic review?,B,B,True,easy,factual
+maternal_probiotic_mcq_004,What was the standard mean difference (SMD) for beneficial bacteria abundance in the infant gut stool of infants whose mothers received probiotic supplementation?,C,C,True,medium,factual
+maternal_probiotic_mcq_005,"Which statistical model was used for all summary measures in this meta-analysis, and what was the primary reason for this choice?",B,B,True,medium,mechanism
+maternal_probiotic_mcq_006,"In the study by Arroyo et al. (2010), what was the comparator used in the control group, making it methodologically distinct from most other included trials?",A,C,False,medium,factual
+maternal_probiotic_mcq_007,What was the key finding from the Vähämiko et al. (2019) study that provided a molecular explanation for the weight regulation effect of prenatal probiotics?,B,B,True,medium,mechanism
+maternal_probiotic_mcq_008,"What effect measure was used for the beneficial bacteria detection rate in breast milk, and why was it preferred over relative risk?",B,B,True,medium,mechanism
+maternal_probiotic_mcq_009,"Among the following combinations of effect size and confidence interval reported in this meta-analysis, which outcome showed NO statistically significant publication bias by Egger's test?",D,D,True,hard,comparison
+maternal_probiotic_mcq_010,"What is the theoretical basis for why maternal ORAL probiotic supplementation can influence the breast milk microbiome, according to the gut-breast axis model?",C,C,True,hard,mechanism
+obesity_microbiome_mcq_001,"According to projections cited in this paper, what percentage of the world's adult population is estimated to be obese by 2030?",A,C,False,easy,factual
+obesity_microbiome_mcq_002,Which sequencing platform was most widely used across the included studies in this systematic review?,C,C,True,easy,factual
+obesity_microbiome_mcq_003,Which reference database was most commonly used for taxonomic classification across the studies included in this review?,D,D,True,easy,factual
+obesity_microbiome_mcq_004,"In the meta-analysis of six studies comparing Firmicutes abundance in obese versus non-obese persons, what was the mean difference and its confidence interval?",A,B,False,medium,factual
+obesity_microbiome_mcq_005,"What was the overall risk of bias assessment for the majority of included studies, based on the adapted ROBINS-I tool?",A,C,False,medium,factual
+obesity_microbiome_mcq_006,The Verdam et al. study classified obese and non-obese subjects into two microbial clusters. Which of the following best describes the characteristics of the obese cluster?,B,B,True,medium,factual
+obesity_microbiome_mcq_007,In which specific population subgroup did the Peters et al. study find significantly lower microbial richness in obese versus non-obese persons?,B,B,True,medium,factual
+obesity_microbiome_mcq_008,"What is the key reason the authors argue that working with relative abundances alone is a limitation in microbiome research, and what methods do they suggest to overcome it?",B,B,True,medium,mechanism
+obesity_microbiome_mcq_009,"The study by Kaplan et al. (2019), which used data from the Hispanic Community Health Study, found a significantly lower Shannon diversity only in which obesity class compared to normal weight?",C,C,True,hard,factual
+obesity_microbiome_mcq_010,Which of the following best explains why the genus Fusobacterium and Megasphera are considered potentially harmful genera enriched in obesity?,B,B,True,hard,mechanism
+prob_anti_mcq_001,What diseases has deviation from normal gut microbiome diversity (dysbiosis) been linked to?,A,A,True,easy,factual
+prob_anti_mcq_002,What is the definition of probiotics according to the paper?,B,B,True,easy,factual
+prob_anti_mcq_003,"What were the Cohen's kappa coefficients at each selection step of the systematic review, indicating inter-rater agreement?",A,B,False,easy,factual
+prob_anti_mcq_004,"What was the mean difference in Shannon diversity index between probiotic-supplemented and antibiotic-only groups, and was it statistically significant?",C,C,True,medium,factual
+prob_anti_mcq_005,Which microbiome analysis technique was most frequently used across the included studies?,C,C,True,medium,factual
+prob_anti_mcq_006,Why was the neonate study by Zhong et al. excluded from the Shannon diversity index meta-analysis despite reporting Shannon index data?,B,B,True,medium,methodology
+prob_anti_mcq_007,"According to the sensitivity analysis for 'before-after' change values in Shannon diversity, what was the mean difference?",B,B,True,medium,methodology
+prob_anti_mcq_008,What trend was observed for phylum-level microbiome changes after antibiotic treatment across both probiotic and control groups?,B,B,True,medium,mechanism
+prob_anti_mcq_009,"When considering the temporal resolution of microbiome recovery, what did most studies find regarding both intervention and control groups after antibiotic treatment cessation?",C,C,True,medium,mechanism
+prob_anti_mcq_010,"Why do the authors argue that OTUs (Operational Taxonomic Units), while used in this meta-analysis, are considered less accurate than ASVs (Amplicon Sequence Variants)?",B,B,True,hard,methodology
+prob_anti_mcq_011,"In the context of the Kabbani et al. Chao1 index data and the sensitivity analysis performed, what was the mean difference in the 'before-after' change values for Chao1?",B,B,True,hard,methodology
+immune_diet_mcq_001,How many total participants completed the full study analysis (n per arm)?,C,C,True,easy,factual
+immune_diet_mcq_002,How many circulating inflammatory cytokines and serum proteins decreased significantly in the high-fermented-food diet arm during the intervention?,C,C,True,easy,factual
+immune_diet_mcq_003,What was the ratio of insoluble to soluble fiber consumed by participants in the high-fiber diet arm at the end of the study (week 10)?,C,C,True,easy,factual
+immune_diet_mcq_004,"Which single host protein was selected by the random forest model as the best predictor of the high-fermented-food diet arm, and what does its increase suggest?",B,B,True,medium,mechanism
+immune_diet_mcq_005,Which of the following bacterial genera was significantly enriched in the high-inflammation cluster relative to the low-inflammation ii cluster in fiber-consuming participants?,B,C,False,medium,factual
+immune_diet_mcq_006,How did CAZyme profiles differ between the high-fiber and high-fermented-food diet arms in terms of direction of change?,B,B,True,medium,comparison
+immune_diet_mcq_007,"What significant gastrointestinal symptom was reported in the high-fermented-food diet arm, and when did it resolve?",B,B,True,medium,factual
+immune_diet_mcq_008,Which fermented food types showed the strongest individual correlation with increased microbiota alpha diversity in the fermented-food arm?,C,C,True,medium,factual
+immune_diet_mcq_009,"In the cross-omics correlation analysis, which pairing showed the highest fraction of significant correlations with host inflammatory response proteins, and in which direction were most of these correlations?",B,B,True,hard,mechanism
+immune_diet_mcq_010,What does the observed convergence in microbiota composition within each diet arm (despite retained individual identity) reveal about how dietary interventions shape the microbiome?,B,B,True,hard,mechanism
+restore_diet_mcq_001,How much did average fiber intake change when participants consumed the restore diet compared to their usual diet?,C,B,False,easy,factual
+restore_diet_mcq_002,What proportion of participants screened for the study were ultimately found to have detectable L. reuteri in their feces at baseline?,B,B,True,easy,factual
+restore_diet_mcq_003,What percentage of variation in gut microbiota composition did individuality versus the restore diet explain in the overall PERMANOVA analysis?,B,B,True,easy,factual
+restore_diet_mcq_004,Which of the following microbial genera were enriched during the restore diet period?,B,B,True,medium,factual
+restore_diet_mcq_005,How quickly did the gut microbiome changes induced by the restore diet reverse after the dietary intervention ended?,C,C,True,medium,factual
+restore_diet_mcq_006,"What was the average nucleotide identity (ANI) between L. reuteri PB-W1 and DSM 20016T, and what does this indicate?",B,B,True,medium,factual
+restore_diet_mcq_007,What was the relationship between baseline microbiome diversity and the magnitude of microbiome change in response to the restore diet?,C,C,True,medium,mechanism
+restore_diet_mcq_008,What does the study conclude about the need for personalized nutrition based on the observed inter-individual variation in host clinical responses?,A,B,False,medium,mechanism
+restore_diet_mcq_009,The restore diet increased indole-3-propionic acid in plasma. What is the proposed biosynthetic pathway linking the gut microbiome to this metabolite?,B,B,True,hard,mechanism
+restore_diet_mcq_010,The paper identifies a key ecological constraint on microbiome restoration in industrialized settings. Which of the following most accurately summarizes this constraint and the evidence supporting it?,B,B,True,hard,mechanism
+space_microbiome_mcq_001,How many times greater is the number of bacteria in the human body compared to all other types of body cells?,C,C,True,easy,factual
+space_microbiome_mcq_002,Which of the following correctly describes what happened to gut microbiota diversity during spaceflight?,D,B,False,easy,factual
+space_microbiome_mcq_003,Which of the following beneficial bacteria decrease in astronauts' bodies during spaceflight?,C,C,True,easy,factual
+space_microbiome_mcq_004,"In the NASA Twin Study, modifications in the gut microbiome were detected during the 1-year ISS mission. What was unique about this study design?",B,B,True,medium,factual
+space_microbiome_mcq_005,Combined treatment of high dietary iron and radiation in rats had which of the following effects on short-chain fatty acids (SCFAs)?,C,C,True,medium,factual
+space_microbiome_mcq_006,"How does microgravity affect the skin fungal microbiota of astronauts, specifically regarding the Malassezia genus?",C,C,True,medium,factual
+space_microbiome_mcq_007,What mechanism explains why antibiotic dosing requirements for E. coli and S. aureus increased during spaceflight?,B,B,True,medium,mechanism
+space_microbiome_mcq_008,How do spaceflight-associated gut microbiota changes connect to the reactivation of latent viruses in astronauts?,C,C,True,medium,mechanism
+space_microbiome_mcq_009,What was the most significant limitation of the NASA Twin Study that the paper highlights as a reason for requiring additional research?,C,C,True,hard,comparison
+space_microbiome_mcq_010,"The paper proposes prebiotics, probiotics, and postbiotics as potential countermeasures for astronauts. Which of the following best describes the knowledge gap that must first be filled before these interventions can be properly designed?",B,B,True,hard,mechanism
+gut_mag_mcq_001,At what average-nucleotide-identity (ANI) threshold were MAGs clustered into species-level OTUs in this study?,D,B,False,easy,factual
+gut_mag_mcq_002,How many total species-level OTUs were identified from the human gut microbiome after integrating the HGM MAGs with existing reference genomes?,B,B,True,easy,factual
+gut_mag_mcq_003,In which human populations were the newly identified species-level OTUs particularly abundant?,C,C,True,easy,factual
+gut_mag_mcq_004,What percentage of the newly identified OTUs were not classified at the species level according to the Genome Taxonomy Database (GTDB)?,D,D,True,medium,factual
+gut_mag_mcq_005,What proportion of all disease associations identified by IGGsearch corresponded to the newly identified (MAG-only) OTUs?,C,C,True,medium,factual
+gut_mag_mcq_006,"Which phylum was particularly challenging to assemble MAGs from, despite being a major component of the gut microbiome?",A,D,False,medium,factual
+gut_mag_mcq_007,"What was the most significant species-disease association discovered among newly identified OTUs, and for which disease?",B,B,True,medium,factual
+gut_mag_mcq_008,What does a strong negative Spearman correlation (ρ = −0.61) between SNPs per kilobase and contig N50 in MAGs indicate?,C,C,True,medium,mechanism
+gut_mag_mcq_009,Which of the following genomic features was found to CONSISTENTLY differ between cultivated and uncultivated species-level OTUs across all major phyla tested?,D,D,True,hard,mechanism
+gut_mag_mcq_010,"What is the biological significance of uncultivated gut bacteria lacking genes for osmotic pressure maintenance and oxidative stress protection, and how was this identified?",B,B,True,hard,mechanism
+wis_microbiome_mcq_001,How many total genomes form the curated assembly pool used to construct the WIS reference set?,C,C,True,easy,factual
+wis_microbiome_mcq_002,What is the MASH distance threshold used in WIS to define species-level boundaries?,C,C,True,easy,factual
+wis_microbiome_mcq_003,What percentage of the WIS species representative genomes were produced using alternative assembly methods (nanopore and isolates)?,C,C,True,easy,factual
+wis_microbiome_mcq_004,"Compared to the UNITN reference set, how much more frequently does the WIS reference set have 16S rRNA genes per genome on average?",C,C,True,medium,factual
+wis_microbiome_mcq_005,What does the Genome UNClutterer (GUNC) Clade Separation Score (CSS) assess?,B,B,True,medium,mechanism
+wis_microbiome_mcq_006,"Why does the UNITN reference set have multiple representative genomes assigned to the same species name (e.g., 15 genomes for Clostridium sp.)?",B,B,True,medium,mechanism
+wis_microbiome_mcq_007,What formula did the authors use to select cluster representative genomes?,B,B,True,medium,factual
+wis_microbiome_mcq_008,"What was the most abundant novel species in the internal validation cohort (in terms of relative abundance among carriers), and what genus does it belong to?",B,B,True,medium,factual
+wis_microbiome_mcq_009,"When WIS and UHGG reference sets were combined into a single merged reference, what was the trade-off in read alignment performance?",A,A,True,hard,comparison
+wis_microbiome_mcq_010,"Which of the following correctly explains why WIS has fewer total genomes (3594) than UNITN (4930), despite using far more starting samples?",B,C,False,hard,mechanism

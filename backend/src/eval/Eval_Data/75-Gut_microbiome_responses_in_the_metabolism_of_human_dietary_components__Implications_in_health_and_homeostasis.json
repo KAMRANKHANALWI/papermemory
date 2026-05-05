@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Gut microbiome responses in the metabolism of human dietary components: Implications in health and homeostasis",
+    "authors": ["Riya Rajeev", "P. S. Seethalakshmi", "Prasant Kumar Jena", "R. Prathiviraj", "George Seghal Kiran", "Joseph Selvin"],
+    "journal": "Critical Reviews in Food Science and Nutrition",
+    "year": 2022,
+    "doi": "10.1080/10408398.2021.1916429",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "gutdiet_easy_001",
+      "difficulty": "easy",
+      "question": "What are CAZymes and what role do they play in the gut?",
+      "answer": "CAZymes (Carbohydrate-Active Enzymes) are a group of enzymes encoded by gut commensals that hydrolyze oligosaccharides, glycoconjugates, and polysaccharides into monomeric units. They are essential for breaking down plant-based carbohydrates such as xylans, pectins, starches, and celluloses that the human digestive system cannot process on its own. Different bacterial species produce distinct CAZymes; for example, Prevotella spp. produce xylan-degrading enzymes of the GH3, GH43, GH51, and GH13 families, enabling the fermentation of complex plant polysaccharides into metabolites that benefit host health.",
+      "topic_tags": ["CAZymes", "carbohydrate metabolism", "gut microbiome", "polysaccharides", "Prevotella"]
+    },
+    {
+      "id": "gutdiet_easy_002",
+      "difficulty": "easy",
+      "question": "What are short-chain fatty acids (SCFAs) and which are most abundant in the gut?",
+      "answer": "Short-chain fatty acids (SCFAs) are simple aliphatic-chain fatty acids with 2 to 5 carbon atoms produced by gut microbes through the fermentation of dietary fibers. The most dominant SCFAs in the gut are acetate (approximately 60%), propionate (approximately 25%), and butyrate (approximately 15%), with valerate also present in smaller amounts. Acetate is the most abundant SCFA and is utilized by gut microbes to synthesize other SCFAs like butyrate and propionate through cross-feeding interactions. SCFAs are biologically significant with respect to both quantity and proportion and serve diverse roles in host metabolism, immune regulation, and gut epithelial integrity.",
+      "topic_tags": ["SCFAs", "short-chain fatty acids", "acetate", "propionate", "butyrate", "fermentation"]
+    },
+    {
+      "id": "gutdiet_easy_003",
+      "difficulty": "easy",
+      "question": "What is the role of butyrate in gut health?",
+      "answer": "Butyrate is the most important energy source for colonocytes (cells lining the colon). Beyond energy provision, it improves epithelial integrity and barrier function, thereby preventing intestinal inflammation. Butyrate also exhibits anti-tumor activity, including inhibition of the proto-oncogene c-Myc expression and enhanced apoptosis of cancer cells. It acts as a histone deacetylase (HDAC) inhibitor, altering gene expression through enhanced histone acetylation. Butyrate further modulates the NF-κB signaling pathway, reducing the production of pro-inflammatory cytokines such as IL-8, IL-6, and TNF-α. It is primarily produced in the gut by Faecalibacterium prausnitzii, Roseburia spp., and other Firmicutes through fermentation of dietary fibers and cross-feeding on acetate.",
+      "topic_tags": ["butyrate", "colonocytes", "gut barrier", "HDAC inhibition", "anti-inflammatory", "anti-tumor"]
+    },
+    {
+      "id": "gutdiet_easy_004",
+      "difficulty": "easy",
+      "question": "How does the gut microbiome contribute to vitamin synthesis for the host?",
+      "answer": "The gut microbiome synthesizes several vitamins that the host relies on, particularly vitamin B complex (generally produced and absorbed in the colon) and fat-soluble vitamin K. De novo synthesis of vitamins is primarily attributed to lactic acid bacteria (LAB) and Bifidobacterium spp. Specific bacteria including Bacteroides fragilis, Fusobacterium varium, Clostridium difficile, Lactobacillus spp., Prevotella copri, Bifidobacterium spp., and Ruminococcus lactaris produce vitamin B1, while these same bacteria along with Lactobacillus plantarum and L. fermentum produce vitamin B2 in the large intestine. Additionally, gut microbes play roles in the activation and metabolism of fat-soluble vitamins A, D, E, and K, with certain microbes such as Streptomyces griseolus and Sebekia benihana possessing enzymes responsible for hydroxylation critical to vitamin D activation.",
+      "topic_tags": ["vitamins", "vitamin B", "vitamin K", "vitamin D", "LAB", "Bifidobacterium", "de novo synthesis"]
+    },
+    {
+      "id": "gutdiet_easy_005",
+      "difficulty": "easy",
+      "question": "What are probiotics and prebiotics, and what are some emerging microbial candidates for future probiotic use?",
+      "answer": "Probiotics are defined by WHO/FAO as live microorganisms which, when administered in adequate amounts, confer a health benefit on the host. Prebiotics are substrates selectively utilized by host microorganisms to confer a health benefit. Commonly used probiotic strains include those from Saccharomyces, Bifidobacterium, and Lactobacillus genera. Promising future candidates for probiotics include Propionibacterium spp., Roseburia spp., Faecalibacterium spp., and Akkermansia spp. Probiotics benefit the host by producing antibacterial molecules, enhancing the mucosal barrier, and stimulating adaptive immune responses. Beyond prebiotics and probiotics, a newer concept of 'postbiotics' — metabolic products of microbes that improve host physiological functions — is also emerging as a therapeutic avenue.",
+      "topic_tags": ["probiotics", "prebiotics", "postbiotics", "Akkermansia", "Faecalibacterium", "microbiome therapy"]
+    },
+
+    {
+      "id": "gutdiet_medium_001",
+      "difficulty": "medium",
+      "question": "How does the gut microbiome process cellulose into short-chain fatty acids, and which bacteria are involved at each step?",
+      "answer": "Cellulose degradation in the gut is a multi-step, cooperative process involving several specialized bacteria. Ruminococcus champanellensis degrades cellulose, cellobiose, and xylan, producing succinate and acetate as primary products along with minor amounts of ethanol, formate, and lactate. Ruminococcus flavefaciens and Ruminococcus albus also degrade cellulose but without producing succinate. The succinate produced can then be utilized by Phascolarctobacterium succinatutens, Negativicutes, and Bacteroidetes for propionate synthesis, while members of Prevotellaceae can convert succinate into butyrate. The acetate produced can be transformed into butyrate by Faecalibacterium prausnitzii and Roseburia spp. This demonstrates how cross-feeding metabolic networks among gut bacteria allow the complete conversion of dietary cellulose into beneficial SCFAs including propionate, butyrate, and acetate.",
+      "topic_tags": ["cellulose", "Ruminococcus", "cross-feeding", "propionate", "butyrate", "succinate", "SCFA production"]
+    },
+    {
+      "id": "gutdiet_medium_002",
+      "difficulty": "medium",
+      "question": "What are the three main transport mechanisms by which SCFAs cross the intestinal epithelium, and what physiological effects do they exert once transported?",
+      "answer": "SCFAs are transported across the apical and basolateral membranes of colon cells via three mechanisms: (1) anti-port transport, where SCFA exit from the intestinal lumen is coupled with bicarbonate (HCO3-) entry; (2) co-transport with H+ via monocarboxylate transporter 1 (MCT-1/SLC16A1); and (3) co-transport with Na+ via sodium-coupled monocarboxylate transporter 1 (SMCT1). Once transported, SCFAs modulate host physiology through three main pathways: HDAC inhibition (altering gene expression and suppressing pro-inflammatory cytokines via NF-κB pathway modification), G protein-coupled receptor (GPCR) signaling via GPCR41, GPCR43, and GPCR109A (regulating appetite, obesity, insulin sensitivity, and gut epithelial integrity), and the AMPK pathway (regulating fatty acid oxidation, lipolysis, glucose homeostasis, and transcriptional co-activators such as PGC-1α that control lipid and cholesterol metabolism).",
+      "topic_tags": ["SCFA transport", "MCT-1", "SMCT1", "HDAC inhibition", "GPCR signaling", "AMPK", "NF-κB"]
+    },
+    {
+      "id": "gutdiet_medium_003",
+      "difficulty": "medium",
+      "question": "How does the gut microbiome metabolize dietary proteins and amino acids, and what are the health implications of these metabolic products?",
+      "answer": "Dietary protein fermentation in the gut is carried out primarily by Bacteroides, Propionibacterium, Clostridium, Streptococcus, Lactobacillus, and Fusobacterium, yielding a broad range of metabolites: SCFAs, branched-chain fatty acids (BCFAs), amines, ammonia, phenols, hydrogen sulfide, and indoles. In the small intestine, bacteria such as Klebsiella spp., Escherichia coli, Mitsuokella spp., Succinivibrio dextrinosolvens, Streptococcus spp., and Anaerovibrio lipolytica assist in protein degradation. Bifidobacterium and Lactobacillus spp. produce neurotransmitters serotonin and GABA from amino acids, with GABA-producing probionts shown to alleviate depression and metabolic dysfunctions. Bacteroidetes, Firmicutes, and Proteobacteria can convert tyrosine to 3-(4-hydroxyphenyl) lactate, which has been linked to nonalcoholic fatty liver disease. Protein lysine acetylation by SCFA-producing Firmicutes is an important metabolic pathway interrupted in Crohn's disease patients. Excessive dietary protein can reduce beneficial butyrate producers while promoting pathobiont expansion and cadaverine production, which damages DNA and induces oxidative stress.",
+      "topic_tags": ["protein fermentation", "amino acids", "serotonin", "GABA", "Crohn's disease", "cadaverine", "nonalcoholic fatty liver"]
+    },
+    {
+      "id": "gutdiet_medium_004",
+      "difficulty": "medium",
+      "question": "How does the gut microbiome participate in bile acid metabolism, and why is this important for host health?",
+      "answer": "Bile acids (BAs) are produced from cholesterol in the liver and are transformed by the gut microbiome through deconjugation, oxidation/epimerization, 7-dehydroxylation, esterification, and desulfation into secondary bile acids. Lactobacillus spp. deconjugate primary bile acids into unconjugated bile acids and glycine/taurine. Secondary BAs including deoxycholic acid (DCA) and lithocholic acid (LCA) influence host physiology through FXR and TGR5 receptor signaling. FXR activation provides negative feedback regulation of bile acid synthesis in the ileum and liver, controls GLP-1 synthesis, and inhibits Cyp7a1 gene expression via SHP-LRH-1 pathway. TGR5 aids in energy homeostasis by improving thyroid hormone action and thermogenesis in brown adipose tissue. Secondary BAs ursodeoxycholic acid (UDCA) and LCA show anti-inflammatory properties during colonic inflammation. Conversely, dysregulated bile acid signaling can increase susceptibility to obesity, while high amounts of DCA and LCA can induce oxidative stress, membrane damage, and gastrointestinal carcinogenesis.",
+      "topic_tags": ["bile acids", "FXR", "TGR5", "secondary bile acids", "cholesterol", "obesity", "inflammation", "GLP-1"]
+    },
+    {
+      "id": "gutdiet_medium_005",
+      "difficulty": "medium",
+      "question": "How do dietary polyphenols interact with the gut microbiome, and what health benefits result from microbial polyphenol metabolism?",
+      "answer": "Dietary polyphenols — found in fruits, vegetables, seeds, cocoa, tea, and wine — undergo two-stage microbial processing in the gut. First, bacteria convert polyphenol glycosides into aglycone forms, which are then further degraded by colonic microbes via dehydroxylation, decarboxylation, and ring cleavage, producing simpler phenolic compounds such as hydroxyphenyl-acetic acids and hydroxyphenyl-propionic acids. Phytoestrogens including isoflavones, ellagitannins, and lignans are transformed by the microbiome into equol, urolithins, and enterolignans, respectively. Specific bacteria involved include Bacteroides ovatus, Bacteroides distasonis, Clostridium cocleatum, B. fragilis, and Clostridium saccharogumia for deglycosylation; Eubacterium callanderi, Peptostreptococcus productus, and Blautia producta for demethylation; and Lactonifactor longoviformis for the final lactone ring closure. The transformed metabolites provide protection against cardiovascular disease, menopausal symptoms, cancer, and osteoporosis, and microbial polyphenol metabolites such as equol and enterolactone can cross the blood-brain barrier to exert anti-inflammatory effects in microglia.",
+      "topic_tags": ["polyphenols", "phytoestrogens", "urolithins", "equol", "enterolactone", "blood-brain barrier", "anti-inflammatory"]
+    },
+    {
+      "id": "gutdiet_medium_006",
+      "difficulty": "medium",
+      "question": "What is trimethylamine (TMA) and how does its microbial production link diet to cardiovascular risk?",
+      "answer": "Trimethylamine (TMA) is a tertiary aliphatic amine synthesized in the colon by gut microbes — including Lactobacillus, Clostridium, Proteus, Desulfovibrio, and Collinsella — from dietary choline, phosphatidylcholine, and L-carnitine. The primary microbial enzymatic system for this conversion is the choline-utilization gene cluster encoding choline TMA-lyase (CutC) and its activating enzyme (CutD). TMA enters portal circulation and is oxidized by hepatic flavin-containing monooxygenases (FMOs, primarily FMO3) to produce trimethylamine N-oxide (TMAO). TMAO circulating levels are therefore jointly determined by gut microbiome composition, dietary choline intake, hepatic FMO activity, and kidney function. Elevated TMAO has been associated with cardiovascular risk, and blocking TMA formation has been shown to reduce circulating TMAO. High-protein diets or protein-deficient diets can also perturb this pathway, causing excess trimethylamine and dimethylamine excretion through microbial degradation of dietary choline.",
+      "topic_tags": ["TMA", "TMAO", "choline", "L-carnitine", "CutC", "cardiovascular risk", "hepatic FMO", "gut-liver axis"]
+    },
+
+    {
+      "id": "gutdiet_hard_001",
+      "difficulty": "hard",
+      "question": "How do microbiota-accessible carbohydrates (MACs) regulate microbiome composition and host mucosal integrity, and what are the downstream consequences of MAC deficiency?",
+      "answer": "Microbiota-accessible carbohydrates (MACs) are the primary substrates that allow gut microbes to perform fermentative metabolism yielding SCFAs and maintaining microbial diversity. When dietary MACs are adequate, diverse microbial communities ferment these substrates to produce beneficial SCFAs that reinforce epithelial integrity, regulate immunity, and suppress inflammation. In MAC-deficient conditions, such as those produced by Western diets low in fiber, SCFA production declines and microbial diversity is reduced. Critically, the deprived microbiota shifts to feeding on host mucus glycans as an alternative energy source — a phenomenon demonstrated experimentally — which erodes the colonic mucus barrier. Persistent MAC deficiency perpetuates this state, leading to increased proximity of bacteria to the epithelium, heightened inflammatory marker expression, and greater susceptibility to pathogenic infection. These effects cannot be easily reversed simply by reintroducing MACs; restoration requires both dietary reintroduction and recolonization with the depleted bacterial taxa. Beyond direct mucosal effects, MAC deficiency also reduces the substrate available for secondary metabolite production (bile acid transformation, neurotransmitter precursors), illustrating how dietary fiber connects to systemic immune and metabolic homeostasis.",
+      "topic_tags": ["MACs", "dietary fiber", "mucus barrier", "dysbiosis", "SCFA", "microbial diversity", "colonic inflammation", "pathogen susceptibility"]
+    },
+    {
+      "id": "gutdiet_hard_002",
+      "difficulty": "hard",
+      "question": "How do SCFAs regulate host energy and lipid metabolism through the AMPK and GPCR signaling pathways, and how do specific SCFAs differ in their receptor specificity and metabolic targets?",
+      "answer": "SCFAs regulate host energy metabolism through two converging pathways with distinct receptor specificities. In GPCR signaling, GPCR41 (FFAR3) is expressed in adipose, endothelial, and immune cells, while GPCR43 (FFAR2) is expressed mainly in immune cells and L cells of the intestine. Butyrate and isobutyrate preferentially activate GPCR41; propionate activates both GPCR41 and GPCR43 more strongly than butyrate or acetate; acetate is relatively specific to GPCR43. GPCR43 activation in intestinal L cells triggers release of PYY and GLP-1, modulating appetite and insulin sensitivity. GPCR109A recognizes butyrate (with low affinity) but not acetate or propionate, and mediates tumor suppression in the colon and regulation of inflammatory cytokines. Via the AMPK pathway, acetate and butyrate enhance fat oxidation in muscle in an AMPK-dependent manner, while propionate is primarily directed toward hepatic gluconeogenesis. AMPK stimulation upregulates PGC-1α, which in turn activates transcription factors PPARα, PPARδ, PPARγ, LXR, and FXR to regulate glucose, lipid, and cholesterol metabolism. SCFAs thus integrate dietary fiber intake with energy sensing, lipid oxidation, insulin sensitivity, appetite, and inflammatory tone through complementary signaling routes.",
+      "topic_tags": ["AMPK", "GPCR41", "GPCR43", "GPCR109A", "PGC-1α", "propionate gluconeogenesis", "butyrate", "fat oxidation", "GLP-1", "insulin sensitivity"]
+    },
+    {
+      "id": "gutdiet_hard_003",
+      "difficulty": "hard",
+      "question": "How do shared hub genes in the amino acid degradation pathway reveal metabolic interdependence between the human host and its gut microbiome?",
+      "answer": "In silico analysis of the amino acid (AA) degradation pathway using the KEGG database has identified 14 genes common to both humans and gut flora, distributed across Firmicutes (11 genes), Bacteroidetes (8 genes), Actinobacteria (10 genes), and Proteobacteria (13 genes). Among the 28 experimentally characterized essential genes in this pathway, four — PdhA1, Dbt, GcsH, and DlsT — are highly interconnected hub genes. Functionally critical shared genes include 2-oxoglutarate dehydrogenase (ogdH), Pyruvate dehydrogenase (pdhAB), Serine dehydratase (sdaA), 2-oxoisovalerate dehydrogenase (bckdhA), Glycine cleavage system H protein (gcvH), Isocitrate dehydrogenase (idh2), and Cystathionine gamma-lyase (cth), all of which mediate the metabolic cross-talk between host and microbiome in AA catabolism. The beta subunit of pyruvate dehydrogenase E1 (pdhB) is unique to δ-Proteobacteria. These shared hub genes represent molecular interfaces where microbial disruption (dysbiosis) could compromise host intermediate metabolism, and where monitoring alterations in these gene networks could help detect gut microbial dysbiosis non-invasively. This network model demonstrates that host and microbiome do not operate independently but are functionally interlinked at the enzymatic level.",
+      "topic_tags": ["hub genes", "amino acid degradation", "KEGG", "metabolic cross-talk", "dysbiosis", "Proteobacteria", "Firmicutes", "in silico", "PdhA1", "pdhB"]
+    },
+    {
+      "id": "gutdiet_hard_004",
+      "difficulty": "hard",
+      "question": "How does diet-induced alteration of gut microbiome composition and metabolic function contribute to disease, and what interventions can restore homeostasis?",
+      "answer": "Diet powerfully shapes both microbial composition and function, with imbalances driving disease through multiple mechanisms. A high-protein diet reduces butyrate-producing bacteria such as Ruminococcus bromii and Faecalibacterium prausnitzii while promoting pathobionts like E. coli, Enterococcus spp., and Streptococcus spp., resulting in excess cadaverine (DNA-damaging and oxidative-stress-inducing) and depleted butyrate (weakening mucosal immunity). MAC-poor Western diets reduce SCFA production and shift the microbiota toward degrading host mucus glycans, increasing pathogen susceptibility. High-fat diets enhance microbial carbohydrate metabolism enzymes in ways that further perturb energy balance. Diet also modulates therapeutic responses by altering how gut commensals metabolize drugs (e.g., dietary serine enhances chemotherapeutic toxicity via microbiome interaction). Restoration strategies include fecal microbiota transplantation (FMT), which re-establishes SCFA and secondary bile acid production and has proven effective in recurrent C. difficile infection; probiotics and prebiotics that manipulate microbial populations; and emerging 'postbiotic' therapies using purified microbial metabolites. Long-term microbiome restoration requires concurrent dietary changes and microbial recolonization, as MAC reintroduction alone does not fully restore depleted taxa — emphasizing that a balanced diet must serve both host nutritional needs and maintenance of a functional microbial ecosystem.",
+      "topic_tags": ["high-protein diet", "high-fat diet", "butyrate depletion", "FMT", "C. difficile", "dysbiosis", "postbiotics", "diet-microbiome interaction", "chemotherapy"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "gutdiet_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which bacterium is known to degrade breast milk's Lacto-N-tetraose into lactose and lacto-N-biose using extracellular lacto-N-biosidase?",
+      "options": {
+        "A": "Bifidobacterium longum subsp. infantis",
+        "B": "Bifidobacterium bifidum",
+        "C": "Lactobacillus crispatus",
+        "D": "Bifidobacterium breve"
+      },
+      "correct_answer": "B",
+      "explanation": "Bifidobacterium bifidum secretes the extracellular enzyme lacto-N-biosidase, which degrades the milk glycan Lacto-N-tetraose into lactose and lacto-N-biose. These components are further broken down inside microbial cells via lacto-N-biose phosphorylase. In contrast, B. longum subsp. infantis uses intracellular enzymes to cleave HMOs into monomeric units, and B. breve depends on other species for monosaccharides.",
+      "topic_tags": ["HMO", "Bifidobacterium bifidum", "breast milk", "lacto-N-tetraose", "infant microbiota"]
+    },
+    {
+      "id": "gutdiet_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What is the primary physiological role of propionate produced by gut bacteria?",
+      "options": {
+        "A": "It serves as the main energy source for colonocytes",
+        "B": "It is primarily absorbed by the liver where it can activate gluconeogenesis and reduce intrahepatocellular lipid content",
+        "C": "It stimulates production of mucin by goblet cells to reinforce the mucus barrier",
+        "D": "It acts exclusively as a histone deacetylase inhibitor in intestinal epithelial cells"
+      },
+      "correct_answer": "B",
+      "explanation": "Propionate is primarily absorbed by the liver, where it activates gluconeogenesis and reduces intrahepatocellular lipid content and serum cholesterol. It also reduces weight gain and regulates appetite. While propionate (like butyrate) can act as an HDAC inhibitor, its primary metabolic target is the liver, distinguishing it from butyrate, which is the main colonocyte energy source.",
+      "topic_tags": ["propionate", "gluconeogenesis", "liver metabolism", "SCFAs", "appetite regulation"]
+    },
+    {
+      "id": "gutdiet_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "Which gut microbial metabolite has been associated with protection against type 1 diabetes by lowering the frequency of autoimmune T-cells in the pancreatic lymph nodes?",
+      "options": {
+        "A": "Butyrate",
+        "B": "Hydrogen sulfide",
+        "C": "Acetate produced by Bacteroides",
+        "D": "Urolithin produced by Gordonibacter"
+      },
+      "correct_answer": "C",
+      "explanation": "Acetate produced by Bacteroides has been shown to lower the occurrence of diabetogenic T-cells in the pancreatic lymph nodes and spleen, thereby conferring protection against type 1 diabetes. This illustrates how gut-derived microbial metabolites can directly modulate systemic immune responses relevant to autoimmune conditions.",
+      "topic_tags": ["acetate", "type 1 diabetes", "Bacteroides", "immune regulation", "autoimmunity"]
+    },
+
+    {
+      "id": "gutdiet_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "How does GPCR43 (FFAR2) activation by SCFAs contribute to appetite regulation and metabolic homeostasis?",
+      "options": {
+        "A": "GPCR43 is expressed in adipocytes and directly inhibits lipogenesis by blocking fatty acid synthase",
+        "B": "GPCR43, expressed in intestinal L cells, stimulates the release of PYY and GLP-1, which modulate appetite and insulin sensitivity",
+        "C": "GPCR43 activates the AMPK pathway in the liver to suppress gluconeogenesis",
+        "D": "GPCR43 is exclusively activated by butyrate and mediates tumor suppression in the colon"
+      },
+      "correct_answer": "B",
+      "explanation": "GPCR43 is mainly expressed in L cells of the intestine. Its activation by SCFAs (particularly propionate and acetate) triggers the improved release of peptide YY (PYY) and glucagon-like peptide 1 (GLP-1), which are known to modulate appetite. GPCR43 also aids in regulating obesity and maintaining energy reserves. It is acetate that is most specific to GPCR43, while GPCR109A mediates the tumor-suppressive effects of butyrate.",
+      "topic_tags": ["GPCR43", "FFAR2", "PYY", "GLP-1", "appetite", "SCFAs", "obesity"]
+    },
+    {
+      "id": "gutdiet_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "What happens to gut microbial composition and metabolic output when dietary protein intake is excessively high?",
+      "options": {
+        "A": "It increases Bifidobacterium populations, enhancing SCFA production and immune function",
+        "B": "It selectively enriches Bacteroides species, increasing propionate production and reducing inflammation",
+        "C": "It reduces beneficial butyrate producers like Ruminococcus bromii and Faecalibacterium prausnitzii, promotes pathobiont growth, and elevates cadaverine, which damages DNA",
+        "D": "It decreases total microbial diversity but enhances vitamin B12 synthesis in the colon"
+      },
+      "correct_answer": "C",
+      "explanation": "A high-protein diet alters the colonic microbial community by reducing butyrate-producing bacteria including R. bromii and F. prausnitzii, while promoting the populations of E. coli, Enterococcus spp., and Streptococcus spp. This results in elevated cadaverine levels, which damage DNA and stimulate oxidative stress. The shortage of butyrate simultaneously weakens immunity, illustrating how dietary imbalances translate into functional microbial disruption with compounding adverse health effects.",
+      "topic_tags": ["high-protein diet", "Faecalibacterium prausnitzii", "cadaverine", "dysbiosis", "butyrate depletion"]
+    },
+    {
+      "id": "gutdiet_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "What is the mechanism by which fecal microbiota transplantation (FMT) exerts therapeutic benefits in Clostridioides difficile infection?",
+      "options": {
+        "A": "FMT directly delivers antibodies against C. difficile toxins from the donor's immune system",
+        "B": "FMT restores the dysbiotic microbiome, re-establishing healthy levels of SCFAs such as propionate, acetate, and butyrate, and secondary bile acids including deoxycholate and lithocholate that inhibit C. difficile",
+        "C": "FMT introduces bacteriophages from the healthy donor that specifically lyse C. difficile",
+        "D": "FMT delivers mucin-degrading bacteria that rebuild the mucus layer and physically exclude C. difficile"
+      },
+      "correct_answer": "B",
+      "explanation": "FMT's therapeutic success in C. difficile infection relies on its ability to restore the gut microbiome, which re-establishes healthy SCFA profiles (propionate, acetate, butyrate) and secondary bile acids (deoxycholate and lithocholate). These metabolites are elevated following successful FMT treatment and are critical for colonization resistance. FMT was also found to restore secondary bile acid biosynthesis via rebiosis, further demonstrating that metabolic restoration — not immune transfer or phage delivery — is the central mechanism.",
+      "topic_tags": ["FMT", "C. difficile", "secondary bile acids", "SCFAs", "rebiosis", "colonization resistance"]
+    },
+    {
+      "id": "gutdiet_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "Which gut-derived lipid has been shown to prevent oxazolone-induced colitis, and through what mechanism?",
+      "options": {
+        "A": "Butyrate, by inhibiting NF-κB-mediated pro-inflammatory cytokine production in colonocytes",
+        "B": "Sphingolipids derived from Bacteroides, by activating anti-inflammatory signaling cascades in intestinal macrophages",
+        "C": "Glycosphingolipid GSL-Bf717 from Bacteroides fragilis, through anti-proliferative properties against iNKT cells",
+        "D": "Propionate, by suppressing Th17 cell differentiation in the colonic mucosa"
+      },
+      "correct_answer": "C",
+      "explanation": "Glycosphingolipid GSL-Bf717, derived from the gut bacterium Bacteroides fragilis, prevents oxazolone-induced colitis due to its anti-proliferative properties against invariant natural killer T (iNKT) cells. More broadly, Bacteroides-derived sphingolipids are essential for maintaining intestinal homeostasis, and their deficiency has been positively correlated with pro-inflammatory responses in IBS patients, highlighting gut microbial lipids as potential therapeutics for metabolic and autoimmune disorders.",
+      "topic_tags": ["GSL-Bf717", "Bacteroides fragilis", "sphingolipids", "iNKT cells", "colitis", "gut-derived lipids"]
+    },
+    {
+      "id": "gutdiet_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "Through which regulatory axis does the gut microbiome influence host vitamin D metabolism?",
+      "options": {
+        "A": "Gut bacteria directly hydroxylate 7-dehydrocholesterol in the skin to initiate vitamin D synthesis",
+        "B": "The gut microbiome regulates vitamin D metabolism via Fibroblast Growth Factor 23 (FGF23), and specific microbes possess steroid hydroxylase enzymes that activate vitamin D",
+        "C": "Gut bacteria produce vitamin D3 de novo from dietary cholesterol in the colon",
+        "D": "Bifidobacterium species secrete a vitamin D binding protein that facilitates intestinal absorption of dietary vitamin D"
+      },
+      "correct_answer": "B",
+      "explanation": "The gut microbiome regulates vitamin D metabolism via Fibroblast Growth Factor 23 (FGF23). Additionally, certain microbes such as Streptomyces griseolus and Sebekia benihana possess enzymes (CYP105A1, CYP-sb3a) responsible for hydroxylation of steroids, which is important for the metabolic activation of vitamin D. This demonstrates that the gut microbiome contributes to vitamin D bioavailability through both regulatory signaling and direct enzymatic activation.",
+      "topic_tags": ["vitamin D", "FGF23", "Streptomyces griseolus", "steroid hydroxylation", "CYP105A1", "gut-bone axis"]
+    },
+
+    {
+      "id": "gutdiet_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "How does the AMPK-PGC-1α signaling axis downstream of SCFA transport integrate gut microbial metabolism with whole-body energy homeostasis?",
+      "options": {
+        "A": "SCFA-mediated AMPK activation phosphorylates HDAC directly, causing widespread gene silencing that reduces cellular energy expenditure across tissues",
+        "B": "AMPK stimulation by SCFAs upregulates PGC-1α, which controls transcriptional activity of PPARα, PPARδ, PPARγ, LXR, and FXR — collectively regulating glucose, lipid, and cholesterol metabolism — while also enhancing intestinal integrity and allowing acetate and butyrate to serve as direct substrates for hepatic lipogenesis",
+        "C": "SCFA-driven AMPK activation works exclusively in adipose tissue, suppressing lipolysis to prevent free fatty acid release into circulation",
+        "D": "AMPK activated by SCFAs blocks the mTOR pathway in the liver, causing autophagy that clears dysfunctional mitochondria and improves insulin receptor signaling"
+      },
+      "correct_answer": "B",
+      "explanation": "SCFA-driven AMPK activation stimulates PGC-1α expression, which acts as a co-activator for multiple nuclear receptors: PPARα, PPARδ, PPARγ (lipid metabolism), LXR (cholesterol/glucose), and FXR (bile acids and glucose). In muscle, acetate and butyrate enhance fat oxidation in an AMPK-dependent manner; in the liver, acetate and butyrate can be used for lipogenesis while propionate is directed to gluconeogenesis. This multi-tissue integration means gut-derived SCFAs serve as systemic metabolic signals, and AMPK-dependent action also enhances intestinal integrity and homeostasis.",
+      "topic_tags": ["AMPK", "PGC-1α", "PPARα", "LXR", "FXR", "lipogenesis", "gluconeogenesis", "metabolic flexibility", "SCFAs"]
+    },
+    {
+      "id": "gutdiet_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "What does in silico network analysis of amino acid degradation pathways reveal about the relationship between gut microbial phyla and host metabolic pathways, and what are the implications for disease monitoring?",
+      "options": {
+        "A": "The analysis confirms that amino acid metabolism in the gut is entirely independent between host and microbiome, with no overlapping enzymatic machinery",
+        "B": "14 genes are shared between humans and gut flora, with hub genes including pdhAB, ogdH, sdaA, gcvH, idh2, and cth serving as molecular interfaces of cross-talk, distributed across Firmicutes, Bacteroidetes, Actinobacteria, and Proteobacteria — and these shared genes could be used to non-invasively monitor dysbiosis",
+        "C": "Only Proteobacteria share metabolic genes with humans, while Firmicutes and Bacteroidetes operate entirely distinct amino acid pathways that do not intersect with host metabolism",
+        "D": "The hub genes identified — PdhA1, Dbt, GcsH, and DlsT — are exclusive to pathogenic bacteria and their presence indicates active infection rather than commensal metabolic cooperation"
+      },
+      "correct_answer": "B",
+      "explanation": "In silico analysis identified 14 genes shared between humans and gut microbiome bacteria, attributed to Firmicutes (11), Bacteroidetes (8), Actinobacteria (10), and Proteobacteria (13). Functionally important shared genes in amino acid cross-talk include ogdH, pdhAB, sdaA, bckdhA, gcvH, idh2, and cth. The hub genes (PdhA1, Dbt, GcsH, DlsT) are highly interconnected but not pathogen-exclusive — they indicate cooperative metabolic activity. Monitoring alterations in these interactive essential genes could serve as a tool for detecting gut dysbiosis non-invasively, illustrating a key translational application of computational microbiome analysis.",
+      "topic_tags": ["in silico", "hub genes", "amino acid degradation", "metabolic mutualism", "Firmicutes", "Bacteroidetes", "dysbiosis detection", "KEGG"]
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "Gut bacterial and fungal dysbiosis in tuberculosis patients",
+    "authors": ["MeiQing Han", "Xia Wang", "JiaMin Zhang", "Lin Su", "Hafiz Muhammad Ishaq", "Duan Li", "JunWei Cui", "HuaJie Zhao", "Fan Yang"],
+    "journal": "BMC Microbiology",
+    "year": 2024,
+    "doi": "10.1186/s12866-024-03275-8",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "TB_DYSBIOSIS_easy_001",
+      "difficulty": "easy",
+      "question": "What is the gut-lung axis and why is it relevant to pulmonary infectious diseases like tuberculosis?",
+      "answer": "The gut-lung axis refers to the bidirectional communication between the gut microbiome and the lungs. It is well recognized that gut microbiota plays a vital role in pulmonary infectious disease — changes in gut microbial composition can influence immune responses and susceptibility in lung infections. In the context of tuberculosis, the gut microbiome is considered a crucial host-associated factor that can affect how the body responds to Mycobacterium tuberculosis infection, partly through immune modulation and cytokine regulation.",
+      "topic_tags": ["gut-lung axis", "tuberculosis", "gut microbiome", "pulmonary infection", "host immunity"]
+    },
+    {
+      "id": "TB_DYSBIOSIS_easy_002",
+      "difficulty": "easy",
+      "question": "What are the key bacterial genera that show increased and decreased abundance in the gut of tuberculosis patients compared to healthy individuals?",
+      "answer": "In tuberculosis patients, the bacterial genera Bacteroides and Prevotella are significantly increased, while Blautia, Bifidobacterium, and the Eubacterium_hallii_group are notably decreased. At the phylum level, Bacteroidetes abundance is increased, whereas Actinobacteria and Proteobacteria are decreased in TB patients relative to healthy controls.",
+      "topic_tags": ["tuberculosis", "gut microbiota", "Bacteroides", "Prevotella", "Blautia", "Bifidobacterium", "dysbiosis"]
+    },
+    {
+      "id": "TB_DYSBIOSIS_easy_003",
+      "difficulty": "easy",
+      "question": "What changes in gut fungal (mycobiota) composition are observed in tuberculosis patients?",
+      "answer": "Tuberculosis patients show a significant decrease in gut fungal alpha diversity. The fungal phylum Ascomycota becomes notably more abundant, while Basidiomycota decreases. At the genus level, Saccharomyces increases markedly, while Aspergillus, Cutaneotrichosporon, and Apiotrichum are substantially reduced compared to healthy individuals.",
+      "topic_tags": ["mycobiota", "tuberculosis", "Saccharomyces", "Aspergillus", "Ascomycota", "fungal dysbiosis"]
+    },
+    {
+      "id": "TB_DYSBIOSIS_easy_004",
+      "difficulty": "easy",
+      "question": "How do IFN-γ and IL-17 serum levels differ between tuberculosis patients and healthy individuals, and what is their general role in TB pathogenesis?",
+      "answer": "In tuberculosis patients, IFN-γ levels are decreased while IL-17 levels are increased compared to healthy subjects. IFN-γ is a key pro-inflammatory cytokine that controls M. tuberculosis infection by mediating immune responses and activating macrophages. IL-17 is important for the formation of mature granulomas during M.tb infection, but excessive IL-17 expression aggravates inflammation by enhancing neutrophil recruitment and causing tissue damage.",
+      "topic_tags": ["IFN-γ", "IL-17", "cytokines", "tuberculosis", "immune response", "granuloma"]
+    },
+    {
+      "id": "TB_DYSBIOSIS_easy_005",
+      "difficulty": "easy",
+      "question": "What is the significance of combining bacterial and fungal biomarkers for diagnosing tuberculosis compared to using either alone?",
+      "answer": "Combining bacterial and fungal biomarkers provides substantially better diagnostic accuracy for tuberculosis than using either type alone. A combined panel of three bacterial genera (Bacteroides, Blautia, and Eubacterium_hallii_group) and three fungal genera (Apiotrichum, Penicillium, and Saccharomyces) achieves a much higher discriminatory performance than any individual genus or single-kingdom set, indicating that studying gut bacteria and fungi together as an integrated microbiome is more appropriate for TB diagnostic biomarker development.",
+      "topic_tags": ["biomarkers", "tuberculosis diagnosis", "ROC analysis", "gut microbiome", "mycobiota", "combined diagnostics"]
+    },
+
+    {
+      "id": "TB_DYSBIOSIS_medium_001",
+      "difficulty": "medium",
+      "question": "How does gut microbial dysbiosis in tuberculosis relate to altered cytokine production, particularly through the role of Bacteroides and SCFAs?",
+      "answer": "In tuberculosis patients, the enrichment of Bacteroides correlates negatively with IFN-γ and positively with IL-17. Bacteroides produce elevated quantities of short-chain fatty acids (SCFAs) in the gut, which may enhance TB susceptibility by suppressing B cells and CD4+/CD8+ lymphocytes, ultimately reducing TB-induced IFN-γ production. This represents a mechanistic link between gut microbial composition and impaired anti-TB immunity: dysbiotic enrichment of Bacteroides leads to SCFA-mediated immune suppression, reducing the host's capacity to mount effective interferon-gamma-driven responses against M. tuberculosis.",
+      "topic_tags": ["Bacteroides", "SCFAs", "IFN-γ", "IL-17", "immune suppression", "tuberculosis", "dysbiosis"]
+    },
+    {
+      "id": "TB_DYSBIOSIS_medium_002",
+      "difficulty": "medium",
+      "question": "What is the role of Blautia in modulating pro-inflammatory responses, and how does its reduction in tuberculosis patients affect disease pathology?",
+      "answer": "Blautia is enriched in healthy individuals and has a strong ability to inhibit pro-inflammatory reactions, particularly IL-17, through butyrate production. It is positively correlated with IFN-γ and negatively correlated with IL-17. In tuberculosis patients, Blautia abundance is reduced, which compromises this anti-inflammatory buffering capacity. The loss of Blautia-derived butyrate production may contribute to elevated IL-17 levels, promoting Th17 cell responses and excessive neutrophil recruitment that creates tuberculosis pathological nodules and aggravates tissue damage.",
+      "topic_tags": ["Blautia", "butyrate", "IL-17", "Th17", "tuberculosis", "anti-inflammatory", "gut dysbiosis"]
+    },
+    {
+      "id": "TB_DYSBIOSIS_medium_003",
+      "difficulty": "medium",
+      "question": "How does Prevotella contribute to immune dysregulation in tuberculosis through the Th17 pathway?",
+      "answer": "Prevotella is increased in tuberculosis patients and possesses the ability to regulate Th17 cell responses. In M. tuberculosis infection, higher abundance of Prevotella may further induce Th17 cell responses and promote the production of IL-17. Additionally, reduced relative abundance of Prevotella in some contexts limits butyrate production, which may also lead to higher IL-17 expression. When Th17 cells produce excessive IL-17, large numbers of neutrophils are recruited and cluster together to create tuberculosis pathological nodules. This pathway illustrates how dysbiotic increases in Prevotella can amplify immunopathology in TB.",
+      "topic_tags": ["Prevotella", "Th17", "IL-17", "tuberculosis", "neutrophil recruitment", "immune dysregulation"]
+    },
+    {
+      "id": "TB_DYSBIOSIS_medium_004",
+      "difficulty": "medium",
+      "question": "What does the bacterial-fungal trans-kingdom network analysis reveal about gut ecosystem health in tuberculosis, and what does the ITS/16S ratio signify?",
+      "answer": "Trans-kingdom network analysis reveals that the complexity, centralization, and density of bacteria-fungi interaction networks are dramatically reduced in tuberculosis patients compared to healthy individuals. The ITS/16S ratio, which represents the relative diversity of fungi to bacteria, is significantly decreased in TB patients, indicating that the equilibrium between fungi and bacteria is disrupted. Additionally, negative correlations between bacteria and fungi become rare in TB patients, and the proportion of bacteria-fungi interactions within the network decreases. Together, these findings demonstrate that gut microbial dysbiosis in TB extends beyond compositional shifts to include a fundamental breakdown in cross-kingdom ecological interactions.",
+      "topic_tags": ["trans-kingdom network", "ITS/16S ratio", "bacterial-fungal interactions", "gut ecosystem", "tuberculosis", "dysbiosis"]
+    },
+    {
+      "id": "TB_DYSBIOSIS_medium_005",
+      "difficulty": "medium",
+      "question": "How is alpha diversity altered in both the bacterial and fungal compartments of the gut microbiome in tuberculosis, and what does this indicate about disease impact?",
+      "answer": "Both bacterial and fungal alpha diversity are significantly decreased in tuberculosis patients compared to healthy controls. For bacteria, both the Simpson and Chao 1 indices show reduced diversity. For fungi, diversity metrics similarly decline, and the overall number of fungal amplicon sequence variants (ASVs) per sample is markedly lower in TB patients. These parallel reductions across both microbial kingdoms indicate that M. tuberculosis infection — or the associated immune and physiological changes — broadly disrupts the gut microbial ecosystem, affecting not just bacterial composition but the entire commensal community structure including fungi.",
+      "topic_tags": ["alpha diversity", "tuberculosis", "gut bacteria", "gut fungi", "dysbiosis", "Simpson index", "Chao 1"]
+    },
+    {
+      "id": "TB_DYSBIOSIS_medium_006",
+      "difficulty": "medium",
+      "question": "What functional metabolic pathways are predicted to be altered in the gut microbiome of tuberculosis patients, and which microbial genera drive these changes?",
+      "answer": "Functional prediction using PICRUSt2 identifies several altered metabolic pathways in tuberculosis patients. Among bacteria, glycan biosynthesis and metabolism pathways are significantly increased in TB patients, with Bacteroides positively correlated with this and with transport and catabolism pathways, while Bifidobacterium is negatively correlated with glycan biosynthesis. For fungi, pathways including octane oxidation, glyoxylate cycle, and NAD/NADH phosphorylation and dephosphorylation are elevated in TB patients, with Saccharomyces driving positive correlations with these pathways but showing negative correlation with formaldehyde assimilation and urea cycle pathways. These changes suggest that gut microbial dysbiosis in TB induces broad alterations to gastrointestinal tract metabolism.",
+      "topic_tags": ["functional prediction", "PICRUSt2", "metabolic pathways", "glycan biosynthesis", "tuberculosis", "Saccharomyces", "Bacteroides"]
+    },
+
+    {
+      "id": "TB_DYSBIOSIS_hard_001",
+      "difficulty": "hard",
+      "question": "Why do different studies on gut microbial dysbiosis in tuberculosis produce inconsistent results, and what factors must be controlled to draw valid conclusions about TB-specific microbiome changes?",
+      "answer": "Inconsistencies across studies on gut microbiota in TB patients arise from multiple interacting factors. Host genetics and lifestyle differences between studied populations are primary drivers — for example, differences in Firmicutes/Bacteroidetes ratios observed between Chinese and Pakistani TB cohorts appear attributable to the Pakistani cohort having comorbid diabetes, which is itself a major independent driver of gut microbial dysbiosis. Additional sources of variability include geographic and ethnic differences in baseline microbiota composition, dietary patterns, use of antitubercular drugs (which alter the microbiome), and the possible co-existence of other diseases. To draw valid TB-specific conclusions, studies must carefully match cohorts by comorbidity status, ethnicity, lifestyle, and prior medication use, and should assess both bacterial and fungal components simultaneously, as focusing solely on bacteria provides an incomplete picture of gut ecosystem disruption.",
+      "topic_tags": ["study inconsistency", "tuberculosis", "gut microbiome", "diabetes comorbidity", "Firmicutes", "Bacteroidetes", "host genetics", "methodology"]
+    },
+    {
+      "id": "TB_DYSBIOSIS_hard_002",
+      "difficulty": "hard",
+      "question": "How do changes in gut fungal genera in tuberculosis patients relate to immune cytokine alterations, and what mechanistic links can be inferred between mycobiota dysbiosis and host immunity?",
+      "answer": "In tuberculosis, fungal dysbiosis correlates meaningfully with immune cytokine profiles. Saccharomyces, which is enriched in TB patients, shows a negative correlation with IFN-γ and a positive correlation with IL-17, mirroring the immunological pattern seen with dysbiotic bacteria. Conversely, fungal genera reduced in TB — including Apiotrichum and Penicillium — positively correlate with IFN-γ and negatively correlate with IL-17, suggesting they may support anti-TB immune tone. Mechanistically, fungi contribute approximately 0.1% of the intestinal microbiota but play important roles in gut microbial ecology equilibrium. Loss of diverse fungi and dominance of Saccharomyces may disrupt bacterial-fungal cross-kingdom interactions that normally help maintain immune homeostasis, potentially amplifying the pro-inflammatory IL-17 axis and suppressing the protective IFN-γ-mediated macrophage activation critical for controlling M. tuberculosis. This indicates that mycobiota dysbiosis is not merely an epiphenomenon but actively participates in immunological dysregulation in TB.",
+      "topic_tags": ["mycobiota", "Saccharomyces", "Apiotrichum", "Penicillium", "IFN-γ", "IL-17", "immune modulation", "tuberculosis", "cross-kingdom interactions"]
+    },
+    {
+      "id": "TB_DYSBIOSIS_hard_003",
+      "difficulty": "hard",
+      "question": "What is the conceptual and clinical significance of studying bacteria and fungi together as an integrated gut microbiome rather than independently, particularly in the context of infectious disease?",
+      "answer": "Studying bacteria and fungi together is conceptually important because the interaction between these two microbial kingdoms affects intestinal homeostasis in ways neither can explain independently. The trans-kingdom network analysis demonstrates that bacteria-fungi interactions are extensive in healthy individuals and that this complexity collapses in disease states like tuberculosis. The equilibrium between fungal and bacterial populations, captured by the ITS/16S ratio, is a holistic indicator of gut ecosystem health that is invisible when only one kingdom is studied. Clinically, the significantly superior diagnostic performance of a combined bacterial-fungal biomarker panel compared to single-kingdom panels demonstrates that TB-associated gut dysbiosis has a cross-kingdom signature. This has practical implications: diagnostic and therapeutic strategies focused exclusively on bacterial microbiota will miss fungal contributions to disease pathology and immune dysregulation. Regulatory interventions aimed at restoring gut microbial equilibrium should target the full inter-kingdom ecosystem, not just bacterial composition.",
+      "topic_tags": ["cross-kingdom interactions", "integrated microbiome", "tuberculosis diagnosis", "bacterial-fungal balance", "trans-kingdom network", "clinical implications", "mycobiota"]
+    },
+    {
+      "id": "TB_DYSBIOSIS_hard_004",
+      "difficulty": "hard",
+      "question": "How does the enrichment of Bacteroides in tuberculosis interact with multiple arms of host immunity, and why might this single genus represent a mechanistic hub linking gut dysbiosis to TB susceptibility and severity?",
+      "answer": "Bacteroides occupies a central mechanistic role in TB-associated gut-immune crosstalk. Its enrichment in TB patients correlates negatively with IFN-γ (r = −0.5958) and positively with IL-17 (r = 0.5997), positioning it at the intersection of two critical cytokine axes in TB. The mechanistic basis is multi-pronged: (1) Bacteroides produces elevated SCFAs that suppress B cells and CD4+/CD8+ T lymphocytes, reducing TB-induced IFN-γ; (2) Bacteroides fragilis specifically plays a role in the maturation of Th1-driven immune responses through CD4+ T cell and IFN-γ upregulation, meaning that dysbiotic shifts in Bacteroides species balance could simultaneously impair Th1 and enhance Th17 responses; (3) at the functional metabolic level, Bacteroides is positively correlated with glycan biosynthesis and transport/catabolism pathways that may further remodel the gut immune environment. The ROC analysis also identifies Bacteroides as one of the top individual bacterial diagnostic biomarkers for TB. Taken together, Bacteroides enrichment in TB creates a feedback loop: gut dysbiosis suppresses protective IFN-γ-mediated immunity while amplifying IL-17-driven immunopathology, potentially worsening both disease control and tissue damage.",
+      "topic_tags": ["Bacteroides", "IFN-γ", "IL-17", "SCFAs", "Th1", "Th17", "tuberculosis susceptibility", "immune dysregulation", "biomarker"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "TB_DYSBIOSIS_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which fungal genus is markedly enriched in the gut of tuberculosis patients and is associated with altered cytokine profiles?",
+      "options": {
+        "A": "Aspergillus",
+        "B": "Apiotrichum",
+        "C": "Saccharomyces",
+        "D": "Candida"
+      },
+      "correct_answer": "C",
+      "explanation": "Saccharomyces is significantly enriched in the gut of tuberculosis patients, increasing from approximately 14% in healthy controls to over 53% in TB patients. It shows a negative correlation with IFN-γ and a positive correlation with IL-17, linking its overabundance to immune dysregulation in TB. Aspergillus and Apiotrichum are actually reduced in TB patients.",
+      "topic_tags": ["Saccharomyces", "mycobiota", "tuberculosis", "gut fungi", "cytokines"]
+    },
+    {
+      "id": "TB_DYSBIOSIS_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What happens to overall gut microbial alpha diversity (both bacterial and fungal) in tuberculosis patients?",
+      "options": {
+        "A": "Alpha diversity increases in bacteria but decreases in fungi",
+        "B": "Alpha diversity increases in both bacteria and fungi",
+        "C": "Alpha diversity decreases in both bacteria and fungi",
+        "D": "Alpha diversity remains unchanged in both kingdoms"
+      },
+      "correct_answer": "C",
+      "explanation": "Alpha diversity decreases significantly in both the bacterial and fungal compartments of the gut microbiome in tuberculosis patients. This parallel reduction across both microbial kingdoms indicates broad gut ecosystem disruption, not limited to a single domain of microorganisms.",
+      "topic_tags": ["alpha diversity", "gut microbiome", "mycobiota", "tuberculosis", "dysbiosis"]
+    },
+    {
+      "id": "TB_DYSBIOSIS_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "Which cytokine is decreased and which is increased in the serum of tuberculosis patients relative to healthy controls?",
+      "options": {
+        "A": "IFN-γ increased; IL-17 decreased",
+        "B": "IFN-γ decreased; IL-17 increased",
+        "C": "Both IFN-γ and IL-17 are increased",
+        "D": "Both IFN-γ and IL-17 are decreased"
+      },
+      "correct_answer": "B",
+      "explanation": "In tuberculosis patients, IFN-γ — a key cytokine for controlling M. tuberculosis through macrophage activation — is significantly decreased. Conversely, IL-17, which promotes Th17 responses and neutrophil recruitment, is significantly elevated. This cytokine imbalance reflects the immunological dysregulation characteristic of active TB.",
+      "topic_tags": ["IFN-γ", "IL-17", "cytokines", "tuberculosis", "immune response"]
+    },
+
+    {
+      "id": "TB_DYSBIOSIS_mcq_medium_001",
+      "difficulty": "medium",
+      "question": "How does reduced Blautia abundance in tuberculosis patients contribute to immune dysregulation?",
+      "options": {
+        "A": "Reduced Blautia increases mucin degradation, exposing the epithelium to M. tuberculosis antigens",
+        "B": "Reduced Blautia decreases butyrate production, compromising the ability to suppress pro-inflammatory IL-17 responses",
+        "C": "Reduced Blautia increases Bacteroidetes overgrowth, which directly suppresses IFN-γ production",
+        "D": "Reduced Blautia impairs SIgA secretion, allowing pathogenic bacteria to colonise the gut"
+      },
+      "correct_answer": "B",
+      "explanation": "Blautia has a strong ability to inhibit pro-inflammatory reactions, particularly IL-17, through butyrate production. When Blautia abundance declines in TB patients, butyrate production is reduced, weakening the suppression of IL-17-mediated inflammation. This contributes to elevated IL-17 levels, Th17 activation, and excessive neutrophil recruitment that drives tuberculosis-associated tissue damage.",
+      "topic_tags": ["Blautia", "butyrate", "IL-17", "Th17", "tuberculosis", "inflammation"]
+    },
+    {
+      "id": "TB_DYSBIOSIS_mcq_medium_002",
+      "difficulty": "medium",
+      "question": "What does the reduction in the fungal-to-bacterial species ratio (ITS/16S ratio) in tuberculosis patients indicate about the gut ecosystem?",
+      "options": {
+        "A": "Fungal species have been replaced by antibiotic-resistant bacteria",
+        "B": "The ecological equilibrium between fungal and bacterial populations in the gut is disrupted in TB",
+        "C": "Bacterial overgrowth is causing active fungal infection in the gut",
+        "D": "The ITS/16S ratio reflects increased bowel transit time in TB patients"
+      },
+      "correct_answer": "B",
+      "explanation": "The ITS/16S ratio represents the relative diversity of fungi compared to bacteria. A significant decrease in this ratio in TB patients indicates that the normal balance between fungal and bacterial populations — which is important for gut ecological homeostasis — has been disrupted. This imbalance is further supported by reduced trans-kingdom network complexity in TB.",
+      "topic_tags": ["ITS/16S ratio", "fungal-bacterial balance", "gut ecology", "tuberculosis", "dysbiosis"]
+    },
+    {
+      "id": "TB_DYSBIOSIS_mcq_medium_003",
+      "difficulty": "medium",
+      "question": "Why do studies from different geographic populations sometimes report opposite directions of change in specific gut bacterial taxa in tuberculosis patients?",
+      "options": {
+        "A": "Different sequencing platforms produce inconsistent taxonomic classifications",
+        "B": "TB strains vary by region and directly alter microbial composition in predictably opposite ways",
+        "C": "Comorbidities such as diabetes, as well as differences in host genetics, diet, and lifestyle, confound TB-specific microbial changes across populations",
+        "D": "Inconsistencies arise solely from variable antibiotic use prior to sample collection"
+      },
+      "correct_answer": "C",
+      "explanation": "Contradictory findings across TB microbiome studies are largely explained by differences in host-associated factors rather than technical issues. For example, differences in Firmicutes/Bacteroidetes ratios between Chinese and Pakistani TB cohorts can be attributed to diabetes comorbidity in the Pakistani group, since diabetes is itself a major driver of gut microbial dysbiosis. Host genetics and lifestyle factors also substantially shape baseline microbiota composition, making cross-population comparisons complex.",
+      "topic_tags": ["study inconsistency", "comorbidities", "diabetes", "tuberculosis", "host genetics", "gut microbiome"]
+    },
+    {
+      "id": "TB_DYSBIOSIS_mcq_medium_004",
+      "difficulty": "medium",
+      "question": "What is the mechanistic basis by which elevated Prevotella in tuberculosis patients worsens immunopathology?",
+      "options": {
+        "A": "Prevotella produces large amounts of propionate that suppress IFN-γ and NK cell activity",
+        "B": "Prevotella directly infects bronchial epithelial cells and worsens lung inflammation",
+        "C": "Prevotella promotes Th17 cell responses, elevating IL-17 and driving neutrophil-mediated tuberculosis nodule formation",
+        "D": "Prevotella outcompetes butyrate-producing Firmicutes and increases gut permeability"
+      },
+      "correct_answer": "C",
+      "explanation": "Prevotella possesses the ability to regulate Th17 cell responses. In M. tuberculosis infection, higher Prevotella abundance may further induce Th17 cell activation and promote IL-17 production. Excessive IL-17 drives large-scale neutrophil recruitment, which clusters to create tuberculosis pathological nodules, worsening tissue damage. Additionally, reduced Prevotella in some contexts limits butyrate production, further elevating IL-17.",
+      "topic_tags": ["Prevotella", "Th17", "IL-17", "neutrophil", "tuberculosis nodule", "immunopathology"]
+    },
+    {
+      "id": "TB_DYSBIOSIS_mcq_medium_005",
+      "difficulty": "medium",
+      "question": "Which approach provides the best diagnostic performance for distinguishing tuberculosis patients from healthy individuals based on gut microbiome data?",
+      "options": {
+        "A": "Using a single bacterial genus as a standalone biomarker",
+        "B": "Using a single fungal genus with the highest individual AUC",
+        "C": "Combining multiple bacterial genera without fungal data",
+        "D": "Combining a panel of both bacterial and fungal genera as an integrated biomarker set"
+      },
+      "correct_answer": "D",
+      "explanation": "While individual bacterial genera (e.g., Bacteroides, Blautia) and individual fungal genera (e.g., Apiotrichum, Saccharomyces) show moderate diagnostic ability in isolation, a combined panel of three bacterial genera and three fungal genera achieves near-perfect discriminatory performance. This demonstrates that integrating both kingdoms of the gut microbiome provides substantially superior diagnostic power compared to any single-kingdom approach.",
+      "topic_tags": ["biomarkers", "tuberculosis diagnosis", "ROC analysis", "combined panel", "gut microbiome", "mycobiota"]
+    },
+
+    {
+      "id": "TB_DYSBIOSIS_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "Considering the relationship between Bacteroides, SCFAs, and host immunity in tuberculosis, which of the following best describes the multi-step immunological consequence of Bacteroides enrichment in TB patients?",
+      "options": {
+        "A": "Bacteroides enrichment increases propionate production, which activates regulatory T cells, suppresses Th17 responses, and ultimately increases IFN-γ",
+        "B": "Bacteroides enrichment drives increased SCFA production that suppresses B cells and CD4+/CD8+ lymphocytes, reducing IFN-γ output, while the bacterium's positive correlation with IL-17 simultaneously amplifies Th17-driven immunopathology",
+        "C": "Bacteroides enrichment impairs mucus barrier integrity, allowing endotoxin translocation that activates TLR4 pathways and non-specifically suppresses all cytokine production including IL-17",
+        "D": "Bacteroides enrichment outcompetes Bifidobacterium for iron, creating a nutritional deficiency that impairs macrophage function and reduces IFN-γ signalling"
+      },
+      "correct_answer": "B",
+      "explanation": "Bacteroides enrichment in TB patients produces a dual immunological consequence. On one hand, elevated SCFA production by Bacteroides suppresses B cells and CD4+/CD8+ T lymphocytes, reducing TB-induced IFN-γ — the cytokine critical for macrophage activation and M. tuberculosis control. On the other hand, Bacteroides is positively correlated with IL-17, contributing to Th17-mediated immunopathology. This dual effect — suppressing protective immunity while amplifying tissue-damaging inflammation — makes Bacteroides enrichment a mechanistic hub for worsened TB outcomes.",
+      "topic_tags": ["Bacteroides", "SCFAs", "IFN-γ", "IL-17", "Th17", "lymphocytes", "tuberculosis immunology"]
+    },
+    {
+      "id": "TB_DYSBIOSIS_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "What does the collapse of bacterial-fungal trans-kingdom network complexity in tuberculosis patients imply for gut ecosystem resilience, and how does this relate to the observed cytokine dysregulation?",
+      "options": {
+        "A": "Reduced network complexity indicates that remaining microbes have stronger individual metabolic outputs, compensating for species loss and maintaining normal cytokine levels",
+        "B": "Reduced network complexity represents a more specialised microbiome that is better adapted to the inflamed gut environment, making it difficult to restore healthy immune tone",
+        "C": "The collapse of cross-kingdom interactions reduces the cooperative microbial activity that normally supports immune homeostasis; fewer bacteria-fungi interactions mean less production of immunoregulatory metabolites, contributing to the cytokine imbalance seen in TB",
+        "D": "Reduced network complexity is a consequence — not a cause — of cytokine dysregulation, as elevated IL-17 directly kills commensal fungi and disrupts bacterial communities"
+      },
+      "correct_answer": "C",
+      "explanation": "The trans-kingdom network in healthy individuals is dense and complex, with bacteria and fungi forming cooperative interaction clusters. In tuberculosis, this network collapses: fewer nodes, fewer edges, reduced bacteria-fungi interaction proportions, and rare negative correlations. This breakdown implies loss of the cooperative metabolic ecosystem that generates immunomodulatory compounds (such as butyrate from cross-feeding). Without these interactions, the gut can no longer support normal immune tone — contributing to reduced IFN-γ, elevated IL-17, and the broader immune dysregulation that characterises active TB. This supports studying gut microbiota as an integrated cross-kingdom whole.",
+      "topic_tags": ["trans-kingdom network", "gut resilience", "bacterial-fungal interactions", "immune homeostasis", "cytokines", "tuberculosis", "dysbiosis"]
+    }
+  ]
+}

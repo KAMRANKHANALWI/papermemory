@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "The Effects of Non-Nutritive Artificial Sweeteners, Aspartame and Sucralose, on the Gut Microbiome in Healthy Adults: Secondary Outcomes of a Randomized Double-Blinded Crossover Clinical Trial",
+    "authors": ["Samar Y. Ahmad", "James Friel", "Dylan Mackay"],
+    "journal": "Nutrients",
+    "year": 2020,
+    "doi": "10.3390/nu12113408",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "nns_gut_easy_e1a2",
+      "difficulty": "easy",
+      "question": "What are non-nutritive sweeteners (NNSs) and why have they grown popular as food additives?",
+      "answer": "Non-nutritive sweeteners are chemicals that produce an intense sweet taste at very low concentrations compared to caloric sweeteners such as sucrose, dextrose, and high-fructose corn syrup. They are also known as non-caloric or artificial sweeteners. Their popularity has grown because of their low cost, low- or zero-calorie content, and perceived health benefits including support for weight loss or management and normalization of blood glucose levels.",
+      "topic_tags": ["non-nutritive sweeteners", "artificial sweeteners", "definition", "caloric substitutes"]
+    },
+    {
+      "id": "nns_gut_easy_f3b9",
+      "difficulty": "easy",
+      "question": "What role do short-chain fatty acids (SCFAs) play in human physiology?",
+      "answer": "SCFAs are the main end-products of microbial fermentation of non-digestible carbohydrates in the gut. They play important roles in glucose metabolism, lipid metabolism, appetite regulation, and immune system function. Common SCFAs produced by colonic bacteria include acetate, butyrate, propionate, and formate. Because they are tied to microbial activity, shifts in diet or microbiota composition can alter SCFA production and thereby affect these physiological processes.",
+      "topic_tags": ["SCFAs", "short-chain fatty acids", "gut microbiota", "metabolism", "immune function"]
+    },
+    {
+      "id": "nns_gut_easy_c7d4",
+      "difficulty": "easy",
+      "question": "Which bacterial phyla dominate the adult human gut microbiota?",
+      "answer": "Bacteroidetes and Firmicutes together dominate approximately 90% of the adult gut microbiota. Smaller proportions are represented by Proteobacteria, Verrucomicrobia, Fusobacteria, and Cyanobacteria. This compositional profile is broadly stable in healthy adults, although it can shift in response to dietary changes, antibiotic use, or other environmental factors.",
+      "topic_tags": ["gut microbiota", "Bacteroidetes", "Firmicutes", "phyla", "microbial composition"]
+    },
+    {
+      "id": "nns_gut_easy_a5f1",
+      "difficulty": "easy",
+      "question": "What is gut microbiota dysbiosis and what factors are known to promote it?",
+      "answer": "Dysbiosis refers to a change in the number, composition, or functional quality of the gut microbiota that disrupts its normal physiological roles. It can impair immunity, metabolism, endocrine signalling, drug metabolism, vitamin production, and carbohydrate fermentation. Unhealthy diets rich in saturated fat and refined sugar, combined with decreased physical activity, are known contributors to dysbiosis. Dysbiosis has also been associated with impaired glycaemic control and links to metabolic syndrome, obesity, and diabetes.",
+      "topic_tags": ["dysbiosis", "gut microbiota", "diet", "metabolic disease", "glycaemic control"]
+    },
+    {
+      "id": "nns_gut_easy_b2e6",
+      "difficulty": "easy",
+      "question": "Why is the gut microbiota considered unique to each individual, and what can rapidly alter it?",
+      "answer": "Microbial communities in the gut are unique to every host due to differences in genetics, early colonisation history, diet, environment, and health status. Despite this individuality, the microbiota is highly responsive and can change quickly — any shift in the host diet or exposure to environmental factors such as antibiotics, probiotics, or medications can alter the microbial balance. This responsiveness means that dietary interventions, even short-term ones, have the potential to measurably shift microbiota composition.",
+      "topic_tags": ["gut microbiota", "individual variation", "diet", "microbial responsiveness"]
+    },
+
+    {
+      "id": "nns_gut_med_9c3f",
+      "difficulty": "medium",
+      "question": "What was the theoretical basis for concern that artificial sweeteners might alter gut microbiota composition?",
+      "answer": "Several mechanisms have been proposed. First, some gut microbes may have the ability to metabolise certain NNSs, which could shift the normal bacterial balance. Second, NNS intake may exert a bacteriostatic effect on certain microbes, directly suppressing their growth. Third, evidence from animal studies demonstrated that saccharin consumption induced marked glucose intolerance associated with gut microbiota dysbiosis, and transferring the dysbiotic microbiota to germ-free mice reproduced the glucose intolerance, providing mechanistic evidence that altered microbiota — not direct drug effects — was responsible. These findings raised the question of whether other NNSs might similarly disturb the microbial ecosystem.",
+      "topic_tags": ["NNS mechanisms", "bacteriostatic effect", "microbiota disruption", "saccharin", "glucose intolerance"]
+    },
+    {
+      "id": "nns_gut_med_d4a7",
+      "difficulty": "medium",
+      "question": "How does the crossover design used in NNS microbiome trials help control for confounding factors?",
+      "answer": "In a crossover design, each participant serves as their own control by receiving both treatments sequentially, separated by a washout period. This eliminates between-subject variability in baseline microbiota composition — a major confounding factor in gut microbiome studies given the high inter-individual variation in microbial communities. The washout period allows the microbiota to return to baseline before exposure to the second treatment. Paired comparisons within individuals therefore provide greater statistical power to detect true treatment effects than parallel-group designs with the same sample size.",
+      "topic_tags": ["crossover design", "study methodology", "microbiome research", "confounding", "washout period"]
+    },
+    {
+      "id": "nns_gut_med_h8k2",
+      "difficulty": "medium",
+      "question": "Why might NNS effects on gut microbiota observed in animal studies not translate to humans?",
+      "answer": "Several important differences limit extrapolation from animal data. The doses of NNSs used in many rodent studies often exceed amounts that would be consumed by humans under realistic dietary patterns. Animal gut microbiota compositions differ markedly from human microbiotas in their taxonomic makeup and metabolic capabilities. Additionally, different NNSs have distinct chemical structures and metabolic fates — findings for one compound (e.g., saccharin) cannot be assumed to apply to chemically unrelated sweeteners like aspartame or sucralose. Sucralose, for example, is largely not absorbed and passes through the gut largely unchanged, making it an unlikely substrate for microbial metabolism.",
+      "topic_tags": ["animal models", "translational research", "NNS", "species differences", "sucralose metabolism"]
+    },
+    {
+      "id": "nns_gut_med_r1v5",
+      "difficulty": "medium",
+      "question": "What methodological measures can be taken in NNS clinical trials to ensure the purity of intervention effects on the gut microbiota?",
+      "answer": "Several controls are important. Using the pure powder form of a sweetener (rather than commercially packaged products) avoids confounding by co-ingredients like fillers, carriers, or excipients found in retail products like Splenda. Participants should avoid other NNS sources, probiotics, ibuprofen, and antibiotics, all of which independently alter microbiota composition. Alcohol intake should be limited given its known effects on gut microbiota. Caffeine intake should be standardised. Women should ideally be studied at consistent phases of their menstrual cycle to reduce hormonal variability. Controlling these factors helps isolate the effect of the specific sweetener under investigation.",
+      "topic_tags": ["clinical trial design", "confounders", "microbiome research", "NNS purity", "methodology"]
+    },
+    {
+      "id": "nns_gut_med_w6p3",
+      "difficulty": "medium",
+      "question": "How is alpha diversity used to assess the impact of a dietary intervention on the gut microbiota?",
+      "answer": "Alpha diversity measures the richness and evenness of microbial species within a single sample. The Shannon index is a commonly used metric that accounts for both the number of species present and the evenness of their distribution. In dietary intervention studies, a reduction in the Shannon index after an intervention suggests loss of microbial diversity — fewer species or a shift toward dominance by a smaller number of taxa. Conversely, no significant change before and after treatment indicates the intervention did not measurably disrupt the community's richness or structure. Alpha diversity is therefore a sensitive indicator of whether a dietary compound has broadly destabilising effects on the gut microbiota.",
+      "topic_tags": ["alpha diversity", "Shannon index", "microbiota richness", "dietary intervention", "16S rRNA"]
+    },
+    {
+      "id": "nns_gut_med_z9n0",
+      "difficulty": "medium",
+      "question": "How does beta diversity analysis complement alpha diversity in microbiome intervention studies?",
+      "answer": "While alpha diversity captures species richness and evenness within a single sample, beta diversity quantifies differences in community composition between samples. Bray-Curtis dissimilarity is a commonly used distance metric that compares the relative abundance of taxa across samples. Principal coordinates analysis (PCoA) is used to visualise these inter-sample differences, and PERMANOVA (permutational multivariate analysis of variance) statistically tests whether group membership (e.g., pre- vs. post-treatment, or type of sweetener) explains a significant portion of the variance in community structure. A non-significant PERMANOVA result indicates that the treatment did not shift the overall community structure, even if individual taxa showed minor fluctuations.",
+      "topic_tags": ["beta diversity", "Bray-Curtis", "PERMANOVA", "PCoA", "microbiome methodology"]
+    },
+
+    {
+      "id": "nns_gut_hard_q4m8",
+      "difficulty": "hard",
+      "question": "What is the significance of finding a statistically significant sequence effect (but not a treatment effect) in beta diversity analysis of a crossover NNS trial?",
+      "answer": "In a crossover trial, a significant 'sequence' effect in beta diversity PERMANOVA analysis means that the order in which participants received the two sweeteners — not the sweeteners themselves — is associated with differences in microbial community structure. This suggests a carry-over effect or period effect: the microbiota composition during the second treatment period differs from that during the first, regardless of which sweetener was given. Possible explanations include incomplete washout of the first treatment's effects, natural temporal drift in microbiota composition over the study period, or systematic differences in participants' diets or behaviours between the two treatment phases. Critically, because the treatment factor itself is not significant, this sequence effect does not imply that either sweetener caused the microbiota shift — it instead points to methodological considerations around washout adequacy and the stability of the microbiota over time.",
+      "topic_tags": ["sequence effect", "crossover trial", "PERMANOVA", "carry-over effect", "beta diversity", "microbiome methodology"]
+    },
+    {
+      "id": "nns_gut_hard_t7e2",
+      "difficulty": "hard",
+      "question": "How do the distinct metabolic fates of sucralose and aspartame in the human body help explain why neither compound is expected to substantially alter gut microbiota composition?",
+      "answer": "Sucralose is a chlorinated sucrose derivative that is poorly absorbed in the gastrointestinal tract and is excreted largely unchanged in faeces, meaning it reaches the colon in its original form but appears not to be a substrate for microbial fermentation — it does not provide an energy source for gut bacteria and lacks the chemical features required for microbial catabolism. Aspartame, by contrast, is hydrolysed in the small intestine into its constituent components — phenylalanine, aspartic acid, and methanol — before it even reaches the colon. This means the parent compound is unlikely to be present in the large intestine where the majority of gut bacteria reside. In both cases, the nature of their digestion and absorption reduces the plausibility of a direct interaction with colonic microbiota, which may explain why human trials using realistic doses fail to detect the microbiota perturbations observed in some animal studies.",
+      "topic_tags": ["sucralose metabolism", "aspartame metabolism", "colonic availability", "NNS mechanisms", "microbial substrate"]
+    },
+    {
+      "id": "nns_gut_hard_p3c6",
+      "difficulty": "hard",
+      "question": "What are the key limitations in interpreting null findings in short-term NNS gut microbiome trials, and how might future study designs address them?",
+      "answer": "Several limitations complicate the interpretation of null results. First, a short treatment duration (e.g., 14 days) may be insufficient to induce detectable changes in a system that can be resilient over brief timescales, particularly with realistic dietary doses; longer interventions could reveal cumulative or adaptive effects. Second, if the trial is primarily powered to detect changes in a different outcome (e.g., glucose metabolism), it is statistically underpowered for microbiome endpoints, making it prone to false negatives. Third, a healthy, non-obese adult population may have a resilient microbiota less susceptible to perturbation compared with individuals with metabolic disease or pre-existing dysbiosis. Fourth, the 16S rRNA sequencing approach captures community composition but not functional gene expression or actual metabolic activity, so functional changes could occur without compositional shifts. Future designs should power studies specifically for microbiome outcomes, include longer treatment periods, study populations at metabolic risk, incorporate metagenomics and metabolomics to capture functional changes, and use germ-free or humanised mouse transfer experiments to test causality.",
+      "topic_tags": ["null findings", "study limitations", "microbiome methodology", "statistical power", "16S rRNA", "future directions"]
+    },
+    {
+      "id": "nns_gut_hard_v1k9",
+      "difficulty": "hard",
+      "question": "How does the relationship between NNS consumption, gut microbiota, and glucose metabolism create a complex interplay that is difficult to disentangle in clinical trials?",
+      "answer": "NNSs were originally developed as inert caloric substitutes, but evidence suggests a more complex biological picture. Changes in gut microbiota composition can independently alter glucose metabolism through multiple pathways: SCFA production affects insulin secretion and gluconeogenesis, microbial endotoxins (LPS) can drive systemic inflammation and insulin resistance, and microbial regulation of gut hormones like GLP-1 influences appetite and glucose disposal. If an NNS alters the microbiota, it could thereby indirectly affect glucose metabolism even without directly engaging insulin pathways. Conversely, if an NNS alters glucose metabolism through direct mechanisms (e.g., effects on sweet taste receptors in the gut), this could secondarily reshape the nutritional environment of the colon and influence microbial communities. This bidirectionality means observing changes in one domain does not prove the other is unaffected — and a null finding in both domains together, as seen with aspartame and sucralose in healthy adults, strengthens (but does not definitively establish) the conclusion that neither pathway was meaningfully engaged at realistic doses.",
+      "topic_tags": ["NNS", "glucose metabolism", "gut microbiota", "GLP-1", "SCFA", "LPS", "bidirectional relationship"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "nns_gut_mcq_easy_x2r7",
+      "difficulty": "easy",
+      "question": "What is the primary reason sucralose is considered unlikely to serve as a direct substrate for gut microbiota?",
+      "options": {
+        "A": "It is fully absorbed in the stomach before reaching the colon",
+        "B": "It is largely not absorbed and passes through the gut largely unchanged, making it unavailable for microbial fermentation",
+        "C": "It has an antimicrobial chemical structure that kills bacteria on contact",
+        "D": "It is rapidly converted to glucose in the small intestine"
+      },
+      "correct_answer": "B",
+      "explanation": "Studies of sucralose's metabolic fate in animals and humans show it is largely not absorbed and is eliminated unchanged in faeces. Because it is not fermented by colonic bacteria, it is unlikely to be a meaningful microbial substrate, which supports the finding that sucralose does not measurably alter gut microbiota in healthy adults.",
+      "topic_tags": ["sucralose", "metabolism", "gut microbiota", "fermentation"]
+    },
+    {
+      "id": "nns_gut_mcq_easy_b5t1",
+      "difficulty": "easy",
+      "question": "Which of the following best describes the Shannon diversity index in the context of gut microbiome research?",
+      "options": {
+        "A": "A measure of the genetic distance between two microbial species",
+        "B": "A measure of microbial richness and evenness within a single faecal sample",
+        "C": "A measure of the difference in community composition between two samples",
+        "D": "A count of the total number of bacterial genes in a sample"
+      },
+      "correct_answer": "B",
+      "explanation": "The Shannon index is a metric of alpha diversity, capturing both the number of distinct microbial species (richness) and how evenly they are distributed in abundance (evenness) within a single sample. A higher Shannon index indicates a more diverse community. It does not compare between samples — that is the domain of beta diversity metrics.",
+      "topic_tags": ["Shannon index", "alpha diversity", "microbiome methodology"]
+    },
+    {
+      "id": "nns_gut_mcq_easy_m9g4",
+      "difficulty": "easy",
+      "question": "Which statement best describes the established relationship between diet and gut microbiota?",
+      "options": {
+        "A": "The gut microbiota is genetically fixed and does not respond to dietary changes",
+        "B": "Only fibre-rich diets can alter gut microbiota composition",
+        "C": "Microbial communities can respond rapidly to changes in host diet or environmental factors",
+        "D": "Diet affects only the Firmicutes phylum and has no impact on Bacteroidetes"
+      },
+      "correct_answer": "C",
+      "explanation": "The gut microbiota is dynamic and highly responsive to dietary changes. Even short-term shifts in food intake can measurably alter microbial community composition. This responsiveness is why dietary interventions — including NNS consumption — are studied as potential modulators of the gut microbiome.",
+      "topic_tags": ["diet", "gut microbiota", "microbial responsiveness"]
+    },
+
+    {
+      "id": "nns_gut_mcq_med_h3k6",
+      "difficulty": "medium",
+      "question": "In a crossover microbiome trial, why is a washout period between treatment arms essential?",
+      "options": {
+        "A": "To allow researchers to analyse samples from the first treatment before the second begins",
+        "B": "To give participants time to recover from adverse effects of the first treatment",
+        "C": "To allow the gut microbiota to return to a baseline state before exposure to the second treatment, preventing carry-over confounding",
+        "D": "To ensure participants are compliant with dietary restrictions during the intervention"
+      },
+      "correct_answer": "C",
+      "explanation": "In crossover designs, a washout period is critical to prevent carry-over effects, where residual changes from the first treatment persist into the second treatment period. For gut microbiome studies specifically, washout gives the microbial community time to return to its pre-intervention state, ensuring that any changes observed in the second arm are attributable to the new treatment rather than lingering effects of the first.",
+      "topic_tags": ["crossover design", "washout period", "carry-over effect", "microbiome methodology"]
+    },
+    {
+      "id": "nns_gut_mcq_med_r8v2",
+      "difficulty": "medium",
+      "question": "What conclusion about saccharin's effects on the gut microbiota was supported by germ-free mouse transfer experiments?",
+      "options": {
+        "A": "Saccharin directly damages the intestinal epithelium regardless of microbiota",
+        "B": "Saccharin-induced glucose intolerance was mediated through the gut microbiota, as transferring faecal microbiota from affected participants to germ-free mice reproduced the glucose intolerance",
+        "C": "Saccharin increases Firmicutes abundance, which causes glucose intolerance in germ-free mice",
+        "D": "Germ-free mice are immune to the effects of saccharin because they lack the intestinal flora necessary to metabolise it"
+      },
+      "correct_answer": "B",
+      "explanation": "In the Suez et al. study, four of seven healthy adults who consumed a high dose of saccharin developed glucose intolerance alongside marked microbiome changes. Crucially, transferring the faecal microbiota from these affected participants into germ-free mice reproduced glucose intolerance in the recipients. This experiment provided strong causal evidence that the microbiota — not a direct pharmacological effect of saccharin — was mediating the metabolic outcome.",
+      "topic_tags": ["saccharin", "glucose intolerance", "germ-free mice", "microbiota transfer", "causality"]
+    },
+    {
+      "id": "nns_gut_mcq_med_n1f5",
+      "difficulty": "medium",
+      "question": "Why might restricting probiotic food consumption be an important exclusion criterion in gut microbiome intervention studies?",
+      "options": {
+        "A": "Probiotic foods increase blood glucose levels, which confounds glycaemic outcome measures",
+        "B": "Probiotics introduce exogenous live bacteria that can directly alter gut microbiota composition and function, confounding the measured effect of the intervention",
+        "C": "Probiotic foods contain sugar alcohols that interfere with SCFA gas chromatography measurements",
+        "D": "Probiotics degrade the sweetener compounds being tested before they reach the colon"
+      },
+      "correct_answer": "B",
+      "explanation": "Probiotic foods such as yogurt, kefir, and kombucha contain live microorganisms that, when consumed regularly, can shift the composition of the gut microbiota. In a study designed to measure the effect of a specific intervention (e.g., an NNS) on the microbiota, concurrent probiotic consumption would introduce a competing variable that could mask or amplify the treatment effect, making it impossible to attribute observed changes solely to the sweetener.",
+      "topic_tags": ["probiotics", "confounders", "microbiome research", "study design"]
+    },
+    {
+      "id": "nns_gut_mcq_med_e6c0",
+      "difficulty": "medium",
+      "question": "What does a PERMANOVA p-value close to 1.0 indicate when applied to beta diversity data in a microbiome intervention study?",
+      "options": {
+        "A": "The treatment groups are perfectly separated in microbial community space",
+        "B": "There is strong evidence that the treatment caused a shift in community structure",
+        "C": "The community structure is essentially indistinguishable between treatment conditions, with no evidence of a treatment effect",
+        "D": "The statistical test lacked sufficient permutations to be reliable"
+      },
+      "correct_answer": "C",
+      "explanation": "PERMANOVA tests whether the variation in microbial community composition between groups exceeds what would be expected by chance. A p-value near 1.0 indicates that the treatment groups are no more different from each other than randomly permuted groupings would be — essentially meaning there is no detectable treatment-associated shift in community structure. This is a strong null result suggesting the intervention did not alter the overall microbiota architecture.",
+      "topic_tags": ["PERMANOVA", "beta diversity", "community structure", "null result", "microbiome methodology"]
+    },
+    {
+      "id": "nns_gut_mcq_med_j4y8",
+      "difficulty": "medium",
+      "question": "Why is using the pure powder form of an NNS, rather than a commercially packaged product like a diet beverage, important for isolating its effect on the gut microbiota?",
+      "options": {
+        "A": "Pure powder has a higher bioavailability and therefore produces stronger effects on the microbiota",
+        "B": "Commercial products degrade quickly, making dose standardisation impossible",
+        "C": "Commercial NNS products contain co-ingredients such as carriers, fillers, and other additives that could independently affect the gut microbiota, confounding attribution to the sweetener itself",
+        "D": "Regulatory bodies prohibit the use of commercial products in randomized clinical trials"
+      },
+      "correct_answer": "C",
+      "explanation": "Products like Splenda contain sucralose plus bulking agents such as maltodextrin, while diet sodas contain multiple additives, colorants, and acids. Any of these co-ingredients could alter gut microbial composition independently of the NNS. Using pharmaceutical-grade pure powder isolates the effect of the active compound itself, allowing researchers to attribute any microbiota changes specifically to the sweetener under investigation.",
+      "topic_tags": ["NNS purity", "confounders", "study design", "sucralose", "dietary intervention"]
+    },
+
+    {
+      "id": "nns_gut_mcq_hard_o7w3",
+      "difficulty": "hard",
+      "question": "A researcher observes that aspartame significantly alters gut microbiota in obese rodents but not in lean healthy humans. Which of the following best explains this apparent discrepancy?",
+      "options": {
+        "A": "Aspartame is metabolised into different compounds in rodents and humans, so the microbiota sees fundamentally different chemical exposures",
+        "B": "The discrepancy is entirely due to dose differences and would disappear if human doses were raised to match rodent studies",
+        "C": "A combination of species differences in microbiota composition, dose-response relationships, host metabolic state, and the fact that aspartame is hydrolysed in the small intestine — preventing the intact molecule from reaching colonic bacteria — all likely contribute to the divergent outcomes",
+        "D": "Rodent gut microbiota is inherently more sensitive to all xenobiotics and therefore amplifies effects that are truly present but undetectable in humans"
+      },
+      "correct_answer": "C",
+      "explanation": "The discrepancy is likely multifactorial. Aspartame is hydrolysed to phenylalanine, aspartate, and methanol in the small intestine, so intact aspartame probably does not reach colonic bacteria in meaningful quantities in humans. Rodents have markedly different gut microbiota profiles and metabolic states. Many animal studies also use obese or diet-induced metabolic disease models, where dysbiotic microbiota may be more susceptible to perturbation. Doses in rodent studies frequently exceed human-equivalent amounts. Taken together, these factors — not a single explanation — account for why animal findings do not reliably translate to healthy human populations.",
+      "topic_tags": ["aspartame", "species differences", "dose-response", "animal vs human", "colonic availability"]
+    },
+    {
+      "id": "nns_gut_mcq_hard_u2b5",
+      "difficulty": "hard",
+      "question": "If a short-term NNS trial in healthy adults finds no change in microbiota composition or SCFA production, which of the following conclusions is most scientifically defensible?",
+      "options": {
+        "A": "NNSs are definitively safe for the gut microbiome across all populations, doses, and durations",
+        "B": "Realistic doses of the tested NNSs do not measurably alter gut microbiota composition or SCFA production in healthy adults over the studied timeframe, but effects may exist in longer exposures, higher-risk populations, or at functional levels not captured by 16S rRNA sequencing",
+        "C": "The gut microbiota has no role in mediating the metabolic effects of NNSs, as shown by the absence of compositional changes",
+        "D": "The result confirms that NNSs improve metabolic health by preserving beneficial SCFA-producing bacteria"
+      },
+      "correct_answer": "B",
+      "explanation": "A null result in a short-term trial with healthy adults is appropriately interpreted as evidence that the specific doses tested did not produce detectable changes in this population over the studied timeframe using compositional methods. It does not generalise to all conditions: longer exposures might produce cumulative effects, metabolically compromised populations might respond differently, and 16S rRNA profiling captures community structure but not functional gene expression or metabolic flux. Scientific defensibility requires scoping the conclusion to the actual conditions and methods of the study.",
+      "topic_tags": ["null findings", "interpretation", "scientific inference", "microbiome research", "limitations"]
+    }
+  ]
+}

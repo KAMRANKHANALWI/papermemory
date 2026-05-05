@@ -8,7 +8,8 @@ from pathlib import Path
 RESULTS_DIR = Path("results")
 SUMMARY_DIR = Path("results")
 
-CSV_PATTERN = "open_ended_eval_results_*.csv"
+# CSV_PATTERN = "open_ended_eval_results*.csv"
+CSV_PATTERN = "high_correctness_0.2_to_1*.csv"
 
 csv_files = list(RESULTS_DIR.glob(CSV_PATTERN))
 
@@ -86,8 +87,12 @@ def summarize_open_ended(csv_path: Path):
         "metrics_std": std_metrics,
     }
 
+    # summary_file = SUMMARY_DIR / csv_path.name.replace(
+    #     "open_ended_eval_results_", "open_ended_eval_summary_"
+    # ).replace(".csv", ".json")
+    
     summary_file = SUMMARY_DIR / csv_path.name.replace(
-        "open_ended_eval_results_", "open_ended_eval_summary_"
+        "open_ended_eval_0.2_1.0", "open_ended_eval_summary_0.2_1.0"
     ).replace(".csv", ".json")
 
     summary_file.write_text(json.dumps(summary, indent=2))

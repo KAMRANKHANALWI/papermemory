@@ -148,7 +148,7 @@ async def main():
                 "sources": rag_result["sources"],
                 "similarity_score": rag_result["similarity_score"],
                 "difficulty": row.get("difficulty"),
-                "category": row.get("category"),
+                # "category": row.get("category"),
             }
 
             append_row(output_row)

@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "source_paper": "The gut microbiome, mild cognitive impairment, and probiotics: A randomized clinical trial in middle-aged and older adults",
+    "authors": ["Mashael R. Aljumaah", "Urja Bhatia", "Jeffery Roach", "John Gunstad", "M. Andrea Azcarate Peril"],
+    "journal": "Clinical Nutrition",
+    "year": 2022,
+    "doi": "10.1016/j.clnu.2022.09.012",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "mci_probiotic_easy_001",
+      "difficulty": "easy",
+      "question": "What are psychobiotics and how do they relate to cognitive health?",
+      "answer": "Psychobiotics are microbiota-targeted interventions — including beneficial live bacteria (probiotics) or substances that support such bacteria (prebiotics) — that can result in mental health benefits. They are thought to protect the aging brain by modulating gut microbiome composition, reducing neuroinflammation, and influencing the gut-brain axis. Research has shown cognitive benefits of psychobiotic supplementation in individuals with Alzheimer's disease, mild cognitive impairment, and neurologically healthy older adults.",
+      "topic_tags": ["psychobiotics", "probiotics", "gut-brain axis", "cognitive health", "definition"]
+    },
+    {
+      "id": "mci_probiotic_easy_002",
+      "difficulty": "easy",
+      "question": "What is mild cognitive impairment and why is it important to study in relation to the gut microbiome?",
+      "answer": "Mild cognitive impairment (MCI) refers to a detectable decline in cognitive abilities — including memory, attention, executive function, and processing speed — that falls short of dementia but is measurable by neuropsychological assessment. It is clinically important because it can represent an early stage in the progression toward Alzheimer's disease and other dementias. Studying the gut microbiome in MCI may reveal early microbial signatures that could serve as biomarkers for identifying cognitive decline before it becomes severe, and could guide the development of microbiome-targeted interventions to slow or prevent progression.",
+      "topic_tags": ["mild cognitive impairment", "MCI", "cognitive aging", "biomarkers", "early detection"]
+    },
+    {
+      "id": "mci_probiotic_easy_003",
+      "difficulty": "easy",
+      "question": "What are the key properties of Lactobacillus rhamnosus GG that make it a candidate probiotic for brain health interventions?",
+      "answer": "Lactobacillus rhamnosus GG (LGG) is a well-studied probiotic strain with several properties that make it suited for gut and brain health interventions. It is bile-resistant and has strong adhesive properties, enabling it to persist in the gut. It has been shown to protect the gut lining and intestinal epithelial cells, reduce pro-inflammatory cytokines such as interleukin-8, and improve hippocampal neurogenesis in animal models. In mice, LGG administration has been associated with reductions in anxiety-like, obsessive-compulsive-like, and depressive behaviors, suggesting influence over the gut-brain axis.",
+      "topic_tags": ["Lactobacillus rhamnosus GG", "LGG", "probiotic properties", "gut-brain axis", "neurogenesis"]
+    },
+    {
+      "id": "mci_probiotic_easy_004",
+      "difficulty": "easy",
+      "question": "How does advancing age affect both gut microbiome composition and cognitive function?",
+      "answer": "Advancing age is associated with progressive declines in cognitive abilities and structural changes in global and regional brain size. Simultaneously, aging leads to shifts in gut microbiome composition, often characterized by reduced microbial diversity and pro-inflammatory changes. These two phenomena appear to be interconnected through the gut-brain axis: gut dysbiosis driven by aging has been linked to cognitive impairment, and lifestyle factors such as a high-fat Western diet, sedentary behavior, and smoking can simultaneously worsen both gut microbiome health and cognitive performance.",
+      "topic_tags": ["aging", "cognitive decline", "gut microbiome", "dysbiosis", "gut-brain axis"]
+    },
+    {
+      "id": "mci_probiotic_easy_005",
+      "difficulty": "easy",
+      "question": "Which gut bacterial taxa have been identified as associated with cognitively intact versus cognitively impaired individuals in aging populations?",
+      "answer": "In studies of aging adults, cognitively intact individuals tend to be associated with bacteria such as Bacteroides vulgatus, Bifidobacterium longum, Bifidobacterium breve, and Faecalibacterium prausnitzii — organisms generally considered beneficial for gut homeostasis and immune regulation. In contrast, cognitively impaired individuals show higher abundance of Prevotella species (notably Prevotella ruminicola), Bacteroides thetaiotaomicron, Bacteroides xylanisolvens, and members of Prevotellaceae. Proteobacteria have also been associated with cognitively intact individuals, while Verrucomicrobia was linked to cognitive impairment at the phylum level.",
+      "topic_tags": ["Prevotella", "Bacteroides", "Bifidobacterium", "Faecalibacterium prausnitzii", "cognitive status", "biomarker taxa"]
+    },
+
+    {
+      "id": "mci_probiotic_med_001",
+      "difficulty": "medium",
+      "question": "How might Prevotella ruminicola contribute mechanistically to cognitive decline through its metabolic activities?",
+      "answer": "Prevotella ruminicola is one of the most predominant species in the rumen gut and has known functions in generating short-chain fatty acids. Importantly, it consumes butyrate and produces propionic, acetic, formic, and succinic acids. Shifts in this SCFA profile could influence gut-brain axis signaling, since SCFAs are speculated to play a pivotal role in neuro-immunoendocrine regulation. Additionally, research in Huntington's disease mouse models found that P. ruminicola positively correlated with butyrate levels and negatively with ATP and pipecolic acid, suggesting a mechanistic role in regulating plasma metabolites that could affect cognitive and motor function. Its reduction in neurodegenerative disease contexts highlights its potential involvement in the microbiome-gut-brain axis pathways relevant to cognitive decline.",
+      "topic_tags": ["Prevotella ruminicola", "SCFAs", "butyrate", "gut-brain axis", "metabolic mechanism", "cognitive decline"]
+    },
+    {
+      "id": "mci_probiotic_med_002",
+      "difficulty": "medium",
+      "question": "What is the proposed mechanism linking Bacteroides thetaiotaomicron activity in the gut to cognitive function?",
+      "answer": "Bacteroides thetaiotaomicron is capable of fermenting glutamate, the most abundant excitatory neurotransmitter, which transmits signals to the brain via the vagus nerve. Glutamate is also the biosynthetic precursor of gamma-aminobutyric acid (GABA), a key inhibitory neurotransmitter. Both glutamate and GABA have been reported to decline with aging and have been proposed as early markers for Alzheimer's disease diagnosis. By modulating glutamate availability in the gut, B. thetaiotaomicron could therefore influence neurotransmitter homeostasis through the gut-brain axis. This mechanism is supported by the observation of elevated predicted glutaminyl-tRNA synthetase (GlnRS) gene abundance in cognitively impaired individuals, suggesting dysregulation in glutamate-related pathways.",
+      "topic_tags": ["Bacteroides thetaiotaomicron", "glutamate", "GABA", "neurotransmitters", "vagus nerve", "gut-brain axis"]
+    },
+    {
+      "id": "mci_probiotic_med_003",
+      "difficulty": "medium",
+      "question": "How does probiotic supplementation affect gut microbiome diversity and composition at the aggregate versus individual level?",
+      "answer": "At the aggregate level, LGG supplementation produced marginal impacts on overall gut microbiome diversity, with no significant differences in alpha or beta diversity between probiotic and placebo groups. No distinct clustering by treatment was observed in community composition analysis. However, at the individual (longitudinal) level, paired beta diversity analysis revealed a significant compositional shift primarily captured by non-phylogenetic metrics, suggesting changes in relative abundance rather than wholesale introduction or elimination of taxa. This distinction implies that LGG modulates the abundance of existing microbial community members rather than fundamentally restructuring the microbiome, consistent with broader probiotic clinical trial literature showing subtle but meaningful microbiota changes alongside cognitive improvements.",
+      "topic_tags": ["LGG", "probiotic supplementation", "microbiome diversity", "alpha diversity", "beta diversity", "individual vs aggregate"]
+    },
+    {
+      "id": "mci_probiotic_med_004",
+      "difficulty": "medium",
+      "question": "Why does the gut microbiome respond differently to probiotic treatment depending on the cognitive status of the host?",
+      "answer": "The baseline gut microbiome composition differs between cognitively intact and cognitively impaired individuals, resulting in a different ecological context into which the probiotic is introduced. In cognitively impaired individuals, genera such as Prevotella and Dehalobacterium are significantly more abundant at baseline, and these same taxa decrease in response to LGG treatment. This selective response suggests that elevated Prevotella and Dehalobacterium may occupy ecological niches that LGG can compete with or displace — but only in the specific community context of cognitive impairment. In cognitively intact individuals, a different set of genera (including Lactobacillus, Oscillospira, and Clostridium) respond to treatment, reflecting the distinct microbial landscapes between the two groups and the host-specific nature of probiotic interactions.",
+      "topic_tags": ["probiotic response", "cognitive status", "Prevotella", "Dehalobacterium", "LGG", "microbial ecology"]
+    },
+    {
+      "id": "mci_probiotic_med_005",
+      "difficulty": "medium",
+      "question": "What is the potential significance of Dehalobacterium in the context of cognitive dysfunction?",
+      "answer": "Dehalobacterium has been identified in animal studies as an indicator of postoperative cognitive dysfunction in aged mice, and has also been proposed as a driver of autism spectrum disorder pathological traits, including altered behavior and elevated TNF-alpha expression. Its significant decrease in response to LGG supplementation specifically in cognitively impaired individuals — without a corresponding decrease in cognitively intact individuals — suggests that its presence may be specifically linked to the neurological or immunological environment associated with cognitive impairment. The reduction of Dehalobacterium in the context of improved cognitive scores after probiotic treatment implies it may participate in inflammatory or neurological signaling pathways relevant to cognitive decline, though the exact mechanistic role requires further elucidation.",
+      "topic_tags": ["Dehalobacterium", "cognitive dysfunction", "postoperative cognitive dysfunction", "autism spectrum disorder", "LGG", "neuroinflammation"]
+    },
+    {
+      "id": "mci_probiotic_med_006",
+      "difficulty": "medium",
+      "question": "How do short-chain fatty acids serve as a mechanistic link between gut microbiota composition and brain function?",
+      "answer": "Short-chain fatty acids (SCFAs) produced by microbial fermentation in the gut are proposed to play a pivotal role in neuro-immunoendocrine regulation. They can cross the blood-brain barrier or act peripherally through the vagus nerve and immune system to influence brain function. Butyrate, for example, has anti-inflammatory and neuroprotective properties. The balance of SCFAs produced by gut bacteria — which depends heavily on which species are dominant — can therefore modulate neuroinflammation, neurogenesis, and neurotransmitter precursor availability. In the context of MCI, species like Bacteroides xylanisolvens (an acetate producer) and P. ruminicola (which consumes butyrate and produces propionate and acetate) may shift the SCFA landscape in ways that impair these neuroregulatory functions, though the precise mechanisms remain incompletely defined.",
+      "topic_tags": ["SCFAs", "short-chain fatty acids", "butyrate", "neuroinflammation", "gut-brain axis", "MCI mechanisms"]
+    },
+
+    {
+      "id": "mci_probiotic_hard_001",
+      "difficulty": "hard",
+      "question": "How do species-level versus genus-level analyses reveal different aspects of the gut microbiome's relationship to cognitive impairment, and why does this matter for biomarker development?",
+      "answer": "Genus-level analysis identified elevated Prevotella as a broad marker associated with cognitive impairment, but this association masks important species-level heterogeneity. Whole-genome shotgun sequencing revealed that within the Prevotella genus, twelve distinct species were present, and Prevotella ruminicola specifically emerged as the highest-ranked taxon for classification accuracy. Similarly, while the genus Bacteroides appeared elevated in cognitively impaired individuals, species-level analysis distinguished Bacteroides thetaiotaomicron and Bacteroides xylanisolvens as the specific contributors, each with distinct metabolic roles — glutamate fermentation and xylan degradation with acetate production, respectively. This resolution matters for biomarker development because interventional strategies (probiotics, prebiotics, dietary changes) act at the species or strain level, not the genus level. A genus-level biomarker provides insufficient specificity for targeted therapeutic design. Furthermore, published literature on Prevotella shows both eubiotic and dysbiotic roles across different neurological conditions, meaning that genus-level conclusions risk being contradictory and misleading without species-level clarification.",
+      "topic_tags": ["species vs genus resolution", "biomarkers", "Prevotella ruminicola", "Bacteroides thetaiotaomicron", "WGS", "MCI", "therapeutic targets"]
+    },
+    {
+      "id": "mci_probiotic_hard_002",
+      "difficulty": "hard",
+      "question": "What are the limitations of interpreting microbiome-cognitive impairment associations from DNA-level sequencing data alone, and what additional evidence would be needed to establish causal mechanisms?",
+      "answer": "DNA-level sequencing identifies which organisms are present and in what relative abundance, but it does not reveal gene expression, protein production, or actual metabolic activity of those organisms in vivo. A bacterium detected at high abundance may be metabolically inactive, or its functionally relevant genes may not be expressed under the particular host conditions observed. To establish causal mechanisms, gene expression data (metatranscriptomics), protein profiles (metaproteomics), and direct metabolite measurements (metabolomics) would be needed to confirm that the identified taxa are biochemically active in the ways hypothesized. Additionally, confounding factors specific to aging populations — including low-grade chronic inflammation, increased intestinal permeability, obesity, and polypharmacy — all modulate both host-microbe interactions and cognitive outcomes, making it difficult to attribute observed associations directly to microbial taxa. Linking dietary patterns (such as the Mediterranean or MIND diets) to microbiome composition and cognitive outcomes would further help disentangle environmental from microbial contributions. Finally, the observational nature of cross-sectional microbiome associations limits causal inference; mechanistic animal model studies or controlled dietary interventions are required to demonstrate directionality.",
+      "topic_tags": ["causality", "metatranscriptomics", "metabolomics", "confounding factors", "research limitations", "microbiome-cognition", "aging"]
+    },
+    {
+      "id": "mci_probiotic_hard_003",
+      "difficulty": "hard",
+      "question": "How does the interplay between Bacteroides xylanisolvens, SCFA production, taurine secretion, and neurotransmitter signaling create a plausible multifactorial pathway from gut dysbiosis to cognitive impairment?",
+      "answer": "Bacteroides xylanisolvens contributes to cognitive impairment risk through multiple parallel mechanisms. First, it is a xylan-degrading acetate producer — shifts in acetate production relative to butyrate can alter the SCFA landscape available to colonocytes, immune cells, and the central nervous system, where SCFAs are thought to regulate neuroinflammation and neuroendocrine function. Second, B. xylanisolvens has been reported to secrete taurine, a molecule known to support nerve growth and proposed as a biomarker in autism spectrum disorders, suggesting a direct neuromodulatory role. Third, its reported elevation in non-IBD depression and gout contexts supports a broader inflammatory link beyond gut physiology. Taken together with B. thetaiotaomicron's ability to ferment glutamate — depleting this critical excitatory neurotransmitter and its GABA precursor — the combined dysbiotic state created by elevated Bacteroides species provides a plausible multifactorial pathway: altered SCFAs impair gut barrier integrity and neuroinflammatory regulation, taurine dysregulation affects neural support, and glutamate depletion disrupts excitatory/inhibitory neurotransmitter balance, collectively contributing to the cognitive deficits characteristic of MCI.",
+      "topic_tags": ["Bacteroides xylanisolvens", "taurine", "SCFAs", "glutamate", "GABA", "neuroinflammation", "multifactorial mechanism", "MCI"]
+    },
+    {
+      "id": "mci_probiotic_hard_004",
+      "difficulty": "hard",
+      "question": "Why does a probiotic intervention that produces marginal changes in overall microbiome diversity still lead to measurable cognitive improvements in MCI, and what does this imply about the gut-brain axis?",
+      "answer": "The observation that cognitive improvement coincides with only subtle changes in microbiome diversity highlights that global diversity metrics are not the appropriate measure of a probiotic's therapeutic impact. Instead, the relevant changes are taxon-specific: targeted reductions in Prevotella and Dehalobacterium — both associated with impaired cognition and neuroinflammation — appear to be the mechanistically important shifts, even when they are insufficient to measurably alter overall community diversity or structure. This implies that the gut-brain axis is sensitive to the activity of specific microbial taxa and the metabolites or immune signals they produce, rather than to community-wide diversity per se. It also suggests that probiotic interventions act via ecological displacement of specific competitor taxa rather than by restructuring the whole community, and that cognitive outcomes may be regulated by a relatively small number of key microbial players whose abundance the probiotic can modulate. This has important implications for designing targeted psychobiotic interventions: single-strain probiotics may be sufficient if they specifically outcompete or suppress the taxa most linked to neuroinflammatory or neurotransmitter-disrupting pathways.",
+      "topic_tags": ["probiotic mechanism", "gut-brain axis", "microbiome diversity", "taxon-specific effects", "cognitive improvement", "psychobiotics", "ecological displacement"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "mci_probiotic_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which bacterial genus was identified as significantly more abundant in cognitively impaired individuals compared to cognitively intact individuals in multiple analyses?",
+      "options": {
+        "A": "Bifidobacterium",
+        "B": "Faecalibacterium",
+        "C": "Prevotella",
+        "D": "Lactobacillus"
+      },
+      "correct_answer": "C",
+      "explanation": "Differential abundance analysis consistently identified Prevotella as significantly more prevalent in cognitively impaired individuals. Random forest analysis also ranked Prevotella as the highest contributor to classification accuracy between cognitive groups, and WGS sequencing further narrowed this to Prevotella ruminicola as the most disease-associated species.",
+      "topic_tags": ["Prevotella", "MCI biomarker", "differential abundance", "cognitive impairment"]
+    },
+    {
+      "id": "mci_probiotic_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "What type of study design is most appropriate for establishing the effect of a probiotic on cognitive function while minimizing bias?",
+      "options": {
+        "A": "Retrospective cohort study",
+        "B": "Double-blind, placebo-controlled, randomized clinical trial",
+        "C": "Cross-sectional observational study",
+        "D": "Open-label case series"
+      },
+      "correct_answer": "B",
+      "explanation": "A double-blind, placebo-controlled, randomized clinical trial (RCT) is the gold standard for establishing treatment effects because it minimizes selection bias (randomization), performance and detection bias (blinding), and provides a comparison group (placebo control). This design was used in the study described to evaluate LGG supplementation on cognition and microbiome changes.",
+      "topic_tags": ["study design", "RCT", "clinical trial", "probiotics", "bias control"]
+    },
+    {
+      "id": "mci_probiotic_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "What is the primary advantage of whole-genome shotgun (WGS) sequencing over 16S rRNA amplicon sequencing for characterizing gut microbiota?",
+      "options": {
+        "A": "It is less expensive and faster to perform",
+        "B": "It requires less DNA input from fecal samples",
+        "C": "It provides species- and strain-level resolution and functional pathway information",
+        "D": "It specifically detects only pathogenic bacteria in the gut"
+      },
+      "correct_answer": "C",
+      "explanation": "WGS sequencing captures the entire genomic content of a microbial community, enabling species- and strain-level taxonomic resolution and direct characterization of functional gene content and metabolic pathways. In contrast, 16S rRNA amplicon sequencing targets a conserved gene region and typically provides genus-level resolution at best, with limited functional information.",
+      "topic_tags": ["WGS sequencing", "16S rRNA", "sequencing methods", "taxonomic resolution", "functional pathways"]
+    },
+
+    {
+      "id": "mci_probiotic_mcq_med_001",
+      "difficulty": "medium",
+      "question": "What mechanistic link has been proposed between Bacteroides thetaiotaomicron and age-related cognitive decline?",
+      "options": {
+        "A": "It produces excess butyrate that crosses the blood-brain barrier and causes neuroinflammation",
+        "B": "It ferments glutamate, potentially reducing availability of this neurotransmitter and its GABA precursor, both of which decline with aging",
+        "C": "It degrades the intestinal mucus layer, increasing systemic bacterial translocation and neuroinflammation",
+        "D": "It suppresses Bifidobacterium abundance, indirectly reducing B-vitamin synthesis needed for brain function"
+      },
+      "correct_answer": "B",
+      "explanation": "Bacteroides thetaiotaomicron can ferment glutamate, the most abundant excitatory neurotransmitter, which signals to the brain via the vagus nerve. Glutamate is also the precursor to GABA. Both neurotransmitters decline with aging and have been proposed as early markers for Alzheimer's disease, creating a plausible mechanism by which this organism could contribute to cognitive impairment.",
+      "topic_tags": ["Bacteroides thetaiotaomicron", "glutamate", "GABA", "neurotransmitters", "cognitive aging"]
+    },
+    {
+      "id": "mci_probiotic_mcq_med_002",
+      "difficulty": "medium",
+      "question": "Why is it important to conduct longitudinal, individually-paired analyses when assessing probiotic effects on the gut microbiome in clinical trials?",
+      "options": {
+        "A": "Longitudinal analysis eliminates the need for a placebo control group",
+        "B": "It removes the need for dietary controls since diet changes over time",
+        "C": "It controls for high inter-individual microbiome variation, allowing true treatment effects to be distinguished from baseline compositional differences",
+        "D": "It specifically detects beneficial changes in archaea, which are undetectable by cross-sectional analysis"
+      },
+      "correct_answer": "C",
+      "explanation": "Gut microbiome composition varies enormously between individuals. Cross-sectional group comparisons can be confounded by this baseline inter-individual variability, making it difficult to attribute observed differences to treatment. Paired longitudinal analysis uses each participant as their own control, greatly reducing this noise and allowing subtle but genuine treatment-induced shifts to be identified with greater statistical confidence.",
+      "topic_tags": ["longitudinal analysis", "inter-individual variability", "study design", "probiotic trial", "microbiome methodology"]
+    },
+    {
+      "id": "mci_probiotic_mcq_med_003",
+      "difficulty": "medium",
+      "question": "What does the observation that LGG supplementation does not increase total bacterial cell counts but displaces other taxa suggest about the mechanism of action of this probiotic?",
+      "options": {
+        "A": "LGG acts primarily by producing bacteriocins that kill all competing organisms",
+        "B": "LGG functions by modulating host immune responses rather than direct microbial interactions",
+        "C": "LGG competes for colonization niches and resources within an existing microbial community rather than simply adding to it",
+        "D": "LGG primarily impacts viral populations in the gut, freeing resources for other bacteria"
+      },
+      "correct_answer": "C",
+      "explanation": "When a probiotic increases in abundance without increasing total bacterial load, it implies competitive displacement of resident taxa rather than net microbial expansion. This means LGG occupies niches previously held by other organisms — competing for attachment sites, nutrients, or growth conditions — effectively reshaping community composition without inflating overall community size.",
+      "topic_tags": ["LGG mechanism", "competitive displacement", "microbial ecology", "colonization", "probiotic action"]
+    },
+    {
+      "id": "mci_probiotic_mcq_med_004",
+      "difficulty": "medium",
+      "question": "What does the discordant literature on Prevotella's role across different neurological and psychiatric conditions reveal about gut microbiome research challenges?",
+      "options": {
+        "A": "It confirms that Prevotella is universally harmful and should be suppressed therapeutically across all conditions",
+        "B": "It demonstrates that genus-level observations can be misleading because different species within the same genus may have opposing functional roles in different disease contexts",
+        "C": "It shows that 16S sequencing is too unreliable for microbiome research and should be abandoned",
+        "D": "It indicates that the gut microbiome has no consistent relationship with neurological outcomes and associations are due to confounding alone"
+      },
+      "correct_answer": "B",
+      "explanation": "Studies have reported both elevated and reduced Prevotella abundance in connection with conditions including depression, bipolar disorder, minimal hepatic encephalopathy, autism, and Huntington's disease — sometimes with opposing directions. This discordance reflects that different Prevotella species have distinct metabolic capabilities, and genus-level reporting obscures these differences. Species- and strain-level resolution is necessary for clinically meaningful conclusions and therapeutic targeting.",
+      "topic_tags": ["Prevotella", "genus vs species", "research challenges", "discordant findings", "neurological conditions"]
+    },
+    {
+      "id": "mci_probiotic_mcq_med_005",
+      "difficulty": "medium",
+      "question": "How does the role of Faecalibacterium prausnitzii in gut health relate to its association with cognitive status in aging adults?",
+      "options": {
+        "A": "F. prausnitzii produces high levels of acetate that elevate systemic inflammation, making its presence harmful in aging",
+        "B": "F. prausnitzii is associated with cognitively intact individuals and is known as an anti-inflammatory organism that inhibits NF-κB signaling in the gut",
+        "C": "F. prausnitzii is elevated in MCI patients because it generates amyloid-like proteins",
+        "D": "F. prausnitzii has no known functional significance and its cognitive association is purely correlational with no proposed mechanism"
+      },
+      "correct_answer": "B",
+      "explanation": "F. prausnitzii is one of the most abundant and well-studied anti-inflammatory gut bacteria. It produces an anti-inflammatory protein that inhibits the NF-κB signaling pathway in intestinal epithelial cells and is depleted in Crohn's disease. In the context of aging and cognition, it was associated with cognitively intact individuals, consistent with its broader anti-inflammatory function — suggesting that systemic inflammation reduction may be one pathway by which gut microbiota support cognitive health.",
+      "topic_tags": ["Faecalibacterium prausnitzii", "anti-inflammatory", "NF-κB", "cognitive protection", "gut health"]
+    },
+
+    {
+      "id": "mci_probiotic_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "A researcher finds that a probiotic significantly reduces abundance of a specific bacterial genus in cognitively impaired participants but not in cognitively intact participants, and this reduction correlates with improved cognitive scores. What is the most rigorous interpretation of this finding?",
+      "options": {
+        "A": "The bacterium definitively causes cognitive impairment, and the probiotic cures MCI by eliminating it",
+        "B": "The association suggests the bacterium may contribute to cognitive impairment, the probiotic may exert benefit partly through modulating it, but causality and mechanism cannot be established from microbiome composition data alone",
+        "C": "The probiotic has no meaningful effect since overall microbiome diversity did not change significantly",
+        "D": "The finding is invalid because a proper clinical trial cannot detect species-level microbiome changes"
+      },
+      "correct_answer": "B",
+      "explanation": "While a correlation between reduction of a specific taxon and improved cognitive scores is suggestive of a mechanistic relationship, microbiome composition data from even a well-designed RCT cannot establish causality. The reduced abundance might reflect the probiotic's displacement of a competing taxon, the bacterium's reduction might independently track with cognitive improvement without directly mediating it, or both could be driven by a third variable. Mechanistic confirmation would require metabolomic, transcriptomic, or controlled animal model evidence. This reflects the broader challenge of distinguishing biomarker from causal mediator in microbiome research.",
+      "topic_tags": ["causality", "biomarker vs mediator", "research interpretation", "microbiome methodology", "probiotic mechanism"]
+    },
+    {
+      "id": "mci_probiotic_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "Why might a probiotic intervention effective at 12 weeks in cognitively impaired individuals fail to show benefit in cognitively intact individuals, even though both groups receive the same treatment?",
+      "options": {
+        "A": "Cognitively intact individuals have a healthy blood-brain barrier that blocks probiotic-derived signals",
+        "B": "The probiotic specifically targets pathogens and therefore has no effect in a healthy microbiome",
+        "C": "The cognitively intact microbiome lacks the specific taxa that LGG displaces, so the same ecological displacement cannot occur and the microbial and cognitive landscape does not shift in the same way",
+        "D": "Cognitive tests are insufficiently sensitive to detect improvements in already-intact individuals, creating a ceiling effect that has nothing to do with the microbiome"
+      },
+      "correct_answer": "C",
+      "explanation": "Cognitively intact and impaired individuals harbor distinct gut microbiome compositions. Genera like Prevotella and Dehalobacterium are specifically elevated in the impaired group, providing ecological niches that LGG can compete with. In intact individuals, these niches either don't exist or are occupied by different taxa, so LGG's competitive displacement leads to different microbial shifts and correspondingly different functional outcomes. While a ceiling effect (option D) is also a plausible concern, the primary mechanistic explanation lies in the host-specific microbial context determining the ecological impact of the probiotic.",
+      "topic_tags": ["probiotic specificity", "host microbiome context", "ecological displacement", "cognitive status", "LGG", "differential response"]
+    }
+  ]
+}

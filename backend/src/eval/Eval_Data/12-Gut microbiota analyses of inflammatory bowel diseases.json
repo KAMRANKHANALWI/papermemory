@@ -1,0 +1,274 @@
+{
+  "metadata": {
+    "source_paper": "Gut microbiota analyses of inflammatory bowel diseases from a representative Saudi population",
+    "authors": [
+      "Raed M. Alsulaiman", "Abdulaziz A. Al-Quorain", "Fahad A. Al-Muhanna",
+      "Stanley Piotrowski", "Ezzeddin A. Kurdi", "Chittibabu Vatte",
+      "Ahmed A. Alquorain", "Noorah H. Alfaraj", "Abdulaziz M. Alrezuk",
+      "Fred Robinson", "Alexa K. Dowdell", "Turki A. Alamri",
+      "Lauren Hamilton", "Hetal Lad", "Hui Gao", "Divya Gandla",
+      "Brendan J. Keating", "Ryan Meng", "Brian Piening", "Amein K. Al-Ali"
+    ],
+    "journal": "BMC Gastroenterology",
+    "year": 2023,
+    "doi": "10.1186/s12876-023-02904-2",
+    "dataset_description": "RAG evaluation dataset for multi-document retrieval and generation benchmarking. Questions are grounded in concepts, mechanisms, and findings — not paper-specific metadata. IDs use the prefix 'SAIBD' (Saudi Arabian IBD) to ensure uniqueness across large multi-paper corpora.",
+    "total_qa_pairs": 15,
+    "total_mcq": 10
+  },
+
+  "qa_pairs": [
+    {
+      "id": "SAIBD_easy_001",
+      "difficulty": "easy",
+      "question": "What is intestinal dysbiosis and how has it been characterized in the context of inflammatory bowel disease?",
+      "answer": "Intestinal dysbiosis refers to an imbalance in the gut microbial community, characterized by a loss of beneficial bacteria and overall microbial diversity alongside an expansion of potentially pathogenic bacteria. In inflammatory bowel disease, this dysbiosis has been widely documented and is postulated to both influence the onset of gut inflammation and perpetuate it over time. The causes of such dysbiosis are multifactorial, encompassing dietary habits, lifestyle factors, host genetics, and medication use. Notably, low-fibre and high-fat or high-sugar diets reduce microbial diversity and promote the growth of pathogenic species, making dietary modification a common strategy to reduce IBD-related inflammation.",
+      "topic_tags": ["dysbiosis", "IBD", "gut microbiota", "Crohn's disease", "ulcerative colitis", "microbial diversity"]
+    },
+    {
+      "id": "SAIBD_easy_002",
+      "difficulty": "easy",
+      "question": "How do Crohn's disease and ulcerative colitis differ in their classification within inflammatory bowel diseases?",
+      "answer": "Crohn's disease (CD) and ulcerative colitis (UC) are both chronic immune-mediated disorders of the gastrointestinal tract that fall under the overarching category of inflammatory bowel diseases (IBDs). While both involve dysregulated immune responses against normal intestinal flora, they differ in their disease presentation, severity, and the specific regions of the gastrointestinal tract they affect. Their pathological processes stem from a complex interplay of genetic and environmental factors. Diagnostically, CD is typically confirmed via endoscopy while UC is confirmed via colonoscopy, both combined with imaging studies. Inflammatory markers such as C-reactive protein (CRP) also differ significantly between the two conditions.",
+      "topic_tags": ["Crohn's disease", "ulcerative colitis", "IBD classification", "immune-mediated", "diagnosis"]
+    },
+    {
+      "id": "SAIBD_easy_003",
+      "difficulty": "easy",
+      "question": "What role does diet play in shaping gut microbiota composition and IBD risk?",
+      "answer": "Diet is one of the key contributors to intestinal dysbiosis and IBD pathogenesis. Low-fibre, high-fat, and high-sugar dietary patterns reduce gut microbiota diversity and promote the expansion of pathogenic bacterial species. Conversely, dietary modification is commonly used as a management strategy to reduce episodes of inflammation and alleviate IBD-related symptoms. Dietary inflammatory potential has also been specifically linked to the risk of developing both Crohn's disease and ulcerative colitis. This makes diet both a risk factor for gut microbial imbalance and a therapeutic lever for modulating the course of inflammatory bowel disease.",
+      "topic_tags": ["diet", "gut microbiota", "fibre", "IBD risk", "inflammation", "dysbiosis"]
+    },
+    {
+      "id": "SAIBD_easy_004",
+      "difficulty": "easy",
+      "question": "How has the incidence of IBD changed over recent decades in the Middle East, and what factors are believed to drive this trend?",
+      "answer": "The incidence of IBD in the Middle East, including Saudi Arabia, has been rising progressively over recent decades. Prior to the 1980s, IBD was considered rare in Saudi Arabia and neighbouring regions, but it has been increasing steadily since then. This trend is thought to be driven primarily by major shifts in industrialization, lifestyle, dietary behaviours, and sedentary habits that have accompanied rapid socioeconomic development in the region. Specific risk factors implicated in Crohn's disease in this population include dietary patterns, smoking, and medication use. This rising incidence, combined with a historical scarcity of microbiome research in these populations, makes large-scale microbiota profiling in such cohorts particularly important.",
+      "topic_tags": ["IBD incidence", "Middle East", "epidemiology", "lifestyle", "Crohn's disease", "Saudi Arabia"]
+    },
+    {
+      "id": "SAIBD_easy_005",
+      "difficulty": "easy",
+      "question": "What is 16S rRNA sequencing and why is it used for gut microbiota profiling?",
+      "answer": "16S rRNA sequencing is a molecular technique that targets the 16S ribosomal RNA gene present in bacteria to identify and classify microbial communities. The gene contains both conserved regions (used for primer binding) and variable regions (V1-V9) that differ across bacterial species, enabling strain-specific identification. It is widely used in gut microbiota profiling because it allows culture-independent assessment of the full diversity of bacterial communities in complex samples like stool. By sequencing all variable regions, researchers can achieve comprehensive taxonomic classification from phylum down to species level, enabling quantification of relative abundances and comparison of microbial communities across different clinical groups such as IBD patients and healthy controls.",
+      "topic_tags": ["16S rRNA", "microbiome sequencing", "OTU", "taxonomic classification", "gut microbiota profiling"]
+    },
+
+    {
+      "id": "SAIBD_med_001",
+      "difficulty": "medium",
+      "question": "How does age influence gut microbiota composition, and what are the implications of this for IBD microbiome studies?",
+      "answer": "Age is a statistically significant driver of differences in gut microbiota beta diversity, as demonstrated through permutation-based testing. In IBD microbiome analyses, age has been found to explain a modest but meaningful proportion of variation in microbial community structure. This has important methodological implications: age-stratified analyses can reveal microbiota-associated variables — such as family history of IBD — that are not detectable in the overall population when all age groups are pooled together. For example, in younger patient subgroups, family history and the number of affected family members emerge as significant drivers of microbiome dissimilarity, suggesting a more pronounced genetic contribution to microbiota composition in early-onset disease. Accounting for age is therefore essential in avoiding confounding and uncovering true disease-associated signals.",
+      "topic_tags": ["age", "beta diversity", "IBD", "microbiota variation", "confounding", "family history"]
+    },
+    {
+      "id": "SAIBD_med_002",
+      "difficulty": "medium",
+      "question": "What distinguishes the microbiota profiles of Crohn's disease and ulcerative colitis patients at the genus level, and what might this reflect biologically?",
+      "answer": "At the genus level, Crohn's disease and ulcerative colitis show distinct microbiota signatures. Veillonella and Lachnoclostridium are significantly elevated in Crohn's disease compared to healthy controls. In the comparison between CD and UC, the genera Akkermansia, Harryflintia, Maegamonas, and Phascolarctobacterium show the most significant differential abundances. These differences likely reflect the distinct inflammatory environments, disease locations, and underlying immune mechanisms of CD versus UC. For instance, Akkermansia is typically associated with gut-protective effects and its differential abundance between CD and UC may reflect differences in mucosal integrity and severity of disease. The presence of genera not previously reported in IBD studies — such as Lachnoclostridium in CD — may also point to population-specific microbial associations tied to dietary or genetic backgrounds.",
+      "topic_tags": ["Crohn's disease", "ulcerative colitis", "differential abundance", "Akkermansia", "Veillonella", "Lachnoclostridium", "genus-level comparison"]
+    },
+    {
+      "id": "SAIBD_med_003",
+      "difficulty": "medium",
+      "question": "What is Bray-Curtis dissimilarity and how is it applied to assess microbiome differences between clinical groups?",
+      "answer": "Bray-Curtis dissimilarity is a quantitative measure of the difference in taxonomic composition between two microbial communities. It ranges from 0 (identical communities) to 1 (completely different communities). In microbiome research, it is used to evaluate beta diversity — the variation in microbial community structure between different samples or groups. In practice, Bray-Curtis dissimilarity matrices can be visualised as heatmaps to identify clustering patterns among samples, or used as the basis for Principal Coordinates Analysis (PCoA), which reduces the high-dimensional dissimilarity data into interpretable axes. PERMANOVA is then applied to statistically test whether specific variables — such as disease diagnosis, age, sex, or nationality — significantly explain the observed community dissimilarity. Crucially, a high overall dissimilarity between groups does not automatically mean disease status is the primary driver; other variables such as age may account for more of the variance.",
+      "topic_tags": ["Bray-Curtis dissimilarity", "beta diversity", "PCoA", "PERMANOVA", "microbiome methodology", "community composition"]
+    },
+    {
+      "id": "SAIBD_med_004",
+      "difficulty": "medium",
+      "question": "How does Akkermansia muciniphila feature in the comparison between Crohn's disease and ulcerative colitis, and what is its general role in gut health?",
+      "answer": "Akkermansia muciniphila is a mucin-degrading bacterium broadly associated with protective effects in the gut across a range of diseases, including metabolic and inflammatory conditions. In comparisons between Crohn's disease and ulcerative colitis, Akkermansia emerges as one of the top differentially abundant genera, with significant differences in its relative abundance between the two IBD subtypes. This differential presentation may reflect distinct disease severities, mucosal environments, or the degree of gut barrier disruption in CD versus UC rather than being unique to any specific population. The finding aligns with prior evidence that Akkermansia plays a role in maintaining intestinal barrier integrity and may serve as a biomarker or therapeutic target in distinguishing IBD subtypes.",
+      "topic_tags": ["Akkermansia muciniphila", "Crohn's disease", "ulcerative colitis", "mucosal integrity", "biomarker", "gut protective"]
+    },
+    {
+      "id": "SAIBD_med_005",
+      "difficulty": "medium",
+      "question": "What bioinformatics steps are required to process raw 16S rRNA sequencing data into a meaningful microbial abundance dataset?",
+      "answer": "Processing raw 16S rRNA data into a usable abundance dataset involves several sequential steps. First, raw sequences are demultiplexed using tools like bcl2fastq2, and low-quality samples are removed using FastQC. Paired-end reads are then joined using VSEARCH. Chimeric amplicons are removed and abundance filtering applied using Deblur. Amplicon sequences are clustered into Operational Taxonomic Units (OTUs) via closed-reference clustering against a reference database such as Greengenes. Taxonomic assignment is performed using a pre-trained classifier. The resulting abundance tables are normalised for library size variation using tools like DADA2, and further statistical analyses are performed in environments such as R using packages like phyloseq. A prevalence filter is then applied to remove rare taxa and reduce the burden of multiple testing corrections, followed by agglomeration at the genus level to handle the proportion of OTUs uncharacterised at species level.",
+      "topic_tags": ["bioinformatics", "QIIME2", "OTU", "VSEARCH", "Deblur", "Greengenes", "microbiome pipeline"]
+    },
+    {
+      "id": "SAIBD_med_006",
+      "difficulty": "medium",
+      "question": "What is the significance of reduced Prevotella abundance in IBD patients, and how is this finding contextualised in the literature?",
+      "answer": "In both Crohn's disease and ulcerative colitis patients, a lower abundance of multiple Prevotella species has been observed compared to healthy controls. This reduction is consistent with findings from other IBD studies across different populations, suggesting it represents a reproducible and potentially meaningful feature of IBD-associated dysbiosis rather than a population-specific artefact. Prevotella is a genus typically associated with plant-based diets and microbial community types linked to higher dietary fibre intake. Its reduction in IBD may reflect the altered dietary patterns or inflammatory conditions that characterise these patients. The cross-population consistency of this finding lends support to Prevotella abundance as a potential biomarker of gut health disruption in IBD.",
+      "topic_tags": ["Prevotella", "IBD", "dysbiosis", "biomarker", "species-level abundance", "cross-population consistency"]
+    },
+
+    {
+      "id": "SAIBD_hard_001",
+      "difficulty": "hard",
+      "question": "Why might IBD-associated microbiota classifiers trained primarily on Western populations fail to generalise to other ethnic groups, and what specific findings support this concern?",
+      "answer": "Classifiers trained on IBD patients of predominantly European ancestry may not perform well in non-Western populations due to several converging factors. First, gut microbiota composition is shaped by diet, lifestyle, genetics, and environmental exposures, all of which differ substantially between Western and Middle Eastern populations. As a result, the specific microbial genera and OTUs that discriminate IBD from healthy controls may differ between populations, reducing the predictive power of classifiers trained elsewhere. Concretely, only a subset of OTUs identified in Middle Eastern IBD patients overlaps with those identified in prior Western characterisations of UC versus CD. Furthermore, genera like Lachnoclostridium, which is significantly elevated in CD in this population, have not been previously reported as IBD-associated in other populations. Additionally, previously developed classifiers may have been trained on datasets with different covariate distributions — including age, sex, disease severity, and comorbidities — that do not match the target population. This underscores the importance of building ethnically and geographically diverse IBD cohorts to develop robust, generalisable diagnostic tools.",
+      "topic_tags": ["classifier generalisation", "ethnic diversity", "population-specific microbiota", "IBD diagnosis", "Lachnoclostridium", "cross-population validity"]
+    },
+    {
+      "id": "SAIBD_hard_002",
+      "difficulty": "hard",
+      "question": "What is the interpretive challenge of determining whether dysbiosis is a cause or consequence of gut inflammation in IBD, and why does this matter for therapeutic strategy?",
+      "answer": "A central unresolved question in IBD research is whether the observed intestinal dysbiosis precedes and drives gut inflammation, or whether it arises as a secondary consequence of the inflammatory microenvironment. This distinction is critical because it fundamentally changes the therapeutic logic: if dysbiosis is causal, then microbiota-targeted interventions such as prebiotics, probiotics, dietary modification, or faecal microbiota transplantation may be sufficient to prevent or reverse disease. If dysbiosis is consequential, such interventions may alleviate symptoms but would be insufficient to address the primary immunological or genetic drivers of IBD. The host-microbe relationship in IBD patients is considerably more complex than in rodent models, where causal directionality can be more cleanly established through germ-free and colonisation experiments. In humans, genetic factors, immune dysregulation, environmental exposures, and microbial changes are deeply intertwined, making it difficult to disentangle cause from effect using observational cross-sectional data alone. Longitudinal studies capturing microbiota dynamics before disease onset are required to resolve this question definitively.",
+      "topic_tags": ["dysbiosis causality", "IBD pathogenesis", "therapeutic strategy", "probiotics", "FMT", "longitudinal study design", "host-microbe interactions"]
+    },
+    {
+      "id": "SAIBD_hard_003",
+      "difficulty": "hard",
+      "question": "How do differential abundance testing methods like DESeq2 handle the statistical challenges inherent in microbiome count data, and what analytical design choices affect the reliability of results?",
+      "answer": "Microbiome count data derived from 16S rRNA sequencing is compositional, sparse, and overdispersed, making standard parametric tests inappropriate. DESeq2 addresses these challenges by modelling OTU counts using a negative binomial distribution, which accounts for the excess variance typical of count data. It estimates size factors to normalise for differences in library depth across samples, and uses shrinkage estimation of log2 fold changes (via methods like apeglm) to improve the accuracy of effect size estimates, particularly for low-abundance OTUs. Multiple testing is managed using the Benjamini-Hochberg false discovery rate (FDR) correction. Analytical design choices that affect result reliability include the selection of covariates in the design formula — incorporating confounders such as age, geographic region, nationality, and diabetes status allows the model to isolate diagnosis-specific effects more accurately. Prevalence filtering (removing OTUs observed in fewer than a threshold proportion of samples) is also critical to reduce the burden of multiple corrections and avoid inflated false discovery rates from rare taxa. Failure to account for these covariates risks identifying microbiota differences that reflect demographic confounders rather than true disease biology.",
+      "topic_tags": ["DESeq2", "differential abundance testing", "negative binomial", "FDR correction", "microbiome statistics", "confounders", "compositional data"]
+    },
+    {
+      "id": "SAIBD_hard_004",
+      "difficulty": "hard",
+      "question": "What mechanisms link high-fat and high-protein diets to gut dysbiosis and increased susceptibility to intestinal inflammation?",
+      "answer": "High-fat and high-protein diets drive gut dysbiosis through distinct but overlapping mechanisms. High-fat diets alter the bile acid pool — for example, promoting production of taurocholic acid — which in turn encourages expansion of pathobiont bacteria that can trigger or sustain colitis in genetically susceptible hosts. High-protein diets have been associated with increased abundance of mucin-degrading bacteria such as Lachnoclostridium, which are linked to thinner colonic mucus layers. When mucin-degrading bacteria increase in abundance, the colonic mucus barrier is eroded, reducing the physical separation between gut bacteria and the intestinal epithelium. This erosion increases epithelial exposure to microbial antigens and inflammatory stimuli, heightening susceptibility to colitis. Both diet types also reduce overall microbial diversity by creating selective nutritional environments that favour fast-growing or specialist species at the expense of a diverse commensal community. The resulting reduction in microbial diversity further impairs colonisation resistance and functional redundancy, compounding the susceptibility to dysbiosis-driven inflammation.",
+      "topic_tags": ["high-fat diet", "high-protein diet", "dysbiosis", "mucin degradation", "Lachnoclostridium", "colitis susceptibility", "bile acids", "microbial diversity"]
+    }
+  ],
+
+  "mcq_questions": [
+    {
+      "id": "SAIBD_mcq_easy_001",
+      "difficulty": "easy",
+      "question": "Which of the following best describes why gut microbiota composition is considered a potential contributor to IBD pathogenesis?",
+      "options": {
+        "A": "Gut bacteria directly damage the intestinal epithelium by secreting cytotoxic proteins",
+        "B": "Loss of beneficial bacteria and microbial diversity alongside expansion of pathogenic bacteria skews immune responses against normal intestinal flora",
+        "C": "Gut microbiota shifts cause direct mutations in intestinal epithelial DNA, leading to inflammatory lesions",
+        "D": "Gut bacteria impair systemic liver function, which redirects immune cells to the gut"
+      },
+      "correct_answer": "B",
+      "explanation": "The intestinal dysbiosis seen in IBD — characterised by reduced beneficial microbial diversity and expansion of potentially pathogenic bacteria — is postulated to skew host immune responses against the normal intestinal flora, perpetuating gut inflammation. This is not primarily mediated by cytotoxic proteins, DNA mutations, or systemic liver dysfunction.",
+      "topic_tags": ["IBD pathogenesis", "dysbiosis", "immune skewing", "gut microbiota"]
+    },
+    {
+      "id": "SAIBD_mcq_easy_002",
+      "difficulty": "easy",
+      "question": "In gut microbiota profiling studies, what does the Shannon diversity index primarily measure?",
+      "options": {
+        "A": "The proportion of pathogenic versus commensal bacterial genera in a sample",
+        "B": "The degree of similarity in microbial community composition between two distinct samples",
+        "C": "The within-sample diversity, capturing both the richness (number of species) and evenness (relative abundance distribution) of a microbial community",
+        "D": "The total number of reads successfully mapped to a reference database"
+      },
+      "correct_answer": "C",
+      "explanation": "The Shannon diversity index is a measure of alpha diversity — the diversity within a single sample. It accounts for both species richness (how many different taxa are present) and evenness (how evenly distributed their abundances are). It does not measure between-sample similarity (that is beta diversity) or distinguish pathogens from commensals.",
+      "topic_tags": ["Shannon diversity index", "alpha diversity", "microbiome metrics", "species richness"]
+    },
+    {
+      "id": "SAIBD_mcq_easy_003",
+      "difficulty": "easy",
+      "question": "What is the primary purpose of applying a prevalence filter when processing microbiome OTU data?",
+      "options": {
+        "A": "To ensure that all samples have an equal number of sequencing reads before comparison",
+        "B": "To remove rare taxa that appear in very few samples, thereby reducing the multiple testing burden in downstream analyses",
+        "C": "To select only the most abundant phyla for further taxonomic classification",
+        "D": "To exclude samples collected from different geographic regions that may introduce noise"
+      },
+      "correct_answer": "B",
+      "explanation": "Prevalence filtering removes OTUs observed in fewer than a defined proportion of samples (e.g., 10%). This reduces the number of statistical tests required in differential abundance analyses, lowering the risk of false discoveries. It is not used to normalise read depth, restrict to high-level taxa, or exclude geographic groups.",
+      "topic_tags": ["prevalence filter", "OTU", "multiple testing", "microbiome analysis", "false discovery rate"]
+    },
+
+    {
+      "id": "SAIBD_mcq_med_001",
+      "difficulty": "medium",
+      "question": "In the analysis of gut microbiota dissimilarity across clinical groups, which variable was found to explain the largest proportion of variation, and what does this imply for study design?",
+      "options": {
+        "A": "Disease diagnosis (IBD vs. healthy) explained the most variance, confirming it as the dominant driver of microbiome differences",
+        "B": "Sex explained the most variance (~15%), suggesting sex-stratified analyses are always required in microbiome studies",
+        "C": "Age was the most significant variable, explaining approximately 7% of variation, implying IBD status alone is insufficient to explain microbiome dissimilarity and that demographic confounders must be accounted for",
+        "D": "Nationality was the most significant variable, confirming that ethnicity overrides disease status in shaping gut microbiota"
+      },
+      "correct_answer": "C",
+      "explanation": "In PERMANOVA testing of beta diversity, age was the statistically significant variable explaining approximately 7% of variation (R²≈0.07). Disease diagnosis (IBD vs. healthy) was not a significant driver of overall microbiome dissimilarity. This highlights the importance of accounting for demographic confounders like age in microbiome study design, as disease-associated signals can be masked or confounded by them.",
+      "topic_tags": ["PERMANOVA", "beta diversity", "age", "confounders", "IBD study design", "variance explained"]
+    },
+    {
+      "id": "SAIBD_mcq_med_002",
+      "difficulty": "medium",
+      "question": "How does Veillonella's association with Crohn's disease align with its broader characterisation in the microbiome literature?",
+      "options": {
+        "A": "Veillonella is a well-known butyrate producer that is reduced in IBD, so its elevation in CD is unexpected and contradicts prior work",
+        "B": "Veillonella is an anaerobic bacterial genus previously associated with gut inflammation and differential abundances in IBD versus healthy subjects in multiple studies, making its elevation in CD consistent with existing evidence",
+        "C": "Veillonella is a mucin-degrading species strongly associated with mucosal barrier degradation in ulcerative colitis specifically",
+        "D": "Veillonella was previously unreported in any IBD context and its discovery represents an entirely novel finding unique to the Middle Eastern population"
+      },
+      "correct_answer": "B",
+      "explanation": "Veillonella is an anaerobic bacterial genus that has been repeatedly identified at differential abundances in IBD versus healthy subjects across multiple studies. Its significant elevation in Crohn's disease in this cohort is therefore consistent with prior literature, unlike Lachnoclostridium which is described as a novel IBD-associated finding. Veillonella is not a butyrate producer or mucin-degrader.",
+      "topic_tags": ["Veillonella", "Crohn's disease", "IBD-associated bacteria", "anaerobic genus", "gut inflammation"]
+    },
+    {
+      "id": "SAIBD_mcq_med_003",
+      "difficulty": "medium",
+      "question": "What is the significance of finding elevated Blautia hansenii in both Crohn's disease and ulcerative colitis compared to healthy controls?",
+      "options": {
+        "A": "It suggests Blautia hansenii is a causative agent of both IBD subtypes by directly triggering mucosal inflammation",
+        "B": "It indicates a shared microbiota feature between CD and UC that may be linked to metabolic comorbidities, given that Blautia hansenii has been previously associated with visceral fat accumulation",
+        "C": "It confirms that Blautia hansenii is a core member of a healthy gut microbiota whose elevation reflects a compensatory response to inflammation",
+        "D": "It shows that Blautia hansenii is a reliable diagnostic biomarker for distinguishing IBD from metabolic syndrome"
+      },
+      "correct_answer": "B",
+      "explanation": "Blautia hansenii is elevated in both CD and UC patients relative to healthy controls. Prior research has linked this species to visceral fat accumulation, suggesting that its elevation may reflect shared metabolic or inflammatory features across IBD subtypes rather than being specific to one condition. The finding does not establish causation or confirm it as a diagnostic biomarker for separating IBD from metabolic syndrome.",
+      "topic_tags": ["Blautia hansenii", "IBD", "visceral fat", "shared microbiota features", "metabolic comorbidity"]
+    },
+    {
+      "id": "SAIBD_mcq_med_004",
+      "difficulty": "medium",
+      "question": "What does the finding of significant intra-group microbiota variability within both Crohn's disease and ulcerative colitis groups imply for clinical interpretation?",
+      "options": {
+        "A": "It suggests that the 16S rRNA sequencing technique is unreliable and results should be interpreted with caution",
+        "B": "It confirms that CD and UC represent a single homogeneous disease with a shared microbiota profile",
+        "C": "It highlights that IBD is not characterised by a single uniform microbiota signature; disease subtype alone does not predict a patient's specific microbial profile, and stratification by additional factors may be needed for precision microbiome-based diagnostics",
+        "D": "It indicates that sampling methodology (stool versus mucosal biopsy) is the primary source of variation within disease groups"
+      },
+      "correct_answer": "C",
+      "explanation": "The observation of statistically significant microbiota diversity within both the CD and UC patient groups indicates substantial inter-individual variation. This means IBD diagnosis alone does not predict a uniform microbial profile, reinforcing the need for larger cohorts and more nuanced stratification approaches (e.g., by disease severity, location, or treatment status) to develop clinically meaningful microbiome-based classifiers.",
+      "topic_tags": ["intra-group variability", "IBD heterogeneity", "microbiome precision medicine", "clinical interpretation", "patient stratification"]
+    },
+    {
+      "id": "SAIBD_mcq_med_005",
+      "difficulty": "medium",
+      "question": "Why is conducting microbiome research in geographically and ethnically diverse populations important for advancing IBD diagnostics and therapeutics?",
+      "options": {
+        "A": "Because sequencing platforms perform differently across ethnic groups, necessitating population-specific technical calibration",
+        "B": "Because cultural dietary habits, genetic backgrounds, and environmental exposures shape distinct gut microbiota profiles that may not share the same IBD-associated microbiota signatures as Western populations, limiting the generalisability of classifiers and therapeutic targets developed solely in European cohorts",
+        "C": "Because IBD is caused by different bacterial pathogens in different global regions, requiring region-specific antibiotic therapies",
+        "D": "Because regulatory agencies require population diversity in clinical trials before approving microbiome-based therapies"
+      },
+      "correct_answer": "B",
+      "explanation": "Diet, genetics, and environmental exposure differ substantially across global populations and collectively shape the gut microbiota. IBD-associated microbial signatures identified in Western populations may not generalise to populations with different dietary practices and genetic backgrounds. Tools like classifiers developed predominantly in European cohorts risk poor performance in Middle Eastern or other non-Western populations, as reflected by the discovery of novel genus-level associations in this study.",
+      "topic_tags": ["population diversity", "generalisation", "IBD microbiome", "ethnic diversity", "classification algorithms", "translational research"]
+    },
+
+    {
+      "id": "SAIBD_mcq_hard_001",
+      "difficulty": "hard",
+      "question": "When using DESeq2 for differential abundance testing in microbiome studies, which of the following best explains why log2 fold change estimates are 'shrunk' using the apeglm method?",
+      "options": {
+        "A": "Shrinkage removes statistically non-significant OTUs from the final dataset to simplify interpretation",
+        "B": "Shrinkage corrects for compositional bias by normalising each OTU relative to the total microbial load in the sample",
+        "C": "Shrinkage reduces the inflated effect size estimates that arise for low-count or low-abundance OTUs, where sampling noise causes extreme fold changes, thereby producing more accurate and reliable differential abundance estimates",
+        "D": "Shrinkage converts the raw count data into continuous proportions suitable for linear regression modelling"
+      },
+      "correct_answer": "C",
+      "explanation": "In high-throughput count data, OTUs with very low counts are susceptible to extreme fold change estimates driven by sampling noise rather than true biological differences. The apeglm shrinkage method in DESeq2 pulls these unreliable extreme estimates towards zero, reducing false-positive differential abundance calls while preserving genuinely large effects for well-measured OTUs. It does not remove non-significant taxa, apply compositional normalisation directly, or convert data to continuous values.",
+      "topic_tags": ["DESeq2", "apeglm", "log2 fold change", "shrinkage", "low-count OTUs", "microbiome statistics"]
+    },
+    {
+      "id": "SAIBD_mcq_hard_002",
+      "difficulty": "hard",
+      "question": "How does the finding that Lachnoclostridium is elevated in Crohn's disease illustrate the challenges of interpreting disease-associated microbiota shifts?",
+      "options": {
+        "A": "It demonstrates that all IBD-associated bacteria have been comprehensively catalogued in prior Western studies, and new findings simply replicate earlier work",
+        "B": "It illustrates that the same bacterium behaves consistently across all populations and dietary contexts, making universal biomarker discovery straightforward",
+        "C": "It shows that disease-associated microbiota shifts are population- and context-specific: Lachnoclostridium's elevation in CD may reflect the interaction of dietary (high-protein intake) and disease-specific effects in this population, while its elevation has previously been reported in UC rather than CD in other studies, highlighting how microbiota-disease associations can differ across cohorts, diets, and methods",
+        "D": "It proves that Lachnoclostridium is a causative pathogen in Crohn's disease by showing a consistent and mechanistically validated increase across all IBD populations"
+      },
+      "correct_answer": "C",
+      "explanation": "Lachnoclostridium being elevated in CD in this population, while a prior small study found it elevated in UC rather than CD, exemplifies the complexity of microbiota-disease associations. Its elevation may be linked to high-protein dietary patterns that upregulate mucin-degrading bacteria — a contextually specific effect. This contrasting pattern across studies underscores that microbiota associations are not universally conserved, and that diet, genetics, and cohort characteristics modulate which microbial signals emerge in any given study.",
+      "topic_tags": ["Lachnoclostridium", "Crohn's disease", "context-specific associations", "population differences", "high-protein diet", "microbiota interpretation"]
+    }
+  ]
+}

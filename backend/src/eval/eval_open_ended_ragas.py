@@ -60,7 +60,7 @@ def append_row(row: dict):
 # Load dataset
 # -------------------------------------------------
 df = pd.read_csv(INPUT_CSV)
-print(f"✅ Loaded {len(df)} evaluated RAG samples")
+print(f"✅ Loaded {len(df)} generated RAG samples")
 
 start_idx = load_checkpoint()
 print(f"▶️ Resuming from index {start_idx + 1}")
