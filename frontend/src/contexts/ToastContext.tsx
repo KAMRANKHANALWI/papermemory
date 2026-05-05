@@ -22,10 +22,10 @@ interface ToastContextType {
   toasts: Toast[];
   addToast: (type: ToastType, message: string, duration?: number) => void;
   removeToast: (id: string) => void;
-  success: (message: string, duration?: number) => void;
-  error: (message: string, duration?: number) => void;
-  info: (message: string, duration?: number) => void;
-  warning: (message: string, duration?: number) => void;
+  success: (message: string, duration?: number) => string;
+  error: (message: string, duration?: number) => string;
+  info: (message: string, duration?: number) => string;
+  warning: (message: string, duration?: number) => string;
 }
 
 const ToastContext = createContext<ToastContextType | undefined>(undefined);
@@ -47,36 +47,61 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
       if (duration > 0) {
         setTimeout(() => removeToast(id), duration);
       }
+      return id;
     },
-    [removeToast]
+    [removeToast],
   );
 
+  // const success = useCallback(
+  //   (message: string, duration?: number) =>
+  //     addToast("success", message, duration),
+  //   [addToast]
+  // );
+
+  // const error = useCallback(
+  //   (message: string, duration?: number) =>
+  //     addToast("error", message, duration),
+  //   [addToast]
+  // );
+
+  // const info = useCallback(
+  //   (message: string, duration?: number) => addToast("info", message, duration),
+  //   [addToast]
+  // );
+
+  // const warning = useCallback(
+  //   (message: string, duration?: number) =>
+  //     addToast("warning", message, duration),
+  //   [addToast]
+  // );
+
   const success = useCallback(
-    (message: string, duration?: number) =>
+    (message: string, duration?: number): string =>
       addToast("success", message, duration),
-    [addToast]
+    [addToast],
   );
 
   const error = useCallback(
-    (message: string, duration?: number) =>
+    (message: string, duration?: number): string =>
       addToast("error", message, duration),
-    [addToast]
+    [addToast],
   );
 
   const info = useCallback(
-    (message: string, duration?: number) => addToast("info", message, duration),
-    [addToast]
+    (message: string, duration?: number): string =>
+      addToast("info", message, duration),
+    [addToast],
   );
 
   const warning = useCallback(
-    (message: string, duration?: number) =>
+    (message: string, duration?: number): string =>
       addToast("warning", message, duration),
-    [addToast]
+    [addToast],
   );
 
   const contextValue = useMemo(
     () => ({ toasts, addToast, removeToast, success, error, info, warning }),
-    [toasts, addToast, removeToast, success, error, info, warning]
+    [toasts, addToast, removeToast, success, error, info, warning],
   );
 
   return (

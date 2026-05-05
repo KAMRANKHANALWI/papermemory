@@ -6,131 +6,114 @@ import { collectionsApi } from "@/lib/api/collections";
 import { PDFDetail } from "@/lib/types/collection";
 import { useToast } from "@/hooks/useToast";
 import { DocumentTextIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
-import Badge from "../UI/Badge";
 
 interface PDFCheckboxListProps {
   collectionName: string;
-  selectedPDFs: Set<string>; // Set of "collectionName:filename"
+  selectedPDFs: Set<string>;
   onTogglePDF: (filename: string, collectionName: string) => void;
 }
 
-export default function PDFCheckboxList({
-  collectionName,
-  selectedPDFs,
-  onTogglePDF,
-}: PDFCheckboxListProps) {
+export default function PDFCheckboxList({ collectionName, selectedPDFs, onTogglePDF }: PDFCheckboxListProps) {
   const [pdfs, setPdfs] = useState<PDFDetail[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const toast = useToast();
 
   useEffect(() => {
-    fetchPDFs();
+    setIsLoading(true);
+    collectionsApi.getPDFs(collectionName)
+      .then(data => setPdfs(data.pdfs))
+      .catch(() => toast.error("Failed to load PDFs"))
+      .finally(() => setIsLoading(false));
   }, [collectionName]);
 
-  const fetchPDFs = async () => {
-    setIsLoading(true);
-    try {
-      const data = await collectionsApi.getPDFs(collectionName);
-      setPdfs(data.pdfs);
-    } catch (error) {
-      console.error("Failed to fetch PDFs:", error);
-      toast.error("Failed to load PDFs");
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  const filteredPDFs = pdfs.filter((pdf) =>
-    pdf.filename.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    pdf.title.toLowerCase().includes(searchQuery.toLowerCase())
+  const filtered = pdfs.filter(p =>
+    p.filename.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    p.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
-
-  const getPDFKey = (filename: string) => `${collectionName}:${filename}`;
 
   if (isLoading) {
     return (
-      <div className="flex items-center justify-center py-8">
-        <div className="animate-spin h-6 w-6 border-2 border-amber-600 border-t-transparent rounded-full" />
+      <div className="flex items-center justify-center py-6">
+        <div
+          className="animate-spin h-5 w-5 rounded-full border-2 border-t-transparent"
+          style={{ borderColor: "var(--accent) transparent var(--accent) var(--accent)" }}
+        />
       </div>
     );
   }
 
   return (
-    <div className="space-y-2">
-      {/* Search */}
+    <div className="space-y-1.5">
       {pdfs.length > 0 && (
-        <div className="relative px-2">
-          <MagnifyingGlassIcon className="absolute left-4 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
+        <div className="relative px-1">
+          <MagnifyingGlassIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 pointer-events-none" style={{ color: "var(--text-muted)" }} />
           <input
             type="text"
             placeholder="Search PDFs..."
             value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-8 pr-3 py-1.5 text-[13px] bg-gray-50 border border-transparent rounded-md
-                     focus:outline-none focus:bg-white focus:border-gray-200
-                     placeholder:text-gray-400 transition-all"
+            onChange={e => setSearchQuery(e.target.value)}
+            className="w-full pl-7 pr-3 py-1.5 text-[12px] rounded-md border outline-none transition-all"
+            style={{
+              background: "var(--bg-input)",
+              borderColor: "var(--border-soft)",
+              color: "var(--text-primary)",
+            }}
           />
         </div>
       )}
 
-      {/* PDF List */}
-      <div className="max-h-[300px] overflow-y-auto px-2 space-y-1">
-        {filteredPDFs.length === 0 ? (
-          <div className="text-center py-6 px-4">
-            <DocumentTextIcon className="h-8 w-8 text-gray-300 mx-auto mb-2" />
-            <p className="text-[13px] text-gray-500">
-              {searchQuery ? "No PDFs match your search" : "No PDFs in this collection"}
+      <div className="max-h-[280px] overflow-y-auto px-1 space-y-0.5">
+        {filtered.length === 0 ? (
+          <div className="text-center py-5">
+            <DocumentTextIcon className="h-7 w-7 mx-auto mb-1.5" style={{ color: "var(--text-muted)" }} />
+            <p className="text-[12px]" style={{ color: "var(--text-muted)" }}>
+              {searchQuery ? "No PDFs match search" : "No PDFs in collection"}
             </p>
           </div>
-        ) : (
-          filteredPDFs.map((pdf) => {
-            const pdfKey = getPDFKey(pdf.filename);
-            const isSelected = selectedPDFs.has(pdfKey);
+        ) : filtered.map(pdf => {
+          const key = `${collectionName}:${pdf.filename}`;
+          const isSelected = selectedPDFs.has(key);
 
-            return (
-              <label
-                key={pdf.filename}
-                className={`
-                  flex items-start gap-2.5 p-2.5 rounded-lg cursor-pointer
-                  transition-all duration-150
-                  ${
-                    isSelected
-                      ? "bg-amber-50 border border-amber-200"
-                      : "hover:bg-gray-50 border border-transparent"
-                  }
-                `}
-              >
-                {/* Checkbox */}
-                <input
-                  type="checkbox"
-                  checked={isSelected}
-                  onChange={() => onTogglePDF(pdf.filename, collectionName)}
-                  className="mt-0.5 h-4 w-4 rounded border-gray-300 text-amber-600 
-                           focus:ring-amber-500 focus:ring-offset-0 cursor-pointer"
-                />
-
-                {/* PDF Info */}
-                <div className="flex-1 min-w-0">
-                  <p className="text-[13px] font-medium text-gray-900 truncate">
-                    {pdf.filename}
-                  </p>
-                  <p className="text-[12px] text-gray-600 line-clamp-1 mt-0.5">
-                    {pdf.title}
-                  </p>
-                  <div className="flex items-center gap-2 mt-1.5">
-                    <Badge variant="info" size="sm">
-                      {pdf.pages} pages
-                    </Badge>
-                    <Badge variant="default" size="sm">
-                      {pdf.chunks} chunks
-                    </Badge>
-                  </div>
-                </div>
-              </label>
-            );
-          })
-        )}
+          return (
+            <label
+              key={pdf.filename}
+              className="flex items-start gap-2.5 p-2 rounded-lg cursor-pointer transition-all duration-150"
+              style={{
+                background: isSelected ? "var(--accent-light)" : "transparent",
+                border: isSelected ? "0.5px solid var(--accent)" : "0.5px solid transparent",
+              }}
+              onMouseEnter={e => {
+                if (!isSelected) e.currentTarget.style.background = "var(--bg-surface)";
+              }}
+              onMouseLeave={e => {
+                if (!isSelected) e.currentTarget.style.background = "transparent";
+              }}
+            >
+              <input
+                type="checkbox"
+                checked={isSelected}
+                onChange={() => onTogglePDF(pdf.filename, collectionName)}
+                className="mt-0.5 h-3.5 w-3.5 rounded cursor-pointer"
+                style={{ accentColor: "var(--accent)" }}
+              />
+              <div className="flex-1 min-w-0">
+                <p className="text-[12px] font-medium truncate" style={{ color: "var(--text-primary)" }}>
+                  {pdf.filename}
+                </p>
+                <p className="text-[11px] line-clamp-1 mt-0.5" style={{ color: "var(--text-muted)" }}>
+                  {pdf.title}
+                </p>
+                <span
+                  className="inline-block mt-1 text-[10px] px-1.5 py-0.5 rounded"
+                  style={{ background: "var(--bg-surface)", color: "var(--text-muted)" }}
+                >
+                  {pdf.pages} pages
+                </span>
+              </div>
+            </label>
+          );
+        })}
       </div>
     </div>
   );

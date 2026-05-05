@@ -1,20 +1,21 @@
 // src/components/Chat/ChatArea.tsx
 "use client";
 
+import { Bars3Icon } from "@heroicons/react/24/outline";
 import { Message } from "@/lib/types/message";
 import MessageList from "./MessageList";
 import ChatInput from "./ChatInput";
-import Badge from "../UI/Badge";
 
 interface ChatAreaProps {
   messages: Message[];
   isLoading: boolean;
   selectedCollection: string | null;
   chatMode: "single" | "chatall" | "selected";
-  onSendMessage: (message: string) => void;
-  onStopGeneration?: () => void;
   pdfSelectionMode?: boolean;
   selectedPDFsCount?: number;
+  onSendMessage: (message: string) => void;
+  onStopGeneration?: () => void;
+  onOpenSidebar?: () => void;
 }
 
 export default function ChatArea({
@@ -22,38 +23,40 @@ export default function ChatArea({
   isLoading,
   selectedCollection,
   chatMode,
-  onSendMessage,
-  onStopGeneration,
   pdfSelectionMode = false,
   selectedPDFsCount = 0,
+  onSendMessage,
+  onStopGeneration,
+  onOpenSidebar,
 }: ChatAreaProps) {
   const getPlaceholder = () => {
     if (chatMode === "selected") {
-      if (selectedPDFsCount === 0) {
-        return "Select PDFs first...";
-      }
-      return "Ask about your selected PDFs...";
+      return selectedPDFsCount === 0
+        ? "Select PDFs first..."
+        : "Ask about your selected PDFs...";
     }
-    if (chatMode === "single" && !selectedCollection) {
+    if (chatMode === "single" && !selectedCollection)
       return "Select a collection first...";
-    }
     return "Ask about your documents...";
   };
 
-  const isDisabled = 
-    (chatMode === "single" && !selectedCollection) || 
+  const isDisabled =
+    (chatMode === "single" && !selectedCollection) ||
     (chatMode === "selected" && selectedPDFsCount === 0);
 
   const getHeaderInfo = () => {
     if (chatMode === "selected") {
       return {
-        title: "Selected PDFs",
-        subtitle: selectedPDFsCount > 0 
-          ? `Chatting with ${selectedPDFsCount} selected PDF${selectedPDFsCount > 1 ? 's' : ''}`
-          : "No PDFs selected - Select PDFs from the sidebar",
+        title:
+          selectedPDFsCount > 0
+            ? `${selectedPDFsCount} PDF${selectedPDFsCount > 1 ? "s" : ""} selected`
+            : "Select PDFs",
+        subtitle:
+          selectedPDFsCount > 0
+            ? "Chatting with selected documents"
+            : "Choose PDFs from the sidebar to begin",
       };
     }
-    
     if (chatMode === "single") {
       return {
         title: selectedCollection || "Select a collection",
@@ -62,44 +65,61 @@ export default function ChatArea({
           : "Choose a collection to start",
       };
     }
-    
     return {
-      title: "Chat All Collections",
-      subtitle: "Search across all documents",
+      title: "All Collections",
+      subtitle: "Searching across all documents",
     };
   };
 
-  const headerInfo = getHeaderInfo();
+  const { title, subtitle } = getHeaderInfo();
 
   return (
-    <div className="flex-1 flex flex-col h-full">
-      {/* Header - Removed loading indicator from here */}
-      <div className="bg-white p-4 border-b border-gray-200">
-        <div className="flex justify-between items-center">
-          <div className="flex items-center gap-3">
-            <div>
-              <h2 className="font-semibold text-gray-900 flex items-center gap-2">
-                {headerInfo.title}
-                {chatMode === "selected" && selectedPDFsCount > 0 && (
-                  <Badge variant="info" size="md">
-                    {selectedPDFsCount} PDF{selectedPDFsCount > 1 ? 's' : ''}
-                  </Badge>
-                )}
-              </h2>
-              <p className="text-sm text-gray-500">
-                {headerInfo.subtitle}
-              </p>
-            </div>
-          </div>
+    <div
+      className="flex-1 flex flex-col h-full"
+      style={{ background: "var(--bg-main)" }}
+    >
+      {/* Header */}
+      <div
+        className="flex-shrink-0 px-4 py-4 border-b flex items-center gap-3"
+        style={{
+          background: "var(--bg-card)",
+          borderColor: "var(--border-muted)",
+        }}
+      >
+        {/* Mobile hamburger */}
+        <button
+          onClick={onOpenSidebar}
+          className="lg:hidden p-1.5 rounded-lg flex-shrink-0"
+          style={{ color: "var(--text-muted)" }}
+        >
+          <Bars3Icon className="h-5 w-5" />
+        </button>
+
+        <div className="flex-1 min-w-0">
+          <h2
+            className="text-[22px] font-semibold leading-tight truncate"
+            style={{
+              fontFamily: "var(--font-serif)",
+              color: "var(--text-primary)",
+            }}
+          >
+            {title}
+          </h2>
+          <p
+            className="text-[12px] mt-0.5 truncate"
+            style={{ color: "var(--text-muted)" }}
+          >
+            {subtitle}
+          </p>
         </div>
       </div>
 
       {/* Messages */}
-      <div className="flex-1 overflow-y-auto bg-gray-50">
+      <div className="flex-1 overflow-y-auto">
         <MessageList messages={messages} />
       </div>
 
-      {/* Input with loading state */}
+      {/* Input */}
       <ChatInput
         onSend={onSendMessage}
         onStop={onStopGeneration}
