@@ -1,26 +1,176 @@
 @import "tailwindcss";
 
+/* ─── Parchment Light Mode ─────────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-base:        #F5F2EC;   /* sidebar, nav bg */
+  --bg-main:        #FDFCF9;   /* main panel bg */
+  --bg-surface:     #EDEAE2;   /* hover, active states */
+  --bg-card:        #FAF8F3;   /* message cards, modals */
+  --bg-input:       #FDFCF9;
+
+  --border-soft:    #DDD8CE;
+  --border-muted:   #E8E3D8;
+
+  --text-primary:   #1a1a18;
+  --text-secondary: #5a5750;
+  --text-muted:     #908c84;
+  --text-accent:    #0F6E56;   /* teal green — descriptor, links */
+  --text-danger:    #993C1D;
+
+  --accent:         #0F6E56;
+  --accent-light:   #E1F5EE;
+  --accent-mid:     #1D9E75;
+
+  --amber:          #BA7517;
+  --amber-light:    #FAEEDA;
+
+  --danger:         #D85A30;
+  --danger-light:   #FAECE7;
+
+  --scrollbar-thumb: #DDD8CE;
+  --scrollbar-track: transparent;
+
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans:  var(--font-geist-sans);
+  --font-mono:  var(--font-geist-mono);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ─── Ink Dark Mode ────────────────────────────────────────────────── */
+/* .dark, [data-theme="dark"] {
+  --bg-base:        #1C1A15;
+  --bg-main:        #141210;
+  --bg-surface:     #252218;
+  --bg-card:        #1C1A15;
+  --bg-input:       #141210;
+
+  --border-soft:    #2e2b22;
+  --border-muted:   #252218;
+
+  --text-primary:   #F0EDE4;
+  --text-secondary: #A09880;
+  --text-muted:     #5a5548;
+  --text-accent:    #5DCAA5;
+  --text-danger:    #F0997B;
+
+  --accent:         #1D9E75;
+  --accent-light:   #0F3D2E;
+  --accent-mid:     #5DCAA5;
+
+  --amber:          #EF9F27;
+  --amber-light:    #2a2010;
+
+  --danger:         #D85A30;
+  --danger-light:   #2a1208;
+
+  --scrollbar-thumb: #2e2b22;
+  --scrollbar-track: transparent;
+} */
+
+/* ─── Charcoal Dark Mode ───────────────────────────────────────────── */
+.dark, [data-theme="dark"] {
+  --bg-base:        #1A1A1A;
+  --bg-main:        #111111;
+  --bg-surface:     #242424;
+  --bg-card:        #1A1A1A;
+  --bg-input:       #111111;
+
+  --border-soft:    #2E2E2E;
+  --border-muted:   #262626;
+
+  --text-primary:   #F0EDE4;
+  --text-secondary: #A09880;
+  --text-muted:     #5a5548;
+  --text-accent:    #5DCAA5;
+  --text-danger:    #F0997B;
+
+  --accent:         #1D9E75;
+  --accent-light:   #0F3D2E;
+  --accent-mid:     #5DCAA5;
+
+  --amber:          #EF9F27;
+  --amber-light:    #2a2010;
+
+  --danger:         #D85A30;
+  --danger-light:   #2a1208;
+
+  --scrollbar-thumb: #2E2E2E;
+  --scrollbar-track: transparent;
 }
 
+/* ─── OS-level dark mode auto ──────────────────────────────────────── */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --bg-base:        #1A1A1A;
+    --bg-main:        #111111;
+    --bg-surface:     #242424;
+    --bg-card:        #1A1A1A;
+    --bg-input:       #111111;
+
+    --border-soft:    #2E2E2E;
+    --border-muted:   #262626;
+
+    --text-primary:   #F0EDE4;
+    --text-secondary: #A09880;
+    --text-muted:     #5a5548;
+    --text-accent:    #5DCAA5;
+    --text-danger:    #F0997B;
+
+    --accent:         #1D9E75;
+    --accent-light:   #0F3D2E;
+    --accent-mid:     #5DCAA5;
+
+    --amber:          #EF9F27;
+    --amber-light:    #2a2010;
+
+    --danger:         #D85A30;
+    --danger-light:   #2a1208;
+
+    --scrollbar-thumb: #2E2E2E;
   }
 }
 
+/* ─── Base ─────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-main);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Scrollbars ───────────────────────────────────────────────────── */
+::-webkit-scrollbar        { width: 5px; height: 5px; }
+::-webkit-scrollbar-track  { background: var(--scrollbar-track); }
+::-webkit-scrollbar-thumb  { background: var(--scrollbar-thumb); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+/* ─── Prose styles for AI messages ─────────────────────────────────── */
+.prose-parchment { color: var(--text-primary); }
+.prose-parchment h1, .prose-parchment h2, .prose-parchment h3 {
+  font-family: var(--font-serif);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+.prose-parchment a    { color: var(--accent); text-decoration: underline; }
+.prose-parchment code { background: var(--bg-surface); border-radius: 4px; padding: 1px 5px; font-size: 0.875em; }
+.prose-parchment pre  { background: var(--bg-surface); border-radius: 8px; padding: 1rem; overflow-x: auto; }
+.prose-parchment blockquote {
+  border-left: 3px solid var(--border-soft);
+  padding-left: 1rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* ─── Toast slide-in animation ──────────────────────────────────────── */
+@keyframes slide-in {
+  from { transform: translateX(100%); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+.animate-slide-in { animation: slide-in 0.2s ease-out; }
+
+/* ─── Checkbox accent ───────────────────────────────────────────────── */
+input[type="checkbox"]:checked {
+  accent-color: var(--accent);
 }

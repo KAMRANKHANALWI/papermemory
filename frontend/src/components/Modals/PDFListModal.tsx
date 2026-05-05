@@ -7,11 +7,11 @@ import Badge from "../UI/Badge";
 import { useToast } from "@/hooks/useToast";
 import { collectionsApi } from "@/lib/api/collections";
 import { PDFDetail } from "@/lib/types/collection";
-import { 
-  DocumentTextIcon, 
-  MagnifyingGlassIcon, 
+import {
+  DocumentTextIcon,
+  MagnifyingGlassIcon,
   TrashIcon,
-  EyeIcon 
+  EyeIcon,
 } from "@heroicons/react/24/outline";
 
 interface PDFListModalProps {
@@ -61,7 +61,7 @@ export default function PDFListModal({
     return pdfs.filter(
       (pdf) =>
         pdf.filename.toLowerCase().includes(query) ||
-        pdf.title.toLowerCase().includes(query)
+        pdf.title.toLowerCase().includes(query),
     );
   }, [pdfs, searchQuery]);
 
@@ -78,15 +78,20 @@ export default function PDFListModal({
 
   const handleDeletePdf = async (pdfFilename: string) => {
     const confirmed = window.confirm(
-      `Are you sure you want to delete "${pdfFilename}"?\n\nThis will permanently delete:\n• The PDF file\n• All associated chunks and embeddings\n\nThis action cannot be undone!`
+      `Are you sure you want to delete "${pdfFilename}"?\n\nThis will permanently delete:\n• The PDF file\n• All associated chunks and embeddings\n\nThis action cannot be undone!`,
     );
 
     if (!confirmed) return;
 
     setDeletingPdf(pdfFilename);
     try {
-      const result = await collectionsApi.deletePDF(collectionName, pdfFilename);
-      setPdfs((prevPdfs) => prevPdfs.filter((pdf) => pdf.filename !== pdfFilename));
+      const result = await collectionsApi.deletePDF(
+        collectionName,
+        pdfFilename,
+      );
+      setPdfs((prevPdfs) =>
+        prevPdfs.filter((pdf) => pdf.filename !== pdfFilename),
+      );
       toast.success(result.message || `Deleted "${pdfFilename}"`);
       if (onPdfDeleted) {
         onPdfDeleted();
@@ -100,13 +105,34 @@ export default function PDFListModal({
   };
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose} title={`PDFs in ${collectionName}`} size="lg">
+    <Modal
+      isOpen={isOpen}
+      onClose={onClose}
+      title={`PDFs in ${collectionName}`}
+      size="lg"
+    >
       {isLoading ? (
         <div className="flex items-center justify-center py-12">
           <div className="flex flex-col items-center space-y-3">
-            <svg className="animate-spin h-8 w-8 text-amber-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+            <svg
+              className="animate-spin h-8 w-8 text-amber-600"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              />
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              />
             </svg>
             <p className="text-sm text-gray-600">Loading PDFs...</p>
           </div>
@@ -135,12 +161,37 @@ export default function PDFListModal({
                   placeholder="Search PDFs by filename or title..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-10 pr-4 py-2.5 text-sm bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:bg-white focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 placeholder:text-gray-400 transition-all duration-150"
+                  // className="w-full pl-10 pr-4 py-2.5 text-sm bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:bg-white focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 placeholder:text-gray-400 transition-all duration-150"
+                  className="w-full pl-10 pr-4 py-2.5 text-sm rounded-lg outline-none transition-all"
+                  style={{
+                    background: "var(--bg-input)",
+                    border: "0.5px solid var(--border-soft)",
+                    color: "var(--text-primary)",
+                  }}
+                  onFocus={(e) =>
+                    (e.target.style.borderColor = "var(--accent)")
+                  }
+                  onBlur={(e) =>
+                    (e.target.style.borderColor = "var(--border-soft)")
+                  }
                 />
                 {searchQuery && (
-                  <button onClick={() => setSearchQuery("")} className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600">
-                    <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  <button
+                    onClick={() => setSearchQuery("")}
+                    className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                  >
+                    <svg
+                      className="h-5 w-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M6 18L18 6M6 6l12 12"
+                      />
                     </svg>
                   </button>
                 )}
@@ -150,30 +201,68 @@ export default function PDFListModal({
 
           {pdfs.length === 0 ? (
             <div className="text-center py-12 px-4">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-3">
+              <div
+                className="inline-flex items-center justify-center w-16 h-16 rounded-full mb-3"
+                style={{ background: "var(--bg-surface)" }}
+              >
                 <DocumentTextIcon className="h-8 w-8 text-gray-400" />
               </div>
-              <p className="text-sm text-gray-600 font-medium">No PDFs found</p>
-              <p className="text-xs text-gray-400 mt-1">Upload PDFs to this collection to get started</p>
+              <p
+                className="text-sm font-medium"
+                style={{ color: "var(--text-secondary)" }}
+              >
+                No PDFs found
+              </p>
+              <p
+                className="text-xs mt-1"
+                style={{ color: "var(--text-muted)" }}
+              >
+                Upload PDFs to this collection to get started
+              </p>
             </div>
           ) : filteredPdfs.length === 0 ? (
             <div className="text-center py-12 px-4">
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-3">
                 <MagnifyingGlassIcon className="h-8 w-8 text-gray-400" />
               </div>
-              <p className="text-sm text-gray-600 font-medium">No PDFs match your search</p>
-              <p className="text-xs text-gray-400 mt-1">Try different keywords or clear the search</p>
+              <p className="text-sm text-gray-600 font-medium">
+                No PDFs match your search
+              </p>
+              <p className="text-xs text-gray-400 mt-1">
+                Try different keywords or clear the search
+              </p>
             </div>
           ) : (
             <div className="space-y-2 max-h-[500px] overflow-y-auto pr-2 custom-scrollbar">
               {filteredPdfs.map((pdf, idx) => (
-                <div key={`${pdf.filename}-${idx}`} className="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:border-gray-300 transition-all duration-150 group">
+                <div
+                  key={`${pdf.filename}-${idx}`}
+                  // className="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:border-gray-300 transition-all duration-150 group"
+                  className="rounded-lg p-4 border transition-all duration-150 group"
+                  style={{
+                    background: "var(--bg-surface)",
+                    borderColor: "var(--border-soft)",
+                  }}
+                >
                   <div className="flex items-start justify-between gap-3">
                     <div className="flex items-start space-x-3 flex-1 min-w-0">
-                      <DocumentTextIcon className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                      <DocumentTextIcon
+                        className="h-5 w-5 flex-shrink-0 mt-0.5"
+                        style={{ color: "var(--text-accent)" }}
+                      />
                       <div className="flex-1 min-w-0">
-                        <h4 className="font-medium text-gray-900 truncate text-sm">{pdf.filename}</h4>
-                        <p className="text-sm text-gray-600 mt-1 line-clamp-2">{pdf.title}</p>
+                        <h4
+                          className="font-medium truncate text-sm"
+                          style={{ color: "var(--text-primary)" }}
+                        >
+                          {pdf.filename}
+                        </h4>
+                        <p
+                          className="text-sm mt-1 line-clamp-2"
+                          style={{ color: "var(--text-secondary)" }}
+                        >
+                          {pdf.title}
+                        </p>
                         <div className="flex items-center space-x-2 mt-2">
                           <Badge variant="info" size="sm">
                             {pdf.pages} {pdf.pages === 1 ? "page" : "pages"}
@@ -187,7 +276,15 @@ export default function PDFListModal({
                       {/* View PDF Button */}
                       <button
                         onClick={() => handleViewPdf(pdf.filename)}
-                        className="p-2 text-blue-500 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-150"
+                        className="p-2 rounded-lg transition-all"
+                        style={{ color: "var(--text-accent)" }}
+                        onMouseEnter={(e) =>
+                          (e.currentTarget.style.background =
+                            "var(--accent-light)")
+                        }
+                        onMouseLeave={(e) =>
+                          (e.currentTarget.style.background = "transparent")
+                        }
                         title="View PDF"
                       >
                         <EyeIcon className="h-5 w-5" strokeWidth={2} />
@@ -197,13 +294,39 @@ export default function PDFListModal({
                       <button
                         onClick={() => handleDeletePdf(pdf.filename)}
                         disabled={deletingPdf === pdf.filename}
-                        className="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-150 disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="p-2 rounded-lg transition-all disabled:opacity-50"
+                        style={{ color: "var(--text-muted)" }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.color = "var(--danger)";
+                          e.currentTarget.style.background =
+                            "var(--danger-light)";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.color = "var(--text-muted)";
+                          e.currentTarget.style.background = "transparent";
+                        }}
                         title="Delete PDF"
                       >
                         {deletingPdf === pdf.filename ? (
-                          <svg className="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                          <svg
+                            className="animate-spin h-5 w-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                          >
+                            <circle
+                              className="opacity-25"
+                              cx="12"
+                              cy="12"
+                              r="10"
+                              stroke="currentColor"
+                              strokeWidth="4"
+                            />
+                            <path
+                              className="opacity-75"
+                              fill="currentColor"
+                              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                            />
                           </svg>
                         ) : (
                           <TrashIcon className="h-5 w-5" strokeWidth={2} />

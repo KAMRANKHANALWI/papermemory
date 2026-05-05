@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Collection } from "@/lib/types/collection";
 import CollectionList from "./CollectionList";
 import UploadButton from "./UploadButton";
+import ThemeToggle from "../UI/ThemeToggle";
 import {
   ChatBubbleLeftRightIcon,
   Bars3Icon,
@@ -33,12 +34,13 @@ interface SidebarProps {
   onClearChat: () => void;
   pdfSelectionMode?: boolean;
   onTogglePDFMode?: () => void;
-
   selectedPDFs?: any[];
   pdfStats?: any;
   onTogglePDF?: (filename: string, collectionName: string) => void;
   onClearPDFSelection?: () => void;
   onDeselectPDF?: (filename: string, collectionName: string) => void;
+  isMobileOpen?: boolean;
+  onMobileOpenChange?: (v: boolean) => void;
 }
 
 export default function Sidebar({
@@ -56,14 +58,15 @@ export default function Sidebar({
   onClearChat,
   pdfSelectionMode = false,
   onTogglePDFMode = () => {},
-
   selectedPDFs = [],
   pdfStats = null,
   onTogglePDF = () => {},
   onClearPDFSelection = () => {},
   onDeselectPDF = () => {},
+  isMobileOpen = false,
+  onMobileOpenChange = () => {},
 }: SidebarProps) {
-  const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const setIsMobileOpen = onMobileOpenChange;
   const [isCollapsed, setIsCollapsed] = useState(false);
   const toast = useToast();
 
@@ -71,25 +74,24 @@ export default function Sidebar({
     selectedPDFs.map((pdf) => `${pdf.collection_name}:${pdf.filename}`),
   );
 
+  /* ── Nav item style helper ── */
+  const navItem = (active: boolean, danger = false) =>
+    [
+      "w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-[15px] transition-all duration-150 cursor-pointer",
+      danger
+        ? "text-[var(--text-danger)] hover:bg-[var(--danger-light)]"
+        : active
+          ? "bg-[var(--bg-surface)] text-[var(--text-primary)] font-medium"
+          : "text-[var(--text-secondary)] hover:bg-[var(--bg-surface)] hover:text-[var(--text-primary)]",
+    ].join(" ");
+
   return (
     <>
-      {/* Mobile Toggle Button */}
-      <button
-        onClick={() => setIsMobileOpen(!isMobileOpen)}
-        className="lg:hidden fixed top-4 left-4 z-50 p-2 bg-white rounded-lg shadow-md border border-gray-200 hover:bg-gray-50 transition-colors"
-        aria-label="Toggle sidebar"
-      >
-        {isMobileOpen ? (
-          <XMarkIcon className="h-5 w-5 text-gray-700" />
-        ) : (
-          <Bars3Icon className="h-5 w-5 text-gray-700" />
-        )}
-      </button>
-
       {/* Mobile Overlay */}
       {isMobileOpen && (
         <div
-          className="lg:hidden fixed inset-0 bg-black/50 z-40 backdrop-blur-sm"
+          className="lg:hidden fixed inset-0 z-40 backdrop-blur-sm"
+          style={{ background: "rgba(0,0,0,0.4)" }}
           onClick={() => setIsMobileOpen(false)}
         />
       )}
@@ -97,28 +99,30 @@ export default function Sidebar({
       {/* Sidebar */}
       <aside
         className={`
-          bg-white flex flex-col h-full border-r border-gray-100
-          transition-all duration-300 ease-in-out
+          flex flex-col h-full border-r transition-all duration-300 ease-in-out
           fixed lg:relative z-40
-          ${isCollapsed ? "lg:w-16" : "w-[300px]"}
-          ${
-            isMobileOpen
-              ? "translate-x-0"
-              : "-translate-x-full lg:translate-x-0"
-          }
+          ${isCollapsed ? "lg:w-[60px]" : "w-[280px]"}
+          ${isMobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
         `}
+        style={{
+          background: "var(--bg-base)",
+          borderColor: "var(--border-soft)",
+        }}
       >
+        {/* ── Collapsed State ── */}
         {isCollapsed ? (
-          <div className="hidden lg:flex flex-col items-center py-4 space-y-2 h-full">
+          <div className="hidden lg:flex flex-col items-center py-4 gap-1 h-full">
+            {/* Expand */}
             <button
               onClick={() => setIsCollapsed(false)}
-              className="w-12 h-12 flex items-center justify-center hover:bg-gray-100 rounded-xl transition-colors mb-2"
+              className="w-10 h-10 flex items-center justify-center rounded-lg transition-colors mb-2"
+              style={{ color: "var(--text-muted)" }}
               title="Expand sidebar"
-              aria-label="Expand sidebar"
             >
-              <ChevronRightIcon className="h-5 w-5 text-gray-600" />
+              <ChevronRightIcon className="h-5 w-5" />
             </button>
 
+            {/* Upload */}
             <button
               onClick={() => {
                 const input = document.createElement("input");
@@ -127,21 +131,20 @@ export default function Sidebar({
                 input.accept = ".pdf";
                 input.onchange = (e: any) => {
                   const files = Array.from(e.target.files || []) as File[];
-                  if (files.length > 0) {
-                    onUploadClick(files);
-                  }
+                  if (files.length > 0) onUploadClick(files);
                 };
                 input.click();
               }}
-              className="w-12 h-12 flex items-center justify-center bg-stone-500 hover:bg-stone-600 text-white rounded-xl transition-colors shadow-sm cursor-pointer"
+              className="w-10 h-10 flex items-center justify-center rounded-lg transition-colors"
+              style={{ color: "var(--text-secondary)" }}
               title="Upload PDFs"
             >
               <svg
-                className="w-6 h-6"
+                className="w-5 h-5"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
-                strokeWidth={2}
+                strokeWidth={1.5}
               >
                 <path
                   strokeLinecap="round"
@@ -151,22 +154,26 @@ export default function Sidebar({
               </svg>
             </button>
 
-            {/* Single Collection Icon */}
+            {/* Single */}
             <button
               onClick={() => onChatModeChange("single")}
-              className={`w-12 h-12 flex items-center justify-center rounded-xl transition-colors cursor-pointer ${
-                chatMode === "single"
-                  ? "bg-stone-100 text-stone-600"
-                  : "bg-gray-100 text-gray-500 hover:bg-gray-200"
-              }`}
-              title="Single Collection Mode"
+              className="w-10 h-10 flex items-center justify-center rounded-lg transition-colors"
+              style={{
+                background:
+                  chatMode === "single" ? "var(--bg-surface)" : "transparent",
+                color:
+                  chatMode === "single"
+                    ? "var(--text-primary)"
+                    : "var(--text-muted)",
+              }}
+              title="Single Collection"
             >
               <svg
-                className="w-6 h-6"
+                className="w-5 h-5"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
-                strokeWidth={2}
+                strokeWidth={1.5}
               >
                 <path
                   strokeLinecap="round"
@@ -176,33 +183,41 @@ export default function Sidebar({
               </svg>
             </button>
 
+            {/* All */}
             <button
               onClick={() => onChatModeChange("chatall")}
-              className={`w-12 h-12 flex items-center justify-center rounded-xl transition-colors cursor-pointer ${
-                chatMode === "chatall"
-                  ? "bg-stone-100 text-stone-600"
-                  : "bg-gray-100 text-gray-500 hover:bg-gray-200"
-              }`}
-              title="Chat All Collections"
+              className="w-10 h-10 flex items-center justify-center rounded-lg transition-colors"
+              style={{
+                background:
+                  chatMode === "chatall" ? "var(--bg-surface)" : "transparent",
+                color:
+                  chatMode === "chatall"
+                    ? "var(--text-primary)"
+                    : "var(--text-muted)",
+              }}
+              title="All Collections"
             >
-              <ChatBubbleLeftRightIcon className="w-6 h-6" strokeWidth={2} />
+              <ChatBubbleLeftRightIcon className="w-5 h-5" strokeWidth={1.5} />
             </button>
 
+            {/* Select PDFs */}
             <button
               onClick={onTogglePDFMode}
-              className={`w-12 h-12 flex items-center justify-center rounded-xl transition-colors cursor-pointer ${
-                pdfSelectionMode
-                  ? "bg-amber-100 text-amber-600"
-                  : "bg-gray-100 text-gray-500 hover:bg-gray-200"
-              }`}
+              className="w-10 h-10 flex items-center justify-center rounded-lg transition-colors"
+              style={{
+                background: pdfSelectionMode
+                  ? "var(--accent-light)"
+                  : "transparent",
+                color: pdfSelectionMode ? "var(--accent)" : "var(--text-muted)",
+              }}
               title="Select PDFs"
             >
               <svg
-                className="w-6 h-6"
+                className="w-5 h-5"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
-                strokeWidth={2}
+                strokeWidth={1.5}
               >
                 <path
                   strokeLinecap="round"
@@ -212,20 +227,22 @@ export default function Sidebar({
               </svg>
             </button>
 
+            {/* Clear */}
             <button
               onClick={() => {
                 onClearChat();
-                toast.success("Chat cleared successfully");
+                toast.success("Chat cleared");
               }}
-              className="w-12 h-12 flex items-center justify-center bg-gray-100 text-red-500 hover:bg-red-200 rounded-xl transition-colors cursor-pointer"
+              className="w-10 h-10 flex items-center justify-center rounded-lg transition-colors"
+              style={{ color: "var(--text-danger)" }}
               title="Clear Chat"
             >
               <svg
-                className="w-6 h-6"
+                className="w-5 h-5"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
-                strokeWidth={2}
+                strokeWidth={1.5}
               >
                 <path
                   strokeLinecap="round"
@@ -235,100 +252,115 @@ export default function Sidebar({
               </svg>
             </button>
 
-            {/* Collections Count at Bottom */}
-            <div className="mt-auto pt-4 w-full flex flex-col items-center border-t border-gray-100">
-              <div className="text-center">
-                <div className="text-xl font-bold text-gray-900">
-                  {collections.length}
-                </div>
-                <div className="text-[10px] text-gray-400 font-medium">
-                  Collections
-                </div>
-              </div>
+            {/* Count */}
+            <div className="mt-auto pb-4 flex flex-col items-center gap-0.5">
+              <span
+                className="text-base font-semibold"
+                style={{
+                  fontFamily: "var(--font-serif)",
+                  color: "var(--text-primary)",
+                }}
+              >
+                {collections.length}
+              </span>
+              <span
+                className="text-[9px] uppercase tracking-widest"
+                style={{ color: "var(--text-muted)" }}
+              >
+                cols
+              </span>
             </div>
           </div>
         ) : (
-          /* Expanded State - Full Sidebar */
-          <div className="flex flex-col h-full bg-[#F8F8F3]">
-            {/* Header */}
-            <div className="flex-shrink-0 px-3 pt-4 pb-3">
-              <div className="flex items-center justify-between mb-4">
-                <h1 className="text-[19px] font-semibold text-gray-900">
-                  PaperMemory
-                </h1>
-                {/* Wordmark */}
-                {/* <div className="flex flex-col gap-0.5">
-                  <span
-                    className="text-[9px] tracking-[0.18em] uppercase font-normal text-emerald-600"
-                    style={{ fontFamily: "var(--font-cormorant)" }}
+          /* ── Expanded State ── */
+          <div className="flex flex-col h-full">
+            {/* ── Header / Wordmark ── */}
+            {/* ── Header / Wordmark only ── */}
+            <div className="flex-shrink-0 px-4 pt-4 pb-3">
+              <div className="flex items-start justify-between">
+                <div className="flex flex-col gap-0">
+                  {/* <span
+                    className="text-[10px] tracking-[0.18em] uppercase font-semibold"
+                    style={{
+                      color: "var(--text-accent)",
+                      fontFamily: "var(--font-serif)",
+                    }}
                   >
                     AI Research Assistant
-                  </span>
+                  </span> */}
                   <h1
-                    className="text-[26px] font-semibold tracking-[-0.02em] leading-none text-gray-900"
-                    style={{ fontFamily: "var(--font-cormorant)" }}
+                    className="text-[32px] font-bold tracking-[-0.02em] leading-none"
+                    style={{
+                      fontFamily: "var(--font-serif)",
+                      color: "var(--text-primary)",
+                    }}
                   >
-                    GutMiScholar
+                    PaperMemory
                   </h1>
-                </div> */}
-
-                {/* Desktop Toggle Button - Inside header like Claude */}
-                <button
-                  onClick={() => setIsCollapsed(true)}
-                  className="hidden lg:flex p-1.5 hover:bg-gray-100 rounded-md transition-colors"
-                  aria-label="Close sidebar"
-                  title="Close sidebar"
-                >
-                  <ChevronLeftIcon className="h-5 w-5 text-gray-600" />
-                </button>
-
-                {/* Mobile Close Button */}
-                <button
-                  onClick={() => setIsMobileOpen(false)}
-                  className="lg:hidden p-1.5 hover:bg-gray-100 rounded-md transition-colors"
-                  aria-label="Close sidebar"
-                >
-                  <XMarkIcon className="h-5 w-5 text-gray-500" />
-                </button>
-              </div>
-
-              {/* Chat Button */}
-              <button
-                onClick={onClearChat}
-                className="w-full flex items-center gap-2.5 px-3 py-2.5 rounded-lg
-                       hover:bg-stone-100 text-gray-900
-                         transition-colors duration-150 group cursor-pointer active:bg-stone-300"
-              >
-                <div
-                  className="flex-shrink-0 w-8 h-8 rounded-full bg-stone-500 
-                              flex items-center justify-center group-hover:bg-stone-600 transition-colors"
-                >
-                  <PlusIcon className="h-5 w-5 text-white" strokeWidth={2.5} />
                 </div>
-                <span className="text-[15px] font-medium">New Chat</span>
-              </button>
+
+                <div className="flex items-center gap-1 pt-1">
+                  <ThemeToggle />
+                  <button
+                    onClick={() => setIsCollapsed(true)}
+                    className="hidden lg:flex p-1.5 rounded-md transition-colors"
+                    style={{ color: "var(--text-muted)" }}
+                  >
+                    <ChevronLeftIcon className="h-4 w-4" />
+                  </button>
+                  <button
+                    onClick={() => setIsMobileOpen(false)}
+                    className="lg:hidden p-1.5 rounded-md transition-colors"
+                    style={{ color: "var(--text-muted)" }}
+                  >
+                    <XMarkIcon className="h-4 w-4" />
+                  </button>
+                </div>
+              </div>
             </div>
 
-            {/* Navigation Section */}
-            <nav className="flex-shrink-0 px-2 pb-3 space-y-1 border-b border-gray-100">
-              {/* Upload Button */}
+            {/* ── Navigation ── */}
+            <nav
+              className="flex-shrink-0 px-2 py-3 space-y-0.5 border-b"
+              style={{ borderColor: "var(--border-soft)" }}
+            >
+              {/* New Chat — first item in nav */}
+              <button
+                onClick={onClearChat}
+                className="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg transition-colors duration-150"
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.background = "var(--bg-surface)")
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.background = "transparent")
+                }
+              >
+                <div
+                  className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0"
+                  style={{ background: "var(--text-muted)" }}
+                >
+                  <PlusIcon
+                    className="h-3.5 w-3.5 text-white"
+                    strokeWidth={2.5}
+                  />
+                </div>
+                <span
+                  className="text-[14.5px]"
+                  style={{ color: "var(--text-primary)" }}
+                >
+                  New Chat
+                </span>
+              </button>
+
               <UploadButton onFilesSelected={onUploadClick} />
 
-              {/* Chat Mode Buttons */}
+              {/* Single collection */}
               <button
                 onClick={() => onChatModeChange("single")}
-                className={`
-                  w-full flex items-center gap-2.5 px-2.5 py-2 rounded-lg text-[15px]
-                  transition-all duration-150 cursor-pointer active:bg-stone-300
-                  ${
-                    chatMode === "single" && !pdfSelectionMode
-                      ? "bg-stone-200 text-black"
-                      : "text-gray-900 hover:bg-stone-100"
-                  }
-                `}
+                className={navItem(chatMode === "single" && !pdfSelectionMode)}
               >
                 <svg
-                  className="w-6 h-6 flex-shrink-0"
+                  className="w-[18px] h-[18px] flex-shrink-0"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth={1.5}
@@ -343,40 +375,33 @@ export default function Sidebar({
                 <span>Single collection</span>
               </button>
 
+              {/* All collections */}
               <button
                 onClick={() => onChatModeChange("chatall")}
-                className={`
-                  w-full flex items-center gap-2.5 px-2.5 py-2 rounded-lg text-[15px]
-                  transition-all duration-150 cursor-pointer active:bg-stone-300
-                  ${
-                    chatMode === "chatall" && !pdfSelectionMode
-                      ? "bg-stone-200 text-black"
-                      : "text-gray-900 hover:bg-stone-100"
-                  }
-                `}
+                className={navItem(chatMode === "chatall" && !pdfSelectionMode)}
               >
                 <ChatBubbleLeftRightIcon
-                  className="w-6 h-6 flex-shrink-0"
+                  className="w-[18px] h-[18px] flex-shrink-0"
                   strokeWidth={1.5}
                 />
                 <span>All Collections</span>
               </button>
 
-              {/* PDF Selection Mode Button */}
+              {/* Select PDFs */}
               <button
                 onClick={onTogglePDFMode}
-                className={`
-                  w-full flex items-center gap-2.5 px-2.5 py-2 rounded-lg text-[15px]
-                  transition-all duration-150 cursor-pointer active:bg-stone-300
-                  ${
-                    pdfSelectionMode
-                      ? "bg-amber-100 text-amber-900"
-                      : "text-gray-900 hover:bg-stone-100"
-                  }
-                `}
+                className={navItem(pdfSelectionMode)}
+                style={
+                  pdfSelectionMode
+                    ? {
+                        background: "var(--accent-light)",
+                        color: "var(--accent)",
+                      }
+                    : {}
+                }
               >
                 <svg
-                  className="w-6 h-6 flex-shrink-0"
+                  className="w-[18px] h-[18px] flex-shrink-0"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth={1.5}
@@ -390,28 +415,32 @@ export default function Sidebar({
                 </svg>
                 <span>Select PDFs</span>
                 {selectedPDFs.length > 0 && (
-                  <Badge variant="info" size="sm">
+                  <span
+                    className="ml-auto text-[11px] px-1.5 py-0.5 rounded-full font-medium"
+                    style={{
+                      background: "var(--accent-light)",
+                      color: "var(--accent)",
+                    }}
+                  >
                     {selectedPDFs.length}
-                  </Badge>
+                  </span>
                 )}
               </button>
 
+              {/* Clear Chat */}
               <button
                 onClick={() => {
                   onClearChat();
-                  toast.success("Chat cleared successfully");
+                  toast.success("Chat cleared");
                 }}
-                className="w-full flex items-center gap-2.5 px-2.5 py-2 rounded-lg text-[15px]
-             text-gray-900 hover:bg-stone-100 active:bg-stone-300
-             transition-all duration-150 cursor-pointer"
+                className={navItem(false, true)}
               >
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-[18px] h-[18px] flex-shrink-0"
                   fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6 flex-shrink-0"
+                  strokeWidth={1.5}
+                  viewBox="0 0 24 24"
                 >
                   <path
                     strokeLinecap="round"
@@ -423,9 +452,13 @@ export default function Sidebar({
               </button>
             </nav>
 
+            {/* ── Collections / PDF Selection ── */}
             {pdfSelectionMode ? (
               <>
-                <div className="flex-shrink-0 border-b border-gray-100">
+                <div
+                  className="flex-shrink-0 border-b"
+                  style={{ borderColor: "var(--border-soft)" }}
+                >
                   <SelectedPDFsDisplay
                     selectedPDFs={selectedPDFs}
                     stats={pdfStats}
@@ -433,8 +466,6 @@ export default function Sidebar({
                     onClearAll={onClearPDFSelection}
                   />
                 </div>
-
-                {/* Collections with PDF Checkboxes */}
                 <div className="flex-1 min-h-0 overflow-hidden">
                   <CollectionList
                     collections={collections}
@@ -452,7 +483,6 @@ export default function Sidebar({
                 </div>
               </>
             ) : (
-              /* Normal Mode - Regular Collections List */
               <div className="flex-1 min-h-0 overflow-hidden">
                 <CollectionList
                   collections={collections}
@@ -468,10 +498,20 @@ export default function Sidebar({
               </div>
             )}
 
-            {/* Footer */}
-            <div className="flex-shrink-0 px-3 py-2.5 border-t border-gray-100">
-              <p className="text-[12px] text-gray-400 text-center font-medium">
-                RAG System • Powered by AI
+            {/* ── Footer ── */}
+            <div
+              className="flex-shrink-0 px-4 py-3 border-t"
+              style={{ borderColor: "var(--border-soft)" }}
+            >
+              <p
+                className="text-[12px] text-center"
+                style={{
+                  fontFamily: "var(--font-serif)",
+                  fontStyle: "italic",
+                  color: "var(--text-muted)",
+                }}
+              >
+                RAG System · Powered by AI
               </p>
             </div>
           </div>
