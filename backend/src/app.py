@@ -163,6 +163,7 @@ async def delete_collection(collection_name: str):
 async def rename_collection(request: RenameCollectionRequest):
     """Rename a collection"""
     result = collection_manager.rename_collection(request.old_name, request.new_name)
+    pdf_storage.rename_collection_pdfs(request.old_name, request.new_name)
     return OperationResponse(**result)
 
 
@@ -346,6 +347,7 @@ async def get_all_pdfs():
 # ============================================================================
 # QUERY CLASSIFICATION ENDPOINTS
 # ============================================================================
+
 
 @app.post("/api/chat/classify", response_model=QueryClassificationResponse)
 async def classify_query(request: QueryClassificationRequest):
@@ -572,6 +574,7 @@ async def get_conversation_summary(chat_id: str):
 #         media_type="text/event-stream",
 #     )
 
+
 @app.post("/api/chat/single/{collection_name}")
 async def chat_single_collection(
     collection_name: str,
@@ -617,6 +620,7 @@ async def chat_all_collections(body: ChatRequest):
         ),
         media_type="text/event-stream",
     )
+
 
 # =============================================================================
 # NEW CUSTOM PDFs SELECT ENDPOINTS

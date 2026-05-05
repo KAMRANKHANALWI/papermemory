@@ -106,6 +106,15 @@ class PDFStorageService:
         
         return False
     
+    def rename_collection_pdfs(self, old_name: str, new_name: str) -> bool:
+        old_dir = self.base_path / old_name
+        new_dir = self.base_path / new_name
+        if old_dir.exists():
+            old_dir.rename(new_dir)
+            print(f"Renamed PDF collection dir: {old_name} → {new_name}")
+            return True
+        return False
+    
     def delete_collection_pdfs(self, collection_name: str) -> bool:
         """
         Delete all PDFs in a collection.
