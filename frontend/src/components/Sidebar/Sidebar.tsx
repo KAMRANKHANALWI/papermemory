@@ -68,7 +68,7 @@ export default function Sidebar({
   const toast = useToast();
 
   const selectedPDFsSet = new Set(
-    selectedPDFs.map((pdf) => `${pdf.collection_name}:${pdf.filename}`)
+    selectedPDFs.map((pdf) => `${pdf.collection_name}:${pdf.filename}`),
   );
 
   return (
@@ -256,6 +256,21 @@ export default function Sidebar({
                 <h1 className="text-[19px] font-semibold text-gray-900">
                   PaperMemory
                 </h1>
+                {/* Wordmark */}
+                {/* <div className="flex flex-col gap-0.5">
+                  <span
+                    className="text-[9px] tracking-[0.18em] uppercase font-normal text-emerald-600"
+                    style={{ fontFamily: "var(--font-cormorant)" }}
+                  >
+                    AI Research Assistant
+                  </span>
+                  <h1
+                    className="text-[26px] font-semibold tracking-[-0.02em] leading-none text-gray-900"
+                    style={{ fontFamily: "var(--font-cormorant)" }}
+                  >
+                    GutMiScholar
+                  </h1>
+                </div> */}
 
                 {/* Desktop Toggle Button - Inside header like Claude */}
                 <button

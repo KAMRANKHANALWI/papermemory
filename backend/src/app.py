@@ -176,9 +176,7 @@ async def rename_collection(request: RenameCollectionRequest):
     """Rename a collection"""
     result = collection_manager.rename_collection(request.old_name, request.new_name)
     pdf_storage.rename_collection_pdfs(request.old_name, request.new_name)  # ← ADD
-    document_processor.rename_collection_pages_store(
-        request.old_name, request.new_name
-    )  # ← ADD
+    document_processor.rename_collection_pages_store(request.old_name, request.new_name)
     return OperationResponse(**result)
 
 
