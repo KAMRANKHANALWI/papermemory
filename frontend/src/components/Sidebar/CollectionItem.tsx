@@ -41,7 +41,7 @@ export default function CollectionItem({
         />
 
         <span
-          className="flex-1 text-[13.5px] truncate"
+          className="flex-1 text-[14px] truncate"
           style={{
             color: isSelected ? "var(--text-primary)" : "var(--text-secondary)",
             fontWeight: isSelected ? 500 : 400,

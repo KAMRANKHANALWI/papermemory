@@ -5,7 +5,10 @@ import { Collection } from "@/lib/types/collection";
 import CollectionItem from "./CollectionItem";
 import CollectionDropdown from "./CollectionDropdown";
 import PDFCheckboxList from "./PDFCheckboxList";
-import { MagnifyingGlassIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
+import {
+  MagnifyingGlassIcon,
+  ChevronDownIcon,
+} from "@heroicons/react/24/outline";
 import { useState, useEffect, useMemo } from "react";
 
 interface CollectionListProps {
@@ -27,12 +30,16 @@ const loadAccessTimes = (): Record<string, number> => {
   try {
     const stored = localStorage.getItem("collection-access-times");
     return stored ? JSON.parse(stored) : {};
-  } catch { return {}; }
+  } catch {
+    return {};
+  }
 };
 
 const saveAccessTimes = (times: Record<string, number>) => {
   if (typeof window === "undefined") return;
-  try { localStorage.setItem("collection-access-times", JSON.stringify(times)); } catch {}
+  try {
+    localStorage.setItem("collection-access-times", JSON.stringify(times));
+  } catch {}
 };
 
 export default function CollectionList({
@@ -49,18 +56,26 @@ export default function CollectionList({
   onTogglePDF = () => {},
 }: CollectionListProps) {
   const [searchQuery, setSearchQuery] = useState("");
-  const [lastAccessTimes, setLastAccessTimes] = useState<Record<string, number>>(loadAccessTimes);
+  const [lastAccessTimes, setLastAccessTimes] =
+    useState<Record<string, number>>(loadAccessTimes);
   const [dropdownOpen, setDropdownOpen] = useState<string | null>(null);
-  const [dropdownButtonRef, setDropdownButtonRef] = useState<React.RefObject<HTMLButtonElement> | null>(null);
-  const [expandedCollection, setExpandedCollection] = useState<string | null>(null);
+  const [dropdownButtonRef, setDropdownButtonRef] =
+    useState<React.RefObject<HTMLButtonElement> | null>(null);
+  const [expandedCollection, setExpandedCollection] = useState<string | null>(
+    null,
+  );
 
   useEffect(() => {
-    const newCollections = collections.filter(col => !lastAccessTimes[col.name]);
+    const newCollections = collections.filter(
+      (col) => !lastAccessTimes[col.name],
+    );
     if (newCollections.length > 0) {
       const now = Date.now();
-      setLastAccessTimes(prev => {
+      setLastAccessTimes((prev) => {
         const updated = { ...prev };
-        newCollections.forEach(col => { updated[col.name] = now; });
+        newCollections.forEach((col) => {
+          updated[col.name] = now;
+        });
         saveAccessTimes(updated);
         return updated;
       });
@@ -69,7 +84,7 @@ export default function CollectionList({
 
   useEffect(() => {
     if (selectedCollection) {
-      setLastAccessTimes(prev => {
+      setLastAccessTimes((prev) => {
         const updated = { ...prev, [selectedCollection]: Date.now() };
         saveAccessTimes(updated);
         return updated;
@@ -77,16 +92,23 @@ export default function CollectionList({
     }
   }, [selectedCollection]);
 
-  const sortedCollections = useMemo(() =>
-    [...collections].sort((a, b) => (lastAccessTimes[b.name] || 0) - (lastAccessTimes[a.name] || 0)),
-    [collections, lastAccessTimes]
+  const sortedCollections = useMemo(
+    () =>
+      [...collections].sort(
+        (a, b) =>
+          (lastAccessTimes[b.name] || 0) - (lastAccessTimes[a.name] || 0),
+      ),
+    [collections, lastAccessTimes],
   );
 
-  const filteredCollections = sortedCollections.filter(col =>
-    col.name.toLowerCase().includes(searchQuery.toLowerCase())
+  const filteredCollections = sortedCollections.filter((col) =>
+    col.name.toLowerCase().includes(searchQuery.toLowerCase()),
   );
 
-  const handleManage = (collectionName: string, buttonRef: React.RefObject<HTMLButtonElement>) => {
+  const handleManage = (
+    collectionName: string,
+    buttonRef: React.RefObject<HTMLButtonElement>,
+  ) => {
     setDropdownOpen(collectionName);
     setDropdownButtonRef(buttonRef);
     onManageCollection(collectionName);
@@ -94,7 +116,9 @@ export default function CollectionList({
 
   const handleCollectionClick = (collectionName: string) => {
     if (pdfSelectionMode) {
-      setExpandedCollection(expandedCollection === collectionName ? null : collectionName);
+      setExpandedCollection(
+        expandedCollection === collectionName ? null : collectionName,
+      );
     } else {
       onSelectCollection(collectionName);
     }
@@ -105,7 +129,7 @@ export default function CollectionList({
       {/* Section label */}
       <div className="flex-shrink-0 px-4 pt-3 pb-2">
         <h2
-          className="text-[9px] uppercase tracking-[0.16em] font-medium"
+          className="text-[10px] uppercase tracking-[0.16em] font-medium"
           style={{ color: "var(--text-muted)" }}
         >
           {pdfSelectionMode ? "Select from Collections" : "Collections"}
@@ -122,17 +146,25 @@ export default function CollectionList({
             />
             <input
               type="text"
-              placeholder="Search..."
+              placeholder="Search collections..."
               value={searchQuery}
-              onChange={e => setSearchQuery(e.target.value)}
-              className="w-full pl-7 pr-2.5 py-1.5 text-[12px] rounded-md border outline-none transition-all"
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full pl-7 pr-2.5 py-1.5 rounded-lg border outline-none transition-all text-[13px]"
               style={{
-                background: "var(--bg-input)",
+                background: "transparent",
                 borderColor: "var(--border-soft)",
                 color: "var(--text-primary)",
+                fontFamily: "var(--font-serif)",
+                letterSpacing: "0.01em",
               }}
-              onFocus={e => (e.target.style.borderColor = "var(--accent)")}
-              onBlur={e => (e.target.style.borderColor = "var(--border-soft)")}
+              onFocus={(e) => {
+                e.target.style.borderColor = "var(--accent)";
+                e.target.style.background = "var(--bg-input)";
+              }}
+              onBlur={(e) => {
+                e.target.style.borderColor = "var(--border-soft)";
+                e.target.style.background = "transparent";
+              }}
             />
           </div>
         </div>
@@ -146,39 +178,72 @@ export default function CollectionList({
               className="inline-flex items-center justify-center w-10 h-10 rounded-full mb-3"
               style={{ background: "var(--bg-surface)" }}
             >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" style={{ color: "var(--text-muted)" }}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.5}
+                viewBox="0 0 24 24"
+                style={{ color: "var(--text-muted)" }}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                />
               </svg>
             </div>
-            <p className="text-[13px] font-medium" style={{ color: "var(--text-secondary)" }}>
+            <p
+              className="text-[13px] font-medium"
+              style={{ color: "var(--text-secondary)" }}
+            >
               {searchQuery ? "No collections found" : "No collections yet"}
             </p>
-            <p className="text-[11px] mt-1" style={{ color: "var(--text-muted)" }}>
-              {searchQuery ? "Try a different search" : "Upload PDFs to get started"}
+            <p
+              className="text-[11px] mt-1"
+              style={{ color: "var(--text-muted)" }}
+            >
+              {searchQuery
+                ? "Try a different search"
+                : "Upload PDFs to get started"}
             </p>
           </div>
         ) : pdfSelectionMode ? (
-          filteredCollections.map(collection => (
+          filteredCollections.map((collection) => (
             <div key={collection.name} className="mb-0.5">
               <button
                 onClick={() => handleCollectionClick(collection.name)}
                 className="w-full flex items-center justify-between px-3 py-2 rounded-lg transition-all duration-150 text-left"
                 style={{
-                  background: expandedCollection === collection.name ? "var(--bg-surface)" : "transparent",
+                  background:
+                    expandedCollection === collection.name
+                      ? "var(--bg-surface)"
+                      : "transparent",
                   color: "var(--text-primary)",
                 }}
-                onMouseEnter={e => {
+                onMouseEnter={(e) => {
                   if (expandedCollection !== collection.name)
                     e.currentTarget.style.background = "var(--bg-surface)";
                 }}
-                onMouseLeave={e => {
+                onMouseLeave={(e) => {
                   if (expandedCollection !== collection.name)
                     e.currentTarget.style.background = "transparent";
                 }}
               >
                 <div className="flex items-center gap-2">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" style={{ color: "var(--text-muted)" }}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={1.5}
+                    viewBox="0 0 24 24"
+                    style={{ color: "var(--text-muted)" }}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                    />
                   </svg>
                   <span className="text-[13px]">{collection.name}</span>
                 </div>
@@ -186,7 +251,10 @@ export default function CollectionList({
                   className={`h-3.5 w-3.5 transition-transform`}
                   style={{
                     color: "var(--text-muted)",
-                    transform: expandedCollection === collection.name ? "rotate(180deg)" : "rotate(0deg)",
+                    transform:
+                      expandedCollection === collection.name
+                        ? "rotate(180deg)"
+                        : "rotate(0deg)",
                   }}
                 />
               </button>
@@ -203,13 +271,13 @@ export default function CollectionList({
             </div>
           ))
         ) : (
-          filteredCollections.map(collection => (
+          filteredCollections.map((collection) => (
             <CollectionItem
               key={collection.name}
               collection={collection}
               isSelected={selectedCollection === collection.name}
               onSelect={() => handleCollectionClick(collection.name)}
-              onManage={buttonRef => handleManage(collection.name, buttonRef)}
+              onManage={(buttonRef) => handleManage(collection.name, buttonRef)}
             />
           ))
         )}
@@ -219,7 +287,10 @@ export default function CollectionList({
       {!pdfSelectionMode && dropdownOpen && dropdownButtonRef && (
         <CollectionDropdown
           isOpen={true}
-          onClose={() => { setDropdownOpen(null); setDropdownButtonRef(null); }}
+          onClose={() => {
+            setDropdownOpen(null);
+            setDropdownButtonRef(null);
+          }}
           collectionName={dropdownOpen}
           onRename={() => onRenameCollection(dropdownOpen)}
           onListPDFs={() => onListPDFs(dropdownOpen)}

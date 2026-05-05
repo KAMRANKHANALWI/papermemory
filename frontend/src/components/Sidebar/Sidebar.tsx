@@ -77,7 +77,7 @@ export default function Sidebar({
   /* ── Nav item style helper ── */
   const navItem = (active: boolean, danger = false) =>
     [
-      "w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-[14px] transition-all duration-150 cursor-pointer",
+      "w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-[15px] transition-all duration-150 cursor-pointer",
       danger
         ? "text-[var(--text-danger)] hover:bg-[var(--danger-light)]"
         : active
@@ -275,15 +275,12 @@ export default function Sidebar({
           /* ── Expanded State ── */
           <div className="flex flex-col h-full">
             {/* ── Header / Wordmark ── */}
-            <div
-              className="flex-shrink-0 px-4 pt-5 pb-4 border-b"
-              style={{ borderColor: "var(--border-soft)" }}
-            >
+            {/* ── Header / Wordmark only ── */}
+            <div className="flex-shrink-0 px-4 pt-4 pb-3">
               <div className="flex items-start justify-between">
-                {/* Wordmark */}
-                <div className="flex flex-col gap-0.5">
+                <div className="flex flex-col gap-0">
                   <span
-                    className="text-[8px] tracking-[0.22em] uppercase font-normal"
+                    className="text-[10px] tracking-[0.18em] uppercase font-semibold"
                     style={{
                       color: "var(--text-accent)",
                       fontFamily: "var(--font-serif)",
@@ -292,7 +289,7 @@ export default function Sidebar({
                     AI Research Assistant
                   </span>
                   <h1
-                    className="text-[27px] font-semibold tracking-[-0.02em] leading-none"
+                    className="text-[32px] font-bold tracking-[-0.02em] leading-none"
                     style={{
                       fontFamily: "var(--font-serif)",
                       color: "var(--text-primary)",
@@ -302,9 +299,8 @@ export default function Sidebar({
                   </h1>
                 </div>
 
-                <div className="flex items-center gap-1 mt-1">
+                <div className="flex items-center gap-1 pt-1">
                   <ThemeToggle />
-
                   <button
                     onClick={() => setIsCollapsed(true)}
                     className="hidden lg:flex p-1.5 rounded-md transition-colors"
@@ -312,7 +308,6 @@ export default function Sidebar({
                   >
                     <ChevronLeftIcon className="h-4 w-4" />
                   </button>
-
                   <button
                     onClick={() => setIsMobileOpen(false)}
                     className="lg:hidden p-1.5 rounded-md transition-colors"
@@ -322,12 +317,17 @@ export default function Sidebar({
                   </button>
                 </div>
               </div>
+            </div>
 
-              {/* New Chat button */}
+            {/* ── Navigation ── */}
+            <nav
+              className="flex-shrink-0 px-2 py-3 space-y-0.5 border-b"
+              style={{ borderColor: "var(--border-soft)" }}
+            >
+              {/* New Chat — first item in nav */}
               <button
                 onClick={onClearChat}
-                className="mt-4 w-full flex items-center gap-2.5 px-3 py-2 rounded-lg transition-colors duration-150"
-                style={{ color: "var(--text-secondary)" }}
+                className="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg transition-colors duration-150"
                 onMouseEnter={(e) =>
                   (e.currentTarget.style.background = "var(--bg-surface)")
                 }
@@ -345,19 +345,13 @@ export default function Sidebar({
                   />
                 </div>
                 <span
-                  className="text-[14px]"
+                  className="text-[14.5px]"
                   style={{ color: "var(--text-primary)" }}
                 >
                   New Chat
                 </span>
               </button>
-            </div>
 
-            {/* ── Navigation ── */}
-            <nav
-              className="flex-shrink-0 px-2 py-3 space-y-0.5 border-b"
-              style={{ borderColor: "var(--border-soft)" }}
-            >
               <UploadButton onFilesSelected={onUploadClick} />
 
               {/* Single collection */}
@@ -510,7 +504,7 @@ export default function Sidebar({
               style={{ borderColor: "var(--border-soft)" }}
             >
               <p
-                className="text-[11px] text-center"
+                className="text-[12px] text-center"
                 style={{
                   fontFamily: "var(--font-serif)",
                   fontStyle: "italic",

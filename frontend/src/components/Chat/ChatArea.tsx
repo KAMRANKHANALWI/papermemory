@@ -97,7 +97,7 @@ export default function ChatArea({
 
         <div className="flex-1 min-w-0">
           <h2
-            className="text-[18px] font-semibold leading-tight truncate"
+            className="text-[22px] font-semibold leading-tight truncate"
             style={{
               fontFamily: "var(--font-serif)",
               color: "var(--text-primary)",
