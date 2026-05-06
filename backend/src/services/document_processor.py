@@ -6,6 +6,7 @@ import os
 import json
 import shutil
 import tempfile
+import hashlib
 import chromadb
 from pathlib import Path
 from typing import List
@@ -19,11 +20,13 @@ from src.config import AppConfig
 
 
 class DocumentProcessor:
-    def __init__(self, pdf_storage=None):
+    def __init__(self, pdf_storage=None, chroma_client=None):
         self.embedding_model = HuggingFaceEmbeddings(
             model_name=AppConfig.EMBEDDING_MODEL
         )
-        self.chroma_client = chromadb.PersistentClient(path=AppConfig.CHROMA_DB_PATH)
+        self.chroma_client = chroma_client or chromadb.PersistentClient(
+            path=AppConfig.CHROMA_DB_PATH
+        )
         self.pdf_storage = pdf_storage
         self.pages_store_base = Path(AppConfig.PAGES_STORE_PATH)
         self.pages_store_base.mkdir(parents=True, exist_ok=True)
@@ -67,13 +70,27 @@ class DocumentProcessor:
                 os.unlink(tmp_path)
 
         # Create / update vector store
+        # if all_documents:
+        #     Chroma.from_documents(
+        #         documents=all_documents,
+        #         embedding=self.embedding_model,
+        #         client=self.chroma_client,
+        #         collection_name=collection_name,
+        #     )
         if all_documents:
-            Chroma.from_documents(
-                documents=all_documents,
-                embedding=self.embedding_model,
-                client=self.chroma_client,
-                collection_name=collection_name,
-                persist_directory=AppConfig.CHROMA_DB_PATH,
+            collection = self.chroma_client.get_or_create_collection(collection_name)
+            texts = [doc.page_content for doc in all_documents]
+            metadatas = [doc.metadata for doc in all_documents]
+            embeddings = self.embedding_model.embed_documents(texts)
+            ids = [
+                f"{collection_name}_{i}_{hashlib.md5(text[:50].encode()).hexdigest()[:8]}"
+                for i, text in enumerate(texts)
+            ]
+            collection.upsert(  
+                ids=ids,
+                embeddings=embeddings,
+                documents=texts,
+                metadatas=metadatas,
             )
 
         return {
@@ -109,9 +126,7 @@ class DocumentProcessor:
         json_name = Path(filename).stem + ".json"
         store_path = collection_dir / json_name
 
-        pages_dict = {
-            str(page["page_num"]): page["text"] for page in pages_data
-        }
+        pages_dict = {str(page["page_num"]): page["text"] for page in pages_data}
 
         with open(store_path, "w", encoding="utf-8") as f:
             json.dump(pages_dict, f, ensure_ascii=False, indent=2)
@@ -135,29 +150,29 @@ class DocumentProcessor:
 
         with open(store_path, "r", encoding="utf-8") as f:
             return json.load(f)
-        
+
     def delete_pdf_pages_store(self, collection_name: str, filename: str) -> bool:
         """Delete the pages_store JSON for a specific PDF."""
         json_name = Path(filename).stem + ".json"
         store_path = self.pages_store_base / collection_name / json_name
-        
+
         if store_path.exists():
             store_path.unlink()
             print(f"Deleted pages_store: {store_path}")
             return True
-        
+
         print(f"pages_store not found for deletion: {store_path}")
         return False
 
     def delete_collection_pages_store(self, collection_name: str) -> bool:
         """Delete all pages_store JSONs for an entire collection."""
         collection_dir = self.pages_store_base / collection_name
-        
+
         if collection_dir.exists():
             shutil.rmtree(collection_dir)
             print(f"Deleted pages_store collection dir: {collection_dir}")
             return True
-        
+
         return False
 
     def rename_pdf_pages_store(
@@ -168,12 +183,12 @@ class DocumentProcessor:
         new_json = Path(new_filename).stem + ".json"
         old_path = self.pages_store_base / collection_name / old_json
         new_path = self.pages_store_base / collection_name / new_json
-        
+
         if old_path.exists():
             old_path.rename(new_path)
             print(f"Renamed pages_store: {old_json} → {new_json}")
             return True
-        
+
         print(f"pages_store not found for rename: {old_path}")
         return False
 
@@ -185,14 +200,12 @@ class DocumentProcessor:
             print(f"Renamed pages_store collection dir: {old_name} → {new_name}")
             return True
         return False
-    
+
     # ------------------------------------------------------------------ #
     #  PDF processing                                                      #
     # ------------------------------------------------------------------ #
 
-    def _process_single_pdf(
-        self, file_path: str, filename: str
-    ):
+    def _process_single_pdf(self, file_path: str, filename: str):
         """
         Process a single PDF into:
           - List[Document] for ChromaDB (chunks with metadata)
@@ -202,9 +215,7 @@ class DocumentProcessor:
         if not pages_data:
             return [], []
 
-        full_text = "\n\n".join(
-            [page["text"] for page in pages_data if page["text"]]
-        )
+        full_text = "\n\n".join([page["text"] for page in pages_data if page["text"]])
 
         # Overall headings for title metadata
         all_headings = []

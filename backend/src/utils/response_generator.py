@@ -7,29 +7,19 @@ import json
 import logging
 from typing import Optional, AsyncGenerator, Dict, Any, List
 from langchain_chroma import Chroma
-
-from src.services.query_classifier import QueryClassifier
-from src.services.metadata_service import MetadataService
-from src.services.file_search_service import FileSearchService
-from src.services.chat_service import ChatService
-from src.services.memory_service import MemoryService
-from src.services.parent_page_retriever import ParentPageRetriever
-from src.config import AppConfig
 from fastapi import Request
+from src.config import AppConfig
+
+from src.services.shared import (
+    chat_service,
+    memory_service,
+    metadata_service,
+    file_search_service,
+    query_classifier,
+    parent_retriever,
+)
 
 logger = logging.getLogger(__name__)
-
-# -------------------------
-# Service initialization
-# -------------------------
-chat_service = ChatService()
-query_classifier = QueryClassifier(chat_service.llm)
-metadata_service = MetadataService()
-file_search_service = FileSearchService()
-memory_service = MemoryService()
-
-# Single shared retriever instance (reranker model loaded once)
-parent_retriever = ParentPageRetriever()
 
 
 # -------------------------
@@ -40,12 +30,11 @@ def get_vectorstore(collection_name: str) -> Chroma:
         client=chat_service.chroma_client,
         collection_name=collection_name,
         embedding_function=chat_service.embedding_model,
-        persist_directory=AppConfig.CHROMA_DB_PATH,
     )
 
 
 async def stream_llm_response(response_stream, request: Request = None):
-    for chunk in response_stream:
+    async for chunk in response_stream:
         if request and await request.is_disconnected():
             logger.info("Client disconnected — stopping LLM stream")
             break
@@ -212,7 +201,7 @@ async def handle_metadata_query(
         {"role": "user", "content": message},
     ]
 
-    async for chunk in stream_llm_response(chat_service.llm.stream(messages), request):
+    async for chunk in stream_llm_response(chat_service.llm.astream(messages), request):
         yield chunk
 
 
@@ -242,7 +231,7 @@ async def handle_list_collections(
         {"role": "user", "content": message},
     ]
 
-    async for chunk in stream_llm_response(chat_service.llm.stream(messages), request):
+    async for chunk in stream_llm_response(chat_service.llm.astream(messages), request):
         yield chunk
 
 
@@ -315,7 +304,7 @@ async def handle_file_specific_search(
         {"role": "user", "content": message},
     ]
 
-    async for chunk in stream_llm_response(chat_service.llm.stream(messages), request):
+    async for chunk in stream_llm_response(chat_service.llm.astream(messages), request):
         yield chunk
 
 
@@ -401,7 +390,7 @@ async def handle_content_search(
         {"role": "user", "content": message},
     ]
 
-    async for chunk in stream_llm_response(chat_service.llm.stream(messages), request):
+    async for chunk in stream_llm_response(chat_service.llm.astream(messages), request):
         yield chunk
 
 

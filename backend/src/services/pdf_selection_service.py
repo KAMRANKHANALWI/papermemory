@@ -305,7 +305,7 @@ class PDFSelectionService:
                             "filename": doc_filename,
                             "collection": collection_name,
                             "title": title,
-                            "pages": page_numbers,
+                            "page_numbers": page_numbers,
                             "similarity": round(1 - score, 4),
                         })
                 

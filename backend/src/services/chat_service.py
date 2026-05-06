@@ -11,12 +11,12 @@ load_dotenv()
 
 
 class ChatService:
-    def __init__(self):
+    def __init__(self, chroma_client=None):
         self.llm = LLMFactory.create()
         self.embedding_model = HuggingFaceEmbeddings(
             model_name=AppConfig.EMBEDDING_MODEL
         )
-        self.chroma_client = chromadb.PersistentClient(
+        self.chroma_client = chroma_client or chromadb.PersistentClient(
             path=AppConfig.CHROMA_DB_PATH
         )
 
@@ -28,7 +28,6 @@ class ChatService:
                 client=self.chroma_client,
                 collection_name=collection_name,
                 embedding_function=self.embedding_model,
-                persist_directory=AppConfig.CHROMA_DB_PATH,
             )
             results = vectorstore.similarity_search_with_score(query, k=k)
             return self._format_search_results(results, collection_name)
@@ -47,7 +46,6 @@ class ChatService:
                     client=self.chroma_client,
                     collection_name=collection_name,
                     embedding_function=self.embedding_model,
-                    persist_directory=AppConfig.CHROMA_DB_PATH,
                 )
                 results = vectorstore.similarity_search_with_score(
                     query, k=k_per_collection

@@ -10,19 +10,11 @@ from fastapi.staticfiles import StaticFiles
 from pathlib import Path
 
 # Services
-from src.services.document_processor import DocumentProcessor
-from src.services.chat_service import ChatService
-from src.services.collection_manager import CollectionManager
-from src.services.query_classifier import QueryClassifier
-from src.services.metadata_service import MetadataService
-from src.services.file_search_service import FileSearchService
-from src.services.memory_service import MemoryService
 from src.utils.response_generator import (
     generate_chat_response,
     generate_chat_response_eval,
 )
-from src.services.pdf_storage_service import PDFStorageService
-from src.services.pdf_selection_service import PDFSelectionService
+
 from src.models.selection_models import (
     SelectPDFRequest,
     DeselectPDFRequest,
@@ -33,6 +25,12 @@ from src.models.selection_models import (
     SelectedPDFsSearchResponse,
     SelectionStatsResponse,
     SelectedPDFInfo,
+)
+
+from src.services.shared import (
+    chat_service, memory_service, metadata_service,
+    file_search_service, query_classifier, parent_retriever,
+    collection_manager, pdf_selection_service, pdf_storage, document_processor
 )
 
 # Models
@@ -57,6 +55,7 @@ from src.models import (
 import logging
 
 logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 BASE_DIR = Path(__file__).resolve().parent
 STATIC_DIR = BASE_DIR / "static"
@@ -78,18 +77,6 @@ app.add_middleware(
 )
 
 app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
-
-# Initialize services
-chat_service = ChatService()
-collection_manager = CollectionManager()
-metadata_service = MetadataService()
-file_search_service = FileSearchService()
-memory_service = MemoryService()
-query_classifier = QueryClassifier(chat_service.llm)
-chat_service = ChatService()
-pdf_selection_service = PDFSelectionService()
-pdf_storage = PDFStorageService(base_path="data/pdfs")
-document_processor = DocumentProcessor(pdf_storage=pdf_storage)
 
 router = APIRouter()
 
@@ -234,13 +221,8 @@ async def rename_pdf_in_collection(request: RenamePDFRequest):
 
 
 # "VIEW PDF" ENDPOINT
-@app.get("/api/collections/{collection_name}/pdfs/{filename}/view")
+@app.get("/api/collections/{collection_name}/pdfs/{filename:path}/view")
 async def view_pdf(collection_name: str, filename: str):
-    """
-    Serve PDF file for viewing in browser.
-    Opens PDF in a new tab.
-    """
-    # Get PDF path
     pdf_path = pdf_storage.get_pdf_path(collection_name, filename)
 
     if not pdf_path:
@@ -249,12 +231,15 @@ async def view_pdf(collection_name: str, filename: str):
             detail=f"PDF '{filename}' not found in collection '{collection_name}'",
         )
 
-    # Return PDF file
+    # Encode filename for Content-Disposition header (handles non-ASCII like en-dash)
+    from urllib.parse import quote
+
+    encoded_filename = quote(filename, safe="")
+
     return FileResponse(
         path=pdf_path,
         media_type="application/pdf",
-        filename=filename,
-        headers={"Content-Disposition": f"inline; filename={filename}"},
+        headers={"Content-Disposition": f"inline; filename*=UTF-8''{encoded_filename}"},
     )
 
 
@@ -276,7 +261,6 @@ async def get_collection_pdfs(collection_name: str):
             client=chat_service.chroma_client,
             collection_name=collection_name,
             embedding_function=chat_service.embedding_model,
-            persist_directory="data/chroma_db",
         )
 
         # Get PDF list
@@ -305,7 +289,6 @@ async def get_collection_stats(collection_name: str):
             client=chat_service.chroma_client,
             collection_name=collection_name,
             embedding_function=chat_service.embedding_model,
-            persist_directory="data/chroma_db",
         )
 
         filenames, stats = metadata_service.get_single_collection_pdfs(vectorstore)
@@ -335,7 +318,6 @@ async def get_all_pdfs():
                 client=chat_service.chroma_client,
                 collection_name=col.name,
                 embedding_function=chat_service.embedding_model,
-                persist_directory="data/chroma_db",
             )
             all_vectorstores[col.name] = vectorstore
 
@@ -415,7 +397,6 @@ async def search_specific_file(request: FileSearchRequest):
             client=chat_service.chroma_client,
             collection_name=request.collection_name,
             embedding_function=chat_service.embedding_model,
-            persist_directory="data/chroma_db",
         )
 
         context, results, found = file_search_service.search_specific_file(
@@ -448,7 +429,6 @@ async def search_file_all_collections(request: FileSearchRequest):
                 client=chat_service.chroma_client,
                 collection_name=col.name,
                 embedding_function=chat_service.embedding_model,
-                persist_directory="data/chroma_db",
             )
             all_vectorstores[col.name] = vectorstore
 
@@ -1095,3 +1075,5 @@ async def chat_with_selected_pdfs(
             "X-Accel-Buffering": "no",
         },
     )
+
+app.include_router(router)

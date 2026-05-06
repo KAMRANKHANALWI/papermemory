@@ -5,16 +5,12 @@ Expanded collection manager with full CRUD operations.
 import chromadb
 from typing import List, Dict
 from langchain_chroma import Chroma
-from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 from src.config import AppConfig
 
 
 class CollectionManager:
-    def __init__(self):
-        self.chroma_client = chromadb.PersistentClient(path=AppConfig.CHROMA_DB_PATH)
-        self.embedding_model = HuggingFaceEmbeddings(
-            model_name=AppConfig.EMBEDDING_MODEL
-        )
+    def __init__(self, chroma_client=None):
+        self.chroma_client = chroma_client or chromadb.PersistentClient(path=AppConfig.CHROMA_DB_PATH)
 
     def get_collection(self, collection_name: str, embedding_function):
         """Get a specific collection's vectorstore by name."""

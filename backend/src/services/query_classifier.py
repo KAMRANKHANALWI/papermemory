@@ -163,7 +163,8 @@ Classification:"""
         """
         # Pattern to match .pdf filenames
         # Matches: filename.pdf, my_file.pdf, research-paper-2024.pdf, etc.
-        pattern = r'([a-zA-Z0-9_\-]+\.pdf)'
+        # pattern = r'([a-zA-Z0-9_\-]+\.pdf)'
+        pattern = r'([\w\s\(\)\-–—]+\.pdf)'
         matches = re.findall(pattern, query, re.IGNORECASE)
         
         if matches:
