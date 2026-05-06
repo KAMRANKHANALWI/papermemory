@@ -80,7 +80,7 @@ export default function ChatInput({
             placeholder={placeholder}
             disabled={disabled}
             rows={1}
-            className="flex-1 text-[15px] outline-none resize-none overflow-hidden bg-transparent"
+            className="flex-1 text-[15px] outline-none resize-none overflow-y-auto bg-transparent"
             style={{
               color: "var(--text-primary)",
               minHeight: "1.5rem",

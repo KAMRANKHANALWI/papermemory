@@ -1,4 +1,4 @@
-from fastapi import FastAPI, UploadFile, File, Query, HTTPException, Body, APIRouter
+from fastapi import FastAPI, UploadFile, File, Query, HTTPException, Request, APIRouter
 from fastapi.responses import StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Optional
@@ -600,6 +600,7 @@ async def get_conversation_summary(chat_id: str):
 async def chat_single_collection(
     collection_name: str,
     body: ChatRequest,
+    request: Request,
 ):
     if body.eval:
         return await generate_chat_response_eval(
@@ -616,13 +617,17 @@ async def chat_single_collection(
             chat_mode="single",
             chat_id=body.chat_id,
             eval_mode=False,
+            request=request,
         ),
         media_type="text/event-stream",
     )
 
 
 @app.post("/api/chat/all")
-async def chat_all_collections(body: ChatRequest):
+async def chat_all_collections(
+    body: ChatRequest,
+    request: Request,
+):
     if body.eval:
         return await generate_chat_response_eval(
             message=body.message,
@@ -638,6 +643,7 @@ async def chat_all_collections(body: ChatRequest):
             chat_mode="chatall",
             chat_id=body.chat_id,
             eval_mode=False,
+            request=request,
         ),
         media_type="text/event-stream",
     )
@@ -950,6 +956,7 @@ async def chat_with_selected_pdfs(
     query: str = Query(..., description="User's question"),
     chat_id: Optional[str] = Query(None, description="Chat session ID"),
     num_results: int = Query(25, description="Number of search results to use"),
+    request: Request = None,
 ):
     """
     Chat with selected PDFs using streaming response.
@@ -1027,6 +1034,9 @@ async def chat_with_selected_pdfs(
                 full_response = ""
 
                 async for chunk in chat_service.generate_response(query, context):
+                    if await request.is_disconnected():  # ← add
+                        logger.info("Client disconnected")
+                        break
                     full_response += chunk
                     yield f"data: {json.dumps({'type': 'content', 'content': chunk})}\n\n"
 

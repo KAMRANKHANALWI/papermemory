@@ -15,6 +15,7 @@ from src.services.chat_service import ChatService
 from src.services.memory_service import MemoryService
 from src.services.parent_page_retriever import ParentPageRetriever
 from src.config import AppConfig
+from fastapi import Request
 
 logger = logging.getLogger(__name__)
 
@@ -43,8 +44,11 @@ def get_vectorstore(collection_name: str) -> Chroma:
     )
 
 
-async def stream_llm_response(response_stream):
+async def stream_llm_response(response_stream, request: Request = None):
     for chunk in response_stream:
+        if request and await request.is_disconnected():
+            logger.info("Client disconnected — stopping LLM stream")
+            break
         if hasattr(chunk, "content") and chunk.content:
             yield f"data: {json.dumps({'type': 'content', 'content': chunk.content})}\n\n"
 
@@ -94,6 +98,7 @@ async def generate_chat_response(
     chat_mode: str,
     chat_id: Optional[str] = None,
     eval_mode: bool = False,
+    request: Request = None,
 ) -> AsyncGenerator[str, None]:
 
     try:
@@ -132,16 +137,22 @@ async def generate_chat_response(
                 collection_name,
                 is_chatall,
                 conversation_history,
+                request,
             )
         elif classification == "list_collections" and is_chatall:
-            handler = handle_list_collections(message, conversation_history)
+            handler = handle_list_collections(message, conversation_history, request)
         elif classification == "file_specific_search" and filename:
             handler = handle_file_specific_search(
-                message, filename, collection_name, is_chatall, conversation_history
+                message,
+                filename,
+                collection_name,
+                is_chatall,
+                conversation_history,
+                request,
             )
         else:
             handler = handle_content_search(
-                message, collection_name, is_chatall, conversation_history
+                message, collection_name, is_chatall, conversation_history, request
             )
 
         async for event in handler:
@@ -174,6 +185,7 @@ async def handle_metadata_query(
     collection_name: Optional[str],
     is_chatall: bool,
     conversation_history: List[Dict],
+    request: Request = None,
 ) -> AsyncGenerator[str, None]:
 
     if is_chatall:
@@ -200,12 +212,14 @@ async def handle_metadata_query(
         {"role": "user", "content": message},
     ]
 
-    async for chunk in stream_llm_response(chat_service.llm.stream(messages)):
+    async for chunk in stream_llm_response(chat_service.llm.stream(messages), request):
         yield chunk
 
 
 async def handle_list_collections(
-    message: str, conversation_history: List[Dict]
+    message: str,
+    conversation_history: List[Dict],
+    request: Request = None,
 ) -> AsyncGenerator[str, None]:
 
     collections = chat_service.chroma_client.list_collections()
@@ -228,7 +242,7 @@ async def handle_list_collections(
         {"role": "user", "content": message},
     ]
 
-    async for chunk in stream_llm_response(chat_service.llm.stream(messages)):
+    async for chunk in stream_llm_response(chat_service.llm.stream(messages), request):
         yield chunk
 
 
@@ -238,6 +252,7 @@ async def handle_file_specific_search(
     collection_name: Optional[str],
     is_chatall: bool,
     conversation_history: List[Dict],
+    request: Request = None,
 ) -> AsyncGenerator[str, None]:
     """
     File-specific search using parent-page retrieval.
@@ -283,7 +298,7 @@ async def handle_file_specific_search(
         not_found_msg = f'File "{filename}" not found. Searching all documents...'
         yield f"data: {json.dumps({'type': 'content', 'content': not_found_msg})}\n\n"
         async for event in handle_content_search(
-            message, collection_name, is_chatall, conversation_history
+            message, collection_name, is_chatall, conversation_history, request
         ):
             yield event
         return
@@ -300,7 +315,7 @@ async def handle_file_specific_search(
         {"role": "user", "content": message},
     ]
 
-    async for chunk in stream_llm_response(chat_service.llm.stream(messages)):
+    async for chunk in stream_llm_response(chat_service.llm.stream(messages), request):
         yield chunk
 
 
@@ -309,6 +324,7 @@ async def handle_content_search(
     collection_name: Optional[str],
     is_chatall: bool,
     conversation_history: List[Dict],
+    request: Request = None,
 ) -> AsyncGenerator[str, None]:
     """
     General content search using parent-page retrieval.
@@ -343,9 +359,13 @@ async def handle_content_search(
         # all_sources = sorted(all_pages, key=lambda x: x["similarity"], reverse=True)[
         #     : AppConfig.TOP_K
         # ]
-        
+
         # Better — respects what the reranker actually decided
-        all_sources = sorted(all_pages, key=lambda x: x.get("rerank_score", x["similarity"]), reverse=True)[:AppConfig.TOP_K]
+        all_sources = sorted(
+            all_pages,
+            key=lambda x: x.get("rerank_score", x["similarity"]),
+            reverse=True,
+        )[: AppConfig.TOP_K]
 
         # Rebuild context from the final merged+sorted pages
         context_parts = []
@@ -381,7 +401,7 @@ async def handle_content_search(
         {"role": "user", "content": message},
     ]
 
-    async for chunk in stream_llm_response(chat_service.llm.stream(messages)):
+    async for chunk in stream_llm_response(chat_service.llm.stream(messages), request):
         yield chunk
 
 
