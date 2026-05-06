@@ -116,7 +116,7 @@ export default function Sidebar({
             <button
               onClick={() => setIsCollapsed(false)}
               className="w-10 h-10 flex items-center justify-center rounded-lg transition-colors mb-2"
-              style={{ color: "var(--text-muted)" }}
+              style={{ color: "var(--text-secondary)" }}
               title="Expand sidebar"
             >
               <ChevronRightIcon className="h-5 w-5" />
@@ -164,7 +164,7 @@ export default function Sidebar({
                 color:
                   chatMode === "single"
                     ? "var(--text-primary)"
-                    : "var(--text-muted)",
+                    : "var(--text-secondary)",
               }}
               title="Single Collection"
             >
@@ -193,7 +193,7 @@ export default function Sidebar({
                 color:
                   chatMode === "chatall"
                     ? "var(--text-primary)"
-                    : "var(--text-muted)",
+                    : "var(--text-secondary)",
               }}
               title="All Collections"
             >
@@ -208,7 +208,7 @@ export default function Sidebar({
                 background: pdfSelectionMode
                   ? "var(--accent-light)"
                   : "transparent",
-                color: pdfSelectionMode ? "var(--accent)" : "var(--text-muted)",
+                color: pdfSelectionMode ? "var(--accent)" : "var(--text-secondary)",
               }}
               title="Select PDFs"
             >
@@ -275,7 +275,6 @@ export default function Sidebar({
           /* ── Expanded State ── */
           <div className="flex flex-col h-full">
             {/* ── Header / Wordmark ── */}
-            {/* ── Header / Wordmark only ── */}
             <div className="flex-shrink-0 px-4 pt-4 pb-3">
               <div className="flex items-start justify-between">
                 <div className="flex flex-col gap-0">
