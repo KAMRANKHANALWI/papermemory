@@ -18,11 +18,11 @@ export default function MessageList({ messages }: MessageListProps) {
 
   if (messages.length === 0) {
     return (
-      <div className="h-full flex items-center justify-center p-8">
+      <div className="h-full flex items-center justify-center p-8 pb-16">
         <div className="text-center max-w-sm">
           {/* Decorative book icon */}
           <div
-            className="w-16 h-16 rounded-2xl mx-auto mb-5 flex items-center justify-center border"
+            className="w-14 h-14 rounded-2xl mx-auto mb-5 flex items-center justify-center border"
             style={{
               background: "var(--bg-card)",
               borderColor: "var(--border-soft)",
@@ -56,10 +56,11 @@ export default function MessageList({ messages }: MessageListProps) {
             Ask questions about your documents
           </p> */}
           <p
-            className="text-[14px] italic"
+            className="text-[18px] italic"
             style={{
               color: "var(--text-muted)",
               fontFamily: "var(--font-serif)",
+              letterSpacing: "0.08em",
             }}
           >
             Ask questions about your documents
