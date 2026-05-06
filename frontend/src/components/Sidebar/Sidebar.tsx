@@ -82,7 +82,7 @@ export default function Sidebar({
         ? "text-[var(--text-danger)] hover:bg-[var(--danger-light)]"
         : active
           ? "bg-[var(--bg-surface)] text-[var(--text-primary)] font-medium"
-          : "text-[var(--text-secondary)] hover:bg-[var(--bg-surface)] hover:text-[var(--text-primary)]",
+          : "text-[var(--text-primary)] hover:bg-[var(--bg-surface)] hover:text-[var(--text-primary)]",
     ].join(" ");
 
   return (
@@ -116,7 +116,7 @@ export default function Sidebar({
             <button
               onClick={() => setIsCollapsed(false)}
               className="w-10 h-10 flex items-center justify-center rounded-lg transition-colors mb-2"
-              style={{ color: "var(--text-muted)" }}
+              style={{ color: "var(--text-primary)" }}
               title="Expand sidebar"
             >
               <ChevronRightIcon className="h-5 w-5" />
@@ -164,7 +164,7 @@ export default function Sidebar({
                 color:
                   chatMode === "single"
                     ? "var(--text-primary)"
-                    : "var(--text-muted)",
+                    : "var(--text-secondary)",
               }}
               title="Single Collection"
             >
@@ -193,7 +193,7 @@ export default function Sidebar({
                 color:
                   chatMode === "chatall"
                     ? "var(--text-primary)"
-                    : "var(--text-muted)",
+                    : "var(--text-secondary)",
               }}
               title="All Collections"
             >
@@ -208,7 +208,9 @@ export default function Sidebar({
                 background: pdfSelectionMode
                   ? "var(--accent-light)"
                   : "transparent",
-                color: pdfSelectionMode ? "var(--accent)" : "var(--text-muted)",
+                color: pdfSelectionMode
+                  ? "var(--accent)"
+                  : "var(--text-secondary)",
               }}
               title="Select PDFs"
             >
