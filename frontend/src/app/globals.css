@@ -12,8 +12,10 @@
   --border-muted:   #E8E3D8;
 
   --text-primary:   #1a1a18;
-  --text-secondary: #5a5750;
-  --text-muted:     #908c84;
+  /* --text-secondary: #5a5750; */
+  --text-secondary: #3a3832;
+  /* --text-muted:     #908c84; */
+  --text-muted:     #7a7670;
   --text-accent:    #0F6E56;   /* teal green — descriptor, links */
   --text-danger:    #993C1D;
 
@@ -78,8 +80,11 @@
   --border-muted:   #262626;
 
   --text-primary:   #F0EDE4;
-  --text-secondary: #A09880;
-  --text-muted:     #5a5548;
+  /* --text-secondary: #A09880; */
+  /* --text-secondary: #C8C4BA; */
+  --text-secondary: #D8D4CA;
+  /* --text-muted:     #5a5548; */
+  --text-muted:     #7a7670;
   --text-accent:    #5DCAA5;
   --text-danger:    #F0997B;
 

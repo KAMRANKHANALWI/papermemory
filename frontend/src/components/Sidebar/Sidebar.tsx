@@ -82,7 +82,7 @@ export default function Sidebar({
         ? "text-[var(--text-danger)] hover:bg-[var(--danger-light)]"
         : active
           ? "bg-[var(--bg-surface)] text-[var(--text-primary)] font-medium"
-          : "text-[var(--text-secondary)] hover:bg-[var(--bg-surface)] hover:text-[var(--text-primary)]",
+          : "text-[var(--text-primary)] hover:bg-[var(--bg-surface)] hover:text-[var(--text-primary)]",
     ].join(" ");
 
   return (
