@@ -138,7 +138,10 @@ async def clear_selection(session_id: str):
         session = pdf_selection_service.get_or_create_session(session_id)
         session.clear_all()
         return PDFSelectionResponse(
-            success=True, message="Selection cleared", total_selected=0, selected_pdfs=[]
+            success=True,
+            message="Selection cleared",
+            total_selected=0,
+            selected_pdfs=[],
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
@@ -233,18 +236,25 @@ async def chat_with_selected_pdfs(
     num_results: int = Query(25, description="Number of search results to use"),
     request: Request = None,
 ):
-    """Chat with selected PDFs using streaming response"""
+    """
+    Chat with selected PDFs using streaming response.
+
+    NOTE: This endpoint uses DIRECT vector search (no reranker).
+    """
 
     async def generate():
         try:
+            # ── 1. Generate chat ID ────────────────────────────────────────
             current_chat_id = chat_id or f"chat_{session_id}_{int(time.time())}"
             yield f"data: {json.dumps({'type': 'chat_id', 'chat_id': current_chat_id})}\n\n"
 
+            # ── 2. Check session has selected PDFs ─────────────────────────
             session = pdf_selection_service.get_or_create_session(session_id)
             if session.get_selection_count() == 0:
                 yield f"data: {json.dumps({'type': 'error', 'message': 'Please select PDFs first'})}\n\n"
                 return
 
+            # ── 3. Load all collection vectorstores ────────────────────────
             all_collections = collection_manager.get_all_collections_vectorstores(
                 chat_service.embedding_model
             )
@@ -252,43 +262,38 @@ async def chat_with_selected_pdfs(
                 yield f"data: {json.dumps({'type': 'error', 'message': 'No collections available'})}\n\n"
                 return
 
+            # ── 4. Search within selected PDFs only (direct vector search) ─
+            # This uses cosine similarity ranking — NOT the reranker.
+            # Results are filtered to only the PDFs the user selected.
             try:
-                context, results, total_results = pdf_selection_service.search_selected_pdfs(
-                    session_id=session_id,
-                    query=query,
-                    all_collections=all_collections,
-                    num_results=num_results,
+                context, results, total_results = (
+                    pdf_selection_service.search_selected_pdfs(
+                        session_id=session_id,
+                        query=query,
+                        all_collections=all_collections,
+                        num_results=num_results,
+                    )
                 )
                 if total_results == 0:
                     yield f"data: {json.dumps({'type': 'content', 'content': 'No relevant information found in the selected PDFs.'})}\n\n"
                     yield f"data: {json.dumps({'type': 'end'})}\n\n"
                     return
-                yield f"data: {json.dumps({'type': 'search_results', 'count': total_results})}\n\n"
             except Exception as e:
                 yield f"data: {json.dumps({'type': 'error', 'message': f'Search failed: {str(e)}'})}\n\n"
                 return
 
+            # ── 5. Build context string from top results ───────────────────
             context_parts = []
             for i, result in enumerate(results[:10], 1):
                 context_parts.append(
                     f"[Source {i}] From '{result.get('filename', 'Unknown')}' "
-                    f"({result.get('collection', '')} collection, Page {result.get('page_numbers', 'N/A')}):\n"
+                    f"({result.get('collection', '')} collection, "
+                    f"Page {result.get('page_numbers', 'N/A')}):\n"
                     f"{result.get('content', '')}"
                 )
             context = "\n\n".join(context_parts)
 
-            try:
-                full_response = ""
-                async for chunk in chat_service.generate_response(query, context):
-                    if await request.is_disconnected():
-                        logger.info("Client disconnected")
-                        break
-                    full_response += chunk
-                    yield f"data: {json.dumps({'type': 'content', 'content': chunk})}\n\n"
-            except Exception as e:
-                yield f"data: {json.dumps({'type': 'error', 'message': f'LLM error: {str(e)}'})}\n\n"
-                return
-
+            # ── 6. Send sources BEFORE streaming (frontend shows while LLM runs) ──
             sources_data = [
                 {
                     "content": r.get("content", ""),
@@ -302,12 +307,28 @@ async def chat_with_selected_pdfs(
             ]
             yield f"data: {json.dumps({'type': 'sources', 'sources': sources_data})}\n\n"
 
+            # ── 7. Stream LLM response token by token ─────────────────────
+            full_response = ""
+            try:
+                async for chunk in chat_service.generate_response(query, context):
+                    # Stop if user closed the browser tab
+                    if await request.is_disconnected():
+                        logger.info("Client disconnected — stopping stream")
+                        break
+                    full_response += chunk
+                    yield f"data: {json.dumps({'type': 'content', 'content': chunk})}\n\n"
+            except Exception as e:
+                yield f"data: {json.dumps({'type': 'error', 'message': f'LLM error: {str(e)}'})}\n\n"
+                return
+
+            # ── 8. Save conversation to memory ─────────────────────────────
             try:
                 memory_service.add_message(current_chat_id, "user", query)
                 memory_service.add_message(current_chat_id, "assistant", full_response)
             except Exception as e:
                 logger.warning(f"Memory save failed: {e}")
 
+            # ── 9. Signal stream complete ──────────────────────────────────
             yield f"data: {json.dumps({'type': 'end'})}\n\n"
 
         except Exception as e:
