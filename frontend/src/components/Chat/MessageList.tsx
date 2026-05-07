@@ -71,7 +71,7 @@ export default function MessageList({ messages }: MessageListProps) {
   }
 
   return (
-    <div className="p-6 space-y-5">
+    <div className="p-6 space-y-6 pb-10">
       {messages.map((message) => (
         <Message key={message.id} message={message} />
       ))}

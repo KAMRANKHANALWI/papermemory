@@ -37,7 +37,7 @@ export default function CollectionItem({
       <div className="flex items-center gap-2.5">
         <FolderIcon
           className="h-4 w-4 flex-shrink-0 transition-colors"
-          style={{ color: isSelected ? "var(--text-accent)" : "var(--text-muted)" }}
+          style={{ color: isSelected ? "var(--text-accent)" : "var(--text-primary)" }}
         />
 
         <span

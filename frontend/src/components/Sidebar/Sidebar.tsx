@@ -294,7 +294,7 @@ export default function Sidebar({
                       color: "var(--text-primary)",
                     }}
                   >
-                    PaperMemory
+                    GutMiScholar
                   </h1>
                 </div>
 

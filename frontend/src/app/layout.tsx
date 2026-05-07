@@ -19,7 +19,7 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Paper Memory",
+  title: "GutMiScholar",
   description: "Upload & Ask any query from your PDFs",
 };
 

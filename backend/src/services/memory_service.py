@@ -177,7 +177,8 @@ class MemoryService:
         
         file_path = os.path.join(self.storage_path, f"{chat_id}.json")
         with open(file_path, 'w') as f:
-            json.dump(memory.dict(), f, indent=2)
+            # json.dump(memory.dict(), f, indent=2)
+            json.dump(memory.model_dump(), f, indent=2)
     
     def _load_memories(self):
         """Load all memories from disk"""
