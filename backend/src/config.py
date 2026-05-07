@@ -37,13 +37,16 @@ class AppConfig:
     # Retrieval
     # ----------------------------------------
     # Final pages/chunks sent to LLM as context
-    TOP_K: int = int(os.getenv("TOP_K", "10"))
+    TOP_K: int = int(os.getenv("TOP_K", "5"))
 
     # Per-collection results in chatall mode
     TOP_K_CHATALL: int = int(os.getenv("TOP_K_CHATALL", "6"))
 
     # How many chunks to pull before reranking
-    RERANKING_SAMPLE_SIZE: int = int(os.getenv("RERANKING_SAMPLE_SIZE", "30"))
+    RERANKING_SAMPLE_SIZE: int = int(os.getenv("RERANKING_SAMPLE_SIZE", "20"))
+    
+    # cap per page
+    MAX_PAGE_CHARS: int = int(os.getenv("MAX_PAGE_CHARS", "2000")) 
 
     # ----------------------------------------
     # Reranker

@@ -113,7 +113,7 @@ class ParentPageRetriever:
             )
 
         # Step 5: Build context string and source metadata
-        context = self._build_context(pages)
+        context = self._build_context(pages, top_chunks)
         sources = self._pages_to_sources(pages, collection_name, top_chunks)
 
         return context, sources
@@ -262,17 +262,127 @@ class ParentPageRetriever:
     #  Step 5 — Build context and sources                                  #
     # ------------------------------------------------------------------ #
 
-    def _build_context(self, pages: List[Dict]) -> str:
+    # def _build_context(self, pages: List[Dict]) -> str:
+    #     """
+    #     Concatenate full page texts into one context string for the LLM.
+    #     Only includes pages where text was actually found.
+    #     """
+    #     parts = []
+    #     for page in pages:
+    #         if not page["text"]:
+    #             continue
+    #         header = f"[Source: {page['filename']} | Page {page['page_num']}]"
+    #         parts.append(f"{header}\n{page['text']}")
+
+    #     return "\n\n---\n\n".join(parts)
+
+    def _build_context(self, pages: List[Dict], top_chunks: List[Dict] = None) -> str:
         """
-        Concatenate full page texts into one context string for the LLM.
-        Only includes pages where text was actually found.
+        Build context string with chunk-centered windowing.
+
+        For each page, finds where the relevant chunk appears and centers
+        the MAX_PAGE_CHARS window around it — so the chunk is always
+        in the middle of the context, not potentially cut off.
+
+        Page numbers come from metadata — unaffected by text windowing.
         """
+        # Build lookup: filename → chunk content for centering
+        chunk_lookup: Dict[str, str] = {}
+        if top_chunks:
+            for chunk in top_chunks:
+                fname = chunk["filename"]
+                if fname not in chunk_lookup:
+                    chunk_lookup[fname] = chunk["content"]
+
         parts = []
-        for page in pages:
+        total_chars = 0
+
+        logger.info(
+            f"Building context from {len(pages)} pages | "
+            f"MAX_PAGE_CHARS={AppConfig.MAX_PAGE_CHARS} | "
+            f"chunk-centered windowing"
+        )
+
+        for i, page in enumerate(pages):
             if not page["text"]:
+                logger.warning(
+                    f"  Page {page['page_num']} of {page['filename']} — empty, skipping"
+                )
                 continue
+
+            page_text = page["text"]
+            original_len = len(page_text)
+
+            if original_len <= AppConfig.MAX_PAGE_CHARS:
+                # Page fits entirely — send all of it, no windowing needed
+                final_text = page_text
+                window_mode = "FULL PAGE"
+                chunk_pos_info = "n/a"
+            else:
+                # Page is larger than budget — find chunk and center window
+                chunk_content = chunk_lookup.get(page["filename"], "")
+
+                # Search for chunk in page using first 100 chars as fingerprint
+                chunk_fingerprint = chunk_content[:100] if chunk_content else ""
+                chunk_pos = (
+                    page_text.find(chunk_fingerprint) if chunk_fingerprint else -1
+                )
+
+                if chunk_pos == -1:
+                    # Chunk not found in page text — fall back to start
+                    final_text = page_text[: AppConfig.MAX_PAGE_CHARS] + "..."
+                    window_mode = "TRUNCATED (chunk not found, took start)"
+                    chunk_pos_info = "not found"
+                else:
+                    # Center the window around chunk position
+                    half = AppConfig.MAX_PAGE_CHARS // 2
+                    start = max(0, chunk_pos - half)
+                    end = min(original_len, start + AppConfig.MAX_PAGE_CHARS)
+
+                    # If end hit boundary, slide start back to fill budget
+                    if end == original_len:
+                        start = max(0, end - AppConfig.MAX_PAGE_CHARS)
+
+                    # Build final text with ellipsis indicators
+                    final_text = ""
+                    if start > 0:
+                        final_text += "..."
+                    final_text += page_text[start:end]
+                    if end < original_len:
+                        final_text += "..."
+
+                    window_mode = f"WINDOWED (centered at pos {chunk_pos})"
+                    chunk_pos_info = (
+                        f"chunk@{chunk_pos} | "
+                        f"window=[{start}:{end}] | "
+                        f"before_chunk={chunk_pos - start} chars | "
+                        f"after_chunk={end - (chunk_pos + len(chunk_fingerprint))} chars"
+                    )
+
+            total_chars += len(final_text)
+
+            logger.info(
+                f"  [{i+1}] {page['filename']} | Page {page['page_num']} | "
+                f"original={original_len} chars | "
+                f"sending={len(final_text)} chars | "
+                f"{window_mode}"
+            )
+            if chunk_pos_info != "n/a":
+                logger.info(f"       {chunk_pos_info}")
+
+            # Preview of what's being sent
+            preview = final_text[:200].replace("\n", " ")
+            logger.debug(f"       Preview: {preview}...")
+
             header = f"[Source: {page['filename']} | Page {page['page_num']}]"
-            parts.append(f"{header}\n{page['text']}")
+            parts.append(f"{header}\n{final_text}")
+
+        estimated_tokens = total_chars // 4
+        logger.info(
+            f"Context built | total={total_chars} chars | "
+            f"~{estimated_tokens} tokens | "
+            f"{len(parts)} pages included"
+        )
 
         return "\n\n---\n\n".join(parts)
 
@@ -337,8 +447,10 @@ class ParentPageRetriever:
                 "filename": chunk["filename"],
                 "collection": collection_name,
                 "page_numbers": chunk["page_numbers"],
-                "similarity": chunk.get("rerank_score", chunk["similarity"]),  # use rerank if available
-                "rerank_score": chunk.get("rerank_score", chunk["similarity"]),  
+                "similarity": chunk.get(
+                    "rerank_score", chunk["similarity"]
+                ),  # use rerank if available
+                "rerank_score": chunk.get("rerank_score", chunk["similarity"]),
                 "title": chunk.get("title", "No Title"),
             }
             for chunk in chunks
