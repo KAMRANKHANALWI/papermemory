@@ -43,8 +43,8 @@ function DocumentChatContent() {
   const [pendingFiles, setPendingFiles] = useState<File[]>([]);
   const [selectedCollectionForAction, setSelectedCollectionForAction] =
     useState<string | null>(null);
-  const [abortController, setAbortController] =
-    useState<AbortController | null>(null);
+  // const [abortController, setAbortController] =
+  //   useState<AbortController | null>(null);
 
   const {
     collections,
@@ -190,35 +190,47 @@ function DocumentChatContent() {
     }
   };
 
+  // const handleSendMessage = (message: string) => {
+  //   const controller = new AbortController();
+  //   setAbortController(controller);
+  //   if (pdfSelectionMode && selectedPDFs.length > 0) {
+  //     sendMessage(message, null, "selected", sessionId, controller.signal);
+  //   } else if (pdfSelectionMode && selectedPDFs.length === 0) {
+  //     toast.warning("Please select PDFs first");
+  //     setAbortController(null);
+  //   } else if (chatMode === "single" && selectedCollection) {
+  //     sendMessage(
+  //       message,
+  //       selectedCollection,
+  //       "single",
+  //       undefined,
+  //       controller.signal,
+  //     );
+  //   } else if (chatMode === "chatall") {
+  //     sendMessage(message, null, "chatall", undefined, controller.signal);
+  //   } else {
+  //     toast.warning("Please select a collection or PDFs first");
+  //     setAbortController(null);
+  //   }
+  // };
+
   const handleSendMessage = (message: string) => {
-    const controller = new AbortController();
-    setAbortController(controller);
     if (pdfSelectionMode && selectedPDFs.length > 0) {
-      sendMessage(message, null, "selected", sessionId, controller.signal);
+      sendMessage(message, null, "selected", sessionId);
     } else if (pdfSelectionMode && selectedPDFs.length === 0) {
       toast.warning("Please select PDFs first");
-      setAbortController(null);
     } else if (chatMode === "single" && selectedCollection) {
-      sendMessage(
-        message,
-        selectedCollection,
-        "single",
-        undefined,
-        controller.signal,
-      );
+      sendMessage(message, selectedCollection, "single");
     } else if (chatMode === "chatall") {
-      sendMessage(message, null, "chatall", undefined, controller.signal);
+      sendMessage(message, null, "chatall");
     } else {
       toast.warning("Please select a collection or PDFs first");
-      setAbortController(null);
     }
   };
 
+
   const handleStopGeneration = () => {
-    if (abortController) {
-      abortController.abort();
-      setAbortController(null);
-    } else stopGeneration();
+    stopGeneration();
   };
 
   const isInputDisabled = () => {

@@ -87,7 +87,7 @@ async def favicon():
     return FileResponse(STATIC_DIR / "favicon.ico")
 
 
-@app.get("/", tags=["health"])
+@app.get("/", tags=["health"])          
 async def health_check():
     return {"status": "ok", "service": "PaperMemory API", "version": "2.0.0"}
 
