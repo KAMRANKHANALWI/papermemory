@@ -138,7 +138,10 @@ async def clear_selection(session_id: str):
         session = pdf_selection_service.get_or_create_session(session_id)
         session.clear_all()
         return PDFSelectionResponse(
-            success=True, message="Selection cleared", total_selected=0, selected_pdfs=[]
+            success=True,
+            message="Selection cleared",
+            total_selected=0,
+            selected_pdfs=[],
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
@@ -228,13 +231,11 @@ async def search_selected_pdfs(session_id: str, request: SelectedPDFsSearchReque
 @router.get("/{session_id}/chat")
 async def chat_with_selected_pdfs(
     session_id: str,
-    query: str = Query(..., description="User's question"),
-    chat_id: Optional[str] = Query(None, description="Chat session ID"),
-    num_results: int = Query(25, description="Number of search results to use"),
+    query: str = Query(...),
+    chat_id: Optional[str] = Query(None),
+    num_results: int = Query(25),
     request: Request = None,
 ):
-    """Chat with selected PDFs using streaming response"""
-
     async def generate():
         try:
             current_chat_id = chat_id or f"chat_{session_id}_{int(time.time())}"
@@ -253,42 +254,35 @@ async def chat_with_selected_pdfs(
                 return
 
             try:
-                context, results, total_results = pdf_selection_service.search_selected_pdfs(
-                    session_id=session_id,
-                    query=query,
-                    all_collections=all_collections,
-                    num_results=num_results,
+                context, results, total_results = (
+                    pdf_selection_service.search_selected_pdfs(
+                        session_id=session_id,
+                        query=query,
+                        all_collections=all_collections,
+                        num_results=num_results,
+                    )
                 )
-                if total_results == 0:
-                    yield f"data: {json.dumps({'type': 'content', 'content': 'No relevant information found in the selected PDFs.'})}\n\n"
-                    yield f"data: {json.dumps({'type': 'end'})}\n\n"
-                    return
-                yield f"data: {json.dumps({'type': 'search_results', 'count': total_results})}\n\n"
             except Exception as e:
                 yield f"data: {json.dumps({'type': 'error', 'message': f'Search failed: {str(e)}'})}\n\n"
                 return
 
+            if total_results == 0:
+                yield f"data: {json.dumps({'type': 'content', 'content': 'No relevant information found in the selected PDFs.'})}\n\n"
+                yield f"data: {json.dumps({'type': 'end'})}\n\n"
+                return
+
+            # Build context from results
             context_parts = []
             for i, result in enumerate(results[:10], 1):
                 context_parts.append(
                     f"[Source {i}] From '{result.get('filename', 'Unknown')}' "
-                    f"({result.get('collection', '')} collection, Page {result.get('page_numbers', 'N/A')}):\n"
+                    f"({result.get('collection', '')} collection, "
+                    f"Page {result.get('page_numbers', 'N/A')}):\n"
                     f"{result.get('content', '')}"
                 )
             context = "\n\n".join(context_parts)
 
-            try:
-                full_response = ""
-                async for chunk in chat_service.generate_response(query, context):
-                    if await request.is_disconnected():
-                        logger.info("Client disconnected")
-                        break
-                    full_response += chunk
-                    yield f"data: {json.dumps({'type': 'content', 'content': chunk})}\n\n"
-            except Exception as e:
-                yield f"data: {json.dumps({'type': 'error', 'message': f'LLM error: {str(e)}'})}\n\n"
-                return
-
+            # Sources BEFORE streaming
             sources_data = [
                 {
                     "content": r.get("content", ""),
@@ -302,6 +296,20 @@ async def chat_with_selected_pdfs(
             ]
             yield f"data: {json.dumps({'type': 'sources', 'sources': sources_data})}\n\n"
 
+            # Stream LLM response
+            full_response = ""
+            try:
+                async for chunk in chat_service.generate_response(query, context):
+                    if await request.is_disconnected():
+                        logger.info("Client disconnected")
+                        break
+                    full_response += chunk
+                    yield f"data: {json.dumps({'type': 'content', 'content': chunk})}\n\n"
+            except Exception as e:
+                yield f"data: {json.dumps({'type': 'error', 'message': f'LLM error: {str(e)}'})}\n\n"
+                return
+
+            # Save to memory
             try:
                 memory_service.add_message(current_chat_id, "user", query)
                 memory_service.add_message(current_chat_id, "assistant", full_response)
