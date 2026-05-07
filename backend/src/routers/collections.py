@@ -17,7 +17,7 @@ from src.services.shared import (
 router = APIRouter(prefix="/api/collections", tags=["collections"])
 
 
-@router.get("/")
+@router.get("")
 async def get_collections():
     """Get all available collections"""
     return collection_manager.get_all_collections()
