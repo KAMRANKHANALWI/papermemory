@@ -329,13 +329,11 @@ async def handle_content_search(
             try:
                 vectorstore = get_vectorstore(col.name)
 
-                # Use smaller sample_size per collection in chatall to keep latency reasonable
                 ctx, srcs = parent_retriever.retrieve(
                     query=message,
                     vectorstore=vectorstore,
                     collection_name=col.name,
                     top_k=AppConfig.TOP_K_CHATALL,
-                    # sample_size=AppConfig.TOP_K_CHATALL * 3,
                     sample_size=AppConfig.RERANKING_SAMPLE_SIZE,
                 )
                 all_pages.extend(srcs)
