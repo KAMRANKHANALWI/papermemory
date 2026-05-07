@@ -6,7 +6,7 @@ from src.services.memory_service import MemoryService
 from src.services.metadata_service import MetadataService
 from src.services.file_search_service import FileSearchService
 from src.services.query_classifier import QueryClassifier
-from src.services.parent_page_retriever import ParentPageRetriever
+from src.services.reranker_factory import get_reranker
 from src.services.collection_manager import CollectionManager
 from src.services.pdf_selection_service import PDFSelectionService
 from src.services.pdf_storage_service import PDFStorageService
@@ -18,8 +18,8 @@ chat_service = ChatService(chroma_client=chroma_client)
 memory_service = MemoryService()
 metadata_service = MetadataService()
 file_search_service = FileSearchService()
+reranker = get_reranker()
 query_classifier = QueryClassifier(chat_service.llm)
-parent_retriever = ParentPageRetriever()
 pdf_storage = PDFStorageService(base_path="data/pdfs")
 collection_manager = CollectionManager(chroma_client=chroma_client)
 document_processor = DocumentProcessor(
