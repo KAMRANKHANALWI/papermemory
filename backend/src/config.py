@@ -44,6 +44,7 @@ class AppConfig:
 
     # How many chunks to pull before reranking
     RERANKING_SAMPLE_SIZE: int = int(os.getenv("RERANKING_SAMPLE_SIZE", "30"))
+    
 
     # ----------------------------------------
     # Reranker
