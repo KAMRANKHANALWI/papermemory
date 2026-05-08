@@ -275,12 +275,15 @@ async def handle_file_specific_search(
         ]
 
     if not all_chunks:
-        yield f"data: {json.dumps({'type': 'content', 'content': f'File \"{filename}\" not found. Searching all documents...'})}\n\n"
+        message_text = f'File "{filename}" not found. Searching all documents...'
+        yield f"data: {json.dumps({'type': 'content', 'content': message_text})}\n\n"
         async for event in handle_content_search(
             message, collection_name, is_chatall, conversation_history, request
         ):
             yield event
         return
+    
+    
 
     # Rerank chunks
     top_chunks = reranker.rerank(message, all_chunks, top_k=AppConfig.TOP_K)
