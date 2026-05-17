@@ -85,7 +85,7 @@ if __name__ == "__main__":
                 "correct_option": correct,
                 "is_correct": predicted == correct,
                 "difficulty": row.get("difficulty"),
-                "category": row.get("category"),
+                # "category": row.get("category"),
             }
 
             append_row(result_row)

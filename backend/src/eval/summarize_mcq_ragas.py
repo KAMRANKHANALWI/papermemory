@@ -5,10 +5,12 @@ from pathlib import Path
 # ---------------------------------------
 # Paths
 # ---------------------------------------
-RESULTS_DIR = Path("results")
-SUMMARY_DIR = Path("results")
+# RESULTS_DIR = Path("results")
+# SUMMARY_DIR = Path("results")
+RESULTS_DIR = Path("Eval_Results")
+SUMMARY_DIR = Path("Eval_Results")
 
-CSV_PATTERN = "mcq_eval_results*.csv"
+CSV_PATTERN = "mcq_eval_results.csv"
 
 csv_files = list(RESULTS_DIR.glob(CSV_PATTERN))
 

@@ -31,7 +31,7 @@ OUTPUT_CSV.parent.mkdir(parents=True, exist_ok=True)
 CHECKPOINT.parent.mkdir(parents=True, exist_ok=True)
 
 
-# -------------------------------------------------
+# --------------------"id": row.get("id"),-----------------------------
 # Checkpoint helpers
 # -------------------------------------------------
 def load_checkpoint() -> int:
@@ -180,6 +180,9 @@ for idx, row in df.iterrows():
         result = {
             "id": row.get("id"),
             "question": row["question"],
+            "answer": answer,
+            "reference": row.get("reference"),
+            "contexts": row.get("contexts"),
             "faithfulness": faithfulness.score(
                 user_input=row["question"],
                 response=answer,
@@ -215,6 +218,9 @@ for idx, row in df.iterrows():
             {
                 "id": row.get("id"),
                 "question": row.get("question"),
+                "answer": answer,
+                "reference": row.get("reference"),
+                "contexts": row.get("contexts"),
                 "faithfulness": np.nan,
                 "answer_relevancy": np.nan,
                 "answer_correctness": np.nan,
@@ -252,7 +258,7 @@ if OUTPUT_CSV.exists():
 
     # Retrieval failures
     retrieval_failures = (
-        out_df["error"].str.contains("retrieved_contexts", na=False).sum()
+        out_df["error"].astype(str).str.contains("retrieved_contexts", na=False).sum()
     )
 
     print(f"Retrieval failures   : {retrieval_failures}")

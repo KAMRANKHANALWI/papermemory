@@ -9,7 +9,7 @@ from collections import defaultdict
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--csv", required=True)
-parser.add_argument("--out", default="ragas_report.html")
+parser.add_argument("--out", default="ragas_report_new.html")
 args = parser.parse_args()
 
 if not os.path.exists(args.csv):
