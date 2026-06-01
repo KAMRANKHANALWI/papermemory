@@ -14,6 +14,7 @@ from src.services.shared import (
 
 from src.prompts import (
     get_scientific_rag_prompt,
+    get_scientific_rag_prompt_v2,
     get_metadata_prompt,
     get_collection_prompt,
     get_file_specific_prompt,
@@ -333,7 +334,8 @@ async def handle_content_search(
 
     # scope = "across all collections" if is_chatall else f"from {collection_name}"
     # base_prompt = f"You are a document assistant answering from documents {scope}. Use ONLY context information."
-    base_prompt = get_scientific_rag_prompt()
+    # base_prompt = get_scientific_rag_prompt() # v1
+    base_prompt = get_scientific_rag_prompt_v2() 
     system_prompt = build_system_prompt_with_history(
         base_prompt, conversation_history, context
     )
