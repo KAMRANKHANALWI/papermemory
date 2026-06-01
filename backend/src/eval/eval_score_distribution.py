@@ -13,7 +13,7 @@ INPUT_FILE = "Eval_Results/open_ended_eval_results.csv"
 OUTPUT_DIR = "Eval_Results"
 PLOTS_DIR = f"{OUTPUT_DIR}/plots"
 
-LOW_THRESHOLD = 0.2
+LOW_THRESHOLD = 0.3
 
 # =====================================================
 # Create Output Directories
@@ -103,7 +103,7 @@ with open(
     json.dump(summary_json, f, indent=4)
 
 # =====================================================
-# Fixed Bucket Distribution
+# Bucket Distribution
 # =====================================================
 
 bins = [
@@ -133,15 +133,15 @@ bucket_labels = [
     "0.9-1.0",
 ]
 
-fixed_buckets = pd.cut(
+buckets = pd.cut(
     df["answer_correctness"],
     bins=bins,
     labels=bucket_labels,
     include_lowest=True,
 )
 
-fixed_bucket_counts = (
-    fixed_buckets
+bucket_counts = (
+    buckets
     .value_counts()
     .sort_index()
 )
@@ -152,10 +152,10 @@ distribution_json = {
 }
 
 print("\n" + "=" * 60)
-print("FIXED CORRECTNESS DISTRIBUTION")
+print("CORRECTNESS DISTRIBUTION")
 print("=" * 60)
 
-for label, count in fixed_bucket_counts.items():
+for label, count in bucket_counts.items():
 
     percentage = round(
         (count / len(df)) * 100,
@@ -337,24 +337,24 @@ plt.savefig(
 plt.show()
 
 # =====================================================
-# Plot 5 - Fixed Bucket Distribution
+# Plot 5 - Bucket Distribution
 # =====================================================
 
 plt.figure(figsize=(12, 6))
 
-fixed_bucket_counts.plot(
+bucket_counts.plot(
     kind="bar"
 )
 
 plt.title(
-    "Correctness Distribution (Fixed 0.1 Buckets)"
+    "Correctness Distribution (0.1 Buckets)"
 )
 
 plt.xlabel("Correctness Range")
 plt.ylabel("Number of Questions")
 
 for i, count in enumerate(
-    fixed_bucket_counts
+    bucket_counts
 ):
     plt.text(
         i,
@@ -366,7 +366,7 @@ for i, count in enumerate(
 plt.tight_layout()
 
 plt.savefig(
-    f"{PLOTS_DIR}/5_fixed_bucket_distribution.png",
+    f"{PLOTS_DIR}/5_bucket_distribution.png",
     bbox_inches="tight",
 )
 
@@ -412,7 +412,7 @@ print(
 )
 
 print(
-    f"{PLOTS_DIR}/5_fixed_bucket_distribution.png"
+    f"{PLOTS_DIR}/5_bucket_distribution.png"
 )
 
 print("=" * 60)
