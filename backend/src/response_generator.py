@@ -97,6 +97,7 @@ async def generate_chat_response(
 ) -> AsyncGenerator[str, None]:
 
     try:
+        print("\nINSIDE GENERATE_CHAT_RESPONSE\n")
         if not chat_id:
             import uuid
 
@@ -293,6 +294,18 @@ async def handle_file_specific_search(
     # Rerank chunks
     top_chunks = reranker.rerank(message, all_chunks, top_k=AppConfig.TOP_K)
 
+    print("\nTOP CHUNKS AFTER RERANKING")
+    print("=" * 100)
+
+    for i, chunk in enumerate(top_chunks, start=1):
+        print(f"\nChunk #{i}")
+        print(f"Score: {chunk.get('rerank_score', chunk.get('similarity'))}")
+        print(f"Pages: {chunk.get('page_numbers')}")
+
+        preview = chunk["content"][:500]
+        print(preview)
+        print("-" * 50)
+
     # Build context from reranked chunks directly
     context_parts = []
     for chunk in top_chunks:
@@ -319,6 +332,21 @@ async def handle_file_specific_search(
     system_prompt = build_system_prompt_with_history(
         base_prompt, conversation_history, context
     )
+
+    print("\n" + "=" * 100)
+    print("FILE SPECIFIC SEARCH")
+    print("=" * 100)
+
+    print(f"\nQuestion:\n{message}")
+
+    print("\nContext Length:")
+    print(len(context))
+
+    print("\nContext Sent To LLM:")
+    print(context)
+
+    print("\n" + "=" * 100)
+
     messages = [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": message},
@@ -409,7 +437,7 @@ async def handle_content_search(
 
     # scope = "across all collections" if is_chatall else f"from {collection_name}"
     # base_prompt = f"You are a document assistant answering from documents {scope}. Use ONLY context information."
-    
+
     base_prompt = get_scientific_rag_prompt()
     system_prompt = build_system_prompt_with_history(
         base_prompt, conversation_history, context

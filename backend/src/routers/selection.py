@@ -4,6 +4,9 @@ import time
 import json
 import logging
 
+from src.services.shared import reranker
+from src.config import AppConfig
+
 from src.models.selection_models import (
     SelectPDFRequest,
     DeselectPDFRequest,
@@ -21,12 +24,15 @@ from src.services.shared import (
     collection_manager,
     pdf_selection_service,
 )
+
+from src.prompts import get_selected_pdf_prompt
 from typing import Optional
 
 logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/api/selection", tags=["selection"])
 
+TOP_CONTEXT_CHUNKS = 7
 
 @router.post("/{session_id}/select", response_model=PDFSelectionResponse)
 async def select_pdf(session_id: str, request: SelectPDFRequest):
@@ -215,6 +221,13 @@ async def search_selected_pdfs(session_id: str, request: SelectedPDFsSearchReque
             all_collections=all_collections,
             num_results=request.num_results,
         )
+
+        results = reranker.rerank(
+            query=request.query, chunks=results, top_k=AppConfig.TOP_K
+        )
+
+        total_results = len(results)
+
         return SelectedPDFsSearchResponse(
             query=request.query,
             total_results=total_results,
@@ -239,7 +252,10 @@ async def chat_with_selected_pdfs(
     """
     Chat with selected PDFs using streaming response.
 
-    NOTE: This endpoint uses DIRECT vector search (no reranker).
+    NOTE:
+    1. Retrieve candidate chunks using vector search.
+    2. Re-rank candidates using CrossEncoder.
+    3. Send top reranked chunks to the LLM.
     """
 
     async def generate():
@@ -262,9 +278,7 @@ async def chat_with_selected_pdfs(
                 yield f"data: {json.dumps({'type': 'error', 'message': 'No collections available'})}\n\n"
                 return
 
-            # ── 4. Search within selected PDFs only (direct vector search) ─
-            # This uses cosine similarity ranking — NOT the reranker.
-            # Results are filtered to only the PDFs the user selected.
+            # ── 4. Search within selected PDFs only (re-ranked)
             try:
                 context, results, total_results = (
                     pdf_selection_service.search_selected_pdfs(
@@ -274,6 +288,27 @@ async def chat_with_selected_pdfs(
                         num_results=num_results,
                     )
                 )
+
+                # ==========================
+                # RERANK RESULTS
+                # ==========================
+                results = reranker.rerank(
+                    query=query,
+                    chunks=results,
+                    top_k=AppConfig.TOP_K,
+                )
+
+                total_results = len(results)
+
+                # print("\nTOP CHUNKS AFTER RERANKING")
+                # print("=" * 80)
+
+                # for i, chunk in enumerate(results, start=1):
+                #     print(
+                #         f"{i}. score={chunk.get('rerank_score')} "
+                #         f"page={chunk.get('page_numbers')}"
+                #     )
+
                 if total_results == 0:
                     yield f"data: {json.dumps({'type': 'content', 'content': 'No relevant information found in the selected PDFs.'})}\n\n"
                     yield f"data: {json.dumps({'type': 'end'})}\n\n"
@@ -284,7 +319,9 @@ async def chat_with_selected_pdfs(
 
             # ── 5. Build context string from top results ───────────────────
             context_parts = []
-            for i, result in enumerate(results[:10], 1):
+            # for i, result in enumerate(results[:20], 1):
+            # for i, result in enumerate(results, 1):
+            for i, result in enumerate(results[:TOP_CONTEXT_CHUNKS], 1):
                 context_parts.append(
                     f"[Source {i}] From '{result.get('filename', 'Unknown')}' "
                     f"({result.get('collection', '')} collection, "
@@ -302,15 +339,35 @@ async def chat_with_selected_pdfs(
                     "similarity": r.get("similarity", 0),
                     "page_numbers": r.get("page_numbers", ""),
                     "title": r.get("title", ""),
+                    "rerank_score": r.get("rerank_score", 0),
                 }
-                for r in results[:20]
+                for r in results[:TOP_CONTEXT_CHUNKS]
             ]
             yield f"data: {json.dumps({'type': 'sources', 'sources': sources_data})}\n\n"
 
             # ── 7. Stream LLM response token by token ─────────────────────
             full_response = ""
             try:
-                async for chunk in chat_service.generate_response(query, context):
+                print("\nTOP CHUNKS AFTER RERANKING")
+                print("=" * 80)
+
+                for i, chunk in enumerate(results, start=1):
+                    print(
+                        f"{i}. score={chunk.get('rerank_score')} "
+                        f"page={chunk.get('page_numbers')}"
+                    )
+                    
+                print("\nCONTEXT SENT TO LLM")
+                print("=" * 100)
+                print(context)
+                print("=" * 100)
+
+                # async for chunk in chat_service.generate_response(query, context):
+                async for chunk in chat_service.generate_response(
+                    query=query,
+                    context=context,
+                    system_prompt=get_selected_pdf_prompt(),
+                ):
                     # Stop if user closed the browser tab
                     if await request.is_disconnected():
                         logger.info("Client disconnected — stopping stream")

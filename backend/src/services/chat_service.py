@@ -7,6 +7,8 @@ import os
 from dotenv import load_dotenv
 from src.config import AppConfig
 
+from src.prompts import get_selected_pdf_prompt
+
 load_dotenv()
 
 
@@ -105,15 +107,17 @@ class ChatService:
         except Exception:
             return []
 
-    async def generate_response(self, query: str, context: str):
+    async def generate_response(self, query: str, context: str, system_prompt: str):
         """Generate AI response using LLM"""
-        system_prompt = f"""You are a knowledgeable document assistant. Answer questions based only on the provided context.
+        full_system_prompt = f"""
+        {system_prompt}
 
-Context from documents:
-{context}
-"""
+        Context from documents:
+
+        {context}
+        """
         messages = [
-            {"role": "system", "content": system_prompt},
+            {"role": "system", "content": full_system_prompt},
             {"role": "user", "content": query},
         ]
 
