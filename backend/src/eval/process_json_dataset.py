@@ -36,27 +36,6 @@ class RAGDatasetProcessor:
             print(f"Error loading {filepath.name}: {e}")
             return None
 
-    # def extract_test_cases(self, data: Dict, source_file: str) -> List[Dict]:
-    #     """Extract test cases from JSON data"""
-    #     test_cases = []
-
-    #     if "test_cases" not in data or not data["test_cases"]:
-    #         return test_cases
-
-    #     for tc in data["test_cases"]:
-    #         test_case = {
-    #             "id": tc.get("id", ""),
-    #             "question": tc.get("query", ""),
-    #             "reference": tc.get("ground_truth_answer", ""),
-    #             "source_document": data.get("source_document", source_file),
-    #             "expected_documents": tc.get("expected_documents", []),
-    #             "difficulty": tc.get("difficulty", "unknown"),
-    #             "category": tc.get("category", "unknown"),
-    #             "question_type": "open_ended",
-    #         }
-    #         test_cases.append(test_case)
-
-    #     return test_cases
     
     def extract_test_cases(self, data: Dict, source_file: str) -> List[Dict]:
         test_cases = []
@@ -79,39 +58,6 @@ class RAGDatasetProcessor:
 
         return test_cases
 
-    # def extract_mcq_questions(self, data: Dict, source_file: str) -> List[Dict]:
-    #     mcqs = []
-
-    #     if "mcq_questions" not in data or not data["mcq_questions"]:
-    #         return mcqs
-
-    #     for mcq in data["mcq_questions"]:
-    #         options = mcq.get("options", [])
-
-    #         # Safely extract individual options
-    #         option_a = options[0] if len(options) > 0 else ""
-    #         option_b = options[1] if len(options) > 1 else ""
-    #         option_c = options[2] if len(options) > 2 else ""
-    #         option_d = options[3] if len(options) > 3 else ""
-
-    #         mcq_case = {
-    #             "id": mcq.get("id", ""),
-    #             "question": mcq.get("question", ""),
-    #             "option_a": option_a,
-    #             "option_b": option_b,
-    #             "option_c": option_c,
-    #             "option_d": option_d,
-    #             "correct_option": mcq.get("correct_answer", ""),
-    #             "explanation": mcq.get("explanation", ""),
-    #             "difficulty": mcq.get("difficulty", "unknown"),
-    #             "category": mcq.get("category", "unknown"),
-    #             "question_type": "mcq",
-    #             "source_document": data.get("source_document", source_file),
-    #             "expected_documents": mcq.get("expected_documents", []),
-    #         }
-    #         mcqs.append(mcq_case)
-
-    #     return mcqs
     
     def extract_mcq_questions(self, data: Dict, source_file: str) -> List[Dict]:
         mcqs = []
