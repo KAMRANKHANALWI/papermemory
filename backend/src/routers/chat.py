@@ -7,7 +7,7 @@ from src.models import (
     ChatRequest,
 )
 from src.services.shared import query_classifier
-from src.utils.response_generator import (
+from src.response_generator import (
     generate_chat_response,
     generate_chat_response_eval,
 )
