@@ -12,6 +12,13 @@ from src.services.shared import (
     query_classifier,
 )
 
+from src.prompts import (
+    get_scientific_rag_prompt,
+    get_metadata_prompt,
+    get_collection_prompt,
+    get_file_specific_prompt,
+)
+
 logger = logging.getLogger(__name__)
 
 
@@ -150,7 +157,6 @@ async def generate_chat_response(
 
 async def handle_metadata_query(
     message,
-    classification,
     collection_name,
     is_chatall,
     conversation_history,
@@ -170,7 +176,8 @@ async def handle_metadata_query(
         filenames, stats = metadata_service.get_single_collection_pdfs(vectorstore)
         context = metadata_service.format_pdf_list_for_llm(filenames, stats)
 
-    base_prompt = "You are a document assistant. Provide clear, friendly responses about available documents."
+    # base_prompt = "You are a document assistant. Provide clear, friendly responses about available documents."
+    base_prompt = get_metadata_prompt()
     system_prompt = build_system_prompt_with_history(
         base_prompt, conversation_history, context
     )
@@ -193,7 +200,8 @@ async def handle_list_collections(message, conversation_history, request=None):
         lines
     )
 
-    base_prompt = "You are a document assistant. Provide clear responses about available collections."
+    # base_prompt = "You are a document assistant. Provide clear responses about available collections."
+    base_prompt = get_collection_prompt()
     system_prompt = build_system_prompt_with_history(
         base_prompt, conversation_history, context
     )
@@ -251,7 +259,8 @@ async def handle_file_specific_search(
     ]
     yield f"data: {json.dumps({'type': 'sources', 'sources': sources})}\n\n"
 
-    base_prompt = f"You are a document assistant answering about: {filename}. Use ONLY context information."
+    # base_prompt = f"You are a document assistant answering about: {filename}. Use ONLY context information."
+    base_prompt = get_file_specific_prompt(filename)
     system_prompt = build_system_prompt_with_history(
         base_prompt, conversation_history, context
     )
@@ -322,8 +331,9 @@ async def handle_content_search(
     context = "\n\n".join(context_parts)
     yield f"data: {json.dumps({'type': 'sources', 'sources': all_results})}\n\n"
 
-    scope = "across all collections" if is_chatall else f"from {collection_name}"
-    base_prompt = f"You are a document assistant answering from documents {scope}. Use ONLY context information."
+    # scope = "across all collections" if is_chatall else f"from {collection_name}"
+    # base_prompt = f"You are a document assistant answering from documents {scope}. Use ONLY context information."
+    base_prompt = get_scientific_rag_prompt()
     system_prompt = build_system_prompt_with_history(
         base_prompt, conversation_history, context
     )
