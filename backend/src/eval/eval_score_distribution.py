@@ -39,14 +39,10 @@ print("=" * 60)
 # Split by Threshold
 # =====================================================
 
-low = (
-    df[df["answer_correctness"] < LOW_THRESHOLD]
-    .sort_values("answer_correctness")
-)
+low = df[df["answer_correctness"] < LOW_THRESHOLD].sort_values("answer_correctness")
 
-high = (
-    df[df["answer_correctness"] >= LOW_THRESHOLD]
-    .sort_values("answer_correctness", ascending=False)
+high = df[df["answer_correctness"] >= LOW_THRESHOLD].sort_values(
+    "answer_correctness", ascending=False
 )
 
 low.to_csv(
@@ -59,13 +55,9 @@ high.to_csv(
     index=False,
 )
 
-print(
-    f"Low  (0.0 - {LOW_THRESHOLD}) : {len(low)} rows"
-)
+print(f"Low  (0.0 - {LOW_THRESHOLD}) : {len(low)} rows")
 
-print(
-    f"High ({LOW_THRESHOLD} - 1.0) : {len(high)} rows"
-)
+print(f"High ({LOW_THRESHOLD} - 1.0) : {len(high)} rows")
 
 # =====================================================
 # Descriptive Statistics
@@ -89,12 +81,8 @@ summary_json = {
     "max": float(df["answer_correctness"].max()),
     "q25": float(df["answer_correctness"].quantile(0.25)),
     "q75": float(df["answer_correctness"].quantile(0.75)),
-    "below_0_2": int(
-        len(df[df["answer_correctness"] < 0.2])
-    ),
-    "above_0_8": int(
-        len(df[df["answer_correctness"] >= 0.8])
-    ),
+    "below_0_2": int(len(df[df["answer_correctness"] < 0.2])),
+    "above_0_8": int(len(df[df["answer_correctness"] >= 0.8])),
 }
 
 with open(
@@ -104,7 +92,7 @@ with open(
     json.dump(summary_json, f, indent=4)
 
 # =====================================================
-# Fixed Bucket Distribution
+# Bucket Distribution
 # =====================================================
 
 bins = [
@@ -134,18 +122,14 @@ bucket_labels = [
     "0.9-1.0",
 ]
 
-fixed_buckets = pd.cut(
+buckets = pd.cut(
     df["answer_correctness"],
     bins=bins,
     labels=bucket_labels,
     include_lowest=True,
 )
 
-fixed_bucket_counts = (
-    fixed_buckets
-    .value_counts()
-    .sort_index()
-)
+bucket_counts = buckets.value_counts().sort_index()
 
 distribution_json = {
     "total_rows": int(len(df)),
@@ -153,10 +137,10 @@ distribution_json = {
 }
 
 print("\n" + "=" * 60)
-print("FIXED CORRECTNESS DISTRIBUTION")
+print("CORRECTNESS DISTRIBUTION")
 print("=" * 60)
 
-for label, count in fixed_bucket_counts.items():
+for label, count in bucket_counts.items():
 
     percentage = round(
         (count / len(df)) * 100,
@@ -168,11 +152,7 @@ for label, count in fixed_bucket_counts.items():
         "percentage": percentage,
     }
 
-    print(
-        f"{label:10s} -> "
-        f"{count:4d} rows "
-        f"({percentage:6.2f}%)"
-    )
+    print(f"{label:10s} -> " f"{count:4d} rows " f"({percentage:6.2f}%)")
 
 with open(
     f"{OUTPUT_DIR}/correctness_distribution.json",
@@ -235,9 +215,7 @@ plt.show()
 # Plot 3 - Cumulative Distribution
 # =====================================================
 
-scores = np.sort(
-    df["answer_correctness"]
-)
+scores = np.sort(df["answer_correctness"])
 
 cdf = np.arange(
     1,
@@ -252,9 +230,7 @@ plt.plot(
     linewidth=2,
 )
 
-plt.title(
-    "Cumulative Distribution of Correctness"
-)
+plt.title("Cumulative Distribution of Correctness")
 
 plt.xlabel("Correctness Score")
 plt.ylabel("Fraction of Questions")
@@ -281,34 +257,11 @@ quality_labels = [
 ]
 
 quality_counts = [
-    len(
-        df[
-            df["answer_correctness"] < 0.2
-        ]
-    ),
-    len(
-        df[
-            (df["answer_correctness"] >= 0.2)
-            & (df["answer_correctness"] < 0.4)
-        ]
-    ),
-    len(
-        df[
-            (df["answer_correctness"] >= 0.4)
-            & (df["answer_correctness"] < 0.6)
-        ]
-    ),
-    len(
-        df[
-            (df["answer_correctness"] >= 0.6)
-            & (df["answer_correctness"] < 0.8)
-        ]
-    ),
-    len(
-        df[
-            df["answer_correctness"] >= 0.8
-        ]
-    ),
+    len(df[df["answer_correctness"] < 0.2]),
+    len(df[(df["answer_correctness"] >= 0.2) & (df["answer_correctness"] < 0.4)]),
+    len(df[(df["answer_correctness"] >= 0.4) & (df["answer_correctness"] < 0.6)]),
+    len(df[(df["answer_correctness"] >= 0.6) & (df["answer_correctness"] < 0.8)]),
+    len(df[df["answer_correctness"] >= 0.8]),
 ]
 
 plt.figure(figsize=(10, 6))
@@ -338,25 +291,19 @@ plt.savefig(
 plt.show()
 
 # =====================================================
-# Plot 5 - Fixed Bucket Distribution
+# Plot 5 - Bucket Distribution
 # =====================================================
 
 plt.figure(figsize=(12, 6))
 
-fixed_bucket_counts.plot(
-    kind="bar"
-)
+bucket_counts.plot(kind="bar")
 
-plt.title(
-    "Correctness Distribution (Fixed 0.1 Buckets)"
-)
+plt.title("Correctness Distribution (0.1 Buckets)")
 
 plt.xlabel("Correctness Range")
 plt.ylabel("Number of Questions")
 
-for i, count in enumerate(
-    fixed_bucket_counts
-):
+for i, count in enumerate(bucket_counts):
     plt.text(
         i,
         count + 5,
@@ -367,7 +314,7 @@ for i, count in enumerate(
 plt.tight_layout()
 
 plt.savefig(
-    f"{PLOTS_DIR}/5_fixed_bucket_distribution.png",
+    f"{PLOTS_DIR}/5_bucket_distribution.png",
     bbox_inches="tight",
 )
 
@@ -381,39 +328,21 @@ print("\n" + "=" * 60)
 print("FILES GENERATED")
 print("=" * 60)
 
-print(
-    f"{OUTPUT_DIR}/low_correctness_0_to_{LOW_THRESHOLD}.csv"
-)
-print(
-    f"{OUTPUT_DIR}/high_correctness_{LOW_THRESHOLD}_to_1.csv"
-)
+print(f"{OUTPUT_DIR}/low_correctness_0_to_{LOW_THRESHOLD}.csv")
+print(f"{OUTPUT_DIR}/high_correctness_{LOW_THRESHOLD}_to_1.csv")
 
-print(
-    f"{OUTPUT_DIR}/evaluation_summary.json"
-)
+print(f"{OUTPUT_DIR}/evaluation_summary.json")
 
-print(
-    f"{OUTPUT_DIR}/correctness_distribution.json"
-)
+print(f"{OUTPUT_DIR}/correctness_distribution.json")
 
-print(
-    f"{PLOTS_DIR}/1_histogram.png"
-)
+print(f"{PLOTS_DIR}/1_histogram.png")
 
-print(
-    f"{PLOTS_DIR}/2_boxplot.png"
-)
+print(f"{PLOTS_DIR}/2_boxplot.png")
 
-print(
-    f"{PLOTS_DIR}/3_cdf.png"
-)
+print(f"{PLOTS_DIR}/3_cdf.png")
 
-print(
-    f"{PLOTS_DIR}/4_quality_buckets.png"
-)
+print(f"{PLOTS_DIR}/4_quality_buckets.png")
 
-print(
-    f"{PLOTS_DIR}/5_fixed_bucket_distribution.png"
-)
+print(f"{PLOTS_DIR}/5_bucket_distribution.png")
 
 print("=" * 60)
