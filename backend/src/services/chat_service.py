@@ -7,8 +7,6 @@ import os
 from dotenv import load_dotenv
 from src.config import AppConfig
 
-from src.prompts import get_selected_pdf_prompt
-
 load_dotenv()
 
 
