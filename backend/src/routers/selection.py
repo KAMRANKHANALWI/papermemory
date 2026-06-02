@@ -21,6 +21,8 @@ from src.services.shared import (
     collection_manager,
     pdf_selection_service,
 )
+
+from src.prompts import get_selected_pdf_prompt
 from typing import Optional
 
 logger = logging.getLogger(__name__)
@@ -233,7 +235,7 @@ async def chat_with_selected_pdfs(
     session_id: str,
     query: str = Query(...),
     chat_id: Optional[str] = Query(None),
-    num_results: int = Query(25),
+    num_results: int = Query(20),
     request: Request = None,
 ):
     async def generate():
@@ -273,7 +275,7 @@ async def chat_with_selected_pdfs(
 
             # Build context from results
             context_parts = []
-            for i, result in enumerate(results[:10], 1):
+            for i, result in enumerate(results, 1):
                 context_parts.append(
                     f"[Source {i}] From '{result.get('filename', 'Unknown')}' "
                     f"({result.get('collection', '')} collection, "
@@ -292,14 +294,21 @@ async def chat_with_selected_pdfs(
                     "page_numbers": r.get("page_numbers", ""),
                     "title": r.get("title", ""),
                 }
-                for r in results[:20]
+                for r in results
             ]
             yield f"data: {json.dumps({'type': 'sources', 'sources': sources_data})}\n\n"
 
             # Stream LLM response
             full_response = ""
             try:
-                async for chunk in chat_service.generate_response(query, context):
+                system_prompt = f"""
+                {get_selected_pdf_prompt()}
+
+                Context:
+
+                {context}
+                """
+                async for chunk in chat_service.generate_response(query=query, system_prompt=system_prompt):
                     if await request.is_disconnected():
                         logger.info("Client disconnected")
                         break

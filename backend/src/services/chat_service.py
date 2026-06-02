@@ -93,12 +93,8 @@ class ChatService:
         except Exception:
             return []
 
-    async def generate_response(self, query: str, context: str):
-        system_prompt = f"""You are a knowledgeable document assistant. Answer questions based only on the provided context.
-
-Context from documents:
-{context}
-"""
+    async def generate_response(self, query: str, system_prompt: str):
+        
         messages = [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": query},
