@@ -13,7 +13,7 @@ INPUT_FILE = "Eval_Results/open_ended_eval_results.csv"
 OUTPUT_DIR = "Eval_Results"
 PLOTS_DIR = f"{OUTPUT_DIR}/plots"
 
-LOW_THRESHOLD = 0.3
+LOW_THRESHOLD = 0.2
 
 # =====================================================
 # Create Output Directories
