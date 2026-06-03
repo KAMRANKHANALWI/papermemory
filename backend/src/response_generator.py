@@ -1,8 +1,3 @@
-"""
-Response generator for chat endpoints with query classification, memory,
-and parent-page retrieval support.
-"""
-
 import json
 import logging
 from typing import Optional, AsyncGenerator, Dict, Any, List
@@ -27,6 +22,13 @@ from src.prompts import (
 
 from src.services.chat_orchestrator import ChatOrchestrator
 from src.services.retrieval_service import RetrievalService
+
+orchestrator = ChatOrchestrator(
+    chat_service=chat_service,
+    memory_service=memory_service,
+    metadata_service=metadata_service,
+    file_search_service=file_search_service,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -85,7 +87,7 @@ async def generate_chat_response(
         full_response = ""
 
         if classification in ["list_pdfs", "count_pdfs"]:
-            handler = handle_metadata_query(
+            handler = orchestrator.handle_metadata_query(
                 message=message,
                 classification=classification,
                 collection_name=collection_name,
@@ -95,14 +97,23 @@ async def generate_chat_response(
             )
         elif classification == "list_collections" and is_chatall:
             handler = handle_list_collections(message, conversation_history, request)
+
         elif classification == "file_specific_search" and filename:
-            handler = handle_file_specific_search(
-                message,
-                filename,
-                collection_name,
-                is_chatall,
-                conversation_history,
-                request,
+
+            from src.services.shared import reranker
+
+            handler = orchestrator.handle_file_specific_search(
+                message=message,
+                filename=filename,
+                collection_name=collection_name,
+                is_chatall=is_chatall,
+                conversation_history=conversation_history,
+                get_vectorstore=get_vectorstore,
+                file_specific_prompt=get_file_specific_prompt(filename),
+                content_search_handler=handle_content_search,
+                retrieval_service=RetrievalService,
+                reranker=reranker,
+                request=request,
             )
         else:
             handler = handle_content_search(
@@ -133,58 +144,6 @@ async def generate_chat_response(
 # -------------------------
 
 
-async def handle_metadata_query(
-    message: str,
-    classification: str,
-    collection_name: Optional[str],
-    is_chatall: bool,
-    conversation_history: List[Dict],
-    request: Request = None,
-) -> AsyncGenerator[str, None]:
-
-    if is_chatall:
-
-        vectorstores = {
-            col.name: get_vectorstore(col.name)
-            for col in chat_service.chroma_client.list_collections()
-        }
-
-        all_pdfs, stats = metadata_service.get_chatall_collection_pdfs(vectorstores)
-
-        filenames = []
-
-        for pdfs in all_pdfs.values():
-            filenames.extend(pdfs)
-
-        filenames.sort()
-
-    else:
-
-        if not collection_name:
-            raise ValueError("Collection name required")
-
-        vectorstore = get_vectorstore(collection_name)
-
-        filenames, stats = metadata_service.get_single_collection_pdfs(vectorstore)
-
-    direct_response = metadata_service.build_metadata_response(
-        classification=classification,
-        query=message,
-        filenames=filenames,
-        stats=stats,
-    )
-
-    if direct_response:
-
-        yield (
-            f"data: "
-            f"{json.dumps({'type': 'content', 'content': direct_response})}"
-            f"\n\n"
-        )
-
-        return
-
-
 async def handle_list_collections(
     message: str,
     conversation_history: List[Dict],
@@ -206,82 +165,6 @@ async def handle_list_collections(
     system_prompt = ChatOrchestrator.build_system_prompt_with_history(
         base_prompt, conversation_history, context
     )
-
-    messages = [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": message},
-    ]
-
-    async for chunk in ChatOrchestrator.stream_llm_response(
-        chat_service.llm.astream(messages), request
-    ):
-        yield chunk
-
-
-async def handle_file_specific_search(
-    message: str,
-    filename: str,
-    collection_name: Optional[str],
-    is_chatall: bool,
-    conversation_history: List[Dict],
-    request: Request = None,
-) -> AsyncGenerator[str, None]:
-
-    from src.services.shared import reranker
-
-    context, sources, found = RetrievalService.retrieve_file_content(
-        message=message,
-        filename=filename,
-        collection_name=collection_name,
-        is_chatall=is_chatall,
-        chroma_client=chat_service.chroma_client,
-        get_vectorstore=get_vectorstore,
-        file_search_service=file_search_service,
-        reranker=reranker,
-        logger=logger,
-    )
-
-    if not found:
-
-        message_text = f'File "{filename}" not found. ' f"Searching all documents..."
-
-        yield (
-            f"data: "
-            f"{json.dumps({'type': 'content', 'content': message_text})}"
-            f"\n\n"
-        )
-
-        async for event in handle_content_search(
-            message,
-            collection_name,
-            is_chatall,
-            conversation_history,
-            request,
-        ):
-            yield event
-
-        return
-
-    yield (f"data: " f"{json.dumps({'type': 'sources', 'sources': sources})}" f"\n\n")
-
-    base_prompt = get_file_specific_prompt(filename)
-    system_prompt = ChatOrchestrator.build_system_prompt_with_history(
-        base_prompt, conversation_history, context
-    )
-
-    print("\n" + "=" * 100)
-    print("FILE SPECIFIC SEARCH")
-    print("=" * 100)
-
-    print(f"\nQuestion:\n{message}")
-
-    print("\nContext Length:")
-    print(len(context))
-
-    print("\nContext Sent To LLM:")
-    print(context)
-
-    print("\n" + "=" * 100)
 
     messages = [
         {"role": "system", "content": system_prompt},
