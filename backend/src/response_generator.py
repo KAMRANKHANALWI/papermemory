@@ -86,12 +86,12 @@ async def generate_chat_response(
 
         if classification in ["list_pdfs", "count_pdfs"]:
             handler = handle_metadata_query(
-                message,
-                classification,
-                collection_name,
-                is_chatall,
-                conversation_history,
-                request,
+                message=message,
+                classification=classification,
+                collection_name=collection_name,
+                is_chatall=is_chatall,
+                conversation_history=conversation_history,
+                request=request,
             )
         elif classification == "list_collections" and is_chatall:
             handler = handle_list_collections(message, conversation_history, request)
@@ -135,6 +135,7 @@ async def generate_chat_response(
 
 async def handle_metadata_query(
     message: str,
+    classification: str,
     collection_name: Optional[str],
     is_chatall: bool,
     conversation_history: List[Dict],
@@ -142,34 +143,46 @@ async def handle_metadata_query(
 ) -> AsyncGenerator[str, None]:
 
     if is_chatall:
+
         vectorstores = {
             col.name: get_vectorstore(col.name)
             for col in chat_service.chroma_client.list_collections()
         }
+
         all_pdfs, stats = metadata_service.get_chatall_collection_pdfs(vectorstores)
-        context = metadata_service.format_chatall_pdf_list_for_llm(all_pdfs, stats)
+
+        filenames = []
+
+        for pdfs in all_pdfs.values():
+            filenames.extend(pdfs)
+
+        filenames.sort()
+
     else:
+
         if not collection_name:
             raise ValueError("Collection name required")
-        vectorstore = get_vectorstore(collection_name)
-        filenames, stats = metadata_service.get_single_collection_pdfs(vectorstore)
-        context = metadata_service.format_pdf_list_for_llm(filenames, stats)
 
-    # base_prompt = "You are a document assistant. Provide clear, friendly responses about available documents."
-    base_prompt = get_metadata_prompt()
-    system_prompt = ChatOrchestrator.build_system_prompt_with_history(
-        base_prompt, conversation_history, context
+        vectorstore = get_vectorstore(collection_name)
+
+        filenames, stats = metadata_service.get_single_collection_pdfs(vectorstore)
+
+    direct_response = metadata_service.build_metadata_response(
+        classification=classification,
+        query=message,
+        filenames=filenames,
+        stats=stats,
     )
 
-    messages = [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": message},
-    ]
+    if direct_response:
 
-    async for chunk in ChatOrchestrator.stream_llm_response(
-        chat_service.llm.astream(messages), request
-    ):
-        yield chunk
+        yield (
+            f"data: "
+            f"{json.dumps({'type': 'content', 'content': direct_response})}"
+            f"\n\n"
+        )
+
+        return
 
 
 async def handle_list_collections(
@@ -216,80 +229,41 @@ async def handle_file_specific_search(
 
     from src.services.shared import reranker
 
-    if is_chatall:
-        vectorstores = {
-            col.name: get_vectorstore(col.name)
-            for col in chat_service.chroma_client.list_collections()
-        }
-        context, results, found, _ = file_search_service.search_specific_file_chatall(
-            vectorstores, filename, message, num_results=AppConfig.RERANKING_SAMPLE_SIZE
-        )
-        all_chunks = results
-    else:
-        if not collection_name:
-            raise ValueError("Collection name required")
-        vectorstore = get_vectorstore(collection_name)
-        raw_results = vectorstore.similarity_search_with_score(
-            message, k=AppConfig.RERANKING_SAMPLE_SIZE, filter={"filename": filename}
-        )
-        all_chunks = [
-            {
-                "content": doc.page_content,
-                "filename": doc.metadata.get("filename", "unknown"),
-                "page_numbers": doc.metadata.get("page_numbers", "[]"),
-                "title": doc.metadata.get("title", "No Title"),
-                "similarity": round(1 - float(score), 4),
-                "collection": collection_name,
-            }
-            for doc, score in raw_results
-        ]
+    context, sources, found = RetrievalService.retrieve_file_content(
+        message=message,
+        filename=filename,
+        collection_name=collection_name,
+        is_chatall=is_chatall,
+        chroma_client=chat_service.chroma_client,
+        get_vectorstore=get_vectorstore,
+        file_search_service=file_search_service,
+        reranker=reranker,
+        logger=logger,
+    )
 
-    if not all_chunks:
-        message_text = f'File "{filename}" not found. Searching all documents...'
-        yield f"data: {json.dumps({'type': 'content', 'content': message_text})}\n\n"
+    if not found:
+
+        message_text = f'File "{filename}" not found. ' f"Searching all documents..."
+
+        yield (
+            f"data: "
+            f"{json.dumps({'type': 'content', 'content': message_text})}"
+            f"\n\n"
+        )
+
         async for event in handle_content_search(
-            message, collection_name, is_chatall, conversation_history, request
+            message,
+            collection_name,
+            is_chatall,
+            conversation_history,
+            request,
         ):
             yield event
+
         return
 
-    # Rerank chunks
-    top_chunks = reranker.rerank(message, all_chunks, top_k=AppConfig.TOP_K)
+    yield (f"data: " f"{json.dumps({'type': 'sources', 'sources': sources})}" f"\n\n")
 
-    print("\nTOP CHUNKS AFTER RERANKING")
-    print("=" * 100)
-
-    for i, chunk in enumerate(top_chunks, start=1):
-        print(f"\nChunk #{i}")
-        print(f"Score: {chunk.get('rerank_score', chunk.get('similarity'))}")
-        print(f"Pages: {chunk.get('page_numbers')}")
-
-        preview = chunk["content"][:500]
-        print(preview)
-        print("-" * 50)
-
-    # Build context from reranked chunks directly
-    context_parts = []
-    for chunk in top_chunks:
-        header = f"[Source: {chunk['filename']} | Pages {chunk['page_numbers']}]"
-        context_parts.append(f"{header}\n{chunk['content']}")
-    context = "\n\n---\n\n".join(context_parts)
-
-    sources = [
-        {
-            "content": c["content"],
-            "filename": c["filename"],
-            "collection": c.get("collection", collection_name),
-            "page_numbers": c["page_numbers"],
-            "similarity": c.get("rerank_score", c["similarity"]),
-            "rerank_score": c.get("rerank_score", c["similarity"]),
-            "title": c.get("title", "No Title"),
-        }
-        for c in top_chunks
-    ]
-    yield f"data: {json.dumps({'type': 'sources', 'sources': sources})}\n\n"
-
-    # base_prompt = f"You are a document assistant answering about: {filename}. Use ONLY context information."
     base_prompt = get_file_specific_prompt(filename)
     system_prompt = ChatOrchestrator.build_system_prompt_with_history(
         base_prompt, conversation_history, context
