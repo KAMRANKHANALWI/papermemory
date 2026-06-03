@@ -23,6 +23,9 @@ EXAMPLES:
 User: "List all the PDFs you have"
 Classification: list_pdfs
 
+User: "name of the pdf please"
+Classification: list_pdfs
+
 User: "What documents are available?"
 Classification: list_pdfs
 
@@ -32,7 +35,25 @@ Classification: list_pdfs
 User: "How many PDFs do you have?"
 Classification: count_pdfs
 
+User: "Number of PDFs"
+Classification: count_pdfs
+
 User: "What collections are there?"
+Classification: list_collections
+
+User: "how many colllections you have?"
+Classification: list_collections
+
+User: "show me the collection"
+Classification: list_collections
+
+User: "which collection?"
+Classification: list_collections
+
+User: "collections list please"
+Classification: list_collections
+
+User: "name of the collection please"
 Classification: list_collections
 
 User: "What does protein_interaction.pdf say about databases?"

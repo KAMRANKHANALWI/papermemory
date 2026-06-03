@@ -15,11 +15,14 @@ from src.models.selection_models import (
     SelectionStatsResponse,
     SelectedPDFInfo,
 )
+
 from src.services.shared import (
     chat_service,
     memory_service,
     collection_manager,
     pdf_selection_service,
+    query_classifier,
+    metadata_service,
 )
 
 from src.prompts import get_selected_pdf_prompt
@@ -246,6 +249,39 @@ async def chat_with_selected_pdfs(
             session = pdf_selection_service.get_or_create_session(session_id)
             if session.get_selection_count() == 0:
                 yield f"data: {json.dumps({'type': 'error', 'message': 'Please select PDFs first'})}\n\n"
+                return
+            
+            selection_data = session.to_dict()
+
+            classification, _ = query_classifier.classify_query(
+                query,
+                is_chatall_mode=False,
+            )
+
+            if classification in ["count_pdfs", "list_pdfs"]:
+
+                filenames = [
+                    pdf["filename"]
+                    for pdf in selection_data["selected_pdfs"]
+                ]
+
+                stats = {
+                    "total_pdfs": len(filenames)
+                }
+
+                response = metadata_service.build_metadata_response(
+                    classification=classification,
+                    query=query,
+                    filenames=filenames,
+                    stats=stats,
+                )
+
+                yield (
+                    f"data: {json.dumps({'type': 'content', 'content': response})}\n\n"
+                )
+
+                yield f"data: {json.dumps({'type': 'end'})}\n\n"
+
                 return
 
             all_collections = collection_manager.get_all_collections_vectorstores(

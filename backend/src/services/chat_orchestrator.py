@@ -3,6 +3,12 @@ import logging
 from typing import List, Dict
 from fastapi import Request
 
+from src.services.retrieval_service import RetrievalService
+
+from src.prompts import (
+    get_scientific_rag_prompt_v2,
+)
+
 logger = logging.getLogger(__name__)
 
 
@@ -84,12 +90,10 @@ class ChatOrchestrator:
     async def handle_metadata_query(
         self,
         message,
+        classification,
         collection_name,
         is_chatall,
-        conversation_history,
         get_vectorstore,
-        metadata_prompt,
-        request=None,
     ):
         if is_chatall:
             vectorstores = {
@@ -101,10 +105,12 @@ class ChatOrchestrator:
                 vectorstores
             )
 
-            context = self.metadata_service.format_chatall_pdf_list_for_llm(
-                all_pdfs,
-                stats,
-            )
+            filenames = []
+
+            for pdfs in all_pdfs.values():
+                filenames.extend(pdfs)
+
+            filenames.sort()
 
         else:
             if not collection_name:
@@ -116,27 +122,16 @@ class ChatOrchestrator:
                 vectorstore
             )
 
-            context = self.metadata_service.format_pdf_list_for_llm(
-                filenames,
-                stats,
-            )
-
-        system_prompt = self.build_system_prompt_with_history(
-            metadata_prompt,
-            conversation_history,
-            context,
+        response = self.metadata_service.build_metadata_response(
+            classification=classification,
+            query=message,
+            filenames=filenames,
+            stats=stats,
         )
 
-        messages = [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": message},
-        ]
-
-        async for chunk in self.stream_llm_response(
-            self.chat_service.llm.astream(messages),
-            request,
-        ):
-            yield chunk
+        yield (
+            f"data: {json.dumps({'type': 'content', 'content': response})}\n\n"
+        )
 
     async def handle_list_collections(
         self,
@@ -174,7 +169,7 @@ class ChatOrchestrator:
             request,
         ):
             yield chunk
-            
+
     async def handle_file_specific_search(
         self,
         message,
@@ -184,12 +179,13 @@ class ChatOrchestrator:
         conversation_history,
         get_vectorstore,
         file_specific_prompt,
+        scientific_prompt,
         content_search_handler,
         request=None,
     ):
 
         filename = filename.strip() if filename else filename
-        
+
         if is_chatall:
             vectorstores = {
                 col.name: get_vectorstore(col.name)
@@ -211,31 +207,29 @@ class ChatOrchestrator:
 
             vectorstore = get_vectorstore(collection_name)
 
-            context, results, found = (
-                self.file_search_service.search_specific_file(
-                    vectorstore,
-                    filename,
-                    message,
-                    num_results=10,
-                    collection_name=collection_name,
-                )
+            context, results, found = self.file_search_service.search_specific_file(
+                vectorstore,
+                filename,
+                message,
+                num_results=10,
+                collection_name=collection_name,
             )
 
         if not found:
-            not_found_msg = (
-                f'File "{filename}" not found. Searching all documents...'
-            )
+            not_found_msg = f'File "{filename}" not found. Searching all documents...'
 
             yield (
                 f"data: {json.dumps({'type': 'content', 'content': not_found_msg})}\n\n"
             )
 
             async for event in content_search_handler(
-                message,
-                collection_name,
-                is_chatall,
-                conversation_history,
-                request,
+                message=message,
+                collection_name=collection_name,
+                is_chatall=is_chatall,
+                conversation_history=conversation_history,
+                get_vectorstore=get_vectorstore,
+                scientific_prompt=get_scientific_rag_prompt_v2(),
+                request=request,
             ):
                 yield event
 
@@ -253,12 +247,48 @@ class ChatOrchestrator:
             for r in results
         ]
 
-        yield (
-            f"data: {json.dumps({'type': 'sources', 'sources': sources})}\n\n"
-        )
+        yield (f"data: {json.dumps({'type': 'sources', 'sources': sources})}\n\n")
 
         system_prompt = self.build_system_prompt_with_history(
             file_specific_prompt,
+            conversation_history,
+            context,
+        )
+
+        messages = [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": message},
+        ]
+
+        async for chunk in self.stream_llm_response(
+            self.chat_service.llm.astream(messages),
+            request,
+        ):
+            yield chunk
+
+    async def handle_content_search(
+        self,
+        message,
+        collection_name,
+        is_chatall,
+        conversation_history,
+        get_vectorstore,
+        scientific_prompt,
+        request=None,
+    ):
+        context, all_results = RetrievalService.retrieve_content(
+            message=message,
+            is_chatall=is_chatall,
+            collection_name=collection_name,
+            chroma_client=self.chat_service.chroma_client,
+            get_vectorstore=get_vectorstore,
+            logger=logger,
+        )
+
+        yield (f"data: {json.dumps({'type': 'sources', 'sources': all_results})}\n\n")
+
+        system_prompt = self.build_system_prompt_with_history(
+            scientific_prompt,
             conversation_history,
             context,
         )

@@ -13,9 +13,7 @@ from src.services.shared import (
 )
 
 from src.prompts import (
-    get_scientific_rag_prompt,
     get_scientific_rag_prompt_v2,
-    get_metadata_prompt,
     get_collection_prompt,
     get_file_specific_prompt,
 )
@@ -82,12 +80,10 @@ async def generate_chat_response(
         if classification in ["list_pdfs", "count_pdfs"]:
             handler = orchestrator.handle_metadata_query(
                 message=message,
+                classification=classification,
                 collection_name=collection_name,
                 is_chatall=is_chatall,
-                conversation_history=conversation_history,
                 get_vectorstore=get_vectorstore,
-                metadata_prompt=get_metadata_prompt(),
-                request=request,
             )
         elif classification == "list_collections" and is_chatall:
             handler = orchestrator.handle_list_collections(
@@ -105,12 +101,19 @@ async def generate_chat_response(
                 conversation_history=conversation_history,
                 get_vectorstore=get_vectorstore,
                 file_specific_prompt=get_file_specific_prompt(filename),
-                content_search_handler=handle_content_search,
+                scientific_prompt=get_scientific_rag_prompt_v2(),
+                content_search_handler=orchestrator.handle_content_search,
                 request=request,
             )
         else:
-            handler = handle_content_search(
-                message, collection_name, is_chatall, conversation_history, request
+            handler = orchestrator.handle_content_search(
+                message=message,
+                collection_name=collection_name,
+                is_chatall=is_chatall,
+                conversation_history=conversation_history,
+                get_vectorstore=get_vectorstore,
+                scientific_prompt=get_scientific_rag_prompt_v2(),
+                request=request,
             )
 
         async for event in handler:
@@ -130,34 +133,6 @@ async def generate_chat_response(
     except Exception as e:
         logger.error("Error in generate_chat_response", exc_info=True)
         yield f"data: {json.dumps({'type': 'error', 'message': str(e)})}\n\n"
-
-
-async def handle_content_search(
-    message, collection_name, is_chatall, conversation_history, request=None
-):
-    context, all_results = RetrievalService.retrieve_content(
-        message=message,
-        is_chatall=is_chatall,
-        collection_name=collection_name,
-        chroma_client=chat_service.chroma_client,
-        get_vectorstore=get_vectorstore,
-        logger=logger,
-    )
-    yield f"data: {json.dumps({'type': 'sources', 'sources': all_results})}\n\n"
-
-    base_prompt = get_scientific_rag_prompt_v2()
-    system_prompt = ChatOrchestrator.build_system_prompt_with_history(
-        base_prompt, conversation_history, context
-    )
-    messages = [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": message},
-    ]
-
-    async for chunk in ChatOrchestrator.stream_llm_response(
-        chat_service.llm.astream(messages), request
-    ):
-        yield chunk
 
 
 async def generate_chat_response_eval(

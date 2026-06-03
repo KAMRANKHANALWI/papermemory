@@ -4,10 +4,55 @@ Metadata service for retrieving PDF and collection information
 
 from typing import List, Dict, Tuple
 from langchain_chroma import Chroma
+import re
 
 
 class MetadataService:
     """Service for retrieving metadata about PDFs and collections"""
+
+    @staticmethod
+    def build_metadata_response(
+        classification: str,
+        query: str,
+        filenames: List[str],
+        stats: Dict,
+    ) -> str | None:
+
+        if classification == "count_pdfs":
+
+            total_pdfs = stats.get(
+                "total_pdfs",
+                stats.get("total_pdfs_across_all", 0),
+            )
+
+            return f"There are {total_pdfs} PDFs in this collection."
+
+        if classification == "list_pdfs":
+
+            total_pdfs = stats.get(
+                "total_pdfs",
+                stats.get("total_pdfs_across_all", 0),
+            )
+
+            match = re.search(r"\b(\d+)\b", query)
+
+            limit = int(match.group(1)) if match else 10
+
+            limit = min(limit, 50)
+
+            selected_files = filenames[:limit]
+
+            response_lines = [
+                f"Here are {len(selected_files)} PDFs (out of {total_pdfs} total):",
+                "",
+            ]
+
+            for i, pdf in enumerate(selected_files, 1):
+                response_lines.append(f"{i}. {pdf}")
+
+            return "\n".join(response_lines)
+
+        return None
 
     @staticmethod
     def get_single_collection_pdfs(vectorstore: Chroma) -> Tuple[List[str], Dict]:
@@ -136,73 +181,4 @@ class MetadataService:
                 "collection_details": [],
             }
 
-    @staticmethod
-    def format_pdf_list_for_llm(filenames: List[str], stats: Dict) -> str:
-        """
-        Format PDF list as context for LLM.
-
-        Args:
-            filenames: List of PDF filenames
-            stats: Statistics dict from get_single_collection_pdfs
-
-        Returns:
-            Formatted string for LLM context
-        """
-        context_parts = [
-            f"AVAILABLE DOCUMENTS IN THIS COLLECTION:",
-            f"Total PDFs: {stats['total_pdfs']}",
-            f"Total document chunks: {stats['total_chunks']}",
-            "",
-            "PDF LIST:",
-        ]
-
-        for i, pdf_detail in enumerate(stats["pdf_details"], 1):
-            context_parts.append(
-                f"{i}. {pdf_detail['filename']}"
-                f"\n   - Title: {pdf_detail['title']}"
-                f"\n   - Pages: {pdf_detail['pages']} (range: {pdf_detail['page_range']})"
-                f"\n   - Chunks: {pdf_detail['chunks']}"
-            )
-
-        return "\n".join(context_parts)
-
-    @staticmethod
-    def format_chatall_pdf_list_for_llm(
-        all_pdfs: Dict[str, List[str]], stats: Dict
-    ) -> str:
-        """
-        Format ChatALL PDF list as context for LLM.
-
-        Args:
-            all_pdfs: Dict mapping collection names to PDF lists
-            stats: Aggregate statistics
-
-        Returns:
-            Formatted string for LLM context
-        """
-        context_parts = [
-            f"AVAILABLE DOCUMENTS ACROSS ALL COLLECTIONS:",
-            f"Total Collections: {stats['total_collections']}",
-            f"Total PDFs (all collections): {stats['total_pdfs_across_all']}",
-            f"Total document chunks: {stats['total_chunks_across_all']}",
-            "",
-        ]
-
-        for coll_detail in stats["collection_details"]:
-            context_parts.append(f"\nCOLLECTION: {coll_detail['collection_name']}")
-            context_parts.append(
-                f"   PDFs: {coll_detail['pdf_count']} | Chunks: {coll_detail['chunk_count']}"
-            )
-            context_parts.append("")
-
-            for i, pdf_detail in enumerate(coll_detail["pdfs"], 1):
-                context_parts.append(
-                    f"   {i}. {pdf_detail['filename']}"
-                    f"\n      - Title: {pdf_detail['title']}"
-                    f"\n      - Pages: {pdf_detail['pages']} (range: {pdf_detail['page_range']})"
-                    f"\n      - Chunks: {pdf_detail['chunks']}"
-                )
-
-            context_parts.append("")
-
-        return "\n".join(context_parts)
+    

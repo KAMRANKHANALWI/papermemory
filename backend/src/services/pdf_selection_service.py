@@ -320,13 +320,9 @@ class PDFSelectionService:
         # Sort by similarity
         all_results.sort(key=lambda x: x["similarity"], reverse=True)
         
-        # Remove garbage chunks
         all_results = [
             r for r in all_results
-            if r["similarity"] > 0
         ]
-
-        print(f"After similarity filtering: {len(all_results)} chunks")
 
         # Limit total results
         all_results = all_results[: num_results * 2]
