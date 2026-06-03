@@ -44,23 +44,6 @@ Rules:
 
 
 # =====================================================
-# Metadata Queries
-# =====================================================
-
-
-def get_metadata_prompt() -> str:
-    return """
-You are a document assistant.
-
-Answer questions using the supplied metadata.
-
-Be concise and accurate.
-
-Do not invent information.
-"""
-
-
-# =====================================================
 # Collection Queries
 # =====================================================
 
@@ -96,6 +79,7 @@ If information is missing, say so clearly.
 
 Do not invent information.
 """
+
 
 def get_selected_pdf_prompt() -> str:
     return """

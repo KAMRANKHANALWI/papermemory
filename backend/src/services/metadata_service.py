@@ -137,72 +137,42 @@ class MetadataService:
             }
 
     @staticmethod
-    def format_pdf_list_for_llm(filenames: List[str], stats: Dict) -> str:
-        """
-        Format PDF list as context for LLM.
+    def build_metadata_response(
+        classification: str,
+        query: str,
+        filenames: List[str],
+        stats: Dict,
+    ) -> str | None:
 
-        Args:
-            filenames: List of PDF filenames
-            stats: Statistics dict from get_single_collection_pdfs
+        query_lower = query.lower()
 
-        Returns:
-            Formatted string for LLM context
-        """
-        context_parts = [
-            f"AVAILABLE DOCUMENTS IN THIS COLLECTION:",
-            f"Total PDFs: {stats['total_pdfs']}",
-            f"Total document chunks: {stats['total_chunks']}",
-            "",
-            "PDF LIST:",
-        ]
+        if classification == "count_pdfs":
 
-        for i, pdf_detail in enumerate(stats["pdf_details"], 1):
-            context_parts.append(
-                f"{i}. {pdf_detail['filename']}"
-                f"\n   - Title: {pdf_detail['title']}"
-                f"\n   - Pages: {pdf_detail['pages']} (range: {pdf_detail['page_range']})"
-                f"\n   - Chunks: {pdf_detail['chunks']}"
+            total = (
+                stats.get("total_pdfs")
+                or stats.get("total_pdfs_across_all")
+                or len(filenames)
             )
 
-        return "\n".join(context_parts)
+            return f"There are {total} PDFs in this collection."
 
-    @staticmethod
-    def format_chatall_pdf_list_for_llm(
-        all_pdfs: Dict[str, List[str]], stats: Dict
-    ) -> str:
-        """
-        Format ChatALL PDF list as context for LLM.
+        if classification == "list_pdfs":
 
-        Args:
-            all_pdfs: Dict mapping collection names to PDF lists
-            stats: Aggregate statistics
+            import re
 
-        Returns:
-            Formatted string for LLM context
-        """
-        context_parts = [
-            f"AVAILABLE DOCUMENTS ACROSS ALL COLLECTIONS:",
-            f"Total Collections: {stats['total_collections']}",
-            f"Total PDFs (all collections): {stats['total_pdfs_across_all']}",
-            f"Total document chunks: {stats['total_chunks_across_all']}",
-            "",
-        ]
+            match = re.search(r"(\d+)", query_lower)
 
-        for coll_detail in stats["collection_details"]:
-            context_parts.append(f"\nCOLLECTION: {coll_detail['collection_name']}")
-            context_parts.append(
-                f"   PDFs: {coll_detail['pdf_count']} | Chunks: {coll_detail['chunk_count']}"
-            )
-            context_parts.append("")
+            limit = int(match.group(1)) if match else 10
 
-            for i, pdf_detail in enumerate(coll_detail["pdfs"], 1):
-                context_parts.append(
-                    f"   {i}. {pdf_detail['filename']}"
-                    f"\n      - Title: {pdf_detail['title']}"
-                    f"\n      - Pages: {pdf_detail['pages']} (range: {pdf_detail['page_range']})"
-                    f"\n      - Chunks: {pdf_detail['chunks']}"
-                )
+            limit = min(limit, len(filenames))
 
-            context_parts.append("")
+            response = [
+                f"Here are {limit} PDFs (out of {len(filenames)} total):",
+                "",
+            ]
 
-        return "\n".join(context_parts)
+            response.extend(filenames[:limit])
+
+            return "\n".join(response)
+
+        return None

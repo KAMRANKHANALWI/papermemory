@@ -1,5 +1,6 @@
 from fastapi import APIRouter, HTTPException, Query, Request
 from fastapi.responses import StreamingResponse
+from typing import Optional
 import time
 import json
 import logging
@@ -26,7 +27,8 @@ from src.services.shared import (
 )
 
 from src.prompts import get_selected_pdf_prompt
-from typing import Optional
+from src.services.shared import metadata_service
+from src.services.shared import query_classifier
 
 logger = logging.getLogger(__name__)
 
@@ -269,6 +271,51 @@ async def chat_with_selected_pdfs(
             if session.get_selection_count() == 0:
                 yield f"data: {json.dumps({'type': 'error', 'message': 'Please select PDFs first'})}\n\n"
                 return
+            
+            # ----------------------------------------
+            # Metadata Queries (NO LLM)
+            # ----------------------------------------
+
+            classification, _ = query_classifier.classify_query(
+                query,
+                is_chatall_mode=False,
+            )
+
+            if classification in ["list_pdfs", "count_pdfs"]:
+
+                selection_data = session.to_dict()
+
+                filenames = sorted(
+                    [
+                        pdf["filename"]
+                        for pdf in selection_data["selected_pdfs"]
+                    ]
+                )
+
+                stats = {
+                    "total_pdfs": len(filenames)
+                }
+
+                response = metadata_service.build_metadata_response(
+                    classification=classification,
+                    query=query,
+                    filenames=filenames,
+                    stats=stats,
+                )
+
+                yield (
+                    f"data: "
+                    f"{json.dumps({'type': 'content', 'content': response})}"
+                    f"\n\n"
+                )
+
+                yield (
+                    f"data: "
+                    f"{json.dumps({'type': 'end'})}"
+                    f"\n\n"
+                )
+
+                return
 
             # ── 3. Load all collection vectorstores ────────────────────────
             all_collections = collection_manager.get_all_collections_vectorstores(
@@ -319,8 +366,6 @@ async def chat_with_selected_pdfs(
 
             # ── 5. Build context string from top results ───────────────────
             context_parts = []
-            # for i, result in enumerate(results[:20], 1):
-            # for i, result in enumerate(results, 1):
             for i, result in enumerate(results[:TOP_CONTEXT_CHUNKS], 1):
                 context_parts.append(
                     f"[Source {i}] From '{result.get('filename', 'Unknown')}' "
@@ -357,10 +402,10 @@ async def chat_with_selected_pdfs(
                         f"page={chunk.get('page_numbers')}"
                     )
                     
-                print("\nCONTEXT SENT TO LLM")
-                print("=" * 100)
-                print(context)
-                print("=" * 100)
+                # print("\nCONTEXT SENT TO LLM")
+                # print("=" * 100)
+                # print(context)
+                # print("=" * 100)
 
                 # async for chunk in chat_service.generate_response(query, context):
                 async for chunk in chat_service.generate_response(

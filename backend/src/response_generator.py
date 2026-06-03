@@ -15,7 +15,6 @@ from src.services.shared import (
 
 from src.prompts import (
     get_scientific_rag_prompt,
-    get_metadata_prompt,
     get_collection_prompt,
     get_file_specific_prompt,
 )
@@ -92,11 +91,17 @@ async def generate_chat_response(
                 classification=classification,
                 collection_name=collection_name,
                 is_chatall=is_chatall,
-                conversation_history=conversation_history,
+                get_vectorstore=get_vectorstore,
                 request=request,
             )
+
         elif classification == "list_collections" and is_chatall:
-            handler = handle_list_collections(message, conversation_history, request)
+            handler = orchestrator.handle_list_collections(
+                message=message,
+                conversation_history=conversation_history,
+                collection_prompt=get_collection_prompt(),
+                request=request,
+            )
 
         elif classification == "file_specific_search" and filename:
 
@@ -142,39 +147,6 @@ async def generate_chat_response(
 # -------------------------
 # HANDLERS
 # -------------------------
-
-
-async def handle_list_collections(
-    message: str,
-    conversation_history: List[Dict],
-    request: Request = None,
-) -> AsyncGenerator[str, None]:
-
-    collections = chat_service.chroma_client.list_collections()
-    lines = []
-    for col in collections:
-        count = chat_service.chroma_client.get_collection(col.name).count()
-        lines.append(f"• {col.name} ({count} chunks)")
-
-    context = f"AVAILABLE COLLECTIONS:\nTotal: {len(collections)}\n\n" + "\n".join(
-        lines
-    )
-
-    # base_prompt = "You are a document assistant. Provide clear responses about available collections."
-    base_prompt = get_collection_prompt()
-    system_prompt = ChatOrchestrator.build_system_prompt_with_history(
-        base_prompt, conversation_history, context
-    )
-
-    messages = [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": message},
-    ]
-
-    async for chunk in ChatOrchestrator.stream_llm_response(
-        chat_service.llm.astream(messages), request
-    ):
-        yield chunk
 
 
 async def handle_content_search(

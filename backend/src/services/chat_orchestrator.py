@@ -93,9 +93,7 @@ class ChatOrchestrator:
         classification,
         collection_name,
         is_chatall,
-        conversation_history,
         get_vectorstore,
-        metadata_prompt,
         request=None,
     ):
         if is_chatall:
@@ -214,6 +212,55 @@ class ChatOrchestrator:
 
         system_prompt = self.build_system_prompt_with_history(
             file_specific_prompt,
+            conversation_history,
+            context,
+        )
+
+        messages = [
+            {
+                "role": "system",
+                "content": system_prompt,
+            },
+            {
+                "role": "user",
+                "content": message,
+            },
+        ]
+
+        async for chunk in self.stream_llm_response(
+            self.chat_service.llm.astream(messages),
+            request,
+        ):
+            yield chunk
+            
+    async def handle_list_collections(
+        self,
+        message,
+        conversation_history,
+        collection_prompt,
+        request=None,
+    ):
+        collections = self.chat_service.chroma_client.list_collections()
+
+        lines = []
+
+        for col in collections:
+            count = self.chat_service.chroma_client.get_collection(
+                col.name
+            ).count()
+
+            lines.append(
+                f"• {col.name} ({count} chunks)"
+            )
+
+        context = (
+            f"AVAILABLE COLLECTIONS:\n"
+            f"Total: {len(collections)}\n\n"
+            + "\n".join(lines)
+        )
+
+        system_prompt = self.build_system_prompt_with_history(
+            collection_prompt,
             conversation_history,
             context,
         )
