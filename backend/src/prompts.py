@@ -29,17 +29,15 @@ Rules:
 5. If multiple facts answer the question,
    include ALL relevant facts.
 
-6. Prefer specific evidence over summaries.
+6. Do not invent information.
 
-7. Do not invent information.
-
-8. If the answer is not present in the context, say:
+7. If the answer is not present in the context, say:
 
    "The provided context does not contain enough information."
    
-9. Do not guess or use outside knowledge.
+8. Do not guess or use outside knowledge.
 
-10. Be concise but complete.
+9. Be concise but complete.
 """
 
 

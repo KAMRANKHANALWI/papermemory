@@ -6,8 +6,8 @@ from src.models import (
     QueryClassificationResponse,
     ChatRequest,
 )
-from src.services.shared import query_classifier
-from src.response_generator import (
+from src.services.dependencies import query_classifier
+from src.controllers.chat_controller import (
     generate_chat_response,
     generate_chat_response_eval,
 )

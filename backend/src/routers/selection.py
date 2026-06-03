@@ -5,7 +5,7 @@ import time
 import json
 import logging
 
-from src.services.shared import reranker
+from src.services.dependencies import reranker
 from src.config import AppConfig
 
 from src.models.selection_models import (
@@ -19,7 +19,7 @@ from src.models.selection_models import (
     SelectionStatsResponse,
     SelectedPDFInfo,
 )
-from src.services.shared import (
+from src.services.dependencies import (
     chat_service,
     memory_service,
     collection_manager,
@@ -27,8 +27,8 @@ from src.services.shared import (
 )
 
 from src.prompts import get_selected_pdf_prompt
-from src.services.shared import metadata_service
-from src.services.shared import query_classifier
+from src.services.dependencies import metadata_service
+from src.services.dependencies import query_classifier
 
 logger = logging.getLogger(__name__)
 

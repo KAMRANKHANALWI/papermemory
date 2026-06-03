@@ -5,7 +5,7 @@ from langchain_chroma import Chroma
 from fastapi import Request
 from src.config import AppConfig
 
-from src.services.shared import (
+from src.services.dependencies import (
     chat_service,
     memory_service,
     metadata_service,
@@ -19,7 +19,7 @@ from src.prompts import (
     get_file_specific_prompt,
 )
 
-from src.services.chat_orchestrator import ChatOrchestrator
+from src.orchestrators.chat_orchestrator import ChatOrchestrator
 from src.services.retrieval_service import RetrievalService
 
 orchestrator = ChatOrchestrator(
@@ -56,7 +56,6 @@ async def generate_chat_response(
 ) -> AsyncGenerator[str, None]:
 
     try:
-        print("\nINSIDE GENERATE_CHAT_RESPONSE\n")
         if not chat_id:
             import uuid
 
@@ -105,7 +104,7 @@ async def generate_chat_response(
 
         elif classification == "file_specific_search" and filename:
 
-            from src.services.shared import reranker
+            from src.services.dependencies import reranker
 
             handler = orchestrator.handle_file_specific_search(
                 message=message,
@@ -157,7 +156,7 @@ async def handle_content_search(
     request: Request = None,
 ) -> AsyncGenerator[str, None]:
 
-    from src.services.shared import reranker
+    from src.services.dependencies import reranker
 
     context, sources = RetrievalService.retrieve_content(
         message=message,
