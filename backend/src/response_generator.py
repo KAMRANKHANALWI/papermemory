@@ -29,6 +29,8 @@ orchestrator = ChatOrchestrator(
     file_search_service=file_search_service,
 )
 
+from src.services.retrieval_service import RetrievalService
+
 logger = logging.getLogger(__name__)
 
 
@@ -133,64 +135,16 @@ async def generate_chat_response(
 async def handle_content_search(
     message, collection_name, is_chatall, conversation_history, request=None
 ):
-    all_results = []
-
-    if is_chatall:
-        for col in chat_service.chroma_client.list_collections():
-            try:
-                vectorstore = get_vectorstore(col.name)
-                results = vectorstore.similarity_search_with_score(
-                    message, k=AppConfig.TOP_K_CHATALL
-                )
-                for doc, score in results:
-                    all_results.append(
-                        {
-                            "content": doc.page_content,
-                            "filename": doc.metadata.get("filename", "unknown"),
-                            "title": doc.metadata.get("title", "No Title"),
-                            "page_numbers": doc.metadata.get("page_numbers", "[]"),
-                            "similarity": round(1 - score, 4),
-                            "collection": col.name,
-                        }
-                    )
-            except Exception as e:
-                logger.warning(f"Search failed for {col.name}: {e}")
-
-        all_results.sort(key=lambda x: x["similarity"], reverse=True)
-        all_results = all_results[: AppConfig.TOP_K]
-    else:
-        if not collection_name:
-            raise ValueError("Collection name required")
-        vectorstore = get_vectorstore(collection_name)
-        results = vectorstore.similarity_search_with_score(message, k=AppConfig.TOP_K)
-        for doc, score in results:
-            all_results.append(
-                {
-                    "content": doc.page_content,
-                    "filename": doc.metadata.get("filename", "unknown"),
-                    "title": doc.metadata.get("title", "No Title"),
-                    "page_numbers": doc.metadata.get("page_numbers", "[]"),
-                    "similarity": round(1 - score, 4),
-                    "collection": collection_name,
-                }
-            )
-
-    context_parts = []
-    for r in all_results:
-        src = f"Source: {r['filename']} (Collection: {r['collection']})"
-        pages = r.get("page_numbers", "[]")
-        if pages != "[]":
-            page_list = pages.strip("[]").replace("'", "").split(",")
-            if page_list and page_list[0]:
-                src += f" - p. {', '.join(page_list)}"
-        context_parts.append(f"{r['content']}\n\n{src}")
-
-    context = "\n\n".join(context_parts)
+    context, all_results = RetrievalService.retrieve_content(
+        message=message,
+        is_chatall=is_chatall,
+        collection_name=collection_name,
+        chroma_client=chat_service.chroma_client,
+        get_vectorstore=get_vectorstore,
+        logger=logger,
+    )
     yield f"data: {json.dumps({'type': 'sources', 'sources': all_results})}\n\n"
 
-    # scope = "across all collections" if is_chatall else f"from {collection_name}"
-    # base_prompt = f"You are a document assistant answering from documents {scope}. Use ONLY context information."
-    # base_prompt = get_scientific_rag_prompt() # v1
     base_prompt = get_scientific_rag_prompt_v2()
     system_prompt = ChatOrchestrator.build_system_prompt_with_history(
         base_prompt, conversation_history, context
