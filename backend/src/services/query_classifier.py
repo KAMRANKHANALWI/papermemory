@@ -169,6 +169,6 @@ Classification:"""
         
         if matches:
             # Return first match
-            return matches[0]
+            return matches[0].strip()
         
         return None

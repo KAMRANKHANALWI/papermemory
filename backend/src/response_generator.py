@@ -20,10 +20,13 @@ from src.prompts import (
     get_file_specific_prompt,
 )
 
-from src.services.chat_orchestrator import (
-    stream_llm_response,
-    collect_content_from_event,
-    build_system_prompt_with_history,
+from src.services.chat_orchestrator import ChatOrchestrator
+
+orchestrator = ChatOrchestrator(
+    chat_service=chat_service,
+    memory_service=memory_service,
+    metadata_service=metadata_service,
+    file_search_service=file_search_service,
 )
 
 logger = logging.getLogger(__name__)
@@ -35,50 +38,6 @@ def get_vectorstore(collection_name: str) -> Chroma:
         collection_name=collection_name,
         embedding_function=chat_service.embedding_model,
     )
-
-
-# async def stream_llm_response(response_stream, request: Request = None):
-#     async for chunk in response_stream:  # async for — non-blocking
-#         if request and await request.is_disconnected():
-#             logger.info("Client disconnected — stopping LLM stream")
-#             break
-#         if hasattr(chunk, "content") and chunk.content:
-#             yield f"data: {json.dumps({'type': 'content', 'content': chunk.content})}\n\n"
-
-
-# def collect_content_from_event(event: str) -> str:
-#     if not event.startswith("data: "):
-#         return ""
-#     try:
-#         payload = json.loads(event[6:].strip())
-#         if payload.get("type") == "content":
-#             return payload.get("content", "")
-#     except Exception:
-#         pass
-#     return ""
-
-
-# def build_system_prompt_with_history(
-#     base_prompt: str, conversation_history: List[Dict], context: str
-# ) -> str:
-#     if not conversation_history:
-#         return f"{base_prompt}\n\nContext:\n{context}"
-
-#     history_lines = []
-#     for msg in conversation_history[:-1]:
-#         role = msg.get("role", "unknown").upper()
-#         content = msg.get("content", "")
-#         if len(content) > 200:
-#             content = content[:200] + "..."
-#         history_lines.append(f"{role}: {content}")
-
-#     history_text = "\n".join(history_lines)
-#     return (
-#         f"{base_prompt}\n\n"
-#         f"Previous conversation:\n{history_text}\n\n"
-#         f"Current context:\n{context}\n\n"
-#         f"Maintain context from previous conversation."
-#     )
 
 
 async def generate_chat_response(
@@ -119,24 +78,33 @@ async def generate_chat_response(
         full_response = ""
 
         if classification in ["list_pdfs", "count_pdfs"]:
-            handler = handle_metadata_query(
-                message,
-                classification,
-                collection_name,
-                is_chatall,
-                conversation_history,
-                request,
+            handler = orchestrator.handle_metadata_query(
+                message=message,
+                collection_name=collection_name,
+                is_chatall=is_chatall,
+                conversation_history=conversation_history,
+                get_vectorstore=get_vectorstore,
+                metadata_prompt=get_metadata_prompt(),
+                request=request,
             )
         elif classification == "list_collections" and is_chatall:
-            handler = handle_list_collections(message, conversation_history, request)
+            handler = orchestrator.handle_list_collections(
+                message=message,
+                conversation_history=conversation_history,
+                collection_prompt=get_collection_prompt(),
+                request=request,
+            )
         elif classification == "file_specific_search" and filename:
-            handler = handle_file_specific_search(
-                message,
-                filename,
-                collection_name,
-                is_chatall,
-                conversation_history,
-                request,
+            handler = orchestrator.handle_file_specific_search(
+                message=message,
+                filename=filename,
+                collection_name=collection_name,
+                is_chatall=is_chatall,
+                conversation_history=conversation_history,
+                get_vectorstore=get_vectorstore,
+                file_specific_prompt=get_file_specific_prompt(filename),
+                content_search_handler=handle_content_search,
+                request=request,
             )
         else:
             handler = handle_content_search(
@@ -144,7 +112,7 @@ async def generate_chat_response(
             )
 
         async for event in handler:
-            full_response += collect_content_from_event(event)
+            full_response += ChatOrchestrator.collect_content_from_event(event)
             yield event
 
         if full_response and not eval_mode:
@@ -160,124 +128,6 @@ async def generate_chat_response(
     except Exception as e:
         logger.error("Error in generate_chat_response", exc_info=True)
         yield f"data: {json.dumps({'type': 'error', 'message': str(e)})}\n\n"
-
-
-async def handle_metadata_query(
-    message,
-    collection_name,
-    is_chatall,
-    conversation_history,
-    request=None,
-):
-    if is_chatall:
-        vectorstores = {
-            col.name: get_vectorstore(col.name)
-            for col in chat_service.chroma_client.list_collections()
-        }
-        all_pdfs, stats = metadata_service.get_chatall_collection_pdfs(vectorstores)
-        context = metadata_service.format_chatall_pdf_list_for_llm(all_pdfs, stats)
-    else:
-        if not collection_name:
-            raise ValueError("Collection name required")
-        vectorstore = get_vectorstore(collection_name)
-        filenames, stats = metadata_service.get_single_collection_pdfs(vectorstore)
-        context = metadata_service.format_pdf_list_for_llm(filenames, stats)
-
-    # base_prompt = "You are a document assistant. Provide clear, friendly responses about available documents."
-    base_prompt = get_metadata_prompt()
-    system_prompt = build_system_prompt_with_history(
-        base_prompt, conversation_history, context
-    )
-    messages = [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": message},
-    ]
-
-    async for chunk in stream_llm_response(chat_service.llm.astream(messages), request):
-        yield chunk
-
-
-async def handle_list_collections(message, conversation_history, request=None):
-    collections = chat_service.chroma_client.list_collections()
-    lines = [
-        f"• {col.name} ({chat_service.chroma_client.get_collection(col.name).count()} chunks)"
-        for col in collections
-    ]
-    context = f"AVAILABLE COLLECTIONS:\nTotal: {len(collections)}\n\n" + "\n".join(
-        lines
-    )
-
-    # base_prompt = "You are a document assistant. Provide clear responses about available collections."
-    base_prompt = get_collection_prompt()
-    system_prompt = build_system_prompt_with_history(
-        base_prompt, conversation_history, context
-    )
-    messages = [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": message},
-    ]
-
-    async for chunk in stream_llm_response(chat_service.llm.astream(messages), request):
-        yield chunk
-
-
-async def handle_file_specific_search(
-    message, filename, collection_name, is_chatall, conversation_history, request=None
-):
-    if is_chatall:
-        vectorstores = {
-            col.name: get_vectorstore(col.name)
-            for col in chat_service.chroma_client.list_collections()
-        }
-        context, results, found, _ = file_search_service.search_specific_file_chatall(
-            vectorstores, filename, message, num_results=10
-        )
-    else:
-        if not collection_name:
-            raise ValueError("Collection name required")
-        vectorstore = get_vectorstore(collection_name)
-        context, results, found = file_search_service.search_specific_file(
-            vectorstore,
-            filename,
-            message,
-            num_results=10,
-            collection_name=collection_name,
-        )
-
-    if not found:
-        not_found_msg = f'File "{filename}" not found. Searching all documents...'
-        yield f"data: {json.dumps({'type': 'content', 'content': not_found_msg})}\n\n"
-        async for event in handle_content_search(
-            message, collection_name, is_chatall, conversation_history, request
-        ):
-            yield event
-        return
-
-    sources = [
-        {
-            "content": r["content"],
-            "filename": r["filename"],
-            "collection": r.get("collection"),
-            "similarity": r["similarity"],
-            "page_numbers": r.get("pages"),
-            "title": r.get("title"),
-        }
-        for r in results
-    ]
-    yield f"data: {json.dumps({'type': 'sources', 'sources': sources})}\n\n"
-
-    # base_prompt = f"You are a document assistant answering about: {filename}. Use ONLY context information."
-    base_prompt = get_file_specific_prompt(filename)
-    system_prompt = build_system_prompt_with_history(
-        base_prompt, conversation_history, context
-    )
-    messages = [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": message},
-    ]
-
-    async for chunk in stream_llm_response(chat_service.llm.astream(messages), request):
-        yield chunk
 
 
 async def handle_content_search(
@@ -341,8 +191,8 @@ async def handle_content_search(
     # scope = "across all collections" if is_chatall else f"from {collection_name}"
     # base_prompt = f"You are a document assistant answering from documents {scope}. Use ONLY context information."
     # base_prompt = get_scientific_rag_prompt() # v1
-    base_prompt = get_scientific_rag_prompt_v2() 
-    system_prompt = build_system_prompt_with_history(
+    base_prompt = get_scientific_rag_prompt_v2()
+    system_prompt = ChatOrchestrator.build_system_prompt_with_history(
         base_prompt, conversation_history, context
     )
     messages = [
@@ -350,7 +200,9 @@ async def handle_content_search(
         {"role": "user", "content": message},
     ]
 
-    async for chunk in stream_llm_response(chat_service.llm.astream(messages), request):
+    async for chunk in ChatOrchestrator.stream_llm_response(
+        chat_service.llm.astream(messages), request
+    ):
         yield chunk
 
 
