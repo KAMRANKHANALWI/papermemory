@@ -26,6 +26,7 @@ from src.prompts import (
 )
 
 from src.services.chat_orchestrator import ChatOrchestrator
+from src.services.retrieval_service import RetrievalService
 
 logger = logging.getLogger(__name__)
 
@@ -39,8 +40,6 @@ def get_vectorstore(collection_name: str) -> Chroma:
         collection_name=collection_name,
         embedding_function=chat_service.embedding_model,
     )
-
-
 
 
 # -------------------------
@@ -167,7 +166,9 @@ async def handle_metadata_query(
         {"role": "user", "content": message},
     ]
 
-    async for chunk in ChatOrchestrator.stream_llm_response(chat_service.llm.astream(messages), request):
+    async for chunk in ChatOrchestrator.stream_llm_response(
+        chat_service.llm.astream(messages), request
+    ):
         yield chunk
 
 
@@ -198,7 +199,9 @@ async def handle_list_collections(
         {"role": "user", "content": message},
     ]
 
-    async for chunk in ChatOrchestrator.stream_llm_response(chat_service.llm.astream(messages), request):
+    async for chunk in ChatOrchestrator.stream_llm_response(
+        chat_service.llm.astream(messages), request
+    ):
         yield chunk
 
 
@@ -311,7 +314,9 @@ async def handle_file_specific_search(
         {"role": "user", "content": message},
     ]
 
-    async for chunk in ChatOrchestrator.stream_llm_response(chat_service.llm.astream(messages), request):
+    async for chunk in ChatOrchestrator.stream_llm_response(
+        chat_service.llm.astream(messages), request
+    ):
         yield chunk
 
 
@@ -325,88 +330,45 @@ async def handle_content_search(
 
     from src.services.shared import reranker
 
-    all_chunks = []
+    context, sources = RetrievalService.retrieve_content(
+        message=message,
+        is_chatall=is_chatall,
+        collection_name=collection_name,
+        chroma_client=chat_service.chroma_client,
+        get_vectorstore=get_vectorstore,
+        reranker=reranker,
+        logger=logger,
+    )
 
-    if is_chatall:
-        for col in chat_service.chroma_client.list_collections():
-            try:
-                vectorstore = get_vectorstore(col.name)
-                results = vectorstore.similarity_search_with_score(
-                    message, k=AppConfig.RERANKING_SAMPLE_SIZE
-                )
-                for doc, score in results:
-                    all_chunks.append(
-                        {
-                            "content": doc.page_content,
-                            "filename": doc.metadata.get("filename", "unknown"),
-                            "page_numbers": doc.metadata.get("page_numbers", "[]"),
-                            "title": doc.metadata.get("title", "No Title"),
-                            "similarity": round(1 - float(score), 4),
-                            "collection": col.name,
-                        }
-                    )
-            except Exception as e:
-                logger.warning(f"Search failed for {col.name}: {e}")
-    else:
-        if not collection_name:
-            raise ValueError("Collection name required")
-        vectorstore = get_vectorstore(collection_name)
-        results = vectorstore.similarity_search_with_score(
-            message, k=AppConfig.RERANKING_SAMPLE_SIZE
-        )
-        for doc, score in results:
-            all_chunks.append(
-                {
-                    "content": doc.page_content,
-                    "filename": doc.metadata.get("filename", "unknown"),
-                    "page_numbers": doc.metadata.get("page_numbers", "[]"),
-                    "title": doc.metadata.get("title", "No Title"),
-                    "similarity": round(1 - float(score), 4),
-                    "collection": collection_name,
-                }
-            )
-
-    if not all_chunks:
-        yield f"data: {json.dumps({'type': 'sources', 'sources': []})}\n\n"
+    if not sources:
+        yield (f"data: " f"{json.dumps({'type': 'sources', 'sources': []})}" f"\n\n")
         return
 
-    # Rerank all chunks across all collections, take top TOP_K
-    top_chunks = reranker.rerank(message, all_chunks, top_k=AppConfig.TOP_K)
-
-    # Build context from reranked chunks directly — no page fetching
-    context_parts = []
-    for chunk in top_chunks:
-        header = f"[Source: {chunk['filename']} | Collection: {chunk['collection']} | Pages {chunk['page_numbers']}]"
-        context_parts.append(f"{header}\n{chunk['content']}")
-    context = "\n\n---\n\n".join(context_parts)
-
-    sources = [
-        {
-            "content": c["content"],
-            "filename": c["filename"],
-            "collection": c["collection"],
-            "page_numbers": c["page_numbers"],
-            "similarity": c.get("rerank_score", c["similarity"]),
-            "rerank_score": c.get("rerank_score", c["similarity"]),
-            "title": c.get("title", "No Title"),
-        }
-        for c in top_chunks
-    ]
-    yield f"data: {json.dumps({'type': 'sources', 'sources': sources})}\n\n"
-
-    # scope = "across all collections" if is_chatall else f"from {collection_name}"
-    # base_prompt = f"You are a document assistant answering from documents {scope}. Use ONLY context information."
+    yield (f"data: " f"{json.dumps({'type': 'sources', 'sources': sources})}" f"\n\n")
 
     base_prompt = get_scientific_rag_prompt()
+
     system_prompt = ChatOrchestrator.build_system_prompt_with_history(
-        base_prompt, conversation_history, context
+        base_prompt,
+        conversation_history,
+        context,
     )
+
     messages = [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": message},
+        {
+            "role": "system",
+            "content": system_prompt,
+        },
+        {
+            "role": "user",
+            "content": message,
+        },
     ]
 
-    async for chunk in ChatOrchestrator.stream_llm_response(chat_service.llm.astream(messages), request):
+    async for chunk in ChatOrchestrator.stream_llm_response(
+        chat_service.llm.astream(messages),
+        request,
+    ):
         yield chunk
 
 
