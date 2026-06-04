@@ -1,7 +1,5 @@
 from fastapi import APIRouter, HTTPException, Query, Request
 from fastapi.responses import StreamingResponse
-import time
-import json
 import logging
 
 from src.models.selection_models import (
@@ -18,18 +16,14 @@ from src.models.selection_models import (
 
 from src.services.dependencies import (
     chat_service,
-    memory_service,
     collection_manager,
     pdf_selection_service,
-    query_classifier,
-    metadata_service,
 )
 
 from src.controllers.selection_controller import (
     chat_with_selected_pdfs as selection_chat_handler,
 )
 
-from src.prompts import get_selected_pdf_prompt
 from typing import Optional
 
 logger = logging.getLogger(__name__)
