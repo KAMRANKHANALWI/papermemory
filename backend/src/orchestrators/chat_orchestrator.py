@@ -5,6 +5,9 @@ from fastapi import Request
 
 logger = logging.getLogger(__name__)
 
+from src.prompts import get_selected_pdf_prompt
+from src.config import AppConfig
+
 
 class ChatOrchestrator:
 
@@ -14,11 +17,19 @@ class ChatOrchestrator:
         memory_service=None,
         metadata_service=None,
         file_search_service=None,
+        pdf_selection_service=None,
+        collection_manager=None,
+        query_classifier=None,
+        reranker=None,
     ):
         self.chat_service = chat_service
         self.memory_service = memory_service
         self.metadata_service = metadata_service
         self.file_search_service = file_search_service
+        self.pdf_selection_service = pdf_selection_service
+        self.collection_manager = collection_manager
+        self.query_classifier = query_classifier
+        self.reranker = reranker
 
     @staticmethod
     async def stream_llm_response(
@@ -86,7 +97,7 @@ class ChatOrchestrator:
             f"Current context:\n{context}\n\n"
             f"Maintain context from previous conversation."
         )
-        
+
     async def handle_metadata_query(
         self,
         message,
@@ -103,10 +114,8 @@ class ChatOrchestrator:
                 for col in self.chat_service.chroma_client.list_collections()
             }
 
-            all_pdfs, stats = (
-                self.metadata_service.get_chatall_collection_pdfs(
-                    vectorstores
-                )
+            all_pdfs, stats = self.metadata_service.get_chatall_collection_pdfs(
+                vectorstores
             )
 
             filenames = []
@@ -119,27 +128,19 @@ class ChatOrchestrator:
         else:
 
             if not collection_name:
-                raise ValueError(
-                    "Collection name required"
-                )
+                raise ValueError("Collection name required")
 
-            vectorstore = get_vectorstore(
-                collection_name
+            vectorstore = get_vectorstore(collection_name)
+
+            filenames, stats = self.metadata_service.get_single_collection_pdfs(
+                vectorstore
             )
 
-            filenames, stats = (
-                self.metadata_service.get_single_collection_pdfs(
-                    vectorstore
-                )
-            )
-
-        direct_response = (
-            self.metadata_service.build_metadata_response(
-                classification=classification,
-                query=message,
-                filenames=filenames,
-                stats=stats,
-            )
+        direct_response = self.metadata_service.build_metadata_response(
+            classification=classification,
+            query=message,
+            filenames=filenames,
+            stats=stats,
         )
 
         if direct_response:
@@ -151,7 +152,7 @@ class ChatOrchestrator:
             )
 
             return
-        
+
     async def handle_file_specific_search(
         self,
         message,
@@ -166,25 +167,22 @@ class ChatOrchestrator:
         reranker,
         request=None,
     ):
-        context, sources, found = (
-            retrieval_service.retrieve_file_content(
-                message=message,
-                filename=filename,
-                collection_name=collection_name,
-                is_chatall=is_chatall,
-                chroma_client=self.chat_service.chroma_client,
-                get_vectorstore=get_vectorstore,
-                file_search_service=self.file_search_service,
-                reranker=reranker,
-                logger=logger,
-            )
+        context, sources, found = retrieval_service.retrieve_file_content(
+            message=message,
+            filename=filename,
+            collection_name=collection_name,
+            is_chatall=is_chatall,
+            chroma_client=self.chat_service.chroma_client,
+            get_vectorstore=get_vectorstore,
+            file_search_service=self.file_search_service,
+            reranker=reranker,
+            logger=logger,
         )
 
         if not found:
 
             message_text = (
-                f'File "{filename}" not found. '
-                f"Searching all documents..."
+                f'File "{filename}" not found. ' f"Searching all documents..."
             )
 
             yield (
@@ -205,9 +203,7 @@ class ChatOrchestrator:
             return
 
         yield (
-            f"data: "
-            f"{json.dumps({'type': 'sources', 'sources': sources})}"
-            f"\n\n"
+            f"data: " f"{json.dumps({'type': 'sources', 'sources': sources})}" f"\n\n"
         )
 
         system_prompt = self.build_system_prompt_with_history(
@@ -232,7 +228,7 @@ class ChatOrchestrator:
             request,
         ):
             yield chunk
-            
+
     async def handle_list_collections(
         self,
         message,
@@ -245,18 +241,13 @@ class ChatOrchestrator:
         lines = []
 
         for col in collections:
-            count = self.chat_service.chroma_client.get_collection(
-                col.name
-            ).count()
+            count = self.chat_service.chroma_client.get_collection(col.name).count()
 
-            lines.append(
-                f"• {col.name} ({count} chunks)"
-            )
+            lines.append(f"• {col.name} ({count} chunks)")
 
         context = (
             f"AVAILABLE COLLECTIONS:\n"
-            f"Total: {len(collections)}\n\n"
-            + "\n".join(lines)
+            f"Total: {len(collections)}\n\n" + "\n".join(lines)
         )
 
         system_prompt = self.build_system_prompt_with_history(
@@ -281,3 +272,188 @@ class ChatOrchestrator:
             request,
         ):
             yield chunk
+
+
+    async def handle_selected_pdf_chat(
+        self,
+        session_id,
+        query,
+        chat_id,
+        num_results,
+        request=None,
+    ):
+
+        session = self.pdf_selection_service.get_or_create_session(session_id)
+
+        if session.get_selection_count() == 0:
+
+            yield (
+                f"data: "
+                f"{json.dumps({'type': 'error', 'message': 'Please select PDFs first'})}"
+                f"\n\n"
+            )
+
+            return
+
+        # ----------------------------------------
+        # Metadata Queries (NO LLM)
+        # ----------------------------------------
+
+        classification, _ = self.query_classifier.classify_query(
+            query,
+            is_chatall_mode=False,
+        )
+
+        if classification in ["list_pdfs", "count_pdfs"]:
+
+            selection_data = session.to_dict()
+
+            filenames = sorted(
+                [pdf["filename"] for pdf in selection_data["selected_pdfs"]]
+            )
+
+            stats = {"total_pdfs": len(filenames)}
+
+            response = self.metadata_service.build_metadata_response(
+                classification=classification,
+                query=query,
+                filenames=filenames,
+                stats=stats,
+            )
+
+            yield (
+                f"data: "
+                f"{json.dumps({'type': 'content', 'content': response})}"
+                f"\n\n"
+            )
+
+            yield (f"data: " f"{json.dumps({'type': 'end'})}" f"\n\n")
+
+            return
+
+        all_collections = self.collection_manager.get_all_collections_vectorstores(
+            self.chat_service.embedding_model
+        )
+
+        if not all_collections:
+
+            yield (
+                f"data: "
+                f"{json.dumps({'type': 'error', 'message': 'No collections available'})}"
+                f"\n\n"
+            )
+
+            return
+
+        try:
+
+            context, results, total_results = (
+                self.pdf_selection_service.search_selected_pdfs(
+                    session_id=session_id,
+                    query=query,
+                    all_collections=all_collections,
+                    num_results=num_results,
+                )
+            )
+
+            results = self.reranker.rerank(
+                query=query,
+                chunks=results,
+                top_k=AppConfig.TOP_K,
+            )
+
+            total_results = len(results)
+
+            if total_results == 0:
+
+                yield (
+                    f"data: "
+                    f"{json.dumps({'type': 'content', 'content': 'No relevant information found in the selected PDFs.'})}"
+                    f"\n\n"
+                )
+
+                yield (f"data: " f"{json.dumps({'type': 'end'})}" f"\n\n")
+
+                return
+
+        except Exception as e:
+
+            yield (
+                f"data: "
+                f"{json.dumps({'type': 'error', 'message': f'Search failed: {str(e)}'})}"
+                f"\n\n"
+            )
+
+            return
+
+        context_parts = []
+
+        for i, result in enumerate(results[:AppConfig.TOP_CONTEXT_CHUNKS], 1):
+
+            context_parts.append(
+                f"[Source {i}] From '{result.get('filename', 'Unknown')}' "
+                f"({result.get('collection', '')} collection, "
+                f"Page {result.get('page_numbers', 'N/A')}):\n"
+                f"{result.get('content', '')}"
+            )
+
+        context = "\n\n".join(context_parts)
+
+        sources_data = [
+            {
+                "content": r.get("content", ""),
+                "filename": r.get("filename", ""),
+                "collection": r.get("collection", ""),
+                "similarity": r.get("similarity", 0),
+                "page_numbers": r.get("page_numbers", ""),
+                "title": r.get("title", ""),
+                "rerank_score": r.get("rerank_score", 0),
+            }
+            for r in results[:AppConfig.TOP_CONTEXT_CHUNKS]
+        ]
+
+        yield (
+            f"data: "
+            f"{json.dumps({'type': 'sources', 'sources': sources_data})}"
+            f"\n\n"
+        )
+
+        system_prompt = get_selected_pdf_prompt()
+
+        messages = [
+            {
+                "role": "system",
+                "content": f"{system_prompt}\n\nContext:\n{context}",
+            },
+            {
+                "role": "user",
+                "content": query,
+            },
+        ]
+
+        full_response = ""
+
+        async for event in self.stream_llm_response(
+            self.chat_service.llm.astream(messages),
+            request,
+        ):
+
+            full_response += self.collect_content_from_event(event)
+
+            yield event
+
+        if self.memory_service:
+
+            self.memory_service.add_message(
+                chat_id,
+                "user",
+                query,
+            )
+
+            self.memory_service.add_message(
+                chat_id,
+                "assistant",
+                full_response,
+            )
+
+        yield (f"data: " f"{json.dumps({'type': 'end'})}" f"\n\n")

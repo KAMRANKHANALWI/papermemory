@@ -3,6 +3,7 @@ config.py - Central configuration for PaperMemory
 All app settings read from .env via AppConfig.
 Eval-specific settings in EvalConfig.
 """
+
 import os
 from pathlib import Path
 from dotenv import load_dotenv
@@ -39,12 +40,13 @@ class AppConfig:
     # Final pages/chunks sent to LLM as context
     TOP_K: int = int(os.getenv("TOP_K", "10"))
 
+    TOP_CONTEXT_CHUNKS: int = int(os.getenv("TOP_CONTEXT_CHUNKS", "7"))
+
     # Per-collection results in chatall mode
     TOP_K_CHATALL: int = int(os.getenv("TOP_K_CHATALL", "6"))
 
     # How many chunks to pull before reranking
     RERANKING_SAMPLE_SIZE: int = int(os.getenv("RERANKING_SAMPLE_SIZE", "30"))
-    
 
     # ----------------------------------------
     # Reranker
