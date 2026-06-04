@@ -317,15 +317,19 @@ class PDFSelectionService:
                     continue
                 
         print(f"Retrieved chunks: {len(all_results)}")
-        # Sort by similarity
-        all_results.sort(key=lambda x: x["similarity"], reverse=True)
         
-        all_results = [
-            r for r in all_results
-        ]
+        # Sort globally by similarity
+        all_results.sort(
+            key=lambda x: x["similarity"],
+            reverse=True,
+        )
 
-        # Limit total results
-        all_results = all_results[: num_results * 2]
+        print(f"Retrieved chunks: {len(all_results)}")
+
+        # Keep only the best chunks overall
+        all_results = all_results[:15]
+
+        print(f"Chunks sent to LLM: {len(all_results)}")
 
         context_parts = []
 
