@@ -25,6 +25,10 @@ from src.services.dependencies import (
     metadata_service,
 )
 
+from src.controllers.selection_controller import (
+    chat_with_selected_pdfs as selection_chat_handler,
+)
+
 from src.prompts import get_selected_pdf_prompt
 from typing import Optional
 
@@ -241,134 +245,18 @@ async def chat_with_selected_pdfs(
     num_results: int = Query(20),
     request: Request = None,
 ):
-    async def generate():
-        try:
-            current_chat_id = chat_id or f"chat_{session_id}_{int(time.time())}"
-            yield f"data: {json.dumps({'type': 'chat_id', 'chat_id': current_chat_id})}\n\n"
-
-            session = pdf_selection_service.get_or_create_session(session_id)
-            if session.get_selection_count() == 0:
-                yield f"data: {json.dumps({'type': 'error', 'message': 'Please select PDFs first'})}\n\n"
-                return
-            
-            selection_data = session.to_dict()
-
-            classification, _ = query_classifier.classify_query(
-                query,
-                is_chatall_mode=False,
-            )
-
-            if classification in ["count_pdfs", "list_pdfs"]:
-
-                filenames = [
-                    pdf["filename"]
-                    for pdf in selection_data["selected_pdfs"]
-                ]
-
-                stats = {
-                    "total_pdfs": len(filenames)
-                }
-
-                response = metadata_service.build_metadata_response(
-                    classification=classification,
-                    query=query,
-                    filenames=filenames,
-                    stats=stats,
-                )
-
-                yield (
-                    f"data: {json.dumps({'type': 'content', 'content': response})}\n\n"
-                )
-
-                yield f"data: {json.dumps({'type': 'end'})}\n\n"
-
-                return
-
-            all_collections = collection_manager.get_all_collections_vectorstores(
-                chat_service.embedding_model
-            )
-            if not all_collections:
-                yield f"data: {json.dumps({'type': 'error', 'message': 'No collections available'})}\n\n"
-                return
-
-            try:
-                context, results, total_results = (
-                    pdf_selection_service.search_selected_pdfs(
-                        session_id=session_id,
-                        query=query,
-                        all_collections=all_collections,
-                        num_results=num_results,
-                    )
-                )
-            except Exception as e:
-                yield f"data: {json.dumps({'type': 'error', 'message': f'Search failed: {str(e)}'})}\n\n"
-                return
-
-            if total_results == 0:
-                yield f"data: {json.dumps({'type': 'content', 'content': 'No relevant information found in the selected PDFs.'})}\n\n"
-                yield f"data: {json.dumps({'type': 'end'})}\n\n"
-                return
-
-            # Build context from results
-            context_parts = []
-            for i, result in enumerate(results, 1):
-                context_parts.append(
-                    f"[Source {i}] From '{result.get('filename', 'Unknown')}' "
-                    f"({result.get('collection', '')} collection, "
-                    f"Page {result.get('page_numbers', 'N/A')}):\n"
-                    f"{result.get('content', '')}"
-                )
-            context = "\n\n".join(context_parts)
-
-            # Sources BEFORE streaming
-            sources_data = [
-                {
-                    "content": r.get("content", ""),
-                    "filename": r.get("filename", ""),
-                    "collection": r.get("collection", ""),
-                    "similarity": r.get("similarity", 0),
-                    "page_numbers": r.get("page_numbers", ""),
-                    "title": r.get("title", ""),
-                }
-                for r in results
-            ]
-            yield f"data: {json.dumps({'type': 'sources', 'sources': sources_data})}\n\n"
-
-            # Stream LLM response
-            full_response = ""
-            try:
-                system_prompt = f"""
-                {get_selected_pdf_prompt()}
-
-                Context:
-
-                {context}
-                """
-                async for chunk in chat_service.generate_response(query=query, system_prompt=system_prompt):
-                    if await request.is_disconnected():
-                        logger.info("Client disconnected")
-                        break
-                    full_response += chunk
-                    yield f"data: {json.dumps({'type': 'content', 'content': chunk})}\n\n"
-            except Exception as e:
-                yield f"data: {json.dumps({'type': 'error', 'message': f'LLM error: {str(e)}'})}\n\n"
-                return
-
-            # Save to memory
-            try:
-                memory_service.add_message(current_chat_id, "user", query)
-                memory_service.add_message(current_chat_id, "assistant", full_response)
-            except Exception as e:
-                logger.warning(f"Memory save failed: {e}")
-
-            yield f"data: {json.dumps({'type': 'end'})}\n\n"
-
-        except Exception as e:
-            logger.error(f"Unexpected error in selection chat: {e}")
-            yield f"data: {json.dumps({'type': 'error', 'message': str(e)})}\n\n"
 
     return StreamingResponse(
-        generate(),
+        selection_chat_handler(
+            session_id=session_id,
+            query=query,
+            chat_id=chat_id,
+            num_results=num_results,
+            request=request,
+        ),
         media_type="text/event-stream",
-        headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no",
+        },
     )

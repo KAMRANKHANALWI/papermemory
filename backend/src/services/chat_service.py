@@ -18,17 +18,6 @@ class ChatService:
             path=AppConfig.CHROMA_DB_PATH
         )
 
-    async def generate_response(self, query: str, system_prompt: str):
-
-        messages = [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": query},
-        ]
-
-        async for chunk in self.llm.astream(messages):
-            if hasattr(chunk, "content") and chunk.content:
-                yield chunk.content
-
     def get_model_info(self) -> Dict[str, Any]:
 
         if AppConfig.USE_LOCAL_LLM:

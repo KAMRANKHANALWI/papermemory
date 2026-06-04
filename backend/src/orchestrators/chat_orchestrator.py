@@ -7,6 +7,7 @@ from src.services.retrieval_service import RetrievalService
 
 from src.prompts import (
     get_scientific_rag_prompt_v2,
+    get_selected_pdf_prompt
 )
 
 logger = logging.getLogger(__name__)
@@ -20,11 +21,17 @@ class ChatOrchestrator:
         memory_service=None,
         metadata_service=None,
         file_search_service=None,
+        pdf_selection_service=None,
+        collection_manager=None,
+        query_classifier=None,
     ):
         self.chat_service = chat_service
         self.memory_service = memory_service
         self.metadata_service = metadata_service
         self.file_search_service = file_search_service
+        self.pdf_selection_service = pdf_selection_service
+        self.collection_manager = collection_manager
+        self.query_classifier = query_classifier
 
     @staticmethod
     async def stream_llm_response(response_stream, request: Request = None):
@@ -303,3 +310,190 @@ class ChatOrchestrator:
             request,
         ):
             yield chunk
+            
+    async def handle_selected_pdf_chat(
+        self,
+        session_id,
+        query,
+        chat_id,
+        num_results,
+        request=None,
+    ):
+
+        session = self.pdf_selection_service.get_or_create_session(
+            session_id
+        )
+
+        if session.get_selection_count() == 0:
+
+            yield (
+                f"data: "
+                f"{json.dumps({'type': 'error', 'message': 'Please select PDFs first'})}"
+                f"\n\n"
+            )
+
+            return
+
+        selection_data = session.to_dict()
+
+        classification, _ = self.query_classifier.classify_query(
+            query,
+            is_chatall_mode=False,
+        )
+
+        # -------------------------
+        # Metadata Queries
+        # -------------------------
+
+        if classification in ["count_pdfs", "list_pdfs"]:
+
+            filenames = [
+                pdf["filename"]
+                for pdf in selection_data["selected_pdfs"]
+            ]
+
+            stats = {
+                "total_pdfs": len(filenames)
+            }
+
+            response = self.metadata_service.build_metadata_response(
+                classification=classification,
+                query=query,
+                filenames=filenames,
+                stats=stats,
+            )
+
+            yield (
+                f"data: "
+                f"{json.dumps({'type': 'content', 'content': response})}"
+                f"\n\n"
+            )
+
+            yield (
+                f"data: "
+                f"{json.dumps({'type': 'end'})}"
+                f"\n\n"
+            )
+
+            return
+
+        # -------------------------
+        # Retrieval
+        # -------------------------
+
+        all_collections = (
+            self.collection_manager.get_all_collections_vectorstores(
+                self.chat_service.embedding_model
+            )
+        )
+
+        if not all_collections:
+
+            yield (
+                f"data: "
+                f"{json.dumps({'type': 'error', 'message': 'No collections available'})}"
+                f"\n\n"
+            )
+
+            return
+
+        try:
+
+            context, results, total_results = (
+                self.pdf_selection_service.search_selected_pdfs(
+                    session_id=session_id,
+                    query=query,
+                    all_collections=all_collections,
+                    num_results=num_results,
+                )
+            )
+
+        except Exception as e:
+
+            yield (
+                f"data: "
+                f"{json.dumps({'type': 'error', 'message': f'Search failed: {str(e)}'})}"
+                f"\n\n"
+            )
+
+            return
+
+        if total_results == 0:
+
+            yield (
+                f"data: "
+                f"{json.dumps({'type': 'content', 'content': 'No relevant information found in the selected PDFs.'})}"
+                f"\n\n"
+            )
+
+            yield (
+                f"data: "
+                f"{json.dumps({'type': 'end'})}"
+                f"\n\n"
+            )
+
+            return
+
+        sources_data = [
+            {
+                "content": r.get("content", ""),
+                "filename": r.get("filename", ""),
+                "collection": r.get("collection", ""),
+                "similarity": r.get("similarity", 0),
+                "page_numbers": r.get("page_numbers", ""),
+                "title": r.get("title", ""),
+            }
+            for r in results
+        ]
+
+        yield (
+            f"data: "
+            f"{json.dumps({'type': 'sources', 'sources': sources_data})}"
+            f"\n\n"
+        )
+
+        system_prompt = get_selected_pdf_prompt()
+
+        messages = [
+            {
+                "role": "system",
+                "content": f"{system_prompt}\n\nContext:\n{context}",
+            },
+            {
+                "role": "user",
+                "content": query,
+            },
+        ]
+
+        full_response = ""
+
+        async for event in self.stream_llm_response(
+            self.chat_service.llm.astream(messages),
+            request,
+        ):
+
+            full_response += self.collect_content_from_event(
+                event
+            )
+
+            yield event
+
+        if self.memory_service:
+
+            self.memory_service.add_message(
+                chat_id,
+                "user",
+                query,
+            )
+
+            self.memory_service.add_message(
+                chat_id,
+                "assistant",
+                full_response,
+            )
+
+        yield (
+            f"data: "
+            f"{json.dumps({'type': 'end'})}"
+            f"\n\n"
+        )

@@ -315,8 +315,6 @@ class PDFSelectionService:
                 except Exception as e:
                     print(f"Error searching {filename} in {collection_name}: {e}")
                     continue
-                
-        print(f"Retrieved chunks: {len(all_results)}")
         
         # Sort globally by similarity
         all_results.sort(
