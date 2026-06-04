@@ -11,7 +11,7 @@ from starlette.exceptions import HTTPException as StarletteHTTPException
 from pathlib import Path
 
 from src.routers import collections, metadata, chat, memory, search, selection
-from src.services.shared import chat_service
+from src.services.dependencies import chat_service
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

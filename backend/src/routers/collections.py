@@ -8,7 +8,7 @@ from src.models import (
     RenamePDFRequest,
     OperationResponse,
 )
-from src.services.shared import (
+from src.services.dependencies import (
     collection_manager,
     document_processor,
     pdf_storage,

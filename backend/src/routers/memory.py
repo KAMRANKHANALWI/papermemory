@@ -7,7 +7,7 @@ from src.models import (
     OperationResponse,
     MemoryMessage,
 )
-from src.services.shared import memory_service
+from src.services.dependencies import memory_service
 
 router = APIRouter(prefix="/api/memory", tags=["memory"])
 

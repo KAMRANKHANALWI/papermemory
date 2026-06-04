@@ -9,7 +9,7 @@ from typing import List
 from fastapi import UploadFile
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 from langchain_core.documents import Document
-from src.utils.pdf_processor import process_pdf_with_pymupdf, chunk_text_content
+from src.utils.pdf_parser import process_pdf_with_pymupdf, chunk_text_content
 from src.config import AppConfig
 
 

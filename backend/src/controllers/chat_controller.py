@@ -4,7 +4,7 @@ from typing import Optional, AsyncGenerator, Dict, Any, List
 from langchain_chroma import Chroma
 from fastapi import Request
 from src.config import AppConfig
-from src.services.shared import (
+from src.services.dependencies import (
     chat_service,
     memory_service,
     metadata_service,
@@ -18,7 +18,7 @@ from src.prompts import (
     get_file_specific_prompt,
 )
 
-from src.services.chat_orchestrator import ChatOrchestrator
+from src.orchestrators.chat_orchestrator import ChatOrchestrator
 
 orchestrator = ChatOrchestrator(
     chat_service=chat_service,

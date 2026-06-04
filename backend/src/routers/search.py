@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException
 from langchain_chroma import Chroma
 
 from src.models import FileSearchRequest, FileSearchResponse
-from src.services.shared import chat_service, file_search_service
+from src.services.dependencies import chat_service, file_search_service
 
 router = APIRouter(prefix="/api/search", tags=["search"])
 

@@ -16,7 +16,7 @@ from src.models.selection_models import (
     SelectedPDFInfo,
 )
 
-from src.services.shared import (
+from src.services.dependencies import (
     chat_service,
     memory_service,
     collection_manager,

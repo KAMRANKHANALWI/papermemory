@@ -7,7 +7,7 @@ from src.models import (
     CollectionStatsResponse,
     PDFDetail,
 )
-from src.services.shared import chat_service, metadata_service
+from src.services.dependencies import chat_service, metadata_service
 
 router = APIRouter(prefix="/api", tags=["metadata"])
 

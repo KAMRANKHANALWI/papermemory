@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import List, Dict, Any
 
 from src.config import EvalConfig
-from src.response_generator import generate_chat_response_eval
+from src.controllers.chat_controller import generate_chat_response_eval
 
 # -------------------------------------------------
 # Paths & config
