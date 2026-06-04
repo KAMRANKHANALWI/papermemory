@@ -19,25 +19,6 @@ class ChatService:
             path=AppConfig.CHROMA_DB_PATH
         )
 
-    async def generate_response(self, query: str, context: str, system_prompt: str):
-        """Generate AI response using LLM"""
-        full_system_prompt = f"""
-        {system_prompt}
-
-        Context from documents:
-
-        {context}
-        """
-        messages = [
-            {"role": "system", "content": full_system_prompt},
-            {"role": "user", "content": query},
-        ]
-
-        response_stream = self.llm.astream(messages)
-        async for chunk in response_stream:
-            if hasattr(chunk, "content") and chunk.content:
-                yield chunk.content
-
     def get_model_info(self) -> Dict[str, Any]:
         if AppConfig.USE_LOCAL_LLM:
             return {
