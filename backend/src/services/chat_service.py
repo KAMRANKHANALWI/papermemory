@@ -1,5 +1,4 @@
 from typing import Dict, Any
-from langchain_chroma import Chroma
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 from src.llm_factory import LLMFactory
 import chromadb

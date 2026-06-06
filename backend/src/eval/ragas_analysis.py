@@ -4,8 +4,11 @@ Usage: python ragas_analysis.py --csv path/to/consolidated_eval_results.csv
 Outputs: ragas_report.html
 """
 
-import argparse, csv, json, os, sys, random
-from collections import defaultdict
+import argparse
+import csv
+import json
+import os
+import sys
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--csv", required=True)

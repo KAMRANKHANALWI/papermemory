@@ -20,14 +20,10 @@ from src.models.selection_models import (
 )
 from src.services.dependencies import (
     chat_service,
-    memory_service,
     collection_manager,
     pdf_selection_service,
 )
 
-from src.prompts import get_selected_pdf_prompt
-from src.services.dependencies import metadata_service
-from src.services.dependencies import query_classifier
 
 from src.controllers.selection_controller import (
     chat_with_selected_pdfs as selection_chat_handler,

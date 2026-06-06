@@ -2,7 +2,7 @@
 Conversation memory management service
 """
 from typing import Dict, Optional, List
-from src.models.memory import ConversationMemory, ConversationMessage
+from src.models.memory import ConversationMemory
 import json
 import os
 

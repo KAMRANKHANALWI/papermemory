@@ -3,10 +3,10 @@ import logging
 from typing import List, Dict
 from fastapi import Request
 
-logger = logging.getLogger(__name__)
-
 from src.prompts import get_selected_pdf_prompt
 from src.config import AppConfig
+
+logger = logging.getLogger(__name__)
 
 
 class ChatOrchestrator:

@@ -39,8 +39,8 @@ def summarize_mcq(csv_path: Path):
     # Use ONLY is_correct as ground truth
     valid_df = df[df["is_correct"].isin([True, False])]
 
-    true_count = (valid_df["is_correct"] == True).sum()
-    false_count = (valid_df["is_correct"] == False).sum()
+    true_count = valid_df["is_correct"].sum()
+    false_count = (~valid_df["is_correct"]).sum()
     total_attempted = true_count + false_count
 
     accuracy = (

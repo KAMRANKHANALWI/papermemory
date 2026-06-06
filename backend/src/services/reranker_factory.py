@@ -11,7 +11,7 @@ Supported types:
 
 from __future__ import annotations
 import logging
-from typing import List, Dict, Tuple
+from typing import List, Dict
 from src.config import AppConfig
 from sentence_transformers import CrossEncoder
 import torch

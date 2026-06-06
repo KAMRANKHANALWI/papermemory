@@ -1,11 +1,9 @@
 """
 PDF Storage Service - Stores original PDF files on disk
 """
-import os
 import shutil
 from pathlib import Path
 from typing import Optional
-from fastapi import UploadFile
 
 
 class PDFStorageService:
